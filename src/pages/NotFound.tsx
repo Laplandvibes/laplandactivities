@@ -6,6 +6,7 @@ export default function NotFound() {
     <>
       <Helmet>
         <title>404 — LaplandActivities</title>
+        <link rel="canonical" href="https://laplandactivities.online*" />
         <meta name="robots" content="noindex" />
       </Helmet>
 

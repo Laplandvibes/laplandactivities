@@ -36,7 +36,7 @@ export default function Home() {
       <Helmet>
         <title>LaplandActivities — Book Verified Arctic Tours in Finnish Lapland</title>
         <meta name="description" content="Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book verified activities across 8 Lapland destinations through GetYourGuide and trusted local operators." />
-        <link rel="canonical" href="https://laplandactivities.online" />
+        <link rel="canonical" href="https://laplandactivities.online/" />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content="LaplandActivities — Verified Arctic Experiences" />
         <meta property="og:description" content={`${totalActivities}+ Lapland tours across ${totalDestinations} destinations. Aurora to midnight sun.`} />
