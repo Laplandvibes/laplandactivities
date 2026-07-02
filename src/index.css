@@ -30,6 +30,8 @@
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
+    /* Balance headings so no single word is ever orphaned on its own line. */
+    text-wrap: balance;
   }
 
   .aurora-bg {
@@ -67,6 +69,42 @@
 
   .text-shadow {
     text-shadow: 0 2px 8px rgba(0,0,0,0.7), 0 1px 3px rgba(0,0,0,0.5);
+  }
+
+  /* === Premium dark surface system (mirrors hub .lv-surface) === */
+  /* Elevated glass panel with depth — replaces flat bg-white/[0.04] voids. */
+  .lv-surface {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0.055) 0%, rgba(255,255,255,0.02) 100%),
+      rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(255,255,255,0.10);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 18px 40px -24px rgba(0,0,0,0.8);
+    backdrop-filter: blur(6px);
+  }
+  .lv-surface-pink {
+    background:
+      radial-gradient(120% 100% at 0% 0%, rgba(236,72,153,0.10) 0%, transparent 55%),
+      linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.015) 100%),
+      rgba(15, 23, 42, 0.55);
+    border: 1px solid rgba(236,72,153,0.22);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.05) inset, 0 18px 44px -24px rgba(236,72,153,0.35);
+  }
+  /* Soft aurora glow backdrop for section bands (no flat black voids). */
+  .lv-aurora-veil {
+    position: relative;
+  }
+  .lv-aurora-veil::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(60% 50% at 15% 0%, rgba(16,185,129,0.10) 0%, transparent 60%),
+      radial-gradient(55% 50% at 85% 10%, rgba(236,72,153,0.10) 0%, transparent 60%);
+  }
+  /* Readable warm-white heading on dark — AA, ample weight. */
+  .lv-head {
+    color: #FDFEFF;
   }
 }
 

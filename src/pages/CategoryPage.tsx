@@ -1,129 +1,205 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ArrowLeft, Sparkles } from 'lucide-react';
+import { ArrowLeft, Sparkles, Snowflake, Sun } from 'lucide-react';
 import { getCategoryBySlug, categories } from '../data/categories';
 import { getActivitiesByCategory } from '../data/activities';
 import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
-import { gygSlugForCategory } from '../data/affiliate';
-import { imageForCategory } from '../data/images';
+import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
+import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
+import { useLang, useLocalePath } from '../i18n/useLang';
+import { COPY } from '../locales/copy';
+import { localizeCategory } from '../locales/data';
+import { SEASON_WORD, SEASON_SECTIONS, currentSeasonBucket, inBucket } from '../i18n/seasonWords';
+
+// Categories that are inherently single-season — no split, no season chrome.
+const SINGLE_SEASON = new Set(['northern-lights', 'winter-sports', 'summer']);
 
 export default function CategoryPage() {
   const { slug } = useParams<{ slug: string }>();
-  const category = getCategoryBySlug(slug || '');
+  const lang = useLang();
+  const to = useLocalePath();
+  const c = COPY[lang].categoryPage;
+  const sec = SEASON_SECTIONS[lang];
+  const words = SEASON_WORD[lang];
+  const rawCategory = getCategoryBySlug(slug || '');
+  const category = rawCategory ? localizeCategory(rawCategory, lang) : undefined;
   const acts = getActivitiesByCategory(slug || '');
 
   if (!category) {
     return (
       <main className="min-h-screen pt-24 bg-deep-night flex items-center justify-center">
         <div className="text-center">
-          <h1 className="font-heading text-5xl text-snow mb-4">Category Not Found</h1>
-          <Link to="/categories" className="text-vibe-pink hover:text-vibe-pink/80">← Back to Categories</Link>
+          <h1 className="font-heading text-5xl text-snow mb-4">{c.notFoundH1}</h1>
+          <Link to={to('/categories')} className="text-vibe-pink hover:text-vibe-pink/80">{c.backCategories}</Link>
         </div>
       </main>
     );
   }
 
   const gygSlug = gygSlugForCategory(slug || 'adventure');
+  const gygQ = gygQForCategory(slug || 'adventure');
+  const heroImg = imageForCategory(slug || '');
+  // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
+  const pageUrl = `https://laplandactivities.online${to(`/categories/${slug}`)}`.replace(/\/?$/, '/');
+
+  // Season split — for year-round categories (adventure, animals, wellness, culture,
+  // food) surface this-season activities first, then the other season. Single-season
+  // categories (aurora, winter sports, summer) render as one plain grid.
+  const splittable = !SINGLE_SEASON.has(slug || '');
+  const bucket = currentSeasonBucket();
+  const otherBucket = bucket === 'summer' ? 'winter' : 'summer';
+  const inSeason = splittable ? acts.filter((a) => inBucket(a, bucket)) : acts;
+  const offSeason = splittable ? acts.filter((a) => !inBucket(a, bucket)) : [];
+  const seasonNowWord = bucket === 'summer' ? words.summer : words.winter;
+  const seasonOtherWord = otherBucket === 'summer' ? words.summer : words.winter;
+  const SeasonNowIcon = bucket === 'summer' ? Sun : Snowflake;
+  const SeasonOtherIcon = otherBucket === 'summer' ? Sun : Snowflake;
+  // Single list-aware image pass over the displayed order.
+  const ordered = [...inSeason, ...offSeason];
+  const orderedImgs = assignActivityImages(ordered);
+  const imgFor = (id: string) => {
+    const i = ordered.findIndex((a) => a.id === id);
+    return i >= 0 ? orderedImgs[i] : undefined;
+  };
 
   return (
     <>
       <Helmet>
-        <title>{category.name} in Lapland — LaplandActivities</title>
-        <meta name="description" content={`${category.description} Book ${acts.length}+ ${category.name.toLowerCase()} activities across Finnish Lapland.`} />
-        <link rel="canonical" href={`https://laplandactivities.online/categories/${slug}`} />
+        <title>{category.name} · LaplandActivities</title>
+        <meta name="description" content={`${category.description}`} />
+        <link rel="canonical" href={pageUrl} />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={`${category.name} in Finnish Lapland`} />
+        <meta property="og:title" content={`${category.name} · LaplandActivities`} />
         <meta property="og:description" content={category.description} />
-        <meta property="og:image" content={`https://laplandactivities.online${imageForCategory(slug || '')}`} />
+        <meta property="og:image" content={`https://laplandactivities.online${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Article',
-          headline: `${category.name} in Finnish Lapland`,
+          headline: `${category.name}, Finnish Lapland`,
           description: category.description,
-          mainEntityOfPage: `https://laplandactivities.online/categories/${slug}`,
-          image: `https://laplandactivities.online${imageForCategory(slug || '')}`,
-          author: { '@type': 'Organization', name: 'LaplandActivities' },
+          mainEntityOfPage: pageUrl,
+          image: `https://laplandactivities.online${heroImg}`,
+          datePublished: '2025-01-01T00:00:00+02:00',
+          dateModified: '2026-05-16T00:00:00+02:00',
+          inLanguage: lang,
+          author: { '@type': 'Organization', name: 'LaplandActivities', url: 'https://laplandactivities.online' },
           publisher: { '@type': 'Organization', name: 'LaplandVibes', logo: { '@type': 'ImageObject', url: 'https://laplandactivities.online/favicon.svg' } },
         })}</script>
       </Helmet>
 
-      {/* Hero */}
-      <section className="relative h-[60vh] min-h-[460px] flex items-end overflow-hidden pt-16 bg-deep-night">
-        <img src={imageForCategory(slug || '')} alt={category.name} className="absolute inset-0 w-full h-full object-cover opacity-70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-deep-night via-deep-night/55 to-deep-night/15" />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pb-10 sm:pb-14 w-full">
-          <Link to="/categories" className="inline-flex items-center gap-1 text-snow/55 text-sm mb-3 hover:text-snow transition-colors">
-            <ArrowLeft className="w-4 h-4" /> All Categories
+      <section className="relative min-h-[56vh] md:min-h-[62vh] flex items-end overflow-hidden pt-16 bg-deep-night">
+        <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 48%, rgba(15,23,42,0.30) 100%)' }} />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
+          <Link to={to('/categories')} className="inline-flex items-center gap-1 text-snow/85 text-sm mb-4 hover:text-snow transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+            <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allCategoriesNav}
           </Link>
           <div className="flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-xl bg-vibe-pink/15 border border-vibe-pink/40 flex items-center justify-center">
+            <div className="w-12 h-12 rounded-xl bg-vibe-pink/15 border border-vibe-pink/40 flex items-center justify-center shrink-0">
               <category.icon className="w-6 h-6 text-vibe-pink" />
             </div>
-            <h1 className="font-heading text-4xl sm:text-6xl text-snow tracking-wide drop-shadow-[0_0_40px_rgba(236,72,153,0.5)]">{category.name}</h1>
+            <h1 className="font-heading text-4xl sm:text-6xl lv-head tracking-wide drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">{category.name}</h1>
           </div>
-          <p className="text-snow/75 max-w-2xl text-sm sm:text-base leading-relaxed mb-6">{category.description}</p>
+          <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed mb-6 drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">{category.description}</p>
 
           <AffiliateCTA
             partner="activities"
             sid={`hero_cat_${slug}_book`}
             destination={gygSlug}
+            query={gygQ ? { q: gygQ } : undefined}
             className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
           >
             <Sparkles className="w-4 h-4" />
-            Book {category.name} tours
+            {c.bookToursPrefix} {category.name}
           </AffiliateCTA>
         </div>
       </section>
 
-      {/* Activities */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-end justify-between mb-8">
-            <h2 className="font-heading text-3xl sm:text-4xl text-snow tracking-wide">{acts.length} {category.name} Activities</h2>
-          </div>
-
-          {acts.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {acts.map((act) => <ActivityCard key={act.id} activity={act} />)}
-            </div>
+          {acts.length === 0 ? (
+            <p className="text-snow/80">{c.comingSoon}</p>
+          ) : !splittable ? (
+            <>
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-8">{c.activitiesCount(acts.length, category.name)}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                {ordered.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+              </div>
+            </>
           ) : (
-            <p className="text-snow/55">Activities coming soon for this category.</p>
+            <>
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-10">{c.activitiesCount(acts.length, category.name)}</h2>
+              {inSeason.length > 0 && (
+                <div className="mb-12">
+                  <div className="flex items-center gap-2.5 mb-5">
+                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
+                      <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
+                    </span>
+                    <div>
+                      <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
+                      <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                    {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                  </div>
+                </div>
+              )}
+              {offSeason.length > 0 && (
+                <div>
+                  <div className="flex items-center gap-2.5 mb-5">
+                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
+                      <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
+                    </span>
+                    <div>
+                      <p className="text-arctic-cyan text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
+                      <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.alsoGreat(seasonOtherWord)}</h3>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                    {offSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
       </section>
 
       <GetYourGuideWidget
         cmpTag={`laplandactivities-cat-${slug}`}
-        title={`Most-booked ${category.name.toLowerCase()} tours`}
-        eyebrow="Verified operators"
+        title={`${c.gygTitlePrefix} ${category.name}`}
+        eyebrow={c.gygEyebrow}
       />
 
-      {/* Other categories */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-end justify-between mb-8">
-            <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">Browse other categories</h2>
-            <Link to="/categories" className="text-vibe-pink text-sm font-semibold">All categories →</Link>
+            <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.browseOthers}</h2>
+            <Link to={to('/categories')} className="text-vibe-pink text-sm font-semibold">{c.allCategoriesLink}</Link>
           </div>
           <div className="flex flex-wrap gap-2">
-            {categories.filter((c) => c.slug !== slug).map((cat) => (
-              <Link
-                key={cat.slug}
-                to={`/categories/${cat.slug}`}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 text-sm text-snow/75 font-medium hover:border-vibe-pink/50 hover:text-snow transition-colors"
-              >
-                <cat.icon className="w-4 h-4 text-vibe-pink" />
-                {cat.name}
-              </Link>
-            ))}
+            {categories.filter((cat) => cat.slug !== slug).map((rawCat) => {
+              const cat = localizeCategory(rawCat, lang);
+              return (
+                <Link
+                  key={cat.slug}
+                  to={to(`/categories/${cat.slug}`)}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 text-sm text-snow/75 font-medium hover:border-vibe-pink/50 hover:text-snow transition-colors"
+                >
+                  <cat.icon className="w-4 h-4 text-vibe-pink" />
+                  {cat.name}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      <BookingCTA gygSlug={gygSlug} />
+      <BookingCTA gygSlug={gygSlug} gygQ={gygQ} />
     </>
   );
 }

@@ -26,7 +26,7 @@ export const categories: Category[] = [
     description: 'Husky dog sledding, reindeer farm visits, wild bear watching, and polar bears at Ranua Zoo. Meet the incredible animals of the Arctic.',
     icon: Dog,
     color: 'bg-cyan/10 text-cyan border-cyan/20',
-    image: '/images/mkt_01.png',  // husky + aurora + family - local Drive image
+    image: HERO.reindeerSunset,  // reindeer herd, golden sunset — on-theme animal (was generic aurora PNG)
   },
   {
     slug: 'northern-lights',
@@ -66,7 +66,7 @@ export const categories: Category[] = [
     description: 'Midnight sun hiking, kayaking, river rafting, mountain biking, fishing, berry picking, and golf under the endless Arctic daylight.',
     icon: Sun,
     color: 'bg-orange/10 text-orange border-orange/20',
-    image: '/images/mkt_01.png',
+    image: HERO.midnightSun,  // midnight-sun summer hike (was a winter aurora PNG)
   },
   {
     slug: 'food',

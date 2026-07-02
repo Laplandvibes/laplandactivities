@@ -10,7 +10,7 @@ import { useState } from 'react';
  * moment the primary fails, so the page never renders a broken icon.
  *
  * Once a file is delivered, the primary path resolves and SmartImage
- * behaves like a plain <img>.
+ * behaves like a plain <img loading="lazy" decoding="async" width="800" height="600" />.
  */
 
 interface SmartImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
@@ -23,6 +23,10 @@ export default function SmartImage({ src, fallback, alt, ...rest }: SmartImagePr
   const [current, setCurrent] = useState(src);
   return (
     <img
+      loading="lazy"
+      decoding="async"
+      width="800"
+      height="600"
       {...rest}
       src={current}
       alt={alt}

@@ -46,6 +46,14 @@ export const HERO = {
   smokesauna:       local('hotels/smoke-sauna-cabin-saariselka.webp'),
   fjell:            local('heroes/slider-02-snowmobile-fells.webp'),
   village:          local('hotels/boutique-hotel-rovaniemi.webp'),
+
+  // Animal-experience card variety — derived from existing in-repo Drive imagery
+  // (hero_01 / mkt_04), downscaled to WebP+AVIF. Feeds the reindeer/husky rotation
+  // so sibling cards no longer repeat the same single image.
+  reindeerSunset:   local('heroes/reindeer-herd-sunset.webp'),  // reindeer herd, golden sunset
+  huskyDay:         local('heroes/husky-sled-day.webp'),        // daytime husky-sled team
+  skiResortWinter:  local('heroes/ski-resort-winter.webp'),     // snowy fell ski slope at dusk
+  ruskaRidge:       local('heroes/slider-03-summer-hike.webp'), // autumn ruska fell ridge + hikers
 } as const;
 
 // HERO_BRANDED — kept as alias for legacy data references
@@ -91,38 +99,76 @@ export const MKT = {
 // Order is significant — first match wins, so SPECIFIC keywords come before
 // GENERIC ones. e.g. "Polar Bears" must match `bear` before `trail` (which
 // might appear in the description) sweeps it to summer-hike.
-const KEYWORD_IMAGE: Array<{ match: RegExp; img: string }> = [
+const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // Specific named places / cultural items first — Tier 2 imagery where available
+  // Heritage / real named places → GENERIC non-claiming theme images (no fabricated building/landmark). Per Vesa 2026-06-22.
   { match: /santa(park)?|christmas|joulu|elf|arctic circle (cross|line|marker)/i,
-                                                                        img: local('activities/culture/santa-village.webp') },
-  { match: /amethyst|gold pan(ning)?|lampivaara|mine\b/i,               img: local('activities/culture/amethyst-mine.webp') },
-  { match: /museum|m[uu]seo|s[íi]ida|arktikum|pentik/i,                 img: local('hotels/boutique-hotel-rovaniemi.webp') },
+                                                                        img: local('activities/culture/festive-forest.webp') },
+  { match: /gold pan(ning)?|tankavaara/i,                               img: local('activities/culture/gold-panning.webp') },
+  { match: /amethyst|lampivaara|mine\b/i,                               img: local('activities/culture/amethyst.webp') },
+  { match: /s[íi]ida|samiland/i,                                        img: local('activities/culture/sami-heritage.webp') },
+  { match: /arktikum/i,                                                 img: local('activities/culture/arctic-city.webp') },
+  { match: /pentik/i,                                                   img: local('activities/culture/ceramics.webp') },
+  { match: /museum|m[uu]seo/i,                                          img: local('activities/culture/arctic-city.webp') },
+  // Karhunkierros = "Bear's Ring" HIKING trail (summer trek) — NOT wildlife. Must match before /bear/.
+  { match: /karhunkierros|bear.?s ring|little bear.?s ring/i,           img: local('heroes/slider-03-summer-hike.webp') },
+  // Ranua Zoo genuinely has a polar bear — that's the only correct use of polar-bears.webp.
   { match: /polar bear|ranua/i,                                         img: local('activities/wildlife/polar-bears.webp') },
-  { match: /bear|wildlife|wolverine|lynx|fox/i,                         img: local('activities/wildlife/polar-bears.webp') },
-  { match: /reindeer|s[áa]mi|lavvu|kota dinner/i,                       img: local('heroes/slider-05-reindeer-lavvu.webp') },
-  { match: /husky|husk[iy]|sled dog|kennel/i,                           img: local('heroes/slider-01-husky-aurora.webp') },
+  // Wolverine/lynx/fox: no dedicated image yet → generic green-summer wilderness (not a bear).
+  { match: /wolverine|lynx|fox|arctic hare/i,                           img: local('categories/summer.webp') },
+  // Brown-bear watching (Kuusamo) is a SUMMER hide activity — real brown-bear-in-summer image (Gamma GPT Image 2, #83).
+  { match: /bear|wildlife/i,                                            img: local('activities/wildlife/brown-bear-summer.webp') },
+  // Reindeer & husky each rotate over 2 distinct images so the animals category
+  // no longer shows the same reindeer/husky photo on three sibling cards.
+  { match: /reindeer|s[áa]mi|lavvu|kota dinner/i,
+        imgs: [local('heroes/slider-05-reindeer-lavvu.webp'), local('heroes/reindeer-herd-sunset.webp')] },
+  { match: /husky|husk[iy]|sled dog|kennel/i,
+        imgs: [local('heroes/slider-01-husky-aurora.webp'), local('heroes/husky-sled-day.webp')] },
 
   // Sports / activities — BEFORE lodging because activity titles are the strongest
   // signal (a "snowmobile expedition" must match snowmobile even if the description
   // mentions "cabin lunch")
-  { match: /snowmobile|kelkka|skidoo/i,                                 img: local('heroes/slider-02-snowmobile-fells.webp') },
-  { match: /ski(ing)?|slope|piste|biathlon|cross[- ]country|snowboard/i, img: local('hotels/fell-resort-levi.webp') },
-  { match: /ice climb|frozen waterfall|korouoma/i,                      img: local('activities/adventure/ice-climbing.webp') },
-  { match: /kayak|canoe|paddle|sup\b|raft|river run/i,                  img: local('heroes/slider-03-summer-hike.webp') },
-  { match: /boat|cruise|icebreaker|sampo|lake.*tour/i,                  img: local('og/og-default.webp') },
+  { match: /snowmobile|kelkka|skidoo/i,
+        imgs: [local('heroes/slider-02-snowmobile-fells.webp'), local('heroes/snowmobile-safari.webp'), local('activities/winter/snowmobile-river.webp')] },
+  { match: /ice ?kart|go.?kart|karting/i,                              img: local('activities/winter/snowmobile-river.webp') },
+  { match: /snowshoe/i,                                                img: local('activities/winter/snowshoe-forest.webp') },
+  { match: /fat ?bike/i,                                               img: local('activities/winter/fatbike-snow.webp') },
+  // Riisitunturi "tykky" snow-crowned trees = an ICONIC WINTER scene, even though the
+  // activity sits in the year-round "Summer Adventures" category. Must match BEFORE the
+  // generic /summer/ catch-all (its category string contains "summer") so it does NOT
+  // inherit the summer-lake image (owner-reported mismatch 2026-06-26). No dedicated
+  // tykky image on disk yet → use the snowy-fell winter scene; FLAGGED for generation.
+  { match: /riisitunturi|tykky|snow.?tree|snow.?crown/i,               img: local('heroes/ski-resort-winter.webp') },
+  // Frozen-waterfall / ice-climbing BEFORE hike — a frozen Korouoma gorge is a winter ice
+  // activity, not a summer hike. ("korouoma" alone dropped: it's a green hiking gorge in summer.)
+  { match: /ice climb|frozen waterfall|korouoma/i,                     img: local('activities/adventure/ice-climbing.webp') },
+  // Hike BEFORE ski/sauna — hiking is the primary signal; a summer hike whose description
+  // mentions a winter cross-country ski route or a Kiilopää sauna must still show a hiking
+  // image, not a snowy ski resort or a sauna. ("trail" dropped — it false-matches ski/sled/bike trails.)
+  { match: /\bhiking\b|\bhike\b|\btrek\b|fjell hike|fell hike|karhunkierros/i,
+        imgs: [local('heroes/slider-03-summer-hike.webp'), local('categories/summer.webp')] },
+  { match: /\bski(ing)?\b|slope|piste|biathlon|cross[- ]country|snowboard/i,
+        imgs: [local('hotels/fell-resort-levi.webp'), local('heroes/ski-resort-winter.webp'), local('activities/winter/cross-country.webp')] },
+  // Aurora is a PRIMARY signal — must beat the generic boat/fish/berry rules below, whose
+  // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
+  { match: /aurora|northern light|revontul/i,
+        imgs: [local('og/og-default.webp'), local('activities/northern-lights/aurora-people.webp')] },
+  { match: /kayak|canoe|paddle|sup\b|raft|river run/i,                  img: local('activities/summer/kayak.webp') },
+  { match: /icebreaker|sampo/i,                                        img: local('og/og-default.webp') },
+  { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
   { match: /salmon|fly[- ]?fish|tornionjoki|teno river/i,               img: local('activities/summer/salmon-fishing.webp') },
   { match: /whitefish|ice fish/i,                                       img: local('hotels/log-cabin-lakeside.webp') },
   { match: /fish(ing)?/i,                                               img: local('hotels/log-cabin-lakeside.webp') },
-  { match: /mountain bike|mtb|fat bike|cycling|bike park/i,             img: local('heroes/slider-03-summer-hike.webp') },
-  { match: /golf/i,                                                     img: local('heroes/slider-03-summer-hike.webp') },
-  { match: /berry|cloudberry|forag|mushroom/i,                          img: local('heroes/slider-03-summer-hike.webp') },
-  { match: /campfire|kota cook|outdoor (cooking|dinner)/i,              img: local('hotels/log-cabin-lakeside.webp') },
+  { match: /mountain bike|mtb|cycling|bike park/i,                      img: local('activities/summer/mtb-bikepark.webp') },
+  { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
+  { match: /berry|cloudberry|forag|mushroom/i,                          img: local('activities/summer/foraging.webp') },
+  { match: /campfire|kota cook|outdoor (cooking|dinner)/i,              img: local('activities/food/campfire-salmon.webp') },
 
   // Lodging / structures (after sports)
   { match: /glass igloo|aurora cabin|igloo/i,                           img: local('hotels/glass-igloo-aurora.webp') },
   { match: /smoke sauna|savusauna|kiilop[ää]+/i,                        img: local('hotels/smoke-sauna-cabin-saariselka.webp') },
   { match: /ice (hotel|chapel|castle|restaurant|gallery)|snowcastle|snow ?hotel|ice village/i,
-                                                                        img: local('hotels/glass-igloo-aurora.webp') },
+                                                                        img: local('activities/culture/ice-architecture.webp') },
   { match: /ice floating|float experience|arctic float/i,               img: local('activities/wellness/ice-floating.webp') },
   { match: /hot tub|wood[- ]fired tub|jacuzzi/i,                        img: local('activities/wellness/spa-hottub.webp') },
   { match: /spa|wellness|massage/i,                                     img: local('activities/wellness/spa-hottub.webp') },
@@ -131,8 +177,6 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img: string }> = [
   { match: /cabin|log house|lakeside lodge/i,                           img: local('hotels/log-cabin-lakeside.webp') },
 
   // Generic outdoor
-  { match: /hike|hiking|trail|trek|fjell hike|fell hike|karhunkierros/i, img: local('heroes/slider-03-summer-hike.webp') },
-  { match: /aurora|northern light|revontul/i,                            img: local('og/og-default.webp') },
   { match: /midnight sun|summer/i,                                       img: local('categories/summer.webp') },
 
   // City/destination tour catch-alls
@@ -146,23 +190,62 @@ export interface ActivityImageInput {
   description?: string;
 }
 
+// Deterministic (SSG-safe — no Math.random) pick from a small image set, keyed by
+// the activity's text. Same activity → same image every render; sibling cards vary.
+function pickStable(key: string, imgs: string[]): string {
+  let h = 2166136261;
+  for (let i = 0; i < key.length; i++) { h ^= key.charCodeAt(i); h = Math.imul(h, 16777619); }
+  return imgs[(h >>> 0) % imgs.length];
+}
+
+function hay(act: ActivityImageInput): string {
+  return `${act.title || ''} | ${act.category || ''} | ${act.description || ''}`;
+}
+
+// Matched keyword entry's index + its image pool (singletons normalised to 1-element).
+function matchEntry(act: ActivityImageInput): { idx: number; imgs: string[] } | null {
+  const haystack = hay(act);
+  for (let i = 0; i < KEYWORD_IMAGE.length; i++) {
+    const e = KEYWORD_IMAGE[i];
+    if (e.match.test(haystack)) return { idx: i, imgs: e.imgs ?? [e.img!] };
+  }
+  return null;
+}
+
 export function imageForActivity(act: ActivityImageInput | string): string {
   // Backwards-compat: legacy callers passed the id string. Best-effort
   // fallback to category cabin image when only a string is given.
   if (typeof act === 'string') {
     return imageForCategory('adventure');
   }
-  const haystack = `${act.title || ''} | ${act.category || ''} | ${act.description || ''}`;
-  for (const { match, img } of KEYWORD_IMAGE) {
-    if (match.test(haystack)) return img;
-  }
+  const m = matchEntry(act);
+  if (m) return m.imgs.length > 1 ? pickStable(hay(act), m.imgs) : m.imgs[0];
   return imageForCategory(act.categorySlug || 'adventure');
 }
 
-// Per-category curated hero — UNIQUE per category. No duplicates.
+// List-aware assignment for GRIDS: round-robins each theme's image pool across the
+// cards in list order, so multi-image themes (reindeer, husky) strictly alternate and
+// never repeat on adjacent cards. Single-call sites keep using imageForActivity.
+export function assignActivityImages(acts: ActivityImageInput[]): string[] {
+  const counters: Record<number, number> = {};
+  return acts.map((act) => {
+    const m = matchEntry(act);
+    if (!m) return imageForCategory(act.categorySlug || 'adventure');
+    if (m.imgs.length === 1) return m.imgs[0];
+    const n = (counters[m.idx] = (counters[m.idx] ?? 0) + 1) - 1;
+    return m.imgs[n % m.imgs.length];
+  });
+}
+
+// Automatic seasonal switch — summer 1 May–30 Sep, winter 1 Oct–30 Apr (runtime, every year).
+const isSummerSeason = (): boolean => { const m = new Date().getMonth() + 1; return m >= 5 && m <= 9; };
+const seasonal = (winter: string, summer: string): string => (isSummerSeason() ? summer : winter);
+
+// Per-category curated hero. Year-round categories flip winter↔summer; topic-specific
+// ones (northern-lights, winter-sports, summer) stay fixed; neutral ones (wellness/culture/food) kept.
 const CATEGORY_HERO: Record<string, string> = {
-  adventure:        local('heroes/slider-02-snowmobile-fells.webp'),
-  animals:          local('heroes/slider-01-husky-aurora.webp'),
+  adventure:        seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/kayak.webp')),
+  animals:          seasonal(local('heroes/slider-05-reindeer-lavvu.webp'), local('heroes/reindeer-herd-sunset.webp')),
   'northern-lights': local('og/og-default.webp'),
   'winter-sports':  local('hotels/fell-resort-levi.webp'),
   wellness:         local('hotels/smoke-sauna-cabin-saariselka.webp'),
@@ -176,17 +259,56 @@ export function imageForCategory(slug: string): string {
 }
 
 // Per-destination curated hero — UNIQUE per destination.
+// Destinations are year-round → all flip winter↔summer (existing pool images).
 const DEST_HERO: Record<string, string> = {
-  rovaniemi:  local('heroes/slider-05-reindeer-lavvu.webp'),
-  levi:       local('hotels/fell-resort-levi.webp'),
-  yllas:      local('heroes/slider-02-snowmobile-fells.webp'),
-  saariselka: local('hotels/smoke-sauna-cabin-saariselka.webp'),
-  inari:      local('og/og-default.webp'),
-  ruka:       local('heroes/slider-03-summer-hike.webp'),
-  posio:      local('hotels/log-cabin-lakeside.webp'),
-  tornio:     local('hotels/boutique-hotel-rovaniemi.webp'),
+  rovaniemi:  seasonal(local('heroes/slider-05-reindeer-lavvu.webp'), local('activities/culture/arctic-city.webp')),
+  levi:       seasonal(local('hotels/fell-resort-levi.webp'), local('heroes/slider-03-summer-hike.webp')),
+  yllas:      seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/mtb-bikepark.webp')),
+  saariselka: seasonal(local('hotels/smoke-sauna-cabin-saariselka.webp'), local('activities/summer/kayak.webp')),
+  inari:      seasonal(local('og/og-default.webp'), local('activities/summer/lake-cruise.webp')),
+  ruka:       seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/slider-03-summer-hike.webp')),
+  // Posio = Riisitunturi snow-fells + Korouoma. A scenic wilderness hero reads better
+  // than a tight cloudberry close-up. Winter → snowy fells; summer → ruska fell ridge.
+  posio:      seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/slider-03-summer-hike.webp')),
+  tornio:     seasonal(local('hotels/boutique-hotel-rovaniemi.webp'), local('activities/summer/salmon-fishing.webp')),
 };
 
 export function imageForDestination(slug: string): string {
   return DEST_HERO[slug] ?? HERO.huskyAurora;
+}
+
+// === Focal point (object-position) — RELEASE GATE ===
+//
+// Hero images are rendered with `object-cover` into wide, short containers, so
+// the top and bottom get cropped. When a subject's head / helmet sits near the
+// top edge (e.g. the Ylläs MTB rider), default centre-cropping decapitates them.
+// This map pins a safe `object-position` per image so heads/helmets are NEVER
+// cut at any breakpoint. Default is 'center 35%' (slightly high) which keeps
+// horizons and most subjects framed; override per file where the subject is
+// high or low in frame. Owner finding 2026-06-26 — now a standard release gate.
+const FOCAL: Record<string, string> = {
+  // Subject's head/helmet is near the TOP → anchor higher so it's never cropped.
+  '/images/activities/summer/mtb-bikepark.webp': 'center 22%',
+  '/images/activities/summer/salmon-fishing.webp': 'center 38%',
+  // Wide aurora arcs read best with the sky kept — anchor a touch low.
+  '/images/heroes/slider-01-husky-aurora.webp': 'center 42%',
+  '/images/og/og-default.webp': 'center 45%',
+  // Reindeer herd walks along the lower third → keep animals in frame.
+  '/images/heroes/reindeer-herd-sunset.webp': 'center 40%',
+  '/images/heroes/slider-05-reindeer-lavvu.webp': 'center 45%',
+  // Snowmobile rider sits at mid-right; default centre is fine but nudge up.
+  '/images/heroes/slider-02-snowmobile-fells.webp': 'center 42%',
+  '/images/heroes/snowmobile-safari.webp': 'center 40%',
+  // Hikers stand on the ridge in the vertical centre.
+  '/images/heroes/slider-03-summer-hike.webp': 'center 45%',
+  // Fell resort village sits low → keep it visible.
+  '/images/hotels/fell-resort-levi.webp': 'center 55%',
+  '/images/heroes/ski-resort-winter.webp': 'center 45%',
+  // Summer lake: paddler + sun are in the lower-mid → anchor low.
+  '/images/categories/summer.webp': 'center 55%',
+};
+
+/** Safe object-position for a hero image so heads/helmets are never cropped. */
+export function focalFor(src: string): string {
+  return FOCAL[src] ?? 'center 35%';
 }

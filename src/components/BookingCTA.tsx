@@ -1,12 +1,16 @@
 import { Sparkles, Hotel, Car, ArrowRight } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
+import { useLang } from '../i18n/useLang';
+import { COPY } from '../locales/copy';
 
 interface Props {
   destinationSlug?: string;
   hotelsQuery?: string;
   gygSlug?: string;
+  /** Optional GYG search filter (?q=) — category pages pass this to target tours of that type. */
+  gygQ?: string;
   pickupIata?: string;
-  /** Optional eyebrow + heading override */
+  /** Optional eyebrow + heading override (rare) */
   eyebrow?: string;
   heading?: string;
   blurb?: string;
@@ -16,11 +20,18 @@ export default function BookingCTA({
   destinationSlug = 'lapland',
   hotelsQuery = 'Lapland, Finland',
   gygSlug = 'lappi-suomi-l2652',
+  gygQ,
   pickupIata = 'RVN',
-  eyebrow = 'Plan The Whole Trip',
-  heading = 'Book Activities, Stays &amp; Cars in One Place',
-  blurb = 'Three taps and your Lapland trip is sorted — verified tour operators via GetYourGuide, the best lodging deals via Hotels.com, and a car waiting at the airport.',
+  eyebrow,
+  heading,
+  blurb,
 }: Props) {
+  const lang = useLang();
+  const c = COPY[lang].bookingCta;
+  const eb = eyebrow ?? c.eyebrow;
+  const hd = heading ?? c.heading;
+  const bb = blurb ?? c.blurb;
+
   return (
     <section className="relative py-16 sm:py-20 px-4 sm:px-6 aurora-bg overflow-hidden border-y border-white/5">
       <div className="absolute inset-0 shimmer pointer-events-none" />
@@ -28,14 +39,14 @@ export default function BookingCTA({
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className="text-center mb-10">
           <p className="text-vibe-pink text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase mb-3">
-            {eyebrow}
+            {eb}
           </p>
           <h2
             className="font-heading text-3xl sm:text-5xl text-snow tracking-wide leading-tight mb-3"
-            dangerouslySetInnerHTML={{ __html: heading }}
+            dangerouslySetInnerHTML={{ __html: hd }}
           />
           <p className="text-snow/70 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
-            {blurb}
+            {bb}
           </p>
         </div>
 
@@ -44,20 +55,20 @@ export default function BookingCTA({
             partner="activities"
             sid={`bookcta_activities_${destinationSlug}`}
             destination={gygSlug}
+            query={gygQ ? { q: gygQ } : undefined}
             className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-vibe-pink/40 hover:border-vibe-pink p-6 backdrop-blur-sm transition-all"
           >
             <div className="w-11 h-11 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30 flex items-center justify-center mb-3">
               <Sparkles className="w-5 h-5 text-vibe-pink" />
             </div>
             <p className="font-heading text-2xl text-snow tracking-wide mb-1">
-              Activities
+              {c.activities}
             </p>
             <p className="text-snow/65 text-sm leading-relaxed mb-4">
-              Husky safaris, snowmobiles, aurora tours, ice-fishing — instant
-              confirmation via GetYourGuide.
+              {c.activitiesDesc}
             </p>
             <span className="inline-flex items-center gap-1 text-vibe-pink text-sm font-semibold group-hover:translate-x-1 transition-transform">
-              Browse tours <ArrowRight className="w-4 h-4" />
+              {c.browseTours} <ArrowRight className="w-4 h-4" />
             </span>
           </AffiliateCTA>
 
@@ -71,14 +82,13 @@ export default function BookingCTA({
               <Hotel className="w-5 h-5 text-arctic-cyan" />
             </div>
             <p className="font-heading text-2xl text-snow tracking-wide mb-1">
-              Stay nearby
+              {c.stayNearby}
             </p>
             <p className="text-snow/65 text-sm leading-relaxed mb-4">
-              Glass igloos, log cabins, ski-in hotels — the operators we like
-              keep selling out, so book the bed first.
+              {c.stayNearbyDesc}
             </p>
             <span className="inline-flex items-center gap-1 text-arctic-cyan text-sm font-semibold group-hover:translate-x-1 transition-transform">
-              Compare hotels <ArrowRight className="w-4 h-4" />
+              {c.compareHotels} <ArrowRight className="w-4 h-4" />
             </span>
           </AffiliateCTA>
 
@@ -92,21 +102,19 @@ export default function BookingCTA({
               <Car className="w-5 h-5 text-aurora-green" />
             </div>
             <p className="font-heading text-2xl text-snow tracking-wide mb-1">
-              Rent a car
+              {c.rentCar}
             </p>
             <p className="text-snow/65 text-sm leading-relaxed mb-4">
-              Compare 600+ suppliers across Rovaniemi, Kittilä, Ivalo and Kemi
-              airports. Winter tires included.
+              {c.rentCarDesc}
             </p>
             <span className="inline-flex items-center gap-1 text-aurora-green text-sm font-semibold group-hover:translate-x-1 transition-transform">
-              Find best price <ArrowRight className="w-4 h-4" />
+              {c.findBestPrice} <ArrowRight className="w-4 h-4" />
             </span>
           </AffiliateCTA>
         </div>
 
-        <p className="text-center text-snow/45 text-[11px] mt-7 max-w-xl mx-auto leading-relaxed">
-          ⓘ This page contains affiliate links. We may earn a commission when
-          you book — at no extra cost to you.
+        <p className="text-center text-snow/75 text-[11px] mt-7 max-w-xl mx-auto leading-relaxed">
+          {c.disclaimer}
         </p>
       </div>
     </section>

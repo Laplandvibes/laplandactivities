@@ -1,0 +1,134 @@
+{
+  "site": "laplandactivities-new",
+  "scanned_webp": 21,
+  "converted": 20,
+  "skipped_exists": 0,
+  "skipped_avif_larger": 1,
+  "errors": 0,
+  "total_webp_bytes": 1603668,
+  "total_avif_bytes": 1418381,
+  "saved_mb": "0.18",
+  "saved_pct": "11.6",
+  "report": [
+    {
+      "file": "public\\images\\activities\\adventure\\ice-climbing.webp",
+      "webp_bytes": 150062,
+      "avif_bytes": 148752,
+      "saved_pct": "0.9"
+    },
+    {
+      "file": "public\\images\\activities\\culture\\santa-village.webp",
+      "webp_bytes": 60196,
+      "avif_bytes": 57939,
+      "saved_pct": "3.7"
+    },
+    {
+      "file": "public\\images\\activities\\summer\\salmon-fishing.webp",
+      "webp_bytes": 136586,
+      "avif_bytes": 125838,
+      "saved_pct": "7.9"
+    },
+    {
+      "file": "public\\images\\activities\\wellness\\ice-floating.webp",
+      "webp_bytes": 79940,
+      "avif_bytes": 76680,
+      "saved_pct": "4.1"
+    },
+    {
+      "file": "public\\images\\activities\\wellness\\spa-hottub.webp",
+      "webp_bytes": 51790,
+      "avif_bytes": 46350,
+      "saved_pct": "10.5"
+    },
+    {
+      "file": "public\\images\\activities\\wildlife\\polar-bears.webp",
+      "webp_bytes": 61096,
+      "avif_bytes": 41264,
+      "saved_pct": "32.5"
+    },
+    {
+      "file": "public\\images\\categories\\summer.webp",
+      "webp_bytes": 70338,
+      "avif_bytes": 64804,
+      "saved_pct": "7.9"
+    },
+    {
+      "file": "public\\images\\heroes\\slider-01-husky-aurora.webp",
+      "webp_bytes": 220442,
+      "avif_bytes": 188085,
+      "saved_pct": "14.7"
+    },
+    {
+      "file": "public\\images\\heroes\\slider-02-snowmobile-fells.webp",
+      "webp_bytes": 57614,
+      "avif_bytes": 42103,
+      "saved_pct": "26.9"
+    },
+    {
+      "file": "public\\images\\heroes\\slider-03-summer-hike.webp",
+      "webp_bytes": 123704,
+      "avif_bytes": 121196,
+      "saved_pct": "2.0"
+    },
+    {
+      "file": "public\\images\\heroes\\slider-04-glass-igloo.webp",
+      "webp_bytes": 56330,
+      "avif_bytes": 46675,
+      "saved_pct": "17.1"
+    },
+    {
+      "file": "public\\images\\heroes\\slider-05-reindeer-lavvu.webp",
+      "webp_bytes": 33534,
+      "avif_bytes": 24999,
+      "saved_pct": "25.5"
+    },
+    {
+      "file": "public\\images\\heroes\\slider-06-snowmobile-aurora-couple.webp",
+      "webp_bytes": 44590,
+      "avif_bytes": 37602,
+      "saved_pct": "15.7"
+    },
+    {
+      "file": "public\\images\\hotels\\boutique-hotel-rovaniemi.webp",
+      "webp_bytes": 130756,
+      "avif_bytes": 115215,
+      "saved_pct": "11.9"
+    },
+    {
+      "file": "public\\images\\hotels\\fell-resort-levi.webp",
+      "webp_bytes": 65388,
+      "avif_bytes": 56104,
+      "saved_pct": "14.2"
+    },
+    {
+      "file": "public\\images\\hotels\\glass-igloo-aurora.webp",
+      "webp_bytes": 45478,
+      "avif_bytes": 37240,
+      "saved_pct": "18.1"
+    },
+    {
+      "file": "public\\images\\hotels\\glass-igloo-interior.webp",
+      "webp_bytes": 43602,
+      "avif_bytes": 33837,
+      "saved_pct": "22.4"
+    },
+    {
+      "file": "public\\images\\hotels\\log-cabin-lakeside.webp",
+      "webp_bytes": 105330,
+      "avif_bytes": 103765,
+      "saved_pct": "1.5"
+    },
+    {
+      "file": "public\\images\\hotels\\smoke-sauna-cabin-saariselka.webp",
+      "webp_bytes": 27504,
+      "avif_bytes": 21213,
+      "saved_pct": "22.9"
+    },
+    {
+      "file": "public\\images\\og\\og-default.webp",
+      "webp_bytes": 39388,
+      "avif_bytes": 28720,
+      "saved_pct": "27.1"
+    }
+  ]
+}

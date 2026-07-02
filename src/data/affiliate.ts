@@ -53,3 +53,21 @@ export function hotelsQueryForDestination(slug: string): string {
 export function gygSlugForCategory(slug: string): string {
   return GYG_BY_CATEGORY[slug] ?? GYG_SLUG.lapland;
 }
+
+// Per-category GYG search filter (?q=). Lands a category page on tours of THAT type
+// instead of ALL activities at the location — the biggest GYG conversion fix
+// (lv memory: 2026-06-15_gyg_targeting_monetization.md). Empty string => no filter
+// (e.g. homepage/destination pages stay broad on purpose).
+export const GYG_Q_BY_CATEGORY: Record<string, string> = {
+  adventure:         'snowmobile',
+  animals:           'husky',
+  'northern-lights': 'northern lights',
+  'winter-sports':   'snowmobile',
+  wellness:          'sauna',
+  culture:           'sami',
+  summer:            'hiking',
+  food:              'food',
+};
+export function gygQForCategory(slug: string): string {
+  return GYG_Q_BY_CATEGORY[slug] ?? '';
+}

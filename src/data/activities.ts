@@ -457,7 +457,7 @@ export const activities: Activity[] = [
     duration: '3 hours',
     difficulty: 'Easy',
     season: ['autumn', 'winter'],
-    description: 'Ylläs is a certified Dark Sky destination. Chase the aurora with expert guides who know the best viewpoints on and around the fell.',
+    description: 'Ylläs has one of the darkest, clearest night skies in Finland. Chase the aurora with expert guides who know the best viewpoints on and around the fell.',
     groupSize: '4-12',
     highlights: ['Dark Sky area', 'Expert guides', 'Fell-top views'],
   },
@@ -505,7 +505,7 @@ export const activities: Activity[] = [
     duration: '3 hours',
     difficulty: 'Easy',
     season: ['winter', 'spring'],
-    description: 'Ride with enthusiastic huskies through the quiet forests around Äkäslompolo village. Small, intimate farm with well-cared-for dogs.',
+    description: 'Ride with enthusiastic huskies through the quiet forests around Äkäslompolo village. Small, intimate family-run farm.',
     groupSize: '2-6',
     highlights: ['Small group', 'Forest trails', 'Meet the huskies'],
   },
@@ -1068,6 +1068,108 @@ export const activities: Activity[] = [
     highlights: ['Traditional fishing', 'Flame-grilled whitefish', 'Historic rapids'],
   },
 ];
+
+// === Bookability + GetYourGuide search query ===
+//
+// Owner rule (2026-06-26): a booking CTA goes ONLY on genuinely GYG-bookable
+// guided experiences (safaris, tours, cruises, climbs). NOT on free landmarks,
+// museums, walk-in attractions, free national-park treks, or factory shops —
+// those would 404 or land on an irrelevant generic search. Non-bookable cards
+// instead route to the destination page (handled in ActivityCard).
+//
+// `NON_BOOKABLE` is an explicit allow-list of activity ids that are NOT sold as
+// GYG products (verified case by case). Everything else is bookable.
+const NON_BOOKABLE = new Set<string>([
+  'rov-arktikum',          // science museum — ticket at the door / museum site
+  'rov-santapark',         // theme park — own ticketing
+  'ina-siida-museum',      // Sámi museum — museum ticketing
+  'pos-pentik',            // ceramics factory + outlet shop (free visit)
+  'saa-uk-national-park',  // UKK NP — free wilderness, no booking
+  'ina-pielpajarvi',       // free wilderness-church trek
+  'pos-riisitunturi',      // Riisitunturi NP — free, self-guided
+  'ruk-karhunkierros',     // Bear Trail — free long-distance hike
+  'yll-pallas-hike',       // national-park trail (self-guided)
+  'tor-snowcastle',        // SnowCastle — own walk-in ticketing
+  'lev-snowvillage',       // SnowVillage — own walk-in ticketing
+  'yll-lainio-snow',       // Lainio Snow Village — own walk-in ticketing
+]);
+
+// Concise GYG search query per activity: "<activity type> <place>" — the proven
+// pattern that lands on real, relevant results (verified against GYG /s/?q=).
+// Keyed by id; falls back to a keyword guess + destination if absent.
+const GYG_QUERY: Record<string, string> = {
+  // Rovaniemi
+  'rov-aurora-snowmobile':  'aurora snowmobile rovaniemi',
+  'rov-santa-village':      'santa claus village rovaniemi',
+  'rov-husky-safari':       'husky safari rovaniemi',
+  'rov-reindeer-farm':      'reindeer sleigh rovaniemi',
+  'rov-snowmobile-full':    'snowmobile safari rovaniemi',
+  'rov-ice-karting':        'snowmobile ice karting rovaniemi',
+  'rov-ranua-zoo':          'ranua zoo rovaniemi',
+  'rov-ice-floating':       'ice floating rovaniemi',
+  'rov-arctic-snow-hotel':  'snow hotel rovaniemi',
+  'rov-ounasvaara-ski':     'skiing rovaniemi',
+  'rov-campfire-dinner':    'wilderness dinner rovaniemi',
+  // Levi
+  'lev-ski-resort':         'levi ski',
+  'lev-ice-karting':        'ice karting levi',
+  'lev-samiland':           'reindeer sami levi',
+  'lev-husky-safari':       'husky safari levi',
+  'lev-snowmobile':         'snowmobile safari levi',
+  'lev-aurora-photo':       'northern lights photography levi',
+  'lev-midnight-sun-golf':  'golf levi',
+  'lev-ice-fishing':        'ice fishing levi',
+  'lev-fatbike':            'fat bike levi',
+  'lev-bike-park':          'mountain bike levi',
+  'lev-kota-dinner':        'lappish dinner levi',
+  // Ylläs
+  'yll-ski-resort':         'yllas ski',
+  'yll-aurora-hunt':        'northern lights yllas',
+  'yll-snowmobile':         'snowmobile safari yllas',
+  'yll-husky':              'husky safari yllas',
+  'yll-snowshoe':           'snowshoe yllas',
+  'yll-reindeer':           'reindeer sleigh yllas',
+  'yll-cross-country':      'cross country skiing yllas',
+  // Saariselkä
+  'saa-gold-panning':       'gold panning tankavaara',
+  'saa-amethyst-mine':      'amethyst mine saariselka',
+  'saa-kiilopaa-sauna':     'smoke sauna saariselka',
+  'saa-snowmobile':         'snowmobile safari saariselka',
+  'saa-aurora-hunt':        'northern lights saariselka',
+  'saa-ice-fishing':        'ice fishing saariselka',
+  // Inari
+  'ina-lake-cruise':        'lake inari cruise',
+  'ina-midnight-kayak':     'kayak inari',
+  'ina-sami-experience':    'reindeer sami inari',
+  'ina-aurora':             'northern lights inari',
+  'ina-berry-foraging':     'foraging inari',
+  // Ruka / Kuusamo
+  'ruk-ski-resort':         'ruka ski',
+  'ruk-bear-watching':      'bear watching kuusamo',
+  'ruk-river-rafting':      'rafting ruka',
+  'ruk-snowmobile':         'snowmobile safari ruka',
+  'ruk-husky':              'husky safari ruka',
+  'ruk-ice-climbing':       'ice climbing korouoma',
+  'ruk-aurora':             'northern lights ruka',
+  // Posio
+  'pos-korouoma':           'korouoma frozen waterfall',
+  // Tornio / Kemi
+  'tor-icebreaker':         'icebreaker sampo kemi',
+  'tor-green-zone':         'golf tornio',
+  'tor-salmon-fishing':     'salmon fishing tornio',
+  'tor-whitefish-festival': 'kukkolankoski tornio',
+};
+
+export function isBookable(a: Activity): boolean {
+  return !NON_BOOKABLE.has(a.id);
+}
+
+export function gygQueryForActivity(a: Activity): string {
+  if (GYG_QUERY[a.id]) return GYG_QUERY[a.id];
+  // Fallback: category keyword + destination, lower-cased.
+  const cat = a.category.toLowerCase().replace(/[^a-z ]/g, '').trim();
+  return `${cat} ${a.destination}`.toLowerCase();
+}
 
 export function getActivityById(id: string) {
   return activities.find(a => a.id === id);

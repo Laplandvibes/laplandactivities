@@ -83,8 +83,8 @@ export const destinations: Destination[] = [
     elevation: '492m',
     bestFor: 'Hikers, skiers & wildlife enthusiasts',
     operators: ['Kuusamo Safaris', 'Ruka Adventures', 'Ruka Husky'],
-    image: '/images/hero_03.png',
-    heroImage: '/images/hero_03.png',
+    image: HERO.snowyForest,
+    heroImage: HERO.snowyForest,
   },
   {
     slug: 'posio',
@@ -95,8 +95,8 @@ export const destinations: Destination[] = [
     elevation: '250m',
     bestFor: 'Off-the-beaten-path explorers',
     operators: ['Posio Adventures', 'Pentik'],
-    image: '/images/mkt_01.png',
-    heroImage: '/images/mkt_01.png',
+    image: HERO.skiResortWinter,
+    heroImage: HERO.skiResortWinter,
   },
   {
     slug: 'tornio',
