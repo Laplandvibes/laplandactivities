@@ -90,13 +90,10 @@ export default function CategoryPage() {
         })}</script>
       </Helmet>
 
-      <section className="relative min-h-[56vh] md:min-h-[62vh] flex items-end overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[50vh] md:min-h-[56vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 48%, rgba(15,23,42,0.30) 100%)' }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          <Link to={to('/categories')} className="inline-flex items-center gap-1 text-snow/85 text-sm mb-4 hover:text-snow transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
-            <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allCategoriesNav}
-          </Link>
           <div className="flex items-center gap-3 mb-2">
             <div className="w-12 h-12 rounded-xl bg-vibe-pink/15 border border-vibe-pink/40 flex items-center justify-center shrink-0">
               <category.icon className="w-6 h-6 text-vibe-pink" />
@@ -117,6 +114,15 @@ export default function CategoryPage() {
           </AffiliateCTA>
         </div>
       </section>
+
+      {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07) */}
+      <div className="border-b border-white/5 bg-deep-night">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+          <Link to={to('/categories')} className="inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
+            <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allCategoriesNav}
+          </Link>
+        </div>
+      </div>
 
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">

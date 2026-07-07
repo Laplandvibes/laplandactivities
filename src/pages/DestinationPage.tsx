@@ -95,7 +95,7 @@ export default function DestinationPage() {
       </Helmet>
 
       {/* HERO — focal-fixed so heads/helmets are never cropped */}
-      <section className="relative min-h-[58vh] md:min-h-[66vh] flex items-end overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img
           src={heroImg}
           alt={destination.name}
@@ -105,9 +105,6 @@ export default function DestinationPage() {
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.94) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          <Link to={to('/destinations')} className="inline-flex items-center gap-1 text-snow/85 text-sm mb-4 hover:text-snow transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
-            <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
-          </Link>
           <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
           </span>
@@ -139,6 +136,15 @@ export default function DestinationPage() {
           </div>
         </div>
       </section>
+
+      {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07) */}
+      <div className="border-b border-white/5 bg-deep-night">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+          <Link to={to('/destinations')} className="inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
+            <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
+          </Link>
+        </div>
+      </div>
 
       {/* WHY VISIT + GOOD TO KNOW — premium combined intro panel (no flat void) */}
       <section className="lv-aurora-veil bg-deep-night py-12 sm:py-16 px-4 sm:px-6 border-b border-white/5">

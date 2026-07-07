@@ -260,17 +260,20 @@ export function imageForCategory(slug: string): string {
 
 // Per-destination curated hero — UNIQUE per destination.
 // Destinations are year-round → all flip winter↔summer (existing pool images).
+// UNIQUE hero per destination in BOTH seasons (Vesa 2026-07-07: Levi/Ruka/Posio
+// all showed the same summer photo, and Rovaniemi's summer hero was a river
+// cityscape — Rovaniemi is marketed Santa-first, always).
 const DEST_HERO: Record<string, string> = {
-  rovaniemi:  seasonal(local('heroes/slider-05-reindeer-lavvu.webp'), local('activities/culture/arctic-city.webp')),
+  rovaniemi:  local('heroes/slider-05-reindeer-lavvu.webp'), // Santa/reindeer-first, year-round
   levi:       seasonal(local('hotels/fell-resort-levi.webp'), local('heroes/slider-03-summer-hike.webp')),
   yllas:      seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/mtb-bikepark.webp')),
   saariselka: seasonal(local('hotels/smoke-sauna-cabin-saariselka.webp'), local('activities/summer/kayak.webp')),
   inari:      seasonal(local('og/og-default.webp'), local('activities/summer/lake-cruise.webp')),
-  ruka:       seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/slider-03-summer-hike.webp')),
-  // Posio = Riisitunturi snow-fells + Korouoma. A scenic wilderness hero reads better
-  // than a tight cloudberry close-up. Winter → snowy fells; summer → ruska fell ridge.
-  posio:      seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/slider-03-summer-hike.webp')),
-  tornio:     seasonal(local('hotels/boutique-hotel-rovaniemi.webp'), local('activities/summer/salmon-fishing.webp')),
+  ruka:       seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/reindeer-herd-sunset.webp')),
+  // Posio = Riisitunturi + Korouoma wilderness. Winter → snowmobile fells; the
+  // aurora lake reads as the Posio autumn/lakes mood in the light season.
+  posio:      seasonal(local('heroes/husky-sled-day.webp'), local('og/og-default.webp')),
+  tornio:     seasonal(local('activities/culture/arctic-city.webp'), local('activities/summer/salmon-fishing.webp')),
 };
 
 export function imageForDestination(slug: string): string {

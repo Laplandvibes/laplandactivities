@@ -1,4 +1,4 @@
-import { HERO, HERO_BRANDED, MKT } from './images';
+import { HERO, MKT } from './images';
 
 export interface Destination {
   slug: string;
@@ -27,7 +27,7 @@ export const destinations: Destination[] = [
     bestFor: 'First-time visitors & families',
     operators: ['Lapland Safaris', 'Arctic Circle Snowmobile Park', 'Beyond Arctic', 'Arctic Lifestyle'],
     image: HERO.santaClaus,
-    heroImage: HERO_BRANDED.magicOfLapland,
+    heroImage: HERO.santaClaus, // Santa-first: reindeer/lavvu, not a generic igloo (Vesa 2026-07-07)
   },
   {
     slug: 'levi',
@@ -39,8 +39,8 @@ export const destinations: Destination[] = [
     elevation: '531m',
     bestFor: 'Skiers & active travelers',
     operators: ['Lapland Safaris', 'Beyond Arctic', 'Bearhill Husky', 'Levi Activities'],
-    image: MKT.huskyDaylight,
-    heroImage: HERO_BRANDED.distinctive,
+    image: HERO.fells,
+    heroImage: HERO.fells, // fell-resort-levi — the one photo actually OF Levi
   },
   {
     slug: 'yllas',
@@ -52,8 +52,8 @@ export const destinations: Destination[] = [
     elevation: '718m',
     bestFor: 'Nature lovers & serious skiers',
     operators: ['SnowFun Safaris', 'Wild Nordic Finland', 'Erä-Susi Huskies'],
-    image: HERO.snowyForest,
-    heroImage: HERO.snowyForest,
+    image: HERO.auroraLake,
+    heroImage: HERO.auroraLake,
   },
   {
     slug: 'saariselka',
@@ -78,8 +78,8 @@ export const destinations: Destination[] = [
     elevation: '118m',
     bestFor: 'Cultural explorers & photographers',
     operators: ['Beyond Arctic', 'Inari Sámi Heritage'],
-    image: HERO.reindeerHerd,
-    heroImage: HERO.reindeerHerd,
+    image: HERO.reindeerSunset,
+    heroImage: HERO.reindeerSunset,
   },
   {
     slug: 'ruka',
@@ -91,8 +91,8 @@ export const destinations: Destination[] = [
     elevation: '492m',
     bestFor: 'Hikers, skiers & wildlife enthusiasts',
     operators: ['Kuusamo Safaris', 'Ruka Adventures', 'Ruka Husky'],
-    image: HERO.snowyForest,
-    heroImage: HERO.snowyForest,
+    image: HERO.ruskaRidge,
+    heroImage: HERO.ruskaRidge,
   },
   {
     slug: 'posio',
@@ -118,7 +118,7 @@ export const destinations: Destination[] = [
     bestFor: 'Unique experiences & family fun',
     operators: ['Icebreaker Sampo', 'SnowCastle', 'Green Zone Golf'],
     image: MKT.huskyAuroraFamily,
-    heroImage: HERO_BRANDED.gatewayLapland,
+    heroImage: HERO.huskyDay,
   },
 ];
 
