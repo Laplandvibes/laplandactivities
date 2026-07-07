@@ -456,9 +456,9 @@ export const activities: Activity[] = [
     duration: 'Day pass',
     difficulty: 'Moderate',
     season: ['winter', 'spring'],
-    description: 'Finland\'s longest slopes at 3.2 km on both sides of Ylläs fell. 63 slopes, a gondola, and 330 km of groomed cross-country trails through national park.',
+    description: 'Finland\'s longest slopes at 3 km on both sides of Ylläs fell. 63 slopes, a gondola, and 330 km of groomed cross-country trails through national park.',
     groupSize: 'Unlimited',
-    highlights: ['3.2 km longest run', '63 slopes', '330 km cross-country'],
+    highlights: ['3 km longest run', '63 slopes', '330 km cross-country'],
     featured: true,
   },
   {
@@ -1063,9 +1063,9 @@ export const activities: Activity[] = [
     duration: '6 hours',
     difficulty: 'Moderate',
     season: ['summer'],
-    description: 'Fish for Atlantic salmon on Europe\'s best salmon river. The Tornionjoki runs along the Finland-Sweden border and is famous for massive catches.',
+    description: 'Fish for Atlantic salmon on Europe\'s largest free-flowing salmon river. The Tornionjoki runs along the Finland-Sweden border and is famous for massive catches.',
     groupSize: '2-6',
-    highlights: ['Europe\'s best salmon river', 'Guide included', 'Equipment provided'],
+    highlights: ['Europe\'s largest free-flowing salmon river', 'Guide included', 'Equipment provided'],
   },
   {
     id: 'tor-whitefish-festival',

@@ -19,7 +19,7 @@ export const DEST_ZHCN = {
   yllas: { name: 'Ylläs', tagline: '芬兰最长的雪道', description: 'Ylläs 山两侧的两座滑雪度假村提供芬兰最长的滑降雪道，长达 3.2 公里。搭配 Pallas-Yllästunturi 国家公园，是更宁静、更纯正的拉普兰体验。', access: '飞往 Kittilä（车程 35 分钟）', bestFor: '自然爱好者与资深滑雪者' },
   saariselka: { name: 'Saariselkä', tagline: '通往 Urho Kekkonen 国家公园的门户', description: '芬兰最北的滑雪度假胜地，毗邻欧洲最大的荒野地区之一。以观赏极光、淘金和传奇的 Kiilopää 烟熏桑拿闻名。', access: '飞往 Ivalo（车程 30 分钟）', bestFor: '荒野探寻者与极光猎人' },
   inari: { name: 'Inari', tagline: '萨米文化的心脏', description: '坐落在拥有逾 3,000 座岛屿的 Inari 湖畔，是芬兰萨米人的文化首府。这里有 Siida 博物馆和未受侵扰的原始自然。', access: '飞往 Ivalo（车程 40 分钟）', bestFor: '文化探索者与摄影师' },
-  ruka: { name: 'Ruka 与 Kuusamo', tagline: '芬兰的荒野首府', description: '传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。', access: '飞往 Kuusamo（车程 25 分钟）', bestFor: '徒步者、滑雪者与野生动物爱好者' },
+  ruka: { name: 'Ruka 与 Kuusamo', tagline: '芬兰最长滑雪季的故乡', description: '传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。', access: '飞往 Kuusamo（车程 25 分钟）', bestFor: '徒步者、滑雪者与野生动物爱好者' },
   posio: { name: 'Posio', tagline: '东拉普兰的隐藏瑰宝', description: '以 Riisitunturi 国家公园壮观的雪冠树木和 Korouoma 峡谷的冰封瀑布闻名。远离人迹，纯粹荒野。', access: '从 Rovaniemi 驾车（2 小时）或从 Ruka（1 小时）', bestFor: '偏好小众路线的探索者' },
   tornio: { name: 'Tornio 与 Kemi', tagline: '边境上的北极探险', description: '芬兰与瑞典之间的边境城市，是通往独特北极体验的门户。可乘坐传奇的 Sampo 破冰船巡航、参观世界最大的雪堡，并垂钓欧洲最佳的鲑鱼河。', access: '飞往 Kemi（车程 15 分钟）', bestFor: '独特体验与家庭欢乐' },
 };
