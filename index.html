@@ -64,7 +64,19 @@
     </script>
     <!-- /LV-SYNC-LOCALE-REDIRECT -->
 
-    <meta charset="UTF-8" />
+        <!-- Canonical host redirect: .online -> .fi (2026-07-07). Instant client-side
+         hop for users; rel=canonical + .fi sitemap carry SEO. A zone-level 301
+         Redirect Rule should replace this belt-and-braces script when added. -->
+    <script>
+      (function () {
+        try {
+          if (/(^|\.)laplandactivities\.online$/.test(location.hostname)) {
+            location.replace('https://laplandactivities.fi' + location.pathname + location.search + location.hash);
+          }
+        } catch (e) { /* fail open */ }
+      })();
+    </script>
+<meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicons -->
     <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
