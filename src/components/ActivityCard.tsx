@@ -1,4 +1,4 @@
-import { Clock, MapPin, Users, ExternalLink, ArrowRight } from 'lucide-react';
+import { MapPin, ExternalLink, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import type { Activity } from '../data/activities';
 import { isBookable, gygQueryForActivity } from '../data/activities';
@@ -6,14 +6,8 @@ import { imageForActivity } from '../data/images';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
-import { localizeActivity, localizeDestination, difficultyLabel } from '../locales/data';
+import { localizeActivity, localizeDestination } from '../locales/data';
 import { getDestinationBySlug } from '../data/destinations';
-
-const difficultyChip: Record<Activity['difficulty'], string> = {
-  Easy:        'bg-aurora-green/15 text-aurora-green border-aurora-green/30',
-  Moderate:    'bg-arctic-cyan/15 text-arctic-cyan border-arctic-cyan/30',
-  Challenging: 'bg-vibe-pink/15 text-vibe-pink border-vibe-pink/30',
-};
 
 export default function ActivityCard({ activity: rawActivity, image }: { activity: Activity; image?: string }) {
   const lang = useLang();
@@ -44,9 +38,6 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
           >
             <MapPin className="w-3 h-3" /> {destName}
           </Link>
-          <span className={`text-[11px] px-2.5 py-1 rounded-full border ${difficultyChip[rawActivity.difficulty]}`}>
-            {difficultyLabel(rawActivity.difficulty, lang)}
-          </span>
         </div>
       </div>
 
@@ -76,16 +67,6 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
             ))}
           </div>
         )}
-
-        <div className="flex items-center justify-between pt-3 border-t border-white/10 text-snow/75 text-xs mb-4">
-          <span className="inline-flex items-center gap-1">
-            <Clock className="w-3.5 h-3.5" /> {activity.duration}
-          </span>
-          <span className="inline-flex items-center gap-1">
-            <Users className="w-3.5 h-3.5" /> {activity.groupSize}
-          </span>
-          <span className="text-snow/75">{activity.operator}</span>
-        </div>
 
         {bookable ? (
           <AffiliateCTA
