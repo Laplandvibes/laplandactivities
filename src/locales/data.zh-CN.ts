@@ -74,7 +74,7 @@ export const ACT_ZHCN = {
   'ina-pielpajärvi': { title: '徒步前往 Pielpajärvi 荒野教堂', description: '徒步（冬季则滑雪）前往芬兰最偏远的教堂之一，它于 1760 年建于荒野之中。一条 4.5 公里的优美步道穿越百年古林。', highlights: ['历史教堂', '4.5 公里步道', '荒野环境'], duration: '4-5 小时', difficulty: '中等', category: '夏季探险' },
   'ina-aurora': { title: '从 Inari 追逐北极光', description: 'Inari 拥有芬兰最黑暗的夜空之一。向导借助实时极光数据，在湖区周边寻找最佳观赏点。', highlights: ['最黑暗的夜空', '实时追踪', '热饮与小食'], duration: '4 小时', difficulty: '简单', category: '北极光' },
   'ina-berry-foraging': { title: '采摘野生浆果与蘑菇', description: '在当地向导带领下，于北极森林中采摘云莓、越橘和蘑菇。学习传统的保存与烹饪方法。', highlights: ['云莓', '资深向导', '传统食谱'], duration: '3 小时', difficulty: '简单', category: '美食与饮品' },
-  'ruk-ski-resort': { title: 'Ruka 滑雪度假胜地', description: '34 条雪道、芬兰最长的滑雪季（10 月至 5 月）以及世界杯级别的越野滑雪路线。提供夜间滑雪。', highlights: ['34 条雪道', '最长滑雪季', '夜间滑雪'], duration: '日票', difficulty: '中等', category: '冬季运动' },
+  'ruk-ski-resort': { title: 'Ruka 滑雪度假胜地', description: '39 条雪道、芬兰最长的滑雪季（10 月至 5 月）以及世界杯级别的越野滑雪路线。提供夜间滑雪。', highlights: ['39 条雪道', '最长滑雪季', '夜间滑雪'], duration: '日票', difficulty: '中等', category: '冬季运动' },
   'ruk-karhunkierros': { title: 'Karhunkierros 熊径徒步', description: '芬兰最著名的徒步路线，82 公里穿越 Oulanka 国家公园。吊桥、激流、瀑布和未受侵扰的北方针叶林。', highlights: ['82 公里步道', '吊桥', 'Oulanka 国家公园'], duration: '2-5 天', difficulty: '高难度', category: '夏季探险' },
   'ruk-bear-watching': { title: '于隐蔽掩体观赏野生棕熊', description: '在邻近俄罗斯边境的摄影掩体中度过一夜，观察野生棕熊在其自然栖息地的活动。观赏成功率达 95%。', highlights: ['95% 成功率', '摄影掩体', '野生棕熊'], duration: '过夜', difficulty: '中等', category: '动物体验' },
   'ruk-river-rafting': { title: 'Kitka 河白水漂流', description: '在水质清澈见底的 Kitka 河上挑战 II-III 级激流，穿越 Oulanka 国家公园。肾上腺素与壮丽自然的完美融合。', highlights: ['II-III 级激流', 'Oulanka 风光', '提供全套装备'], duration: '3 小时', difficulty: '中等', category: '探险' },
