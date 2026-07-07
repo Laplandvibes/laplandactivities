@@ -83,25 +83,25 @@ export default function Home() {
       <Helmet>
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
-        <link rel="canonical" href={URL_SEG[lang] ? `https://laplandactivities.online/${URL_SEG[lang]}/` : 'https://laplandactivities.online/'} />
+        <link rel="canonical" href={URL_SEG[lang] ? `https://laplandactivities.fi/${URL_SEG[lang]}/` : 'https://laplandactivities.fi/'} />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={c.ogTitle} />
         <meta property="og:description" content={c.metaDescription} />
-        <meta property="og:url" content={URL_SEG[lang] ? `https://laplandactivities.online/${URL_SEG[lang]}/` : 'https://laplandactivities.online/'} />
-        <meta property="og:image" content="https://laplandactivities.online/og-default.jpg" />
+        <meta property="og:url" content={URL_SEG[lang] ? `https://laplandactivities.fi/${URL_SEG[lang]}/` : 'https://laplandactivities.fi/'} />
+        <meta property="og:image" content="https://laplandactivities.fi/og-default.jpg" />
         {(Object.keys(URL_SEG) as Lang[]).map((l) => (
-          <link key={l} rel="alternate" hrefLang={l} href={URL_SEG[l] ? `https://laplandactivities.online/${URL_SEG[l]}/` : 'https://laplandactivities.online/'} />
+          <link key={l} rel="alternate" hrefLang={l} href={URL_SEG[l] ? `https://laplandactivities.fi/${URL_SEG[l]}/` : 'https://laplandactivities.fi/'} />
         ))}
-        <link rel="alternate" hrefLang="x-default" href="https://laplandactivities.online/" />
+        <link rel="alternate" hrefLang="x-default" href="https://laplandactivities.fi/" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@graph': [
             {
               '@type': 'Organization',
-              '@id': 'https://laplandactivities.online/#org',
+              '@id': 'https://laplandactivities.fi/#org',
               name: 'LaplandActivities',
-              url: 'https://laplandactivities.online',
-              logo: 'https://laplandactivities.online/favicon.svg',
+              url: 'https://laplandactivities.fi',
+              logo: 'https://laplandactivities.fi/favicon.svg',
               inLanguage: BCP47[lang],
               parentOrganization: { '@type': 'Organization', name: 'LaplandVibes', url: 'https://laplandvibes.com' },
               sameAs: [
@@ -113,25 +113,25 @@ export default function Home() {
             },
             {
               '@type': 'WebSite',
-              '@id': 'https://laplandactivities.online/#site',
-              url: 'https://laplandactivities.online',
+              '@id': 'https://laplandactivities.fi/#site',
+              url: 'https://laplandactivities.fi',
               name: 'LaplandActivities',
               description: HOME_DESC[lang],
               inLanguage: BCP47[lang],
-              publisher: { '@id': 'https://laplandactivities.online/#org' },
+              publisher: { '@id': 'https://laplandactivities.fi/#org' },
             },
             {
               '@type': 'TouristTrip',
-              '@id': 'https://laplandactivities.online/#trip',
+              '@id': 'https://laplandactivities.fi/#trip',
               name: 'Lapland Activities & Tours',
               description: HOME_DESC[lang],
               inLanguage: BCP47[lang],
               touristType: ['Adventure tourism', 'Winter sports', 'Nature tourism'],
-              provider: { '@id': 'https://laplandactivities.online/#org' },
+              provider: { '@id': 'https://laplandactivities.fi/#org' },
             },
             {
               '@type': 'FAQPage',
-              '@id': 'https://laplandactivities.online/#faq',
+              '@id': 'https://laplandactivities.fi/#faq',
               inLanguage: BCP47[lang],
               mainEntity: faq.items.map((item) => ({
                 '@type': 'Question',

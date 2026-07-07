@@ -17,7 +17,7 @@ interface SEOProps {
   noindex?: boolean;
 }
 
-const BASE = 'https://laplandactivities.online';
+const BASE = 'https://laplandactivities.fi';
 const SITE_NAME = 'LaplandActivities';
 
 const PATH_PREFIX: Record<Lang, string> = {

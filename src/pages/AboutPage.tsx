@@ -18,7 +18,7 @@ export default function AboutPage() {
       <Helmet>
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
-        <link rel="canonical" href={`https://laplandactivities.online${path}`.replace(/\/?$/, '/')} />
+        <link rel="canonical" href={`https://laplandactivities.fi${path}`.replace(/\/?$/, '/')} />
         <meta name="robots" content="index, follow" />
       </Helmet>
 
@@ -55,9 +55,9 @@ export default function AboutPage() {
           <h2 className="font-heading text-3xl text-snow tracking-wide mb-3">{c.contactH2}</h2>
           <p className="text-snow/65 text-sm leading-relaxed">
             {c.contactBody1}
-            <a href="mailto:info@laplandactivities.online" className="text-arctic-cyan hover:underline">info@laplandactivities.online</a>
+            <a href="mailto:info@laplandactivities.fi" className="text-arctic-cyan hover:underline">info@laplandactivities.fi</a>
             {c.contactBody2}{' '}
-            <a href="mailto:sales@laplandactivities.online" className="text-arctic-cyan hover:underline">sales@laplandactivities.online</a>.
+            <a href="mailto:sales@laplandactivities.fi" className="text-arctic-cyan hover:underline">sales@laplandactivities.fi</a>.
           </p>
 
           <div className="mt-12">

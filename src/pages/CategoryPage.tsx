@@ -43,7 +43,7 @@ export default function CategoryPage() {
   const gygQ = gygQForCategory(slug || 'adventure');
   const heroImg = imageForCategory(slug || '');
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
-  const pageUrl = `https://laplandactivities.online${to(`/categories/${slug}`)}`.replace(/\/?$/, '/');
+  const pageUrl = `https://laplandactivities.fi${to(`/categories/${slug}`)}`.replace(/\/?$/, '/');
 
   // Season split — for year-round categories (adventure, animals, wellness, culture,
   // food) surface this-season activities first, then the other season. Single-season
@@ -74,19 +74,19 @@ export default function CategoryPage() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={`${category.name} · LaplandActivities`} />
         <meta property="og:description" content={category.description} />
-        <meta property="og:image" content={`https://laplandactivities.online${heroImg}`} />
+        <meta property="og:image" content={`https://laplandactivities.fi${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Article',
           headline: `${category.name}, Finnish Lapland`,
           description: category.description,
           mainEntityOfPage: pageUrl,
-          image: `https://laplandactivities.online${heroImg}`,
+          image: `https://laplandactivities.fi${heroImg}`,
           datePublished: '2025-01-01T00:00:00+02:00',
           dateModified: '2026-05-16T00:00:00+02:00',
           inLanguage: lang,
-          author: { '@type': 'Organization', name: 'LaplandActivities', url: 'https://laplandactivities.online' },
-          publisher: { '@type': 'Organization', name: 'LaplandVibes', logo: { '@type': 'ImageObject', url: 'https://laplandactivities.online/favicon.svg' } },
+          author: { '@type': 'Organization', name: 'LaplandActivities', url: 'https://laplandactivities.fi' },
+          publisher: { '@type': 'Organization', name: 'LaplandVibes', logo: { '@type': 'ImageObject', url: 'https://laplandactivities.fi/favicon.svg' } },
         })}</script>
       </Helmet>
 

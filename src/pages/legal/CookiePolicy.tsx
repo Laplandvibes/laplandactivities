@@ -9,7 +9,7 @@ export default function CookiePolicy() {
       <Helmet>
         <title>Cookie Policy · LaplandActivities</title>
         <meta name="description" content="How LaplandActivities uses cookies. GDPR + ePrivacy-compliant cookie policy for the LaplandVibes ecosystem." />
-        <link rel="canonical" href="https://laplandactivities.online/cookie-policy/" />
+        <link rel="canonical" href="https://laplandactivities.fi/cookie-policy/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <CookieContent siteId="laplandactivities" siteName="LaplandActivities" lang={lang} />

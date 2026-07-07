@@ -9,10 +9,10 @@ export default function Terms() {
       <Helmet>
         <title>Terms of Use · LaplandActivities</title>
         <meta name="description" content="Terms of use for LaplandActivities, the activity guide for Finnish Lapland. Editorial standards, affiliate disclosure, liability." />
-        <link rel="canonical" href="https://laplandactivities.online/terms/" />
+        <link rel="canonical" href="https://laplandactivities.fi/terms/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
-      <TermsContent siteName="LaplandActivities" siteUrl="laplandactivities.online" lang={lang} />
+      <TermsContent siteName="LaplandActivities" siteUrl="laplandactivities.fi" lang={lang} />
     </>
   );
 }

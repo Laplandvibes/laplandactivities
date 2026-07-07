@@ -42,7 +42,7 @@ export default function DestinationPage() {
   const tips = c.tipsByDestination[slug || ''] || [];
   const heroImg = imageForDestination(slug || '');
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
-  const pageUrl = `https://laplandactivities.online${to(`/destinations/${slug}`)}`.replace(/\/?$/, '/');
+  const pageUrl = `https://laplandactivities.fi${to(`/destinations/${slug}`)}`.replace(/\/?$/, '/');
 
   const categoryGroups = categories
     .map((cat) => ({ ...localizeCategory(cat, lang), activities: acts.filter((a) => a.categorySlug === cat.slug) }))
@@ -80,7 +80,7 @@ export default function DestinationPage() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={`${destination.name} · LaplandActivities`} />
         <meta property="og:description" content={destination.description} />
-        <meta property="og:image" content={`https://laplandactivities.online${heroImg}`} />
+        <meta property="og:image" content={`https://laplandactivities.fi${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'TouristDestination',
@@ -90,7 +90,7 @@ export default function DestinationPage() {
           containedInPlace: { '@type': 'AdministrativeArea', name: 'Finnish Lapland' },
           touristType: destination.bestFor,
           inLanguage: lang,
-          image: `https://laplandactivities.online${heroImg}`,
+          image: `https://laplandactivities.fi${heroImg}`,
         })}</script>
       </Helmet>
 

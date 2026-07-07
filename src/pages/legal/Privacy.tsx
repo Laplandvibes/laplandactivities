@@ -9,7 +9,7 @@ export default function Privacy() {
       <Helmet>
         <title>Privacy Policy · LaplandActivities</title>
         <meta name="description" content="How LaplandActivities collects, stores, and protects your data. GDPR-compliant privacy policy for the LaplandVibes ecosystem." />
-        <link rel="canonical" href="https://laplandactivities.online/privacy/" />
+        <link rel="canonical" href="https://laplandactivities.fi/privacy/" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <PrivacyContent siteName="LaplandActivities" lang={lang} />

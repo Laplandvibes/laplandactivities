@@ -31,4 +31,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://laplandactivities.online/sitemap.xml
+Sitemap: https://laplandactivities.fi/sitemap.xml

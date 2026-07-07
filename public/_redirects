@@ -1,0 +1,4 @@
+# Canonical move 2026-07-07: .fi is primary (Vesa), .online 301s over.
+https://laplandactivities.online/* https://laplandactivities.fi/:splat 301
+https://www.laplandactivities.online/* https://laplandactivities.fi/:splat 301
+https://www.laplandactivities.fi/* https://laplandactivities.fi/:splat 301
