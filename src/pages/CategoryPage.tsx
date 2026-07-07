@@ -170,6 +170,7 @@ export default function CategoryPage() {
       </section>
 
       <GetYourGuideWidget
+        locationId="2652"
         cmpTag={`laplandactivities-cat-${slug}`}
         title={`${c.gygTitlePrefix} ${category.name}`}
         eyebrow={c.gygEyebrow}

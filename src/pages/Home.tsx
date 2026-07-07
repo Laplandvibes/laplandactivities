@@ -188,6 +188,7 @@ export default function Home() {
       </section>
 
       <GetYourGuideWidget
+        locationId="2652"
         cmpTag="laplandactivities-home-auto"
         title={c.gygTitle}
         eyebrow={c.gygEyebrow}

@@ -221,6 +221,7 @@ export default function DestinationPage() {
       )}
 
       <GetYourGuideWidget
+        locationId={destination.gygLocationId}
         cmpTag={`laplandactivities-dest-${slug}`}
         title={`${c.gygTitlePrefix} ${destination.name} ${c.gygTitleSuffix}`}
         eyebrow={c.gygEyebrow}

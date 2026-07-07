@@ -101,7 +101,7 @@ export default function DestinationsIndex() {
         </section>
       </main>
 
-      <GetYourGuideWidget cmpTag="laplandactivities-destinations-auto" title={c.gygTitle} eyebrow={c.gygEyebrow} />
+      <GetYourGuideWidget locationId="2652" cmpTag="laplandactivities-destinations-auto" title={c.gygTitle} eyebrow={c.gygEyebrow} />
       <BookingCTA />
     </>
   );

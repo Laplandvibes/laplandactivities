@@ -5,6 +5,7 @@ import AffiliateCTA from './AffiliateCTA';
 import { destinations } from '../data/destinations';
 import { categories } from '../data/categories';
 import { useLang, useLocalePath, pick } from '../i18n/useLang';
+import EcosystemMenu from '../../../shared/EcosystemMenu';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 
@@ -158,13 +159,16 @@ export default function Navigation() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <Link to={to('/')} className="flex items-center" aria-label="LaplandActivities home">
-          <span className="font-heading tracking-wide text-2xl sm:text-3xl">
-            <span className="text-vibe-pink">#</span>
-            <span className="text-snow">LAPLAND</span>
-            <span className="text-vibe-pink">ACTIVITIES</span>
-          </span>
-        </Link>
+        <div className="flex items-center gap-3 sm:gap-5 shrink-0">
+          <EcosystemMenu lang={lang} currentDomain="laplandactivities.online" />
+          <Link to={to('/')} className="flex items-center" aria-label="LaplandActivities home">
+            <span className="font-heading tracking-wide text-2xl sm:text-3xl">
+              <span className="text-vibe-pink">#</span>
+              <span className="text-snow">LAPLAND</span>
+              <span className="text-vibe-pink">ACTIVITIES</span>
+            </span>
+          </Link>
+        </div>
 
         <div className="hidden md:flex items-center gap-5 lg:gap-6" ref={dropRef}>
           <Link

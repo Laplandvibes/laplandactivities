@@ -117,6 +117,7 @@ export default function SummerBand() {
       </div>
 
       <GetYourGuideWidget
+        locationId="2652"
         cmpTag={gygCmp}
         title={c.gygTitle}
         eyebrow={c.gygEyebrow}

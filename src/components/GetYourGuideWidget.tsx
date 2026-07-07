@@ -86,8 +86,12 @@ const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string;
 interface Props {
   /** Campaign tag (cmp) — used by GYG analytics. Lowercase, hyphenated. */
   cmpTag: string;
-  /** Optional GYG location ID, e.g. 'l2653' for Rovaniemi. Omit for "all of Lapland". */
-  locationId?: string;
+  /** GYG numeric location ID (REQUIRED). Canonical verified table:
+   *  laplandvibes/_affiliate/gyg-location-ids.md — e.g. Rovaniemi 2653,
+   *  Inari 164594, Lapland region 2652. NEVER omit: without a valid ID the
+   *  SDK falls back to its GLOBAL list (Shanghai tours on an Inari page,
+   *  Vesa 2026-07-07). Note: 178 was invalid and caused exactly that. */
+  locationId: string;
   /** Number of tour cards to show. Defaults to 3. */
   numberOfItems?: number;
   /** Section heading. */
@@ -111,7 +115,9 @@ export default function GetYourGuideWidget({
   const resolvedTitle = title ?? d.title;
   const resolvedEyebrow = eyebrow ?? d.eyebrow;
   const resolvedSubtitle = subtitle ?? d.subtitle;
-  const widgetType = locationId ? 'activities' : 'auto';
+  // 'auto' and 'city' widget modes are BANNED (2026-07-02 rule) — they ignore
+  // location targeting and show GYG's global inventory.
+  const widgetType = 'activities';
 
   return (
     <section className="py-14 sm:py-20 px-4 sm:px-6 bg-deep-night border-t border-white/5">
@@ -132,7 +138,7 @@ export default function GetYourGuideWidget({
           data-gyg-partner-id={GYG_PARTNER_ID}
           data-gyg-locale-code={GYG_LOCALE[lang]}
           data-gyg-cmp={cmpTag}
-          {...(locationId ? { 'data-gyg-location-id': locationId } : {})}
+          data-gyg-location-id={locationId}
           {...(numberOfItems ? { 'data-gyg-number-of-items': String(numberOfItems) } : {})}
         />
 

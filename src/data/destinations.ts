@@ -9,6 +9,8 @@ export interface Destination {
   elevation: string;
   bestFor: string;
   operators: string[];
+  /** GYG numeric location ID — canonical: laplandvibes/_affiliate/gyg-location-ids.md */
+  gygLocationId: string;
   image: string;
   heroImage: string;
 }
@@ -16,6 +18,7 @@ export interface Destination {
 export const destinations: Destination[] = [
   {
     slug: 'rovaniemi',
+    gygLocationId: '2653',
     name: 'Rovaniemi',
     tagline: 'The Official Hometown of Santa Claus',
     description: 'The capital of Lapland and gateway to arctic adventures. Home to Santa Claus Village, excellent transport links, and a huge range of winter and summer activities.',
@@ -28,6 +31,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'levi',
+    gygLocationId: '150197',
     name: 'Levi',
     tagline: 'Finland\'s Largest Ski Resort',
     description: 'A premier ski destination with 43 slopes and 230 km of cross-country trails. Vibrant après-ski scene at Hullu Poro and year-round outdoor activities.',
@@ -40,6 +44,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'yllas',
+    gygLocationId: '87669',
     name: 'Ylläs',
     tagline: 'The Longest Slopes in Finland',
     description: 'Two ski resorts on either side of Ylläs fell offer the longest runs in Finland at 3.2 km. A quieter, more authentic Lapland experience with Pallas-Yllästunturi National Park.',
@@ -52,6 +57,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'saariselka',
+    gygLocationId: '181615',
     name: 'Saariselkä',
     tagline: 'Gateway to Urho Kekkonen National Park',
     description: 'The northernmost ski resort in Finland, bordering one of Europe\'s largest wilderness areas. Famous for aurora viewing, gold panning, and the legendary Kiilopää smoke sauna.',
@@ -64,6 +70,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'inari',
+    gygLocationId: '164594',
     name: 'Inari',
     tagline: 'Heart of Sámi Culture',
     description: 'Located on the shores of Lake Inari with over 3,000 islands, this is the cultural capital of the Finnish Sámi people. Home to the Siida museum and pristine wilderness.',
@@ -76,6 +83,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'ruka',
+    gygLocationId: '113322',
     name: 'Ruka & Kuusamo',
     tagline: 'Wilderness Capital of Finland',
     description: 'Home to the legendary Karhunkierros Bear Trail, Oulanka National Park, and one of Finland\'s best ski resorts. Famous for bear watching, river rafting, and the longest ski season.',
@@ -88,6 +96,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'posio',
+    gygLocationId: '217155',
     name: 'Posio',
     tagline: 'Hidden Gem of Eastern Lapland',
     description: 'Famous for the spectacular snow-crowned trees of Riisitunturi National Park and the frozen waterfalls of Korouoma canyon. Off the beaten path, pure wilderness.',
@@ -100,6 +109,7 @@ export const destinations: Destination[] = [
   },
   {
     slug: 'tornio',
+    gygLocationId: '192017',
     name: 'Tornio & Kemi',
     tagline: 'Arctic Border Adventures',
     description: 'The Finland-Sweden border town and gateway to unique Arctic experiences. Home to the legendary Icebreaker Sampo cruise, the world\'s largest SnowCastle, and Europe\'s best salmon river.',
