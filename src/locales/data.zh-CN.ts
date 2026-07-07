@@ -32,7 +32,6 @@ export const ACT_ZHCN = {
   'rov-snowmobile-full': { title: '荒野雪地摩托探险（全天）', description: '一场深入拉普兰荒野的 100 公里史诗级雪地摩托之旅。穿越冰封河流、驰骋林间小径，并在荒野小屋享用午餐。', highlights: ['100 公里路线', '荒野小屋午餐', '渡河'], duration: '7 小时', difficulty: '高难度', category: '探险' },
   'rov-ice-karting': { title: '家庭雪地摩托与冰上卡丁车组合', description: '从儿童迷你雪地摩托开始，再在冰道上驾驶卡丁车竞速。结束后用热巧克力暖身。', highlights: ['儿童雪地摩托', '冰上卡丁车赛道', '适合家庭'], duration: '3 小时', difficulty: '简单', category: '探险' },
   'rov-arktikum': { title: 'Arktikum 科学博物馆与北极中心', description: '在这座建筑非凡、玻璃隧道俯瞰 Ounasjoki 河的高水准博物馆中，探索北极地区迷人的历史与文化。', highlights: ['互动展览', '极光剧场', '北极历史'], duration: '2-3 小时', difficulty: '简单', category: '文化与遗产' },
-  'ruka-bear-hide': { title: '隐蔽屋观棕熊', description: '坐进东部边境附近的专业摄影隐蔽屋,黄昏时分野生棕熊从泰加林中走出。向导讲解安全事项后,剩下的只有你、寂静和芬兰最大的掠食者。最佳季节为5月至8月。', highlights: ['野生棕熊,无围栏', '专业隐蔽屋与向导', '最佳季节5-8月'], duration: '傍晚至清晨', difficulty: '轻松', category: '动物体验' },
   'rov-husky-summer': { title: '夏季哈士奇犬舍参观与幼犬互动', description: '看看雪橇犬如何度假:夏季参观运营中的犬舍,见到当年出生的幼犬,了解哈士奇在两季之间如何训练与休整。安静、适合全家的行程,幼犬区是当之无愧的亮点。', highlights: ['见到当年的幼犬', '参观运营犬舍', '适合全家'], duration: '2小时', difficulty: '轻松', category: '动物体验' },
   'rov-ranua-zoo': { title: 'Ranua 野生动物园，北极熊', description: '与北极动物相遇，包括芬兰唯一的北极熊。沿着雪径漫步，观赏狼獾、猞猁、狼以及逾 50 种野生动物。', highlights: ['北极熊', '逾 50 种北极物种', '步道'], duration: '3-4 小时', difficulty: '简单', category: '动物体验' },
   'rov-ice-floating': { title: '北极冰上漂浮体验', description: '身着干式潜水服，在北极天空下漂浮于冰封河面。这是一段超现实而宁静的体验，结束后在保暖的帐篷里享用热饮。', highlights: ['提供干式潜水服', '含热饮', '独特体验'], duration: '2 小时', difficulty: '简单', category: '康养与桑拿' },

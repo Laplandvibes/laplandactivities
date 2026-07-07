@@ -87,22 +87,6 @@ export const activities: Activity[] = [
     highlights: ['Sami culture talk', '2 km sleigh ride', 'Reindeer feeding'],
   },
   {
-    id: 'ruka-bear-hide',
-    title: 'Brown Bear Watching from a Wilderness Hide',
-    operator: 'Local wildlife guides',
-    destination: 'Ruka',
-    destinationSlug: 'ruka',
-    category: 'Animal Experiences',
-    categorySlug: 'animals',
-    price: 0,
-    duration: 'Evening to morning',
-    difficulty: 'Easy',
-    season: ['summer', 'autumn'],
-    description: 'Sit in a professional photography hide near the eastern border as wild brown bears wander out of the taiga at dusk. Guides brief you on safety, then it is just you, the silence and Finland\'s largest predator. Prime season runs May to August.',
-    groupSize: '2-8',
-    highlights: ['Wild brown bears, no fences', 'Professional hide & guide', 'Prime season May-August'],
-  },
-  {
     id: 'rov-husky-summer',
     title: 'Summer Husky Kennel Visit & Puppy Meet',
     operator: 'Rovaniemi husky kennels',
@@ -285,7 +269,7 @@ export const activities: Activity[] = [
   {
     id: 'lev-ice-karting',
     title: 'Ice Karting on Frozen Lake',
-    operator: 'Levi Activities',
+    operator: 'Local activity operators',
     destination: 'Levi',
     destinationSlug: 'levi',
     category: 'Adventure',
@@ -333,7 +317,7 @@ export const activities: Activity[] = [
   {
     id: 'lev-husky-safari',
     title: 'Levi Husky Safari',
-    operator: 'Bearhill Husky',
+    operator: 'Levi Husky Park',
     destination: 'Levi',
     destinationSlug: 'levi',
     category: 'Animal Experiences',
@@ -365,7 +349,7 @@ export const activities: Activity[] = [
   {
     id: 'lev-aurora-photo',
     title: 'Northern Lights Photography Tour',
-    operator: 'Beyond Arctic',
+    operator: 'Local photography guides',
     destination: 'Levi',
     destinationSlug: 'levi',
     category: 'Northern Lights',
@@ -413,7 +397,7 @@ export const activities: Activity[] = [
   {
     id: 'lev-fatbike',
     title: 'Fat Bike Tour Through Snow Forest',
-    operator: 'Levi Activities',
+    operator: 'Local activity operators',
     destination: 'Levi',
     destinationSlug: 'levi',
     category: 'Winter Sports',
@@ -445,7 +429,7 @@ export const activities: Activity[] = [
   {
     id: 'lev-kota-dinner',
     title: 'Kota Restaurant Dinner',
-    operator: 'Kammi Restaurant',
+    operator: 'Saamen Kammi',
     destination: 'Levi',
     destinationSlug: 'levi',
     category: 'Food & Drink',
@@ -528,7 +512,7 @@ export const activities: Activity[] = [
   {
     id: 'yll-husky',
     title: 'Husky Safari in Äkäslompolo',
-    operator: 'Erä-Susi Huskies',
+    operator: 'Pallas Husky',
     destination: 'Ylläs',
     destinationSlug: 'yllas',
     category: 'Animal Experiences',
@@ -625,7 +609,7 @@ export const activities: Activity[] = [
   },
   {
     id: 'saa-amethyst-mine',
-    title: 'Amethyst Mine Visit',
+    title: 'Amethyst Mine Day Trip (Luosto)',
     operator: 'Amethyst Mine Lapland',
     destination: 'Saariselkä',
     destinationSlug: 'saariselka',
@@ -757,7 +741,7 @@ export const activities: Activity[] = [
   {
     id: 'ina-midnight-kayak',
     title: 'Midnight Sun Kayaking on Lake Inari',
-    operator: 'Beyond Arctic',
+    operator: 'Local guides',
     destination: 'Inari',
     destinationSlug: 'inari',
     category: 'Summer Adventures',
@@ -773,7 +757,7 @@ export const activities: Activity[] = [
   {
     id: 'ina-sami-experience',
     title: 'Authentic Sámi Reindeer Herding',
-    operator: 'Inari Sámi Heritage',
+    operator: 'Local reindeer-herding families',
     destination: 'Inari',
     destinationSlug: 'inari',
     category: 'Animal Experiences',
@@ -805,7 +789,7 @@ export const activities: Activity[] = [
   {
     id: 'ina-aurora',
     title: 'Northern Lights Hunt from Inari',
-    operator: 'Beyond Arctic',
+    operator: 'Local aurora guides',
     destination: 'Inari',
     destinationSlug: 'inari',
     category: 'Northern Lights',
@@ -821,7 +805,7 @@ export const activities: Activity[] = [
   {
     id: 'ina-berry-foraging',
     title: 'Wild Berry & Mushroom Foraging',
-    operator: 'Inari Sámi Heritage',
+    operator: 'Local nature guides',
     destination: 'Inari',
     destinationSlug: 'inari',
     category: 'Food & Drink',
@@ -872,7 +856,7 @@ export const activities: Activity[] = [
   {
     id: 'ruk-bear-watching',
     title: 'Wild Bear Watching from Hide',
-    operator: 'Kuusamo Nature Photography',
+    operator: 'Local wildlife guides',
     destination: 'Ruka',
     destinationSlug: 'ruka',
     category: 'Animal Experiences',
@@ -905,7 +889,7 @@ export const activities: Activity[] = [
   {
     id: 'ruk-snowmobile',
     title: 'Snowmobile Safari Through Ruka Wilderness',
-    operator: 'Kuusamo Safaris',
+    operator: 'Ruka Safaris',
     destination: 'Ruka',
     destinationSlug: 'ruka',
     category: 'Adventure',
@@ -921,7 +905,7 @@ export const activities: Activity[] = [
   {
     id: 'ruk-husky',
     title: 'Ruka Husky Safari',
-    operator: 'Ruka Husky',
+    operator: 'Erä-Susi Huskies',
     destination: 'Ruka',
     destinationSlug: 'ruka',
     category: 'Animal Experiences',
@@ -953,7 +937,7 @@ export const activities: Activity[] = [
   {
     id: 'ruk-aurora',
     title: 'Northern Lights Snowshoe Hike',
-    operator: 'Kuusamo Safaris',
+    operator: 'Ruka Safaris',
     destination: 'Ruka',
     destinationSlug: 'ruka',
     category: 'Northern Lights',
@@ -987,7 +971,7 @@ export const activities: Activity[] = [
   {
     id: 'pos-korouoma',
     title: 'Korouoma Canyon & Frozen Waterfalls',
-    operator: 'Posio Adventures',
+    operator: 'Local wilderness guides',
     destination: 'Posio',
     destinationSlug: 'posio',
     category: 'Adventure',
@@ -1070,7 +1054,7 @@ export const activities: Activity[] = [
   {
     id: 'tor-salmon-fishing',
     title: 'Tornionjoki Salmon Fishing',
-    operator: 'Tornio Fishing Tours',
+    operator: 'Local fishing guides',
     destination: 'Tornio',
     destinationSlug: 'tornio',
     category: 'Summer Adventures',
@@ -1086,7 +1070,7 @@ export const activities: Activity[] = [
   {
     id: 'tor-whitefish-festival',
     title: 'Kukkolankoski Whitefish Experience',
-    operator: 'Kukkolankoski Rapids',
+    operator: 'Local guides at Kukkolankoski',
     destination: 'Tornio',
     destinationSlug: 'tornio',
     category: 'Food & Drink',
