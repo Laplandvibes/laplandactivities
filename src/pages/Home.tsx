@@ -56,6 +56,17 @@ const HOME_DESC: Record<Lang, string> = {
 const SEASON_ICONS = [Snowflake, Trees, Sun, Leaf];
 const SEASON_ACCENTS = ['arctic-cyan', 'aurora-green', 'vibe-pink', 'vibe-pink'];
 
+// Per-question links to the pages that back each FAQ answer (Vesa 2026-07-07:
+// FAQ answers must point to our own supporting content). Labels reuse the
+// existing nav translations — no new keys, works in all 11 languages.
+const FAQ_LINKS: { route: string; label: 'categories' | 'destinations' | 'about' }[][] = [
+  [{ route: '/categories', label: 'categories' }],                                              // 1 what activities
+  [{ route: '/categories', label: 'categories' }],                                              // 2 winter vs summer
+  [{ route: '/categories', label: 'categories' }, { route: '/about', label: 'about' }],         // 3 costs → browse + how we list
+  [{ route: '/categories', label: 'categories' }],                                              // 4 kids
+  [{ route: '/destinations', label: 'destinations' }, { route: '/categories', label: 'categories' }], // 5 booking ahead
+];
+
 export default function Home() {
   const lang = useLang();
   const to = useLocalePath();
@@ -373,6 +384,19 @@ export default function Home() {
                 </summary>
                 <div className="px-5 sm:px-6 pb-5 sm:pb-6 -mt-1">
                   <p className="text-snow/75 text-sm sm:text-base leading-relaxed">{item.a}</p>
+                  {(FAQ_LINKS[i] ?? []).length > 0 && (
+                    <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
+                      {FAQ_LINKS[i].map(({ route, label }) => (
+                        <Link
+                          key={route}
+                          to={to(route)}
+                          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-arctic-cyan hover:text-vibe-pink transition-colors"
+                        >
+                          {COPY[lang].nav[label]} <ArrowRight className="w-3.5 h-3.5 shrink-0" />
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </details>
             ))}
