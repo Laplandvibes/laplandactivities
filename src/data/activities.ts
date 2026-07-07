@@ -523,7 +523,7 @@ export const activities: Activity[] = [
     season: ['winter', 'spring'],
     description: 'Drive your own husky team through Pallas-Yllästunturi National Park with a small family-run farm from Rauhala, north of Ylläs. Maximum six guests per tour.',
     groupSize: '2-6',
-    highlights: ['Small group', 'Forest trails', 'Meet the huskies'],
+    highlights: ['Small group', 'National park trails', 'Meet the huskies'],
   },
   {
     id: 'yll-snowshoe',
