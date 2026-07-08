@@ -2,9 +2,41 @@
 // (see <head>, data-gyg-partner-id="VRMKD7N"). The SDK auto-scans the DOM and
 // renders any element with data-gyg-widget on every page including SPA route changes.
 
+import { useEffect, useRef, useState } from 'react';
+import { Compass, ArrowUpRight } from 'lucide-react';
 import { useLang, type Lang } from '../i18n/useLang';
+import AffiliateCTA from './AffiliateCTA';
 
 const GYG_PARTNER_ID = 'VRMKD7N';
+
+// Shown when the embed is blocked (ad-block / tracking protection) so the
+// section reads as an enticing panel + CTA instead of an empty box.
+const BROWSE_CTA: Record<Lang, string> = {
+  en: 'Browse tours on GetYourGuide',
+  fi: 'Selaa retkiä GetYourGuidessa',
+  de: 'Touren auf GetYourGuide ansehen',
+  ja: 'GetYourGuide でツアーを見る',
+  es: 'Ver tours en GetYourGuide',
+  'pt-BR': 'Ver passeios no GetYourGuide',
+  'zh-CN': '在 GetYourGuide 浏览行程',
+  ko: 'GetYourGuide에서 투어 보기',
+  fr: 'Voir les tours sur GetYourGuide',
+  it: 'Sfoglia i tour su GetYourGuide',
+  nl: 'Tours bekijken op GetYourGuide',
+};
+const FALLBACK_LEAD: Record<Lang, string> = {
+  en: 'Hand-picked Lapland tours — live prices, free cancellation on most, instant confirmation.',
+  fi: 'Käsin valittuja Lapin retkiä — live-hinnat, useimmissa ilmainen peruutus, vahvistus heti.',
+  de: 'Handverlesene Lappland-Touren — Live-Preise, bei den meisten kostenlose Stornierung, sofortige Bestätigung.',
+  ja: '厳選したラップランドのツアー — リアルタイムの料金、多くが無料キャンセル、即時確定。',
+  es: 'Tours seleccionados de Laponia: precios en tiempo real, cancelación gratuita en la mayoría, confirmación inmediata.',
+  'pt-BR': 'Passeios selecionados da Lapônia — preços em tempo real, cancelamento grátis na maioria, confirmação imediata.',
+  'zh-CN': '精选拉普兰行程——实时价格、多数可免费取消、即时确认。',
+  ko: '엄선한 라플란드 투어 — 실시간 가격, 대부분 무료 취소, 즉시 확정.',
+  fr: 'Excursions sélectionnées en Laponie — prix en temps réel, annulation gratuite sur la plupart, confirmation immédiate.',
+  it: 'Tour selezionati della Lapponia — prezzi in tempo reale, cancellazione gratuita sulla maggior parte, conferma immediata.',
+  nl: 'Zorgvuldig gekozen Lapland-tours — actuele prijzen, gratis annulering op de meeste, directe bevestiging.',
+};
 
 // Map the page language → GetYourGuide widget locale code, so the embedded tour
 // cards render in the visitor's language. Without this the GYG SDK geo-defaults
@@ -100,6 +132,8 @@ interface Props {
   eyebrow?: string;
   /** Optional sub-line under the heading. */
   subtitle?: string;
+  /** GYG search query for the ad-block fallback CTA (never 404s). Defaults to 'Lapland'. */
+  fallbackQuery?: string;
 }
 
 export default function GetYourGuideWidget({
@@ -109,12 +143,24 @@ export default function GetYourGuideWidget({
   title,
   eyebrow,
   subtitle,
+  fallbackQuery = 'Lapland',
 }: Props) {
   const lang = useLang();
   const d = DEFAULTS[lang];
   const resolvedTitle = title ?? d.title;
   const resolvedEyebrow = eyebrow ?? d.eyebrow;
   const resolvedSubtitle = subtitle ?? d.subtitle;
+  const boxRef = useRef<HTMLDivElement>(null);
+  const [blocked, setBlocked] = useState(false);
+
+  // If no iframe has mounted shortly after render, the embed is blocked — swap
+  // the empty box for a designed panel + a GYG search CTA (never 404s).
+  useEffect(() => {
+    const t = setTimeout(() => {
+      setBlocked(!(boxRef.current?.querySelector('iframe')));
+    }, 2500);
+    return () => clearTimeout(t);
+  }, [lang, locationId]);
   // 'auto' and 'city' widget modes are BANNED (2026-07-02 rule) — they ignore
   // location targeting and show GYG's global inventory.
   const widgetType = 'activities';
@@ -133,6 +179,8 @@ export default function GetYourGuideWidget({
         </div>
 
         <div
+          ref={boxRef}
+          className={blocked ? 'hidden' : ''}
           key={`gyg-${lang}`}
           data-gyg-widget={widgetType}
           data-gyg-partner-id={GYG_PARTNER_ID}
@@ -141,6 +189,26 @@ export default function GetYourGuideWidget({
           data-gyg-location-id={locationId}
           {...(numberOfItems ? { 'data-gyg-number-of-items': String(numberOfItems) } : {})}
         />
+
+        {blocked && (
+          <div className="flex flex-col items-center text-center rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-8">
+            <span className="grid place-items-center w-12 h-12 rounded-full bg-vibe-pink/15 border border-vibe-pink/40 text-vibe-pink mb-4">
+              <Compass className="w-6 h-6" strokeWidth={2} />
+            </span>
+            <p className="text-snow/80 text-sm leading-relaxed max-w-md mb-5">
+              {FALLBACK_LEAD[lang] ?? FALLBACK_LEAD.en}
+            </p>
+            <AffiliateCTA
+              partner="activities-search"
+              sid={`${cmpTag.replace(/[^a-z0-9_]/gi, '_')}_fallback`}
+              destination={fallbackQuery}
+              className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white font-bold px-6 py-3 rounded-full text-sm transition-colors"
+            >
+              {BROWSE_CTA[lang] ?? BROWSE_CTA.en}
+              <ArrowUpRight className="w-4 h-4" strokeWidth={2.4} />
+            </AffiliateCTA>
+          </div>
+        )}
 
         <p className="text-center mt-6 text-[11px] text-snow/75">
           {d.pricesNote}
