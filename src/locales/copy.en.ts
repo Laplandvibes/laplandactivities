@@ -308,6 +308,11 @@ const en: SectionCopy = {
       liability: 'High-liability · 2026',
       explore: 'Keep exploring',
     },
+    imageAlts: {
+      river: 'A wide subarctic salmon river in Lapland with gravel bars and shallow riffles under the golden midnight sun',
+      ice: 'A frozen Lapland lake with a drilled ice-fishing hole and an ice auger under a low winter sun',
+      kingCrab: 'A snow-dusted Arctic Norway fjord shore with crab pots stacked on a weathered wooden dock',
+    },
     eco: {
       title: 'The fish come first',
       lead: 'Lapland’s waters are under real pressure, and the rules reflect it. Four short stories explain why some rivers are wide open and others are shut — and why catch-and-release shows up on nearly every card below.',

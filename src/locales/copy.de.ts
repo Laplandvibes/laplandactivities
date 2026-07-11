@@ -20,6 +20,11 @@ const de: SectionCopy = {
       liability: 'Hohe Haftung · 2026',
       explore: 'Weiter entdecken',
     },
+    imageAlts: {
+      river: 'Ein breiter subarktischer Lachsfluss in Lappland mit Kiesbänken und flachen Stromschnellen im goldenen Licht der Mitternachtssonne',
+      ice: 'Ein zugefrorener See in Lappland mit einem gebohrten Eisangelloch und einem Eisbohrer unter tiefstehender Wintersonne',
+      kingCrab: 'Eine schneebedeckte Fjordküste im arktischen Norwegen mit gestapelten Krabbenreusen auf einem verwitterten Holzsteg',
+    },
     eco: {
       title: 'Die Fische zuerst',
       lead: 'Lapplands Gewässer stehen unter echtem Druck, und die Regeln spiegeln das wider. Vier kurze Geschichten erklären, warum manche Flüsse weit offen und andere geschlossen sind — und warum "Fangen und Zurücksetzen" auf fast jeder Karte unten auftaucht.',

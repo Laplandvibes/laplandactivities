@@ -20,6 +20,11 @@ const it: SectionCopy = {
       liability: 'Alta responsabilità · 2026',
       explore: 'Continua a esplorare',
     },
+    imageAlts: {
+      river: 'Un ampio fiume da salmone subartico in Lapponia con banchi di ghiaia e rapide poco profonde sotto il sole dorato di mezzanotte',
+      ice: 'Un lago ghiacciato della Lapponia con un foro per la pesca sul ghiaccio e una trivella sotto un sole invernale basso',
+      kingCrab: 'Una riva di fiordo della Norvegia artica spolverata di neve con nasse per granchi impilate su un molo di legno consumato',
+    },
     eco: {
       title: 'Il pesce viene prima',
       lead: 'Le acque della Lapponia sono sotto reale pressione, e le regole lo rispecchiano. Quattro brevi storie spiegano perché alcuni fiumi sono del tutto aperti e altri chiusi, e perché la cattura e rilascio compare su quasi tutte le schede qui sotto.',

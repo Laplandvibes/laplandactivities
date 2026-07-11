@@ -20,6 +20,11 @@ const fi: SectionCopy = {
       liability: 'Suuri vastuu · 2026',
       explore: 'Jatka tutkimista',
     },
+    imageAlts: {
+      river: 'Leveä subarktinen lohijoki Lapissa sorasärkkineen ja mataline koskineen kultaisen keskiyön auringon alla',
+      ice: 'Jäätynyt Lapin järvi, johon on kairattu pilkkireikä, ja jäähän pystytetty kaira matalan talviauringon alla',
+      kingCrab: 'Lumen peittämä Arktisen Norjan vuonon ranta, jossa rapumertoja pinottuna sään harmaannuttamalle puulaiturille',
+    },
     eco: {
       title: 'Kalat ensin',
       lead: 'Lapin vedet ovat todellisen paineen alla, ja säännöt heijastavat sitä. Neljä lyhyttä tarinaa selittää, miksi jotkin joet ovat auki ja toiset kiinni — ja miksi pyydä ja päästä toistuu lähes joka kortissa alla.',

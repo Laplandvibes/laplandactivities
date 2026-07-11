@@ -20,6 +20,11 @@ const fr: SectionCopy = {
       liability: 'Forte responsabilité · 2026',
       explore: 'Continuer l\'exploration',
     },
+    imageAlts: {
+      river: 'Une large rivière à saumon subarctique en Laponie avec des bancs de gravier et des rapides peu profonds sous le soleil doré de minuit',
+      ice: 'Un lac gelé de Laponie avec un trou de pêche sur glace foré et une tarière sous un soleil d\'hiver bas',
+      kingCrab: 'Un rivage de fjord de la Norvège arctique saupoudré de neige avec des casiers à crabes empilés sur un ponton en bois patiné',
+    },
     eco: {
       title: 'Le poisson passe d\'abord',
       lead: 'Les eaux de Laponie sont réellement sous pression, et les règles le reflètent. Quatre courtes histoires expliquent pourquoi certaines rivières sont grandes ouvertes et d\'autres fermées, et pourquoi la remise à l\'eau figure sur presque toutes les fiches ci-dessous.',

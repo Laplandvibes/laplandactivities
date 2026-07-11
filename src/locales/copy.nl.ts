@@ -20,6 +20,11 @@ const nl: SectionCopy = {
       liability: "Hoge aansprakelijkheid · 2026",
       explore: "Blijf ontdekken",
     },
+    imageAlts: {
+      river: 'Een brede subarctische zalmrivier in Lapland met grindbanken en ondiepe stroomversnellingen onder de gouden middernachtzon',
+      ice: 'Een bevroren meer in Lapland met een geboord ijsvisgat en een ijsboor onder een lage winterzon',
+      kingCrab: 'Een met sneeuw bedekte fjordkust in Arctisch Noorwegen met krabbenkorven opgestapeld op een verweerde houten steiger',
+    },
     eco: {
       title: "De vis gaat voor",
       lead: "De wateren van Lapland staan onder echte druk, en de regels weerspiegelen dat. Vier korte verhalen leggen uit waarom sommige rivieren wijd open staan en andere gesloten zijn — en waarom vangen-en-terugzetten op vrijwel elke kaart hieronder terugkomt.",

@@ -20,6 +20,11 @@ const es: SectionCopy = {
       liability: 'Alta responsabilidad · 2026',
       explore: 'Siga explorando',
     },
+    imageAlts: {
+      river: 'Un ancho río salmonero subártico en Laponia con bancos de grava y rápidos poco profundos bajo el sol dorado de medianoche',
+      ice: 'Un lago helado de Laponia con un agujero de pesca en hielo perforado y una barrena bajo un sol bajo de invierno',
+      kingCrab: 'Una orilla de fiordo del Ártico noruego cubierta de nieve con nasas de cangrejo apiladas en un muelle de madera desgastada',
+    },
     eco: {
       title: 'El pez va primero',
       lead: 'Las aguas de Laponia están bajo verdadera presión, y las normas lo reflejan. Cuatro breves historias explican por qué algunos ríos están completamente abiertos y otros cerrados, y por qué la captura y suelta aparece en casi todas las fichas de abajo.',

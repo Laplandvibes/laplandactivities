@@ -20,6 +20,11 @@ const ptBR: SectionCopy = {
       liability: "Alta responsabilidade · 2026",
       explore: "Continue explorando",
     },
+    imageAlts: {
+      river: 'Um amplo rio de salmão subártico na Lapônia com bancos de cascalho e corredeiras rasas sob o sol dourado da meia-noite',
+      ice: 'Um lago congelado da Lapônia com um buraco de pesca no gelo perfurado e um trado sob um sol baixo de inverno',
+      kingCrab: 'Uma costa de fiorde da Noruega ártica coberta de neve com armadilhas de caranguejo empilhadas em um píer de madeira desgastada',
+    },
     eco: {
       title: "Os peixes vêm primeiro",
       lead: "As águas da Lapônia estão sob pressão real, e as regras refletem isso. Quatro histórias curtas explicam por que alguns rios estão totalmente abertos e outros fechados — e por que o pesque e solte aparece em quase todos os cartões abaixo.",

@@ -212,6 +212,8 @@ export type SectionCopy = {
     hero: { eyebrow: string; title: string; sub: string; ctaBook: string; ctaRules: string; trustLine: string };
     /** Section eyebrows (uppercase kicker labels) used across the page's sections. */
     eyebrows: { eco: string; freshwater: string; legal: string; liability: string; explore: string };
+    /** Alt text for the three section photos (screen-reader visible). */
+    imageAlts: { river: string; ice: string; kingCrab: string };
     /** Eco red-thread: 4 stories — Teno collapse, pink salmon, king crab, Tornio recovery. */
     eco: { title: string; lead: string; stories: { title: string; body: string }[] };
     firstThings: { title: string; body1: string; body2: string; feeLink: string; mapLink: string };

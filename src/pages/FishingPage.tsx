@@ -50,6 +50,28 @@ const RIVER_META = [
   { href: OFFICIAL.permits, ss: 'Saariselkä', sid: 'fishing_river_wilderness' },
 ];
 
+// Section photos (photographic, text-free, people-free). Native 16:9; rendered
+// full-width h-auto so nothing crops at 375px. AVIF sibling exists on disk.
+const FISHING_IMG = {
+  river: '/images/activities/fishing/fishing-river.webp',
+  ice: '/images/activities/fishing/fishing-ice.webp',
+  kingCrab: '/images/activities/fishing/fishing-kingcrab.webp',
+};
+
+function SectionImage({ src, alt }: { src: string; alt: string }) {
+  return (
+    <img
+      src={src}
+      alt={alt}
+      loading="lazy"
+      decoding="async"
+      width="1400"
+      height="788"
+      className="w-full h-auto rounded-2xl border border-white/10 shadow-lg shadow-black/20"
+    />
+  );
+}
+
 function OfficialLink({ href, children }: { href: string; children: ReactNode }) {
   return (
     <a
@@ -225,6 +247,9 @@ export default function FishingPage() {
             <p className={`${EYEBROW} mb-3`}>{c.eyebrows.freshwater}</p>
             <h2 className={H2}>{c.rivers.title}</h2>
             <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.rivers.lead}</p>
+            <div className="mt-8">
+              <SectionImage src={FISHING_IMG.river} alt={c.imageAlts.river} />
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
                 const meta = RIVER_META[i] ?? RIVER_META[0];
@@ -320,6 +345,9 @@ export default function FishingPage() {
               <h2 className={H2}>{c.iceFishing.title}</h2>
             </div>
             <p className="text-snow/75 text-base leading-relaxed mt-2">{c.iceFishing.body}</p>
+            <div className="mt-6">
+              <SectionImage src={FISHING_IMG.ice} alt={c.imageAlts.ice} />
+            </div>
             <div className={`${CARD} p-5 mt-6`}>
               <h3 className="font-heading text-lg text-snow tracking-wide mb-1.5 flex items-center gap-2">
                 <AlertTriangle className="w-4 h-4 text-amber-400" aria-hidden="true" />
@@ -398,6 +426,9 @@ export default function FishingPage() {
               <h2 className={H2}>{c.norway.title}</h2>
             </div>
             <p className="text-snow/75 text-base leading-relaxed mt-2">{c.norway.seaBody}</p>
+            <div className="mt-6">
+              <SectionImage src={FISHING_IMG.kingCrab} alt={c.imageAlts.kingCrab} />
+            </div>
             <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
               <OfficialLink href={OFFICIAL.fiskeridirReg}>fiskeridir.no — regulations</OfficialLink>
               <OfficialLink href={OFFICIAL.lovdata}>lovdata.no — §47</OfficialLink>
