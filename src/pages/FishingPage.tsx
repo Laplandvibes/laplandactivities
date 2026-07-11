@@ -186,7 +186,7 @@ export default function FishingPage() {
         {/* ECO RED THREAD */}
         <section className="py-14 sm:py-18 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>Eco-first</p>
+            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.eco}</p>
             <h2 className={H2}>{c.eco.title}</h2>
             <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.eco.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
@@ -222,7 +222,7 @@ export default function FishingPage() {
         {/* RIVERS */}
         <section className="py-14 sm:py-18 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>Freshwater</p>
+            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.freshwater}</p>
             <h2 className={H2}>{c.rivers.title}</h2>
             <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.rivers.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 items-stretch">
@@ -281,7 +281,7 @@ export default function FishingPage() {
         <section className="py-14 sm:py-18 border-b border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <div className={`${CARD} p-6 sm:p-8 border-vibe-pink/25`}>
-              <p className={`${EYEBROW} mb-3`}>High-liability · 2026</p>
+              <p className={`${EYEBROW} mb-3`}>{c.eyebrows.liability}</p>
               <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.tornioBox.title}</h2>
               <ul className="mt-5 space-y-3">
                 {c.tornioBox.rules.map((r, i) => (
@@ -345,7 +345,7 @@ export default function FishingPage() {
         {/* LICENCES */}
         <section id="licences" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>The legal core</p>
+            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.legal}</p>
             <h2 className={H2}>{c.licenses.title}</h2>
             <div className="text-snow/75 text-base leading-relaxed mt-4 space-y-4">
               <p>{c.licenses.fee}</p>
@@ -433,7 +433,7 @@ export default function FishingPage() {
                 className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold"
               >
                 <Anchor className="w-3.5 h-3.5" />
-                Summer RIB safari
+                {c.norway.ribLabel}
               </AffiliateCTA>
               <OfficialLink href={OFFICIAL.fiskeridirCrab}>fiskeridir.no — king crab</OfficialLink>
             </div>
@@ -531,12 +531,12 @@ export default function FishingPage() {
         {/* KEEP EXPLORING — cross-links */}
         <section className="py-14 sm:py-18">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>Keep exploring</p>
+            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.explore}</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Link to={to('/categories/fishing')} className={`${CARD} p-6 hover:border-vibe-pink/40 transition-colors block`}>
                 <Fish className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
-                <h3 className="font-heading text-xl text-snow tracking-wide mb-1">All fishing tours</h3>
-                <p className="text-snow/65 text-sm">Guided ice fishing, salmon and king-crab experiences to book.</p>
+                <h3 className="font-heading text-xl text-snow tracking-wide mb-1">{c.crossLinks[0].title}</h3>
+                <p className="text-snow/65 text-sm">{c.crossLinks[0].blurb}</p>
               </Link>
               <a
                 href="https://laplandnature.com/freshwater/"
@@ -546,9 +546,9 @@ export default function FishingPage() {
               >
                 <Waves className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
-                  Lapland’s freshwater nature <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+                  {c.crossLinks[1].title} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </h3>
-                <p className="text-snow/65 text-sm">The rivers and lakes behind the fishery, on LaplandNature.</p>
+                <p className="text-snow/65 text-sm">{c.crossLinks[1].blurb}</p>
               </a>
               <a
                 href="https://laplandvisit.com/arctic-norway/"
@@ -558,9 +558,9 @@ export default function FishingPage() {
               >
                 <MapPin className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
-                  Arctic Norway <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
+                  {c.crossLinks[2].title} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </h3>
-                <p className="text-snow/65 text-sm">Crossing to Kirkenes and the Varanger coast, on LaplandVisit.</p>
+                <p className="text-snow/65 text-sm">{c.crossLinks[2].blurb}</p>
               </a>
             </div>
           </div>

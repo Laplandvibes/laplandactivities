@@ -301,6 +301,13 @@ const en: SectionCopy = {
       ctaRules: 'Before you cast: licences & rules',
       trustLine: 'Checked against official Finnish (eräluvat.fi, MMM) and Norwegian (fiskeridir.no) sources. Regulations change every year — verify your water before fishing.',
     },
+    eyebrows: {
+      eco: 'Eco-first',
+      freshwater: 'Freshwater',
+      legal: 'The legal core',
+      liability: 'High-liability · 2026',
+      explore: 'Keep exploring',
+    },
     eco: {
       title: 'The fish come first',
       lead: 'Lapland’s waters are under real pressure, and the rules reflect it. Four short stories explain why some rivers are wide open and others are shut — and why catch-and-release shows up on nearly every card below.',
@@ -435,6 +442,7 @@ const en: SectionCopy = {
       crabTitle: 'King crab: only with a licensed operator',
       crabBody: 'Tourists may not catch king crab themselves — it is legal only through a licensed operator holding an allocated tourist quota, concentrated around Kirkenes and Varanger. Norway’s quota-regulated area lies east of 26°E (roughly North Cape), where the minimum carapace is 13 cm and the 2026 tourist quota is 10 tonnes of male crabs; west of that line is a free suppression zone. Ask your operator about the current size and sex rules — they hold the permit conditions. Per fiskeridir.no.',
       cta: 'Book a Kirkenes king-crab safari',
+      ribLabel: 'Summer RIB safari',
       carNote: 'Getting there means driving into Norway — see the car-rental note below, because most broker rentals need pre-authorisation and a cross-border fee before they will let you cross.',
     },
     gettingThere: {
@@ -495,6 +503,20 @@ const en: SectionCopy = {
         },
       ],
     },
+    crossLinks: [
+      {
+        title: 'All fishing tours',
+        blurb: 'Guided ice fishing, salmon and king-crab experiences to book.',
+      },
+      {
+        title: 'Lapland’s freshwater nature',
+        blurb: 'The rivers and lakes behind the fishery, on LaplandNature.',
+      },
+      {
+        title: 'Arctic Norway',
+        blurb: 'Crossing to Kirkenes and the Varanger coast, on LaplandVisit.',
+      },
+    ],
   },
   notFound: {
     metaTitle: '404 · LaplandActivities',

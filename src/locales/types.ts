@@ -210,6 +210,8 @@ export type SectionCopy = {
     /** Visible "regulations change yearly — verify before fishing" banner line. */
     verifyBanner: string;
     hero: { eyebrow: string; title: string; sub: string; ctaBook: string; ctaRules: string; trustLine: string };
+    /** Section eyebrows (uppercase kicker labels) used across the page's sections. */
+    eyebrows: { eco: string; freshwater: string; legal: string; liability: string; explore: string };
     /** Eco red-thread: 4 stories — Teno collapse, pink salmon, king crab, Tornio recovery. */
     eco: { title: string; lead: string; stories: { title: string; body: string }[] };
     firstThings: { title: string; body1: string; body2: string; feeLink: string; mapLink: string };
@@ -220,11 +222,13 @@ export type SectionCopy = {
     iceFishing: { title: string; body: string; safetyTitle: string; safetyBody: string; cta: string };
     licenses: { title: string; fee: string; freeRights: string; waterPermits: string; sizesTitle: string; sizes: string[]; alwaysCheck: string };
     teno: { title: string; body: string; whatYouCan: string; warnThirdParty: string };
-    norway: { title: string; seaBody: string; exportTitle: string; exportBody: string; crabTitle: string; crabBody: string; cta: string; carNote: string };
+    norway: { title: string; seaBody: string; exportTitle: string; exportBody: string; crabTitle: string; crabBody: string; cta: string; ribLabel: string; carNote: string };
     gettingThere: { title: string; body: string; cta: string };
     gear: { title: string; body: string };
     season: { title: string; rows: { period: string; what: string }[] };
     faq: { title: string; items: { q: string; a: string }[] };
+    /** "Keep exploring" cross-link cards at the page end — 3 items: all fishing tours, LaplandNature freshwater, LaplandVisit arctic Norway. */
+    crossLinks: { title: string; blurb: string }[];
   };
   notFound: {
     metaTitle: string;
