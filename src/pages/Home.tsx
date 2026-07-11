@@ -9,6 +9,8 @@ import Newsletter from '../components/Newsletter';
 import AffiliateCTA from '../components/AffiliateCTA';
 import SummerBand from '../components/SummerBand';
 import HotelsStrip from '../components/HotelsStrip';
+import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots';
+import { AD_SLOTS } from '../data/adSlots';
 import { categories } from '../data/categories';
 import { destinations } from '../data/destinations';
 import { activities, getFeaturedActivities, getActivitiesByCategory, getActivitiesByDestination } from '../data/activities';
@@ -145,6 +147,10 @@ export default function Home() {
 
       <Hero />
 
+      {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
+          tyhjänä kompakti house-ad → LV Media -portaali */}
+      <MainPartnerBanner config={AD_SLOTS} locale={lang} className="bg-deep-night" />
+
       <SummerBand />
 
       {/* CATEGORIES bento */}
@@ -197,6 +203,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Kumppaniosio ylhäällä (LV Media): kakkospääkumppani + 6 premium-
+          paikkaa — pääkumppanit eivät näy vierekkäin (banneri heron alla ↑) */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
 
       <GetYourGuideWidget
         locationId="2652"
