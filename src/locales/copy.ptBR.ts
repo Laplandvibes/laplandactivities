@@ -1,8 +1,235 @@
 import type { SectionCopy } from './types'
-import en from './copy.en'
 
 const ptBR: SectionCopy = {
-  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
+  fishing: {
+    metaTitle: "Pesca na Lapônia e no Oceano Ártico | LaplandActivities",
+    metaDescription: "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega — com as regras, taxas e links oficiais de licença de 2026 que você precisa antes de lançar a linha.",
+    verifyBanner: "As regras mudam todo ano — confira os termos oficiais da licença antes de pescar. Cada número abaixo cita e faz link para sua fonte.",
+    hero: {
+      eyebrow: "Lapônia finlandesa · Noruega Ártica",
+      title: "Pesca na Lapônia e no Oceano Ártico",
+      sub: "Três pesqueiros, uma viagem: pesca no gelo gratuita em lagos congelados, rios de salmão licenciados no verão e safáris de caranguejo-real do outro lado da fronteira norueguesa. Aqui está o que está aberto em 2026 — e as regras que fazem os peixes voltarem.",
+      ctaBook: "Reserve uma pescaria no gelo com guia",
+      ctaRules: "Antes de lançar: licenças e regras",
+      trustLine: "Verificado com fontes oficiais finlandesas (eräluvat.fi, MMM) e norueguesas (fiskeridir.no). As regras mudam todo ano — confira a sua água antes de pescar.",
+    },
+    eyebrows: {
+      eco: "Ecologia em primeiro lugar",
+      freshwater: "Água doce",
+      legal: "O núcleo legal",
+      liability: "Alta responsabilidade · 2026",
+      explore: "Continue explorando",
+    },
+    eco: {
+      title: "Os peixes vêm primeiro",
+      lead: "As águas da Lapônia estão sob pressão real, e as regras refletem isso. Quatro histórias curtas explicam por que alguns rios estão totalmente abertos e outros fechados — e por que o pesque e solte aparece em quase todos os cartões abaixo.",
+      stories: [
+        {
+          title: "O colapso do salmão do Teno",
+          body: "O Teno (Tenojoki / Tana) foi um dos grandes rios de salmão-do-atlântico do mundo. Seus estoques caíram tanto que a Finlândia e a Noruega proibiram a pesca de salmão no rio principal a partir de 2021, e a proibição continua valendo para 2026 até 31 de dezembro sob o acordo de pesca do Teno entre os dois países. O tímalo e o corégono podem ser pescados com a licença certa; o salmão, não.",
+        },
+        {
+          title: "Salmão-rosa, um convidado indesejado",
+          body: "O salmão-rosa (Oncorhynchus gorbuscha) pertence ao Pacífico Norte. Introduzido no noroeste da Rússia a partir do fim dos anos 1950, ele agora invade o Teno, o Näätämö e o norte da Noruega em anos ímpares, e o registro finlandês de espécies invasoras (vieraslajit.fi) o classifica como nocivo. Seus números oscilam muito de ano para ano, então pede-se aos pescadores que guardem e relatem cada salmão-rosa capturado em vez de soltá-lo.",
+        },
+        {
+          title: "Caranguejo-real: cobiçado e invasor",
+          body: "O caranguejo-real-vermelho foi levado do Pacífico para o Mar de Barents e se espalhou para oeste ao longo da costa de Finnmark. É valioso o bastante para sustentar toda uma indústria de safáris, e ao mesmo tempo invasor o bastante para que a Noruega opere um sistema de duas zonas: uma pesca regulada por cota no leste e uma zona de supressão livre no oeste para frear sua expansão.",
+        },
+        {
+          title: "O retorno silencioso do Tornio",
+          body: "O sistema Torne–Muonio é, junto com o Kalix, na Suécia, um dos apenas dois grandes sistemas fluviais não regulados que restam na Finlândia e na UE, segundo a autoridade ambiental finlandesa (ymparisto.fi). Seu salmão selvagem se recuperou o suficiente para que uma pesca fortemente limitada — dois salmões por pescador na temporada inteira — permaneça aberta em 2026. É a imagem espelhada do Teno, e a prova de que as regras podem funcionar.",
+        },
+      ],
+    },
+    firstThings: {
+      title: "Duas coisas a resolver primeiro",
+      body1: "A Finlândia opera um sistema de duas camadas. A camada um é a taxa nacional de gestão pesqueira (kalastonhoitomaksu), devida por qualquer pessoa de 18 a 69 anos que pesque com isca artificial, colher ou corrico — 47 € pelo ano civil, 16 € por sete dias ou 6 € por um dia em 2026, conforme eräluvat.fi. Menores de 18 anos e todos com 70 anos ou mais pescam isentos dela. A camada dois é uma licença específica para a água exata, o lago ou rio onde você pesca.",
+      body2: "A grande exceção: a pesca simples de boia e a pesca no gelo (pilkki) são um direito geral gratuito para todos, de qualquer idade, sem taxa e sem licença, em águas comuns. A latitude também importa — a maior parte da Lapônia fica ao norte da linha de 67°N, onde vários tamanhos mínimos são menores. Sempre confira o seu ponto exato no mapa oficial de restrições antes de ir.",
+      feeLink: "Taxa nacional — eräluvat.fi",
+      mapLink: "Mapa de restrições — kalastusrajoitus.fi",
+    },
+    rivers: {
+      title: "Os rios",
+      lead: "Seis águas que valem a viagem, com seu status de 2026 em destaque. Os números de temporada, tamanho e cota mudam todo ano — cada cartão cita sua fonte oficial, então confira antes de pescar.",
+      cards: [
+        {
+          name: "Tornio–Muonio–Könkämäeno",
+          badge: "Salmão aberto 2026",
+          body: "O rio realista de salmão-do-atlântico para planejar uma viagem enquanto o Teno está fechado. Um sistema de fronteira de fluxo livre compartilhado com a Suécia, com pontos clássicos em Pello, Kolari, Muonio e Enontekiö. A temporada de salmão de 2026 vai de 8 de junho a 15 de agosto sob limites rígidos — todos os detalhes na caixa abaixo. Números de temporada e tamanho conforme a área 2502 do eräluvat.fi e o valtioneuvosto.fi.",
+          crNote: "Pesque e solte: toda truta deve ser solta (a truta-marinha é protegida), e assim que você tirar dois salmões, sua temporada acabou.",
+          officialLabel: "Licença — eräluvat.fi área 2502",
+        },
+        {
+          name: "Teno / Tana",
+          badge: "Salmão fechado 2026",
+          body: "A pesca de salmão-do-atlântico no canal principal do Teno está proibida em 2026, em vigor até 31 de dezembro sob o acordo do Teno entre Finlândia e Noruega — não planeje uma viagem de salmão aqui. Você ainda pode pescar outras espécies (tímalo, corégono, truta) com a licença de 'outras espécies' de 20 €/dia, apenas equipamento leve de mosca, vendida somente pela loja oficial tenonkalaluvat.fi. Status conforme valtioneuvosto.fi e tenonkalatalousalue.fi.",
+          crNote: "Salmão e salvelino-marinho ficam de fora da licença de outras espécies — soltar um salmão fisgado por acaso é obrigatório, não uma escolha.",
+          officialLabel: "Licença — tenonkalaluvat.fi",
+        },
+        {
+          name: "Ounasjoki",
+          badge: "Tímalo e truta",
+          body: "Um afluente protegido de fluxo livre do Kemijoki, com cerca de 300 km, correndo de Enontekiö até Rovaniemi. Não há subida de salmão — este é um rio de tímalo e truta. A pesca de linha e o jigging são gratuitos em água parada, mas proibidos nos trechos correntes (uma regra de águas de peixe migratório), então você precisa da licença de vara da Metsähallitus mais a taxa nacional. Licenças via eräluvat.fi e a área pesqueira do Ounasjoki.",
+          crNote: "A truta de rio é protegida de 1 de setembro a 30 de novembro; o fechamento de primavera do tímalo (1 abr–31 mai) vale ao sul de 67°N — confira o seu trecho.",
+          officialLabel: "Licença — eräluvat.fi (Ounasjoki)",
+        },
+        {
+          name: "Ivalojoki",
+          badge: "Tímalo e truta · segundas fechadas",
+          body: "Terra de garimpo de ouro que deságua no Lago Inari, e o rio de desova essencial para a truta-lacustre selvagem de Inari. A temporada de 2026 no trecho Toloskoski–Appisjokisuu vai de 17 de junho a 31 de agosto, com toda a pesca fechada em todas as segundas-feiras (00:00–23:59) a partir de 15 de junho. Datas conforme a área 1581 do eräluvat.fi.",
+          crNote: "A truta-lacustre da linhagem de Inari é protegida — trutas com a adiposa intacta abaixo de 50 cm (ao norte de 67°N) voltam na hora, e o rio fecha para truta de 1 set–30 nov.",
+          officialLabel: "Licença — eräluvat.fi área 1581",
+        },
+        {
+          name: "Simojoki",
+          badge: "Salmão aberto 2026",
+          body: "Um rio de salmão-do-atlântico selvagem na borda sul da Lapônia, chegando ao Golfo de Bótnia. As regras oficiais permitem um salmão por dia como parte de uma cota diária de três salmonídeos, com um fechamento semanal de segunda-feira 19:00 a terça-feira 19:00 (15 jun–31 ago) e um fechamento fluvial de outono de 1 set–30 nov. Confira a licença atual sobre qualquer teto de total da temporada. Regras conforme simojoki.com.",
+          crNote: "Pesque a cota diária e nada além — este é um rio de salmão selvagem em recuperação, então solte tudo o que você não pretende comer.",
+          officialLabel: "Regras — simojoki.com",
+        },
+        {
+          name: "Águas remotas de mosca",
+          badge: "Tímalo e truta remotos",
+          body: "Para pescadores dispostos a caminhar: o Lutto e o Suomujoki na área do parque Urho Kekkonen, e o Käkkälö e o Pöyris no alto sistema do Ounasjoki. Tímalo e truta só de mosca em áreas com licença da Metsähallitus — remotos, pouco pescados, e vale confirmar a área exata da licença no eräluvat.fi antes de partir.",
+          crNote: "Os estoques remotos são escassos e de crescimento lento; mão leve e soltar quase tudo os mantêm pescáveis.",
+          officialLabel: "Licenças — eräluvat.fi",
+        },
+      ],
+    },
+    lakes: {
+      title: "Os lagos",
+      body: "O Lago Inari — o terceiro maior da Finlândia, com cerca de 1.040 km² — é o destaque: tímalo, perca e corégono ao alcance, além do cobiçado salvelino-ártico (mínimo de 45 cm em Inari, e uma captura rara). É água grande e exposta, então vá com um local ou um guia. Águas menores como o Ounasjärvi e os lagos da região de Levi rendem perca, corégono e tímalo com facilidade. A pesca no gelo básica em todos eles é gratuita; passeios com guia são vendidos amplamente. Mínimos e licenças conforme eräluvat.fi.",
+    },
+    tornioBox: {
+      title: "Salmão do Tornio 2026 — antes de lançar",
+      rules: [
+        "Temporada: 8 de junho de 2026 a partir das 19:00 até 15 de agosto de 2026.",
+        "16–25 de agosto é um período final restrito: só mosca ou isca artificial, anzóis sem fisga, e todo salmão acima de 65 cm solto na hora.",
+        "Limite de captura: no máximo 1 salmão a cada 24 horas E no máximo 2 salmões na temporada inteira. Depois do seu segundo salmão você para de pescar salmão pelo resto do ano.",
+        "Fechamento semanal: domingo 19:00 a segunda-feira 19:00 (horário finlandês).",
+        "Tamanho mínimo do salmão 50 cm (a regra nacional para esta parte do Golfo de Bótnia). Os mínimos do tímalo variam com a latitude ao longo deste rio — 30 cm ao norte de 67°N, 35 cm ao sul — então confira o seu trecho exato na página da área 2502 do eräluvat.",
+        "Toda truta deve ser solta (a truta-marinha é protegida), morta ou viva.",
+        "De barco: no máximo 4 varas ou moscas de cada vez; sem gancho de fisga (gafe) ou anzol de recolha com fisga.",
+        "Um relato de captura é obrigatório em até 14 dias após a captura — incluindo peixes que você soltou.",
+        "Você precisa da licença da área 2502 do Eräluvat MAIS a taxa nacional de gestão pesqueira.",
+      ],
+      verifyLine: "Números verificados com a área 2502 do eräluvat.fi e o valtioneuvosto.fi para 2026 — mas as regras do salmão do Tornio são redefinidas toda primavera. Confira ambos de novo antes de viajar.",
+      ctaStay: "Compare lugares para ficar em Pello",
+    },
+    iceFishing: {
+      title: "Pesca no gelo — o jeito mais fácil de começar",
+      body: "Pilkki — uma vara curta e uma isca de jig — é a pesca mais amigável para iniciantes na Lapônia: gratuita, sem licença, qualquer idade, em lagos comuns sob o direito geral de pesca da Finlândia (conforme eräluvat.fi). As exceções são as corredeiras de rios de salmão, áreas proibidas e certos locais especiais, além de qualquer coisa além de uma única vara (bóias de fundo, redes, espinhéis), que exige a taxa e uma licença. Melhores águas: o Lago Inari, o Ounasjärvi e os lagos da região de Levi para perca, corégono e tímalo.",
+      safetyTitle: "Segurança no gelo",
+      safetyBody: "O gelo dos lagos é traiçoeiro perto de entradas, saídas, corredeiras e zonas de rebaixamento de reservatórios. Confira a espessura, fique longe de água corrente e leve um guia local em águas grandes e abertas como Inari. Isto é conselho de segurança, não regulamento — mas os lagos não pegam leve com ninguém.",
+      cta: "Reserve uma pescaria no gelo com guia",
+    },
+    licenses: {
+      title: "Licenças e permissões",
+      fee: "Taxa nacional de gestão pesqueira (2026): 47 € pelo ano civil, 16 € por sete dias ou 6 € por um dia — conforme eräluvat.fi. Obrigatória para pescadores de isca artificial, spinning e corrico de 18 a 69 anos; gratuita para menores de 18 e qualquer pessoa com 70 anos ou mais (e para quem completou 65 anos até 31 de dezembro de 2023). Guarde o comprovante.",
+      freeRights: "Direitos gerais gratuitos: a pesca de boia, a pesca no gelo (pilkki) e a linha de arenque do Báltico são gratuitas para todos — sem taxa, sem licença. A pesca de isca artificial com vara única também é um direito geral, mas o grupo de 18–69 ainda precisa da taxa nacional paga para ela. Nada disso vale nas corredeiras de peixe migratório nem em locais proibidos / especiais.",
+      waterPermits: "Licenças específicas de água: além da taxa, a pesca de isca artificial ou com várias varas precisa de uma licença para a água exata — licenças de águas estatais da Metsähallitus via eräluvat.fi, licenças locais de osakaskunta / área pesqueira em águas compartilhadas, ou as licenças especiais de rio fronteiriço para o Teno e o Tornio. Os termos por licença costumam ser mais rígidos que os pisos nacionais.",
+      sizesTitle: "Tamanhos mínimos nacionais (pisos — regras locais podem ser mais rígidas)",
+      sizes: [
+        "Salmão: 60 cm em geral, 50 cm no Golfo de Bótnia ao norte de 63°30′N. Fechamento fluvial 1 set–30 nov.",
+        "Truta (adiposa intacta): 50 cm ao norte de 67°N, 60 cm entre 64° e 67°N. Totalmente protegida em todas as áreas marinhas desde 2019.",
+        "Tímalo: 30 cm ao norte de 67°N, 35 cm ao sul; fechamento de primavera 1 abr–31 mai no interior ao sul de 67°N.",
+        "Lucioperca (kuha): 42 cm. Lúcio e perca: sem tamanho mínimo nacional.",
+        "Salvelino-ártico: 45 cm no Lago Inari. Corégono: sem tamanho mínimo nacional.",
+        "Estes são pisos nacionais do Decreto de Pesca (1360/2015); os centros ELY podem ajustá-los em ±20 % e regras específicas de rio prevalecem — conforme eräluvat.fi e mmm.fi.",
+      ],
+      alwaysCheck: "Sempre confira o kalastusrajoitus.fi para a sua água exata antes de pescar — ele mostra cada restrição sob a Lei de Pesca, decisões dos ELY e áreas protegidas.",
+    },
+    teno: {
+      title: "O Teno, em detalhe",
+      body: "O Teno (Tenojoki / Tana) é um rio de fronteira entre Finlândia e Noruega com seu próprio sistema bilateral de cotas. A pesca de salmão-do-atlântico está proibida na temporada de 2026, em vigor até 31 de dezembro sob o protocolo do acordo de pesca do Teno — uma proibição que se mantém desde 2021 e é redefinida a cada ano. (Um decreto de afluentes de 2026, 367/2026, rege as águas laterais a partir de 1 de junho.) Status conforme valtioneuvosto.fi e tenonkalatalousalue.fi.",
+      whatYouCan: "O que você pode fazer: compre a 'licença de pesca para outras espécies' — 20 €/dia para adultos, 10 €/dia para menores de 18 — para tímalo, corégono e truta, apenas equipamento leve de mosca, válida de 10 de junho a 20 de agosto de 2026, mais a taxa nacional. Salmão e salvelino-marinho ficam de fora.",
+      warnThirdParty: "Compre-a apenas na loja oficial, tenonkalaluvat.fi. Não reserve a licença legal por sites de terceiros — uma licença errada ou inválida em um rio de fronteira significa pescar ilegalmente.",
+    },
+    norway: {
+      title: "Cruzando para a Noruega: pesca no mar e caranguejo-real",
+      seaBody: "A pesca no mar na Noruega é gratuita para todos, mas estrangeiros só podem usar equipamento de mão — vara, linha de mão ou jig; redes, covos e espinhéis são proibidos (é exatamente por isso que você não pode capturar caranguejo-real por conta própria). Vender sua captura é ilegal. O bacalhau de inverno na costa de Finnmark é a atração, com alabote e escamudo também. A Noruega publica seus tamanhos mínimos em lovdata.no (Høstingsforskriften §47): bacalhau 44 cm em mar aberto ao norte de 62°N (55 cm perto da costa), arinca 40 cm, alabote 84 cm e 7,2 kg, escamudo 45 cm com vara e linha. Uma regra dura à parte: solte todo alabote acima de 2 metros. Mantenha 100 m de distância de fazendas de peixe, use colete salva-vidas, e note que uma habilitação náutica é exigida de qualquer pessoa nascida em 1980 ou depois em embarcações maiores.",
+      exportTitle: "Levar o peixe para casa — a regra de exportação",
+      exportBody: "Comer no local, ou um dia de pesca gratuita, tudo bem. Para levar peixe através da fronteira você está limitado a 15 kg por pessoa, duas vezes por ano civil em 2026 — caindo para 10 kg a partir de 1 de janeiro de 2027 — e só se a captura veio de um negócio de pesca turística registrado na Diretoria de Pesca, que deve enviar relatórios diários de captura e emitir seu documento de exportação. Idade mínima 12; peixes-troféu não contam para o limite. Levar de carro uma caixa térmica de bacalhau a partir de uma pedra qualquer não é permitido. Conforme fiskeridir.no e toll.no.",
+      crabTitle: "Caranguejo-real: só com um operador licenciado",
+      crabBody: "Turistas não podem capturar caranguejo-real por conta própria — é legal apenas por meio de um operador licenciado com uma cota turística alocada, concentrada em torno de Kirkenes e Varanger. A área regulada por cota da Noruega fica a leste de 26°E (aproximadamente o Cabo Norte), onde a carapaça mínima é de 13 cm e a cota turística de 2026 é de 10 toneladas de caranguejos machos; a oeste dessa linha há uma zona de supressão livre. Pergunte ao seu operador sobre as regras atuais de tamanho e sexo — são eles que detêm as condições da licença. Conforme fiskeridir.no.",
+      cta: "Reserve um safári de caranguejo-real em Kirkenes",
+      ribLabel: "Safári de verão em bote RIB",
+      carNote: "Chegar lá significa dirigir para dentro da Noruega — veja a nota sobre aluguel de carro abaixo, porque a maioria dos aluguéis de intermediárias exige pré-autorização e uma taxa de cruzamento de fronteira antes de deixar você atravessar.",
+    },
+    gettingThere: {
+      title: "Como chegar e alugar um carro",
+      body: "Os rios ficam bem longe dos aeroportos, então um carro é praticamente indispensável. Rovaniemi (RVN) dá acesso aos rios do oeste; Kittilä (KTT) serve Ylläs, Kolari e Muonio; Ivalo (IVL) alcança Inari, Utsjoki, Nuorgam e a estrada adiante até Kirkenes. Um aviso que vale repetir: muitos carros de intermediárias exigem pré-autorização e uma taxa de cruzamento de fronteira (por volta de €60 já foi visto) para entrar na Noruega — declare o cruzamento na retirada, ou o contrato é anulado. Alguns fornecedores locais incluem a cobertura nórdica transfronteiriça como padrão.",
+      cta: "Alugue um carro em Rovaniemi (RVN)",
+    },
+    gear: {
+      title: "O que levar",
+      body: "Os rios de verão pedem waders respiráveis, camadas de roupa e proteção contra mosquitos; a água fica fria mesmo sob o sol da meia-noite. A pilkki de inverno exige equipamento de verdade com isolamento térmico, um trado de gelo e algo quente para sentar. Você não precisa de muito para começar — uma vara curta, um punhado de jigs e uma garrafa térmica quente cobrem um primeiro dia no gelo. Compre ou alugue no local se estiver chegando de avião com pouca bagagem.",
+    },
+    season: {
+      title: "A temporada num relance",
+      rows: [
+        { period: "jan–abr", what: "Pesca no gelo de primeira em lagos congelados — gratuita, para toda a família, qualquer idade." },
+        { period: "abr–mai", what: "Fechamento de primavera do tímalo no interior ao sul de 67°N (1 abr–31 mai)." },
+        { period: "junho", what: "Rios abrem; o salmão do Tornio abre em 8 de junho; o Teno segue fechado para salmão; o Ivalojoki fecha toda segunda-feira a partir de 15 de junho." },
+        { period: "jul–meados de ago", what: "Pico do salmão de verão no Tornio e no Simojoki." },
+        { period: "16–25 ago", what: "Período final restrito do Tornio: mosca ou isca artificial, anzóis sem fisga, solte todo salmão acima de 65 cm." },
+        { period: "1 set–30 nov", what: "Fechamento fluvial de outono para truta e salmão em rios e riachos." },
+        { period: "Fontes", what: "Datas conforme eräluvat.fi, valtioneuvosto.fi e simojoki.com — verifique a cada temporada." },
+      ],
+    },
+    faq: {
+      title: "Pesca na Lapônia — FAQ",
+      items: [
+        {
+          q: "Preciso de licença para pescar no gelo?",
+          a: "Não. A pesca no gelo básica (pilkki) com uma única vara de jig é um direito geral gratuito na Finlândia para todos, de qualquer idade — sem taxa e sem licença — em lagos comuns. É diferente apenas nas corredeiras de rios de salmão, áreas proibidas e locais especiais, ou se você usar bóias de fundo, redes ou espinhéis, que exigem a taxa nacional e uma licença de água (eräluvat.fi).",
+        },
+        {
+          q: "Posso pescar salmão no Teno em 2026?",
+          a: "Não. A pesca de salmão-do-atlântico no canal principal do Teno está proibida em 2026, em vigor até 31 de dezembro sob o acordo do Teno entre Finlândia e Noruega. Você pode pescar outras espécies (tímalo, corégono, truta) com a licença de 'outras espécies' de 20 €/dia da tenonkalaluvat.fi, com o salmão excluído.",
+        },
+        {
+          q: "Quantos salmões posso guardar no Tornio?",
+          a: "Em 2026, no máximo 1 salmão a cada 24 horas e no máximo 2 salmões na temporada inteira — os dois limites valem ao mesmo tempo. Depois do seu segundo salmão você deve parar de pescar salmão pelo resto do ano. O tamanho mínimo é 50 cm (conforme a área 2502 do eräluvat.fi e o valtioneuvosto.fi).",
+        },
+        {
+          q: "Posso trazer minha captura para casa a partir da Noruega?",
+          a: "Apenas por meio de um acampamento de pesca turística registrado. O limite de exportação é 15 kg por pessoa, duas vezes por ano civil em 2026 (caindo para 10 kg a partir de 1 de janeiro de 2027), a captura deve vir de um negócio registrado na Diretoria de Pesca, e a idade mínima é 12. Um dia de pesca gratuita para comer no local, tudo bem; exportar peixe que você pescou por conta própria, não (fiskeridir.no).",
+        },
+        {
+          q: "Posso capturar caranguejo-real por conta própria?",
+          a: "Não. Turistas não podem capturar caranguejo-real diretamente — é legal apenas por meio de um operador licenciado com uma cota turística alocada, concentrada em torno de Kirkenes e Varanger. Colocar seu próprio covo de caranguejo como visitante é ilegal (fiskeridir.no).",
+        },
+        {
+          q: "Qual é a taxa de pesca e quem é isento?",
+          a: "A taxa nacional de gestão pesqueira para 2026 é 47 € pelo ano civil, 16 € por sete dias ou 6 € por um dia (eräluvat.fi). Ela é exigida de pescadores de isca artificial, spinning e corrico de 18 a 69 anos; menores de 18 e qualquer pessoa com 70 anos ou mais são isentos, assim como quem completou 65 anos até 31 de dezembro de 2023.",
+        },
+        {
+          q: "Qual rio da Lapônia é o melhor para salmão em 2026?",
+          a: "O sistema Tornio–Muonio — é o pesqueiro de salmão-do-atlântico realisticamente aberto enquanto o Teno está fechado, com uma temporada de 2026 de 8 de junho a 15 de agosto. O Simojoki, no sul da Lapônia, também está aberto. Ambos são limitados e regulados de perto, então confira o eräluvat.fi antes de ir.",
+        },
+        {
+          q: "Os tamanhos mínimos realmente mudam com a latitude?",
+          a: "Sim. A maior parte da Lapônia fica ao norte de 67°N, onde vários pisos são menores — o tímalo é 30 cm ao norte da linha contra 35 cm ao sul, e a truta com a adiposa intacta é 50 cm ao norte de 67°N. Sempre confirme o seu trecho exato, porque as regras por licença podem ser mais rígidas (eräluvat.fi).",
+        },
+      ],
+    },
+    crossLinks: [
+      {
+        title: "Todos os passeios de pesca",
+        blurb: "Pesca no gelo com guia, salmão e experiências de caranguejo-real para reservar.",
+      },
+      {
+        title: "A natureza de água doce da Lapônia",
+        blurb: "Os rios e lagos por trás do pesqueiro, no LaplandNature.",
+      },
+      {
+        title: "Noruega Ártica",
+        blurb: "A travessia para Kirkenes e a costa de Varanger, no LaplandVisit.",
+      },
+    ],
+  },
   nav: {
     home: 'Início',
     destinations: 'Destinos',

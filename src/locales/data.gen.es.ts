@@ -35,6 +35,10 @@ const d: LangData = {
     "food": {
       "name": "Comida y bebida",
       "description": "Restaurantes kota, recolección de alimentos silvestres, bayas, cenas a base de reno bajo las estrellas y tours por las cervecerías locales."
+    },
+    "fishing": {
+      "name": "Pesca y pesca en hielo",
+      "description": "Pesca en hielo gratuita en lagos helados, ríos de salmón con licencia como el Tornio y safaris de cangrejo real al otro lado de la frontera noruega. Las poblaciones de peces primero: conozca las normas y devuelva lo que el río necesita recuperar."
     }
   },
   "destinations": {
@@ -880,6 +884,66 @@ const d: LangData = {
       "duration": "2-3 h",
       "difficulty": "Fácil",
       "category": "Comida y bebida"
+    },
+    "act-ice-fishing-great": {
+      "title": "Gran experiencia de pesca en hielo",
+      "description": "Perfore su propio agujero en un lago helado cerca de Rovaniemi y pesque a jig perca y coregono con un guía experimentado. La pesca en hielo básica no necesita licencia ni edad mínima en Finlandia: es la forma más fácil de probar la pesca ártica antes de decidir si merece la pena el permiso anual para pescar con señuelo en otros lugares. Termina con un almuerzo asado a la llama.",
+      "highlights": [
+        "Técnica de perforar tu propio agujero",
+        "Sin licencia para la pesca en hielo básica",
+        "Almuerzo asado a la llama incluido"
+      ],
+      "duration": "3 h",
+      "difficulty": "Fácil",
+      "category": "Pesca y pesca en hielo"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "Pesca en hielo en Rovaniemi",
+      "description": "Una salida de pesca en hielo guiada en un lago a las afueras de Rovaniemi, pensada para encajar en una reserva de media jornada. La pesca en hielo básica no necesita permiso ni edad mínima, así que los niños pescan junto a los adultos. Los guías explican la técnica del jig y la seguridad en el hielo antes de que nadie pise el hielo abierto.",
+      "highlights": [
+        "Media jornada, cerca de Rovaniemi",
+        "Familiar, a cualquier edad",
+        "Charla de seguridad en el hielo incluida"
+      ],
+      "duration": "3 h",
+      "difficulty": "Fácil",
+      "category": "Pesca y pesca en hielo"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Pesca en hielo ártica en grupo reducido",
+      "description": "Una versión con grupo limitado de la salida de pesca en hielo, con más asesoramiento individual sobre la técnica que en los tours más grandes. Pesque perca y coregono a través del hielo en un lago tranquilo y llévese a casa solo lo que piense comer: la pesca pilkki siempre ha sido a pequeña escala, y por eso los lagos de Laponia se mantienen sanos.",
+      "highlights": [
+        "Grupo reducido y limitado",
+        "Más atención individual del guía",
+        "Perca y coregono a través del hielo"
+      ],
+      "duration": "3 h",
+      "difficulty": "Fácil",
+      "category": "Pesca y pesca en hielo"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Safari de cangrejo real de Saariselkä a Kirkenes",
+      "description": "Cruce la frontera desde Saariselkä hasta Kirkenes, Noruega, para un safari de cangrejo real rojo en el mar de Barents. El cangrejo real no es autóctono de aquí: se introdujo desde el mar de Ojotsk en los años sesenta y no tiene depredadores naturales en aguas noruegas, así que una captura regulada por cuotas y con licencia evita que la población arrase con las poblaciones autóctonas de bacalao y marisco. Los guías izan las nasas; el día termina con una comida de cangrejo real.",
+      "highlights": [
+        "Cruza la frontera a Kirkenes, Noruega",
+        "Captura con licencia de una especie invasora",
+        "Comida de cangrejo real incluida"
+      ],
+      "duration": "Día completo",
+      "difficulty": "Moderado",
+      "category": "Pesca y pesca en hielo"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Safari de cangrejo real en lancha RIB desde Kirkenes en verano",
+      "description": "Un safari estival en lancha RIB que parte de la propia Kirkenes, hacia el mar de Barents para izar nasas de cangrejo real. El cangrejo real rojo es una especie invasora aquí, y la captura regulada por operadores con licencia forma parte de cómo lo gestiona Noruega: el cangrejo que no se captura sigue expandiéndose hacia el oeste por la costa. La salida termina con una comida de cangrejo fresco a bordo o en tierra.",
+      "highlights": [
+        "Safari en lancha RIB por el mar de Barents",
+        "Captura regulada por cuotas de una especie invasora",
+        "Comida de cangrejo real fresco"
+      ],
+      "duration": "3 h",
+      "difficulty": "Moderado",
+      "category": "Pesca y pesca en hielo"
     }
   }
 }

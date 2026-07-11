@@ -4,6 +4,10 @@ import type { LangData } from './data'
 
 const d: LangData = {
   "categories": {
+    "fishing": {
+      "name": "Angeln & Eisangeln",
+      "description": "Kostenloses Eisangeln auf zugefrorenen Seen, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris über die norwegische Grenze. Die Fischbestände zuerst: die Regeln kennen und zurücksetzen, was der Fluss zurückbraucht."
+    },
     "adventure": {
       "name": "Abenteuer",
       "description": "Schneemobil-Safaris, Ice-Karting, Eisklettern, Wildwasser-Rafting und Survival-Kurse. Für den Adrenalinkick in der arktischen Natur."
@@ -101,6 +105,66 @@ const d: LangData = {
     "Challenging": "Anspruchsvoll"
   },
   "activities": {
+    "act-ice-fishing-great": {
+      "title": "Großes Eisangel-Erlebnis",
+      "description": "Bohren Sie Ihr eigenes Loch in einen zugefrorenen See bei Rovaniemi und jiggen Sie mit einem erfahrenen Guide auf Barsch und Felchen. Einfaches Eisangeln braucht in Finnland keine Lizenz und kein Mindestalter — es ist der einfachste Weg, arktisches Angeln auszuprobieren, bevor Sie entscheiden, ob sich die Jahresgenehmigung fürs Köderangeln anderswo lohnt. Endet mit einem am Feuer gegrillten Mittagessen.",
+      "highlights": [
+        "Technik: Loch selbst bohren",
+        "Keine Lizenz fürs einfache Eisangeln nötig",
+        "Am Feuer gegrilltes Mittagessen inklusive"
+      ],
+      "duration": "3 Std.",
+      "difficulty": "Einfach",
+      "category": "Angeln & Eisangeln"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "Eisangeln in Rovaniemi",
+      "description": "Ein geführter Eisangel-Ausflug auf einem See kurz außerhalb von Rovaniemi, zugeschnitten auf eine Halbtagsbuchung. Einfaches Eisangeln braucht keine Genehmigung und kein Mindestalter, sodass Kinder neben Erwachsenen angeln. Die Guides erklären Jigg-Technik und Eissicherheit, bevor jemand aufs offene Eis tritt.",
+      "highlights": [
+        "Halbtags, nahe Rovaniemi",
+        "Familienfreundlich, jedes Alter",
+        "Einweisung zur Eissicherheit inklusive"
+      ],
+      "duration": "3 Std.",
+      "difficulty": "Einfach",
+      "category": "Angeln & Eisangeln"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Arktisches Eisangeln in kleiner Gruppe",
+      "description": "Eine Variante des Eisangel-Ausflugs mit begrenzter Gruppengröße und mehr persönlicher Anleitung zur Technik als bei den größeren Touren. Angeln Sie durch das Eis auf Barsch und Felchen an einem ruhigen See und nehmen Sie nur mit, was Sie essen wollen — das Pilkki-Angeln war immer kleinräumig, und genau deshalb bleiben Lapplands Seen gesund.",
+      "highlights": [
+        "Begrenzte kleine Gruppengröße",
+        "Mehr individuelle Betreuung durch den Guide",
+        "Barsch & Felchen durch das Eis"
+      ],
+      "duration": "3 Std.",
+      "difficulty": "Einfach",
+      "category": "Angeln & Eisangeln"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Königskrabben-Safari von Saariselkä nach Kirkenes",
+      "description": "Überqueren Sie die Grenze von Saariselkä ins norwegische Kirkenes für eine Rote-Königskrabben-Safari auf der Barentssee. Die Königskrabbe ist hier nicht heimisch — sie wurde in den 1960er-Jahren aus dem Ochotskischen Meer eingeführt und hat in norwegischen Gewässern keine natürlichen Feinde, daher hält eine lizenzierte, quotengeregelte Entnahme die Population davon ab, heimische Dorsch- und Schalentierbestände zu überrennen. Die Guides holen die Reusen ein; der Tag endet mit einem Königskrabben-Mahl.",
+      "highlights": [
+        "Überquert die Grenze ins norwegische Kirkenes",
+        "Lizenzierte Entnahme einer invasiven Art",
+        "Königskrabben-Mahl inklusive"
+      ],
+      "duration": "Ganztägig",
+      "difficulty": "Mittel",
+      "category": "Angeln & Eisangeln"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Sommerliche Königskrabben-RIB-Safari in Kirkenes",
+      "description": "Eine sommerliche RIB-Boot-Safari, die direkt in Kirkenes startet und hinaus auf die Barentssee führt, um Königskrabben-Reusen einzuholen. Die Rote Königskrabbe ist hier eine invasive Art, und die geregelte Entnahme durch lizenzierte Anbieter ist Teil des norwegischen Managements — nicht entnommene Krabben breiten sich weiter westlich entlang der Küste aus. Die Tour endet mit einem frischen Krabben-Mahl an Bord oder an Land.",
+      "highlights": [
+        "RIB-Boot-Safari auf der Barentssee",
+        "Quotengeregelte Entnahme einer invasiven Art",
+        "Frisches Königskrabben-Mahl"
+      ],
+      "duration": "3 Std.",
+      "difficulty": "Mittel",
+      "category": "Angeln & Eisangeln"
+    },
     "rov-aurora-snowmobile": {
       "title": "Schneemobil-Safari unter dem Nordlicht",
       "description": "Jagen Sie das Nordlicht bei einer aufregenden Schneemobiltour durch die arktische Natur. Pause mit heißen Getränken am Lagerfeuer unter dem Polarlicht.",

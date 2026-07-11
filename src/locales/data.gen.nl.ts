@@ -35,6 +35,10 @@ const d: LangData = {
     "food": {
       "name": "Eten en drinken",
       "description": "Kota-restaurants, foerageren in de natuur, bessen plukken, rendierdiners onder de sterren en lokale brouwerijtours."
+    },
+    "fishing": {
+      "name": "Vissen en ijsvissen",
+      "description": "Gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren zoals de Tornio en koningskrab-safari's over de Noorse grens. De visbestanden eerst: ken de regels, zet terug wat de rivier nodig heeft."
     }
   },
   "destinations": {
@@ -868,6 +872,66 @@ const d: LangData = {
       "duration": "2-3 uur",
       "difficulty": "Makkelijk",
       "category": "Eten en drinken"
+    },
+    "act-ice-fishing-great": {
+      "title": "Geweldige ijsviservaring",
+      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en houting met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd — het is de makkelijkste manier om Arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
+      "highlights": [
+        "Techniek: boor uw eigen wak",
+        "Geen vergunning nodig voor basis-ijsvissen",
+        "Boven vuur gegrilde lunch inbegrepen"
+      ],
+      "duration": "3 uur",
+      "difficulty": "Makkelijk",
+      "category": "Vissen en ijsvissen"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "IJsvissen in Rovaniemi",
+      "description": "Een begeleide ijsvistocht op een meer net buiten Rovaniemi, afgestemd op een boeking van een halve dag. Basis-ijsvissen vereist geen vergunning en geen minimumleeftijd, dus kinderen vissen naast volwassenen. Gidsen behandelen de jig-techniek en de ijsveiligheid voordat iemand het open ijs op stapt.",
+      "highlights": [
+        "Halve dag, dicht bij Rovaniemi",
+        "Gezinsvriendelijk, elke leeftijd",
+        "IJsveiligheidsbriefing inbegrepen"
+      ],
+      "duration": "3 uur",
+      "difficulty": "Makkelijk",
+      "category": "Vissen en ijsvissen"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Arctisch ijsvissen in kleine groep",
+      "description": "Een versie van de ijsvistocht met een beperkte groep, met meer persoonlijke begeleiding op techniek dan de grotere tours. Vis op baars en houting door het ijs op een rustig meer, en neem alleen mee wat u van plan bent te eten — pilkki-vissen is altijd kleinschalig geweest, en juist daarom blijven de meren van Lapland gezond.",
+      "highlights": [
+        "Beperkte kleine groepsgrootte",
+        "Meer individuele aandacht van de gids",
+        "Baars en houting door het ijs"
+      ],
+      "duration": "3 uur",
+      "difficulty": "Makkelijk",
+      "category": "Vissen en ijsvissen"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Koningskrab-safari van Saariselkä naar Kirkenes",
+      "description": "Steek de grens over van Saariselkä naar Kirkenes, Noorwegen, voor een rode-koningskrab-safari op de Barentszzee. De koningskrab is hier niet inheems — hij werd in de jaren 1960 uitgezet vanuit de Zee van Ochotsk en heeft geen natuurlijke vijanden in de Noorse wateren, dus een vergunde, quotagereguleerde vangst voorkomt dat de populatie de inheemse kabeljauw- en schaaldierbestanden overwoekert. Gidsen halen de korven op; de dag eindigt met een koningskrabmaaltijd.",
+      "highlights": [
+        "Steekt de grens over naar Kirkenes, Noorwegen",
+        "Vergunde vangst van een invasieve soort",
+        "Koningskrabmaaltijd inbegrepen"
+      ],
+      "duration": "Hele dag",
+      "difficulty": "Gemiddeld",
+      "category": "Vissen en ijsvissen"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Kirkenes zomerse koningskrab-RIB-safari",
+      "description": "Een zomerse RIB-bootsafari die vanuit Kirkenes zelf vertrekt, de Barentszzee op om koningskrabkorven op te halen. De rode koningskrab is hier een invasieve soort, en gereguleerde vangst door vergunde aanbieders is onderdeel van hoe Noorwegen hem beheert — krab die niet wordt gevangen, verspreidt zich verder westwaarts langs de kust. De tocht eindigt met een verse krabmaaltijd aan boord of aan wal.",
+      "highlights": [
+        "RIB-bootsafari op de Barentszzee",
+        "Quotagereguleerde vangst van een invasieve soort",
+        "Verse koningskrabmaaltijd"
+      ],
+      "duration": "3 uur",
+      "difficulty": "Gemiddeld",
+      "category": "Vissen en ijsvissen"
     }
   }
 }

@@ -35,6 +35,10 @@ const d: LangData = {
     "food": {
       "name": "Gastronomie",
       "description": "Restaurants kota, cueillette en forêt, baies sauvages, dîners au renne sous les étoiles et tours des brasseries locales."
+    },
+    "fishing": {
+      "name": "Pêche et pêche blanche",
+      "description": "Pêche blanche gratuite sur les lacs gelés, rivières à saumon sous licence comme le Tornio et safaris au crabe royal de l'autre côté de la frontière norvégienne. Les stocks de poissons d'abord : connaissez les règles, remettez à l'eau ce que la rivière doit récupérer."
     }
   },
   "destinations": {
@@ -868,6 +872,66 @@ const d: LangData = {
       "duration": "2-3 h",
       "difficulty": "Facile",
       "category": "Gastronomie"
+    },
+    "act-ice-fishing-great": {
+      "title": "Grande expérience de pêche blanche",
+      "description": "Percez votre propre trou dans un lac gelé près de Rovaniemi et dandinez pour la perche et le corégone avec un guide expérimenté. La pêche blanche de base ne demande ni permis ni âge minimum en Finlande — c'est la façon la plus simple de goûter à la pêche arctique avant de décider si la redevance annuelle pour la pêche au leurre ailleurs en vaut la peine. Se termine par un déjeuner grillé à la flamme.",
+      "highlights": [
+        "Technique du trou percé soi-même",
+        "Aucun permis pour la pêche blanche de base",
+        "Déjeuner grillé à la flamme inclus"
+      ],
+      "duration": "3 h",
+      "difficulty": "Facile",
+      "category": "Pêche et pêche blanche"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "Pêche blanche à Rovaniemi",
+      "description": "Une sortie de pêche blanche guidée sur un lac juste à l'extérieur de Rovaniemi, taillée pour tenir dans une réservation d'une demi-journée. La pêche blanche de base ne demande ni permis ni âge minimum, si bien que les enfants pêchent aux côtés des adultes. Les guides couvrent la technique de la dandinette et la sécurité sur la glace avant que quiconque ne pose le pied sur la glace ouverte.",
+      "highlights": [
+        "Demi-journée, tout près de Rovaniemi",
+        "Familial, à tout âge",
+        "Briefing sécurité sur la glace inclus"
+      ],
+      "duration": "3 h",
+      "difficulty": "Facile",
+      "category": "Pêche et pêche blanche"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Pêche blanche arctique en petit groupe",
+      "description": "Une version à groupe plafonné de la sortie de pêche blanche, avec plus d'accompagnement individuel sur la technique que les tours plus grands. Pêchez la perche et le corégone à travers la glace sur un lac tranquille, et ne rapportez que ce que vous comptez manger — la pêche pilkki a toujours été à petite échelle, et c'est exactement pourquoi les lacs de Laponie restent en bonne santé.",
+      "highlights": [
+        "Taille de groupe plafonnée",
+        "Plus d'attention individuelle du guide",
+        "Perche et corégone à travers la glace"
+      ],
+      "duration": "3 h",
+      "difficulty": "Facile",
+      "category": "Pêche et pêche blanche"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Safari au crabe royal de Saariselkä à Kirkenes",
+      "description": "Franchissez la frontière depuis Saariselkä jusqu'à Kirkenes, en Norvège, pour un safari au crabe royal rouge en mer de Barents. Le crabe royal n'est pas natif d'ici — il a été introduit depuis la mer d'Okhotsk dans les années 1960 et n'a aucun prédateur naturel dans les eaux norvégiennes, si bien qu'une récolte régulée par quotas et sous licence empêche la population d'envahir les stocks natifs de cabillaud et de coquillages. Les guides remontent les casiers ; la journée se termine par un repas de crabe royal.",
+      "highlights": [
+        "Franchit la frontière vers Kirkenes, Norvège",
+        "Récolte sous licence d'une espèce envahissante",
+        "Repas de crabe royal inclus"
+      ],
+      "duration": "Journée entière",
+      "difficulty": "Modéré",
+      "category": "Pêche et pêche blanche"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Safari estival au crabe royal en bateau RIB à Kirkenes",
+      "description": "Un safari estival en bateau RIB au départ de Kirkenes même, vers la mer de Barents pour remonter les casiers à crabe royal. Le crabe royal rouge est une espèce envahissante ici, et la récolte régulée par des opérateurs agréés fait partie de la manière dont la Norvège le gère — les crabes non prélevés continuent de se propager vers l'ouest le long de la côte. La sortie se termine par un repas de crabe frais à bord ou à terre.",
+      "highlights": [
+        "Safari en bateau RIB en mer de Barents",
+        "Récolte régulée par quotas d'une espèce envahissante",
+        "Repas de crabe royal frais"
+      ],
+      "duration": "3 h",
+      "difficulty": "Modéré",
+      "category": "Pêche et pêche blanche"
     }
   }
 }

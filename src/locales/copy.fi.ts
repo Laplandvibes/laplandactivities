@@ -1,8 +1,235 @@
 import type { SectionCopy } from './types'
-import en from './copy.en'
 
 const fi: SectionCopy = {
-  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
+  fishing: {
+    metaTitle: 'Kalastus Lapissa ja Jäämerellä | LaplandActivities',
+    metaDescription: 'Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit — mukana 2026 säännöt, maksut ja viralliset lupalinkit, jotka tarvitset ennen ensimmäistä heittoa.',
+    verifyBanner: 'Säännöt muuttuvat vuosittain — tarkista virallisen luvan ehdot ennen kalastusta. Jokainen alla oleva luku nimeää ja linkittää lähteensä.',
+    hero: {
+      eyebrow: 'Suomen Lappi · Arktinen Norja',
+      title: 'Kalastus Lapissa ja Jäämerellä',
+      sub: 'Kolme kalavesialuetta, yksi matka: ilmainen pilkkiminen jäätyneillä järvillä, luvanvaraiset kesän lohijoet ja kuningasrapusafarit Norjan rajan yli. Tässä on mitä on auki 2026 — ja säännöt, jotka pitävät kalat palaamassa.',
+      ctaBook: 'Varaa opastettu pilkkiretki',
+      ctaRules: 'Ennen ensimmäistä heittoa: luvat ja säännöt',
+      trustLine: 'Tarkistettu virallisia suomalaisia (eräluvat.fi, MMM) ja norjalaisia (fiskeridir.no) lähteitä vasten. Säännöt muuttuvat vuosittain — varmista vesialueesi ennen kalastusta.',
+    },
+    eyebrows: {
+      eco: 'Luonto edellä',
+      freshwater: 'Sisävedet',
+      legal: 'Lain ydin',
+      liability: 'Suuri vastuu · 2026',
+      explore: 'Jatka tutkimista',
+    },
+    eco: {
+      title: 'Kalat ensin',
+      lead: 'Lapin vedet ovat todellisen paineen alla, ja säännöt heijastavat sitä. Neljä lyhyttä tarinaa selittää, miksi jotkin joet ovat auki ja toiset kiinni — ja miksi pyydä ja päästä toistuu lähes joka kortissa alla.',
+      stories: [
+        {
+          title: 'Tenon lohikannan romahdus',
+          body: 'Teno (Tenojoki / Tana) oli yksi maailman suurimmista atlantinlohijoista. Sen kannat vajosivat niin alas, että Suomi ja Norja kielsivät lohenkalastuksen pääuomassa vuodesta 2021, ja kielto on yhä voimassa 2026 aina 31. joulukuuta asti maiden välisen Tenon kalastussopimuksen mukaan. Harjusta ja siikaa saa kalastaa oikealla luvalla; lohta ei.',
+        },
+        {
+          title: 'Kyttyrälohi, kutsumaton vieras',
+          body: 'Kyttyrälohi (Oncorhynchus gorbuscha) kuuluu Tyynenmeren pohjoisosaan. 1950-luvun lopulta luoteis-Venäjälle istutettuna se ryntää nyt Tenoon, Näätämöön ja Pohjois-Norjaan parittomina vuosina, ja Suomen vieraslajirekisteri (vieraslajit.fi) luokittelee sen haitalliseksi. Yksilömäärät heittelevät rajusti vuodesta toiseen, joten kalastajia pyydetään ottamaan talteen ja ilmoittamaan jokainen saatu kyttyrälohi sen sijaan, että päästäisi sen takaisin.',
+        },
+        {
+          title: 'Kuningasrapu: haluttu ja vieraslaji',
+          body: 'Punakuningasrapu siirrettiin Barentsinmereen Tyyneltämereltä ja levisi länteen Finnmarkin rannikkoa pitkin. Se on arvokas, riittävän arvokas ylläpitämään koko safariteollisuutta, mutta samalla niin haitallinen vieraslaji, että Norja soveltaa kahden vyöhykkeen järjestelmää: kiintiösäädelty kalastus idässä ja vapaa torjuntavyöhyke lännessä leviämisen hillitsemiseksi.',
+        },
+        {
+          title: 'Tornionjoen hiljainen paluu',
+          body: 'Tornion–Muonion vesistö on yhdessä Ruotsin Kalixin kanssa yksi vain kahdesta suuresta säännöstelemättömästä jokijärjestelmästä, joita Suomessa ja EU:ssa on jäljellä, Suomen ympäristöviranomaisen (ymparisto.fi) mukaan. Sen villilohi on toipunut niin hyvin, että tiukasti rajoitettu kalastus — kaksi lohta kalastajaa kohti koko kaudella — pysyy auki 2026. Se on Tenon peilikuva ja todiste siitä, että säännöt voivat toimia.',
+        },
+      ],
+    },
+    firstThings: {
+      title: 'Kaksi asiaa hoidettavaksi ensin',
+      body1: 'Suomessa on kaksitasoinen järjestelmä. Ensimmäinen taso on valtakunnallinen kalastonhoitomaksu, jonka maksaa jokainen 18–69-vuotias, joka kalastaa vieheellä, uistimella tai vetouistimella — 47 € kalenterivuodelta, 16 € seitsemältä vuorokaudelta tai 6 € yhdeltä vuorokaudelta vuonna 2026, eräluvat.fi:n mukaan. Alle 18-vuotiaat ja kaikki 70 vuotta täyttäneet kalastavat ilman sitä. Toinen taso on vesialuekohtainen lupa juuri sille järvelle tai joelle, jolla kalastat.',
+      body2: 'Iso poikkeus: onkiminen ja pilkkiminen ovat kaikkien ilmainen jokamiehenoikeus, minkä ikäisenä tahansa, ilman maksua ja lupaa, tavallisilla vesillä. Leveysasteella on myös väliä — suurin osa Lapista on 67°N-linjan pohjoispuolella, missä useat alamitat ovat pienempiä. Tarkista aina tarkka paikkasi virallisesta rajoituskartasta ennen lähtöä.',
+      feeLink: 'Valtakunnallinen maksu — eräluvat.fi',
+      mapLink: 'Rajoituskartta — kalastusrajoitus.fi',
+    },
+    rivers: {
+      title: 'Joet',
+      lead: 'Kuusi ajomatkan arvoista vesialuetta, 2026-tilanne edessä. Kausi-, mitta- ja kiintiöluvut muuttuvat vuosittain — jokainen kortti nimeää virallisen lähteensä, joten varmista ennen kalastusta.',
+      cards: [
+        {
+          name: 'Tornio–Muonio–Könkämäeno',
+          badge: 'Lohi auki 2026',
+          body: 'Realistinen atlantinlohijoki, jonka ympärille matka kannattaa suunnitella Tenon ollessa kiinni. Ruotsin kanssa jaettu, vapaana virtaava rajavesistö, jonka klassiset apajat ovat Pellossa, Kolarissa, Muoniossa ja Enontekiöllä. Vuoden 2026 lohikausi kestää 8. kesäkuuta–15. elokuuta tiukoin rajoituksin — täydet tiedot alla olevassa laatikossa. Kausi- ja mittatiedot eräluvat.fi-alueelta 2502 ja valtioneuvosto.fi:stä.',
+          crNote: 'Pyydä ja päästä: kaikki taimenet on vapautettava (meritaimen on rauhoitettu), ja kun olet ottanut kaksi lohta, kautesi on siinä.',
+          officialLabel: 'Lupa — eräluvat.fi alue 2502',
+        },
+        {
+          name: 'Teno / Tana',
+          badge: 'Lohi kiinni 2026',
+          body: 'Atlantinlohen kalastus Tenon pääuomassa on kielletty vuonna 2026, voimassa 31. joulukuuta asti Suomen ja Norjan Tenon kalastussopimuksen mukaan — älä suunnittele lohimatkaa tänne. Muita lajeja (harjus, siika, taimen) saa yhä kalastaa 20 €/vrk maksavalla "muiden lajien" luvalla, vain kevyillä perhovälineillä, ja sitä myydään ainoastaan virallisessa kaupassa tenonkalaluvat.fi. Tilanne valtioneuvosto.fi:n ja tenonkalatalousalue.fi:n mukaan.',
+          crNote: 'Lohi ja rautu eivät sisälly muiden lajien lupaan — vahingossa tarttuneen lohen vapauttaminen on pakollista, ei valinta.',
+          officialLabel: 'Lupa — tenonkalaluvat.fi',
+        },
+        {
+          name: 'Ounasjoki',
+          badge: 'Harjus ja taimen',
+          body: 'Noin 300 km pitkä suojeltu, vapaana virtaava Kemijoen sivujoki, joka virtaa Enontekiöltä alas Rovaniemelle. Lohennousua ei ole — tämä on harjus- ja taimenjoki. Onkiminen ja pilkkiminen ovat vapaita tyynessä vedessä mutta kiellettyjä virtapaikoissa (vaelluskalasääntö), joten tarvitset Metsähallituksen vapaluvan valtakunnallisen maksun lisäksi. Luvat eräluvat.fi:n ja Ounasjoen kalastusalueen kautta.',
+          crNote: 'Jokitaimen on rauhoitettu 1.9.–30.11.; harjuksen kevätrauhoitus (1.4.–31.5.) koskee 67°N eteläpuolta — tarkista oma jokiosuutesi.',
+          officialLabel: 'Lupa — eräluvat.fi (Ounasjoki)',
+        },
+        {
+          name: 'Ivalojoki',
+          badge: 'Harjus ja taimen · maanantaisin kiinni',
+          body: 'Kullanhuuhdontaseutua, joka laskee Inarijärveen, ja villin Inarin järvitaimenen keskeinen kutujoki. Vuoden 2026 kausi Toloskoski–Appisjokisuu-osuudella kestää 17. kesäkuuta–31. elokuuta, ja kaikki kalastus on kiellettyä joka maanantai (00:00–23:59) 15. kesäkuuta alkaen. Päivämäärät eräluvat.fi-alueelta 1581.',
+          crNote: 'Inarin kannan järvitaimen on rauhoitettu — rasvaevällinen taimen alle 50 cm (67°N pohjoispuolella) menee suoraan takaisin, ja joki on taimenelle kiinni 1.9.–30.11.',
+          officialLabel: 'Lupa — eräluvat.fi alue 1581',
+        },
+        {
+          name: 'Simojoki',
+          badge: 'Lohi auki 2026',
+          body: 'Villi atlantinlohijoki Lapin eteläreunalla, laskee Perämereen. Viralliset säännöt sallivat yhden lohen vuorokaudessa osana kolmen lohikalan vuorokausisaalista, viikkorauhoituksella maanantaista klo 19:00 tiistaihin klo 19:00 (15.6.–31.8.) ja syysrauhoituksella joessa 1.9.–30.11. Tarkista voimassa olevasta luvasta mahdollinen kausikohtainen kokonaiskiintiö. Säännöt simojoki.comin mukaan.',
+          crNote: 'Kalasta vuorokausisaaliin verran äläkä enempää — tämä on toipuva villilohijoki, joten vapauta kaikki mitä et aio syödä.',
+          officialLabel: 'Säännöt — simojoki.com',
+        },
+        {
+          name: 'Erämaan perhovedet',
+          badge: 'Syrjäinen harjus ja taimen',
+          body: 'Kävelyyn valmiille kalastajille: Lutto ja Suomujoki Urho Kekkosen puiston alueella sekä Käkkälö ja Pöyris ylä-Ounasjoen vesistössä. Vain perhokalastusta harjukselle ja taimenelle Metsähallituksen lupa-alueilla — syrjäisiä, vähän kalastettuja, ja tarkka lupa-alue kannattaa varmistaa eräluvat.fi:stä ennen lähtöä.',
+          crNote: 'Erämaan kannat ovat ohuita ja hidaskasvuisia; kevyt kosketus ja enimmäkseen vapauttaminen pitää ne kalastettavina.',
+          officialLabel: 'Luvat — eräluvat.fi',
+        },
+      ],
+    },
+    lakes: {
+      title: 'Järvet',
+      body: 'Inarijärvi — Suomen kolmanneksi suurin, noin 1 040 km² — on pääosassa: harjus, ahven ja siika ulottuvilla, ja lisäksi arvostettu nieriä (Inarissa 45 cm alamitta, harvinainen saalis). Se on suuri, avoin vesi, joten mene paikallisen tai oppaan kanssa. Pienemmät vedet kuten Ounasjärvi ja Levin alueen järvet tarjoavat helposti ahventa, siikaa ja harjusta. Peruspilkkiminen niillä kaikilla on ilmaista; opastettuja retkiä myydään laajasti. Alamitat ja luvat eräluvat.fi:n mukaan.',
+    },
+    tornioBox: {
+      title: 'Tornion lohi 2026 — ennen ensimmäistä heittoa',
+      rules: [
+        'Kausi: 8. kesäkuuta 2026 klo 19:00 alkaen 15. elokuuta 2026 asti.',
+        '16.–25. elokuuta on rajoitettu jakso: vain perho tai viehe, väkäsettömät koukut, ja kaikki yli 65 cm lohet vapautettava heti.',
+        'Saaliskiintiö: enintään 1 lohi per 24 tuntia JA enintään 2 lohta koko kaudella. Toisen lohesi jälkeen lopetat lohenkalastuksen loppuvuodeksi.',
+        'Viikkorauhoitus: sunnuntai klo 19:00 – maanantai klo 19:00 (Suomen aikaa).',
+        'Lohen alamitta 50 cm (valtakunnallinen sääntö tälle osalle Perämerta). Harjuksen alamitat vaihtelevat leveysasteen mukaan tässä joessa — 30 cm 67°N pohjoispuolella, 35 cm eteläpuolella — joten tarkista tarkka jokiosuutesi eräluvat-alueen 2502 sivulta.',
+        'Kaikki taimenet on vapautettava (meritaimen on rauhoitettu), kuolleena tai elävänä.',
+        'Veneestä: enintään 4 vapaa tai perhoa yhtä aikaa; ei gaffia (kalahakaa) eikä väkäsellistä laskeutuskoukkua.',
+        'Saalisilmoitus vaaditaan 14 vuorokauden kuluessa saaliista — myös vapauttamistasi kaloista.',
+        'Tarvitset Eräluvat-alueen 2502 luvan JA valtakunnallisen kalastonhoitomaksun.',
+      ],
+      verifyLine: 'Luvut tarkistettu eräluvat.fi-alueen 2502 ja valtioneuvosto.fi:n 2026-tietoja vasten — mutta Tornion lohisäännöt päätetään uudelleen joka kevät. Tarkista molemmat ennen matkaa.',
+      ctaStay: 'Vertaile majoitusta Pellossa',
+    },
+    iceFishing: {
+      title: 'Pilkkiminen — helpoin tapa aloittaa',
+      body: 'Pilkkiminen — yksi lyhyt vapa ja liikuteltava viehe — on Lapin aloittelijaystävällisintä kalastusta: ilmaista, ilman lupaa, minkä ikäisenä tahansa, tavallisilla järvillä Suomen jokamiehenoikeuksien nojalla (eräluvat.fi:n mukaan). Poikkeuksia ovat lohijokien kosket, kielletyt alueet ja tietyt erityiskohteet, sekä kaikki yhtä vapaa laajempi pyynti (useampi vapa, verkot, pitkäsiima), joka vaatii maksun ja luvan. Parhaat vedet: Inarijärvi, Ounasjärvi ja Levin alueen järvet ahvenelle, siialle ja harjukselle.',
+      safetyTitle: 'Jääturvallisuus',
+      safetyBody: 'Järven jää on epäluotettavaa lähellä tulo- ja lasku-uomia, koskia ja tekojärvien säännöstelyvyöhykkeitä. Tarkista jään paksuus, pysy pois virtaavasta vedestä ja ota paikallinen opas suurille avoimille vesille kuten Inarille. Tämä on turvallisuusohje, ei säännös — mutta järvet eivät jousta.',
+      cta: 'Varaa opastettu pilkkiretki',
+    },
+    licenses: {
+      title: 'Luvat ja maksut',
+      fee: 'Valtakunnallinen kalastonhoitomaksu (2026): 47 € kalenterivuodelta, 16 € seitsemältä vuorokaudelta tai 6 € yhdeltä vuorokaudelta — eräluvat.fi:n mukaan. Pakollinen viehe-, uistin- ja vetouistinkalastajille 18–69-vuotiaana; ilmainen alle 18-vuotiaille ja kaikille 70 vuotta täyttäneille (sekä niille, jotka täyttivät 65 vuotta 31. joulukuuta 2023 mennessä). Pidä kuitti mukana.',
+      freeRights: 'Ilmaiset jokamiehenoikeudet: onkiminen, pilkkiminen ja silakan litkaus ovat ilmaisia kaikille — ei maksua, ei lupaa. Yhden vavan viehekalastus on myös jokamiehenoikeus, mutta 18–69-vuotiaat tarvitsevat siihen silti maksullisen valtakunnallisen maksun. Mikään tästä ei päde vaelluskalojen koskissa eikä kielletyillä tai erityiskohteilla.',
+      waterPermits: 'Vesialuekohtaiset luvat: maksun päälle viehe- tai monen vavan kalastus vaatii luvan juuri sille vedelle — Metsähallituksen valtion vesien luvat eräluvat.fi:n kautta, paikalliset osakaskuntien / kalastusalueiden luvat yhteisvesillä, tai erityiset rajajokiluvat Tenolle ja Torniolle. Lupakohtaiset ehdot ovat usein tiukempia kuin valtakunnalliset vähimmäisrajat.',
+      sizesTitle: 'Valtakunnalliset alamitat (vähimmäisrajat — paikalliset säännöt voivat olla tiukempia)',
+      sizes: [
+        'Lohi: yleisesti 60 cm, 50 cm Perämerellä 63°30′N pohjoispuolella. Jokirauhoitus 1.9.–30.11.',
+        'Taimen (rasvaevä tallella): 50 cm 67°N pohjoispuolella, 60 cm 64° ja 67°N välillä. Täysin rauhoitettu kaikilla merialueilla vuodesta 2019.',
+        'Harjus: 30 cm 67°N pohjoispuolella, 35 cm eteläpuolella; kevätrauhoitus 1.4.–31.5. sisämaassa 67°N eteläpuolella.',
+        'Kuha: 42 cm. Hauki ja ahven: ei valtakunnallista alamittaa.',
+        'Nieriä: 45 cm Inarijärvessä. Siika: ei valtakunnallista alamittaa.',
+        'Nämä ovat kalastusasetuksen (1360/2015) valtakunnallisia vähimmäisrajoja; ELY-keskukset voivat muuttaa niitä ±20 %, ja jokikohtaiset säännöt menevät edelle — eräluvat.fi:n ja mmm.fi:n mukaan.',
+      ],
+      alwaysCheck: 'Tarkista aina kalastusrajoitus.fi omalle vesialueellesi ennen kalastusta — se näyttää kaikki kalastuslain mukaiset rajoitukset, ELY-päätökset ja suojelualueet.',
+    },
+    teno: {
+      title: 'Teno tarkemmin',
+      body: 'Teno (Tenojoki / Tana) on Suomen ja Norjan rajajoki omalla kahdenvälisellä kiintiöjärjestelmällään. Atlantinlohen kalastus on kielletty vuoden 2026 kaudella, voimassa 31. joulukuuta asti Tenon kalastussopimuksen pöytäkirjan mukaan — kielto, joka on pitänyt vuodesta 2021 ja päätetään uudelleen joka vuosi. (Vuoden 2026 sivuvesiasetus, 367/2026, säätää sivuvedet 1. kesäkuuta alkaen.) Tilanne valtioneuvosto.fi:n ja tenonkalatalousalue.fi:n mukaan.',
+      whatYouCan: 'Mitä voit tehdä: osta "muiden lajien kalastuslupa" — 20 €/vrk aikuisille, 10 €/vrk alle 18-vuotiaille — harjukselle, siialle ja taimenelle, vain kevyillä perhovälineillä, voimassa 10. kesäkuuta–20. elokuuta 2026, sekä valtakunnallinen maksu. Lohi ja rautu eivät sisälly.',
+      warnThirdParty: 'Osta se vain virallisesta kaupasta, tenonkalaluvat.fi. Älä varaa laillista lupaa kolmannen osapuolen sivustoilta — väärä tai virheellinen lupa rajajoella tarkoittaa laitonta kalastusta.',
+    },
+    norway: {
+      title: 'Norjan puolelle: merikalastus ja kuningasrapu',
+      seaBody: 'Merikalastus Norjassa on ilmaista kaikille, mutta ulkomaalaiset saavat käyttää vain käsivälineitä — vapaa, käsisiimaa tai pilkkiä; verkot, merrat ja pitkäsiimat ovat kiellettyjä (juuri siksi et voi itse pyytää kuningasrapua). Saaliin myyminen on laitonta. Talven turska Finnmarkin edustalla on vetonaula, myös pallas ja seiti. Norja julkaisee alamittansa lovdata.no:ssa (Høstingsforskriften §47): turska 44 cm ulkomerellä 62°N pohjoispuolella (55 cm lähellä rantaa), kolja 40 cm, pallas 84 cm ja 7,2 kg, seiti 45 cm vavalla ja siimalla. Yksi erillinen ehdoton sääntö: vapauta jokainen yli 2 metrin pallas. Pysy 100 m kalankasvattamoista, käytä pelastusliiviä, ja huomaa, että veneilylupa vaaditaan kaikilta vuonna 1980 tai myöhemmin syntyneiltä suuremmilla aluksilla.',
+      exportTitle: 'Kalan vieminen kotiin — vientisääntö',
+      exportBody: 'Paikan päällä syöminen tai päivän ilmainen kalastus on sallittua. Kalan vieminen rajan yli on rajoitettu 15 kiloon henkilöä kohti, kahdesti kalenterivuodessa 2026 — pudoten 10 kiloon 1. tammikuuta 2027 alkaen — ja vain jos saalis tuli Kalastusdirektoraatille rekisteröidyn turistikalastusyrityksen kautta, jonka on tehtävä päivittäiset saalisilmoitukset ja annettava vientiasiakirjasi. Vähimmäisikä 12 vuotta; palkintokalat eivät lasketa rajaan mukaan. Turskalaatikon kuljettaminen sattumanvaraiselta kalliolta ei ole sallittua. fiskeridir.no:n ja toll.no:n mukaan.',
+      crabTitle: 'Kuningasrapu: vain luvanvaraisen toimijan kanssa',
+      crabBody: 'Turistit eivät saa pyytää kuningasrapua itse — se on laillista vain luvanvaraisen toimijan kautta, jolla on osoitettu turistikiintiö, keskittyneenä Kirkenesin ja Varangin ympärille. Norjan kiintiösäädelty alue on 26°E itäpuolella (suunnilleen Nordkapp), missä kilven vähimmäisleveys on 13 cm ja vuoden 2026 turistikiintiö on 10 tonnia koirasrapuja; siitä länteen on vapaa torjuntavyöhyke. Kysy toimijaltasi voimassa olevista koko- ja sukupuolisäännöistä — heillä on lupaehdot. fiskeridir.no:n mukaan.',
+      cta: 'Varaa Kirkenesin kuningasrapusafari',
+      ribLabel: 'Kesän RIB-safari',
+      carNote: 'Sinne pääsy tarkoittaa ajamista Norjaan — katso alla oleva vuokra-autohuomautus, sillä useimmat välittäjävuokraukset vaativat ennakkovaltuutuksen ja rajanylitysmaksun ennen kuin sallivat ylityksen.',
+    },
+    gettingThere: {
+      title: 'Sinne pääsy ja auton vuokraus',
+      body: 'Joet ovat kaukana lentokentistä, joten auto on käytännössä välttämätön. Rovaniemi (RVN) avaa läntiset joet; Kittilä (KTT) sopii Ylläkselle, Kolariin ja Muonioon; Ivalo (IVL) yltää Inariin, Utsjoelle, Nuorgamiin ja edelleen ajoon Kirkenesiin. Yksi toistamisen arvoinen varoitus: monet välittäjäautot vaativat ennakkovaltuutuksen ja rajanylitysmaksun (noin 60 € on nähty) Norjaan menoon — ilmoita ylityksestä noudettaessa, tai sopimus raukeaa. Jotkin paikalliset toimittajat sisällyttävät pohjoismaisen rajanylityssuojan vakiona.',
+      cta: 'Vuokraa auto Rovaniemeltä (RVN)',
+    },
+    gear: {
+      title: 'Mitä pakata',
+      body: 'Kesän joet vaativat hengittävät kahluuhousut, kerrospukeutumisen ja hyttyssuojan; vesi pysyy kylmänä keskiyön auringossakin. Talven pilkkiminen vaatii aidosti lämpöeristetyt varusteet, jääkairan ja jotain lämmintä istuttavaa. Aloittamiseen ei tarvita paljon — lyhyt vapa, kourallinen pilkkejä ja lämmin termospullo riittävät ensimmäiseen päivään jäällä. Osta tai vuokraa paikan päältä, jos saavut kevyin kantamuksin.',
+    },
+    season: {
+      title: 'Kausi yhdellä silmäyksellä',
+      rows: [
+        { period: 'Tammi–huhti', what: 'Parasta pilkkiaikaa jäätyneillä järvillä — ilmaista, perheystävällistä, minkä ikäisenä tahansa.' },
+        { period: 'Huhti–touko', what: 'Harjuksen kevätrauhoitus sisämaassa 67°N eteläpuolella (1.4.–31.5.).' },
+        { period: 'Kesäkuu', what: 'Joet avautuvat; Tornion lohi avautuu 8. kesäkuuta; Teno pysyy kiinni lohelta; Ivalojoki kiinni joka maanantai 15. kesäkuuta alkaen.' },
+        { period: 'Heinä–elokuun puoliväli', what: 'Kesän lohihuippu Torniolla ja Simojoella.' },
+        { period: '16.–25. elokuuta', what: 'Tornion rajoitettu jakso: perho tai viehe, väkäsettömät koukut, vapauta kaikki yli 65 cm lohet.' },
+        { period: '1.9.–30.11.', what: 'Syysrauhoitus taimenelle ja lohelle joissa ja puroissa.' },
+        { period: 'Lähteet', what: 'Päivämäärät eräluvat.fi:n, valtioneuvosto.fi:n ja simojoki.comin mukaan — tarkista uudelleen joka kausi.' },
+      ],
+    },
+    faq: {
+      title: 'Kalastus Lapissa — UKK',
+      items: [
+        {
+          q: 'Tarvitsenko luvan pilkkimiseen?',
+          a: 'Et. Peruspilkkiminen yhdellä pilkkivavalla on Suomessa kaikkien ilmainen jokamiehenoikeus, minkä ikäisenä tahansa — ei maksua eikä lupaa — tavallisilla järvillä. Se poikkeaa vain lohijokien koskissa, kielletyillä alueilla ja erityiskohteilla, tai jos käytät pilkkihärveleitä, verkkoja tai iskukoukkuja, jotka vaativat valtakunnallisen maksun ja vesialueluvan (eräluvat.fi).',
+        },
+        {
+          q: 'Voinko kalastaa lohta Tenolla vuonna 2026?',
+          a: 'Et. Atlantinlohen kalastus Tenon pääuomassa on kielletty vuonna 2026, voimassa 31. joulukuuta asti Suomen ja Norjan Tenon kalastussopimuksen mukaan. Voit kalastaa muita lajeja (harjus, siika, taimen) 20 €/vrk maksavalla "muiden lajien" luvalla tenonkalaluvat.fi:stä, lohi pois lukien.',
+        },
+        {
+          q: 'Kuinka monta lohta saan pitää Torniolla?',
+          a: 'Vuonna 2026 enintään 1 lohi per 24 tuntia ja enintään 2 lohta koko kaudella — molemmat rajat pätevät yhtä aikaa. Toisen lohesi jälkeen sinun on lopetettava lohenkalastus loppuvuodeksi. Alamitta on 50 cm (eräluvat.fi-alueen 2502 ja valtioneuvosto.fi:n mukaan).',
+        },
+        {
+          q: 'Voinko tuoda saaliini kotiin Norjasta?',
+          a: 'Vain rekisteröidyn turistikalastusleirin kautta. Vientiraja on 15 kg henkilöä kohti, kahdesti kalenterivuodessa 2026 (pudoten 10 kiloon 1. tammikuuta 2027 alkaen), saaliin on tultava Kalastusdirektoraatille rekisteröidyn yrityksen kautta, ja vähimmäisikä on 12 vuotta. Päivän ilmainen kalastus paikan päällä syötäväksi on sallittua; itse pyytämäsi kalan vieminen ei (fiskeridir.no).',
+        },
+        {
+          q: 'Voinko pyytää kuningasrapua itse?',
+          a: 'Et. Turistit eivät saa pyytää kuningasrapua suoraan — se on laillista vain luvanvaraisen toimijan kautta, jolla on osoitettu turistikiintiö, keskittyneenä Kirkenesin ja Varangin ympärille. Oman rapumerran laskeminen vierailijana on laitonta (fiskeridir.no).',
+        },
+        {
+          q: 'Mikä on kalastusmaksu ja kuka on siitä vapautettu?',
+          a: 'Valtakunnallinen kalastonhoitomaksu vuodelle 2026 on 47 € kalenterivuodelta, 16 € seitsemältä vuorokaudelta tai 6 € yhdeltä vuorokaudelta (eräluvat.fi). Se vaaditaan viehe-, uistin- ja vetouistinkalastajilta 18–69-vuotiaana; alle 18-vuotiaat ja kaikki 70 vuotta täyttäneet ovat vapautettuja, samoin ne, jotka täyttivät 65 vuotta 31. joulukuuta 2023 mennessä.',
+        },
+        {
+          q: 'Mikä Lapin joki on paras lohelle 2026?',
+          a: 'Tornion–Muonion vesistö — se on realistinen avoin atlantinlohivesi Tenon ollessa kiinni, ja vuoden 2026 kausi on 8. kesäkuuta–15. elokuuta. Myös Simojoki eteläisessä Lapissa on auki. Molemmat ovat rajoitettuja ja tarkoin säädeltyjä, joten tarkista eräluvat.fi ennen lähtöä.',
+        },
+        {
+          q: 'Muuttuvatko alamitat todella leveysasteen mukaan?',
+          a: 'Kyllä. Suurin osa Lapista on 67°N pohjoispuolella, missä useat vähimmäisrajat ovat pienempiä — harjus on 30 cm linjan pohjoispuolella ja 35 cm eteläpuolella, ja rasvaevällinen taimen on 50 cm 67°N pohjoispuolella. Varmista aina tarkka jokiosuutesi, sillä lupakohtaiset säännöt voivat olla tiukempia (eräluvat.fi).',
+        },
+      ],
+    },
+    crossLinks: [
+      {
+        title: 'Kaikki kalastusretket',
+        blurb: 'Opastettuja pilkki-, lohi- ja kuningasrapuelämyksiä varattavaksi.',
+      },
+      {
+        title: 'Lapin sisävesiluonto',
+        blurb: 'Kalastuksen taustalla olevat joet ja järvet, LaplandNaturessa.',
+      },
+      {
+        title: 'Arktinen Norja',
+        blurb: 'Ylitys Kirkenesiin ja Varangin rannikolle, LaplandVisitissä.',
+      },
+    ],
+  },
   nav: {
     home: 'Etusivu',
     destinations: 'Kohteet',

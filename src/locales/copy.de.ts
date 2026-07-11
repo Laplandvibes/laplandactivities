@@ -1,8 +1,235 @@
 import type { SectionCopy } from './types'
-import en from './copy.en'
 
 const de: SectionCopy = {
-  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
+  fishing: {
+    metaTitle: 'Angeln in Lappland & im Nordmeer | LaplandActivities',
+    metaDescription: 'Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und norwegische Königskrabben-Safaris — mit den Regeln, Gebühren und offiziellen Genehmigungslinks für 2026, die Sie vor dem ersten Wurf brauchen.',
+    verifyBanner: 'Die Vorschriften ändern sich jedes Jahr — prüfen Sie die offiziellen Genehmigungsbedingungen vor dem Angeln. Jede Zahl unten nennt und verlinkt ihre Quelle.',
+    hero: {
+      eyebrow: 'Finnisch-Lappland · Arktisches Norwegen',
+      title: 'Angeln in Lappland & im Nordmeer',
+      sub: 'Drei Angelreviere, eine Reise: kostenloses Eisangeln auf zugefrorenen Seen, lizenzierte Lachsflüsse im Sommer und Königskrabben-Safaris über die norwegische Grenze. Hier ist, was 2026 geöffnet ist — und die Regeln, die dafür sorgen, dass die Fische zurückkehren.',
+      ctaBook: 'Geführte Eisangeltour buchen',
+      ctaRules: 'Vor dem ersten Wurf: Lizenzen & Regeln',
+      trustLine: 'Geprüft anhand offizieller finnischer (eräluvat.fi, MMM) und norwegischer (fiskeridir.no) Quellen. Die Vorschriften ändern sich jedes Jahr — prüfen Sie Ihr Gewässer vor dem Angeln.',
+    },
+    eyebrows: {
+      eco: 'Natur zuerst',
+      freshwater: 'Süßwasser',
+      legal: 'Der rechtliche Kern',
+      liability: 'Hohe Haftung · 2026',
+      explore: 'Weiter entdecken',
+    },
+    eco: {
+      title: 'Die Fische zuerst',
+      lead: 'Lapplands Gewässer stehen unter echtem Druck, und die Regeln spiegeln das wider. Vier kurze Geschichten erklären, warum manche Flüsse weit offen und andere geschlossen sind — und warum "Fangen und Zurücksetzen" auf fast jeder Karte unten auftaucht.',
+      stories: [
+        {
+          title: 'Der Zusammenbruch des Teno-Lachses',
+          body: 'Der Teno (Tenojoki / Tana) war einer der großen Atlantiklachs-Flüsse der Welt. Seine Bestände fielen so weit, dass Finnland und Norwegen das Lachsangeln im Hauptfluss ab 2021 verboten, und das Verbot gilt für 2026 weiterhin bis zum 31. Dezember gemäß dem Teno-Fischereiabkommen der beiden Länder. Äsche und Felchen sind mit der richtigen Genehmigung fischbar; Lachs nicht.',
+        },
+        {
+          title: 'Buckellachs, ein ungebetener Gast',
+          body: 'Der Buckellachs (Oncorhynchus gorbuscha) gehört in den Nordpazifik. Seit den späten 1950er-Jahren in Nordwestrussland ausgesetzt, drängt er nun in ungeraden Jahren in den Teno, den Näätämö und nach Nordnorwegen, und Finnlands Register invasiver Arten (vieraslajit.fi) führt ihn als schädlich. Seine Zahlen schwanken von Jahr zu Jahr stark, daher werden Angler gebeten, jeden gefangenen Buckellachs zu entnehmen und zu melden, statt ihn zurückzusetzen.',
+        },
+        {
+          title: 'Königskrabbe: begehrt und invasiv',
+          body: 'Die Rote Königskrabbe wurde aus dem Pazifik in die Barentssee gebracht und breitete sich entlang der Finnmark-Küste nach Westen aus. Sie ist wertvoll genug, um eine ganze Safari-Branche zu tragen, und zugleich invasiv genug, dass Norwegen ein Zwei-Zonen-System betreibt: eine quotenregulierte Fischerei im Osten und eine freie Bekämpfungszone im Westen, um die Ausbreitung zu bremsen.',
+        },
+        {
+          title: 'Die stille Rückkehr des Tornio',
+          body: 'Das Torne-Muonio-System ist zusammen mit dem schwedischen Kalix eines von nur zwei großen unregulierten Flusssystemen, die in Finnland und der EU verblieben sind, so Finnlands Umweltbehörde (ymparisto.fi). Sein Wildlachs hat sich so weit erholt, dass eine streng begrenzte Fischerei — zwei Lachse pro Angler für die gesamte Saison — 2026 geöffnet bleibt. Es ist das Spiegelbild des Teno und der Beweis, dass die Regeln funktionieren können.',
+        },
+      ],
+    },
+    firstThings: {
+      title: 'Zwei Dinge, die zuerst zu klären sind',
+      body1: 'Finnland betreibt ein zweistufiges System. Stufe eins ist die staatliche Fischereiabgabe (kalastonhoitomaksu), zahlbar von allen 18- bis 69-Jährigen, die mit Köder, Blinker oder Schleppangel fischen — 47 € für das Kalenderjahr, 16 € für sieben Tage oder 6 € für einen Tag im Jahr 2026, laut eräluvat.fi. Unter 18-Jährige und alle ab 70 Jahren fischen ohne sie. Stufe zwei ist eine gewässerspezifische Genehmigung für genau den See oder Fluss, an dem Sie fischen.',
+      body2: 'Die große Ausnahme: einfaches Stippangeln und Eisangeln (pilkki) sind ein kostenloses allgemeines Recht für alle, jeden Alters, ohne Gebühr und ohne Genehmigung, an gewöhnlichen Gewässern. Auch der Breitengrad zählt — der Großteil Lapplands liegt nördlich der 67°N-Linie, wo mehrere Mindestmaße niedriger sind. Prüfen Sie immer Ihren genauen Ort auf der offiziellen Beschränkungskarte, bevor Sie losziehen.',
+      feeLink: 'Staatliche Abgabe — eräluvat.fi',
+      mapLink: 'Beschränkungskarte — kalastusrajoitus.fi',
+    },
+    rivers: {
+      title: 'Die Flüsse',
+      lead: 'Sechs Gewässer, die die Fahrt wert sind, mit ihrem Status für 2026 vorneweg. Saison-, Größen- und Quotenangaben ändern sich jedes Jahr — jede Karte nennt ihre offizielle Quelle, prüfen Sie also vor dem Angeln.',
+      cards: [
+        {
+          name: 'Tornio–Muonio–Könkämäeno',
+          badge: 'Lachs offen 2026',
+          body: 'Der realistische Atlantiklachs-Fluss, um den man eine Reise plant, solange der Teno geschlossen ist. Ein frei fließendes Grenzsystem, das man sich mit Schweden teilt, mit klassischen Angelplätzen bei Pello, Kolari, Muonio und Enontekiö. Die Lachssaison 2026 läuft vom 8. Juni bis 15. August unter strengen Obergrenzen — alle Details in der Box unten. Saison- und Größenangaben laut eräluvat.fi-Gebiet 2502 und valtioneuvosto.fi.',
+          crNote: 'Fangen und Zurücksetzen: Alle Forellen müssen zurückgesetzt werden (die Meerforelle ist geschützt), und sobald Sie zwei Lachse entnommen haben, ist Ihre Saison beendet.',
+          officialLabel: 'Genehmigung — eräluvat.fi Gebiet 2502',
+        },
+        {
+          name: 'Teno / Tana',
+          badge: 'Lachs gesperrt 2026',
+          body: 'Das Atlantiklachs-Angeln im Hauptlauf des Teno ist für 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Teno-Abkommen zwischen Finnland und Norwegen — planen Sie hier keine Lachsreise. Andere Arten (Äsche, Felchen, Forelle) können Sie weiterhin mit der Genehmigung "für andere Arten" zu 20 €/Tag befischen, nur mit leichtem Fliegengerät, ausschließlich über den offiziellen Shop tenonkalaluvat.fi erhältlich. Status laut valtioneuvosto.fi und tenonkalatalousalue.fi.',
+          crNote: 'Lachs und Seesaibling sind von der Genehmigung für andere Arten ausgeschlossen — einen versehentlich gefangenen Lachs freizulassen ist Pflicht, keine Wahl.',
+          officialLabel: 'Genehmigung — tenonkalaluvat.fi',
+        },
+        {
+          name: 'Ounasjoki',
+          badge: 'Äsche & Forelle',
+          body: 'Ein rund 300 km langer geschützter, frei fließender Nebenfluss des Kemijoki, der von Enontekiö bis Rovaniemi verläuft. Es gibt keinen Lachsaufstieg — dies ist ein Äschen- und Forellenfluss. Angeln und Jiggen sind im stillen Wasser frei, in den Fließstrecken jedoch verboten (eine Wanderfischgewässer-Regel), Sie brauchen also die Rutengenehmigung von Metsähallitus plus die staatliche Abgabe. Genehmigungen über eräluvat.fi und das Fischereigebiet Ounasjoki.',
+          crNote: 'Flussforellen sind vom 1. September bis 30. November geschützt; die Frühjahrsschonzeit der Äsche (1. Apr.–31. Mai) gilt südlich von 67°N — prüfen Sie Ihre Strecke.',
+          officialLabel: 'Genehmigung — eräluvat.fi (Ounasjoki)',
+        },
+        {
+          name: 'Ivalojoki',
+          badge: 'Äsche & Forelle · montags gesperrt',
+          body: 'Goldwäscher-Land, das in den Inarisee mündet, und der wichtigste Laichfluss für die wilde Inari-Seeforelle. Die Saison 2026 auf der Strecke Toloskoski–Appisjokisuu läuft vom 17. Juni bis 31. August, wobei ab dem 15. Juni jeden Montag (00:00–23:59) jegliches Angeln gesperrt ist. Daten laut eräluvat.fi-Gebiet 1581.',
+          crNote: 'Die Seeforelle des Inari-Stamms ist geschützt — Forellen mit intakter Fettflosse unter 50 cm (nördlich von 67°N) gehen sofort zurück, und der Fluss ist vom 1. Sept.–30. Nov. für Forelle gesperrt.',
+          officialLabel: 'Genehmigung — eräluvat.fi Gebiet 1581',
+        },
+        {
+          name: 'Simojoki',
+          badge: 'Lachs offen 2026',
+          body: 'Ein wilder Atlantiklachs-Fluss am Südrand Lapplands, der die Bottnische Bucht erreicht. Die offiziellen Regeln erlauben einen Lachs pro Tag als Teil eines Tagesfangs von drei Lachsartigen, mit einer wöchentlichen Sperre von Montag 19:00 bis Dienstag 19:00 (15. Juni–31. August) und einer herbstlichen Flusssperre vom 1. Sept.–30. Nov. Prüfen Sie die aktuelle Genehmigung auf eine etwaige Saison-Gesamtobergrenze. Regeln laut simojoki.com.',
+          crNote: 'Fischen Sie den Tagesfang und nicht mehr — dies ist ein sich erholender Wildlachs-Fluss, setzen Sie also alles zurück, was Sie nicht essen wollen.',
+          officialLabel: 'Regeln — simojoki.com',
+        },
+        {
+          name: 'Wildnis-Fliegengewässer',
+          badge: 'Abgelegene Äsche & Forelle',
+          body: 'Für Angler, die bereit sind hineinzuwandern: der Lutto und der Suomujoki im Gebiet des Urho-Kekkonen-Parks sowie der Käkkälö und der Pöyris im oberen Ounasjoki-System. Nur Fliegenfischen auf Äsche und Forelle in Genehmigungsgebieten von Metsähallitus — abgelegen, wenig befischt und es lohnt sich, das genaue Genehmigungsgebiet vor dem Aufbruch auf eräluvat.fi zu bestätigen.',
+          crNote: 'Wildnisbestände sind dünn und langsamwüchsig; ein behutsamer Umgang und überwiegendes Zurücksetzen hält sie befischbar.',
+          officialLabel: 'Genehmigungen — eräluvat.fi',
+        },
+      ],
+    },
+    lakes: {
+      title: 'Die Seen',
+      body: 'Der Inarisee — mit rund 1.040 km² der drittgrößte Finnlands — ist der Star: Äsche, Barsch und Felchen in Reichweite, dazu der begehrte Saibling (Mindestmaß 45 cm im Inari, ein seltener Fang). Es ist großes, offenes Gewässer, gehen Sie also mit einem Einheimischen oder einem Guide. Kleinere Gewässer wie der Ounasjärvi und die Seen im Levi-Gebiet bieten leicht Barsch, Felchen und Äsche. Einfaches Eisangeln ist auf ihnen allen kostenlos; geführte Touren werden vielerorts angeboten. Mindestmaße und Genehmigungen laut eräluvat.fi.',
+    },
+    tornioBox: {
+      title: 'Tornio-Lachs 2026 — vor dem ersten Wurf',
+      rules: [
+        'Saison: 8. Juni 2026 ab 19:00 Uhr bis 15. August 2026.',
+        '16.–25. August ist eine eingeschränkte Nachsaison: nur Fliege oder Köder, widerhakenlose Haken, und jeder Lachs über 65 cm ist sofort zurückzusetzen.',
+        'Fanglimit: maximal 1 Lachs pro 24 Stunden UND maximal 2 Lachse für die gesamte Saison. Nach Ihrem zweiten Lachs beenden Sie das Lachsangeln für das Jahr.',
+        'Wöchentliche Sperre: Sonntag 19:00 bis Montag 19:00 (finnische Zeit).',
+        'Mindestmaß Lachs 50 cm (die staatliche Regel für diesen Teil der Bottnischen Bucht). Die Mindestmaße für Äsche variieren an diesem Fluss je nach Breitengrad — 30 cm nördlich von 67°N, 35 cm südlich davon — prüfen Sie also Ihre genaue Strecke auf der eräluvat-Gebietsseite 2502.',
+        'Alle Forellen müssen zurückgesetzt werden (die Meerforelle ist geschützt), tot oder lebendig.',
+        'Vom Boot: maximal 4 Ruten oder Fliegen gleichzeitig; kein Gaff und kein Landehaken mit Widerhaken.',
+        'Eine Fangmeldung ist innerhalb von 14 Tagen nach dem Fang erforderlich — einschließlich zurückgesetzter Fische.',
+        'Sie benötigen die Eräluvat-Gebietsgenehmigung 2502 PLUS die staatliche Fischereiabgabe.',
+      ],
+      verifyLine: 'Zahlen geprüft anhand eräluvat.fi-Gebiet 2502 und valtioneuvosto.fi für 2026 — die Tornio-Lachsregeln werden jedoch jedes Frühjahr neu festgelegt. Prüfen Sie beide vor der Reise erneut.',
+      ctaStay: 'Unterkünfte in Pello vergleichen',
+    },
+    iceFishing: {
+      title: 'Eisangeln — der einfache Einstieg',
+      body: 'Pilkki — eine kurze Rute und ein gejiggter Köder — ist das anfängerfreundlichste Angeln in Lappland: kostenlos, ohne Genehmigung, in jedem Alter, an gewöhnlichen Seen unter Finnlands allgemeinem Angelrecht (laut eräluvat.fi). Die Ausnahmen sind Lachsfluss-Stromschnellen, gesperrte Gebiete und bestimmte Sonderstellen sowie alles, was über eine einzelne Rute hinausgeht (Eishaken-Automaten, Netze, Setzangeln), was die Abgabe und eine Genehmigung erfordert. Beste Gewässer: der Inarisee, der Ounasjärvi und die Seen im Levi-Gebiet für Barsch, Felchen und Äsche.',
+      safetyTitle: 'Eissicherheit',
+      safetyBody: 'Seeeis ist in der Nähe von Zu- und Abflüssen, Stromschnellen und Absenkzonen von Stauseen unzuverlässig. Prüfen Sie die Dicke, bleiben Sie von fließendem Wasser fern und nehmen Sie auf großen offenen Gewässern wie dem Inari einen einheimischen Guide mit. Das ist ein Sicherheitshinweis, keine Vorschrift — aber die Seen kennen keine Nachsicht.',
+      cta: 'Geführte Eisangeltour buchen',
+    },
+    licenses: {
+      title: 'Lizenzen & Genehmigungen',
+      fee: 'Staatliche Fischereiabgabe (2026): 47 € für das Kalenderjahr, 16 € für sieben Tage oder 6 € für einen Tag — laut eräluvat.fi. Pflicht für Köder-, Spinn- und Schleppangler von 18–69 Jahren; kostenlos für unter 18-Jährige und alle ab 70 Jahren (sowie für jene, die bis zum 31. Dezember 2023 65 Jahre alt wurden). Führen Sie den Beleg mit.',
+      freeRights: 'Kostenlose allgemeine Rechte: Stippangeln, Eisangeln (pilkki) und das Heringsvorfach sind für alle kostenlos — keine Abgabe, keine Genehmigung. Auch das Köderangeln mit einer Rute ist ein allgemeines Recht, aber die Gruppe der 18- bis 69-Jährigen braucht dafür weiterhin die kostenpflichtige staatliche Abgabe. Nichts davon gilt in Wanderfisch-Stromschnellen oder an gesperrten / Sonderstellen.',
+      waterPermits: 'Gewässerspezifische Genehmigungen: zusätzlich zur Abgabe braucht das Köder- oder Mehrruten-Angeln eine Genehmigung für genau das Gewässer — Genehmigungen für staatliche Gewässer von Metsähallitus über eräluvat.fi, lokale Genehmigungen der osakaskunta / Fischereigebiete an gemeinschaftlichen Gewässern, oder die besonderen Grenzfluss-Genehmigungen für Teno und Tornio. Die Bedingungen je Genehmigung sind oft strenger als die staatlichen Mindestwerte.',
+      sizesTitle: 'Staatliche Mindestmaße (Untergrenzen — lokale Regeln können strenger sein)',
+      sizes: [
+        'Lachs: allgemein 60 cm, 50 cm in der Bottnischen Bucht nördlich von 63°30′N. Flusssperre 1. Sept.–30. Nov.',
+        'Forelle (Fettflosse intakt): 50 cm nördlich von 67°N, 60 cm zwischen 64° und 67°N. In allen Meeresgebieten seit 2019 vollständig geschützt.',
+        'Äsche: 30 cm nördlich von 67°N, 35 cm südlich davon; Frühjahrsschonzeit 1. Apr.–31. Mai im Binnenland südlich von 67°N.',
+        'Zander (kuha): 42 cm. Hecht und Barsch: kein staatliches Mindestmaß.',
+        'Saibling: 45 cm im Inarisee. Felchen: kein staatliches Mindestmaß.',
+        'Dies sind staatliche Untergrenzen aus der Fischereiverordnung (1360/2015); die ELY-Zentren können sie um ±20 % anpassen, und flussspezifische Regeln haben Vorrang — laut eräluvat.fi und mmm.fi.',
+      ],
+      alwaysCheck: 'Prüfen Sie vor dem Angeln immer kalastusrajoitus.fi für Ihr genaues Gewässer — die Seite zeigt jede Beschränkung nach dem Fischereigesetz, ELY-Entscheidungen und Schutzgebiete.',
+    },
+    teno: {
+      title: 'Der Teno im Detail',
+      body: 'Der Teno (Tenojoki / Tana) ist ein Grenzfluss zwischen Finnland und Norwegen mit einem eigenen bilateralen Quotensystem. Das Atlantiklachs-Angeln ist für die Saison 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Protokoll des Teno-Fischereiabkommens — ein Verbot, das seit 2021 gilt und jedes Jahr neu entschieden wird. (Eine Nebengewässer-Verordnung 2026, 367/2026, regelt die Seitengewässer ab dem 1. Juni.) Status laut valtioneuvosto.fi und tenonkalatalousalue.fi.',
+      whatYouCan: 'Was Sie tun können: Kaufen Sie die "Angellizenz für andere Arten" — 20 €/Tag für Erwachsene, 10 €/Tag für unter 18-Jährige — für Äsche, Felchen und Forelle, nur mit leichtem Fliegengerät, gültig vom 10. Juni bis 20. August 2026, plus die staatliche Abgabe. Lachs und Seesaibling sind ausgeschlossen.',
+      warnThirdParty: 'Kaufen Sie sie nur im offiziellen Shop tenonkalaluvat.fi. Buchen Sie die legale Genehmigung nicht über Drittanbieter-Seiten — eine falsche oder ungültige Genehmigung an einem Grenzfluss bedeutet illegales Angeln.',
+    },
+    norway: {
+      title: 'Hinüber nach Norwegen: Meeresangeln & Königskrabbe',
+      seaBody: 'Das Meeresangeln in Norwegen ist für alle kostenlos, aber Ausländer dürfen nur Handgerät verwenden — Rute, Handleine oder Pilker; Netze, Reusen und Langleinen sind tabu (genau deshalb können Sie Königskrabben nicht selbst fangen). Der Verkauf des Fangs ist illegal. Der winterliche Dorsch vor der Finnmark ist die Attraktion, dazu Heilbutt und Seelachs. Norwegen veröffentlicht seine Mindestmaße auf lovdata.no (Høstingsforskriften §47): Dorsch 44 cm auf hoher See nördlich von 62°N (55 cm küstennah), Schellfisch 40 cm, Heilbutt 84 cm und 7,2 kg, Seelachs 45 cm mit Rute und Leine. Eine gesonderte harte Regel: Setzen Sie jeden Heilbutt über 2 Meter zurück. Halten Sie 100 m Abstand zu Fischfarmen, tragen Sie eine Schwimmweste, und beachten Sie, dass für alle ab Jahrgang 1980 auf größeren Booten ein Bootsführerschein erforderlich ist.',
+      exportTitle: 'Fisch nach Hause bringen — die Ausfuhrregel',
+      exportBody: 'Vor Ort essen oder ein Tag kostenloses Angeln ist in Ordnung. Um Fisch über die Grenze zu bringen, sind Sie auf 15 kg pro Person begrenzt, zweimal pro Kalenderjahr im Jahr 2026 — sinkend auf 10 kg ab dem 1. Januar 2027 — und nur, wenn der Fang über einen bei der Fischereidirektion registrierten Tourismus-Angelbetrieb kam, der tägliche Fangmeldungen einreichen und Ihr Ausfuhrdokument ausstellen muss. Mindestalter 12; Trophäenfische zählen nicht zum Limit. Eine Kühlbox voll Dorsch von einem beliebigen Felsen mitzunehmen ist nicht erlaubt. Laut fiskeridir.no und toll.no.',
+      crabTitle: 'Königskrabbe: nur mit lizenziertem Anbieter',
+      crabBody: 'Touristen dürfen Königskrabben nicht selbst fangen — es ist nur über einen lizenzierten Anbieter mit zugeteilter Tourismusquote legal, konzentriert rund um Kirkenes und Varanger. Norwegens quotenreguliertes Gebiet liegt östlich von 26°E (etwa das Nordkap), wo die Mindestbreite des Rückenschilds 13 cm beträgt und die Tourismusquote 2026 bei 10 Tonnen männlicher Krabben liegt; westlich dieser Linie ist eine freie Bekämpfungszone. Fragen Sie Ihren Anbieter nach den aktuellen Größen- und Geschlechtsregeln — er hält die Genehmigungsbedingungen. Laut fiskeridir.no.',
+      cta: 'Königskrabben-Safari in Kirkenes buchen',
+      ribLabel: 'Sommer-RIB-Safari',
+      carNote: 'Die Anreise bedeutet, nach Norwegen zu fahren — siehe den Mietwagen-Hinweis unten, denn die meisten Broker-Mietwagen erfordern vor dem Grenzübertritt eine Vorautorisierung und eine Grenzübertrittsgebühr.',
+    },
+    gettingThere: {
+      title: 'Anreise & Mietwagen',
+      body: 'Die Flüsse liegen weit von Flughäfen entfernt, ein Auto ist also praktisch erforderlich. Rovaniemi (RVN) erschließt die westlichen Flüsse; Kittilä (KTT) passt zu Ylläs, Kolari und Muonio; Ivalo (IVL) erreicht Inari, Utsjoki, Nuorgam und die Weiterfahrt nach Kirkenes. Eine Warnung, die sich zu wiederholen lohnt: Viele Broker-Autos brauchen für die Einreise nach Norwegen eine Vorautorisierung und eine Grenzübertrittsgebühr (rund 60 € wurden gesehen) — melden Sie den Grenzübertritt bei der Abholung, sonst ist der Vertrag nichtig. Manche lokalen Anbieter schließen den nordischen Grenzübertrittsschutz serienmäßig ein.',
+      cta: 'Mietwagen ab Rovaniemi (RVN)',
+    },
+    gear: {
+      title: 'Was einpacken',
+      body: 'Sommerflüsse verlangen atmungsaktive Wathosen, Schichten und Mückenschutz; das Wasser bleibt selbst unter der Mitternachtssonne kalt. Winter-Pilkki braucht wirklich isolierte Ausrüstung, einen Eisbohrer und etwas Warmes zum Sitzen. Zum Anfangen braucht man nicht viel — eine kurze Rute, eine Handvoll Jigs und eine warme Thermoskanne decken einen ersten Tag auf dem Eis ab. Kaufen oder leihen Sie vor Ort, wenn Sie mit leichtem Gepäck anreisen.',
+    },
+    season: {
+      title: 'Die Saison auf einen Blick',
+      rows: [
+        { period: 'Jan–Apr', what: 'Beste Zeit fürs Eisangeln auf zugefrorenen Seen — kostenlos, familienfreundlich, jedes Alter.' },
+        { period: 'Apr–Mai', what: 'Frühjahrsschonzeit der Äsche im Binnenland südlich von 67°N (1. Apr.–31. Mai).' },
+        { period: 'Juni', what: 'Die Flüsse öffnen; der Tornio-Lachs startet am 8. Juni; der Teno bleibt für Lachs gesperrt; der Ivalojoki ist ab dem 15. Juni jeden Montag gesperrt.' },
+        { period: 'Juli–Mitte Aug.', what: 'Sommer-Lachshöhepunkt am Tornio und Simojoki.' },
+        { period: '16.–25. Aug.', what: 'Tornio-Nachsaison mit Einschränkungen: Fliege oder Köder, widerhakenlose Haken, jeden Lachs über 65 cm zurücksetzen.' },
+        { period: '1. Sept.–30. Nov.', what: 'Herbstliche Flusssperre für Forelle und Lachs in Flüssen und Bächen.' },
+        { period: 'Quellen', what: 'Daten laut eräluvat.fi, valtioneuvosto.fi und simojoki.com — jede Saison erneut prüfen.' },
+      ],
+    },
+    faq: {
+      title: 'Angeln in Lappland — FAQ',
+      items: [
+        {
+          q: 'Brauche ich eine Lizenz zum Eisangeln?',
+          a: 'Nein. Einfaches Eisangeln (pilkki) mit einer einzelnen gejiggten Rute ist in Finnland für alle ein kostenloses allgemeines Recht, in jedem Alter — keine Abgabe und keine Genehmigung — an gewöhnlichen Seen. Anders ist es nur an Lachsfluss-Stromschnellen, in gesperrten Gebieten und an Sonderstellen, oder wenn Sie Eishaken-Automaten, Netze oder Setzangeln verwenden, die die staatliche Abgabe und eine Gewässergenehmigung erfordern (eräluvat.fi).',
+        },
+        {
+          q: 'Darf ich 2026 im Teno auf Lachs angeln?',
+          a: 'Nein. Das Atlantiklachs-Angeln im Hauptlauf des Teno ist für 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Teno-Abkommen zwischen Finnland und Norwegen. Sie können andere Arten (Äsche, Felchen, Forelle) mit der Genehmigung "für andere Arten" zu 20 €/Tag von tenonkalaluvat.fi befischen, Lachs ausgenommen.',
+        },
+        {
+          q: 'Wie viele Lachse darf ich am Tornio behalten?',
+          a: '2026 maximal 1 Lachs pro 24 Stunden und maximal 2 Lachse für die gesamte Saison — beide Grenzen gelten gleichzeitig. Nach Ihrem zweiten Lachs müssen Sie das Lachsangeln für das Jahr beenden. Das Mindestmaß beträgt 50 cm (laut eräluvat.fi-Gebiet 2502 und valtioneuvosto.fi).',
+        },
+        {
+          q: 'Darf ich meinen Fang aus Norwegen mit nach Hause nehmen?',
+          a: 'Nur über ein registriertes Tourismus-Angelcamp. Das Ausfuhrlimit beträgt 15 kg pro Person, zweimal pro Kalenderjahr im Jahr 2026 (sinkend auf 10 kg ab dem 1. Januar 2027), der Fang muss über einen bei der Fischereidirektion registrierten Betrieb kommen, und das Mindestalter beträgt 12 Jahre. Ein Tag kostenloses Angeln zum Essen vor Ort ist in Ordnung; die Ausfuhr selbst gefangenen Fisches nicht (fiskeridir.no).',
+        },
+        {
+          q: 'Darf ich Königskrabben selbst fangen?',
+          a: 'Nein. Touristen dürfen Königskrabben nicht direkt fangen — es ist nur über einen lizenzierten Anbieter mit zugeteilter Tourismusquote legal, konzentriert rund um Kirkenes und Varanger. Als Besucher eine eigene Krabbenreuse auszulegen ist illegal (fiskeridir.no).',
+        },
+        {
+          q: 'Wie hoch ist die Angelabgabe und wer ist befreit?',
+          a: 'Die staatliche Fischereiabgabe für 2026 beträgt 47 € für das Kalenderjahr, 16 € für sieben Tage oder 6 € für einen Tag (eräluvat.fi). Sie ist für Köder-, Spinn- und Schleppangler von 18–69 Jahren erforderlich; unter 18-Jährige und alle ab 70 Jahren sind befreit, ebenso jene, die bis zum 31. Dezember 2023 65 Jahre alt wurden.',
+        },
+        {
+          q: 'Welcher Fluss Lapplands ist 2026 am besten für Lachs?',
+          a: 'Das Torne-Muonio-System — es ist die realistische offene Atlantiklachs-Fischerei, solange der Teno gesperrt ist, mit einer Saison 2026 vom 8. Juni bis 15. August. Auch der Simojoki im südlichen Lappland ist geöffnet. Beide sind begrenzt und streng reguliert, prüfen Sie also eräluvat.fi vor der Reise.',
+        },
+        {
+          q: 'Ändern sich die Mindestmaße wirklich mit dem Breitengrad?',
+          a: 'Ja. Der Großteil Lapplands liegt nördlich von 67°N, wo mehrere Untergrenzen niedriger sind — die Äsche misst 30 cm nördlich der Linie gegenüber 35 cm südlich davon, und die Forelle mit intakter Fettflosse 50 cm nördlich von 67°N. Bestätigen Sie immer Ihre genaue Strecke, denn die Regeln je Genehmigung können strenger sein (eräluvat.fi).',
+        },
+      ],
+    },
+    crossLinks: [
+      {
+        title: 'Alle Angeltouren',
+        blurb: 'Geführte Eisangel-, Lachs- und Königskrabben-Erlebnisse zum Buchen.',
+      },
+      {
+        title: 'Lapplands Süßwassernatur',
+        blurb: 'Die Flüsse und Seen hinter der Fischerei, auf LaplandNature.',
+      },
+      {
+        title: 'Arktisches Norwegen',
+        blurb: 'Der Übergang nach Kirkenes und an die Varanger-Küste, auf LaplandVisit.',
+      },
+    ],
+  },
   nav: {
     home: 'Startseite',
     destinations: 'Reiseziele',

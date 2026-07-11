@@ -35,6 +35,10 @@ const d: LangData = {
     "food": {
       "name": "Cibo e bevande",
       "description": "Ristoranti kota, raccolta di cibo selvatico, bacche, cene a base di renna sotto le stelle e tour dei birrifici locali."
+    },
+    "fishing": {
+      "name": "Pesca e pesca sul ghiaccio",
+      "description": "Pesca sul ghiaccio gratuita sui laghi gelati, fiumi da salmone su licenza come il Tornio e safari al granchio reale oltre il confine norvegese. Prima gli stock ittici: conosca le regole e rilasci ciò che il fiume deve recuperare."
     }
   },
   "destinations": {
@@ -868,6 +872,66 @@ const d: LangData = {
       "duration": "2-3 h",
       "difficulty": "Facile",
       "category": "Cibo e bevande"
+    },
+    "act-ice-fishing-great": {
+      "title": "Grande esperienza di pesca sul ghiaccio",
+      "description": "Pratichi il suo foro in un lago gelato vicino a Rovaniemi e peschi a jig persico e coregone con una guida esperta. La pesca sul ghiaccio di base non richiede licenza né età minima in Finlandia: è il modo più facile di provare la pesca artica prima di decidere se valga la pena il permesso annuale per la pesca con esca artificiale altrove. Si conclude con un pranzo grigliato alla fiamma.",
+      "highlights": [
+        "Tecnica del foro fatto da sé",
+        "Nessuna licenza per la pesca sul ghiaccio di base",
+        "Pranzo grigliato alla fiamma incluso"
+      ],
+      "duration": "3 h",
+      "difficulty": "Facile",
+      "category": "Pesca e pesca sul ghiaccio"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "Pesca sul ghiaccio a Rovaniemi",
+      "description": "Un'uscita di pesca sul ghiaccio guidata su un lago appena fuori Rovaniemi, pensata per rientrare in una prenotazione di mezza giornata. La pesca sul ghiaccio di base non richiede permesso né età minima, così i bambini pescano accanto agli adulti. Le guide illustrano la tecnica del jig e la sicurezza sul ghiaccio prima che chiunque metta piede sul ghiaccio aperto.",
+      "highlights": [
+        "Mezza giornata, vicino a Rovaniemi",
+        "Adatta alle famiglie, a qualsiasi età",
+        "Briefing sulla sicurezza sul ghiaccio incluso"
+      ],
+      "duration": "3 h",
+      "difficulty": "Facile",
+      "category": "Pesca e pesca sul ghiaccio"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Pesca sul ghiaccio artica in piccolo gruppo",
+      "description": "Una versione a gruppo limitato dell'uscita di pesca sul ghiaccio, con più affiancamento individuale sulla tecnica rispetto ai tour più grandi. Peschi persico e coregone attraverso il ghiaccio su un lago tranquillo, e porti a casa solo ciò che intende mangiare: la pesca pilkki è sempre stata su piccola scala, ed è esattamente il motivo per cui i laghi della Lapponia restano sani.",
+      "highlights": [
+        "Dimensione del gruppo limitata",
+        "Più attenzione individuale della guida",
+        "Persico e coregone attraverso il ghiaccio"
+      ],
+      "duration": "3 h",
+      "difficulty": "Facile",
+      "category": "Pesca e pesca sul ghiaccio"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Safari al granchio reale da Saariselkä a Kirkenes",
+      "description": "Attraversi il confine da Saariselkä fino a Kirkenes, in Norvegia, per un safari al granchio reale rosso nel mare di Barents. Il granchio reale non è autoctono qui: è stato immesso dal mare di Ochotsk negli anni Sessanta e non ha predatori naturali nelle acque norvegesi, così un prelievo regolato da quote e su licenza impedisce alla popolazione di sopraffare gli stock autoctoni di merluzzo e molluschi. Le guide salpano le nasse; la giornata si conclude con un pasto a base di granchio reale.",
+      "highlights": [
+        "Attraversa il confine verso Kirkenes, Norvegia",
+        "Prelievo su licenza di una specie invasiva",
+        "Pasto a base di granchio reale incluso"
+      ],
+      "duration": "Giornata intera",
+      "difficulty": "Moderato",
+      "category": "Pesca e pesca sul ghiaccio"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Safari estivo al granchio reale in gommone RIB a Kirkenes",
+      "description": "Un safari estivo in gommone RIB in partenza da Kirkenes stessa, verso il mare di Barents per salpare le nasse da granchio reale. Il granchio reale rosso è una specie invasiva qui, e il prelievo regolato da operatori autorizzati è parte del modo in cui la Norvegia lo gestisce: i granchi non prelevati continuano a diffondersi verso ovest lungo la costa. L'uscita si conclude con un pasto di granchio fresco a bordo o a terra.",
+      "highlights": [
+        "Safari in gommone RIB nel mare di Barents",
+        "Prelievo regolato da quote di una specie invasiva",
+        "Pasto di granchio reale fresco"
+      ],
+      "duration": "3 h",
+      "difficulty": "Moderato",
+      "category": "Pesca e pesca sul ghiaccio"
     }
   }
 }

@@ -35,6 +35,10 @@ const d: LangData = {
     "food": {
       "name": "Comida e bebida",
       "description": "Restaurantes kota, coleta de alimentos silvestres, frutas vermelhas, jantares de rena sob as estrelas e tours por cervejarias locais."
+    },
+    "fishing": {
+      "name": "Pesca e pesca no gelo",
+      "description": "Pesca no gelo gratuita em lagos congelados, rios de salmão licenciados como o Tornio e safáris de caranguejo-real do outro lado da fronteira norueguesa. Os estoques de peixe em primeiro lugar: conheça as regras, solte o que o rio precisa de volta."
     }
   },
   "destinations": {
@@ -880,6 +884,66 @@ const d: LangData = {
       "duration": "2-3 h",
       "difficulty": "Fácil",
       "category": "Comida e bebida"
+    },
+    "act-ice-fishing-great": {
+      "title": "Grande experiência de pesca no gelo",
+      "description": "Perfure o seu próprio buraco em um lago congelado perto de Rovaniemi e pesque perca e coregono com o jig ao lado de um guia experiente. A pesca no gelo básica não exige licença nem idade mínima na Finlândia — é a forma mais fácil de experimentar a pesca ártica antes de decidir se vale a pena a licença anual para pescar com isca artificial em outros lugares. Termina com um almoço grelhado na fogueira.",
+      "highlights": [
+        "Técnica de perfurar o próprio buraco",
+        "Sem licença para a pesca no gelo básica",
+        "Almoço grelhado na fogueira incluído"
+      ],
+      "duration": "3 h",
+      "difficulty": "Fácil",
+      "category": "Pesca e pesca no gelo"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "Pesca no gelo em Rovaniemi",
+      "description": "Uma saída de pesca no gelo com guia em um lago logo fora de Rovaniemi, pensada para caber em uma reserva de meio dia. A pesca no gelo básica não exige licença nem idade mínima, então as crianças pescam ao lado dos adultos. Os guias explicam a técnica do jig e a segurança no gelo antes de qualquer um pisar no gelo aberto.",
+      "highlights": [
+        "Meio dia, perto de Rovaniemi",
+        "Para toda a família, qualquer idade",
+        "Orientação de segurança no gelo incluída"
+      ],
+      "duration": "3 h",
+      "difficulty": "Fácil",
+      "category": "Pesca e pesca no gelo"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Pesca no gelo ártica em grupo pequeno",
+      "description": "Uma versão de grupo limitado da pescaria no gelo, com mais orientação individual sobre técnica do que os tours maiores. Pesque perca e coregono através do gelo em um lago tranquilo e leve para casa apenas o que pretende comer — a pesca pilkki sempre foi de pequena escala, e é exatamente por isso que os lagos da Lapônia se mantêm saudáveis.",
+      "highlights": [
+        "Grupo pequeno e limitado",
+        "Mais atenção individual do guia",
+        "Perca e coregono através do gelo"
+      ],
+      "duration": "3 h",
+      "difficulty": "Fácil",
+      "category": "Pesca e pesca no gelo"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Safári de caranguejo-real de Saariselkä a Kirkenes",
+      "description": "Cruze a fronteira de Saariselkä para Kirkenes, na Noruega, para um safári de caranguejo-real-vermelho no Mar de Barents. O caranguejo-real não é nativo daqui — foi introduzido do Mar de Okhotsk nos anos 1960 e não tem predadores naturais nas águas norueguesas, então uma captura licenciada e controlada por cota impede que a população tome conta dos estoques nativos de bacalhau e crustáceos. Os guias recolhem as armadilhas; o dia termina com uma refeição de caranguejo-real.",
+      "highlights": [
+        "Cruza a fronteira para Kirkenes, Noruega",
+        "Captura licenciada de uma espécie invasora",
+        "Refeição de caranguejo-real incluída"
+      ],
+      "duration": "Dia inteiro",
+      "difficulty": "Moderado",
+      "category": "Pesca e pesca no gelo"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Safári de verão de caranguejo-real em bote RIB em Kirkenes",
+      "description": "Um safári de verão em bote RIB partindo da própria Kirkenes, mar adentro no Mar de Barents para recolher armadilhas de caranguejo-real. O caranguejo-real-vermelho é uma espécie invasora aqui, e a captura regulada por operadores licenciados faz parte de como a Noruega o administra — o caranguejo não capturado continua se espalhando para oeste ao longo da costa. O passeio termina com uma refeição de caranguejo fresco a bordo ou em terra.",
+      "highlights": [
+        "Safári em bote RIB no Mar de Barents",
+        "Captura controlada por cota de uma espécie invasora",
+        "Refeição de caranguejo-real fresco"
+      ],
+      "duration": "3 h",
+      "difficulty": "Moderado",
+      "category": "Pesca e pesca no gelo"
     }
   }
 }

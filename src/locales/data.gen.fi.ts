@@ -4,6 +4,10 @@ import type { LangData } from './data'
 
 const d: LangData = {
   "categories": {
+    "fishing": {
+      "name": "Kalastus ja pilkkiminen",
+      "description": "Ilmaista pilkkimistä jäätyneillä järvillä, luvanvaraisia lohijoita kuten Tornionjoki ja kuningasrapusafareja Norjan rajan yli. Kalakannat edellä: tunne säännöt ja vapauta se, minkä joki tarvitsee takaisin."
+    },
     "adventure": {
       "name": "Seikkailu",
       "description": "Moottorikelkkasafareita, jääkartingia, jääkiipeilyä, koskenlaskua ja selviytymiskursseja. Adrenaliinia arktisessa erämaassa."
@@ -101,6 +105,66 @@ const d: LangData = {
     "Challenging": "Vaativa"
   },
   "activities": {
+    "act-ice-fishing-great": {
+      "title": "Mahtava pilkkielämys",
+      "description": "Poraa oma reikäsi jäätyneeseen järveen Rovaniemen lähellä ja pilkitä ahventa ja siikaa kokeneen oppaan kanssa. Peruspilkkiminen ei vaadi Suomessa lupaa eikä alaikärajaa — se on helpoin tapa kokeilla arktista kalastusta ennen kuin päätät, kannattaako muualla viehekalastukseen tarvittava vuosilupa. Päättyy nuotiolla grillattuun lounaaseen.",
+      "highlights": [
+        "Poraa-oma-reikäsi -tekniikka",
+        "Peruspilkkiminen ei vaadi lupaa",
+        "Nuotiolla grillattu lounas mukana"
+      ],
+      "duration": "3 h",
+      "difficulty": "Helppo",
+      "category": "Kalastus ja pilkkiminen"
+    },
+    "act-ice-fishing-rovaniemi": {
+      "title": "Rovaniemen pilkkiretki",
+      "description": "Opastettu pilkkiretki Rovaniemen kupeessa olevalla järvellä, mitoitettu puolen päivän varaukseen. Peruspilkkiminen ei vaadi lupaa eikä alaikärajaa, joten lapset pilkkivät aikuisten rinnalla. Oppaat käyvät läpi pilkkitekniikan ja jääturvallisuuden ennen kuin kukaan astuu jäälle.",
+      "highlights": [
+        "Puoli päivää, lähellä Rovaniemeä",
+        "Perheystävällinen, minkä ikäisenä tahansa",
+        "Jääturvallisuusopastus mukana"
+      ],
+      "duration": "3 h",
+      "difficulty": "Helppo",
+      "category": "Kalastus ja pilkkiminen"
+    },
+    "act-ice-fishing-smallgroup": {
+      "title": "Pienryhmän arktinen pilkkiretki",
+      "description": "Rajatun ryhmän versio pilkkiretkestä, jossa tekniikkaa opastetaan henkilökohtaisemmin kuin suuremmilla retkillä. Pilkitä ahventa ja siikaa jään läpi rauhallisella järvellä ja ota mukaan vain se, minkä aiot syödä — pilkkiminen on aina ollut pienimuotoista, ja juuri siksi Lapin järvet pysyvät terveinä.",
+      "highlights": [
+        "Rajattu pieni ryhmäkoko",
+        "Enemmän oppaan henkilökohtaista huomiota",
+        "Ahventa ja siikaa jään läpi"
+      ],
+      "duration": "3 h",
+      "difficulty": "Helppo",
+      "category": "Kalastus ja pilkkiminen"
+    },
+    "act-kingcrab-kirkenes-saariselka": {
+      "title": "Kuningasrapusafari Saariselältä Kirkenesiin",
+      "description": "Ylitä raja Saariselältä Norjan Kirkenesiin punakuningasrapusafarille Barentsinmerelle. Kuningasrapu ei ole täällä alkuperäislaji — se tuotiin Ohotanmereltä 1960-luvulla, eikä sillä ole Norjan vesillä luontaisia saalistajia, joten luvanvarainen, kiintiösäädelty pyynti estää kannan valtaamasta alkuperäisiä turska- ja äyriäiskantoja. Oppaat nostavat merrat; päivä päättyy kuningasrapuateriaan.",
+      "highlights": [
+        "Ylittää rajan Norjan Kirkenesiin",
+        "Vieraslajin luvanvarainen pyynti",
+        "Kuningasrapuateria mukana"
+      ],
+      "duration": "Koko päivä",
+      "difficulty": "Keskitaso",
+      "category": "Kalastus ja pilkkiminen"
+    },
+    "act-kingcrab-rib-kirkenes": {
+      "title": "Kirkenesin kesäinen kuningasrapu-RIB-safari",
+      "description": "Kesäinen RIB-venesafari, joka lähtee suoraan Kirkenesistä ulos Barentsinmerelle nostamaan kuningasrapumertoja. Punakuningasrapu on täällä vieraslaji, ja luvanvaraisten toimijoiden säädelty pyynti on osa sitä, miten Norja hallitsee sitä — pyytämättä jäävät ravut leviävät yhä länteen rannikkoa pitkin. Retki päättyy tuoreeseen rapuateriaan veneessä tai maissa.",
+      "highlights": [
+        "RIB-venesafari Barentsinmerellä",
+        "Vieraslajin kiintiösäädelty pyynti",
+        "Tuore kuningasrapuateria"
+      ],
+      "duration": "3 h",
+      "difficulty": "Keskitaso",
+      "category": "Kalastus ja pilkkiminen"
+    },
     "rov-aurora-snowmobile": {
       "title": "Revontulisafari moottorikelkalla",
       "description": "Jahtaa revontulia jännittävällä moottorikelkka-ajelulla arktisessa erämaassa. Lämpimien juomien tauko nuotiolla revontulien alla.",
