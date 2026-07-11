@@ -76,5 +76,8 @@
   },
   {
     "path": "/categories/food"
+  },
+  {
+    "path": "/categories/fishing"
   }
 ]

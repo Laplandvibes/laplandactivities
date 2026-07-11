@@ -54,6 +54,7 @@ export const HERO = {
   huskyDay:         local('heroes/husky-sled-day.webp'),        // daytime husky-sled team
   skiResortWinter:  local('heroes/ski-resort-winter.webp'),     // snowy fell ski slope at dusk
   ruskaRidge:       local('heroes/slider-03-summer-hike.webp'), // autumn ruska fell ridge + hikers
+  salmonFishing:    local('activities/summer/salmon-fishing.webp'), // river salmon fishing, used by fishing category hero
 } as const;
 
 // HERO_BRANDED — kept as alias for legacy data references
@@ -252,6 +253,7 @@ const CATEGORY_HERO: Record<string, string> = {
   culture:          local('heroes/slider-05-reindeer-lavvu.webp'),
   summer:           local('categories/summer.webp'),
   food:             local('hotels/log-cabin-lakeside.webp'),
+  fishing:          local('activities/summer/salmon-fishing.webp'),
 };
 
 export function imageForCategory(slug: string): string {

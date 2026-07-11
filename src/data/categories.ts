@@ -1,4 +1,4 @@
-import { Bike, Dog, Sparkles, Mountain, Heart, Utensils, Sun, Shield } from 'lucide-react';
+import { Bike, Dog, Sparkles, Mountain, Heart, Utensils, Sun, Shield, Fish } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { HERO, MKT } from './images';
 
@@ -75,6 +75,14 @@ export const categories: Category[] = [
     icon: Utensils,
     color: 'bg-pink/10 text-pink border-pink/20',
     image: MKT.campfireTripod,  // campfire cooking with tripod, no text
+  },
+  {
+    slug: 'fishing',
+    name: 'Fishing & Ice Fishing',
+    description: 'Free ice fishing on frozen lakes, licensed salmon rivers like the Tornio, and king crab safaris across the Norwegian border. Fish stocks first: know the rules, release what the river needs back.',
+    icon: Fish,
+    color: 'bg-cyan/10 text-cyan border-cyan/20',
+    image: HERO.salmonFishing,
   },
 ];
 

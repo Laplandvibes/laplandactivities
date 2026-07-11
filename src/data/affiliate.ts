@@ -42,6 +42,7 @@ export const GYG_BY_CATEGORY: Record<string, string> = {
   culture:          'rovaniemi-l2653', // Santa, Sámi, Arktikum — Rovaniemi-anchored
   summer:           'lappi-suomi-l2652',
   food:             'lappi-suomi-l2652',
+  fishing:          'lappi-suomi-l2652',
 };
 
 export function gygSlugForDestination(slug: string): string {
@@ -67,6 +68,7 @@ export const GYG_Q_BY_CATEGORY: Record<string, string> = {
   culture:           'sami',
   summer:            'hiking',
   food:              'food',
+  fishing:           'fishing',
 };
 export function gygQForCategory(slug: string): string {
   return GYG_Q_BY_CATEGORY[slug] ?? '';
