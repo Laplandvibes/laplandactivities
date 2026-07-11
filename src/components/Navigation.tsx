@@ -264,18 +264,21 @@ export default function Navigation() {
         </div>
 
         <div className="md:hidden flex items-center gap-2">
-          <select
-            value={lang}
-            onChange={(e) => switchTo(e.target.value as LangCode)}
-            aria-label={ariaLanguage}
-            className="bg-deep-night/85 backdrop-blur-sm bg-transparent border border-snow/40 rounded px-2 py-1 text-xs font-semibold uppercase text-snow"
-          >
-            {ALL_LANGS.map((l) => (
-              <option key={l.code} value={l.code} className="bg-deep-night text-snow">
-                {l.label}
-              </option>
-            ))}
-          </select>
+          <div className="relative inline-flex items-center">
+            <select
+              value={lang}
+              onChange={(e) => switchTo(e.target.value as LangCode)}
+              aria-label={ariaLanguage}
+              className="appearance-none bg-deep-night/85 backdrop-blur-sm bg-transparent border border-snow/40 rounded pl-2 pr-6 py-1 text-xs font-semibold uppercase text-snow"
+            >
+              {ALL_LANGS.map((l) => (
+                <option key={l.code} value={l.code} className="bg-deep-night text-snow">
+                  {l.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown aria-hidden="true" className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-snow" />
+          </div>
           <button
             onClick={() => setOpen(!open)}
             className="text-snow/80 hover:text-snow"
