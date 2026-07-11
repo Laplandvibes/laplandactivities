@@ -1,11 +1,13 @@
 import type { SectionCopy } from './types'
+import en from './copy.en'
 
 const zhCN: SectionCopy = {
+  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
   nav: {
     home: '首页',
     destinations: '目的地',
     categories: '分类',
-    about: '关于',
+    about: '关于', fishing: '钓鱼',
     bookCta: '预订活动',
     allDestinations: '全部目的地 →',
     allCategories: '全部分类 →',

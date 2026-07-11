@@ -1,11 +1,13 @@
 import type { SectionCopy } from './types'
+import en from './copy.en'
 
 const ptBR: SectionCopy = {
+  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
   nav: {
     home: 'Início',
     destinations: 'Destinos',
     categories: 'Categorias',
-    about: 'Sobre',
+    about: 'Sobre', fishing: 'Pesca',
     bookCta: 'Reservar atividades',
     allDestinations: 'Todos os destinos →',
     allCategories: 'Todas as categorias →',

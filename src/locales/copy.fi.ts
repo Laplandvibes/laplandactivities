@@ -1,11 +1,13 @@
 import type { SectionCopy } from './types'
+import en from './copy.en'
 
 const fi: SectionCopy = {
+  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
   nav: {
     home: 'Etusivu',
     destinations: 'Kohteet',
     categories: 'Kategoriat',
-    about: 'Tietoja',
+    about: 'Tietoja', fishing: 'Kalastus',
     bookCta: 'Varaa aktiviteetti',
     allDestinations: 'Kaikki kohteet →',
     allCategories: 'Kaikki kategoriat →',

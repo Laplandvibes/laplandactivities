@@ -243,6 +243,13 @@ export default function Navigation() {
           </div>
 
           <Link
+            to={to('/fishing')}
+            className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/fishing') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+          >
+            {c.fishing}
+          </Link>
+
+          <Link
             to={to('/about')}
             className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/about') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
@@ -328,6 +335,8 @@ export default function Navigation() {
               })}
             </div>
           </details>
+
+          <Link to={to('/fishing')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/fishing') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.fishing}</Link>
 
           <Link to={to('/about')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/about') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.about}</Link>
 

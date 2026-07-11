@@ -1,8 +1,10 @@
 import type { SectionCopy } from './types'
+import en from './copy.en'
 
 const ko: SectionCopy = {
+  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
   nav: {
-    home: '홈', destinations: '목적지', categories: '카테고리', about: '소개',
+    home: '홈', destinations: '목적지', categories: '카테고리', about: '소개', fishing: '낚시',
     bookCta: '액티비티 예약', allDestinations: '모든 목적지 →', allCategories: '모든 카테고리 →',
   },
   hero: {

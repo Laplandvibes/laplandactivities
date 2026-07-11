@@ -111,12 +111,15 @@ async function main() {
       const runner = vite.createServerModuleRunner(viteServer.environments.ssr, { hmr: false });
       load = (p) => runner.import(p);
     }
-    COPY = (await load('/src/locales/copy.ts')).COPY;
+    const copyMod = await load('/src/locales/copy.ts');
+    if (typeof copyMod.loadAllCopy === 'function') await copyMod.loadAllCopy();
+    COPY = copyMod.COPY;
     categories = (await load('/src/data/categories.ts')).categories;
     destinations = (await load('/src/data/destinations.ts')).destinations;
     const dataMod = await load('/src/locales/data.ts');
     localizeCategory = dataMod.localizeCategory;
     localizeDestination = dataMod.localizeDestination;
+    if (typeof dataMod.loadAllLocaleData === 'function') await dataMod.loadAllLocaleData();
   } catch (e) {
     console.error(`[meta] could not load sources via Vite SSR: ${e.message}`);
   } finally {
@@ -155,6 +158,7 @@ async function main() {
   // metaTitle/metaDescription in COPY but only English fallbacks in routes.json.
   const copyPages = [
     { path: '/about', key: 'about' },
+    { path: '/fishing', key: 'fishing' },
     { path: '/categories', key: 'categoriesIndex' },
     { path: '/destinations', key: 'destinationsIndex' },
   ];

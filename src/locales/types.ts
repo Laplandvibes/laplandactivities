@@ -11,6 +11,7 @@ export type SectionCopy = {
     destinations: string;
     categories: string;
     about: string;
+    fishing: string;
     bookCta: string;
     allDestinations: string;
     allCategories: string;
@@ -202,6 +203,28 @@ export type SectionCopy = {
     contactBody1: string;
     contactBody2: string;
     backHome: string;
+  };
+  fishing: {
+    metaTitle: string;
+    metaDescription: string;
+    /** Visible "regulations change yearly — verify before fishing" banner line. */
+    verifyBanner: string;
+    hero: { eyebrow: string; title: string; sub: string; ctaBook: string; ctaRules: string; trustLine: string };
+    /** Eco red-thread: 4 stories — Teno collapse, pink salmon, king crab, Tornio recovery. */
+    eco: { title: string; lead: string; stories: { title: string; body: string }[] };
+    firstThings: { title: string; body1: string; body2: string; feeLink: string; mapLink: string };
+    /** River cards: Tornio, Teno, Ounasjoki, Ivalojoki, Simojoki, wilderness. */
+    rivers: { title: string; lead: string; cards: { name: string; badge: string; body: string; crNote: string; officialLabel: string }[] };
+    lakes: { title: string; body: string };
+    tornioBox: { title: string; rules: string[]; verifyLine: string; ctaStay: string };
+    iceFishing: { title: string; body: string; safetyTitle: string; safetyBody: string; cta: string };
+    licenses: { title: string; fee: string; freeRights: string; waterPermits: string; sizesTitle: string; sizes: string[]; alwaysCheck: string };
+    teno: { title: string; body: string; whatYouCan: string; warnThirdParty: string };
+    norway: { title: string; seaBody: string; exportTitle: string; exportBody: string; crabTitle: string; crabBody: string; cta: string; carNote: string };
+    gettingThere: { title: string; body: string; cta: string };
+    gear: { title: string; body: string };
+    season: { title: string; rows: { period: string; what: string }[] };
+    faq: { title: string; items: { q: string; a: string }[] };
   };
   notFound: {
     metaTitle: string;

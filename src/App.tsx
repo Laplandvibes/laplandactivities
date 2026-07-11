@@ -1,4 +1,4 @@
-import { useEffect, lazy, Suspense } from 'react';
+import { useEffect, useReducer, lazy, Suspense, type ReactNode } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import ScrollToTop from './components/ScrollToTop';
@@ -11,12 +11,15 @@ const DestinationPage = lazy(() => import('./pages/DestinationPage'))
 const CategoriesIndex = lazy(() => import('./pages/CategoriesIndex'))
 const CategoryPage = lazy(() => import('./pages/CategoryPage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
+const FishingPage = lazy(() => import('./pages/FishingPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const Privacy = lazy(() => import('./pages/legal/Privacy'))
 const Terms = lazy(() => import('./pages/legal/Terms'))
 const CookiePolicy = lazy(() => import('./pages/legal/CookiePolicy'))
 import { trackPageView } from './lib/analytics';
 import { useHtmlLang, useLang } from './i18n/useLang';
+import { COPY, loadCopy } from './locales/copy';
+import { isLocaleDataLoaded, loadLocaleData } from './locales/data';
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
 
 const pillarLinks = [
@@ -44,6 +47,27 @@ function LocaleSync() {
   return null;
 }
 
+/**
+ * Non-EN copy AND locale data live in per-language lazy chunks (see
+ * locales/copy.ts + locales/data.ts). Gate the UI until both chunks for the
+ * active language are registered, so consumers keep reading synchronously.
+ * EN is bundled eagerly — English visitors never hit the gate.
+ */
+function CopyGate({ children }: { children: ReactNode }) {
+  const lang = useLang();
+  const [, bump] = useReducer((x: number) => x + 1, 0);
+  const ready = !!COPY[lang] && isLocaleDataLoaded(lang);
+  useEffect(() => {
+    let alive = true;
+    if (!ready) {
+      Promise.all([loadCopy(lang), loadLocaleData(lang)]).then(() => { if (alive) bump(); });
+    }
+    return () => { alive = false; };
+  }, [lang, ready]);
+  if (!ready) return <div className="min-h-screen bg-deep-night" />;
+  return <>{children}</>;
+}
+
 export default function App() {
   const lang = useLang();
   return (
@@ -52,6 +76,7 @@ export default function App() {
       <RouteTracker />
       <LocaleAutoRedirect />
       <LocaleSync />
+      <CopyGate>
       <Navigation />
       <main className="bg-deep-night">
         <Suspense fallback={<div className="min-h-screen" />}>
@@ -74,6 +99,9 @@ export default function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/fi/about" element={<AboutPage />} />
           <Route path="/de/about" element={<AboutPage />} />
+          <Route path="/fishing" element={<FishingPage />} />
+          <Route path="/fi/fishing" element={<FishingPage />} />
+          <Route path="/de/fishing" element={<FishingPage />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/fi/privacy" element={<Privacy />} />
           <Route path="/de/privacy" element={<Privacy />} />
@@ -89,6 +117,7 @@ export default function App() {
           <Route path="/ja/categories" element={<CategoriesIndex />} />
           <Route path="/ja/categories/:slug" element={<CategoryPage />} />
           <Route path="/ja/about" element={<AboutPage />} />
+          <Route path="/ja/fishing" element={<FishingPage />} />
           <Route path="/ja/privacy" element={<Privacy />} />
           <Route path="/ja/terms" element={<Terms />} />
           <Route path="/ja/cookie-policy" element={<CookiePolicy />} />
@@ -98,6 +127,7 @@ export default function App() {
           <Route path="/es/categories" element={<CategoriesIndex />} />
           <Route path="/es/categories/:slug" element={<CategoryPage />} />
           <Route path="/es/about" element={<AboutPage />} />
+          <Route path="/es/fishing" element={<FishingPage />} />
           <Route path="/es/privacy" element={<Privacy />} />
           <Route path="/es/terms" element={<Terms />} />
           <Route path="/es/cookie-policy" element={<CookiePolicy />} />
@@ -107,6 +137,7 @@ export default function App() {
           <Route path="/br/categories" element={<CategoriesIndex />} />
           <Route path="/br/categories/:slug" element={<CategoryPage />} />
           <Route path="/br/about" element={<AboutPage />} />
+          <Route path="/br/fishing" element={<FishingPage />} />
           <Route path="/br/privacy" element={<Privacy />} />
           <Route path="/br/terms" element={<Terms />} />
           <Route path="/br/cookie-policy" element={<CookiePolicy />} />
@@ -116,6 +147,7 @@ export default function App() {
           <Route path="/cn/categories" element={<CategoriesIndex />} />
           <Route path="/cn/categories/:slug" element={<CategoryPage />} />
           <Route path="/cn/about" element={<AboutPage />} />
+          <Route path="/cn/fishing" element={<FishingPage />} />
           <Route path="/cn/privacy" element={<Privacy />} />
           <Route path="/cn/terms" element={<Terms />} />
           <Route path="/cn/cookie-policy" element={<CookiePolicy />} />
@@ -125,6 +157,7 @@ export default function App() {
           <Route path="/kr/categories" element={<CategoriesIndex />} />
           <Route path="/kr/categories/:slug" element={<CategoryPage />} />
           <Route path="/kr/about" element={<AboutPage />} />
+          <Route path="/kr/fishing" element={<FishingPage />} />
           <Route path="/kr/privacy" element={<Privacy />} />
           <Route path="/kr/terms" element={<Terms />} />
           <Route path="/kr/cookie-policy" element={<CookiePolicy />} />
@@ -134,6 +167,7 @@ export default function App() {
           <Route path="/fr/categories" element={<CategoriesIndex />} />
           <Route path="/fr/categories/:slug" element={<CategoryPage />} />
           <Route path="/fr/about" element={<AboutPage />} />
+          <Route path="/fr/fishing" element={<FishingPage />} />
           <Route path="/fr/privacy" element={<Privacy />} />
           <Route path="/fr/terms" element={<Terms />} />
           <Route path="/fr/cookie-policy" element={<CookiePolicy />} />
@@ -143,6 +177,7 @@ export default function App() {
           <Route path="/it/categories" element={<CategoriesIndex />} />
           <Route path="/it/categories/:slug" element={<CategoryPage />} />
           <Route path="/it/about" element={<AboutPage />} />
+          <Route path="/it/fishing" element={<FishingPage />} />
           <Route path="/it/privacy" element={<Privacy />} />
           <Route path="/it/terms" element={<Terms />} />
           <Route path="/it/cookie-policy" element={<CookiePolicy />} />
@@ -152,6 +187,7 @@ export default function App() {
           <Route path="/nl/categories" element={<CategoriesIndex />} />
           <Route path="/nl/categories/:slug" element={<CategoryPage />} />
           <Route path="/nl/about" element={<AboutPage />} />
+          <Route path="/nl/fishing" element={<FishingPage />} />
           <Route path="/nl/privacy" element={<Privacy />} />
           <Route path="/nl/terms" element={<Terms />} />
           <Route path="/nl/cookie-policy" element={<CookiePolicy />} />
@@ -160,6 +196,7 @@ export default function App() {
         </Suspense>
       </main>
       <SharedFooter pillarLinks={pillarLinks} />
+      </CopyGate>
       <SharedCookieBanner consentKey="laplandactivities_cookie_consent" lang={lang} />
       <NewsletterPopup />
     </div>

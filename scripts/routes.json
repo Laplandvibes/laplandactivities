@@ -18,6 +18,12 @@
     "fallbackTitle": "About | LaplandActivities"
   },
   {
+    "path": "/fishing",
+    "fallbackTitle": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
+    "fallbackDescription": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris — with the 2026 rules, fees and official permit links you need before you cast.",
+    "appendSiteName": false
+  },
+  {
     "path": "/privacy",
     "fallbackTitle": "Privacy | LaplandActivities"
   },

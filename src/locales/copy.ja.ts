@@ -1,11 +1,13 @@
 import type { SectionCopy } from './types'
+import en from './copy.en'
 
 const ja: SectionCopy = {
+  fishing: en.fishing, // TODO(i18n Task 3): replace EN placeholder with real translation
   nav: {
     home: 'ホーム',
     destinations: '目的地',
     categories: 'カテゴリー',
-    about: '当サイトについて',
+    about: '当サイトについて', fishing: '釣り',
     bookCta: 'アクティビティを予約',
     allDestinations: 'すべての目的地 →',
     allCategories: 'すべてのカテゴリー →',

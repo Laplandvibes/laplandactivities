@@ -19,6 +19,7 @@ export default function PageBreadcrumb() {
     '/destinations': c.destinations,
     '/categories': c.categories,
     '/about': c.about,
+    '/fishing': c.fishing,
   };
   return (
     <Breadcrumbs
