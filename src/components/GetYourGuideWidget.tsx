@@ -153,13 +153,34 @@ export default function GetYourGuideWidget({
   const boxRef = useRef<HTMLDivElement>(null);
   const [blocked, setBlocked] = useState(false);
 
-  // If no iframe has mounted shortly after render, the embed is blocked — swap
-  // the empty box for a designed panel + a GYG search CTA (never 404s).
+  // If no iframe has mounted shortly after render, the embed is likely blocked
+  // (ad-block / tracking protection) → show the designed fallback panel. BUT
+  // keep polling: on slow loads the SDK mounts the iframe well after the first
+  // check, and the fallback must yield back to the real widget. A one-shot
+  // check left the fallback stuck on for slow loads (Vesa 2026-07-12).
   useEffect(() => {
-    const t = setTimeout(() => {
-      setBlocked(!(boxRef.current?.querySelector('iframe')));
-    }, 2500);
-    return () => clearTimeout(t);
+    setBlocked(false);
+    let cancelled = false;
+    let waited = 0;
+    const FIRST_CHECK = 2500;
+    const STEP = 1000;
+    const MAX_WAIT = 12000;
+    const tick = (delay: number): ReturnType<typeof setTimeout> =>
+      setTimeout(() => {
+        if (cancelled) return;
+        waited += delay;
+        if (boxRef.current?.querySelector('iframe')) {
+          setBlocked(false);
+          return;
+        }
+        setBlocked(true);
+        if (waited < MAX_WAIT) tick(STEP);
+      }, delay);
+    const t = tick(FIRST_CHECK);
+    return () => {
+      cancelled = true;
+      clearTimeout(t);
+    };
   }, [lang, locationId]);
   // 'auto' and 'city' widget modes are BANNED (2026-07-02 rule) — they ignore
   // location targeting and show GYG's global inventory.
@@ -180,7 +201,9 @@ export default function GetYourGuideWidget({
 
         <div
           ref={boxRef}
-          className={blocked ? 'hidden' : ''}
+          // h-0 (ei display:none): leveys säilyy, jotta myöhään mounttaava
+          // iframe mittaa itsensä oikein ja voidaan nostaa esiin
+          className={blocked ? 'h-0 overflow-hidden' : ''}
           key={`gyg-${lang}`}
           data-gyg-widget={widgetType}
           data-gyg-partner-id={GYG_PARTNER_ID}
