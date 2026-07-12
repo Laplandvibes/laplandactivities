@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Sun, Snowflake, ArrowRight, Compass, Waves, Mountain, Fish, Dog, Sparkles, Flame } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
-import GetYourGuideWidget from './GetYourGuideWidget';
 import SmartImage from './SmartImage';
 import { HERO } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -34,11 +33,11 @@ export default function SummerBand() {
     ? ['summer_hiking', 'summer_kayak', 'summer_fishing', 'summer_midnight']
     : ['winter_husky', 'winter_snowmobile', 'winter_aurora', 'winter_icefishing'];
   const browseTo = isSummer ? '/categories/summer' : '/categories/northern-lights';
-  // Season-correct image: summer lake vs the snowmobile-fells winter scene.
-  const bandImg = isSummer ? '/images/categories/summer.webp' : '/images/heroes/slider-02-snowmobile-fells.webp';
+  // Season-correct image: summer lake vs a DEDICATED winter trail scene —
+  // ei hero-sliderin kuvan kierrätystä (Vesa 2026-07-12).
+  const bandImg = isSummer ? '/images/categories/summer.webp' : '/images/heroes/winter-band-snowmobile-trail.webp';
   const bandImgFallback = isSummer ? HERO.snowyForest : HERO.huskyAurora;
   const sectionSid = isSummer ? 'summer_band_book' : 'winter_band_book';
-  const gygCmp = isSummer ? 'laplandactivities-summer-band' : 'laplandactivities-winter-band';
   const heroQuery = isSummer ? 'midnight sun lapland' : 'husky snowmobile lapland';
 
   return (
@@ -116,13 +115,10 @@ export default function SummerBand() {
         </div>
       </div>
 
-      <GetYourGuideWidget
-        locationId="2652"
-        cmpTag={gygCmp}
-        title={c.gygTitle}
-        eyebrow={c.gygEyebrow}
-        numberOfItems={3}
-      />
+      {/* No GYG widget here: Home already renders one ("top-rated this week",
+          same locationId) right below this band — two identical widget embeds
+          showed the same 3 products twice on one page (Vesa 2026-07-07). The
+          band's four curated season cards + CTAs carry the monetisation. */}
     </section>
   );
 }
