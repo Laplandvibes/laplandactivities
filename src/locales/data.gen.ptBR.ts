@@ -52,14 +52,14 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "A maior estação de esqui da Finlândia",
-      "description": "Destino de esqui de primeira linha com 43 pistas e 230 km de trilhas de cross-country. Animado après-ski no Hullu Poro e atividades ao ar livre o ano todo.",
+      "description": "Destino de esqui de primeira linha com 43 pistas e 230 km de trilhas de cross-country. Animado après-ski no Hullu Poro e atividades ao ar livre o ano todo.",
       "access": "Voo para Kittilä (15 min de carro)",
       "bestFor": "Esquiadores e viajantes ativos"
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "As pistas mais longas da Finlândia",
-      "description": "Duas estações de esqui nos dois lados do monte Ylläs oferecem as descidas mais longas da Finlândia, de até 3 km. Uma experiência mais tranquila e autêntica da Lapônia com o Parque Nacional de Pallas-Yllästunturi.",
+      "description": "Duas estações de esqui nos dois lados do monte Ylläs oferecem as descidas mais longas da Finlândia, de até 3 km. Uma experiência mais tranquila e autêntica da Lapônia com o Parque Nacional de Pallas-Yllästunturi.",
       "access": "Voo para Kittilä (35 min de carro)",
       "bestFor": "Amantes da natureza e esquiadores experientes"
     },
@@ -131,7 +131,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Safári de husky e visita ao canil",
-      "description": "Conduza sua própria matilha de huskies pelas florestas nevadas por até 18 km, depois visite o canil para conhecer os filhotes e aprender sobre o mushing ártico.",
+      "description": "Conduza sua própria matilha de huskies pelas florestas nevadas por até 18 km, depois visite o canil para conhecer os filhotes e aprender sobre o mushing ártico.",
       "highlights": [
         "Conduza seu trenó",
         "Visita aos filhotes",
@@ -146,7 +146,7 @@ const d: LangData = {
       "description": "Visite uma fazenda de renas tradicional, aproveite um tranquilo passeio de trenó pela paisagem de inverno e aprenda sobre a cultura local de criação de renas.",
       "highlights": [
         "Conversa sobre a cultura de criação",
-        "Trenó de 2 km",
+        "Trenó de 2 km",
         "Alimentação das renas"
       ],
       "duration": "2 h",
@@ -239,7 +239,7 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Pernoite no Arctic Snow Hotel",
-      "description": "Durma em um quarto inteiramente feito de gelo e neve a -5 °C dentro de um saco de dormir térmico. Sauna, jantar e despertar com aurora boreal incluídos.",
+      "description": "Durma em um quarto inteiramente feito de gelo e neve a -5 °C dentro de um saco de dormir térmico. Sauna, jantar e despertar com aurora boreal incluídos.",
       "highlights": [
         "Pernoite em quarto de gelo",
         "Despertar com aurora boreal",
@@ -275,7 +275,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Estação de esqui de Levi, 43 pistas",
-      "description": "A maior estação de esqui da Finlândia, com 43 pistas, 230 km de trilhas de cross-country e um snowpark de alto nível. Esqui noturno sob a aurora boreal.",
+      "description": "A maior estação de esqui da Finlândia, com 43 pistas, 230 km de trilhas de cross-country e um snowpark de alto nível. Esqui noturno sob a aurora boreal.",
       "highlights": [
         "43 pistas",
         "Snowpark",
@@ -323,10 +323,10 @@ const d: LangData = {
     },
     "lev-husky-safari": {
       "title": "Safári de husky de Levi",
-      "description": "Conduza sua própria matilha de huskies pela natureza silenciosa ao redor de Levi. Percurso de 15 km entre florestas congeladas com pausa para café na fogueira.",
+      "description": "Conduza sua própria matilha de huskies pela natureza silenciosa ao redor de Levi. Percurso de 15 km entre florestas congeladas com pausa para café na fogueira.",
       "highlights": [
         "Conduza seu trenó",
-        "Percurso de 15 km",
+        "Percurso de 15 km",
         "Pausa na fogueira"
       ],
       "duration": "3 h",
@@ -419,11 +419,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Estação de esqui de Ylläs, pistas mais longas",
-      "description": "As pistas mais longas da Finlândia, 3 km nos dois lados do monte Ylläs. 63 pistas, uma gôndola e 330 km de trilhas de cross-country preparadas por todo o parque nacional.",
+      "description": "As pistas mais longas da Finlândia, 3 km nos dois lados do monte Ylläs. 63 pistas, uma gôndola e 330 km de trilhas de cross-country preparadas por todo o parque nacional.",
       "highlights": [
-        "Pista mais longa 3 km",
+        "Pista mais longa 3 km",
         "63 pistas",
-        "330 km de cross-country"
+        "330 km de cross-country"
       ],
       "duration": "Diário",
       "difficulty": "Moderado",
@@ -515,9 +515,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Esqui cross-country em Pallas",
-      "description": "Esquie por 330 km de trilhas preparadas pelo Parque Nacional Pallas-Yllästunturi. Percursos para todos os níveis, de suaves voltas no lago a desafios na montanha.",
+      "description": "Esquie por 330 km de trilhas preparadas pelo Parque Nacional Pallas-Yllästunturi. Percursos para todos os níveis, de suaves voltas no lago a desafios na montanha.",
       "highlights": [
-        "Rede de 330 km",
+        "Rede de 330 km",
         "Paisagens do parque",
         "Aluguel de equipamento"
       ],
@@ -555,7 +555,7 @@ const d: LangData = {
       "highlights": [
         "Entrada gratuita",
         "Cabanas selvagens",
-        "Área de 2.550 km²"
+        "Área de 2.550 km²"
       ],
       "duration": "1 d - vários dias",
       "difficulty": "Moderado",
@@ -659,10 +659,10 @@ const d: LangData = {
     },
     "ina-pielpajärvi": {
       "title": "Trekking até a igreja selvagem de Pielpajärvi",
-      "description": "Caminhe (ou esquie no inverno) até uma das igrejas mais remotas da Finlândia, construída em 1760 em meio à natureza. Uma bela trilha de 4,5 km por florestas seculares.",
+      "description": "Caminhe (ou esquie no inverno) até uma das igrejas mais remotas da Finlândia, construída em 1760 em meio à natureza. Uma bela trilha de 4,5 km por florestas seculares.",
       "highlights": [
         "Igreja histórica",
-        "Trilha de 4,5 km",
+        "Trilha de 4,5 km",
         "Ambiente selvagem"
       ],
       "duration": "4-5 h",
@@ -707,9 +707,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking na trilha do urso Karhunkierros",
-      "description": "A trilha de caminhada mais famosa da Finlândia, 82 km pelo Parque Nacional de Oulanka. Pontes suspensas, corredeiras, cachoeiras e floresta boreal intocada.",
+      "description": "A trilha de caminhada mais famosa da Finlândia, 82 km pelo Parque Nacional de Oulanka. Pontes suspensas, corredeiras, cachoeiras e floresta boreal intocada.",
       "highlights": [
-        "Trilha de 82 km",
+        "Trilha de 82 km",
         "Pontes suspensas",
         "Parque Nacional de Oulanka"
       ],

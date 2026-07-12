@@ -52,14 +52,14 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "Suomen suurin hiihtokeskus",
-      "description": "Suomen johtava hiihtokohde, jossa on 43 rinnettä ja 230 km hiihtolatuja. Vilkas after ski Hullu Porossa ja ulkoaktiviteetteja ympäri vuoden.",
+      "description": "Suomen johtava hiihtokohde, jossa on 43 rinnettä ja 230 km hiihtolatuja. Vilkas after ski Hullu Porossa ja ulkoaktiviteetteja ympäri vuoden.",
       "access": "Lento Kittilään (15 min ajomatka)",
       "bestFor": "Hiihtäjät ja aktiiviset matkailijat"
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Suomen pisimmät rinteet",
-      "description": "Kaksi hiihtokeskusta Ylläs-tunturin molemmin puolin tarjoavat Suomen pisimmät laskut, jopa 3 km. Rauhallisempi ja aidompi Lapin kokemus Pallas-Yllästunturin kansallispuiston kupeessa.",
+      "description": "Kaksi hiihtokeskusta Ylläs-tunturin molemmin puolin tarjoavat Suomen pisimmät laskut, jopa 3 km. Rauhallisempi ja aidompi Lapin kokemus Pallas-Yllästunturin kansallispuiston kupeessa.",
       "access": "Lento Kittilään (35 min ajomatka)",
       "bestFor": "Luonnonystävät ja kokeneet hiihtäjät"
     },
@@ -73,7 +73,7 @@ const d: LangData = {
     "inari": {
       "name": "Inari",
       "tagline": "Saamelaiskulttuurin sydän",
-      "description": "Yli 3 000 saaren Inarinjärven rannalla sijaitseva Suomen saamelaisten kulttuuripääkaupunki. Täällä ovat Siida-museo ja koskematon erämaa.",
+      "description": "Yli 3 000 saaren Inarinjärven rannalla sijaitseva Suomen saamelaisten kulttuuripääkaupunki. Täällä ovat Siida-museo ja koskematon erämaa.",
       "access": "Lento Ivaloon (40 min ajomatka)",
       "bestFor": "Kulttuurin tutkijat ja valokuvaajat"
     },
@@ -191,7 +191,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Huskysafari ja kennelvierailu",
-      "description": "Ohjaa omaa huskyvaljakkoasi jopa 18 km lumisten metsien halki, ja vieraile sitten kennelillä tapaamassa pennut ja oppimassa arktisesta koiravaljakkoajosta.",
+      "description": "Ohjaa omaa huskyvaljakkoasi jopa 18 km lumisten metsien halki, ja vieraile sitten kennelillä tapaamassa pennut ja oppimassa arktisesta koiravaljakkoajosta.",
       "highlights": [
         "Ohjaat omaa rekeäsi",
         "Pentujen tapaaminen",
@@ -206,7 +206,7 @@ const d: LangData = {
       "description": "Vieraile perinteisellä porotilalla, nauti rauhallisesta rekiajelusta talvimaisemassa ja opi paikallisesta poronhoitokulttuurista.",
       "highlights": [
         "Poronhoitokulttuurin esittely",
-        "2 km:n rekiajelu",
+        "2 km:n rekiajelu",
         "Porojen ruokinta"
       ],
       "duration": "2 h",
@@ -299,7 +299,7 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Yöpyminen Arctic Snow Hotelissa",
-      "description": "Nuku kokonaan jäästä ja lumesta tehdyssä -5 °C:n huoneessa lämpimässä makuupussissa. Sauna, illallinen ja revontuliherätys sisältyvät.",
+      "description": "Nuku kokonaan jäästä ja lumesta tehdyssä -5 °C:n huoneessa lämpimässä makuupussissa. Sauna, illallinen ja revontuliherätys sisältyvät.",
       "highlights": [
         "Yöpyminen jäähuoneessa",
         "Revontuliherätys",
@@ -335,7 +335,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Levin hiihtokeskus, 43 rinnettä",
-      "description": "Suomen suurin hiihtokeskus, jossa on 43 rinnettä, 230 km hiihtolatuja ja huipputason lumilautapuisto. Iltalaskettelua revontulien alla.",
+      "description": "Suomen suurin hiihtokeskus, jossa on 43 rinnettä, 230 km hiihtolatuja ja huipputason lumilautapuisto. Iltalaskettelua revontulien alla.",
       "highlights": [
         "43 rinnettä",
         "Lumilautapuisto",
@@ -383,10 +383,10 @@ const d: LangData = {
     },
     "lev-husky-safari": {
       "title": "Levin huskysafari",
-      "description": "Ohjaa omaa huskyvaljakkoasi hiljaisen luonnon halki Levin ympäristössä. 15 km:n reitti jäätyneiden metsien lomassa kahvitauolla nuotiolla.",
+      "description": "Ohjaa omaa huskyvaljakkoasi hiljaisen luonnon halki Levin ympäristössä. 15 km:n reitti jäätyneiden metsien lomassa kahvitauolla nuotiolla.",
       "highlights": [
         "Ohjaat omaa rekeäsi",
-        "15 km:n reitti",
+        "15 km:n reitti",
         "Nuotiotauko"
       ],
       "duration": "3 h",
@@ -479,11 +479,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Ylläksen hiihtokeskus, pisimmät rinteet",
-      "description": "Suomen pisimmät rinteet, 3 km Ylläs-tunturin molemmin puolin. 63 rinnettä, gondolihissi ja 330 km kunnostettuja hiihtolatuja kansallispuiston halki.",
+      "description": "Suomen pisimmät rinteet, 3 km Ylläs-tunturin molemmin puolin. 63 rinnettä, gondolihissi ja 330 km kunnostettuja hiihtolatuja kansallispuiston halki.",
       "highlights": [
-        "Pisin rinne 3 km",
+        "Pisin rinne 3 km",
         "63 rinnettä",
-        "330 km latuja"
+        "330 km latuja"
       ],
       "duration": "Päivälippu",
       "difficulty": "Keskitaso",
@@ -575,9 +575,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Maastohiihto Pallaksella",
-      "description": "Hiihdä 330 km kunnostettuja latuja Pallas-Yllästunturin kansallispuiston halki. Reittejä kaikille tasoille, loivista järvilenkeistä tunturin haasteisiin.",
+      "description": "Hiihdä 330 km kunnostettuja latuja Pallas-Yllästunturin kansallispuiston halki. Reittejä kaikille tasoille, loivista järvilenkeistä tunturin haasteisiin.",
       "highlights": [
-        "330 km:n latuverkosto",
+        "330 km:n latuverkosto",
         "Puiston maisemat",
         "Välinevuokraus"
       ],
@@ -615,7 +615,7 @@ const d: LangData = {
       "highlights": [
         "Ilmainen sisäänpääsy",
         "Erämaakämpät",
-        "2 550 km²:n alue"
+        "2 550 km²:n alue"
       ],
       "duration": "1 pv - useita päiviä",
       "difficulty": "Keskitaso",
@@ -683,9 +683,9 @@ const d: LangData = {
     },
     "ina-lake-cruise": {
       "title": "Veneristeily Inarinjärvellä",
-      "description": "Pursehdi Suomen kolmanneksi suurimmalla järvellä, jossa on yli 3 000 saarta. Risteile pyhän Ukonsaaren ohi ja nauti upeista arktisista maisemista.",
+      "description": "Pursehdi Suomen kolmanneksi suurimmalla järvellä, jossa on yli 3 000 saarta. Risteile pyhän Ukonsaaren ohi ja nauti upeista arktisista maisemista.",
       "highlights": [
-        "3 000 saarta",
+        "3 000 saarta",
         "Ukonsaaren näkymät",
         "Arktiset maisemat"
       ],
@@ -719,10 +719,10 @@ const d: LangData = {
     },
     "ina-pielpajärvi": {
       "title": "Vaellus Pielpajärven erämaakirkolle",
-      "description": "Kävele (tai hiihdä talvella) yhdelle Suomen syrjäisimmistä kirkoista, joka rakennettiin 1760 keskelle erämaata. Kaunis 4,5 km:n reitti ikimetsien halki.",
+      "description": "Kävele (tai hiihdä talvella) yhdelle Suomen syrjäisimmistä kirkoista, joka rakennettiin 1760 keskelle erämaata. Kaunis 4,5 km:n reitti ikimetsien halki.",
       "highlights": [
         "Historiallinen kirkko",
-        "4,5 km:n reitti",
+        "4,5 km:n reitti",
         "Erämaamiljöö"
       ],
       "duration": "4-5 h",
@@ -767,9 +767,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Vaellus Karhunkierroksella",
-      "description": "Suomen kuuluisin vaellusreitti, 82 km Oulangan kansallispuiston halki. Riippusiltoja, koskia, vesiputouksia ja koskematonta boreaalista metsää.",
+      "description": "Suomen kuuluisin vaellusreitti, 82 km Oulangan kansallispuiston halki. Riippusiltoja, koskia, vesiputouksia ja koskematonta boreaalista metsää.",
       "highlights": [
-        "82 km:n reitti",
+        "82 km:n reitti",
         "Riippusillat",
         "Oulangan kansallispuisto"
       ],

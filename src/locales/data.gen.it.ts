@@ -52,14 +52,14 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "La più grande stazione sciistica della Finlandia",
-      "description": "Destinazione sciistica di primo piano con 43 piste e 230 km di percorsi per il fondo. Vivace après-ski all'Hullu Poro e attività outdoor tutto l'anno.",
+      "description": "Destinazione sciistica di primo piano con 43 piste e 230 km di percorsi per il fondo. Vivace après-ski all'Hullu Poro e attività outdoor tutto l'anno.",
       "access": "Volo a Kittilä (15 min in auto)",
       "bestFor": "Sciatori e viaggiatori attivi"
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Le piste più lunghe della Finlandia",
-      "description": "Due stazioni sciistiche sui due lati del fjell Ylläs offrono le discese più lunghe della Finlandia, fino a 3 km. Un'esperienza di Lapponia più tranquilla e autentica con il Parco nazionale di Pallas-Yllästunturi.",
+      "description": "Due stazioni sciistiche sui due lati del fjell Ylläs offrono le discese più lunghe della Finlandia, fino a 3 km. Un'esperienza di Lapponia più tranquilla e autentica con il Parco nazionale di Pallas-Yllästunturi.",
       "access": "Volo a Kittilä (35 min in auto)",
       "bestFor": "Amanti della natura e sciatori esperti"
     },
@@ -131,7 +131,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Safari husky e visita al canile",
-      "description": "Guidi la propria muta di husky attraverso le foreste innevate fino a 18 km, poi visiti il canile per incontrare i cuccioli e scoprire la mushing artico.",
+      "description": "Guidi la propria muta di husky attraverso le foreste innevate fino a 18 km, poi visiti il canile per incontrare i cuccioli e scoprire la mushing artico.",
       "highlights": [
         "Guidi la sua slitta",
         "Visita ai cuccioli",
@@ -146,7 +146,7 @@ const d: LangData = {
       "description": "Visiti una tradizionale fattoria delle renne, si goda una tranquilla slittata nel paesaggio invernale e impari la cultura locale dell'allevamento delle renne.",
       "highlights": [
         "Introduzione alla cultura dell'allevamento",
-        "Slittata di 2 km",
+        "Slittata di 2 km",
         "Nutrimento delle renne"
       ],
       "duration": "2 h",
@@ -227,7 +227,7 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Pernottamento all'Arctic Snow Hotel",
-      "description": "Dorma in una camera interamente di ghiaccio e neve a -5 °C in un sacco a pelo termico. Sauna, cena e sveglia aurora boreale incluse.",
+      "description": "Dorma in una camera interamente di ghiaccio e neve a -5 °C in un sacco a pelo termico. Sauna, cena e sveglia aurora boreale incluse.",
       "highlights": [
         "Pernottamento in camera di ghiaccio",
         "Sveglia aurora boreale",
@@ -263,7 +263,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Stazione sciistica di Levi, 43 piste",
-      "description": "La più grande stazione sciistica della Finlandia con 43 piste, 230 km di percorsi di fondo e uno snowpark di alto livello. Sci notturno sotto l'aurora boreale.",
+      "description": "La più grande stazione sciistica della Finlandia con 43 piste, 230 km di percorsi di fondo e uno snowpark di alto livello. Sci notturno sotto l'aurora boreale.",
       "highlights": [
         "43 piste",
         "Snowpark",
@@ -311,10 +311,10 @@ const d: LangData = {
     },
     "lev-husky-safari": {
       "title": "Safari husky di Levi",
-      "description": "Conduca la propria muta di husky attraverso la natura silenziosa intorno a Levi. Percorso di 15 km tra foreste gelate con pausa caffè al falò.",
+      "description": "Conduca la propria muta di husky attraverso la natura silenziosa intorno a Levi. Percorso di 15 km tra foreste gelate con pausa caffè al falò.",
       "highlights": [
         "Guidi la sua slitta",
-        "Percorso di 15 km",
+        "Percorso di 15 km",
         "Pausa al falò"
       ],
       "duration": "3 h",
@@ -407,11 +407,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Stazione sciistica di Ylläs, piste più lunghe",
-      "description": "Le piste più lunghe della Finlandia, 3 km su entrambi i lati del fjell Ylläs. 63 piste, una cabinovia e 330 km di percorsi di fondo battuti attraverso il parco nazionale.",
+      "description": "Le piste più lunghe della Finlandia, 3 km su entrambi i lati del fjell Ylläs. 63 piste, una cabinovia e 330 km di percorsi di fondo battuti attraverso il parco nazionale.",
       "highlights": [
-        "Pista più lunga 3 km",
+        "Pista più lunga 3 km",
         "63 piste",
-        "330 km di fondo"
+        "330 km di fondo"
       ],
       "duration": "Giornaliero",
       "difficulty": "Moderato",
@@ -503,9 +503,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Sci di fondo a Pallas",
-      "description": "Scii lungo 330 km di percorsi battuti attraverso il Parco nazionale Pallas-Yllästunturi. Percorsi per tutti i livelli, da dolci anelli sul lago a sfide sul fjell.",
+      "description": "Scii lungo 330 km di percorsi battuti attraverso il Parco nazionale Pallas-Yllästunturi. Percorsi per tutti i livelli, da dolci anelli sul lago a sfide sul fjell.",
       "highlights": [
-        "Rete di 330 km",
+        "Rete di 330 km",
         "Paesaggi del parco",
         "Noleggio attrezzatura"
       ],
@@ -543,7 +543,7 @@ const d: LangData = {
       "highlights": [
         "Ingresso gratuito",
         "Baite selvagge",
-        "2.550 km² di area"
+        "2.550 km² di area"
       ],
       "duration": "1 g - più giorni",
       "difficulty": "Moderato",
@@ -647,10 +647,10 @@ const d: LangData = {
     },
     "ina-pielpajärvi": {
       "title": "Trekking alla chiesa selvaggia di Pielpajärvi",
-      "description": "Cammini (o scii d'inverno) fino a una delle chiese più remote della Finlandia, costruita nel 1760 nella natura. Un bel sentiero di 4,5 km attraverso foreste secolari.",
+      "description": "Cammini (o scii d'inverno) fino a una delle chiese più remote della Finlandia, costruita nel 1760 nella natura. Un bel sentiero di 4,5 km attraverso foreste secolari.",
       "highlights": [
         "Chiesa storica",
-        "Sentiero di 4,5 km",
+        "Sentiero di 4,5 km",
         "Ambientazione selvaggia"
       ],
       "duration": "4-5 h",
@@ -695,9 +695,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking sul sentiero dell'orso Karhunkierros",
-      "description": "Il sentiero escursionistico più famoso della Finlandia, 82 km attraverso il Parco nazionale di Oulanka. Ponti sospesi, rapide, cascate e foresta boreale incontaminata.",
+      "description": "Il sentiero escursionistico più famoso della Finlandia, 82 km attraverso il Parco nazionale di Oulanka. Ponti sospesi, rapide, cascate e foresta boreale incontaminata.",
       "highlights": [
-        "Sentiero di 82 km",
+        "Sentiero di 82 km",
         "Ponti sospesi",
         "Parco nazionale di Oulanka"
       ],

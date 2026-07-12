@@ -52,14 +52,14 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "La plus grande station de ski de Finlande",
-      "description": "Une destination de ski de premier plan avec 43 pistes et 230 km de pistes de fond. Ambiance après-ski animée au Hullu Poro et activités de plein air toute l'année.",
+      "description": "Une destination de ski de premier plan avec 43 pistes et 230 km de pistes de fond. Ambiance après-ski animée au Hullu Poro et activités de plein air toute l'année.",
       "access": "Vol vers Kittilä (15 min en voiture)",
       "bestFor": "Skieurs et voyageurs actifs"
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Les plus longues pistes de Finlande",
-      "description": "Deux stations de ski de part et d'autre du fjell Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km. Une Laponie plus calme et authentique avec le parc national Pallas-Yllästunturi.",
+      "description": "Deux stations de ski de part et d'autre du fjell Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km. Une Laponie plus calme et authentique avec le parc national Pallas-Yllästunturi.",
       "access": "Vol vers Kittilä (35 min en voiture)",
       "bestFor": "Amoureux de la nature et skieurs aguerris"
     },
@@ -73,7 +73,7 @@ const d: LangData = {
     "inari": {
       "name": "Inari",
       "tagline": "Cœur de la culture same",
-      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple same finlandais. On y trouve le musée Siida et une nature préservée.",
+      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple same finlandais. On y trouve le musée Siida et une nature préservée.",
       "access": "Vol vers Ivalo (40 min en voiture)",
       "bestFor": "Explorateurs culturels et photographes"
     },
@@ -131,7 +131,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Safari husky et visite du chenil",
-      "description": "Pilotez votre propre attelage de huskies à travers les forêts enneigées sur un parcours pouvant atteindre 18 km, puis visitez le chenil pour rencontrer les chiots et découvrir le traîneau à chiens arctique.",
+      "description": "Pilotez votre propre attelage de huskies à travers les forêts enneigées sur un parcours pouvant atteindre 18 km, puis visitez le chenil pour rencontrer les chiots et découvrir le traîneau à chiens arctique.",
       "highlights": [
         "Pilotez votre propre traîneau",
         "Visite des chiots",
@@ -146,7 +146,7 @@ const d: LangData = {
       "description": "Visitez une ferme de rennes traditionnelle, profitez d'une paisible balade en traîneau au cœur d'un paysage hivernal et découvrez la culture locale de l'élevage des rennes.",
       "highlights": [
         "Présentation de la culture d'élevage",
-        "Balade de 2 km en traîneau",
+        "Balade de 2 km en traîneau",
         "Nourrissage des rennes"
       ],
       "duration": "2 h",
@@ -227,7 +227,7 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Nuitée à l'Arctic Snow Hotel",
-      "description": "Dormez dans une chambre entièrement de glace et de neige à -5 °C, dans un sac thermique douillet. Sauna, dîner et réveil aurores boréales inclus.",
+      "description": "Dormez dans une chambre entièrement de glace et de neige à -5 °C, dans un sac thermique douillet. Sauna, dîner et réveil aurores boréales inclus.",
       "highlights": [
         "Nuitée en chambre de glace",
         "Réveil aurores boréales",
@@ -263,7 +263,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Station de ski de Levi, 43 pistes",
-      "description": "La plus grande station de ski de Finlande avec 43 pistes, 230 km de pistes de fond et un snowpark de premier plan. Ski nocturne sous les aurores boréales.",
+      "description": "La plus grande station de ski de Finlande avec 43 pistes, 230 km de pistes de fond et un snowpark de premier plan. Ski nocturne sous les aurores boréales.",
       "highlights": [
         "43 pistes",
         "Snowpark",
@@ -311,10 +311,10 @@ const d: LangData = {
     },
     "lev-husky-safari": {
       "title": "Safari husky de Levi",
-      "description": "Conduisez votre propre attelage de huskies à travers la nature silencieuse autour de Levi. Sentier de 15 km à travers des forêts gelées avec pause café au feu de camp.",
+      "description": "Conduisez votre propre attelage de huskies à travers la nature silencieuse autour de Levi. Sentier de 15 km à travers des forêts gelées avec pause café au feu de camp.",
       "highlights": [
         "Pilotez votre propre traîneau",
-        "Sentier de 15 km",
+        "Sentier de 15 km",
         "Pause au feu de camp"
       ],
       "duration": "3 h",
@@ -407,11 +407,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Station de ski d'Ylläs, les plus longues pistes",
-      "description": "Les plus longues pistes de Finlande à 3 km de part et d'autre du fjell Ylläs. 63 pistes, une télécabine et 330 km de pistes de fond entretenues à travers le parc national.",
+      "description": "Les plus longues pistes de Finlande à 3 km de part et d'autre du fjell Ylläs. 63 pistes, une télécabine et 330 km de pistes de fond entretenues à travers le parc national.",
       "highlights": [
-        "Plus longue piste 3 km",
+        "Plus longue piste 3 km",
         "63 pistes",
-        "330 km de ski de fond"
+        "330 km de ski de fond"
       ],
       "duration": "Pass journée",
       "difficulty": "Modéré",
@@ -503,9 +503,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Ski de fond à Pallas",
-      "description": "Skiez sur 330 km de pistes entretenues à travers le parc national Pallas-Yllästunturi. Itinéraires pour tous les niveaux, des boucles douces au bord des lacs aux défis de fjell.",
+      "description": "Skiez sur 330 km de pistes entretenues à travers le parc national Pallas-Yllästunturi. Itinéraires pour tous les niveaux, des boucles douces au bord des lacs aux défis de fjell.",
       "highlights": [
-        "330 km de pistes",
+        "330 km de pistes",
         "Paysage du parc national",
         "Location d'équipement"
       ],
@@ -543,7 +543,7 @@ const d: LangData = {
       "highlights": [
         "Entrée gratuite",
         "Cabanes sauvages",
-        "2 550 km² de superficie"
+        "2 550 km² de superficie"
       ],
       "duration": "1 j - plusieurs j",
       "difficulty": "Modéré",
@@ -611,9 +611,9 @@ const d: LangData = {
     },
     "ina-lake-cruise": {
       "title": "Croisière sur le lac Inari",
-      "description": "Naviguez sur le troisième plus grand lac de Finlande, parsemé de plus de 3 000 îles. Longez l'île sacrée d'Ukonsaari et profitez de panoramas arctiques remarquables.",
+      "description": "Naviguez sur le troisième plus grand lac de Finlande, parsemé de plus de 3 000 îles. Longez l'île sacrée d'Ukonsaari et profitez de panoramas arctiques remarquables.",
       "highlights": [
-        "3 000 îles",
+        "3 000 îles",
         "Vue sur Ukonsaari",
         "Panoramas arctiques"
       ],
@@ -647,10 +647,10 @@ const d: LangData = {
     },
     "ina-pielpajärvi": {
       "title": "Trekking à l'église isolée de Pielpajärvi",
-      "description": "Marchez (ou skiez en hiver) jusqu'à l'une des églises les plus reculées de Finlande, bâtie en 1760 en pleine nature. Un beau sentier de 4,5 km à travers une forêt ancestrale.",
+      "description": "Marchez (ou skiez en hiver) jusqu'à l'une des églises les plus reculées de Finlande, bâtie en 1760 en pleine nature. Un beau sentier de 4,5 km à travers une forêt ancestrale.",
       "highlights": [
         "Église historique",
-        "Sentier de 4,5 km",
+        "Sentier de 4,5 km",
         "Cadre sauvage"
       ],
       "duration": "4-5 h",
@@ -695,9 +695,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Randonnée sur le sentier de l'ours Karhunkierros",
-      "description": "Le sentier de randonnée le plus célèbre de Finlande, 82 km à travers le parc national d'Oulanka. Ponts suspendus, rapides, cascades et forêt boréale préservée.",
+      "description": "Le sentier de randonnée le plus célèbre de Finlande, 82 km à travers le parc national d'Oulanka. Ponts suspendus, rapides, cascades et forêt boréale préservée.",
       "highlights": [
-        "Sentier de 82 km",
+        "Sentier de 82 km",
         "Ponts suspendus",
         "Parc national d'Oulanka"
       ],

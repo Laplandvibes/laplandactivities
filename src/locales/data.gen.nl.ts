@@ -52,14 +52,14 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "Het grootste skigebied van Finland",
-      "description": "Een topbestemming met 43 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten.",
+      "description": "Een topbestemming met 43 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten.",
       "access": "Vlieg naar Kittilä (15 min met de auto)",
       "bestFor": "Skiërs en actieve reizigers"
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "De langste pistes van Finland",
-      "description": "Twee skigebieden aan beide zijden van de Ylläs-fjell met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
+      "description": "Twee skigebieden aan beide zijden van de Ylläs-fjell met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
       "access": "Vlieg naar Kittilä (35 min met de auto)",
       "bestFor": "Natuurliefhebbers en ervaren skiërs"
     },
@@ -131,7 +131,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Husky-safari en kennelbezoek",
-      "description": "Bestuur uw eigen huskyteam door besneeuwde bossen over maximaal 18 km en bezoek daarna de kennel om de puppy's te ontmoeten en het Arctische sledehondenrijden te leren kennen.",
+      "description": "Bestuur uw eigen huskyteam door besneeuwde bossen over maximaal 18 km en bezoek daarna de kennel om de puppy's te ontmoeten en het Arctische sledehondenrijden te leren kennen.",
       "highlights": [
         "Rijd uw eigen slee",
         "Puppybezoek",
@@ -146,7 +146,7 @@ const d: LangData = {
       "description": "Bezoek een traditionele rendierboerderij, geniet van een vredige sledetocht door een winterse sprookjeswereld en leer over de lokale rendierhouderscultuur.",
       "highlights": [
         "Uitleg over rendierhouden",
-        "Sledetocht van 2 km",
+        "Sledetocht van 2 km",
         "Rendieren voeren"
       ],
       "duration": "2 uur",
@@ -227,7 +227,7 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Overnachting in Arctic Snow Hotel",
-      "description": "Slaap in een kamer geheel van ijs en sneeuw bij -5 °C in een knusse thermische slaapzak. Inclusief sauna, diner en aurora-wekservice.",
+      "description": "Slaap in een kamer geheel van ijs en sneeuw bij -5 °C in een knusse thermische slaapzak. Inclusief sauna, diner en aurora-wekservice.",
       "highlights": [
         "Overnachting in ijskamer",
         "Aurora-wekservice",
@@ -263,7 +263,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Levi skigebied, 43 pistes",
-      "description": "Het grootste skigebied van Finland met 43 pistes, 230 km langlauf-trails en een topklasse terreinpark. Avondskiën onder het noorderlicht beschikbaar.",
+      "description": "Het grootste skigebied van Finland met 43 pistes, 230 km langlauf-trails en een topklasse terreinpark. Avondskiën onder het noorderlicht beschikbaar.",
       "highlights": [
         "43 pistes",
         "Terreinpark",
@@ -311,10 +311,10 @@ const d: LangData = {
     },
     "lev-husky-safari": {
       "title": "Levi husky-safari",
-      "description": "Bestuur uw eigen huskyteam door de stille wildernis rond Levi. 15 km trail door bevroren bossen met een pauze voor kampvuurkoffie.",
+      "description": "Bestuur uw eigen huskyteam door de stille wildernis rond Levi. 15 km trail door bevroren bossen met een pauze voor kampvuurkoffie.",
       "highlights": [
         "Rijd uw eigen slee",
-        "15 km trail",
+        "15 km trail",
         "Kampvuurpauze"
       ],
       "duration": "3 uur",
@@ -407,11 +407,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Ylläs skigebied, langste pistes",
-      "description": "De langste pistes van Finland (3 km) aan beide zijden van de Ylläs-fjell. 63 pistes, een gondel en 330 km geprepareerde langlaufloipes door het nationaal park.",
+      "description": "De langste pistes van Finland (3 km) aan beide zijden van de Ylläs-fjell. 63 pistes, een gondel en 330 km geprepareerde langlaufloipes door het nationaal park.",
       "highlights": [
-        "3 km langste afdaling",
+        "3 km langste afdaling",
         "63 pistes",
-        "330 km langlauf"
+        "330 km langlauf"
       ],
       "duration": "Dagkaart",
       "difficulty": "Gemiddeld",
@@ -503,9 +503,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Langlaufen in Pallas",
-      "description": "Langlauf 330 km geprepareerde loipes door het Pallas-Yllästunturi Nationaal Park. Routes voor alle niveaus, van rustige meerlussen tot fjell-top-uitdagingen.",
+      "description": "Langlauf 330 km geprepareerde loipes door het Pallas-Yllästunturi Nationaal Park. Routes voor alle niveaus, van rustige meerlussen tot fjell-top-uitdagingen.",
       "highlights": [
-        "330 km loipenetwerk",
+        "330 km loipenetwerk",
         "Nationaal-park-landschap",
         "Materiaalverhuur"
       ],
@@ -543,7 +543,7 @@ const d: LangData = {
       "highlights": [
         "Gratis toegang",
         "Wildernishutten",
-        "2.550 km² gebied"
+        "2.550 km² gebied"
       ],
       "duration": "1 d - meerdaags",
       "difficulty": "Gemiddeld",
@@ -647,10 +647,10 @@ const d: LangData = {
     },
     "ina-pielpajärvi": {
       "title": "Trek naar de wilderniskerk van Pielpajärvi",
-      "description": "Wandel (of ski in de winter) naar een van de meest afgelegen kerken van Finland, gebouwd in 1760 in de wildernis. Een prachtige 4,5 km trail door oerbos.",
+      "description": "Wandel (of ski in de winter) naar een van de meest afgelegen kerken van Finland, gebouwd in 1760 in de wildernis. Een prachtige 4,5 km trail door oerbos.",
       "highlights": [
         "Historische kerk",
-        "4,5 km trail",
+        "4,5 km trail",
         "Wildernis-setting"
       ],
       "duration": "4-5 uur",
@@ -695,9 +695,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Karhunkierros-berenpad wandeling",
-      "description": "De beroemdste wandeltrail van Finland, 82 km door het Nationaal Park Oulanka. Hangbruggen, stroomversnellingen, watervallen en ongerept boreaal bos.",
+      "description": "De beroemdste wandeltrail van Finland, 82 km door het Nationaal Park Oulanka. Hangbruggen, stroomversnellingen, watervallen en ongerept boreaal bos.",
       "highlights": [
-        "82 km trail",
+        "82 km trail",
         "Hangbruggen",
         "Nationaal Park Oulanka"
       ],

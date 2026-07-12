@@ -52,14 +52,14 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "Finnlands größtes Skigebiet",
-      "description": "Ein erstklassiges Skigebiet mit 43 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten.",
+      "description": "Ein erstklassiges Skigebiet mit 43 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten.",
       "access": "Flug nach Kittilä (15 Min. mit dem Auto)",
       "bestFor": "Skifahrer und aktive Reisende"
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Finnlands längste Pisten",
-      "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km. Ein ruhigeres, authentischeres Lappland-Erlebnis mit dem Nationalpark Pallas-Yllästunturi.",
+      "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km. Ein ruhigeres, authentischeres Lappland-Erlebnis mit dem Nationalpark Pallas-Yllästunturi.",
       "access": "Flug nach Kittilä (35 Min. mit dem Auto)",
       "bestFor": "Naturliebhaber und erfahrene Skifahrer"
     },
@@ -191,7 +191,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Husky-Safari und Zwingerbesuch",
-      "description": "Lenken Sie Ihr eigenes Huskygespann bis zu 18 km durch verschneite Wälder, besuchen Sie anschließend den Zwinger, treffen Sie die Welpen und erfahren Sie mehr über das arktische Mushing.",
+      "description": "Lenken Sie Ihr eigenes Huskygespann bis zu 18 km durch verschneite Wälder, besuchen Sie anschließend den Zwinger, treffen Sie die Welpen und erfahren Sie mehr über das arktische Mushing.",
       "highlights": [
         "Lenken Sie Ihren eigenen Schlitten",
         "Welpenbesuch",
@@ -206,7 +206,7 @@ const d: LangData = {
       "description": "Besuchen Sie eine traditionelle Rentierfarm, genießen Sie eine ruhige Schlittenfahrt durch die Winterlandschaft und lernen Sie die lokale Kultur der Rentierhaltung kennen.",
       "highlights": [
         "Einführung in die Rentierhaltung",
-        "Schlittenfahrt über 2 km",
+        "Schlittenfahrt über 2 km",
         "Rentiere füttern"
       ],
       "duration": "2 Std.",
@@ -299,7 +299,7 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Übernachtung im Arctic Snow Hotel",
-      "description": "Schlafen Sie in einem komplett aus Eis und Schnee gebauten Zimmer bei -5 °C in einem Thermo-Schlafsack. Sauna, Abendessen und Nordlicht-Weckruf inklusive.",
+      "description": "Schlafen Sie in einem komplett aus Eis und Schnee gebauten Zimmer bei -5 °C in einem Thermo-Schlafsack. Sauna, Abendessen und Nordlicht-Weckruf inklusive.",
       "highlights": [
         "Übernachtung im Eiszimmer",
         "Nordlicht-Weckruf",
@@ -335,7 +335,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Skigebiet Levi, 43 Pisten",
-      "description": "Das größte Skigebiet Finnlands mit 43 Pisten, 230 km Langlaufloipen und einem erstklassigen Snowpark. Nachtskifahren unter dem Nordlicht.",
+      "description": "Das größte Skigebiet Finnlands mit 43 Pisten, 230 km Langlaufloipen und einem erstklassigen Snowpark. Nachtskifahren unter dem Nordlicht.",
       "highlights": [
         "43 Pisten",
         "Snowpark",
@@ -383,10 +383,10 @@ const d: LangData = {
     },
     "lev-husky-safari": {
       "title": "Husky-Safari in Levi",
-      "description": "Führen Sie Ihr eigenes Huskygespann durch die stille Natur rund um Levi. Strecke von 15 km durch gefrorene Wälder mit Kaffeepause am Lagerfeuer.",
+      "description": "Führen Sie Ihr eigenes Huskygespann durch die stille Natur rund um Levi. Strecke von 15 km durch gefrorene Wälder mit Kaffeepause am Lagerfeuer.",
       "highlights": [
         "Lenken Sie Ihren eigenen Schlitten",
-        "Strecke von 15 km",
+        "Strecke von 15 km",
         "Pause am Lagerfeuer"
       ],
       "duration": "3 Std.",
@@ -479,11 +479,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Skigebiet Ylläs, längste Pisten",
-      "description": "Die längsten Pisten Finnlands, 3 km auf beiden Seiten des Fjälls Ylläs. 63 Pisten, eine Gondelbahn und 330 km gespurte Langlaufloipen durch den Nationalpark.",
+      "description": "Die längsten Pisten Finnlands, 3 km auf beiden Seiten des Fjälls Ylläs. 63 Pisten, eine Gondelbahn und 330 km gespurte Langlaufloipen durch den Nationalpark.",
       "highlights": [
-        "Längste Piste 3 km",
+        "Längste Piste 3 km",
         "63 Pisten",
-        "330 km Langlauf"
+        "330 km Langlauf"
       ],
       "duration": "Day pass",
       "difficulty": "Moderate",
@@ -575,9 +575,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Langlauf in Pallas",
-      "description": "Laufen Sie auf 330 km gespurten Loipen durch den Nationalpark Pallas-Yllästunturi. Strecken für alle Niveaus, von sanften Runden am See bis zu Herausforderungen auf dem Fjäll.",
+      "description": "Laufen Sie auf 330 km gespurten Loipen durch den Nationalpark Pallas-Yllästunturi. Strecken für alle Niveaus, von sanften Runden am See bis zu Herausforderungen auf dem Fjäll.",
       "highlights": [
-        "Netz von 330 km",
+        "Netz von 330 km",
         "Nationalpark-Landschaften",
         "Ausrüstungsverleih"
       ],
@@ -615,7 +615,7 @@ const d: LangData = {
       "highlights": [
         "Freier Eintritt",
         "Wildnishütten",
-        "2.550 km² Fläche"
+        "2.550 km² Fläche"
       ],
       "duration": "1 Tag - mehrtägig",
       "difficulty": "Moderate",
@@ -719,10 +719,10 @@ const d: LangData = {
     },
     "ina-pielpajärvi": {
       "title": "Trekking zur Wildniskirche Pielpajärvi",
-      "description": "Wandern Sie (oder fahren Sie im Winter Ski) zu einer der abgelegensten Kirchen Finnlands, 1760 in der Wildnis erbaut. Ein schöner Weg von 4,5 km durch jahrhundertealte Wälder.",
+      "description": "Wandern Sie (oder fahren Sie im Winter Ski) zu einer der abgelegensten Kirchen Finnlands, 1760 in der Wildnis erbaut. Ein schöner Weg von 4,5 km durch jahrhundertealte Wälder.",
       "highlights": [
         "Historische Kirche",
-        "Weg von 4,5 km",
+        "Weg von 4,5 km",
         "Wildnis-Ambiente"
       ],
       "duration": "4-5 Std.",
@@ -767,9 +767,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking auf dem Bärenpfad Karhunkierros",
-      "description": "Der berühmteste Wanderweg Finnlands, 82 km durch den Nationalpark Oulanka. Hängebrücken, Stromschnellen, Wasserfälle und unberührter Borealwald.",
+      "description": "Der berühmteste Wanderweg Finnlands, 82 km durch den Nationalpark Oulanka. Hängebrücken, Stromschnellen, Wasserfälle und unberührter Borealwald.",
       "highlights": [
-        "Weg von 82 km",
+        "Weg von 82 km",
         "Hängebrücken",
         "Nationalpark Oulanka"
       ],

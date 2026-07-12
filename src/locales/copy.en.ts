@@ -238,7 +238,7 @@ const en: SectionCopy = {
       yllas: [
         { tip: 'Ylläs has some of the darkest, clearest aurora skies in Finland.', icon: '✨' },
         { tip: 'Äkäslompolo side is quieter; Ylläsjärvi has the bars.', icon: '🏔️' },
-        { tip: "The 330 km cross-country network is Finland's best; mid-March is sweet.", icon: '🎿' },
+        { tip: "The 330 km cross-country network is Finland's best; mid-March is sweet.", icon: '🎿' },
       ],
       saariselka: [
         { tip: 'Kiilopää smoke sauna runs year-round. Book the afternoon slot.', icon: '🧖' },
@@ -252,12 +252,12 @@ const en: SectionCopy = {
       ],
       ruka: [
         { tip: 'Bear-watching hides book out months ahead.', icon: '🐻' },
-        { tip: 'Karhunkierros has a 12 km "Little Bear" loop for non-multi-day hikers.', icon: '🥾' },
+        { tip: 'Karhunkierros has a 12 km "Little Bear" loop for non-multi-day hikers.', icon: '🥾' },
         { tip: "Ruka opens for skiing already in October, Finland's earliest.", icon: '⛷️' },
       ],
       posio: [
         { tip: 'Riisitunturi tykky-snow trees are best Jan–Mar.', icon: '🌲' },
-        { tip: 'Korouoma frozen waterfalls need a 3 km forest walk to reach.', icon: '🧊' },
+        { tip: 'Korouoma frozen waterfalls need a 3 km forest walk to reach.', icon: '🧊' },
         { tip: 'The Pentik outlet shop runs 30–50% off all year.', icon: '🏺' },
       ],
       tornio: [
@@ -337,7 +337,7 @@ const en: SectionCopy = {
     },
     firstThings: {
       title: 'Two things to sort out first',
-      body1: 'Finland runs a two-layer system. Layer one is the national fisheries management fee (kalastonhoitomaksu), payable by anyone aged 18–69 who fishes with a lure, spinner or trolling gear — 47 € for the calendar year, 16 € for seven days, or 6 € for one day in 2026, per eräluvat.fi. Under-18s and everyone 70 and over fish free of it. Layer two is a water-specific permit for the exact lake or river you fish.',
+      body1: 'Finland runs a two-layer system. Layer one is the national fisheries management fee (kalastonhoitomaksu), payable by anyone aged 18–69 who fishes with a lure, spinner or trolling gear — 47 € for the calendar year, 16 € for seven days, or 6 € for one day in 2026, per eräluvat.fi. Under-18s and everyone 70 and over fish free of it. Layer two is a water-specific permit for the exact lake or river you fish.',
       body2: 'The big exception: simple float angling and ice fishing (pilkki) are a free general right for everyone, any age, with no fee and no permit, on ordinary waters. Latitude matters too — most of Lapland sits north of the 67°N line, where several minimum sizes are lower. Always check your exact spot on the official restriction map before you go.',
       feeLink: 'National fee — eräluvat.fi',
       mapLink: 'Restriction map — kalastusrajoitus.fi',
@@ -356,14 +356,14 @@ const en: SectionCopy = {
         {
           name: 'Teno / Tana',
           badge: 'Salmon closed 2026',
-          body: 'Atlantic-salmon fishing on the Teno main channel is prohibited for 2026, in force through 31 December under the Finland–Norway Teno agreement — do not plan a salmon trip here. You can still fish other species (grayling, whitefish, trout) on the 20 €/day “other species” permit, light fly gear only, sold only through the official shop tenonkalaluvat.fi. Status per valtioneuvosto.fi and tenonkalatalousalue.fi.',
+          body: 'Atlantic-salmon fishing on the Teno main channel is prohibited for 2026, in force through 31 December under the Finland–Norway Teno agreement — do not plan a salmon trip here. You can still fish other species (grayling, whitefish, trout) on the 20 €/day “other species” permit, light fly gear only, sold only through the official shop tenonkalaluvat.fi. Status per valtioneuvosto.fi and tenonkalatalousalue.fi.',
           crNote: 'Salmon and sea char are excluded from the other-species permit — releasing an accidental salmon is mandatory, not a choice.',
           officialLabel: 'Permit — tenonkalaluvat.fi',
         },
         {
           name: 'Ounasjoki',
           badge: 'Grayling & trout',
-          body: 'A roughly 300 km protected free-flowing tributary of the Kemijoki, running from Enontekiö down to Rovaniemi. There is no salmon run — this is a grayling and trout river. Angling and jigging are free in still water but prohibited in the flowing stretches (a migratory-water rule), so you need the Metsähallitus rod permit plus the national fee. Permits via eräluvat.fi and the Ounasjoki fisheries area.',
+          body: 'A roughly 300 km protected free-flowing tributary of the Kemijoki, running from Enontekiö down to Rovaniemi. There is no salmon run — this is a grayling and trout river. Angling and jigging are free in still water but prohibited in the flowing stretches (a migratory-water rule), so you need the Metsähallitus rod permit plus the national fee. Permits via eräluvat.fi and the Ounasjoki fisheries area.',
           crNote: 'River trout are protected 1 September–30 November; the grayling spring closure (1 Apr–31 May) applies south of 67°N — check your stretch.',
           officialLabel: 'Permit — eräluvat.fi (Ounasjoki)',
         },
@@ -371,7 +371,7 @@ const en: SectionCopy = {
           name: 'Ivalojoki',
           badge: 'Grayling & trout · Mondays closed',
           body: 'Gold-panning country flowing into Lake Inari, and the key spawning river for the wild Inari lake trout. The 2026 season on the Toloskoski–Appisjokisuu stretch runs 17 June to 31 August, with all fishing closed every Monday (00:00–23:59) from 15 June. Dates per eräluvat.fi area 1581.',
-          crNote: 'The Inari-strain lake trout is protected — adipose-fin-present trout under 50 cm (north of 67°N) go straight back, and the river closes for trout 1 Sept–30 Nov.',
+          crNote: 'The Inari-strain lake trout is protected — adipose-fin-present trout under 50 cm (north of 67°N) go straight back, and the river closes for trout 1 Sept–30 Nov.',
           officialLabel: 'Permit — eräluvat.fi area 1581',
         },
         {
@@ -392,16 +392,16 @@ const en: SectionCopy = {
     },
     lakes: {
       title: 'The lakes',
-      body: 'Lake Inari — Finland’s third-largest at around 1,040 km² — is the headline: grayling, perch and whitefish within reach, plus the prized Arctic char (a 45 cm minimum in Inari, and a rare catch). It is big, exposed water, so go with a local or a guide. Smaller waters like Ounasjärvi and the Levi-area lakes give easy perch, whitefish and grayling. Basic ice fishing on all of them is free; guided trips are widely sold. Minimums and permits per eräluvat.fi.',
+      body: 'Lake Inari — Finland’s third-largest at around 1,040 km² — is the headline: grayling, perch and whitefish within reach, plus the prized Arctic char (a 45 cm minimum in Inari, and a rare catch). It is big, exposed water, so go with a local or a guide. Smaller waters like Ounasjärvi and the Levi-area lakes give easy perch, whitefish and grayling. Basic ice fishing on all of them is free; guided trips are widely sold. Minimums and permits per eräluvat.fi.',
     },
     tornioBox: {
       title: 'Tornio salmon 2026 — before you cast',
       rules: [
         'Season: 8 June 2026 from 19:00 to 15 August 2026.',
-        '16–25 August is a restricted tail: fly or lure only, barbless hooks, and any salmon over 65 cm released immediately.',
+        '16–25 August is a restricted tail: fly or lure only, barbless hooks, and any salmon over 65 cm released immediately.',
         'Bag limit: a maximum of 1 salmon per 24 hours AND a maximum of 2 salmon for the whole season. After your second salmon you stop salmon fishing for the year.',
         'Weekly closure: Sunday 19:00 to Monday 19:00 (Finnish time).',
-        'Minimum salmon size 50 cm (the national rule for this part of the Bothnian Bay). Grayling minimums vary by latitude across this river — 30 cm north of 67°N, 35 cm to the south — so check your exact stretch on the eräluvat area 2502 page.',
+        'Minimum salmon size 50 cm (the national rule for this part of the Bothnian Bay). Grayling minimums vary by latitude across this river — 30 cm north of 67°N, 35 cm to the south — so check your exact stretch on the eräluvat area 2502 page.',
         'All trout must be released (sea trout is protected), dead or alive.',
         'From a boat: a maximum of 4 rods or flies at once; no gaff or barbed landing hook.',
         'A catch report is required within 14 days of capture — including fish you released.',
@@ -419,16 +419,16 @@ const en: SectionCopy = {
     },
     licenses: {
       title: 'Licences & permits',
-      fee: 'National fisheries management fee (2026): 47 € for the calendar year, 16 € for seven days, or 6 € for one day — per eräluvat.fi. Mandatory for lure, spinning and trolling anglers aged 18–69; free for under-18s and anyone 70 or over (and those who turned 65 by 31 December 2023). Carry the receipt.',
+      fee: 'National fisheries management fee (2026): 47 € for the calendar year, 16 € for seven days, or 6 € for one day — per eräluvat.fi. Mandatory for lure, spinning and trolling anglers aged 18–69; free for under-18s and anyone 70 or over (and those who turned 65 by 31 December 2023). Carry the receipt.',
       freeRights: 'Free general rights: float angling, ice fishing (pilkki) and the Baltic herring rig are free for everyone — no fee, no permit. Single-rod lure fishing is a general right too, but the 18–69 group still needs the paid national fee for it. None of this applies in migratory-fish rapids or at prohibited / special sites.',
       waterPermits: 'Water-specific permits: on top of the fee, lure or multi-rod fishing needs a permit for the exact water — Metsähallitus state-water permits via eräluvat.fi, local osakaskunta / fisheries-area permits on shared waters, or the special border-river permits for the Teno and Tornio. Per-permit terms are often stricter than the national floors.',
       sizesTitle: 'National minimum sizes (floors — local rules can be stricter)',
       sizes: [
-        'Salmon: 60 cm generally, 50 cm in the Bothnian Bay north of 63°30′N. River closure 1 Sept–30 Nov.',
-        'Trout (adipose fin intact): 50 cm north of 67°N, 60 cm between 64° and 67°N. Fully protected in all sea areas since 2019.',
-        'Grayling: 30 cm north of 67°N, 35 cm to the south; spring closure 1 Apr–31 May inland south of 67°N.',
-        'Pikeperch (kuha): 42 cm. Pike and perch: no national minimum size.',
-        'Arctic char: 45 cm in Lake Inari. Whitefish: no national minimum size.',
+        'Salmon: 60 cm generally, 50 cm in the Bothnian Bay north of 63°30′N. River closure 1 Sept–30 Nov.',
+        'Trout (adipose fin intact): 50 cm north of 67°N, 60 cm between 64° and 67°N. Fully protected in all sea areas since 2019.',
+        'Grayling: 30 cm north of 67°N, 35 cm to the south; spring closure 1 Apr–31 May inland south of 67°N.',
+        'Pikeperch (kuha): 42 cm. Pike and perch: no national minimum size.',
+        'Arctic char: 45 cm in Lake Inari. Whitefish: no national minimum size.',
         'These are national floors from the Fishing Decree (1360/2015); ELY centres may adjust them by ±20 % and river-specific rules override — per eräluvat.fi and mmm.fi.',
       ],
       alwaysCheck: 'Always check kalastusrajoitus.fi for your exact water before fishing — it shows every restriction under the Fishing Act, ELY decisions and protected areas.',
@@ -436,23 +436,23 @@ const en: SectionCopy = {
     teno: {
       title: 'The Teno, in detail',
       body: 'The Teno (Tenojoki / Tana) is a Finland–Norway border river on its own bilateral quota system. Atlantic-salmon fishing is prohibited for the 2026 season, in force through 31 December under the Teno fishing agreement protocol — a ban that has held since 2021 and is re-decided each year. (A 2026 tributary decree, 367/2026, governs the side waters from 1 June.) Status per valtioneuvosto.fi and tenonkalatalousalue.fi.',
-      whatYouCan: 'What you can do: buy the “fishing licence for other species” — 20 €/day for adults, 10 €/day for under-18s — for grayling, whitefish and trout, light fly gear only, valid 10 June–20 August 2026, plus the national fee. Salmon and sea char are excluded.',
+      whatYouCan: 'What you can do: buy the “fishing licence for other species” — 20 €/day for adults, 10 €/day for under-18s — for grayling, whitefish and trout, light fly gear only, valid 10 June–20 August 2026, plus the national fee. Salmon and sea char are excluded.',
       warnThirdParty: 'Buy it only from the official shop, tenonkalaluvat.fi. Do not book the legal permit through third-party sites — a wrong or invalid permit on a border river means fishing illegally.',
     },
     norway: {
       title: 'Across to Norway: sea fishing & king crab',
-      seaBody: 'Sea fishing in Norway is free for everyone, but foreigners may use handheld tackle only — rod, hand-line or jig; nets, pots and longlines are off-limits (which is exactly why you cannot self-catch king crab). Selling your catch is illegal. Winter cod off Finnmark is the draw, with halibut and saithe too. Norway publishes its minimum sizes on lovdata.no (Høstingsforskriften §47): cod 44 cm offshore north of 62°N (55 cm close in), haddock 40 cm, halibut 84 cm and 7.2 kg, saithe 45 cm on rod and line. One separate hard rule: release every halibut over 2 metres. Keep 100 m from fish farms, wear a life jacket, and note that a boating licence is required for anyone born in 1980 or later on bigger craft.',
+      seaBody: 'Sea fishing in Norway is free for everyone, but foreigners may use handheld tackle only — rod, hand-line or jig; nets, pots and longlines are off-limits (which is exactly why you cannot self-catch king crab). Selling your catch is illegal. Winter cod off Finnmark is the draw, with halibut and saithe too. Norway publishes its minimum sizes on lovdata.no (Høstingsforskriften §47): cod 44 cm offshore north of 62°N (55 cm close in), haddock 40 cm, halibut 84 cm and 7.2 kg, saithe 45 cm on rod and line. One separate hard rule: release every halibut over 2 metres. Keep 100 m from fish farms, wear a life jacket, and note that a boating licence is required for anyone born in 1980 or later on bigger craft.',
       exportTitle: 'Taking fish home — the export rule',
-      exportBody: 'Eat-on-site, or a day’s free fishing, is fine. To carry fish across the border you are limited to 15 kg per person, twice a calendar year in 2026 — dropping to 10 kg from 1 January 2027 — and only if the catch came through a tourist-fishing business registered with the Directorate of Fisheries, which must file daily catch reports and issue your export document. Minimum age 12; trophy fish do not count toward the limit. Driving a cooler of cod over from a random rock is not allowed. Per fiskeridir.no and toll.no.',
+      exportBody: 'Eat-on-site, or a day’s free fishing, is fine. To carry fish across the border you are limited to 15 kg per person, twice a calendar year in 2026 — dropping to 10 kg from 1 January 2027 — and only if the catch came through a tourist-fishing business registered with the Directorate of Fisheries, which must file daily catch reports and issue your export document. Minimum age 12; trophy fish do not count toward the limit. Driving a cooler of cod over from a random rock is not allowed. Per fiskeridir.no and toll.no.',
       crabTitle: 'King crab: only with a licensed operator',
-      crabBody: 'Tourists may not catch king crab themselves — it is legal only through a licensed operator holding an allocated tourist quota, concentrated around Kirkenes and Varanger. Norway’s quota-regulated area lies east of 26°E (roughly North Cape), where the minimum carapace is 13 cm and the 2026 tourist quota is 10 tonnes of male crabs; west of that line is a free suppression zone. Ask your operator about the current size and sex rules — they hold the permit conditions. Per fiskeridir.no.',
+      crabBody: 'Tourists may not catch king crab themselves — it is legal only through a licensed operator holding an allocated tourist quota, concentrated around Kirkenes and Varanger. Norway’s quota-regulated area lies east of 26°E (roughly North Cape), where the minimum carapace is 13 cm and the 2026 tourist quota is 10 tonnes of male crabs; west of that line is a free suppression zone. Ask your operator about the current size and sex rules — they hold the permit conditions. Per fiskeridir.no.',
       cta: 'Book a Kirkenes king-crab safari',
       ribLabel: 'Summer RIB safari',
       carNote: 'Getting there means driving into Norway — see the car-rental note below, because most broker rentals need pre-authorisation and a cross-border fee before they will let you cross.',
     },
     gettingThere: {
       title: 'Getting there & renting a car',
-      body: 'The rivers are a long way from airports, so a car is effectively required. Rovaniemi (RVN) opens up the western rivers; Kittilä (KTT) suits Ylläs, Kolari and Muonio; Ivalo (IVL) reaches Inari, Utsjoki, Nuorgam and the onward drive to Kirkenes. One warning worth repeating: many broker cars need pre-authorisation and a cross-border fee (around €60 has been seen) to enter Norway — declare the crossing at pickup, or the contract is void. Some local suppliers include Nordic cross-border cover as standard.',
+      body: 'The rivers are a long way from airports, so a car is effectively required. Rovaniemi (RVN) opens up the western rivers; Kittilä (KTT) suits Ylläs, Kolari and Muonio; Ivalo (IVL) reaches Inari, Utsjoki, Nuorgam and the onward drive to Kirkenes. One warning worth repeating: many broker cars need pre-authorisation and a cross-border fee (around €60 has been seen) to enter Norway — declare the crossing at pickup, or the contract is void. Some local suppliers include Nordic cross-border cover as standard.',
       cta: 'Rent a car from Rovaniemi (RVN)',
     },
     gear: {
@@ -466,7 +466,7 @@ const en: SectionCopy = {
         { period: 'Apr–May', what: 'Grayling spring closure inland south of 67°N (1 Apr–31 May).' },
         { period: 'June', what: 'Rivers open; Tornio salmon opens 8 June; the Teno stays closed for salmon; Ivalojoki closes every Monday from 15 June.' },
         { period: 'Jul–mid-Aug', what: 'Peak summer salmon on the Tornio and Simojoki.' },
-        { period: '16–25 Aug', what: 'Tornio restricted tail: fly or lure, barbless hooks, release any salmon over 65 cm.' },
+        { period: '16–25 Aug', what: 'Tornio restricted tail: fly or lure, barbless hooks, release any salmon over 65 cm.' },
         { period: '1 Sep–30 Nov', what: 'Autumn river closure for trout and salmon in rivers and streams.' },
         { period: 'Sources', what: 'Dates per eräluvat.fi, valtioneuvosto.fi and simojoki.com — re-verify each season.' },
       ],
@@ -480,15 +480,15 @@ const en: SectionCopy = {
         },
         {
           q: 'Can I fish for salmon on the Teno in 2026?',
-          a: 'No. Atlantic-salmon fishing on the Teno main channel is prohibited for 2026, in force through 31 December under the Finland–Norway Teno agreement. You can fish other species (grayling, whitefish, trout) on the 20 €/day “other species” permit from tenonkalaluvat.fi, with salmon excluded.',
+          a: 'No. Atlantic-salmon fishing on the Teno main channel is prohibited for 2026, in force through 31 December under the Finland–Norway Teno agreement. You can fish other species (grayling, whitefish, trout) on the 20 €/day “other species” permit from tenonkalaluvat.fi, with salmon excluded.',
         },
         {
           q: 'How many salmon can I keep on the Tornio?',
-          a: 'In 2026, a maximum of 1 salmon per 24 hours and a maximum of 2 salmon for the entire season — both caps apply at once. After your second salmon you must stop salmon fishing for the year. The minimum size is 50 cm (per eräluvat.fi area 2502 and valtioneuvosto.fi).',
+          a: 'In 2026, a maximum of 1 salmon per 24 hours and a maximum of 2 salmon for the entire season — both caps apply at once. After your second salmon you must stop salmon fishing for the year. The minimum size is 50 cm (per eräluvat.fi area 2502 and valtioneuvosto.fi).',
         },
         {
           q: 'Can I bring my catch home from Norway?',
-          a: 'Only through a registered tourist-fishing camp. The export limit is 15 kg per person, twice per calendar year in 2026 (dropping to 10 kg from 1 January 2027), the catch must come through a business registered with the Directorate of Fisheries, and the minimum age is 12. A day’s free fishing to eat on site is fine; exporting fish you caught on your own is not (fiskeridir.no).',
+          a: 'Only through a registered tourist-fishing camp. The export limit is 15 kg per person, twice per calendar year in 2026 (dropping to 10 kg from 1 January 2027), the catch must come through a business registered with the Directorate of Fisheries, and the minimum age is 12. A day’s free fishing to eat on site is fine; exporting fish you caught on your own is not (fiskeridir.no).',
         },
         {
           q: 'Can I catch king crab myself?',
@@ -496,7 +496,7 @@ const en: SectionCopy = {
         },
         {
           q: 'What is the fishing fee and who is exempt?',
-          a: 'The national fisheries management fee for 2026 is 47 € for the calendar year, 16 € for seven days or 6 € for one day (eräluvat.fi). It is required for lure, spinning and trolling anglers aged 18–69; under-18s and anyone 70 or over are exempt, as are those who turned 65 by 31 December 2023.',
+          a: 'The national fisheries management fee for 2026 is 47 € for the calendar year, 16 € for seven days or 6 € for one day (eräluvat.fi). It is required for lure, spinning and trolling anglers aged 18–69; under-18s and anyone 70 or over are exempt, as are those who turned 65 by 31 December 2023.',
         },
         {
           q: 'Which Lapland river is best for salmon in 2026?',
@@ -504,7 +504,7 @@ const en: SectionCopy = {
         },
         {
           q: 'Do minimum sizes really change with latitude?',
-          a: 'Yes. Most of Lapland is north of 67°N, where several floors are lower — grayling is 30 cm north of the line versus 35 cm south of it, and trout with an intact adipose fin is 50 cm north of 67°N. Always confirm your exact stretch, because per-permit rules can be stricter (eräluvat.fi).',
+          a: 'Yes. Most of Lapland is north of 67°N, where several floors are lower — grayling is 30 cm north of the line versus 35 cm south of it, and trout with an intact adipose fin is 50 cm north of 67°N. Always confirm your exact stretch, because per-permit rules can be stricter (eräluvat.fi).',
         },
       ],
     },

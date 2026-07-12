@@ -49,7 +49,7 @@ const nl: SectionCopy = {
     },
     firstThings: {
       title: "Twee dingen om eerst te regelen",
-      body1: "Finland hanteert een tweelaags systeem. Laag één is de nationale visbeheerheffing (kalastonhoitomaksu), verschuldigd door iedereen van 18 tot 69 jaar die vist met een kunstaas, spinner of sleeplijn — 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag in 2026, volgens eräluvat.fi. Wie jonger dan 18 of 70 jaar en ouder is, vist er gratis van. Laag twee is een watergebonden vergunning voor het exacte meer of de rivier waar u vist.",
+      body1: "Finland hanteert een tweelaags systeem. Laag één is de nationale visbeheerheffing (kalastonhoitomaksu), verschuldigd door iedereen van 18 tot 69 jaar die vist met een kunstaas, spinner of sleeplijn — 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag in 2026, volgens eräluvat.fi. Wie jonger dan 18 of 70 jaar en ouder is, vist er gratis van. Laag twee is een watergebonden vergunning voor het exacte meer of de rivier waar u vist.",
       body2: "De grote uitzondering: eenvoudig vissen met de dobber en ijsvissen (pilkki) zijn een gratis algemeen recht voor iedereen, van elke leeftijd, zonder heffing en zonder vergunning, op gewone wateren. Ook de breedtegraad telt — het grootste deel van Lapland ligt ten noorden van de 67°N-lijn, waar diverse minimummaten lager liggen. Controleer uw exacte stek altijd op de officiële beperkingenkaart voordat u vertrekt.",
       feeLink: "Nationale heffing — eräluvat.fi",
       mapLink: "Beperkingenkaart — kalastusrajoitus.fi",
@@ -68,14 +68,14 @@ const nl: SectionCopy = {
         {
           name: "Teno / Tana",
           badge: "Zalm gesloten 2026",
-          body: "Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst — plan hier geen zalmreis. U kunt nog wel op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag, uitsluitend lichte vlieguitrusting, alleen verkocht via de officiële shop tenonkalaluvat.fi. Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
+          body: "Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst — plan hier geen zalmreis. U kunt nog wel op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag, uitsluitend lichte vlieguitrusting, alleen verkocht via de officiële shop tenonkalaluvat.fi. Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
           crNote: "Zalm en zeeriddervis vallen buiten de vergunning voor andere soorten — een per ongeluk gevangen zalm terugzetten is verplicht, geen keuze.",
           officialLabel: "Vergunning — tenonkalaluvat.fi",
         },
         {
           name: "Ounasjoki",
           badge: "Vlagzalm en forel",
-          body: "Een ruwweg 300 km lange beschermde, vrij stromende zijrivier van de Kemijoki, van Enontekiö tot Rovaniemi. Er is geen zalmtrek — dit is een vlagzalm- en forelrivier. Hengelen en jiggen zijn gratis in stilstaand water maar verboden in de stromende trajecten (een regel voor trekvis-water), dus u hebt de Metsähallitus-hengelvergunning plus de nationale heffing nodig. Vergunningen via eräluvat.fi en het visserijgebied Ounasjoki.",
+          body: "Een ruwweg 300 km lange beschermde, vrij stromende zijrivier van de Kemijoki, van Enontekiö tot Rovaniemi. Er is geen zalmtrek — dit is een vlagzalm- en forelrivier. Hengelen en jiggen zijn gratis in stilstaand water maar verboden in de stromende trajecten (een regel voor trekvis-water), dus u hebt de Metsähallitus-hengelvergunning plus de nationale heffing nodig. Vergunningen via eräluvat.fi en het visserijgebied Ounasjoki.",
           crNote: "Rivierforel is beschermd van 1 september tot 30 november; de voorjaarssluiting voor vlagzalm (1 apr–31 mei) geldt ten zuiden van 67°N — controleer uw traject.",
           officialLabel: "Vergunning — eräluvat.fi (Ounasjoki)",
         },
@@ -83,7 +83,7 @@ const nl: SectionCopy = {
           name: "Ivalojoki",
           badge: "Vlagzalm en forel · maandags gesloten",
           body: "Goudzoekgebied dat uitmondt in het Inari-meer, en de belangrijkste paairivier voor de wilde meerforel van Inari. Het seizoen van 2026 op het traject Toloskoski–Appisjokisuu loopt van 17 juni tot 31 augustus, met alle visserij gesloten op elke maandag (00:00–23:59) vanaf 15 juni. Data volgens eräluvat.fi-gebied 1581.",
-          crNote: "De meerforel van de Inari-stam is beschermd — forel met intacte vetvin onder 50 cm (ten noorden van 67°N) gaat meteen terug, en de rivier sluit voor forel van 1 sept–30 nov.",
+          crNote: "De meerforel van de Inari-stam is beschermd — forel met intacte vetvin onder 50 cm (ten noorden van 67°N) gaat meteen terug, en de rivier sluit voor forel van 1 sept–30 nov.",
           officialLabel: "Vergunning — eräluvat.fi gebied 1581",
         },
         {
@@ -104,16 +104,16 @@ const nl: SectionCopy = {
     },
     lakes: {
       title: "De meren",
-      body: "Het Inari-meer — met circa 1.040 km² het op twee na grootste van Finland — is de blikvanger: vlagzalm, baars en houting binnen bereik, plus de gewilde riddervis (minimaal 45 cm in Inari, en een zeldzame vangst). Het is groot, open water, dus ga met een local of een gids. Kleinere wateren zoals de Ounasjärvi en de meren rond Levi geven gemakkelijk baars, houting en vlagzalm. Basis-ijsvissen is er overal gratis; begeleide tochten worden ruim aangeboden. Minimummaten en vergunningen volgens eräluvat.fi.",
+      body: "Het Inari-meer — met circa 1.040 km² het op twee na grootste van Finland — is de blikvanger: vlagzalm, baars en houting binnen bereik, plus de gewilde riddervis (minimaal 45 cm in Inari, en een zeldzame vangst). Het is groot, open water, dus ga met een local of een gids. Kleinere wateren zoals de Ounasjärvi en de meren rond Levi geven gemakkelijk baars, houting en vlagzalm. Basis-ijsvissen is er overal gratis; begeleide tochten worden ruim aangeboden. Minimummaten en vergunningen volgens eräluvat.fi.",
     },
     tornioBox: {
       title: "Tornio-zalm 2026 — voordat u uitwerpt",
       rules: [
         "Seizoen: 8 juni 2026 vanaf 19:00 tot 15 augustus 2026.",
-        "16–25 augustus is een beperkte nasleep: alleen vlieg of kunstaas, weerhaakloze haken, en elke zalm boven 65 cm onmiddellijk terugzetten.",
+        "16–25 augustus is een beperkte nasleep: alleen vlieg of kunstaas, weerhaakloze haken, en elke zalm boven 65 cm onmiddellijk terugzetten.",
         "Vangstlimiet: maximaal 1 zalm per 24 uur ÉN maximaal 2 zalmen voor het hele seizoen. Na uw tweede zalm stopt u met zalmvissen voor dat jaar.",
         "Wekelijkse sluiting: zondag 19:00 tot maandag 19:00 (Finse tijd).",
-        "Minimummaat zalm 50 cm (de nationale regel voor dit deel van de Botnische Golf). De minimummaten voor vlagzalm variëren met de breedtegraad langs deze rivier — 30 cm ten noorden van 67°N, 35 cm ten zuiden ervan — dus controleer uw exacte traject op de pagina van eräluvat-gebied 2502.",
+        "Minimummaat zalm 50 cm (de nationale regel voor dit deel van de Botnische Golf). De minimummaten voor vlagzalm variëren met de breedtegraad langs deze rivier — 30 cm ten noorden van 67°N, 35 cm ten zuiden ervan — dus controleer uw exacte traject op de pagina van eräluvat-gebied 2502.",
         "Alle forel moet worden teruggezet (zeeforel is beschermd), dood of levend.",
         "Vanuit een boot: maximaal 4 hengels of vliegen tegelijk; geen gaffel of haak met weerhaak om te landen.",
         "Een vangstmelding is verplicht binnen 14 dagen na de vangst — inclusief vis die u hebt teruggezet.",
@@ -131,16 +131,16 @@ const nl: SectionCopy = {
     },
     licenses: {
       title: "Vergunningen en heffingen",
-      fee: "Nationale visbeheerheffing (2026): 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag — volgens eräluvat.fi. Verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; gratis voor wie jonger dan 18 of 70 jaar en ouder is (en voor wie op 31 december 2023 65 was geworden). Bewaar het bewijs.",
+      fee: "Nationale visbeheerheffing (2026): 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag — volgens eräluvat.fi. Verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; gratis voor wie jonger dan 18 of 70 jaar en ouder is (en voor wie op 31 december 2023 65 was geworden). Bewaar het bewijs.",
       freeRights: "Gratis algemene rechten: vissen met de dobber, ijsvissen (pilkki) en het haringtuig zijn gratis voor iedereen — geen heffing, geen vergunning. Ook vissen met kunstaas aan één hengel is een algemeen recht, maar de groep van 18–69 heeft daarvoor toch de betaalde nationale heffing nodig. Niets hiervan geldt in de stroomversnellingen met trekvis of op verboden / bijzondere plekken.",
       waterPermits: "Watergebonden vergunningen: bovenop de heffing heeft vissen met kunstaas of meerdere hengels een vergunning nodig voor het exacte water — Metsähallitus-vergunningen voor staatswater via eräluvat.fi, lokale osakaskunta- / visserijgebiedvergunningen op gedeelde wateren, of de speciale grensriviervergunningen voor de Teno en de Tornio. De voorwaarden per vergunning zijn vaak strenger dan de nationale ondergrenzen.",
       sizesTitle: "Nationale minimummaten (ondergrenzen — lokale regels kunnen strenger zijn)",
       sizes: [
-        "Zalm: 60 cm in het algemeen, 50 cm in de Botnische Golf ten noorden van 63°30′N. Riviersluiting 1 sept–30 nov.",
-        "Forel (vetvin intact): 50 cm ten noorden van 67°N, 60 cm tussen 64° en 67°N. Volledig beschermd in alle zeegebieden sinds 2019.",
-        "Vlagzalm: 30 cm ten noorden van 67°N, 35 cm ten zuiden ervan; voorjaarssluiting 1 apr–31 mei in het binnenland ten zuiden van 67°N.",
-        "Snoekbaars (kuha): 42 cm. Snoek en baars: geen nationale minimummaat.",
-        "Riddervis: 45 cm in het Inari-meer. Houting: geen nationale minimummaat.",
+        "Zalm: 60 cm in het algemeen, 50 cm in de Botnische Golf ten noorden van 63°30′N. Riviersluiting 1 sept–30 nov.",
+        "Forel (vetvin intact): 50 cm ten noorden van 67°N, 60 cm tussen 64° en 67°N. Volledig beschermd in alle zeegebieden sinds 2019.",
+        "Vlagzalm: 30 cm ten noorden van 67°N, 35 cm ten zuiden ervan; voorjaarssluiting 1 apr–31 mei in het binnenland ten zuiden van 67°N.",
+        "Snoekbaars (kuha): 42 cm. Snoek en baars: geen nationale minimummaat.",
+        "Riddervis: 45 cm in het Inari-meer. Houting: geen nationale minimummaat.",
         "Dit zijn nationale ondergrenzen uit het Visserijbesluit (1360/2015); ELY-centra kunnen ze met ±20 % aanpassen en riviergebonden regels gaan voor — volgens eräluvat.fi en mmm.fi.",
       ],
       alwaysCheck: "Controleer altijd kalastusrajoitus.fi voor uw exacte water voordat u gaat vissen — het toont elke beperking onder de Visserijwet, ELY-besluiten en beschermde gebieden.",
@@ -148,16 +148,16 @@ const nl: SectionCopy = {
     teno: {
       title: "De Teno, in detail",
       body: "De Teno (Tenojoki / Tana) is een Fins-Noorse grensrivier met een eigen bilateraal quotasysteem. Het vissen op Atlantische zalm is voor het seizoen 2026 verboden, van kracht tot en met 31 december onder het protocol van de Teno-visserijovereenkomst — een verbod dat sinds 2021 standhoudt en elk jaar opnieuw wordt vastgesteld. (Een tributaire verordening van 2026, 367/2026, regelt de zijwateren vanaf 1 juni.) Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
-      whatYouCan: "Wat u wél kunt doen: koop de 'visvergunning voor andere soorten' — 20 €/dag voor volwassenen, 10 €/dag voor onder-18 — voor vlagzalm, houting en forel, uitsluitend lichte vlieguitrusting, geldig van 10 juni tot 20 augustus 2026, plus de nationale heffing. Zalm en zeeriddervis zijn uitgesloten.",
+      whatYouCan: "Wat u wél kunt doen: koop de 'visvergunning voor andere soorten' — 20 €/dag voor volwassenen, 10 €/dag voor onder-18 — voor vlagzalm, houting en forel, uitsluitend lichte vlieguitrusting, geldig van 10 juni tot 20 augustus 2026, plus de nationale heffing. Zalm en zeeriddervis zijn uitgesloten.",
       warnThirdParty: "Koop hem alleen bij de officiële shop, tenonkalaluvat.fi. Boek de wettelijke vergunning niet via websites van derden — een verkeerde of ongeldige vergunning op een grensrivier betekent illegaal vissen.",
     },
     norway: {
       title: "De grens over naar Noorwegen: zeevissen en koningskrab",
-      seaBody: "Zeevissen in Noorwegen is gratis voor iedereen, maar buitenlanders mogen alleen handgereedschap gebruiken — hengel, handlijn of jig; netten, korven en beuglijnen zijn verboden (precies daarom kunt u zelf geen koningskrab vangen). Uw vangst verkopen is illegaal. Winterkabeljauw voor de kust van Finnmark is de trekpleister, met ook heilbot en koolvis. Noorwegen publiceert zijn minimummaten op lovdata.no (Høstingsforskriften §47): kabeljauw 44 cm op open zee ten noorden van 62°N (55 cm dicht onder de kust), schelvis 40 cm, heilbot 84 cm en 7,2 kg, koolvis 45 cm met hengel en lijn. Eén aparte harde regel: zet elke heilbot boven 2 meter terug. Houd 100 m afstand van viskwekerijen, draag een reddingsvest, en let erop dat een vaarbewijs verplicht is voor iedereen geboren in 1980 of later op grotere vaartuigen.",
+      seaBody: "Zeevissen in Noorwegen is gratis voor iedereen, maar buitenlanders mogen alleen handgereedschap gebruiken — hengel, handlijn of jig; netten, korven en beuglijnen zijn verboden (precies daarom kunt u zelf geen koningskrab vangen). Uw vangst verkopen is illegaal. Winterkabeljauw voor de kust van Finnmark is de trekpleister, met ook heilbot en koolvis. Noorwegen publiceert zijn minimummaten op lovdata.no (Høstingsforskriften §47): kabeljauw 44 cm op open zee ten noorden van 62°N (55 cm dicht onder de kust), schelvis 40 cm, heilbot 84 cm en 7,2 kg, koolvis 45 cm met hengel en lijn. Eén aparte harde regel: zet elke heilbot boven 2 meter terug. Houd 100 m afstand van viskwekerijen, draag een reddingsvest, en let erop dat een vaarbewijs verplicht is voor iedereen geboren in 1980 of later op grotere vaartuigen.",
       exportTitle: "Vis mee naar huis nemen — de exportregel",
-      exportBody: "Ter plaatse eten, of een dag gratis vissen, is prima. Om vis over de grens mee te nemen bent u beperkt tot 15 kg per persoon, twee keer per kalenderjaar in 2026 — dalend naar 10 kg vanaf 1 januari 2027 — en alleen als de vangst afkomstig is van een toeristische visserij-onderneming die is geregistreerd bij het Directoraat voor Visserij, dat dagelijkse vangstrapporten moet indienen en uw exportdocument moet afgeven. Minimumleeftijd 12; trofeevis telt niet mee voor de limiet. Een koelbox vol kabeljauw meerijden vanaf een willekeurige rots is niet toegestaan. Volgens fiskeridir.no en toll.no.",
+      exportBody: "Ter plaatse eten, of een dag gratis vissen, is prima. Om vis over de grens mee te nemen bent u beperkt tot 15 kg per persoon, twee keer per kalenderjaar in 2026 — dalend naar 10 kg vanaf 1 januari 2027 — en alleen als de vangst afkomstig is van een toeristische visserij-onderneming die is geregistreerd bij het Directoraat voor Visserij, dat dagelijkse vangstrapporten moet indienen en uw exportdocument moet afgeven. Minimumleeftijd 12; trofeevis telt niet mee voor de limiet. Een koelbox vol kabeljauw meerijden vanaf een willekeurige rots is niet toegestaan. Volgens fiskeridir.no en toll.no.",
       crabTitle: "Koningskrab: alleen met een vergunde aanbieder",
-      crabBody: "Toeristen mogen zelf geen koningskrab vangen — het is alleen legaal via een vergunde aanbieder met een toegewezen toeristenquotum, geconcentreerd rond Kirkenes en Varanger. Het quotagereguleerde gebied van Noorwegen ligt ten oosten van 26°O (ruwweg de Noordkaap), waar het minimale rugschild 13 cm is en het toeristenquotum voor 2026 10 ton mannelijke krabben bedraagt; ten westen van die lijn ligt een vrije bestrijdingszone. Vraag uw aanbieder naar de actuele regels voor maat en geslacht — zij houden de vergunningsvoorwaarden. Volgens fiskeridir.no.",
+      crabBody: "Toeristen mogen zelf geen koningskrab vangen — het is alleen legaal via een vergunde aanbieder met een toegewezen toeristenquotum, geconcentreerd rond Kirkenes en Varanger. Het quotagereguleerde gebied van Noorwegen ligt ten oosten van 26°O (ruwweg de Noordkaap), waar het minimale rugschild 13 cm is en het toeristenquotum voor 2026 10 ton mannelijke krabben bedraagt; ten westen van die lijn ligt een vrije bestrijdingszone. Vraag uw aanbieder naar de actuele regels voor maat en geslacht — zij houden de vergunningsvoorwaarden. Volgens fiskeridir.no.",
       cta: "Boek een koningskrab-safari in Kirkenes",
       ribLabel: "Zomerse RIB-safari",
       carNote: "Er komen betekent Noorwegen inrijden — zie de opmerking over autohuur hieronder, want de meeste huurauto's van brokers vereisen een voorafgaande autorisatie en een grensoverschrijdingstoeslag voordat ze u laten oversteken.",
@@ -178,7 +178,7 @@ const nl: SectionCopy = {
         { period: "apr–mei", what: "Voorjaarssluiting vlagzalm in het binnenland ten zuiden van 67°N (1 apr–31 mei)." },
         { period: "juni", what: "Rivieren gaan open; de Tornio-zalm opent 8 juni; de Teno blijft gesloten voor zalm; de Ivalojoki sluit elke maandag vanaf 15 juni." },
         { period: "jul–half aug", what: "Piek van de zomerzalm op de Tornio en de Simojoki." },
-        { period: "16–25 aug", what: "Beperkte Tornio-nasleep: vlieg of kunstaas, weerhaakloze haken, zet elke zalm boven 65 cm terug." },
+        { period: "16–25 aug", what: "Beperkte Tornio-nasleep: vlieg of kunstaas, weerhaakloze haken, zet elke zalm boven 65 cm terug." },
         { period: "1 sep–30 nov", what: "Najaarssluiting voor forel en zalm in rivieren en beken." },
         { period: "Bronnen", what: "Data volgens eräluvat.fi, valtioneuvosto.fi en simojoki.com — verifieer elk seizoen opnieuw." },
       ],
@@ -192,15 +192,15 @@ const nl: SectionCopy = {
         },
         {
           q: "Mag ik in 2026 op zalm vissen in de Teno?",
-          a: "Nee. Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. U kunt op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag via tenonkalaluvat.fi, met uitsluiting van zalm.",
+          a: "Nee. Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. U kunt op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag via tenonkalaluvat.fi, met uitsluiting van zalm.",
         },
         {
           q: "Hoeveel zalm mag ik houden op de Tornio?",
-          a: "In 2026 maximaal 1 zalm per 24 uur en maximaal 2 zalmen voor het hele seizoen — beide limieten gelden tegelijk. Na uw tweede zalm moet u stoppen met zalmvissen voor dat jaar. De minimummaat is 50 cm (volgens eräluvat.fi-gebied 2502 en valtioneuvosto.fi).",
+          a: "In 2026 maximaal 1 zalm per 24 uur en maximaal 2 zalmen voor het hele seizoen — beide limieten gelden tegelijk. Na uw tweede zalm moet u stoppen met zalmvissen voor dat jaar. De minimummaat is 50 cm (volgens eräluvat.fi-gebied 2502 en valtioneuvosto.fi).",
         },
         {
           q: "Mag ik mijn vangst meenemen naar huis vanuit Noorwegen?",
-          a: "Alleen via een geregistreerd toeristisch viskamp. De exportlimiet is 15 kg per persoon, twee keer per kalenderjaar in 2026 (dalend naar 10 kg vanaf 1 januari 2027), de vangst moet afkomstig zijn van een onderneming die is geregistreerd bij het Directoraat voor Visserij, en de minimumleeftijd is 12. Een dag gratis vissen om ter plaatse te eten mag; vis exporteren die u op eigen houtje hebt gevangen niet (fiskeridir.no).",
+          a: "Alleen via een geregistreerd toeristisch viskamp. De exportlimiet is 15 kg per persoon, twee keer per kalenderjaar in 2026 (dalend naar 10 kg vanaf 1 januari 2027), de vangst moet afkomstig zijn van een onderneming die is geregistreerd bij het Directoraat voor Visserij, en de minimumleeftijd is 12. Een dag gratis vissen om ter plaatse te eten mag; vis exporteren die u op eigen houtje hebt gevangen niet (fiskeridir.no).",
         },
         {
           q: "Mag ik zelf koningskrab vangen?",
@@ -208,7 +208,7 @@ const nl: SectionCopy = {
         },
         {
           q: "Wat is de visheffing en wie is vrijgesteld?",
-          a: "De nationale visbeheerheffing voor 2026 is 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag (eräluvat.fi). Ze is verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; wie jonger dan 18 of 70 jaar en ouder is, is vrijgesteld, evenals wie op 31 december 2023 65 was geworden.",
+          a: "De nationale visbeheerheffing voor 2026 is 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag (eräluvat.fi). Ze is verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; wie jonger dan 18 of 70 jaar en ouder is, is vrijgesteld, evenals wie op 31 december 2023 65 was geworden.",
         },
         {
           q: "Welke Lapland-rivier is in 2026 het beste voor zalm?",
@@ -216,7 +216,7 @@ const nl: SectionCopy = {
         },
         {
           q: "Veranderen de minimummaten echt met de breedtegraad?",
-          a: "Ja. Het grootste deel van Lapland ligt ten noorden van 67°N, waar verschillende ondergrenzen lager liggen — vlagzalm is 30 cm ten noorden van de lijn tegenover 35 cm ten zuiden ervan, en forel met een intacte vetvin is 50 cm ten noorden van 67°N. Bevestig altijd uw exacte traject, want de regels per vergunning kunnen strenger zijn (eräluvat.fi).",
+          a: "Ja. Het grootste deel van Lapland ligt ten noorden van 67°N, waar verschillende ondergrenzen lager liggen — vlagzalm is 30 cm ten noorden van de lijn tegenover 35 cm ten zuiden ervan, en forel met een intacte vetvin is 50 cm ten noorden van 67°N. Bevestig altijd uw exacte traject, want de regels per vergunning kunnen strenger zijn (eräluvat.fi).",
         },
       ],
     },
@@ -312,10 +312,10 @@ const nl: SectionCopy = {
     featuredKicker: 'Met de hand gekozen', featuredH2: 'Top-ervaringen', seeAllTours: 'Bekijk alle boekbare tours',
     seasonsKicker: 'Het hele jaar', seasonsH2: 'Vier seizoenen avontuur', seasonsLead: 'Elk seizoen maakt van Lapland een ander land.',
     seasons: [
-      { name: 'Winter', months: 'nov – mrt', blurb: 'Diepe sneeuw, poolnachten, piek van het noorderlicht. Sneeuwscooters, husky\'s, rooksauna\'s.', temp: '-15 tot -5 °C' },
-      { name: 'Lente', months: 'apr – mei', blurb: 'Sneeuw met daglicht. Laat-seizoensskiën, kalvende rendieren, noorderlicht tot half april.', temp: '-5 tot +5 °C' },
-      { name: 'Zomer', months: 'jun – aug', blurb: 'De middernachtszon gaat niet onder. Wandelen, kajakken, zalmvissen, mountainbiken.', temp: '+10 tot +25 °C' },
-      { name: 'Herfst', months: 'sep – okt', blurb: 'De ruska kleurt de fjells. Eerste noorderlicht keert terug. Paddenstoel- en bessenseizoen.', temp: '+5 tot -5 °C' },
+      { name: 'Winter', months: 'nov – mrt', blurb: 'Diepe sneeuw, poolnachten, piek van het noorderlicht. Sneeuwscooters, husky\'s, rooksauna\'s.', temp: '-15 tot -5 °C' },
+      { name: 'Lente', months: 'apr – mei', blurb: 'Sneeuw met daglicht. Laat-seizoensskiën, kalvende rendieren, noorderlicht tot half april.', temp: '-5 tot +5 °C' },
+      { name: 'Zomer', months: 'jun – aug', blurb: 'De middernachtszon gaat niet onder. Wandelen, kajakken, zalmvissen, mountainbiken.', temp: '+10 tot +25 °C' },
+      { name: 'Herfst', months: 'sep – okt', blurb: 'De ruska kleurt de fjells. Eerste noorderlicht keert terug. Paddenstoel- en bessenseizoen.', temp: '+5 tot -5 °C' },
     ],
     destinationsKicker: 'Waarheen', destinationsH2: 'Bestemmingen', viewAll: 'Bekijk alle', activitiesShort: 'activiteiten',
   },
@@ -411,7 +411,7 @@ const nl: SectionCopy = {
       yllas: [
         { tip: 'Ylläs heeft een van de donkerste, helderste noorderlichthemels van Finland.', icon: '✨' },
         { tip: 'De kant van Äkäslompolo is rustiger; in Ylläsjärvi vindt u de bars.', icon: '🏔️' },
-        { tip: 'Het 330 km lange langlaufnetwerk is het beste van Finland; half maart is ideaal.', icon: '🎿' },
+        { tip: 'Het 330 km lange langlaufnetwerk is het beste van Finland; half maart is ideaal.', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'De Kiilopää-rooksauna draait het hele jaar, boek het middagblok.', icon: '🧖' },
@@ -425,12 +425,12 @@ const nl: SectionCopy = {
       ],
       ruka: [
         { tip: 'Berenobservatie-schuilhutten zijn maanden van tevoren volgeboekt.', icon: '🐻' },
-        { tip: 'Karhunkierros heeft een 12 km "Kleine Beer"-lus voor wie geen meerdaagse tocht doet.', icon: '🥾' },
+        { tip: 'Karhunkierros heeft een 12 km "Kleine Beer"-lus voor wie geen meerdaagse tocht doet.', icon: '🥾' },
         { tip: 'Ruka opent al in oktober voor skiërs, het vroegste van Finland.', icon: '⛷️' },
       ],
       posio: [
         { tip: 'De tykky-besneeuwde bomen van Riisitunturi zijn het mooist van jan-mrt.', icon: '🌲' },
-        { tip: 'De bevroren watervallen van Korouoma bereikt u na een wandeling van 3 km door het bos.', icon: '🧊' },
+        { tip: 'De bevroren watervallen van Korouoma bereikt u na een wandeling van 3 km door het bos.', icon: '🧊' },
         { tip: 'De Pentik-outletwinkel heeft het hele jaar 30-50% korting.', icon: '🏺' },
       ],
       tornio: [
