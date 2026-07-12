@@ -25,13 +25,13 @@ export default function Navigation() {
   // Accessibility aria translations (KO/FR/IT/NL screen-reader leaks fix).
   const ariaSwitchLanguage = pick(lang,
     'Switch language', 'Vaihda kieli', 'Sprache wechseln', '言語を切り替える', 'Cambiar idioma',
-    'Mudar idioma', '切换语言', '언어 변경', 'Changer de langue', 'Cambia lingua', 'Taal wijzigen');
+    'Mudar idioma', '切换语言', '언어 변경', 'Changer de langue', 'Cambia lingua', 'Taal wijzigen', 'Byt språk');
   const ariaLanguage = pick(lang,
     'Language', 'Kieli', 'Sprache', '言語', 'Idioma',
-    'Idioma', '语言', '언어', 'Langue', 'Lingua', 'Taal');
+    'Idioma', '语言', '언어', 'Langue', 'Lingua', 'Taal', 'Språk');
   const ariaToggleMenu = pick(lang,
     'Toggle menu', 'Avaa/sulje valikko', 'Menü umschalten', 'メニューを開閉する', 'Alternar menú',
-    'Alternar menu', '切换菜单', '메뉴 열기/닫기', 'Basculer le menu', 'Apri/chiudi menu', 'Menu wisselen');
+    'Alternar menu', '切换菜单', '메뉴 열기/닫기', 'Basculer le menu', 'Apri/chiudi menu', 'Menu wisselen', 'Öppna/stäng menyn');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -70,14 +70,15 @@ export default function Navigation() {
     };
   }, [drop]);
 
-  type LangCode = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl';
+  type LangCode = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv';
   const URL_PREFIX_OF: Record<LangCode, string> = {
     en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-    ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+    ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
   };
   const ALL_LANGS: { code: LangCode; label: string; native: string }[] = [
     { code: 'en', label: 'EN', native: 'English' },
     { code: 'fi', label: 'FI', native: 'Suomi' },
+    { code: 'sv', label: 'SV', native: 'Svenska' },
     { code: 'de', label: 'DE', native: 'Deutsch' },
     { code: 'ja', label: 'JA', native: '日本語' },
     { code: 'es', label: 'ES', native: 'Español' },
@@ -94,7 +95,7 @@ export default function Navigation() {
       window.localStorage.setItem('lv_locale_choice', target);
     }
     const path = pathname;
-    const bare = path.replace(/^\/(fi|de|ja|es|br|cn|kr|fr|it|nl)(?=\/|$)/, '') || '/';
+    const bare = path.replace(/^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(?=\/|$)/, '') || '/';
     const prefix = URL_PREFIX_OF[target];
     if (!prefix) {
       navigate(bare);

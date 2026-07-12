@@ -40,6 +40,7 @@ const loaders: Partial<Record<Lang, () => Promise<{ default: LangData }>>> = {
   fr: () => import('./data.gen.fr'),
   it: () => import('./data.gen.it'),
   nl: () => import('./data.gen.nl'),
+  sv: () => import('./data.gen.sv'),
 };
 
 export function isLocaleDataLoaded(lang: Lang): boolean {

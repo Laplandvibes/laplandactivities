@@ -23,6 +23,7 @@ const BROWSE_CTA: Record<Lang, string> = {
   fr: 'Voir les tours sur GetYourGuide',
   it: 'Sfoglia i tour su GetYourGuide',
   nl: 'Tours bekijken op GetYourGuide',
+  sv: 'Bläddra bland turer på GetYourGuide',
 };
 const FALLBACK_LEAD: Record<Lang, string> = {
   en: 'Hand-picked Lapland tours — live prices, free cancellation on most, instant confirmation.',
@@ -36,6 +37,7 @@ const FALLBACK_LEAD: Record<Lang, string> = {
   fr: 'Excursions sélectionnées en Laponie — prix en temps réel, annulation gratuite sur la plupart, confirmation immédiate.',
   it: 'Tour selezionati della Lapponia — prezzi in tempo reale, cancellazione gratuita sulla maggior parte, conferma immediata.',
   nl: 'Zorgvuldig gekozen Lapland-tours — actuele prijzen, gratis annulering op de meeste, directe bevestiging.',
+  sv: 'Handplockade Lappland-turer — priser i realtid, gratis avbokning på de flesta, bekräftelse direkt.',
 };
 
 // Map the page language → GetYourGuide widget locale code, so the embedded tour
@@ -43,7 +45,7 @@ const FALLBACK_LEAD: Record<Lang, string> = {
 // to Finnish (the partner's home market), regardless of the page language.
 const GYG_LOCALE: Record<Lang, string> = {
   en: 'en-US', fi: 'fi-FI', de: 'de-DE', ja: 'ja-JP', es: 'es-ES',
-  'pt-BR': 'pt-BR', 'zh-CN': 'zh-CN', ko: 'ko-KR', fr: 'fr-FR', it: 'it-IT', nl: 'nl-NL',
+  'pt-BR': 'pt-BR', 'zh-CN': 'zh-CN', ko: 'ko-KR', fr: 'fr-FR', it: 'it-IT', nl: 'nl-NL', sv: 'sv-SE',
 };
 
 const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string; pricesNote: string }> = {
@@ -112,6 +114,12 @@ const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string;
     eyebrow: 'Aangedreven door GetYourGuide',
     subtitle: 'Gratis annulering tot 24 u op de meeste tours · Directe bevestiging',
     pricesNote: 'Prijzen en beschikbaarheid wijzigen dagelijks — boek vooraf voor het hoogseizoen.',
+  },
+  sv: {
+    title: 'Boka handplockade turer',
+    eyebrow: 'Drivs av GetYourGuide',
+    subtitle: 'Gratis avbokning upp till 24 timmar på de flesta turer · Bekräftelse direkt',
+    pricesNote: 'Priser och tillgänglighet ändras dagligen — boka i god tid inför högsäsong.',
   },
 };
 

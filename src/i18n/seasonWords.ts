@@ -20,6 +20,7 @@ export const SEASON_WORD: Record<Lang, Record<Season, string>> = {
   fr: { winter: 'Hiver', spring: 'Printemps', summer: 'Été', autumn: 'Automne' },
   it: { winter: 'Inverno', spring: 'Primavera', summer: 'Estate', autumn: 'Autunno' },
   nl: { winter: 'Winter', spring: 'Lente', summer: 'Zomer', autumn: 'Herfst' },
+  sv: { winter: 'Vinter', spring: 'Vår', summer: 'Sommar', autumn: 'Höst' },
 };
 
 // "What can you do in {season}" style section labels for the season split.
@@ -190,6 +191,20 @@ export const SEASON_SECTIONS: Record<Lang, {
     bestForLabel: 'Ideaal voor',
     elevationLabel: 'Hoogste punt',
     operatorsShort: 'Aanbieders',
+  },
+  sv: {
+    inSeasonKicker: 'När du bör åka',
+    inSeasonNow: (s) => `Bäst just nu — ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Också värt det — ${s.toLowerCase()}`,
+    yearRound: 'året runt',
+    whyKicker: 'Platsen',
+    whyH2: (p) => `Varför åka till ${p}`,
+    goodToKnowKicker: 'I korthet',
+    goodToKnowH2: 'Bra att veta',
+    accessLabel: 'Ta dig dit',
+    bestForLabel: 'Passar bäst för',
+    elevationLabel: 'Högsta punkt',
+    operatorsShort: 'Researrangörer',
   },
 };
 

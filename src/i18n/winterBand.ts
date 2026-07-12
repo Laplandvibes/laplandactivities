@@ -212,4 +212,21 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     gygTitle: 'Wintertours snel uitverkocht',
     gygEyebrow: 'Nu boekbaar · Gratis annulering',
   },
+  sv: {
+    eyebrow: 'Vintersäsong — bokningsbart nu',
+    h2: 'Lappland på vintern är den äkta varan.',
+    lead: 'Snön lägger sig i november och polarnatten ger det starkaste norrskenet. Hundspann- och snöskotersafarier, renslädar och rökbastur går hela säsongen — julen och februari–mars-toppen bokas upp först.',
+    bookCta: 'Boka vinteraktiviteter',
+    browseCta: 'Se vinterguiden',
+    imageKicker: 'Vintersäsong',
+    imageH3: 'Arktis på sitt mest storslagna',
+    highlights: [
+      { title: 'Hundspann', body: 'Kör ditt eget spann genom tyst, snötyngd skog.' },
+      { title: 'Snöskotersafarier', body: 'Frusna sjöar och fjällstigar — från lugna turer till heldagsexpeditioner.' },
+      { title: 'Norrskensjakt', body: 'Turer under mörk himmel med guider som tolkar prognosen åt dig.' },
+      { title: 'Pilkfiske & bastu', body: 'Borra upp ett hål i isen och värm sedan upp dig i en äkta rökbastu.' },
+    ],
+    gygTitle: 'Vinterturer säljer snabbt',
+    gygEyebrow: 'Bokningsbart nu · Gratis avbokning',
+  },
 };

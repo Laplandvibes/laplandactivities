@@ -36,11 +36,11 @@ const RELATED_SITES: { host: string; url: string }[] = [
 
 const BCP47: Record<Lang, string> = {
   en: 'en-US', fi: 'fi-FI', de: 'de-DE', ja: 'ja-JP', es: 'es-ES',
-  'pt-BR': 'pt-BR', 'zh-CN': 'zh-CN', ko: 'ko-KR', fr: 'fr-FR', it: 'it-IT', nl: 'nl-NL',
+  'pt-BR': 'pt-BR', 'zh-CN': 'zh-CN', ko: 'ko-KR', fr: 'fr-FR', it: 'it-IT', nl: 'nl-NL', sv: 'sv-SE',
 };
 const URL_SEG: Record<Lang, string> = {
   en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
 };
 // Localized one-liner descriptions for the WebSite + TouristTrip schemas.
 const HOME_DESC: Record<Lang, string> = {
@@ -55,6 +55,7 @@ const HOME_DESC: Record<Lang, string> = {
   fr: 'Balades en husky, traîneaux de rennes, safaris en motoneige, chasses aux aurores et randonnées d\'été en Laponie finlandaise.',
   it: 'Giri in husky, slitte trainate da renne, safari in motoslitta, caccia all\'aurora ed escursioni estive nella Lapponia finlandese.',
   nl: 'Husky-tochten, rendiersleeën, sneeuwscootersafari\'s, aurora-jachten en zomerwandelingen in Fins Lapland.',
+  sv: 'Huskyturer, renslädar, snöskotersafarin, norrskensjakter och sommarvandringar i finska Lappland.',
 };
 
 const SEASON_ICONS = [Snowflake, Trees, Sun, Leaf];

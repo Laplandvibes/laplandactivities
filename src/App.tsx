@@ -191,6 +191,16 @@ export default function App() {
           <Route path="/nl/privacy" element={<Privacy />} />
           <Route path="/nl/terms" element={<Terms />} />
           <Route path="/nl/cookie-policy" element={<CookiePolicy />} />
+          <Route path="/sv" element={<Home />} />
+          <Route path="/sv/destinations" element={<DestinationsIndex />} />
+          <Route path="/sv/destinations/:slug" element={<DestinationPage />} />
+          <Route path="/sv/categories" element={<CategoriesIndex />} />
+          <Route path="/sv/categories/:slug" element={<CategoryPage />} />
+          <Route path="/sv/about" element={<AboutPage />} />
+          <Route path="/sv/fishing" element={<FishingPage />} />
+          <Route path="/sv/privacy" element={<Privacy />} />
+          <Route path="/sv/terms" element={<Terms />} />
+          <Route path="/sv/cookie-policy" element={<CookiePolicy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>

@@ -47,7 +47,7 @@ const ROOT = resolve(__dirname, '..');
 const OUT_FILE = resolve(__dirname, 'prerender-meta.json');
 
 // Keep in sync with src/i18n/useLang.ts Lang union + the COPY keys.
-const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl'];
+const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
 
 // Site brand suffix used in the runtime <title> of category/destination pages.
 const TITLE_SUFFIX = 'LaplandActivities';
