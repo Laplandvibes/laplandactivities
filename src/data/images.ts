@@ -154,12 +154,26 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
   { match: /aurora|northern light|revontul/i,
         imgs: [local('og/og-default.webp'), local('activities/northern-lights/aurora-people.webp')] },
+  // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
+  // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
+  // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
+  // variants so the pair of Saariselkä king-crab cards never show the same photo.
+  { match: /king crab|kongekrabbe|crab safari/i,
+        imgs: [local('activities/fishing/fishing-kingcrab.webp'), local('activities/fishing/fishing-kingcrab-2.webp')] },
   { match: /kayak|canoe|paddle|sup\b|raft|river run/i,                  img: local('activities/summer/kayak.webp') },
   { match: /icebreaker|sampo/i,                                        img: local('og/og-default.webp') },
   { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
+  // Kukkolankoski = SUMMER net-fishing at the rapids (Food & Drink). Its title carries
+  // "whitefish", but so do the ice-fishing descriptions ("jig for perch and whitefish"),
+  // so match the unique place name — never bare /whitefish/ — and give it a river image,
+  // not a winter ice one (season-accuracy release gate).
+  { match: /kukkolankoski/i,                                           img: local('activities/fishing/fishing-river.webp') },
   { match: /salmon|fly[- ]?fish|tornionjoki|teno river/i,               img: local('activities/summer/salmon-fishing.webp') },
-  { match: /whitefish|ice fish/i,                                       img: local('hotels/log-cabin-lakeside.webp') },
-  { match: /fish(ing)?/i,                                               img: local('hotels/log-cabin-lakeside.webp') },
+  // Ice fishing (winter) — 3 distinct, season-accurate photos so sibling cards on one
+  // destination page (Rovaniemi has three) never repeat. assignActivityImages round-robins them.
+  { match: /ice[ -]?fish/i,
+        imgs: [local('activities/fishing/fishing-ice.webp'), local('activities/fishing/fishing-ice-day.webp'), local('activities/fishing/fishing-ice-dusk.webp')] },
+  { match: /fish(ing)?/i,                                               img: local('activities/fishing/fishing-river.webp') },
   { match: /mountain bike|mtb|cycling|bike park/i,                      img: local('activities/summer/mtb-bikepark.webp') },
   { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
   { match: /berry|cloudberry|forag|mushroom/i,                          img: local('activities/summer/foraging.webp') },
