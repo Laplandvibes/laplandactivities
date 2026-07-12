@@ -333,6 +333,52 @@
       "description": "LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht Fins Lapland-bestemmingen."
     }
   },
+  "/fishing": {
+    "en": {
+      "title": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
+      "description": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris — with the 2026 rules, fees and official permit links you need before you…"
+    },
+    "fi": {
+      "title": "Kalastus Lapissa ja Jäämerellä | LaplandActivities",
+      "description": "Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit — mukana 2026 säännöt, maksut ja viralliset lupalinkit, jotka tarvitset…"
+    },
+    "de": {
+      "title": "Angeln in Lappland & im Nordmeer | LaplandActivities",
+      "description": "Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und norwegische Königskrabben-Safaris — mit den Regeln, Gebühren und offiziellen Genehmigungslinks für…"
+    },
+    "ja": {
+      "title": "ラップランドと北極海の釣り | LaplandActivities",
+      "description": "無料のアイスフィッシング、トルニオ川などの許可制サーモンリバー、ノルウェーのタラバガニサファリ — 2026年のルール・料金・公式許可リンクを、竿を出す前にまとめて。"
+    },
+    "es": {
+      "title": "Pesca en Laponia y el océano Ártico | LaplandActivities",
+      "description": "Pesca en hielo gratuita, ríos de salmón con licencia como el Tornio y safaris de cangrejo real en Noruega, con las normas de 2026, las tasas y los enlaces oficiales…"
+    },
+    "pt-BR": {
+      "title": "Pesca na Lapônia e no Oceano Ártico | LaplandActivities",
+      "description": "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega — com as regras, taxas e links oficiais de licença de 2026…"
+    },
+    "zh-CN": {
+      "title": "拉普兰与北冰洋钓鱼指南 | LaplandActivities",
+      "description": "免费冰钓、托尔尼奥河等持证三文鱼河，以及挪威帝王蟹之旅——附上你下竿前需要的 2026 年规定、费用和官方许可链接。"
+    },
+    "ko": {
+      "title": "라플란드와 북극해에서 즐기는 낚시 | LaplandActivities",
+      "description": "얼음낚시는 무료, 토르니오 같은 허가제 연어강, 노르웨이 킹크랩 사파리까지 — 낚싯대를 던지기 전에 알아야 할 2026년 규정, 요금, 공식 허가 링크를 담았습니다."
+    },
+    "fr": {
+      "title": "Pêche en Laponie et dans l'océan Arctique | LaplandActivities",
+      "description": "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège, avec les règles 2026, les redevances et les liens…"
+    },
+    "it": {
+      "title": "Pesca in Lapponia e nell'oceano Artico | LaplandActivities",
+      "description": "Pesca sul ghiaccio gratuita, fiumi da salmone su licenza come il Tornio e safari al granchio reale in Norvegia, con le regole 2026, le tariffe e i link ufficiali dei…"
+    },
+    "nl": {
+      "title": "Vissen in Lapland en de Noordelijke IJszee | LaplandActivities",
+      "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's — met de regels, tarieven en officiële vergunningslinks van 2026…"
+    }
+  },
   "/categories": {
     "en": {
       "title": "Activity Categories · LaplandActivities",
@@ -791,6 +837,52 @@
     "nl": {
       "title": "Eten en drinken · LaplandActivities",
       "description": "Kota-restaurants, foerageren in de natuur, bessen plukken, rendierdiners onder de sterren en lokale brouwerijtours."
+    }
+  },
+  "/categories/fishing": {
+    "en": {
+      "title": "Fishing & Ice Fishing · LaplandActivities",
+      "description": "Free ice fishing on frozen lakes, licensed salmon rivers like the Tornio, and king crab safaris across the Norwegian border."
+    },
+    "fi": {
+      "title": "Kalastus ja pilkkiminen · LaplandActivities",
+      "description": "Ilmaista pilkkimistä jäätyneillä järvillä, luvanvaraisia lohijoita kuten Tornionjoki ja kuningasrapusafareja Norjan rajan yli."
+    },
+    "de": {
+      "title": "Angeln & Eisangeln · LaplandActivities",
+      "description": "Kostenloses Eisangeln auf zugefrorenen Seen, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris über die norwegische Grenze."
+    },
+    "ja": {
+      "title": "釣りとアイスフィッシング · LaplandActivities",
+      "description": "凍った湖での無料アイスフィッシング、トルニオ川などの許可制サーモンリバー、ノルウェー国境を越えるタラバガニサファリ。まず魚の資源:ルールを知り、川が必要とする分は戻しましょう。"
+    },
+    "es": {
+      "title": "Pesca y pesca en hielo · LaplandActivities",
+      "description": "Pesca en hielo gratuita en lagos helados, ríos de salmón con licencia como el Tornio y safaris de cangrejo real al otro lado de la frontera noruega."
+    },
+    "pt-BR": {
+      "title": "Pesca e pesca no gelo · LaplandActivities",
+      "description": "Pesca no gelo gratuita em lagos congelados, rios de salmão licenciados como o Tornio e safáris de caranguejo-real do outro lado da fronteira norueguesa."
+    },
+    "zh-CN": {
+      "title": "钓鱼与冰钓 · LaplandActivities",
+      "description": "冰封湖面上的免费冰钓、托尔尼奥河等持证三文鱼河，以及跨越挪威边境的帝王蟹之旅。鱼群优先：了解规定，把河流需要的放流回去。"
+    },
+    "ko": {
+      "title": "낚시와 얼음낚시 · LaplandActivities",
+      "description": "얼어붙은 호수에서의 무료 얼음낚시, 토르니오 같은 허가제 연어강, 그리고 노르웨이 국경 너머의 킹크랩 사파리. 물고기 자원이 먼저입니다: 규정을 알고, 강이 필요로 하는 만큼 방류하세요."
+    },
+    "fr": {
+      "title": "Pêche et pêche blanche · LaplandActivities",
+      "description": "Pêche blanche gratuite sur les lacs gelés, rivières à saumon sous licence comme le Tornio et safaris au crabe royal de l'autre côté de la frontière norvégienne."
+    },
+    "it": {
+      "title": "Pesca e pesca sul ghiaccio · LaplandActivities",
+      "description": "Pesca sul ghiaccio gratuita sui laghi gelati, fiumi da salmone su licenza come il Tornio e safari al granchio reale oltre il confine norvegese."
+    },
+    "nl": {
+      "title": "Vissen en ijsvissen · LaplandActivities",
+      "description": "Gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren zoals de Tornio en koningskrab-safari's over de Noorse grens."
     }
   },
   "/destinations/rovaniemi": {
