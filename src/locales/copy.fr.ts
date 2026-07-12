@@ -10,7 +10,7 @@ const fr: SectionCopy = {
       title: 'Pêche en Laponie et dans l\'océan Arctique',
       sub: 'Trois pêcheries, un seul voyage : pêche blanche gratuite sur les lacs gelés, rivières à saumon sous licence en été et safaris au crabe royal de l\'autre côté de la frontière norvégienne. Voici ce qui est ouvert en 2026, et les règles qui font revenir le poisson.',
       ctaBook: 'Réserver une sortie guidée de pêche blanche',
-      ctaRules: 'Avant de lancer : permis et règles',
+      ctaRules: 'Permis et règles →',
       trustLine: 'Vérifié auprès de sources officielles finlandaises (eräluvat.fi, MMM) et norvégiennes (fiskeridir.no). La réglementation change chaque année : vérifiez votre plan d\'eau avant de pêcher.',
     },
     eyebrows: {
@@ -237,7 +237,7 @@ const fr: SectionCopy = {
   },
   nav: {
     home: 'Accueil', destinations: 'Destinations', categories: 'Catégories', about: 'À propos', fishing: 'Pêche',
-    bookCta: 'Réserver des activités', allDestinations: 'Toutes les destinations →', allCategories: 'Toutes les catégories →',
+    bookCta: 'Réserver des activités', bookCtaShort: 'Réserver', allDestinations: 'Toutes les destinations →', allCategories: 'Toutes les catégories →',
   },
   hero: {
     eyebrow: 'Laponie finlandaise · Des aurores au soleil de minuit',
@@ -266,7 +266,7 @@ const fr: SectionCopy = {
   hotelsStrip: {
     kicker: 'Où séjourner', h2: "Réservez d'abord le lit.",
     lead: "Les activités, c'est facile, la plupart des opérateurs ajoutent des places. L'hébergement que vous voulez vraiment se réserve des mois à l'avance. Verrouillez la chambre, puis réservez les visites.",
-    compareCta: 'Comparer tous les hôtels de Laponie',
+    compareCta: 'Comparer les hôtels de Laponie',
     lodging: [
       { name: 'Igloos de verre', blurb: 'Dormez sous les aurores à travers un toit de verre bombé. Les nuitées les plus réservées de Laponie.' },
       { name: 'Chalets en rondins au bord du lac', blurb: 'Sauna à fumée, bain chaud au feu de bois, ponton privé. Toute l\'année.' },
@@ -384,7 +384,7 @@ const fr: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: 'Destination introuvable', backDestinations: '← Retour aux destinations',
-    allDestinationsNav: 'Toutes les destinations', bookActivitiesIn: 'Réserver des activités à',
+    allDestinationsNav: 'Toutes les destinations', bookActivitiesIn: 'Réserver à {dest}',
     stayIn: 'Séjourner à', activitiesShort: 'activités',
     mustDoKicker: 'À ne pas manquer', mustDoH2: 'L\'expérience la plus réservée',
     localKicker: 'Info locale', localH2: 'Conseils d\'initiés',

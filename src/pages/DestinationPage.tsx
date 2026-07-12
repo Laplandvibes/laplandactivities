@@ -122,7 +122,7 @@ export default function DestinationPage() {
               className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <Sparkles className="w-4 h-4" />
-              {c.bookActivitiesIn} {destination.name}
+              {c.bookActivitiesIn.replace('{dest}', destination.name)}
             </AffiliateCTA>
             <AffiliateCTA
               partner="hotels"

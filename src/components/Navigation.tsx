@@ -170,7 +170,10 @@ export default function Navigation() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-5 lg:gap-6" ref={dropRef}>
+        {/* Desktop nav only from lg up — at md (768-1023px) the full item row is
+            ~230px wider than the viewport (wide Bebas logo + 5 links + lang + CTA),
+            so tablets get the mobile hamburger instead. */}
+        <div className="hidden lg:flex items-center gap-3 xl:gap-6" ref={dropRef}>
           <Link
             to={to('/')}
             className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
@@ -264,13 +267,14 @@ export default function Navigation() {
             partner="activities"
             sid="nav_book_now"
             destination="lappi-suomi-l2652"
-            className="bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+            className="whitespace-nowrap bg-vibe-pink hover:bg-vibe-pink/90 text-white px-4 xl:px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
-            {c.bookCta}
+            <span className="xl:hidden">{c.bookCtaShort}</span>
+            <span className="hidden xl:inline">{c.bookCta}</span>
           </AffiliateCTA>
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
+        <div className="lg:hidden flex items-center gap-2">
           <div className="relative inline-flex items-center">
             <select
               value={lang}
@@ -298,7 +302,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-deep-night border-t border-white/10 px-4 pb-5 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-deep-night border-t border-white/10 px-4 pb-5 max-h-[80vh] overflow-y-auto">
           <Link to={to('/')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.home}</Link>
 
           <details className="py-2 border-b border-white/5">

@@ -34,7 +34,7 @@ export default function HotelsStrip() {
             partner="hotels"
             sid="hotels_strip_browse_all"
             destination="Lapland, Finland"
-            className="self-start sm:self-auto inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/25"
+            className="self-start sm:self-auto inline-flex items-center gap-2 whitespace-nowrap bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/25"
           >
             <Hotel className="w-4 h-4" />
             {c.compareCta}

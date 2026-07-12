@@ -10,7 +10,7 @@ const nl: SectionCopy = {
       title: "Vissen in Lapland en de Noordelijke IJszee",
       sub: "Drie visgronden, één reis: gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren in de zomer en koningskrab-safari's over de Noorse grens. Dit is wat er in 2026 open is — en de regels die de vis laten terugkomen.",
       ctaBook: "Boek een begeleide ijsvistocht",
-      ctaRules: "Voordat u uitwerpt: vergunningen en regels",
+      ctaRules: 'Vergunningen en regels →',
       trustLine: "Gecontroleerd aan de hand van officiële Finse (eräluvat.fi, MMM) en Noorse (fiskeridir.no) bronnen. De regels veranderen elk jaar — verifieer uw water voordat u gaat vissen.",
     },
     eyebrows: {
@@ -237,7 +237,7 @@ const nl: SectionCopy = {
   },
   nav: {
     home: 'Home', destinations: 'Bestemmingen', categories: 'Categorieën', about: 'Over ons', fishing: 'Vissen',
-    bookCta: 'Activiteiten boeken', allDestinations: 'Alle bestemmingen →', allCategories: 'Alle categorieën →',
+    bookCta: 'Activiteiten boeken', bookCtaShort: 'Boek nu', allDestinations: 'Alle bestemmingen →', allCategories: 'Alle categorieën →',
   },
   hero: {
     eyebrow: 'Fins Lapland · Van noorderlicht tot middernachtszon',
@@ -266,7 +266,7 @@ const nl: SectionCopy = {
   hotelsStrip: {
     kicker: 'Waar te verblijven', h2: 'Boek eerst het bed.',
     lead: 'Activiteiten zijn eenvoudig, de meeste aanbieders breiden uit. De accommodatie die u écht wilt is maanden van tevoren vol. Leg eerst de kamer vast en boek dan pas de tours.',
-    compareCta: 'Vergelijk alle Lapland-hotels',
+    compareCta: 'Vergelijk Lapland-hotels',
     lodging: [
       { name: 'Glaziglo\'s', blurb: 'Slaap onder het noorderlicht door een gewelfd glazen dak. De meest geboekte Lapland-nachten.' },
       { name: 'Houten hutten aan het meer', blurb: 'Rooksauna, houtgestookte hot tub, eigen steiger. Het hele jaar door.' },
@@ -384,7 +384,7 @@ const nl: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: 'Bestemming niet gevonden', backDestinations: '← Terug naar bestemmingen',
-    allDestinationsNav: 'Alle bestemmingen', bookActivitiesIn: 'Boek activiteiten in',
+    allDestinationsNav: 'Alle bestemmingen', bookActivitiesIn: 'Boek activiteiten: {dest}',
     stayIn: 'Verblijf in', activitiesShort: 'activiteiten',
     mustDoKicker: 'Niet missen', mustDoH2: 'Meest geboekte ervaring',
     localKicker: 'Lokale info', localH2: 'Insider-tips',

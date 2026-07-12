@@ -13,6 +13,8 @@ export type SectionCopy = {
     about: string;
     fishing: string;
     bookCta: string;
+    /** Short nav CTA shown at md (768-1023px) where the desktop nav is crowded. */
+    bookCtaShort: string;
     allDestinations: string;
     allCategories: string;
   };

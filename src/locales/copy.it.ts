@@ -10,7 +10,7 @@ const it: SectionCopy = {
       title: 'Pesca in Lapponia e nell\'oceano Artico',
       sub: 'Tre aree di pesca, un solo viaggio: pesca sul ghiaccio gratuita sui laghi gelati, fiumi da salmone su licenza in estate e safari al granchio reale oltre il confine norvegese. Ecco cosa è aperto nel 2026, e le regole che fanno tornare il pesce.',
       ctaBook: 'Prenota un\'uscita guidata di pesca sul ghiaccio',
-      ctaRules: 'Prima di lanciare: licenze e regole',
+      ctaRules: 'Licenze e regole →',
       trustLine: 'Verificato con fonti ufficiali finlandesi (eräluvat.fi, MMM) e norvegesi (fiskeridir.no). Le regole cambiano ogni anno: verifichi il suo specchio d\'acqua prima di pescare.',
     },
     eyebrows: {
@@ -237,7 +237,7 @@ const it: SectionCopy = {
   },
   nav: {
     home: 'Home', destinations: 'Destinazioni', categories: 'Categorie', about: 'Chi siamo', fishing: 'Pesca',
-    bookCta: 'Prenota attività', allDestinations: 'Tutte le destinazioni →', allCategories: 'Tutte le categorie →',
+    bookCta: 'Prenota attività', bookCtaShort: 'Prenota', allDestinations: 'Tutte le destinazioni →', allCategories: 'Tutte le categorie →',
   },
   hero: {
     eyebrow: 'Lapponia finlandese · Dall\'aurora al sole di mezzanotte',
@@ -266,7 +266,7 @@ const it: SectionCopy = {
   hotelsStrip: {
     kicker: 'Dove soggiornare', h2: 'Prima prenoti il letto.',
     lead: 'Le attività sono facili, la maggior parte degli operatori aggiunge capienza. L\'alloggio che vuole davvero si esaurisce con mesi di anticipo. Si assicuri prima la stanza, poi prenoti i tour.',
-    compareCta: 'Confronta tutti gli hotel della Lapponia',
+    compareCta: 'Confronta hotel in Lapponia',
     lodging: [
       { name: 'Iglù di vetro', blurb: 'Dorma sotto l\'aurora attraverso un tetto di vetro curvo. Le notti più prenotate della Lapponia.' },
       { name: 'Baite in legno sul lago', blurb: 'Sauna a fumo, vasca riscaldata a legna, pontile privato. Tutto l\'anno.' },
@@ -384,7 +384,7 @@ const it: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: 'Destinazione non trovata', backDestinations: '← Torna alle destinazioni',
-    allDestinationsNav: 'Tutte le destinazioni', bookActivitiesIn: 'Prenota attività a',
+    allDestinationsNav: 'Tutte le destinazioni', bookActivitiesIn: 'Prenota attività a {dest}',
     stayIn: 'Soggiorni a', activitiesShort: 'attività',
     mustDoKicker: 'Da non perdere', mustDoH2: 'L\'esperienza più prenotata',
     localKicker: 'Info locali', localH2: 'Consigli da insider',

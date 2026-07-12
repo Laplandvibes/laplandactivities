@@ -10,7 +10,7 @@ const ko: SectionCopy = {
       title: "라플란드와 북극해에서 즐기는 낚시",
       sub: "세 곳의 어장, 한 번의 여행: 얼어붙은 호수에서의 무료 얼음낚시, 여름철 허가제 연어강, 그리고 노르웨이 국경 너머의 킹크랩 사파리. 2026년에 열려 있는 것과, 물고기가 계속 돌아오게 하는 규정을 정리했습니다.",
       ctaBook: "가이드 얼음낚시 투어 예약하기",
-      ctaRules: "던지기 전에: 허가와 규정",
+      ctaRules: '허가와 규정 →',
       trustLine: "핀란드(eräluvat.fi, MMM)와 노르웨이(fiskeridir.no) 공식 자료로 확인했습니다. 규정은 해마다 바뀌니 낚시 전에 해당 수역을 확인하세요.",
     },
     eyebrows: {
@@ -237,7 +237,7 @@ const ko: SectionCopy = {
   },
   nav: {
     home: '홈', destinations: '목적지', categories: '카테고리', about: '소개', fishing: '낚시',
-    bookCta: '액티비티 예약', allDestinations: '모든 목적지 →', allCategories: '모든 카테고리 →',
+    bookCta: '액티비티 예약', bookCtaShort: '예약하기', allDestinations: '모든 목적지 →', allCategories: '모든 카테고리 →',
   },
   hero: {
     eyebrow: '라플란드 · 오로라부터 백야까지',
@@ -266,7 +266,7 @@ const ko: SectionCopy = {
   hotelsStrip: {
     kicker: '어디에 묵을지', h2: '먼저 방을 잡으세요.',
     lead: '액티비티는 쉽습니다, 대부분의 운영자는 자리를 추가합니다. 정작 원하시는 숙소는 몇 달 전에 매진됩니다. 방을 먼저 잡고 그 다음에 투어를 예약하세요.',
-    compareCta: '모든 라플란드 호텔 비교',
+    compareCta: '라플란드 호텔 비교',
     lodging: [
       { name: '글래스 이글루', blurb: '곡면 유리 천장으로 오로라 아래서 잠들기. 라플란드에서 가장 많이 예약되는 숙소.' },
       { name: '호숫가 로그 캐빈', blurb: '스모크 사우나, 장작 핫텁, 전용 부두. 연중 운영.' },
@@ -384,7 +384,7 @@ const ko: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: '목적지를 찾을 수 없음', backDestinations: '← 목적지로 돌아가기',
-    allDestinationsNav: '모든 목적지', bookActivitiesIn: '액티비티 예약:',
+    allDestinationsNav: '모든 목적지', bookActivitiesIn: '액티비티 예약: {dest}',
     stayIn: '숙박:', activitiesShort: '액티비티',
     mustDoKicker: '필수 체험', mustDoH2: '가장 많이 예약된 체험',
     localKicker: '현지 정보', localH2: '인사이더 팁',
