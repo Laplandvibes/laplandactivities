@@ -189,6 +189,18 @@ const d: LangData = {
       "difficulty": "Facile",
       "category": "Culture et patrimoine"
     },
+    "rov-husky-summer": {
+      "title": "Visite estivale d'un chenil de huskies et rencontre des chiots",
+      "description": "Découvrez ce que font les chiens de traîneau pendant leurs vacances : visitez un chenil en activité en été, rencontrez les chiots de l'année et apprenez comment les huskies s'entraînent et se reposent entre les saisons. Une visite paisible et familiale, où l'enclos des chiots est le point fort incontesté.",
+      "highlights": [
+        "Rencontre des chiots de l'année",
+        "Visite d'un chenil en activité",
+        "Adapté aux familles"
+      ],
+      "duration": "2 h",
+      "difficulty": "Facile",
+      "category": "Rencontres animales"
+    },
     "rov-ranua-zoo": {
       "title": "Parc animalier de Ranua, ours polaires",
       "description": "Rencontrez les animaux arctiques, dont les seuls ours polaires de Finlande. Parcourez des sentiers enneigés bordés de gloutons, lynx, loups et une cinquantaine d'espèces arctiques.",

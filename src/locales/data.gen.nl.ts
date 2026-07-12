@@ -189,6 +189,18 @@ const d: LangData = {
       "difficulty": "Makkelijk",
       "category": "Cultuur en erfgoed"
     },
+    "rov-husky-summer": {
+      "title": "Zomerbezoek aan een huskykennel met puppyontmoeting",
+      "description": "Zie wat sledehonden doen tijdens hun vakantie: maak in de zomer een rondleiding door een werkende kennel, ontmoet de puppy's van dit jaar en leer hoe husky's tussen de seizoenen trainen en rusten. Een rustig, gezinsvriendelijk bezoek waarbij het puppyverblijf het onbetwiste hoogtepunt is.",
+      "highlights": [
+        "Ontmoet de puppy's van dit jaar",
+        "Rondleiding door een werkende kennel",
+        "Gezinsvriendelijk"
+      ],
+      "duration": "2 uur",
+      "difficulty": "Makkelijk",
+      "category": "Dierenervaringen"
+    },
     "rov-ranua-zoo": {
       "title": "Ranua Wildlife Park, ijsberen",
       "description": "Ontmoet Arctische dieren, waaronder de enige ijsberen van Finland. Loop over besneeuwde paden langs veelvraten, lynxen, wolven en zo'n 50 Arctische soorten.",

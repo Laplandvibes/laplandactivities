@@ -285,6 +285,32 @@
           "a": "Voor de drukste weken, Kerst en Nieuwjaar, en de aurora- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes heb je meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat je ook ruimte voor een heldere hemel inbouwen in je aurora-plannen in plaats van te strijden om de laatste plekken."
         }
       ]
+    },
+    "sv": {
+      "title": "LaplandActivities: boka noggrant utvalda arktiska turer i finska Lappland",
+      "description": "Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 8 resmål i Lappland via GetYourGuide och pålitliga lokala researrangörer.",
+      "faq": [
+        {
+          "q": "Vilka aktiviteter kan man göra i Lappland?",
+          "a": "På vintern är klassikerna hundspann och rensläde, snöskotersafarier, norrskensjakt, snöskovandring, längd- och utförsåkning, pilkfiske och isflytning. På sommaren förvandlas samma vildmark till vandring, kajak och kanot, forsränning, mountainbike, laxfiske och guldvaskning. Året runt erbjuder rökbastun och samiska kulturupplevelser en annan, lugnare sida av Arktis."
+        },
+        {
+          "q": "Vilka är de bästa aktiviteterna på vintern jämfört med sommaren?",
+          "a": "Vintern (november till mars) är säsongen för snö och mörker: snöskoter, hundspann och norrskensturer kräver alla det. Sommaren (juni till augusti) byter ut snön mot midnattssolen, då ljuset aldrig helt försvinner och vandring, paddling och fiske pågår nästan dygnet runt. Våren har fortfarande snö men mycket mer dagsljus, och hösten bjuder på ruskans färger och de första norrskenen. Båda är lugnare mellansäsonger."
+        },
+        {
+          "q": "Vad kostar aktiviteter i Lappland?",
+          "a": "Det varierar mycket beroende på aktivitet, längd och gruppstorlek. Ett kort delat pass som en rentursresa eller en norrskensbussutflykt ligger i den lägre prisklassen; flertimmars- eller privata resor som en lång hundspannssafari eller en guidad snöskoterexpedition kostar mer, delvis eftersom de inkluderar varma overaller, kängor, säkerhetsutrustning och en guide. För aktuella, exakta priser, öppna vilken tur som helst via vår bokningspartner — det aktuella priset visas innan du bokar."
+        },
+        {
+          "q": "Passar aktiviteterna i Lappland för små barn?",
+          "a": "Många gör det, med rätt val. Rensledturer, besök på huskygårdar, lugna snöskovandringar, pulkaåkning och att träffa jultomten fungerar bra för små barn. Snöskoterkörning har oftast en åldersgräns för att köra själv (barn åker med i en släde eller vagn), och sena norrskensjakter kan bli långa och kalla för de minsta. De flesta researrangörer anger åldersgränser och familjealternativ på aktivitetssidan, så kontrollera innan du bokar."
+        },
+        {
+          "q": "Behöver man boka aktiviteter i Lappland i förväg?",
+          "a": "Under de mest hektiska veckorna — jul och nyår samt norrskens- och skidtoppen i februari–mars — ja: boka i god tid, eftersom populära hundspanns- och snöskoterturer blir fullbokade. Under lugnare perioder har du mer flexibilitet, men de bäst rankade researrangörerna och avgångarna med små grupper blir ändå slutbokade först. Att boka i förväg gör det också lättare att bygga in flexibilitet för klar himmel i norrskensplanerna i stället för att tävla om de sista platserna."
+        }
+      ]
     }
   },
   "/about": {
@@ -331,6 +357,10 @@
     "nl": {
       "title": "Over ons · LaplandActivities",
       "description": "LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht Fins Lapland-bestemmingen."
+    },
+    "sv": {
+      "title": "Om oss · LaplandActivities",
+      "description": "LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på åtta resmål i finska Lappland."
     }
   },
   "/fishing": {
@@ -377,6 +407,10 @@
     "nl": {
       "title": "Vissen in Lapland en de Noordelijke IJszee | LaplandActivities",
       "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's — met de regels, tarieven en officiële vergunningslinks van 2026…"
+    },
+    "sv": {
+      "title": "Fiske i Lappland och Norra ishavet | LaplandActivities",
+      "description": "Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbesafarier — med 2026 års regler, avgifter och officiella tillståndslänkar du behöver…"
     }
   },
   "/categories": {
@@ -423,6 +457,10 @@
     "nl": {
       "title": "Activiteitencategorieën · LaplandActivities",
       "description": "Blader door Arctische activiteiten per categorie, avontuur, dieren, noorderlicht, wintersport, welness, cultuur, zomer en eten en drinken."
+    },
+    "sv": {
+      "title": "Aktivitetskategorier · LaplandActivities",
+      "description": "Utforska arktiska aktiviteter efter kategori: äventyr, djurupplevelser, norrsken, vintersport, wellness, kultur, sommaräventyr och matupplevelser."
     }
   },
   "/destinations": {
@@ -469,6 +507,10 @@
     "nl": {
       "title": "Lapland-bestemmingen · LaplandActivities",
       "description": "Acht iconische bestemmingen in Fins Lapland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio en Tornio. Activiteiten, aanbieders en accommodatie."
+    },
+    "sv": {
+      "title": "Resmål i Lappland · LaplandActivities",
+      "description": "Åtta ikoniska resmål i finska Lappland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio och Torneå. Aktiviteter, researrangörer och boende."
     }
   },
   "/categories/adventure": {
@@ -515,6 +557,10 @@
     "nl": {
       "title": "Avontuur · LaplandActivities",
       "description": "Sneeuwscooter-safari's, ice karting, ijsklimmen, wildwaterraften en survivalcursussen. Adrenaline in de Arctische wildernis."
+    },
+    "sv": {
+      "title": "Äventyr · LaplandActivities",
+      "description": "Snöskotersafarier, iskarting, isklättring, forsränning och överlevnadskurser. Få adrenalinet att pumpa i den arktiska vildmarken."
     }
   },
   "/categories/animals": {
@@ -561,6 +607,10 @@
     "nl": {
       "title": "Dierenervaringen · LaplandActivities",
       "description": "Husky-sledetochten, rendierboerderijen, wilde berenobservatie en ijsberen in Ranua Zoo. Maak kennis met de bijzondere dieren van het Noordpoolgebied."
+    },
+    "sv": {
+      "title": "Djurupplevelser · LaplandActivities",
+      "description": "Hundspann med huskies, besök på rengårdar, skådning av vilda björnar och isbjörnar i Ranua Zoo. Möt Arktis fascinerande djurliv."
     }
   },
   "/categories/northern-lights": {
@@ -607,6 +657,10 @@
     "nl": {
       "title": "Noorderlicht · LaplandActivities",
       "description": "Begeleide noorderlichtjachten, fototours, sneeuwscootertochten en sneeuwschoen-expedities onder het dansende licht."
+    },
+    "sv": {
+      "title": "Norrsken · LaplandActivities",
+      "description": "Guidade norrskensjakter, fototurer, norrskensturer med snöskoter och snöskoexpeditioner under det dansande skenet."
     }
   },
   "/categories/winter-sports": {
@@ -653,6 +707,10 @@
     "nl": {
       "title": "Wintersport · LaplandActivities",
       "description": "Alpineskiën, langlaufen, snowboarden, fatbiken, sneeuwschoenwandelen en schaatsen in de beste resorts van Lapland."
+    },
+    "sv": {
+      "title": "Vintersport · LaplandActivities",
+      "description": "Utförsåkning, längdskidåkning, snowboard, fatbike, snöskovandring och skridskoåkning i Lapplands bästa skidorter."
     }
   },
   "/categories/wellness": {
@@ -699,6 +757,10 @@
     "nl": {
       "title": "Welness en sauna · LaplandActivities",
       "description": "Traditionele rooksauna's, ijszwemmen, Arctisch drijven, spa-behandelingen en de ultieme Noord-Europese wellnesservaring."
+    },
+    "sv": {
+      "title": "Wellness och bastu · LaplandActivities",
+      "description": "Traditionella rökbastur, isbad, arktisk flottning, spabehandlingar och den ultimata nordiska wellnessupplevelsen."
     }
   },
   "/categories/culture": {
@@ -745,6 +807,10 @@
     "nl": {
       "title": "Cultuur en erfgoed · LaplandActivities",
       "description": "Sami-musea, Kerstmandorp, ijshotels, goudwassen, amethistmijnen en het boeiende erfgoed van het Noordpoolgebied."
+    },
+    "sv": {
+      "title": "Kultur och arv · LaplandActivities",
+      "description": "Samiska museer, Jultomtens by, ishotell, guldvaskning, ametistgruvor och Arktis fascinerande kulturarv."
     }
   },
   "/categories/summer": {
@@ -791,6 +857,10 @@
     "nl": {
       "title": "Zomeravontuur · LaplandActivities",
       "description": "Wandelen onder de middernachtszon, kajakken, raften, mountainbiken, vissen, bessenplukken en golf onder het eindeloze Arctische daglicht."
+    },
+    "sv": {
+      "title": "Sommaräventyr · LaplandActivities",
+      "description": "Vandring under midnattssolen, kajakpaddling, forsränning, mountainbike, fiske, bärplockning och golf under det oändliga arktiska dagsljuset."
     }
   },
   "/categories/food": {
@@ -837,6 +907,10 @@
     "nl": {
       "title": "Eten en drinken · LaplandActivities",
       "description": "Kota-restaurants, foerageren in de natuur, bessen plukken, rendierdiners onder de sterren en lokale brouwerijtours."
+    },
+    "sv": {
+      "title": "Mat och dryck · LaplandActivities",
+      "description": "Kotarestauranger, insamling av vildmat, bärplockning, renmiddagar under stjärnorna och lokala bryggeriturer."
     }
   },
   "/categories/fishing": {
@@ -883,6 +957,10 @@
     "nl": {
       "title": "Vissen en ijsvissen · LaplandActivities",
       "description": "Gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren zoals de Tornio en koningskrab-safari's over de Noorse grens."
+    },
+    "sv": {
+      "title": "Fiske och pilkfiske · LaplandActivities",
+      "description": "Gratis pilkfiske på tillfrusna sjöar, licensbelagda laxälvar som Torne älv och kungskrabbsafarier över den norska gränsen."
     }
   },
   "/destinations/rovaniemi": {
@@ -929,6 +1007,10 @@
     "nl": {
       "title": "Rovaniemi · LaplandActivities",
       "description": "Hoofdstad van Lapland en toegangspoort tot Arctische avonturen."
+    },
+    "sv": {
+      "title": "Rovaniemi · LaplandActivities",
+      "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta transportförbindelser och ett stort utbud av vinter- och sommaraktiviteter."
     }
   },
   "/destinations/levi": {
@@ -975,6 +1057,10 @@
     "nl": {
       "title": "Levi · LaplandActivities",
       "description": "Een topbestemming met 43 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten."
+    },
+    "sv": {
+      "title": "Levi · LaplandActivities",
+      "description": "En förstklassig skiddestination med 43 pister och 230 km längdskidspår. Livlig efter-ski-stämning på Hullu Poro och utomhusaktiviteter året runt."
     }
   },
   "/destinations/yllas": {
@@ -1021,6 +1107,10 @@
     "nl": {
       "title": "Ylläs · LaplandActivities",
       "description": "Twee skigebieden aan beide zijden van de Ylläs-fjell met de langste afdalingen van Finland (3 km)."
+    },
+    "sv": {
+      "title": "Ylläs · LaplandActivities",
+      "description": "Två skidorter på var sin sida om Ylläsfjället erbjuder Finlands längsta nedfarter på 3 km."
     }
   },
   "/destinations/saariselka": {
@@ -1067,6 +1157,10 @@
     "nl": {
       "title": "Saariselkä · LaplandActivities",
       "description": "Het noordelijkste skigebied van Finland, grenzend aan een van de grootste wildernisgebieden van Europa."
+    },
+    "sv": {
+      "title": "Saariselkä · LaplandActivities",
+      "description": "Finlands nordligaste skidort, gränsande till ett av Europas största vildmarksområden."
     }
   },
   "/destinations/inari": {
@@ -1113,6 +1207,10 @@
     "nl": {
       "title": "Inari · LaplandActivities",
       "description": "Aan de oevers van het Inari-meer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk."
+    },
+    "sv": {
+      "title": "Inari · LaplandActivities",
+      "description": "Vid stränderna av Inarisjön med över 3 000 öar ligger den finska samekulturens huvudstad. Här finns Siida-museet och orörd vildmark."
     }
   },
   "/destinations/ruka": {
@@ -1159,6 +1257,10 @@
     "nl": {
       "title": "Ruka en Kuusamo · LaplandActivities",
       "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland."
+    },
+    "sv": {
+      "title": "Ruka och Kuusamo · LaplandActivities",
+      "description": "Här finns den legendariska björnstigen Karhunkierros, Oulanka nationalpark och en av Finlands bästa skidorter."
     }
   },
   "/destinations/posio": {
@@ -1205,6 +1307,10 @@
     "nl": {
       "title": "Posio · LaplandActivities",
       "description": "Beroemd om de spectaculaire met sneeuw bekroonde bomen van Riisitunturi Nationaal Park en de bevroren watervallen van de Korouoma-canyon."
+    },
+    "sv": {
+      "title": "Posio · LaplandActivities",
+      "description": "Känd för de spektakulära snökrönta träden i Riisitunturi nationalpark och de tillfrusna vattenfallen i Korouoma-kanjonen."
     }
   },
   "/destinations/tornio": {
@@ -1251,6 +1357,10 @@
     "nl": {
       "title": "Tornio en Kemi · LaplandActivities",
       "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke Arctische ervaringen."
+    },
+    "sv": {
+      "title": "Tornio och Kemi · LaplandActivities",
+      "description": "Gränsstaden mellan Finland och Sverige och porten till unika arktiska upplevelser."
     }
   }
 }

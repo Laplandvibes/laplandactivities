@@ -189,6 +189,18 @@ const d: LangData = {
       "difficulty": "Facile",
       "category": "Cultura e patrimonio"
     },
+    "rov-husky-summer": {
+      "title": "Visita estiva al canile di husky e incontro con i cuccioli",
+      "description": "Scopra cosa fanno i cani da slitta durante le vacanze: in estate visiti un canile in attività, incontri i cuccioli dell'anno e impari come gli husky si allenano e riposano tra una stagione e l'altra. Una visita tranquilla e adatta alle famiglie, dove il recinto dei cuccioli è l'attrazione indiscussa.",
+      "highlights": [
+        "Incontro con i cuccioli dell'anno",
+        "Visita a un canile in attività",
+        "Adatto alle famiglie"
+      ],
+      "duration": "2 h",
+      "difficulty": "Facile",
+      "category": "Esperienze con gli animali"
+    },
     "rov-ranua-zoo": {
       "title": "Parco faunistico di Ranua, orsi polari",
       "description": "Incontri gli animali artici, compresi gli unici orsi polari della Finlandia. Cammini su sentieri innevati tra ghiottoni, linci, lupi e una cinquantina di specie artiche.",

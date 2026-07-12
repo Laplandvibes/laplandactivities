@@ -189,6 +189,18 @@ const d: LangData = {
       "difficulty": "Lätt",
       "category": "Kultur och arv"
     },
+    "rov-husky-summer": {
+      "title": "Sommarbesök på huskykennel med valpträff",
+      "description": "Se vad slädhundarna gör på sin semester: följ med på en rundtur i en aktiv kennel på sommaren, träffa årets valpar och lär dig hur huskyerna tränar och vilar mellan säsongerna. Ett lugnt och familjevänligt besök där valphagen är den givna höjdpunkten.",
+      "highlights": [
+        "Träffa årets valpar",
+        "Rundtur på en aktiv kennel",
+        "Familjevänligt"
+      ],
+      "duration": "2 timmar",
+      "difficulty": "Lätt",
+      "category": "Djurupplevelser"
+    },
     "rov-ranua-zoo": {
       "title": "Ranua Wildlife Park, isbjörnar",
       "description": "Möt arktiska djur, däribland Finlands enda isbjörnar. Vandra på snötäckta stigar förbi järvar, lodjur, vargar och omkring 50 arktiska arter.",
