@@ -267,7 +267,9 @@ const CATEGORY_HERO: Record<string, string> = {
   culture:          local('heroes/slider-05-reindeer-lavvu.webp'),
   summer:           local('categories/summer.webp'),
   food:             local('hotels/log-cabin-lakeside.webp'),
-  fishing:          local('activities/summer/salmon-fishing.webp'),
+  // Distinct from the /fishing GUIDE hero (salmon-fishing.webp): the category grid
+  // gets its own seasonal scene — river fishing in summer, ice fishing at dusk in winter.
+  fishing:          seasonal(local('activities/fishing/fishing-ice-dusk.webp'), local('activities/fishing/fishing-river.webp')),
 };
 
 export function imageForCategory(slug: string): string {
@@ -309,6 +311,8 @@ const FOCAL: Record<string, string> = {
   // Subject's head/helmet is near the TOP → anchor higher so it's never cropped.
   '/images/activities/summer/mtb-bikepark.webp': 'center 22%',
   '/images/activities/summer/salmon-fishing.webp': 'center 38%',
+  '/images/activities/fishing/fishing-river.webp': 'center 45%',
+  '/images/activities/fishing/fishing-ice-dusk.webp': 'center 45%',
   // Wide aurora arcs read best with the sky kept — anchor a touch low.
   '/images/heroes/slider-01-husky-aurora.webp': 'center 42%',
   '/images/og/og-default.webp': 'center 45%',

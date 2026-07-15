@@ -9,7 +9,7 @@ import PageBreadcrumb from '../components/PageBreadcrumb';
 import AffiliateCTA from '../components/AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
-import { imageForCategory, focalFor } from '../data/images';
+import { focalFor } from '../data/images';
 
 // Direct official licence/regulation links — plain <a>, never affiliate.
 const OFFICIAL = {
@@ -96,7 +96,10 @@ export default function FishingPage() {
   const c = COPY[lang].fishing;
   const compareHotels = COPY[lang].bookingCta.compareHotels;
   const pageUrl = `https://laplandactivities.fi${to('/fishing')}`.replace(/\/?$/, '/');
-  const heroImg = imageForCategory('fishing');
+  // Dedicated guide hero (the iconic fly-fisher). The /categories/fishing grid uses
+  // its own seasonal hero (see images.ts CATEGORY_HERO.fishing) so the two fishing
+  // surfaces never share the same photo.
+  const heroImg = '/images/activities/summer/salmon-fishing.webp';
   const heroImgAbs = `https://laplandactivities.fi${heroImg}`;
 
   const articleLd = {
@@ -162,14 +165,14 @@ export default function FishingPage() {
         />
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.95) 0%, rgba(15,23,42,0.66) 45%, rgba(15,23,42,0.34) 100%)' }}
+          style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.96) 0%, rgba(15,23,42,0.80) 45%, rgba(15,23,42,0.48) 100%)' }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <p className={`${EYEBROW} mb-3`}>{c.hero.eyebrow}</p>
           <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
             {c.hero.title}
           </h1>
-          <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed mt-4 mb-6 drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">
+          <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">
             {c.hero.sub}
           </p>
           <div className="flex flex-col sm:flex-row gap-3">
@@ -277,7 +280,7 @@ export default function FishingPage() {
                         partner="hotels"
                         sid={meta.sid}
                         destination={meta.ss}
-                        aria-label={`${compareHotels} — ${meta.ss}`}
+                        aria-label={`${compareHotels}: ${meta.ss}`}
                         className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold"
                       >
                         <MapPin className="w-3.5 h-3.5" />
@@ -297,7 +300,7 @@ export default function FishingPage() {
             <h2 className={H2}>{c.lakes.title}</h2>
             <p className="text-snow/75 text-base leading-relaxed mt-4">{c.lakes.body}</p>
             <div className="mt-5">
-              <OfficialLink href={OFFICIAL.inariLake}>eräluvat.fi — Inarijärvi</OfficialLink>
+              <OfficialLink href={OFFICIAL.inariLake}>eräluvat.fi: Inarijärvi</OfficialLink>
             </div>
           </div>
         </section>
@@ -321,7 +324,7 @@ export default function FishingPage() {
                 <span>{c.tornioBox.verifyLine}</span>
               </p>
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-5">
-                <OfficialLink href={OFFICIAL.tornioArea}>eräluvat.fi — area 2502</OfficialLink>
+                <OfficialLink href={OFFICIAL.tornioArea}>eräluvat.fi: area 2502</OfficialLink>
                 <OfficialLink href={OFFICIAL.tornioVN}>valtioneuvosto.fi</OfficialLink>
               </div>
               <AffiliateCTA
@@ -391,9 +394,9 @@ export default function FishingPage() {
               <span>{c.licenses.alwaysCheck}</span>
             </p>
             <div className="flex flex-wrap gap-x-5 gap-y-2 mt-5">
-              <OfficialLink href={OFFICIAL.fee}>eräluvat.fi — fee</OfficialLink>
-              <OfficialLink href={OFFICIAL.permits}>eräluvat.fi — permits</OfficialLink>
-              <OfficialLink href={OFFICIAL.sizes}>eräluvat.fi — sizes</OfficialLink>
+              <OfficialLink href={OFFICIAL.fee}>eräluvat.fi: fee</OfficialLink>
+              <OfficialLink href={OFFICIAL.permits}>eräluvat.fi: permits</OfficialLink>
+              <OfficialLink href={OFFICIAL.sizes}>eräluvat.fi: sizes</OfficialLink>
               <OfficialLink href={OFFICIAL.mmm}>mmm.fi</OfficialLink>
               <OfficialLink href={OFFICIAL.restrictionMap}>kalastusrajoitus.fi</OfficialLink>
             </div>
@@ -430,14 +433,14 @@ export default function FishingPage() {
               <SectionImage src={FISHING_IMG.kingCrab} alt={c.imageAlts.kingCrab} />
             </div>
             <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
-              <OfficialLink href={OFFICIAL.fiskeridirReg}>fiskeridir.no — regulations</OfficialLink>
-              <OfficialLink href={OFFICIAL.lovdata}>lovdata.no — §47</OfficialLink>
+              <OfficialLink href={OFFICIAL.fiskeridirReg}>fiskeridir.no: regulations</OfficialLink>
+              <OfficialLink href={OFFICIAL.lovdata}>lovdata.no: §47</OfficialLink>
             </div>
 
             <h3 className="font-heading text-xl text-snow tracking-wide mt-8 mb-2">{c.norway.exportTitle}</h3>
             <p className="text-snow/75 text-base leading-relaxed">{c.norway.exportBody}</p>
             <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
-              <OfficialLink href={OFFICIAL.fiskeridirExport}>fiskeridir.no — export quota</OfficialLink>
+              <OfficialLink href={OFFICIAL.fiskeridirExport}>fiskeridir.no: export quota</OfficialLink>
               <OfficialLink href={OFFICIAL.toll}>toll.no</OfficialLink>
             </div>
 
@@ -466,7 +469,7 @@ export default function FishingPage() {
                 <Anchor className="w-3.5 h-3.5" />
                 {c.norway.ribLabel}
               </AffiliateCTA>
-              <OfficialLink href={OFFICIAL.fiskeridirCrab}>fiskeridir.no — king crab</OfficialLink>
+              <OfficialLink href={OFFICIAL.fiskeridirCrab}>fiskeridir.no: king crab</OfficialLink>
             </div>
           </div>
         </section>
