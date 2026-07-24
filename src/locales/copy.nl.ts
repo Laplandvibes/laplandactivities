@@ -303,7 +303,7 @@ const nl: SectionCopy = {
   activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan je bezoek' },
   home: {
     metaTitle: 'LaplandActivities: Arctische tours in Lapland',
-    metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 8 bestemmingen in en rond Lapland via GetYourGuide.',
+    metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 10 bestemmingen in en rond Lapland via GetYourGuide.',
     ogTitle: 'LaplandActivities: zorgvuldig gekozen Arctische ervaringen',
     categoriesKicker: 'Wat te doen', categoriesH2: 'Kies uw avontuur',
     categoriesLead: '8 manieren om het Noordpoolgebied te beleven, kies een categorie en we verwijzen u door naar zorgvuldig gekozen aanbieders.',
@@ -376,9 +376,9 @@ const nl: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Bestemmingen in Lapland & Kuusamo · LaplandActivities',
-    metaDescription: 'Acht iconische bestemmingen in Lapland en Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio en Tornio. Activiteiten, aanbieders en accommodatie.',
+    metaDescription: 'Tien iconische bestemmingen in Lapland en Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio en Tornio.',
     kicker: 'Waarheen', h1: 'Bestemmingen',
-    lead: 'Acht iconische bestemmingen in Lapland en het naburige Kuusamo, elk met een eigen karakter en aanbiedersnetwerk.',
+    lead: 'Tien iconische bestemmingen in Lapland en het naburige Kuusamo, elk met een eigen karakter en aanbiedersnetwerk.',
     activitiesLabel: 'activiteiten', explore: 'Ontdek',
     gygTitle: 'Meest geboekte Lapland-tours', gygEyebrow: 'Alle bestemmingen',
   },
@@ -411,7 +411,7 @@ const nl: SectionCopy = {
       yllas: [
         { tip: 'Ylläs heeft een van de donkerste, helderste noorderlichthemels van Finland.', icon: '✨' },
         { tip: 'De kant van Äkäslompolo is rustiger; in Ylläsjärvi vindt u de bars.', icon: '🏔️' },
-        { tip: 'Het 330 km lange langlaufnetwerk is het beste van Finland; half maart is ideaal.', icon: '🎿' },
+        { tip: 'Het 300 km lange langlaufnetwerk behoort tot de beste van Finland; half maart is ideaal.', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'De Kiilopää-rooksauna draait het hele jaar, boek het middagblok.', icon: '🧖' },
@@ -437,15 +437,26 @@ const nl: SectionCopy = {
         { tip: 'De ijsbreker Sampo vaart alleen van december tot april, boek zodra de data openen.', icon: '🚢' },
         { tip: 'Het SnowCastle wordt jaarlijks met een nieuw thema herbouwd.', icon: '🏰' },
         { tip: 'De Green Zone Golf kruist de Finland-Zweden-grens midden in de ronde.', icon: '⛳' },
+        { tip: 'Zweden loopt een uur achter op Finland: winkels in Haparanda openen en sluiten "laat".', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: 'De sneeuwtrein naar de amethistmijn rijdt in de winter; in de zomer wandelt u de Lampivaara op.', icon: '💎' },
+        { tip: 'De trappen van Isokuru zijn alleen in het sneeuwvrije seizoen open; in de winter omlopen via Uhriharju.', icon: '🥾' },
+        { tip: 'Luosto is het rustigere dorp; Pyhä heeft de grotere pistes en meer restaurants.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: 'Eén vertrek per dag van de Santa Claus Express rijdt voorbij Rovaniemi door naar Kemijärvi.', icon: '🚂' },
+        { tip: 'De grote houten beelden van de jaarlijkse beeldhouwweek staan het hele jaar in de stad.', icon: '🪵' },
+        { tip: 'Pyhä ligt op 50 km: dagtochten naar de fjells vanaf een basis aan het meer.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'Over ons · LaplandActivities',
-    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht bestemmingen in en rond Fins Lapland.',
+    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in tien bestemmingen in en rond Fins Lapland.',
     eyebrow: 'Over ons', h1: 'Een activiteitengids voor Fins Lapland',
     para1: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, een netwerk van onafhankelijke gidsen over accommodatie, eten, natuur, transport en tours in Fins Lapland.',
-    para2: 'De site verwijst reizigers naar zorgvuldig gekozen lokale aanbieders in acht bestemmingen, van sneeuwscooter-safari\'s in Saariselkä tot zalmvissen op de Tornionjoki. Elke boeking loopt via GetYourGuide, dus u krijgt directe bevestiging en bij de meeste tours gratis annulering tot 24 uur van tevoren.',
+    para2: 'De site verwijst reizigers naar zorgvuldig gekozen lokale aanbieders in tien bestemmingen, van sneeuwscooter-safari\'s in Saariselkä tot zalmvissen op de Tornionjoki. Elke boeking loopt via GetYourGuide, dus u krijgt directe bevestiging en bij de meeste tours gratis annulering tot 24 uur van tevoren.',
     pillars: [
       { title: 'Echte aanbieders', text: 'We tonen gevestigde lokale aanbieders; elke boeking loopt via GetYourGuide.' },
       { title: 'Authentieke ervaringen', text: 'Elke activiteit is gekozen om het soort detail dat u niet kunt verzinnen.' },

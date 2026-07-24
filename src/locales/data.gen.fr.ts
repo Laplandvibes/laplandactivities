@@ -47,56 +47,80 @@ const d: LangData = {
       "tagline": "La ville officielle du Père Noël",
       "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques. On y trouve le village du Père Noël, d'excellentes liaisons de transport et un vaste choix d'activités d'hiver comme d'été.",
       "access": "Vol direct depuis Helsinki (1 h 15)",
-      "bestFor": "Premiers voyages et familles"
+      "bestFor": "Premiers voyages et familles",
+      "why": "Rovaniemi concentre l’infrastructure de la Laponie : aéroport international, terminus du train de nuit et le plus grand choix d’excursions de la région. Au-delà du village du Père Noël, on y trouve le musée Arktikum au bord du fleuve, les pistes d’Ounasvaara juste au-dessus de la ville et des dizaines d’opérateurs de huskys, de rennes et d’aurores à 20 minutes. Idéal pour un premier séjour et les familles ; le certificat gratuit de passage du cercle polaire s’obtient au bureau de poste du Père Noël."
     },
     "levi": {
       "name": "Levi",
       "tagline": "La plus grande station de ski de Finlande",
-      "description": "Une destination de ski de premier plan avec 43 pistes et 230 km de pistes de fond. Ambiance après-ski animée au Hullu Poro et activités de plein air toute l'année.",
+      "description": "Une destination de ski de premier plan avec 44 pistes et 230 km de pistes de fond. Ambiance après-ski animée au Hullu Poro et activités de plein air toute l'année.",
       "access": "Vol vers Kittilä (15 min en voiture)",
-      "bestFor": "Skieurs et voyageurs actifs"
+      "bestFor": "Skieurs et voyageurs actifs",
+      "why": "Levi réunit la plus grande station de ski de Finlande, 44 pistes et 26 remontées dont deux télécabines, en un seul village où tout se fait à pied, au pied du Levitunturi. La Coupe du monde de ski alpin y ouvre sa saison de slalom chaque novembre, et à la fermeture des remontées la foule migre vers l’après-ski du Hullu Poro. Parfait pour les skieurs et les groupes qui veulent restaurants et vie nocturne à distance de marche ; l’été, la télécabine dessert le Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Les plus longues pistes de Finlande",
       "description": "Deux stations de ski de part et d'autre du fjell Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km. Une Laponie plus calme et authentique avec le parc national Pallas-Yllästunturi.",
       "access": "Vol vers Kittilä (35 min en voiture)",
-      "bestFor": "Amoureux de la nature et skieurs aguerris"
+      "bestFor": "Amoureux de la nature et skieurs aguerris",
+      "why": "Ylläs, ce sont deux villages tranquilles, Äkäslompolo et Ylläsjärvi, de part et d’autre d’un grand fjell : 62 pistes au total et les plus longues descentes de Finlande, à plus de trois kilomètres. Autour s’étendent quelque 300 km de pistes de fond damées jusque dans le parc national de Pallas-Yllästunturi. À choisir plutôt que Levi pour des ciels d’aurores bien noirs, le silence du parc national et de longues journées de ski."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Porte d'entrée du parc national d'Urho Kekkonen",
       "description": "La station de ski la plus au nord de Finlande, à la lisière d'une des plus vastes zones sauvages d'Europe. Réputée pour l'observation des aurores, l'orpaillage et le mythique sauna à fumée de Kiilopää.",
       "access": "Vol vers Ivalo (30 min en voiture)",
-      "bestFor": "Chercheurs de nature sauvage et aurores"
+      "bestFor": "Chercheurs de nature sauvage et aurores",
+      "why": "Saariselkä est posée en lisière du parc national Urho Kekkonen : sentiers balisés et refuges ouverts commencent au village même. À cette latitude, les aurores se montrent de septembre à avril, et s’y ajoutent des choses introuvables plus au sud : l’orpaillage de Tankavaara, où chaque paillette trouvée vous appartient, et le sauna à fumée de Kiilopää suivi d’une roulade dans la neige. Pour les voyageurs qui placent la nature sauvage avant les services."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Cœur de la culture same",
       "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple same finlandais. On y trouve le musée Siida et une nature préservée.",
       "access": "Vol vers Ivalo (40 min en voiture)",
-      "bestFor": "Explorateurs culturels et photographes"
+      "bestFor": "Explorateurs culturels et photographes",
+      "why": "Inari est le siège du Parlement sámi de Finlande et le meilleur endroit pour rencontrer la culture sámie vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l’église de Pielpajärvi se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
     },
     "ruka": {
       "name": "Ruka et Kuusamo",
       "tagline": "Capitale finlandaise de la nature sauvage",
       "description": "Le sentier mythique du Karhunkierros, le parc national d'Oulanka et l'une des meilleures stations de ski de Finlande. Connue pour l'observation des ours, le rafting et la plus longue saison de ski. Ruka se trouve à Kuusamo, juste au sud de la Laponie, avec la même neige et le même hiver nordique.",
       "access": "Vol vers Kuusamo (25 min en voiture)",
-      "bestFor": "Randonneurs, skieurs et passionnés de faune"
+      "bestFor": "Randonneurs, skieurs et passionnés de faune",
+      "why": "Ruka est un village-station compact, 41 pistes et 22 remontées, au cœur du terrain de jeu de Kuusamo : parc national d’Oulanka, sentier Karhunkierros de 82 km et rapides où l’on rafte du printemps à l’automne. Grâce à la neige stockée, la station ouvre en octobre et skie jusqu’en mai, la plus longue saison de Finlande. L’été, place aux affûts d’observation des ours bruns et au bike park primé."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Joyau caché de la Laponie orientale",
       "description": "Réputée pour les arbres au sommet enneigé du parc national de Riisitunturi et les cascades gelées du canyon de Korouoma. Loin des sentiers battus, nature à l'état pur.",
       "access": "En voiture depuis Rovaniemi (2 h) ou Ruka (1 h)",
-      "bestFor": "Explorateurs hors des sentiers battus"
+      "bestFor": "Explorateurs hors des sentiers battus",
+      "why": "Les atouts de Posio sont naturels : les arbres tykky de Riisitunturi, ployés en sculptures par le givre au cœur de l’hiver, et les cascades gelées de Korouoma, suspendues jusqu’à 40 mètres à la paroi du canyon. Ajoutez Pentik, la fabrique de céramique la plus septentrionale du monde avec ses galeries et son magasin d’usine, et la journée est pleine, loin des routes touristiques. Une voiture est nécessaire ; Posio complète bien un séjour à Ruka ou Rovaniemi."
     },
     "tornio": {
-      "name": "Tornio et Kemi",
+      "name": "Tornio, Haparanda et Kemi",
       "tagline": "Aventures arctiques à la frontière",
       "description": "La ville frontière entre la Finlande et la Suède, point d'accès à des expériences arctiques uniques. Croisière sur le mythique brise-glace Sampo, plus grand château de neige au monde et meilleure rivière à saumon d'Europe.",
       "access": "Vol vers Kemi (15 min en voiture)",
-      "bestFor": "Expériences uniques et plaisirs en famille"
+      "bestFor": "Expériences uniques et plaisirs en famille",
+      "why": "Tornio et Haparanda ne font qu’une ville dans deux pays : on franchit la frontière à pied en pleine rue commerçante, IKEA Haparanda est juste à côté du passage, et une partie de golf change quatre fois de pays et de fuseau horaire. Kemi, à 25 minutes, ajoute la croisière du brise-glace Sampo et le SnowCastle reconstruit chaque hiver. Sur le Tornionjoki, plus grand fleuve à saumons libre d’Europe, les rapides de Kukkolankoski perpétuent chaque été la pêche traditionnelle au filet."
+    },
+    "pyha-luosto": {
+      "name": "Pyhä-Luosto",
+      "tagline": "Fjells jumeaux du plus ancien parc national",
+      "description": "Deux villages de fjell, Pyhä et Luosto, reliés par une chaîne montagneuse très ancienne, avec le parc national de Pyhä-Luosto entre eux. Ski, raquettes et améthyste à creuser soi-même au Lampivaara.",
+      "access": "Vol vers Rovaniemi (1 h 30 de route)",
+      "bestFor": "Skieurs de parc national et familles",
+      "why": "Le parc national entre les deux villages est la vraie raison de venir : Isokuru, la gorge la plus profonde de Finlande avec ses quelque 220 mètres, des caillebotis dans la forêt ancienne et des vues dégagées depuis la plus vieille chaîne de fjells de Laponie. Au Lampivaara, à Luosto, creusez dans la seule mine d’améthyste active d’Europe et gardez une pierre ; l’hiver, un train des neiges chauffé monte au sommet. Côté Pyhä, la piste à bosses Huttu-Ukko a un passé de Coupe du monde, et les familles ont un terrain doux sans files d’attente."
+    },
+    "kemijarvi": {
+      "name": "Kemijärvi",
+      "tagline": "La ville la plus septentrionale de Finlande",
+      "description": "La ville la plus septentrionale de Finlande borde son propre lac, là où s’arrête le train de nuit Santa Claus Express. Une base paisible pour la Laponie orientale, Pyhä à 50 km.",
+      "access": "Train de nuit depuis Helsinki ou voiture depuis Rovaniemi (1 h)",
+      "bestFor": "Voyageurs en train et amateurs de calme",
+      "why": "Kemijärvi est la ville où s’achève le Santa Claus Express : un départ par jour continue au-delà de Rovaniemi, on dort dans le train et on se réveille au bord du lac. Depuis 1985, la ville accueille une semaine internationale de sculpture sur bois, dont les grandes œuvres restent dans les rues toute l’année. Sur la rive d’Uitonniemi, Santa’s Little Village associe un petit hôtel en rondins aux rencontres avec le Père Noël et aux sorties aurores ; la station de ski de Suomu est à 40 minutes de route."
     }
   },
   "difficulty": {
@@ -274,10 +298,10 @@ const d: LangData = {
       "category": "Gastronomie"
     },
     "lev-ski-resort": {
-      "title": "Station de ski de Levi, 43 pistes",
-      "description": "La plus grande station de ski de Finlande avec 43 pistes, 230 km de pistes de fond et un snowpark de premier plan. Ski nocturne sous les aurores boréales.",
+      "title": "Station de ski de Levi, 44 pistes",
+      "description": "La plus grande station de ski de Finlande avec 44 pistes, 230 km de pistes de fond et un snowpark de premier plan. Ski nocturne sous les aurores boréales.",
       "highlights": [
-        "43 pistes",
+        "44 pistes",
         "Snowpark",
         "Ski nocturne"
       ],
@@ -419,11 +443,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Station de ski d'Ylläs, les plus longues pistes",
-      "description": "Les plus longues pistes de Finlande à 3 km de part et d'autre du fjell Ylläs. 63 pistes, une télécabine et 330 km de pistes de fond entretenues à travers le parc national.",
+      "description": "Les plus longues pistes de Finlande à 3 km de part et d'autre du fjell Ylläs. 62 pistes, une télécabine et 300 km de pistes de fond entretenues à travers le parc national.",
       "highlights": [
         "Plus longue piste 3 km",
-        "63 pistes",
-        "330 km de ski de fond"
+        "62 pistes",
+        "300 km de ski de fond"
       ],
       "duration": "Pass journée",
       "difficulty": "Modéré",
@@ -515,9 +539,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Ski de fond à Pallas",
-      "description": "Skiez sur 330 km de pistes entretenues à travers le parc national Pallas-Yllästunturi. Itinéraires pour tous les niveaux, des boucles douces au bord des lacs aux défis de fjell.",
+      "description": "Skiez sur 300 km de pistes entretenues à travers le parc national Pallas-Yllästunturi. Itinéraires pour tous les niveaux, des boucles douces au bord des lacs aux défis de fjell.",
       "highlights": [
-        "330 km de pistes",
+        "300 km de pistes",
         "Paysage du parc national",
         "Location d'équipement"
       ],
@@ -695,9 +719,9 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Station de ski de Ruka",
-      "description": "39 pistes, la plus longue saison de ski de Finlande (octobre à mai) et des pistes de fond de niveau coupe du monde. Ski nocturne disponible.",
+      "description": "41 pistes, la plus longue saison de ski de Finlande (octobre à mai) et des pistes de fond de niveau coupe du monde. Ski nocturne disponible.",
       "highlights": [
-        "39 pistes",
+        "41 pistes",
         "Saison la plus longue",
         "Ski nocturne"
       ],
@@ -944,6 +968,105 @@ const d: LangData = {
       "duration": "3 h",
       "difficulty": "Modéré",
       "category": "Pêche et pêche blanche"
+    },
+    "pyh-amethyst-mine": {
+      "title": "Mine d’améthyste de Lampivaara",
+      "description": "Creusez votre propre gemme dans la seule mine d’améthyste active d’Europe, au sommet du Lampivaara à Luosto, et gardez une pierre qui tient dans la paume. L’hiver, le train des neiges chauffé Amethyst Pendolino monte au sommet ; l’été, c’est une marche panoramique avec vue sur le parc national.",
+      "highlights": [
+        "Creusez et gardez votre améthyste",
+        "Train des neiges chauffé en hiver",
+        "Vue sur le parc national"
+      ],
+      "duration": "2-3 h",
+      "category": "Culture et patrimoine"
+    },
+    "pyh-national-park": {
+      "title": "Parc national de Pyhä-Luosto et gorge d’Isokuru",
+      "description": "Marchez entre les deux villages par la gorge la plus profonde de Finlande : Isokuru plonge d’environ 220 mètres entre les fjells, escaliers et caillebotis longeant la crête d’Uhriharju et la forêt ancienne. Entrée libre, sentiers bien balisés et itinéraires à la journée depuis Pyhä comme depuis Luosto.",
+      "highlights": [
+        "Isokuru, gorge la plus profonde de Finlande",
+        "Entrée libre",
+        "Itinéraires depuis les deux villages"
+      ],
+      "duration": "3-6 h",
+      "category": "Aventures d'été"
+    },
+    "pyh-ski-resort": {
+      "title": "Station de ski de Pyhä",
+      "description": "Une station adossée au parc national, 280 mètres de dénivelé et des pistes pour les deux extrêmes : terrain familial doux d’un côté, et de l’autre Huttu-Ukko, piste à bosses qui a accueilli la Coupe du monde de ski freestyle. Forfaits et location sur place.",
+      "highlights": [
+        "280 m de dénivelé",
+        "Piste à bosses de Coupe du monde",
+        "Terrain familial"
+      ],
+      "duration": "Pass journée",
+      "category": "Sports d'hiver"
+    },
+    "pyh-aurora-snowshoe": {
+      "title": "Raquettes et aurores boréales à Luosto",
+      "description": "Éloignez-vous en raquettes des lumières du village vers la forêt silencieuse sous les fjells et attendez l’aurore autour d’un feu, boissons chaudes à la main. Luosto est si petit que la vraie obscurité commence à quelques minutes de l’hôtel.",
+      "highlights": [
+        "Ciel noir tout près du village",
+        "Raquettes et équipement fournis",
+        "Feu de camp et boissons chaudes"
+      ],
+      "duration": "3 h",
+      "category": "Aurores boréales"
+    },
+    "kem-ice-fishing": {
+      "title": "Pêche blanche sur le lac Kemijärvi",
+      "description": "Percez votre trou dans la glace du lac de la ville et pêchez la perche avec un guide local, boissons chaudes comprises. La pêche blanche de base ne demande aucun permis en Finlande, et le lac commence au ras des rues du rivage : la pêche lapone sans temps de transfert.",
+      "highlights": [
+        "Le lac commence au bord de la ville",
+        "Aucun permis requis",
+        "Boissons chaudes sur la glace"
+      ],
+      "duration": "3 h",
+      "category": "Pêche et pêche blanche"
+    },
+    "kem-husky-safari": {
+      "title": "Safari husky en conduite autonome",
+      "description": "Menez votre propre traîneau sur une boucle forestière de 5 km en petit groupe, puis rencontrez les chiens et leurs soigneurs à la ferme. Seuls quelques traîneaux partent à la fois : de vrais conseils plutôt qu’une file d’attente.",
+      "highlights": [
+        "Menez votre propre traîneau",
+        "Petits groupes uniquement",
+        "Rencontre avec les chiens après"
+      ],
+      "duration": "2 h",
+      "category": "Rencontres animales"
+    },
+    "kem-suomu-ski": {
+      "title": "Station de ski de Suomu (Suomutunturi)",
+      "description": "Une station de fjell paisible sur le cercle polaire, à environ 40 minutes de Kemijärvi : 10 longues pistes au beau profil, la plus longue de 1,7 km, plus 75 km de pistes de fond dont 25 éclairés. On y skie depuis 1965 et les files aux remontées sont réputées courtes.",
+      "highlights": [
+        "10 longues pistes, 1,7 km max",
+        "75 km de ski de fond",
+        "Sur le cercle polaire"
+      ],
+      "duration": "Pass journée",
+      "category": "Sports d'hiver"
+    },
+    "kem-santas-village": {
+      "title": "Santa’s Little Village au bord du lac Kemijärvi",
+      "description": "Un petit village-hôtel en rondins sur la rive d’Uitonniemi, où l’on rencontre le Père Noël sans la cohue des parcs à thème. L’hiver : sorties aurores en traîneau chauffé et location de raquettes ; l’été : barques et paddles sur le lac. Réservation directe auprès du village.",
+      "highlights": [
+        "Le Père Noël au bord du lac",
+        "Sorties aurores en hiver",
+        "Barque et paddle en été"
+      ],
+      "duration": "1-2 h",
+      "category": "Culture et patrimoine"
+    },
+    "tor-haparanda-shopping": {
+      "title": "Journée shopping frontalière à Haparanda",
+      "description": "Traversez à pied la frontière finno-suédoise en plein centre-ville et passez la journée à faire les boutiques des deux côtés d’une même rue. IKEA Haparanda est juste au passage, et le côté suédois ajoute supermarchés et magasins d’usine ; les prix et les gammes diffèrent d’un pays à l’autre, c’est tout l’intérêt. Pensez à l’heure de décalage pour les horaires d’ouverture.",
+      "highlights": [
+        "Frontière à pied",
+        "IKEA Haparanda",
+        "Deux pays, une ville"
+      ],
+      "duration": "2-4 h",
+      "category": "Culture et patrimoine"
     }
   }
 }

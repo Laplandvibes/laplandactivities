@@ -47,56 +47,80 @@ const d: LangData = {
       "tagline": "Jultomtens officiella hemstad",
       "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta transportförbindelser och ett stort utbud av vinter- och sommaraktiviteter.",
       "access": "Direktflyg från Helsingfors (1 tim 20 min)",
-      "bestFor": "Förstagångsbesökare och familjer"
+      "bestFor": "Förstagångsbesökare och familjer",
+      "why": "I Rovaniemi finns Lapplands infrastruktur: internationell flygplats, nattågets slutstation och regionens största utbud av turer. Utöver Jultomtens by hittar du Arktikum-museet vid älvstranden, Ounasvaaras backar rakt ovanför staden och tiotals husky-, ren- och norrskensarrangörer inom 20 minuters bilfärd. Perfekt för förstagångsbesökare och familjer; hämta det kostnadsfria polcirkelcertifikatet på Jultomtens postkontor."
     },
     "levi": {
       "name": "Levi",
       "tagline": "Finlands största skidort",
-      "description": "En förstklassig skiddestination med 43 pister och 230 km längdskidspår. Livlig efter-ski-stämning på Hullu Poro och utomhusaktiviteter året runt.",
+      "description": "En förstklassig skiddestination med 44 pister och 230 km längdskidspår. Livlig efter-ski-stämning på Hullu Poro och utomhusaktiviteter året runt.",
       "access": "Flyg till Kittilä (15 minuters bilfärd)",
-      "bestFor": "Skidåkare och aktiva resenärer"
+      "bestFor": "Skidåkare och aktiva resenärer",
+      "why": "Levi packar Finlands största skidort, 44 pister och 26 liftar varav två gondoler, i en enda promenadvänlig by vid foten av Levitunturi. Alpina världscupen öppnar sin slalomsäsong här varje november, och när liftarna stänger drar folkmassan vidare till Hullu Poros efter-ski. Passar skidåkare och sällskap som vill ha restauranger och nattliv på gångavstånd från backen; på sommaren betjänar gondolen Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Finlands längsta pister",
       "description": "Två skidorter på var sin sida om Ylläsfjället erbjuder Finlands längsta nedfarter på 3 km. En lugnare, mer autentisk Lapplandsupplevelse med Pallas-Yllästunturi nationalpark.",
       "access": "Flyg till Kittilä (35 minuters bilfärd)",
-      "bestFor": "Naturälskare och erfarna skidåkare"
+      "bestFor": "Naturälskare och erfarna skidåkare",
+      "why": "Ylläs är två lugna byar, Äkäslompolo och Ylläsjärvi, på var sin sida av ett stort fjäll: sammanlagt 62 pister och Finlands längsta nedfarter på över tre kilometer. Runtomkring breder cirka 300 km preparerade längdspår ut sig ända in i Pallas-Yllästunturi nationalpark. Välj Ylläs i stället för Levi om du vill ha mörk norrskenshimmel, nationalparkstystnad och långa skiddagar; Äkäslompolo är den lugnare sidan, Ylläsjärvi har barerna."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Porten till Urho Kekkonens nationalpark",
       "description": "Finlands nordligaste skidort, gränsande till ett av Europas största vildmarksområden. Känd för norrskensskådning, guldvaskning och den legendariska rökbastun i Kiilopää.",
       "access": "Flyg till Ivalo (30 minuters bilfärd)",
-      "bestFor": "Vildmarkssökare och norrskensjägare"
+      "bestFor": "Vildmarkssökare och norrskensjägare",
+      "why": "Saariselkä ligger vid kanten av Urho Kekkonens nationalpark: markerade leder och öppna ödestugor börjar direkt i byn. Så här långt norrut syns norrskenet från september till april, och här finns sådant som saknas längre söderut: guldvaskning i Tankavaara, där varje korn du hittar är ditt, och Kiilopääs rökbastu följd av en rullning i snön. Bäst för resenärer som sätter vildmarken före servicen."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Hjärtat av den samiska kulturen",
       "description": "Vid stränderna av Inarisjön med över 3 000 öar ligger den finska samekulturens huvudstad. Här finns Siida-museet och orörd vildmark.",
       "access": "Flyg till Ivalo (40 minuters bilfärd)",
-      "bestFor": "Kulturintresserade och fotografer"
+      "bestFor": "Kulturintresserade och fotografer",
+      "why": "Inari är säte för Finlands sameting och den bästa platsen att möta levande samisk kultur: börja på Siida-museet och ta på sommaren en båttur på Enare träsk förbi den heliga ön Ukonsaari. Byn är liten och vildmarken runtomkring enorm; till Pielpajärvi ödemarkskyrka vandrar man genom gammal tallskog. Inari belönar den som kommer för kultur, fotografering och tystnad."
     },
     "ruka": {
       "name": "Ruka och Kuusamo",
       "tagline": "Hemvist för Finlands längsta skidsäsong",
       "description": "Här finns den legendariska björnstigen Karhunkierros, Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen. Ruka ligger i Kuusamo, strax söder om Lapplands gräns, med samma snö och samma nordliga vinter.",
       "access": "Flyg till Kuusamo (25 minuters bilfärd)",
-      "bestFor": "Vandrare, skidåkare och naturintresserade"
+      "bestFor": "Vandrare, skidåkare och naturintresserade",
+      "why": "Ruka är en kompakt backby med 41 pister och 22 liftar mitt i Kuusamos friluftsland: Oulanka nationalpark, den 82 km långa Karhunkierros-leden och forsar med fors-rafting från vår till höst. Tack vare sparad snö öppnar orten i oktober och åker ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Östra Lapplands dolda pärla",
       "description": "Känd för de spektakulära snökrönta träden i Riisitunturi nationalpark och de tillfrusna vattenfallen i Korouoma-kanjonen. Bortom de vanliga turiststråken, ren vildmark.",
       "access": "Bilväg från Rovaniemi (2 tim) eller Ruka (1 tim)",
-      "bestFor": "Upptäckare av det mindre kända"
+      "bestFor": "Upptäckare av det mindre kända",
+      "why": "Posios trumfkort kommer från naturen: Riisitunturis tykky-träd, böjda till skulpturer av frosten mitt i vintern, och Korouomas frusna vattenfall som hänger upp till 40 meter längs kanjonväggen. Lägg till Pentik, världens nordligaste keramikfabrik med gallerier och outlet, så fylls dagen långt från turiststråken. Bil behövs; Posio passar fint ihop med en resa till Ruka eller Rovaniemi."
     },
     "tornio": {
-      "name": "Tornio och Kemi",
+      "name": "Torneå, Haparanda och Kemi",
       "tagline": "Arktiska gränsäventyr",
       "description": "Gränsstaden mellan Finland och Sverige och porten till unika arktiska upplevelser. Här finns den legendariska isbrytarkryssningen med Sampo, världens största snöslott och Europas största fritt strömmande laxälv.",
       "access": "Flyg till Kemi (15 minuters bilfärd)",
-      "bestFor": "Unika upplevelser och familjenöje"
+      "bestFor": "Unika upplevelser och familjenöje",
+      "why": "Torneå och Haparanda är en stad i två länder: du korsar gränsen till fots mitt på affärsgatan, IKEA Haparanda ligger alldeles vid övergången och en golfrunda byter land och tidszon fyra gånger. Kemi, 25 minuter bort, bjuder på isbrytaren Sampos kryssning och SnowCastle som byggs upp på nytt varje vinter. I Torne älv, Europas största fritt strömmande laxälv, lever det traditionella håvfisket vid Kukkolankoski vidare varje sommar."
+    },
+    "pyha-luosto": {
+      "name": "Pyhä-Luosto",
+      "tagline": "Tvillingfjäll i den äldsta nationalparken",
+      "description": "Två fjällbyar, Pyhä och Luosto, förbundna av en urgammal fjällkedja med Pyhä-Luosto nationalpark emellan. Åk skidor, vandra med snöskor och gräv din egen ametist på Lampivaara.",
+      "access": "Flyg till Rovaniemi (1 h 30 min bilfärd)",
+      "bestFor": "Nationalparksskidåkare och familjer",
+      "why": "Nationalparken mellan de två byarna är själva poängen: Isokuru, Finlands djupaste ravin på cirka 220 meter, spänger genom gammelskog och vida vyer från Lapplands äldsta fjällkedja. På Lampivaara i Luosto gräver du i Europas enda aktiva ametistgruva och behåller en sten; på vintern drar ett uppvärmt snötåg dig upp. Bland Pyhäs pister finns Huttu-Ukko, en puckelpist med världscupsförflutet, och familjer får milda backar utan köer."
+    },
+    "kemijarvi": {
+      "name": "Kemijärvi",
+      "tagline": "Finlands nordligaste stad",
+      "description": "Finlands nordligaste stad ligger vid sin egen sjö, där nattåget Santa Claus Express slutar. En lugn bas för östra Lappland, med Pyhä 50 km bort.",
+      "access": "Nattåg från Helsingfors eller bil från Rovaniemi (1 h)",
+      "bestFor": "Tågresenärer och lugnsökare",
+      "why": "Kemijärvi är staden där Santa Claus Express tar slut: en avgång per dag fortsätter förbi Rovaniemi, så du sover på tåget och vaknar vid sjön. Sedan 1985 står staden värd för en internationell träskulpturvecka, och de stora skulpturerna står kvar i gatubilden året om. Vid Uitonniemis strand kombinerar Santa’s Little Village ett litet timmerhotell med tomtebesök och norrskensturer; skidbacken Suomu ligger 40 minuter bort med bil."
     }
   },
   "difficulty": {
@@ -274,10 +298,10 @@ const d: LangData = {
       "category": "Mat och dryck"
     },
     "lev-ski-resort": {
-      "title": "Levi skidort, 43 pister",
-      "description": "Finlands största skidort med 43 pister, 230 km längdskidspår och en förstklassig terrängpark. Kvällsåkning under norrskenet finns.",
+      "title": "Levi skidort, 44 pister",
+      "description": "Finlands största skidort med 44 pister, 230 km längdskidspår och en förstklassig terrängpark. Kvällsåkning under norrskenet finns.",
       "highlights": [
-        "43 pister",
+        "44 pister",
         "Terrängpark",
         "Kvällsåkning"
       ],
@@ -419,11 +443,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Ylläs skidort, längsta pisterna",
-      "description": "Finlands längsta pister på 3 km på båda sidor av Ylläsfjället. 63 pister, en gondol och 330 km preparerade längdskidspår genom nationalparken.",
+      "description": "Finlands längsta pister på 3 km på båda sidor av Ylläsfjället. 62 pister, en gondol och 300 km preparerade längdskidspår genom nationalparken.",
       "highlights": [
         "3 km längsta nedfarten",
-        "63 pister",
-        "330 km längdskidspår"
+        "62 pister",
+        "300 km längdskidspår"
       ],
       "duration": "Dagskort",
       "difficulty": "Medel",
@@ -515,9 +539,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Längdskidåkning i Pallas",
-      "description": "Åk längdskidor på 330 km preparerade spår genom Pallas-Yllästunturi nationalpark. Rutter för alla nivåer, från lugna sjörundor till utmaningar på fjälltoppar.",
+      "description": "Åk längdskidor på 300 km preparerade spår genom Pallas-Yllästunturi nationalpark. Rutter för alla nivåer, från lugna sjörundor till utmaningar på fjälltoppar.",
       "highlights": [
-        "330 km spårnät",
+        "300 km spårnät",
         "Nationalparkslandskap",
         "Utrustningsuthyrning"
       ],
@@ -695,9 +719,9 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Ruka skidort",
-      "description": "39 pister, Finlands längsta skidsäsong (oktober till maj) och längdskidspår i världscupklass. Kvällsåkning finns.",
+      "description": "41 pister, Finlands längsta skidsäsong (oktober till maj) och längdskidspår i världscupklass. Kvällsåkning finns.",
       "highlights": [
-        "39 pister",
+        "41 pister",
         "Längsta säsongen",
         "Kvällsåkning"
       ],
@@ -944,6 +968,105 @@ const d: LangData = {
       "duration": "3 timmar",
       "difficulty": "Medel",
       "category": "Fiske och pilkfiske"
+    },
+    "pyh-amethyst-mine": {
+      "title": "Lampivaaras ametistgruva",
+      "description": "Gräv din egen ädelsten i Europas enda aktiva ametistgruva på toppen av Lampivaara i Luosto, och behåll en sten som ryms i handflatan. På vintern går det uppvärmda snötåget Amethyst Pendolino upp; på sommaren är det en panoramapromenad med utsikt över nationalparken.",
+      "highlights": [
+        "Gräv och behåll din ametist",
+        "Uppvärmt snötåg på vintern",
+        "Utsikt över nationalparken"
+      ],
+      "duration": "2-3 timmar",
+      "category": "Kultur och arv"
+    },
+    "pyh-national-park": {
+      "title": "Pyhä-Luosto nationalpark och Isokuru-ravinen",
+      "description": "Vandra mellan de två byarna genom Finlands djupaste ravin: Isokuru stupar cirka 220 meter mellan fjällen, med trappor och spänger förbi Uhriharju-åsen och gammelskogen. Fritt inträde, väl markerade leder och dagsturer från både Pyhä och Luosto.",
+      "highlights": [
+        "Isokuru, Finlands djupaste ravin",
+        "Fritt inträde",
+        "Leder från båda byarna"
+      ],
+      "duration": "3-6 timmar",
+      "category": "Sommaräventyr"
+    },
+    "pyh-ski-resort": {
+      "title": "Pyhä skidort",
+      "description": "En skidort intill nationalparken med 280 meters fallhöjd och pister för båda ytterligheterna: milt familjeterräng på ena sidan och på den andra Huttu-Ukko, en puckelpist som stått värd för världscupen i freestyle. Liftkort och uthyrning på plats.",
+      "highlights": [
+        "280 m fallhöjd",
+        "Puckelpist med världscupshistoria",
+        "Familjevänlig terräng"
+      ],
+      "duration": "Dagskort",
+      "category": "Vintersport"
+    },
+    "pyh-aurora-snowshoe": {
+      "title": "Norrskenstur med snöskor i Luosto",
+      "description": "Gå med snöskor bort från byns ljus in i den tysta skogen under fjällen och vänta på norrskenet vid en lägereld med varma drycker. Luosto är så litet att det riktiga mörkret börjar några minuter från hotelldörren.",
+      "highlights": [
+        "Mörk himmel nära byn",
+        "Snöskor och utrustning ingår",
+        "Lägereld och varma drycker"
+      ],
+      "duration": "3 timmar",
+      "category": "Norrsken"
+    },
+    "kem-ice-fishing": {
+      "title": "Pimpelfiske på Kemijärvi sjö",
+      "description": "Borra ett hål i isen på stadens egen sjö och pimpla abborre med en lokal guide, varma drycker ingår. Enkelt pimpelfiske kräver inget tillstånd i Finland, och sjön börjar direkt vid strandgatorna: Lapplands isfiske utan transfertid.",
+      "highlights": [
+        "Sjön börjar vid stadens strand",
+        "Inget tillstånd behövs",
+        "Varma drycker på isen"
+      ],
+      "duration": "3 timmar",
+      "category": "Fiske och pilkfiske"
+    },
+    "kem-husky-safari": {
+      "title": "Kör-själv-huskysafari",
+      "description": "Kör din egen släde på en 5 km lång skogsslinga i liten grupp och träffa sedan hundarna och deras skötare på gården. Bara några slädar åker åt gången, så du får riktig instruktion i stället för kö.",
+      "highlights": [
+        "Kör din egen släde",
+        "Endast små grupper",
+        "Träffa hundarna efteråt"
+      ],
+      "duration": "2 timmar",
+      "category": "Djurupplevelser"
+    },
+    "kem-suomu-ski": {
+      "title": "Suomu skidort (Suomutunturi)",
+      "description": "En stillsam fjällort på polcirkeln, cirka 40 minuter från Kemijärvi: 10 långa pister med fin profil, den längsta 1,7 km, plus 75 km längdspår varav 25 km belysta. Här har man åkt sedan 1965, och liftköerna är berömt korta.",
+      "highlights": [
+        "10 långa pister, längst 1,7 km",
+        "75 km längdspår",
+        "På polcirkeln"
+      ],
+      "duration": "Dagskort",
+      "category": "Vintersport"
+    },
+    "kem-santas-village": {
+      "title": "Santa’s Little Village vid Kemijärvi sjö",
+      "description": "En liten timmerhotellby vid Uitonniemis strand där du möter jultomten utan nöjesparkstrasslet. Vintern bjuder på norrskensturer i uppvärmd släde och snöskouthyrning; sommaren byter till roddbåtar och SUP-brädor på sjön. Bokas direkt hos byn.",
+      "highlights": [
+        "Möt tomten vid sjön",
+        "Norrskensturer på vintern",
+        "Rodd och SUP på sommaren"
+      ],
+      "duration": "1-2 timmar",
+      "category": "Kultur och arv"
+    },
+    "tor-haparanda-shopping": {
+      "title": "Shoppingdag över gränsen i Haparanda",
+      "description": "Korsa finsk-svenska gränsen till fots mitt i stan och gör en shoppingdag på båda sidor av samma gata. IKEA Haparanda ligger alldeles vid övergången, och den svenska sidan lägger till matbutiker och outlets; priser och sortiment skiljer sig mellan länderna, och det är just det som lockar. Kom ihåg timmens tidsskillnad när du kollar öppettider.",
+      "highlights": [
+        "Korsa gränsen till fots",
+        "IKEA Haparanda",
+        "Två länder, en stad"
+      ],
+      "duration": "2-4 timmar",
+      "category": "Kultur och arv"
     }
   }
 }

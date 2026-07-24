@@ -14,6 +14,12 @@ export const HOTELS_QUERY: Record<string, string> = {
   ruka:       'Ruka, Finland',
   posio:      'Posio, Finland',
   tornio:     'Tornio, Finland',
+  // NOTE (worker): TRIP_CITY substring match has no pyha/luosto/kemijarvi ids;
+  // 'kemijarvi' even substring-matches 'kemi' → non-fi Trip.com users land on
+  // coastal Kemi's list. Sembo (fi) resolves the text query correctly. Flagged
+  // for a worker-side TRIP_CITY addition — do not "fix" by renaming the query.
+  'pyha-luosto': 'Pyhätunturi, Finland',
+  kemijarvi:  'Kemijärvi, Finland',
   lapland:    'Lapland, Finland',
 };
 
@@ -29,6 +35,11 @@ export const GYG_SLUG: Record<string, string> = {
   ruka:       'ruka-l192178',
   posio:      'posio-region-l217155',
   tornio:     'tornio-l192017',
+  // Verified live 2026-07-24: both locations exist on GYG with real inventory
+  // (NP page lists 20+ tours incl. amethyst mine; Kemijärvi has own ice-fishing
+  // + husky products). Never point these at a 0-result page.
+  'pyha-luosto': 'pyha-luosto-national-park-l161152',
+  kemijarvi:  'kemijarvi-l208937',
   lapland:    'lappi-suomi-l2652',
 };
 

@@ -331,7 +331,7 @@ const es: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: Tours árticos en Laponia',
-    metaDescription: 'Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades seleccionadas a mano en 8 destinos de Laponia y alrededores mediante GetYourGuide.',
+    metaDescription: 'Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades seleccionadas a mano en 10 destinos de Laponia y alrededores mediante GetYourGuide.',
     ogTitle: 'LaplandActivities: Experiencias árticas seleccionadas a mano',
     categoriesKicker: 'Qué hacer',
     categoriesH2: 'Elija su aventura',
@@ -422,10 +422,10 @@ const es: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Destinos de Laponia y Kuusamo · LaplandActivities',
-    metaDescription: 'Ocho destinos icónicos de Laponia finlandesa y Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio y Tornio. Actividades, operadores y alojamiento.',
+    metaDescription: 'Diez destinos icónicos de Laponia finlandesa y Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio y Tornio.',
     kicker: 'Dónde ir',
     h1: 'Destinos',
-    lead: 'Ocho destinos icónicos en Laponia y la vecina Kuusamo, cada uno con su carácter y su red de operadores.',
+    lead: 'Diez destinos icónicos en Laponia y la vecina Kuusamo, cada uno con su carácter y su red de operadores.',
     activitiesLabel: 'actividades',
     explore: 'Explorar',
     gygTitle: 'Tours de Laponia más reservados',
@@ -472,7 +472,7 @@ const es: SectionCopy = {
       yllas: [
         { tip: 'Ylläs tiene unos de los cielos de aurora más oscuros y despejados de Finlandia.', icon: '✨' },
         { tip: 'El lado de Äkäslompolo es más tranquilo; en Ylläsjärvi están los bares.', icon: '🏔️' },
-        { tip: 'La red de 330 km de esquí de fondo es la mejor de Finlandia; mediados de marzo es ideal.', icon: '🎿' },
+        { tip: 'La red de 300 km de esquí de fondo es de las mejores de Finlandia; mediados de marzo es ideal.', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'La sauna de humo de Kiilopää abre todo el año, reserve el turno de tarde.', icon: '🧖' },
@@ -498,16 +498,27 @@ const es: SectionCopy = {
         { tip: 'El rompehielos Sampo solo navega de dic a abr, reserve en cuanto abran las fechas.', icon: '🚢' },
         { tip: 'El SnowCastle se reconstruye cada año con una temática nueva.', icon: '🏰' },
         { tip: 'El Green Zone Golf cruza la frontera Finlandia-Suecia a mitad de recorrido.', icon: '⛳' },
+        { tip: 'Suecia va una hora por detrás de Finlandia: las tiendas de Haparanda abren y cierran "tarde".', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: 'El tren de nieve a la mina de amatista circula en invierno; en verano se sube a pie al Lampivaara.', icon: '💎' },
+        { tip: 'Las escaleras de Isokuru abren solo sin nieve; en invierno se rodea por Uhriharju.', icon: '🥾' },
+        { tip: 'Luosto es el pueblo tranquilo; Pyhä tiene pistas más grandes y más restaurantes.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: 'Una salida diaria del Santa Claus Express continúa de Rovaniemi hasta Kemijärvi.', icon: '🚂' },
+        { tip: 'Las grandes esculturas de madera de la semana anual de talla decoran la ciudad todo el año.', icon: '🪵' },
+        { tip: 'Pyhä está a 50 km: puede hacer una excursión de un día a los fjells desde una base junto al lago.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'Acerca de · LaplandActivities',
-    metaDescription: 'LaplandActivities es la rama de actividades del ecosistema LaplandVibes: experiencias árticas seleccionadas a mano en ocho destinos en la Laponia finlandesa y alrededores.',
+    metaDescription: 'LaplandActivities es la rama de actividades del ecosistema LaplandVibes: experiencias árticas seleccionadas a mano en diez destinos en la Laponia finlandesa y alrededores.',
     eyebrow: 'Acerca de',
     h1: 'Una guía de actividades de la Laponia finlandesa',
     para1: 'LaplandActivities es la rama de actividades del ecosistema #LaplandVibes: una red de guías independientes que cubre alojamiento, gastronomía, naturaleza, transporte y tours por la Laponia finlandesa.',
-    para2: 'El sitio dirige a los viajeros a operadores locales seleccionados a mano en ocho destinos, desde safaris en motonieve en Saariselkä a pesca de salmón en el Tornionjoki. Cada reserva pasa por GetYourGuide para que tenga confirmación instantánea y cancelación gratuita hasta 24 h en la mayoría de tours.',
+    para2: 'El sitio dirige a los viajeros a operadores locales seleccionados a mano en diez destinos, desde safaris en motonieve en Saariselkä a pesca de salmón en el Tornionjoki. Cada reserva pasa por GetYourGuide para que tenga confirmación instantánea y cancelación gratuita hasta 24 h en la mayoría de tours.',
     pillars: [
       { title: 'Operadores reales', text: 'Presentamos operadores locales consolidados; cada reserva se gestiona a través de GetYourGuide.' },
       { title: 'Experiencias auténticas', text: 'Cada actividad se revisa por seguridad y por el tipo de detalle que no se puede fingir.' },

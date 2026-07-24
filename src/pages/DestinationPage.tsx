@@ -152,7 +152,8 @@ export default function DestinationPage() {
           <div className="lg:col-span-3 lv-surface rounded-3xl p-6 sm:p-8">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{sec.whyKicker}</span>
             <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 mb-4">{sec.whyH2(destination.name)}</h2>
-            <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{destination.description}</p>
+            {/* why ≠ hero lead (Vesa 2026-07-24: the two were verbatim identical on one screen) */}
+            <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{destination.why}</p>
             <div className="mt-5 pt-5 border-t border-white/10">
               <p className="text-snow/70 text-xs uppercase tracking-[0.18em] font-semibold mb-2">{sec.operatorsShort}</p>
               <div className="flex flex-wrap gap-2">

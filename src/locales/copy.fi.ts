@@ -331,7 +331,7 @@ const fi: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: arktiset retket Suomen Lapissa',
-    metaDescription: 'Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kahdeksassa kohteessa Lapissa ja lähialueilla GetYourGuiden kautta.',
+    metaDescription: 'Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kymmenessä kohteessa Lapissa ja lähialueilla GetYourGuiden kautta.',
     ogTitle: 'LaplandActivities · luotettavia arktisia elämyksiä',
     categoriesKicker: 'Mitä tehdä',
     categoriesH2: 'Valitse seikkailusi',
@@ -422,10 +422,10 @@ const fi: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Lapin ja Kuusamon kohteet · LaplandActivities',
-    metaDescription: 'Kahdeksan ikonista kohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio ja Tornio. Aktiviteetit, toimijat ja majoitus.',
+    metaDescription: 'Kymmenen ikonista kohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio ja Tornio.',
     kicker: 'Minne mennä',
     h1: 'Kohteet',
-    lead: 'Kahdeksan ikonista kohdetta Lapissa ja Kuusamossa, jokaisella oma luonne ja toimijaverkosto.',
+    lead: 'Kymmenen ikonista kohdetta Lapissa ja Kuusamossa, jokaisella oma luonne ja toimijaverkosto.',
     activitiesLabel: 'aktiviteettia',
     explore: 'Tutustu',
     gygTitle: 'Varatuimmat Lapin retket',
@@ -472,7 +472,7 @@ const fi: SectionCopy = {
       yllas: [
         { tip: 'Ylläksellä on yhdet Suomen pimeimmistä ja kirkkaimmista revontulitaivaista.', icon: '✨' },
         { tip: 'Äkäslompolon puoli on rauhallisempi; Ylläsjärvellä on baarit.', icon: '🏔️' },
-        { tip: '330 km hiihtolatuverkosto on Suomen paras, ja maaliskuun puoliväli on parasta aikaa.', icon: '🎿' },
+        { tip: '300 km:n latuverkosto on Suomen parhaita, ja maaliskuun puoliväli on parasta aikaa.', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'Kiilopään savusauna toimii ympäri vuoden. Varaa iltapäiväkierros.', icon: '🧖' },
@@ -498,16 +498,27 @@ const fi: SectionCopy = {
         { tip: 'Jäänmurtaja Sampo kulkee vain joulu–huhtikuussa. Varaa heti kun varauskausi aukeaa.', icon: '🚢' },
         { tip: 'Lumilinna rakennetaan vuosittain uudella teemalla.', icon: '🏰' },
         { tip: 'Green Zone Golf ylittää Suomi-Ruotsi -rajan kierroksen aikana.', icon: '⛳' },
+        { tip: 'Ruotsi on tunnin Suomea jäljessä: Haaparannan kaupat aukeavat ja sulkevat "myöhään".', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: 'Ametistikaivoksen lumijuna kulkee talvisin; kesällä Lampivaaraan kävellään.', icon: '💎' },
+        { tip: 'Isokurun portaat ovat auki vain sulan maan aikaan; talvella kierretään Uhriharjun kautta.', icon: '🥾' },
+        { tip: 'Luosto on kylistä rauhallisempi; Pyhällä on isommat rinteet ja enemmän ravintoloita.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: 'Yksi Santa Claus Express -lähtö päivässä jatkaa Rovaniemeltä Kemijärvelle asti.', icon: '🚂' },
+        { tip: 'Puunveistoviikon isot veistokset seisovat ympäri kaupunkia vuoden ympäri.', icon: '🪵' },
+        { tip: 'Pyhä on 50 km päässä, joten tunturipäivän voi tehdä järvenrantatukikohdasta.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'Tietoja · LaplandActivities',
-    metaDescription: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kahdeksassa kohteessa Suomen Lapissa ja lähialueilla.',
+    metaDescription: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kymmenessä kohteessa Suomen Lapissa ja lähialueilla.',
     eyebrow: 'Tietoja',
     h1: 'Suomen Lapin aktiviteettiopas',
     para1: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteetti-osio, itsenäinen oppaaverkosto, joka kattaa majoituksen, ruoan, luonnon, liikkumisen ja retket Suomen Lapissa.',
-    para2: 'Sivusto ohjaa matkailijat luotettavien paikallisten toimijoiden luokse kahdeksassa kohteessa, Saariselän moottorikelkkasafareista Tornionjoen lohenkalastukseen. Jokainen varaus tehdään GetYourGuiden kautta, joten saat välittömän vahvistuksen ja useimmissa retkissä ilmaisen peruutuksen 24 tuntiin asti.',
+    para2: 'Sivusto ohjaa matkailijat luotettavien paikallisten toimijoiden luokse kymmenessä kohteessa, Saariselän moottorikelkkasafareista Tornionjoen lohenkalastukseen. Jokainen varaus tehdään GetYourGuiden kautta, joten saat välittömän vahvistuksen ja useimmissa retkissä ilmaisen peruutuksen 24 tuntiin asti.',
     pillars: [
       { title: 'Luotettavat toimijat', text: 'Listauksissa paikallisia, vakiintuneita toimijoita; jokainen varaus kulkee GetYourGuiden kautta.' },
       { title: 'Aidot elämykset', text: 'Jokainen aktiviteetti on valittu sellaisten yksityiskohtien perusteella, joita ei voi väärentää.' },

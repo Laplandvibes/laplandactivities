@@ -55,6 +55,11 @@ export const HERO = {
   skiResortWinter:  local('heroes/ski-resort-winter.webp'),     // snowy fell ski slope at dusk
   ruskaRidge:       local('heroes/slider-03-summer-hike.webp'), // autumn ruska fell ridge + hikers
   salmonFishing:    local('activities/summer/salmon-fishing.webp'), // river salmon fishing, used by fishing category hero
+
+  // 2026-07-24 new destination heroes (Picsart gemini-3-pro-image 2K, unique to this site).
+  // kemijarvi file is named for an easy swap: Vesa has real Kemijärvi photos to drop in later.
+  pyhaLuosto:       local('heroes/pyha-luosto-fells.webp'),     // twin fells + national park, winter dusk
+  kemijarvi:        local('heroes/kemijarvi-lake-town.webp'),   // lake + rail + small-town winter vibe
 } as const;
 
 // HERO_BRANDED — kept as alias for legacy data references
@@ -196,6 +201,8 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
 
   // City/destination tour catch-alls
   { match: /city tour|rovaniemi tour|kemi tour|tornio tour/i,           img: local('hotels/boutique-hotel-rovaniemi.webp') },
+  // Haparanda border-shopping day (Tornio page) — urban scene, not a nature shot.
+  { match: /haparanda|ikea|shopping/i,                                  img: local('hotels/boutique-hotel-rovaniemi.webp') },
 ];
 
 export interface ActivityImageInput {
@@ -292,6 +299,9 @@ const DEST_HERO: Record<string, string> = {
   // aurora lake reads as the Posio autumn/lakes mood in the light season.
   posio:      seasonal(local('heroes/husky-sled-day.webp'), local('og/og-default.webp')),
   tornio:     seasonal(local('activities/culture/arctic-city.webp'), local('activities/summer/salmon-fishing.webp')),
+  // New 2026-07-24: dedicated generated heroes (same image both seasons, like rovaniemi).
+  'pyha-luosto': local('heroes/pyha-luosto-fells.webp'),
+  kemijarvi:  local('heroes/kemijarvi-lake-town.webp'),
 };
 
 export function imageForDestination(slug: string): string {
@@ -329,6 +339,10 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/ski-resort-winter.webp': 'center 45%',
   // Summer lake: paddler + sun are in the lower-mid → anchor low.
   '/images/categories/summer.webp': 'center 55%',
+  // New destination heroes: pyha fell tops sit mid-high; kemijarvi town+train band
+  // is in the UPPER third (frozen lake fills the lower two thirds) → anchor high.
+  '/images/heroes/pyha-luosto-fells.webp': 'center 40%',
+  '/images/heroes/kemijarvi-lake-town.webp': 'center 30%',
 };
 
 /** Safe object-position for a hero image so heads/helmets are never cropped. */

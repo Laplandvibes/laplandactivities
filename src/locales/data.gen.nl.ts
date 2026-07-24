@@ -47,56 +47,80 @@ const d: LangData = {
       "tagline": "De officiële thuisstad van de Kerstman",
       "description": "Hoofdstad van Lapland en toegangspoort tot Arctische avonturen. Hier vindt u het Kerstmandorp, uitstekende verbindingen en een groot aanbod aan winter- en zomeractiviteiten.",
       "access": "Directe vluchten vanuit Helsinki (1 u 15)",
-      "bestFor": "Eerste bezoekers en gezinnen"
+      "bestFor": "Eerste bezoekers en gezinnen",
+      "why": "In Rovaniemi zit de infrastructuur van Lapland: een internationale luchthaven, het eindpunt van de nachttrein en de grootste keuze aan tours van de regio. Naast het Kerstmandorp vindt u het Arktikum-museum aan de rivier, de pistes van Ounasvaara boven de stad en tientallen husky-, rendier- en noorderlichtaanbieders binnen 20 minuten rijden. Ideaal voor eerste bezoekers en gezinnen; haal meteen het gratis poolcirkelcertificaat bij het postkantoor van de Kerstman."
     },
     "levi": {
       "name": "Levi",
       "tagline": "Het grootste skigebied van Finland",
-      "description": "Een topbestemming met 43 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten.",
+      "description": "Een topbestemming met 44 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten.",
       "access": "Vlieg naar Kittilä (15 min met de auto)",
-      "bestFor": "Skiërs en actieve reizigers"
+      "bestFor": "Skiërs en actieve reizigers",
+      "why": "Levi stopt het grootste skigebied van Finland, 44 pistes en 26 liften met twee gondels, in één beloopbaar dorp aan de voet van de Levitunturi. Elke november opent de alpine wereldbeker hier zijn slalomseizoen, en na sluiting van de liften verhuist de menigte naar de après-ski van Hullu Poro. Perfect voor skiërs en groepen die restaurants en nachtleven op loopafstand van de piste willen; in de zomer bedient de gondel het Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "De langste pistes van Finland",
       "description": "Twee skigebieden aan beide zijden van de Ylläs-fjell met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
       "access": "Vlieg naar Kittilä (35 min met de auto)",
-      "bestFor": "Natuurliefhebbers en ervaren skiërs"
+      "bestFor": "Natuurliefhebbers en ervaren skiërs",
+      "why": "Ylläs bestaat uit twee rustige dorpen, Äkäslompolo en Ylläsjärvi, aan weerszijden van één grote fjell: samen 62 pistes en met ruim drie kilometer de langste afdalingen van Finland. Eromheen ligt zo’n 300 km geprepareerd langlaufspoor tot in het nationale park Pallas-Yllästunturi. Kies Ylläs boven Levi voor donkere noorderlichtluchten, nationale-parkstilte en lange skidagen; Äkäslompolo is de rustige kant, Ylläsjärvi heeft de bars."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Toegangspoort tot het Urho Kekkonen Nationaal Park",
       "description": "Het noordelijkste skigebied van Finland, grenzend aan een van de grootste wildernisgebieden van Europa. Beroemd om de noorderlichtweergave, het goudwassen en de legendarische rooksauna van Kiilopää.",
       "access": "Vlieg naar Ivalo (30 min met de auto)",
-      "bestFor": "Wildernisliefhebbers en noorderlichtjagers"
+      "bestFor": "Wildernisliefhebbers en noorderlichtjagers",
+      "why": "Saariselkä ligt aan de rand van het nationale park Urho Kekkonen: gemarkeerde routes en open wildernishutten beginnen in het dorp zelf. Zo noordelijk zijn de noorderlichtkansen goed van september tot april, plus dingen die zuidelijker niet bestaan: goudwassen in Tankavaara, waar alles wat u vindt van u is, en de rooksauna van Kiilopää met een rol door de sneeuw erna. Voor reizigers die wildernis boven voorzieningen stellen."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Hart van de Sami-cultuur",
       "description": "Aan de oevers van het Inari-meer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk. Hier vindt u het Siida-museum en ongerepte wildernis.",
       "access": "Vlieg naar Ivalo (40 min met de auto)",
-      "bestFor": "Cultuurliefhebbers en fotografen"
+      "bestFor": "Cultuurliefhebbers en fotografen",
+      "why": "Inari is de zetel van het Finse Sámi-parlement en de beste plek om levende Sámi-cultuur te ontmoeten: begin in het Siida-museum en vaar in de zomer over het Inarimeer langs het heilige eiland Ukonsaari. Het dorp is klein en de wildernis eromheen enorm; naar de wilderniskerk van Pielpajärvi wandelt u door oud dennenbos. Het beloont wie komt voor cultuur, fotografie en stilte."
     },
     "ruka": {
       "name": "Ruka en Kuusamo",
       "tagline": "Wildernis-hoofdstad van Finland",
       "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland. Beroemd om berenobservatie, raften en het langste skiseizoen. Ruka ligt in Kuusamo, net ten zuiden van Lapland, met dezelfde sneeuw en dezelfde noordelijke winter.",
       "access": "Vlieg naar Kuusamo (25 min met de auto)",
-      "bestFor": "Wandelaars, skiërs en natuurliefhebbers"
+      "bestFor": "Wandelaars, skiërs en natuurliefhebbers",
+      "why": "Ruka is een compact pistedorp met 41 pistes en 22 liften midden in het buitenland van Kuusamo: nationaal park Oulanka, de 82 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark het over."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Verborgen parel van Oost-Lapland",
       "description": "Beroemd om de spectaculaire met sneeuw bekroonde bomen van Riisitunturi Nationaal Park en de bevroren watervallen van de Korouoma-canyon. Van de gebaande paden, pure wildernis.",
       "access": "Met de auto vanuit Rovaniemi (2 u) of Ruka (1 u)",
-      "bestFor": "Ontdekkers van het minder bekende"
+      "bestFor": "Ontdekkers van het minder bekende",
+      "why": "De troeven van Posio komen uit de natuur: de tykky-bomen van Riisitunturi, door de vorst tot sculpturen gebogen, en de bevroren watervallen van Korouoma, tot 40 meter hangend langs de canyonwand. Tel daar Pentik bij op, de noordelijkste keramiekfabriek ter wereld met galerieën en outlet, en de dag is vol, ver van de toeristische routes. Een auto is nodig; het past goed bij een reis naar Ruka of Rovaniemi."
     },
     "tornio": {
-      "name": "Tornio en Kemi",
+      "name": "Tornio, Haparanda en Kemi",
       "tagline": "Arctische grensavonturen",
       "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke Arctische ervaringen. Met de legendarische ijsbreker Sampo, het grootste sneeuwkasteel ter wereld en de beste zalmrivier van Europa.",
       "access": "Vlieg naar Kemi (15 min met de auto)",
-      "bestFor": "Unieke ervaringen en gezinsplezier"
+      "bestFor": "Unieke ervaringen en gezinsplezier",
+      "why": "Tornio en Haparanda zijn één stad in twee landen: u steekt de grens te voet over midden in de winkelstraat, IKEA Haparanda ligt pal naast de overgang en een rondje golf wisselt vier keer van land en tijdzone. Kemi, 25 minuten verderop, voegt de ijsbreker Sampo en het elke winter herbouwde SnowCastle toe. Op de Tornionjoki, Europa’s grootste vrij stromende zalmrivier, wordt bij de Kukkolankoski elke zomer nog traditioneel met netten gevist."
+    },
+    "pyha-luosto": {
+      "name": "Pyhä-Luosto",
+      "tagline": "Tweelingfjells in het oudste nationale park",
+      "description": "Twee fjelldorpen, Pyhä en Luosto, verbonden door een oeroude fjellketen met daartussen het nationale park Pyhä-Luosto. Skiën, sneeuwschoenwandelen en uw eigen amethist opgraven op de Lampivaara.",
+      "access": "Vlucht naar Rovaniemi (1 u 30 min rijden)",
+      "bestFor": "Nationale-parkskiërs en gezinnen",
+      "why": "Het nationale park tussen de twee dorpen is de echte reden: Isokuru, met zo’n 220 meter de diepste kloof van Finland, vlonderpaden door oerbos en weidse uitzichten vanaf de oudste fjellketen van Lapland. Op de Lampivaara in Luosto graaft u in Europa’s enige actieve amethistmijn uw eigen steen en houdt u die; in de winter brengt een verwarmde sneeuwtrein u omhoog. Tot Pyhä’s pistes hoort Huttu-Ukko, een bultenpiste met wereldbekerverleden, en gezinnen krijgen zacht terrein zonder rijen."
+    },
+    "kemijarvi": {
+      "name": "Kemijärvi",
+      "tagline": "De noordelijkste stad van Finland",
+      "description": "De noordelijkste stad van Finland ligt aan haar eigen meer, waar de nachttrein Santa Claus Express eindigt. Een rustige uitvalsbasis voor Oost-Lapland, met Pyhä op 50 km.",
+      "access": "Nachttrein vanuit Helsinki of auto vanaf Rovaniemi (1 u)",
+      "bestFor": "Treinreizigers en rustzoekers",
+      "why": "Kemijärvi is de stad waar de Santa Claus Express eindigt: één vertrek per dag rijdt voorbij Rovaniemi door, dus u slaapt in de trein en wordt wakker aan het meer. Sinds 1985 organiseert de stad een internationale houtsculptuurweek, en de grote beelden staan het hele jaar in het straatbeeld. Aan de oever van Uitonniemi combineert Santa’s Little Village een klein blokhuthotel met kerstmanbezoeken en noorderlichttochten; de skiheuvel Suomu ligt op 40 minuten rijden."
     }
   },
   "difficulty": {
@@ -274,10 +298,10 @@ const d: LangData = {
       "category": "Eten en drinken"
     },
     "lev-ski-resort": {
-      "title": "Levi skigebied, 43 pistes",
-      "description": "Het grootste skigebied van Finland met 43 pistes, 230 km langlauf-trails en een topklasse terreinpark. Avondskiën onder het noorderlicht beschikbaar.",
+      "title": "Levi skigebied, 44 pistes",
+      "description": "Het grootste skigebied van Finland met 44 pistes, 230 km langlauf-trails en een topklasse terreinpark. Avondskiën onder het noorderlicht beschikbaar.",
       "highlights": [
-        "43 pistes",
+        "44 pistes",
         "Terreinpark",
         "Avondskiën"
       ],
@@ -419,11 +443,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Ylläs skigebied, langste pistes",
-      "description": "De langste pistes van Finland (3 km) aan beide zijden van de Ylläs-fjell. 63 pistes, een gondel en 330 km geprepareerde langlaufloipes door het nationaal park.",
+      "description": "De langste pistes van Finland (3 km) aan beide zijden van de Ylläs-fjell. 62 pistes, een gondel en 300 km geprepareerde langlaufloipes door het nationaal park.",
       "highlights": [
         "3 km langste afdaling",
-        "63 pistes",
-        "330 km langlauf"
+        "62 pistes",
+        "300 km langlauf"
       ],
       "duration": "Dagkaart",
       "difficulty": "Gemiddeld",
@@ -515,9 +539,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Langlaufen in Pallas",
-      "description": "Langlauf 330 km geprepareerde loipes door het Pallas-Yllästunturi Nationaal Park. Routes voor alle niveaus, van rustige meerlussen tot fjell-top-uitdagingen.",
+      "description": "Langlauf 300 km geprepareerde loipes door het Pallas-Yllästunturi Nationaal Park. Routes voor alle niveaus, van rustige meerlussen tot fjell-top-uitdagingen.",
       "highlights": [
-        "330 km loipenetwerk",
+        "300 km loipenetwerk",
         "Nationaal-park-landschap",
         "Materiaalverhuur"
       ],
@@ -695,9 +719,9 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Ruka skigebied",
-      "description": "39 pistes, het langste skiseizoen van Finland (oktober tot mei) en wereldbeker-niveau langlaufloipes. Avondskiën beschikbaar.",
+      "description": "41 pistes, het langste skiseizoen van Finland (oktober tot mei) en wereldbeker-niveau langlaufloipes. Avondskiën beschikbaar.",
       "highlights": [
-        "39 pistes",
+        "41 pistes",
         "Langste seizoen",
         "Avondskiën"
       ],
@@ -944,6 +968,105 @@ const d: LangData = {
       "duration": "3 uur",
       "difficulty": "Gemiddeld",
       "category": "Vissen en ijsvissen"
+    },
+    "pyh-amethyst-mine": {
+      "title": "Amethistmijn van Lampivaara",
+      "description": "Graaf uw eigen edelsteen in Europa’s enige actieve amethistmijn op de top van de Lampivaara in Luosto, en houd één steen die in uw handpalm past. In de winter rijdt de verwarmde sneeuwtrein Amethyst Pendolino omhoog; in de zomer is het een panoramische wandeling met uitzicht op het nationale park.",
+      "highlights": [
+        "Graaf en houd uw amethist",
+        "Verwarmde sneeuwtrein in de winter",
+        "Uitzicht over het nationale park"
+      ],
+      "duration": "2-3 uur",
+      "category": "Cultuur en erfgoed"
+    },
+    "pyh-national-park": {
+      "title": "Nationaal park Pyhä-Luosto en Isokuru-kloof",
+      "description": "Wandel tussen de twee dorpen door de diepste kloof van Finland: Isokuru valt zo’n 220 meter tussen de fjells, met trappen en vlonderpaden langs de Uhriharju-kam en oerbos. Gratis toegang, goed gemarkeerde paden en dagroutes vanuit zowel Pyhä als Luosto.",
+      "highlights": [
+        "Isokuru, de diepste kloof van Finland",
+        "Gratis toegang",
+        "Routes vanuit beide dorpen"
+      ],
+      "duration": "3-6 uur",
+      "category": "Zomeravontuur"
+    },
+    "pyh-ski-resort": {
+      "title": "Skigebied Pyhä",
+      "description": "Een skigebied tegen het nationale park met 280 meter hoogteverschil en pistes voor beide uitersten: zacht gezinsterrein aan de ene kant en aan de andere Huttu-Ukko, een bultenpiste met wereldbekergeschiedenis. Liftpassen en verhuur ter plaatse.",
+      "highlights": [
+        "280 m hoogteverschil",
+        "Wereldbeker-bultenpiste",
+        "Gezinsvriendelijk terrein"
+      ],
+      "duration": "Dagkaart",
+      "category": "Wintersport"
+    },
+    "pyh-aurora-snowshoe": {
+      "title": "Noorderlicht-sneeuwschoentocht in Luosto",
+      "description": "Loop op sneeuwschoenen weg van de dorpslichten het stille bos onder de fjells in en wacht bij een kampvuur met warme dranken op het noorderlicht. Luosto is zo klein dat de echte duisternis op enkele minuten van uw hoteldeur begint.",
+      "highlights": [
+        "Donkere lucht vlak bij het dorp",
+        "Sneeuwschoenen en uitrusting inbegrepen",
+        "Kampvuur en warme dranken"
+      ],
+      "duration": "3 uur",
+      "category": "Noorderlicht"
+    },
+    "kem-ice-fishing": {
+      "title": "IJsvissen op het Kemijärvi-meer",
+      "description": "Boor een gat in het ijs van het stadsmeer en vis met een lokale gids op baars, warme dranken inbegrepen. Basaal ijsvissen vereist in Finland geen vergunning, en het meer begint direct aan de oeverstraten: Laplands ijsvissen zonder transfertijd.",
+      "highlights": [
+        "Het meer begint aan de stadsoever",
+        "Geen vergunning nodig",
+        "Warme dranken op het ijs"
+      ],
+      "duration": "3 uur",
+      "category": "Vissen en ijsvissen"
+    },
+    "kem-husky-safari": {
+      "title": "Zelfrij-huskysafari",
+      "description": "Bestuur uw eigen slee op een bosronde van 5 km in een kleine groep en ontmoet daarna de honden en hun verzorgers op de farm. Er vertrekken maar enkele sleeën tegelijk, dus echte instructie in plaats van een wachtrij.",
+      "highlights": [
+        "Bestuur uw eigen slee",
+        "Alleen kleine groepen",
+        "Ontmoet de honden na afloop"
+      ],
+      "duration": "2 uur",
+      "category": "Dierenervaringen"
+    },
+    "kem-suomu-ski": {
+      "title": "Skigebied Suomu (Suomutunturi)",
+      "description": "Een rustig fjellgebied op de poolcirkel, zo’n 40 minuten van Kemijärvi: 10 lange pistes met mooi profiel, de langste 1,7 km, plus 75 km langlaufloipes waarvan 25 km verlicht. Hier wordt sinds 1965 geskied en de liftrijen zijn beroemd kort.",
+      "highlights": [
+        "10 lange pistes, langste 1,7 km",
+        "75 km langlaufloipes",
+        "Op de poolcirkel"
+      ],
+      "duration": "Dagkaart",
+      "category": "Wintersport"
+    },
+    "kem-santas-village": {
+      "title": "Santa’s Little Village aan het Kemijärvi-meer",
+      "description": "Een klein blokhuthoteldorp aan de oever van Uitonniemi waar u de Kerstman ontmoet zonder pretparkdrukte. In de winter zijn er noorderlichttochten per verwarmde slee en sneeuwschoenverhuur; in de zomer roeiboten en supboards op het meer. Rechtstreeks bij het dorp te boeken.",
+      "highlights": [
+        "Ontmoet de Kerstman aan het meer",
+        "Noorderlichttochten in de winter",
+        "Roeien en suppen in de zomer"
+      ],
+      "duration": "1-2 uur",
+      "category": "Cultuur en erfgoed"
+    },
+    "tor-haparanda-shopping": {
+      "title": "Winkeldag over de grens in Haparanda",
+      "description": "Steek de Fins-Zweedse grens te voet over midden in de stad en maak er een winkeldag van aan beide kanten van één straat. IKEA Haparanda ligt pal bij de overgang, en de Zweedse kant voegt supermarkten en outlets toe; prijzen en assortimenten verschillen per land, en dat is precies de aantrekkingskracht. Denk aan het uur tijdsverschil bij de openingstijden.",
+      "highlights": [
+        "Te voet de grens over",
+        "IKEA Haparanda",
+        "Twee landen, één stad"
+      ],
+      "duration": "2-4 uur",
+      "category": "Cultuur en erfgoed"
     }
   }
 }

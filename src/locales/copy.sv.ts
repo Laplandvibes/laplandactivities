@@ -98,7 +98,7 @@ const sv: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: boka noggrant utvalda arktiska turer i finska Lappland',
-    metaDescription: 'Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 8 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.',
+    metaDescription: 'Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 10 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.',
     ogTitle: 'LaplandActivities · Noggrant utvalda arktiska upplevelser',
     categoriesKicker: 'Vad du kan göra',
     categoriesH2: 'Välj ditt äventyr',
@@ -189,10 +189,10 @@ const sv: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Resmål i Lappland och Kuusamo · LaplandActivities',
-    metaDescription: 'Åtta ikoniska resmål i finska Lappland och Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio och Torneå. Aktiviteter, researrangörer och boende.',
+    metaDescription: 'Tio ikoniska resmål i finska Lappland och Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio och Torneå.',
     kicker: 'Vart du ska åka',
     h1: 'Resmål',
-    lead: 'Åtta ikoniska resmål i Lappland och grannstaden Kuusamo, var och en med sin egen karaktär och sitt eget nätverk av researrangörer.',
+    lead: 'Tio ikoniska resmål i Lappland och grannstaden Kuusamo, var och en med sin egen karaktär och sitt eget nätverk av researrangörer.',
     activitiesLabel: 'aktiviteter',
     explore: 'Utforska',
     gygTitle: 'Lapplands mest bokade turer',
@@ -239,7 +239,7 @@ const sv: SectionCopy = {
       yllas: [
         { tip: 'Ylläs har några av Finlands mörkaste och klaraste norrskenshimlar.', icon: '✨' },
         { tip: 'Äkäslompolo-sidan är lugnare; Ylläsjärvi har barerna.', icon: '🏔️' },
-        { tip: 'Det 330 km långa längdskidspåret är Finlands bästa; mitten av mars är perfekt.', icon: '🎿' },
+        { tip: 'Det 300 km långa längdskidspåret är ett av Finlands bästa; mitten av mars är perfekt.', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'Kiilopääs rökbastu är öppen året runt. Boka eftermiddagspasset.', icon: '🧖' },
@@ -265,16 +265,27 @@ const sv: SectionCopy = {
         { tip: 'Isbrytaren Sampo går bara dec–apr. Boka så fort datumen släpps.', icon: '🚢' },
         { tip: 'Snöslottet byggs om varje år med ett nytt tema.', icon: '🏰' },
         { tip: 'Green Zone Golf korsar gränsen mellan Finland och Sverige mitt i rundan.', icon: '⛳' },
+        { tip: 'Sverige ligger en timme efter Finland: butikerna i Haparanda öppnar och stänger "sent".', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: 'Snötåget till ametistgruvan går på vintern; på sommaren promenerar du upp på Lampivaara.', icon: '💎' },
+        { tip: 'Isokurus trappor är öppna bara under den snöfria säsongen; på vintern rundar du via Uhriharju.', icon: '🥾' },
+        { tip: 'Luosto är den lugnare byn; Pyhä har de större pisterna och fler restauranger.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: 'En avgång per dag med Santa Claus Express fortsätter från Rovaniemi ända till Kemijärvi.', icon: '🚂' },
+        { tip: 'Träskulpturveckans stora verk står kvar runt om i staden året om.', icon: '🪵' },
+        { tip: 'Pyhä ligger 50 km bort, så du kan göra fjälldagen från en bas vid sjön.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'Om oss · LaplandActivities',
-    metaDescription: 'LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på åtta resmål i finska Lappland med omnejd.',
+    metaDescription: 'LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på tio resmål i finska Lappland med omnejd.',
     eyebrow: 'Om oss',
     h1: 'En aktivitetsguide till finska Lappland',
     para1: 'LaplandActivities är aktivitetsgrenen i #LaplandVibes-ekosystemet, ett nätverk av fristående guider som täcker boende, mat, natur, transport och turer i finska Lappland.',
-    para2: 'Sajten guidar resenärer till noggrant utvalda lokala researrangörer på åtta resmål, från snöskotersafarier i Saariselkä till laxfiske i Tornionjoki. Varje bokning görs via GetYourGuide, så du får omedelbar bekräftelse och fri avbokning upp till 24 timmar på de flesta turer.',
+    para2: 'Sajten guidar resenärer till noggrant utvalda lokala researrangörer på tio resmål, från snöskotersafarier i Saariselkä till laxfiske i Tornionjoki. Varje bokning görs via GetYourGuide, så du får omedelbar bekräftelse och fri avbokning upp till 24 timmar på de flesta turer.',
     pillars: [
       { title: 'Riktiga researrangörer', text: 'Listningarna visar etablerade lokala researrangörer, och varje bokning går via GetYourGuide.' },
       { title: 'Autentiska upplevelser', text: 'Varje aktivitet är utvald för den sortens detaljer man inte kan fejka.' },

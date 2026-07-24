@@ -11,7 +11,7 @@ import type { Destination } from '../data/destinations';
 type CategoryT = { name: string; description: string };
 type CategoryMap = Record<string, CategoryT>;
 
-type DestinationT = { name: string; tagline: string; description: string; access: string; bestFor: string };
+type DestinationT = { name: string; tagline: string; description: string; why: string; access: string; bestFor: string };
 type DestinationMap = Record<string, DestinationT>;
 type ActivityT = { title: string; description: string; highlights: string[]; duration: string; difficulty?: string; category: string };
 type ActivityMap = Record<string, ActivityT>;
@@ -111,6 +111,7 @@ export function localizeDestination(dest: Destination, lang: Lang): Destination 
     name: t.name,
     tagline: t.tagline,
     description: t.description,
+    why: t.why ?? dest.why,
     access: t.access,
     bestFor: t.bestFor,
   };

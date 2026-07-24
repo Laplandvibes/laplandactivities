@@ -189,10 +189,10 @@ const en: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Destinations in Lapland & Kuusamo · LaplandActivities',
-    metaDescription: 'Eight iconic destinations in Finnish Lapland and Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio and Tornio. Activities, operators and lodging.',
+    metaDescription: 'Ten iconic destinations in Finnish Lapland and Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio and Tornio.',
     kicker: 'Where to Go',
     h1: 'Destinations',
-    lead: 'Eight iconic destinations across Lapland and neighbouring Kuusamo, each with its own character and operator network.',
+    lead: 'Ten iconic destinations across Lapland and neighbouring Kuusamo, each with its own character and operator network.',
     activitiesLabel: 'activities',
     explore: 'Explore',
     gygTitle: 'Most-booked Lapland tours',
@@ -239,7 +239,7 @@ const en: SectionCopy = {
       yllas: [
         { tip: 'Ylläs has some of the darkest, clearest aurora skies in Finland.', icon: '✨' },
         { tip: 'Äkäslompolo side is quieter; Ylläsjärvi has the bars.', icon: '🏔️' },
-        { tip: "The 330 km cross-country network is Finland's best; mid-March is sweet.", icon: '🎿' },
+        { tip: "The 300 km cross-country network is one of Finland's best; mid-March is sweet.", icon: '🎿' },
       ],
       saariselka: [
         { tip: 'Kiilopää smoke sauna runs year-round. Book the afternoon slot.', icon: '🧖' },
@@ -265,16 +265,27 @@ const en: SectionCopy = {
         { tip: 'Icebreaker Sampo runs Dec–Apr only. Book the moment dates open.', icon: '🚢' },
         { tip: 'SnowCastle is rebuilt annually with a new theme.', icon: '🏰' },
         { tip: 'Green Zone Golf crosses the Finland-Sweden border mid-round.', icon: '⛳' },
+        { tip: 'Sweden is an hour behind Finland: shops in Haparanda open "late" and close "late".', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: 'The amethyst mine snow train runs in winter; in summer you walk up Lampivaara.', icon: '💎' },
+        { tip: 'Isokuru gorge stairs are open snow-free season only; in winter go around via Uhriharju.', icon: '🥾' },
+        { tip: 'Luosto is the calmer village; Pyhä has the bigger slopes and more restaurants.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: 'One Santa Claus Express departure a day continues past Rovaniemi to Kemijärvi.', icon: '🚂' },
+        { tip: 'Large wooden sculptures from the annual carving week stand around town all year.', icon: '🪵' },
+        { tip: 'Pyhä is 50 km away, so you can day-trip to the fells from a lakeside base.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'About · LaplandActivities',
-    metaDescription: 'LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across eight destinations in and around Finnish Lapland.',
+    metaDescription: 'LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across ten destinations in and around Finnish Lapland.',
     eyebrow: 'About',
     h1: 'A Finnish Lapland activities guide',
     para1: 'LaplandActivities is the activities spoke of the #LaplandVibes ecosystem, a network of independent guides covering accommodation, food, nature, transport and tours across Finnish Lapland.',
-    para2: 'The site routes travellers to hand-picked local operators across eight destinations, from snowmobile safaris in Saariselkä to salmon fishing on the Tornionjoki river. Every booking goes through GetYourGuide so you get instant confirmation and free cancellation up to 24 hours on most tours.',
+    para2: 'The site routes travellers to hand-picked local operators across ten destinations, from snowmobile safaris in Saariselkä to salmon fishing on the Tornionjoki river. Every booking goes through GetYourGuide so you get instant confirmation and free cancellation up to 24 hours on most tours.',
     pillars: [
       { title: 'Real operators', text: 'Listings feature established local operators, and every booking runs through GetYourGuide.' },
       { title: 'Authentic experiences', text: 'Each activity is chosen for the kind of detail you cannot fake.' },

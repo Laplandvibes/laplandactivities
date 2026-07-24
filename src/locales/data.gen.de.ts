@@ -47,56 +47,80 @@ const d: LangData = {
       "tagline": "Die offizielle Heimatstadt des Weihnachtsmanns",
       "description": "Die Hauptstadt Lapplands und das Tor zu arktischen Abenteuern. Hier finden Sie das Weihnachtsmanndorf, hervorragende Verkehrsverbindungen und eine große Auswahl an Winter- und Sommeraktivitäten.",
       "access": "Direktflug ab Helsinki (1 Std. 15)",
-      "bestFor": "Erste Reisen und Familien"
+      "bestFor": "Erste Reisen und Familien",
+      "why": "In Rovaniemi sitzt Lapplands Infrastruktur: internationaler Flughafen, Endstation des Nachtzugs und die größte Tourenauswahl der Region. Neben dem Weihnachtsmanndorf warten das Arktikum-Museum am Flussufer, die Pisten des Ounasvaara direkt über der Stadt und Dutzende Husky-, Rentier- und Polarlicht-Anbieter im Umkreis von 20 Minuten. Ideal für Erstbesucher und Familien; das kostenlose Polarkreis-Zertifikat gibt es im Postamt des Weihnachtsmanns."
     },
     "levi": {
       "name": "Levi",
       "tagline": "Finnlands größtes Skigebiet",
-      "description": "Ein erstklassiges Skigebiet mit 43 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten.",
+      "description": "Ein erstklassiges Skigebiet mit 44 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten.",
       "access": "Flug nach Kittilä (15 Min. mit dem Auto)",
-      "bestFor": "Skifahrer und aktive Reisende"
+      "bestFor": "Skifahrer und aktive Reisende",
+      "why": "Levi packt Finnlands größtes Skigebiet, 44 Pisten und 26 Lifte samt zwei Gondeln, in ein einziges fußläufiges Dorf am Fuß des Levitunturi. Jeden November eröffnet hier der alpine Weltcup seine Slalomsaison, und nach Liftschluss zieht die Menge ins Après-Ski des Hullu Poro. Perfekt für Skifahrer und Gruppen, die Restaurants und Nachtleben in Gehweite wollen; im Sommer bedient die Gondel den Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Finnlands längste Pisten",
       "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km. Ein ruhigeres, authentischeres Lappland-Erlebnis mit dem Nationalpark Pallas-Yllästunturi.",
       "access": "Flug nach Kittilä (35 Min. mit dem Auto)",
-      "bestFor": "Naturliebhaber und erfahrene Skifahrer"
+      "bestFor": "Naturliebhaber und erfahrene Skifahrer",
+      "why": "Ylläs besteht aus zwei ruhigen Dörfern, Äkäslompolo und Ylläsjärvi, auf beiden Seiten eines großen Fjälls: zusammen 62 Pisten und mit über drei Kilometern die längsten Abfahrten Finnlands. Drumherum liegen rund 300 km gespurte Loipen bis in den Nationalpark Pallas-Yllästunturi. Die richtige Wahl statt Levi für dunklen Polarlichthimmel, Nationalpark-Stille und lange Skitage; Äkäslompolo ist die ruhigere Seite, in Ylläsjärvi sind die Bars."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Tor zum Nationalpark Urho Kekkonen",
       "description": "Das nördlichste Skigebiet Finnlands, am Rand einer der größten Wildnisgebiete Europas. Berühmt für die Nordlichtbeobachtung, das Goldwaschen und die legendäre Rauchsauna von Kiilopää.",
       "access": "Flug nach Ivalo (30 Min. mit dem Auto)",
-      "bestFor": "Wildnissuchende und Nordlichtjäger"
+      "bestFor": "Wildnissuchende und Nordlichtjäger",
+      "why": "Saariselkä liegt am Rand des Urho-Kekkonen-Nationalparks; markierte Wege und offene Wildnishütten beginnen direkt im Dorf. So weit im Norden stehen die Polarlicht-Chancen von September bis April gut, dazu kommen Goldwaschen in Tankavaara, wo jeder Fund Ihnen gehört, und die Rauchsauna von Kiilopää mit anschließendem Bad im Schnee. Am besten für Reisende, denen Wildnis vor Service geht."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Herz der Sami-Kultur",
       "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami. Hier finden Sie das Siida-Museum und unberührte Natur.",
       "access": "Flug nach Ivalo (40 Min. mit dem Auto)",
-      "bestFor": "Kulturentdecker und Fotografen"
+      "bestFor": "Kulturentdecker und Fotografen",
+      "why": "Inari ist Sitz des finnischen Sámi-Parlaments und der beste Ort, lebendige Sámi-Kultur zu erleben: erst das Siida-Museum, im Sommer dann eine Bootsfahrt über den Inarisee vorbei an der heiligen Insel Ukonsaari. Das Dorf ist klein, die Wildnis riesig; zur Wildniskirche von Pielpajärvi wandert man durch alten Kiefernwald. Es belohnt Reisende, die wegen Kultur, Fotografie und Stille kommen."
     },
     "ruka": {
       "name": "Ruka und Kuusamo",
       "tagline": "Finnlands Hauptstadt der Wildnis",
       "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands. Berühmt für Bärenbeobachtung, Rafting und die längste Skisaison. Ruka liegt in Kuusamo, knapp südlich der Grenze Lapplands, mit demselben Schnee und demselben nordischen Winter.",
       "access": "Flug nach Kuusamo (25 Min. mit dem Auto)",
-      "bestFor": "Wanderer, Skifahrer und Tierliebhaber"
+      "bestFor": "Wanderer, Skifahrer und Tierliebhaber",
+      "why": "Ruka ist ein kompaktes Pistendorf mit 41 Pisten und 22 Liften mitten in Kuusamos Outdoor-Land: Oulanka-Nationalpark, der 82 km lange Karhunkierros und Stromschnellen mit Rafting von Frühjahr bis Herbst. Dank Schneedepot öffnet das Gebiet im Oktober und fährt bis in den Mai, die längste Saison Finnlands. Im Sommer übernehmen Braunbär-Beobachtungsverstecke und der prämierte Bikepark."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Verborgenes Juwel Ostlapplands",
       "description": "Berühmt für die spektakulären schneegekrönten Bäume des Nationalparks Riisitunturi und die gefrorenen Wasserfälle des Korouoma-Canyons. Abseits der ausgetretenen Pfade, pure Wildnis.",
       "access": "Mit dem Auto ab Rovaniemi (2 Std.) oder Ruka (1 Std.)",
-      "bestFor": "Entdecker abseits der ausgetretenen Pfade"
+      "bestFor": "Entdecker abseits der ausgetretenen Pfade",
+      "why": "Posios Trümpfe stammen aus der Natur: die vom Frost zu Skulpturen gebogenen Tykky-Bäume des Riisitunturi und die bis zu 40 Meter hohen gefrorenen Wasserfälle der Korouoma-Schlucht. Dazu kommt Pentik, die nördlichste Keramikfabrik der Welt mit Galerien und Outlet. Ein Auto ist nötig; Posio passt gut zu einer Ruka- oder Rovaniemi-Reise, und die Tykky-Bäume sind von Januar bis März am schönsten."
     },
     "tornio": {
-      "name": "Tornio und Kemi",
+      "name": "Tornio, Haparanda und Kemi",
       "tagline": "Arktische Abenteuer an der Grenze",
       "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Kreuzfahrt auf dem Eisbrecher Sampo, dem größten Schneeschloss der Welt und dem besten Lachsfluss Europas.",
       "access": "Flug nach Kemi (15 Min. mit dem Auto)",
-      "bestFor": "Einzigartige Erlebnisse und Familienspaß"
+      "bestFor": "Einzigartige Erlebnisse und Familienspaß",
+      "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und das jeden Winter neu gebaute SnowCastle. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Netz gefischt."
+    },
+    "pyha-luosto": {
+      "name": "Pyhä-Luosto",
+      "tagline": "Zwillingsfjälls im ältesten Nationalpark",
+      "description": "Zwei Fjälldörfer, Pyhä und Luosto, verbunden durch eine uralte Fjällkette, dazwischen der Nationalpark Pyhä-Luosto. Skifahren, Schneeschuhwandern und eigene Amethyste am Lampivaara graben.",
+      "access": "Flug nach Rovaniemi (1 Std. 30 Min. Fahrt)",
+      "bestFor": "Nationalpark-Skifahrer und Familien",
+      "why": "Der Nationalpark zwischen den beiden Dörfern ist der eigentliche Grund: Isokuru, Finnlands tiefste Schlucht mit rund 220 Metern, Bohlenwege durch alten Wald und weite Blicke von Lapplands ältester Fjällkette. Auf dem Lampivaara in Luosto graben Sie in Europas einziger aktiver Amethystmine Ihren eigenen Stein und behalten ihn; im Winter zieht ein beheizter Schneezug hinauf. Zu Pyhäs Pisten gehört Huttu-Ukko, eine Buckelpiste mit Weltcup-Vergangenheit, Familien finden sanftes Gelände ohne Wartezeiten."
+    },
+    "kemijarvi": {
+      "name": "Kemijärvi",
+      "tagline": "Finnlands nördlichste Stadt",
+      "description": "Finnlands nördlichste Stadt liegt an ihrem eigenen See, wo der Nachtzug Santa Claus Express endet. Eine ruhige Basis für Ost-Lappland, Pyhä nur 50 km entfernt.",
+      "access": "Nachtzug ab Helsinki oder Auto ab Rovaniemi (1 Std.)",
+      "bestFor": "Bahnreisende und Ruhesuchende",
+      "why": "Kemijärvi ist die Stadt, in der der Santa Claus Express endet: Eine Abfahrt pro Tag fährt über Rovaniemi hinaus, Sie schlafen im Zug und wachen am See auf. Seit 1985 richtet die Stadt eine internationale Holzbildhauerwoche aus, deren große Skulpturen das ganze Jahr im Stadtbild stehen. Am Ufer von Uitonniemi verbindet Santa’s Little Village ein kleines Blockhotel mit Weihnachtsmann-Besuchen und Polarlicht-Touren, der Skiberg Suomu ist 40 Autominuten entfernt."
     }
   },
   "difficulty": {
@@ -334,10 +358,10 @@ const d: LangData = {
       "category": "Essen und Trinken"
     },
     "lev-ski-resort": {
-      "title": "Skigebiet Levi, 43 Pisten",
-      "description": "Das größte Skigebiet Finnlands mit 43 Pisten, 230 km Langlaufloipen und einem erstklassigen Snowpark. Nachtskifahren unter dem Nordlicht.",
+      "title": "Skigebiet Levi, 44 Pisten",
+      "description": "Das größte Skigebiet Finnlands mit 44 Pisten, 230 km Langlaufloipen und einem erstklassigen Snowpark. Nachtskifahren unter dem Nordlicht.",
       "highlights": [
-        "43 Pisten",
+        "44 Pisten",
         "Snowpark",
         "Nachtskifahren"
       ],
@@ -479,11 +503,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Skigebiet Ylläs, längste Pisten",
-      "description": "Die längsten Pisten Finnlands, 3 km auf beiden Seiten des Fjälls Ylläs. 63 Pisten, eine Gondelbahn und 330 km gespurte Langlaufloipen durch den Nationalpark.",
+      "description": "Die längsten Pisten Finnlands, 3 km auf beiden Seiten des Fjälls Ylläs. 62 Pisten, eine Gondelbahn und 300 km gespurte Langlaufloipen durch den Nationalpark.",
       "highlights": [
         "Längste Piste 3 km",
-        "63 Pisten",
-        "330 km Langlauf"
+        "62 Pisten",
+        "300 km Langlauf"
       ],
       "duration": "Day pass",
       "difficulty": "Moderate",
@@ -575,9 +599,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Langlauf in Pallas",
-      "description": "Laufen Sie auf 330 km gespurten Loipen durch den Nationalpark Pallas-Yllästunturi. Strecken für alle Niveaus, von sanften Runden am See bis zu Herausforderungen auf dem Fjäll.",
+      "description": "Laufen Sie auf 300 km gespurten Loipen durch den Nationalpark Pallas-Yllästunturi. Strecken für alle Niveaus, von sanften Runden am See bis zu Herausforderungen auf dem Fjäll.",
       "highlights": [
-        "Netz von 330 km",
+        "Netz von 300 km",
         "Nationalpark-Landschaften",
         "Ausrüstungsverleih"
       ],
@@ -755,9 +779,9 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Skigebiet Ruka",
-      "description": "39 Pisten, die längste Skisaison Finnlands (Oktober-Mai) und Langlaufloipen auf Weltcup-Niveau. Nachtskifahren verfügbar.",
+      "description": "41 Pisten, die längste Skisaison Finnlands (Oktober-Mai) und Langlaufloipen auf Weltcup-Niveau. Nachtskifahren verfügbar.",
       "highlights": [
-        "39 Pisten",
+        "41 Pisten",
         "Längste Saison",
         "Nachtskifahren"
       ],
@@ -944,6 +968,105 @@ const d: LangData = {
       "duration": "2-3 Std.",
       "difficulty": "Easy",
       "category": "Essen und Trinken"
+    },
+    "pyh-amethyst-mine": {
+      "title": "Amethystmine Lampivaara",
+      "description": "Graben Sie Ihren eigenen Schmuckstein in Europas einziger aktiver Amethystmine auf dem Gipfel des Lampivaara in Luosto und behalten Sie einen Stein in Handflächengröße. Im Winter fährt der beheizte Amethyst-Pendolino-Schneezug hinauf; im Sommer ist es ein Panoramaweg mit Nationalparkblick.",
+      "highlights": [
+        "Eigenen Amethyst graben und behalten",
+        "Beheizter Schneezug im Winter",
+        "Blick über den Nationalpark"
+      ],
+      "duration": "2-3 Std.",
+      "category": "Kultur und Erbe"
+    },
+    "pyh-national-park": {
+      "title": "Nationalpark Pyhä-Luosto und Isokuru-Schlucht",
+      "description": "Wandern Sie zwischen den beiden Fjälldörfern durch Finnlands tiefste Schlucht: Isokuru fällt rund 220 Meter zwischen die Fjälls ab, Treppen und Bohlenwege führen am Uhriharju-Grat und altem Wald vorbei. Freier Eintritt, gut markierte Wege und Tagesrouten ab Pyhä wie ab Luosto.",
+      "highlights": [
+        "Isokuru, Finnlands tiefste Schlucht",
+        "Freier Eintritt",
+        "Wege ab beiden Dörfern"
+      ],
+      "duration": "3-6 Std.",
+      "category": "Sommerabenteuer"
+    },
+    "pyh-ski-resort": {
+      "title": "Skigebiet Pyhä",
+      "description": "Ein Skigebiet am Nationalpark mit 280 Metern Höhenunterschied und Pisten für beide Enden der Skala: sanftes Familiengelände auf der einen Seite, auf der anderen Huttu-Ukko, eine Buckelpiste mit Weltcup-Geschichte. Liftkarten und Verleih vor Ort.",
+      "highlights": [
+        "280 m Höhenunterschied",
+        "Weltcup-Buckelpiste",
+        "Familienfreundliches Gelände"
+      ],
+      "duration": "Day pass",
+      "category": "Wintersport"
+    },
+    "pyh-aurora-snowshoe": {
+      "title": "Polarlicht-Schneeschuhtour in Luosto",
+      "description": "Stapfen Sie mit Schneeschuhen aus dem Dorflicht in den stillen Wald unter den Fjälls und warten Sie am Feuer mit heißen Getränken auf das Polarlicht. Luosto ist so klein, dass echte Dunkelheit wenige Minuten von der Hoteltür beginnt.",
+      "highlights": [
+        "Dunkler Himmel nahe dem Dorf",
+        "Schneeschuhe und Ausrüstung inklusive",
+        "Lagerfeuer und heiße Getränke"
+      ],
+      "duration": "3 Std.",
+      "category": "Nordlichter"
+    },
+    "kem-ice-fishing": {
+      "title": "Eisangeln auf dem Kemijärvi-See",
+      "description": "Bohren Sie ein Loch ins Eis des stadteigenen Sees und angeln Sie mit einem lokalen Guide Barsche, heiße Getränke inklusive. Einfaches Eisangeln braucht in Finnland keine Lizenz, und der See beginnt direkt an den Uferstraßen: Eisangeln in Lappland ganz ohne Transferzeit.",
+      "highlights": [
+        "See direkt am Stadtufer",
+        "Keine Lizenz nötig",
+        "Heiße Getränke auf dem Eis"
+      ],
+      "duration": "3 Std.",
+      "category": "Angeln & Eisangeln"
+    },
+    "kem-husky-safari": {
+      "title": "Husky-Safari zum Selbstfahren",
+      "description": "Lenken Sie Ihren eigenen Schlitten über eine 5-km-Waldrunde in kleiner Gruppe und besuchen Sie danach die Hunde und ihre Betreuer auf der Farm. Es fahren nur wenige Schlitten zugleich, also echte Anleitung statt Warteschlange.",
+      "highlights": [
+        "Eigenen Schlitten lenken",
+        "Nur kleine Gruppen",
+        "Danach die Hunde treffen"
+      ],
+      "duration": "2 Std.",
+      "category": "Tiererlebnisse"
+    },
+    "kem-suomu-ski": {
+      "title": "Skigebiet Suomu (Suomutunturi)",
+      "description": "Ein ruhiges Fjällgebiet am Polarkreis, rund 40 Minuten von Kemijärvi: 10 lange, gut profilierte Pisten mit 1,7 km längster Abfahrt, dazu 75 km Loipen, davon 25 km beleuchtet. Skibetrieb seit 1965, die Liftschlangen sind berühmt kurz.",
+      "highlights": [
+        "10 lange Pisten, längste 1,7 km",
+        "75 km Loipen",
+        "Am Polarkreis"
+      ],
+      "duration": "Day pass",
+      "category": "Wintersport"
+    },
+    "kem-santas-village": {
+      "title": "Santa’s Little Village am Kemijärvi-See",
+      "description": "Ein kleines Blockhoteldorf am Ufer von Uitonniemi, wo Sie den Weihnachtsmann ohne Freizeitpark-Trubel treffen. Im Winter gibt es Polarlicht-Ausfahrten im beheizten Schlitten und Schneeschuhverleih, im Sommer Ruderboote und SUP-Boards auf dem See. Buchung direkt beim Dorf.",
+      "highlights": [
+        "Weihnachtsmann am See treffen",
+        "Polarlicht-Ausfahrten im Winter",
+        "Rudern und SUP im Sommer"
+      ],
+      "duration": "1-2 Std.",
+      "category": "Kultur und Erbe"
+    },
+    "tor-haparanda-shopping": {
+      "title": "Shoppingtag über die Grenze nach Haparanda",
+      "description": "Überqueren Sie die finnisch-schwedische Grenze zu Fuß mitten in der Stadt und verbringen Sie einen Einkaufstag auf beiden Seiten einer Straße. IKEA Haparanda liegt direkt am Übergang, die schwedische Seite ergänzt Supermärkte und Outlets; Preise und Sortimente unterscheiden sich zwischen den Ländern, genau das ist der Reiz. Denken Sie bei den Öffnungszeiten an die eine Stunde Zeitunterschied.",
+      "highlights": [
+        "Zu Fuß über die Grenze",
+        "IKEA Haparanda",
+        "Zwei Länder, eine Stadt"
+      ],
+      "duration": "2-4 Std.",
+      "category": "Kultur und Erbe"
     }
   }
 }

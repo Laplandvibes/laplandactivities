@@ -331,7 +331,7 @@ const de: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: arktische Touren in Lappland',
-    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 8 Reisezielen in Lappland und Umgebung über GetYourGuide buchen.',
+    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 10 Reisezielen in Lappland und Umgebung über GetYourGuide buchen.',
     ogTitle: 'LaplandActivities: handverlesene arktische Erlebnisse',
     categoriesKicker: 'Was zu tun ist',
     categoriesH2: 'Wählen Sie Ihr Abenteuer',
@@ -422,10 +422,10 @@ const de: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Reiseziele in Lappland & Kuusamo · LaplandActivities',
-    metaDescription: 'Acht ikonische Reiseziele in Lappland und Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio und Tornio. Aktivitäten, Anbieter und Unterkünfte.',
+    metaDescription: 'Zehn ikonische Reiseziele in Lappland und Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio und Tornio.',
     kicker: 'Wohin reisen',
     h1: 'Reiseziele',
-    lead: 'Acht ikonische Reiseziele in Lappland und im benachbarten Kuusamo, jedes mit eigenem Charakter und Anbieternetzwerk.',
+    lead: 'Zehn ikonische Reiseziele in Lappland und im benachbarten Kuusamo, jedes mit eigenem Charakter und Anbieternetzwerk.',
     activitiesLabel: 'Aktivitäten',
     explore: 'Entdecken',
     gygTitle: 'Meistgebuchte Lappland-Touren',
@@ -472,7 +472,7 @@ const de: SectionCopy = {
       yllas: [
         { tip: 'Ylläs hat einen der dunkelsten, klarsten Nordlicht-Himmel Finnlands.', icon: '✨' },
         { tip: 'Die Seite Äkäslompolo ist ruhiger; in Ylläsjärvi sind die Bars.', icon: '🏔️' },
-        { tip: 'Das 330 km lange Langlauf-Netz ist Finnlands bestes; Mitte März ist ideal.', icon: '🎿' },
+        { tip: 'Das 300 km lange Langlauf-Netz gehört zu Finnlands besten; Mitte März ist ideal.', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'Die Rauchsauna in Kiilopää läuft ganzjährig. Buchen Sie das Nachmittagsfenster.', icon: '🧖' },
@@ -498,16 +498,27 @@ const de: SectionCopy = {
         { tip: 'Der Eisbrecher Sampo fährt nur von Dezember bis April, buchen Sie, sobald die Termine geöffnet sind.', icon: '🚢' },
         { tip: 'Das SnowCastle wird jedes Jahr mit einem neuen Thema neu errichtet.', icon: '🏰' },
         { tip: 'Der Green Zone Golf führt mitten in der Runde über die finnisch-schwedische Grenze.', icon: '⛳' },
+        { tip: 'Schweden ist Finnland eine Stunde hinterher: Läden in Haparanda öffnen und schließen "später".', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: 'Der Schneezug zur Amethystmine fährt im Winter; im Sommer geht man zu Fuß auf den Lampivaara.', icon: '💎' },
+        { tip: 'Die Treppen im Isokuru sind nur in der schneefreien Zeit offen; im Winter über den Uhriharju.', icon: '🥾' },
+        { tip: 'Luosto ist das ruhigere Dorf; Pyhä hat die größeren Pisten und mehr Restaurants.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: 'Eine Santa-Claus-Express-Abfahrt pro Tag fährt über Rovaniemi hinaus bis Kemijärvi.', icon: '🚂' },
+        { tip: 'Die großen Holzskulpturen der jährlichen Bildhauerwoche stehen das ganze Jahr in der Stadt.', icon: '🪵' },
+        { tip: 'Pyhä liegt 50 km entfernt, Tagesausflüge in die Fjälls gehen also vom Seeufer aus.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'Über uns · LaplandActivities',
-    metaDescription: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in acht Reisezielen in und um Finnisch-Lappland.',
+    metaDescription: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in zehn Reisezielen in und um Finnisch-Lappland.',
     eyebrow: 'Über uns',
     h1: 'Ein Aktivitäten-Guide für Finnisch-Lappland',
     para1: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, ein Netzwerk unabhängiger Reiseführer für Unterkunft, Essen, Natur, Transport und Touren in Finnisch-Lappland.',
-    para2: 'Die Seite vermittelt Reisende an handverlesene lokale Anbieter in acht Reisezielen, von der Schneemobiltour in Saariselkä bis zum Lachsfischen am Tornionjoki. Jede Buchung läuft über GetYourGuide, daher erhalten Sie sofortige Bestätigung und bei den meisten Touren kostenlose Stornierung bis 24 Stunden vor Beginn.',
+    para2: 'Die Seite vermittelt Reisende an handverlesene lokale Anbieter in zehn Reisezielen, von der Schneemobiltour in Saariselkä bis zum Lachsfischen am Tornionjoki. Jede Buchung läuft über GetYourGuide, daher erhalten Sie sofortige Bestätigung und bei den meisten Touren kostenlose Stornierung bis 24 Stunden vor Beginn.',
     pillars: [
       { title: 'Echte Anbieter', text: 'Die Listings führen etablierte lokale Anbieter, und jede Buchung läuft über GetYourGuide.' },
       { title: 'Authentische Erlebnisse', text: 'Jede Aktivität ist nach der Art von Detail ausgewählt, die sich nicht vortäuschen lässt.' },

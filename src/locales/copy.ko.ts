@@ -303,7 +303,7 @@ const ko: SectionCopy = {
   activityCard: { findBook: '찾아서 예약', planVisit: '방문 계획하기' },
   home: {
     metaTitle: 'LaplandActivities: 라플란드의 엄선한 북극 투어 예약',
-    metaDescription: '스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 라플란드와 그 주변 8개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.',
+    metaDescription: '스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 라플란드와 그 주변 10개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.',
     ogTitle: 'LaplandActivities: 엄선한 북극 체험',
     categoriesKicker: '무엇을 할까', categoriesH2: '어드벤처를 선택하세요',
     categoriesLead: '북극을 체험하는 8가지 방법, 카테고리를 고르면 엄선한 투어 운영자로 안내해드립니다.',
@@ -376,9 +376,9 @@ const ko: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: '라플란드와 쿠사모 목적지 · LaplandActivities',
-    metaDescription: '라플란드와 쿠사모의 8개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 포시오, 토르니오. 액티비티, 운영자, 숙박.',
+    metaDescription: '라플란드와 쿠사모의 10개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 피하-루오스토, 케미야르비, 포시오, 토르니오.',
     kicker: '어디로 갈까', h1: '목적지',
-    lead: '라플란드와 이웃한 쿠사모의 8개 대표 목적지, 각각 고유한 개성과 운영자 네트워크를 갖추고 있습니다.',
+    lead: '라플란드와 이웃한 쿠사모의 10개 대표 목적지, 각각 고유한 개성과 운영자 네트워크를 갖추고 있습니다.',
     activitiesLabel: '액티비티', explore: '둘러보기',
     gygTitle: '가장 많이 예약된 라플란드 투어', gygEyebrow: '모든 목적지에서',
   },
@@ -412,7 +412,7 @@ const ko: SectionCopy = {
       yllas: [
         { tip: '윌래스는 라플란드에서 손꼽히게 어둡고 맑은 오로라 하늘을 자랑합니다.', icon: '✨' },
         { tip: '아카슬롬폴로 쪽이 더 조용하고, 윌래스예르비에는 술집이 있습니다.', icon: '🏔️' },
-        { tip: '330km의 크로스컨트리 코스망은 라플란드 최고, 3월 중순이 최적기.', icon: '🎿' },
+        { tip: '300km의 크로스컨트리 코스망은 라플란드 최고, 3월 중순이 최적기.', icon: '🎿' },
       ],
       saariselka: [
         { tip: '키일로패 스모크 사우나는 연중 운영, 오후 시간대를 예약하세요.', icon: '🧖' },
@@ -438,15 +438,26 @@ const ko: SectionCopy = {
         { tip: '쇄빙선 Sampo는 12-4월에만 운영, 예약 시작 즉시 예약하세요.', icon: '🚢' },
         { tip: 'SnowCastle은 매년 새 테마로 재건됩니다.', icon: '🏰' },
         { tip: 'Green Zone Golf는 라운드 중 핀란드-스웨덴 국경을 넘습니다.', icon: '⛳' },
+        { tip: '스웨덴은 핀란드보다 1시간 늦습니다. 하파란다 상점은 "늦게" 열고 "늦게" 닫습니다.', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: '자수정 광산의 눈 기차는 겨울에만 운행하고, 여름엔 람피바라를 걸어 오릅니다.', icon: '💎' },
+        { tip: '이소쿠루 계단은 눈이 없는 계절에만 열립니다. 겨울엔 우흐리하리우로 우회하세요.', icon: '🥾' },
+        { tip: '루오스토가 더 조용한 마을이고, 피하에 더 큰 슬로프와 식당이 많습니다.', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: '산타클로스 익스프레스는 하루 한 편이 로바니에미를 지나 케미야르비까지 갑니다.', icon: '🚂' },
+        { tip: '연례 목조각 주간의 대형 작품들이 일 년 내내 시내에 서 있습니다.', icon: '🪵' },
+        { tip: '피하가 50km 거리라 호숫가 거점에서 산으로 당일 여행이 가능합니다.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: '소개 · LaplandActivities',
-    metaDescription: 'LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드와 그 주변 8개 목적지의 엄선한 북극 체험.',
+    metaDescription: 'LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드와 그 주변 10개 목적지의 엄선한 북극 체험.',
     eyebrow: '소개', h1: '라플란드 액티비티 가이드',
     para1: 'LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드의 숙박, 음식, 자연, 교통, 투어를 다루는 독립 가이드 네트워크입니다.',
-    para2: '이 사이트는 8개 목적지에서 엄선한 현지 운영자로 여행자를 안내합니다, 사리셀카의 스노모빌 사파리부터 토르니오요키의 연어 낚시까지. 모든 예약은 GetYourGuide를 통해 이루어져 즉시 확정과 대부분 24시간 전 무료 취소가 제공됩니다.',
+    para2: '이 사이트는 10개 목적지에서 엄선한 현지 운영자로 여행자를 안내합니다, 사리셀카의 스노모빌 사파리부터 토르니오요키의 연어 낚시까지. 모든 예약은 GetYourGuide를 통해 이루어져 즉시 확정과 대부분 24시간 전 무료 취소가 제공됩니다.',
     pillars: [
       { title: '실제 운영자', text: '현지에서 자리 잡은 운영자를 소개하며, 모든 예약은 GetYourGuide를 통해 진행됩니다.' },
       { title: '진정한 체험', text: '각 액티비티는 위조할 수 없는 세부사항을 기준으로 선정했습니다.' },

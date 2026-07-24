@@ -331,7 +331,7 @@ const zhCN: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: 在芬兰拉普兰预订精选北极行程',
-    metaDescription: '雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰及周边8个目的地通过GetYourGuide与可信本地运营商预订精选活动。',
+    metaDescription: '雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰及周边10个目的地通过GetYourGuide与可信本地运营商预订精选活动。',
     ogTitle: 'LaplandActivities: 精选北极体验',
     categoriesKicker: '可以做什么',
     categoriesH2: '选择您的冒险',
@@ -422,10 +422,10 @@ const zhCN: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: '拉普兰与库萨莫目的地 · LaplandActivities',
-    metaDescription: '芬兰拉普兰与库萨莫的八个标志性目的地:罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、波西奥与托尔尼奥。活动、运营商与住宿。',
+    metaDescription: '芬兰拉普兰与库萨莫的十个标志性目的地:罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、皮哈-卢奥斯托、凯米耶尔维、波西奥与托尔尼奥。',
     kicker: '该去哪里',
     h1: '目的地',
-    lead: '拉普兰与邻近的库萨莫八个标志性目的地,每个都有自己的气质与运营商网络。',
+    lead: '拉普兰与邻近的库萨莫十个标志性目的地,每个都有自己的气质与运营商网络。',
     activitiesLabel: '项目',
     explore: '探索',
     gygTitle: '拉普兰预订最多的行程',
@@ -472,7 +472,7 @@ const zhCN: SectionCopy = {
       yllas: [
         { tip: '于拉斯拥有芬兰数一数二黑暗清澈的极光夜空。', icon: '✨' },
         { tip: 'Äkäslompolo一侧更安静，酒吧都在Ylläsjärvi一侧。', icon: '🏔️' },
-        { tip: '330公里的越野滑雪道是芬兰最好的，三月中旬最佳。', icon: '🎿' },
+        { tip: '300公里的越野滑雪道是芬兰数一数二的，三月中旬最佳。', icon: '🎿' },
       ],
       saariselka: [
         { tip: 'Kiilopää烟桑拿全年开放，建议预订下午场。', icon: '🧖' },
@@ -498,16 +498,27 @@ const zhCN: SectionCopy = {
         { tip: '破冰船Sampo仅在12至4月航行，一开放预订就尽快下单。', icon: '🚢' },
         { tip: 'SnowCastle每年以全新主题重建。', icon: '🏰' },
         { tip: 'Green Zone Golf球场会在一轮中跨越芬兰-瑞典边境。', icon: '⛳' },
+        { tip: '瑞典比芬兰晚一小时：哈帕兰达的商店"晚"开门也"晚"关门。', icon: '🕐' },
+      ],
+      'pyha-luosto': [
+        { tip: '通往紫水晶矿的雪地列车冬季运行；夏季步行登上 Lampivaara。', icon: '💎' },
+        { tip: 'Isokuru 的阶梯只在无雪季节开放；冬天请绕行 Uhriharju。', icon: '🥾' },
+        { tip: '卢奥斯托更安静；皮哈雪道更大、餐厅更多。', icon: '🏔️' },
+      ],
+      kemijarvi: [
+        { tip: '圣诞老人特快每天有一班驶过罗瓦涅米，直达凯米耶尔维。', icon: '🚂' },
+        { tip: '一年一度木雕周的大型作品全年伫立城中。', icon: '🪵' },
+        { tip: '皮哈仅 50 公里，可以从湖畔大本营当日往返群山。', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: '关于 · LaplandActivities',
-    metaDescription: 'LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰及周边八个目的地的精选北极体验。',
+    metaDescription: 'LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰及周边十个目的地的精选北极体验。',
     eyebrow: '关于',
     h1: '一份芬兰拉普兰活动指南',
     para1: 'LaplandActivities是#LaplandVibes生态中的活动分支，一个独立指南网络,涵盖芬兰拉普兰的住宿、美食、自然、交通与行程。',
-    para2: '本网站把旅客引向八个目的地的精选本地运营商,从萨利色尔卡的雪地摩托安全游到Tornionjoki的鲑鱼钓鱼。所有预订均通过GetYourGuide完成,可获得即时确认,并在大多数行程上享有24小时之前免费取消。',
+    para2: '本网站把旅客引向十个目的地的精选本地运营商,从萨利色尔卡的雪地摩托安全游到Tornionjoki的鲑鱼钓鱼。所有预订均通过GetYourGuide完成,可获得即时确认,并在大多数行程上享有24小时之前免费取消。',
     pillars: [
       { title: '真实的运营商', text: '我们展示扎根本地的成熟运营商，所有预订均通过 GetYourGuide 完成。' },
       { title: '真实体验', text: '每个活动都因无法伪装的细节而入选。' },

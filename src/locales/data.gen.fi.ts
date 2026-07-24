@@ -47,56 +47,80 @@ const d: LangData = {
       "tagline": "Joulupukin virallinen kotikaupunki",
       "description": "Lapin pääkaupunki ja portti arktisiin seikkailuihin. Täältä löytyvät Joulupukin Pajakylä, erinomaiset kulkuyhteydet ja runsaasti talvi- ja kesäaktiviteetteja.",
       "access": "Suorat lennot Helsingistä (1 h 20 min)",
-      "bestFor": "Ensimmäiset matkat ja perheet"
+      "bestFor": "Ensimmäiset matkat ja perheet",
+      "why": "Rovaniemellä on Lapin infrastruktuuri: kansainvälinen lentokenttä, yöjunan pääteasema ja alueen laajin retkivalikoima. Joulupukin Pajakylän lisäksi täältä löytyvät Arktikum joen rannalta, Ounasvaaran rinteet suoraan kaupungin yllä ja kymmenet husky-, poro- ja revontulitoimijat 20 minuutin säteellä. Se sopii ensikertalaisille ja perheille, joille varaamisen helppous ratkaisee. Hae samalla ilmainen napapiirin ylitystodistus Joulupukin pääpostista."
     },
     "levi": {
       "name": "Levi",
       "tagline": "Suomen suurin hiihtokeskus",
-      "description": "Suomen johtava hiihtokohde, jossa on 43 rinnettä ja 230 km hiihtolatuja. Vilkas after ski Hullu Porossa ja ulkoaktiviteetteja ympäri vuoden.",
+      "description": "Suomen johtava hiihtokohde, jossa on 44 rinnettä ja 230 km hiihtolatuja. Vilkas after ski Hullu Porossa ja ulkoaktiviteetteja ympäri vuoden.",
       "access": "Lento Kittilään (15 min ajomatka)",
-      "bestFor": "Hiihtäjät ja aktiiviset matkailijat"
+      "bestFor": "Hiihtäjät ja aktiiviset matkailijat",
+      "why": "Levi pakkaa Suomen suurimman hiihtokeskuksen, 44 rinnettä ja 26 hissiä kahta gondolia myöten, yhteen käveltävään kylään Levitunturin juurelle. Alppihiihdon maailmancupin pujottelukausi avataan täällä joka marraskuu, ja kun hissit sulkeutuvat, väki siirtyy Hullu Poron after skiihin. Sopii laskijoille, porukoille ja kaikille, jotka haluavat ravintolat ja menon kävelymatkan päähän rinteistä; kesällä gondoli palvelee Levi Bike Parkia."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Suomen pisimmät rinteet",
       "description": "Kaksi hiihtokeskusta Ylläs-tunturin molemmin puolin tarjoavat Suomen pisimmät laskut, jopa 3 km. Rauhallisempi ja aidompi Lapin kokemus Pallas-Yllästunturin kansallispuiston kupeessa.",
       "access": "Lento Kittilään (35 min ajomatka)",
-      "bestFor": "Luonnonystävät ja kokeneet hiihtäjät"
+      "bestFor": "Luonnonystävät ja kokeneet hiihtäjät",
+      "why": "Ylläs on kaksi rauhallista kylää, Äkäslompolo ja Ylläsjärvi, saman ison tunturin kahta puolta: yhteensä 62 rinnettä ja Suomen pisimmät, yli kolmen kilometrin laskut. Ympärillä levittäytyy noin 300 km hoidettua latua Pallas-Yllästunturin kansallispuistoon asti. Valitse Ylläs Levin sijaan, jos haluat pimeän revontulitaivaan, kansallispuiston hiljaisuuden ja pitkät hiihtopäivät yöelämän sijaan."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Portti Urho Kekkosen kansallispuistoon",
       "description": "Suomen pohjoisin hiihtokeskus yhden Euroopan suurimman erämaa-alueen reunalla. Tunnettu revontulien tarkkailusta, kullanhuuhdonnasta ja legendaarisesta Kiilopään savusaunasta.",
       "access": "Lento Ivaloon (30 min ajomatka)",
-      "bestFor": "Erämaan ja revontulien etsijät"
+      "bestFor": "Erämaan ja revontulien etsijät",
+      "why": "Saariselkä on Urho Kekkosen kansallispuiston reunalla, ja merkityt reitit ja autiotuvat alkavat suoraan kylästä. Näin pohjoisessa revontulia näkee syyskuusta huhtikuuhun, ja lisäksi täällä on asioita, joita ei etelämpää löydy: Tankavaaran kullanhuuhdonta, jossa jokainen hippu jää omaan taskuun, ja Kiilopään savusauna lumihankikasteineen. Parhaimmillaan matkailijalle, jolle erämaa tulee ensin ja palvelut vasta sitten."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Saamelaiskulttuurin sydän",
       "description": "Yli 3 000 saaren Inarinjärven rannalla sijaitseva Suomen saamelaisten kulttuuripääkaupunki. Täällä ovat Siida-museo ja koskematon erämaa.",
       "access": "Lento Ivaloon (40 min ajomatka)",
-      "bestFor": "Kulttuurin tutkijat ja valokuvaajat"
+      "bestFor": "Kulttuurin tutkijat ja valokuvaajat",
+      "why": "Inari on Saamelaiskäräjien kotipaikka ja paras paikka kohdata elävää saamelaiskulttuuria: aloita Siida-museosta ja jatka kesällä järviristeilylle Inarinjärven pyhän Ukonsaaren ohi. Kylä on pieni ja erämaa sen ympärillä valtava; Pielpajärven erämaakirkolle kävellään vanhan mäntymetsän halki. Inari palkitsee kulkijan, joka tulee kulttuurin, valokuvauksen ja hiljaisuuden takia."
     },
     "ruka": {
       "name": "Ruka ja Kuusamo",
       "tagline": "Suomen pisimmän hiihtokauden koti",
       "description": "Täältä löytyvät legendaarinen Karhunkierros, Oulangan kansallispuisto ja yksi Suomen parhaista hiihtokeskuksista. Tunnettu karhujen tarkkailusta, koskenlaskusta ja pisimmästä hiihtokaudesta. Ruka on Kuusamossa, heti Lapin maakuntarajan eteläpuolella, samaa lunta ja samaa pohjoista talvea.",
       "access": "Lento Kuusamoon (25 min ajomatka)",
-      "bestFor": "Vaeltajat, hiihtäjät ja luonnonystävät"
+      "bestFor": "Vaeltajat, hiihtäjät ja luonnonystävät",
+      "why": "Ruka on tiivis rinnekylä, jossa on 41 rinnettä ja 22 hissiä keskellä Kuusamon retkeilymaastoja: Oulangan kansallispuisto, 82 kilometrin Karhunkierros ja kosket, joilla lasketaan keväästä syksyyn. Säilölumi avaa kauden jo lokakuussa ja hiihto jatkuu toukokuulle, pisimpään koko maassa. Kesällä ohjelma kääntyy karhunkatselukojuihin ja palkittuun bike parkiin, joten vaeltajat saavat täältä yhtä paljon kuin laskijat."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Itä-Lapin kätketty helmi",
       "description": "Tunnettu Riisitunturin kansallispuiston upeista tykkypuista ja Korouoman rotkon jäätyneistä vesiputouksista. Poissa valtareiteiltä, puhdasta erämaata.",
       "access": "Autolla Rovaniemeltä (2 h) tai Rukalta (1 h)",
-      "bestFor": "Vähemmän tunnettujen paikkojen löytäjät"
+      "bestFor": "Vähemmän tunnettujen paikkojen löytäjät",
+      "why": "Posion valtit ovat luonnon omia: Riisitunturin tykkypuut, jotka pakkanen taivuttaa veistoksiksi keskitalvella, ja Korouoman jääputoukset, jotka riippuvat jopa 40-metrisinä rotkon seinämällä. Kun lisäät Pentikin, maailman pohjoisimman keramiikkatehtaan gallerioineen ja tehtaanmyymälöineen, päivä täyttyy kaukana valtareiteiltä. Oma auto tarvitaan; Posio sopii Rukan tai Rovaniemen matkan jatkoksi, ja tykky on parhaimmillaan tammi-maaliskuussa."
     },
     "tornio": {
-      "name": "Tornio ja Kemi",
+      "name": "Tornio, Haaparanta ja Kemi",
       "tagline": "Arktisia rajaseikkailuja",
       "description": "Suomen ja Ruotsin rajakaupunki ja portti ainutlaatuisiin arktisiin elämyksiin. Legendaarinen Sampo-jäänmurtajaristeily, maailman suurin lumilinna ja Euroopan suurin vapaana virtaava lohijoki.",
       "access": "Lento Kemiin (15 min ajomatka)",
-      "bestFor": "Ainutlaatuiset elämykset ja perhematkat"
+      "bestFor": "Ainutlaatuiset elämykset ja perhematkat",
+      "why": "Tornio ja Haaparanta ovat yksi kaupunki kahdessa maassa: rajan ylittää kävellen keskellä kauppakatua, IKEA Haaparanta on heti ylityksen vieressä, ja golfkierros vaihtaa maata ja aikavyöhykettä neljästi. Kemi lisää 25 minuutin päähän Sampo-jäänmurtajan risteilyt ja joka talvi uudelleen rakennettavan Lumilinnan. Tornionjoella, Euroopan suurimmalla vapaana virtaavalla lohijoella, Kukkolankosken lippousperinne elää yhä joka kesä."
+    },
+    "pyha-luosto": {
+      "name": "Pyhä-Luosto",
+      "tagline": "Vanhimman kansallispuiston kaksoistunturit",
+      "description": "Kaksi tunturikylää, Pyhä ja Luosto, joita yhdistää ikivanha tunturijono ja niiden välissä Pyhä-Luoston kansallispuisto. Laske, lumikenkäile ja kaiva oma ametistisi Lampivaarasta.",
+      "access": "Lento Rovaniemelle (1 h 30 min ajomatka)",
+      "bestFor": "Kansallispuistohiihtäjät ja perheet",
+      "why": "Kylien välissä oleva kansallispuisto on koko jutun ydin: Isokuru, Suomen syvin kuru noin 220 metrin syvyydellään, pitkospuut ikimetsässä ja avarat näkymät Lapin vanhimmalta tunturijonolta. Luoston Lampivaarassa kaivat oman ametistin Euroopan ainoalla toiminnassa olevalla kaivoksella, ja talvella ylös pääsee lämmitetyllä lumijunalla. Pyhän rinteisiin kuuluu maailmancup-taustainen kumparerinne Huttu-Ukko, ja perheille löytyy loivaa maastoa ilman hissijonoja."
+    },
+    "kemijarvi": {
+      "name": "Kemijärvi",
+      "tagline": "Suomen pohjoisin kaupunki",
+      "description": "Suomen pohjoisin kaupunki oman järvensä rannalla, jonne Santa Claus Express -yöjuna päättyy. Rauhallinen tukikohta itäiseen Lappiin, Pyhä 50 km päässä.",
+      "access": "Yöjuna Helsingistä tai autolla Rovaniemeltä (1 h)",
+      "bestFor": "Junamatkaajat ja hiljaisen Lapin etsijät",
+      "why": "Kemijärvi on kaupunki, johon Santa Claus Express päättyy: yksi yöjuna päivässä jatkaa Rovaniemeltä perille asti, joten voit nukkua junassa ja herätä järven rannalla. Kaupunki on isännöinyt kansainvälistä puunveistoviikkoa vuodesta 1985, ja isot puuveistokset seisovat kaduilla ympäri vuoden. Uitonniemen rannassa Santa’s Little Village yhdistää pienen hirsihotellin joulupukin tapaamisiin ja revontuliretkiin, Suomun rinteet ovat 40 minuutin ajomatkan päässä, ja tästä alkaa Lapin hiljaisempi itäinen reitti."
     }
   },
   "difficulty": {
@@ -334,10 +358,10 @@ const d: LangData = {
       "category": "Ruoka ja juoma"
     },
     "lev-ski-resort": {
-      "title": "Levin hiihtokeskus, 43 rinnettä",
-      "description": "Suomen suurin hiihtokeskus, jossa on 43 rinnettä, 230 km hiihtolatuja ja huipputason lumilautapuisto. Iltalaskettelua revontulien alla.",
+      "title": "Levin hiihtokeskus, 44 rinnettä",
+      "description": "Suomen suurin hiihtokeskus, jossa on 44 rinnettä, 230 km hiihtolatuja ja huipputason lumilautapuisto. Iltalaskettelua revontulien alla.",
       "highlights": [
-        "43 rinnettä",
+        "44 rinnettä",
         "Lumilautapuisto",
         "Iltalaskettelu"
       ],
@@ -479,11 +503,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Ylläksen hiihtokeskus, pisimmät rinteet",
-      "description": "Suomen pisimmät rinteet, 3 km Ylläs-tunturin molemmin puolin. 63 rinnettä, gondolihissi ja 330 km kunnostettuja hiihtolatuja kansallispuiston halki.",
+      "description": "Suomen pisimmät rinteet, 3 km Ylläs-tunturin molemmin puolin. 62 rinnettä, gondolihissi ja 300 km kunnostettuja hiihtolatuja kansallispuiston halki.",
       "highlights": [
         "Pisin rinne 3 km",
-        "63 rinnettä",
-        "330 km latuja"
+        "62 rinnettä",
+        "300 km latuja"
       ],
       "duration": "Päivälippu",
       "difficulty": "Keskitaso",
@@ -575,9 +599,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Maastohiihto Pallaksella",
-      "description": "Hiihdä 330 km kunnostettuja latuja Pallas-Yllästunturin kansallispuiston halki. Reittejä kaikille tasoille, loivista järvilenkeistä tunturin haasteisiin.",
+      "description": "Hiihdä 300 km kunnostettuja latuja Pallas-Yllästunturin kansallispuiston halki. Reittejä kaikille tasoille, loivista järvilenkeistä tunturin haasteisiin.",
       "highlights": [
-        "330 km:n latuverkosto",
+        "300 km:n latuverkosto",
         "Puiston maisemat",
         "Välinevuokraus"
       ],
@@ -755,9 +779,9 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Rukan hiihtokeskus",
-      "description": "39 rinnettä, Suomen pisin hiihtokausi (lokakuu-toukokuu) ja maailmancuptason hiihtoladut. Iltalaskettelu saatavilla.",
+      "description": "41 rinnettä, Suomen pisin hiihtokausi (lokakuu-toukokuu) ja maailmancuptason hiihtoladut. Iltalaskettelu saatavilla.",
       "highlights": [
-        "39 rinnettä",
+        "41 rinnettä",
         "Pisin kausi",
         "Iltalaskettelu"
       ],
@@ -944,6 +968,105 @@ const d: LangData = {
       "duration": "2-3 h",
       "difficulty": "Helppo",
       "category": "Ruoka ja juoma"
+    },
+    "pyh-amethyst-mine": {
+      "title": "Lampivaaran ametistikaivos",
+      "description": "Kaiva oma korukivesi Euroopan ainoalla toiminnassa olevalla ametistikaivoksella Lampivaaran laella Luostolla, ja pidä yksi kämmeneesi mahtuva kivi. Talvella tunturiin nousee lämmitetty Ametisti-Pendolino-lumijuna; kesällä matka taittuu maisemakävelynä kansallispuistonäkymin.",
+      "highlights": [
+        "Kaiva ja pidä oma ametisti",
+        "Lämmitetty lumijuna talvella",
+        "Näkymät kansallispuiston yli"
+      ],
+      "duration": "2-3 h",
+      "category": "Kulttuuri ja perintö"
+    },
+    "pyh-national-park": {
+      "title": "Pyhä-Luoston kansallispuisto ja Isokuru",
+      "description": "Vaella tunturikylien välillä Suomen syvimmän kurun kautta: Isokuru putoaa noin 220 metriä tunturien väliin, ja portaat ja pitkospuut vievät Uhriharjun ohi ikimetsään. Vapaa pääsy, hyvin merkityt reitit ja päiväreittejä sekä Pyhältä että Luostolta.",
+      "highlights": [
+        "Isokuru, Suomen syvin kuru",
+        "Vapaa pääsy",
+        "Reittejä molemmista kylistä"
+      ],
+      "duration": "3-6 h",
+      "category": "Kesäseikkailut"
+    },
+    "pyh-ski-resort": {
+      "title": "Pyhän hiihtokeskus",
+      "description": "Kansallispuiston kupeessa oleva hiihtokeskus, 280 metrin korkeusero ja rinteitä molempiin ääripäihin: loivaa perhemaastoa yhtäällä ja maailmancupin kumparekisoja isännöinyt Huttu-Ukko toisaalla. Hissiliput ja välinevuokraus paikan päällä.",
+      "highlights": [
+        "280 m korkeusero",
+        "Maailmancupin kumparerinne",
+        "Perheystävällistä maastoa"
+      ],
+      "duration": "Päivälippu",
+      "category": "Talviurheilu"
+    },
+    "pyh-aurora-snowshoe": {
+      "title": "Revontuli-lumikenkäretki Luostolla",
+      "description": "Lumikenkäile kylän valoista hiljaiseen metsään tunturien alle ja jää odottamaan revontulia nuotiolla kuumien juomien kera. Luosto on niin pieni, että todellinen pimeys alkaa minuuttien päässä hotellin ovelta.",
+      "highlights": [
+        "Pimeä taivas kylän vieressä",
+        "Lumikengät ja varusteet mukana",
+        "Nuotio ja kuumat juomat"
+      ],
+      "duration": "3 h",
+      "category": "Revontulet"
+    },
+    "kem-ice-fishing": {
+      "title": "Pilkkiretki Kemijärvellä",
+      "description": "Kairaa reikä kaupungin oman järven jäähän ja pilki ahventa paikallisen oppaan kanssa, kuumat juomat kuuluvat retkeen. Peruspilkkiminen ei vaadi Suomessa lupaa, ja järvi alkaa suoraan rantakaduilta, joten tämä on Lapin pilkkielämys ilman siirtymiä.",
+      "highlights": [
+        "Järvi alkaa kaupungin rannasta",
+        "Ei lupaa tarvita",
+        "Kuumat juomat jäällä"
+      ],
+      "duration": "3 h",
+      "category": "Kalastus ja pilkkiminen"
+    },
+    "kem-husky-safari": {
+      "title": "Aja itse -huskysafari",
+      "description": "Aja omaa valjakkoa 5 kilometrin metsälenkki pienessä ryhmässä ja tapaa koirat ja niiden hoitajat tilalla. Lähtöjä ajetaan vain muutaman reen voimin kerrallaan, joten opastus on aitoa eikä jonottamista.",
+      "highlights": [
+        "Aja omaa valjakkoa",
+        "Vain pienet ryhmät",
+        "Tapaa koirat ajon jälkeen"
+      ],
+      "duration": "2 h",
+      "category": "Eläinkokemukset"
+    },
+    "kem-suomu-ski": {
+      "title": "Suomun hiihtokeskus (Suomutunturi)",
+      "description": "Rauhallinen tunturikeskus napapiirillä noin 40 minuutin päässä Kemijärveltä: 10 pitkää, hyväprofiilista rinnettä, pisin lasku 1,7 km, sekä 75 km latuja, joista 25 km valaistuja. Täällä on laskettu vuodesta 1965, ja hissijonot ovat kuuluisan lyhyet.",
+      "highlights": [
+        "10 pitkää rinnettä, pisin 1,7 km",
+        "75 km latuja",
+        "Napapiirillä"
+      ],
+      "duration": "Päivälippu",
+      "category": "Talviurheilu"
+    },
+    "kem-santas-village": {
+      "title": "Santa’s Little Village Kemijärvellä",
+      "description": "Pieni hirsihotellikylä Uitonniemen rannassa, jossa joulupukin tapaa ilman huvipuistoruuhkia. Talvella ohjelmassa ovat revontuliretket lämmitetyllä reellä ja lumikenkävuokraus, kesällä soutuveneet ja SUP-laudat järvellä. Varaukset suoraan kylältä.",
+      "highlights": [
+        "Tapaa pukki järven rannalla",
+        "Revontuliretket talvella",
+        "Soutua ja SUPia kesällä"
+      ],
+      "duration": "1-2 h",
+      "category": "Kulttuuri ja perintö"
+    },
+    "tor-haparanda-shopping": {
+      "title": "Haaparannan ostospäivä rajan yli",
+      "description": "Kävele Suomen ja Ruotsin rajan yli keskellä kaupunkia ja tee ostospäivä yhden kadun kahdella puolella. IKEA Haaparanta on heti rajanylityksen vieressä, ja Ruotsin puoli lisää siihen markettinsa ja outlet-myymälänsä; hinnat ja valikoimat eroavat maiden välillä, ja juuri se on koko jutun suola. Muista tunnin aikaero aukioloaikoja katsoessasi.",
+      "highlights": [
+        "Ylitä raja kävellen",
+        "IKEA Haaparanta",
+        "Kaksi maata, yksi kaupunki"
+      ],
+      "duration": "2-4 h",
+      "category": "Kulttuuri ja perintö"
     }
   }
 }

@@ -47,56 +47,80 @@ const d: LangData = {
       "tagline": "A cidade oficial do Papai Noel",
       "description": "A capital da Lapônia e porta de entrada para as aventuras árticas. Abriga a Vila do Papai Noel, ótimas conexões de transporte e uma vasta gama de atividades de inverno e verão.",
       "access": "Voos diretos de Helsinque (1h15)",
-      "bestFor": "Primeiras viagens e famílias"
+      "bestFor": "Primeiras viagens e famílias",
+      "why": "Rovaniemi concentra a infraestrutura da Lapônia: aeroporto internacional, terminal do trem noturno e a maior oferta de passeios da região. Além da Aldeia do Papai Noel, há o museu Arktikum à beira do rio, as pistas de Ounasvaara logo acima da cidade e dezenas de operadoras de huskies, renas e auroras num raio de 20 minutos. Ideal para quem visita pela primeira vez e famílias; pegue o certificado gratuito de travessia do Círculo Polar no correio do Papai Noel."
     },
     "levi": {
       "name": "Levi",
       "tagline": "A maior estação de esqui da Finlândia",
-      "description": "Destino de esqui de primeira linha com 43 pistas e 230 km de trilhas de cross-country. Animado après-ski no Hullu Poro e atividades ao ar livre o ano todo.",
+      "description": "Destino de esqui de primeira linha com 44 pistas e 230 km de trilhas de cross-country. Animado après-ski no Hullu Poro e atividades ao ar livre o ano todo.",
       "access": "Voo para Kittilä (15 min de carro)",
-      "bestFor": "Esquiadores e viajantes ativos"
+      "bestFor": "Esquiadores e viajantes ativos",
+      "why": "Levi reúne a maior estação de esqui da Finlândia, 44 pistas e 26 teleféricos com duas gôndolas, num único vilarejo caminhável ao pé do Levitunturi. A Copa do Mundo de esqui alpino abre aqui sua temporada de slalom todo novembro, e quando os teleféricos fecham a multidão migra para o après-ski do Hullu Poro. Perfeito para esquiadores e grupos que querem restaurantes e vida noturna a pé; no verão a gôndola serve o Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "As pistas mais longas da Finlândia",
       "description": "Duas estações de esqui nos dois lados do monte Ylläs oferecem as descidas mais longas da Finlândia, de até 3 km. Uma experiência mais tranquila e autêntica da Lapônia com o Parque Nacional de Pallas-Yllästunturi.",
       "access": "Voo para Kittilä (35 min de carro)",
-      "bestFor": "Amantes da natureza e esquiadores experientes"
+      "bestFor": "Amantes da natureza e esquiadores experientes",
+      "why": "Ylläs são dois vilarejos tranquilos, Äkäslompolo e Ylläsjärvi, em lados opostos de um grande monte: 62 pistas no total e as descidas mais longas da Finlândia, com mais de três quilômetros. Ao redor há cerca de 300 km de trilhas de cross-country preparadas que chegam ao parque nacional Pallas-Yllästunturi. Escolha-o no lugar de Levi se busca céus escuros de aurora, silêncio de parque nacional e longos dias de esqui."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Porta de entrada do Parque Nacional Urho Kekkonen",
       "description": "A estação de esqui mais ao norte da Finlândia, na borda de uma das maiores áreas selvagens da Europa. Famosa pela observação da aurora, pelo garimpo de ouro e pela lendária sauna de fumaça de Kiilopää.",
       "access": "Voo para Ivalo (30 min de carro)",
-      "bestFor": "Buscadores de natureza selvagem e caçadores de auroras"
+      "bestFor": "Buscadores de natureza selvagem e caçadores de auroras",
+      "why": "Saariselkä fica na borda do parque nacional Urho Kekkonen: trilhas marcadas e cabanas abertas começam no próprio vilarejo. Tão ao norte, as auroras aparecem de setembro a abril, e ainda há coisas que não existem mais ao sul: a garimpagem de ouro em Tankavaara, onde tudo o que achar é seu, e a sauna de fumaça de Kiilopää seguida de um mergulho na neve. Para viajantes que põem a natureza selvagem antes dos serviços."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Coração da cultura sami",
       "description": "Às margens do lago Inari, com mais de 3.000 ilhas, é a capital cultural do povo sami finlandês. Abriga o museu Siida e uma natureza intocada.",
       "access": "Voo para Ivalo (40 min de carro)",
-      "bestFor": "Exploradores culturais e fotógrafos"
+      "bestFor": "Exploradores culturais e fotógrafos",
+      "why": "Inari é a sede do Parlamento Sámi da Finlândia e o melhor lugar para conhecer a cultura sámi viva: comece no museu Siida e, no verão, navegue pelo lago Inari passando pela ilha sagrada de Ukonsaari. O vilarejo é pequeno e a natureza ao redor, imensa; à igreja do ermo de Pielpajärvi se chega a pé por pinheirais antigos. Recompensa quem vem pela cultura, pela fotografia e pelo silêncio."
     },
     "ruka": {
       "name": "Ruka e Kuusamo",
       "tagline": "Capital finlandesa da natureza selvagem",
       "description": "Lar da lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia. Famosa pela observação de ursos, pelo rafting e pela temporada de esqui mais longa. Ruka fica em Kuusamo, logo ao sul da Lapônia, com a mesma neve e o mesmo inverno nórdico.",
       "access": "Voo para Kuusamo (25 min de carro)",
-      "bestFor": "Caminhantes, esquiadores e amantes da fauna"
+      "bestFor": "Caminhantes, esquiadores e amantes da fauna",
+      "why": "Ruka é um vilarejo de pistas compacto com 41 pistas e 22 teleféricos no coração do território outdoor de Kuusamo: o parque nacional de Oulanka, os 82 km da trilha Karhunkierros e corredeiras com rafting da primavera ao outono. A neve armazenada abre a temporada em outubro e se esquia até maio, a mais longa da Finlândia. No verão entram em cena os esconderijos de observação de ursos-pardos e o premiado bike park."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Joia escondida da Lapônia oriental",
       "description": "Famosa pelas espetaculares árvores coroadas de neve do Parque Nacional Riisitunturi e pelas cachoeiras congeladas do cânion de Korouoma. Fora das rotas turísticas, natureza pura.",
       "access": "De carro de Rovaniemi (2h) ou Ruka (1h)",
-      "bestFor": "Exploradores fora das rotas turísticas"
+      "bestFor": "Exploradores fora das rotas turísticas",
+      "why": "Os trunfos de Posio são naturais: as árvores tykky de Riisitunturi, curvadas em esculturas pela geada no auge do inverno, e as cascatas congeladas de Korouoma, penduradas a até 40 metros na parede do cânion. Some a Pentik, a fábrica de cerâmica mais setentrional do mundo com galerias e outlet, e o dia fica completo, longe das rotas turísticas. É preciso carro; combina bem com uma viagem a Ruka ou Rovaniemi."
     },
     "tornio": {
-      "name": "Tornio e Kemi",
+      "name": "Tornio, Haparanda e Kemi",
       "tagline": "Aventuras árticas na fronteira",
       "description": "A cidade fronteiriça entre Finlândia e Suécia, porta de entrada para experiências árticas únicas. Cruzeiro no lendário quebra-gelo Sampo, o maior castelo de neve do mundo e o maior rio de salmão de fluxo livre da Europa.",
       "access": "Voo para Kemi (15 min de carro)",
-      "bestFor": "Experiências únicas e diversão em família"
+      "bestFor": "Experiências únicas e diversão em família",
+      "why": "Tornio e Haparanda são uma cidade em dois países: atravessa-se a fronteira a pé no meio da rua comercial, a IKEA Haparanda fica junto à travessia e uma rodada de golfe muda de país e de fuso quatro vezes. Kemi, a 25 minutos, soma o cruzeiro do quebra-gelo Sampo e o SnowCastle reconstruído a cada inverno. No Tornionjoki, o maior rio de salmão de curso livre da Europa, as corredeiras de Kukkolankoski mantêm viva a pesca tradicional com rede todo verão."
+    },
+    "pyha-luosto": {
+      "name": "Pyhä-Luosto",
+      "tagline": "Montes gêmeos do parque nacional mais antigo",
+      "description": "Dois vilarejos de monte, Pyhä e Luosto, unidos por uma cadeia montanhosa antiquíssima com o parque nacional Pyhä-Luosto no meio. Esquie, caminhe de raquetes e escave sua própria ametista no Lampivaara.",
+      "access": "Voo para Rovaniemi (1 h 30 min de carro)",
+      "bestFor": "Esquiadores de parque nacional e famílias",
+      "why": "O parque nacional entre os dois vilarejos é o ponto central: Isokuru, a garganta mais profunda da Finlândia com cerca de 220 metros, passarelas por floresta antiga e vistas abertas da cadeia de montes mais antiga da Lapônia. No Lampivaara, em Luosto, você escava na única mina de ametista ativa da Europa e fica com uma pedra; no inverno um trem da neve aquecido sobe o monte. Entre as pistas de Pyhä está Huttu-Ukko, pista de moguls com passado de Copa do Mundo, e as famílias têm terreno suave sem filas."
+    },
+    "kemijarvi": {
+      "name": "Kemijärvi",
+      "tagline": "A cidade mais setentrional da Finlândia",
+      "description": "A cidade mais setentrional da Finlândia fica à beira do seu próprio lago, onde termina o trem noturno Santa Claus Express. Uma base tranquila para a Lapônia oriental, com Pyhä a 50 km.",
+      "access": "Trem noturno de Helsinque ou carro de Rovaniemi (1 h)",
+      "bestFor": "Viajantes de trem e quem busca sossego",
+      "why": "Kemijärvi é a cidade onde o Santa Claus Express termina: uma partida por dia segue além de Rovaniemi, então você dorme no trem e acorda à beira do lago. Desde 1985 a cidade sedia uma semana internacional de escultura em madeira, e as grandes obras ficam pelas ruas o ano todo. Na margem de Uitonniemi, o Santa’s Little Village une um pequeno hotel de troncos a visitas ao Papai Noel e saídas de aurora; a estação de esqui de Suomu fica a 40 minutos de carro."
     }
   },
   "difficulty": {
@@ -274,10 +298,10 @@ const d: LangData = {
       "category": "Comida e bebida"
     },
     "lev-ski-resort": {
-      "title": "Estação de esqui de Levi, 43 pistas",
-      "description": "A maior estação de esqui da Finlândia, com 43 pistas, 230 km de trilhas de cross-country e um snowpark de alto nível. Esqui noturno sob a aurora boreal.",
+      "title": "Estação de esqui de Levi, 44 pistas",
+      "description": "A maior estação de esqui da Finlândia, com 44 pistas, 230 km de trilhas de cross-country e um snowpark de alto nível. Esqui noturno sob a aurora boreal.",
       "highlights": [
-        "43 pistas",
+        "44 pistas",
         "Snowpark",
         "Esqui noturno"
       ],
@@ -419,11 +443,11 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Estação de esqui de Ylläs, pistas mais longas",
-      "description": "As pistas mais longas da Finlândia, 3 km nos dois lados do monte Ylläs. 63 pistas, uma gôndola e 330 km de trilhas de cross-country preparadas por todo o parque nacional.",
+      "description": "As pistas mais longas da Finlândia, 3 km nos dois lados do monte Ylläs. 62 pistas, uma gôndola e 300 km de trilhas de cross-country preparadas por todo o parque nacional.",
       "highlights": [
         "Pista mais longa 3 km",
-        "63 pistas",
-        "330 km de cross-country"
+        "62 pistas",
+        "300 km de cross-country"
       ],
       "duration": "Diário",
       "difficulty": "Moderado",
@@ -515,9 +539,9 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Esqui cross-country em Pallas",
-      "description": "Esquie por 330 km de trilhas preparadas pelo Parque Nacional Pallas-Yllästunturi. Percursos para todos os níveis, de suaves voltas no lago a desafios na montanha.",
+      "description": "Esquie por 300 km de trilhas preparadas pelo Parque Nacional Pallas-Yllästunturi. Percursos para todos os níveis, de suaves voltas no lago a desafios na montanha.",
       "highlights": [
-        "Rede de 330 km",
+        "Rede de 300 km",
         "Paisagens do parque",
         "Aluguel de equipamento"
       ],
@@ -695,9 +719,9 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Estação de esqui de Ruka",
-      "description": "39 pistas, a temporada de esqui mais longa da Finlândia (outubro-maio) e trilhas de cross-country de nível mundial. Esqui noturno disponível.",
+      "description": "41 pistas, a temporada de esqui mais longa da Finlândia (outubro-maio) e trilhas de cross-country de nível mundial. Esqui noturno disponível.",
       "highlights": [
-        "39 pistas",
+        "41 pistas",
         "Temporada mais longa",
         "Esqui noturno"
       ],
@@ -944,6 +968,105 @@ const d: LangData = {
       "duration": "3 h",
       "difficulty": "Moderado",
       "category": "Pesca e pesca no gelo"
+    },
+    "pyh-amethyst-mine": {
+      "title": "Mina de ametista de Lampivaara",
+      "description": "Escave sua própria gema na única mina de ametista ativa da Europa, no topo do Lampivaara em Luosto, e fique com uma pedra que caiba na palma da mão. No inverno sobe o trem da neve aquecido Amethyst Pendolino; no verão é uma caminhada panorâmica com vista para o parque nacional.",
+      "highlights": [
+        "Escave e fique com sua ametista",
+        "Trem da neve aquecido no inverno",
+        "Vista sobre o parque nacional"
+      ],
+      "duration": "2-3 h",
+      "category": "Cultura e patrimônio"
+    },
+    "pyh-national-park": {
+      "title": "Parque nacional Pyhä-Luosto e garganta de Isokuru",
+      "description": "Caminhe entre os dois vilarejos pela garganta mais profunda da Finlândia: Isokuru despenca cerca de 220 metros entre os montes, com escadas e passarelas que passam pela crista de Uhriharju e pela floresta antiga. Entrada gratuita, trilhas bem marcadas e rotas de um dia tanto de Pyhä quanto de Luosto.",
+      "highlights": [
+        "Isokuru, a garganta mais profunda da Finlândia",
+        "Entrada gratuita",
+        "Rotas dos dois vilarejos"
+      ],
+      "duration": "3-6 h",
+      "category": "Aventuras de verão"
+    },
+    "pyh-ski-resort": {
+      "title": "Estação de esqui de Pyhä",
+      "description": "Uma estação encostada no parque nacional com 280 metros de desnível e pistas para os dois extremos: terreno familiar suave de um lado e, do outro, Huttu-Ukko, pista de moguls que já recebeu Copa do Mundo de freestyle. Passes e aluguel no local.",
+      "highlights": [
+        "280 m de desnível",
+        "Pista de moguls de Copa do Mundo",
+        "Terreno para famílias"
+      ],
+      "duration": "Diário",
+      "category": "Esportes de inverno"
+    },
+    "pyh-aurora-snowshoe": {
+      "title": "Caminhada de raquetes sob a aurora em Luosto",
+      "description": "Afaste-se das luzes do vilarejo com raquetes de neve até a floresta silenciosa sob os montes e espere a aurora junto ao fogo, com bebidas quentes. Luosto é tão pequena que a escuridão de verdade começa a minutos da porta do hotel.",
+      "highlights": [
+        "Céu escuro perto do vilarejo",
+        "Raquetes e equipamento inclusos",
+        "Fogueira e bebidas quentes"
+      ],
+      "duration": "3 h",
+      "category": "Aurora boreal"
+    },
+    "kem-ice-fishing": {
+      "title": "Pesca no gelo no lago Kemijärvi",
+      "description": "Fure o gelo do lago da cidade e pesque percas com um guia local, bebidas quentes incluídas. A pesca no gelo básica não exige licença na Finlândia, e o lago começa nas ruas da margem: pesca lapônica sem tempo de traslado.",
+      "highlights": [
+        "O lago começa na margem da cidade",
+        "Sem licença",
+        "Bebidas quentes no gelo"
+      ],
+      "duration": "3 h",
+      "category": "Pesca e pesca no gelo"
+    },
+    "kem-husky-safari": {
+      "title": "Safári de huskies dirigindo você mesmo",
+      "description": "Conduza seu próprio trenó num circuito florestal de 5 km em grupo pequeno e depois conheça os cães e seus tratadores na fazenda. Saem poucos trenós por vez, então há instrução de verdade em vez de fila.",
+      "highlights": [
+        "Conduza seu próprio trenó",
+        "Só grupos pequenos",
+        "Conheça os cães depois"
+      ],
+      "duration": "2 h",
+      "category": "Experiências com animais"
+    },
+    "kem-suomu-ski": {
+      "title": "Estação de esqui de Suomu (Suomutunturi)",
+      "description": "Uma estação tranquila sobre o Círculo Polar, a uns 40 minutos de Kemijärvi: 10 pistas longas e de bom perfil, a maior com 1,7 km, mais 75 km de trilhas de cross-country, 25 deles iluminados. Esquia-se aqui desde 1965 e as filas são famosas por serem curtas.",
+      "highlights": [
+        "10 pistas longas, maior com 1,7 km",
+        "75 km de cross-country",
+        "No Círculo Polar"
+      ],
+      "duration": "Diário",
+      "category": "Esportes de inverno"
+    },
+    "kem-santas-village": {
+      "title": "Santa’s Little Village à beira do lago Kemijärvi",
+      "description": "Um pequeno vilarejo-hotel de troncos na margem de Uitonniemi, onde se conhece o Papai Noel sem multidões de parque temático. No inverno há saídas de aurora em trenó aquecido e aluguel de raquetes; no verão, barcos a remo e pranchas de SUP no lago. Reserva direta com o vilarejo.",
+      "highlights": [
+        "Papai Noel à beira do lago",
+        "Saídas de aurora no inverno",
+        "Remo e SUP no verão"
+      ],
+      "duration": "1-2 h",
+      "category": "Cultura e patrimônio"
+    },
+    "tor-haparanda-shopping": {
+      "title": "Dia de compras na fronteira em Haparanda",
+      "description": "Atravesse a pé a fronteira entre Finlândia e Suécia no meio da cidade e passe o dia comprando dos dois lados de uma mesma rua. A IKEA Haparanda fica junto à travessia, e o lado sueco soma supermercados e outlets; preços e sortimentos variam entre os países, e é esse o verdadeiro atrativo. Lembre da hora de diferença ao conferir horários.",
+      "highlights": [
+        "Atravesse a fronteira a pé",
+        "IKEA Haparanda",
+        "Dois países, uma cidade"
+      ],
+      "duration": "2-4 h",
+      "category": "Cultura e patrimônio"
     }
   }
 }
