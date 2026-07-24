@@ -270,7 +270,7 @@ const fr: SectionCopy = {
     lodging: [
       { name: 'Igloos de verre', blurb: 'Dormez sous les aurores à travers un toit de verre bombé. Les nuitées les plus réservées de Laponie.' },
       { name: 'Chalets en rondins au bord du lac', blurb: 'Sauna à fumée, bain chaud au feu de bois, ponton privé. Toute l\'année.' },
-      { name: 'Resorts en fjell', blurb: 'Levi · Ylläs · Saariselkä · Ruka, ski au pied et activités d\'été.' },
+      { name: 'Resorts en fjell', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, juste au sud de la Laponie), ski au pied et activités d\'été.' },
       { name: 'Boutique en ville', blurb: 'Rovaniemi · Kemi · Ivalo, hôtels design avec cuisine et accès au centre.' },
       { name: 'Cabanes sauna à fumée', blurb: 'La vraie expérience savusauna, petite, sombre, ridiculement chaude.' },
     ],
@@ -303,7 +303,7 @@ const fr: SectionCopy = {
   activityCard: { findBook: 'Trouver et réserver', planVisit: 'Préparez votre visite' },
   home: {
     metaTitle: 'LaplandActivities: tours arctiques en Laponie',
-    metaDescription: 'Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 8 destinations de Laponie via GetYourGuide.',
+    metaDescription: 'Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 8 destinations en Laponie et alentours via GetYourGuide.',
     ogTitle: 'LaplandActivities: expériences arctiques choisies avec soin',
     categoriesKicker: 'Que faire', categoriesH2: 'Choisissez votre aventure',
     categoriesLead: '8 façons de vivre l\'Arctique, choisissez une catégorie et nous vous orientons vers des opérateurs choisis avec soin.',
@@ -375,10 +375,10 @@ const fr: SectionCopy = {
     browseOthers: 'Parcourir les autres catégories', allCategoriesLink: 'Toutes les catégories →',
   },
   destinationsIndex: {
-    metaTitle: 'Destinations de Laponie · LaplandActivities',
-    metaDescription: 'Huit destinations emblématiques de Laponie finlandaise : Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio et Tornio. Activités, opérateurs et hébergement.',
+    metaTitle: 'Destinations Laponie & Kuusamo · LaplandActivities',
+    metaDescription: 'Huit destinations emblématiques en Laponie et à Kuusamo : Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio et Tornio. Activités, opérateurs, hébergement.',
     kicker: 'Où aller', h1: 'Destinations',
-    lead: 'Huit destinations emblématiques de Laponie, chacune avec son caractère et son réseau d\'opérateurs.',
+    lead: 'Huit destinations emblématiques en Laponie et dans la voisine Kuusamo, chacune avec son caractère et son réseau d\'opérateurs.',
     activitiesLabel: 'activités', explore: 'Découvrir',
     gygTitle: 'Tours de Laponie les plus réservés', gygEyebrow: 'Toutes destinations',
   },
@@ -442,7 +442,7 @@ const fr: SectionCopy = {
   },
   about: {
     metaTitle: 'À propos · LaplandActivities',
-    metaDescription: 'LaplandActivities est le pôle activités de l\'écosystème #LaplandVibes, expériences arctiques choisies avec soin dans huit destinations de Laponie finlandaise.',
+    metaDescription: 'LaplandActivities est le pôle activités de l\'écosystème #LaplandVibes, expériences arctiques choisies avec soin dans huit destinations en Laponie finlandaise et alentours.',
     eyebrow: 'À propos', h1: 'Un guide d\'activités en Laponie finlandaise',
     para1: 'LaplandActivities est le pôle activités de l\'écosystème #LaplandVibes, un réseau de guides indépendants couvrant hébergement, gastronomie, nature, transport et tours en Laponie finlandaise.',
     para2: 'Le site oriente les voyageurs vers des opérateurs locaux choisis avec soin dans huit destinations, des safaris en motoneige à Saariselkä à la pêche au saumon sur le Tornionjoki. Chaque réservation passe par GetYourGuide, vous obtenez donc une confirmation immédiate et l\'annulation gratuite jusqu\'à 24 h sur la plupart des tours.',

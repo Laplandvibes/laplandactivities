@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka und Kuusamo",
       "tagline": "Finnlands Hauptstadt der Wildnis",
-      "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands. Berühmt für Bärenbeobachtung, Rafting und die längste Skisaison.",
+      "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands. Berühmt für Bärenbeobachtung, Rafting und die längste Skisaison. Ruka liegt in Kuusamo, knapp südlich der Grenze Lapplands, mit demselben Schnee und demselben nordischen Winter.",
       "access": "Flug nach Kuusamo (25 Min. mit dem Auto)",
       "bestFor": "Wanderer, Skifahrer und Tierliebhaber"
     },
@@ -107,7 +107,7 @@ const d: LangData = {
   "activities": {
     "act-ice-fishing-great": {
       "title": "Großes Eisangel-Erlebnis",
-      "description": "Bohren Sie Ihr eigenes Loch in einen zugefrorenen See bei Rovaniemi und jiggen Sie mit einem erfahrenen Guide auf Barsch und Felchen. Einfaches Eisangeln braucht in Finnland keine Lizenz und kein Mindestalter — es ist der einfachste Weg, arktisches Angeln auszuprobieren, bevor Sie entscheiden, ob sich die Jahresgenehmigung fürs Köderangeln anderswo lohnt. Endet mit einem am Feuer gegrillten Mittagessen.",
+      "description": "Bohren Sie Ihr eigenes Loch in einen zugefrorenen See bei Rovaniemi und jiggen Sie mit einem erfahrenen Guide auf Barsch und Felchen. Einfaches Eisangeln braucht in Finnland keine Lizenz und kein Mindestalter. Es ist der einfachste Weg, arktisches Angeln auszuprobieren, bevor Sie entscheiden, ob sich die Jahresgenehmigung fürs Köderangeln anderswo lohnt. Endet mit einem am Feuer gegrillten Mittagessen.",
       "highlights": [
         "Technik: Loch selbst bohren",
         "Keine Lizenz fürs einfache Eisangeln nötig",
@@ -131,7 +131,7 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Arktisches Eisangeln in kleiner Gruppe",
-      "description": "Eine Variante des Eisangel-Ausflugs mit begrenzter Gruppengröße und mehr persönlicher Anleitung zur Technik als bei den größeren Touren. Angeln Sie durch das Eis auf Barsch und Felchen an einem ruhigen See und nehmen Sie nur mit, was Sie essen wollen — das Pilkki-Angeln war immer kleinräumig, und genau deshalb bleiben Lapplands Seen gesund.",
+      "description": "Eine Variante des Eisangel-Ausflugs mit begrenzter Gruppengröße und mehr persönlicher Anleitung zur Technik als bei den größeren Touren. Angeln Sie durch das Eis auf Barsch und Felchen an einem ruhigen See und nehmen Sie nur mit, was Sie essen wollen. Das Pilkki-Angeln war immer kleinräumig, und genau deshalb bleiben Lapplands Seen gesund.",
       "highlights": [
         "Begrenzte kleine Gruppengröße",
         "Mehr individuelle Betreuung durch den Guide",
@@ -143,7 +143,7 @@ const d: LangData = {
     },
     "act-kingcrab-kirkenes-saariselka": {
       "title": "Königskrabben-Safari von Saariselkä nach Kirkenes",
-      "description": "Überqueren Sie die Grenze von Saariselkä ins norwegische Kirkenes für eine Rote-Königskrabben-Safari auf der Barentssee. Die Königskrabbe ist hier nicht heimisch — sie wurde in den 1960er-Jahren aus dem Ochotskischen Meer eingeführt und hat in norwegischen Gewässern keine natürlichen Feinde, daher hält eine lizenzierte, quotengeregelte Entnahme die Population davon ab, heimische Dorsch- und Schalentierbestände zu überrennen. Die Guides holen die Reusen ein; der Tag endet mit einem Königskrabben-Mahl.",
+      "description": "Überqueren Sie die Grenze von Saariselkä ins norwegische Kirkenes für eine Rote-Königskrabben-Safari auf der Barentssee. Die Königskrabbe ist hier nicht heimisch. Sie wurde in den 1960er-Jahren aus dem Ochotskischen Meer eingeführt und hat in norwegischen Gewässern keine natürlichen Feinde, daher hält eine lizenzierte, quotengeregelte Entnahme die Population davon ab, heimische Dorsch- und Schalentierbestände zu überrennen. Die Guides holen die Reusen ein; der Tag endet mit einem Königskrabben-Mahl.",
       "highlights": [
         "Überquert die Grenze ins norwegische Kirkenes",
         "Lizenzierte Entnahme einer invasiven Art",
@@ -155,7 +155,7 @@ const d: LangData = {
     },
     "act-kingcrab-rib-kirkenes": {
       "title": "Sommerliche Königskrabben-RIB-Safari in Kirkenes",
-      "description": "Eine sommerliche RIB-Boot-Safari, die direkt in Kirkenes startet und hinaus auf die Barentssee führt, um Königskrabben-Reusen einzuholen. Die Rote Königskrabbe ist hier eine invasive Art, und die geregelte Entnahme durch lizenzierte Anbieter ist Teil des norwegischen Managements — nicht entnommene Krabben breiten sich weiter westlich entlang der Küste aus. Die Tour endet mit einem frischen Krabben-Mahl an Bord oder an Land.",
+      "description": "Eine sommerliche RIB-Boot-Safari, die direkt in Kirkenes startet und hinaus auf die Barentssee führt, um Königskrabben-Reusen einzuholen. Die Rote Königskrabbe ist hier eine invasive Art, und die geregelte Entnahme durch lizenzierte Anbieter ist Teil des norwegischen Managements. Nicht entnommene Krabben breiten sich weiter westlich entlang der Küste aus. Die Tour endet mit einem frischen Krabben-Mahl an Bord oder an Land.",
       "highlights": [
         "RIB-Boot-Safari auf der Barentssee",
         "Quotengeregelte Entnahme einer invasiven Art",
@@ -803,7 +803,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Schneemobil-Safari in der Natur von Ruka",
-      "description": "Fahren Sie durch einige der abgelegensten Wildnisgebiete des finnischen Lapplands. Tiefer Schnee, gefrorene Flüsse und die Stille des Hinterlands.",
+      "description": "Fahren Sie durch einige der abgelegensten Wildnisgebiete Kuusamos, knapp südlich der Grenze Lapplands. Tiefer Schnee, gefrorene Flüsse und die Stille des Hinterlands.",
       "highlights": [
         "Abgelegene Natur",
         "Gefrorene Flüsse",

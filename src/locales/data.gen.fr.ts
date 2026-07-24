@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka et Kuusamo",
       "tagline": "Capitale finlandaise de la nature sauvage",
-      "description": "Le sentier mythique du Karhunkierros, le parc national d'Oulanka et l'une des meilleures stations de ski de Finlande. Connue pour l'observation des ours, le rafting et la plus longue saison de ski.",
+      "description": "Le sentier mythique du Karhunkierros, le parc national d'Oulanka et l'une des meilleures stations de ski de Finlande. Connue pour l'observation des ours, le rafting et la plus longue saison de ski. Ruka se trouve à Kuusamo, juste au sud de la Laponie, avec la même neige et le même hiver nordique.",
       "access": "Vol vers Kuusamo (25 min en voiture)",
       "bestFor": "Randonneurs, skieurs et passionnés de faune"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Safari motoneige dans la nature de Ruka",
-      "description": "Roulez à travers certaines des zones sauvages les plus reculées de Laponie finlandaise. Neige profonde, rivières gelées et silence de l'arrière-pays.",
+      "description": "Roulez à travers certaines des zones sauvages les plus reculées de Kuusamo, juste au sud de la Laponie. Neige profonde, rivières gelées et silence de l'arrière-pays.",
       "highlights": [
         "Nature reculée",
         "Rivières gelées",
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Grande expérience de pêche blanche",
-      "description": "Percez votre propre trou dans un lac gelé près de Rovaniemi et dandinez pour la perche et le corégone avec un guide expérimenté. La pêche blanche de base ne demande ni permis ni âge minimum en Finlande — c'est la façon la plus simple de goûter à la pêche arctique avant de décider si la redevance annuelle pour la pêche au leurre ailleurs en vaut la peine. Se termine par un déjeuner grillé à la flamme.",
+      "description": "Percez votre propre trou dans un lac gelé près de Rovaniemi et dandinez pour la perche et le corégone avec un guide expérimenté. La pêche blanche de base ne demande ni permis ni âge minimum en Finlande. C'est la façon la plus simple de goûter à la pêche arctique avant de décider si la redevance annuelle pour la pêche au leurre ailleurs en vaut la peine. Se termine par un déjeuner grillé à la flamme.",
       "highlights": [
         "Technique du trou percé soi-même",
         "Aucun permis pour la pêche blanche de base",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Pêche blanche arctique en petit groupe",
-      "description": "Une version à groupe plafonné de la sortie de pêche blanche, avec plus d'accompagnement individuel sur la technique que les tours plus grands. Pêchez la perche et le corégone à travers la glace sur un lac tranquille, et ne rapportez que ce que vous comptez manger — la pêche pilkki a toujours été à petite échelle, et c'est exactement pourquoi les lacs de Laponie restent en bonne santé.",
+      "description": "Une version à groupe plafonné de la sortie de pêche blanche, avec plus d'accompagnement individuel sur la technique que les tours plus grands. Pêchez la perche et le corégone à travers la glace sur un lac tranquille, et ne rapportez que ce que vous comptez manger. La pêche pilkki a toujours été à petite échelle, et c'est exactement pourquoi les lacs de Laponie restent en bonne santé.",
       "highlights": [
         "Taille de groupe plafonnée",
         "Plus d'attention individuelle du guide",
@@ -923,7 +923,7 @@ const d: LangData = {
     },
     "act-kingcrab-kirkenes-saariselka": {
       "title": "Safari au crabe royal de Saariselkä à Kirkenes",
-      "description": "Franchissez la frontière depuis Saariselkä jusqu'à Kirkenes, en Norvège, pour un safari au crabe royal rouge en mer de Barents. Le crabe royal n'est pas natif d'ici — il a été introduit depuis la mer d'Okhotsk dans les années 1960 et n'a aucun prédateur naturel dans les eaux norvégiennes, si bien qu'une récolte régulée par quotas et sous licence empêche la population d'envahir les stocks natifs de cabillaud et de coquillages. Les guides remontent les casiers ; la journée se termine par un repas de crabe royal.",
+      "description": "Franchissez la frontière depuis Saariselkä jusqu'à Kirkenes, en Norvège, pour un safari au crabe royal rouge en mer de Barents. Le crabe royal n'est pas natif d'ici. Il a été introduit depuis la mer d'Okhotsk dans les années 1960 et n'a aucun prédateur naturel dans les eaux norvégiennes, si bien qu'une récolte régulée par quotas et sous licence empêche la population d'envahir les stocks natifs de cabillaud et de coquillages. Les guides remontent les casiers ; la journée se termine par un repas de crabe royal.",
       "highlights": [
         "Franchit la frontière vers Kirkenes, Norvège",
         "Récolte sous licence d'une espèce envahissante",
@@ -935,7 +935,7 @@ const d: LangData = {
     },
     "act-kingcrab-rib-kirkenes": {
       "title": "Safari estival au crabe royal en bateau RIB à Kirkenes",
-      "description": "Un safari estival en bateau RIB au départ de Kirkenes même, vers la mer de Barents pour remonter les casiers à crabe royal. Le crabe royal rouge est une espèce envahissante ici, et la récolte régulée par des opérateurs agréés fait partie de la manière dont la Norvège le gère — les crabes non prélevés continuent de se propager vers l'ouest le long de la côte. La sortie se termine par un repas de crabe frais à bord ou à terre.",
+      "description": "Un safari estival en bateau RIB au départ de Kirkenes même, vers la mer de Barents pour remonter les casiers à crabe royal. Le crabe royal rouge est une espèce envahissante ici, et la récolte régulée par des opérateurs agréés fait partie de la manière dont la Norvège le gère. Les crabes non prélevés continuent de se propager vers l'ouest le long de la côte. La sortie se termine par un repas de crabe frais à bord ou à terre.",
       "highlights": [
         "Safari en bateau RIB en mer de Barents",
         "Récolte régulée par quotas d'une espèce envahissante",

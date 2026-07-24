@@ -52,7 +52,7 @@ const en: SectionCopy = {
     lodging: [
       { name: 'Glass Igloos', blurb: 'Sleep under aurora through a curved glass roof. Most-booked Lapland nights.' },
       { name: 'Lakeside log cabins', blurb: 'Smoke saunas, wood-fired hot tubs, your own dock. Year-round.' },
-      { name: 'Fell resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka. Ski-in, ski-out, plus summer activities.' },
+      { name: 'Fell resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, just south of the Lapland border). Ski-in, ski-out, plus summer activities.' },
       { name: 'Boutique city', blurb: 'Rovaniemi · Kemi · Ivalo. Design hotels with a kitchen and city access.' },
       { name: 'Smoke sauna cabins', blurb: 'The real savusauna: small, dark, ridiculously hot.' },
     ],
@@ -98,7 +98,7 @@ const en: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: book hand-picked Arctic tours in Finnish Lapland',
-    metaDescription: 'Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 Lapland destinations through GetYourGuide and trusted local operators.',
+    metaDescription: 'Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 destinations in and around Lapland through GetYourGuide and trusted local operators.',
     ogTitle: 'LaplandActivities · Hand-Picked Arctic Experiences',
     categoriesKicker: 'What to Do',
     categoriesH2: 'Choose Your Adventure',
@@ -188,11 +188,11 @@ const en: SectionCopy = {
     allCategoriesLink: 'All categories →',
   },
   destinationsIndex: {
-    metaTitle: 'Lapland Destinations · LaplandActivities',
-    metaDescription: 'Eight iconic Finnish Lapland destinations: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio and Tornio. Activities, operators and lodging.',
+    metaTitle: 'Destinations in Lapland & Kuusamo · LaplandActivities',
+    metaDescription: 'Eight iconic destinations in Finnish Lapland and Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio and Tornio. Activities, operators and lodging.',
     kicker: 'Where to Go',
     h1: 'Destinations',
-    lead: 'Eight iconic Lapland destinations, each with its own character and operator network.',
+    lead: 'Eight iconic destinations across Lapland and neighbouring Kuusamo, each with its own character and operator network.',
     activitiesLabel: 'activities',
     explore: 'Explore',
     gygTitle: 'Most-booked Lapland tours',
@@ -270,7 +270,7 @@ const en: SectionCopy = {
   },
   about: {
     metaTitle: 'About · LaplandActivities',
-    metaDescription: 'LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across eight Finnish Lapland destinations.',
+    metaDescription: 'LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across eight destinations in and around Finnish Lapland.',
     eyebrow: 'About',
     h1: 'A Finnish Lapland activities guide',
     para1: 'LaplandActivities is the activities spoke of the #LaplandVibes ecosystem, a network of independent guides covering accommodation, food, nature, transport and tours across Finnish Lapland.',

@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka och Kuusamo",
       "tagline": "Hemvist för Finlands längsta skidsäsong",
-      "description": "Här finns den legendariska björnstigen Karhunkierros, Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen.",
+      "description": "Här finns den legendariska björnstigen Karhunkierros, Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen. Ruka ligger i Kuusamo, strax söder om Lapplands gräns, med samma snö och samma nordliga vinter.",
       "access": "Flyg till Kuusamo (25 minuters bilfärd)",
       "bestFor": "Vandrare, skidåkare och naturintresserade"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Snöskotersafari genom Rukas vildmark",
-      "description": "Kör genom några av de mest avlägsna vildmarksområdena i finska Lappland. Djup snö, tillfrusna älvar och ödemarkens tystnad.",
+      "description": "Kör genom några av de mest avlägsna vildmarksområdena i Kuusamo, strax söder om Lapplands gräns. Djup snö, tillfrusna älvar och ödemarkens tystnad.",
       "highlights": [
         "Avlägsen vildmark",
         "Tillfrusna älvar",
@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-green-zone": {
       "title": "Green Zone Golf, två länder",
-      "description": "Spela golf över två länder vid gränsen mellan Finland och Sverige. Slå ut i Finland, putta i Sverige. Under en runda korsar du gränsen — och en timmes tidsskillnad — fyra gånger.",
+      "description": "Spela golf över två länder vid gränsen mellan Finland och Sverige. Slå ut i Finland, putta i Sverige. Under en runda korsar du gränsen och en timmes tidsskillnad fyra gånger.",
       "highlights": [
         "Två länder",
         "Två tidszoner",
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Härlig pilkfiskeupplevelse",
-      "description": "Borra ditt eget hål i en tillfrusen sjö nära Rovaniemi och pilka efter abborre och sik tillsammans med en erfaren guide. Enkelt pilkfiske kräver varken licens eller minimiålder i Finland — det är det enklaste sättet att prova arktiskt fiske innan du bestämmer dig för om det årliga tillståndet för spöfiske på andra håll är värt det. Avslutas med lunch grillad över eld.",
+      "description": "Borra ditt eget hål i en tillfrusen sjö nära Rovaniemi och pilka efter abborre och sik tillsammans med en erfaren guide. Enkelt pilkfiske kräver varken licens eller minimiålder i Finland. Det är det enklaste sättet att prova arktiskt fiske innan du bestämmer dig för om det årliga tillståndet för spöfiske på andra håll är värt det. Avslutas med lunch grillad över eld.",
       "highlights": [
         "Borra ditt eget hål-teknik",
         "Ingen licens krävs för enkelt pilkfiske",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Arktiskt pilkfiske i liten grupp",
-      "description": "En version av pilkfisketuren med begränsat antal deltagare, med mer personlig teknikvägledning än de större turerna. Fiska abborre och sik genom isen på en tyst sjö, och ta bara med dig hem det du tänker äta — pilkfiske har alltid varit småskaligt, och det är just därför Lapplands sjöar hålls friska.",
+      "description": "En version av pilkfisketuren med begränsat antal deltagare, med mer personlig teknikvägledning än de större turerna. Fiska abborre och sik genom isen på en tyst sjö, och ta bara med dig hem det du tänker äta. Pilkfiske har alltid varit småskaligt, och det är just därför Lapplands sjöar hålls friska.",
       "highlights": [
         "Begränsad gruppstorlek",
         "Mer personlig uppmärksamhet från guiden",
@@ -923,7 +923,7 @@ const d: LangData = {
     },
     "act-kingcrab-kirkenes-saariselka": {
       "title": "Kungskrabbsafari från Saariselkä till Kirkenes",
-      "description": "Korsa gränsen från Saariselkä till Kirkenes i Norge för en safari efter rödkungskrabba i Barentshavet. Kungskrabban är inte ursprunglig här — den introducerades från Ochotska havet på 1960-talet och har inga naturliga fiender i norska vatten, så en licensierad och kvotreglerad fångst hindrar populationen från att breda ut sig på bekostnad av inhemska bestånd av torsk och skaldjur. Guiderna drar upp burarna, och dagen avslutas med en kungskrabbmåltid.",
+      "description": "Korsa gränsen från Saariselkä till Kirkenes i Norge för en safari efter rödkungskrabba i Barentshavet. Kungskrabban är inte ursprunglig här. Den introducerades från Ochotska havet på 1960-talet och har inga naturliga fiender i norska vatten, så en licensierad och kvotreglerad fångst hindrar populationen från att breda ut sig på bekostnad av inhemska bestånd av torsk och skaldjur. Guiderna drar upp burarna, och dagen avslutas med en kungskrabbmåltid.",
       "highlights": [
         "Korsar gränsen till Kirkenes i Norge",
         "Licensierad fångst av en invasiv art",
@@ -935,7 +935,7 @@ const d: LangData = {
     },
     "act-kingcrab-rib-kirkenes": {
       "title": "Sommarsafari med RIB-båt efter kungskrabba i Kirkenes",
-      "description": "En sommarsafari med RIB-båt som avgår från själva Kirkenes, ut på Barentshavet för att dra upp kungskrabbeburar. Rödkungskrabba är en invasiv art här, och reglerad fångst av licensierade aktörer är en del av hur Norge hanterar den — krabbor som inte fångas fortsätter att sprida sig västerut längs kusten. Turen avslutas med en färsk krabbmåltid ombord eller i land.",
+      "description": "En sommarsafari med RIB-båt som avgår från själva Kirkenes, ut på Barentshavet för att dra upp kungskrabbeburar. Rödkungskrabba är en invasiv art här, och reglerad fångst av licensierade aktörer är en del av hur Norge hanterar den: krabbor som inte fångas fortsätter att sprida sig västerut längs kusten. Turen avslutas med en färsk krabbmåltid ombord eller i land.",
       "highlights": [
         "RIB-båtsafari på Barentshavet",
         "Kvotreglerad fångst av en invasiv art",

@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka 与 Kuusamo",
       "tagline": "芬兰最长滑雪季的故乡",
-      "description": "传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。",
+      "description": "传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。Ruka 位于 Kuusamo，在拉普兰以南不远，同样的雪，同样的北国冬季。",
       "access": "飞往 Kuusamo（车程 25 分钟）",
       "bestFor": "徒步者、滑雪者与野生动物爱好者"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Ruka 荒野雪地摩托狩猎之旅",
-      "description": "骑行穿越芬兰拉普兰一些最偏远的荒野地带。深厚积雪、冰封河流和内陆的寂静。",
+      "description": "骑行穿越 Kuusamo（拉普兰以南不远）一些最偏远的荒野地带。深厚积雪、冰封河流和内陆的寂静。",
       "highlights": [
         "偏远荒野",
         "冰封河流",

@@ -270,7 +270,7 @@ const nl: SectionCopy = {
     lodging: [
       { name: 'Glaziglo\'s', blurb: 'Slaap onder het noorderlicht door een gewelfd glazen dak. De meest geboekte Lapland-nachten.' },
       { name: 'Houten hutten aan het meer', blurb: 'Rooksauna, houtgestookte hot tub, eigen steiger. Het hele jaar door.' },
-      { name: 'Fjell-resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka, ski-in/ski-out plus zomeractiviteiten.' },
+      { name: 'Fjell-resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, net ten zuiden van Lapland), ski-in/ski-out plus zomeractiviteiten.' },
       { name: 'Boutique in de stad', blurb: 'Rovaniemi · Kemi · Ivalo, designhotels met keuken en toegang tot het centrum.' },
       { name: 'Rooksauna-hutten', blurb: 'De echte savusauna-ervaring, klein, donker, belachelijk heet.' },
     ],
@@ -303,7 +303,7 @@ const nl: SectionCopy = {
   activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan je bezoek' },
   home: {
     metaTitle: 'LaplandActivities: Arctische tours in Lapland',
-    metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 8 Lapland-bestemmingen via GetYourGuide.',
+    metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 8 bestemmingen in en rond Lapland via GetYourGuide.',
     ogTitle: 'LaplandActivities: zorgvuldig gekozen Arctische ervaringen',
     categoriesKicker: 'Wat te doen', categoriesH2: 'Kies uw avontuur',
     categoriesLead: '8 manieren om het Noordpoolgebied te beleven, kies een categorie en we verwijzen u door naar zorgvuldig gekozen aanbieders.',
@@ -375,10 +375,10 @@ const nl: SectionCopy = {
     browseOthers: 'Bekijk andere categorieën', allCategoriesLink: 'Alle categorieën →',
   },
   destinationsIndex: {
-    metaTitle: 'Lapland-bestemmingen · LaplandActivities',
-    metaDescription: 'Acht iconische bestemmingen in Fins Lapland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio en Tornio. Activiteiten, aanbieders en accommodatie.',
+    metaTitle: 'Bestemmingen in Lapland & Kuusamo · LaplandActivities',
+    metaDescription: 'Acht iconische bestemmingen in Lapland en Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio en Tornio. Activiteiten, aanbieders en accommodatie.',
     kicker: 'Waarheen', h1: 'Bestemmingen',
-    lead: 'Acht iconische Lapland-bestemmingen, elk met een eigen karakter en aanbiedersnetwerk.',
+    lead: 'Acht iconische bestemmingen in Lapland en het naburige Kuusamo, elk met een eigen karakter en aanbiedersnetwerk.',
     activitiesLabel: 'activiteiten', explore: 'Ontdek',
     gygTitle: 'Meest geboekte Lapland-tours', gygEyebrow: 'Alle bestemmingen',
   },
@@ -442,7 +442,7 @@ const nl: SectionCopy = {
   },
   about: {
     metaTitle: 'Over ons · LaplandActivities',
-    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht Fins Lapland-bestemmingen.',
+    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht bestemmingen in en rond Fins Lapland.',
     eyebrow: 'Over ons', h1: 'Een activiteitengids voor Fins Lapland',
     para1: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, een netwerk van onafhankelijke gidsen over accommodatie, eten, natuur, transport en tours in Fins Lapland.',
     para2: 'De site verwijst reizigers naar zorgvuldig gekozen lokale aanbieders in acht bestemmingen, van sneeuwscooter-safari\'s in Saariselkä tot zalmvissen op de Tornionjoki. Elke boeking loopt via GetYourGuide, dus u krijgt directe bevestiging en bij de meeste tours gratis annulering tot 24 uur van tevoren.',

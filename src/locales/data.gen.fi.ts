@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka ja Kuusamo",
       "tagline": "Suomen pisimmän hiihtokauden koti",
-      "description": "Täältä löytyvät legendaarinen Karhunkierros, Oulangan kansallispuisto ja yksi Suomen parhaista hiihtokeskuksista. Tunnettu karhujen tarkkailusta, koskenlaskusta ja pisimmästä hiihtokaudesta.",
+      "description": "Täältä löytyvät legendaarinen Karhunkierros, Oulangan kansallispuisto ja yksi Suomen parhaista hiihtokeskuksista. Tunnettu karhujen tarkkailusta, koskenlaskusta ja pisimmästä hiihtokaudesta. Ruka on Kuusamossa, heti Lapin maakuntarajan eteläpuolella, samaa lunta ja samaa pohjoista talvea.",
       "access": "Lento Kuusamoon (25 min ajomatka)",
       "bestFor": "Vaeltajat, hiihtäjät ja luonnonystävät"
     },
@@ -107,7 +107,7 @@ const d: LangData = {
   "activities": {
     "act-ice-fishing-great": {
       "title": "Mahtava pilkkielämys",
-      "description": "Poraa oma reikäsi jäätyneeseen järveen Rovaniemen lähellä ja pilkitä ahventa ja siikaa kokeneen oppaan kanssa. Peruspilkkiminen ei vaadi Suomessa lupaa eikä alaikärajaa — se on helpoin tapa kokeilla arktista kalastusta ennen kuin päätät, kannattaako muualla viehekalastukseen tarvittava vuosilupa. Päättyy nuotiolla grillattuun lounaaseen.",
+      "description": "Poraa oma reikäsi jäätyneeseen järveen Rovaniemen lähellä ja pilkitä ahventa ja siikaa kokeneen oppaan kanssa. Peruspilkkiminen ei vaadi Suomessa lupaa eikä alaikärajaa. Se on helpoin tapa kokeilla arktista kalastusta ennen kuin päätät, kannattaako muualla viehekalastukseen tarvittava vuosilupa. Päättyy nuotiolla grillattuun lounaaseen.",
       "highlights": [
         "Poraa-oma-reikäsi -tekniikka",
         "Peruspilkkiminen ei vaadi lupaa",
@@ -131,7 +131,7 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Pienryhmän arktinen pilkkiretki",
-      "description": "Rajatun ryhmän versio pilkkiretkestä, jossa tekniikkaa opastetaan henkilökohtaisemmin kuin suuremmilla retkillä. Pilkitä ahventa ja siikaa jään läpi rauhallisella järvellä ja ota mukaan vain se, minkä aiot syödä — pilkkiminen on aina ollut pienimuotoista, ja juuri siksi Lapin järvet pysyvät terveinä.",
+      "description": "Rajatun ryhmän versio pilkkiretkestä, jossa tekniikkaa opastetaan henkilökohtaisemmin kuin suuremmilla retkillä. Pilkitä ahventa ja siikaa jään läpi rauhallisella järvellä ja ota mukaan vain se, minkä aiot syödä. Pilkkiminen on aina ollut pienimuotoista, ja juuri siksi Lapin järvet pysyvät terveinä.",
       "highlights": [
         "Rajattu pieni ryhmäkoko",
         "Enemmän oppaan henkilökohtaista huomiota",
@@ -143,7 +143,7 @@ const d: LangData = {
     },
     "act-kingcrab-kirkenes-saariselka": {
       "title": "Kuningasrapusafari Saariselältä Kirkenesiin",
-      "description": "Ylitä raja Saariselältä Norjan Kirkenesiin punakuningasrapusafarille Barentsinmerelle. Kuningasrapu ei ole täällä alkuperäislaji — se tuotiin Ohotanmereltä 1960-luvulla, eikä sillä ole Norjan vesillä luontaisia saalistajia, joten luvanvarainen, kiintiösäädelty pyynti estää kannan valtaamasta alkuperäisiä turska- ja äyriäiskantoja. Oppaat nostavat merrat; päivä päättyy kuningasrapuateriaan.",
+      "description": "Ylitä raja Saariselältä Norjan Kirkenesiin punakuningasrapusafarille Barentsinmerelle. Kuningasrapu ei ole täällä alkuperäislaji. Se tuotiin Ohotanmereltä 1960-luvulla, eikä sillä ole Norjan vesillä luontaisia saalistajia, joten luvanvarainen, kiintiösäädelty pyynti estää kannan valtaamasta alkuperäisiä turska- ja äyriäiskantoja. Oppaat nostavat merrat; päivä päättyy kuningasrapuateriaan.",
       "highlights": [
         "Ylittää rajan Norjan Kirkenesiin",
         "Vieraslajin luvanvarainen pyynti",
@@ -155,7 +155,7 @@ const d: LangData = {
     },
     "act-kingcrab-rib-kirkenes": {
       "title": "Kirkenesin kesäinen kuningasrapu-RIB-safari",
-      "description": "Kesäinen RIB-venesafari, joka lähtee suoraan Kirkenesistä ulos Barentsinmerelle nostamaan kuningasrapumertoja. Punakuningasrapu on täällä vieraslaji, ja luvanvaraisten toimijoiden säädelty pyynti on osa sitä, miten Norja hallitsee sitä — pyytämättä jäävät ravut leviävät yhä länteen rannikkoa pitkin. Retki päättyy tuoreeseen rapuateriaan veneessä tai maissa.",
+      "description": "Kesäinen RIB-venesafari, joka lähtee suoraan Kirkenesistä ulos Barentsinmerelle nostamaan kuningasrapumertoja. Punakuningasrapu on täällä vieraslaji, ja luvanvaraisten toimijoiden säädelty pyynti on osa sitä, miten Norja hallitsee sitä. Pyytämättä jäävät ravut leviävät yhä länteen rannikkoa pitkin. Retki päättyy tuoreeseen rapuateriaan veneessä tai maissa.",
       "highlights": [
         "RIB-venesafari Barentsinmerellä",
         "Vieraslajin kiintiösäädelty pyynti",
@@ -803,7 +803,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Moottorikelkkasafari Rukan erämaassa",
-      "description": "Aja Suomen Lapin syrjäisimpien erämaiden halki. Syvää lunta, jäätyneitä jokia ja sisämaan hiljaisuutta.",
+      "description": "Aja Kuusamon syrjäisimpien erämaiden halki, aivan Lapin rajan eteläpuolella. Syvää lunta, jäätyneitä jokia ja sisämaan hiljaisuutta.",
       "highlights": [
         "Syrjäinen erämaa",
         "Jäätyneet joet",

@@ -285,7 +285,7 @@ const ja: SectionCopy = {
     lodging: [
       { name: 'ガラスイグルー', blurb: '曲面ガラス屋根越しにオーロラの下で眠る。ラップランドで最も予約される宿泊。' },
       { name: '湖畔のログキャビン', blurb: 'スモークサウナ、薪の温水ジャグジー、専用桟橋。通年。' },
-      { name: 'フィエル・リゾート', blurb: 'レヴィ・ウッラス・サーリセルカ・ルカ。スキーイン/スキーアウト、夏のアクティビティも。' },
+      { name: 'フィエル・リゾート', blurb: 'レヴィ・ウッラス・サーリセルカ・ルカ（クーサモ、ラップランドのすぐ南）。スキーイン/スキーアウト、夏のアクティビティも。' },
       { name: 'ブティック・シティ', blurb: 'ロヴァニエミ・ケミ・イヴァロ。キッチン付き、市街アクセスのデザインホテル。' },
       { name: 'スモークサウナ・キャビン', blurb: '本物のサヴサウナ体験。小さく、暗く、ものすごく熱い。' },
     ],
@@ -331,7 +331,7 @@ const ja: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities｜フィンランド・ラップランドの厳選北極ツアー予約',
-    metaDescription: 'スノーモービルサファリ、ハスキーそり、オーロラハント、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、8つのラップランドの目的地で厳選アクティビティを予約。',
+    metaDescription: 'スノーモービルサファリ、ハスキーそり、オーロラハント、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、ラップランドとその周辺の8つの目的地で厳選アクティビティを予約。',
     ogTitle: 'LaplandActivities｜厳選の北極体験',
     categoriesKicker: 'やること',
     categoriesH2: '冒険を選ぶ',
@@ -421,11 +421,11 @@ const ja: SectionCopy = {
     allCategoriesLink: 'すべてのカテゴリー →',
   },
   destinationsIndex: {
-    metaTitle: 'ラップランドの目的地｜LaplandActivities',
-    metaDescription: 'フィンランド・ラップランドの象徴的な8つの目的地: ロヴァニエミ、レヴィ、ウッラス、サーリセルカ、イナリ、ルカ、ポシオ、トルニオ。アクティビティ、オペレーター、宿泊。',
+    metaTitle: 'ラップランドとクーサモの目的地｜LaplandActivities',
+    metaDescription: 'フィンランド・ラップランドとクーサモの象徴的な8つの目的地: ロヴァニエミ、レヴィ、ウッラス、サーリセルカ、イナリ、ルカ、ポシオ、トルニオ。アクティビティ、オペレーター、宿泊。',
     kicker: 'どこへ行くか',
     h1: '目的地',
-    lead: '8つの象徴的なラップランドの目的地、それぞれ独自の個性とオペレーターネットワーク。',
+    lead: 'ラップランドと隣のクーサモにある8つの象徴的な目的地、それぞれ独自の個性とオペレーターネットワーク。',
     activitiesLabel: '件のアクティビティ',
     explore: '探す',
     gygTitle: '最も予約されているラップランドのツアー',
@@ -503,7 +503,7 @@ const ja: SectionCopy = {
   },
   about: {
     metaTitle: '当サイトについて｜LaplandActivities',
-    metaDescription: 'LaplandActivitiesはLaplandVibesエコシステムのアクティビティ部門。8つのフィンランド・ラップランドの目的地で厳選した北極体験。',
+    metaDescription: 'LaplandActivitiesはLaplandVibesエコシステムのアクティビティ部門。フィンランド・ラップランドとその周辺の8つの目的地で厳選した北極体験。',
     eyebrow: '当サイトについて',
     h1: 'フィンランド・ラップランドのアクティビティガイド',
     para1: 'LaplandActivitiesは#LaplandVibesエコシステムのアクティビティ部門です。フィンランド・ラップランドの宿泊、食事、自然、交通、ツアーを網羅する独立系ガイドのネットワーク。',

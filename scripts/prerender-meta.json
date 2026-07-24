@@ -2,7 +2,7 @@
   "/": {
     "en": {
       "title": "LaplandActivities: book hand-picked Arctic tours in Finnish Lapland",
-      "description": "Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 Lapland destinations through GetYourGuide and trusted local operators.",
+      "description": "Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 destinations in and around Lapland through GetYourGuide and trusted local operators.",
       "faq": [
         {
           "q": "What activities can you do in Lapland?",
@@ -28,7 +28,7 @@
     },
     "fi": {
       "title": "LaplandActivities: arktiset retket Suomen Lapissa",
-      "description": "Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kahdeksassa Lapin kohteessa GetYourGuiden kautta.",
+      "description": "Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kahdeksassa kohteessa Lapissa ja lähialueilla GetYourGuiden kautta.",
       "faq": [
         {
           "q": "Mitä aktiviteetteja Lapissa voi tehdä?",
@@ -54,7 +54,7 @@
     },
     "de": {
       "title": "LaplandActivities: arktische Touren in Lappland",
-      "description": "Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 8 Reisezielen Lapplands über GetYourGuide buchen.",
+      "description": "Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 8 Reisezielen in Lappland und Umgebung über GetYourGuide buchen.",
       "faq": [
         {
           "q": "Welche Aktivitäten kann man in Lappland unternehmen?",
@@ -80,7 +80,7 @@
     },
     "ja": {
       "title": "LaplandActivities｜フィンランド・ラップランドの厳選北極ツアー予約",
-      "description": "スノーモービルサファリ、ハスキーそり、オーロラハント、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、8つのラップランドの目的地で厳選アクティビティを予約。",
+      "description": "スノーモービルサファリ、ハスキーそり、オーロラハント、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、ラップランドとその周辺の8つの目的地で厳選アクティビティを予約。",
       "faq": [
         {
           "q": "ラップランドではどんなアクティビティができますか?",
@@ -106,7 +106,7 @@
     },
     "es": {
       "title": "LaplandActivities: Tours árticos en Laponia",
-      "description": "Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades seleccionadas a mano en 8 destinos de Laponia mediante GetYourGuide.",
+      "description": "Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades seleccionadas a mano en 8 destinos de Laponia y alrededores mediante GetYourGuide.",
       "faq": [
         {
           "q": "¿Qué actividades se pueden hacer en Laponia?",
@@ -132,7 +132,7 @@
     },
     "pt-BR": {
       "title": "LaplandActivities: Tours árticos na Lapônia",
-      "description": "Safáris de snowmobile, trenó de huskies, caçadas de aurora, saunas a fumaça e mais. Reserve atividades escolhidas a dedo em 8 destinos da Lapônia via GetYourGuide.",
+      "description": "Safáris de snowmobile, trenó de huskies, caçadas de aurora, saunas a fumaça e mais. Reserve atividades escolhidas a dedo em 8 destinos na Lapônia e arredores via GetYourGuide.",
       "faq": [
         {
           "q": "Quais atividades dá para fazer na Lapônia?",
@@ -158,7 +158,7 @@
     },
     "zh-CN": {
       "title": "LaplandActivities: 在芬兰拉普兰预订精选北极行程",
-      "description": "雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰8个目的地通过GetYourGuide与可信本地运营商预订精选活动。",
+      "description": "雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰及周边8个目的地通过GetYourGuide与可信本地运营商预订精选活动。",
       "faq": [
         {
           "q": "在拉普兰可以做哪些活动?",
@@ -184,7 +184,7 @@
     },
     "ko": {
       "title": "LaplandActivities: 라플란드의 엄선한 북극 투어 예약",
-      "description": "스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 8개 라플란드 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.",
+      "description": "스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 라플란드와 그 주변 8개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.",
       "faq": [
         {
           "q": "라플란드에서는 어떤 액티비티를 할 수 있나요?",
@@ -210,7 +210,7 @@
     },
     "fr": {
       "title": "LaplandActivities: tours arctiques en Laponie",
-      "description": "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 8 destinations de Laponie via GetYourGuide.",
+      "description": "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 8 destinations en Laponie et alentours via GetYourGuide.",
       "faq": [
         {
           "q": "Quelles activités peut-on faire en Laponie ?",
@@ -236,7 +236,7 @@
     },
     "it": {
       "title": "LaplandActivities: tour artici in Lapponia",
-      "description": "Safari in motoslitta, slitta dei husky, caccia all'aurora, saune a fumo e altro. Prenoti attività in 8 destinazioni della Lapponia tramite GetYourGuide.",
+      "description": "Safari in motoslitta, slitta dei husky, caccia all'aurora, saune a fumo e altro. Prenoti attività in 8 destinazioni in Lapponia e dintorni tramite GetYourGuide.",
       "faq": [
         {
           "q": "Quali attività si possono fare in Lapponia?",
@@ -262,7 +262,7 @@
     },
     "nl": {
       "title": "LaplandActivities: Arctische tours in Lapland",
-      "description": "Sneeuwscooter-safari's, husky-slederitten, noorderlichtjachten, rooksauna's en meer. Boek zorgvuldig gekozen activiteiten in 8 Lapland-bestemmingen via GetYourGuide.",
+      "description": "Sneeuwscooter-safari's, husky-slederitten, noorderlichtjachten, rooksauna's en meer. Boek zorgvuldig gekozen activiteiten in 8 bestemmingen in en rond Lapland via GetYourGuide.",
       "faq": [
         {
           "q": "Welke activiteiten kun je in Lapland doen?",
@@ -288,7 +288,7 @@
     },
     "sv": {
       "title": "LaplandActivities: boka noggrant utvalda arktiska turer i finska Lappland",
-      "description": "Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 8 resmål i Lappland via GetYourGuide och pålitliga lokala researrangörer.",
+      "description": "Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 8 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.",
       "faq": [
         {
           "q": "Vilka aktiviteter kan man göra i Lappland?",
@@ -300,7 +300,7 @@
         },
         {
           "q": "Vad kostar aktiviteter i Lappland?",
-          "a": "Det varierar mycket beroende på aktivitet, längd och gruppstorlek. Ett kort delat pass som en rentursresa eller en norrskensbussutflykt ligger i den lägre prisklassen; flertimmars- eller privata resor som en lång hundspannssafari eller en guidad snöskoterexpedition kostar mer, delvis eftersom de inkluderar varma overaller, kängor, säkerhetsutrustning och en guide. För aktuella, exakta priser, öppna vilken tur som helst via vår bokningspartner — det aktuella priset visas innan du bokar."
+          "a": "Det varierar mycket beroende på aktivitet, längd och gruppstorlek. Ett kort delat pass som en rentursresa eller en norrskensbussutflykt ligger i den lägre prisklassen; flertimmars- eller privata resor som en lång hundspannssafari eller en guidad snöskoterexpedition kostar mer, delvis eftersom de inkluderar varma overaller, kängor, säkerhetsutrustning och en guide. För aktuella, exakta priser, öppna vilken tur som helst via vår bokningspartner. Det aktuella priset visas innan du bokar."
         },
         {
           "q": "Passar aktiviteterna i Lappland för små barn?",
@@ -308,7 +308,7 @@
         },
         {
           "q": "Behöver man boka aktiviteter i Lappland i förväg?",
-          "a": "Under de mest hektiska veckorna — jul och nyår samt norrskens- och skidtoppen i februari–mars — ja: boka i god tid, eftersom populära hundspanns- och snöskoterturer blir fullbokade. Under lugnare perioder har du mer flexibilitet, men de bäst rankade researrangörerna och avgångarna med små grupper blir ändå slutbokade först. Att boka i förväg gör det också lättare att bygga in flexibilitet för klar himmel i norrskensplanerna i stället för att tävla om de sista platserna."
+          "a": "Under de mest hektiska veckorna, jul och nyår samt norrskens- och skidtoppen i februari–mars, ja: boka i god tid, eftersom populära hundspanns- och snöskoterturer blir fullbokade. Under lugnare perioder har du mer flexibilitet, men de bäst rankade researrangörerna och avgångarna med små grupper blir ändå slutbokade först. Att boka i förväg gör det också lättare att bygga in flexibilitet för klar himmel i norrskensplanerna i stället för att tävla om de sista platserna."
         }
       ]
     }
@@ -316,69 +316,69 @@
   "/about": {
     "en": {
       "title": "About · LaplandActivities",
-      "description": "LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across eight Finnish Lapland destinations."
+      "description": "LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across eight destinations in and around Finnish Lapland."
     },
     "fi": {
       "title": "Tietoja · LaplandActivities",
-      "description": "LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kahdeksassa Suomen Lapin kohteessa."
+      "description": "LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kahdeksassa kohteessa Suomen Lapissa ja lähialueilla."
     },
     "de": {
       "title": "Über uns · LaplandActivities",
-      "description": "LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in acht Reisezielen Finnisch-Lapplands."
+      "description": "LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in acht Reisezielen in und um Finnisch-Lappland."
     },
     "ja": {
       "title": "当サイトについて｜LaplandActivities",
-      "description": "LaplandActivitiesはLaplandVibesエコシステムのアクティビティ部門。8つのフィンランド・ラップランドの目的地で厳選した北極体験。"
+      "description": "LaplandActivitiesはLaplandVibesエコシステムのアクティビティ部門。フィンランド・ラップランドとその周辺の8つの目的地で厳選した北極体験。"
     },
     "es": {
       "title": "Acerca de · LaplandActivities",
-      "description": "LaplandActivities es la rama de actividades del ecosistema LaplandVibes: experiencias árticas seleccionadas a mano en ocho destinos de la Laponia finlandesa."
+      "description": "LaplandActivities es la rama de actividades del ecosistema LaplandVibes: experiencias árticas seleccionadas a mano en ocho destinos en la Laponia finlandesa y…"
     },
     "pt-BR": {
       "title": "Sobre · LaplandActivities",
-      "description": "LaplandActivities é o ramo de atividades do ecossistema LaplandVibes, experiências árticas escolhidas a dedo em oito destinos da Lapônia finlandesa."
+      "description": "LaplandActivities é o ramo de atividades do ecossistema LaplandVibes, experiências árticas escolhidas a dedo em oito destinos na Lapônia finlandesa e arredores."
     },
     "zh-CN": {
       "title": "关于 · LaplandActivities",
-      "description": "LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰八个目的地的精选北极体验。"
+      "description": "LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰及周边八个目的地的精选北极体验。"
     },
     "ko": {
       "title": "소개 · LaplandActivities",
-      "description": "LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 8개 라플란드 목적지의 엄선한 북극 체험."
+      "description": "LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드와 그 주변 8개 목적지의 엄선한 북극 체험."
     },
     "fr": {
       "title": "À propos · LaplandActivities",
-      "description": "LaplandActivities est le pôle activités de l'écosystème #LaplandVibes, expériences arctiques choisies avec soin dans huit destinations de Laponie finlandaise."
+      "description": "LaplandActivities est le pôle activités de l'écosystème #LaplandVibes, expériences arctiques choisies avec soin dans huit destinations en Laponie finlandaise et…"
     },
     "it": {
       "title": "Chi siamo · LaplandActivities",
-      "description": "LaplandActivities è il polo attività dell'ecosistema #LaplandVibes, esperienze artiche scelte con cura in otto destinazioni della Lapponia finlandese."
+      "description": "LaplandActivities è il polo attività dell'ecosistema #LaplandVibes, esperienze artiche scelte con cura in otto destinazioni nella Lapponia finlandese e dintorni."
     },
     "nl": {
       "title": "Over ons · LaplandActivities",
-      "description": "LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht Fins Lapland-bestemmingen."
+      "description": "LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in acht bestemmingen in en rond Fins Lapland."
     },
     "sv": {
       "title": "Om oss · LaplandActivities",
-      "description": "LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på åtta resmål i finska Lappland."
+      "description": "LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på åtta resmål i finska Lappland med omnejd."
     }
   },
   "/fishing": {
     "en": {
       "title": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
-      "description": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris — with the 2026 rules, fees and official permit links you need before you…"
+      "description": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links you need before you…"
     },
     "fi": {
       "title": "Kalastus Lapissa ja Jäämerellä | LaplandActivities",
-      "description": "Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit — mukana 2026 säännöt, maksut ja viralliset lupalinkit, jotka tarvitset…"
+      "description": "Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit, mukana 2026 säännöt, maksut ja viralliset lupalinkit, jotka tarvitset…"
     },
     "de": {
       "title": "Angeln in Lappland & im Nordmeer | LaplandActivities",
-      "description": "Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und norwegische Königskrabben-Safaris — mit den Regeln, Gebühren und offiziellen Genehmigungslinks für…"
+      "description": "Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und norwegische Königskrabben-Safaris: mit den Regeln, Gebühren und offiziellen Genehmigungslinks für…"
     },
     "ja": {
       "title": "ラップランドと北極海の釣り | LaplandActivities",
-      "description": "無料のアイスフィッシング、トルニオ川などの許可制サーモンリバー、ノルウェーのタラバガニサファリ — 2026年のルール・料金・公式許可リンクを、竿を出す前にまとめて。"
+      "description": "無料のアイスフィッシング、トルニオ川などの許可制サーモンリバー、ノルウェーのタラバガニサファリ。2026年のルール・料金・公式許可リンクを、竿を出す前にまとめて。"
     },
     "es": {
       "title": "Pesca en Laponia y el océano Ártico | LaplandActivities",
@@ -386,7 +386,7 @@
     },
     "pt-BR": {
       "title": "Pesca na Lapônia e no Oceano Ártico | LaplandActivities",
-      "description": "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega — com as regras, taxas e links oficiais de licença de 2026…"
+      "description": "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega, com as regras, taxas e links oficiais de licença de 2026…"
     },
     "zh-CN": {
       "title": "拉普兰与北冰洋钓鱼指南 | LaplandActivities",
@@ -394,7 +394,7 @@
     },
     "ko": {
       "title": "라플란드와 북극해에서 즐기는 낚시 | LaplandActivities",
-      "description": "얼음낚시는 무료, 토르니오 같은 허가제 연어강, 노르웨이 킹크랩 사파리까지 — 낚싯대를 던지기 전에 알아야 할 2026년 규정, 요금, 공식 허가 링크를 담았습니다."
+      "description": "얼음낚시는 무료, 토르니오 같은 허가제 연어강, 노르웨이 킹크랩 사파리까지: 낚싯대를 던지기 전에 알아야 할 2026년 규정, 요금, 공식 허가 링크를 담았습니다."
     },
     "fr": {
       "title": "Pêche en Laponie et dans l'océan Arctique | LaplandActivities",
@@ -406,11 +406,11 @@
     },
     "nl": {
       "title": "Vissen in Lapland en de Noordelijke IJszee | LaplandActivities",
-      "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's — met de regels, tarieven en officiële vergunningslinks van 2026…"
+      "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026…"
     },
     "sv": {
       "title": "Fiske i Lappland och Norra ishavet | LaplandActivities",
-      "description": "Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbesafarier — med 2026 års regler, avgifter och officiella tillståndslänkar du behöver…"
+      "description": "Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbesafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver…"
     }
   },
   "/categories": {
@@ -465,52 +465,52 @@
   },
   "/destinations": {
     "en": {
-      "title": "Lapland Destinations · LaplandActivities",
-      "description": "Eight iconic Finnish Lapland destinations: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio and Tornio. Activities, operators and lodging."
+      "title": "Destinations in Lapland & Kuusamo · LaplandActivities",
+      "description": "Eight iconic destinations in Finnish Lapland and Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio and Tornio. Activities, operators and lodging."
     },
     "fi": {
-      "title": "Lapin kohteet · LaplandActivities",
-      "description": "Kahdeksan ikonista Suomen Lapin kohdetta: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio ja Tornio. Aktiviteetit, toimijat ja majoitus."
+      "title": "Lapin ja Kuusamon kohteet · LaplandActivities",
+      "description": "Kahdeksan ikonista kohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio ja Tornio. Aktiviteetit, toimijat ja majoitus."
     },
     "de": {
-      "title": "Lappland-Reiseziele · LaplandActivities",
-      "description": "Acht ikonische Reiseziele in Finnisch-Lappland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio und Tornio. Aktivitäten, Anbieter und Unterkünfte."
+      "title": "Reiseziele in Lappland & Kuusamo · LaplandActivities",
+      "description": "Acht ikonische Reiseziele in Lappland und Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio und Tornio. Aktivitäten, Anbieter und Unterkünfte."
     },
     "ja": {
-      "title": "ラップランドの目的地｜LaplandActivities",
-      "description": "フィンランド・ラップランドの象徴的な8つの目的地: ロヴァニエミ、レヴィ、ウッラス、サーリセルカ、イナリ、ルカ、ポシオ、トルニオ。アクティビティ、オペレーター、宿泊。"
+      "title": "ラップランドとクーサモの目的地｜LaplandActivities",
+      "description": "フィンランド・ラップランドとクーサモの象徴的な8つの目的地: ロヴァニエミ、レヴィ、ウッラス、サーリセルカ、イナリ、ルカ、ポシオ、トルニオ。アクティビティ、オペレーター、宿泊。"
     },
     "es": {
-      "title": "Destinos de Laponia · LaplandActivities",
-      "description": "Ocho destinos icónicos de la Laponia finlandesa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio y Tornio. Actividades, operadores y alojamiento."
+      "title": "Destinos de Laponia y Kuusamo · LaplandActivities",
+      "description": "Ocho destinos icónicos de Laponia finlandesa y Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio y Tornio. Actividades, operadores y alojamiento."
     },
     "pt-BR": {
-      "title": "Destinos da Lapônia · LaplandActivities",
-      "description": "Oito destinos icônicos da Lapônia finlandesa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio e Tornio. Atividades, operadoras e hospedagem."
+      "title": "Destinos da Lapônia e Kuusamo · LaplandActivities",
+      "description": "Oito destinos icônicos entre a Lapônia e Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio e Tornio. Atividades, operadoras e hospedagem."
     },
     "zh-CN": {
-      "title": "拉普兰目的地 · LaplandActivities",
-      "description": "芬兰拉普兰的八个标志性目的地:罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、波西奥与托尔尼奥。活动、运营商与住宿。"
+      "title": "拉普兰与库萨莫目的地 · LaplandActivities",
+      "description": "芬兰拉普兰与库萨莫的八个标志性目的地:罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、波西奥与托尔尼奥。活动、运营商与住宿。"
     },
     "ko": {
-      "title": "라플란드 목적지 · LaplandActivities",
-      "description": "라플란드의 8개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 포시오, 토르니오. 액티비티, 운영자, 숙박."
+      "title": "라플란드와 쿠사모 목적지 · LaplandActivities",
+      "description": "라플란드와 쿠사모의 8개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 포시오, 토르니오. 액티비티, 운영자, 숙박."
     },
     "fr": {
-      "title": "Destinations de Laponie · LaplandActivities",
-      "description": "Huit destinations emblématiques de Laponie finlandaise : Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio et Tornio. Activités, opérateurs et hébergement."
+      "title": "Destinations Laponie & Kuusamo · LaplandActivities",
+      "description": "Huit destinations emblématiques en Laponie et à Kuusamo : Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio et Tornio. Activités, opérateurs, hébergement."
     },
     "it": {
-      "title": "Destinazioni della Lapponia · LaplandActivities",
-      "description": "Otto destinazioni iconiche della Lapponia finlandese: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio e Tornio. Attività, operatori e alloggi."
+      "title": "Destinazioni di Lapponia e Kuusamo · LaplandActivities",
+      "description": "Otto destinazioni iconiche tra Lapponia finlandese e Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio e Tornio. Attività, operatori e alloggi."
     },
     "nl": {
-      "title": "Lapland-bestemmingen · LaplandActivities",
-      "description": "Acht iconische bestemmingen in Fins Lapland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio en Tornio. Activiteiten, aanbieders en accommodatie."
+      "title": "Bestemmingen in Lapland & Kuusamo · LaplandActivities",
+      "description": "Acht iconische bestemmingen in Lapland en Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio en Tornio. Activiteiten, aanbieders en accommodatie."
     },
     "sv": {
-      "title": "Resmål i Lappland · LaplandActivities",
-      "description": "Åtta ikoniska resmål i finska Lappland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio och Torneå. Aktiviteter, researrangörer och boende."
+      "title": "Resmål i Lappland och Kuusamo · LaplandActivities",
+      "description": "Åtta ikoniska resmål i finska Lappland och Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio och Torneå. Aktiviteter, researrangörer och boende."
     }
   },
   "/categories/adventure": {
@@ -1228,7 +1228,7 @@
     },
     "ja": {
       "title": "RukaとKuusamo · LaplandActivities",
-      "description": "伝説的なクマの道Karhunkierros、Oulanka国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。"
+      "description": "伝説的なクマの道Karhunkierros、Oulanka国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。Rukaはラップランドのすぐ南のKuusamoに位置し、同じ雪と同じ北国の冬が楽しめます。"
     },
     "es": {
       "title": "Ruka y Kuusamo · LaplandActivities",
@@ -1240,11 +1240,11 @@
     },
     "zh-CN": {
       "title": "Ruka 与 Kuusamo · LaplandActivities",
-      "description": "传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。"
+      "description": "传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。Ruka 位于 Kuusamo，在拉普兰以南不远，同样的雪，同样的北国冬季。"
     },
     "ko": {
       "title": "루카와 쿠사모 · LaplandActivities",
-      "description": "전설적인 카르훈키에로스 곰의 길, 오울란카 국립공원, 그리고 핀란드 최고의 스키 리조트 중 하나의 본거지. 곰 관찰, 강 래프팅, 가장 긴 스키 시즌으로 유명합니다."
+      "description": "전설적인 카르훈키에로스 곰의 길, 오울란카 국립공원, 그리고 핀란드 최고의 스키 리조트 중 하나의 본거지. 곰 관찰, 강 래프팅, 가장 긴 스키 시즌으로 유명합니다. 루카는 라플란드 바로 남쪽의 쿠사모에 있으며, 같은 눈과 같은 북부의 겨울을 즐길 수 있습니다."
     },
     "fr": {
       "title": "Ruka et Kuusamo · LaplandActivities",

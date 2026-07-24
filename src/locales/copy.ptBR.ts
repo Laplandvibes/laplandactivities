@@ -285,7 +285,7 @@ const ptBR: SectionCopy = {
     lodging: [
       { name: 'Iglus de vidro', blurb: 'Durma sob a aurora com teto curvo de vidro. As noites mais reservadas da Lapônia.' },
       { name: 'Cabanas à beira do lago', blurb: 'Sauna a fumaça, hidromassagem a lenha, seu próprio deque. O ano todo.' },
-      { name: 'Resorts em fell', blurb: 'Levi · Ylläs · Saariselkä · Ruka, ski-in/ski-out e atividades de verão.' },
+      { name: 'Resorts em fell', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, logo ao sul da Lapônia), ski-in/ski-out e atividades de verão.' },
       { name: 'Boutique urbano', blurb: 'Rovaniemi · Kemi · Ivalo, hotéis-design com cozinha e acesso urbano.' },
       { name: 'Cabanas com sauna a fumaça', blurb: 'A verdadeira savusauna, pequena, escura, absurdamente quente.' },
     ],
@@ -331,7 +331,7 @@ const ptBR: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: Tours árticos na Lapônia',
-    metaDescription: 'Safáris de snowmobile, trenó de huskies, caçadas de aurora, saunas a fumaça e mais. Reserve atividades escolhidas a dedo em 8 destinos da Lapônia via GetYourGuide.',
+    metaDescription: 'Safáris de snowmobile, trenó de huskies, caçadas de aurora, saunas a fumaça e mais. Reserve atividades escolhidas a dedo em 8 destinos na Lapônia e arredores via GetYourGuide.',
     ogTitle: 'LaplandActivities: Experiências árticas escolhidas a dedo',
     categoriesKicker: 'O que fazer',
     categoriesH2: 'Escolha sua aventura',
@@ -421,11 +421,11 @@ const ptBR: SectionCopy = {
     allCategoriesLink: 'Todas as categorias →',
   },
   destinationsIndex: {
-    metaTitle: 'Destinos da Lapônia · LaplandActivities',
-    metaDescription: 'Oito destinos icônicos da Lapônia finlandesa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio e Tornio. Atividades, operadoras e hospedagem.',
+    metaTitle: 'Destinos da Lapônia e Kuusamo · LaplandActivities',
+    metaDescription: 'Oito destinos icônicos entre a Lapônia e Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio e Tornio. Atividades, operadoras e hospedagem.',
     kicker: 'Para onde ir',
     h1: 'Destinos',
-    lead: 'Oito destinos icônicos da Lapônia, cada um com seu caráter e sua rede de operadoras.',
+    lead: 'Oito destinos icônicos na Lapônia e na vizinha Kuusamo, cada um com seu caráter e sua rede de operadoras.',
     activitiesLabel: 'atividades',
     explore: 'Explorar',
     gygTitle: 'Tours mais reservados da Lapônia',
@@ -503,7 +503,7 @@ const ptBR: SectionCopy = {
   },
   about: {
     metaTitle: 'Sobre · LaplandActivities',
-    metaDescription: 'LaplandActivities é o ramo de atividades do ecossistema LaplandVibes, experiências árticas escolhidas a dedo em oito destinos da Lapônia finlandesa.',
+    metaDescription: 'LaplandActivities é o ramo de atividades do ecossistema LaplandVibes, experiências árticas escolhidas a dedo em oito destinos na Lapônia finlandesa e arredores.',
     eyebrow: 'Sobre',
     h1: 'Um guia de atividades da Lapônia finlandesa',
     para1: 'LaplandActivities é o ramo de atividades do ecossistema #LaplandVibes, uma rede de guias independentes cobrindo hospedagem, comida, natureza, transporte e tours pela Lapônia finlandesa.',

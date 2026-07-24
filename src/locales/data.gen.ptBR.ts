@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka e Kuusamo",
       "tagline": "Capital finlandesa da natureza selvagem",
-      "description": "Lar da lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia. Famosa pela observação de ursos, pelo rafting e pela temporada de esqui mais longa.",
+      "description": "Lar da lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia. Famosa pela observação de ursos, pelo rafting e pela temporada de esqui mais longa. Ruka fica em Kuusamo, logo ao sul da Lapônia, com a mesma neve e o mesmo inverno nórdico.",
       "access": "Voo para Kuusamo (25 min de carro)",
       "bestFor": "Caminhantes, esquiadores e amantes da fauna"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Safári de snowmobile na natureza de Ruka",
-      "description": "Cavalgue por algumas das áreas selvagens mais remotas da Lapônia finlandesa. Neve profunda, rios congelados e o silêncio do interior.",
+      "description": "Cavalgue por algumas das áreas selvagens mais remotas de Kuusamo, logo ao sul da Lapônia. Neve profunda, rios congelados e o silêncio do interior.",
       "highlights": [
         "Natureza remota",
         "Rios congelados",
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Grande experiência de pesca no gelo",
-      "description": "Perfure o seu próprio buraco em um lago congelado perto de Rovaniemi e pesque perca e coregono com o jig ao lado de um guia experiente. A pesca no gelo básica não exige licença nem idade mínima na Finlândia — é a forma mais fácil de experimentar a pesca ártica antes de decidir se vale a pena a licença anual para pescar com isca artificial em outros lugares. Termina com um almoço grelhado na fogueira.",
+      "description": "Perfure o seu próprio buraco em um lago congelado perto de Rovaniemi e pesque perca e coregono com o jig ao lado de um guia experiente. A pesca no gelo básica não exige licença nem idade mínima na Finlândia. É a forma mais fácil de experimentar a pesca ártica antes de decidir se vale a pena a licença anual para pescar com isca artificial em outros lugares. Termina com um almoço grelhado na fogueira.",
       "highlights": [
         "Técnica de perfurar o próprio buraco",
         "Sem licença para a pesca no gelo básica",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Pesca no gelo ártica em grupo pequeno",
-      "description": "Uma versão de grupo limitado da pescaria no gelo, com mais orientação individual sobre técnica do que os tours maiores. Pesque perca e coregono através do gelo em um lago tranquilo e leve para casa apenas o que pretende comer — a pesca pilkki sempre foi de pequena escala, e é exatamente por isso que os lagos da Lapônia se mantêm saudáveis.",
+      "description": "Uma versão de grupo limitado da pescaria no gelo, com mais orientação individual sobre técnica do que os tours maiores. Pesque perca e coregono através do gelo em um lago tranquilo e leve para casa apenas o que pretende comer. A pesca pilkki sempre foi de pequena escala, e é exatamente por isso que os lagos da Lapônia se mantêm saudáveis.",
       "highlights": [
         "Grupo pequeno e limitado",
         "Mais atenção individual do guia",
@@ -923,7 +923,7 @@ const d: LangData = {
     },
     "act-kingcrab-kirkenes-saariselka": {
       "title": "Safári de caranguejo-real de Saariselkä a Kirkenes",
-      "description": "Cruze a fronteira de Saariselkä para Kirkenes, na Noruega, para um safári de caranguejo-real-vermelho no Mar de Barents. O caranguejo-real não é nativo daqui — foi introduzido do Mar de Okhotsk nos anos 1960 e não tem predadores naturais nas águas norueguesas, então uma captura licenciada e controlada por cota impede que a população tome conta dos estoques nativos de bacalhau e crustáceos. Os guias recolhem as armadilhas; o dia termina com uma refeição de caranguejo-real.",
+      "description": "Cruze a fronteira de Saariselkä para Kirkenes, na Noruega, para um safári de caranguejo-real-vermelho no Mar de Barents. O caranguejo-real não é nativo daqui. Foi introduzido do Mar de Okhotsk nos anos 1960 e não tem predadores naturais nas águas norueguesas, então uma captura licenciada e controlada por cota impede que a população tome conta dos estoques nativos de bacalhau e crustáceos. Os guias recolhem as armadilhas; o dia termina com uma refeição de caranguejo-real.",
       "highlights": [
         "Cruza a fronteira para Kirkenes, Noruega",
         "Captura licenciada de uma espécie invasora",
@@ -935,7 +935,7 @@ const d: LangData = {
     },
     "act-kingcrab-rib-kirkenes": {
       "title": "Safári de verão de caranguejo-real em bote RIB em Kirkenes",
-      "description": "Um safári de verão em bote RIB partindo da própria Kirkenes, mar adentro no Mar de Barents para recolher armadilhas de caranguejo-real. O caranguejo-real-vermelho é uma espécie invasora aqui, e a captura regulada por operadores licenciados faz parte de como a Noruega o administra — o caranguejo não capturado continua se espalhando para oeste ao longo da costa. O passeio termina com uma refeição de caranguejo fresco a bordo ou em terra.",
+      "description": "Um safári de verão em bote RIB partindo da própria Kirkenes, mar adentro no Mar de Barents para recolher armadilhas de caranguejo-real. O caranguejo-real-vermelho é uma espécie invasora aqui, e a captura regulada por operadores licenciados faz parte de como a Noruega o administra. O caranguejo não capturado continua se espalhando para oeste ao longo da costa. O passeio termina com uma refeição de caranguejo fresco a bordo ou em terra.",
       "highlights": [
         "Safári em bote RIB no Mar de Barents",
         "Captura controlada por cota de uma espécie invasora",

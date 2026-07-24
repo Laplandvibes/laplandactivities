@@ -285,7 +285,7 @@ const de: SectionCopy = {
     lodging: [
       { name: 'Glas-Iglus', blurb: 'Schlafen Sie unter Nordlichtern durch ein gewölbtes Glasdach. Die meistgebuchten Nächte Lapplands.' },
       { name: 'Blockhütten am See', blurb: 'Rauchsauna, holzbefeuerter Hot Tub, eigener Steg. Ganzjährig.' },
-      { name: 'Fjäll-Resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka: Ski-in/Ski-out plus Sommeraktivitäten.' },
+      { name: 'Fjäll-Resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, knapp südlich der Grenze Lapplands): Ski-in/Ski-out plus Sommeraktivitäten.' },
       { name: 'Boutique-Stadthotels', blurb: 'Rovaniemi · Kemi · Ivalo: Designhotels mit Küche und Stadtzugang.' },
       { name: 'Rauchsaunahütten', blurb: 'Das echte Savusauna-Erlebnis: klein, dunkel, unfassbar heiß.' },
     ],
@@ -331,7 +331,7 @@ const de: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: arktische Touren in Lappland',
-    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 8 Reisezielen Lapplands über GetYourGuide buchen.',
+    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 8 Reisezielen in Lappland und Umgebung über GetYourGuide buchen.',
     ogTitle: 'LaplandActivities: handverlesene arktische Erlebnisse',
     categoriesKicker: 'Was zu tun ist',
     categoriesH2: 'Wählen Sie Ihr Abenteuer',
@@ -421,11 +421,11 @@ const de: SectionCopy = {
     allCategoriesLink: 'Alle Kategorien →',
   },
   destinationsIndex: {
-    metaTitle: 'Lappland-Reiseziele · LaplandActivities',
-    metaDescription: 'Acht ikonische Reiseziele in Finnisch-Lappland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio und Tornio. Aktivitäten, Anbieter und Unterkünfte.',
+    metaTitle: 'Reiseziele in Lappland & Kuusamo · LaplandActivities',
+    metaDescription: 'Acht ikonische Reiseziele in Lappland und Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio und Tornio. Aktivitäten, Anbieter und Unterkünfte.',
     kicker: 'Wohin reisen',
     h1: 'Reiseziele',
-    lead: 'Acht ikonische Reiseziele in Lappland, jedes mit eigenem Charakter und Anbieternetzwerk.',
+    lead: 'Acht ikonische Reiseziele in Lappland und im benachbarten Kuusamo, jedes mit eigenem Charakter und Anbieternetzwerk.',
     activitiesLabel: 'Aktivitäten',
     explore: 'Entdecken',
     gygTitle: 'Meistgebuchte Lappland-Touren',
@@ -503,7 +503,7 @@ const de: SectionCopy = {
   },
   about: {
     metaTitle: 'Über uns · LaplandActivities',
-    metaDescription: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in acht Reisezielen Finnisch-Lapplands.',
+    metaDescription: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in acht Reisezielen in und um Finnisch-Lappland.',
     eyebrow: 'Über uns',
     h1: 'Ein Aktivitäten-Guide für Finnisch-Lappland',
     para1: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, ein Netzwerk unabhängiger Reiseführer für Unterkunft, Essen, Natur, Transport und Touren in Finnisch-Lappland.',

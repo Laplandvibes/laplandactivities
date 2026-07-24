@@ -1,8 +1,8 @@
 [
   {
     "path": "/",
-    "fallbackTitle": "LaplandActivities — Aurora, Husky & Snowmobile Tours in Lapland 2026",
-    "fallbackDescription": "Book the best Finnish Lapland activities: northern-lights hunts, husky and reindeer safaris, snowmobiling and ice experiences — by destination and category.",
+    "fallbackTitle": "LaplandActivities: Aurora, Husky & Snowmobile Tours in Lapland 2026",
+    "fallbackDescription": "Book the best Finnish Lapland activities: northern-lights hunts, husky and reindeer safaris, snowmobiling and ice experiences, by destination and category.",
     "appendSiteName": false
   },
   {
@@ -20,7 +20,7 @@
   {
     "path": "/fishing",
     "fallbackTitle": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
-    "fallbackDescription": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris — with the 2026 rules, fees and official permit links you need before you cast.",
+    "fallbackDescription": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links you need before you cast.",
     "appendSiteName": false
   },
   {

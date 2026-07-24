@@ -285,7 +285,7 @@ const zhCN: SectionCopy = {
     lodging: [
       { name: '玻璃冰屋', blurb: '在弧形玻璃顶下入眠,共赏极光。拉普兰最热预订的房型。' },
       { name: '湖畔木屋', blurb: '烟桑拿、柴火热水池、独立码头。全年可订。' },
-      { name: '山地度假村', blurb: '莱维 · 于拉斯 · 萨利色尔卡 · 鲁卡，ski-in/ski-out,夏季活动一应俱全。' },
+      { name: '山地度假村', blurb: '莱维 · 于拉斯 · 萨利色尔卡 · 鲁卡（库萨莫，拉普兰以南不远），ski-in/ski-out,夏季活动一应俱全。' },
       { name: '城市精品酒店', blurb: '罗瓦涅米 · 凯米 · 伊瓦洛，带厨房的设计酒店,出门即可入城。' },
       { name: '烟桑拿木屋', blurb: '真正的savusauna体验，小、暗、热到不可思议。' },
     ],
@@ -331,7 +331,7 @@ const zhCN: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: 在芬兰拉普兰预订精选北极行程',
-    metaDescription: '雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰8个目的地通过GetYourGuide与可信本地运营商预订精选活动。',
+    metaDescription: '雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰及周边8个目的地通过GetYourGuide与可信本地运营商预订精选活动。',
     ogTitle: 'LaplandActivities: 精选北极体验',
     categoriesKicker: '可以做什么',
     categoriesH2: '选择您的冒险',
@@ -421,11 +421,11 @@ const zhCN: SectionCopy = {
     allCategoriesLink: '全部分类 →',
   },
   destinationsIndex: {
-    metaTitle: '拉普兰目的地 · LaplandActivities',
-    metaDescription: '芬兰拉普兰的八个标志性目的地:罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、波西奥与托尔尼奥。活动、运营商与住宿。',
+    metaTitle: '拉普兰与库萨莫目的地 · LaplandActivities',
+    metaDescription: '芬兰拉普兰与库萨莫的八个标志性目的地:罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、波西奥与托尔尼奥。活动、运营商与住宿。',
     kicker: '该去哪里',
     h1: '目的地',
-    lead: '拉普兰八个标志性目的地,每个都有自己的气质与运营商网络。',
+    lead: '拉普兰与邻近的库萨莫八个标志性目的地,每个都有自己的气质与运营商网络。',
     activitiesLabel: '项目',
     explore: '探索',
     gygTitle: '拉普兰预订最多的行程',
@@ -503,7 +503,7 @@ const zhCN: SectionCopy = {
   },
   about: {
     metaTitle: '关于 · LaplandActivities',
-    metaDescription: 'LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰八个目的地的精选北极体验。',
+    metaDescription: 'LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰及周边八个目的地的精选北极体验。',
     eyebrow: '关于',
     h1: '一份芬兰拉普兰活动指南',
     para1: 'LaplandActivities是#LaplandVibes生态中的活动分支，一个独立指南网络,涵盖芬兰拉普兰的住宿、美食、自然、交通与行程。',

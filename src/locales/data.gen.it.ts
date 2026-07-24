@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka e Kuusamo",
       "tagline": "Capitale finlandese della natura selvaggia",
-      "description": "Sede del leggendario sentiero dell'orso Karhunkierros, del Parco nazionale di Oulanka e di una delle migliori stazioni sciistiche della Finlandia. Famosa per l'osservazione degli orsi, il rafting e la stagione sciistica più lunga.",
+      "description": "Sede del leggendario sentiero dell'orso Karhunkierros, del Parco nazionale di Oulanka e di una delle migliori stazioni sciistiche della Finlandia. Famosa per l'osservazione degli orsi, il rafting e la stagione sciistica più lunga. Ruka si trova a Kuusamo, appena a sud della Lapponia, con la stessa neve e lo stesso inverno nordico.",
       "access": "Volo a Kuusamo (25 min in auto)",
       "bestFor": "Escursionisti, sciatori e amanti della fauna"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Safari in motoslitta nella natura di Ruka",
-      "description": "Cavalchi attraverso alcune delle zone selvagge più remote della Lapponia finlandese. Neve profonda, fiumi gelati e silenzio dell'entroterra.",
+      "description": "Cavalchi attraverso alcune delle zone selvagge più remote di Kuusamo, appena a sud della Lapponia. Neve profonda, fiumi gelati e silenzio dell'entroterra.",
       "highlights": [
         "Natura remota",
         "Fiumi gelati",

@@ -52,7 +52,7 @@ const sv: SectionCopy = {
     lodging: [
       { name: 'Glasigloo', blurb: 'Sov under norrskenet genom ett välvt glastak. Lapplands mest bokade nätter.' },
       { name: 'Timmerstugor vid sjön', blurb: 'Rökbastu, vedeldad badtunna, egen brygga. Året runt.' },
-      { name: 'Fjällorter', blurb: 'Levi · Ylläs · Saariselkä · Ruka. Ski-in/ski-out samt sommaraktiviteter.' },
+      { name: 'Fjällorter', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, strax söder om Lapplands gräns). Ski-in/ski-out samt sommaraktiviteter.' },
       { name: 'Boutiquehotell i stan', blurb: 'Rovaniemi · Kemi · Ivalo. Designhotell med kök och nära till stadslivet.' },
       { name: 'Rökbastustugor', blurb: 'Den äkta savusaunan: liten, mörk och absurt varm.' },
     ],
@@ -98,7 +98,7 @@ const sv: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: boka noggrant utvalda arktiska turer i finska Lappland',
-    metaDescription: 'Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 8 resmål i Lappland via GetYourGuide och pålitliga lokala researrangörer.',
+    metaDescription: 'Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 8 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.',
     ogTitle: 'LaplandActivities · Noggrant utvalda arktiska upplevelser',
     categoriesKicker: 'Vad du kan göra',
     categoriesH2: 'Välj ditt äventyr',
@@ -188,11 +188,11 @@ const sv: SectionCopy = {
     allCategoriesLink: 'Alla kategorier →',
   },
   destinationsIndex: {
-    metaTitle: 'Resmål i Lappland · LaplandActivities',
-    metaDescription: 'Åtta ikoniska resmål i finska Lappland: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio och Torneå. Aktiviteter, researrangörer och boende.',
+    metaTitle: 'Resmål i Lappland och Kuusamo · LaplandActivities',
+    metaDescription: 'Åtta ikoniska resmål i finska Lappland och Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio och Torneå. Aktiviteter, researrangörer och boende.',
     kicker: 'Vart du ska åka',
     h1: 'Resmål',
-    lead: 'Åtta ikoniska resmål i Lappland, var och en med sin egen karaktär och sitt eget nätverk av researrangörer.',
+    lead: 'Åtta ikoniska resmål i Lappland och grannstaden Kuusamo, var och en med sin egen karaktär och sitt eget nätverk av researrangörer.',
     activitiesLabel: 'aktiviteter',
     explore: 'Utforska',
     gygTitle: 'Lapplands mest bokade turer',
@@ -270,7 +270,7 @@ const sv: SectionCopy = {
   },
   about: {
     metaTitle: 'Om oss · LaplandActivities',
-    metaDescription: 'LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på åtta resmål i finska Lappland.',
+    metaDescription: 'LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på åtta resmål i finska Lappland med omnejd.',
     eyebrow: 'Om oss',
     h1: 'En aktivitetsguide till finska Lappland',
     para1: 'LaplandActivities är aktivitetsgrenen i #LaplandVibes-ekosystemet, ett nätverk av fristående guider som täcker boende, mat, natur, transport och turer i finska Lappland.',

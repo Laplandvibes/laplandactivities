@@ -17,17 +17,18 @@ export const HOTELS_QUERY: Record<string, string> = {
   lapland:    'Lapland, Finland',
 };
 
-// Verified GYG location slugs. When a per-destination slug isn't confirmed
-// we fall back to the Lapland-wide slug; the Worker still attributes correctly.
+// Verified GYG location slugs — every destination lands on ITS OWN GYG page
+// (Vesa 2026-07-23: a generic Lapland slug surfaced Rovaniemi tours to a user
+// standing in Kittilä; per-destination slugs verified live against GYG).
 export const GYG_SLUG: Record<string, string> = {
   rovaniemi:  'rovaniemi-l2653',
-  levi:       'lappi-suomi-l2652',
-  yllas:      'lappi-suomi-l2652',
-  saariselka: 'lappi-suomi-l2652',
-  inari:      'lappi-suomi-l2652',
-  ruka:       'lappi-suomi-l2652',
-  posio:      'lappi-suomi-l2652',
-  tornio:     'lappi-suomi-l2652',
+  levi:       'levi-sirkka-l150197',
+  yllas:      'yllas-l87669',
+  saariselka: 'saariselka-l181615',
+  inari:      'inari-municipality-l164594',
+  ruka:       'ruka-l192178',
+  posio:      'posio-region-l217155',
+  tornio:     'tornio-l192017',
   lapland:    'lappi-suomi-l2652',
 };
 

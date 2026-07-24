@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka en Kuusamo",
       "tagline": "Wildernis-hoofdstad van Finland",
-      "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland. Beroemd om berenobservatie, raften en het langste skiseizoen.",
+      "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland. Beroemd om berenobservatie, raften en het langste skiseizoen. Ruka ligt in Kuusamo, net ten zuiden van Lapland, met dezelfde sneeuw en dezelfde noordelijke winter.",
       "access": "Vlieg naar Kuusamo (25 min met de auto)",
       "bestFor": "Wandelaars, skiërs en natuurliefhebbers"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Sneeuwscooter-safari door Ruka-wildernis",
-      "description": "Rijd door enkele van de meest afgelegen wildernisgebieden van Fins Lapland. Diepe sneeuw, bevroren rivieren en de stilte van de achterhoede.",
+      "description": "Rijd door enkele van de meest afgelegen wildernisgebieden van Kuusamo, net ten zuiden van Lapland. Diepe sneeuw, bevroren rivieren en de stilte van de achterhoede.",
       "highlights": [
         "Afgelegen wildernis",
         "Bevroren rivieren",
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Geweldige ijsviservaring",
-      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en houting met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd — het is de makkelijkste manier om Arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
+      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en houting met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd. Het is de makkelijkste manier om Arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
       "highlights": [
         "Techniek: boor uw eigen wak",
         "Geen vergunning nodig voor basis-ijsvissen",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Arctisch ijsvissen in kleine groep",
-      "description": "Een versie van de ijsvistocht met een beperkte groep, met meer persoonlijke begeleiding op techniek dan de grotere tours. Vis op baars en houting door het ijs op een rustig meer, en neem alleen mee wat u van plan bent te eten — pilkki-vissen is altijd kleinschalig geweest, en juist daarom blijven de meren van Lapland gezond.",
+      "description": "Een versie van de ijsvistocht met een beperkte groep, met meer persoonlijke begeleiding op techniek dan de grotere tours. Vis op baars en houting door het ijs op een rustig meer, en neem alleen mee wat u van plan bent te eten. Pilkki-vissen is altijd kleinschalig geweest, en juist daarom blijven de meren van Lapland gezond.",
       "highlights": [
         "Beperkte kleine groepsgrootte",
         "Meer individuele aandacht van de gids",
@@ -923,7 +923,7 @@ const d: LangData = {
     },
     "act-kingcrab-kirkenes-saariselka": {
       "title": "Koningskrab-safari van Saariselkä naar Kirkenes",
-      "description": "Steek de grens over van Saariselkä naar Kirkenes, Noorwegen, voor een rode-koningskrab-safari op de Barentszzee. De koningskrab is hier niet inheems — hij werd in de jaren 1960 uitgezet vanuit de Zee van Ochotsk en heeft geen natuurlijke vijanden in de Noorse wateren, dus een vergunde, quotagereguleerde vangst voorkomt dat de populatie de inheemse kabeljauw- en schaaldierbestanden overwoekert. Gidsen halen de korven op; de dag eindigt met een koningskrabmaaltijd.",
+      "description": "Steek de grens over van Saariselkä naar Kirkenes, Noorwegen, voor een rode-koningskrab-safari op de Barentszzee. De koningskrab is hier niet inheems. Hij werd in de jaren 1960 uitgezet vanuit de Zee van Ochotsk en heeft geen natuurlijke vijanden in de Noorse wateren, dus een vergunde, quotagereguleerde vangst voorkomt dat de populatie de inheemse kabeljauw- en schaaldierbestanden overwoekert. Gidsen halen de korven op; de dag eindigt met een koningskrabmaaltijd.",
       "highlights": [
         "Steekt de grens over naar Kirkenes, Noorwegen",
         "Vergunde vangst van een invasieve soort",
@@ -935,7 +935,7 @@ const d: LangData = {
     },
     "act-kingcrab-rib-kirkenes": {
       "title": "Kirkenes zomerse koningskrab-RIB-safari",
-      "description": "Een zomerse RIB-bootsafari die vanuit Kirkenes zelf vertrekt, de Barentszzee op om koningskrabkorven op te halen. De rode koningskrab is hier een invasieve soort, en gereguleerde vangst door vergunde aanbieders is onderdeel van hoe Noorwegen hem beheert — krab die niet wordt gevangen, verspreidt zich verder westwaarts langs de kust. De tocht eindigt met een verse krabmaaltijd aan boord of aan wal.",
+      "description": "Een zomerse RIB-bootsafari die vanuit Kirkenes zelf vertrekt, de Barentszzee op om koningskrabkorven op te halen. De rode koningskrab is hier een invasieve soort, en gereguleerde vangst door vergunde aanbieders is onderdeel van hoe Noorwegen hem beheert. Krab die niet wordt gevangen, verspreidt zich verder westwaarts langs de kust. De tocht eindigt met een verse krabmaaltijd aan boord of aan wal.",
       "highlights": [
         "RIB-bootsafari op de Barentszzee",
         "Quotagereguleerde vangst van een invasieve soort",

@@ -270,7 +270,7 @@ const ko: SectionCopy = {
     lodging: [
       { name: '글래스 이글루', blurb: '곡면 유리 천장으로 오로라 아래서 잠들기. 라플란드에서 가장 많이 예약되는 숙소.' },
       { name: '호숫가 로그 캐빈', blurb: '스모크 사우나, 장작 핫텁, 전용 부두. 연중 운영.' },
-      { name: '펠 리조트', blurb: '레비 · 윌래스 · 사리셀카 · 루카, 스키인/스키아웃과 여름 액티비티.' },
+      { name: '펠 리조트', blurb: '레비 · 윌래스 · 사리셀카 · 루카(쿠사모, 라플란드 바로 남쪽), 스키인/스키아웃과 여름 액티비티.' },
       { name: '부티크 시티', blurb: '로바니에미 · 케미 · 이발로, 주방이 있는 디자인 호텔, 도심 접근성.' },
       { name: '스모크 사우나 캐빈', blurb: '진짜 사부사우나 체험, 작고, 어둡고, 말도 안 되게 뜨거움.' },
     ],
@@ -303,7 +303,7 @@ const ko: SectionCopy = {
   activityCard: { findBook: '찾아서 예약', planVisit: '방문 계획하기' },
   home: {
     metaTitle: 'LaplandActivities: 라플란드의 엄선한 북극 투어 예약',
-    metaDescription: '스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 8개 라플란드 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.',
+    metaDescription: '스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 라플란드와 그 주변 8개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.',
     ogTitle: 'LaplandActivities: 엄선한 북극 체험',
     categoriesKicker: '무엇을 할까', categoriesH2: '어드벤처를 선택하세요',
     categoriesLead: '북극을 체험하는 8가지 방법, 카테고리를 고르면 엄선한 투어 운영자로 안내해드립니다.',
@@ -375,10 +375,10 @@ const ko: SectionCopy = {
     browseOthers: '다른 카테고리 둘러보기', allCategoriesLink: '모든 카테고리 →',
   },
   destinationsIndex: {
-    metaTitle: '라플란드 목적지 · LaplandActivities',
-    metaDescription: '라플란드의 8개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 포시오, 토르니오. 액티비티, 운영자, 숙박.',
+    metaTitle: '라플란드와 쿠사모 목적지 · LaplandActivities',
+    metaDescription: '라플란드와 쿠사모의 8개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 포시오, 토르니오. 액티비티, 운영자, 숙박.',
     kicker: '어디로 갈까', h1: '목적지',
-    lead: '8개의 대표적인 라플란드 목적지, 각각 고유한 개성과 운영자 네트워크를 갖추고 있습니다.',
+    lead: '라플란드와 이웃한 쿠사모의 8개 대표 목적지, 각각 고유한 개성과 운영자 네트워크를 갖추고 있습니다.',
     activitiesLabel: '액티비티', explore: '둘러보기',
     gygTitle: '가장 많이 예약된 라플란드 투어', gygEyebrow: '모든 목적지에서',
   },
@@ -427,7 +427,7 @@ const ko: SectionCopy = {
       ruka: [
         { tip: '곰 관찰 동굴은 몇 달 전에 매진됩니다.', icon: '🐻' },
         { tip: '카르훈키에로스에는 당일 하이커용 12km "리틀 베어" 루프가 있습니다.', icon: '🥾' },
-        { tip: '루카는 이미 10월에 스키 시즌을 시작, 라플란드 최초.', icon: '⛷️' },
+        { tip: '루카는 이미 10월에 스키 시즌을 시작, 핀란드에서 가장 이른 개장.', icon: '⛷️' },
       ],
       posio: [
         { tip: '리시툰투리의 튀키 눈 나무는 1-3월이 최고.', icon: '🌲' },
@@ -443,7 +443,7 @@ const ko: SectionCopy = {
   },
   about: {
     metaTitle: '소개 · LaplandActivities',
-    metaDescription: 'LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 8개 라플란드 목적지의 엄선한 북극 체험.',
+    metaDescription: 'LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드와 그 주변 8개 목적지의 엄선한 북극 체험.',
     eyebrow: '소개', h1: '라플란드 액티비티 가이드',
     para1: 'LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드의 숙박, 음식, 자연, 교통, 투어를 다루는 독립 가이드 네트워크입니다.',
     para2: '이 사이트는 8개 목적지에서 엄선한 현지 운영자로 여행자를 안내합니다, 사리셀카의 스노모빌 사파리부터 토르니오요키의 연어 낚시까지. 모든 예약은 GetYourGuide를 통해 이루어져 즉시 확정과 대부분 24시간 전 무료 취소가 제공됩니다.',

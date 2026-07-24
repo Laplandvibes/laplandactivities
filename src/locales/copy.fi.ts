@@ -285,7 +285,7 @@ const fi: SectionCopy = {
     lodging: [
       { name: 'Lasi-iglut', blurb: 'Nuku revontulien alla kaarevan lasikaton kautta. Lapin kysytyimmät yöt.' },
       { name: 'Järvenrantamökit', blurb: 'Savusauna, puulämmitteinen palju, oma laituri. Ympärivuotinen.' },
-      { name: 'Tunturikeskukset', blurb: 'Levi · Ylläs · Saariselkä · Ruka. Rinteet vieressä ja kesäaktiviteetit.' },
+      { name: 'Tunturikeskukset', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, aivan Lapin rajan eteläpuolella). Rinteet vieressä ja kesäaktiviteetit.' },
       { name: 'Boutique-kaupunkihotellit', blurb: 'Rovaniemi · Kemi · Ivalo. Design-hotellit keittiöllä ja keskustan vieressä.' },
       { name: 'Savusaunamökit', blurb: 'Aito savusaunakokemus: pieni, pimeä, järjettömän kuuma.' },
     ],
@@ -331,7 +331,7 @@ const fi: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: arktiset retket Suomen Lapissa',
-    metaDescription: 'Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kahdeksassa Lapin kohteessa GetYourGuiden kautta.',
+    metaDescription: 'Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kahdeksassa kohteessa Lapissa ja lähialueilla GetYourGuiden kautta.',
     ogTitle: 'LaplandActivities · luotettavia arktisia elämyksiä',
     categoriesKicker: 'Mitä tehdä',
     categoriesH2: 'Valitse seikkailusi',
@@ -421,11 +421,11 @@ const fi: SectionCopy = {
     allCategoriesLink: 'Kaikki kategoriat →',
   },
   destinationsIndex: {
-    metaTitle: 'Lapin kohteet · LaplandActivities',
-    metaDescription: 'Kahdeksan ikonista Suomen Lapin kohdetta: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio ja Tornio. Aktiviteetit, toimijat ja majoitus.',
+    metaTitle: 'Lapin ja Kuusamon kohteet · LaplandActivities',
+    metaDescription: 'Kahdeksan ikonista kohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Posio ja Tornio. Aktiviteetit, toimijat ja majoitus.',
     kicker: 'Minne mennä',
     h1: 'Kohteet',
-    lead: 'Kahdeksan ikonista Lapin kohdetta, jokaisella oma luonne ja toimijaverkosto.',
+    lead: 'Kahdeksan ikonista kohdetta Lapissa ja Kuusamossa, jokaisella oma luonne ja toimijaverkosto.',
     activitiesLabel: 'aktiviteettia',
     explore: 'Tutustu',
     gygTitle: 'Varatuimmat Lapin retket',
@@ -503,7 +503,7 @@ const fi: SectionCopy = {
   },
   about: {
     metaTitle: 'Tietoja · LaplandActivities',
-    metaDescription: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kahdeksassa Suomen Lapin kohteessa.',
+    metaDescription: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kahdeksassa kohteessa Suomen Lapissa ja lähialueilla.',
     eyebrow: 'Tietoja',
     h1: 'Suomen Lapin aktiviteettiopas',
     para1: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteetti-osio, itsenäinen oppaaverkosto, joka kattaa majoituksen, ruoan, luonnon, liikkumisen ja retket Suomen Lapissa.',

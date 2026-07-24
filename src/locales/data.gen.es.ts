@@ -80,7 +80,7 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka y Kuusamo",
       "tagline": "Capital finlandesa de la naturaleza salvaje",
-      "description": "Sede del legendario sendero del oso Karhunkierros, del Parque nacional de Oulanka y de una de las mejores estaciones de esquí de Finlandia. Famosa por la observación de osos, el rafting y la temporada de esquí más larga.",
+      "description": "Sede del legendario sendero del oso Karhunkierros, del Parque nacional de Oulanka y de una de las mejores estaciones de esquí de Finlandia. Famosa por la observación de osos, el rafting y la temporada de esquí más larga. Ruka está en Kuusamo, justo al sur de Laponia, con la misma nieve y el mismo invierno nórdico.",
       "access": "Vuelo a Kuusamo (25 min en coche)",
       "bestFor": "Senderistas, esquiadores y amantes de la fauna"
     },
@@ -743,7 +743,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Safari en motonieve por la naturaleza de Ruka",
-      "description": "Cabalgue por algunas de las zonas salvajes más remotas de la Laponia finlandesa. Nieve profunda, ríos helados y el silencio del interior.",
+      "description": "Cabalgue por algunas de las zonas salvajes más remotas de Kuusamo, justo al sur de Laponia. Nieve profunda, ríos helados y el silencio del interior.",
       "highlights": [
         "Naturaleza remota",
         "Ríos helados",
