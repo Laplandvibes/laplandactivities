@@ -1426,6 +1426,16 @@ const GYG_QUERY: Record<string, string> = {
   'act-kingcrab-rib-kirkenes':            'king crab rib safari kirkenes',
 };
 
+// === Paid-partner routing (Vesa 2026-07-25) ===
+// Activities owned by a SIGNED LV partner must never send booking intent to a
+// GetYourGuide search where the partner's competitors bid on the same query
+// (the only GYG bear product around Kuusamo is the contract-excluded
+// competitor's). The card CTA goes to our own partner feature page instead —
+// it carries the tracked direct-booking links. Checked BEFORE isBookable.
+export const PARTNER_PAGE: Record<string, string> = {
+  'ruk-bear-watching': '/bear-kuusamo', // Bear Kuusamo (Karhu-Kuusamo Oy), deal 2026-07
+};
+
 export function isBookable(a: Activity): boolean {
   return !NON_BOOKABLE.has(a.id);
 }

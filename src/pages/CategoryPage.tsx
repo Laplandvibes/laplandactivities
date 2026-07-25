@@ -7,6 +7,10 @@ import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
+import AdUnit from '../../../shared/ads/AdUnit';
+import bearKuusamoAd from '../../../shared/ads/advertisers/bearkuusamo';
+import { adLocaleEnabled } from '../../../shared/adSlotsCopy';
+import { trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -92,9 +96,9 @@ export default function CategoryPage() {
 
       {/* HERO — same family as DestinationPage: icon badge above a full-size H1,
           not a small heading beside a floating icon box (Vesa 2026-07-07). */}
-      <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-center overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.96) 0%, rgba(15,23,42,0.80) 42%, rgba(15,23,42,0.48) 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <category.icon className="w-7 h-7 text-vibe-pink" />
@@ -123,6 +127,33 @@ export default function CategoryPage() {
           </Link>
         </div>
       </div>
+
+      {/* PAID PARTNER (Bear Kuusamo) — flat-fee placement, NOT a commission link.
+          Wildlife/bear watching, so it runs on the animals category only; the same
+          slug gate keeps it off every other category page. Ads are fi/en/sv only
+          across the network (adLocaleEnabled), and partner clicks fire the distinct
+          `partner_click` GA4 event, never affiliate_click.
+          🔴 CONTRAST RULE (Vesa 2026-07-25): a paid ad must STAND OUT, not blend in.
+          This page is deep-night, so the unit uses the `light` variant = a solid
+          white card, which reads as a distinct paid object against the dark page
+          (the `dark` variant is a 3% translucent glass card and disappears here).
+          Do NOT "match" the ad to the page surface. */}
+      {slug === 'animals' && adLocaleEnabled(lang) && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-7xl mx-auto">
+            <AdUnit
+              spec={bearKuusamoAd}
+              sid="animals_category_top"
+              lang={lang}
+              variant="light"
+              imageSrc="/images/activities/bear-kuusamo/bear-hero.webp"
+              articleHref={to('/bear-kuusamo')}
+              onArticleClick={(_k, adSid) => trackPartnerClick(`article:${adSid}`)}
+              onCtaClick={(_specKey, adSid) => trackPartnerClick(adSid)}
+            />
+          </div>
+        </section>
+      )}
 
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
@@ -181,6 +212,47 @@ export default function CategoryPage() {
         title={`${c.gygTitlePrefix} ${category.name}`}
         eyebrow={c.gygEyebrow}
       />
+
+      {/* Featured partner — surfaced on the wildlife (animals) listing only.
+          Direct partner deal, normal-follow internal link to the /bear-kuusamo guide. */}
+      {slug === 'animals' && (() => {
+        const bk = COPY[lang].bearKuusamo;
+        return (
+          <section className="py-6 sm:py-10 px-4 sm:px-6 bg-deep-night">
+            <div className="max-w-7xl mx-auto">
+              <Link
+                to={to('/bear-kuusamo')}
+                className="group grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_1.1fr] rounded-2xl overflow-hidden border border-white/10 bg-white/[0.04] hover:border-vibe-pink/40 transition-colors"
+              >
+                <div className="relative min-h-[200px] md:min-h-[240px]">
+                  <img
+                    src="/images/activities/bear-kuusamo/bear-hero.webp"
+                    alt={bk.imageAlts.hero}
+                    loading="lazy"
+                    decoding="async"
+                    width="1600"
+                    height="1068"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    style={{ objectPosition: 'center 50%' }}
+                  />
+                </div>
+                <div className="p-6 sm:p-8 flex flex-col justify-center">
+                  <span className="inline-flex self-start items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-snow/70 mb-3">
+                    <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: '#007E2E' }} aria-hidden="true" />
+                    {bk.card.eyebrow}
+                  </span>
+                  <h3 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide mb-2">{bk.card.title}</h3>
+                  <p className="text-snow/70 text-sm leading-relaxed">{bk.card.blurb}</p>
+                  <span className="inline-flex items-center gap-1.5 text-vibe-pink text-sm font-semibold mt-4 group-hover:gap-2.5 transition-all">
+                    {bk.card.cta}
+                    <ArrowLeft className="w-4 h-4 rotate-180" aria-hidden="true" />
+                  </span>
+                </div>
+              </Link>
+            </div>
+          </section>
+        );
+      })()}
 
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
