@@ -127,9 +127,12 @@ export default function AffiliateCTA({
 }
 
 /**
- * Anchor any hotels search to Finnish Lapland. A bare "Lapland"/"Levi"/etc.
- * makes Hotels.com geocode to *Lapland, Indiana, USA* — a real revenue/trust
- * bug (Vesa 2026-07-08). Force ", Finland" onto every hotels query that does
+ * Anchor any lodging search to Finnish Lapland. A bare "Lapland"/"Levi"/etc.
+ * makes the lodging partner geocode to *Lapland, Indiana, USA* — a real
+ * revenue/trust bug (Vesa 2026-07-08). Still applies after the 2026-07 CJ exit:
+ * the Worker now resolves /go/hotels to Sembo (fi) and Trip.com (other
+ * locales), and both geocode from this same query string.
+ * Force ", Finland" onto every lodging query that does
  * not already name the country; leave cars/activities queries untouched.
  * Callers cannot re-introduce the bug.
  */

@@ -10,6 +10,11 @@ export default function Hero() {
   const to = useLocalePath();
   const c = COPY[lang].hero;
 
+  // Keep the hero height in `vh`. Tailwind v4 does NOT emit CSS for `svh`
+  // arbitrary values here (min-h-[92svh] compiles to nothing at all), so the
+  // min-height silently disappears and the hero collapses to content height
+  // (~350px). Verified 2026-07-25 against the built CSS. Do not "modernise"
+  // these units without checking dist/assets/*.css for the generated rule.
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-deep-night">
       <HeroSlider />

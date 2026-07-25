@@ -95,7 +95,7 @@ export default function DestinationPage() {
       </Helmet>
 
       {/* HERO — focal-fixed so heads/helmets are never cropped */}
-      <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-center overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img
           src={heroImg}
           alt={destination.name}

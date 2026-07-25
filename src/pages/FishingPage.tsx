@@ -10,6 +10,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { focalFor } from '../data/images';
+import { withReferral } from '../lib/referral';
 
 // Direct official licence/regulation links — plain <a>, never affiliate.
 const OFFICIAL = {
@@ -37,10 +38,11 @@ const OFFICIAL = {
   tornioNatura: 'https://www.ymparisto.fi/fi/luonto-vesistot-ja-meri/luonnon-monimuotoisuus/suojelu-ennallistaminen-ja-luonnonhoito/natura-2000-alueet/tornionjoen-muonionjoen-vesistoalue',
 };
 
-// Per-river-card: matching direct official permit link + a hotels.com stay CTA.
+// Per-river-card: matching direct official permit link + a lodging stay CTA.
 // Order mirrors copy.fishing.rivers.cards (Tornio, Teno, Ounasjoki, Ivalojoki,
 // Simojoki, wilderness). ss = the nearest sensible town (anchorHotelsSs forces
-// ", Finland" so Hotels.com never geocodes to the wrong country).
+// ", Finland" so the lodging partner never geocodes to the wrong country).
+// (Lodging is resolved by the Worker: Sembo for fi, Trip.com elsewhere.)
 const RIVER_META = [
   { href: OFFICIAL.tornioArea, ss: 'Pello', sid: 'fishing_river_tornionjoki' },
   { href: OFFICIAL.tenoLuvat, ss: 'Nuorgam', sid: 'fishing_river_teno' },
@@ -72,10 +74,14 @@ function SectionImage({ src, alt }: { src: string; alt: string }) {
   );
 }
 
+// Rule 4: every official/operator link leaves tagged as an editorial referral
+// (utm_source=laplandvibes&utm_medium=referral), applied once here so all 21
+// call sites keep passing the clean URL from OFFICIAL. `rel` is unchanged —
+// these are editorial links, never sponsored.
 function OfficialLink({ href, children }: { href: string; children: ReactNode }) {
   return (
     <a
-      href={href}
+      href={withReferral(href, 'laplandactivities_fishing')}
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center gap-1 text-arctic-cyan hover:underline text-sm font-medium"
@@ -150,7 +156,7 @@ export default function FishingPage() {
       </Helmet>
 
       {/* HERO */}
-      <section className="relative min-h-[54vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img
           src={heroImg}
           alt=""
