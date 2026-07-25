@@ -8,16 +8,16 @@
 export const HOTELS_QUERY: Record<string, string> = {
   rovaniemi:  'Rovaniemi, Finland',
   levi:       'Levi, Finland',
-  yllas:      'Ylläs, Finland',
+  // Sembo polygon "Ylläs" = 3 properties; main village Äkäslompolo = 13.
+  // Trip.com maps yllas/akaslompolo to the same city id (9274).
+  yllas:      'Äkäslompolo, Finland',
   saariselka: 'Saariselkä, Finland',
   inari:      'Inari, Finland',
   ruka:       'Ruka, Finland',
   posio:      'Posio, Finland',
   tornio:     'Tornio, Finland',
-  // NOTE (worker): TRIP_CITY substring match has no pyha/luosto/kemijarvi ids;
-  // 'kemijarvi' even substring-matches 'kemi' → non-fi Trip.com users land on
-  // coastal Kemi's list. Sembo (fi) resolves the text query correctly. Flagged
-  // for a worker-side TRIP_CITY addition — do not "fix" by renaming the query.
+  // Worker TRIP_CITY now carries pyha/pyhatunturi/luosto/kemijarvi ids with
+  // longest-key-first matching (2026-07-24), so these resolve on both partners.
   'pyha-luosto': 'Pyhätunturi, Finland',
   kemijarvi:  'Kemijärvi, Finland',
   lapland:    'Lapland, Finland',
