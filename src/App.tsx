@@ -12,6 +12,7 @@ const CategoriesIndex = lazy(() => import('./pages/CategoriesIndex'))
 const CategoryPage = lazy(() => import('./pages/CategoryPage'))
 const AboutPage = lazy(() => import('./pages/AboutPage'))
 const FishingPage = lazy(() => import('./pages/FishingPage'))
+const BearKuusamoPage = lazy(() => import('./pages/BearKuusamoPage'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const Privacy = lazy(() => import('./pages/legal/Privacy'))
 const Terms = lazy(() => import('./pages/legal/Terms'))
@@ -102,6 +103,9 @@ export default function App() {
           <Route path="/fishing" element={<FishingPage />} />
           <Route path="/fi/fishing" element={<FishingPage />} />
           <Route path="/de/fishing" element={<FishingPage />} />
+          <Route path="/bear-kuusamo" element={<BearKuusamoPage />} />
+          <Route path="/fi/bear-kuusamo" element={<BearKuusamoPage />} />
+          <Route path="/de/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/fi/privacy" element={<Privacy />} />
           <Route path="/de/privacy" element={<Privacy />} />
@@ -118,6 +122,7 @@ export default function App() {
           <Route path="/ja/categories/:slug" element={<CategoryPage />} />
           <Route path="/ja/about" element={<AboutPage />} />
           <Route path="/ja/fishing" element={<FishingPage />} />
+          <Route path="/ja/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/ja/privacy" element={<Privacy />} />
           <Route path="/ja/terms" element={<Terms />} />
           <Route path="/ja/cookie-policy" element={<CookiePolicy />} />
@@ -128,6 +133,7 @@ export default function App() {
           <Route path="/es/categories/:slug" element={<CategoryPage />} />
           <Route path="/es/about" element={<AboutPage />} />
           <Route path="/es/fishing" element={<FishingPage />} />
+          <Route path="/es/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/es/privacy" element={<Privacy />} />
           <Route path="/es/terms" element={<Terms />} />
           <Route path="/es/cookie-policy" element={<CookiePolicy />} />
@@ -138,6 +144,7 @@ export default function App() {
           <Route path="/br/categories/:slug" element={<CategoryPage />} />
           <Route path="/br/about" element={<AboutPage />} />
           <Route path="/br/fishing" element={<FishingPage />} />
+          <Route path="/br/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/br/privacy" element={<Privacy />} />
           <Route path="/br/terms" element={<Terms />} />
           <Route path="/br/cookie-policy" element={<CookiePolicy />} />
@@ -148,6 +155,7 @@ export default function App() {
           <Route path="/cn/categories/:slug" element={<CategoryPage />} />
           <Route path="/cn/about" element={<AboutPage />} />
           <Route path="/cn/fishing" element={<FishingPage />} />
+          <Route path="/cn/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/cn/privacy" element={<Privacy />} />
           <Route path="/cn/terms" element={<Terms />} />
           <Route path="/cn/cookie-policy" element={<CookiePolicy />} />
@@ -158,6 +166,7 @@ export default function App() {
           <Route path="/kr/categories/:slug" element={<CategoryPage />} />
           <Route path="/kr/about" element={<AboutPage />} />
           <Route path="/kr/fishing" element={<FishingPage />} />
+          <Route path="/kr/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/kr/privacy" element={<Privacy />} />
           <Route path="/kr/terms" element={<Terms />} />
           <Route path="/kr/cookie-policy" element={<CookiePolicy />} />
@@ -168,6 +177,7 @@ export default function App() {
           <Route path="/fr/categories/:slug" element={<CategoryPage />} />
           <Route path="/fr/about" element={<AboutPage />} />
           <Route path="/fr/fishing" element={<FishingPage />} />
+          <Route path="/fr/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/fr/privacy" element={<Privacy />} />
           <Route path="/fr/terms" element={<Terms />} />
           <Route path="/fr/cookie-policy" element={<CookiePolicy />} />
@@ -178,6 +188,7 @@ export default function App() {
           <Route path="/it/categories/:slug" element={<CategoryPage />} />
           <Route path="/it/about" element={<AboutPage />} />
           <Route path="/it/fishing" element={<FishingPage />} />
+          <Route path="/it/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/it/privacy" element={<Privacy />} />
           <Route path="/it/terms" element={<Terms />} />
           <Route path="/it/cookie-policy" element={<CookiePolicy />} />
@@ -188,6 +199,7 @@ export default function App() {
           <Route path="/nl/categories/:slug" element={<CategoryPage />} />
           <Route path="/nl/about" element={<AboutPage />} />
           <Route path="/nl/fishing" element={<FishingPage />} />
+          <Route path="/nl/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/nl/privacy" element={<Privacy />} />
           <Route path="/nl/terms" element={<Terms />} />
           <Route path="/nl/cookie-policy" element={<CookiePolicy />} />
@@ -198,6 +210,7 @@ export default function App() {
           <Route path="/sv/categories/:slug" element={<CategoryPage />} />
           <Route path="/sv/about" element={<AboutPage />} />
           <Route path="/sv/fishing" element={<FishingPage />} />
+          <Route path="/sv/bear-kuusamo" element={<BearKuusamoPage />} />
           <Route path="/sv/privacy" element={<Privacy />} />
           <Route path="/sv/terms" element={<Terms />} />
           <Route path="/sv/cookie-policy" element={<CookiePolicy />} />
