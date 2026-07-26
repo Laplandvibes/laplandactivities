@@ -20,6 +20,7 @@ export default function PageBreadcrumb() {
     '/categories': c.categories,
     '/about': c.about,
     '/fishing': c.fishing,
+    '/bear-kuusamo': COPY[lang].bearKuusamo.breadcrumb,
   };
   return (
     <Breadcrumbs
