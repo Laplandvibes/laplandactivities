@@ -234,6 +234,12 @@ export type SectionCopy = {
     /** "Keep exploring" cross-link cards at the page end — 3 items: all fishing tours, LaplandNature freshwater, LaplandVisit arctic Norway. */
     crossLinks: { title: string; blurb: string }[];
   };
+  /** /privacy — localized <title> + <meta description> (all 12 locales). */
+  privacy: { metaTitle: string; metaDescription: string };
+  /** /terms — localized <title> + <meta description> (all 12 locales). */
+  terms: { metaTitle: string; metaDescription: string };
+  /** /cookie-policy — localized <title> + <meta description> (all 12 locales). */
+  cookie: { metaTitle: string; metaDescription: string };
   notFound: {
     metaTitle: string;
     h2: string;

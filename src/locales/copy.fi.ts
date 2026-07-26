@@ -534,6 +534,18 @@ const fi: SectionCopy = {
     contactBody2: ' yhteistyöasioissa:',
     backHome: '← Takaisin etusivulle',
   },
+  privacy: {
+    metaTitle: 'Tietosuojakäytäntö · LaplandActivities',
+    metaDescription: 'Miten Lapeso Oy (LaplandActivities) käsittelee henkilötietoja: uutiskirjeen tilaukset, analytiikka ja kumppanuusevästeet. GDPR- ja ePrivacy-yhteensopiva.',
+  },
+  terms: {
+    metaTitle: 'Käyttöehdot · LaplandActivities',
+    metaDescription: 'Sivuston laplandactivities.fi käyttöehdot: sisältö ja käyttöoikeudet, kumppanuuslinkkien ilmoitus, vastuut ja toimitukselliset periaatteet. Lapeso Oy, Suomi.',
+  },
+  cookie: {
+    metaTitle: 'Evästekäytäntö · LaplandActivities',
+    metaDescription: 'Mitä evästeitä laplandactivities.fi asettaa, mihin niitä käytetään ja miten muutat suostumustasi. Lapeso Oy:n GDPR- ja ePrivacy-mukainen evästeseloste.',
+  },
   notFound: {
     metaTitle: '404 · LaplandActivities',
     h2: 'Eksyitkö Arktisille?',

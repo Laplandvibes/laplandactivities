@@ -534,6 +534,18 @@ const de: SectionCopy = {
     contactBody2: ', für Partnerschaften:',
     backHome: '← Zurück zur Startseite',
   },
+  privacy: {
+    metaTitle: 'Datenschutzerklärung · LaplandActivities',
+    metaDescription: 'Wie Lapeso Oy (LaplandActivities) personenbezogene Daten verarbeitet: Newsletter-Anmeldungen, Analyse und Affiliate-Cookies. DSGVO- und ePrivacy-konform.',
+  },
+  terms: {
+    metaTitle: 'Nutzungsbedingungen · LaplandActivities',
+    metaDescription: 'Nutzungsbedingungen für laplandactivities.fi: Inhalte und Lizenzen, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von Lapeso Oy, Finnland.',
+  },
+  cookie: {
+    metaTitle: 'Cookie-Richtlinie · LaplandActivities',
+    metaDescription: 'Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konforme Cookie-Hinweise von Lapeso Oy.',
+  },
   notFound: {
     metaTitle: '404 · LaplandActivities',
     h2: 'Verirrt in der Arktis?',

@@ -534,6 +534,18 @@ const ja: SectionCopy = {
     contactBody2: '。パートナーシップは、',
     backHome: '← ホームに戻る',
   },
+  privacy: {
+    metaTitle: 'プライバシーポリシー｜LaplandActivities',
+    metaDescription: 'Lapeso Oy（LaplandActivities）による個人データの取り扱い。ニュースレター登録、アクセス解析、アフィリエイトのクッキーについて。GDPRおよびePrivacyに準拠。',
+  },
+  terms: {
+    metaTitle: '利用規約｜LaplandActivities',
+    metaDescription: 'laplandactivities.fi の利用規約。コンテンツと権利、アフィリエイトの開示、責任の範囲、編集基準について。運営はフィンランドの Lapeso Oy。',
+  },
+  cookie: {
+    metaTitle: 'クッキーポリシー｜LaplandActivities',
+    metaDescription: 'laplandactivities.fi が使用するクッキーの種類と目的、同意の変更方法。Lapeso Oy による GDPR および ePrivacy 準拠のクッキー開示。',
+  },
   notFound: {
     metaTitle: '404｜LaplandActivities',
     h2: '北極で迷子に?',

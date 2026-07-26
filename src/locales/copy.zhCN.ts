@@ -534,6 +534,18 @@ const zhCN: SectionCopy = {
     contactBody2: '，关于合作,',
     backHome: '← 返回首页',
   },
+  privacy: {
+    metaTitle: '隐私政策 · LaplandActivities',
+    metaDescription: 'Lapeso Oy（LaplandActivities）如何处理个人数据：通讯订阅、访问分析与联盟推广 Cookie。符合 GDPR 与 ePrivacy 要求。',
+  },
+  terms: {
+    metaTitle: '使用条款 · LaplandActivities',
+    metaDescription: 'laplandactivities.fi 的使用条款：内容与授权、联盟链接披露、责任范围与编辑准则。由芬兰 Lapeso Oy 运营。',
+  },
+  cookie: {
+    metaTitle: 'Cookie 政策 · LaplandActivities',
+    metaDescription: 'laplandactivities.fi 使用哪些 Cookie、用途以及如何更改同意设置。Lapeso Oy 依据 GDPR 与 ePrivacy 提供的 Cookie 说明。',
+  },
   notFound: {
     metaTitle: '404 · LaplandActivities',
     h2: '在北极迷路了?',

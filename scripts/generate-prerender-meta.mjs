@@ -161,6 +161,9 @@ async function main() {
     { path: '/fishing', key: 'fishing' },
     { path: '/categories', key: 'categoriesIndex' },
     { path: '/destinations', key: 'destinationsIndex' },
+    { path: '/privacy', key: 'privacy' },
+    { path: '/terms', key: 'terms' },
+    { path: '/cookie-policy', key: 'cookie' },
   ];
   for (const { path, key } of copyPages) {
     const byLang = {};

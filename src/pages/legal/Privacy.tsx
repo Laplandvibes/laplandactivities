@@ -1,15 +1,20 @@
 import { Helmet } from 'react-helmet-async';
 import PrivacyContent from '../../../../shared/Legal/PrivacyContent';
-import { useLang } from '../../i18n/useLang';
+import { useLang, useLocalePath } from '../../i18n/useLang';
+import { COPY } from '../../locales/copy';
 
 export default function Privacy() {
   const lang = useLang();
+  const to = useLocalePath();
+  const c = COPY[lang].privacy;
+  const path = to('/privacy');
+
   return (
     <>
       <Helmet>
-        <title>Privacy Policy · LaplandActivities</title>
-        <meta name="description" content="How LaplandActivities collects, stores, and protects your data. GDPR-compliant privacy policy for the LaplandVibes ecosystem." />
-        <link rel="canonical" href="https://laplandactivities.fi/privacy/" />
+        <title>{c.metaTitle}</title>
+        <meta name="description" content={c.metaDescription} />
+        <link rel="canonical" href={`https://laplandactivities.fi${path}`.replace(/\/?$/, '/')} />
         <meta name="robots" content="index, follow" />
       </Helmet>
       <PrivacyContent siteName="LaplandActivities" lang={lang} />

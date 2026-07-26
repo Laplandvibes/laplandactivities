@@ -535,6 +535,18 @@ const en: SectionCopy = {
       },
     ],
   },
+  privacy: {
+    metaTitle: 'Privacy Policy · LaplandActivities',
+    metaDescription: 'How Lapeso Oy (LaplandActivities) processes personal data: newsletter signups, analytics and affiliate cookies. GDPR and ePrivacy compliant.',
+  },
+  terms: {
+    metaTitle: 'Terms of Use · LaplandActivities',
+    metaDescription: 'Terms of use for laplandactivities.fi: content and licensing, affiliate disclosure, liability and editorial standards. Operated by Lapeso Oy, Finland.',
+  },
+  cookie: {
+    metaTitle: 'Cookie Policy · LaplandActivities',
+    metaDescription: 'Which cookies laplandactivities.fi sets, what they are used for and how to change your consent. GDPR and ePrivacy cookie disclosure from Lapeso Oy.',
+  },
   notFound: {
     metaTitle: '404 · LaplandActivities',
     h2: 'Lost in the Arctic?',
