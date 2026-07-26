@@ -544,7 +544,7 @@ const fi: SectionCopy = {
       title: "Bear Kuusamo: karhunkatselua Suomessa, aivan Lapin rajalla",
     },
     intro: {
-      para1: "Kuusamon itäpuolen rajametsissä, missä havumetsä jatkuu katkeamattomana kohti rajaa, ruskeakarhut astuvat esiin puurajasta pohjoisen pitkässä hämärässä. Bear Kuusamo on opastanut matkaajia tähän hiljaisuuteen yli kahdenkymmenen vuoden ajan. Se on Ruka–Kuusamon alueen vanhin karhunkatselutoimija ja koko maan pohjoisin.",
+      para1: "Kuusamon itäpuolisissa rajametsissä, missä havumetsä jatkuu katkeamattomana kohti rajaa, ruskeakarhut astuvat esiin puurajalta pohjoisen pitkässä hämärässä. Bear Kuusamo on opastanut matkaajia tähän hiljaisuuteen yli kahdenkymmenen vuoden ajan. Se on Ruka–Kuusamon alueen vanhin karhunkatselutoimija ja koko maan pohjoisin.",
       para2Pre: "Tämä on aitoa ",
       para2Post: ", ei eläintarha eikä esitys. Kätköt sijaitsevat suojellulla metsäalueella, joka rajautuu Paanajärven kansallispuistoon aivan Venäjän rajan takana. Perustaja Pekka Veteläinen ja hänen oppaansa tekevät yhteistyötä Metsähallituksen ja tutkijoiden kanssa ja kätkevät ruoan vaihtuviin paikkoihin, jotta karhut etsivät ravintonsa luontaiseen tapaan. Karhut pysyvät villeinä eivätkä kesynny; sinä saat vain rauhallisen, hyvin sijoitetun paikan katsella niitä.",
     },
@@ -559,7 +559,7 @@ const fi: SectionCopy = {
       eveningLabel: "Iltaretki (noin 4 tuntia, klo 18–22)",
       eveningBody: "Opastettu kävely kätkölle ja pohjoisen illan parhaiten valaistut tunnit.",
       overnightLabel: "Yöretki",
-      overnightBody: "Ilta jatkuu aamuun, ja usein näytös on runsaampi. Yötunteina liikkeellä on yleensä huomattavasti enemmän karhuja, isoista uroksista jopa keskikesällä emoon pentuineen, ja kesäöinä karhut menevät uimaan.",
+      overnightBody: "Ilta jatkuu aamuun, ja usein näytös on runsaampi. Yötunteina liikkeellä on yleensä huomattavasti enemmän karhuja, suurista uroksista pentujensa kanssa liikkuviin emoihin, joita näkee jopa keskikesällä. Kesäöinä karhut menevät myös uimaan.",
       season: "Opastus ja vakuutus sisältyvät hintaan, ja kausi kestää 1.5.–30.9. Kevät tuo emot pentuineen, ja keskikesällä aurinko ei laske täällä lainkaan, joten karhuja voi katsella ja kuvata läpi valoisan yön. Jos metsä pysyy tyhjänä, Original Bear Guarantee tuo sinut takaisin uudeksi illaksi veloituksetta.",
       bookingPre: "Ajantasaiset hinnat, päivämäärät ja saatavuus löytyvät ",
       bookingLink: "Bear Kuusamon omalta varaussivulta",
