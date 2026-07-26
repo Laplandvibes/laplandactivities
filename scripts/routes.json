@@ -24,6 +24,12 @@
     "appendSiteName": false
   },
   {
+    "path": "/bear-kuusamo",
+    "fallbackTitle": "Bear Kuusamo: Ethical Bear Watching in Finland | LaplandActivities",
+    "fallbackDescription": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, 1 May to 30 September.",
+    "appendSiteName": false
+  },
+  {
     "path": "/privacy",
     "fallbackTitle": "Privacy | LaplandActivities"
   },

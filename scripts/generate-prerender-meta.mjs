@@ -159,6 +159,7 @@ async function main() {
   const copyPages = [
     { path: '/about', key: 'about' },
     { path: '/fishing', key: 'fishing' },
+    { path: '/bear-kuusamo', key: 'bearKuusamo' },
     { path: '/categories', key: 'categoriesIndex' },
     { path: '/destinations', key: 'destinationsIndex' },
     { path: '/privacy', key: 'privacy' },
