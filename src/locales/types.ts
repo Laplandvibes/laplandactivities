@@ -234,6 +234,45 @@ export type SectionCopy = {
     /** "Keep exploring" cross-link cards at the page end — 3 items: all fishing tours, LaplandNature freshwater, LaplandVisit arctic Norway. */
     crossLinks: { title: string; blurb: string }[];
   };
+  /**
+   * Bear Kuusamo — paid partner feature (direct deal, NOT affiliate). All links go
+   * straight to bearkuusamo.com as normal follow links. The two keyword anchors
+   * ("bear watching in Finland", "bear tour in Finland") are injected by the page in
+   * English on every locale, so copy stores only the surrounding pre/post text.
+   */
+  bearKuusamo: {
+    metaTitle: string;
+    metaDescription: string;
+    /** Short breadcrumb label (brand name, not translated). */
+    breadcrumb: string;
+    /** Small visible commercial-partnership disclosure near the top of the page. */
+    partnershipLabel: string;
+    hero: { eyebrow: string; title: string };
+    /** Intro. para2 wraps the fixed English keyword anchor (injected by the page). */
+    intro: { para1: string; para2Pre: string; para2Post: string };
+    hide: { title: string; body: string };
+    treeCaption: string;
+    treeCredit: string;
+    ways: {
+      title: string;
+      eveningLabel: string;
+      eveningBody: string;
+      overnightLabel: string;
+      overnightBody: string;
+      season: string;
+      bookingPre: string;
+      bookingLink: string;
+      bookingPost: string;
+    };
+    /** "Where it is" wraps the fixed English keyword anchor (injected by the page). */
+    where: { title: string; pre: string; post: string };
+    cta: string;
+    imageAlts: { hero: string; tree: string };
+    logoAlt: string;
+    photoCredit: string;
+    /** Discovery card surfaced on the /categories/animals listing. */
+    card: { eyebrow: string; title: string; blurb: string; cta: string };
+  };
   /** /privacy — localized <title> + <meta description> (all 12 locales). */
   privacy: { metaTitle: string; metaDescription: string };
   /** /terms — localized <title> + <meta description> (all 12 locales). */
