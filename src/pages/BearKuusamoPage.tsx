@@ -12,11 +12,16 @@ import { trackPartnerClick } from '../lib/analytics';
 // 2026-07-24. Do not route these through the affiliate Worker.
 const BEAR_URL = 'https://bearkuusamo.com';
 
-// Conversion links (booking page, primary CTA, logo) carry campaign UTM so Bear
-// Kuusamo can attribute bookings to us. The two SEO keyword anchors deliberately
-// stay UTM-free (clean backlinks) — they still fire the partner_click event.
-const BEAR_URL_UTM =
-  'https://bearkuusamo.com/?utm_source=laplandactivities&utm_medium=partner&utm_campaign=bear-kuusamo-2026';
+// EVERY outbound Bear link carries campaign UTM, including the two SEO keyword
+// anchors. Those two used to be deliberately UTM-free ("clean backlink"), which
+// meant Bear Kuusamo had no way to see in their own analytics that a visitor came
+// from the article — the single thing they are paying for (Vesa 2026-07-27).
+// A query string does not cost link equity: bearkuusamo.com canonicalises to the
+// clean URL, so the dofollow backlink is unaffected and both sides get attribution.
+// `utm_content` = the sid, so the June 2027 referral report shows WHICH surface
+// (intro anchor, where anchor, CTA, logo) actually drove the visit.
+const bearUrl = (sid: string) =>
+  `${BEAR_URL}/?utm_source=laplandactivities&utm_medium=partner&utm_campaign=bear-kuusamo-2026&utm_content=${sid}`;
 
 // The two paid SEO keyword anchors. They MUST stay in English on every locale, so
 // the page owns them as constants and locale copy only carries the surrounding text.
@@ -41,21 +46,18 @@ const H2 = 'font-heading text-3xl sm:text-4xl text-snow tracking-wide';
 
 /**
  * Inline normal-follow link to bearkuusamo.com. Fires a GA4 `partner_click` on
- * click (placement = sid). `conversion` links get campaign UTM; keyword anchors
- * stay UTM-free but still track.
+ * click (placement = sid) and carries campaign UTM with utm_content=sid.
  */
 function BearLink({
   children,
   sid,
-  conversion = false,
 }: {
   children: ReactNode;
   sid: string;
-  conversion?: boolean;
 }) {
   return (
     <a
-      href={conversion ? BEAR_URL_UTM : BEAR_URL}
+      href={bearUrl(sid)}
       target="_blank"
       rel="noopener"
       data-sid={sid}
@@ -130,7 +132,12 @@ export default function BearKuusamoPage() {
           className="absolute inset-0"
           style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.40) 45%, rgba(15,23,42,0.10) 100%)' }}
         />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
+        {/* Hero copy sits in the SAME 3xl column as the article body below, with the
+            same px-4/sm:px-6 gutters. Before this it was max-w-7xl, so at 1440px the
+            headline started 232px to the left of the first paragraph and the page read
+            as two unrelated layouts (Vesa 2026-07-27). Hero and body must share one
+            measure — do not widen this back. */}
+        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           {/* Commercial-partnership disclosure — small, visible, near the top. Bear
               brand green used only as a restrained dot + border accent. */}
           <span
@@ -142,7 +149,7 @@ export default function BearKuusamoPage() {
           </span>
           <p className={`${EYEBROW} mb-3 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]`}>{c.hero.eyebrow}</p>
           <h1
-            className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98]"
+            className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow tracking-wide leading-[1.02]"
             style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 6px 32px rgba(0,0,0,0.8)' }}
           >
             {c.hero.title}
@@ -152,7 +159,10 @@ export default function BearKuusamoPage() {
 
       <PageBreadcrumb />
 
-      <main className="bg-deep-night">
+      {/* Plain <div>, NOT <main>: the app shell already renders a <main> around every
+          route, so a second one here nested two <main> landmarks in the document
+          (invalid HTML, and screen readers announce two "main" regions). */}
+      <div className="bg-deep-night">
         {/* INTRO */}
         <section className="py-14 sm:py-18 border-b border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
@@ -215,7 +225,7 @@ export default function BearKuusamoPage() {
             <p className="text-snow/75 text-base leading-relaxed mt-6">{c.ways.season}</p>
             <p className="text-snow/75 text-base leading-relaxed mt-4">
               {c.ways.bookingPre}
-              <BearLink sid="booking" conversion>{c.ways.bookingLink}</BearLink>
+              <BearLink sid="booking">{c.ways.bookingLink}</BearLink>
               {c.ways.bookingPost}
             </p>
           </div>
@@ -234,9 +244,9 @@ export default function BearKuusamoPage() {
               {c.where.post}
             </p>
 
-            {/* PRIMARY CTA — direct to Bear Kuusamo (conversion link: campaign UTM) */}
+            {/* PRIMARY CTA — direct to Bear Kuusamo (campaign UTM, utm_content=cta_book) */}
             <a
-              href={BEAR_URL_UTM}
+              href={bearUrl('cta_book')}
               target="_blank"
               rel="noopener"
               data-sid="cta_book"
@@ -254,7 +264,7 @@ export default function BearKuusamoPage() {
         <section className="py-14 sm:py-18">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <a
-              href={BEAR_URL_UTM}
+              href={bearUrl('logo')}
               target="_blank"
               rel="noopener"
               data-sid="logo"
@@ -268,7 +278,7 @@ export default function BearKuusamoPage() {
             <p className="text-snow/55 text-xs leading-relaxed mt-5">{c.photoCredit}</p>
           </div>
         </section>
-      </main>
+      </div>
     </>
   );
 }
