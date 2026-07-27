@@ -536,7 +536,7 @@ const fi: SectionCopy = {
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: eettistä karhunkatselua Suomessa, Lapin rajalla | LaplandActivities",
-    metaDescription: "Bear Kuusamo vie kätköille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9.",
+    metaDescription: "Bear Kuusamo vie kojuille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kaupallinen yhteistyö: Bear Kuusamo",
     hero: {
@@ -546,18 +546,18 @@ const fi: SectionCopy = {
     intro: {
       para1: "Kuusamon itäpuolisissa rajametsissä, missä havumetsä jatkuu katkeamattomana kohti rajaa, ruskeakarhut astuvat esiin puurajalta pohjoisen pitkässä hämärässä. Bear Kuusamo on opastanut matkaajia tähän hiljaisuuteen yli kahdenkymmenen vuoden ajan. Se on Ruka–Kuusamon alueen vanhin karhunkatselutoimija ja koko maan pohjoisin.",
       para2Pre: "Tämä on aitoa ",
-      para2Post: ", ei eläintarha eikä esitys. Kätköt sijaitsevat suojellulla metsäalueella, joka rajautuu Paanajärven kansallispuistoon aivan Venäjän rajan takana. Perustaja Pekka Veteläinen ja hänen oppaansa tekevät yhteistyötä Metsähallituksen ja tutkijoiden kanssa ja kätkevät ruoan vaihtuviin paikkoihin, jotta karhut etsivät ravintonsa luontaiseen tapaan. Karhut pysyvät villeinä eivätkä kesynny; sinä saat vain rauhallisen, hyvin sijoitetun paikan katsella niitä.",
+      para2Post: ", ei eläintarha eikä esitys. Kojut sijaitsevat suojellulla metsäalueella, joka rajautuu Paanajärven kansallispuistoon aivan Venäjän rajan takana. Perustaja Pekka Veteläinen ja hänen oppaansa tekevät yhteistyötä Metsähallituksen ja tutkijoiden kanssa ja kätkevät ruoan vaihtuviin paikkoihin, jotta karhut etsivät ravintonsa luontaiseen tapaan. Karhut pysyvät villeinä eivätkä kesynny; sinä saat vain rauhallisen, hyvin sijoitetun paikan katsella niitä.",
     },
     hide: {
-      title: "Yö kätköllä",
-      body: "Seitsemän hirsikätköä sijaitsee metsänreunassa, rakennettuina pitämään ihmisen äänet ja hajut sisällään. Panoraamaikkunoista katselijoilla on selkeä näkymä aukealle, ja valokuvaajilla on omat kamera-aukkonsa säkkituilla ja videopäillä, joten kenenkään ei tarvitse kuvata lasin läpi. Pääkätkö on esteetön, ja käymälät ovat omissa erillisissä tiloissaan. Ikkunoista voit nähdä ruskeakarhuja, keväisin ohi livahtavan ahman, merikotkia yläpuolella ja korpit, joiden huudot kertovat oppaille karhun olevan lähellä.",
+      title: "Yö kojussa",
+      body: "Seitsemän hirsikojua sijaitsee metsänreunassa, rakennettuina pitämään ihmisen äänet ja hajut sisällään. Panoraamaikkunoista katselijoilla on selkeä näkymä aukealle, ja valokuvaajilla on omat kamera-aukkonsa säkkituilla ja videopäillä, joten kenenkään ei tarvitse kuvata lasin läpi. Pääkoju on esteetön, ja käymälät ovat omissa erillisissä tiloissaan. Ikkunoista voit nähdä ruskeakarhuja, keväisin ohi livahtavan ahman, merikotkia yläpuolella ja korppeja, joiden huudot kertovat oppaille karhun olevan lähellä.",
     },
-    treeCaption: "Nuori ruskeakarhu kiipeää mäntyyn kätköjen lähellä.",
+    treeCaption: "Nuori ruskeakarhu kiipeää mäntyyn kojujen lähellä.",
     treeCredit: "Kuva: Piritta Paija / Bear Kuusamo",
     ways: {
       title: "Kaksi tapaa lähteä",
       eveningLabel: "Iltaretki (noin 4 tuntia, klo 18–22)",
-      eveningBody: "Opastettu kävely kätkölle ja pohjoisen illan parhaiten valaistut tunnit.",
+      eveningBody: "Opastettu kävely kojulle ja pohjoisen illan parhaiten valaistut tunnit.",
       overnightLabel: "Yöretki",
       overnightBody: "Ilta jatkuu aamuun, ja usein näytös on runsaampi. Yötunteina liikkeellä on yleensä huomattavasti enemmän karhuja, suurista uroksista pentujensa kanssa liikkuviin emoihin, joita näkee jopa keskikesällä. Kesäöinä karhut menevät myös uimaan.",
       season: "Opastus ja vakuutus sisältyvät hintaan, ja kausi kestää 1.5.–30.9. Kevät tuo emot pentuineen, ja keskikesällä aurinko ei laske täällä lainkaan, joten karhuja voi katsella ja kuvata läpi valoisan yön. Jos metsä pysyy tyhjänä, Original Bear Guarantee tuo sinut takaisin uudeksi illaksi veloituksetta.",
@@ -567,20 +567,20 @@ const fi: SectionCopy = {
     },
     where: {
       title: "Missä se sijaitsee",
-      pre: "Kuusamo sijaitsee Suomen koillisosassa, aivan Lapin rajan tuntumassa, Oulangan kansallispuistoa ympäröivien tuntureiden ja vanhojen metsien keskellä. Se on luontainen tukikohta, kun suunnittelet omaa ",
-      post: ": lennä Kuusamoon tai aja Rukalta, niin olet kätköillä tunnin sisällä.",
+      pre: "Kuusamo sijaitsee Suomen koillisosassa, aivan Lapin rajan tuntumassa, Oulangan kansallispuistoa ympäröivien tuntureiden ja vanhojen metsien keskellä. Se on luonteva tukikohta, kun suunnittelet omaa ",
+      post: ": lennä Kuusamoon tai aja Rukalta, niin olet kojuilla tunnin sisällä.",
     },
     cta: "Varaa suoraan Bear Kuusamolta",
     imageAlts: {
       hero: "Villi ruskeakarhuemo kahden pennun kanssa metsänreunassa Kuusamon lähellä. Kuva: Piritta Paija / Bear Kuusamo",
-      tree: "Nuori villi ruskeakarhu kiipeää mäntyyn Bear Kuusamon kätköjen lähellä. Kuva: Piritta Paija / Bear Kuusamo",
+      tree: "Nuori villi ruskeakarhu kiipeää mäntyyn Bear Kuusamon kojujen lähellä. Kuva: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
     photoCredit: "Kuvat: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Kaupallinen yhteistyö",
       title: "Villien karhujen katselua Bear Kuusamon kanssa",
-      blurb: "Ruka–Kuusamon alueen vanhimmat karhukätköt, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9.",
+      blurb: "Ruka–Kuusamon alueen vanhimmat karhukojut, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9.",
       cta: "Lue opas",
     },
   },
