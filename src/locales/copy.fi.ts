@@ -96,7 +96,7 @@ const fi: SectionCopy = {
         {
           name: 'Erämaan perhovedet',
           badge: 'Syrjäinen harjus ja taimen',
-          body: 'Kävelyyn valmiille kalastajille: Lutto ja Suomujoki Urho Kekkosen puiston alueella sekä Käkkälö ja Pöyris ylä-Ounasjoen vesistössä. Vain perhokalastusta harjukselle ja taimenelle Metsähallituksen lupa-alueilla, syrjäisiä, vähän kalastettuja, ja tarkka lupa-alue kannattaa varmistaa eräluvat.fi:stä ennen lähtöä.',
+          body: 'Kävelyyn valmiille kalastajille: Lutto ja Suomujoki Urho Kekkosen puiston alueella sekä Käkkälö ja Pöyris ylä-Ounasjoen vesistössä. Vain perhokalastusta harjukselle ja taimenelle Metsähallituksen lupa-alueilla. Nämä ovat syrjäisiä ja vähän kalastettuja vesiä, ja tarkka lupa-alue kannattaa varmistaa eräluvat.fi:stä ennen lähtöä.',
           crNote: 'Erämaan kannat ovat ohuita ja hidaskasvuisia; kevyt kosketus ja enimmäkseen vapauttaminen pitää ne kalastettavina.',
           officialLabel: 'Luvat: eräluvat.fi',
         },
@@ -110,10 +110,10 @@ const fi: SectionCopy = {
       title: 'Tornion lohi 2026: ennen ensimmäistä heittoa',
       rules: [
         'Kausi: 8. kesäkuuta 2026 klo 19:00 alkaen 15. elokuuta 2026 asti.',
-        '16.–25. elokuuta on rajoitettu jakso: vain perho tai viehe, väkäsettömät koukut, ja kaikki yli 65 cm lohet vapautettava heti.',
+        '16.–25. elokuuta on rajoitettu jakso: vain perho tai viehe, väkäsettömät koukut ja kaikki yli 65 cm lohet vapautettava heti.',
         'Saaliskiintiö: enintään 1 lohi per 24 tuntia JA enintään 2 lohta koko kaudella. Toisen lohesi jälkeen lopetat lohenkalastuksen loppuvuodeksi.',
         'Viikkorauhoitus: sunnuntai klo 19:00 – maanantai klo 19:00 (Suomen aikaa).',
-        'Lohen alamitta 50 cm (valtakunnallinen sääntö tälle osalle Perämerta). Harjuksen alamitat vaihtelevat leveysasteen mukaan tässä joessa, 30 cm 67°N pohjoispuolella, 35 cm eteläpuolella, joten tarkista tarkka jokiosuutesi eräluvat-alueen 2502 sivulta.',
+        'Lohen alamitta 50 cm (valtakunnallinen sääntö tälle osalle Perämerta). Harjuksen alamitat vaihtelevat leveysasteen mukaan tässä joessa: 30 cm 67°N pohjoispuolella, 35 cm eteläpuolella. Tarkista siis tarkka jokiosuutesi eräluvat-alueen 2502 sivulta.',
         'Kaikki taimenet on vapautettava (meritaimen on rauhoitettu), kuolleena tai elävänä.',
         'Veneestä: enintään 4 vapaa tai perhoa yhtä aikaa; ei gaffia (kalahakaa) eikä väkäsellistä laskeutuskoukkua.',
         'Saalisilmoitus vaaditaan 14 vuorokauden kuluessa saaliista, myös vapauttamistasi kaloista.',
@@ -517,8 +517,8 @@ const fi: SectionCopy = {
     metaDescription: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kymmenessä kohteessa Suomen Lapissa ja lähialueilla.',
     eyebrow: 'Tietoja',
     h1: 'Suomen Lapin aktiviteettiopas',
-    para1: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteetti-osio, itsenäinen oppaaverkosto, joka kattaa majoituksen, ruoan, luonnon, liikkumisen ja retket Suomen Lapissa.',
-    para2: 'Sivusto ohjaa matkailijat luotettavien paikallisten toimijoiden luokse kymmenessä kohteessa, Saariselän moottorikelkkasafareista Tornionjoen lohenkalastukseen. Jokainen varaus tehdään GetYourGuiden kautta, joten saat välittömän vahvistuksen ja useimmissa retkissä ilmaisen peruutuksen 24 tuntiin asti.',
+    para1: 'LaplandActivities on #LaplandVibes-ekosysteemin aktiviteetti-osio, itsenäinen opasverkosto, joka kattaa majoituksen, ruoan, luonnon, liikkumisen ja retket Suomen Lapissa.',
+    para2: 'Sivusto ohjaa matkailijat luotettavien paikallisten toimijoiden luokse kymmenessä kohteessa: Saariselän moottorikelkkasafareista Tornionjoen lohenkalastukseen. Jokainen varaus tehdään GetYourGuiden kautta, joten saat välittömän vahvistuksen ja useimmissa retkissä ilmaisen peruutuksen 24 tuntiin asti.',
     pillars: [
       { title: 'Luotettavat toimijat', text: 'Listauksissa paikallisia, vakiintuneita toimijoita; jokainen varaus kulkee GetYourGuiden kautta.' },
       { title: 'Aidot elämykset', text: 'Jokainen aktiviteetti on valittu sellaisten yksityiskohtien perusteella, joita ei voi väärentää.' },
