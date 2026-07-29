@@ -32,6 +32,9 @@ const bearKuusamo: Partner = {
   taglineSv: 'En natt i ett björngömsle, vid Lapplands gräns',
   url: 'https://go.laplandvibes.com/go/bearkuusamo?sid=home_card_a',
   imageSrc: '/images/activities/bear-kuusamo/bear-hero.webp',
+  // Kumppanin logo kortin kuvan oikeaan yläkulmaan (Vesa 2026-07-29). Tumma
+  // versio, koska PartnerSlot piirtää sen valkoiselle chipille valokuvan päälle.
+  logoSrc: '/images/partners/bearkuusamo.png',
   // CTA on pakollinen myydylle paikalle: ilman sitä viereinen tyhjä
   // "Varaa mainospaikka" -house-ad näyttää houkuttelevammalta kuin maksava
   // asiakas (Vesa 2026-07-27). Tekstit ovat Niinan hyväksymiä.
