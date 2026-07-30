@@ -9,7 +9,6 @@ import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../../../shared/ads/AdUnit';
 import bearKuusamoAd from '../../../shared/ads/advertisers/bearkuusamo';
-import { adLocaleEnabled } from '../../../shared/adSlotsCopy';
 import { trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
@@ -130,15 +129,18 @@ export default function CategoryPage() {
 
       {/* PAID PARTNER (Bear Kuusamo) — flat-fee placement, NOT a commission link.
           Wildlife/bear watching, so it runs on the animals category only; the same
-          slug gate keeps it off every other category page. Ads are fi/en/sv only
-          across the network (adLocaleEnabled), and partner clicks fire the distinct
+          slug gate keeps it off every other category page. Shows on EVERY locale
+          (Vesa 2026-07-30: a paid partner ad is visible on all 12 languages; the
+          spec carries full translations), and partner clicks fire the distinct
           `partner_click` GA4 event, never affiliate_click.
           🔴 CONTRAST RULE (Vesa 2026-07-25): a paid ad must STAND OUT, not blend in.
           This page is deep-night, so the unit uses the `light` variant = a solid
           white card, which reads as a distinct paid object against the dark page
           (the `dark` variant is a 3% translucent glass card and disappears here).
           Do NOT "match" the ad to the page surface. */}
-      {slug === 'animals' && adLocaleEnabled(lang) && (
+      {/* Maksettu kumppanimainos näkyy KAIKILLA 12 kielellä (Vesa 2026-07-30):
+          speksi kantaa täydet käännökset, kieliportti poistettu. */}
+      {slug === 'animals' && (
         <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
           <div className="max-w-7xl mx-auto">
             <AdUnit
