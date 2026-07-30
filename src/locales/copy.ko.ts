@@ -476,6 +476,8 @@ const ko: SectionCopy = {
     metaDescription: "Bear Kuusamo는 라플란드 경계에 자리한 쿠사모 동쪽 국경 숲에서 야생 불곰을 관찰하는 가이드 은신처를 운영합니다. 저녁 투어와 1박 투어, 5월 1일부터 9월 30일까지.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "상업적 제휴: Bear Kuusamo",
+    anchorWatching: "핀란드 곰 관찰",
+    anchorTour: "핀란드 곰 관찰 투어",
     hero: {
       eyebrow: "야생동물 · 라플란드 경계에서",
       title: "Bear Kuusamo: 핀란드, 라플란드 경계에서의 곰 관찰",
@@ -497,7 +499,7 @@ const ko: SectionCopy = {
       eveningBody: "은신처까지 가이드와 함께 걷고, 북국 저녁에서 빛이 가장 좋은 시간을 누립니다.",
       overnightLabel: "1박 투어",
       overnightBody: "저녁이 아침까지 이어지며, 대개 볼거리가 더 풍성합니다. 밤 시간대에는 큰 수컷부터 한여름에도 새끼를 데린 어미까지 훨씬 많은 곰이 나오는 경향이 있으며, 여름밤에는 곰들이 헤엄을 치러 갑니다.",
-      season: "가이드와 보험이 포함되며, 시즌은 5월 1일부터 9월 30일까지입니다. 봄에는 새끼를 데린 어미가 나오고, 한여름에는 이곳에서 해가 전혀 지지 않아 밝은 밤 내내 곰을 관찰하고 촬영할 수 있습니다. 숲이 조용하기만 하다면, Original Bear Guarantee가 다른 저녁에 무료로 다시 오게 해 줍니다.",
+      season: "가이드와 보험이 포함되며, 시즌은 5월 1일부터 9월 30일까지입니다. 봄에는 새끼를 데린 어미가 나오고, 한여름에는 이곳에서 해가 전혀 지지 않아 밝은 밤 내내 곰을 관찰하고 촬영할 수 있습니다. 숲이 조용하기만 하다면, 곰 보증(Original Bear Guarantee)이 다른 저녁에 무료로 다시 오게 해 줍니다.",
       bookingPre: "현재 요금, 날짜, 예약 가능 여부는 ",
       bookingLink: "Bear Kuusamo의 자체 예약 페이지",
       bookingPost: "에서 확인할 수 있습니다.",
@@ -505,7 +507,7 @@ const ko: SectionCopy = {
     where: {
       title: "위치",
       pre: "쿠사모는 핀란드 북동부, 라플란드 경계 바로 옆에 있으며, 오울란카 국립공원을 둘러싼 구릉과 원시림 사이에 자리합니다. 나만의 ",
-      post: "을 계획할 때 이곳은 자연스러운 거점입니다. 쿠사모로 날아오거나 루카에서 차로 넘어오면, 한 시간 안에 은신처에 닿습니다.",
+      post: "를 계획할 때 이곳은 자연스러운 거점입니다. 쿠사모로 날아오거나 루카에서 차로 넘어오면, 한 시간 안에 은신처에 닿습니다.",
     },
     cta: "Bear Kuusamo에 직접 예약하기",
     imageAlts: {

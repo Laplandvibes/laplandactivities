@@ -540,6 +540,8 @@ const en: SectionCopy = {
     metaDescription: 'Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, 1 May to 30 September.',
     breadcrumb: 'Bear Kuusamo',
     partnershipLabel: 'Commercial partnership · Bear Kuusamo',
+    anchorWatching: 'bear watching in Finland',
+    anchorTour: 'bear tour in Finland',
     hero: {
       eyebrow: 'Wildlife · On the edge of Lapland',
       title: 'Bear Kuusamo: bear watching in Finland, on the edge of Lapland',

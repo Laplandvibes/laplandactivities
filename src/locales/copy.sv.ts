@@ -540,6 +540,8 @@ const sv: SectionCopy = {
     metaDescription: "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland. Kvälls- och nattturer, 1 maj till 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kommersiellt samarbete: Bear Kuusamo",
+    anchorWatching: "björnskådning i Finland",
+    anchorTour: "björntur i Finland",
     hero: {
       eyebrow: "Vilda djur · Vid kanten av Lappland",
       title: "Bear Kuusamo: björnskådning i Finland, vid kanten av Lappland",
@@ -561,7 +563,7 @@ const sv: SectionCopy = {
       eveningBody: "En guidad vandring till gömslet och den nordliga kvällens bäst upplysta timmar.",
       overnightLabel: "Nattur",
       overnightBody: "Kvällen förlängd till morgonen, och ofta det rikare skådespelet. Nattens timmar brukar locka fram betydligt fler björnar, från stora hannar till, även vid midsommar, en hona med sina ungar, och sommarnätter går björnarna och simmar.",
-      season: "Guidning och försäkring ingår, och säsongen pågår 1 maj till 30 september. Våren för med sig honor med ungar, och vid midsommar går solen inte ner alls här, så du kan se och fotografera björnar genom hela den ljusa natten. Om skogen förblir tom tar Original Bear Guarantee tillbaka dig en kväll till utan kostnad.",
+      season: "Guidning och försäkring ingår, och säsongen pågår 1 maj till 30 september. Våren för med sig honor med ungar, och vid midsommar går solen inte ner alls här, så du kan se och fotografera björnar genom hela den ljusa natten. Om skogen förblir tom tar björngarantin (Original Bear Guarantee) tillbaka dig en kväll till utan kostnad.",
       bookingPre: "Aktuella priser, datum och tillgänglighet finns på ",
       bookingLink: "Bear Kuusamos egen bokningssida",
       bookingPost: ".",

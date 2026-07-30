@@ -20,13 +20,18 @@ const BEAR_URL = 'https://bearkuusamo.com';
 // clean URL, so the dofollow backlink is unaffected and both sides get attribution.
 // `utm_content` = the sid, so the June 2027 referral report shows WHICH surface
 // (intro anchor, where anchor, CTA, logo) actually drove the visit.
-const bearUrl = (sid: string) =>
-  `${BEAR_URL}/?utm_source=laplandactivities&utm_medium=partner&utm_campaign=bear-kuusamo-2026&utm_content=${sid}`;
-
-// The two paid SEO keyword anchors. They MUST stay in English on every locale, so
-// the page owns them as constants and locale copy only carries the surrounding text.
-const ANCHOR_WATCH = 'bear watching in Finland';
-const ANCHOR_TOUR = 'bear tour in Finland';
+//
+// Links resolve to bearkuusamo.com's OWN language version when one exists
+// (Niina/Bear 2026-07-30): fi/de/fr/es/it/nl live under /{lang}/, every other
+// locale goes to the EN root. Anchor texts come from locale copy
+// (c.anchorWatching / c.anchorTour) — no more fixed English anchors.
+const BEAR_SITE_LANGS = ['fi', 'de', 'fr', 'es', 'it', 'nl'];
+const bearHome = (l: string) => {
+  const two = l.slice(0, 2);
+  return BEAR_SITE_LANGS.includes(two) ? `https://bearkuusamo.com/${two}/` : 'https://bearkuusamo.com/';
+};
+const bearUrl = (sid: string, lang: string) =>
+  `${bearHome(lang)}?utm_source=laplandactivities&utm_medium=partner&utm_campaign=bear-kuusamo-2026&utm_content=${sid}`;
 
 // Partner section images (photographic). Native ~3:2; rendered full-width h-auto so
 // nothing crops at 375px. AVIF sibling exists on disk (matches the fishing folder).
@@ -51,13 +56,15 @@ const H2 = 'font-heading text-3xl sm:text-4xl text-snow tracking-wide';
 function BearLink({
   children,
   sid,
+  lang,
 }: {
   children: ReactNode;
   sid: string;
+  lang: string;
 }) {
   return (
     <a
-      href={bearUrl(sid)}
+      href={bearUrl(sid, lang)}
       target="_blank"
       rel="noopener"
       data-sid={sid}
@@ -173,7 +180,7 @@ export default function BearKuusamoPage() {
             </p>
             <p className="text-snow/80 text-base sm:text-lg leading-relaxed mt-6">
               {c.intro.para2Pre}
-              <BearLink sid="intro_keyword">{ANCHOR_WATCH}</BearLink>
+              <BearLink sid="intro_keyword" lang={lang}>{c.anchorWatching}</BearLink>
               {c.intro.para2Post}
             </p>
           </div>
@@ -225,7 +232,7 @@ export default function BearKuusamoPage() {
             <p className="text-snow/75 text-base leading-relaxed mt-6">{c.ways.season}</p>
             <p className="text-snow/75 text-base leading-relaxed mt-4">
               {c.ways.bookingPre}
-              <BearLink sid="booking">{c.ways.bookingLink}</BearLink>
+              <BearLink sid="booking" lang={lang}>{c.ways.bookingLink}</BearLink>
               {c.ways.bookingPost}
             </p>
           </div>
@@ -240,13 +247,13 @@ export default function BearKuusamoPage() {
             </div>
             <p className="text-snow/75 text-base leading-relaxed mt-2">
               {c.where.pre}
-              <BearLink sid="where_keyword">{ANCHOR_TOUR}</BearLink>
+              <BearLink sid="where_keyword" lang={lang}>{c.anchorTour}</BearLink>
               {c.where.post}
             </p>
 
             {/* PRIMARY CTA — direct to Bear Kuusamo (campaign UTM, utm_content=cta_book) */}
             <a
-              href={bearUrl('cta_book')}
+              href={bearUrl('cta_book', lang)}
               target="_blank"
               rel="noopener"
               data-sid="cta_book"
@@ -264,7 +271,7 @@ export default function BearKuusamoPage() {
         <section className="py-14 sm:py-18">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <a
-              href={bearUrl('logo')}
+              href={bearUrl('logo', lang)}
               target="_blank"
               rel="noopener"
               data-sid="logo"

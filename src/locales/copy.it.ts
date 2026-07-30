@@ -475,13 +475,15 @@ const it: SectionCopy = {
     metaDescription: "Bear Kuusamo porta ai capanni per osservare orsi bruni selvatici nelle foreste di confine a est di Kuusamo, ai margini della Lapponia. Uscite serali e notturne, dal 1° maggio al 30 settembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Collaborazione commerciale: Bear Kuusamo",
+    anchorWatching: "osservazione degli orsi in Finlandia",
+    anchorTour: "tour di osservazione degli orsi in Finlandia",
     hero: {
       eyebrow: "Fauna selvatica · Ai margini della Lapponia",
       title: "Bear Kuusamo: osservazione degli orsi in Finlandia, ai margini della Lapponia",
     },
     intro: {
       para1: "Nelle foreste di confine a est di Kuusamo, dove la foresta boreale prosegue ininterrotta verso il confine, gli orsi bruni escono dal limitare del bosco nel lungo crepuscolo del nord. Bear Kuusamo guida i viaggiatori in quella quiete da più di vent'anni. È il più antico operatore di osservazione degli orsi della regione di Ruka–Kuusamo e il più settentrionale del Paese.",
-      para2Pre: "Questo è vero ",
+      para2Pre: "Questa è vera ",
       para2Post: ", non uno zoo né uno spettacolo. I capanni sorgono in un tratto di foresta protetta che confina con il Parco nazionale di Paanajärvi, appena oltre il confine russo. Il fondatore Pekka Veteläinen e le sue guide collaborano con Metsähallitus e con i ricercatori e nascondono il cibo in punti sempre diversi, così che gli orsi cerchino e si nutrano come farebbero in natura. Gli orsi restano selvatici e non si abituano all'uomo; tu ottieni semplicemente un posto tranquillo e ben collocato per osservarli.",
     },
     hide: {
@@ -496,7 +498,7 @@ const it: SectionCopy = {
       eveningBody: "Una camminata guidata fino al capanno e le ore meglio illuminate della sera nordica.",
       overnightLabel: "Uscita notturna",
       overnightBody: "La sera prolungata fino al mattino e, spesso, lo spettacolo più ricco. Nelle ore notturne di solito escono molti più orsi, dai grandi maschi fino a, anche in piena estate, una madre con i suoi cuccioli, e nelle notti d'estate gli orsi vanno a nuotare.",
-      season: "Guida e assicurazione sono incluse e la stagione va dal 1° maggio al 30 settembre. La primavera porta madri con i cuccioli e, in piena estate, qui il sole non tramonta affatto, così puoi osservare e fotografare gli orsi per tutta la notte chiara. Se il bosco resta vuoto, l'Original Bear Guarantee ti riporta gratis per un'altra sera.",
+      season: "Guida e assicurazione sono incluse e la stagione va dal 1° maggio al 30 settembre. La primavera porta madri con i cuccioli e, in piena estate, qui il sole non tramonta affatto, così puoi osservare e fotografare gli orsi per tutta la notte chiara. Se il bosco resta vuoto, la Garanzia Originale Bear Kuusamo ti riporta gratis per un'altra sera.",
       bookingPre: "Prezzi aggiornati, date e disponibilità sono su ",
       bookingLink: "la pagina di prenotazione di Bear Kuusamo",
       bookingPost: ".",

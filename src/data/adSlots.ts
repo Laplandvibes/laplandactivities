@@ -31,6 +31,9 @@ const bearKuusamo: Partner = {
   taglineEn: 'A night in a bear hide, on the edge of Lapland',
   taglineSv: 'En natt i ett björngömsle, vid Lapplands gräns',
   url: 'https://go.laplandvibes.com/go/bearkuusamo?sid=home_card_a',
+  // fi-lokaalissa kortti vie bearkuusamo.comin fi-kieliversioon Workerin kautta
+  // (Niina/Bear 2026-07-30). PartnerSlot valitsee urlFi:n kun locale on fi.
+  urlFi: 'https://go.laplandvibes.com/go/bearkuusamo?sid=home_card_a&dest=https%3A%2F%2Fbearkuusamo.com%2Ffi%2F',
   imageSrc: '/images/activities/bear-kuusamo/bear-hero.webp',
   // Kumppanin logo kortin kuvan oikeaan yläkulmaan (Vesa 2026-07-29). Tumma
   // versio, koska PartnerSlot piirtää sen valkoiselle chipille valokuvan päälle.

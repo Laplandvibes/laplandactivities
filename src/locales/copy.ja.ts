@@ -539,6 +539,8 @@ const ja: SectionCopy = {
     metaDescription: "Bear Kuusamoは、ラップランドの境に位置するクーサモ東部の国境の森で、野生のヒグマを観察するガイド付きハイドを運営しています。夕方ツアーと一泊ツアー、5月1日から9月30日。",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "商業タイアップ：Bear Kuusamo",
+    anchorWatching: "フィンランドのクマ観察",
+    anchorTour: "フィンランドのクマ観察ツアー",
     hero: {
       eyebrow: "野生動物 · ラップランドの境で",
       title: "Bear Kuusamo：フィンランドでのクマ観察、ラップランドのすぐ境で",
@@ -560,7 +562,7 @@ const ja: SectionCopy = {
       eveningBody: "ハイドまでのガイド付きの歩きと、北国の夕べの最も光の美しい時間帯。",
       overnightLabel: "一泊ツアー",
       overnightBody: "夕方から朝まで延長され、しばしばより見応えがあります。夜の時間帯には、大きな雄から、真夏でさえ子連れの母グマまで、はるかに多くのクマが現れる傾向があり、夏の夜にはクマたちが泳ぎに行きます。",
-      season: "ガイドと保険が含まれ、シーズンは5月1日から9月30日までです。春には子連れの母グマが現れ、真夏にはここでは太陽がまったく沈まないため、明るい夜を通してクマを観察し撮影できます。森が静かなままなら、Original Bear Guarantee（オリジナル・ベア保証）により、もう一晩無料で戻ってこられます。",
+      season: "ガイドと保険が含まれ、シーズンは5月1日から9月30日までです。春には子連れの母グマが現れ、真夏にはここでは太陽がまったく沈まないため、明るい夜を通してクマを観察し撮影できます。森が静かなままなら、クマ保証（Original Bear Guarantee）により、もう一晩無料で戻ってこられます。",
       bookingPre: "最新の料金、日程、空き状況は",
       bookingLink: "Bear Kuusamo自身の予約ページ",
       bookingPost: "でご確認いただけます。",

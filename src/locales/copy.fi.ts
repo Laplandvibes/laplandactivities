@@ -539,6 +539,8 @@ const fi: SectionCopy = {
     metaDescription: "Bear Kuusamo vie kojuille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kaupallinen yhteistyö: Bear Kuusamo",
+    anchorWatching: "karhunkatselua Suomessa",
+    anchorTour: "karhuretkeä Suomessa",
     hero: {
       eyebrow: "Luonto · Lapin rajalla",
       title: "Bear Kuusamo: karhunkatselua Suomessa, aivan Lapin rajalla",
@@ -560,7 +562,7 @@ const fi: SectionCopy = {
       eveningBody: "Opastettu kävely kojulle ja pohjoisen illan parhaiten valaistut tunnit.",
       overnightLabel: "Yöretki",
       overnightBody: "Ilta jatkuu aamuun, ja usein näytös on runsaampi. Yötunteina liikkeellä on yleensä huomattavasti enemmän karhuja, suurista uroksista pentujensa kanssa liikkuviin emoihin, joita näkee jopa keskikesällä. Kesäöinä karhut menevät myös uimaan.",
-      season: "Opastus ja vakuutus sisältyvät hintaan, ja kausi kestää 1.5.–30.9. Kevät tuo emot pentuineen, ja keskikesällä aurinko ei laske täällä lainkaan, joten karhuja voi katsella ja kuvata läpi valoisan yön. Jos metsä pysyy tyhjänä, Original Bear Guarantee tuo sinut takaisin uudeksi illaksi veloituksetta.",
+      season: "Opastus ja vakuutus sisältyvät hintaan, ja kausi kestää 1.5.–30.9. Kevät tuo emot pentuineen, ja keskikesällä aurinko ei laske täällä lainkaan, joten karhuja voi katsella ja kuvata läpi valoisan yön. Jos metsä pysyy tyhjänä, karhutakuu tuo sinut takaisin uudeksi illaksi veloituksetta.",
       bookingPre: "Ajantasaiset hinnat, päivämäärät ja saatavuus löytyvät ",
       bookingLink: "Bear Kuusamon omalta varaussivulta",
       bookingPost: ".",

@@ -539,13 +539,15 @@ const es: SectionCopy = {
     metaDescription: "Bear Kuusamo lleva a escondites para ver osos pardos salvajes en los bosques fronterizos al este de Kuusamo, al borde de Laponia. Tours de tarde y de noche, del 1 de mayo al 30 de septiembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Colaboración comercial: Bear Kuusamo",
+    anchorWatching: "observación de osos en Finlandia",
+    anchorTour: "tour de observación de osos en Finlandia",
     hero: {
       eyebrow: "Fauna · Al borde de Laponia",
       title: "Bear Kuusamo: observación de osos en Finlandia, al borde de Laponia",
     },
     intro: {
       para1: "En los bosques fronterizos al este de Kuusamo, donde el bosque boreal se extiende sin cortes hacia la frontera, los osos pardos salen del límite del arbolado en el largo crepúsculo del norte. Bear Kuusamo lleva más de veinte años guiando a viajeros hacia esa quietud. Es la operación de observación de osos más antigua de la región de Ruka–Kuusamo y la más septentrional del país.",
-      para2Pre: "Esto es auténtico ",
+      para2Pre: "Esto es auténtica ",
       para2Post: ", no un zoológico ni un espectáculo. Los escondites se encuentran en una franja protegida de bosque que linda con el Parque Nacional de Paanajärvi, justo al otro lado de la frontera rusa. El fundador Pekka Veteläinen y sus guías trabajan con Metsähallitus y con investigadores, y esconden la comida en lugares cambiantes para que los osos busquen y se alimenten como lo harían de forma natural. Los osos siguen siendo salvajes y no se habitúan; tú solo consigues un asiento tranquilo y bien situado para observarlos.",
     },
     hide: {
@@ -560,7 +562,7 @@ const es: SectionCopy = {
       eveningBody: "Una caminata guiada hasta el escondite y las horas mejor iluminadas de la tarde nórdica.",
       overnightLabel: "Tour de noche",
       overnightBody: "La tarde prolongada hasta la mañana y, a menudo, el espectáculo más rico. Las horas nocturnas suelen sacar muchos más osos, desde grandes machos hasta, incluso en pleno verano, una madre con sus crías, y en las noches de verano los osos se van a nadar.",
-      season: "La guía y el seguro están incluidos, y la temporada va del 1 de mayo al 30 de septiembre. La primavera trae madres con crías, y en pleno verano el sol no se pone aquí en absoluto, así que puedes observar y fotografiar osos durante toda la noche luminosa. Si el bosque permanece vacío, la Original Bear Guarantee te trae de vuelta otra tarde sin coste.",
+      season: "La guía y el seguro están incluidos, y la temporada va del 1 de mayo al 30 de septiembre. La primavera trae madres con crías, y en pleno verano el sol no se pone aquí en absoluto, así que puedes observar y fotografiar osos durante toda la noche luminosa. Si el bosque permanece vacío, la Garantía Original del Oso te trae de vuelta otra tarde sin coste.",
       bookingPre: "Los precios actuales, las fechas y la disponibilidad están en ",
       bookingLink: "la propia página de reservas de Bear Kuusamo",
       bookingPost: ".",

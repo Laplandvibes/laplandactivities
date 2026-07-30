@@ -539,6 +539,8 @@ const zhCN: SectionCopy = {
     metaDescription: "Bear Kuusamo 在库萨莫以东、拉普兰边缘的边境森林中经营导览观熊掩体，观察野生棕熊。傍晚团与过夜团，5月1日至9月30日。",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "商业合作：Bear Kuusamo",
+    anchorWatching: "芬兰观熊体验",
+    anchorTour: "芬兰观熊之旅",
     hero: {
       eyebrow: "野生动物 · 拉普兰边缘",
       title: "Bear Kuusamo：在芬兰、拉普兰边缘观熊",
@@ -560,7 +562,7 @@ const zhCN: SectionCopy = {
       eveningBody: "在向导带领下步行前往掩体，赶上北国傍晚光线最好的时段。",
       overnightLabel: "过夜团",
       overnightBody: "傍晚一直延续到清晨，往往更加精彩。夜间时段通常会出现多得多的熊，从大公熊，到即便盛夏也可能带着幼崽的母熊，而在夏夜里，熊会去游泳。",
-      season: "导览和保险已包含在内，季节为5月1日至9月30日。春天会有母熊带着幼崽，盛夏时这里的太阳根本不会落下，因此你可以整夜在明亮中观察和拍摄熊。如果森林里一片沉寂，Original Bear Guarantee 会让你免费再来一个傍晚。",
+      season: "导览和保险已包含在内，季节为5月1日至9月30日。春天会有母熊带着幼崽，盛夏时这里的太阳根本不会落下，因此你可以整夜在明亮中观察和拍摄熊。如果森林里一片沉寂，观熊保证（Original Bear Guarantee）会让你免费再来一个傍晚。",
       bookingPre: "最新的价格、日期和空位见",
       bookingLink: "Bear Kuusamo 自己的预订页面",
       bookingPost: "。",

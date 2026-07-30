@@ -539,13 +539,15 @@ const de: SectionCopy = {
     metaDescription: "Bear Kuusamo führt zu Verstecken für wilde Braunbären in den Grenzwäldern östlich von Kuusamo, am Rand Lapplands. Abend- und Nachttouren, 1. Mai bis 30. September.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Bezahlte Partnerschaft: Bear Kuusamo",
+    anchorWatching: "Bärenbeobachtung in Finnland",
+    anchorTour: "Bärentour in Finnland",
     hero: {
       eyebrow: "Wildtiere · Am Rand Lapplands",
       title: "Bear Kuusamo: Bärenbeobachtung in Finnland, am Rand Lapplands",
     },
     intro: {
       para1: "In den Grenzwäldern östlich von Kuusamo, wo der boreale Wald ununterbrochen zur Grenze hin verläuft, treten Braunbären in der langen nördlichen Dämmerung aus dem Waldrand hervor. Bear Kuusamo führt Reisende seit mehr als zwanzig Jahren in diese Stille. Es ist der älteste Bärenbeobachtungsbetrieb in der Region Ruka–Kuusamo und der nördlichste des Landes.",
-      para2Pre: "Das ist echtes ",
+      para2Pre: "Das ist echte ",
       para2Post: ", kein Zoo und keine Show. Die Verstecke stehen in einem geschützten Waldstück, das jenseits der russischen Grenze an den Paanajärvi-Nationalpark grenzt. Gründer Pekka Veteläinen und seine Guides arbeiten mit Metsähallitus und Forschenden zusammen und verstecken das Futter an wechselnden Stellen, damit die Bären auf natürliche Weise suchen und fressen. Die Bären bleiben wild und ungewöhnt an Menschen; du bekommst einfach einen ruhigen, gut platzierten Platz, um sie zu beobachten.",
     },
     hide: {
@@ -560,7 +562,7 @@ const de: SectionCopy = {
       eveningBody: "Eine geführte Wanderung zum Versteck und die am besten beleuchteten Stunden des nördlichen Abends.",
       overnightLabel: "Nachttour",
       overnightBody: "Der Abend bis zum Morgen verlängert, und oft das reichere Schauspiel. In den Nachtstunden zeigen sich meist deutlich mehr Bären, von großen Männchen bis, selbst zur Mittsommerzeit, einer Mutter mit ihren Jungen, und in Sommernächten gehen die Bären schwimmen.",
-      season: "Führung und Versicherung sind inbegriffen, und die Saison läuft vom 1. Mai bis 30. September. Der Frühling bringt Mütter mit Jungen, und zur Mittsommerzeit geht die Sonne hier gar nicht unter, sodass du Bären die ganze helle Nacht hindurch beobachten und fotografieren kannst. Bleibt der Wald leer, bringt dich die Original Bear Guarantee kostenlos für einen weiteren Abend zurück.",
+      season: "Führung und Versicherung sind inbegriffen, und die Saison läuft vom 1. Mai bis 30. September. Der Frühling bringt Mütter mit Jungen, und zur Mittsommerzeit geht die Sonne hier gar nicht unter, sodass du Bären die ganze helle Nacht hindurch beobachten und fotografieren kannst. Bleibt der Wald leer, bringt dich die originale Bärengarantie kostenlos für einen weiteren Abend zurück.",
       bookingPre: "Aktuelle Preise, Termine und Verfügbarkeit findest du auf ",
       bookingLink: "der eigenen Buchungsseite von Bear Kuusamo",
       bookingPost: ".",

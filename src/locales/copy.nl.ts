@@ -475,6 +475,8 @@ const nl: SectionCopy = {
     metaDescription: "Bear Kuusamo brengt je naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland. Avond- en nachttochten, 1 mei tot 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Commercieel partnerschap: Bear Kuusamo",
+    anchorWatching: "beren spotten in Finland",
+    anchorTour: "berentour in Finland",
     hero: {
       eyebrow: "Wilde dieren · Aan de rand van Lapland",
       title: "Bear Kuusamo: beren kijken in Finland, aan de rand van Lapland",
@@ -496,7 +498,7 @@ const nl: SectionCopy = {
       eveningBody: "Een begeleide wandeling naar de hut en de best verlichte uren van de noordelijke avond.",
       overnightLabel: "Nachttocht",
       overnightBody: "De avond verlengd tot de ochtend, en vaak het rijkere schouwspel. In de nachtelijke uren komen er doorgaans veel meer beren, van grote mannetjes tot, zelfs midzomer, een moeder met haar jongen, en in zomernachten gaan de beren zwemmen.",
-      season: "Begeleiding en verzekering zijn inbegrepen, en het seizoen loopt van 1 mei tot 30 september. De lente brengt moeders met jongen, en midzomer gaat de zon hier helemaal niet onder, zodat je de hele lichte nacht door beren kunt bekijken en fotograferen. Blijft het bos leeg, dan brengt de Original Bear Guarantee je gratis terug voor nog een avond.",
+      season: "Begeleiding en verzekering zijn inbegrepen, en het seizoen loopt van 1 mei tot 30 september. De lente brengt moeders met jongen, en midzomer gaat de zon hier helemaal niet onder, zodat je de hele lichte nacht door beren kunt bekijken en fotograferen. Blijft het bos leeg, dan brengt de Originele Berengarantie je gratis terug voor nog een avond.",
       bookingPre: "Actuele prijzen, data en beschikbaarheid staan op ",
       bookingLink: "de eigen boekingspagina van Bear Kuusamo",
       bookingPost: ".",

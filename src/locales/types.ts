@@ -236,9 +236,10 @@ export type SectionCopy = {
   };
   /**
    * Bear Kuusamo — paid partner feature (direct deal, NOT affiliate). All links go
-   * straight to bearkuusamo.com as normal follow links. The two keyword anchors
-   * ("bear watching in Finland", "bear tour in Finland") are injected by the page in
-   * English on every locale, so copy stores only the surrounding pre/post text.
+   * straight to bearkuusamo.com as normal follow links, resolved to the partner's
+   * own language version when one exists (fi/de/fr/es/it/nl; Niina 2026-07-30).
+   * The two keyword anchors are localized (`anchorWatching` / `anchorTour`) and
+   * injected by the page between the surrounding pre/post fragments.
    */
   bearKuusamo: {
     metaTitle: string;
@@ -248,7 +249,11 @@ export type SectionCopy = {
     /** Small visible commercial-partnership disclosure near the top of the page. */
     partnershipLabel: string;
     hero: { eyebrow: string; title: string };
-    /** Intro. para2 wraps the fixed English keyword anchor (injected by the page). */
+    /** Localized anchor text for the intro bearkuusamo.com link (partner keyword, official per-language term). */
+    anchorWatching: string;
+    /** Localized anchor text for the "where it is" bearkuusamo.com link (partner keyword, official per-language term). */
+    anchorTour: string;
+    /** Intro. para2 wraps the localized keyword anchor `anchorWatching` (injected by the page). */
     intro: { para1: string; para2Pre: string; para2Post: string };
     hide: { title: string; body: string };
     treeCaption: string;
@@ -264,7 +269,7 @@ export type SectionCopy = {
       bookingLink: string;
       bookingPost: string;
     };
-    /** "Where it is" wraps the fixed English keyword anchor (injected by the page). */
+    /** "Where it is" wraps the localized keyword anchor `anchorTour` (injected by the page). */
     where: { title: string; pre: string; post: string };
     cta: string;
     imageAlts: { hero: string; tree: string };

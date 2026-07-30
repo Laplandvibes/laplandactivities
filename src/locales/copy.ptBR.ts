@@ -539,6 +539,8 @@ const ptBR: SectionCopy = {
     metaDescription: "A Bear Kuusamo leva a esconderijos para ver ursos-pardos selvagens nas florestas de fronteira a leste de Kuusamo, na borda da Lapônia. Passeios ao entardecer e à noite, de 1º de maio a 30 de setembro.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Parceria comercial: Bear Kuusamo",
+    anchorWatching: "observação de ursos na Finlândia",
+    anchorTour: "tour de observação de ursos na Finlândia",
     hero: {
       eyebrow: "Vida selvagem · Na borda da Lapônia",
       title: "Bear Kuusamo: observação de ursos na Finlândia, na borda da Lapônia",
@@ -560,7 +562,7 @@ const ptBR: SectionCopy = {
       eveningBody: "Uma caminhada guiada até o esconderijo e as horas de melhor luz do entardecer nórdico.",
       overnightLabel: "Passeio à noite",
       overnightBody: "O entardecer estendido até a manhã e, muitas vezes, o espetáculo mais rico. As horas da noite costumam trazer bem mais ursos, de grandes machos até, mesmo em pleno verão, uma mãe com seus filhotes, e nas noites de verão os ursos vão nadar.",
-      season: "A guia e o seguro estão incluídos, e a temporada vai de 1º de maio a 30 de setembro. A primavera traz mães com filhotes e, em pleno verão, o sol não se põe aqui, então dá para observar e fotografar ursos pela noite clara inteira. Se a floresta ficar vazia, a Original Bear Guarantee traz você de volta para outra noite sem custo.",
+      season: "A guia e o seguro estão incluídos, e a temporada vai de 1º de maio a 30 de setembro. A primavera traz mães com filhotes e, em pleno verão, o sol não se põe aqui, então dá para observar e fotografar ursos pela noite clara inteira. Se a floresta ficar vazia, a Garantia Original do Urso traz você de volta para outra noite sem custo.",
       bookingPre: "Preços atuais, datas e disponibilidade estão na ",
       bookingLink: "própria página de reservas da Bear Kuusamo",
       bookingPost: ".",

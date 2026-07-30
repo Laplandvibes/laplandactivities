@@ -475,13 +475,15 @@ const fr: SectionCopy = {
     metaDescription: "Bear Kuusamo emmène dans des affûts pour observer des ours bruns sauvages dans les forêts frontalières à l'est de Kuusamo, aux portes de la Laponie. Sorties du soir et de nuit, du 1er mai au 30 septembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Partenariat commercial : Bear Kuusamo",
+    anchorWatching: "observation des ours en Finlande",
+    anchorTour: "circuit d'observation des ours en Finlande",
     hero: {
       eyebrow: "Faune · Aux portes de la Laponie",
       title: "Bear Kuusamo : observation des ours en Finlande, aux portes de la Laponie",
     },
     intro: {
       para1: "Dans les forêts frontalières à l'est de Kuusamo, où la forêt boréale se déroule sans interruption vers la frontière, les ours bruns sortent de la lisière dans le long crépuscule du nord. Bear Kuusamo guide des voyageurs dans ce calme depuis plus de vingt ans. C'est le plus ancien exploitant d'observation des ours de la région de Ruka–Kuusamo, et le plus septentrional du pays.",
-      para2Pre: "C'est du vrai ",
+      para2Pre: "C'est de la vraie ",
       para2Post: ", pas un zoo ni un spectacle. Les affûts se dressent dans une bande de forêt protégée qui jouxte le parc national de Paanajärvi, juste de l'autre côté de la frontière russe. Le fondateur Pekka Veteläinen et ses guides travaillent avec Metsähallitus et des chercheurs, et cachent la nourriture à des endroits changeants pour que les ours cherchent et se nourrissent comme ils le feraient naturellement. Les ours restent sauvages et non habitués ; vous obtenez simplement un siège calme et bien placé pour les observer.",
     },
     hide: {
@@ -496,7 +498,7 @@ const fr: SectionCopy = {
       eveningBody: "Une marche guidée jusqu'à l'affût et les heures les mieux éclairées de la soirée nordique.",
       overnightLabel: "Sortie de nuit",
       overnightBody: "La soirée prolongée jusqu'au matin, et souvent le spectacle le plus riche. Les heures de nuit font généralement sortir bien plus d'ours, des gros mâles jusqu'à, même en plein été, une mère et ses petits, et les nuits d'été, les ours vont nager.",
-      season: "L'encadrement et l'assurance sont inclus, et la saison va du 1er mai au 30 septembre. Le printemps amène les mères et leurs petits, et en plein été le soleil ne se couche pas du tout ici, si bien que vous pouvez observer et photographier les ours toute la nuit claire. Si la forêt reste vide, l'Original Bear Guarantee vous fait revenir gratuitement pour une autre soirée.",
+      season: "L'encadrement et l'assurance sont inclus, et la saison va du 1er mai au 30 septembre. Le printemps amène les mères et leurs petits, et en plein été le soleil ne se couche pas du tout ici, si bien que vous pouvez observer et photographier les ours toute la nuit claire. Si la forêt reste vide, la garantie originale Bear Kuusamo vous fait revenir gratuitement pour une autre soirée.",
       bookingPre: "Les tarifs actuels, les dates et les disponibilités sont sur ",
       bookingLink: "la page de réservation de Bear Kuusamo",
       bookingPost: ".",
