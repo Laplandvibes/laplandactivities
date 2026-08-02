@@ -22,6 +22,8 @@ import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 import { trackEvent } from '../lib/analytics';
+import GygPicks from '../components/GygPicks';
+import { AppPromoHero } from '../components/AppPromo';
 
 // Sibling LaplandVibes ecosystem sites linked from the home page, index-aligned
 // to COPY[lang].relatedSites.links. These are OUR OWN sites — plain in-content
@@ -150,6 +152,9 @@ export default function Home() {
 
       <Hero />
 
+
+
+
       {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
           tyhjänä kompakti house-ad → LV Media -portaali */}
       <MainPartnerBanner config={AD_SLOTS} locale={lang} className="bg-deep-night" />
@@ -210,6 +215,10 @@ export default function Home() {
       {/* Kumppaniosio ylhäällä (LV Media): kakkospääkumppani + 6 premium-
           paikkaa — pääkumppanit eivät näy vierekkäin (banneri heron alla ↑) */}
       <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
+
+      {/* Varattavat GYG-tuotteet — korkealla sivulla mutta myytyjen mainospaikkojen ALAPUOLELLA */}
+      <GygPicks />
+
 
       <GetYourGuideWidget
         locationId="2652"
@@ -432,10 +441,14 @@ export default function Home() {
         </div>
       </section>
 
+
       <Newsletter />
 
       {/* keep imageForActivity used */}
       <div hidden aria-hidden="true">{imageForActivity('decor')}{totalActivities}</div>
+    {/* App launch block. Bottom of the page on purpose: the site's own hero is
+        what the search result promised, and this does not get to interrupt it. */}
+    <AppPromoHero />
     </>
   );
 }

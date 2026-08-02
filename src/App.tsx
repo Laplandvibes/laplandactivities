@@ -22,6 +22,7 @@ import { useHtmlLang, useLang } from './i18n/useLang';
 import { COPY, loadCopy } from './locales/copy';
 import { isLocaleDataLoaded, loadLocaleData } from './locales/data';
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
+import { AppPromoNudge } from './components/AppPromo';
 
 const pillarLinks = [
   { name: 'Destinations',     href: '/destinations' },
@@ -222,6 +223,7 @@ export default function App() {
       </CopyGate>
       <SharedCookieBanner consentKey="laplandactivities_cookie_consent" lang={lang} />
       <NewsletterPopup />
+      <AppPromoNudge />
     </div>
   );
 }
