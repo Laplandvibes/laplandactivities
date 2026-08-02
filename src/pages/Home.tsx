@@ -384,6 +384,10 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      {/* App launch block, directly under the site's own opening. At the foot
+          of the page it measured 81 % down a 33 000 px front page, and an
+          announcement nobody scrolls to is not an announcement. */}
+      <AppPromoHero />
 
       {/* FAQ — visible Q&A that mirrors the FAQPage JSON-LD above */}
       <section id="faq" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5" aria-labelledby="faq-h2">
@@ -446,9 +450,6 @@ export default function Home() {
 
       {/* keep imageForActivity used */}
       <div hidden aria-hidden="true">{imageForActivity('decor')}{totalActivities}</div>
-    {/* App launch block. Bottom of the page on purpose: the site's own hero is
-        what the search result promised, and this does not get to interrupt it. */}
-    <AppPromoHero />
     </>
   );
 }
