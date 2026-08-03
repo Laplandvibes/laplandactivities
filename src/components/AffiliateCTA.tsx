@@ -82,27 +82,43 @@ export function buildAffiliateHref({
   lang = "en",
 }: Pick<AffiliateCTAProps, 'partner' | 'sid' | 'destination' | 'query'> & { lang?: _Lang }): string {
   const sid = cleanSid(rawSid);
-  if (partner === 'activities-search') {
-    // GetYourGuide keyword search — lands on results for a specific experience.
-    // `destination` is the concise query (e.g. "salmon fishing tornio").
-    const url = new URL(`${GYG_DOMAIN[lang]}/s/`);
-    if (destination) url.searchParams.set('q', destination);
-    url.searchParams.set('partner_id', GYG_PARTNER_ID);
-    url.searchParams.set('cmp', `lv_${SITE_ID}_${sid}`);
-    const gygLang = GYG_LANGUAGE[lang];
-    if (gygLang) url.searchParams.set('language', gygLang);
-    if (query) for (const [k, v] of Object.entries(query)) if (v) url.searchParams.set(k, v);
-    return url.toString();
-  }
-  if (partner === 'activities') {
-    const path = (destination ?? '').replace(/^\/+/, '').replace(/\/+$/, '');
-    const url = new URL(path ? `${GYG_DOMAIN[lang]}/${path}/` : `${GYG_DOMAIN[lang]}/`);
-    url.searchParams.set('partner_id', GYG_PARTNER_ID);
-    url.searchParams.set('cmp', `lv_${SITE_ID}_${sid}`);
-    const gygLang = GYG_LANGUAGE[lang];
-    if (gygLang) url.searchParams.set('language', gygLang);
-    if (query) for (const [k, v] of Object.entries(query)) if (v) url.searchParams.set(k, v);
-    return url.toString();
+  if (partner === 'activities' || partner === 'activities-search') {
+    // Reitittää Workerin kautta 2026-08-03 alkaen. Tämän korvaama suora
+    // GYG-linkitys oli toukokuun 2026 kiertotapa (/go/activities/<slug>
+    // romahti silloin GYG:n etusivulle); Worker on 2026-08-02 lähtien
+    // hoitanut slugin, /s?q=-haun JA kielen polkuprefiksin (verifioitu
+    // livenä 3.8.: tuoteslug+fi, haku+ja, sijaintislug+de). Suora linkitys
+    // menettäisi D1-klikkilokin ja veisi partner_id:n bundleen.
+    const params = new URLSearchParams({ sid });
+    const gygLang = GYG_WORKER_LANG[lang];
+    if (gygLang) params.set('language', gygLang);
+    let path = '';
+    if (partner === 'activities-search') {
+      // `destination` on tiivis hakulause (esim. "salmon fishing tornio").
+      if (destination) params.set('q', destination);
+    } else {
+      const dest = (destination ?? '').replace(/^\/+|\/+$/g, '');
+      const q = query?.q?.trim();
+      const isDeepLink = dest.includes('/') || /-t\d+$/.test(dest);
+      if (q && dest && !isDeepLink) {
+        // 🔴 GYG:n sijaintisivut OHITTAVAT ?q=:n kokonaan (hubin auditti
+        // 2026-07-31: rovaniemi-l2653/?q=reindeer renderöi saman suodattamattoman
+        // listan). destination+q → /s-haku, jossa slugin paikkasanat taitetaan
+        // hakutekstiin — sama semantiikka kuin hubin AffiliateCTA:ssa.
+        const place = dest
+          .replace(/-l\d+$/, '')
+          .split('-')
+          .filter((w) => w && !['finland', 'suomi', 'lappi'].includes(w) && !q.toLowerCase().includes(w));
+        if (!place.length && !/lapland|rovaniemi|levi|yll|saariselk|ruka|inari|kemi|salla/i.test(q)) place.push('lapland');
+        params.set('q', [q, ...place].join(' '));
+      } else {
+        path = dest;
+        if (q && !dest) params.set('q', q);
+      }
+    }
+    // Muut lisäparametrit kulkevat Workerille (q on jo käsitelty yllä).
+    if (query) for (const [k, v] of Object.entries(query)) if (v && k !== 'q') params.set(k, v);
+    return `${REDIRECT_HOST}/go/activities${path ? `/${path}` : ''}?${params.toString()}`;
   }
   const params = new URLSearchParams({ sid, ...(query || {}) });
   // 🔴 cars käyttää pickup_location=IATA, EI ss:ää. Mitattu 2026-08-03:
