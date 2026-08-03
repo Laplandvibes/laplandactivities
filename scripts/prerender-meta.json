@@ -390,7 +390,7 @@
     },
     "zh-CN": {
       "title": "拉普兰与北冰洋钓鱼指南 | LaplandActivities",
-      "description": "免费冰钓、托尔尼奥河等持证三文鱼河，以及挪威帝王蟹之旅——附上你下竿前需要的 2026 年规定、费用和官方许可链接。"
+      "description": "免费冰钓、托尔尼奥河等持证三文鱼河，以及挪威帝王蟹之旅，附上你下竿前需要的 2026 年规定、费用和官方许可链接。"
     },
     "ko": {
       "title": "라플란드와 북극해에서 즐기는 낚시 | LaplandActivities",
@@ -411,6 +411,56 @@
     "sv": {
       "title": "Fiske i Lappland och Norra ishavet | LaplandActivities",
       "description": "Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbesafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver…"
+    }
+  },
+  "/bear-kuusamo": {
+    "en": {
+      "title": "Bear Kuusamo: Ethical Bear Watching in Finland | LaplandActivities",
+      "description": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland."
+    },
+    "fi": {
+      "title": "Bear Kuusamo: eettistä karhunkatselua Suomessa, Lapin rajalla | LaplandActivities",
+      "description": "Bear Kuusamo vie kojuille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9."
+    },
+    "de": {
+      "title": "Bear Kuusamo: Ethische Bärenbeobachtung in Finnland, am Rand Lapplands | LaplandActivities",
+      "description": "Bear Kuusamo führt zu Verstecken für wilde Braunbären in den Grenzwäldern östlich von Kuusamo, am Rand Lapplands. Abend- und Nachttouren, 1. Mai bis 30. September."
+    },
+    "ja": {
+      "title": "Bear Kuusamo：フィンランドでの倫理的なクマ観察、ラップランドの境で | LaplandActivities",
+      "description": "Bear Kuusamoは、ラップランドの境に位置するクーサモ東部の国境の森で、野生のヒグマを観察するガイド付きハイドを運営しています。夕方ツアーと一泊ツアー、5月1日から9月30日。"
+    },
+    "es": {
+      "title": "Bear Kuusamo: observación ética de osos en Finlandia, al borde de Laponia | LaplandActivities",
+      "description": "Bear Kuusamo lleva a escondites para ver osos pardos salvajes en los bosques fronterizos al este de Kuusamo, al borde de Laponia."
+    },
+    "pt-BR": {
+      "title": "Bear Kuusamo: observação ética de ursos na Finlândia, na borda da Lapônia | LaplandActivities",
+      "description": "A Bear Kuusamo leva a esconderijos para ver ursos-pardos selvagens nas florestas de fronteira a leste de Kuusamo, na borda da Lapônia."
+    },
+    "zh-CN": {
+      "title": "Bear Kuusamo：在芬兰、拉普兰边缘进行合乎道德的观熊 | LaplandActivities",
+      "description": "Bear Kuusamo 在库萨莫以东、拉普兰边缘的边境森林中经营导览观熊掩体，观察野生棕熊。傍晚团与过夜团，5月1日至9月30日。"
+    },
+    "ko": {
+      "title": "Bear Kuusamo: 핀란드, 라플란드 경계에서의 윤리적인 곰 관찰 | LaplandActivities",
+      "description": "Bear Kuusamo는 라플란드 경계에 자리한 쿠사모 동쪽 국경 숲에서 야생 불곰을 관찰하는 가이드 은신처를 운영합니다. 저녁 투어와 1박 투어, 5월 1일부터 9월 30일까지."
+    },
+    "fr": {
+      "title": "Bear Kuusamo : observation éthique des ours en Finlande, aux portes de la Laponie | LaplandActivities",
+      "description": "Bear Kuusamo emmène dans des affûts pour observer des ours bruns sauvages dans les forêts frontalières à l'est de Kuusamo, aux portes de la Laponie."
+    },
+    "it": {
+      "title": "Bear Kuusamo: osservazione etica degli orsi in Finlandia, ai margini della Lapponia | LaplandActivities",
+      "description": "Bear Kuusamo porta ai capanni per osservare orsi bruni selvatici nelle foreste di confine a est di Kuusamo, ai margini della Lapponia."
+    },
+    "nl": {
+      "title": "Bear Kuusamo: ethisch beren kijken in Finland, aan de rand van Lapland | LaplandActivities",
+      "description": "Bear Kuusamo brengt je naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland."
+    },
+    "sv": {
+      "title": "Bear Kuusamo: etisk björnskådning i Finland, vid kanten av Lappland | LaplandActivities",
+      "description": "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland."
     }
   },
   "/categories": {
@@ -511,6 +561,156 @@
     "sv": {
       "title": "Resmål i Lappland och Kuusamo · LaplandActivities",
       "description": "Tio ikoniska resmål i finska Lappland och Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio och Torneå."
+    }
+  },
+  "/privacy": {
+    "en": {
+      "title": "Privacy Policy · LaplandActivities",
+      "description": "How Lapeso Oy (LaplandActivities) processes personal data: newsletter signups, analytics and affiliate cookies. GDPR and ePrivacy compliant."
+    },
+    "fi": {
+      "title": "Tietosuojakäytäntö · LaplandActivities",
+      "description": "Miten Lapeso Oy (LaplandActivities) käsittelee henkilötietoja: uutiskirjeen tilaukset, analytiikka ja kumppanuusevästeet. GDPR- ja ePrivacy-yhteensopiva."
+    },
+    "de": {
+      "title": "Datenschutzerklärung · LaplandActivities",
+      "description": "Wie Lapeso Oy (LaplandActivities) personenbezogene Daten verarbeitet: Newsletter-Anmeldungen, Analyse und Affiliate-Cookies. DSGVO- und ePrivacy-konform."
+    },
+    "ja": {
+      "title": "プライバシーポリシー｜LaplandActivities",
+      "description": "Lapeso Oy（LaplandActivities）による個人データの取り扱い。ニュースレター登録、アクセス解析、アフィリエイトのクッキーについて。GDPRおよびePrivacyに準拠。"
+    },
+    "es": {
+      "title": "Política de privacidad · LaplandActivities",
+      "description": "Cómo Lapeso Oy (LaplandActivities) trata los datos personales: suscripciones al boletín, analítica y cookies de afiliación. Conforme al RGPD y a la ePrivacy."
+    },
+    "pt-BR": {
+      "title": "Política de privacidade · LaplandActivities",
+      "description": "Como a Lapeso Oy (LaplandActivities) trata os dados pessoais: inscrições na newsletter, análise de uso e cookies de afiliação. Em conformidade com RGPD e ePrivacy."
+    },
+    "zh-CN": {
+      "title": "隐私政策 · LaplandActivities",
+      "description": "Lapeso Oy（LaplandActivities）如何处理个人数据：通讯订阅、访问分析与联盟推广 Cookie。符合 GDPR 与 ePrivacy 要求。"
+    },
+    "ko": {
+      "title": "개인정보 처리방침 · LaplandActivities",
+      "description": "Lapeso Oy(LaplandActivities)가 개인정보를 처리하는 방식. 뉴스레터 신청, 분석, 제휴 쿠키를 다룹니다. GDPR 및 ePrivacy 준수."
+    },
+    "fr": {
+      "title": "Politique de confidentialité · LaplandActivities",
+      "description": "Comment Lapeso Oy (LaplandActivities) traite les données personnelles : inscriptions à la newsletter, mesure d'audience et cookies d'affiliation. RGPD et ePrivacy."
+    },
+    "it": {
+      "title": "Informativa sulla privacy · LaplandActivities",
+      "description": "Come Lapeso Oy (LaplandActivities) tratta i dati personali: iscrizioni alla newsletter, statistiche e cookie di affiliazione. Conforme a GDPR ed ePrivacy."
+    },
+    "nl": {
+      "title": "Privacybeleid · LaplandActivities",
+      "description": "Hoe Lapeso Oy (LaplandActivities) persoonsgegevens verwerkt: nieuwsbriefaanmeldingen, statistieken en affiliate-cookies. AVG- en ePrivacy-conform."
+    },
+    "sv": {
+      "title": "Integritetspolicy · LaplandActivities",
+      "description": "Så behandlar Lapeso Oy (LaplandActivities) personuppgifter: nyhetsbrevsanmälningar, analys och affiliatecookies. Följer GDPR och ePrivacy."
+    }
+  },
+  "/terms": {
+    "en": {
+      "title": "Terms of Use · LaplandActivities",
+      "description": "Terms of use for laplandactivities.fi: content and licensing, affiliate disclosure, liability and editorial standards. Operated by Lapeso Oy, Finland."
+    },
+    "fi": {
+      "title": "Käyttöehdot · LaplandActivities",
+      "description": "Sivuston laplandactivities.fi käyttöehdot: sisältö ja käyttöoikeudet, kumppanuuslinkkien ilmoitus, vastuut ja toimitukselliset periaatteet. Lapeso Oy, Suomi."
+    },
+    "de": {
+      "title": "Nutzungsbedingungen · LaplandActivities",
+      "description": "Nutzungsbedingungen für laplandactivities.fi: Inhalte und Lizenzen, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von Lapeso Oy, Finnland."
+    },
+    "ja": {
+      "title": "利用規約｜LaplandActivities",
+      "description": "laplandactivities.fi の利用規約。コンテンツと権利、アフィリエイトの開示、責任の範囲、編集基準について。運営はフィンランドの Lapeso Oy。"
+    },
+    "es": {
+      "title": "Condiciones de uso · LaplandActivities",
+      "description": "Condiciones de uso de laplandactivities.fi: contenidos y licencias, aviso de enlaces de afiliación, responsabilidad y normas editoriales. Gestionado por Lapeso Oy."
+    },
+    "pt-BR": {
+      "title": "Termos de uso · LaplandActivities",
+      "description": "Termos de uso do laplandactivities.fi: conteúdo e licenças, aviso de links de afiliação, responsabilidade e padrões editoriais. Operado pela Lapeso Oy, Finlândia."
+    },
+    "zh-CN": {
+      "title": "使用条款 · LaplandActivities",
+      "description": "laplandactivities.fi 的使用条款：内容与授权、联盟链接披露、责任范围与编辑准则。由芬兰 Lapeso Oy 运营。"
+    },
+    "ko": {
+      "title": "이용약관 · LaplandActivities",
+      "description": "laplandactivities.fi 이용약관. 콘텐츠와 라이선스, 제휴 링크 공개, 책임 범위, 편집 기준을 안내합니다. 핀란드 Lapeso Oy가 운영합니다."
+    },
+    "fr": {
+      "title": "Conditions d'utilisation · LaplandActivities",
+      "description": "Conditions d'utilisation de laplandactivities.fi : contenus et licences, mention d'affiliation, responsabilité et règles éditoriales."
+    },
+    "it": {
+      "title": "Condizioni d'uso · LaplandActivities",
+      "description": "Condizioni d'uso di laplandactivities.fi: contenuti e licenze, informativa sui link di affiliazione, responsabilità e standard editoriali. Gestito da Lapeso Oy."
+    },
+    "nl": {
+      "title": "Gebruiksvoorwaarden · LaplandActivities",
+      "description": "Gebruiksvoorwaarden van laplandactivities.fi: inhoud en licenties, affiliatevermelding, aansprakelijkheid en redactionele normen. Beheerd door Lapeso Oy, Finland."
+    },
+    "sv": {
+      "title": "Användarvillkor · LaplandActivities",
+      "description": "Användarvillkor för laplandactivities.fi: innehåll och licenser, information om affiliatelänkar, ansvar och redaktionella principer. Drivs av Lapeso Oy, Finland."
+    }
+  },
+  "/cookie-policy": {
+    "en": {
+      "title": "Cookie Policy · LaplandActivities",
+      "description": "Which cookies laplandactivities.fi sets, what they are used for and how to change your consent. GDPR and ePrivacy cookie disclosure from Lapeso Oy."
+    },
+    "fi": {
+      "title": "Evästekäytäntö · LaplandActivities",
+      "description": "Mitä evästeitä laplandactivities.fi asettaa, mihin niitä käytetään ja miten muutat suostumustasi. Lapeso Oy:n GDPR- ja ePrivacy-mukainen evästeseloste."
+    },
+    "de": {
+      "title": "Cookie-Richtlinie · LaplandActivities",
+      "description": "Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konforme Cookie-Hinweise von Lapeso Oy."
+    },
+    "ja": {
+      "title": "クッキーポリシー｜LaplandActivities",
+      "description": "laplandactivities.fi が使用するクッキーの種類と目的、同意の変更方法。Lapeso Oy による GDPR および ePrivacy 準拠のクッキー開示。"
+    },
+    "es": {
+      "title": "Política de cookies · LaplandActivities",
+      "description": "Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar tu consentimiento. Declaración de cookies de Lapeso Oy conforme al RGPD y la ePrivacy."
+    },
+    "pt-BR": {
+      "title": "Política de cookies · LaplandActivities",
+      "description": "Quais cookies o laplandactivities.fi utiliza, para que servem e como alterar seu consentimento. Aviso de cookies da Lapeso Oy conforme RGPD e ePrivacy."
+    },
+    "zh-CN": {
+      "title": "Cookie 政策 · LaplandActivities",
+      "description": "laplandactivities.fi 使用哪些 Cookie、用途以及如何更改同意设置。Lapeso Oy 依据 GDPR 与 ePrivacy 提供的 Cookie 说明。"
+    },
+    "ko": {
+      "title": "쿠키 정책 · LaplandActivities",
+      "description": "laplandactivities.fi가 사용하는 쿠키의 종류와 목적, 동의를 변경하는 방법. Lapeso Oy의 GDPR 및 ePrivacy 준수 쿠키 공개."
+    },
+    "fr": {
+      "title": "Politique de cookies · LaplandActivities",
+      "description": "Quels cookies laplandactivities.fi dépose, à quoi ils servent et comment modifier votre consentement. Déclaration cookies RGPD et ePrivacy de Lapeso Oy."
+    },
+    "it": {
+      "title": "Informativa sui cookie · LaplandActivities",
+      "description": "Quali cookie imposta laplandactivities.fi, a cosa servono e come modificare il consenso. Informativa cookie di Lapeso Oy conforme a GDPR ed ePrivacy."
+    },
+    "nl": {
+      "title": "Cookiebeleid · LaplandActivities",
+      "description": "Welke cookies laplandactivities.fi plaatst, waarvoor ze dienen en hoe je je toestemming wijzigt. AVG- en ePrivacy-conforme cookieverklaring van Lapeso Oy."
+    },
+    "sv": {
+      "title": "Cookiepolicy · LaplandActivities",
+      "description": "Vilka cookies laplandactivities.fi använder, varför de används och hur du ändrar ditt samtycke. Lapeso Oys cookieinformation enligt GDPR och ePrivacy."
     }
   },
   "/categories/adventure": {
