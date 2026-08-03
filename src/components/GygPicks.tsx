@@ -259,8 +259,10 @@ export default function GygPicks() {
                 <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
               </span>
 
+              {/* Per-rivin priceAsOf voittaa katalogin päiväyksen: rivin hinta on
+                  voitu lukea eri päivänä kuin katalogiajo (ks. picks.ts). */}
               <span className="mt-2 text-center text-[11px] text-white/60">
-                {p.price ? `${t(L.priceSource)} ${fiDate(GYG_PRICE_AS_OF)}` : t(L.via)}
+                {p.price ? `${t(L.priceSource)} ${fiDate(p.priceAsOf ?? GYG_PRICE_AS_OF)}` : t(L.via)}
               </span>
             </div>
           </a>
