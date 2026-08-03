@@ -353,7 +353,9 @@ const fi: SectionCopy = {
       { name: 'Syksy', months: 'syys – loka', blurb: 'Ruska värittää tunturit. Ensimmäiset revontulet palaavat. Sienien ja marjojen kausi.', temp: '+5…-5°C' },
     ],
     destinationsKicker: 'Minne mennä',
-    destinationsH2: 'Kohteet',
+    // Otsikko renderöityy "{lukumäärä} {tämä}" → partitiivi, ei "10 Kohteet"
+    // (sama vikaperhe kuin "8 tekemistä kohteessa X", Vesa 2026-08-03).
+    destinationsH2: 'kohdetta',
     viewAll: 'Katso kaikki',
     activitiesShort: 'aktiviteettia',
   },
