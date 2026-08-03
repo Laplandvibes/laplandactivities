@@ -85,7 +85,7 @@ export default function CategoriesIndex() {
       </main>
 
       <GetYourGuideWidget locationId="2652" cmpTag="laplandactivities-categories-auto" title={c.gygTitle} eyebrow={c.gygEyebrow} />
-      <BookingCTA />
+      <BookingCTA sidTag="categories_index" />
     </>
   );
 }

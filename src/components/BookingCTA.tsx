@@ -10,6 +10,13 @@ interface Props {
   /** Optional GYG search filter (?q=) — category pages pass this to target tours of that type. */
   gygQ?: string;
   pickupIata?: string;
+  /**
+   * Sivutunniste sidiin. Ilman tätä 12 eri sivua (etusivu, molemmat indeksit,
+   * 9 kategoriasivua) laukoi identtistä `bookcta_*_lapland`-sidiä eikä
+   * analytiikka erottanut niitä toisistaan (auditti 2026-08-03).
+   * Oletus = destinationSlug, eli kohdesivut käyttäytyvät kuten ennenkin.
+   */
+  sidTag?: string;
   /** Optional eyebrow + heading override (rare) */
   eyebrow?: string;
   heading?: string;
@@ -22,10 +29,12 @@ export default function BookingCTA({
   gygSlug = 'lappi-suomi-l2652',
   gygQ,
   pickupIata = 'RVN',
+  sidTag,
   eyebrow,
   heading,
   blurb,
 }: Props) {
+  const tag = sidTag ?? destinationSlug;
   const lang = useLang();
   const c = COPY[lang].bookingCta;
   const eb = eyebrow ?? c.eyebrow;
@@ -53,7 +62,7 @@ export default function BookingCTA({
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <AffiliateCTA
             partner="activities"
-            sid={`bookcta_activities_${destinationSlug}`}
+            sid={`bookcta_activities_${tag}`}
             destination={gygSlug}
             query={gygQ ? { q: gygQ } : undefined}
             className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-vibe-pink/40 hover:border-vibe-pink p-6 backdrop-blur-sm transition-all"
@@ -74,7 +83,7 @@ export default function BookingCTA({
 
           <AffiliateCTA
             partner="hotels"
-            sid={`bookcta_hotels_${destinationSlug}`}
+            sid={`bookcta_hotels_${tag}`}
             destination={hotelsQuery}
             className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-arctic-cyan/40 hover:border-arctic-cyan p-6 backdrop-blur-sm transition-all"
           >
@@ -94,7 +103,7 @@ export default function BookingCTA({
 
           <AffiliateCTA
             partner="cars"
-            sid={`bookcta_cars_${destinationSlug}`}
+            sid={`bookcta_cars_${tag}`}
             destination={pickupIata}
             className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-aurora-green/40 hover:border-aurora-green p-6 backdrop-blur-sm transition-all"
           >

@@ -57,8 +57,32 @@ export const GYG_BY_CATEGORY: Record<string, string> = {
   fishing:          'lappi-suomi-l2652',
 };
 
+// Lähin EconomyBookingsin PALVELEMA kenttä per kohde (auditti 2026-08-03:
+// jokainen kohdesivu tarjosi kovakoodattua RVN-noutoa — Levin vieraalle
+// tarjottiin Rovaniemeä vaikka Kittilä on 15 min päässä). Worker EB_PLC
+// kattaa RVN/KTT/IVL/KEM (+ etelän kentät); tuntematon koodi putoaa
+// hiljaa RVN:ään, joten tänne EI kirjoiteta kenttiä joita EB ei palvele:
+// KAO (Kuusamo) puuttuu EB:n valikoimasta → ruka/posio pysyvät RVN:ssä
+// tietoisesti, ei vahingossa.
+export const CARS_IATA: Record<string, string> = {
+  rovaniemi:  'RVN',
+  levi:       'KTT',
+  yllas:      'KTT',
+  saariselka: 'IVL',
+  inari:      'IVL',
+  ruka:       'RVN',
+  posio:      'RVN',
+  tornio:     'KEM',
+  'pyha-luosto': 'RVN',
+  kemijarvi:  'RVN',
+  lapland:    'RVN',
+};
+
 export function gygSlugForDestination(slug: string): string {
   return GYG_SLUG[slug] ?? GYG_SLUG.lapland;
+}
+export function carsIataForDestination(slug: string): string {
+  return CARS_IATA[slug] ?? CARS_IATA.lapland;
 }
 export function hotelsQueryForDestination(slug: string): string {
   return HOTELS_QUERY[slug] ?? HOTELS_QUERY.lapland;

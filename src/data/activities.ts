@@ -1334,7 +1334,11 @@ const NON_BOOKABLE = new Set<string>([
   'ina-siida-museum',      // Sámi museum — museum ticketing
   'pos-pentik',            // ceramics factory + outlet shop (free visit)
   'saa-uk-national-park',  // UKK NP — free wilderness, no booking
-  'ina-pielpajarvi',       // free wilderness-church trek
+  // 🔴 ä KUULUU id:hen (rivi ~774). Tämä rivi oli 2026-08-03 asti 'ina-pielpajarvi'
+  // (ilman ä:tä) → Set-haku ohitti sen ja ilmainen erämaakirkkovaellus sai
+  // "Etsi ja varaa" -GYG-napin. NON_BOOKABLE-avaimet on kopioitava id:stä, ei
+  // kirjoitettava käsin ASCII:na.
+  'ina-pielpajärvi',       // free wilderness-church trek
   'pos-riisitunturi',      // Riisitunturi NP — free, self-guided
   'ruk-karhunkierros',     // Bear Trail — free long-distance hike
   'yll-pallas-hike',       // national-park trail (self-guided)
@@ -1354,6 +1358,9 @@ const NON_BOOKABLE = new Set<string>([
 const GYG_QUERY: Record<string, string> = {
   // Rovaniemi
   'rov-aurora-snowmobile':  'aurora snowmobile rovaniemi',
+  // Ilman tätä riviä fallback tuotti kategorialabelin "animal experiences
+  // rovaniemi", jota kukaan ei kirjoita GYG-hakuun (auditti 2026-08-03).
+  'rov-husky-summer':       'husky kennel visit rovaniemi',
   'rov-santa-village':      'santa claus village rovaniemi',
   'rov-husky-safari':       'husky safari rovaniemi',
   'rov-reindeer-farm':      'reindeer sleigh rovaniemi',
@@ -1399,7 +1406,11 @@ const GYG_QUERY: Record<string, string> = {
   'ina-berry-foraging':     'foraging inari',
   // Ruka / Kuusamo
   'ruk-ski-resort':         'ruka ski',
-  'ruk-bear-watching':      'bear watching kuusamo',
+  // 🔴 EI 'ruk-bear-watching'-riviä: karhunkatselu kuuluu maksavalle
+  // kumppanille (Bear Kuusamo) — PARTNER_PAGE reitittää kortin CTA:n
+  // /bear-kuusamo-sivulle. GYG-hakukysely tässä olisi latautunut ase:
+  // jos jokin tuleva koodipolku ohittaisi PARTNER_PAGEn, se mainostaisi
+  // kilpailijaa. Poistettu 2026-08-03.
   'ruk-river-rafting':      'rafting ruka',
   'ruk-snowmobile':         'snowmobile safari ruka',
   'ruk-husky':              'husky safari ruka',

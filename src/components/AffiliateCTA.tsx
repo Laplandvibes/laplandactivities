@@ -66,13 +66,29 @@ const GYG_LANGUAGE: Record<_Lang, string | undefined> = {
 const GYG_PARTNER_ID = 'VRMKD7N';
 const SITE_ID = 'laplandactivities';
 
+/**
+ * Sid-spesifikaatio on a-z, 0-9 ja alaviiva — mutta kuusi kutsukohtaa
+ * interpoloi slugin raakana (`bookcta_hotels_pyha-luosto`,
+ * `hero_cat_northern-lights_book`), joten normalisointi kuuluu TÄNNE eikä
+ * jokaiseen kutsukohtaan (auditti 2026-08-03). NFKD purkaa tarkkeet
+ * (ä → a) ennen suodatusta, ettei ei-ASCII-id tuota alaviivasotkua.
+ */
+function cleanSid(sid: string): string {
+  return sid
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9_]/g, '_');
+}
+
 export function buildAffiliateHref({
   partner,
-  sid,
+  sid: rawSid,
   destination,
   query,
   lang = "en",
 }: Pick<AffiliateCTAProps, 'partner' | 'sid' | 'destination' | 'query'> & { lang?: _Lang }): string {
+  const sid = cleanSid(rawSid);
   if (partner === 'activities-search') {
     // GetYourGuide keyword search — lands on results for a specific experience.
     // `destination` is the concise query (e.g. "salmon fishing tornio").

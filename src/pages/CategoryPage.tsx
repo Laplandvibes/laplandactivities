@@ -10,6 +10,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../../../shared/ads/AdUnit';
 import bearKuusamoAd from '../../../shared/ads/advertisers/bearkuusamo';
 import onnipyoraAd from '../../../shared/ads/advertisers/onnipyora';
+import haltiAd from '../../../shared/ads/advertisers/halti';
 import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
@@ -178,6 +179,25 @@ export default function CategoryPage() {
         </section>
       )}
 
+      {/* AFFILIATE (Halti) — Adtraction-komissiolinkki Workerin kautta (Vesa
+          2026-08-03: "halti vaatteet jne adtractionista"). Talvivaatekulma sopii
+          kylmäsisältöihin: revontulet (pakkasyö ulkona) ja seikkailu (safarit).
+          Speksissä täysi 12 kielen copy. winter-sports jätetty Onnipyörälle —
+          yksi varustemainos per kategoriasivu. */}
+      {(slug === 'northern-lights' || slug === 'adventure') && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-7xl mx-auto">
+            <AdUnit
+              spec={haltiAd}
+              sid={`${slug === 'northern-lights' ? 'northern_lights' : 'adventure'}_category_winter_gear`}
+              lang={lang}
+              variant="dark"
+              onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
+            />
+          </div>
+        </section>
+      )}
+
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           {acts.length === 0 ? (
@@ -234,6 +254,9 @@ export default function CategoryPage() {
         cmpTag={`laplandactivities-cat-${slug}`}
         title={`${c.gygTitlePrefix} ${category.name}`}
         eyebrow={c.gygEyebrow}
+        /* Adblock-fallbackin CTA hakee tämän kategorian retkiä, ei geneeristä
+           "Lapland"-listaa (auditti 2026-08-03). */
+        fallbackQuery={gygQ ? `${gygQ} lapland` : 'Lapland'}
       />
 
       {/* Featured partner — surfaced on the wildlife (animals) listing only.
@@ -301,7 +324,7 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      <BookingCTA gygSlug={gygSlug} gygQ={gygQ} />
+      <BookingCTA sidTag={`cat_${slug}`} gygSlug={gygSlug} gygQ={gygQ} />
     </>
   );
 }
