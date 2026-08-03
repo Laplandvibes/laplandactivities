@@ -9,7 +9,8 @@ import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../../../shared/ads/AdUnit';
 import bearKuusamoAd from '../../../shared/ads/advertisers/bearkuusamo';
-import { trackPartnerClick } from '../lib/analytics';
+import onnipyoraAd from '../../../shared/ads/advertisers/onnipyora';
+import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -152,6 +153,26 @@ export default function CategoryPage() {
               articleHref={to('/bear-kuusamo')}
               onArticleClick={(_k, adSid) => trackPartnerClick(`article:${adSid}`)}
               onCtaClick={(_specKey, adSid) => trackPartnerClick(adSid)}
+            />
+          </div>
+        </section>
+      )}
+
+      {/* AFFILIATE (Onnipyörä) — Adtraction-komissiolinkki Workerin kautta,
+          ei maksettu paikka. Näkyy kategorioissa joissa on pyöräilysisältöä:
+          summer (Levi Bike Park) ja winter-sports (Fat Bike Tour). Speksissä
+          on VAIN fi-copy tarkoituksella — kauppa toimittaa ainoastaan Suomeen,
+          joten AdUnit renderöi tyhjää muilla 11 kielellä (dokumentoitu
+          käyttäytyminen, älä lisää en-fallbackia). */}
+      {(slug === 'summer' || slug === 'winter-sports') && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-7xl mx-auto">
+            <AdUnit
+              spec={onnipyoraAd}
+              sid={`${slug === 'summer' ? 'summer' : 'winter_sports'}_category_bike_gear`}
+              lang={lang}
+              variant="dark"
+              onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
             />
           </div>
         </section>
