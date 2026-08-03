@@ -447,9 +447,21 @@ const fi: SectionCopy = {
     gygTitleSuffix: 'retket',
     gygEyebrow: 'Varattavissa nyt',
     allActivitiesKicker: 'Kaikki aktiviteetit',
-    thingsToDoIn: 'Tekemistä kohteessa',
+    thingsToDoIn: 'Tekemistä',
+    // Paikallissijat, jotta otsikot ovat suomea: "Tekemistä Rukalla ja
+    // Kuusamossa", ei "Tekemistä kohteessa Ruka ja Kuusamo" (Vesa 2026-08-03).
+    destLocative: {
+      rovaniemi: 'Rovaniemellä',
+      levi: 'Levillä',
+      yllas: 'Ylläksellä',
+      saariselka: 'Saariselällä',
+      inari: 'Inarissa',
+      ruka: 'Rukalla ja Kuusamossa',
+      posio: 'Posiolla',
+      tornio: 'Torniossa',
+    },
     moreSoon: 'Lisää aktiviteetteja tulossa kohteeseen',
-    sleepInPrefix: 'Yövy kohteessa',
+    sleepInPrefix: 'Yövy',
     sleepInBlurb: 'Lasi-iglut, hirsimökit, rinnehotellit. Sembo kokoaa parhaat hinnat.',
     compareHotels: 'Vertaile hotelleja',
     driveYourself: 'Aja itse',

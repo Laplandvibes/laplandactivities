@@ -4,7 +4,6 @@ import { ArrowRight, Snowflake, Leaf, Sun, Trees, Sparkles } from 'lucide-react'
 import Hero from '../components/Hero';
 import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
-import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import Newsletter from '../components/Newsletter';
 import AffiliateCTA from '../components/AffiliateCTA';
 import SummerBand from '../components/SummerBand';
@@ -216,17 +215,10 @@ export default function Home() {
           paikkaa — pääkumppanit eivät näy vierekkäin (banneri heron alla ↑) */}
       <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
 
-      {/* Varattavat GYG-tuotteet — korkealla sivulla mutta myytyjen mainospaikkojen ALAPUOLELLA */}
+      {/* Varattavat GYG-tuotteet — korkealla sivulla mutta myytyjen mainospaikkojen ALAPUOLELLA.
+          Vain YKSI varaustuoteosio etusivulla (Vesa 2026-08-03: kaksi samanlaista
+          peräkkäin) — GYG-auto-widget elää alasivuilla (kohde- ja kategoriaindeksit). */}
       <GygPicks />
-
-
-      <GetYourGuideWidget
-        locationId="2652"
-        cmpTag="laplandactivities-home-auto"
-        title={c.gygTitle}
-        eyebrow={c.gygEyebrow}
-        numberOfItems={3}
-      />
 
       <section id="experiences" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
@@ -340,6 +332,7 @@ export default function Home() {
       <HotelsStrip />
 
       <BookingCTA
+        sidTag="home"
         destinationSlug="lapland"
         hotelsQuery={hotelsQueryForDestination('lapland')}
         gygSlug={gygSlugForCategory('adventure')}

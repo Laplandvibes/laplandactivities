@@ -391,7 +391,9 @@ const ko: SectionCopy = {
     operatorsLabel: '신뢰할 수 있는 운영자:',
     gygTitlePrefix: '엄선한', gygTitleSuffix: '투어', gygEyebrow: '지금 예약 가능',
     allActivitiesKicker: '모든 액티비티',
-    thingsToDoIn: '에서 할 일 -',
+    // 접두사형: 제목은 "{thingsToDoIn} {이름}" 순서로 렌더링되므로
+    // 접미사형 '에서 할 일'은 어순이 깨졌다 (2026-08-03).
+    thingsToDoIn: '할 일:',
     moreSoon: '추가 액티비티가 곧 -',
     sleepInPrefix: '에서 숙박', sleepInBlurb: '글래스 이글루, 로그 캐빈, 스키인 호텔, Trip.com이 최저가를 모아드립니다.',
     compareHotels: '호텔 비교',

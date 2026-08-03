@@ -177,6 +177,12 @@ export type SectionCopy = {
     gygEyebrow: string;
     allActivitiesKicker: string;
     thingsToDoIn: string;
+    /**
+     * Kohdenimen paikallissijamuoto per slug (vain kielet joissa nimi taipuu —
+     * FI: "Rukalla ja Kuusamossa"). Kun puuttuu, otsikot käyttävät nimeä
+     * sellaisenaan ("Things to Do in Ruka & Kuusamo").
+     */
+    destLocative?: Record<string, string>;
     moreSoon: string;
     sleepInPrefix: string;
     sleepInBlurb: string;
