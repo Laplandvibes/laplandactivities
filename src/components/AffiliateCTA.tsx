@@ -16,11 +16,12 @@ export type AffiliatePartner =
   | 'cars'
   | 'activities'
   /**
-   * GetYourGuide keyword SEARCH (`/s/?q=…`). Use for a SPECIFIC activity card
-   * where we want the user to land on results for that exact experience + place
-   * (e.g. "salmon fishing tornio"), not the broad location page. `destination`
-   * carries the concise search query. Owner-mandated 2026-06-26: booking links
-   * must target the specific activity, not a generic Lapland search.
+   * GetYourGuide keyword SEARCH (lands on GYG `/s?q=…` via the Worker). Use for
+   * a SPECIFIC activity card where we want the user to land on results for that
+   * exact experience + place (e.g. "salmon fishing tornio"), not the broad
+   * location page. `destination` carries the concise search query.
+   * Owner-mandated 2026-06-26: booking links must target the specific
+   * activity, not a generic Lapland search.
    */
   | 'activities-search';
 
@@ -44,27 +45,19 @@ const REDIRECT_HOST = 'https://go.laplandvibes.com';
 type _Lang = "en" | "fi" | "de" | "ja" | "es" | "pt-BR" | "zh-CN" | "ko" | "fr" | "it" | "nl" | "sv";
 const HOTELS_LOCALE: Record<_Lang, string> = { en: "en_US", fi: "fi_FI", de: "de_DE", ja: "ja_JP", es: "es_ES", "pt-BR": "pt_BR", "zh-CN": "zh_CN", ko: "ko_KR", fr: "fr_FR", it: "it_IT", nl: "nl_NL", sv: "sv_SE" };
 const CARS_LANG: Record<_Lang, string> = { en: "en", fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt", "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv" };
-const GYG_DOMAIN: Record<_Lang, string> = {
-  en: "https://www.getyourguide.com",
-  fi: "https://www.getyourguide.com",
-  de: "https://www.getyourguide.de",
-  ja: "https://www.getyourguide.com",
-  es: "https://www.getyourguide.es",
-  "pt-BR": "https://www.getyourguide.com.br",
-  "zh-CN": "https://www.getyourguide.com",
-  ko: "https://www.getyourguide.com",
-  fr: "https://www.getyourguide.fr",
-  it: "https://www.getyourguide.it",
-  nl: "https://www.getyourguide.nl",
-  sv: "https://www.getyourguide.com",
+/**
+ * Worker `?language=` codes (same table as shared/gyg/picks.ts). The Worker's
+ * handleGyg turns the code into GetYourGuide's `<lang>-<country>/` PATH prefix
+ * — the only localisation GYG honours. 🔴 A raw `?language=xx` appended to a
+ * getyourguide.com URL does NOTHING (measured in a real browser 2026-08-02),
+ * so never "simplify" back to passing it to GYG directly. `en` is GYG's
+ * default and needs no param; `de` needs a code here even though the old raw
+ * links didn't send one — they used the getyourguide.de domain instead.
+ */
+const GYG_WORKER_LANG: Record<_Lang, string | undefined> = {
+  en: undefined, fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt-br",
+  "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv",
 };
-const GYG_LANGUAGE: Record<_Lang, string | undefined> = {
-  en: undefined, fi: "fi", de: undefined, ja: "ja", es: "es", "pt-BR": "pt-br", "zh-CN": "zh",
-  ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv",
-};
-
-const GYG_PARTNER_ID = 'VRMKD7N';
-const SITE_ID = 'laplandactivities';
 
 /**
  * Sid-spesifikaatio on a-z, 0-9 ja alaviiva — mutta kuusi kutsukohtaa
@@ -112,7 +105,14 @@ export function buildAffiliateHref({
     return url.toString();
   }
   const params = new URLSearchParams({ sid, ...(query || {}) });
-  if (destination) params.set('ss', anchorHotelsSs(partner, destination));
+  // 🔴 cars käyttää pickup_location=IATA, EI ss:ää. Mitattu 2026-08-03:
+  // Worker rakentaa pickup_locationista EB-tulossivun (plc=61893 jne.),
+  // mutta ss=IATA valui EB:n ?location=-TEKSTIHAKUUN, jonka EB pudottaa
+  // tyhjaksi etusivuksi (sama vikaluokka kuin ENF->Enfidha-tapaus 25.7.).
+  if (destination) {
+    if (partner === 'cars') params.set('pickup_location', destination);
+    else params.set('ss', anchorHotelsSs(partner, destination));
+  }
   if (partner === "hotels" || partner === "hotels-seasonal" || partner === "hotels-budget") {
     params.set("locale", HOTELS_LOCALE[lang]);
   } else if (partner === "cars") {
