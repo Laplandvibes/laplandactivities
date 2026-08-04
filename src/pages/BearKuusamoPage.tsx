@@ -119,46 +119,50 @@ export default function BearKuusamoPage() {
         <script type="application/ld+json">{JSON.stringify(articleLd)}</script>
       </Helmet>
 
-      {/* HERO — photo-led feature. Overlay is a bottom-anchored scrim: dark only at
-          the very bottom (behind the label + headline), near-clear at the top so the
-          backlit mother bear and cubs and the golden light read clearly. */}
-      <section className="relative min-h-[62vh] md:min-h-[70vh] flex items-end overflow-hidden pt-16 bg-deep-night">
-        <img
-          src={IMG.hero}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: 'center 60%' }}
-          loading="eager"
-          decoding="async"
-          width="1600"
-          height="1068"
-          fetchPriority="high"
-        />
-        <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.40) 45%, rgba(15,23,42,0.10) 100%)' }}
-        />
+      {/* HERO — photo-led feature. The photo is its own block and the headline sits
+          BELOW it, never on it: the old bottom-anchored overlay landed the H1 exactly
+          on the mother bear and cub whenever object-cover narrowed the 3:2 crop
+          (Vesa 2026-08-04, ~720 px in-app panel: "h1 karhujen päällä"). The bears'
+          position in the crop shifts with viewport width, so no overlay placement is
+          safe — keep the copy off the photo at every width. */}
+      <section className="pt-16 bg-deep-night">
+        <div className="relative overflow-hidden">
+          <img
+            src={IMG.hero}
+            alt=""
+            aria-hidden="true"
+            className="w-full h-[44vh] min-h-[300px] md:h-[56vh] max-h-[640px] object-cover"
+            style={{ objectPosition: 'center 60%' }}
+            loading="eager"
+            decoding="async"
+            width="1600"
+            height="1068"
+            fetchPriority="high"
+          />
+          {/* Soft foot only, so the photo melts into the page surface below —
+              the bears themselves stay unscrimmed. */}
+          <div
+            className="absolute inset-x-0 bottom-0 h-16"
+            style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.85), rgba(15,23,42,0))' }}
+          />
+        </div>
         {/* Hero copy sits in the SAME 3xl column as the article body below, with the
             same px-4/sm:px-6 gutters. Before this it was max-w-7xl, so at 1440px the
             headline started 232px to the left of the first paragraph and the page read
             as two unrelated layouts (Vesa 2026-07-27). Hero and body must share one
             measure — do not widen this back. */}
-        <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 pt-7 pb-10 md:pt-9 md:pb-12 w-full">
           {/* Commercial-partnership disclosure — small, visible, near the top. Bear
               brand green used only as a restrained dot + border accent. */}
           <span
-            className="inline-flex items-center gap-2 rounded-full border bg-deep-night/55 backdrop-blur-sm px-3 py-1 text-[11px] font-semibold tracking-wide uppercase text-snow/90 mb-4"
+            className="inline-flex items-center gap-2 rounded-full border bg-deep-night/55 px-3 py-1 text-[11px] font-semibold tracking-wide uppercase text-snow/90 mb-4"
             style={{ borderColor: 'rgba(0,126,46,0.55)' }}
           >
             <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: BEAR_GREEN }} aria-hidden="true" />
             {c.partnershipLabel}
           </span>
-          <p className={`${EYEBROW} mb-3 drop-shadow-[0_2px_10px_rgba(0,0,0,0.9)]`}>{c.hero.eyebrow}</p>
-          <h1
-            className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow tracking-wide leading-[1.02]"
-            style={{ textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 6px 32px rgba(0,0,0,0.8)' }}
-          >
+          <p className={`${EYEBROW} mb-3`}>{c.hero.eyebrow}</p>
+          <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow tracking-wide leading-[1.02]">
             {c.hero.title}
           </h1>
         </div>
