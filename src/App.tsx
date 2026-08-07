@@ -24,13 +24,15 @@ import { isLocaleDataLoaded, loadLocaleData } from './locales/data';
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
 import { AppPromoNudge } from './components/AppPromo';
 
+// key → label haetaan SharedFooterin pillars-sanakirjasta sivun kielellä;
+// name jää EN-fallbackiksi jos avain puuttuu sanakirjasta.
 const pillarLinks = [
-  { name: 'Destinations',     href: '/destinations' },
-  { name: 'Categories',       href: '/categories' },
-  { name: 'Husky Safaris',    href: 'https://laplandhuskysafaris.com' },
-  { name: 'Snowmobile Tours', href: 'https://laplandsnowmobile.com' },
-  { name: 'Northern Lights',  href: 'https://laplandvibes.com/northern-lights' },
-  { name: 'Where to Stay',    href: 'https://laplandstays.com' },
+  { key: 'destinations' as const,    name: 'Destinations',     href: '/destinations' },
+  { key: 'categories' as const,      name: 'Categories',       href: '/categories' },
+  { key: 'huskySafaris' as const,    name: 'Husky Safaris',    href: 'https://laplandhuskysafaris.com' },
+  { key: 'snowmobileTours' as const, name: 'Snowmobile Tours', href: 'https://laplandsnowmobile.com' },
+  { key: 'northernLights' as const,  name: 'Northern Lights',  href: 'https://laplandvibes.com/northern-lights' },
+  { key: 'whereToStay' as const,     name: 'Where to Stay',    href: 'https://laplandstays.com' },
 ];
 
 function RouteTracker() {
