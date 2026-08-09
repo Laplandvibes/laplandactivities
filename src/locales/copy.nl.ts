@@ -289,9 +289,9 @@ const nl: SectionCopy = {
   },
   newsletter: {
     eyebrow: 'De #LaplandVibes-nieuwsbrief', h2: 'Ontvang de boekingsvensters die altijd uitverkopen.',
-    lead: 'Een korte e-mail als er iets te melden valt, pieken in de noorderlichtvoorspelling, aanbieders die nog open zijn in het modderseizoen, tours die in de aanbieding gaan voordat de boekingssites het doorhebben.',
+    lead: 'Een korte e-mail als er iets te melden valt: hoe het noorderlichtseizoen zich aftekent, welke aanbieders ook in het modderseizoen open zijn en welke tours het eerst uitverkopen.',
     benefits: [
-      { title: 'Noorderlicht-meldingen', body: 'Wanneer de Kp boven 4 uitstijgt, meestal 24-48 u voor een heldere lucht.' },
+      { title: 'Noorderlicht-kennis', body: 'Wanneer het seizoen piekt, hoe u de Kp-index leest en welke maanden de donkerste hemel hebben.' },
       { title: 'Wat is nu open', body: 'Echte seizoensvensters voor husky\'s, sneeuwscooters en sauna\'s.' },
       { title: 'Tips van insiders', body: 'De tour die u op de partnersites pas in juni vindt.' },
     ],

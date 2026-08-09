@@ -76,9 +76,9 @@ const sv: SectionCopy = {
   newsletter: {
     eyebrow: 'Nyhetsbrevet från #LaplandVibes',
     h2: 'Få koll på bokningsfönstren som alltid blir slutbokade.',
-    lead: 'Ett kort mejl när något är värt att flagga för: toppar i norrskensprognosen, researrangörer som fortfarande har öppet under smältsäsongen, turer som släpps innan bokningssajterna hinner märka det.',
+    lead: 'Ett kort mejl när något är värt att flagga för: hur norrskenssäsongen ser ut, vilka arrangörer som håller öppet under smältsäsongen och vilka turer som tar slut först.',
     benefits: [
-      { title: 'Norrskenslarm', body: 'När Kp-index hoppar över 4, oftast 24–48 timmar innan klar himmel.' },
+      { title: 'Norrskenskunskap', body: 'När säsongen är som bäst, hur du läser Kp-index och vilka månader som har mörkast himmel.' },
       { title: 'Vad som är öppet just nu', body: 'Verkliga säsongsfönster för hundspann, snöskoter och bastu.' },
       { title: 'Lokala tips', body: 'Turen du inte hittar på partnersajterna förrän i juni.' },
     ],

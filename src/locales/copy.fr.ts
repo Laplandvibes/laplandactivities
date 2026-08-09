@@ -289,9 +289,9 @@ const fr: SectionCopy = {
   },
   newsletter: {
     eyebrow: 'La newsletter #LaplandVibes', h2: 'Recevez les fenêtres de réservation qui partent toujours.',
-    lead: "Un e-mail court quand il y a quelque chose à signaler, pics de prévision auroral, opérateurs encore ouverts à la saison des boues, tours en promo avant que les sites de réservation ne le remarquent.",
+    lead: 'Un e-mail court quand il y a quelque chose à signaler : la tournure que prend la saison des aurores, les opérateurs encore ouverts à la saison des boues et les tours qui affichent complet en premier.',
     benefits: [
-      { title: 'Alertes aurores', body: 'Quand le Kp dépasse 4, généralement 24-48 h avant un ciel dégagé.' },
+      { title: 'Comprendre les aurores', body: "Quand la saison bat son plein, comment lire l'indice Kp et quels mois offrent le ciel le plus sombre." },
       { title: 'Ce qui est ouvert', body: 'Les vraies fenêtres saisonnières pour huskies, motoneiges et saunas.' },
       { title: 'Conseils d\'initiés', body: 'Le tour introuvable sur les sites partenaires avant juin.' },
     ],

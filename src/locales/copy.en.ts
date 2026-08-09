@@ -76,9 +76,9 @@ const en: SectionCopy = {
   newsletter: {
     eyebrow: 'The #LaplandVibes newsletter',
     h2: 'Get the booking windows that always sell out.',
-    lead: 'A short email when something is worth flagging: aurora forecast spikes, operators still open in mud-season, tours that go on sale before the booking sites notice.',
+    lead: 'A short email when something is worth flagging: how the aurora season is shaping up, which operators stay open through mud-season, and which tours sell out first.',
     benefits: [
-      { title: 'Aurora alerts', body: 'When Kp jumps above 4, usually 24–48 h before clear skies.' },
+      { title: 'Aurora know-how', body: 'When the season peaks, how to read the Kp index, and which months have the darkest skies.' },
       { title: 'What is open now', body: 'Real seasonal windows for huskies, snowmobiles and saunas.' },
       { title: 'Local-only tips', body: 'The tour you cannot find on the partner sites until June.' },
     ],

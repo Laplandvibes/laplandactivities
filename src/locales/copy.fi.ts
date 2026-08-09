@@ -309,9 +309,9 @@ const fi: SectionCopy = {
   newsletter: {
     eyebrow: '#LaplandVibes-uutiskirje',
     h2: 'Saa tiedot varausikkunoista, jotka loppuvat aina kesken.',
-    lead: 'Lyhyt sähköposti silloin kun on jotain kerrottavaa: revontuliennusteen piikit, mud-seasonin avoimet toimijat ja retket jotka tulevat myyntiin ennen kuin varaussivustot huomaavat.',
+    lead: 'Lyhyt sähköposti silloin kun on jotain kerrottavaa: miltä revontulikausi näyttää, mitkä toimijat ovat auki myös välikaudella ja mitkä retket myydään ensimmäisenä loppuun.',
     benefits: [
-      { title: 'Revontulihälytykset', body: 'Kun Kp nousee yli 4, yleensä 24–48 h ennen selkeitä yötaivaita.' },
+      { title: 'Revontulikaudet', body: 'Milloin revontulikausi on parhaimmillaan, miten Kp-lukua luetaan ja mitkä kuukaudet ovat pimeimmät.' },
       { title: 'Mikä on auki nyt', body: 'Todelliset kausi-ikkunat huskysafareille, moottorikelkoille ja saunoille.' },
       { title: 'Paikallisten vinkit', body: 'Retket joita ei löydy kumppanisivuilta kuin vasta kesäkuussa.' },
     ],

@@ -309,9 +309,9 @@ const de: SectionCopy = {
   newsletter: {
     eyebrow: 'Der #LaplandVibes-Newsletter',
     h2: 'Hinweise zu den Buchungsfenstern, die immer ausverkauft sind.',
-    lead: 'Eine kurze E-Mail, wenn es etwas zu melden gibt: Spitzen in der Nordlicht-Vorhersage, Anbieter, die noch in der Schlammsaison öffnen, und Touren, die in den Verkauf gehen, bevor die Buchungsportale es merken.',
+    lead: 'Eine kurze E-Mail, wenn es etwas zu melden gibt: wie sich die Nordlicht-Saison entwickelt, welche Anbieter auch in der Schlammsaison öffnen und welche Touren zuerst ausverkauft sind.',
     benefits: [
-      { title: 'Nordlicht-Hinweise', body: 'Wenn der Kp-Wert über 4 springt, meist 24–48 Stunden vor klarem Himmel.' },
+      { title: 'Nordlicht-Wissen', body: 'Wann die Saison ihren Höhepunkt hat, wie man den Kp-Index liest und welche Monate am dunkelsten sind.' },
       { title: 'Was gerade geöffnet ist', body: 'Reale Saisonfenster für Huskys, Schneemobile und Saunas.' },
       { title: 'Tipps von Einheimischen', body: 'Die Tour, die Sie auf den Partnerseiten erst im Juni finden.' },
     ],

@@ -289,9 +289,9 @@ const it: SectionCopy = {
   },
   newsletter: {
     eyebrow: 'La newsletter #LaplandVibes', h2: 'Riceva le finestre di prenotazione che si esauriscono sempre.',
-    lead: 'Un\'e-mail breve quando c\'è qualcosa che vale la pena segnalare, picchi di previsione dell\'aurora, operatori ancora aperti in stagione fango, tour in offerta prima che i siti di prenotazione se ne accorgano.',
+    lead: "Un'e-mail breve quando c'è qualcosa che vale la pena segnalare: come si preannuncia la stagione dell'aurora, quali operatori restano aperti nella stagione del fango e quali tour si esauriscono per primi.",
     benefits: [
-      { title: 'Avvisi aurora', body: 'Quando il Kp supera 4, di solito 24-48 h prima di cieli sereni.' },
+      { title: "Capire l'aurora", body: "Quando la stagione è al culmine, come leggere l'indice Kp e quali mesi hanno i cieli più bui." },
       { title: 'Cosa è aperto ora', body: 'Vere finestre stagionali per husky, motoslitte e saune.' },
       { title: 'Consigli da insider', body: 'Il tour che sui siti partner appare solo a giugno.' },
     ],

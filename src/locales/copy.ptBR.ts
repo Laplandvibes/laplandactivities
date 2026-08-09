@@ -309,9 +309,9 @@ const ptBR: SectionCopy = {
   newsletter: {
     eyebrow: 'Newsletter #LaplandVibes',
     h2: 'Receba as janelas de reserva que sempre lotam.',
-    lead: 'Um e-mail curto quando algo vale destacar, picos de previsão de aurora, operadoras ainda abertas na entressafra, tours em promoção antes dos sites de reservas perceberem.',
+    lead: 'Um e-mail curto quando algo vale destacar: como está se desenhando a temporada de auroras, quais operadoras seguem abertas na entressafra e quais tours esgotam primeiro.',
     benefits: [
-      { title: 'Alertas de aurora', body: 'Quando o Kp sobe acima de 4, em geral 24–48 h antes do céu limpo.' },
+      { title: 'Aurora na prática', body: 'Quando a temporada chega ao auge, como ler o índice Kp e quais meses têm o céu mais escuro.' },
       { title: 'O que está aberto agora', body: 'Janelas sazonais reais para huskies, snowmobile e sauna.' },
       { title: 'Dicas só de quem mora lá', body: 'O tour que você não acha nos sites parceiros até junho.' },
     ],
