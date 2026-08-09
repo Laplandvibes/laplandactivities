@@ -100,7 +100,7 @@ export default function Newsletter() {
             </p>
           </div>
         ) : (
-          <FounderByline tone="pink" />
+          <><FounderByline tone="pink" />
           <form onSubmit={submit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
             <input
               type="email"
@@ -124,7 +124,7 @@ export default function Newsletter() {
                 <><Send className="w-4 h-4" /> {c.subscribeBtn}</>
               )}
             </button>
-          </form>
+          </form></>
         )}
 
         {status === 'error' && (
