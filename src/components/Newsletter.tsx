@@ -3,6 +3,7 @@ import { Send, CheckCircle, AlertCircle, Loader2, Bell, Compass, Snowflake } fro
 import { trackNewsletterSignup } from '../lib/analytics';
 import { useLang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
+import FounderByline from '../../../shared/FounderByline';
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined;
@@ -99,6 +100,7 @@ export default function Newsletter() {
             </p>
           </div>
         ) : (
+          <FounderByline tone="pink" />
           <form onSubmit={submit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
             <input
               type="email"
