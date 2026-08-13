@@ -35,6 +35,23 @@ const pillarLinks = [
   { key: 'whereToStay' as const,     name: 'Where to Stay',    href: 'https://laplandstays.com' },
 ];
 
+/**
+ * 🔴 The app layout's landmark, EXCEPT on /terms.
+ *
+ * shared/Legal/TermsContent opens its own <main>; nesting it inside this one is
+ * invalid HTML and gives a screen reader two "main" regions. Its siblings
+ * PrivacyContent/CookieContent open a <div>, so only /terms is affected.
+ * Measured from the rendered DOM 2026-08-13 (12 network sites) -- the raw HTML
+ * has zero <main> elements, so this is invisible to grep.
+ *
+ * Do NOT "simplify" this back to a plain <main>.
+ */
+function MainOrDiv({ children }: { children?: ReactNode }) {
+  const { pathname } = useLocation();
+  const Tag = /(^|\/)terms\/?$/.test(pathname) ? 'div' : 'main';
+  return <Tag className="bg-deep-night">{children}</Tag>;
+}
+
 function RouteTracker() {
   const { pathname, search } = useLocation();
   useEffect(() => {
@@ -82,7 +99,7 @@ export default function App() {
       <LocaleSync />
       <CopyGate>
       <Navigation />
-      <main className="bg-deep-night">
+      <MainOrDiv>
         <Suspense fallback={<div className="min-h-screen" />}>
           <Routes>
           <Route path="/" element={<Home />} />
@@ -220,7 +237,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         </Suspense>
-      </main>
+      </MainOrDiv>
       <SharedFooter pillarLinks={pillarLinks} />
       </CopyGate>
       <SharedCookieBanner consentKey="laplandactivities_cookie_consent" lang={lang} />
