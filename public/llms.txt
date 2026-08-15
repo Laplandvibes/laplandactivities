@@ -1,0 +1,25 @@
+# LaplandActivities
+
+> Snowmobile safaris, husky sledding, aurora hunts, smoke saunas. Book hand-picked Lapland activities through trusted operators across Rovaniemi, Levi, Saariselkä and beyond.
+
+## Main pages
+
+- [Home](https://laplandactivities.fi/): Aurora, husky and snowmobile tours in Lapland by destination and category
+- [Destinations](https://laplandactivities.fi/destinations): Lapland activity destinations: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka and more
+- [Categories](https://laplandactivities.fi/categories): Activities by category: adventure, animals, northern lights, winter sports, wellness, culture
+- [Fishing](https://laplandactivities.fi/fishing): Ice fishing, licensed salmon rivers like the Tornio, and king-crab safaris with permit links
+- [Bear Kuusamo](https://laplandactivities.fi/bear-kuusamo): Guided hides for watching wild brown bears in the border forests of Kuusamo
+- [Rovaniemi](https://laplandactivities.fi/destinations/rovaniemi): Activities in Rovaniemi
+- [Levi](https://laplandactivities.fi/destinations/levi): Activities in Levi
+- [Northern lights](https://laplandactivities.fi/categories/northern-lights): Northern-lights tours and experiences
+- [About](https://laplandactivities.fi/about): About LaplandActivities
+
+## Languages
+
+English (default, no prefix), Finnish (/fi), German (/de), Japanese (/ja), Spanish (/es), Brazilian Portuguese (/br), Simplified Chinese (/cn), Korean (/kr), French (/fr), Italian (/it), Dutch (/nl), Swedish (/sv)
+
+## Network
+
+- Hub: https://laplandvibes.com/
+- Sitemap: https://laplandactivities.fi/sitemap.xml
+- Contact: info@laplandactivities.fi
