@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2, Bell, Compass, Snowflake } from 'lucide-react';
 import { trackNewsletterSignup } from '../lib/analytics';
-import { useLang } from '../i18n/useLang';
+import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import FounderByline from '../../../shared/FounderByline';
 
@@ -13,16 +13,72 @@ type Status = 'idle' | 'loading' | 'success' | 'already' | 'error';
 
 const ICONS = [Bell, Compass, Snowflake];
 
+// Marketing consent + age confirmation. Lives here (not in locales/copy.*) so the
+// wording the user ticks is the exact string sent to the server as consentText.
+const CONSENT_COPY: Record<Lang, { checkbox: string; privacy: string }> = {
+  en: {
+    checkbox: 'Yes, send the LaplandVibes newsletter (travel tips, seasonal updates and offers) to this email address. I confirm I am 18 or over.',
+    privacy: 'Privacy Policy',
+  },
+  fi: {
+    checkbox: 'LaplandVibes saa lähettää minulle uutiskirjettä (matkailuvinkkejä, sesonkitietoa ja tarjouksia) antamaani sähköpostiosoitteeseen. Olen täyttänyt 18 vuotta.',
+    privacy: 'Tietosuojaseloste',
+  },
+  de: {
+    checkbox: 'Ja, LaplandVibes darf mir den Newsletter mit Reisetipps, Saisoninfos und Angeboten an diese E-Mail-Adresse senden. Ich bin mindestens 18 Jahre alt.',
+    privacy: 'Datenschutzerklärung',
+  },
+  ja: {
+    checkbox: '入力したメールアドレス宛に、LaplandVibesがニュースレター（旅のヒント、シーズン情報、キャンペーン情報）を送ることに同意します。私は18歳以上です。',
+    privacy: 'プライバシーポリシー',
+  },
+  es: {
+    checkbox: 'Acepto recibir en mi correo el boletín de LaplandVibes (consejos de viaje, información de temporada y ofertas) y confirmo que tengo al menos 18 años.',
+    privacy: 'Política de privacidad',
+  },
+  'pt-BR': {
+    checkbox: 'Aceito receber a newsletter da LaplandVibes no e-mail informado, com dicas de viagem, informações de temporada e ofertas. Tenho 18 anos ou mais.',
+    privacy: 'Política de Privacidade',
+  },
+  'zh-CN': {
+    checkbox: '我同意 LaplandVibes 向我填写的邮箱发送订阅邮件，内容包括拉普兰旅行建议、季节资讯和优惠信息，并确认本人已年满18周岁。',
+    privacy: '隐私政策',
+  },
+  ko: {
+    checkbox: '입력한 이메일 주소로 LaplandVibes가 보내는 여행 팁·시즌 정보·프로모션 소식 뉴스레터 수신에 동의하며, 만 18세 이상임을 확인합니다.',
+    privacy: '개인정보처리방침',
+  },
+  fr: {
+    checkbox: "J'accepte de recevoir la newsletter LaplandVibes (conseils voyage, infos saisonnières, offres) à cette adresse e-mail et je confirme avoir 18 ans ou plus.",
+    privacy: 'Politique de confidentialité',
+  },
+  it: {
+    checkbox: "Sì, desidero ricevere la newsletter di LaplandVibes (consigli di viaggio, novità stagionali e offerte) all'indirizzo indicato. Ho almeno 18 anni.",
+    privacy: 'Informativa sulla privacy',
+  },
+  nl: {
+    checkbox: 'Ja, LaplandVibes mag de nieuwsbrief met reistips, seizoensinfo en aanbiedingen naar dit e-mailadres sturen. Ik ben 18 jaar of ouder.',
+    privacy: 'Privacyverklaring',
+  },
+  sv: {
+    checkbox: 'Ja, jag vill ha nyhetsbrevet från LaplandVibes med restips, säsongsinfo och erbjudanden till min e-postadress. Jag är minst 18 år.',
+    privacy: 'Integritetspolicy',
+  },
+};
+
 export default function Newsletter() {
   const lang = useLang();
   const c = COPY[lang].newsletter;
+  const cc = CONSENT_COPY[lang] ?? CONSENT_COPY.en;
+  const to = useLocalePath();
   const [email, setEmail] = useState('');
+  const [consented, setConsented] = useState(false);
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email || !SUPABASE_URL || !SUPABASE_ANON_KEY) {
+    if (!email || !consented || !SUPABASE_URL || !SUPABASE_ANON_KEY) {
       setErrorMsg(c.errorFallback);
       setStatus('error');
       return;
@@ -36,7 +92,13 @@ export default function Newsletter() {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
         },
-        body: JSON.stringify({ email, source: SOURCE }),
+        body: JSON.stringify({
+          email,
+          source: SOURCE,
+          consent: true,
+          ageConfirmed: true,
+          consentText: cc.checkbox,
+        }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || c.errorFallback);
@@ -57,7 +119,8 @@ export default function Newsletter() {
   const isDone = status === 'success' || status === 'already';
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-vibe-pink to-pink-600 py-16 sm:py-20 px-4 sm:px-6">
+    <section className="relative overflow-hidden py-16 sm:py-20 px-4 sm:px-6"
+      style={{ background: 'linear-gradient(135deg, #4C1D95 0%, #7E22CE 35%, #BE185D 70%, #DB2777 100%)' }}>
       <div className="absolute inset-0 opacity-15 pointer-events-none">
         <div className="absolute -left-12 top-12 w-72 h-72 rounded-full bg-white/30 blur-3xl" />
         <div className="absolute -right-20 bottom-0 w-80 h-80 rounded-full bg-white/20 blur-3xl" />
@@ -101,29 +164,51 @@ export default function Newsletter() {
           </div>
         ) : (
           <><FounderByline tone="pink" />
-          <form onSubmit={submit} className="max-w-md mx-auto flex flex-col sm:flex-row gap-3">
-            <input
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder={c.emailPlaceholder}
-              aria-label={c.emailPlaceholder}
-              autoComplete="email"
-              disabled={status === 'loading'}
-              className="flex-1 px-5 py-3 rounded-full bg-white/15 text-white placeholder:text-white/80 border border-white/30 focus:bg-white/25 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:opacity-60"
-            />
-            <button
-              type="submit"
-              disabled={status === 'loading'}
-              className="px-6 py-3 rounded-full bg-white text-vibe-pink font-semibold inline-flex items-center justify-center gap-2 hover:bg-snow transition-colors disabled:opacity-70 cursor-pointer shadow-lg"
-            >
-              {status === 'loading' ? (
-                <><Loader2 className="w-4 h-4 animate-spin" /> {c.subscribingBtn}</>
-              ) : (
-                <><Send className="w-4 h-4" /> {c.subscribeBtn}</>
-              )}
-            </button>
+          <form onSubmit={submit} className="max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row gap-3">
+              <input
+                type="email"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={c.emailPlaceholder}
+                aria-label={c.emailPlaceholder}
+                autoComplete="email"
+                disabled={status === 'loading'}
+                className="flex-1 px-5 py-3 rounded-full bg-white/15 text-white placeholder:text-white/80 border border-white/30 focus:bg-white/25 focus:outline-none focus:ring-2 focus:ring-white/50 disabled:opacity-60"
+              />
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="px-6 py-3 rounded-full bg-white text-vibe-pink font-semibold inline-flex items-center justify-center gap-2 hover:bg-snow transition-colors disabled:opacity-70 cursor-pointer shadow-lg"
+              >
+                {status === 'loading' ? (
+                  <><Loader2 className="w-4 h-4 animate-spin" /> {c.subscribingBtn}</>
+                ) : (
+                  <><Send className="w-4 h-4" /> {c.subscribeBtn}</>
+                )}
+              </button>
+            </div>
+            <label className="mt-4 flex items-start gap-2.5 text-white/85 text-xs leading-relaxed cursor-pointer">
+              <input
+                type="checkbox"
+                checked={consented}
+                onChange={(e) => setConsented(e.target.checked)}
+                required
+                className="mt-0.5 w-4 h-4 shrink-0 rounded border border-white/40 accent-white cursor-pointer"
+              />
+              <span>
+                {cc.checkbox}{' '}
+                <a
+                  href={to('/privacy')}
+                  target="_blank"
+                  rel="noopener"
+                  className="underline underline-offset-2 hover:text-white"
+                >
+                  {cc.privacy}
+                </a>
+              </span>
+            </label>
           </form></>
         )}
 
