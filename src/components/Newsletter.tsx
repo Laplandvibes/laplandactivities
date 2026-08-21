@@ -1,9 +1,20 @@
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { Send, CheckCircle, AlertCircle, Loader2, Bell, Compass, Snowflake } from 'lucide-react';
 import { trackNewsletterSignup } from '../lib/analytics';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import FounderByline from '../../../shared/FounderByline';
+
+/**
+ * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,
+ * ei jaettua importtia (vendoroitu sync on refresh-only). Ei saa koskaan
+ * rikkoa lomaketta. Standardi: memory _procedural/lv_form_funnel_events.md.
+ */
+function track(event: string, data?: Record<string, unknown>) {
+  try {
+    (window as unknown as { umami?: { track: (e: string, d?: unknown) => void } }).umami?.track(event, data);
+  } catch { /* ignore */ }
+}
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined;
@@ -75,16 +86,42 @@ export default function Newsletter() {
   const [consented, setConsented] = useState(false);
   const [status, setStatus] = useState<Status>('idle');
   const [errorMsg, setErrorMsg] = useState('');
+  // [LV-FUNNEL] view = osio vieritetty näkyviin (kerran), start = 1. fokus,
+  // blocked kerran per submit-yritys (natiivi invalid laukeaa per kenttä).
+  const funnelData = { surface: 'inline', lang };
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const startTracked = useRef(false);
+  const blockedTracked = useRef(false);
+  useEffect(() => {
+    const el = sectionRef.current;
+    if (!el || typeof IntersectionObserver === 'undefined') return;
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((en) => en.isIntersecting)) {
+        track('nl_view', funnelData);
+        io.disconnect();
+      }
+    }, { threshold: 0.4 });
+    io.observe(el);
+    return () => io.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  const trackStart = () => {
+    if (startTracked.current) return;
+    startTracked.current = true;
+    track('nl_start', funnelData);
+  };
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     if (!email || !consented || !SUPABASE_URL || !SUPABASE_ANON_KEY) {
+      track('nl_blocked', { ...funnelData, reason: !email ? 'email' : !consented ? 'consent' : 'env' });
       setErrorMsg(c.errorFallback);
       setStatus('error');
       return;
     }
     setStatus('loading');
     setErrorMsg('');
+    track('nl_submit', funnelData);
     try {
       const res = await fetch(`${SUPABASE_URL}/functions/v1/send-welcome-email`, {
         method: 'POST',
@@ -104,8 +141,10 @@ export default function Newsletter() {
       if (!res.ok) throw new Error(data.error || c.errorFallback);
       if (data.alreadySubscribed) {
         setStatus('already');
+        track('nl_success', { ...funnelData, already: true });
       } else {
         setStatus('success');
+        track('nl_success', funnelData);
         trackNewsletterSignup(SOURCE);
       }
       setEmail('');
@@ -113,13 +152,14 @@ export default function Newsletter() {
       const msg = err instanceof Error ? err.message : c.errorFallback;
       setErrorMsg(msg);
       setStatus('error');
+      track('nl_error', funnelData);
     }
   }
 
   const isDone = status === 'success' || status === 'already';
 
   return (
-    <section className="relative overflow-hidden py-16 sm:py-20 px-4 sm:px-6"
+    <section className="relative overflow-hidden py-16 sm:py-20 px-4 sm:px-6" ref={sectionRef}
       style={{ background: 'linear-gradient(135deg, #4C1D95 0%, #7E22CE 35%, #BE185D 70%, #DB2777 100%)' }}>
       <div className="absolute inset-0 opacity-15 pointer-events-none">
         <div className="absolute -left-12 top-12 w-72 h-72 rounded-full bg-white/30 blur-3xl" />
@@ -164,12 +204,23 @@ export default function Newsletter() {
           </div>
         ) : (
           <><FounderByline tone="pink" />
-          <form onSubmit={submit} className="max-w-md mx-auto">
+          <form
+            onSubmit={submit}
+            onInvalidCapture={(e) => {
+              if (blockedTracked.current) return;
+              blockedTracked.current = true;
+              window.setTimeout(() => { blockedTracked.current = false; }, 400);
+              const t = e.target as HTMLInputElement;
+              track('nl_blocked', { ...funnelData, reason: t.type === 'checkbox' ? 'consent' : 'email' });
+            }}
+            className="max-w-md mx-auto"
+          >
             <div className="flex flex-col sm:flex-row gap-3">
               <input
                 type="email"
                 required
                 value={email}
+                onFocus={trackStart}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={c.emailPlaceholder}
                 aria-label={c.emailPlaceholder}
@@ -193,6 +244,7 @@ export default function Newsletter() {
               <input
                 type="checkbox"
                 checked={consented}
+                onFocus={trackStart}
                 onChange={(e) => setConsented(e.target.checked)}
                 required
                 className="mt-0.5 w-4 h-4 shrink-0 rounded border border-white/40 accent-white cursor-pointer"
