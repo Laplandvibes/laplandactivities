@@ -31,15 +31,24 @@
   },
   {
     "path": "/privacy",
-    "fallbackTitle": "Privacy | LaplandActivities"
+    "fallbackTitle": "Privacy | LaplandActivities",
+    "harvestFiles": [
+      "../shared/Legal/PrivacyContent.tsx"
+    ]
   },
   {
     "path": "/terms",
-    "fallbackTitle": "Terms | LaplandActivities"
+    "fallbackTitle": "Terms | LaplandActivities",
+    "harvestFiles": [
+      "../shared/Legal/TermsContent.tsx"
+    ]
   },
   {
     "path": "/cookie-policy",
-    "fallbackTitle": "Cookie Policy | LaplandActivities"
+    "fallbackTitle": "Cookie Policy | LaplandActivities",
+    "harvestFiles": [
+      "../shared/Legal/CookieContent.tsx"
+    ]
   },
   {
     "path": "/destinations/rovaniemi"
