@@ -5,7 +5,7 @@ import AffiliateCTA from './AffiliateCTA';
 import { destinations } from '../data/destinations';
 import { categories } from '../data/categories';
 import { useLang, useLocalePath, pick } from '../i18n/useLang';
-import EcosystemMenu from '../../../shared/EcosystemMenu';
+import EcosystemMenu from '../shared/EcosystemMenu';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 

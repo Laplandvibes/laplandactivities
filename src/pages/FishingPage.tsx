@@ -287,7 +287,7 @@ export default function FishingPage() {
                         sid={meta.sid}
                         destination={meta.ss}
                         aria-label={`${compareHotels}: ${meta.ss}`}
-                        className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold"
+                        className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
                       >
                         <MapPin className="w-3.5 h-3.5" />
                         {compareHotels} · {meta.ss}
@@ -470,7 +470,7 @@ export default function FishingPage() {
                 partner="activities"
                 sid="fishing_crab_rib"
                 destination="kirkenes-l97740/kirkenes-summer-king-crab-safari-by-rib-with-king-crab-meal-t1200620"
-                className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold"
+                className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
               >
                 <Anchor className="w-3.5 h-3.5" />
                 {c.norway.ribLabel}

@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import PrivacyContent from '../../../../shared/Legal/PrivacyContent';
+import PrivacyContent from '../../shared/Legal/PrivacyContent';
 import { useLang, useLocalePath } from '../../i18n/useLang';
 import { COPY } from '../../locales/copy';
 

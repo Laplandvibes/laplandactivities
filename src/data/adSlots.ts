@@ -5,9 +5,9 @@
  * Partner-objektilla (ks. shared/PartnerSlot.tsx) → build → deploy.
  * Tyhjät paikat renderöivät house-adin → https://laplandvibes.com/media/site/laplandactivities
  */
-import type { HomeAdSlotsConfig } from '../../../shared/HomeAdSlots';
-import type { Partner } from '../../../shared/PartnerSlot';
-import { DEFAULT_PREMIUM_SPOTS } from '../../../shared/PremiumSpotGrid';
+import type { HomeAdSlotsConfig } from '../shared/HomeAdSlots';
+import type { Partner } from '../shared/PartnerSlot';
+import { DEFAULT_PREMIUM_SPOTS } from '../shared/PremiumSpotGrid';
 
 /**
  * Bear Kuusamo etusivun kortissa A (Vesa 2026-07-27).

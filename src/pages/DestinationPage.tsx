@@ -30,7 +30,7 @@ export default function DestinationPage() {
       <main className="min-h-screen pt-24 bg-deep-night flex items-center justify-center">
         <div className="text-center">
           <h1 className="font-heading text-5xl text-snow mb-4">{c.notFoundH1}</h1>
-          <Link to={to('/destinations')} className="text-vibe-pink hover:text-vibe-pink/80">{c.backDestinations}</Link>
+          <Link to={to('/destinations')} className="text-vibe-pink hover:text-pink-300">{c.backDestinations}</Link>
         </div>
       </main>
     );

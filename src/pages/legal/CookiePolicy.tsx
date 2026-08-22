@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async';
-import CookieContent from '../../../../shared/Legal/CookieContent';
+import CookieContent from '../../shared/Legal/CookieContent';
 import { useLang, useLocalePath } from '../../i18n/useLang';
 import { COPY } from '../../locales/copy';
 

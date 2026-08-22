@@ -7,10 +7,10 @@ import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
-import AdUnit from '../../../shared/ads/AdUnit';
-import bearKuusamoAd from '../../../shared/ads/advertisers/bearkuusamo';
-import onnipyoraAd from '../../../shared/ads/advertisers/onnipyora';
-import haltiAd from '../../../shared/ads/advertisers/halti';
+import AdUnit from '../shared/ads/AdUnit';
+import bearKuusamoAd from '../shared/ads/advertisers/bearkuusamo';
+import onnipyoraAd from '../shared/ads/advertisers/onnipyora';
+import haltiAd from '../shared/ads/advertisers/halti';
 import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
@@ -38,7 +38,7 @@ export default function CategoryPage() {
       <main className="min-h-screen pt-24 bg-deep-night flex items-center justify-center">
         <div className="text-center">
           <h1 className="font-heading text-5xl text-snow mb-4">{c.notFoundH1}</h1>
-          <Link to={to('/categories')} className="text-vibe-pink hover:text-vibe-pink/80">{c.backCategories}</Link>
+          <Link to={to('/categories')} className="text-vibe-pink hover:text-pink-300">{c.backCategories}</Link>
         </div>
       </main>
     );

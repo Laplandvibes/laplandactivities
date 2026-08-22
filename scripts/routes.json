@@ -3,15 +3,23 @@
     "path": "/",
     "fallbackTitle": "LaplandActivities: Aurora, Husky & Snowmobile Tours in Lapland 2026",
     "fallbackDescription": "Book the best Finnish Lapland activities: northern-lights hunts, husky and reindeer safaris, snowmobiling and ice experiences, by destination and category.",
-    "appendSiteName": false
+    "appendSiteName": false,
+    "copyKey": "home",
+    "harvestKeys": [
+      "hero",
+      "faq",
+      "summerBand"
+    ]
   },
   {
     "path": "/destinations",
-    "fallbackTitle": "Destinations | LaplandActivities"
+    "fallbackTitle": "Destinations | LaplandActivities",
+    "copyKey": "destinationsIndex"
   },
   {
     "path": "/categories",
-    "fallbackTitle": "Categories | LaplandActivities"
+    "fallbackTitle": "Categories | LaplandActivities",
+    "copyKey": "categoriesIndex"
   },
   {
     "path": "/about",
@@ -33,21 +41,21 @@
     "path": "/privacy",
     "fallbackTitle": "Privacy | LaplandActivities",
     "harvestFiles": [
-      "../shared/Legal/PrivacyContent.tsx"
+      "src/shared/Legal/PrivacyContent.tsx"
     ]
   },
   {
     "path": "/terms",
     "fallbackTitle": "Terms | LaplandActivities",
     "harvestFiles": [
-      "../shared/Legal/TermsContent.tsx"
+      "src/shared/Legal/TermsContent.tsx"
     ]
   },
   {
     "path": "/cookie-policy",
     "fallbackTitle": "Cookie Policy | LaplandActivities",
     "harvestFiles": [
-      "../shared/Legal/CookieContent.tsx"
+      "src/shared/Legal/CookieContent.tsx"
     ]
   },
   {

@@ -178,7 +178,7 @@
 }
 
 /* Tailwind v4 needs explicit instructions to scan files outside /src */
-@source "../../shared/**/*.{ts,tsx}";
+@source "./shared/**/*.{ts,tsx}";
 
 /* Animations */
 @keyframes aurora {

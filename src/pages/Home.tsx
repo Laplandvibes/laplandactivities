@@ -8,9 +8,9 @@ import Newsletter from '../components/Newsletter';
 import AffiliateCTA from '../components/AffiliateCTA';
 import SummerBand from '../components/SummerBand';
 import HotelsStrip from '../components/HotelsStrip';
-import AdUnit from '../../../shared/ads/AdUnit';
-import scandinavianOutdoorAd from '../../../shared/ads/advertisers/scandinavianOutdoor';
-import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots';
+import AdUnit from '../shared/ads/AdUnit';
+import scandinavianOutdoorAd from '../shared/ads/advertisers/scandinavianOutdoor';
+import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { categories } from '../data/categories';
 import { destinations } from '../data/destinations';
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to={to('/categories')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-vibe-pink/80 font-semibold transition-colors">
+            <Link to={to('/categories')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 font-semibold transition-colors">
               {c.viewAllCategories} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -231,7 +231,7 @@ export default function Home() {
               partner="activities"
               sid="featured_browse_all"
               destination="lappi-suomi-l2652"
-              className="inline-flex items-center gap-2 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold"
+              className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
             >
               {c.seeAllTours} <ArrowRight className="w-4 h-4" />
             </AffiliateCTA>
@@ -278,7 +278,7 @@ export default function Home() {
               <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.destinationsKicker}</span>
               <h2 className="font-heading text-3xl sm:text-5xl text-snow mt-1 tracking-wide">{totalDestinations} {c.destinationsH2}</h2>
             </div>
-            <Link to={to('/destinations')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold">
+            <Link to={to('/destinations')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 text-sm font-semibold">
               {c.viewAll} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
