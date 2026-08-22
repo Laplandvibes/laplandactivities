@@ -4,11 +4,14 @@ import { ArrowRight, Snowflake, Leaf, Sun, Trees, Sparkles } from 'lucide-react'
 import Hero from '../components/Hero';
 import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
-import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import Newsletter from '../components/Newsletter';
 import AffiliateCTA from '../components/AffiliateCTA';
 import SummerBand from '../components/SummerBand';
 import HotelsStrip from '../components/HotelsStrip';
+import AdUnit from '../shared/ads/AdUnit';
+import scandinavianOutdoorAd from '../shared/ads/advertisers/scandinavianOutdoor';
+import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots';
+import { AD_SLOTS } from '../data/adSlots';
 import { categories } from '../data/categories';
 import { destinations } from '../data/destinations';
 import { activities, getFeaturedActivities, getActivitiesByCategory, getActivitiesByDestination } from '../data/activities';
@@ -18,6 +21,8 @@ import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 import { trackEvent } from '../lib/analytics';
+import GygPicks from '../components/GygPicks';
+import { AppPromoHero } from '../components/AppPromo';
 
 // Sibling LaplandVibes ecosystem sites linked from the home page, index-aligned
 // to COPY[lang].relatedSites.links. These are OUR OWN sites — plain in-content
@@ -32,11 +37,11 @@ const RELATED_SITES: { host: string; url: string }[] = [
 
 const BCP47: Record<Lang, string> = {
   en: 'en-US', fi: 'fi-FI', de: 'de-DE', ja: 'ja-JP', es: 'es-ES',
-  'pt-BR': 'pt-BR', 'zh-CN': 'zh-CN', ko: 'ko-KR', fr: 'fr-FR', it: 'it-IT', nl: 'nl-NL',
+  'pt-BR': 'pt-BR', 'zh-CN': 'zh-CN', ko: 'ko-KR', fr: 'fr-FR', it: 'it-IT', nl: 'nl-NL', sv: 'sv-SE',
 };
 const URL_SEG: Record<Lang, string> = {
   en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
 };
 // Localized one-liner descriptions for the WebSite + TouristTrip schemas.
 const HOME_DESC: Record<Lang, string> = {
@@ -51,6 +56,7 @@ const HOME_DESC: Record<Lang, string> = {
   fr: 'Balades en husky, traîneaux de rennes, safaris en motoneige, chasses aux aurores et randonnées d\'été en Laponie finlandaise.',
   it: 'Giri in husky, slitte trainate da renne, safari in motoslitta, caccia all\'aurora ed escursioni estive nella Lapponia finlandese.',
   nl: 'Husky-tochten, rendiersleeën, sneeuwscootersafari\'s, aurora-jachten en zomerwandelingen in Fins Lapland.',
+  sv: 'Huskyturer, renslädar, snöskotersafarin, norrskensjakter och sommarvandringar i finska Lappland.',
 };
 
 const SEASON_ICONS = [Snowflake, Trees, Sun, Leaf];
@@ -145,6 +151,13 @@ export default function Home() {
 
       <Hero />
 
+
+
+
+      {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
+          tyhjänä kompakti house-ad → LV Media -portaali */}
+      <MainPartnerBanner config={AD_SLOTS} locale={lang} className="bg-deep-night" />
+
       <SummerBand />
 
       {/* CATEGORIES bento */}
@@ -191,20 +204,21 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to={to('/categories')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-vibe-pink/80 font-semibold transition-colors">
+            <Link to={to('/categories')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 font-semibold transition-colors">
               {c.viewAllCategories} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>
       </section>
 
-      <GetYourGuideWidget
-        locationId="2652"
-        cmpTag="laplandactivities-home-auto"
-        title={c.gygTitle}
-        eyebrow={c.gygEyebrow}
-        numberOfItems={3}
-      />
+      {/* Kumppaniosio ylhäällä (LV Media): kakkospääkumppani + 6 premium-
+          paikkaa — pääkumppanit eivät näy vierekkäin (banneri heron alla ↑) */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
+
+      {/* Varattavat GYG-tuotteet — korkealla sivulla mutta myytyjen mainospaikkojen ALAPUOLELLA.
+          Vain YKSI varaustuoteosio etusivulla (Vesa 2026-08-03: kaksi samanlaista
+          peräkkäin) — GYG-auto-widget elää alasivuilla (kohde- ja kategoriaindeksit). */}
+      <GygPicks />
 
       <section id="experiences" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
@@ -217,7 +231,7 @@ export default function Home() {
               partner="activities"
               sid="featured_browse_all"
               destination="lappi-suomi-l2652"
-              className="inline-flex items-center gap-2 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold"
+              className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
             >
               {c.seeAllTours} <ArrowRight className="w-4 h-4" />
             </AffiliateCTA>
@@ -264,7 +278,7 @@ export default function Home() {
               <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.destinationsKicker}</span>
               <h2 className="font-heading text-3xl sm:text-5xl text-snow mt-1 tracking-wide">{totalDestinations} {c.destinationsH2}</h2>
             </div>
-            <Link to={to('/destinations')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-vibe-pink/80 text-sm font-semibold">
+            <Link to={to('/destinations')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 text-sm font-semibold">
               {c.viewAll} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -318,6 +332,7 @@ export default function Home() {
       <HotelsStrip />
 
       <BookingCTA
+        sidTag="home"
         destinationSlug="lapland"
         hotelsQuery={hotelsQueryForDestination('lapland')}
         gygSlug={gygSlugForCategory('adventure')}
@@ -362,6 +377,12 @@ export default function Home() {
           </ul>
         </div>
       </section>
+      {/* App launch block, directly under the site's own opening. At the foot
+          of the page it measured 81 % down a 33 000 px front page, and an
+          announcement nobody scrolls to is not an announcement. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AppPromoHero />
+      </div>
 
       {/* FAQ — visible Q&A that mirrors the FAQPage JSON-LD above */}
       <section id="faq" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5" aria-labelledby="faq-h2">
@@ -403,6 +424,22 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Scandinavian Outdoor ad — gear for the activities above (shared/ads).
+          Different product than the GYG activity CTAs, so no cannibalisation;
+          disclosure lives in the shared Footer bottom strip. */}
+      <section className="px-4 pb-16 bg-deep-night">
+        <div className="max-w-5xl mx-auto">
+          <AdUnit
+            spec={scandinavianOutdoorAd}
+            sid="home_activities_gear"
+            lang={lang}
+            variant="dark"
+            onCtaClick={(specKey, sid, url) => trackEvent('affiliate_click', { event_category: 'monetisation', event_label: specKey, affiliate_type: `ad_unit:${sid}`, outbound_url: url })}
+          />
+        </div>
+      </section>
+
 
       <Newsletter />
 

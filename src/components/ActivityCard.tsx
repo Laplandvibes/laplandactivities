@@ -1,7 +1,7 @@
 import { MapPin, ExternalLink, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import type { Activity } from '../data/activities';
-import { isBookable, gygQueryForActivity } from '../data/activities';
+import { isBookable, gygQueryForActivity, PARTNER_PAGE } from '../data/activities';
 import { imageForActivity } from '../data/images';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -19,6 +19,9 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   const img = image ?? imageForActivity(rawActivity);
   const bookable = isBookable(rawActivity);
   const gygQ = gygQueryForActivity(rawActivity);
+  // Paid-partner activity (Bear Kuusamo): CTA routes to our partner feature
+  // page, never to a GYG search — see PARTNER_PAGE in data/activities.ts.
+  const partnerPath = PARTNER_PAGE[rawActivity.id];
   const sid = `card_${rawActivity.id}`.slice(0, 50).replace(/-/g, '_');
 
   return (
@@ -68,7 +71,14 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
           </div>
         )}
 
-        {bookable ? (
+        {partnerPath ? (
+          <Link
+            to={to(partnerPath)}
+            className="inline-flex items-center justify-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+          >
+            {c.findBook} <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        ) : bookable ? (
           <AffiliateCTA
             partner="activities-search"
             sid={sid}

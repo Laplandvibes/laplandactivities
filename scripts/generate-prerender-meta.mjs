@@ -47,7 +47,7 @@ const ROOT = resolve(__dirname, '..');
 const OUT_FILE = resolve(__dirname, 'prerender-meta.json');
 
 // Keep in sync with src/i18n/useLang.ts Lang union + the COPY keys.
-const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl'];
+const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
 
 // Site brand suffix used in the runtime <title> of category/destination pages.
 const TITLE_SUFFIX = 'LaplandActivities';
@@ -111,12 +111,15 @@ async function main() {
       const runner = vite.createServerModuleRunner(viteServer.environments.ssr, { hmr: false });
       load = (p) => runner.import(p);
     }
-    COPY = (await load('/src/locales/copy.ts')).COPY;
+    const copyMod = await load('/src/locales/copy.ts');
+    if (typeof copyMod.loadAllCopy === 'function') await copyMod.loadAllCopy();
+    COPY = copyMod.COPY;
     categories = (await load('/src/data/categories.ts')).categories;
     destinations = (await load('/src/data/destinations.ts')).destinations;
     const dataMod = await load('/src/locales/data.ts');
     localizeCategory = dataMod.localizeCategory;
     localizeDestination = dataMod.localizeDestination;
+    if (typeof dataMod.loadAllLocaleData === 'function') await dataMod.loadAllLocaleData();
   } catch (e) {
     console.error(`[meta] could not load sources via Vite SSR: ${e.message}`);
   } finally {
@@ -155,8 +158,13 @@ async function main() {
   // metaTitle/metaDescription in COPY but only English fallbacks in routes.json.
   const copyPages = [
     { path: '/about', key: 'about' },
+    { path: '/fishing', key: 'fishing' },
+    { path: '/bear-kuusamo', key: 'bearKuusamo' },
     { path: '/categories', key: 'categoriesIndex' },
     { path: '/destinations', key: 'destinationsIndex' },
+    { path: '/privacy', key: 'privacy' },
+    { path: '/terms', key: 'terms' },
+    { path: '/cookie-policy', key: 'cookie' },
   ];
   for (const { path, key } of copyPages) {
     const byLang = {};

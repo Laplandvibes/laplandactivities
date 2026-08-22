@@ -1,33 +1,29 @@
-import { Helmet } from 'react-helmet-async';
-import { Link } from 'react-router-dom';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
+import SharedNotFound from '../shared/NotFound';
 
+// Thin wrapper around the shared network 404 (Vesa 2026-07-12 migration).
+// Title + robots noindex are set by SharedNotFound itself — Helmet dropped.
+// Nav/Footer are rendered by App.tsx around <Routes>, so no chrome needed here.
 export default function NotFound() {
   const lang = useLang();
   const to = useLocalePath();
-  const c = COPY[lang].notFound;
+  const c = COPY[lang].nav;
 
+  // landmark={false} because this site's app layout already renders the
+  // page's <main>. Without it the 404 route shipped two nested landmarks --
+  // measured from the rendered DOM 2026-08-13, invisible to grep.
   return (
-    <>
-      <Helmet>
-        <title>{c.metaTitle}</title>
-        <meta name="robots" content="noindex" />
-      </Helmet>
-
-      <main className="min-h-screen flex items-center justify-center px-4 bg-deep-night pt-16">
-        <div className="text-center max-w-lg">
-          <h1 className="font-heading text-[10rem] leading-none text-vibe-pink/25 drop-shadow-[0_0_60px_rgba(236,72,153,0.4)]">404</h1>
-          <h2 className="font-heading text-4xl text-snow tracking-wide mb-4">{c.h2}</h2>
-          <p className="text-snow/65 mb-8">{c.body}</p>
-          <Link
-            to={to('/')}
-            className="inline-block bg-vibe-pink hover:bg-vibe-pink/90 text-white px-8 py-3 rounded-full font-semibold transition-all"
-          >
-            {c.backCta}
-          </Link>
-        </div>
-      </main>
-    </>
+    <SharedNotFound
+      landmark={false}
+      lang={lang}
+      siteName="LaplandActivities"
+      homeHref={to('/')}
+      links={[
+        { href: to('/destinations'), label: c.destinations },
+        { href: to('/categories'), label: c.categories },
+        { href: to('/fishing'), label: c.fishing },
+      ]}
+    />
   );
 }

@@ -54,6 +54,12 @@ export const HERO = {
   huskyDay:         local('heroes/husky-sled-day.webp'),        // daytime husky-sled team
   skiResortWinter:  local('heroes/ski-resort-winter.webp'),     // snowy fell ski slope at dusk
   ruskaRidge:       local('heroes/slider-03-summer-hike.webp'), // autumn ruska fell ridge + hikers
+  salmonFishing:    local('activities/summer/salmon-fishing.webp'), // river salmon fishing, used by fishing category hero
+
+  // 2026-07-24 new destination heroes (Picsart gemini-3-pro-image 2K, unique to this site).
+  // kemijarvi file is named for an easy swap: Vesa has real Kemijärvi photos to drop in later.
+  pyhaLuosto:       local('heroes/pyha-luosto-fells.webp'),     // twin fells + national park, winter dusk
+  kemijarvi:        local('heroes/kemijarvi-lake-town.webp'),   // lake + rail + small-town winter vibe
 } as const;
 
 // HERO_BRANDED — kept as alias for legacy data references
@@ -153,12 +159,26 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
   { match: /aurora|northern light|revontul/i,
         imgs: [local('og/og-default.webp'), local('activities/northern-lights/aurora-people.webp')] },
+  // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
+  // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
+  // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
+  // variants so the pair of Saariselkä king-crab cards never show the same photo.
+  { match: /king crab|kongekrabbe|crab safari/i,
+        imgs: [local('activities/fishing/fishing-kingcrab.webp'), local('activities/fishing/fishing-kingcrab-2.webp')] },
   { match: /kayak|canoe|paddle|sup\b|raft|river run/i,                  img: local('activities/summer/kayak.webp') },
   { match: /icebreaker|sampo/i,                                        img: local('og/og-default.webp') },
   { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
+  // Kukkolankoski = SUMMER net-fishing at the rapids (Food & Drink). Its title carries
+  // "whitefish", but so do the ice-fishing descriptions ("jig for perch and whitefish"),
+  // so match the unique place name — never bare /whitefish/ — and give it a river image,
+  // not a winter ice one (season-accuracy release gate).
+  { match: /kukkolankoski/i,                                           img: local('activities/fishing/fishing-river.webp') },
   { match: /salmon|fly[- ]?fish|tornionjoki|teno river/i,               img: local('activities/summer/salmon-fishing.webp') },
-  { match: /whitefish|ice fish/i,                                       img: local('hotels/log-cabin-lakeside.webp') },
-  { match: /fish(ing)?/i,                                               img: local('hotels/log-cabin-lakeside.webp') },
+  // Ice fishing (winter) — 3 distinct, season-accurate photos so sibling cards on one
+  // destination page (Rovaniemi has three) never repeat. assignActivityImages round-robins them.
+  { match: /ice[ -]?fish/i,
+        imgs: [local('activities/fishing/fishing-ice.webp'), local('activities/fishing/fishing-ice-day.webp'), local('activities/fishing/fishing-ice-dusk.webp')] },
+  { match: /fish(ing)?/i,                                               img: local('activities/fishing/fishing-river.webp') },
   { match: /mountain bike|mtb|cycling|bike park/i,                      img: local('activities/summer/mtb-bikepark.webp') },
   { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
   { match: /berry|cloudberry|forag|mushroom/i,                          img: local('activities/summer/foraging.webp') },
@@ -181,6 +201,8 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
 
   // City/destination tour catch-alls
   { match: /city tour|rovaniemi tour|kemi tour|tornio tour/i,           img: local('hotels/boutique-hotel-rovaniemi.webp') },
+  // Haparanda border-shopping day (Tornio page) — urban scene, not a nature shot.
+  { match: /haparanda|ikea|shopping/i,                                  img: local('hotels/boutique-hotel-rovaniemi.webp') },
 ];
 
 export interface ActivityImageInput {
@@ -252,6 +274,9 @@ const CATEGORY_HERO: Record<string, string> = {
   culture:          local('heroes/slider-05-reindeer-lavvu.webp'),
   summer:           local('categories/summer.webp'),
   food:             local('hotels/log-cabin-lakeside.webp'),
+  // Distinct from the /fishing GUIDE hero (salmon-fishing.webp): the category grid
+  // gets its own seasonal scene — river fishing in summer, ice fishing at dusk in winter.
+  fishing:          seasonal(local('activities/fishing/fishing-ice-dusk.webp'), local('activities/fishing/fishing-river.webp')),
 };
 
 export function imageForCategory(slug: string): string {
@@ -274,6 +299,9 @@ const DEST_HERO: Record<string, string> = {
   // aurora lake reads as the Posio autumn/lakes mood in the light season.
   posio:      seasonal(local('heroes/husky-sled-day.webp'), local('og/og-default.webp')),
   tornio:     seasonal(local('activities/culture/arctic-city.webp'), local('activities/summer/salmon-fishing.webp')),
+  // New 2026-07-24: dedicated generated heroes (same image both seasons, like rovaniemi).
+  'pyha-luosto': local('heroes/pyha-luosto-fells.webp'),
+  kemijarvi:  local('heroes/kemijarvi-lake-town.webp'),
 };
 
 export function imageForDestination(slug: string): string {
@@ -293,6 +321,8 @@ const FOCAL: Record<string, string> = {
   // Subject's head/helmet is near the TOP → anchor higher so it's never cropped.
   '/images/activities/summer/mtb-bikepark.webp': 'center 22%',
   '/images/activities/summer/salmon-fishing.webp': 'center 38%',
+  '/images/activities/fishing/fishing-river.webp': 'center 45%',
+  '/images/activities/fishing/fishing-ice-dusk.webp': 'center 45%',
   // Wide aurora arcs read best with the sky kept — anchor a touch low.
   '/images/heroes/slider-01-husky-aurora.webp': 'center 42%',
   '/images/og/og-default.webp': 'center 45%',
@@ -309,6 +339,10 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/ski-resort-winter.webp': 'center 45%',
   // Summer lake: paddler + sun are in the lower-mid → anchor low.
   '/images/categories/summer.webp': 'center 55%',
+  // New destination heroes: pyha fell tops sit mid-high; kemijarvi town+train band
+  // is in the UPPER third (frozen lake fills the lower two thirds) → anchor high.
+  '/images/heroes/pyha-luosto-fells.webp': 'center 40%',
+  '/images/heroes/kemijarvi-lake-town.webp': 'center 30%',
 };
 
 /** Safe object-position for a hero image so heads/helmets are never cropped. */

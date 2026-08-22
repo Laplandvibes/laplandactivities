@@ -16,11 +16,12 @@ export type AffiliatePartner =
   | 'cars'
   | 'activities'
   /**
-   * GetYourGuide keyword SEARCH (`/s/?q=…`). Use for a SPECIFIC activity card
-   * where we want the user to land on results for that exact experience + place
-   * (e.g. "salmon fishing tornio"), not the broad location page. `destination`
-   * carries the concise search query. Owner-mandated 2026-06-26: booking links
-   * must target the specific activity, not a generic Lapland search.
+   * GetYourGuide keyword SEARCH (lands on GYG `/s?q=…` via the Worker). Use for
+   * a SPECIFIC activity card where we want the user to land on results for that
+   * exact experience + place (e.g. "salmon fishing tornio"), not the broad
+   * location page. `destination` carries the concise search query.
+   * Owner-mandated 2026-06-26: booking links must target the specific
+   * activity, not a generic Lapland search.
    */
   | 'activities-search';
 
@@ -41,61 +42,93 @@ export interface AffiliateCTAProps
 
 const REDIRECT_HOST = 'https://go.laplandvibes.com';
 
-type _Lang = "en" | "fi" | "de" | "ja" | "es" | "pt-BR" | "zh-CN" | "ko" | "fr" | "it" | "nl";
-const HOTELS_LOCALE: Record<_Lang, string> = { en: "en_US", fi: "fi_FI", de: "de_DE", ja: "ja_JP", es: "es_ES", "pt-BR": "pt_BR", "zh-CN": "zh_CN", ko: "ko_KR", fr: "fr_FR", it: "it_IT", nl: "nl_NL" };
-const CARS_LANG: Record<_Lang, string> = { en: "en", fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt", "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl" };
-const GYG_DOMAIN: Record<_Lang, string> = {
-  en: "https://www.getyourguide.com",
-  fi: "https://www.getyourguide.com",
-  de: "https://www.getyourguide.de",
-  ja: "https://www.getyourguide.com",
-  es: "https://www.getyourguide.es",
-  "pt-BR": "https://www.getyourguide.com.br",
-  "zh-CN": "https://www.getyourguide.com",
-  ko: "https://www.getyourguide.com",
-  fr: "https://www.getyourguide.fr",
-  it: "https://www.getyourguide.it",
-  nl: "https://www.getyourguide.nl",
-};
-const GYG_LANGUAGE: Record<_Lang, string | undefined> = {
-  en: undefined, fi: "fi", de: undefined, ja: "ja", es: "es", "pt-BR": "pt-br", "zh-CN": "zh",
-  ko: "ko", fr: "fr", it: "it", nl: "nl",
+type _Lang = "en" | "fi" | "de" | "ja" | "es" | "pt-BR" | "zh-CN" | "ko" | "fr" | "it" | "nl" | "sv";
+const HOTELS_LOCALE: Record<_Lang, string> = { en: "en_US", fi: "fi_FI", de: "de_DE", ja: "ja_JP", es: "es_ES", "pt-BR": "pt_BR", "zh-CN": "zh_CN", ko: "ko_KR", fr: "fr_FR", it: "it_IT", nl: "nl_NL", sv: "sv_SE" };
+const CARS_LANG: Record<_Lang, string> = { en: "en", fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt", "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv" };
+/**
+ * Worker `?language=` codes (same table as shared/gyg/picks.ts). The Worker's
+ * handleGyg turns the code into GetYourGuide's `<lang>-<country>/` PATH prefix
+ * — the only localisation GYG honours. 🔴 A raw `?language=xx` appended to a
+ * getyourguide.com URL does NOTHING (measured in a real browser 2026-08-02),
+ * so never "simplify" back to passing it to GYG directly. `en` is GYG's
+ * default and needs no param; `de` needs a code here even though the old raw
+ * links didn't send one — they used the getyourguide.de domain instead.
+ */
+const GYG_WORKER_LANG: Record<_Lang, string | undefined> = {
+  en: undefined, fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt-br",
+  "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv",
 };
 
-const GYG_PARTNER_ID = 'VRMKD7N';
-const SITE_ID = 'laplandactivities';
+/**
+ * Sid-spesifikaatio on a-z, 0-9 ja alaviiva — mutta kuusi kutsukohtaa
+ * interpoloi slugin raakana (`bookcta_hotels_pyha-luosto`,
+ * `hero_cat_northern-lights_book`), joten normalisointi kuuluu TÄNNE eikä
+ * jokaiseen kutsukohtaan (auditti 2026-08-03). NFKD purkaa tarkkeet
+ * (ä → a) ennen suodatusta, ettei ei-ASCII-id tuota alaviivasotkua.
+ */
+function cleanSid(sid: string): string {
+  return sid
+    .normalize('NFKD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9_]/g, '_');
+}
 
 export function buildAffiliateHref({
   partner,
-  sid,
+  sid: rawSid,
   destination,
   query,
   lang = "en",
 }: Pick<AffiliateCTAProps, 'partner' | 'sid' | 'destination' | 'query'> & { lang?: _Lang }): string {
-  if (partner === 'activities-search') {
-    // GetYourGuide keyword search — lands on results for a specific experience.
-    // `destination` is the concise query (e.g. "salmon fishing tornio").
-    const url = new URL(`${GYG_DOMAIN[lang]}/s/`);
-    if (destination) url.searchParams.set('q', destination);
-    url.searchParams.set('partner_id', GYG_PARTNER_ID);
-    url.searchParams.set('cmp', `lv_${SITE_ID}_${sid}`);
-    const gygLang = GYG_LANGUAGE[lang];
-    if (gygLang) url.searchParams.set('language', gygLang);
-    if (query) for (const [k, v] of Object.entries(query)) if (v) url.searchParams.set(k, v);
-    return url.toString();
-  }
-  if (partner === 'activities') {
-    const path = (destination ?? '').replace(/^\/+/, '').replace(/\/+$/, '');
-    const url = new URL(path ? `${GYG_DOMAIN[lang]}/${path}/` : `${GYG_DOMAIN[lang]}/`);
-    url.searchParams.set('partner_id', GYG_PARTNER_ID);
-    url.searchParams.set('cmp', `lv_${SITE_ID}_${sid}`);
-    const gygLang = GYG_LANGUAGE[lang];
-    if (gygLang) url.searchParams.set('language', gygLang);
-    if (query) for (const [k, v] of Object.entries(query)) if (v) url.searchParams.set(k, v);
-    return url.toString();
+  const sid = cleanSid(rawSid);
+  if (partner === 'activities' || partner === 'activities-search') {
+    // Reitittää Workerin kautta 2026-08-03 alkaen. Tämän korvaama suora
+    // GYG-linkitys oli toukokuun 2026 kiertotapa (/go/activities/<slug>
+    // romahti silloin GYG:n etusivulle); Worker on 2026-08-02 lähtien
+    // hoitanut slugin, /s?q=-haun JA kielen polkuprefiksin (verifioitu
+    // livenä 3.8.: tuoteslug+fi, haku+ja, sijaintislug+de). Suora linkitys
+    // menettäisi D1-klikkilokin ja veisi partner_id:n bundleen.
+    const params = new URLSearchParams({ sid });
+    const gygLang = GYG_WORKER_LANG[lang];
+    if (gygLang) params.set('language', gygLang);
+    let path = '';
+    if (partner === 'activities-search') {
+      // `destination` on tiivis hakulause (esim. "salmon fishing tornio").
+      if (destination) params.set('q', destination);
+    } else {
+      const dest = (destination ?? '').replace(/^\/+|\/+$/g, '');
+      const q = query?.q?.trim();
+      const isDeepLink = dest.includes('/') || /-t\d+$/.test(dest);
+      if (q && dest && !isDeepLink) {
+        // 🔴 GYG:n sijaintisivut OHITTAVAT ?q=:n kokonaan (hubin auditti
+        // 2026-07-31: rovaniemi-l2653/?q=reindeer renderöi saman suodattamattoman
+        // listan). destination+q → /s-haku, jossa slugin paikkasanat taitetaan
+        // hakutekstiin — sama semantiikka kuin hubin AffiliateCTA:ssa.
+        const place = dest
+          .replace(/-l\d+$/, '')
+          .split('-')
+          .filter((w) => w && !['finland', 'suomi', 'lappi'].includes(w) && !q.toLowerCase().includes(w));
+        if (!place.length && !/lapland|rovaniemi|levi|yll|saariselk|ruka|inari|kemi|salla/i.test(q)) place.push('lapland');
+        params.set('q', [q, ...place].join(' '));
+      } else {
+        path = dest;
+        if (q && !dest) params.set('q', q);
+      }
+    }
+    // Muut lisäparametrit kulkevat Workerille (q on jo käsitelty yllä).
+    if (query) for (const [k, v] of Object.entries(query)) if (v && k !== 'q') params.set(k, v);
+    return `${REDIRECT_HOST}/go/activities${path ? `/${path}` : ''}?${params.toString()}`;
   }
   const params = new URLSearchParams({ sid, ...(query || {}) });
-  if (destination) params.set('ss', destination);
+  // 🔴 cars käyttää pickup_location=IATA, EI ss:ää. Mitattu 2026-08-03:
+  // Worker rakentaa pickup_locationista EB-tulossivun (plc=61893 jne.),
+  // mutta ss=IATA valui EB:n ?location=-TEKSTIHAKUUN, jonka EB pudottaa
+  // tyhjaksi etusivuksi (sama vikaluokka kuin ENF->Enfidha-tapaus 25.7.).
+  if (destination) {
+    if (partner === 'cars') params.set('pickup_location', destination);
+    else params.set('ss', anchorHotelsSs(partner, destination));
+  }
   if (partner === "hotels" || partner === "hotels-seasonal" || partner === "hotels-budget") {
     params.set("locale", HOTELS_LOCALE[lang]);
   } else if (partner === "cars") {
@@ -123,4 +156,20 @@ export default function AffiliateCTA({
       {children}
     </a>
   );
+}
+
+/**
+ * Anchor any lodging search to Finnish Lapland. A bare "Lapland"/"Levi"/etc.
+ * makes the lodging partner geocode to *Lapland, Indiana, USA* — a real
+ * revenue/trust bug (Vesa 2026-07-08). Still applies after the 2026-07 CJ exit:
+ * the Worker now resolves /go/hotels to Sembo (fi) and Trip.com (other
+ * locales), and both geocode from this same query string.
+ * Force ", Finland" onto every lodging query that does
+ * not already name the country; leave cars/activities queries untouched.
+ * Callers cannot re-introduce the bug.
+ */
+function anchorHotelsSs(partner: string, destination: string): string {
+  const isHotels = partner === "hotels" || partner === "hotels-seasonal" || partner === "hotels-budget";
+  if (!isHotels) return destination;
+  return /finland|suomi/i.test(destination) ? destination : `${destination.replace(/[\s,]+$/, "")}, Finland`;
 }

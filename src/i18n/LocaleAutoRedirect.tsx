@@ -3,11 +3,11 @@ import { useLocation, useNavigate } from 'react-router-dom';
 
 const STORAGE_KEY = 'lv_locale_choice';
 
-type StoredLocale = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl';
+type StoredLocale = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv';
 
 const URL_PREFIX: Record<StoredLocale, string> = {
   en: '', fi: '/fi', de: '/de', ja: '/ja', es: '/es', 'pt-BR': '/br', 'zh-CN': '/cn',
-  ko: '/kr', fr: '/fr', it: '/it', nl: '/nl',
+  ko: '/kr', fr: '/fr', it: '/it', nl: '/nl', sv: '/sv',
 };
 
 export default function LocaleAutoRedirect() {
@@ -23,7 +23,7 @@ export default function LocaleAutoRedirect() {
         : null;
 
     let target: StoredLocale = 'en';
-    const validValues: StoredLocale[] = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl'];
+    const validValues: StoredLocale[] = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
 
     if (stored && (validValues as string[]).includes(stored)) {
       target = stored as StoredLocale;
@@ -39,6 +39,7 @@ export default function LocaleAutoRedirect() {
       else if (lang.startsWith('fr')) target = 'fr';
       else if (lang.startsWith('it')) target = 'it';
       else if (lang.startsWith('nl')) target = 'nl';
+      else if (lang.startsWith('sv')) target = 'sv';
     }
 
     const prefix = URL_PREFIX[target];

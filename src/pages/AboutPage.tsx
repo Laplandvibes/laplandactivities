@@ -61,7 +61,7 @@ export default function AboutPage() {
           </p>
 
           <div className="mt-12">
-            <Link to={to('/')} className="text-vibe-pink hover:text-vibe-pink/80 font-semibold">{c.backHome}</Link>
+            <Link to={to('/')} className="text-vibe-pink hover:text-pink-300 font-semibold">{c.backHome}</Link>
           </div>
         </div>
       </main>

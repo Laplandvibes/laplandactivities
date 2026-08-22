@@ -1,33 +1,62 @@
 [
   {
     "path": "/",
-    "fallbackTitle": "LaplandActivities — Aurora, Husky & Snowmobile Tours in Lapland 2026",
-    "fallbackDescription": "Book the best Finnish Lapland activities: northern-lights hunts, husky and reindeer safaris, snowmobiling and ice experiences — by destination and category.",
-    "appendSiteName": false
+    "fallbackTitle": "LaplandActivities: Aurora, Husky & Snowmobile Tours in Lapland 2026",
+    "fallbackDescription": "Book the best Finnish Lapland activities: northern-lights hunts, husky and reindeer safaris, snowmobiling and ice experiences, by destination and category.",
+    "appendSiteName": false,
+    "copyKey": "home",
+    "harvestKeys": [
+      "hero",
+      "faq",
+      "summerBand"
+    ]
   },
   {
     "path": "/destinations",
-    "fallbackTitle": "Destinations | LaplandActivities"
+    "fallbackTitle": "Destinations | LaplandActivities",
+    "copyKey": "destinationsIndex"
   },
   {
     "path": "/categories",
-    "fallbackTitle": "Categories | LaplandActivities"
+    "fallbackTitle": "Categories | LaplandActivities",
+    "copyKey": "categoriesIndex"
   },
   {
     "path": "/about",
     "fallbackTitle": "About | LaplandActivities"
   },
   {
+    "path": "/fishing",
+    "fallbackTitle": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
+    "fallbackDescription": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links you need before you cast.",
+    "appendSiteName": false
+  },
+  {
+    "path": "/bear-kuusamo",
+    "fallbackTitle": "Bear Kuusamo: Ethical Bear Watching in Finland | LaplandActivities",
+    "fallbackDescription": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, 1 May to 30 September.",
+    "appendSiteName": false
+  },
+  {
     "path": "/privacy",
-    "fallbackTitle": "Privacy | LaplandActivities"
+    "fallbackTitle": "Privacy | LaplandActivities",
+    "harvestFiles": [
+      "src/shared/Legal/PrivacyContent.tsx"
+    ]
   },
   {
     "path": "/terms",
-    "fallbackTitle": "Terms | LaplandActivities"
+    "fallbackTitle": "Terms | LaplandActivities",
+    "harvestFiles": [
+      "src/shared/Legal/TermsContent.tsx"
+    ]
   },
   {
     "path": "/cookie-policy",
-    "fallbackTitle": "Cookie Policy | LaplandActivities"
+    "fallbackTitle": "Cookie Policy | LaplandActivities",
+    "harvestFiles": [
+      "src/shared/Legal/CookieContent.tsx"
+    ]
   },
   {
     "path": "/destinations/rovaniemi"
@@ -54,6 +83,12 @@
     "path": "/destinations/tornio"
   },
   {
+    "path": "/destinations/pyha-luosto"
+  },
+  {
+    "path": "/destinations/kemijarvi"
+  },
+  {
     "path": "/categories/adventure"
   },
   {
@@ -76,5 +111,8 @@
   },
   {
     "path": "/categories/food"
+  },
+  {
+    "path": "/categories/fishing"
   }
 ]

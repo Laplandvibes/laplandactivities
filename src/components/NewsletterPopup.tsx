@@ -1,4 +1,4 @@
-import SharedNewsletterPopup from '../../../shared/NewsletterPopup';
+import SharedNewsletterPopup from '../shared/NewsletterPopup';
 import { trackNewsletterSignup } from '../lib/analytics';
 import { useLang } from '../i18n/useLang'
 
@@ -9,7 +9,7 @@ export default function NewsletterPopup() {
   const locale = useLang();
   return (
     <SharedNewsletterPopup
-lang={locale as 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl'}
+lang={locale as 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv'}
             siteId="laplandactivities"
       brandWord="ACTIVITIES"
       supabaseUrl={SUPABASE_URL}

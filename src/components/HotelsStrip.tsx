@@ -16,6 +16,8 @@ const META = [
 export default function HotelsStrip() {
   const lang = useLang();
   const c = COPY[lang].hotelsStrip;
+  // fi links carry locale=fi_FI -> Worker routes to Sembo; every other locale -> Trip.com.
+  const partnerLabel = lang === 'fi' ? 'Sembo' : 'Trip.com';
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 bg-deep-night border-t border-white/5">
@@ -34,7 +36,7 @@ export default function HotelsStrip() {
             partner="hotels"
             sid="hotels_strip_browse_all"
             destination="Lapland, Finland"
-            className="self-start sm:self-auto inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/25"
+            className="self-start sm:self-auto inline-flex items-center gap-2 whitespace-nowrap bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/25"
           >
             <Hotel className="w-4 h-4" />
             {c.compareCta}
@@ -61,7 +63,7 @@ export default function HotelsStrip() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>Hotels.com</p>
+                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{partnerLabel}</p>
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>

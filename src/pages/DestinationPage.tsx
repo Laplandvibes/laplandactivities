@@ -6,9 +6,8 @@ import { getActivitiesByDestination } from '../data/activities';
 import { categories } from '../data/categories';
 import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
-import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
-import { gygSlugForDestination, hotelsQueryForDestination } from '../data/affiliate';
+import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
 import { imageForDestination, assignActivityImages, focalFor } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
@@ -31,7 +30,7 @@ export default function DestinationPage() {
       <main className="min-h-screen pt-24 bg-deep-night flex items-center justify-center">
         <div className="text-center">
           <h1 className="font-heading text-5xl text-snow mb-4">{c.notFoundH1}</h1>
-          <Link to={to('/destinations')} className="text-vibe-pink hover:text-vibe-pink/80">{c.backDestinations}</Link>
+          <Link to={to('/destinations')} className="text-vibe-pink hover:text-pink-300">{c.backDestinations}</Link>
         </div>
       </main>
     );
@@ -39,6 +38,11 @@ export default function DestinationPage() {
 
   const gygSlug = gygSlugForDestination(slug || 'lapland');
   const hotelsQ = hotelsQueryForDestination(slug || 'lapland');
+  const carsIata = carsIataForDestination(slug || 'lapland');
+  // FI taipuu: "Tekemistä Rukalla ja Kuusamossa", ei "Tekemistä kohteessa Ruka
+  // ja Kuusamo" (Vesa 2026-08-03). Lokaali antaa paikallissijamuodon
+  // destLocative-kartassa; muut kielet käyttävät nimeä sellaisenaan.
+  const destIn = c.destLocative?.[slug || ''] ?? destination.name;
   const tips = c.tipsByDestination[slug || ''] || [];
   const heroImg = imageForDestination(slug || '');
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
@@ -95,7 +99,7 @@ export default function DestinationPage() {
       </Helmet>
 
       {/* HERO — focal-fixed so heads/helmets are never cropped */}
-      <section className="relative min-h-[52vh] md:min-h-[58vh] flex items-center overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img
           src={heroImg}
           alt={destination.name}
@@ -122,7 +126,7 @@ export default function DestinationPage() {
               className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <Sparkles className="w-4 h-4" />
-              {c.bookActivitiesIn} {destination.name}
+              {c.bookActivitiesIn.replace('{dest}', destination.name)}
             </AffiliateCTA>
             <AffiliateCTA
               partner="hotels"
@@ -131,7 +135,7 @@ export default function DestinationPage() {
               className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-snow border border-white/25 px-6 py-3 rounded-full text-sm font-semibold transition-all"
             >
               <Hotel className="w-4 h-4" />
-              {c.stayIn} {destination.name}
+              {c.stayIn} {destIn}
             </AffiliateCTA>
           </div>
         </div>
@@ -152,7 +156,8 @@ export default function DestinationPage() {
           <div className="lg:col-span-3 lv-surface rounded-3xl p-6 sm:p-8">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{sec.whyKicker}</span>
             <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 mb-4">{sec.whyH2(destination.name)}</h2>
-            <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{destination.description}</p>
+            {/* why ≠ hero lead (Vesa 2026-07-24: the two were verbatim identical on one screen) */}
+            <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{destination.why}</p>
             <div className="mt-5 pt-5 border-t border-white/10">
               <p className="text-snow/70 text-xs uppercase tracking-[0.18em] font-semibold mb-2">{sec.operatorsShort}</p>
               <div className="flex flex-wrap gap-2">
@@ -226,19 +231,21 @@ export default function DestinationPage() {
         </section>
       )}
 
-      <GetYourGuideWidget
-        locationId={destination.gygLocationId}
-        cmpTag={`laplandactivities-dest-${slug}`}
-        title={`${c.gygTitlePrefix} ${destination.name} ${c.gygTitleSuffix}`}
-        eyebrow={c.gygEyebrow}
-      />
+      {/* EI GYG-auto-widgetiä kohdesivuilla (Vesa 2026-08-03): (1) widget +
+          aktiviteettigrid oli kaksi varausosiota peräkkäin, ja (2) widgetin
+          sisältöä ei voi suodattaa — Rukalla se nosti kilpailevan karhunkatselu-
+          safarin, vaikka Bear Kuusamo on maksava kumppanimme. Auto-widget elää
+          indeksisivuilla (Lappi-taso l2652, jossa Kuusamo-tuotteet eivät listaudu). */}
 
       {/* ALL ACTIVITIES — split by season (in-season first, then the other season) */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.allActivitiesKicker}</span>
-            <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide">{acts.length} {c.thingsToDoIn} {destination.name}</h2>
+            {/* Ei lukumäärää otsikkoon: featured-kortti renderöityy ylempänä
+                Must-do-osiossa, joten "8 tekemistä" istui 7 kortin gridin päällä
+                (Vesa 2026-08-03). Luku elää Good to know -paneelissa. */}
+            <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide">{c.thingsToDoIn} {destIn}</h2>
           </div>
 
           {/* category jump chips */}
@@ -306,14 +313,14 @@ export default function DestinationPage() {
             className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all"
           >
             <Hotel className="w-6 h-6 text-arctic-cyan mb-3" />
-            <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.sleepInPrefix} {destination.name}</p>
+            <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.sleepInPrefix} {destIn}</p>
             <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.sleepInBlurb}</p>
             <span className="inline-flex items-center gap-1 text-arctic-cyan text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.compareHotels} <ArrowRight className="w-4 h-4" /></span>
           </AffiliateCTA>
           <AffiliateCTA
             partner="cars"
             sid={`crossell_${slug}_cars`}
-            destination="RVN"
+            destination={carsIata}
             className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all"
           >
             <Car className="w-6 h-6 text-aurora-green mb-3" />
@@ -359,7 +366,7 @@ export default function DestinationPage() {
         </div>
       </section>
 
-      <BookingCTA destinationSlug={slug || 'lapland'} hotelsQuery={hotelsQ} gygSlug={gygSlug} />
+      <BookingCTA destinationSlug={slug || 'lapland'} hotelsQuery={hotelsQ} gygSlug={gygSlug} pickupIata={carsIata} />
     </>
   );
 }

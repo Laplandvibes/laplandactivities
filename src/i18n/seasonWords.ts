@@ -20,6 +20,7 @@ export const SEASON_WORD: Record<Lang, Record<Season, string>> = {
   fr: { winter: 'Hiver', spring: 'Printemps', summer: 'Été', autumn: 'Automne' },
   it: { winter: 'Inverno', spring: 'Primavera', summer: 'Estate', autumn: 'Autunno' },
   nl: { winter: 'Winter', spring: 'Lente', summer: 'Zomer', autumn: 'Herfst' },
+  sv: { winter: 'Vinter', spring: 'Vår', summer: 'Sommar', autumn: 'Höst' },
 };
 
 // "What can you do in {season}" style section labels for the season split.
@@ -39,8 +40,8 @@ export const SEASON_SECTIONS: Record<Lang, {
 }> = {
   en: {
     inSeasonKicker: 'When to go',
-    inSeasonNow: (s) => `Best right now — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `Also worth it — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Best right now: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Also worth it: ${s.toLowerCase()}`,
     yearRound: 'year-round',
     whyKicker: 'The place',
     whyH2: (p) => `Why go to ${p}`,
@@ -53,8 +54,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   fi: {
     inSeasonKicker: 'Milloin kannattaa mennä',
-    inSeasonNow: (s) => `Juuri nyt parasta — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `Myös tämä kannattaa — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Juuri nyt parasta: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Myös tämä kannattaa: ${s.toLowerCase()}`,
     yearRound: 'ympäri vuoden',
     whyKicker: 'Kohde',
     whyH2: (p) => `Miksi ${p}`,
@@ -67,8 +68,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   de: {
     inSeasonKicker: 'Wann hinfahren',
-    inSeasonNow: (s) => `Jetzt am besten — ${s}`,
-    alsoGreat: (s) => `Lohnt sich auch — ${s}`,
+    inSeasonNow: (s) => `Jetzt am besten: ${s}`,
+    alsoGreat: (s) => `Lohnt sich auch: ${s}`,
     yearRound: 'ganzjährig',
     whyKicker: 'Das Reiseziel',
     whyH2: (p) => `Warum nach ${p}`,
@@ -81,8 +82,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   ja: {
     inSeasonKicker: 'ベストシーズン',
-    inSeasonNow: (s) => `今がベスト — ${s}`,
-    alsoGreat: (s) => `こちらもおすすめ — ${s}`,
+    inSeasonNow: (s) => `今がベスト：${s}`,
+    alsoGreat: (s) => `こちらもおすすめ：${s}`,
     yearRound: '通年',
     whyKicker: '目的地',
     whyH2: (p) => `${p}の魅力`,
@@ -95,8 +96,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   es: {
     inSeasonKicker: 'Cuándo ir',
-    inSeasonNow: (s) => `Mejor ahora mismo — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `También merece la pena — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Mejor ahora mismo: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `También merece la pena: ${s.toLowerCase()}`,
     yearRound: 'todo el año',
     whyKicker: 'El destino',
     whyH2: (p) => `Por qué ir a ${p}`,
@@ -109,8 +110,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   'pt-BR': {
     inSeasonKicker: 'Quando ir',
-    inSeasonNow: (s) => `Melhor agora — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `Também vale a pena — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Melhor agora: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Também vale a pena: ${s.toLowerCase()}`,
     yearRound: 'o ano todo',
     whyKicker: 'O destino',
     whyH2: (p) => `Por que ir a ${p}`,
@@ -123,8 +124,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   'zh-CN': {
     inSeasonKicker: '最佳时间',
-    inSeasonNow: (s) => `当下最佳 — ${s}`,
-    alsoGreat: (s) => `同样值得 — ${s}`,
+    inSeasonNow: (s) => `当下最佳：${s}`,
+    alsoGreat: (s) => `同样值得：${s}`,
     yearRound: '全年',
     whyKicker: '目的地',
     whyH2: (p) => `为何前往${p}`,
@@ -137,8 +138,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   ko: {
     inSeasonKicker: '방문 시기',
-    inSeasonNow: (s) => `지금이 최고 — ${s}`,
-    alsoGreat: (s) => `이것도 좋아요 — ${s}`,
+    inSeasonNow: (s) => `지금이 최고: ${s}`,
+    alsoGreat: (s) => `이것도 좋아요: ${s}`,
     yearRound: '연중',
     whyKicker: '여행지',
     whyH2: (p) => `${p}을(를) 찾는 이유`,
@@ -151,8 +152,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   fr: {
     inSeasonKicker: 'Quand partir',
-    inSeasonNow: (s) => `Idéal en ce moment — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `À ne pas manquer non plus — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Idéal en ce moment: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `À ne pas manquer non plus: ${s.toLowerCase()}`,
     yearRound: "toute l'année",
     whyKicker: 'La destination',
     whyH2: (p) => `Pourquoi aller à ${p}`,
@@ -165,8 +166,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   it: {
     inSeasonKicker: 'Quando andare',
-    inSeasonNow: (s) => `Il momento migliore — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `Vale la pena anche — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Il momento migliore: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Vale la pena anche: ${s.toLowerCase()}`,
     yearRound: 'tutto l\'anno',
     whyKicker: 'La destinazione',
     whyH2: (p) => `Perché andare a ${p}`,
@@ -179,8 +180,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   nl: {
     inSeasonKicker: 'Wanneer gaan',
-    inSeasonNow: (s) => `Nu op zijn best — ${s.toLowerCase()}`,
-    alsoGreat: (s) => `Ook de moeite waard — ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Nu op zijn best: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Ook de moeite waard: ${s.toLowerCase()}`,
     yearRound: 'het hele jaar',
     whyKicker: 'De bestemming',
     whyH2: (p) => `Waarom naar ${p}`,
@@ -190,6 +191,20 @@ export const SEASON_SECTIONS: Record<Lang, {
     bestForLabel: 'Ideaal voor',
     elevationLabel: 'Hoogste punt',
     operatorsShort: 'Aanbieders',
+  },
+  sv: {
+    inSeasonKicker: 'När du bör åka',
+    inSeasonNow: (s) => `Bäst just nu: ${s.toLowerCase()}`,
+    alsoGreat: (s) => `Också värt det: ${s.toLowerCase()}`,
+    yearRound: 'året runt',
+    whyKicker: 'Platsen',
+    whyH2: (p) => `Varför åka till ${p}`,
+    goodToKnowKicker: 'I korthet',
+    goodToKnowH2: 'Bra att veta',
+    accessLabel: 'Ta dig dit',
+    bestForLabel: 'Passar bäst för',
+    elevationLabel: 'Högsta punkt',
+    operatorsShort: 'Researrangörer',
   },
 };
 

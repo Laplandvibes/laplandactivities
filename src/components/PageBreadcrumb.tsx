@@ -1,4 +1,4 @@
-import Breadcrumbs from '../../../shared/Breadcrumbs';
+import Breadcrumbs from '../shared/Breadcrumbs';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 
@@ -19,6 +19,8 @@ export default function PageBreadcrumb() {
     '/destinations': c.destinations,
     '/categories': c.categories,
     '/about': c.about,
+    '/fishing': c.fishing,
+    '/bear-kuusamo': COPY[lang].bearKuusamo.breadcrumb,
   };
   return (
     <Breadcrumbs

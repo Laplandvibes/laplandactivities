@@ -261,9 +261,9 @@ export const activities: Activity[] = [
     duration: 'Day pass',
     difficulty: 'Moderate',
     season: ['winter', 'spring'],
-    description: 'Finland\'s largest ski resort with 43 slopes, 230 km of cross-country trails, and a top-tier terrain park. Night skiing under northern lights available.',
+    description: 'Finland\'s largest ski resort with 44 slopes, 26 lifts, 230 km of cross-country trails, and a top-tier terrain park. Night skiing under northern lights available.',
     groupSize: 'Unlimited',
-    highlights: ['43 slopes', 'Terrain park', 'Night skiing'],
+    highlights: ['44 slopes', 'Terrain park', 'Night skiing'],
     featured: true,
   },
   {
@@ -456,9 +456,9 @@ export const activities: Activity[] = [
     duration: 'Day pass',
     difficulty: 'Moderate',
     season: ['winter', 'spring'],
-    description: 'Finland\'s longest slopes at 3 km on both sides of Ylläs fell. 63 slopes, a gondola, and 330 km of groomed cross-country trails through national park.',
+    description: 'Finland\'s longest slopes at 3 km on both sides of Ylläs fell. 62 slopes, a gondola, and about 300 km of groomed cross-country trails through national park.',
     groupSize: 'Unlimited',
-    highlights: ['3 km longest run', '63 slopes', '330 km cross-country'],
+    highlights: ['3 km longest run', '62 slopes', '300 km cross-country'],
     featured: true,
   },
   {
@@ -585,9 +585,9 @@ export const activities: Activity[] = [
     duration: '3-5 hours',
     difficulty: 'Moderate',
     season: ['winter', 'spring'],
-    description: 'Ski along 330 km of groomed trails through Pallas-Yllästunturi National Park. Routes for all levels from gentle lakeside loops to fell-top challenges.',
+    description: 'Ski along about 300 km of groomed trails through Pallas-Yllästunturi National Park. Routes for all levels from gentle lakeside loops to fell-top challenges.',
     groupSize: '1-10',
-    highlights: ['330 km trail network', 'National park scenery', 'Equipment rental'],
+    highlights: ['300 km trail network', 'National park scenery', 'Equipment rental'],
   },
 
   // === SAARISELKÄ ===
@@ -832,9 +832,9 @@ export const activities: Activity[] = [
     duration: 'Day pass',
     difficulty: 'Moderate',
     season: ['winter', 'spring'],
-    description: '39 slopes, Finland\'s longest ski season (October to May), and world cup-level cross-country trails. Night skiing available.',
+    description: '41 slopes, 22 lifts, Finland\'s longest ski season (October to May), and world cup-level cross-country trails. Night skiing available.',
     groupSize: 'Unlimited',
-    highlights: ['39 slopes', 'Longest season', 'Night skiing'],
+    highlights: ['41 slopes', 'Longest season', 'Night skiing'],
   },
   {
     id: 'ruk-karhunkierros',
@@ -898,7 +898,7 @@ export const activities: Activity[] = [
     duration: '3 hours',
     difficulty: 'Moderate',
     season: ['winter'],
-    description: 'Ride through some of the most remote wilderness in Finnish Lapland. Deep snow, frozen rivers, and the silence of the backcountry.',
+    description: 'Ride through some of the most remote wilderness in Kuusamo, just south of the Lapland border. Deep snow, frozen rivers, and the silence of the backcountry.',
     groupSize: '2-8',
     highlights: ['Remote wilderness', 'Frozen rivers', 'Campfire stop'],
   },
@@ -1083,6 +1083,239 @@ export const activities: Activity[] = [
     groupSize: '2-20',
     highlights: ['Traditional fishing', 'Flame-grilled whitefish', 'Historic rapids'],
   },
+  {
+    // Intra-EU border: NO tax-free/duty-free claims — the draw is price and range
+    // differences plus the two-countries-one-town experience (Vesa 2026-07-24).
+    id: 'tor-haparanda-shopping',
+    title: 'Haparanda Border Shopping Day',
+    operator: 'IKEA Haparanda & border shops',
+    destination: 'Tornio',
+    destinationSlug: 'tornio',
+    category: 'Culture & Heritage',
+    categorySlug: 'culture',
+    price: 0,
+    duration: '2-4 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring', 'summer', 'autumn'],
+    description: 'Walk across the Finland-Sweden border in the middle of town and spend a day shopping on both sides of one street. IKEA Haparanda sits right by the crossing, and the Swedish side adds supermarkets and outlet stores; prices and product ranges differ between the two countries, which is the real draw. Mind the one-hour time difference when checking opening hours.',
+    groupSize: 'Unlimited',
+    highlights: ['Cross the border on foot', 'IKEA Haparanda', 'Two countries, one town'],
+  },
+
+  // === PYHÄ-LUOSTO ===
+  {
+    id: 'pyh-amethyst-mine',
+    title: 'Lampivaara Amethyst Mine',
+    operator: 'Amethyst Mine Lapland',
+    destination: 'Pyhä-Luosto',
+    destinationSlug: 'pyha-luosto',
+    category: 'Culture & Heritage',
+    categorySlug: 'culture',
+    price: 0,
+    duration: '2-3 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring', 'summer', 'autumn'],
+    description: 'Dig your own gemstone at Europe\'s only active amethyst mine on top of Lampivaara fell in Luosto, and keep one stone that fits in your palm. In winter the heated Amethyst Pendolino snow train climbs the fell; in summer it is a scenic walk with national-park views the whole way.',
+    groupSize: '2-30',
+    highlights: ['Dig and keep your own amethyst', 'Heated snow train in winter', 'Views over the national park'],
+  },
+  {
+    id: 'pyh-national-park',
+    title: 'Pyhä-Luosto National Park & Isokuru Gorge',
+    operator: 'Metsähallitus',
+    destination: 'Pyhä-Luosto',
+    destinationSlug: 'pyha-luosto',
+    category: 'Summer Adventures',
+    categorySlug: 'summer',
+    price: 0,
+    duration: '3-6 hours',
+    difficulty: 'Moderate',
+    season: ['winter', 'spring', 'summer', 'autumn'],
+    description: 'Hike between the twin fell villages through Finland\'s deepest gorge: Isokuru drops about 220 metres between the fells, with stairs and boardwalks leading past the Uhriharju ridge and old-growth forest. Free entry, well-marked trails, and day routes from both Pyhä and Luosto.',
+    groupSize: '1-10',
+    highlights: ['Isokuru, Finland\'s deepest gorge', 'Free entry', 'Trails from both villages'],
+  },
+  {
+    id: 'pyh-ski-resort',
+    title: 'Pyhä Ski Resort',
+    operator: 'Pyhä Ski Resort',
+    destination: 'Pyhä-Luosto',
+    destinationSlug: 'pyha-luosto',
+    category: 'Winter Sports',
+    categorySlug: 'winter-sports',
+    price: 0,
+    duration: 'Day pass',
+    difficulty: 'Moderate',
+    season: ['winter', 'spring'],
+    description: 'A national-park ski resort with a 280-metre vertical and slopes for both ends of the skill curve: gentle family terrain on one side, and Huttu-Ukko, a mogul slope that has hosted World Cup freestyle skiing, on the other. Lift tickets and rentals at the resort.',
+    groupSize: 'Unlimited',
+    highlights: ['280 m vertical', 'World Cup mogul slope', 'Family-friendly terrain'],
+  },
+  {
+    id: 'pyh-aurora-snowshoe',
+    title: 'Northern Lights Snowshoe Tour in Luosto',
+    operator: 'Lapland Safaris Luosto',
+    destination: 'Pyhä-Luosto',
+    destinationSlug: 'pyha-luosto',
+    category: 'Northern Lights',
+    categorySlug: 'northern-lights',
+    price: 0,
+    duration: '3 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring'],
+    description: 'Snowshoe away from the village lights into the quiet forest below the fells and wait for the aurora with hot drinks by a fire. Luosto\'s small size means true darkness starts minutes from your hotel door.',
+    groupSize: '2-12',
+    highlights: ['Dark skies minutes from the village', 'Snowshoes and gear provided', 'Campfire and hot drinks'],
+  },
+
+  // === KEMIJÄRVI ===
+  {
+    id: 'kem-ice-fishing',
+    title: 'Ice Fishing on Lake Kemijärvi',
+    operator: 'Local ice-fishing guides',
+    destination: 'Kemijärvi',
+    destinationSlug: 'kemijarvi',
+    category: 'Fishing & Ice Fishing',
+    categorySlug: 'fishing',
+    price: 0,
+    duration: '3 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring'],
+    description: 'Drill a hole through the ice of the town\'s own lake and jig for perch with a local guide, warm drinks included. Basic ice fishing needs no licence in Finland, and the lake starts right at the shoreline streets, so this is Lapland ice fishing without any transfer time.',
+    groupSize: '2-8',
+    highlights: ['Lake starts at the town shore', 'No licence needed', 'Warm drinks on the ice'],
+  },
+  {
+    id: 'kem-husky-safari',
+    title: 'Husky Self-Drive Safari',
+    operator: 'Local husky farm',
+    destination: 'Kemijärvi',
+    destinationSlug: 'kemijarvi',
+    category: 'Animal Experiences',
+    categorySlug: 'animals',
+    price: 0,
+    duration: '2 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring'],
+    description: 'Drive your own sled on a 5 km forest loop with a small group, then meet the dogs and their handlers at the farm. Groups run at just a few sleds at a time, so you get real instruction instead of a queue.',
+    groupSize: '2-8',
+    highlights: ['Drive your own sled', 'Small groups only', 'Meet the dogs afterwards'],
+  },
+  {
+    id: 'kem-suomu-ski',
+    title: 'Suomu Ski Resort (Suomutunturi)',
+    operator: 'Suomutunturi',
+    destination: 'Kemijärvi',
+    destinationSlug: 'kemijarvi',
+    category: 'Winter Sports',
+    categorySlug: 'winter-sports',
+    price: 0,
+    duration: 'Day pass',
+    difficulty: 'Moderate',
+    season: ['winter', 'spring'],
+    description: 'A quiet fell resort on the Arctic Circle, about 40 minutes from Kemijärvi: 10 long, well-profiled slopes with the longest run at 1.7 km, plus 75 km of cross-country trails, 25 km of them lit. Skiing here since 1965, and lift queues are famously short.',
+    groupSize: 'Unlimited',
+    highlights: ['10 long slopes, longest 1.7 km', '75 km of cross-country trails', 'On the Arctic Circle'],
+  },
+  {
+    id: 'kem-santas-village',
+    title: 'Santa\'s Little Village on Lake Kemijärvi',
+    operator: 'Santa\'s Little Village',
+    destination: 'Kemijärvi',
+    destinationSlug: 'kemijarvi',
+    category: 'Culture & Heritage',
+    categorySlug: 'culture',
+    price: 0,
+    duration: '1-2 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring', 'summer', 'autumn'],
+    description: 'A small log hotel village on the Uitonniemi lakeshore where you can meet Santa without the theme-park crowds. Winter brings aurora outings on a heated sled and snowshoe rentals; summer swaps them for rowing boats and paddleboards on the lake. Booked directly with the village.',
+    groupSize: '2-20',
+    highlights: ['Meet Santa by the lake', 'Aurora outings in winter', 'Rowing and SUP in summer'],
+  },
+  // === FISHING & ICE FISHING ===
+  {
+    id: 'act-ice-fishing-great',
+    title: 'Great Ice Fishing Experience',
+    operator: 'Local ice-fishing guides',
+    destination: 'Rovaniemi',
+    destinationSlug: 'rovaniemi',
+    category: 'Fishing & Ice Fishing',
+    categorySlug: 'fishing',
+    price: 0,
+    duration: '3 hours',
+    difficulty: 'Easy',
+    season: ['winter', 'spring'],
+    description: 'Drill your own hole in a frozen lake near Rovaniemi and jig for perch and whitefish with an experienced guide. Basic ice fishing needs no licence and no minimum age in Finland; it\'s the easiest way to try Arctic fishing before deciding whether the annual permit for lure fishing elsewhere is worth it. Ends with a fire-grilled lunch.',
+    groupSize: '2-10',
+    highlights: ['Drill-your-own-hole technique', 'No licence needed for basic ice fishing', 'Fire-grilled lunch included'],
+    featured: true,
+  },
+  {
+    id: 'act-ice-fishing-rovaniemi',
+    title: 'Rovaniemi Ice Fishing',
+    operator: 'Local ice-fishing guides',
+    destination: 'Rovaniemi',
+    destinationSlug: 'rovaniemi',
+    category: 'Fishing & Ice Fishing',
+    categorySlug: 'fishing',
+    price: 0,
+    duration: '3 hours',
+    difficulty: 'Easy',
+    season: ['winter'],
+    description: 'A guide-led ice-fishing outing on a lake just outside Rovaniemi, built to fit around a half-day booking. Basic ice fishing needs no permit and no minimum age, so kids fish alongside adults. Guides cover jig technique and ice safety before anyone steps onto open ice.',
+    groupSize: '2-8',
+    highlights: ['Half-day, close to Rovaniemi', 'Family-friendly, any age', 'Ice-safety briefing included'],
+  },
+  {
+    id: 'act-ice-fishing-smallgroup',
+    title: 'Small-Group Arctic Ice Fishing',
+    operator: 'Local ice-fishing guides',
+    destination: 'Rovaniemi',
+    destinationSlug: 'rovaniemi',
+    category: 'Fishing & Ice Fishing',
+    categorySlug: 'fishing',
+    price: 0,
+    duration: '3 hours',
+    difficulty: 'Easy',
+    season: ['winter'],
+    description: 'A capped-group version of the ice-fishing trip, with more one-on-one coaching on technique than the bigger tours. Fish for perch and whitefish through the ice on a quiet lake, and take home only what you plan to eat. Pilkki fishing has always been small-scale, and that\'s exactly why Lapland\'s lakes stay healthy.',
+    groupSize: '2-6',
+    highlights: ['Capped small-group size', 'More individual guide attention', 'Perch & whitefish through the ice'],
+  },
+  {
+    id: 'act-kingcrab-kirkenes-saariselka',
+    title: 'King Crab Safari from Saariselkä to Kirkenes',
+    operator: 'Local king crab guides (Kirkenes crossing)',
+    destination: 'Saariselkä → Kirkenes',
+    destinationSlug: 'saariselka',
+    category: 'Fishing & Ice Fishing',
+    categorySlug: 'fishing',
+    price: 0,
+    duration: 'Full day',
+    difficulty: 'Moderate',
+    season: ['winter', 'summer'],
+    description: 'Cross the border from Saariselkä into Kirkenes, Norway, for a red king crab safari on the Barents Sea. King crab isn\'t native here. It was introduced from the Sea of Okhotsk in the 1960s and has no natural predators in Norwegian waters, so a licensed, quota-controlled harvest keeps the population from overrunning native cod and shellfish stocks. Guides haul the traps; the day ends with a king crab meal.',
+    groupSize: '2-12',
+    highlights: ['Crosses the border to Kirkenes, Norway', 'Licensed harvest of an invasive species', 'King crab meal included'],
+    featured: true,
+  },
+  {
+    id: 'act-kingcrab-rib-kirkenes',
+    title: 'Kirkenes Summer King Crab RIB Safari',
+    operator: 'Local king crab guides (Kirkenes)',
+    destination: 'Saariselkä → Kirkenes',
+    destinationSlug: 'saariselka',
+    category: 'Fishing & Ice Fishing',
+    categorySlug: 'fishing',
+    price: 0,
+    duration: '3 hours',
+    difficulty: 'Moderate',
+    season: ['summer'],
+    description: 'A summer RIB-boat safari departing from Kirkenes itself, out onto the Barents Sea to haul king crab traps. Red king crab is an invasive species here, and regulated harvest by licensed operators is part of how Norway manages it; crab left untaken keep spreading west along the coast. Trip ends with a fresh crab meal on board or ashore.',
+    groupSize: '2-10',
+    highlights: ['RIB boat safari on the Barents Sea', 'Quota-controlled harvest of an invasive species', 'Fresh king crab meal'],
+  },
 ];
 
 // === Bookability + GetYourGuide search query ===
@@ -1101,13 +1334,22 @@ const NON_BOOKABLE = new Set<string>([
   'ina-siida-museum',      // Sámi museum — museum ticketing
   'pos-pentik',            // ceramics factory + outlet shop (free visit)
   'saa-uk-national-park',  // UKK NP — free wilderness, no booking
-  'ina-pielpajarvi',       // free wilderness-church trek
+  // 🔴 ä KUULUU id:hen (rivi ~774). Tämä rivi oli 2026-08-03 asti 'ina-pielpajarvi'
+  // (ilman ä:tä) → Set-haku ohitti sen ja ilmainen erämaakirkkovaellus sai
+  // "Etsi ja varaa" -GYG-napin. NON_BOOKABLE-avaimet on kopioitava id:stä, ei
+  // kirjoitettava käsin ASCII:na.
+  'ina-pielpajärvi',       // free wilderness-church trek
   'pos-riisitunturi',      // Riisitunturi NP — free, self-guided
   'ruk-karhunkierros',     // Bear Trail — free long-distance hike
   'yll-pallas-hike',       // national-park trail (self-guided)
   'tor-snowcastle',        // SnowCastle — own walk-in ticketing
   'lev-snowvillage',       // SnowVillage — own walk-in ticketing
   'yll-lainio-snow',       // Lainio Snow Village — own walk-in ticketing
+  'tor-haparanda-shopping',// self-guided shopping day — nothing to book
+  'pyh-national-park',     // national park — free, self-guided
+  'pyh-ski-resort',        // lift tickets at the resort / pyha.fi
+  'kem-suomu-ski',         // lift tickets at the resort / suomutunturi.fi
+  'kem-santas-village',    // booked directly with the village (santaslittlevillage.fi)
 ]);
 
 // Concise GYG search query per activity: "<activity type> <place>" — the proven
@@ -1116,6 +1358,9 @@ const NON_BOOKABLE = new Set<string>([
 const GYG_QUERY: Record<string, string> = {
   // Rovaniemi
   'rov-aurora-snowmobile':  'aurora snowmobile rovaniemi',
+  // Ilman tätä riviä fallback tuotti kategorialabelin "animal experiences
+  // rovaniemi", jota kukaan ei kirjoita GYG-hakuun (auditti 2026-08-03).
+  'rov-husky-summer':       'husky kennel visit rovaniemi',
   'rov-santa-village':      'santa claus village rovaniemi',
   'rov-husky-safari':       'husky safari rovaniemi',
   'rov-reindeer-farm':      'reindeer sleigh rovaniemi',
@@ -1161,7 +1406,11 @@ const GYG_QUERY: Record<string, string> = {
   'ina-berry-foraging':     'foraging inari',
   // Ruka / Kuusamo
   'ruk-ski-resort':         'ruka ski',
-  'ruk-bear-watching':      'bear watching kuusamo',
+  // 🔴 EI 'ruk-bear-watching'-riviä: karhunkatselu kuuluu maksavalle
+  // kumppanille (Bear Kuusamo) — PARTNER_PAGE reitittää kortin CTA:n
+  // /bear-kuusamo-sivulle. GYG-hakukysely tässä olisi latautunut ase:
+  // jos jokin tuleva koodipolku ohittaisi PARTNER_PAGEn, se mainostaisi
+  // kilpailijaa. Poistettu 2026-08-03.
   'ruk-river-rafting':      'rafting ruka',
   'ruk-snowmobile':         'snowmobile safari ruka',
   'ruk-husky':              'husky safari ruka',
@@ -1169,11 +1418,33 @@ const GYG_QUERY: Record<string, string> = {
   'ruk-aurora':             'northern lights ruka',
   // Posio
   'pos-korouoma':           'korouoma frozen waterfall',
+  // Pyhä-Luosto (GYG location pyha-luosto-national-park-l161152 verified 2026-07-24)
+  'pyh-amethyst-mine':      'amethyst mine luosto',
+  'pyh-aurora-snowshoe':    'northern lights luosto',
+  // Kemijärvi (GYG location kemijarvi-l208937 verified 2026-07-24: real ice-fishing + husky products)
+  'kem-ice-fishing':        'ice fishing kemijarvi',
+  'kem-husky-safari':       'husky kemijarvi',
   // Tornio / Kemi
   'tor-icebreaker':         'icebreaker sampo kemi',
   'tor-green-zone':         'golf tornio',
   'tor-salmon-fishing':     'salmon fishing tornio',
   'tor-whitefish-festival': 'kukkolankoski tornio',
+  // Fishing & Ice Fishing
+  'act-ice-fishing-great':               'great ice fishing experience rovaniemi',
+  'act-ice-fishing-rovaniemi':            'ice fishing rovaniemi',
+  'act-ice-fishing-smallgroup':           'small group ice fishing lapland',
+  'act-kingcrab-kirkenes-saariselka':     'king crab safari kirkenes saariselka',
+  'act-kingcrab-rib-kirkenes':            'king crab rib safari kirkenes',
+};
+
+// === Paid-partner routing (Vesa 2026-07-25) ===
+// Activities owned by a SIGNED LV partner must never send booking intent to a
+// GetYourGuide search where the partner's competitors bid on the same query
+// (the only GYG bear product around Kuusamo is the contract-excluded
+// competitor's). The card CTA goes to our own partner feature page instead —
+// it carries the tracked direct-booking links. Checked BEFORE isBookable.
+export const PARTNER_PAGE: Record<string, string> = {
+  'ruk-bear-watching': '/bear-kuusamo', // Bear Kuusamo (Karhu-Kuusamo Oy), deal 2026-07
 };
 
 export function isBookable(a: Activity): boolean {

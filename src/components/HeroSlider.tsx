@@ -20,7 +20,7 @@ interface Slide {
 
 const SUMMER_LED: Slide[] = [
   { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Hikers on a Lapland fjell ridge under the midnight sun', fallback: HERO.snowyForest, season: 'summer' },
-  { src: '/images/categories/summer.webp', alt: 'Kayaker on a glassy Lapland lake at midnight sun', fallback: HERO.snowyForest, season: 'summer' },
+  { src: '/images/heroes/slider-07-kayak-lake.webp', alt: 'Kayaker on a glassy Lapland lake at midnight sun', fallback: HERO.snowyForest, season: 'summer' },
   { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer in front of a Sámi lavvu at dusk', fallback: HERO.campfire, season: 'any' },
   { src: '/images/heroes/slider-02-snowmobile-fells.webp', alt: 'Snowmobile rider crossing a snowy fjell ridge at golden hour', fallback: HERO.huskySnowmobile, season: 'winter' },
   { src: '/images/heroes/slider-01-husky-aurora.webp', alt: 'Husky team running across a frozen lake under aurora', fallback: HERO.huskyAurora, season: 'winter' },

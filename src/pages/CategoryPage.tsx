@@ -7,6 +7,11 @@ import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
+import AdUnit from '../shared/ads/AdUnit';
+import bearKuusamoAd from '../shared/ads/advertisers/bearkuusamo';
+import onnipyoraAd from '../shared/ads/advertisers/onnipyora';
+import haltiAd from '../shared/ads/advertisers/halti';
+import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -33,7 +38,7 @@ export default function CategoryPage() {
       <main className="min-h-screen pt-24 bg-deep-night flex items-center justify-center">
         <div className="text-center">
           <h1 className="font-heading text-5xl text-snow mb-4">{c.notFoundH1}</h1>
-          <Link to={to('/categories')} className="text-vibe-pink hover:text-vibe-pink/80">{c.backCategories}</Link>
+          <Link to={to('/categories')} className="text-vibe-pink hover:text-pink-300">{c.backCategories}</Link>
         </div>
       </main>
     );
@@ -90,17 +95,17 @@ export default function CategoryPage() {
         })}</script>
       </Helmet>
 
-      <section className="relative min-h-[50vh] md:min-h-[56vh] flex items-center overflow-hidden pt-16 bg-deep-night">
+      {/* HERO — same family as DestinationPage: icon badge above a full-size H1,
+          not a small heading beside a floating icon box (Vesa 2026-07-07). */}
+      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 48%, rgba(15,23,42,0.30) 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-12 h-12 rounded-xl bg-vibe-pink/15 border border-vibe-pink/40 flex items-center justify-center shrink-0">
-              <category.icon className="w-6 h-6 text-vibe-pink" />
-            </div>
-            <h1 className="font-heading text-4xl sm:text-6xl lv-head tracking-wide drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">{category.name}</h1>
+          <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+            <category.icon className="w-7 h-7 text-vibe-pink" />
           </div>
-          <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed mb-6 drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">{category.description}</p>
+          <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">{category.name}</h1>
+          <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-3 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">{category.description}</p>
 
           <AffiliateCTA
             partner="activities"
@@ -123,6 +128,75 @@ export default function CategoryPage() {
           </Link>
         </div>
       </div>
+
+      {/* PAID PARTNER (Bear Kuusamo) — flat-fee placement, NOT a commission link.
+          Wildlife/bear watching, so it runs on the animals category only; the same
+          slug gate keeps it off every other category page. Shows on EVERY locale
+          (Vesa 2026-07-30: a paid partner ad is visible on all 12 languages; the
+          spec carries full translations), and partner clicks fire the distinct
+          `partner_click` GA4 event, never affiliate_click.
+          🔴 CONTRAST RULE (Vesa 2026-07-25): a paid ad must STAND OUT, not blend in.
+          This page is deep-night, so the unit uses the `light` variant = a solid
+          white card, which reads as a distinct paid object against the dark page
+          (the `dark` variant is a 3% translucent glass card and disappears here).
+          Do NOT "match" the ad to the page surface. */}
+      {/* Maksettu kumppanimainos näkyy KAIKILLA 12 kielellä (Vesa 2026-07-30):
+          speksi kantaa täydet käännökset, kieliportti poistettu. */}
+      {slug === 'animals' && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-7xl mx-auto">
+            <AdUnit
+              spec={bearKuusamoAd}
+              sid="animals_category_top"
+              lang={lang}
+              variant="light"
+              imageSrc="/images/activities/bear-kuusamo/bear-hero.webp"
+              articleHref={to('/bear-kuusamo')}
+              onArticleClick={(_k, adSid) => trackPartnerClick(`article:${adSid}`)}
+              onCtaClick={(_specKey, adSid) => trackPartnerClick(adSid)}
+            />
+          </div>
+        </section>
+      )}
+
+      {/* AFFILIATE (Onnipyörä) — Adtraction-komissiolinkki Workerin kautta,
+          ei maksettu paikka. Näkyy kategorioissa joissa on pyöräilysisältöä:
+          summer (Levi Bike Park) ja winter-sports (Fat Bike Tour). Speksissä
+          on VAIN fi-copy tarkoituksella — kauppa toimittaa ainoastaan Suomeen,
+          joten AdUnit renderöi tyhjää muilla 11 kielellä (dokumentoitu
+          käyttäytyminen, älä lisää en-fallbackia). */}
+      {(slug === 'summer' || slug === 'winter-sports') && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-7xl mx-auto">
+            <AdUnit
+              spec={onnipyoraAd}
+              sid={`${slug === 'summer' ? 'summer' : 'winter_sports'}_category_bike_gear`}
+              lang={lang}
+              variant="dark"
+              onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
+            />
+          </div>
+        </section>
+      )}
+
+      {/* AFFILIATE (Halti) — Adtraction-komissiolinkki Workerin kautta (Vesa
+          2026-08-03: "halti vaatteet jne adtractionista"). Talvivaatekulma sopii
+          kylmäsisältöihin: revontulet (pakkasyö ulkona) ja seikkailu (safarit).
+          Speksissä täysi 12 kielen copy. winter-sports jätetty Onnipyörälle —
+          yksi varustemainos per kategoriasivu. */}
+      {(slug === 'northern-lights' || slug === 'adventure') && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-7xl mx-auto">
+            <AdUnit
+              spec={haltiAd}
+              sid={`${slug === 'northern-lights' ? 'northern_lights' : 'adventure'}_category_winter_gear`}
+              lang={lang}
+              variant="dark"
+              onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
+            />
+          </div>
+        </section>
+      )}
 
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
@@ -180,7 +254,51 @@ export default function CategoryPage() {
         cmpTag={`laplandactivities-cat-${slug}`}
         title={`${c.gygTitlePrefix} ${category.name}`}
         eyebrow={c.gygEyebrow}
+        /* Adblock-fallbackin CTA hakee tämän kategorian retkiä, ei geneeristä
+           "Lapland"-listaa (auditti 2026-08-03). */
+        fallbackQuery={gygQ ? `${gygQ} lapland` : 'Lapland'}
       />
+
+      {/* Featured partner — surfaced on the wildlife (animals) listing only.
+          Direct partner deal, normal-follow internal link to the /bear-kuusamo guide. */}
+      {slug === 'animals' && (() => {
+        const bk = COPY[lang].bearKuusamo;
+        return (
+          <section className="py-6 sm:py-10 px-4 sm:px-6 bg-deep-night">
+            <div className="max-w-7xl mx-auto">
+              <Link
+                to={to('/bear-kuusamo')}
+                className="group grid grid-cols-1 md:grid-cols-[minmax(0,1fr)_1.1fr] rounded-2xl overflow-hidden border border-white/10 bg-white/[0.04] hover:border-vibe-pink/40 transition-colors"
+              >
+                <div className="relative min-h-[200px] md:min-h-[240px]">
+                  <img
+                    src="/images/activities/bear-kuusamo/bear-hero.webp"
+                    alt={bk.imageAlts.hero}
+                    loading="lazy"
+                    decoding="async"
+                    width="1600"
+                    height="1068"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    style={{ objectPosition: 'center 50%' }}
+                  />
+                </div>
+                <div className="p-6 sm:p-8 flex flex-col justify-center">
+                  <span className="inline-flex self-start items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-snow/70 mb-3">
+                    <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: '#007E2E' }} aria-hidden="true" />
+                    {bk.card.eyebrow}
+                  </span>
+                  <h3 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide mb-2">{bk.card.title}</h3>
+                  <p className="text-snow/70 text-sm leading-relaxed">{bk.card.blurb}</p>
+                  <span className="inline-flex items-center gap-1.5 text-vibe-pink text-sm font-semibold mt-4 group-hover:gap-2.5 transition-all">
+                    {bk.card.cta}
+                    <ArrowLeft className="w-4 h-4 rotate-180" aria-hidden="true" />
+                  </span>
+                </div>
+              </Link>
+            </div>
+          </section>
+        );
+      })()}
 
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
@@ -206,7 +324,7 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      <BookingCTA gygSlug={gygSlug} gygQ={gygQ} />
+      <BookingCTA sidTag={`cat_${slug}`} gygSlug={gygSlug} gygQ={gygQ} />
     </>
   );
 }

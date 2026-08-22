@@ -5,7 +5,7 @@ import AffiliateCTA from './AffiliateCTA';
 import { destinations } from '../data/destinations';
 import { categories } from '../data/categories';
 import { useLang, useLocalePath, pick } from '../i18n/useLang';
-import EcosystemMenu from '../../../shared/EcosystemMenu';
+import EcosystemMenu from '../shared/EcosystemMenu';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 
@@ -25,13 +25,13 @@ export default function Navigation() {
   // Accessibility aria translations (KO/FR/IT/NL screen-reader leaks fix).
   const ariaSwitchLanguage = pick(lang,
     'Switch language', 'Vaihda kieli', 'Sprache wechseln', '言語を切り替える', 'Cambiar idioma',
-    'Mudar idioma', '切换语言', '언어 변경', 'Changer de langue', 'Cambia lingua', 'Taal wijzigen');
+    'Mudar idioma', '切换语言', '언어 변경', 'Changer de langue', 'Cambia lingua', 'Taal wijzigen', 'Byt språk');
   const ariaLanguage = pick(lang,
     'Language', 'Kieli', 'Sprache', '言語', 'Idioma',
-    'Idioma', '语言', '언어', 'Langue', 'Lingua', 'Taal');
+    'Idioma', '语言', '언어', 'Langue', 'Lingua', 'Taal', 'Språk');
   const ariaToggleMenu = pick(lang,
     'Toggle menu', 'Avaa/sulje valikko', 'Menü umschalten', 'メニューを開閉する', 'Alternar menú',
-    'Alternar menu', '切换菜单', '메뉴 열기/닫기', 'Basculer le menu', 'Apri/chiudi menu', 'Menu wisselen');
+    'Alternar menu', '切换菜单', '메뉴 열기/닫기', 'Basculer le menu', 'Apri/chiudi menu', 'Menu wisselen', 'Öppna/stäng menyn');
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -70,14 +70,15 @@ export default function Navigation() {
     };
   }, [drop]);
 
-  type LangCode = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl';
+  type LangCode = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv';
   const URL_PREFIX_OF: Record<LangCode, string> = {
     en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-    ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+    ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
   };
   const ALL_LANGS: { code: LangCode; label: string; native: string }[] = [
     { code: 'en', label: 'EN', native: 'English' },
     { code: 'fi', label: 'FI', native: 'Suomi' },
+    { code: 'sv', label: 'SV', native: 'Svenska' },
     { code: 'de', label: 'DE', native: 'Deutsch' },
     { code: 'ja', label: 'JA', native: '日本語' },
     { code: 'es', label: 'ES', native: 'Español' },
@@ -94,7 +95,7 @@ export default function Navigation() {
       window.localStorage.setItem('lv_locale_choice', target);
     }
     const path = pathname;
-    const bare = path.replace(/^\/(fi|de|ja|es|br|cn|kr|fr|it|nl)(?=\/|$)/, '') || '/';
+    const bare = path.replace(/^\/(fi|de|ja|es|br|cn|kr|fr|it|nl|sv)(?=\/|$)/, '') || '/';
     const prefix = URL_PREFIX_OF[target];
     if (!prefix) {
       navigate(bare);
@@ -170,7 +171,10 @@ export default function Navigation() {
           </Link>
         </div>
 
-        <div className="hidden md:flex items-center gap-5 lg:gap-6" ref={dropRef}>
+        {/* Desktop nav only from lg up — at md (768-1023px) the full item row is
+            ~230px wider than the viewport (wide Bebas logo + 5 links + lang + CTA),
+            so tablets get the mobile hamburger instead. */}
+        <div className="hidden lg:flex items-center gap-3 xl:gap-6" ref={dropRef}>
           <Link
             to={to('/')}
             className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
@@ -243,6 +247,13 @@ export default function Navigation() {
           </div>
 
           <Link
+            to={to('/fishing')}
+            className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/fishing') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+          >
+            {c.fishing}
+          </Link>
+
+          <Link
             to={to('/about')}
             className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/about') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
@@ -257,25 +268,29 @@ export default function Navigation() {
             partner="activities"
             sid="nav_book_now"
             destination="lappi-suomi-l2652"
-            className="bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+            className="whitespace-nowrap bg-vibe-pink hover:bg-vibe-pink/90 text-white px-4 xl:px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
-            {c.bookCta}
+            <span className="xl:hidden">{c.bookCtaShort}</span>
+            <span className="hidden xl:inline">{c.bookCta}</span>
           </AffiliateCTA>
         </div>
 
-        <div className="md:hidden flex items-center gap-2">
-          <select
-            value={lang}
-            onChange={(e) => switchTo(e.target.value as LangCode)}
-            aria-label={ariaLanguage}
-            className="bg-deep-night/85 backdrop-blur-sm bg-transparent border border-snow/40 rounded px-2 py-1 text-xs font-semibold uppercase text-snow"
-          >
-            {ALL_LANGS.map((l) => (
-              <option key={l.code} value={l.code} className="bg-deep-night text-snow">
-                {l.label}
-              </option>
-            ))}
-          </select>
+        <div className="lg:hidden flex items-center gap-2">
+          <div className="relative inline-flex items-center">
+            <select
+              value={lang}
+              onChange={(e) => switchTo(e.target.value as LangCode)}
+              aria-label={ariaLanguage}
+              className="appearance-none bg-deep-night/85 backdrop-blur-sm bg-transparent border border-snow/40 rounded pl-2 pr-6 py-1 text-xs font-semibold uppercase text-snow"
+            >
+              {ALL_LANGS.map((l) => (
+                <option key={l.code} value={l.code} className="bg-deep-night text-snow">
+                  {l.label}
+                </option>
+              ))}
+            </select>
+            <ChevronDown aria-hidden="true" className="pointer-events-none absolute right-2 top-1/2 -translate-y-1/2 w-3 h-3 text-snow" />
+          </div>
           <button
             onClick={() => setOpen(!open)}
             className="text-snow/80 hover:text-snow"
@@ -288,7 +303,7 @@ export default function Navigation() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-deep-night border-t border-white/10 px-4 pb-5 max-h-[80vh] overflow-y-auto">
+        <div className="lg:hidden bg-deep-night border-t border-white/10 px-4 pb-5 max-h-[80vh] overflow-y-auto">
           <Link to={to('/')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.home}</Link>
 
           <details className="py-2 border-b border-white/5">
@@ -325,6 +340,8 @@ export default function Navigation() {
               })}
             </div>
           </details>
+
+          <Link to={to('/fishing')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/fishing') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.fishing}</Link>
 
           <Link to={to('/about')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/about') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.about}</Link>
 
