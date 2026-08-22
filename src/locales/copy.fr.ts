@@ -296,7 +296,7 @@ const fr: SectionCopy = {
       { title: 'Conseils d\'initiés', body: 'Le tour introuvable sur les sites partenaires avant juin.' },
     ],
     emailPlaceholder: 'Votre adresse e-mail', subscribeBtn: "S'abonner", subscribingBtn: 'Inscription…',
-    successTitle: 'Vous y êtes.', successBody: "Vérifiez votre boîte mail pour un message de bienvenue de Laponie.",
+    successTitle: 'Presque fini.', successBody: 'Confirmez votre inscription depuis l\'e-mail que nous venons de vous envoyer.',
     alreadyTitle: 'Déjà inscrit·e !', alreadyBody: "Il semble que vous soyez déjà abonné·e, à très vite.",
     footnote: 'Désinscription à tout moment.', errorFallback: "L'inscription a échoué. Veuillez réessayer.",
   },

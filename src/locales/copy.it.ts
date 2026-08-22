@@ -296,7 +296,7 @@ const it: SectionCopy = {
       { title: 'Consigli da insider', body: 'Il tour che sui siti partner appare solo a giugno.' },
     ],
     emailPlaceholder: 'Il Suo indirizzo e-mail', subscribeBtn: 'Iscriviti', subscribingBtn: 'Iscrizione…',
-    successTitle: 'È dentro.', successBody: 'Controlli la casella per il benvenuto dalla Lapponia.',
+    successTitle: 'Ci siamo quasi.', successBody: 'Conferma l\'iscrizione dall\'e-mail che ti abbiamo appena inviato.',
     alreadyTitle: 'Già nella lista!', alreadyBody: 'Sembra che Lei sia già iscritto, a presto.',
     footnote: 'Disiscrizione in qualsiasi momento.', errorFallback: 'Iscrizione non riuscita. Per favore riprovi.',
   },

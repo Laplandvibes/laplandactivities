@@ -296,7 +296,7 @@ const nl: SectionCopy = {
       { title: 'Tips van insiders', body: 'De tour die u op de partnersites pas in juni vindt.' },
     ],
     emailPlaceholder: 'Uw e-mailadres', subscribeBtn: 'Abonneren', subscribingBtn: 'Aanmelden…',
-    successTitle: 'U bent erbij.', successBody: 'Check uw inbox voor een welkom uit Lapland.',
+    successTitle: 'Bijna klaar.', successBody: 'Bevestig je aanmelding via de e-mail die we net hebben gestuurd.',
     alreadyTitle: 'Al op de lijst!', alreadyBody: 'Het lijkt erop dat u al geabonneerd bent, tot snel.',
     footnote: 'Op elk moment opzegbaar.', errorFallback: 'Aanmelden mislukt. Probeer het opnieuw.',
   },

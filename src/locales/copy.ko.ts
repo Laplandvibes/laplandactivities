@@ -296,7 +296,7 @@ const ko: SectionCopy = {
       { title: '현지인만 아는 팁', body: '6월까지는 파트너 사이트에서 찾을 수 없는 투어.' },
     ],
     emailPlaceholder: '이메일 주소', subscribeBtn: '구독하기', subscribingBtn: '구독 중…',
-    successTitle: '구독 완료.', successBody: '라플란드의 환영 메일을 확인해 주세요.',
+    successTitle: '거의 다 됐습니다.', successBody: '방금 보내드린 이메일에서 구독을 확인해 주세요.',
     alreadyTitle: '이미 구독 중이십니다!', alreadyBody: '이미 구독되어 있는 것 같습니다, 곧 다시 인사드리겠습니다.',
     footnote: '언제든지 구독 해지 가능합니다.', errorFallback: '구독에 실패했습니다. 다시 시도해 주세요.',
   },
