@@ -12,6 +12,7 @@ import { imageForDestination, assignActivityImages, focalFor } from '../data/ima
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeDestination, localizeCategory } from '../locales/data';
+import { destinationGuide } from '../data/guideI18n';
 import { SEASON_WORD, SEASON_SECTIONS, currentSeasonBucket, inBucket } from '../i18n/seasonWords';
 
 export default function DestinationPage() {
@@ -24,6 +25,7 @@ export default function DestinationPage() {
   const rawDestination = getDestinationBySlug(slug || '');
   const destination = rawDestination ? localizeDestination(rawDestination, lang) : undefined;
   const acts = getActivitiesByDestination(slug || '');
+  const guide = destinationGuide(slug || '', lang);
 
   if (!destination) {
     return (
@@ -203,6 +205,31 @@ export default function DestinationPage() {
           </div>
         </div>
       </section>
+
+      {/* SEASONS + PLANNING — the page's own editorial. Written per language in
+          src/data/guides.<lang>.ts and harvested by the prerenderer from the SAME
+          record (routes.json harvestRecord), so the crawlable body and the page a
+          reader sees carry identical text in identical language. */}
+      {guide && (
+        <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-b border-white/5">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.seasonsTitle}</h2>
+              <div className="space-y-4">
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.seasonWinter}</p>
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.seasonSummer}</p>
+              </div>
+            </div>
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.planTitle}</h2>
+              <div className="space-y-4">
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.planGetting}</p>
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.planStay}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* MUST-DO + LOCAL TIPS — premium surfaces */}
       {featured && (

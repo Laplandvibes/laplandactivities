@@ -10,6 +10,7 @@ import PageBreadcrumb from '../components/PageBreadcrumb';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeDestination } from '../locales/data';
+import { indexGuide } from '../data/guideI18n';
 
 export default function DestinationsIndex() {
   const lang = useLang();
@@ -19,6 +20,7 @@ export default function DestinationsIndex() {
   const featured = localized.slice(0, 2);
   const rest = localized.slice(2);
   const path = to('/destinations');
+  const guide = indexGuide('destList', lang);
 
   return (
     <>
@@ -39,6 +41,16 @@ export default function DestinationsIndex() {
               {c.lead}
             </p>
           </div>
+
+          {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
+              harvests via routes.json, so crawler and reader see one text. */}
+          {guide && (
+            <section className="mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.leadTitle}</h2>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-4">{guide.lead}</p>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>
+            </section>
+          )}
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             {featured.map((dest) => {

@@ -17,6 +17,7 @@ import { imageForCategory, assignActivityImages, focalFor } from '../data/images
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
+import { categoryGuide } from '../data/guideI18n';
 import { SEASON_WORD, SEASON_SECTIONS, currentSeasonBucket, inBucket } from '../i18n/seasonWords';
 
 // Categories that are inherently single-season — no split, no season chrome.
@@ -32,6 +33,7 @@ export default function CategoryPage() {
   const rawCategory = getCategoryBySlug(slug || '');
   const category = rawCategory ? localizeCategory(rawCategory, lang) : undefined;
   const acts = getActivitiesByCategory(slug || '');
+  const guide = categoryGuide(slug || '', lang);
 
   if (!category) {
     return (
@@ -128,6 +130,32 @@ export default function CategoryPage() {
           </Link>
         </div>
       </div>
+
+      {/* WHAT THIS COVERS + HOW TO CHOOSE — the category page's own editorial.
+          Written per language in src/data/guides.<lang>.ts; the prerenderer
+          harvests the same record via routes.json, so crawler and reader get the
+          same text in the same language. Before this the page carried only a
+          20-word category description and read as thin in all 12 locales. */}
+      {guide && (
+        <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-b border-white/5">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.coversTitle}</h2>
+              <div className="space-y-4">
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.covers}</p>
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.whenToGo}</p>
+              </div>
+            </div>
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.chooseTitle}</h2>
+              <div className="space-y-4">
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.choosing}</p>
+                <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.bring}</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* PAID PARTNER (Bear Kuusamo) — flat-fee placement, NOT a commission link.
           Wildlife/bear watching, so it runs on the animals category only; the same

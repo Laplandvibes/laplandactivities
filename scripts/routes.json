@@ -14,28 +14,51 @@
   {
     "path": "/destinations",
     "fallbackTitle": "Destinations | LaplandActivities",
-    "copyKey": "destinationsIndex"
+    "copyKey": "destinationsIndex",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "destinations"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "destList"
+      }
+    ]
   },
   {
     "path": "/categories",
     "fallbackTitle": "Categories | LaplandActivities",
-    "copyKey": "categoriesIndex"
+    "copyKey": "categoriesIndex",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "categories"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "catList"
+      }
+    ]
   },
   {
     "path": "/about",
-    "fallbackTitle": "About | LaplandActivities"
+    "fallbackTitle": "About | LaplandActivities",
+    "copyKey": "about"
   },
   {
     "path": "/fishing",
     "fallbackTitle": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
     "fallbackDescription": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links you need before you cast.",
-    "appendSiteName": false
+    "appendSiteName": false,
+    "copyKey": "fishing"
   },
   {
     "path": "/bear-kuusamo",
     "fallbackTitle": "Bear Kuusamo: Ethical Bear Watching in Finland | LaplandActivities",
     "fallbackDescription": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, 1 May to 30 September.",
-    "appendSiteName": false
+    "appendSiteName": false,
+    "copyKey": "bearKuusamo"
   },
   {
     "path": "/privacy",
@@ -59,60 +82,250 @@
     ]
   },
   {
-    "path": "/destinations/rovaniemi"
+    "path": "/destinations/rovaniemi",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "rovaniemi"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "rovaniemi"
+      }
+    ]
   },
   {
-    "path": "/destinations/levi"
+    "path": "/destinations/levi",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "levi"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "levi"
+      }
+    ]
   },
   {
-    "path": "/destinations/yllas"
+    "path": "/destinations/yllas",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "yllas"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "yllas"
+      }
+    ]
   },
   {
-    "path": "/destinations/saariselka"
+    "path": "/destinations/saariselka",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "saariselka"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "saariselka"
+      }
+    ]
   },
   {
-    "path": "/destinations/inari"
+    "path": "/destinations/inari",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "inari"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "inari"
+      }
+    ]
   },
   {
-    "path": "/destinations/ruka"
+    "path": "/destinations/ruka",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "ruka"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "ruka"
+      }
+    ]
   },
   {
-    "path": "/destinations/posio"
+    "path": "/destinations/posio",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "posio"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "posio"
+      }
+    ]
   },
   {
-    "path": "/destinations/tornio"
+    "path": "/destinations/tornio",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "tornio"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "tornio"
+      }
+    ]
   },
   {
-    "path": "/destinations/pyha-luosto"
+    "path": "/destinations/pyha-luosto",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "pyha-luosto"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "pyha-luosto"
+      }
+    ]
   },
   {
-    "path": "/destinations/kemijarvi"
+    "path": "/destinations/kemijarvi",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "kemijarvi"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "kemijarvi"
+      }
+    ]
   },
   {
-    "path": "/categories/adventure"
+    "path": "/categories/adventure",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "adventure"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "adventure"
+      }
+    ]
   },
   {
-    "path": "/categories/animals"
+    "path": "/categories/animals",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "animals"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "animals"
+      }
+    ]
   },
   {
-    "path": "/categories/northern-lights"
+    "path": "/categories/northern-lights",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "northern-lights"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "northern-lights"
+      }
+    ]
   },
   {
-    "path": "/categories/winter-sports"
+    "path": "/categories/winter-sports",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "winter-sports"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "winter-sports"
+      }
+    ]
   },
   {
-    "path": "/categories/wellness"
+    "path": "/categories/wellness",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "wellness"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "wellness"
+      }
+    ]
   },
   {
-    "path": "/categories/culture"
+    "path": "/categories/culture",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "culture"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "culture"
+      }
+    ]
   },
   {
-    "path": "/categories/summer"
+    "path": "/categories/summer",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "summer"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "summer"
+      }
+    ]
   },
   {
-    "path": "/categories/food"
+    "path": "/categories/food",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "food"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "food"
+      }
+    ]
   },
   {
-    "path": "/categories/fishing"
+    "path": "/categories/fishing",
+    "harvestRecord": [
+      {
+        "file": "src/locales/data.gen.{lang}.ts",
+        "key": "fishing"
+      },
+      {
+        "file": "src/data/guides.{lang}.ts",
+        "key": "fishing"
+      }
+    ]
   }
 ]

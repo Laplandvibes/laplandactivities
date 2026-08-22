@@ -655,11 +655,26 @@ function harvestRouteText(loc, route, meta) {
     //   { "path": "/city/oulu",
     //     "harvestRecord": { "file": "src/data/cities.{lang}.ts", "key": "oulu" } }
     //
+    // An ARRAY is accepted too, when one page's copy is split over several
+    // per-language data files:
+    //
+    //   { "path": "/destinations/levi",
+    //     "harvestRecord": [ { "file": "src/locales/data.gen.{lang}.ts", "key": "levi" },
+    //                        { "file": "src/data/guides.{lang}.ts",      "key": "levi" } ] }
+    //
     // {lang} is substituted with the locale's copy-file ident (ptBR, zhCN) and,
     // if that file does not exist, with the plain lang tag (pt-BR, zh-CN) —
     // both spellings occur in the network. Missing file or missing record ⇒
     // nothing harvested for that locale, never English in its place.
-    const rec = route.harvestRecord;
+    // A route may name SEVERAL records: laplandactivities' destination pages
+    // take their localized name/why/access from `src/locales/data.gen.{lang}.ts`
+    // AND their season/planning copy from `src/data/guides.{lang}.ts`. A single
+    // record would force one of the two to stay out of the crawlable body while
+    // the page itself renders both. Object form still works unchanged.
+    const recs = Array.isArray(route.harvestRecord)
+      ? route.harvestRecord
+      : (route.harvestRecord ? [route.harvestRecord] : []);
+    for (const rec of recs) {
     if (rec && rec.file && rec.key && budget.words > 0) {
       const candidates = [
         rec.file.replace('{lang}', loc.ident),
@@ -695,6 +710,7 @@ function harvestRouteText(loc, route, meta) {
           }
         }
       }
+    }
     }
 
     if (Array.isArray(route.harvestFiles)) {

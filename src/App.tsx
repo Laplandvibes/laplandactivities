@@ -21,6 +21,7 @@ import { trackPageView } from './lib/analytics';
 import { useHtmlLang, useLang } from './i18n/useLang';
 import { COPY, loadCopy } from './locales/copy';
 import { isLocaleDataLoaded, loadLocaleData } from './locales/data';
+import { isGuidesLoaded, loadGuides } from './data/guideI18n';
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect';
 import { AppPromoNudge } from './components/AppPromo';
 
@@ -77,11 +78,11 @@ function LocaleSync() {
 function CopyGate({ children }: { children: ReactNode }) {
   const lang = useLang();
   const [, bump] = useReducer((x: number) => x + 1, 0);
-  const ready = !!COPY[lang] && isLocaleDataLoaded(lang);
+  const ready = !!COPY[lang] && isLocaleDataLoaded(lang) && isGuidesLoaded(lang);
   useEffect(() => {
     let alive = true;
     if (!ready) {
-      Promise.all([loadCopy(lang), loadLocaleData(lang)]).then(() => { if (alive) bump(); });
+      Promise.all([loadCopy(lang), loadLocaleData(lang), loadGuides(lang)]).then(() => { if (alive) bump(); });
     }
     return () => { alive = false; };
   }, [lang, ready]);

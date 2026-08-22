@@ -10,6 +10,7 @@ import PageBreadcrumb from '../components/PageBreadcrumb';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
+import { indexGuide } from '../data/guideI18n';
 
 export default function CategoriesIndex() {
   const lang = useLang();
@@ -19,6 +20,7 @@ export default function CategoriesIndex() {
   const hero = localized[0];
   const heroCount = getActivitiesByCategory(hero.slug).length;
   const path = to('/categories');
+  const guide = indexGuide('catList', lang);
 
   return (
     <>
@@ -37,6 +39,16 @@ export default function CategoriesIndex() {
             <h1 className="font-heading text-5xl sm:text-7xl text-snow mt-2 tracking-wide">{c.h1}</h1>
             <p className="text-snow/65 mt-4 max-w-2xl mx-auto text-lg">{c.lead}</p>
           </div>
+
+          {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
+              harvests via routes.json, so crawler and reader see one text. */}
+          {guide && (
+            <section className="mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.leadTitle}</h2>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-4">{guide.lead}</p>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>
+            </section>
+          )}
 
           <Link
             to={to(`/categories/${hero.slug}`)}
