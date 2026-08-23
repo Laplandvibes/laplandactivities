@@ -231,6 +231,23 @@ function findKeyBlocks(src, key) {
   return out;
 }
 
+/** Find the record in an array whose `<field>` equals `value`, e.g.
+ *  `{ slug: 'levi', … }`. Walks back from the field to that record's own
+ *  opening brace so only it is sliced, not the whole array. */
+function findRecordByField(src, field, value) {
+  const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, (c) => '\\' + c);
+  const re = new RegExp('["\']?' + esc(field) + '["\']?\\s*:\\s*([\'"])' + esc(value) + '\\1');
+  const m = re.exec(src);
+  if (!m) return null;
+  let depth = 0, open = -1;
+  for (let i = m.index; i >= 0; i--) {
+    const c = src[i];
+    if (c === '}') depth++;
+    else if (c === '{') { if (depth === 0) { open = i; break; } depth--; }
+  }
+  return open >= 0 ? sliceBlock(src, open) : null;
+}
+
 /** Match `<key>: { … }` blocks recursively respecting strings + braces. Returns FIRST. */
 function findKeyBlock(src, key) {
   const blocks = findKeyBlocks(src, key);
@@ -854,33 +871,31 @@ function harvestRouteText(loc, route, meta) {
       if (fp) {
         let src = inlinePageCache.get(fp);
         if (!src) { src = readFileSync(fp, 'utf-8'); inlinePageCache.set(fp, src); }
-        // The record may be a keyed entry (`oulu: { … }`) or a top-level const
+        // An ARRAY of records identified by a field (`{ slug: 'levi', … }`)
+        // rather than an object map — this is how the English base data is
+        // written on most sites. Walk back from the field to that record's own
+        // opening brace and slice only it; harvesting the whole file would print
+        // every record on every page.
+        //
+        // 🔴 This runs BEFORE the keyed lookup whenever `by` is given, and the
+        // order is load-bearing. laplandnightlife's cities.ts holds BOTH the
+        // city array (`{ slug: 'muonio', … }`) and a quick-facts map keyed by
+        // the same slugs with LIST values (`muonio: [ {label, value}, … ]`).
+        // Once findKeyBlocks learned to match `key: [`, the keyed lookup won and
+        // returned the four-row fact list instead of the city record, and the
+        // English city pages silently dropped from ~370 words to ~248. `by` is
+        // an explicit statement of how the record is identified, so it takes
+        // precedence over a name that merely happens to collide.
+        let b = null;
+        if (rec.by) b = findRecordByField(src, rec.by, rec.key);
+        // Otherwise a keyed entry (`oulu: { … }`) or a top-level const
         // (`const levi: DestinationFacts = { … }`) — both shapes exist.
-        let b = findKeyBlock(src, rec.key);
+        if (!b) b = findKeyBlock(src, rec.key);
         if (!b) {
           const cm = new RegExp(`\\bconst\\s+${rec.key.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}\\b[^=]*=\\s*\\{`).exec(src);
           if (cm) b = sliceBlock(src, cm.index + cm[0].length - 1);
         }
-        // Third shape: an ARRAY of records identified by a field
-        // (`{ slug: 'levi', … }`) rather than an object map — this is how the
-        // English base data is written on most sites. Walk back from the field
-        // to that record's own opening brace and slice only it; harvesting the
-        // whole file would print every record on every page.
-        if (!b) {
-          const idField = rec.by || 'slug';
-          const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, (c) => '\\' + c);
-          const idRe = new RegExp('["\']?' + esc(idField) + '["\']?\\s*:\\s*([\'"])' + esc(rec.key) + '\\1');
-          const im = idRe.exec(src);
-          if (im) {
-            let depth = 0, open = -1;
-            for (let i = im.index; i >= 0; i--) {
-              const c = src[i];
-              if (c === '}') depth++;
-              else if (c === '{') { if (depth === 0) { open = i; break; } depth--; }
-            }
-            if (open >= 0) b = sliceBlock(src, open);
-          }
-        }
+        if (!b) b = findRecordByField(src, 'slug', rec.key);
         if (b) {
           if (rec.mode === 'localeMap') {
             // The record is ONE object whose fields are per-language maps
