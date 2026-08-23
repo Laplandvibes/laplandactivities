@@ -1,5 +1,5 @@
 // === LV Affiliate slug maps ===
-// Hotels.com query strings + GYG location slugs per LV destination/category.
+// lodging partner query strings + GYG location slugs per LV destination/category.
 // These power every <AffiliateCTA partner=…> on the site. The Cloudflare
 // Worker at go.laplandvibes.com handles CJ Website-ID + GYG partner_id
 // injection, so we only need to feed it a clean (partner, sid, destination)
