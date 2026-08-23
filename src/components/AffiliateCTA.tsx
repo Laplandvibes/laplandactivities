@@ -14,6 +14,13 @@ export type AffiliatePartner =
   | 'hotels-seasonal'
   | 'hotels-budget'
   | 'cars'
+  /**
+   * Lomarengas (Adtraction, flat fee per cabin booking) — the network's cabin
+   * partner. `destination` is a FULL lomarengas.fi deep URL passed as `?dest=`
+   * (the Worker forwards it into Adtraction's url= param). Programme term:
+   * the Lomarengas NAME must be visible at the placement — pass a label.
+   */
+  | 'lomarengas'
   | 'activities'
   /**
    * GetYourGuide keyword SEARCH (lands on GYG `/s?q=…` via the Worker). Use for
@@ -127,6 +134,8 @@ export function buildAffiliateHref({
   // tyhjaksi etusivuksi (sama vikaluokka kuin ENF->Enfidha-tapaus 25.7.).
   if (destination) {
     if (partner === 'cars') params.set('pickup_location', destination);
+    // Lomarengas deep-links by URL, not by search text — ss would be dropped.
+    else if (partner === 'lomarengas') params.set('dest', destination);
     else params.set('ss', anchorHotelsSs(partner, destination));
   }
   if (partner === "hotels" || partner === "hotels-seasonal" || partner === "hotels-budget") {

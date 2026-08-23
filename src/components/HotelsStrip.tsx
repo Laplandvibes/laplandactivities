@@ -5,9 +5,34 @@ import { HERO, MKT } from '../data/images';
 import { useLang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 
-const META = [
-  { src: '/images/hotels/glass-igloo-interior.webp',     fallback: MKT.igluCouple,    sid: 'hotels_strip_glass_igloo',  query: 'Lapland glass igloo, Finland', accent: 'vibe-pink' },
-  { src: '/images/hotels/log-cabin-lakeside.webp',       fallback: HERO.snowyForest,  sid: 'hotels_strip_log_cabin',    query: 'Lapland log cabin, Finland',   accent: 'aurora-green' },
+/**
+ * [2026-08-23] Kohdevahdin löydös: "Lapland glass igloo, Finland" -ss ratkesi
+ * Trip.comin maakuntalistaksi ja tarkenne "glass igloo" PUTOSI — kortti lupasi
+ * iglut, kohde näytti yleisen Lappi-listan. Korjaus CLAUDE.md:n kiinteistö-
+ * mekanismilla (trip_hotel+trip_city / sembo_hotel+sembo_poly):
+ *   - Glass Igloos → Golden Crown Levin Iglut. Id-parit appin verifioidusta
+ *     taulusta (laplandvibes-app-new/src/data/booking.ts, lev-iglut) ja koko
+ *     ketju mitattu livenä 23.8.: Worker → trip.com/hotels/detail/?hotelId=
+ *     9528161 (200, "Levin Iglut (Kittila) - 2026 Prices") ja fi → sembo.fi
+ *     hotel-details/2512109. 🔴 sembo-parit lähetetään VAIN fi-kielellä:
+ *     koodit on harvestoitu FI-markkinalle, ja sv/de-markkinaohjelma hylkää
+ *     vieraan syvälinkin (worker.js: semboSite-sääntö) — muut kielet saavat
+ *     ss-fallbackin (hotellinimi → kotipolygonin aluelista, dokumentoitu
+ *     hyvä käytös).
+ *   - Log cabins → Lomarengas (verkoston mökkikumppani, CLAUDE.md "Cabins").
+ *     Sama tarkenne-ongelma: "log cabin" putosi Tripin resolverissa, mutta
+ *     Lomarengas MYY juuri järvimökkejä saunoineen. Ohjelmaehto: nimi näkyviin
+ *     → per-kortin label. dest-URLit mitattu 23.8. (200 + canonical).
+ */
+const META: {
+  src: string; fallback: string; sid: string; query: string; accent: string;
+  trip?: [string, string]; sembo?: [string, string];
+  partner?: 'lomarengas'; destFi?: string; label?: string;
+}[] = [
+  { src: '/images/hotels/glass-igloo-interior.webp',     fallback: MKT.igluCouple,    sid: 'hotels_strip_glass_igloo',  query: 'Golden Crown Levin Iglut, Levi, Finland', accent: 'vibe-pink',
+    trip: ['38182', '9528161'], sembo: ['2512109', '360006'] },
+  { src: '/images/hotels/log-cabin-lakeside.webp',       fallback: HERO.snowyForest,  sid: 'hotels_strip_log_cabin',    query: 'https://www.lomarengas.fi/en/cottages/lapland', accent: 'aurora-green',
+    partner: 'lomarengas', destFi: 'https://www.lomarengas.fi/mokit/lappi', label: 'Lomarengas' },
   { src: '/images/hotels/fell-resort-levi.webp',         fallback: HERO.snowyForest,  sid: 'hotels_strip_fell_resort',  query: 'Levi, Finland',                accent: 'arctic-cyan' },
   { src: '/images/hotels/boutique-hotel-rovaniemi.webp', fallback: HERO.huskyAurora,  sid: 'hotels_strip_boutique',     query: 'Rovaniemi, Finland',           accent: 'vibe-pink' },
   { src: '/images/hotels/smoke-sauna-cabin-saariselka.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_smoke_sauna', query: 'Saariselkä, Finland',           accent: 'aurora-green' },
@@ -46,12 +71,17 @@ export default function HotelsStrip() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {c.lodging.map((l, idx) => {
             const m = META[idx] ?? META[0];
+            const propParams = {
+              ...(m.trip ? { trip_city: m.trip[0], trip_hotel: m.trip[1] } : {}),
+              ...(lang === 'fi' && m.sembo ? { sembo_hotel: m.sembo[0], sembo_poly: m.sembo[1] } : {}),
+            };
             return (
               <AffiliateCTA
                 key={m.sid}
-                partner="hotels"
+                partner={m.partner ?? 'hotels'}
                 sid={m.sid}
-                destination={m.query}
+                destination={m.partner === 'lomarengas' && lang === 'fi' ? m.destFi : m.query}
+                query={Object.keys(propParams).length ? propParams : undefined}
                 className={`group relative rounded-2xl overflow-hidden border border-white/10 hover:border-vibe-pink/40 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all aspect-[4/3] ${idx === 0 ? 'lg:col-span-2 lg:row-span-2 lg:aspect-auto lg:min-h-[480px]' : ''}`}
               >
                 <SmartImage
@@ -63,7 +93,7 @@ export default function HotelsStrip() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{partnerLabel}</p>
+                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{m.label ?? partnerLabel}</p>
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
