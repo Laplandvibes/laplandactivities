@@ -14,11 +14,12 @@ import { COPY } from '../locales/copy';
  *     taulusta (laplandvibes-app-new/src/data/booking.ts, lev-iglut) ja koko
  *     ketju mitattu livenä 23.8.: Worker → trip.com/hotels/detail/?hotelId=
  *     9528161 (200, "Levin Iglut (Kittila) - 2026 Prices") ja fi → sembo.fi
- *     hotel-details/2512109. 🔴 sembo-parit lähetetään VAIN fi-kielellä:
- *     koodit on harvestoitu FI-markkinalle, ja sv/de-markkinaohjelma hylkää
- *     vieraan syvälinkin (worker.js: semboSite-sääntö) — muut kielet saavat
- *     ss-fallbackin (hotellinimi → kotipolygonin aluelista, dokumentoitu
- *     hyvä käytös).
+ *     hotel-details/2512109. Sembo-parit lähetetään KAIKILLA kielillä:
+ *     hotellikoodi + polygon-id ovat markkinariippumattomia — todennettu
+ *     23.8. renderöimällä sama koodi sembo.se:llä ("Din resa till Levi") ja
+ *     sembo.de:llä ("Ihre Reise nach Levi"), molemmat näyttävät Golden Crown
+ *     Levin Iglutin. Worker sitoo isännän ja kanavan markkinaan (do.sembo.se
+ *     + as=SE-kanava jne.), ja ei-Sembo-lokaalit ohittavat parit harmitta.
  *   - Log cabins → Lomarengas (verkoston mökkikumppani, CLAUDE.md "Cabins").
  *     Sama tarkenne-ongelma: "log cabin" putosi Tripin resolverissa, mutta
  *     Lomarengas MYY juuri järvimökkejä saunoineen. Ohjelmaehto: nimi näkyviin
@@ -73,7 +74,7 @@ export default function HotelsStrip() {
             const m = META[idx] ?? META[0];
             const propParams = {
               ...(m.trip ? { trip_city: m.trip[0], trip_hotel: m.trip[1] } : {}),
-              ...(lang === 'fi' && m.sembo ? { sembo_hotel: m.sembo[0], sembo_poly: m.sembo[1] } : {}),
+              ...(m.sembo ? { sembo_hotel: m.sembo[0], sembo_poly: m.sembo[1] } : {}),
             };
             return (
               <AffiliateCTA
