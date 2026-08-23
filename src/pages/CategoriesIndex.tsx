@@ -7,6 +7,7 @@ import { imageForCategory, focalFor } from '../data/images';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import BookingCTA from '../components/BookingCTA';
 import PageBreadcrumb from '../components/PageBreadcrumb';
+import TravelInsuranceNote from '../components/TravelInsuranceNote';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
@@ -49,6 +50,15 @@ export default function CategoriesIndex() {
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>
             </section>
           )}
+
+          {/* Matkavakuutus ja aktiviteettitasot — sisältöosio kumppanilinkillä,
+              EI mainoskortti. Tämä sivu on koko sivuston "mitä varaan"
+              -pinta, joten "tarkista mitä vakuutuksesi kattaa ennen kuin
+              varaat" kuuluu tähän. Ks. komponentin otsikkokommentti —
+              jokainen tasoväite on lainattu EKTA:n omalta sivulta. */}
+          <section className="mb-10 sm:mb-14 max-w-4xl mx-auto">
+            <TravelInsuranceNote sid="categories_insurance" />
+          </section>
 
           <Link
             to={to(`/categories/${hero.slug}`)}
