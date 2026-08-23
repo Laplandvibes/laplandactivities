@@ -526,7 +526,7 @@ const de: SectionCopy = {
       { title: '#LaplandVibes-Netzwerk', text: 'Teil eines Netzwerks aus 23 Seiten zu Finnisch-Lappland, Ihr vollständiges Werkzeug zur Reiseplanung.' },
     ],
     affiliateH2: 'Affiliate-Hinweis',
-    affiliateBody1: 'LaplandActivities erhält eine Provision, wenn Sie über Partner-Links buchen, Trip.com, GetYourGuide, EconomyBookings. Für Sie entstehen keine Mehrkosten, und die Seite bleibt kostenfrei. Empfohlen werden Anbieter und Unterkünfte, die nachweislich liefern. Den vollständigen Hinweis lesen Sie in den',
+    affiliateBody1: 'LaplandActivities erhält eine Provision, wenn Sie über Partner-Links buchen, Trip.com, GetYourGuide, EconomyBookings, EKTA. Für Sie entstehen keine Mehrkosten, und die Seite bleibt kostenfrei. Empfohlen werden Anbieter und Unterkünfte, die nachweislich liefern. Den vollständigen Hinweis lesen Sie in den',
     affiliateBody2: '.',
     termsLink: 'Nutzungsbedingungen',
     contactH2: 'Kontakt',

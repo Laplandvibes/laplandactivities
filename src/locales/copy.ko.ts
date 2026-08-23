@@ -467,7 +467,7 @@ const ko: SectionCopy = {
       { title: '#LaplandVibes 네트워크', text: '23개 사이트의 라플란드 네트워크의 일부, 완전한 여행 계획 도구.' },
     ],
     affiliateH2: '제휴 공시',
-    affiliateBody1: 'LaplandActivities는 파트너 링크(Trip.com, GetYourGuide, EconomyBookings)를 통해 예약 시 수수료를 받습니다. 추가 비용은 없으며, 사이트는 무료로 유지됩니다. 추천은 일관된 서비스를 제공하는 운영자와 숙소만 포함합니다. 전체 공시는',
+    affiliateBody1: 'LaplandActivities는 파트너 링크(Trip.com, GetYourGuide, EconomyBookings, EKTA)를 통해 예약 시 수수료를 받습니다. 추가 비용은 없으며, 사이트는 무료로 유지됩니다. 추천은 일관된 서비스를 제공하는 운영자와 숙소만 포함합니다. 전체 공시는',
     affiliateBody2: '에서 확인하세요.',
     termsLink: '이용 약관', contactH2: '연락처',
     contactBody1: '이메일: ', contactBody2: ', 제휴 문의:',

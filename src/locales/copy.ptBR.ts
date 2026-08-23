@@ -526,7 +526,7 @@ const ptBR: SectionCopy = {
       { title: 'Rede #LaplandVibes', text: 'Parte de uma rede de 23 sites sobre a Lapônia, kit completo de planejamento da viagem.' },
     ],
     affiliateH2: 'Aviso de afiliados',
-    affiliateBody1: 'O LaplandActivities recebe comissão quando você reserva por links de parceiros, Trip.com, GetYourGuide, EconomyBookings. Sem custo extra para você e ajuda a manter o site gratuito. Recomendamos operadoras e hospedagens que entregam de forma consistente. Leia o aviso completo nos nossos',
+    affiliateBody1: 'O LaplandActivities recebe comissão quando você reserva por links de parceiros, Trip.com, GetYourGuide, EconomyBookings, EKTA. Sem custo extra para você e ajuda a manter o site gratuito. Recomendamos operadoras e hospedagens que entregam de forma consistente. Leia o aviso completo nos nossos',
     affiliateBody2: '.',
     termsLink: 'Termos de Uso',
     contactH2: 'Contato',

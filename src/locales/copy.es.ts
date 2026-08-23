@@ -526,7 +526,7 @@ const es: SectionCopy = {
       { title: 'Red #LaplandVibes', text: 'Parte de una red de 23 webs sobre la Laponia finlandesa: todo lo que necesita para planificar el viaje.' },
     ],
     affiliateH2: 'Aviso de afiliación',
-    affiliateBody1: 'LaplandActivities gana una comisión cuando reserva a través de enlaces de socios, Trip.com, GetYourGuide, EconomyBookings. No le cuesta nada extra y mantiene el sitio gratuito. Recomendamos operadores y propiedades que cumplen de forma constante. Lea el aviso completo en nuestras',
+    affiliateBody1: 'LaplandActivities gana una comisión cuando reserva a través de enlaces de socios, Trip.com, GetYourGuide, EconomyBookings, EKTA. No le cuesta nada extra y mantiene el sitio gratuito. Recomendamos operadores y propiedades que cumplen de forma constante. Lea el aviso completo en nuestras',
     affiliateBody2: '.',
     termsLink: 'Condiciones de uso',
     contactH2: 'Contacto',

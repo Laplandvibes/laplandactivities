@@ -526,7 +526,7 @@ const zhCN: SectionCopy = {
       { title: '#LaplandVibes网络', text: '芬兰拉普兰23站网络的一部分，完整的行程规划工具箱。' },
     ],
     affiliateH2: '联盟披露',
-    affiliateBody1: '当您通过合作伙伴链接预订时(Trip.com、GetYourGuide、EconomyBookings),LaplandActivities将获得佣金。这不会让您多花钱,并维持本站免费。我们仅推荐持续兑现承诺的运营商与房源。请在我们的',
+    affiliateBody1: '当您通过合作伙伴链接预订时(Trip.com、GetYourGuide、EconomyBookings、EKTA),LaplandActivities将获得佣金。这不会让您多花钱,并维持本站免费。我们仅推荐持续兑现承诺的运营商与房源。请在我们的',
     affiliateBody2: '查阅完整披露。',
     termsLink: '使用条款',
     contactH2: '联系',

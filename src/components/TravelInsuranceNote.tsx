@@ -46,8 +46,10 @@ import { useLang, pick } from '../i18n/useLang'
  * kävelyn ja uinnin, ei rinnettä. Se on totta ja toimintakelpoista ilman
  * että kenenkään tuotteesta väitetään mitään lukematonta.
  *
- * 🔗 Sama osio on laplandvisit /practical-info -sivulla. Pidä kolmikko
- * synkassa: jos EKTA:n tasokuvaus muuttuu, se muuttuu kaikissa.
+ * 🔗 Sama osio on neljällä sivustolla: visit /practical-info, skiresorts
+ * /extreme, activities /categories, snowmobile /rules (i18next-JSON, ei
+ * pick()). Pidä nelikko synkassa: jos EKTA:n tasokuvaus muuttuu, se
+ * muuttuu kaikissa.
  * Linkki rakennetaan tässä suoraan `/go/ekta`-reitille eikä sivuston omalla
  * kirjastolla — visitillä EKTA puuttui `TP_ROUTE`-kartasta, jolloin linkki
  * ohitti Workerin ja klikki jäi D1-lokin ulkopuolelle (korjattu 23.8.).
@@ -90,7 +92,7 @@ export default function TravelInsuranceNote({
     'A Lapland winter trip is mostly activities, and activity cover is the part policies differ on most. Insurers sell it in tiers, and the cheapest tier is usually not the one you need here.',
     'Lapin talvireissu on enimmäkseen aktiviteetteja, ja juuri aktiviteettiturva on se kohta jossa vakuutukset eroavat eniten. Vakuutusyhtiöt myyvät sen tasoina, ja halvin taso ei yleensä ole se jota täällä tarvitset.',
     'Eine Winterreise nach Lappland besteht vor allem aus Aktivitäten, und genau beim Aktivitätsschutz unterscheiden sich Policen am stärksten. Versicherer verkaufen ihn in Stufen, und die günstigste Stufe ist hier meist nicht die richtige.',
-    'ラップランドの冬旅はほとんどがアクティビティで、保険はまさにその補償範囲で差が出ます。保険会社は段階별に販売しており、最安の段階はここでは足りないことが多いです。',
+    'ラップランドの冬旅はほとんどがアクティビティで、保険はまさにその補償範囲で差が出ます。保険会社は段階別に販売しており、最安の段階はここでは足りないことが多いです。',
     'Un viaje de invierno a Laponia es sobre todo actividades, y la cobertura de actividades es donde más difieren las pólizas. Las aseguradoras la venden por niveles, y el más barato no suele ser el que necesitas aquí.',
     'Uma viagem de inverno à Lapônia é sobretudo atividades, e a cobertura de atividades é onde as apólices mais diferem. As seguradoras vendem por níveis, e o mais barato normalmente não é o que você precisa aqui.',
     '拉普兰的冬季行程几乎全是活动,而活动保障正是各家保单差异最大的地方。保险公司按等级出售,最便宜的那一档在这里通常不够用。',

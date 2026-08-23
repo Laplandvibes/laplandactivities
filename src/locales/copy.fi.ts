@@ -540,7 +540,7 @@ const fi: SectionCopy = {
       { title: '#LaplandVibes-verkosto', text: 'Osa 23 sivuston Suomen Lapin verkostoa, täydellinen matkasuunnittelutyökalu.' },
     ],
     affiliateH2: 'Kumppanilinkit',
-    affiliateBody1: 'LaplandActivities saa komission kun varaat kumppanilinkkien kautta: Sembo, GetYourGuide, EconomyBookings. Sinulle se ei maksa mitään ylimääräistä ja pitää sivuston ilmaisena. Suosituksissa on vain toimijoita ja majoituspaikkoja, jotka toimittavat luvatun. Lue tarkemmin sivulta',
+    affiliateBody1: 'LaplandActivities saa komission kun varaat kumppanilinkkien kautta: Sembo, GetYourGuide, EconomyBookings, EKTA. Sinulle se ei maksa mitään ylimääräistä ja pitää sivuston ilmaisena. Suosituksissa on vain toimijoita ja majoituspaikkoja, jotka toimittavat luvatun. Lue tarkemmin sivulta',
     affiliateBody2: '.',
     termsLink: 'Käyttöehdot',
     contactH2: 'Yhteystiedot',

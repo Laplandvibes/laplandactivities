@@ -464,7 +464,7 @@ const fr: SectionCopy = {
       { title: 'Réseau #LaplandVibes', text: 'Membre d\'un réseau de 23 sites sur la Laponie finlandaise, votre boîte à outils complète.' },
     ],
     affiliateH2: 'Divulgation d\'affiliation',
-    affiliateBody1: 'LaplandActivities perçoit une commission sur les réservations via des liens partenaires, Trip.com, GetYourGuide, EconomyBookings. Cela ne vous coûte rien de plus et permet de garder le site gratuit. Les recommandations couvrent les opérateurs et hébergements qui tiennent leurs promesses. Lisez la divulgation complète dans nos',
+    affiliateBody1: 'LaplandActivities perçoit une commission sur les réservations via des liens partenaires, Trip.com, GetYourGuide, EconomyBookings, EKTA. Cela ne vous coûte rien de plus et permet de garder le site gratuit. Les recommandations couvrent les opérateurs et hébergements qui tiennent leurs promesses. Lisez la divulgation complète dans nos',
     affiliateBody2: '.',
     termsLink: 'Conditions d\'utilisation', contactH2: 'Contact',
     contactBody1: 'Écrivez à ', contactBody2: ', pour les partenariats :',

@@ -293,7 +293,7 @@ const sv: SectionCopy = {
       { title: '#LaplandVibes-nätverket', text: 'En del av ett nätverk med 23 sajter om finska Lappland, ditt kompletta verktyg för reseplanering.' },
     ],
     affiliateH2: 'Information om affiliatelänkar',
-    affiliateBody1: 'LaplandActivities får provision när du bokar via partnerlänkar: Trip.com, GetYourGuide, EconomyBookings. Det kostar dig inget extra och håller sajten gratis. Rekommendationerna omfattar researrangörer och boenden som konsekvent levererar. Läs hela informationen i våra',
+    affiliateBody1: 'LaplandActivities får provision när du bokar via partnerlänkar: Trip.com, GetYourGuide, EconomyBookings, EKTA. Det kostar dig inget extra och håller sajten gratis. Rekommendationerna omfattar researrangörer och boenden som konsekvent levererar. Läs hela informationen i våra',
     affiliateBody2: '.',
     termsLink: 'Användarvillkor',
     contactH2: 'Kontakt',

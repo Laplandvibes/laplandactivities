@@ -464,7 +464,7 @@ const nl: SectionCopy = {
       { title: '#LaplandVibes-netwerk', text: 'Onderdeel van een 23-site Fins Lapland-netwerk, uw complete reisplanning-toolkit.' },
     ],
     affiliateH2: 'Affiliate-disclosure',
-    affiliateBody1: 'LaplandActivities verdient een commissie wanneer u boekt via partnerlinks, Trip.com, GetYourGuide, EconomyBookings. Dit kost u niets extra en houdt de site gratis. Aanbevelingen omvatten aanbieders en accommodaties die consistent leveren. Lees de volledige disclosure in onze',
+    affiliateBody1: 'LaplandActivities verdient een commissie wanneer u boekt via partnerlinks, Trip.com, GetYourGuide, EconomyBookings, EKTA. Dit kost u niets extra en houdt de site gratis. Aanbevelingen omvatten aanbieders en accommodaties die consistent leveren. Lees de volledige disclosure in onze',
     affiliateBody2: '.',
     termsLink: 'Gebruiksvoorwaarden', contactH2: 'Contact',
     contactBody1: 'Mail naar ', contactBody2: ', voor partnerships:',

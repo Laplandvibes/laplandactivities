@@ -526,7 +526,7 @@ const ja: SectionCopy = {
       { title: '#LaplandVibesネットワーク', text: '23サイトのフィンランド・ラップランドネットワークの一部。完全な旅行計画ツールキット。' },
     ],
     affiliateH2: 'アフィリエイト開示',
-    affiliateBody1: 'LaplandActivitiesはパートナーリンク経由のご予約から手数料を受け取ります。Trip.com、GetYourGuide、EconomyBookings。これによりお客様に追加費用は発生せず、サイトを無料で維持できます。推薦は一貫して期待に応える施設とオペレーターを取り上げます。完全な開示は以下でお読みください:',
+    affiliateBody1: 'LaplandActivitiesはパートナーリンク経由のご予約から手数料を受け取ります。Trip.com、GetYourGuide、EconomyBookings、EKTA。これによりお客様に追加費用は発生せず、サイトを無料で維持できます。推薦は一貫して期待に応える施設とオペレーターを取り上げます。完全な開示は以下でお読みください:',
     affiliateBody2: '。',
     termsLink: '利用規約',
     contactH2: 'お問い合わせ',

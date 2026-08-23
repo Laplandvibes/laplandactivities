@@ -293,7 +293,7 @@ const en: SectionCopy = {
       { title: '#LaplandVibes network', text: 'Part of a 23-site Finnish Lapland network, your full trip-planning toolkit.' },
     ],
     affiliateH2: 'Affiliate disclosure',
-    affiliateBody1: 'LaplandActivities earns a commission when you book through partner links: Trip.com, GetYourGuide, EconomyBookings. This costs you nothing extra and keeps the site free. Recommendations cover operators and properties that consistently deliver. Read the full disclosure in our',
+    affiliateBody1: 'LaplandActivities earns a commission when you book through partner links: Trip.com, GetYourGuide, EconomyBookings, EKTA. This costs you nothing extra and keeps the site free. Recommendations cover operators and properties that consistently deliver. Read the full disclosure in our',
     affiliateBody2: '.',
     termsLink: 'Terms of Use',
     contactH2: 'Contact',
