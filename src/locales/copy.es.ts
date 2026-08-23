@@ -535,7 +535,7 @@ const es: SectionCopy = {
     backHome: '← Volver al inicio',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: observación ética de osos en Finlandia, al borde de Laponia | LaplandActivities",
+    metaTitle: "Bear Kuusamo: observación ética de osos en Finlandia | LaplandActivities",
     metaDescription: "Bear Kuusamo lleva a escondites para ver osos pardos salvajes en los bosques fronterizos al este de Kuusamo, al borde de Laponia. Tours de tarde y de noche, del 1 de mayo al 30 de septiembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Colaboración comercial: Bear Kuusamo",

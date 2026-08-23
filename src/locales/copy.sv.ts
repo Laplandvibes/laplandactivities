@@ -97,7 +97,7 @@ const sv: SectionCopy = {
     planVisit: 'Planera ditt besök',
   },
   home: {
-    metaTitle: 'LaplandActivities: boka noggrant utvalda arktiska turer i finska Lappland',
+    metaTitle: 'Arktiska turer i finska Lappland – noggrant utvalda',
     metaDescription: 'Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 10 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.',
     ogTitle: 'LaplandActivities · Noggrant utvalda arktiska upplevelser',
     categoriesKicker: 'Vad du kan göra',

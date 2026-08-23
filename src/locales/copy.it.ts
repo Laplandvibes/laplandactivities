@@ -471,7 +471,7 @@ const it: SectionCopy = {
     backHome: '← Torna alla home',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: osservazione etica degli orsi in Finlandia, ai margini della Lapponia | LaplandActivities",
+    metaTitle: "Bear Kuusamo: osservazione etica degli orsi in Finlandia | LaplandActivities",
     metaDescription: "Bear Kuusamo porta ai capanni per osservare orsi bruni selvatici nelle foreste di confine a est di Kuusamo, ai margini della Lapponia. Uscite serali e notturne, dal 1° maggio al 30 settembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Collaborazione commerciale: Bear Kuusamo",

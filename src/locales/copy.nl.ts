@@ -471,7 +471,7 @@ const nl: SectionCopy = {
     backHome: '← Terug naar home',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland, aan de rand van Lapland | LaplandActivities",
+    metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland | LaplandActivities",
     metaDescription: "Bear Kuusamo brengt je naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland. Avond- en nachttochten, 1 mei tot 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Commercieel partnerschap: Bear Kuusamo",

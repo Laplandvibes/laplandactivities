@@ -471,7 +471,7 @@ const fr: SectionCopy = {
     backHome: '← Retour à l\'accueil',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo : observation éthique des ours en Finlande, aux portes de la Laponie | LaplandActivities",
+    metaTitle: "Bear Kuusamo : observation éthique des ours en Finlande | LaplandActivities",
     metaDescription: "Bear Kuusamo emmène dans des affûts pour observer des ours bruns sauvages dans les forêts frontalières à l'est de Kuusamo, aux portes de la Laponie. Sorties du soir et de nuit, du 1er mai au 30 septembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Partenariat commercial : Bear Kuusamo",

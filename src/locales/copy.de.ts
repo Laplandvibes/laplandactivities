@@ -535,7 +535,7 @@ const de: SectionCopy = {
     backHome: '← Zurück zur Startseite',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: Ethische Bärenbeobachtung in Finnland, am Rand Lapplands | LaplandActivities",
+    metaTitle: "Bear Kuusamo: ethische Bärenbeobachtung in Finnland | LaplandActivities",
     metaDescription: "Bear Kuusamo führt zu Verstecken für wilde Braunbären in den Grenzwäldern östlich von Kuusamo, am Rand Lapplands. Abend- und Nachttouren, 1. Mai bis 30. September.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Bezahlte Partnerschaft: Bear Kuusamo",

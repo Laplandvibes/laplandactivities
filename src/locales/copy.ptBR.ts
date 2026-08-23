@@ -535,7 +535,7 @@ const ptBR: SectionCopy = {
     backHome: '← Voltar para o início',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: observação ética de ursos na Finlândia, na borda da Lapônia | LaplandActivities",
+    metaTitle: "Bear Kuusamo: observação ética de ursos na Finlândia | LaplandActivities",
     metaDescription: "A Bear Kuusamo leva a esconderijos para ver ursos-pardos selvagens nas florestas de fronteira a leste de Kuusamo, na borda da Lapônia. Passeios ao entardecer e à noite, de 1º de maio a 30 de setembro.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Parceria comercial: Bear Kuusamo",
