@@ -18,16 +18,28 @@
 const local = (file: string) => `/images/${file}`;
 
 // === SAFE / CONFIRMED-CLEAN HIGH-RES POOL ===
-// Every alias used by data/categories.ts and data/destinations.ts maps to a
-// UNIQUE entry in this pool — guarantees no two surfaces share the same image
-// at the same time.
+// 🔴🔴 2026-08-23: tama lohko VAITTI ennen etta "every alias maps to a UNIQUE
+// entry ... guarantees no two surfaces share the same image at the same time".
+// Se ei pitanyt paikkaansa, ja juuri se vakuutus piilotti ongelman. Mitattuna
+// renderoidylta etusivulta: slider-03 x3, slider-05 x3, fell-resort-levi x3,
+// og-default x3, ja viisi muuta x2. Aliaksia on enemman kuin kuvia, joten osa
+// niista OSOITTAA VALTTAMATTA samaan tiedostoon.
+//
+// 🔴 og/og-default.webp on sosiaalisen jaon kuva. Se oli kortin kuvana
+// yhdeksassa eri lupauksessa (revontulet x2, Sampo-jaanmurtaja, pilkkiminen,
+// lapset lumessa, jainen jarvi, Inari talvella, Posio kesalla). Nyt jokaisella
+// on oma kuva. ALA koskaan laita og-defaultia takaisin sisaltokuvaksi - se on
+// merkki siita etta kuva puuttuu, ei kuva.
+//
+// Oikea sanamuoto: alla oleva allas on brandipuhdas ja paikallinen, mutta se ei
+// riita kattamaan kaikkia pintoja. Jos tarvitset uuden kortin, TEE UUSI KUVA.
 
 export const HERO = {
   // Primary aurora — used in newsletter popup decoration etc.
   aurora:           local('heroes/slider-01-husky-aurora.webp'),
 
   // Used by destinations.ts / categories.ts via legacy alias names
-  auroraLake:       local('og/og-default.webp'),                    // wide aurora
+  auroraLake:       local('activities/northern-lights/aurora-lake.webp'), // aurora + jaatynyt jarvi
   snowyForest:      local('heroes/slider-02-snowmobile-fells.webp'), // wide forest+sled
   huskyAurora:      local('heroes/slider-01-husky-aurora.webp'),
   huskySnowmobile:  local('heroes/slider-02-snowmobile-fells.webp'),
@@ -38,9 +50,9 @@ export const HERO = {
   santaClaus:       local('heroes/slider-05-reindeer-lavvu.webp'),
   reindeerHerd:     local('heroes/slider-05-reindeer-lavvu.webp'),
   huskyTeam:        local('heroes/slider-01-husky-aurora.webp'),
-  kidsSnow:         local('og/og-default.webp'),
+  kidsSnow:         local('activities/winter/kids-snow-play.webp'),
   cabin:            local('hotels/log-cabin-lakeside.webp'),
-  iceLake:          local('og/og-default.webp'),
+  iceLake:          local('heroes/inari-winter-lake.webp'),
   fells:            local('hotels/fell-resort-levi.webp'),
   midnightSun:      local('heroes/slider-03-summer-hike.webp'),
   smokesauna:       local('hotels/smoke-sauna-cabin-saariselka.webp'),
@@ -88,7 +100,7 @@ export const MKT = {
   igluClose:         HERO.glassIgloo,
   igluDramatic:      HERO.glassIgloo,
   reindeerSled:      HERO.santaClaus,             // slider-05-reindeer-lavvu
-  iceFishing:        HERO.auroraLake,             // og/og-default
+  iceFishing:        local('activities/fishing/ice-fishing-hole.webp'), // pilkkiavanto, ei revontulia
   saunaWinter:       HERO.smokesauna,             // hotels/smoke-sauna-cabin
 } as const;
 
@@ -158,7 +170,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // Aurora is a PRIMARY signal — must beat the generic boat/fish/berry rules below, whose
   // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
   { match: /aurora|northern light|revontul/i,
-        imgs: [local('og/og-default.webp'), local('activities/northern-lights/aurora-people.webp')] },
+        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-people.webp')] },
   // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
   // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
   // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
@@ -166,7 +178,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /king crab|kongekrabbe|crab safari/i,
         imgs: [local('activities/fishing/fishing-kingcrab.webp'), local('activities/fishing/fishing-kingcrab-2.webp')] },
   { match: /kayak|canoe|paddle|sup\b|raft|river run/i,                  img: local('activities/summer/kayak.webp') },
-  { match: /icebreaker|sampo/i,                                        img: local('og/og-default.webp') },
+  { match: /icebreaker|sampo/i,                                        img: local('activities/winter/icebreaker-sampo.webp') },
   { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
   // Kukkolankoski = SUMMER net-fishing at the rapids (Food & Drink). Its title carries
   // "whitefish", but so do the ice-fishing descriptions ("jig for perch and whitefish"),
@@ -268,7 +280,7 @@ const seasonal = (winter: string, summer: string): string => (isSummerSeason() ?
 const CATEGORY_HERO: Record<string, string> = {
   adventure:        seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/kayak.webp')),
   animals:          seasonal(local('heroes/slider-05-reindeer-lavvu.webp'), local('heroes/reindeer-herd-sunset.webp')),
-  'northern-lights': local('og/og-default.webp'),
+  'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
   'winter-sports':  local('hotels/fell-resort-levi.webp'),
   wellness:         local('hotels/smoke-sauna-cabin-saariselka.webp'),
   culture:          local('heroes/slider-05-reindeer-lavvu.webp'),
@@ -293,11 +305,11 @@ const DEST_HERO: Record<string, string> = {
   levi:       seasonal(local('hotels/fell-resort-levi.webp'), local('heroes/slider-03-summer-hike.webp')),
   yllas:      seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/mtb-bikepark.webp')),
   saariselka: seasonal(local('hotels/smoke-sauna-cabin-saariselka.webp'), local('activities/summer/kayak.webp')),
-  inari:      seasonal(local('og/og-default.webp'), local('activities/summer/lake-cruise.webp')),
+  inari:      seasonal(local('heroes/inari-winter-lake.webp'), local('activities/summer/lake-cruise.webp')),
   ruka:       seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/reindeer-herd-sunset.webp')),
   // Posio = Riisitunturi + Korouoma wilderness. Winter → snowmobile fells; the
   // aurora lake reads as the Posio autumn/lakes mood in the light season.
-  posio:      seasonal(local('heroes/husky-sled-day.webp'), local('og/og-default.webp')),
+  posio:      seasonal(local('heroes/husky-sled-day.webp'), local('heroes/posio-summer-lake.webp')),
   tornio:     seasonal(local('activities/culture/arctic-city.webp'), local('activities/summer/salmon-fishing.webp')),
   // New 2026-07-24: dedicated generated heroes (same image both seasons, like rovaniemi).
   'pyha-luosto': local('heroes/pyha-luosto-fells.webp'),

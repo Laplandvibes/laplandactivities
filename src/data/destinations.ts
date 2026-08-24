@@ -60,8 +60,10 @@ export const destinations: Destination[] = [
     elevation: '718m',
     bestFor: 'Nature lovers & serious skiers',
     operators: ['SnowFun Safaris', 'Pallas Husky', 'Wild Nordic Finland'],
-    image: HERO.auroraLake,
-    heroImage: HERO.auroraLake,
+    // Ei auroraLake: se on revontulikategorian kuva, ja Yllas on hiihtokohde.
+    // fjell = sama tiedosto jota Yllaksen oma DEST_HERO kayttaa talvella.
+    image: HERO.fjell,
+    heroImage: HERO.fjell,
   },
   {
     slug: 'saariselka',
