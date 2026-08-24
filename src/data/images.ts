@@ -129,7 +129,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /pentik/i,                                                   img: local('activities/culture/ceramics.webp') },
   { match: /museum|m[uu]seo/i,                                          img: local('activities/culture/arctic-city.webp') },
   // Karhunkierros = "Bear's Ring" HIKING trail (summer trek) — NOT wildlife. Must match before /bear/.
-  { match: /karhunkierros|bear.?s ring|little bear.?s ring/i,           img: local('heroes/slider-03-summer-hike.webp') },
+  { match: /karhunkierros|bear.?s ring|little bear.?s ring/i,           img: local('activities/summer/oulanka-ruska-trail.webp') },
   // Ranua Zoo genuinely has a polar bear — that's the only correct use of polar-bears.webp.
   { match: /polar bear|ranua/i,                                         img: local('activities/wildlife/polar-bears.webp') },
   // Wolverine/lynx/fox: no dedicated image yet → generic green-summer wilderness (not a bear).
@@ -140,14 +140,17 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // no longer shows the same reindeer/husky photo on three sibling cards.
   { match: /reindeer|s[áa]mi|lavvu|kota dinner/i,
         imgs: [local('heroes/slider-05-reindeer-lavvu.webp'), local('heroes/reindeer-herd-sunset.webp')] },
+  // imgs[0] EI ole slider-01: se on hero-sliderin kuva, ja huskykortti nayttaisi
+  // etusivulla saman kuvan kahdesti (mitattu 2026-08-23).
   { match: /husky|husk[iy]|sled dog|kennel/i,
-        imgs: [local('heroes/slider-01-husky-aurora.webp'), local('heroes/husky-sled-day.webp')] },
+        imgs: [local('activities/winter/husky-kennel.webp'), local('heroes/husky-sled-day.webp')] },
 
   // Sports / activities — BEFORE lodging because activity titles are the strongest
   // signal (a "snowmobile expedition" must match snowmobile even if the description
   // mentions "cabin lunch")
+  // imgs[0] EI ole slider-02: sama syy kuin huskylla.
   { match: /snowmobile|kelkka|skidoo/i,
-        imgs: [local('heroes/slider-02-snowmobile-fells.webp'), local('heroes/snowmobile-safari.webp'), local('activities/winter/snowmobile-river.webp')] },
+        imgs: [local('activities/northern-lights/snowmobile-aurora.webp'), local('heroes/snowmobile-safari.webp'), local('activities/winter/snowmobile-river.webp')] },
   { match: /ice ?kart|go.?kart|karting/i,                              img: local('activities/winter/snowmobile-river.webp') },
   { match: /snowshoe/i,                                                img: local('activities/winter/snowshoe-forest.webp') },
   { match: /fat ?bike/i,                                               img: local('activities/winter/fatbike-snow.webp') },
@@ -205,7 +208,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /hot tub|wood[- ]fired tub|jacuzzi/i,                        img: local('activities/wellness/spa-hottub.webp') },
   { match: /spa|wellness|massage/i,                                     img: local('activities/wellness/spa-hottub.webp') },
   { match: /float/i,                                                    img: local('activities/wellness/ice-floating.webp') },
-  { match: /sauna/i,                                                    img: local('hotels/smoke-sauna-cabin-saariselka.webp') },
+  { match: /sauna/i,                                                    img: local('hotels/smoke-sauna-ice.webp') },
   { match: /cabin|log house|lakeside lodge/i,                           img: local('hotels/log-cabin-lakeside.webp') },
 
   // Generic outdoor
@@ -281,10 +284,11 @@ const CATEGORY_HERO: Record<string, string> = {
   adventure:        seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/kayak.webp')),
   animals:          seasonal(local('heroes/slider-05-reindeer-lavvu.webp'), local('heroes/reindeer-herd-sunset.webp')),
   'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
-  'winter-sports':  local('hotels/fell-resort-levi.webp'),
+  'winter-sports':  local('activities/winter/downhill-skiers.webp'),
   wellness:         local('hotels/smoke-sauna-cabin-saariselka.webp'),
-  culture:          local('heroes/slider-05-reindeer-lavvu.webp'),
-  summer:           local('categories/summer.webp'),
+  culture:          local('activities/culture/sami-duodji.webp'),
+  // SummerBand kayttaa categories/summer.webp:ia, joten kategoriakortti tarvitsee oman.
+  summer:           local('activities/summer/lapland-river.webp'),
   food:             local('hotels/log-cabin-lakeside.webp'),
   // Distinct from the /fishing GUIDE hero (salmon-fishing.webp): the category grid
   // gets its own seasonal scene — river fishing in summer, ice fishing at dusk in winter.
@@ -301,12 +305,16 @@ export function imageForCategory(slug: string): string {
 // all showed the same summer photo, and Rovaniemi's summer hero was a river
 // cityscape — Rovaniemi is marketed Santa-first, always).
 const DEST_HERO: Record<string, string> = {
-  rovaniemi:  local('heroes/slider-05-reindeer-lavvu.webp'), // Santa/reindeer-first, year-round
-  levi:       seasonal(local('hotels/fell-resort-levi.webp'), local('heroes/slider-03-summer-hike.webp')),
+  rovaniemi:  local('heroes/rovaniemi-winter-village.webp'), // oma kuva, ei hero-sliderin lavvu
+  levi:       seasonal(local('hotels/fell-resort-levi.webp'), local('heroes/levi-summer-fell.webp')),
   yllas:      seasonal(local('heroes/slider-02-snowmobile-fells.webp'), local('activities/summer/mtb-bikepark.webp')),
-  saariselka: seasonal(local('hotels/smoke-sauna-cabin-saariselka.webp'), local('activities/summer/kayak.webp')),
+  // Saariselka: sama kuva molemmissa kausissa (kuten rovaniemi/pyha-luosto). Talvipaikka
+  // oli savusaunakuva, joka on wellness-kategorian kuva, ja kesapaikka kajakki, joka on
+  // seikkailukategorian kuva - eli kumpikin kausi oli duplikaatti etusivulla.
+  saariselka: local('heroes/saariselka-fell.webp'),
   inari:      seasonal(local('heroes/inari-winter-lake.webp'), local('activities/summer/lake-cruise.webp')),
-  ruka:       seasonal(local('heroes/ski-resort-winter.webp'), local('heroes/reindeer-herd-sunset.webp')),
+  // Ruka: kesapaikka oli porolauma, joka on elainkategorian kuva. Oma tunturikuva.
+  ruka:       local('heroes/ruka-fell.webp'),
   // Posio = Riisitunturi + Korouoma wilderness. Winter → snowmobile fells; the
   // aurora lake reads as the Posio autumn/lakes mood in the light season.
   posio:      seasonal(local('heroes/husky-sled-day.webp'), local('heroes/posio-summer-lake.webp')),

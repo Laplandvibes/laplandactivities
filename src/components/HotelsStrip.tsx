@@ -32,11 +32,11 @@ const META: {
 }[] = [
   { src: '/images/hotels/glass-igloo-interior.webp',     fallback: MKT.igluCouple,    sid: 'hotels_strip_glass_igloo',  query: 'Golden Crown Levin Iglut, Levi, Finland', accent: 'vibe-pink',
     trip: ['38182', '9528161'], sembo: ['2512109', '360006'] },
-  { src: '/images/hotels/log-cabin-lakeside.webp',       fallback: HERO.snowyForest,  sid: 'hotels_strip_log_cabin',    query: 'https://www.lomarengas.fi/en/cottages/lapland', accent: 'aurora-green',
+  { src: '/images/hotels/red-lake-cabin.webp',       fallback: HERO.snowyForest,  sid: 'hotels_strip_log_cabin',    query: 'https://www.lomarengas.fi/en/cottages/lapland', accent: 'aurora-green',
     partner: 'lomarengas', destFi: 'https://www.lomarengas.fi/mokit/lappi', label: 'Lomarengas' },
-  { src: '/images/hotels/fell-resort-levi.webp',         fallback: HERO.snowyForest,  sid: 'hotels_strip_fell_resort',  query: 'Levi, Finland',                accent: 'arctic-cyan' },
+  { src: '/images/hotels/fell-resort-village.webp',         fallback: HERO.snowyForest,  sid: 'hotels_strip_fell_resort',  query: 'Levi, Finland',                accent: 'arctic-cyan' },
   { src: '/images/hotels/boutique-hotel-rovaniemi.webp', fallback: HERO.huskyAurora,  sid: 'hotels_strip_boutique',     query: 'Rovaniemi, Finland',           accent: 'vibe-pink' },
-  { src: '/images/hotels/smoke-sauna-cabin-saariselka.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_smoke_sauna', query: 'Saariselkä, Finland',           accent: 'aurora-green' },
+  { src: '/images/hotels/smoke-sauna-ice.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_smoke_sauna', query: 'Saariselkä, Finland',           accent: 'aurora-green' },
 ];
 
 export default function HotelsStrip() {
