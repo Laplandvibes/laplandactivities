@@ -77,10 +77,10 @@ const d: LangData = {
     "inari": {
       "name": "Inari",
       "tagline": "Saamelaiskulttuurin sydän",
-      "description": "Yli 3 000 saaren Inarinjärven rannalla sijaitseva Suomen saamelaisten kulttuuripääkaupunki. Täällä ovat Siida-museo ja koskematon erämaa.",
+      "description": "Yli 3 000 saaren Inarijärven rannalla sijaitseva Suomen saamelaisten kulttuuripääkaupunki. Täällä ovat Siida-museo ja koskematon erämaa.",
       "access": "Lento Ivaloon (40 min ajomatka)",
       "bestFor": "Kulttuurin tutkijat ja valokuvaajat",
-      "why": "Inari on Saamelaiskäräjien kotipaikka ja paras paikka kohdata elävää saamelaiskulttuuria: aloita Siida-museosta ja jatka kesällä järviristeilylle Inarinjärven pyhän Ukonsaaren ohi. Kylä on pieni ja erämaa sen ympärillä valtava; Pielpajärven erämaakirkolle kävellään vanhan mäntymetsän halki. Inari palkitsee kulkijan, joka tulee kulttuurin, valokuvauksen ja hiljaisuuden takia."
+      "why": "Inari on Saamelaiskäräjien kotipaikka ja paras paikka kohdata elävää saamelaiskulttuuria: aloita Siida-museosta ja jatka kesällä järviristeilylle Inarijärven pyhän Ukonsaaren ohi. Kylä on pieni ja erämaa sen ympärillä valtava; Pielpajärven erämaakirkolle kävellään vanhan mäntymetsän halki. Inari palkitsee kulkijan, joka tulee kulttuurin, valokuvauksen ja hiljaisuuden takia."
     },
     "ruka": {
       "name": "Ruka ja Kuusamo",
@@ -706,7 +706,7 @@ const d: LangData = {
       "category": "Kulttuuri ja perintö"
     },
     "ina-lake-cruise": {
-      "title": "Veneristeily Inarinjärvellä",
+      "title": "Veneristeily Inarijärvellä",
       "description": "Pursehdi Suomen kolmanneksi suurimmalla järvellä, jossa on yli 3 000 saarta. Risteile pyhän Ukonsaaren ohi ja nauti upeista arktisista maisemista.",
       "highlights": [
         "3 000 saarta",
@@ -718,8 +718,8 @@ const d: LangData = {
       "category": "Kesäseikkailut"
     },
     "ina-midnight-kayak": {
-      "title": "Melonta keskiyön auringossa Inarinjärvellä",
-      "description": "Melo Inarinjärvellä keskiyön auringossa ja tutki saaria ja rantoja. Tyynelle vedelle heijastuva kultainen valo luo ainutlaatuisen tunnelman.",
+      "title": "Melonta keskiyön auringossa Inarijärvellä",
+      "description": "Melo Inarijärvellä keskiyön auringossa ja tutki saaria ja rantoja. Tyynelle vedelle heijastuva kultainen valo luo ainutlaatuisen tunnelman.",
       "highlights": [
         "Keskiyön aurinko",
         "Saarten tutkimista",

@@ -8,7 +8,7 @@ const fi: SectionCopy = {
     hero: {
       eyebrow: 'Suomen Lappi · Arktinen Norja',
       title: 'Kalastus Lapissa ja Jäämerellä',
-      sub: 'Kolme kalavesialuetta, yksi matka: ilmainen pilkkiminen jäätyneillä järvillä, luvanvaraiset kesän lohijoet ja kuningasrapusafarit Norjan rajan yli. Tässä on mitä on auki 2026 ja säännöt, jotka pitävät kalat palaamassa.',
+      sub: 'Kolme kalavesialuetta, yksi matka: ilmainen pilkkiminen jäätyneillä järvillä, luvanvaraiset kesän lohijoet ja kuningasrapusafarit Norjan rajan yli. Tässä se, mikä on auki 2026, ja säännöt, joiden ansiosta kalat palaavat.',
       ctaBook: 'Varaa opastettu pilkkiretki',
       ctaRules: 'Luvat ja säännöt →',
       trustLine: 'Tarkistettu virallisia suomalaisia (eräluvat.fi, MMM) ja norjalaisia (fiskeridir.no) lähteitä vasten. Säännöt muuttuvat vuosittain. Varmista vesialueesi ennen kalastusta.',
@@ -200,7 +200,7 @@ const fi: SectionCopy = {
         },
         {
           q: 'Voinko tuoda saaliini kotiin Norjasta?',
-          a: 'Vain rekisteröidyn turistikalastusleirin kautta. Vientiraja on 15 kg henkilöä kohti, kahdesti kalenterivuodessa 2026 (pudoten 10 kiloon 1. tammikuuta 2027 alkaen), saaliin on tultava Kalastusdirektoraatille rekisteröidyn yrityksen kautta, ja vähimmäisikä on 12 vuotta. Päivän ilmainen kalastus paikan päällä syötäväksi on sallittua; itse pyytämäsi kalan vieminen ei (fiskeridir.no).',
+          a: 'Vain rekisteröidyn turistikalastusleirin kautta. Vientiraja on 15 kg henkilöä kohti, kahdesti kalenterivuodessa 2026 (1. tammikuuta 2027 alkaen raja on 10 kg), saaliin on tultava Kalastusdirektoraatille rekisteröidyn yrityksen kautta, ja vähimmäisikä on 12 vuotta. Päivän ilmainen kalastus paikan päällä syötäväksi on sallittua; itse pyytämäsi kalan vieminen ei (fiskeridir.no).',
         },
         {
           q: 'Voinko pyytää kuningasrapua itse?',
@@ -348,7 +348,7 @@ const fi: SectionCopy = {
     seasonsLead: 'Jokainen vuodenaika muuttaa Lapin eri maaksi.',
     seasons: [
       { name: 'Talvi', months: 'marras – maalis', blurb: 'Paksu lumi, kaamos, parhaat revontulet. Moottorikelkat, huskyt, savusaunat.', temp: '-15…-5°C' },
-      { name: 'Kevät', months: 'huhti – touko', blurb: 'Lunta ja päivänvaloa. Kevätlasketteluja, poron vasominen, revontulia huhtikuun puoliväliin.', temp: '-5…+5°C' },
+      { name: 'Kevät', months: 'huhti – touko', blurb: 'Lunta ja päivänvaloa. Kevätlaskettelua, poron vasomista, revontulia huhtikuun puoliväliin.', temp: '-5…+5°C' },
       { name: 'Kesä', months: 'kesä – elo', blurb: 'Keskiyön aurinko ei laske. Vaellus, melonta, lohenkalastus, maastopyöräily.', temp: '+10…+25°C' },
       { name: 'Syksy', months: 'syys – loka', blurb: 'Ruska värittää tunturit. Ensimmäiset revontulet palaavat. Sienien ja marjojen kausi.', temp: '+5…-5°C' },
     ],
@@ -495,7 +495,7 @@ const fi: SectionCopy = {
       ],
       inari: [
         { tip: 'Siida-museoon tarvitaan vähintään kolme tuntia. Lue myös saamenkielinen siipi.', icon: '🏛️' },
-        { tip: 'Inarinjärven veneretket vain kesä–syyskuussa.', icon: '⛵' },
+        { tip: 'Inarijärven veneretket vain kesä–syyskuussa.', icon: '⛵' },
         { tip: 'Lakkasesonki huipussaan heinäkuun lopussa Pielpajärven polulla.', icon: '🫐' },
       ],
       ruka: [

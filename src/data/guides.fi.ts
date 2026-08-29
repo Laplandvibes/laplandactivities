@@ -110,7 +110,7 @@ const guides: Guides = {
     'northern-lights': {
       coversTitle: 'Näin revontuliretki toimii Lapissa',
       covers: 'Revontuliretket ovat täällä jahteja eivätkä katselupaikkoja: opas seuraa pilviennustetta ja aktiivisuusindeksiä ja ajaa siihen aukkoon taivaalla, joka näyttää sinä iltana parhaalta. Muodot eroavat enemmän kuin kohteet: bussiretkiä, kuvausiltoja, lumikenkäkävelyjä ja kelkka-ajoja, jotka vievät jäätyneelle järvelle kauas valoista.',
-      whenToGo: 'Kausi kulkee suunnilleen syyskuusta huhtikuuhun ja vaatii kolme asiaa yhtä aikaa: pimeyden, selkeän taivaan ja auringon aktiivisuutta. Syksy antaa avoimen veden heijastuksiin ennen järvien jäätymistä, keskitalvi pisimmät pimeät tunnit. Yksi ilta ei takaa mitään, mikä on vahvin peruste varata matkalle kaksi tai kolme yritystä.',
+      whenToGo: 'Kausi kulkee suunnilleen syyskuusta huhtikuuhun ja vaatii kolme asiaa yhtä aikaa: pimeyden, selkeän taivaan ja auringon aktiivisuutta. Syksy antaa avointa vettä heijastuksiin ennen järvien jäätymistä, keskitalvi pisimmät pimeät tunnit. Yksi ilta ei takaa mitään, mikä on vahvin peruste varata matkalle kaksi tai kolme yritystä.',
       chooseTitle: 'Revontuliretken valinta',
       choosing: 'Kuvausretki kannattaa, jos haluat kuvat: opas säätää kamerasi ja tietää valotusajat. Bussiretket kattavat eniten maastoa ja antavat parhaat mahdollisuudet hintaan nähden, kun sää on epävakaa. Lumikenkä- ja kelkkaretket vaihtavat osan liikkuvuudesta parempaan ja hiljaisempaan paikkaan. Pohjoisilla kohteilla, kuten Saariselällä ja Inarissa, taivas on pimeämpi kuin hiihtokeskuksissa.',
       bring: 'Seisot paikallasi ulkona tuntikausia, joten pukeudu paljon lämpimämmin kuin aktiiviseen päivään: haalarit, jos operaattori antaa, villa-alusvaatteet, kahdet sukat ja lämpötyynyt. Jalusta ja varaparistot merkitsevät enemmän kuin kallis kamera; pakkanen tyhjentää akut nopeasti. Pidä valkoinen taskulamppu sammuksissa, se pilaa hämäränäön kaikilta.',
@@ -125,7 +125,7 @@ const guides: Guides = {
     },
     wellness: {
       coversTitle: 'Sauna ja arktinen hyvinvointi',
-      covers: 'Hyvinvointi tarkoittaa Lapissa kuumaa ja kylmää peräkkäin eikä hoitohuoneita. Kiilopään perinteistä savusaunaa lämmitetään tuntikausia ja se tuuletetaan ennen käyttöä, mistä syntyy pehmeä löyly, jota sähkökiuas ei anna, ja perään mennään avantoon. Arktinen kelluminen puetaan pelastuspukuun ja annetaan ajelehtia.',
+      covers: 'Hyvinvointi tarkoittaa Lapissa kuumaa ja kylmää peräkkäin eikä hoitohuoneita. Kiilopään perinteistä savusaunaa lämmitetään tuntikausia ja se tuuletetaan ennen käyttöä, mistä syntyy pehmeä löyly, jota sähkökiuas ei anna, ja perään mennään avantoon. Arktisessa kellunnassa pukeudutaan pelastuspukuun ja annetaan veden kannatella.',
       whenToGo: 'Molemmat pyörivät ympäri vuoden, mutta luonteeltaan ne ovat talvikokemuksia: avantouinti vaatii jäähän sahatun aukon, ja kelluminen toimii parhaiten, kun ympärillä on jäätä. Savusaunan lämmitys kestää tunteja, joten se toimii kiinteillä vuoroilla eikä pyynnöstä, ja iltapäivävuoro on se, joka kannattaa varata.',
       chooseTitle: 'Saunaelämyksen valinta',
       choosing: 'Savusauna on perinteinen versio ja se, jonka ympärille kannattaa suunnitella päivä. Avantouinti on vapaaehtoista joka paikassa, jossa se on tarjolla, eikä kukaan työnnä sinua sisään. Kelluminen sopii niille, jotka haluavat kylmän veden ilman uintia, sillä puku pitää kuivana ja riittävän lämpimänä hetkeksi.',
@@ -134,7 +134,7 @@ const guides: Guides = {
     culture: {
       coversTitle: 'Saamelaisperintö, joulupukki ja arktinen tarina',
       covers: 'Kategoriassa kulkee kaksi juonnetta. Toinen on saamelaiskulttuuri, jonka kohtaa parhaiten Inarin Siidassa, saamelaismuseossa ja luontokeskuksessa Suomen saamelaiskäräjien kotipaikassa, sekä Levin Samilandissa. Toinen on arktinen tarina, jota alue kertoo itsestään: Joulupukin Pajakylä ja SantaPark Rovaniemellä, Arktikum joen rannalla ja jäästä rakennetut kohteet.',
-      whenToGo: 'Museot ovat auki ympäri vuoden ja käyttävät parhaiten huonon sään päivän tai lyhyen keskitalven iltapäivän. Lumihotellit ja lumikylät ovat olemassa vain kylmällä, suunnilleen joulukuusta huhtikuuhun. Tankavaaran kullanhuuhdonta ja Lampivaaran ametistikaivos toimivat molempina kausina, talvella kaivokselle vie lämmitetty lumijuna.',
+      whenToGo: 'Museot ovat auki ympäri vuoden ja sopivat parhaiten huonon sään päivään tai lyhyeen keskitalven iltapäivään. Lumihotellit ja lumikylät ovat olemassa vain kylmällä, suunnilleen joulukuusta huhtikuuhun. Tankavaaran kullanhuuhdonta ja Lampivaaran ametistikaivos toimivat molempina kausina, talvella kaivokselle vie lämmitetty lumijuna.',
       chooseTitle: 'Kulttuurikohteen valinta',
       choosing: 'Jos haluat elävää kulttuuria etkä esitystä, aloita Siidasta ja Inarin oikeasta poronhoitovierailusta äläkä ohjelmanumerosta. Lasten kanssa liikkuvalle Joulupukin Pajakylä ja SantaPark on rakennettu juuri heitä varten. Arktikumissa on maan vahvin revontulinäyttely, ja se toimii sisäpäivän puolikkaana.',
       bring: 'Museot vaativat vain aikaa, ja Siida ansaitsee vähintään kolme tuntia. Lumihotelleissa ja lumikylissä on sisälläkin pakkasta, joten pidä ulkovaatteet päällä vierailun ajan. Tankavaarassa kaikki huuhtomasi jää sinulle, ja Lampivaarassa saat kaivaa ja pitää yhden ametistin.',
