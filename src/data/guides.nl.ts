@@ -65,7 +65,7 @@ const guides: Guides = {
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda en Kemi per seizoen',
-      seasonWinter: 'Hier bouwt de winter in plaats van alleen te bedekken. Het SnowCastle in Kemi wordt elke winter opnieuw opgetrokken, en de ijsbreker Sampo vaart de bevroren Botnische Golf op en laat passagiers in overlevingspakken tussen de ijsschotsen drijven. Geen van beide bestaat in de zomer, waardoor dit de enige Laplandse bestemming is waarvan de hoofdattracties strikt seizoensgebonden zijn.',
+      seasonWinter: 'Hier bouwt de winter in plaats van alleen te bedekken. Het sneeuwpark van het SnowCastle-terrein in Kemi wordt elke winter opnieuw opgetrokken, en de ijsbreker Sampo vaart de bevroren Botnische Golf op en laat passagiers in overlevingspakken tussen de ijsschotsen drijven. Geen van beide bestaat in de zomer, waardoor dit de enige Laplandse bestemming is waarvan de hoofdattracties strikt seizoensgebonden zijn.',
       seasonSummer: 'De zomer is van de rivier. De Tornionjoki is de grootste vrij stromende zalmrivier van Europa, en bij de stroomversnellingen van Kukkolankoski wordt elke zomer nog traditioneel met het schepnet gevist. Green Zone Golf stuurt u heen en weer over de grens: vier keer van land en tijdzone wisselen in één ronde, wat alleen lukt op sneeuwvrije grond.',
       planTitle: 'Een reis naar Tornio plannen',
       planGetting: 'De luchthaven Kemi ligt een kwartier van Tornio, en Kemi zelf ongeveer vijfentwintig minuten, dus de twee steden werken als één reis. Tornio en Haparanda zijn één stad in twee landen: de grens loopt midden door de winkelstraat en u steekt hem te voet over.',

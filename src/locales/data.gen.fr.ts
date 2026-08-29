@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "La ville frontière entre la Finlande et la Suède, point d'accès à des expériences arctiques uniques. Croisière sur le mythique brise-glace Sampo, plus grand château de neige au monde et meilleure rivière à saumon d'Europe.",
       "access": "Vol vers Kemi (15 min en voiture)",
       "bestFor": "Expériences uniques et plaisirs en famille",
-      "why": "Tornio et Haparanda ne font qu’une ville dans deux pays : on franchit la frontière à pied en pleine rue commerçante, IKEA Haparanda est juste à côté du passage, et une partie de golf change quatre fois de pays et de fuseau horaire. Kemi, à 25 minutes, ajoute la croisière du brise-glace Sampo et le SnowCastle reconstruit chaque hiver. Sur le Tornionjoki, plus grand fleuve à saumons libre d’Europe, les rapides de Kukkolankoski perpétuent chaque été la pêche traditionnelle au filet."
+      "why": "Tornio et Haparanda ne font qu’une ville dans deux pays : on franchit la frontière à pied en pleine rue commerçante, IKEA Haparanda est juste à côté du passage, et une partie de golf change quatre fois de pays et de fuseau horaire. Kemi, à 25 minutes, ajoute la croisière du brise-glace Sampo et le parc de neige hivernal du domaine SnowCastle. Sur le Tornionjoki, plus grand fleuve à saumons libre d’Europe, les rapides de Kukkolankoski perpétuent chaque été la pêche traditionnelle au filet."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -863,7 +863,7 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "Le plus grand château de neige au monde, reconstruit chaque hiver à Kemi. Parcourez les halls de glace, visitez la chapelle de glace et dînez au restaurant de glace.",
+      "description": "La célèbre tradition du château de neige de Kemi se poursuit avec le SnowCastle Winter Park et le monde de neige intérieur SnowExperience365, ouvert toute l’année, avec sculptures et restaurant de glace. Le château complet n’est plus reconstruit chaque année.",
       "highlights": [
         "Le plus grand au monde",
         "Restaurant de glace",

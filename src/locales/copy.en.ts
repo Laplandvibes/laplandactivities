@@ -263,7 +263,7 @@ const en: SectionCopy = {
       ],
       tornio: [
         { tip: 'Icebreaker Sampo runs Dec–Apr only. Book the moment dates open.', icon: '🚢' },
-        { tip: 'SnowCastle is rebuilt annually with a new theme.', icon: '🏰' },
+        { tip: "The SnowCastle Area's snow park is rebuilt each winter; SnowExperience365 runs year-round.", icon: '🏰' },
         { tip: 'Green Zone Golf crosses the Finland-Sweden border mid-round.', icon: '⛳' },
         { tip: 'Sweden is an hour behind Finland: shops in Haparanda open "late" and close "late".', icon: '🕐' },
       ],

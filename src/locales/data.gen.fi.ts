@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Suomen ja Ruotsin rajakaupunki ja portti ainutlaatuisiin arktisiin elämyksiin. Legendaarinen Sampo-jäänmurtajaristeily, maailman suurin lumilinna ja Euroopan suurin vapaana virtaava lohijoki.",
       "access": "Lento Kemiin (15 min ajomatka)",
       "bestFor": "Ainutlaatuiset elämykset ja perhematkat",
-      "why": "Tornio ja Haaparanta ovat yksi kaupunki kahdessa maassa: rajan ylittää kävellen keskellä kauppakatua, IKEA Haaparanta on heti ylityksen vieressä, ja golfkierros vaihtaa maata ja aikavyöhykettä neljästi. Kemi lisää 25 minuutin päähän Sampo-jäänmurtajan risteilyt ja joka talvi uudelleen rakennettavan Lumilinnan. Tornionjoella, Euroopan suurimmalla vapaana virtaavalla lohijoella, Kukkolankosken lippousperinne elää yhä joka kesä."
+      "why": "Tornio ja Haaparanta ovat yksi kaupunki kahdessa maassa: rajan ylittää kävellen keskellä kauppakatua, IKEA Haaparanta on heti ylityksen vieressä, ja golfkierros vaihtaa maata ja aikavyöhykettä neljästi. Kemi lisää 25 minuutin päähän Sampo-jäänmurtajan risteilyt ja LumiLinnan alueen talvipuiston. Tornionjoella, Euroopan suurimmalla vapaana virtaavalla lohijoella, Kukkolankosken lippousperinne elää yhä joka kesä."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -923,7 +923,7 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "Kemin LumiLinna",
-      "description": "Maailman suurin lumilinna, joka rakennetaan joka talvi uudelleen Kemiin. Kävele jäisten salien läpi, vieraile jääkappelissa ja ruokaile jääravintolassa.",
+      "description": "Kemin kuuluisa lumilinnaperinne jatkuu LumiLinnan talvipuistona ja ympärivuotisena SnowExperience365-sisälumimaailmana: jääveistoksia ja jääravintola. Täyttä linnaa ei enää rakenneta vuosittain.",
       "highlights": [
         "Maailman suurin",
         "Jääravintola",

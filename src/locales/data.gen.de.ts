@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Kreuzfahrt auf dem Eisbrecher Sampo, dem größten Schneeschloss der Welt und dem besten Lachsfluss Europas.",
       "access": "Flug nach Kemi (15 Min. mit dem Auto)",
       "bestFor": "Einzigartige Erlebnisse und Familienspaß",
-      "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und das jeden Winter neu gebaute SnowCastle. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Netz gefischt."
+      "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und den winterlichen Schneepark des SnowCastle-Areals. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Netz gefischt."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",

@@ -65,7 +65,7 @@ const guides: Guides = {
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda e Kemi stagione per stagione',
-      seasonWinter: 'Qui l\'inverno costruisce invece di limitarsi a coprire. Lo SnowCastle di Kemi viene rifatto da zero ogni inverno, e il rompighiaccio Sampo esce nel golfo di Botnia ghiacciato e lascia i passeggeri galleggiare in tuta di sopravvivenza fra le lastre. Nessuno dei due esiste d\'estate, il che fa di questa la sola destinazione lappone le cui attrazioni principali siano rigorosamente stagionali.',
+      seasonWinter: 'Qui l\'inverno costruisce invece di limitarsi a coprire. Il parco di neve dell\'area SnowCastle di Kemi viene rifatto da zero ogni inverno, e il rompighiaccio Sampo esce nel golfo di Botnia ghiacciato e lascia i passeggeri galleggiare in tuta di sopravvivenza fra le lastre. Nessuno dei due esiste d\'estate, il che fa di questa la sola destinazione lappone le cui attrazioni principali siano rigorosamente stagionali.',
       seasonSummer: 'L\'estate appartiene al fiume. Il Tornionjoki è il più grande fiume da salmone a corso libero d\'Europa, e alle rapide di Kukkolankoski la pesca tradizionale con il guadino si pratica ancora ogni estate. Il Green Zone Golf le fa attraversare il confine avanti e indietro: quattro cambi di Paese e di fuso in un giro, cosa che funziona solo con il terreno libero dalla neve.',
       planTitle: 'Organizzare un viaggio a Tornio',
       planGetting: 'L\'aeroporto di Kemi dista un quarto d\'ora da Tornio, e Kemi stessa circa venticinque minuti, quindi le due città funzionano come un viaggio solo. Tornio e Haparanda sono una città in due Paesi: il confine passa in mezzo alla via dello shopping e si attraversa a piedi.',

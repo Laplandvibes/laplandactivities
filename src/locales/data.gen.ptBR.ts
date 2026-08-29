@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "A cidade fronteiriça entre Finlândia e Suécia, porta de entrada para experiências árticas únicas. Cruzeiro no lendário quebra-gelo Sampo, o maior castelo de neve do mundo e o maior rio de salmão de fluxo livre da Europa.",
       "access": "Voo para Kemi (15 min de carro)",
       "bestFor": "Experiências únicas e diversão em família",
-      "why": "Tornio e Haparanda são uma cidade em dois países: atravessa-se a fronteira a pé no meio da rua comercial, a IKEA Haparanda fica junto à travessia e uma rodada de golfe muda de país e de fuso quatro vezes. Kemi, a 25 minutos, soma o cruzeiro do quebra-gelo Sampo e o SnowCastle reconstruído a cada inverno. No Tornionjoki, o maior rio de salmão de curso livre da Europa, as corredeiras de Kukkolankoski mantêm viva a pesca tradicional com rede todo verão."
+      "why": "Tornio e Haparanda são uma cidade em dois países: atravessa-se a fronteira a pé no meio da rua comercial, a IKEA Haparanda fica junto à travessia e uma rodada de golfe muda de país e de fuso quatro vezes. Kemi, a 25 minutos, soma o cruzeiro do quebra-gelo Sampo e o parque de neve de inverno da área do SnowCastle. No Tornionjoki, o maior rio de salmão de curso livre da Europa, as corredeiras de Kukkolankoski mantêm viva a pesca tradicional com rede todo verão."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -863,7 +863,7 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "O maior castelo de neve do mundo, reconstruído a cada inverno em Kemi. Caminhe pelos salões de gelo, visite a capela de gelo e jante no restaurante de gelo.",
+      "description": "A famosa tradição do castelo de neve de Kemi continua como o SnowCastle Winter Park e o mundo de neve coberto SnowExperience365, aberto o ano todo, com esculturas e restaurante de gelo. O castelo completo não é mais reconstruído todos os anos.",
       "highlights": [
         "O maior do mundo",
         "Restaurante de gelo",

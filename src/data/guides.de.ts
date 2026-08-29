@@ -65,7 +65,7 @@ const guides: Guides = {
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda und Kemi Saison für Saison',
-      seasonWinter: 'Hier baut der Winter, statt nur zu bedecken. Das SnowCastle in Kemi wird jeden Winter neu errichtet, und der Eisbrecher Sampo fährt hinaus in den zugefrorenen Bottnischen Meerbusen und lässt seine Gäste im Überlebensanzug zwischen den Eisschollen treiben. Beides existiert im Sommer nicht, damit ist dies das einzige Ziel Lapplands, dessen Hauptattraktionen streng saisonal sind.',
+      seasonWinter: 'Hier baut der Winter, statt nur zu bedecken. Der Schneepark des SnowCastle-Areals in Kemi wird jeden Winter neu errichtet, und der Eisbrecher Sampo fährt hinaus in den zugefrorenen Bottnischen Meerbusen und lässt seine Gäste im Überlebensanzug zwischen den Eisschollen treiben. Beides existiert im Sommer nicht, damit ist dies das einzige Ziel Lapplands, dessen Hauptattraktionen streng saisonal sind.',
       seasonSummer: 'Der Sommer gehört dem Fluss. Der Tornionjoki ist der größte frei fließende Lachsfluss Europas, und an den Stromschnellen von Kukkolankoski wird jeden Sommer noch traditionell mit dem Kescher gefischt. Green Zone Golf schickt Sie über die Grenze hin und her, viermal Land- und Zeitzonenwechsel pro Runde, was nur bei schneefreiem Boden funktioniert.',
       planTitle: 'Eine Reise nach Tornio planen',
       planGetting: 'Vom Flughafen Kemi sind es etwa fünfzehn Minuten nach Tornio, und Kemi selbst liegt rund fünfundzwanzig Minuten entfernt, beide Städte lassen sich also als eine Reise behandeln. Tornio und Haparanda sind eine Stadt in zwei Ländern: Die Grenze verläuft mitten durch die Einkaufsstraße und wird zu Fuß überquert.',

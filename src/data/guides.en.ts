@@ -68,7 +68,7 @@ const guides: Guides = {
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda and Kemi season by season',
-      seasonWinter: 'Winter here builds things rather than just covers them. The SnowCastle in Kemi is rebuilt from scratch every winter, and the Icebreaker Sampo cruises out into the frozen Gulf of Bothnia and lets passengers float in survival suits between the ice floes. Neither exists in summer, which makes this the one Lapland destination whose headline attractions are strictly seasonal.',
+      seasonWinter: 'Winter here builds things rather than just covers them. The snow park at the Kemi SnowCastle Area is built from scratch every winter, and the Icebreaker Sampo cruises out into the frozen Gulf of Bothnia and lets passengers float in survival suits between the ice floes. Neither exists in summer, which makes this the one Lapland destination whose headline attractions are strictly seasonal.',
       seasonSummer: 'Summer belongs to the river. The Tornionjoki is the largest free-flowing salmon river in Europe, and at the Kukkolankoski rapids traditional net fishing still runs each summer. Green Zone Golf sends you back and forth across the border, changing country and time zone four times in a round, which only works while the ground is clear.',
       planTitle: 'Planning a Tornio trip',
       planGetting: 'Kemi airport is about fifteen minutes from Tornio, and Kemi itself is roughly twenty-five minutes away, so the two towns work as one trip. Tornio and Haparanda are a single town in two countries: the border runs through the middle of the shopping street and you cross it on foot.',

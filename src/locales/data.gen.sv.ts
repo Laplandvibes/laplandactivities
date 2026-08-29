@@ -863,7 +863,7 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "Världens största snöslott, som byggs om varje vinter i Kemi. Vandra genom salar av is, besök iskapellet och ät middag i isrestaurangen.",
+      "description": "Kemis berömda snöslottstradition lever vidare som SnowCastle Winter Park och den åretruntöppna inomhussnövärlden SnowExperience365, med isskulpturer och isrestaurang. Det fulla slottet byggs inte längre varje år.",
       "highlights": [
         "Världens största",
         "Isrestaurang",

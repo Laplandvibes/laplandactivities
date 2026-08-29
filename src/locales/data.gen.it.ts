@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Città di confine tra Finlandia e Svezia, porta d'ingresso a esperienze artiche uniche. Crociera sul leggendario rompighiaccio Sampo, il più grande castello di neve al mondo e il miglior fiume di salmoni d'Europa.",
       "access": "Volo a Kemi (15 min in auto)",
       "bestFor": "Esperienze uniche e divertimento per famiglie",
-      "why": "Tornio e Haparanda sono una sola città in due Paesi: si attraversa il confine a piedi in mezzo alla via dello shopping, IKEA Haparanda è accanto al valico e un giro di golf cambia Paese e fuso orario quattro volte. Kemi, a 25 minuti, aggiunge la crociera sul rompighiaccio Sampo e lo SnowCastle ricostruito ogni inverno. Sul Tornionjoki, il più grande fiume da salmoni a corso libero d’Europa, alle rapide di Kukkolankoski si pesca ancora con la rete tradizionale ogni estate."
+      "why": "Tornio e Haparanda sono una sola città in due Paesi: si attraversa il confine a piedi in mezzo alla via dello shopping, IKEA Haparanda è accanto al valico e un giro di golf cambia Paese e fuso orario quattro volte. Kemi, a 25 minuti, aggiunge la crociera sul rompighiaccio Sampo e il parco di neve invernale dell’area SnowCastle. Sul Tornionjoki, il più grande fiume da salmoni a corso libero d’Europa, alle rapide di Kukkolankoski si pesca ancora con la rete tradizionale ogni estate."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -863,7 +863,7 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "Il più grande castello di neve al mondo, ricostruito ogni inverno a Kemi. Cammini per le sale di ghiaccio, visiti la cappella di ghiaccio e ceni nel ristorante di ghiaccio.",
+      "description": "La celebre tradizione del castello di neve di Kemi continua con lo SnowCastle Winter Park e il mondo di neve al coperto SnowExperience365, aperto tutto l’anno, con sculture e ristorante di ghiaccio. Il castello completo non viene più ricostruito ogni anno.",
       "highlights": [
         "Il più grande al mondo",
         "Ristorante di ghiaccio",

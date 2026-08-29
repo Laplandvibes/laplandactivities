@@ -65,7 +65,7 @@ const guides: Guides = {
     },
     tornio: {
       seasonsTitle: 'Torneå, Haparanda och Kemi säsong för säsong',
-      seasonWinter: 'Här bygger vintern i stället för att bara täcka. SnowCastle i Kemi byggs upp från grunden varje vinter, och isbrytaren Sampo går ut i den frusna Bottenviken och låter passagerarna flyta i räddningsdräkt mellan isflaken. Inget av dem finns på sommaren, vilket gör det här till det enda resmålet i Lappland vars huvudattraktioner är strikt säsongsbundna.',
+      seasonWinter: 'Här bygger vintern i stället för att bara täcka. Snöparken vid SnowCastle-området i Kemi byggs upp från grunden varje vinter, och isbrytaren Sampo går ut i den frusna Bottenviken och låter passagerarna flyta i räddningsdräkt mellan isflaken. Inget av dem finns på sommaren, vilket gör det här till det enda resmålet i Lappland vars huvudattraktioner är strikt säsongsbundna.',
       seasonSummer: 'Sommaren tillhör älven. Torne älv är Europas största fritt strömmande laxälv, och vid Kukkolaforsen pågår det traditionella håvfisket fortfarande varje sommar. Green Zone Golf skickar dig fram och tillbaka över gränsen: fyra byten av land och tidszon på en runda, vilket bara fungerar på snöfri mark.',
       planTitle: 'Planera en resa till Torneå',
       planGetting: 'Kemi flygplats ligger en kvart från Torneå, och Kemi självt ungefär tjugofem minuter bort, så de två städerna fungerar som en enda resa. Torneå och Haparanda är en stad i två länder: gränsen går mitt genom affärsgatan och passeras till fots.',

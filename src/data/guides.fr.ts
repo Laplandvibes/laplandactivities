@@ -65,7 +65,7 @@ const guides: Guides = {
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda et Kemi saison par saison',
-      seasonWinter: 'Ici, l\'hiver construit au lieu de simplement recouvrir. Le SnowCastle de Kemi est rebâti de zéro chaque hiver, et le brise-glace Sampo sort dans le golfe de Botnie gelé et laisse ses passagers flotter en combinaison de survie entre les plaques de glace. Ni l\'un ni l\'autre n\'existe l\'été, ce qui fait de cette destination la seule de Laponie dont les attractions phares soient strictement saisonnières.',
+      seasonWinter: 'Ici, l\'hiver construit au lieu de simplement recouvrir. Le parc de neige du domaine SnowCastle de Kemi est rebâti de zéro chaque hiver, et le brise-glace Sampo sort dans le golfe de Botnie gelé et laisse ses passagers flotter en combinaison de survie entre les plaques de glace. Ni l\'un ni l\'autre n\'existe l\'été, ce qui fait de cette destination la seule de Laponie dont les attractions phares soient strictement saisonnières.',
       seasonSummer: 'L\'été appartient au fleuve. Le Tornionjoki est le plus grand fleuve à saumons à cours libre d\'Europe, et aux rapides de Kukkolankoski la pêche traditionnelle à l\'épuisette a toujours lieu chaque été. Le Green Zone Golf vous fait franchir la frontière plusieurs fois : quatre changements de pays et de fuseau horaire dans un parcours, ce qui ne marche que sur un sol dégagé.',
       planTitle: 'Préparer un séjour à Tornio',
       planGetting: 'L\'aéroport de Kemi est à un quart d\'heure de Tornio, et Kemi elle-même à environ vingt-cinq minutes : les deux villes se visitent comme un seul séjour. Tornio et Haparanda forment une ville en deux pays : la frontière passe au milieu de la rue commerçante et se franchit à pied.',

@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Ciudad fronteriza entre Finlandia y Suecia, puerta de entrada a experiencias árticas únicas. Crucero en el legendario rompehielos Sampo, el mayor castillo de nieve del mundo y el mejor río de salmón de Europa.",
       "access": "Vuelo a Kemi (15 min en coche)",
       "bestFor": "Experiencias únicas y diversión para familias",
-      "why": "Tornio y Haparanda son una ciudad en dos países: se cruza la frontera a pie en plena calle comercial, IKEA Haparanda está junto al paso y una ronda de golf cambia de país y de zona horaria cuatro veces. Kemi, a 25 minutos, añade el crucero del rompehielos Sampo y el SnowCastle reconstruido cada invierno. En el Tornionjoki, el mayor río salmonero de flujo libre de Europa, los rápidos de Kukkolankoski mantienen viva la pesca tradicional con red cada verano."
+      "why": "Tornio y Haparanda son una ciudad en dos países: se cruza la frontera a pie en plena calle comercial, IKEA Haparanda está junto al paso y una ronda de golf cambia de país y de zona horaria cuatro veces. Kemi, a 25 minutos, añade el crucero del rompehielos Sampo y el parque de nieve invernal del recinto SnowCastle. En el Tornionjoki, el mayor río salmonero de flujo libre de Europa, los rápidos de Kukkolankoski mantienen viva la pesca tradicional con red cada verano."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -863,7 +863,7 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "El mayor castillo de nieve del mundo, reconstruido cada invierno en Kemi. Recorra las salas de hielo, visite la capilla de hielo y cene en el restaurante de hielo.",
+      "description": "La famosa tradición del castillo de nieve de Kemi continúa como el SnowCastle Winter Park y el mundo de nieve cubierto SnowExperience365, abierto todo el año, con esculturas y restaurante de hielo. El castillo completo ya no se construye cada año.",
       "highlights": [
         "El mayor del mundo",
         "Restaurante de hielo",
