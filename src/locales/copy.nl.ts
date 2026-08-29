@@ -258,7 +258,7 @@ const nl: SectionCopy = {
     highlights: [
       { title: 'Fjell-wandeling', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, lange dagen, geen drukte.' },
       { title: 'Kajak en SUP', body: 'Eilanden van het Inari-meer, meren onder de middernachtszon, spiegelglad water tot 1 uur \'s nachts.' },
-      { title: 'Zalmvliegvissen', body: 'De zalmtrek op de Tornionjoki en de Teno piekt in juni-juli.' },
+      { title: 'Zalmvliegvissen', body: 'De zalmtrek op de Tornionjoki piekt in juni-juli.' },
       { title: 'Middernachtszon-tours', body: 'Fotografie, foerageren, fjell-mountainbiken, 24 uur daglicht.' },
     ],
     gygTitle: 'De meest geboekte Lapland-tours van dit moment', gygEyebrow: 'Nu boekbaar · Gratis annuleren',
@@ -435,7 +435,7 @@ const nl: SectionCopy = {
       ],
       tornio: [
         { tip: 'De ijsbreker Sampo vaart alleen van december tot april, boek zodra de data openen.', icon: '🚢' },
-        { tip: 'Het SnowCastle wordt jaarlijks met een nieuw thema herbouwd.', icon: '🏰' },
+        { tip: 'Het sneeuwpark van het SnowCastle-gebied wordt elke winter opnieuw gebouwd; SnowExperience365 is het hele jaar open.', icon: '🏰' },
         { tip: 'De Green Zone Golf kruist de Finland-Zweden-grens midden in de ronde.', icon: '⛳' },
         { tip: 'Zweden loopt een uur achter op Finland: winkels in Haparanda openen en sluiten "laat".', icon: '🕐' },
       ],

@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const de: SectionCopy = {
   fishing: {
     metaTitle: 'Angeln in Lappland & im Nordmeer | LaplandActivities',
-    metaDescription: 'Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und norwegische Königskrabben-Safaris: mit den Regeln, Gebühren und offiziellen Genehmigungslinks für 2026, die Sie vor dem ersten Wurf brauchen.',
+    metaDescription: 'Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris: die Regeln, Gebühren und offiziellen Genehmigungslinks für 2026.',
     verifyBanner: 'Die Vorschriften ändern sich jedes Jahr. Prüfen Sie die offiziellen Genehmigungsbedingungen vor dem Angeln. Jede Zahl unten nennt und verlinkt ihre Quelle.',
     hero: {
       eyebrow: 'Finnisch-Lappland · Arktisches Norwegen',
@@ -27,7 +27,7 @@ const de: SectionCopy = {
     },
     eco: {
       title: 'Die Fische zuerst',
-      lead: 'Lapplands Gewässer stehen unter echtem Druck, und die Regeln spiegeln das wider. Vier kurze Geschichten erklären, warum manche Flüsse weit offen und andere geschlossen sind, und warum "Fangen und Zurücksetzen" auf fast jeder Karte unten auftaucht.',
+      lead: 'Lapplands Gewässer stehen unter echtem Druck, und die Regeln spiegeln das wider. Vier kurze Geschichten erklären, warum manche Flüsse weit offen und andere geschlossen sind, und warum „Fangen und Zurücksetzen“ auf fast jeder Karte unten auftaucht.',
       stories: [
         {
           title: 'Der Zusammenbruch des Teno-Lachses',
@@ -68,7 +68,7 @@ const de: SectionCopy = {
         {
           name: 'Teno / Tana',
           badge: 'Lachs gesperrt 2026',
-          body: 'Das Atlantiklachs-Angeln im Hauptlauf des Teno ist für 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Teno-Abkommen zwischen Finnland und Norwegen. Planen Sie hier keine Lachsreise. Andere Arten (Äsche, Felchen, Forelle) können Sie weiterhin mit der Genehmigung "für andere Arten" zu 20 €/Tag befischen, nur mit leichtem Fliegengerät, ausschließlich über den offiziellen Shop tenonkalaluvat.fi erhältlich. Status laut valtioneuvosto.fi und tenonkalatalousalue.fi.',
+          body: 'Das Atlantiklachs-Angeln im Hauptlauf des Teno ist für 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Teno-Abkommen zwischen Finnland und Norwegen. Planen Sie hier keine Lachsreise. Andere Arten (Äsche, Felchen, Forelle) können Sie weiterhin mit der Genehmigung „für andere Arten“ zu 20 €/Tag befischen, nur mit leichtem Fliegengerät, ausschließlich über den offiziellen Shop tenonkalaluvat.fi erhältlich. Status laut valtioneuvosto.fi und tenonkalatalousalue.fi.',
           crNote: 'Lachs und Seesaibling sind von der Genehmigung für andere Arten ausgeschlossen; einen versehentlich gefangenen Lachs freizulassen ist Pflicht, keine Wahl.',
           officialLabel: 'Genehmigung: tenonkalaluvat.fi',
         },
@@ -148,7 +148,7 @@ const de: SectionCopy = {
     teno: {
       title: 'Der Teno im Detail',
       body: 'Der Teno (Tenojoki / Tana) ist ein Grenzfluss zwischen Finnland und Norwegen mit einem eigenen bilateralen Quotensystem. Das Atlantiklachs-Angeln ist für die Saison 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Protokoll des Teno-Fischereiabkommens, ein Verbot, das seit 2021 gilt und jedes Jahr neu entschieden wird. (Eine Nebengewässer-Verordnung 2026, 367/2026, regelt die Seitengewässer ab dem 1. Juni.) Status laut valtioneuvosto.fi und tenonkalatalousalue.fi.',
-      whatYouCan: 'Was Sie tun können: Kaufen Sie die "Angellizenz für andere Arten", 20 €/Tag für Erwachsene, 10 €/Tag für unter 18-Jährige, für Äsche, Felchen und Forelle, nur mit leichtem Fliegengerät, gültig vom 10. Juni bis 20. August 2026, plus die staatliche Abgabe. Lachs und Seesaibling sind ausgeschlossen.',
+      whatYouCan: 'Was Sie tun können: Kaufen Sie die „Angellizenz für andere Arten“, 20 €/Tag für Erwachsene, 10 €/Tag für unter 18-Jährige, für Äsche, Felchen und Forelle, nur mit leichtem Fliegengerät, gültig vom 10. Juni bis 20. August 2026, plus die staatliche Abgabe. Lachs und Seesaibling sind ausgeschlossen.',
       warnThirdParty: 'Kaufen Sie sie nur im offiziellen Shop tenonkalaluvat.fi. Buchen Sie die legale Genehmigung nicht über Drittanbieter-Seiten; eine falsche oder ungültige Genehmigung an einem Grenzfluss bedeutet illegales Angeln.',
     },
     norway: {
@@ -192,7 +192,7 @@ const de: SectionCopy = {
         },
         {
           q: 'Darf ich 2026 im Teno auf Lachs angeln?',
-          a: 'Nein. Das Atlantiklachs-Angeln im Hauptlauf des Teno ist für 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Teno-Abkommen zwischen Finnland und Norwegen. Sie können andere Arten (Äsche, Felchen, Forelle) mit der Genehmigung "für andere Arten" zu 20 €/Tag von tenonkalaluvat.fi befischen, Lachs ausgenommen.',
+          a: 'Nein. Das Atlantiklachs-Angeln im Hauptlauf des Teno ist für 2026 verboten, in Kraft bis zum 31. Dezember gemäß dem Teno-Abkommen zwischen Finnland und Norwegen. Sie können andere Arten (Äsche, Felchen, Forelle) mit der Genehmigung „für andere Arten“ zu 20 €/Tag von tenonkalaluvat.fi befischen, Lachs ausgenommen.',
         },
         {
           q: 'Wie viele Lachse darf ich am Tornio behalten?',
@@ -271,7 +271,7 @@ const de: SectionCopy = {
     highlights: [
       { title: 'Fjäll-Wanderung', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas: lange Tage, keine Menschenmassen.' },
       { title: 'Kajak & SUP', body: 'Inselgruppen im Inari-See und Mitternachtssonnen-Seen, spiegelglattes Wasser bis 1 Uhr morgens.' },
-      { title: 'Lachs-Fliegenfischen', body: 'Der Lachsaufstieg an Tornionjoki und Teno erreicht im Juni und Juli seinen Höhepunkt.' },
+      { title: 'Lachs-Fliegenfischen', body: 'Der Lachsaufstieg im Tornionjoki erreicht im Juni und Juli seinen Höhepunkt.' },
       { title: 'Mitternachtssonnen-Touren', body: 'Fotografie, Sammeln, Fjäll-Mountainbiking: Tageslicht rund um die Uhr.' },
     ],
     gygTitle: 'Lapplands meistgebuchte Touren gerade jetzt',
@@ -296,7 +296,7 @@ const de: SectionCopy = {
     heading: 'Aktivitäten, Unterkunft & Mietwagen an einem Ort buchen',
     blurb: 'Drei Klicks und Ihre Lapplandreise steht: handverlesene Tour-Anbieter über GetYourGuide, beste Unterkunftspreise über Trip.com, und ein Mietwagen wartet am Flughafen.',
     activities: 'Aktivitäten',
-    activitiesDesc: 'Husky-Safaris, Schneemobile, Nordlicht-Touren, Eisfischen. Sofortige Bestätigung über GetYourGuide.',
+    activitiesDesc: 'Husky-Safaris, Schneemobile, Nordlicht-Touren, Eisangeln. Sofortige Bestätigung über GetYourGuide.',
     browseTours: 'Touren ansehen',
     stayNearby: 'Übernachten in der Nähe',
     stayNearbyDesc: 'Glas-Iglus, Blockhütten, Ski-in-Hotels. Buchen Sie zuerst das Bett, denn die besten sind schnell weg.',
@@ -331,7 +331,7 @@ const de: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: arktische Touren in Lappland',
-    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren, Rauchsaunas und mehr. Handverlesene Aktivitäten in 10 Reisezielen in Lappland und Umgebung über GetYourGuide buchen.',
+    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren und Rauchsaunas: handverlesene Aktivitäten in 10 Reisezielen in und um Lappland über GetYourGuide buchen.',
     ogTitle: 'LaplandActivities: handverlesene arktische Erlebnisse',
     categoriesKicker: 'Was zu tun ist',
     categoriesH2: 'Wählen Sie Ihr Abenteuer',
@@ -366,7 +366,7 @@ const de: SectionCopy = {
       { pre: 'Lieber selbst Gas geben? Sehen Sie die besten', anchor: 'Schneemobil-Routen & Preise', post: 'in ganz Lappland.' },
       { pre: 'Auf der Suche nach frischem Pulverschnee? Erfahren Sie,', anchor: 'wo man in Lappland Ski fährt', post: 'mit Vergleichen Resort für Resort.' },
       { pre: 'Für die ruhige Seite der Arktis lesen Sie über', anchor: 'Nordlichter & Nationalparks', post: 'und den besten Polarlichthimmel.' },
-      { pre: 'Und bevor Sie die Touren buchen, klären Sie,', anchor: 'wo man in Lappland übernachtet', post: ': Iglus, Hütten und Fjell-Resorts.' },
+      { pre: 'Und bevor Sie die Touren buchen, klären Sie,', anchor: 'wo man in Lappland übernachtet', post: ': Iglus, Hütten und Fjäll-Resorts.' },
     ],
   },
   faq: {
@@ -376,23 +376,23 @@ const de: SectionCopy = {
     items: [
       {
         q: 'Welche Aktivitäten kann man in Lappland unternehmen?',
-        a: 'Im Winter sind die Klassiker Husky- und Rentierschlittenfahrten, Schneemobil-Safaris, Nordlichter-Touren, Schneeschuhwandern, Langlauf und Abfahrtski, Eisangeln und Eis-Floating. Im Sommer wird dieselbe Wildnis zum Wandern, Kajak- und Kanufahren, Wildwasser-Rafting, Mountainbiken, Lachsangeln und Goldwaschen. Ganzjährig bieten die Rauchsauna und Erlebnisse rund um die Sámi-Kultur eine andere, ruhigere Seite der Arktis.',
+        a: 'Im Winter sind die Klassiker Husky- und Rentierschlittenfahrten, Schneemobil-Safaris, Nordlicht-Touren, Schneeschuhwandern, Langlauf und Abfahrtski, Eisangeln und Eis-Floating. Im Sommer wird dieselbe Wildnis zum Wandern, Kajak- und Kanufahren, Wildwasser-Rafting, Mountainbiken, Lachsangeln und Goldwaschen. Ganzjährig bieten die Rauchsauna und Erlebnisse rund um die Sámi-Kultur eine andere, ruhigere Seite der Arktis.',
       },
       {
         q: 'Was sind die besten Winter- bzw. Sommeraktivitäten?',
-        a: 'Der Winter (November bis März) ist die Zeit für Schnee und Dunkelheit: Schneemobile, Hundeschlitten und Aurora-Touren brauchen genau das. Der Sommer (Juni bis August) tauscht den Schnee gegen die Mitternachtssonne, wenn das Licht nie ganz verblasst und Wandern, Paddeln und Angeln fast rund um die Uhr möglich sind. Der Frühling hat noch Schnee bei deutlich mehr Tageslicht, und der Herbst bringt die Ruska-Farben und die ersten Nordlichter. Beides sind ruhigere Nebensaisons.',
+        a: 'Der Winter (November bis März) ist die Zeit für Schnee und Dunkelheit: Schneemobile, Hundeschlitten und Nordlicht-Touren brauchen genau das. Der Sommer (Juni bis August) tauscht den Schnee gegen die Mitternachtssonne, wenn das Licht nie ganz verblasst und Wandern, Paddeln und Angeln fast rund um die Uhr möglich sind. Der Frühling hat noch Schnee bei deutlich mehr Tageslicht, und der Herbst bringt die Ruska-Farben und die ersten Nordlichter. Beides sind ruhigere Nebensaisons.',
       },
       {
         q: 'Wie viel kosten Aktivitäten in Lappland?',
-        a: 'Das hängt stark von Aktivität, Dauer und Gruppengröße ab. Eine kurze Gruppenaktivität wie eine Rentierfahrt oder eine Aurora-Bustour liegt am unteren Ende; mehrstündige oder private Touren wie eine lange Husky-Safari oder eine geführte Schneemobil-Expedition kosten mehr, auch weil warme Overalls, Stiefel, Sicherheitsausrüstung und ein Guide enthalten sind. Aktuelle, genaue Preise sehen Sie, wenn Sie eine Tour über unseren Buchungspartner öffnen. Der Live-Preis wird vor der Buchung angezeigt.',
+        a: 'Das hängt stark von Aktivität, Dauer und Gruppengröße ab. Eine kurze Gruppenaktivität wie eine Rentierfahrt oder eine Nordlicht-Bustour liegt am unteren Ende; mehrstündige oder private Touren wie eine lange Husky-Safari oder eine geführte Schneemobil-Expedition kosten mehr, auch weil warme Overalls, Stiefel, Sicherheitsausrüstung und ein Guide enthalten sind. Aktuelle, genaue Preise sehen Sie, wenn Sie eine Tour über unseren Buchungspartner öffnen. Der Live-Preis wird vor der Buchung angezeigt.',
       },
       {
         q: 'Sind Aktivitäten in Lappland für kleine Kinder geeignet?',
-        a: 'Viele sind es, mit der richtigen Wahl. Rentierschlittenfahrten, Besuche auf der Huskyfarm, sanfte Schneeschuhwanderungen, Schlittenfahren und das Treffen mit dem Weihnachtsmann eignen sich gut für kleine Kinder. Beim Schneemobilfahren gibt es meist ein Mindestalter zum Fahren (Kinder fahren im Schlitten oder Anhänger mit), und späte Aurora-Touren können für die Kleinsten lang und kalt sein. Die meisten Anbieter nennen Altersgrenzen und Familienoptionen auf der Aktivitätsseite, also am besten vor der Buchung prüfen.',
+        a: 'Viele sind es, mit der richtigen Wahl. Rentierschlittenfahrten, Besuche auf der Huskyfarm, sanfte Schneeschuhwanderungen, Schlittenfahren und das Treffen mit dem Weihnachtsmann eignen sich gut für kleine Kinder. Beim Schneemobilfahren gibt es meist ein Mindestalter zum Fahren (Kinder fahren im Schlitten oder Anhänger mit), und späte Nordlicht-Touren können für die Kleinsten lang und kalt sein. Die meisten Anbieter nennen Altersgrenzen und Familienoptionen auf der Aktivitätsseite, also am besten vor der Buchung prüfen.',
       },
       {
         q: 'Muss man Aktivitäten in Lappland im Voraus buchen?',
-        a: 'Für die geschäftigsten Wochen, also Weihnachten und Neujahr sowie den Aurora- und Ski-Höhepunkt von Februar bis März, gilt: buchen Sie früh, denn beliebte Husky- und Schneemobiltouren sind schnell ausgebucht. In ruhigeren Zeiten haben Sie mehr Spielraum, aber die bestbewerteten Anbieter und Kleingruppen-Abfahrten sind trotzdem zuerst ausverkauft. Frühzeitig zu buchen lässt Sie zudem Spielraum für klare Nächte in Aurora-Pläne einbauen, statt um die letzten Plätze zu konkurrieren.',
+        a: 'Für die geschäftigsten Wochen, also Weihnachten und Neujahr sowie den Nordlicht- und Ski-Höhepunkt von Februar bis März, gilt: buchen Sie früh, denn beliebte Husky- und Schneemobiltouren sind schnell ausgebucht. In ruhigeren Zeiten haben Sie mehr Spielraum, aber die bestbewerteten Anbieter und Kleingruppen-Abfahrten sind trotzdem zuerst ausverkauft. Frühzeitig zu buchen lässt Sie zudem Spielraum für klare Nächte in Ihre Nordlicht-Pläne einbauen, statt um die letzten Plätze zu konkurrieren.',
       },
     ],
   },
@@ -477,7 +477,7 @@ const de: SectionCopy = {
       saariselka: [
         { tip: 'Die Rauchsauna in Kiilopää läuft ganzjährig. Buchen Sie das Nachmittagsfenster.', icon: '🧖' },
         { tip: 'Goldwaschen in Tankavaara, was Sie finden, gehört Ihnen.', icon: '🥇' },
-        { tip: 'Die Wildnis-Hütten im UKK-Nationalpark sind kostenlos, nach dem Prinzip der Reihenfolge.', icon: '🏕️' },
+        { tip: 'Die Wildnis-Hütten im UKK-Nationalpark sind kostenlos: wer zuerst kommt, mahlt zuerst.', icon: '🏕️' },
       ],
       inari: [
         { tip: 'Für das Siida-Museum sollten Sie mindestens drei Stunden einplanen, auch den samischsprachigen Flügel lesen.', icon: '🏛️' },
@@ -486,7 +486,7 @@ const de: SectionCopy = {
       ],
       ruka: [
         { tip: 'Bärenbeobachtungs-Hütten sind Monate im Voraus ausgebucht.', icon: '🐻' },
-        { tip: 'Der Karhunkierros bietet einen 12 km langen "Kleiner Bär"-Rundweg für Tageswanderer.', icon: '🥾' },
+        { tip: 'Der Karhunkierros bietet einen 12 km langen „Kleiner Bär“-Rundweg für Tageswanderer.', icon: '🥾' },
         { tip: 'Ruka öffnet bereits im Oktober für den Skibetrieb, der früheste Start Finnlands.', icon: '⛷️' },
       ],
       posio: [
@@ -496,9 +496,9 @@ const de: SectionCopy = {
       ],
       tornio: [
         { tip: 'Der Eisbrecher Sampo fährt nur von Dezember bis April, buchen Sie, sobald die Termine geöffnet sind.', icon: '🚢' },
-        { tip: 'Das SnowCastle wird jedes Jahr mit einem neuen Thema neu errichtet.', icon: '🏰' },
+        { tip: 'Der Schneepark des SnowCastle-Areals wird jeden Winter neu gebaut; SnowExperience365 läuft ganzjährig.', icon: '🏰' },
         { tip: 'Der Green Zone Golf führt mitten in der Runde über die finnisch-schwedische Grenze.', icon: '⛳' },
-        { tip: 'Schweden ist Finnland eine Stunde hinterher: Läden in Haparanda öffnen und schließen "später".', icon: '🕐' },
+        { tip: 'Schweden ist Finnland eine Stunde hinterher: Läden in Haparanda öffnen und schließen „später“.', icon: '🕐' },
       ],
       'pyha-luosto': [
         { tip: 'Der Schneezug zur Amethystmine fährt im Winter; im Sommer geht man zu Fuß auf den Lampivaara.', icon: '💎' },
@@ -514,7 +514,7 @@ const de: SectionCopy = {
   },
   about: {
     metaTitle: 'Über uns · LaplandActivities',
-    metaDescription: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, handverlesene arktische Erlebnisse in zehn Reisezielen in und um Finnisch-Lappland.',
+    metaDescription: 'Die Aktivitäten-Sektion des #LaplandVibes-Ökosystems: handverlesene arktische Erlebnisse in zehn Reisezielen in und um Finnisch-Lappland.',
     eyebrow: 'Über uns',
     h1: 'Ein Aktivitäten-Guide für Finnisch-Lappland',
     para1: 'LaplandActivities ist die Aktivitäten-Sektion des #LaplandVibes-Ökosystems, ein Netzwerk unabhängiger Reiseführer für Unterkunft, Essen, Natur, Transport und Touren in Finnisch-Lappland.',
@@ -535,8 +535,8 @@ const de: SectionCopy = {
     backHome: '← Zurück zur Startseite',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: ethische Bärenbeobachtung in Finnland | LaplandActivities",
-    metaDescription: "Bear Kuusamo führt zu Verstecken für wilde Braunbären in den Grenzwäldern östlich von Kuusamo, am Rand Lapplands. Abend- und Nachttouren, 1. Mai bis 30. September.",
+    metaTitle: "Bear Kuusamo: Bärenbeobachtung am Rand Lapplands",
+    metaDescription: "Bear Kuusamo führt zu Verstecken für wilde Braunbären in den Grenzwäldern östlich von Kuusamo. Abend- und Nachttouren, 1. Mai bis 30. September.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Bezahlte Partnerschaft: Bear Kuusamo",
     anchorWatching: "Bärenbeobachtung in Finnland",
@@ -548,11 +548,11 @@ const de: SectionCopy = {
     intro: {
       para1: "In den Grenzwäldern östlich von Kuusamo, wo der boreale Wald ununterbrochen zur Grenze hin verläuft, treten Braunbären in der langen nördlichen Dämmerung aus dem Waldrand hervor. Bear Kuusamo führt Reisende seit mehr als zwanzig Jahren in diese Stille. Es ist der älteste Bärenbeobachtungsbetrieb in der Region Ruka–Kuusamo und der nördlichste des Landes.",
       para2Pre: "Das ist echte ",
-      para2Post: ", kein Zoo und keine Show. Die Verstecke stehen in einem geschützten Waldstück, das jenseits der russischen Grenze an den Paanajärvi-Nationalpark grenzt. Gründer Pekka Veteläinen und seine Guides arbeiten mit Metsähallitus und Forschenden zusammen und verstecken das Futter an wechselnden Stellen, damit die Bären auf natürliche Weise suchen und fressen. Die Bären bleiben wild und ungewöhnt an Menschen; du bekommst einfach einen ruhigen, gut platzierten Platz, um sie zu beobachten.",
+      para2Post: ", kein Zoo und keine Show. Die Verstecke stehen in einem geschützten Waldstück, das jenseits der russischen Grenze an den Paanajärvi-Nationalpark grenzt. Gründer Pekka Veteläinen und seine Guides arbeiten mit Metsähallitus und Forschenden zusammen und verstecken das Futter an wechselnden Stellen, damit die Bären auf natürliche Weise suchen und fressen. Die Bären bleiben wild und ungewöhnt an Menschen; Sie bekommen einfach einen ruhigen, gut platzierten Platz, um sie zu beobachten.",
     },
     hide: {
       title: "Eine Nacht im Versteck",
-      body: "Sieben Holzverstecke stehen am Waldrand, gebaut, um menschliche Geräusche und Gerüche im Inneren zu halten. Panoramafenster geben den Beobachtenden freien Blick auf die Lichtung, und Fotografen haben eigene Kameraöffnungen mit Bohnensäcken und Videoneigern, sodass niemand durch Glas fotografiert. Das Hauptversteck ist rollstuhlgerecht, und die Toiletten liegen in eigenen, getrennten Räumen. Aus den Fenstern kannst du Braunbären sehen, im Frühjahr einen vorbeiziehenden Vielfraß, Seeadler über dir und die Raben, deren Rufe den Guides verraten, dass ein Bär nah ist.",
+      body: "Sieben Holzverstecke stehen am Waldrand, gebaut, um menschliche Geräusche und Gerüche im Inneren zu halten. Panoramafenster geben den Beobachtenden freien Blick auf die Lichtung, und Fotografen haben eigene Kameraöffnungen mit Bohnensäcken und Videoneigern, sodass niemand durch Glas fotografiert. Das Hauptversteck ist rollstuhlgerecht, und die Toiletten liegen in eigenen, getrennten Räumen. Aus den Fenstern sehen Sie Braunbären, im Frühjahr einen vorbeiziehenden Vielfraß, Seeadler über sich und die Raben, deren Rufe den Guides verraten, dass ein Bär nah ist.",
     },
     treeCaption: "Ein junger Braunbär klettert auf eine Kiefer nahe den Verstecken.",
     treeCredit: "Foto: Piritta Paija / Bear Kuusamo",
@@ -562,15 +562,15 @@ const de: SectionCopy = {
       eveningBody: "Eine geführte Wanderung zum Versteck und die am besten beleuchteten Stunden des nördlichen Abends.",
       overnightLabel: "Nachttour",
       overnightBody: "Der Abend bis zum Morgen verlängert, und oft das reichere Schauspiel. In den Nachtstunden zeigen sich meist deutlich mehr Bären, von großen Männchen bis, selbst zur Mittsommerzeit, einer Mutter mit ihren Jungen, und in Sommernächten gehen die Bären schwimmen.",
-      season: "Führung und Versicherung sind inbegriffen, und die Saison läuft vom 1. Mai bis 30. September. Der Frühling bringt Mütter mit Jungen, und zur Mittsommerzeit geht die Sonne hier gar nicht unter, sodass du Bären die ganze helle Nacht hindurch beobachten und fotografieren kannst. Bleibt der Wald leer, bringt dich die originale Bärengarantie kostenlos für einen weiteren Abend zurück.",
-      bookingPre: "Aktuelle Preise, Termine und Verfügbarkeit findest du auf ",
+      season: "Führung und Versicherung sind inbegriffen, und die Saison läuft vom 1. Mai bis 30. September. Der Frühling bringt Mütter mit Jungen, und zur Mittsommerzeit geht die Sonne hier gar nicht unter, sodass Sie Bären die ganze helle Nacht hindurch beobachten und fotografieren können. Bleibt der Wald leer, bringt Sie die ursprüngliche Bärengarantie kostenlos für einen weiteren Abend zurück.",
+      bookingPre: "Aktuelle Preise, Termine und Verfügbarkeit finden Sie auf ",
       bookingLink: "der eigenen Buchungsseite von Bear Kuusamo",
       bookingPost: ".",
     },
     where: {
       title: "Wo es liegt",
-      pre: "Kuusamo liegt im Nordosten Finnlands, direkt an der Grenze zu Lappland, zwischen den Fjells und Urwäldern rund um den Oulanka-Nationalpark. Es ist der natürliche Ausgangspunkt, wenn du deine eigene ",
-      post: " planst: Flieg nach Kuusamo oder fahr von Ruka herüber, und du bist innerhalb einer Stunde an den Verstecken.",
+      pre: "Kuusamo liegt im Nordosten Finnlands, direkt an der Grenze zu Lappland, zwischen den Fjälls und Urwäldern rund um den Oulanka-Nationalpark. Es ist der natürliche Ausgangspunkt, wenn Sie Ihre eigene ",
+      post: " planen: Fliegen Sie nach Kuusamo oder fahren Sie von Ruka herüber, und Sie sind innerhalb einer Stunde an den Verstecken.",
     },
     cta: "Direkt bei Bear Kuusamo buchen",
     imageAlts: {
@@ -592,11 +592,11 @@ const de: SectionCopy = {
   },
   terms: {
     metaTitle: 'Nutzungsbedingungen · LaplandActivities',
-    metaDescription: 'Nutzungsbedingungen für laplandactivities.fi: Inhalte und Lizenzen, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von Lapeso Oy, Finnland.',
+    metaDescription: 'Nutzungsbedingungen für laplandactivities.fi: Inhalte, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von Lapeso Oy, Finnland.',
   },
   cookie: {
     metaTitle: 'Cookie-Richtlinie · LaplandActivities',
-    metaDescription: 'Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konforme Cookie-Hinweise von Lapeso Oy.',
+    metaDescription: 'Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konform, von Lapeso Oy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities',
@@ -606,6 +606,6 @@ const de: SectionCopy = {
   },
 };
 
-// ---------- JAPANESE ----------
+// ---------- GERMAN ----------
 
 export default de

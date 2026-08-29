@@ -69,7 +69,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageH3: 'Die Arktis von ihrer magischsten Seite',
     highlights: [
       { title: 'Hundeschlitten', body: 'Lenken Sie Ihr eigenes Gespann durch stillen, verschneiten Wald.' },
-      { title: 'Schneemobil-Safaris', body: 'Zugefrorene Seen und Fjell-Trails, von sanft bis Tagestour.' },
+      { title: 'Schneemobil-Safaris', body: 'Zugefrorene Seen und Fjäll-Trails, von sanft bis Tagestour.' },
       { title: 'Polarlichtjagd', body: 'Touren unter dunklem Himmel mit Guides, die die Vorhersage lesen.' },
       { title: 'Eisangeln & Sauna', body: 'Loch ins Eis bohren, dann in echter Rauchsauna auftauen.' },
     ],

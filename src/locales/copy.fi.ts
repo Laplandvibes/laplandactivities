@@ -271,7 +271,7 @@ const fi: SectionCopy = {
     highlights: [
       { title: 'Tunturivaellus', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas. Pitkät päivät, ei ruuhkia.' },
       { title: 'Melonta & SUP', body: 'Inarin saaret ja keskiyön auringon järvet, peilityyni vesi yhteen yöllä.' },
-      { title: 'Lohenkalastus perhokalastusvälinein', body: 'Tornionjoen ja Tenon nousu huipussaan kesä- ja heinäkuussa.' },
+      { title: 'Lohenkalastus perhokalastusvälinein', body: 'Tornionjoen lohennousu huipussaan kesä- ja heinäkuussa.' },
       { title: 'Keskiyön auringon retket', body: 'Valokuvaus, ruoka-ainesten keräily, tunturipyöräily, valoa 24/7.' },
     ],
     gygTitle: 'Lapin varatuimmat retket juuri nyt',
@@ -510,7 +510,7 @@ const fi: SectionCopy = {
       ],
       tornio: [
         { tip: 'Jäänmurtaja Sampo kulkee vain joulu–huhtikuussa. Varaa heti kun varauskausi aukeaa.', icon: '🚢' },
-        { tip: 'Lumilinna rakennetaan vuosittain uudella teemalla.', icon: '🏰' },
+        { tip: 'LumiLinnan talvipuisto rakennetaan joka talvi; SnowExperience365 on auki ympäri vuoden.', icon: '🏰' },
         { tip: 'Green Zone Golf ylittää Suomi-Ruotsi -rajan kierroksen aikana.', icon: '⛳' },
         { tip: 'Ruotsi on tunnin Suomea jäljessä: Haaparannan kaupat aukeavat ja sulkevat "myöhään".', icon: '🕐' },
       ],

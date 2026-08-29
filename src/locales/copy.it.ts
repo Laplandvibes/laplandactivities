@@ -258,7 +258,7 @@ const it: SectionCopy = {
     highlights: [
       { title: 'Escursioni in fjell', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, giornate lunghe, nessuna folla.' },
       { title: 'Kayak e SUP', body: 'Isole del lago Inari, laghi del sole di mezzanotte, acque a specchio fino all\'una di notte.' },
-      { title: 'Pesca al salmone con la mosca', body: 'Le risalite del Tornionjoki e del Teno raggiungono il picco a giugno-luglio.' },
+      { title: 'Pesca al salmone con la mosca', body: 'Le risalite del salmone nel Tornionjoki raggiungono il picco a giugno-luglio.' },
       { title: 'Tour al sole di mezzanotte', body: 'Fotografia, raccolta, mountain bike in fjell, luce 24 ore su 24.' },
     ],
     gygTitle: 'I tour più prenotati della Lapponia in questo momento', gygEyebrow: 'Prenotabile ora · Cancellazione gratuita',
@@ -435,7 +435,7 @@ const it: SectionCopy = {
       ],
       tornio: [
         { tip: 'Il rompighiaccio Sampo naviga solo da dicembre ad aprile, prenoti appena aprono le date.', icon: '🚢' },
-        { tip: 'Lo SnowCastle viene ricostruito ogni anno con un nuovo tema.', icon: '🏰' },
+        { tip: 'Il parco di neve dello SnowCastle viene ricostruito ogni inverno; SnowExperience365 è aperto tutto l’anno.', icon: '🏰' },
         { tip: 'Il Green Zone Golf attraversa il confine Finlandia-Svezia durante il giro.', icon: '⛳' },
         { tip: 'La Svezia è un’ora indietro rispetto alla Finlandia: a Haparanda i negozi aprono e chiudono "tardi".', icon: '🕐' },
       ],

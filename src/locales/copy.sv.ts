@@ -38,7 +38,7 @@ const sv: SectionCopy = {
     highlights: [
       { title: 'Fjällvandring', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas. Långa dagar, inga folkmassor.' },
       { title: 'Kajak & SUP', body: 'Öarna i Inarisjön och sjöar under midnattssolen, spegelblankt vatten fram till klockan 01.' },
-      { title: 'Flugfiske efter lax', body: 'Lax vandrar upp i Tornionjoki och Teno med topp i juni–juli.' },
+      { title: 'Flugfiske efter lax', body: 'Lax vandrar upp i Tornionjoki med topp i juni–juli.' },
       { title: 'Midnattssolsturer', body: 'Fotografering, svampplockning, fjällcykling. Allt i dygnet-runt-ljus.' },
     ],
     gygTitle: 'Lapplands mest bokade turer just nu',

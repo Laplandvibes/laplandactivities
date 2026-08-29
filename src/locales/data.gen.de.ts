@@ -69,7 +69,7 @@ const d: LangData = {
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Tor zum Nationalpark Urho Kekkonen",
-      "description": "Das nördlichste Skigebiet Finnlands, am Rand einer der größten Wildnisgebiete Europas. Berühmt für die Nordlichtbeobachtung, das Goldwaschen und die legendäre Rauchsauna von Kiilopää.",
+      "description": "Das nördlichste Skigebiet Finnlands, am Rand eines der größten Wildnisgebiete Europas. Berühmt für die Nordlichtbeobachtung, das Goldwaschen und die legendäre Rauchsauna von Kiilopää.",
       "access": "Flug nach Ivalo (30 Min. mit dem Auto)",
       "bestFor": "Wildnissuchende und Nordlichtjäger",
       "why": "Saariselkä liegt am Rand des Urho-Kekkonen-Nationalparks; markierte Wege und offene Wildnishütten beginnen direkt im Dorf. So weit im Norden stehen die Polarlicht-Chancen von September bis April gut, dazu kommen Goldwaschen in Tankavaara, wo jeder Fund Ihnen gehört, und die Rauchsauna von Kiilopää mit anschließendem Bad im Schnee. Am besten für Reisende, denen Wildnis vor Service geht."
@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda und Kemi",
       "tagline": "Arktische Abenteuer an der Grenze",
-      "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Kreuzfahrt auf dem Eisbrecher Sampo, dem größten Schneeschloss der Welt und dem besten Lachsfluss Europas.",
+      "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Kreuzfahrt auf dem Eisbrecher Sampo, dem SnowCastle Winter Park und Europas größtem frei fließendem Lachsfluss.",
       "access": "Flug nach Kemi (15 Min. mit dem Auto)",
       "bestFor": "Einzigartige Erlebnisse und Familienspaß",
       "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und den winterlichen Schneepark des SnowCastle-Areals. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Netz gefischt."
@@ -329,7 +329,7 @@ const d: LangData = {
         "Nordlicht-Weckruf",
         "Sauna und Abendessen inklusive"
       ],
-      "duration": "Overnight",
+      "duration": "Übernachtung",
       "difficulty": "Moderate",
       "category": "Abenteuer"
     },
@@ -341,7 +341,7 @@ const d: LangData = {
         "Nachtskifahren",
         "Verleih verfügbar"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "difficulty": "Moderate",
       "category": "Wintersport"
     },
@@ -365,7 +365,7 @@ const d: LangData = {
         "Snowpark",
         "Nachtskifahren"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "difficulty": "Moderate",
       "category": "Wintersport"
     },
@@ -431,7 +431,7 @@ const d: LangData = {
     },
     "lev-aurora-photo": {
       "title": "Fototour zum Nordlicht",
-      "description": "Eine auf Fotografie ausgerichtete Nordlichttour, geleitet von einer professionellen Führung. Lernen Sie, die Lichter mit der Kamera einzufangen, während Sie einen heißen Beerensaft genießen.",
+      "description": "Eine auf Fotografie ausgerichtete Nordlichttour mit einem professionellen Guide. Lernen Sie, die Lichter mit der Kamera einzufangen, während Sie einen heißen Beerensaft genießen.",
       "highlights": [
         "Fototipps und Stative",
         "Beste Nordlichtplätze",
@@ -454,8 +454,8 @@ const d: LangData = {
       "category": "Sommerabenteuer"
     },
     "lev-ice-fishing": {
-      "title": "Eisfischen auf gefrorenem See",
-      "description": "Bohren Sie das Eis eines gefrorenen Sees und angeln Sie Barsch und Maräne mit traditionellen lappländischen Techniken. Der Fang wird über offenem Feuer zubereitet.",
+      "title": "Eisangeln auf gefrorenem See",
+      "description": "Bohren Sie das Eis eines gefrorenen Sees und angeln Sie Barsch und Felchen mit traditionellen lappländischen Techniken. Der Fang wird über offenem Feuer zubereitet.",
       "highlights": [
         "Angeln und Zubereiten",
         "Traditionelle Techniken",
@@ -485,7 +485,7 @@ const d: LangData = {
         "Alle Niveaus",
         "Verleih verfügbar"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "difficulty": "Challenging",
       "category": "Sommerabenteuer"
     },
@@ -509,7 +509,7 @@ const d: LangData = {
         "62 Pisten",
         "300 km Langlauf"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "difficulty": "Moderate",
       "category": "Wintersport"
     },
@@ -563,7 +563,7 @@ const d: LangData = {
     },
     "yll-snowshoe": {
       "title": "Schneeschuhwandern im Urwald",
-      "description": "Wandern Sie über den unberührten Pulverschnee in uralten Wäldern. Die Führung teilt Geschichten des Waldes, während Sie die völlige Stille der arktischen Natur genießen.",
+      "description": "Wandern Sie über den unberührten Pulverschnee in uralten Wäldern. Der Guide erzählt Geschichten des Waldes, während Sie die völlige Stille der arktischen Natur genießen.",
       "highlights": [
         "Schneeschuhe gestellt",
         "Urwald",
@@ -623,7 +623,7 @@ const d: LangData = {
     },
     "saa-amethyst-mine": {
       "title": "Besuch der Amethystmine",
-      "description": "Graben Sie Ihren eigenen Amethyst in der einzigen aktiven Mine Europas auf dem Gipfel des Fjälls Lampivaara. Im Winter geht es mit dem beheizten Amethyst-Pendolino-Schlitten den Fjäll hinauf, im Sommer ist es ein kurzer Panoramaspaziergang vom Café.",
+      "description": "Graben Sie Ihren eigenen Amethyst in Europas einziger aktiver Amethystmine auf dem Gipfel des Lampivaara. Im Winter geht es mit dem beheizten Amethyst-Pendolino-Schlitten den Fjäll hinauf, im Sommer ist es ein kurzer Panoramaspaziergang vom Café.",
       "highlights": [
         "Graben Sie Ihren eigenen Edelstein",
         "Behalten Sie einen Amethyst",
@@ -682,8 +682,8 @@ const d: LangData = {
       "category": "Nordlichter"
     },
     "saa-ice-fishing": {
-      "title": "Arktisches Eisfischen-Erlebnis",
-      "description": "Bohren Sie das dicke Eis eines gefrorenen Sees und angeln Sie Barsch und Maräne mit traditionellen Methoden. Anschließend wärmen Sie sich bei einem Lagerfeuer-Mittagessen in einem Lavvu auf.",
+      "title": "Arktisches Eisangel-Erlebnis",
+      "description": "Bohren Sie das dicke Eis eines gefrorenen Sees und angeln Sie Barsch und Felchen mit traditionellen Methoden. Anschließend wärmen Sie sich bei einem Lagerfeuer-Mittagessen in einem Lavvu auf.",
       "highlights": [
         "Mittagessen aus Angeln und Zubereiten",
         "Traditionelle Methoden",
@@ -755,7 +755,7 @@ const d: LangData = {
     },
     "ina-aurora": {
       "title": "Nordlichtjagd ab Inari",
-      "description": "Inari bietet einige der dunkelsten Himmel Finnlands. Die Führung nutzt Echtzeit-Nordlichtdaten, um die besten Beobachtungspunkte rund um den See zu finden.",
+      "description": "Inari bietet einige der dunkelsten Himmel Finnlands. Die Guides nutzen Echtzeit-Nordlichtdaten, um die besten Beobachtungspunkte rund um den See zu finden.",
       "highlights": [
         "Dunkelste Himmel",
         "Echtzeit-Verfolgung",
@@ -767,10 +767,10 @@ const d: LangData = {
     },
     "ina-berry-foraging": {
       "title": "Sammeln von Wildbeeren und Pilzen",
-      "description": "Sammeln Sie Moltebeeren, Preiselbeeren und Pilze im arktischen Wald mit einer ortskundigen Führung. Lernen Sie traditionelle Methoden der Konservierung und Zubereitung.",
+      "description": "Sammeln Sie Moltebeeren, Preiselbeeren und Pilze im arktischen Wald mit einem ortskundigen Guide. Lernen Sie traditionelle Methoden der Konservierung und Zubereitung.",
       "highlights": [
         "Moltebeeren",
-        "Erfahrene Führung",
+        "Erfahrene Guides",
         "Traditionelle Rezepte"
       ],
       "duration": "3 Std.",
@@ -785,7 +785,7 @@ const d: LangData = {
         "Längste Saison",
         "Nachtskifahren"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "difficulty": "Moderate",
       "category": "Wintersport"
     },
@@ -809,7 +809,7 @@ const d: LangData = {
         "Fotoversteck",
         "Wilde Bären"
       ],
-      "duration": "Overnight",
+      "duration": "Übernachtung",
       "difficulty": "Moderate",
       "category": "Tiererlebnisse"
     },
@@ -875,7 +875,7 @@ const d: LangData = {
     },
     "pos-riisitunturi": {
       "title": "Nationalpark Riisitunturi, Schneebäume",
-      "description": "Berühmt für die spektakulären schneegekrönten „Tykky\"-Bäume, die wie gefrorene Skulpturen wirken. Einer der fotogensten Nationalparks Finnlands.",
+      "description": "Berühmt für die spektakulären schneegekrönten „Tykky“-Bäume, die wie gefrorene Skulpturen wirken. Einer der fotogensten Nationalparks Finnlands.",
       "highlights": [
         "Tykky-Bäume",
         "Freier Eintritt",
@@ -911,11 +911,11 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Kreuzfahrt auf dem Eisbrecher Sampo",
-      "description": "Fahren Sie auf einem echten Eisbrecherschiff durch die gefrorene Ostsee und treiben Sie anschließend in einem Überlebensanzug im vereisten Meer. Ein arktisches Erlebnis von der Bucket List.",
+      "description": "Fahren Sie auf einem echten Eisbrecherschiff durch die gefrorene Ostsee und treiben Sie anschließend in einem Überlebensanzug im vereisten Meer. Ein arktisches Erlebnis für die Wunschliste.",
       "highlights": [
         "Echter Eisbrecher",
         "Floating im Meer",
-        "Bucket List"
+        "Für die Wunschliste"
       ],
       "duration": "4 Std.",
       "difficulty": "Easy",
@@ -923,9 +923,9 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "Das größte Schneeschloss der Welt, jeden Winter in Kemi neu errichtet. Durchschreiten Sie die Eishallen, besuchen Sie die Eiskapelle und speisen Sie im Eisrestaurant.",
+      "description": "Kemis berühmte Schneeschloss-Tradition lebt als SnowCastle Winter Park und als ganzjährig geöffnete Indoor-Schneewelt SnowExperience365 weiter, mit Eisskulpturen und einem Eisrestaurant. Das vollständige Schloss wird nicht mehr jedes Jahr neu errichtet.",
       "highlights": [
-        "Das größte der Welt",
+        "Ganzjährig drinnen",
         "Eisrestaurant",
         "Eiskapelle"
       ],
@@ -947,9 +947,9 @@ const d: LangData = {
     },
     "tor-salmon-fishing": {
       "title": "Lachsangeln im Tornionjoki",
-      "description": "Angeln Sie atlantischen Lachs im besten Lachsfluss Europas. Der Tornionjoki fließt entlang der Grenze zwischen Finnland und Schweden und ist für seine gewaltigen Fänge berühmt.",
+      "description": "Angeln Sie atlantischen Lachs in Europas größtem frei fließendem Lachsfluss. Der Tornionjoki fließt entlang der Grenze zwischen Finnland und Schweden und ist für seine gewaltigen Fänge berühmt.",
       "highlights": [
-        "Bester Lachsfluss Europas",
+        "Europas größter frei fließender Lachsfluss",
         "Führung inklusive",
         "Ausrüstung gestellt"
       ],
@@ -958,11 +958,11 @@ const d: LangData = {
       "category": "Sommerabenteuer"
     },
     "tor-whitefish-festival": {
-      "title": "Maränen-Erlebnis in Kukkolankoski",
-      "description": "Beobachten Sie das traditionelle Fischen an den Stromschnellen von Kukkolankoski und probieren Sie anschließend die über der Flamme gegrillte Maräne, seit Jahrhunderten auf dieselbe Weise zubereitet. Die älteste Fischereitradition Finnlands.",
+      "title": "Felchen-Erlebnis in Kukkolankoski",
+      "description": "Beobachten Sie das traditionelle Fischen an den Stromschnellen von Kukkolankoski und probieren Sie anschließend das über der Flamme gegrillte Felchen, seit Jahrhunderten auf dieselbe Weise zubereitet. Die älteste Fischereitradition Finnlands.",
       "highlights": [
         "Traditionelles Fischen",
-        "Über der Flamme gegrillte Maräne",
+        "Über der Flamme gegrilltes Felchen",
         "Historische Stromschnellen"
       ],
       "duration": "2-3 Std.",
@@ -999,7 +999,7 @@ const d: LangData = {
         "Weltcup-Buckelpiste",
         "Familienfreundliches Gelände"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "category": "Wintersport"
     },
     "pyh-aurora-snowshoe": {
@@ -1043,7 +1043,7 @@ const d: LangData = {
         "75 km Loipen",
         "Am Polarkreis"
       ],
-      "duration": "Day pass",
+      "duration": "Tageskarte",
       "category": "Wintersport"
     },
     "kem-santas-village": {

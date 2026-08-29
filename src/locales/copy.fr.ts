@@ -258,7 +258,7 @@ const fr: SectionCopy = {
     highlights: [
       { title: 'Randonnée en fjell', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, longues journées, pas de foule.' },
       { title: 'Kayak & SUP', body: 'Îles du lac Inari, lacs au soleil de minuit, eau lisse comme un miroir jusqu\'à 1 h du matin.' },
-      { title: 'Pêche au saumon à la mouche', body: 'Les montaisons de saumon du Tornionjoki et du Teno culminent en juin-juillet.' },
+      { title: 'Pêche au saumon à la mouche', body: 'Les montaisons de saumon du Tornionjoki culminent en juin-juillet.' },
       { title: 'Tours au soleil de minuit', body: 'Photographie, cueillette, VTT en fjell, lumière 24 h sur 24.' },
     ],
     gygTitle: 'Les tours les plus réservés de Laponie en ce moment', gygEyebrow: 'Réservable maintenant · Annulation gratuite',
@@ -435,7 +435,7 @@ const fr: SectionCopy = {
       ],
       tornio: [
         { tip: 'Le brise-glace Sampo ne navigue que de décembre à avril, réservez dès l\'ouverture.', icon: '🚢' },
-        { tip: 'Le SnowCastle est reconstruit chaque année avec un nouveau thème.', icon: '🏰' },
+        { tip: 'Le parc de neige du SnowCastle est reconstruit chaque hiver ; SnowExperience365 est ouvert toute l’année.', icon: '🏰' },
         { tip: 'Le Green Zone Golf traverse la frontière Finlande-Suède en plein parcours.', icon: '⛳' },
         { tip: 'La Suède a une heure de retard sur la Finlande : à Haparanda, les boutiques ouvrent et ferment « tard ».', icon: '🕐' },
       ],

@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Torneå, Haparanda och Kemi",
       "tagline": "Arktiska gränsäventyr",
-      "description": "Gränsstaden mellan Finland och Sverige och porten till unika arktiska upplevelser. Här finns den legendariska isbrytarkryssningen med Sampo, världens största snöslott och Europas största fritt strömmande laxälv.",
+      "description": "Gränsstaden mellan Finland och Sverige och porten till unika arktiska upplevelser. Här finns den legendariska isbrytarkryssningen med Sampo, SnowCastle Winter Park och Europas största fritt strömmande laxälv.",
       "access": "Flyg till Kemi (15 minuters bilfärd)",
       "bestFor": "Unika upplevelser och familjenöje",
       "why": "Torneå och Haparanda är en stad i två länder: du korsar gränsen till fots mitt på affärsgatan, IKEA Haparanda ligger alldeles vid övergången och en golfrunda byter land och tidszon fyra gånger. Kemi, 25 minuter bort, bjuder på isbrytaren Sampos kryssning och SnowCastle som byggs upp på nytt varje vinter. I Torne älv, Europas största fritt strömmande laxälv, lever det traditionella håvfisket vid Kukkolankoski vidare varje sommar."
@@ -865,7 +865,7 @@ const d: LangData = {
       "title": "LumiLinna SnowCastle Kemi",
       "description": "Kemis berömda snöslottstradition lever vidare som SnowCastle Winter Park och den åretruntöppna inomhussnövärlden SnowExperience365, med isskulpturer och isrestaurang. Det fulla slottet byggs inte längre varje år.",
       "highlights": [
-        "Världens största",
+        "Öppet året runt",
         "Isrestaurang",
         "Iskapell"
       ],

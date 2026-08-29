@@ -126,7 +126,7 @@ export const destinations: Destination[] = [
     gygLocationId: '217355', // kemi-tornio combined (46 acts vs Tornio-only 21) — page covers both towns
     name: 'Tornio, Haparanda & Kemi',
     tagline: 'Arctic Border Adventures',
-    description: 'The Finland-Sweden twin town and gateway to unique Arctic experiences. Home to the legendary Icebreaker Sampo cruise, the world\'s largest SnowCastle, and Europe\'s largest free-flowing salmon river.',
+    description: 'The Finland-Sweden twin town and gateway to unique Arctic experiences. Home to the legendary Icebreaker Sampo cruise, the SnowCastle Winter Park, and Europe\'s largest free-flowing salmon river.',
     why: 'Tornio and Haparanda are one town in two countries: you can walk across the border in the middle of the shopping street, spend a day comparing prices and ranges on both sides with IKEA Haparanda right by the crossing, and play a golf round that switches country and time zone four times. Kemi, 25 minutes away, adds the Icebreaker Sampo cruise and the SnowCastle Area\'s winter snow park. Down the Tornionjoki, Europe\'s largest free-flowing salmon river, the Kukkolankoski rapids still run traditional net fishing each summer.',
     access: 'Fly to Kemi (15 min drive)',
     elevation: '5m',

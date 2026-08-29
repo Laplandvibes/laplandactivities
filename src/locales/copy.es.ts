@@ -271,7 +271,7 @@ const es: SectionCopy = {
     highlights: [
       { title: 'Senderismo en fjells', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas: días largos, sin masificación.' },
       { title: 'Kayak y SUP', body: 'Islas del lago Inari, lagos del sol de medianoche: agua como un espejo hasta la 1 de la madrugada.' },
-      { title: 'Pesca de salmón con mosca', body: 'El Tornionjoki y el Teno tienen su pico en junio–julio.' },
+      { title: 'Pesca de salmón con mosca', body: 'La remontada del salmón en el Tornionjoki tiene su pico en junio–julio.' },
       { title: 'Tours bajo el sol de medianoche', body: 'Fotografía, recolección, MTB en los fjells, 24 horas de luz.' },
     ],
     gygTitle: 'Los tours más reservados de Laponia ahora mismo',
@@ -496,7 +496,7 @@ const es: SectionCopy = {
       ],
       tornio: [
         { tip: 'El rompehielos Sampo solo navega de dic a abr, reserve en cuanto abran las fechas.', icon: '🚢' },
-        { tip: 'El SnowCastle se reconstruye cada año con una temática nueva.', icon: '🏰' },
+        { tip: 'El parque de nieve del área del SnowCastle se construye cada invierno; SnowExperience365 abre todo el año.', icon: '🏰' },
         { tip: 'El Green Zone Golf cruza la frontera Finlandia-Suecia a mitad de recorrido.', icon: '⛳' },
         { tip: 'Suecia va una hora por detrás de Finlandia: las tiendas de Haparanda abren y cierran "tarde".', icon: '🕐' },
       ],

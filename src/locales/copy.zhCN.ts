@@ -271,7 +271,7 @@ const zhCN: SectionCopy = {
     highlights: [
       { title: '山地徒步', body: 'Pallas-Yllästunturi、Karhunkierros、Hetta-Pallas，长日,无人潮。' },
       { title: '皮划艇与桨板', body: '伊纳里湖群岛、午夜阳光湖泊，镜面般的水面持续到凌晨一点。' },
-      { title: '鲑鱼飞钓', body: 'Tornionjoki与Teno河流的高峰在6–7月。' },
+      { title: '鲑鱼飞钓', body: 'Tornionjoki 鲑鱼洄游的高峰在6–7月。' },
       { title: '午夜阳光行程', body: '摄影、采集、山地骑行，24小时日光。' },
     ],
     gygTitle: '拉普兰当前预订最多的行程',
@@ -496,7 +496,7 @@ const zhCN: SectionCopy = {
       ],
       tornio: [
         { tip: '破冰船Sampo仅在12至4月航行，一开放预订就尽快下单。', icon: '🚢' },
-        { tip: 'SnowCastle每年以全新主题重建。', icon: '🏰' },
+        { tip: 'SnowCastle 园区的雪公园每年冬天重建；SnowExperience365 全年开放。', icon: '🏰' },
         { tip: 'Green Zone Golf球场会在一轮中跨越芬兰-瑞典边境。', icon: '⛳' },
         { tip: '瑞典比芬兰晚一小时：哈帕兰达的商店"晚"开门也"晚"关门。', icon: '🕐' },
       ],

@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haaparanta ja Kemi",
       "tagline": "Arktisia rajaseikkailuja",
-      "description": "Suomen ja Ruotsin rajakaupunki ja portti ainutlaatuisiin arktisiin elämyksiin. Legendaarinen Sampo-jäänmurtajaristeily, maailman suurin lumilinna ja Euroopan suurin vapaana virtaava lohijoki.",
+      "description": "Suomen ja Ruotsin rajakaupunki ja portti ainutlaatuisiin arktisiin elämyksiin. Legendaarinen Sampo-jäänmurtajaristeily, LumiLinnan talvipuisto ja Euroopan suurin vapaana virtaava lohijoki.",
       "access": "Lento Kemiin (15 min ajomatka)",
       "bestFor": "Ainutlaatuiset elämykset ja perhematkat",
       "why": "Tornio ja Haaparanta ovat yksi kaupunki kahdessa maassa: rajan ylittää kävellen keskellä kauppakatua, IKEA Haaparanta on heti ylityksen vieressä, ja golfkierros vaihtaa maata ja aikavyöhykettä neljästi. Kemi lisää 25 minuutin päähän Sampo-jäänmurtajan risteilyt ja LumiLinnan alueen talvipuiston. Tornionjoella, Euroopan suurimmalla vapaana virtaavalla lohijoella, Kukkolankosken lippousperinne elää yhä joka kesä."
@@ -925,7 +925,7 @@ const d: LangData = {
       "title": "Kemin LumiLinna",
       "description": "Kemin kuuluisa lumilinnaperinne jatkuu LumiLinnan talvipuistona ja ympärivuotisena SnowExperience365-sisälumimaailmana: jääveistoksia ja jääravintola. Täyttä linnaa ei enää rakenneta vuosittain.",
       "highlights": [
-        "Maailman suurin",
+        "Ympärivuotinen sisätila",
         "Jääravintola",
         "Jääkappeli"
       ],
@@ -947,7 +947,7 @@ const d: LangData = {
     },
     "tor-salmon-fishing": {
       "title": "Lohenkalastus Tornionjoella",
-      "description": "Kalasta atlantinlohta Euroopan parhaalla lohijoella. Tornionjoki virtaa Suomen ja Ruotsin rajaa pitkin ja on kuuluisa massiivisista saaliista.",
+      "description": "Kalasta atlantinlohta Euroopan suurimmalla vapaana virtaavalla lohijoella. Tornionjoki virtaa Suomen ja Ruotsin rajaa pitkin ja on kuuluisa massiivisista saaliista.",
       "highlights": [
         "Euroopan suurin vapaana virtaava lohijoki",
         "Opas sisältyy",

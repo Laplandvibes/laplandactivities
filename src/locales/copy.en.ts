@@ -38,7 +38,7 @@ const en: SectionCopy = {
     highlights: [
       { title: 'Fjell hiking', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas. Long days, no crowds.' },
       { title: 'Kayak & SUP', body: 'Lake Inari islands and midnight-sun lakes, glassy water until 1 a.m.' },
-      { title: 'Salmon fly-fishing', body: 'Tornionjoki and Teno river runs peak June–July.' },
+      { title: 'Salmon fly-fishing', body: 'Tornionjoki salmon runs peak June–July.' },
       { title: 'Midnight sun tours', body: 'Photography, foraging, fjell mountain biking, all in 24-hour daylight.' },
     ],
     gygTitle: "Lapland's most-booked tours right now",

@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda e Kemi",
       "tagline": "Avventure artiche al confine",
-      "description": "Città di confine tra Finlandia e Svezia, porta d'ingresso a esperienze artiche uniche. Crociera sul leggendario rompighiaccio Sampo, il più grande castello di neve al mondo e il miglior fiume di salmoni d'Europa.",
+      "description": "Città di confine tra Finlandia e Svezia, porta d'ingresso a esperienze artiche uniche. Crociera sul leggendario rompighiaccio Sampo, lo SnowCastle Winter Park e il più grande fiume di salmoni a corso libero d'Europa.",
       "access": "Volo a Kemi (15 min in auto)",
       "bestFor": "Esperienze uniche e divertimento per famiglie",
       "why": "Tornio e Haparanda sono una sola città in due Paesi: si attraversa il confine a piedi in mezzo alla via dello shopping, IKEA Haparanda è accanto al valico e un giro di golf cambia Paese e fuso orario quattro volte. Kemi, a 25 minuti, aggiunge la crociera sul rompighiaccio Sampo e il parco di neve invernale dell’area SnowCastle. Sul Tornionjoki, il più grande fiume da salmoni a corso libero d’Europa, alle rapide di Kukkolankoski si pesca ancora con la rete tradizionale ogni estate."
@@ -865,7 +865,7 @@ const d: LangData = {
       "title": "LumiLinna SnowCastle Kemi",
       "description": "La celebre tradizione del castello di neve di Kemi continua con lo SnowCastle Winter Park e il mondo di neve al coperto SnowExperience365, aperto tutto l’anno, con sculture e ristorante di ghiaccio. Il castello completo non viene più ricostruito ogni anno.",
       "highlights": [
-        "Il più grande al mondo",
+        "Aperto tutto l’anno",
         "Ristorante di ghiaccio",
         "Cappella di ghiaccio"
       ],
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "tor-salmon-fishing": {
       "title": "Pesca al salmone nel Tornionjoki",
-      "description": "Peschi il salmone atlantico nel miglior fiume di salmoni d'Europa. Il Tornionjoki scorre lungo il confine Finlandia-Svezia ed è famoso per le catture massicce.",
+      "description": "Peschi il salmone atlantico nel più grande fiume di salmoni a corso libero d'Europa. Il Tornionjoki scorre lungo il confine Finlandia-Svezia ed è famoso per le catture massicce.",
       "highlights": [
         "Miglior fiume di salmoni d'Europa",
         "Guida inclusa",

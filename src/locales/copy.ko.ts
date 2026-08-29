@@ -258,7 +258,7 @@ const ko: SectionCopy = {
     highlights: [
       { title: '펠 트레킹', body: '팔라스-윌래스툰투리, 카르훈키에로스, 헤타-팔라스, 긴 하루, 인파 없음.' },
       { title: '카약과 SUP', body: '이나리 호수의 섬들, 백야의 호수들, 새벽 1시까지 거울 같은 수면.' },
-      { title: '플라이 연어 낚시', body: '토르니오요키와 테노 강의 연어 시즌은 6-7월에 절정.' },
+      { title: '플라이 연어 낚시', body: '토르니오요키의 연어 시즌은 6-7월에 절정.' },
       { title: '백야 투어', body: '사진, 채집, 펠 산악 자전거, 24시간 햇빛.' },
     ],
     gygTitle: '지금 가장 많이 예약되는 라플란드 투어', gygEyebrow: '지금 예약 가능 · 무료 취소',
@@ -438,7 +438,7 @@ const ko: SectionCopy = {
       ],
       tornio: [
         { tip: '쇄빙선 Sampo는 12-4월에만 운영, 예약 시작 즉시 예약하세요.', icon: '🚢' },
-        { tip: 'SnowCastle은 매년 새 테마로 재건됩니다.', icon: '🏰' },
+        { tip: 'SnowCastle 구역의 스노우 파크는 매년 겨울 새로 지어지며, SnowExperience365는 연중 운영됩니다.', icon: '🏰' },
         { tip: 'Green Zone Golf는 라운드 중 핀란드-스웨덴 국경을 넘습니다.', icon: '⛳' },
         { tip: '스웨덴은 핀란드보다 1시간 늦습니다. 하파란다 상점은 "늦게" 열고 "늦게" 닫습니다.', icon: '🕐' },
       ],

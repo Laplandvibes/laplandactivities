@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda e Kemi",
       "tagline": "Aventuras árticas na fronteira",
-      "description": "A cidade fronteiriça entre Finlândia e Suécia, porta de entrada para experiências árticas únicas. Cruzeiro no lendário quebra-gelo Sampo, o maior castelo de neve do mundo e o maior rio de salmão de fluxo livre da Europa.",
+      "description": "A cidade fronteiriça entre Finlândia e Suécia, porta de entrada para experiências árticas únicas. Cruzeiro no lendário quebra-gelo Sampo, o SnowCastle Winter Park e o maior rio de salmão de fluxo livre da Europa.",
       "access": "Voo para Kemi (15 min de carro)",
       "bestFor": "Experiências únicas e diversão em família",
       "why": "Tornio e Haparanda são uma cidade em dois países: atravessa-se a fronteira a pé no meio da rua comercial, a IKEA Haparanda fica junto à travessia e uma rodada de golfe muda de país e de fuso quatro vezes. Kemi, a 25 minutos, soma o cruzeiro do quebra-gelo Sampo e o parque de neve de inverno da área do SnowCastle. No Tornionjoki, o maior rio de salmão de curso livre da Europa, as corredeiras de Kukkolankoski mantêm viva a pesca tradicional com rede todo verão."
@@ -865,7 +865,7 @@ const d: LangData = {
       "title": "LumiLinna SnowCastle Kemi",
       "description": "A famosa tradição do castelo de neve de Kemi continua como o SnowCastle Winter Park e o mundo de neve coberto SnowExperience365, aberto o ano todo, com esculturas e restaurante de gelo. O castelo completo não é mais reconstruído todos os anos.",
       "highlights": [
-        "O maior do mundo",
+        "Aberto o ano todo",
         "Restaurante de gelo",
         "Capela de gelo"
       ],
@@ -889,7 +889,7 @@ const d: LangData = {
       "title": "Pesca de salmão no Tornionjoki",
       "description": "Pesque salmão-do-atlântico no maior rio de salmão de fluxo livre da Europa. O Tornionjoki corre ao longo da fronteira Finlândia-Suécia e é famoso pelas capturas enormes.",
       "highlights": [
-        "Melhor rio de salmão da Europa",
+        "Maior rio de salmão de fluxo livre da Europa",
         "Guia incluído",
         "Equipamento fornecido"
       ],

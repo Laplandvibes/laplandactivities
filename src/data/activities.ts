@@ -1033,7 +1033,7 @@ export const activities: Activity[] = [
     season: ['winter'],
     description: 'Kemi\'s famous snow-castle tradition lives on as the SnowCastle Winter Park and the year-round SnowExperience365 indoor snow world, with ice sculptures and an ice restaurant. The full castle is no longer rebuilt each year.',
     groupSize: 'Unlimited',
-    highlights: ['World\'s largest', 'Ice restaurant', 'Ice chapel'],
+    highlights: ['Year-round indoors', 'Ice restaurant', 'Ice chapel'],
   },
   {
     id: 'tor-green-zone',

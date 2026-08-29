@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio、Haparanda 与 Kemi",
       "tagline": "边境上的北极探险",
-      "description": "芬兰与瑞典之间的边境城市，是通往独特北极体验的门户。可乘坐传奇的 Sampo 破冰船巡航、参观世界最大的雪堡，并垂钓欧洲最佳的鲑鱼河。",
+      "description": "芬兰与瑞典之间的边境城市，是通往独特北极体验的门户。可乘坐传奇的 Sampo 破冰船巡航、参观 SnowCastle 冬季公园，并垂钓欧洲最大的自由流淌的鲑鱼河。",
       "access": "飞往 Kemi（车程 15 分钟）",
       "bestFor": "独特体验与家庭欢乐",
       "why": "托尔尼奥和哈帕兰达是横跨两国的一座城：在购物街正中步行过境，IKEA 哈帕兰达就在口岸旁，一场高尔夫要换四次国家和时区。25 分钟外的凯米补上桑普号破冰船巡航和 SnowCastle 雪堡区的冬季雪上乐园。在欧洲最大的自由流淌鲑鱼河托尔尼奥河上，Kukkolankoski 急流的传统抄网捕鱼每年夏天仍在延续。"
@@ -863,9 +863,9 @@ const d: LangData = {
     },
     "tor-snowcastle": {
       "title": "LumiLinna SnowCastle Kemi",
-      "description": "世界最大的雪堡，每年冬天在 Kemi 重建。漫步于冰雪殿堂，参观冰雪教堂，并在冰雪餐厅用餐。",
+      "description": "凯米著名的雪堡传统延续为冬季的 SnowCastle 冬季公园和全年开放的室内冰雪世界 SnowExperience365，设有冰雕和冰餐厅。完整的城堡已不再每年重建。",
       "highlights": [
-        "世界最大",
+        "全年室内开放",
         "冰雪餐厅",
         "冰雪教堂"
       ],
@@ -887,9 +887,9 @@ const d: LangData = {
     },
     "tor-salmon-fishing": {
       "title": "Tornionjoki 鲑鱼垂钓",
-      "description": "在欧洲最佳的鲑鱼河垂钓大西洋鲑。Tornionjoki 沿芬兰与瑞典边境流淌，以钓获巨型鲑鱼而闻名。",
+      "description": "在欧洲最大的自由流淌鲑鱼河垂钓大西洋鲑。Tornionjoki 沿芬兰与瑞典边境流淌，以钓获巨型鲑鱼而闻名。",
       "highlights": [
-        "欧洲最佳鲑鱼河",
+        "欧洲最大的自由流淌鲑鱼河",
         "含向导",
         "提供装备"
       ],

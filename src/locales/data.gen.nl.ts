@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda en Kemi",
       "tagline": "Arctische grensavonturen",
-      "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke Arctische ervaringen. Met de legendarische ijsbreker Sampo, het grootste sneeuwkasteel ter wereld en de beste zalmrivier van Europa.",
+      "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke Arctische ervaringen. Met de legendarische ijsbreker Sampo, het SnowCastle Winter Park en de grootste vrij stromende zalmrivier van Europa.",
       "access": "Vlieg naar Kemi (15 min met de auto)",
       "bestFor": "Unieke ervaringen en gezinsplezier",
       "why": "Tornio en Haparanda zijn één stad in twee landen: u steekt de grens te voet over midden in de winkelstraat, IKEA Haparanda ligt pal naast de overgang en een rondje golf wisselt vier keer van land en tijdzone. Kemi, 25 minuten verderop, voegt de ijsbreker Sampo en het winterse sneeuwpark van het SnowCastle-terrein toe. Op de Tornionjoki, Europa’s grootste vrij stromende zalmrivier, wordt bij de Kukkolankoski elke zomer nog traditioneel met netten gevist."
@@ -865,7 +865,7 @@ const d: LangData = {
       "title": "LumiLinna SnowCastle Kemi",
       "description": "De beroemde sneeuwkasteeltraditie van Kemi leeft voort als het SnowCastle Winter Park en de het hele jaar geopende indoorsneeuwwereld SnowExperience365, met ijssculpturen en een ijsrestaurant. Het volledige kasteel wordt niet meer elk jaar gebouwd.",
       "highlights": [
-        "Grootste ter wereld",
+        "Het hele jaar binnen",
         "IJsrestaurant",
         "IJskapel"
       ],
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "tor-salmon-fishing": {
       "title": "Tornionjoki zalmvissen",
-      "description": "Vis op Atlantische zalm in de beste zalmrivier van Europa. De Tornionjoki loopt langs de Finland-Zweden-grens en staat bekend om enorme vangsten.",
+      "description": "Vis op Atlantische zalm in de grootste vrij stromende zalmrivier van Europa. De Tornionjoki loopt langs de Finland-Zweden-grens en staat bekend om enorme vangsten.",
       "highlights": [
         "Beste zalmrivier van Europa",
         "Gids inbegrepen",

@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda y Kemi",
       "tagline": "Aventuras árticas en la frontera",
-      "description": "Ciudad fronteriza entre Finlandia y Suecia, puerta de entrada a experiencias árticas únicas. Crucero en el legendario rompehielos Sampo, el mayor castillo de nieve del mundo y el mejor río de salmón de Europa.",
+      "description": "Ciudad fronteriza entre Finlandia y Suecia, puerta de entrada a experiencias árticas únicas. Crucero en el legendario rompehielos Sampo, el SnowCastle Winter Park y el mayor río salmonero de curso libre de Europa.",
       "access": "Vuelo a Kemi (15 min en coche)",
       "bestFor": "Experiencias únicas y diversión para familias",
       "why": "Tornio y Haparanda son una ciudad en dos países: se cruza la frontera a pie en plena calle comercial, IKEA Haparanda está junto al paso y una ronda de golf cambia de país y de zona horaria cuatro veces. Kemi, a 25 minutos, añade el crucero del rompehielos Sampo y el parque de nieve invernal del recinto SnowCastle. En el Tornionjoki, el mayor río salmonero de flujo libre de Europa, los rápidos de Kukkolankoski mantienen viva la pesca tradicional con red cada verano."
@@ -865,7 +865,7 @@ const d: LangData = {
       "title": "LumiLinna SnowCastle Kemi",
       "description": "La famosa tradición del castillo de nieve de Kemi continúa como el SnowCastle Winter Park y el mundo de nieve cubierto SnowExperience365, abierto todo el año, con esculturas y restaurante de hielo. El castillo completo ya no se construye cada año.",
       "highlights": [
-        "El mayor del mundo",
+        "Abierto todo el año",
         "Restaurante de hielo",
         "Capilla de hielo"
       ],
@@ -887,7 +887,7 @@ const d: LangData = {
     },
     "tor-salmon-fishing": {
       "title": "Pesca de salmón en el Tornionjoki",
-      "description": "Pesque salmón atlántico en el mejor río de salmón de Europa. El Tornionjoki discurre a lo largo de la frontera entre Finlandia y Suecia y es famoso por sus capturas descomunales.",
+      "description": "Pesque salmón atlántico en el mayor río de salmón de curso libre de Europa. El Tornionjoki discurre a lo largo de la frontera entre Finlandia y Suecia y es famoso por sus capturas descomunales.",
       "highlights": [
         "Mejor río de salmón de Europa",
         "Guía incluido",
