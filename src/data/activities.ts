@@ -147,7 +147,7 @@ export const activities: Activity[] = [
     duration: '2-3 hours',
     difficulty: 'Easy',
     season: ['winter', 'spring', 'summer', 'autumn'],
-    description: 'Explore the fascinating history and culture of the Arctic region at this top-tier museum with striking glass tunnel architecture on the bank of the Kemijoki river.',
+    description: 'Explore the fascinating history and culture of the Arctic region at this top-tier museum with striking glass tunnel architecture on the bank of the Ounasjoki river.',
     groupSize: 'Unlimited',
     highlights: ['Interactive exhibits', 'Northern Lights theatre', 'Arctic history'],
   },
