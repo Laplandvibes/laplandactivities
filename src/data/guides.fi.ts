@@ -67,7 +67,7 @@ const guides: Guides = {
     tornio: {
       seasonsTitle: 'Tornio, Haaparanta ja Kemi kausi kerrallaan',
       seasonWinter: 'Täällä talvi rakentaa eikä vain peitä. Kemin LumiLinna rakennetaan alusta joka talvi, ja jäänmurtaja Sampo ajaa jäätyneelle Perämerelle ja päästää matkustajat kelluntapukuihin jäälauttojen väliin. Kumpaakaan ei ole kesällä, mikä tekee tästä ainoan Lapin kohteen, jonka päänähtävyydet ovat tiukasti kausiluonteisia.',
-      seasonSummer: 'Kesä kuuluu joelle. Tornionjoki on Euroopan suurin vapaana virtaava lohijoki, ja Kukkolankoskella perinteinen lippoaminen jatkuu joka kesä. Green Zone Golf heittelee pelaajaa rajan yli niin, että maa ja aikavyöhyke vaihtuvat kierroksen aikana neljästi — se onnistuu vain sulan maan aikaan.',
+      seasonSummer: 'Kesä kuuluu joelle. Tornionjoki on Euroopan suurin vapaana virtaava lohijoki, ja Kukkolankoskella perinteinen lippoaminen jatkuu joka kesä. Green Zone Golf heittelee pelaajaa rajan yli niin, että maa ja aikavyöhyke vaihtuvat kierroksen aikana neljästi, se onnistuu vain sulan maan aikaan.',
       planTitle: 'Tornion matkan suunnittelu',
       planGetting: 'Kemin lentoasemalta on Tornioon noin viisitoista minuuttia, ja Kemiin itseensä noin kaksikymmentäviisi, joten kaupungit toimivat yhtenä matkana. Tornio ja Haaparanta ovat yksi kaupunki kahdessa maassa: raja kulkee keskellä kauppakatua ja sen ylittää jalan.',
       planStay: 'Tämä on helpoin Lapin kohde yhdistää ostospäivään: IKEA Haaparanta on aivan rajanylityksen vieressä ja hinnat kannattaa vertailla molemmin puolin. Yksi tai kaksi yötä riittää talvella jäänmurtajaan ja LumiLinnaan, kesällä jokeen ja golfkierrokseen.',

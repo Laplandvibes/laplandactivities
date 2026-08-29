@@ -123,16 +123,16 @@ const COPY = {
   "ledeProduct": {
     "en": "Hand-picked winter activities, bookable online through GetYourGuide.",
     "fi": "Poimitut talviaktiviteetit, varattavissa verkossa GetYourGuiden kautta.",
-    "de": "Ausgewählte Winteraktivitäten — online über GetYourGuide buchbar.",
+    "de": "Ausgewählte Winteraktivitäten, online über GetYourGuide buchbar.",
     "ja": "厳選した冬のアクティビティ。GetYourGuide でオンライン予約できます。",
     "es": "Actividades de invierno seleccionadas, reservables en línea con GetYourGuide.",
     "pt-BR": "Atividades de inverno selecionadas, reserváveis online via GetYourGuide.",
     "zh-CN": "精选冬季活动，可通过 GetYourGuide 在线预订。",
-    "ko": "엄선한 겨울 액티비티 — GetYourGuide에서 온라인 예약.",
+    "ko": "엄선한 겨울 액티비티, GetYourGuide에서 온라인 예약.",
     "fr": "Une sélection d'activités hivernales, réservables en ligne via GetYourGuide.",
     "it": "Attività invernali selezionate, prenotabili online tramite GetYourGuide.",
     "nl": "Geselecteerde winteractiviteiten, online te boeken via GetYourGuide.",
-    "sv": "Utvalda vinteraktiviteter — bokas online via GetYourGuide."
+    "sv": "Utvalda vinteraktiviteter, bokas online via GetYourGuide."
   },
   "headingCategory": {
     "en": "Browse and book on GetYourGuide",
@@ -149,7 +149,7 @@ const COPY = {
     "sv": "Bläddra och boka på GetYourGuide"
   },
   "ledeCategory": {
-    "en": "A partner-maintained list, always current — we do not name a single tour here.",
+    "en": "A partner-maintained list, always current, we do not name a single tour here.",
     "fi": "Kumppanin ylläpitämä lista, aina ajantasainen; emme nimeä yksittäistä retkeä.",
     "de": "Eine vom Partner gepflegte Liste, immer aktuell.",
     "ja": "パートナーが管理する最新のリストです。",
