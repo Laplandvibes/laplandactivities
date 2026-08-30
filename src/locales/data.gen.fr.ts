@@ -14,7 +14,7 @@ const d: LangData = {
     },
     "northern-lights": {
       "name": "Aurores boréales",
-      "description": "Chasses guidées aux aurores, tours photo, poursuites en motoneige et expéditions en raquettes sous les lumières dansantes."
+      "description": "Chasses guidées aux aurores, tours photo, sorties en motoneige et expéditions en raquettes sous les lumières dansantes."
     },
     "winter-sports": {
       "name": "Sports d'hiver",
@@ -26,7 +26,7 @@ const d: LangData = {
     },
     "culture": {
       "name": "Culture et patrimoine",
-      "description": "Musées sames, village du Père Noël, hôtels de glace, orpaillage, mines d'améthyste et le patrimoine fascinant de l'Arctique."
+      "description": "Musées sâmes, village du Père Noël, hôtels de glace, orpaillage, mine d'améthyste et le patrimoine fascinant de l'Arctique."
     },
     "summer": {
       "name": "Aventures d'été",
@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques. On y trouve le village du Père Noël, d'excellentes liaisons de transport et un vaste choix d'activités d'hiver comme d'été.",
       "access": "Vol direct depuis Helsinki (1 h 15)",
       "bestFor": "Premiers voyages et familles",
-      "why": "Rovaniemi concentre l’infrastructure de la Laponie : aéroport international, terminus du train de nuit et le plus grand choix d’excursions de la région. Au-delà du village du Père Noël, on y trouve le musée Arktikum au bord du fleuve, les pistes d’Ounasvaara juste au-dessus de la ville et des dizaines d’opérateurs de huskys, de rennes et d’aurores à 20 minutes. Idéal pour un premier séjour et les familles ; le certificat gratuit de passage du cercle polaire s’obtient au bureau de poste du Père Noël."
+      "why": "Rovaniemi concentre l’infrastructure de la Laponie : aéroport international, terminus du train de nuit et le plus grand choix d’excursions de la région. Au-delà du village du Père Noël, on y trouve le musée Arktikum au bord du fleuve, les pistes d’Ounasvaara juste au-dessus de la ville et des dizaines d’opérateurs de huskies, de rennes et d’aurores à 20 minutes. Idéal pour un premier séjour et les familles ; le certificat gratuit de passage du cercle polaire s’obtient au bureau de poste du Père Noël."
     },
     "levi": {
       "name": "Levi",
@@ -61,10 +61,10 @@ const d: LangData = {
     "yllas": {
       "name": "Ylläs",
       "tagline": "Les plus longues pistes de Finlande",
-      "description": "Deux stations de ski de part et d'autre du fjell Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km. Une Laponie plus calme et authentique avec le parc national Pallas-Yllästunturi.",
+      "description": "Deux stations de ski de part et d'autre du fjäll Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km. Une Laponie plus calme et authentique avec le parc national Pallas-Yllästunturi.",
       "access": "Vol vers Kittilä (35 min en voiture)",
       "bestFor": "Amoureux de la nature et skieurs aguerris",
-      "why": "Ylläs, ce sont deux villages tranquilles, Äkäslompolo et Ylläsjärvi, de part et d’autre d’un grand fjell : 62 pistes au total et les plus longues descentes de Finlande, à plus de trois kilomètres. Autour s’étendent quelque 300 km de pistes de fond damées jusque dans le parc national de Pallas-Yllästunturi. À choisir plutôt que Levi pour des ciels d’aurores bien noirs, le silence du parc national et de longues journées de ski."
+      "why": "Ylläs, ce sont deux villages tranquilles, Äkäslompolo et Ylläsjärvi, de part et d’autre d’un grand fjäll : 62 pistes au total et les plus longues descentes de Finlande, à plus de trois kilomètres. Autour s’étendent quelque 300 km de pistes de fond damées jusque dans le parc national de Pallas-Yllästunturi. À choisir plutôt que Levi pour des ciels d’aurores bien noirs, le silence du parc national et de longues journées de ski."
     },
     "saariselka": {
       "name": "Saariselkä",
@@ -72,15 +72,15 @@ const d: LangData = {
       "description": "La station de ski la plus au nord de Finlande, à la lisière d'une des plus vastes zones sauvages d'Europe. Réputée pour l'observation des aurores, l'orpaillage et le mythique sauna à fumée de Kiilopää.",
       "access": "Vol vers Ivalo (30 min en voiture)",
       "bestFor": "Chercheurs de nature sauvage et aurores",
-      "why": "Saariselkä est posée en lisière du parc national Urho Kekkonen : sentiers balisés et refuges ouverts commencent au village même. À cette latitude, les aurores se montrent de septembre à avril, et s’y ajoutent des choses introuvables plus au sud : l’orpaillage de Tankavaara, où chaque paillette trouvée vous appartient, et le sauna à fumée de Kiilopää suivi d’une roulade dans la neige. Pour les voyageurs qui placent la nature sauvage avant les services."
+      "why": "Saariselkä est posée en lisière du parc national d’Urho Kekkonen : sentiers balisés et refuges ouverts commencent au village même. À cette latitude, les aurores se montrent de septembre à avril, et s’y ajoutent des choses introuvables plus au sud : l’orpaillage de Tankavaara, où chaque paillette trouvée vous appartient, et le sauna à fumée de Kiilopää suivi d’une roulade dans la neige. Pour les voyageurs qui placent la nature sauvage avant les services."
     },
     "inari": {
       "name": "Inari",
-      "tagline": "Cœur de la culture same",
-      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple same finlandais. On y trouve le musée Siida et une nature préservée.",
+      "tagline": "Cœur de la culture sâme",
+      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sâme finlandais. On y trouve le musée Siida et une nature préservée.",
       "access": "Vol vers Ivalo (40 min en voiture)",
       "bestFor": "Explorateurs culturels et photographes",
-      "why": "Inari est le siège du Parlement sámi de Finlande et le meilleur endroit pour rencontrer la culture sámie vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l’église de Pielpajärvi se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
+      "why": "Inari est le siège du Parlement sâme de Finlande et le meilleur endroit pour rencontrer la culture sâme vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l’église de Pielpajärvi se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
     },
     "ruka": {
       "name": "Ruka et Kuusamo",
@@ -93,7 +93,7 @@ const d: LangData = {
     "posio": {
       "name": "Posio",
       "tagline": "Joyau caché de la Laponie orientale",
-      "description": "Réputée pour les arbres au sommet enneigé du parc national de Riisitunturi et les cascades gelées du canyon de Korouoma. Loin des sentiers battus, nature à l'état pur.",
+      "description": "Réputée pour les arbres couronnés de neige du parc national de Riisitunturi et les cascades gelées du canyon de Korouoma. Loin des sentiers battus, nature à l'état pur.",
       "access": "En voiture depuis Rovaniemi (2 h) ou Ruka (1 h)",
       "bestFor": "Explorateurs hors des sentiers battus",
       "why": "Les atouts de Posio sont naturels : les arbres tykky de Riisitunturi, ployés en sculptures par le givre au cœur de l’hiver, et les cascades gelées de Korouoma, suspendues jusqu’à 40 mètres à la paroi du canyon. Ajoutez Pentik, la fabrique de céramique la plus septentrionale du monde avec ses galeries et son magasin d’usine, et la journée est pleine, loin des routes touristiques. Une voiture est nécessaire ; Posio complète bien un séjour à Ruka ou Rovaniemi."
@@ -101,18 +101,18 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda et Kemi",
       "tagline": "Aventures arctiques à la frontière",
-      "description": "La ville frontière entre la Finlande et la Suède, point d'accès à des expériences arctiques uniques. Croisière sur le mythique brise-glace Sampo, le SnowCastle Winter Park et la plus grande rivière à saumon à écoulement libre d'Europe.",
+      "description": "La ville frontière entre la Finlande et la Suède, point d'accès à des expériences arctiques uniques. Le mythique brise-glace Sampo, le SnowCastle Winter Park et la plus grande rivière à saumon à écoulement libre d'Europe.",
       "access": "Vol vers Kemi (15 min en voiture)",
       "bestFor": "Expériences uniques et plaisirs en famille",
-      "why": "Tornio et Haparanda ne font qu’une ville dans deux pays : on franchit la frontière à pied en pleine rue commerçante, IKEA Haparanda est juste à côté du passage, et une partie de golf change quatre fois de pays et de fuseau horaire. Kemi, à 25 minutes, ajoute la croisière du brise-glace Sampo et le parc de neige hivernal du domaine SnowCastle. Sur le Tornionjoki, plus grand fleuve à saumons libre d’Europe, les rapides de Kukkolankoski perpétuent chaque été la pêche traditionnelle au filet."
+      "why": "Tornio et Haparanda ne font qu’une ville dans deux pays : on franchit la frontière à pied en pleine rue commerçante, IKEA Haparanda est juste à côté du passage, et une partie de golf change quatre fois de pays et de fuseau horaire. Kemi, à 25 minutes, ajoute la croisière du brise-glace Sampo et le parc de neige hivernal du domaine SnowCastle. Sur le Tornionjoki, plus grand fleuve à saumons libre d’Europe, les rapides de Kukkolankoski perpétuent chaque été la pêche traditionnelle à l’épuisette."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
       "tagline": "Fjells jumeaux du plus ancien parc national",
-      "description": "Deux villages de fjell, Pyhä et Luosto, reliés par une chaîne montagneuse très ancienne, avec le parc national de Pyhä-Luosto entre eux. Ski, raquettes et améthyste à creuser soi-même au Lampivaara.",
+      "description": "Deux villages de fjäll, Pyhä et Luosto, reliés par une chaîne montagneuse très ancienne, avec le parc national de Pyhä-Luosto entre eux. Ski, raquettes et améthyste à creuser soi-même au Lampivaara.",
       "access": "Vol vers Rovaniemi (1 h 30 de route)",
       "bestFor": "Skieurs de parc national et familles",
-      "why": "Le parc national entre les deux villages est la vraie raison de venir : Isokuru, la gorge la plus profonde de Finlande avec ses quelque 220 mètres, des caillebotis dans la forêt ancienne et des vues dégagées depuis la plus vieille chaîne de fjells de Laponie. Au Lampivaara, à Luosto, creusez dans la seule mine d’améthyste active d’Europe et gardez une pierre ; l’hiver, un train des neiges chauffé monte au sommet. Côté Pyhä, la piste à bosses Huttu-Ukko a un passé de Coupe du monde, et les familles ont un terrain doux sans files d’attente."
+      "why": "Le parc national entre les deux villages est la vraie raison de venir : Isokuru, la gorge la plus profonde de Finlande avec ses quelque 220 mètres, des caillebotis dans la forêt ancienne et des vues dégagées depuis la plus vieille chaîne de fjälls de Laponie. Au Lampivaara, à Luosto, creusez dans la seule mine d’améthyste active d’Europe et gardez une pierre ; l’hiver, un train des neiges chauffé monte au sommet. Côté Pyhä, la piste à bosses Huttu-Ukko a un passé de Coupe du monde, et les familles ont un terrain doux sans files d’attente."
     },
     "kemijarvi": {
       "name": "Kemijärvi",
@@ -154,7 +154,7 @@ const d: LangData = {
       "category": "Culture et patrimoine"
     },
     "rov-husky-safari": {
-      "title": "Safari husky et visite du chenil",
+      "title": "Safari en traîneau de huskies et visite du chenil",
       "description": "Pilotez votre propre attelage de huskies à travers les forêts enneigées sur un parcours pouvant atteindre 18 km, puis visitez le chenil pour rencontrer les chiots et découvrir le traîneau à chiens arctique.",
       "highlights": [
         "Pilotez votre propre traîneau",
@@ -238,8 +238,8 @@ const d: LangData = {
       "category": "Rencontres animales"
     },
     "rov-ice-floating": {
-      "title": "Expérience de flottaison sur glace arctique",
-      "description": "Flottez sur une rivière gelée en combinaison étanche sous le ciel arctique. Une expérience surréaliste et apaisante, suivie de boissons chaudes autour d'un feu de camp.",
+      "title": "Flottaison arctique en eau glacée",
+      "description": "Flottez dans une rivière glacée en combinaison étanche sous le ciel arctique. Une expérience surréaliste et apaisante, suivie de boissons chaudes autour d'un feu de camp.",
       "highlights": [
         "Combinaison étanche fournie",
         "Boissons chaudes incluses",
@@ -335,10 +335,10 @@ const d: LangData = {
     },
     "lev-samiland": {
       "title": "Rennes et culture à Samiland",
-      "description": "Rencontrez les rennes et découvrez la culture sami sur ce site patrimonial authentique. Nourrissez les rennes à la main dans l'enclos d'hiver, explorez les expositions intérieure et extérieure et écoutez les récits du peuple autochtone.",
+      "description": "Rencontrez les rennes et découvrez la culture sâme sur ce site patrimonial authentique. Nourrissez les rennes à la main dans l'enclos d'hiver, explorez les expositions intérieure et extérieure et écoutez les récits du peuple autochtone.",
       "highlights": [
         "Nourrissage des rennes",
-        "Récits sames",
+        "Récits sâmes",
         "Exposition extérieure"
       ],
       "duration": "2 h",
@@ -346,7 +346,7 @@ const d: LangData = {
       "category": "Rencontres animales"
     },
     "lev-husky-safari": {
-      "title": "Safari husky de Levi",
+      "title": "Safari en traîneau de huskies à Levi",
       "description": "Conduisez votre propre attelage de huskies à travers la nature silencieuse autour de Levi. Sentier de 15 km à travers des forêts gelées avec pause café au feu de camp.",
       "highlights": [
         "Pilotez votre propre traîneau",
@@ -394,7 +394,7 @@ const d: LangData = {
       "category": "Aventures d'été"
     },
     "lev-ice-fishing": {
-      "title": "Pêche sur glace sur lac gelé",
+      "title": "Pêche blanche sur lac gelé",
       "description": "Percez la glace d'un lac gelé et pêchez perche et corégone selon les méthodes lapones traditionnelles. La prise est cuite au feu de bois.",
       "highlights": [
         "Pêche et cuisson",
@@ -431,7 +431,7 @@ const d: LangData = {
     },
     "lev-kota-dinner": {
       "title": "Dîner lapon en kammi au coin du feu",
-      "description": "Dînez dans une hutte de tourbe traditionnelle de style same (kammi) autour d'un feu ouvert central. Saumon, renne et baies sauvages de saison grillés à la flamme.",
+      "description": "Dînez dans une hutte de tourbe traditionnelle de style sâme (kammi) autour d'un feu ouvert central. Saumon, renne et baies sauvages de saison grillés à la flamme.",
       "highlights": [
         "Cadre kammi traditionnel",
         "Cuisine au feu de bois",
@@ -443,7 +443,7 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Station de ski d'Ylläs, les plus longues pistes",
-      "description": "Les plus longues pistes de Finlande à 3 km de part et d'autre du fjell Ylläs. 62 pistes, une télécabine et 300 km de pistes de fond entretenues à travers le parc national.",
+      "description": "Les plus longues pistes de Finlande, jusqu'à 3 km, de part et d'autre du fjäll Ylläs. 62 pistes, une télécabine et 300 km de pistes de fond entretenues à travers le parc national.",
       "highlights": [
         "Plus longue piste 3 km",
         "62 pistes",
@@ -454,12 +454,12 @@ const d: LangData = {
       "category": "Sports d'hiver"
     },
     "yll-aurora-hunt": {
-      "title": "Chasse aux aurores depuis le fjell Ylläs",
-      "description": "Ylläs offre un des ciels nocturnes les plus sombres et dégagés de Finlande. Partez à la chasse aux aurores avec des guides experts qui connaissent les meilleurs points de vue autour du fjell.",
+      "title": "Chasse aux aurores depuis le fjäll Ylläs",
+      "description": "Ylläs offre un des ciels nocturnes les plus sombres et dégagés de Finlande. Partez à la chasse aux aurores avec des guides experts qui connaissent les meilleurs points de vue autour du fjäll.",
       "highlights": [
         "Zone Dark Sky",
         "Guides experts",
-        "Vue depuis le sommet du fjell"
+        "Vue depuis le sommet du fjäll"
       ],
       "duration": "3 h",
       "difficulty": "Facile",
@@ -467,10 +467,10 @@ const d: LangData = {
     },
     "yll-snowmobile": {
       "title": "Safari motoneige en pleine nature",
-      "description": "Roulez à travers la nature préservée entre les fjells Ylläs et Pallas. Les itinéraires traversent marais gelés, forêts boréales et paysages de fjell dégagés.",
+      "description": "Roulez à travers la nature préservée entre les fjälls Ylläs et Pallas. Les itinéraires traversent marais gelés, forêts boréales et paysages de fjäll dégagés.",
       "highlights": [
         "Itinéraire sauvage",
-        "Paysages de fjell",
+        "Paysages de fjäll",
         "Équipement chaud inclus"
       ],
       "duration": "3 h",
@@ -479,10 +479,10 @@ const d: LangData = {
     },
     "yll-pallas-hike": {
       "title": "Randonnée dans le parc national Pallas-Yllästunturi",
-      "description": "Randonnez à travers le parc national le plus visité de Finlande sur des sentiers de fjell balisés au départ d'Ylläs. Vues remarquables d'un fjell à l'autre, forêts ancestrales et ruisseaux cristallins.",
+      "description": "Randonnez à travers le parc national le plus visité de Finlande sur des sentiers de fjäll balisés au départ d'Ylläs. Vues remarquables d'un fjäll à l'autre, forêts ancestrales et ruisseaux cristallins.",
       "highlights": [
         "Sentiers du parc national",
-        "Panoramas depuis le sommet du fjell",
+        "Panoramas depuis le sommet du fjäll",
         "Guide inclus"
       ],
       "duration": "5-7 h",
@@ -490,7 +490,7 @@ const d: LangData = {
       "category": "Aventures d'été"
     },
     "yll-husky": {
-      "title": "Safari husky d'une journée dans le parc national Pallas-Yllästunturi",
+      "title": "Safari en traîneau de huskies d'une journée dans le parc national Pallas-Yllästunturi",
       "description": "Pilotez votre propre attelage de huskies à travers le parc national Pallas-Yllästunturi, avec une petite ferme familiale de Rauhala, au nord d'Ylläs. Six participants maximum par sortie.",
       "highlights": [
         "Petit groupe",
@@ -539,7 +539,7 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Ski de fond à Pallas",
-      "description": "Skiez sur 300 km de pistes entretenues à travers le parc national Pallas-Yllästunturi. Itinéraires pour tous les niveaux, des boucles douces au bord des lacs aux défis de fjell.",
+      "description": "Skiez sur 300 km de pistes entretenues à travers le parc national Pallas-Yllästunturi. Itinéraires pour tous les niveaux, des boucles douces au bord des lacs aux défis de fjäll.",
       "highlights": [
         "300 km de pistes",
         "Paysage du parc national",
@@ -563,11 +563,11 @@ const d: LangData = {
     },
     "saa-amethyst-mine": {
       "title": "Visite de la mine d'améthyste",
-      "description": "Extrayez votre propre améthyste à la seule mine d'améthyste active d'Europe, au sommet du fjell Lampivaara. En hiver, montée en traîneau chauffé Amethyst Pendolino jusqu'au sommet du fjell ; en été, courte marche panoramique depuis le café.",
+      "description": "Extrayez votre propre améthyste à la seule mine d'améthyste active d'Europe, au sommet du fjäll Lampivaara. En hiver, montée en train des neiges chauffé Amethyst Pendolino jusqu'au sommet du fjäll ; en été, courte marche panoramique depuis le café.",
       "highlights": [
         "Extrayez votre gemme",
         "Gardez une améthyste",
-        "Site au sommet du fjell"
+        "Site au sommet du fjäll"
       ],
       "duration": "3 h",
       "difficulty": "Facile",
@@ -575,7 +575,7 @@ const d: LangData = {
     },
     "saa-uk-national-park": {
       "title": "Trekking au parc national d'Urho Kekkonen",
-      "description": "Explorez l'une des plus grandes zones sauvages d'Europe. Randonnées à la journée depuis Kiilopää ou trekkings de plusieurs jours à travers un paysage de fjell intact, avec des cabanes sauvages en chemin.",
+      "description": "Explorez l'une des plus grandes zones sauvages d'Europe. Randonnées à la journée depuis Kiilopää ou treks de plusieurs jours à travers un paysage de fjäll intact, avec des cabanes sauvages en chemin.",
       "highlights": [
         "Entrée gratuite",
         "Cabanes sauvages",
@@ -587,7 +587,7 @@ const d: LangData = {
     },
     "saa-kiilopaa-sauna": {
       "title": "Sauna à fumée et bain glacé à Kiilopää",
-      "description": "Découvrez le plus célèbre sauna à fumée de Finlande au centre du fjell Kiilopää. Réchauffez-vous dans le traditionnel savusauna, puis plongez dans le ruisseau de fjell glacé Kiilopuro.",
+      "description": "Découvrez le plus célèbre sauna à fumée de Finlande au centre du fjäll Kiilopää. Réchauffez-vous dans le traditionnel savusauna, puis plongez dans le ruisseau de fjäll glacé Kiilopuro.",
       "highlights": [
         "Célèbre sauna à fumée",
         "Baignade glacée",
@@ -599,10 +599,10 @@ const d: LangData = {
     },
     "saa-snowmobile": {
       "title": "Safari motoneige dans la nature de Saariselkä",
-      "description": "Roulez à travers les fjells sauvages bordant le parc national d'Urho Kekkonen. Le paysage y est plus accidenté et plus reculé que partout ailleurs en Laponie finlandaise.",
+      "description": "Roulez à travers les fjälls sauvages bordant le parc national d'Urho Kekkonen. Le paysage y est plus accidenté et plus reculé que partout ailleurs en Laponie finlandaise.",
       "highlights": [
         "Limite de la nature sauvage",
-        "Paysages de fjell",
+        "Paysages de fjäll",
         "Équipement chaud inclus"
       ],
       "duration": "3 h",
@@ -622,7 +622,7 @@ const d: LangData = {
       "category": "Aurores boréales"
     },
     "saa-ice-fishing": {
-      "title": "Expérience de pêche sur glace arctique",
+      "title": "Expérience de pêche blanche arctique",
       "description": "Percez l'épaisse glace d'un lac gelé et pêchez perche et corégone selon les méthodes traditionnelles, puis réchauffez-vous autour d'un déjeuner au feu de camp dans un lavvu.",
       "highlights": [
         "Déjeuner pêche et cuisson",
@@ -634,10 +634,10 @@ const d: LangData = {
       "category": "Aventure"
     },
     "ina-siida-museum": {
-      "title": "Siida, musée same et centre nature",
-      "description": "Le premier musée same de Finlande met en valeur la culture, l'histoire et la nature de la région la plus septentrionale. Exposition en plein air remarquable au fil des saisons.",
+      "title": "Siida, musée sâme et centre nature",
+      "description": "Le premier musée sâme de Finlande met en valeur la culture, l'histoire et la nature de la région la plus septentrionale de Finlande. Exposition en plein air remarquable au fil des saisons.",
       "highlights": [
-        "Culture same",
+        "Culture sâme",
         "Expositions nature",
         "Sentiers extérieurs"
       ],
@@ -670,10 +670,10 @@ const d: LangData = {
       "category": "Aventures d'été"
     },
     "ina-sami-experience": {
-      "title": "Élevage de rennes same authentique",
-      "description": "Rejoignez un véritable éleveur de rennes same pour une expérience culturelle intime. Découvrez les traditions ancestrales d'élevage qui perdurent aujourd'hui à Inari.",
+      "title": "Élevage de rennes sâme authentique",
+      "description": "Rejoignez un véritable éleveur de rennes sâme pour une expérience culturelle intime. Découvrez les traditions ancestrales d'élevage qui perdurent aujourd'hui à Inari.",
       "highlights": [
-        "Véritable éleveur same",
+        "Véritable éleveur sâme",
         "Immersion culturelle",
         "Interaction avec les rennes"
       ],
@@ -695,7 +695,7 @@ const d: LangData = {
     },
     "ina-aurora": {
       "title": "Chasse aux aurores boréales depuis Inari",
-      "description": "Inari offre certains des cieux les plus sombres de Finlande. Votre guide utilise des données aurores en temps réel pour trouver les meilleurs points de vue autour du lac.",
+      "description": "Inari offre certains des ciels les plus sombres de Finlande. Votre guide utilise des données aurores en temps réel pour trouver les meilleurs points de vue autour du lac.",
       "highlights": [
         "Ciels les plus sombres",
         "Suivi en temps réel",
@@ -719,7 +719,7 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Station de ski de Ruka",
-      "description": "41 pistes, la plus longue saison de ski de Finlande (octobre à mai) et des pistes de fond de niveau coupe du monde. Ski nocturne disponible.",
+      "description": "41 pistes, la plus longue saison de ski de Finlande (octobre à mai) et des pistes de fond de niveau Coupe du monde. Ski nocturne disponible.",
       "highlights": [
         "41 pistes",
         "Saison la plus longue",
@@ -778,7 +778,7 @@ const d: LangData = {
       "category": "Aventure"
     },
     "ruk-husky": {
-      "title": "Safari husky de Ruka",
+      "title": "Safari en traîneau de huskies à Ruka",
       "description": "Conduisez votre propre attelage de huskies de l'Alaska à travers la forêt de Ruka. Visitez le chenil et rencontrez les chiens avant de partir.",
       "highlights": [
         "Pilotez votre propre traîneau",
@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Croisière brise-glace Sampo",
-      "description": "Croisez à travers la mer Baltique gelée à bord d'un véritable brise-glace, puis flottez sur la mer gelée en combinaison de survie. Une expérience arctique de la bucket list.",
+      "description": "Croisez à travers la mer Baltique gelée à bord d'un véritable brise-glace, puis flottez dans la mer glacée en combinaison de survie. Une expérience arctique de la bucket list.",
       "highlights": [
         "Véritable brise-glace",
         "Flottaison en mer",
@@ -889,7 +889,7 @@ const d: LangData = {
       "title": "Pêche au saumon sur le Tornionjoki",
       "description": "Pêchez le saumon atlantique sur la plus grande rivière à saumon à écoulement libre d'Europe. Le Tornionjoki longe la frontière Finlande-Suède et est réputé pour ses prises massives.",
       "highlights": [
-        "Meilleure rivière à saumon d'Europe",
+        "La plus grande rivière à saumon libre d'Europe",
         "Guide inclus",
         "Matériel fourni"
       ],
@@ -899,7 +899,7 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Expérience corégone à Kukkolankoski",
-      "description": "Observez la pêche au filet traditionnelle aux rapides de Kukkolankoski, puis goûtez du corégone grillé à la flamme préparé de la même façon depuis des siècles. La plus ancienne tradition de pêche de Finlande.",
+      "description": "Observez la pêche traditionnelle à l’épuisette aux rapides de Kukkolankoski, puis goûtez du corégone grillé à la flamme préparé de la même façon depuis des siècles. La plus ancienne tradition de pêche de Finlande.",
       "highlights": [
         "Pêche traditionnelle",
         "Corégone grillé à la flamme",
@@ -923,7 +923,7 @@ const d: LangData = {
     },
     "act-ice-fishing-rovaniemi": {
       "title": "Pêche blanche à Rovaniemi",
-      "description": "Une sortie de pêche blanche guidée sur un lac juste à l'extérieur de Rovaniemi, taillée pour tenir dans une réservation d'une demi-journée. La pêche blanche de base ne demande ni permis ni âge minimum, si bien que les enfants pêchent aux côtés des adultes. Les guides couvrent la technique de la dandinette et la sécurité sur la glace avant que quiconque ne pose le pied sur la glace ouverte.",
+      "description": "Une sortie de pêche blanche guidée sur un lac juste à l'extérieur de Rovaniemi, taillée pour tenir dans une réservation d'une demi-journée. La pêche blanche de base ne demande ni permis ni âge minimum, si bien que les enfants pêchent aux côtés des adultes. Les guides couvrent la technique de la dandinette et la sécurité sur la glace avant que quiconque ne pose le pied sur la glace.",
       "highlights": [
         "Demi-journée, tout près de Rovaniemi",
         "Familial, à tout âge",
@@ -982,7 +982,7 @@ const d: LangData = {
     },
     "pyh-national-park": {
       "title": "Parc national de Pyhä-Luosto et gorge d’Isokuru",
-      "description": "Marchez entre les deux villages par la gorge la plus profonde de Finlande : Isokuru plonge d’environ 220 mètres entre les fjells, escaliers et caillebotis longeant la crête d’Uhriharju et la forêt ancienne. Entrée libre, sentiers bien balisés et itinéraires à la journée depuis Pyhä comme depuis Luosto.",
+      "description": "Marchez entre les deux villages par la gorge la plus profonde de Finlande : Isokuru plonge d’environ 220 mètres entre les fjälls, escaliers et caillebotis longeant la crête d’Uhriharju et la forêt ancienne. Entrée libre, sentiers bien balisés et itinéraires à la journée depuis Pyhä comme depuis Luosto.",
       "highlights": [
         "Isokuru, gorge la plus profonde de Finlande",
         "Entrée libre",
@@ -1004,7 +1004,7 @@ const d: LangData = {
     },
     "pyh-aurora-snowshoe": {
       "title": "Raquettes et aurores boréales à Luosto",
-      "description": "Éloignez-vous en raquettes des lumières du village vers la forêt silencieuse sous les fjells et attendez l’aurore autour d’un feu, boissons chaudes à la main. Luosto est si petit que la vraie obscurité commence à quelques minutes de l’hôtel.",
+      "description": "Éloignez-vous en raquettes des lumières du village vers la forêt silencieuse sous les fjälls et attendez l’aurore autour d’un feu, boissons chaudes à la main. Luosto est si petit que la vraie obscurité commence à quelques minutes de l’hôtel.",
       "highlights": [
         "Ciel noir tout près du village",
         "Raquettes et équipement fournis",
@@ -1025,7 +1025,7 @@ const d: LangData = {
       "category": "Pêche et pêche blanche"
     },
     "kem-husky-safari": {
-      "title": "Safari husky en conduite autonome",
+      "title": "Safari en traîneau de huskies en autonomie",
       "description": "Menez votre propre traîneau sur une boucle forestière de 5 km en petit groupe, puis rencontrez les chiens et leurs soigneurs à la ferme. Seuls quelques traîneaux partent à la fois : de vrais conseils plutôt qu’une file d’attente.",
       "highlights": [
         "Menez votre propre traîneau",
@@ -1037,7 +1037,7 @@ const d: LangData = {
     },
     "kem-suomu-ski": {
       "title": "Station de ski de Suomu (Suomutunturi)",
-      "description": "Une station de fjell paisible sur le cercle polaire, à environ 40 minutes de Kemijärvi : 10 longues pistes au beau profil, la plus longue de 1,7 km, plus 75 km de pistes de fond dont 25 éclairés. On y skie depuis 1965 et les files aux remontées sont réputées courtes.",
+      "description": "Une station de fjäll paisible sur le cercle polaire, à environ 40 minutes de Kemijärvi : 10 longues pistes au beau profil, la plus longue de 1,7 km, plus 75 km de pistes de fond dont 25 éclairés. On y skie depuis 1965 et les files aux remontées sont réputées courtes.",
       "highlights": [
         "10 longues pistes, 1,7 km max",
         "75 km de ski de fond",

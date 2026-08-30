@@ -34,7 +34,7 @@ const FALLBACK_LEAD: Record<Lang, string> = {
   'pt-BR': 'Passeios selecionados da Lapônia: preços em tempo real, cancelamento grátis na maioria, confirmação imediata.',
   'zh-CN': '精选拉普兰行程：实时价格、多数可免费取消、即时确认。',
   ko: '엄선한 라플란드 투어: 실시간 가격, 대부분 무료 취소, 즉시 확정.',
-  fr: 'Excursions sélectionnées en Laponie: prix en temps réel, annulation gratuite sur la plupart, confirmation immédiate.',
+  fr: 'Excursions sélectionnées en Laponie : prix en temps réel, annulation gratuite sur la plupart, confirmation immédiate.',
   it: 'Tour selezionati della Lapponia: prezzi in tempo reale, cancellazione gratuita sulla maggior parte, conferma immediata.',
   nl: 'Zorgvuldig gekozen Lapland-tours: actuele prijzen, gratis annulering op de meeste, directe bevestiging.',
   sv: 'Handplockade Lappland-turer: priser i realtid, gratis avbokning på de flesta, bekräftelse direkt.',

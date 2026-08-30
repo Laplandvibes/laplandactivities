@@ -22,7 +22,7 @@ const fr: SectionCopy = {
     },
     imageAlts: {
       river: 'Une large rivière à saumon subarctique en Laponie avec des bancs de gravier et des rapides peu profonds sous le soleil doré de minuit',
-      ice: 'Un lac gelé de Laponie avec un trou de pêche sur glace foré et une tarière sous un soleil d\'hiver bas',
+      ice: 'Un lac gelé de Laponie avec un trou foré pour la pêche blanche et une tarière sous un soleil d\'hiver bas',
       kingCrab: 'Un rivage de fjord de la Norvège arctique saupoudré de neige avec des casiers à crabes empilés sur un ponton en bois patiné',
     },
     eco: {
@@ -51,8 +51,8 @@ const fr: SectionCopy = {
       title: 'Deux choses à régler d\'abord',
       body1: 'La Finlande applique un système à deux niveaux. Le premier est la redevance nationale de gestion halieutique (kalastonhoitomaksu), à régler par toute personne de 18 à 69 ans qui pêche au leurre, à la cuillère ou à la traîne : 47 € pour l\'année civile, 16 € pour sept jours ou 6 € pour une journée en 2026, selon eräluvat.fi. Les moins de 18 ans et tous les 70 ans et plus en sont exemptés. Le second niveau est un permis propre au plan d\'eau, pour le lac ou la rivière exacts où vous pêchez.',
       body2: 'La grande exception : la simple pêche au flotteur et la pêche blanche (pilkki) sont un droit général gratuit pour tous, à tout âge, sans redevance ni permis, sur les eaux ordinaires. La latitude compte aussi : la majeure partie de la Laponie se situe au nord du 67e parallèle N, où plusieurs tailles minimales sont plus basses. Vérifiez toujours votre point précis sur la carte officielle des restrictions avant de partir.',
-      feeLink: 'Redevance nationale: eräluvat.fi',
-      mapLink: 'Carte des restrictions: kalastusrajoitus.fi',
+      feeLink: 'Redevance nationale : eräluvat.fi',
+      mapLink: 'Carte des restrictions : kalastusrajoitus.fi',
     },
     rivers: {
       title: 'Les rivières',
@@ -63,42 +63,42 @@ const fr: SectionCopy = {
           badge: 'Saumon ouvert 2026',
           body: 'La rivière à saumon atlantique réaliste autour de laquelle organiser un voyage tant que le Teno est fermé. Un système frontalier à cours libre partagé avec la Suède, avec des postes classiques à Pello, Kolari, Muonio et Enontekiö. La saison du saumon 2026 court du 8 juin au 15 août avec des plafonds stricts. Tous les détails dans l\'encadré ci-dessous. Chiffres de saison et de taille selon la zone 2502 d\'eräluvat.fi et valtioneuvosto.fi.',
           crNote: 'Remise à l\'eau : toutes les truites doivent être relâchées (la truite de mer est protégée) et, une fois deux saumons gardés, votre saison est terminée.',
-          officialLabel: 'Permis: eräluvat.fi zone 2502',
+          officialLabel: 'Permis : eräluvat.fi zone 2502',
         },
         {
           name: 'Teno / Tana',
           badge: 'Saumon fermé 2026',
           body: 'La pêche au saumon atlantique sur le chenal principal du Teno est interdite pour 2026, en vigueur jusqu\'au 31 décembre en vertu de l\'accord Teno entre la Finlande et la Norvège. N\'organisez pas de voyage saumon ici. Vous pouvez toujours pêcher d\'autres espèces (ombre, corégone, truite) avec le permis « autres espèces » à 20 €/jour, matériel léger à la mouche uniquement, vendu seulement via la boutique officielle tenonkalaluvat.fi. Statut selon valtioneuvosto.fi et tenonkalatalousalue.fi.',
           crNote: 'Le saumon et l\'omble de mer sont exclus du permis autres espèces. Relâcher un saumon pris par accident est obligatoire, pas un choix.',
-          officialLabel: 'Permis: tenonkalaluvat.fi',
+          officialLabel: 'Permis : tenonkalaluvat.fi',
         },
         {
           name: 'Ounasjoki',
           badge: 'Ombre et truite',
           body: 'Un affluent protégé à cours libre d\'environ 300 km du Kemijoki, descendant d\'Enontekiö jusqu\'à Rovaniemi. Pas de montaison de saumon. C\'est une rivière à ombre et à truite. La pêche au lancer et à la dandinette est libre en eau calme mais interdite dans les sections courantes (une règle des eaux migratoires), il vous faut donc le permis canne de Metsähallitus plus la redevance nationale. Permis via eräluvat.fi et la zone halieutique de l\'Ounasjoki.',
           crNote: 'La truite de rivière est protégée du 1er septembre au 30 novembre ; la fermeture printanière de l\'ombre (1er avr–31 mai) s\'applique au sud du 67e N. Vérifiez votre section.',
-          officialLabel: 'Permis: eräluvat.fi (Ounasjoki)',
+          officialLabel: 'Permis : eräluvat.fi (Ounasjoki)',
         },
         {
           name: 'Ivalojoki',
           badge: 'Ombre et truite · fermé le lundi',
           body: 'Pays d\'orpaillage se jetant dans le lac Inari, et la rivière de fraie clé de la truite lacustre sauvage d\'Inari. La saison 2026 sur la section Toloskoski–Appisjokisuu court du 17 juin au 31 août, toute pêche fermée chaque lundi (00h00–23h59) à partir du 15 juin. Dates selon la zone 1581 d\'eräluvat.fi.',
-          crNote: 'La truite lacustre de souche Inari est protégée: les truites à adipeuse intacte de moins de 50 cm (au nord du 67e N) repartent directement, et la rivière ferme à la truite du 1er sep au 30 nov.',
-          officialLabel: 'Permis: eräluvat.fi zone 1581',
+          crNote: 'La truite lacustre de souche Inari est protégée : les truites à adipeuse intacte de moins de 50 cm (au nord du 67e N) repartent directement, et la rivière ferme à la truite du 1er sep au 30 nov.',
+          officialLabel: 'Permis : eräluvat.fi zone 1581',
         },
         {
           name: 'Simojoki',
           badge: 'Saumon ouvert 2026',
           body: 'Une rivière à saumon atlantique sauvage à la lisière sud de la Laponie, atteignant le golfe de Botnie. Les règles officielles autorisent un saumon par jour dans un quota quotidien de trois salmonidés, avec une fermeture hebdomadaire du lundi 19h00 au mardi 19h00 (15 juin–31 août) et une fermeture automnale de la rivière du 1er sep au 30 nov. Vérifiez le permis en cours pour un éventuel plafond de saison. Règles selon simojoki.com.',
           crNote: 'Respectez le quota quotidien et rien de plus. C\'est une rivière à saumon sauvage en convalescence, donc relâchez tout ce que vous ne comptez pas manger.',
-          officialLabel: 'Règles: simojoki.com',
+          officialLabel: 'Règles : simojoki.com',
         },
         {
           name: 'Eaux sauvages à la mouche',
           badge: 'Ombre et truite reculés',
           body: 'Pour les pêcheurs prêts à marcher : le Lutto et le Suomujoki dans le secteur du parc d\'Urho Kekkonen, et le Käkkälö et le Pöyris dans le haut système de l\'Ounasjoki. Ombre et truite à la mouche seulement dans des zones de permis Metsähallitus, reculées, peu pêchées, et où mieux vaut confirmer la zone de permis exacte sur eräluvat.fi avant de partir.',
           crNote: 'Les stocks sauvages sont maigres et à croissance lente ; une main légère et une remise à l\'eau quasi systématique les gardent pêchables.',
-          officialLabel: 'Permis: eräluvat.fi',
+          officialLabel: 'Permis : eräluvat.fi',
         },
       ],
     },
@@ -107,7 +107,7 @@ const fr: SectionCopy = {
       body: 'Le lac Inari, troisième plus grand de Finlande avec environ 1 040 km², est la vedette : ombre, perche et corégone à portée, plus le précieux omble arctique (minimum de 45 cm à Inari, et prise rare). C\'est une eau vaste et exposée, alors partez avec un local ou un guide. Des eaux plus petites comme l\'Ounasjärvi et les lacs du secteur de Levi offrent perche, corégone et ombre sans difficulté. La pêche blanche de base y est gratuite partout ; les sorties guidées se vendent largement. Tailles minimales et permis selon eräluvat.fi.',
     },
     tornioBox: {
-      title: 'Saumon du Tornio 2026: avant de lancer',
+      title: 'Saumon du Tornio 2026 : avant de lancer',
       rules: [
         'Saison : du 8 juin 2026 à 19h00 au 15 août 2026.',
         'Du 16 au 25 août, une prolongation restreinte : mouche ou leurre uniquement, hameçons sans ardillon, et tout saumon de plus de 65 cm relâché aussitôt.',
@@ -123,7 +123,7 @@ const fr: SectionCopy = {
       ctaStay: 'Comparer les hébergements à Pello',
     },
     iceFishing: {
-      title: 'La pêche blanche: la porte d\'entrée facile',
+      title: 'La pêche blanche : la porte d\'entrée facile',
       body: 'La pilkki, une courte canne et un leurre dandiné, est la pêche la plus accessible aux débutants en Laponie : gratuite, sans permis, à tout âge, sur les lacs ordinaires au titre des droits généraux de pêche de Finlande (selon eräluvat.fi). Les exceptions sont les rapides des rivières à saumon, les zones interdites et certains sites spéciaux, ainsi que tout ce qui dépasse une seule canne (balances, filets, lignes de fond) qui nécessite la redevance et un permis. Meilleures eaux : le lac Inari, l\'Ounasjärvi et les lacs du secteur de Levi pour la perche, le corégone et l\'ombre.',
       safetyTitle: 'Sécurité sur la glace',
       safetyBody: 'La glace des lacs est peu fiable près des entrées, des sorties, des rapides et des zones de marnage des réservoirs. Vérifiez l\'épaisseur, tenez-vous à l\'écart de l\'eau courante et prenez un guide local sur les grandes eaux ouvertes comme Inari. C\'est un conseil de sécurité, pas une réglementation, mais les lacs ne font pas de cadeau.',
@@ -133,7 +133,7 @@ const fr: SectionCopy = {
       title: 'Licences et permis',
       fee: 'Redevance nationale de gestion halieutique (2026) : 47 € pour l\'année civile, 16 € pour sept jours ou 6 € pour une journée, selon eräluvat.fi. Obligatoire pour les pêcheurs au leurre, au lancer et à la traîne de 18 à 69 ans ; gratuite pour les moins de 18 ans et toute personne de 70 ans et plus (et celles qui ont eu 65 ans au 31 décembre 2023). Gardez le reçu.',
       freeRights: 'Droits généraux gratuits : la pêche au flotteur, la pêche blanche (pilkki) et le montage à hareng de la Baltique sont gratuits pour tous, sans redevance ni permis. La pêche au leurre à une seule canne est aussi un droit général, mais la tranche des 18–69 ans doit tout de même acquitter la redevance nationale pour la pratiquer. Rien de tout cela ne vaut dans les rapides à poissons migrateurs ni sur les sites interdits ou spéciaux.',
-      waterPermits: 'Permis propres au plan d\'eau : en plus de la redevance, la pêche au leurre ou à plusieurs cannes exige un permis pour l\'eau exacte: permis d\'eaux domaniales Metsähallitus via eräluvat.fi, permis locaux d\'osakaskunta / de zone halieutique sur les eaux partagées, ou les permis spéciaux des rivières frontalières pour le Teno et le Tornio. Les conditions de chaque permis sont souvent plus strictes que les planchers nationaux.',
+      waterPermits: 'Permis propres au plan d\'eau : en plus de la redevance, la pêche au leurre ou à plusieurs cannes exige un permis pour l\'eau exacte : permis d\'eaux domaniales Metsähallitus via eräluvat.fi, permis locaux d\'osakaskunta / de zone halieutique sur les eaux partagées, ou les permis spéciaux des rivières frontalières pour le Teno et le Tornio. Les conditions de chaque permis sont souvent plus strictes que les planchers nationaux.',
       sizesTitle: 'Tailles minimales nationales (planchers; les règles locales peuvent être plus strictes)',
       sizes: [
         'Saumon : 60 cm en général, 50 cm dans le golfe de Botnie au nord du 63°30′ N. Fermeture de la rivière du 1er sep au 30 nov.',
@@ -153,9 +153,9 @@ const fr: SectionCopy = {
     },
     norway: {
       title: 'Passage en Norvège : pêche en mer et crabe royal',
-      seaBody: 'La pêche en mer en Norvège est gratuite pour tous, mais les étrangers ne peuvent utiliser que du matériel tenu à la main: canne, ligne à main ou jig ; filets, casiers et palangres sont proscrits (c\'est précisément pourquoi vous ne pouvez pas capturer vous-même le crabe royal). Vendre sa prise est illégal. Le cabillaud d\'hiver au large du Finnmark est l\'attrait, avec le flétan et le lieu noir aussi. La Norvège publie ses tailles minimales sur lovdata.no (Høstingsforskriften §47) : cabillaud 44 cm au large au nord du 62e N (55 cm près de la côte), églefin 40 cm, flétan 84 cm et 7,2 kg, lieu noir 45 cm à la canne. Une règle stricte à part : relâchez tout flétan de plus de 2 mètres. Restez à 100 m des fermes piscicoles, portez un gilet de sauvetage, et notez qu\'un permis bateau est exigé pour toute personne née en 1980 ou après sur les embarcations plus grandes.',
-      exportTitle: 'Rapporter du poisson: la règle d\'exportation',
-      exportBody: 'Manger sur place, ou une journée de pêche gratuite, ne pose pas de problème. Pour passer du poisson la frontière, vous êtes limité à 15 kg par personne, deux fois par année civile en 2026, abaissé à 10 kg à partir du 1er janvier 2027, et seulement si la prise provient d\'une entreprise de pêche touristique enregistrée auprès de la Direction des pêches, qui doit déposer des déclarations de capture quotidiennes et délivrer votre document d\'exportation. Âge minimum 12 ans ; les poissons trophées ne comptent pas dans la limite. Traverser avec une glacière de cabillaud pêché depuis un rocher au hasard n\'est pas autorisé. Selon fiskeridir.no et toll.no.',
+      seaBody: 'La pêche en mer en Norvège est gratuite pour tous, mais les étrangers ne peuvent utiliser que du matériel tenu à la main : canne, ligne à main ou jig ; filets, casiers et palangres sont proscrits (c\'est précisément pourquoi vous ne pouvez pas capturer vous-même le crabe royal). Vendre sa prise est illégal. Le cabillaud d\'hiver au large du Finnmark est l\'attrait, avec le flétan et le lieu noir aussi. La Norvège publie ses tailles minimales sur lovdata.no (Høstingsforskriften §47) : cabillaud 44 cm au large au nord du 62e N (55 cm près de la côte), églefin 40 cm, flétan 84 cm et 7,2 kg, lieu noir 45 cm à la canne. Une règle stricte à part : relâchez tout flétan de plus de 2 mètres. Restez à 100 m des fermes piscicoles, portez un gilet de sauvetage, et notez qu\'un permis bateau est exigé pour toute personne née en 1980 ou après sur les embarcations plus grandes.',
+      exportTitle: 'Rapporter du poisson : la règle d\'exportation',
+      exportBody: 'Manger sur place, ou une journée de pêche gratuite, ne pose pas de problème. Pour passer la frontière avec du poisson, vous êtes limité à 15 kg par personne, deux fois par année civile en 2026, abaissé à 10 kg à partir du 1er janvier 2027, et seulement si la prise provient d\'une entreprise de pêche touristique enregistrée auprès de la Direction des pêches, qui doit déposer des déclarations de capture quotidiennes et délivrer votre document d\'exportation. Âge minimum 12 ans ; les poissons trophées ne comptent pas dans la limite. Traverser avec une glacière de cabillaud pêché depuis un rocher au hasard n\'est pas autorisé. Selon fiskeridir.no et toll.no.',
       crabTitle: 'Crabe royal : seulement avec un opérateur agréé',
       crabBody: 'Les touristes ne peuvent pas capturer le crabe royal eux-mêmes. C\'est légal uniquement via un opérateur agréé détenant un quota touristique alloué, concentré autour de Kirkenes et du Varanger. La zone régulée par quotas de la Norvège se situe à l\'est du 26e E (grosso modo le cap Nord), où la carapace minimale est de 13 cm et le quota touristique 2026 de 10 tonnes de crabes mâles ; à l\'ouest de cette ligne s\'étend une zone libre de réduction. Interrogez votre opérateur sur les règles de taille et de sexe en vigueur. Ce sont eux qui détiennent les conditions du permis. Selon fiskeridir.no.',
       cta: 'Réserver un safari au crabe royal à Kirkenes',
@@ -168,13 +168,13 @@ const fr: SectionCopy = {
       cta: 'Louer une voiture depuis Rovaniemi (RVN)',
     },
     gear: {
-      title: 'Que emporter',
-      body: 'Les rivières d\'été appellent des waders respirants, des couches et une protection contre les moustiques ; l\'eau reste froide même sous le soleil de minuit. La pilkki d\'hiver exige un équipement vraiment isolant, une tarière à glace et de quoi s\'asseoir au chaud. Il ne faut pas grand-chose pour débuter: une courte canne, une poignée de leurres et un thermos chaud suffisent pour une première journée sur la glace. Achetez ou louez sur place si vous voyagez léger.',
+      title: 'Qu\'emporter',
+      body: 'Les rivières d\'été appellent des waders respirants, des couches et une protection contre les moustiques ; l\'eau reste froide même sous le soleil de minuit. La pilkki d\'hiver exige un équipement vraiment isolant, une tarière à glace et de quoi s\'asseoir au chaud. Il ne faut pas grand-chose pour débuter : une courte canne, une poignée de leurres et un thermos chaud suffisent pour une première journée sur la glace. Achetez ou louez sur place si vous voyagez léger.',
     },
     season: {
       title: 'La saison en un coup d\'œil',
       rows: [
-        { period: 'jan–avr', what: 'Pêche blanche idéale sur les lacs gelés: gratuite, familiale, à tout âge.' },
+        { period: 'jan–avr', what: 'Pêche blanche idéale sur les lacs gelés : gratuite, familiale, à tout âge.' },
         { period: 'avr–mai', what: 'Fermeture printanière de l\'ombre en eaux intérieures au sud du 67e N (1er avr–31 mai).' },
         { period: 'juin', what: 'Ouverture des rivières ; le saumon du Tornio ouvre le 8 juin ; le Teno reste fermé au saumon ; l\'Ivalojoki ferme chaque lundi à partir du 15 juin.' },
         { period: 'juil–mi-août', what: 'Pic du saumon estival sur le Tornio et le Simojoki.' },
@@ -184,7 +184,7 @@ const fr: SectionCopy = {
       ],
     },
     faq: {
-      title: 'Pêche en Laponie: FAQ',
+      title: 'Pêche en Laponie : FAQ',
       items: [
         {
           q: 'Ai-je besoin d\'un permis pour la pêche blanche ?',
@@ -212,11 +212,11 @@ const fr: SectionCopy = {
         },
         {
           q: 'Quelle rivière de Laponie est la meilleure pour le saumon en 2026 ?',
-          a: 'Le système Tornio–Muonio: c\'est la pêcherie de saumon atlantique ouverte réaliste tant que le Teno est fermé, avec une saison 2026 du 8 juin au 15 août. Le Simojoki, dans le sud de la Laponie, est aussi ouvert. Les deux sont plafonnés et étroitement régulés, alors consultez eräluvat.fi avant de partir.',
+          a: 'Le système Tornio–Muonio : c\'est la pêcherie de saumon atlantique ouverte réaliste tant que le Teno est fermé, avec une saison 2026 du 8 juin au 15 août. Le Simojoki, dans le sud de la Laponie, est aussi ouvert. Les deux sont plafonnés et étroitement régulés, alors consultez eräluvat.fi avant de partir.',
         },
         {
           q: 'Les tailles minimales changent-elles vraiment avec la latitude ?',
-          a: 'Oui. La majeure partie de la Laponie est au nord du 67e N, où plusieurs planchers sont plus bas: l\'ombre est à 30 cm au nord de la ligne contre 35 cm au sud, et la truite à adipeuse intacte est à 50 cm au nord du 67e N. Confirmez toujours votre section exacte, car les règles propres à chaque permis peuvent être plus strictes (eräluvat.fi).',
+          a: 'Oui. La majeure partie de la Laponie est au nord du 67e N, où plusieurs planchers sont plus bas : l\'ombre est à 30 cm au nord de la ligne contre 35 cm au sud, et la truite à adipeuse intacte est à 50 cm au nord du 67e N. Confirmez toujours votre section exacte, car les règles propres à chaque permis peuvent être plus strictes (eräluvat.fi).',
         },
       ],
     },
@@ -252,14 +252,14 @@ const fr: SectionCopy = {
   summerBand: {
     eyebrow: 'Été 2026 · réservations ouvertes',
     h2: "L'été en Laponie est le secret le mieux gardé.",
-    lead: "Le soleil de minuit ne se couche jamais. Les forêts s'ouvrent. Le saumon remonte les rivières et les fjells virent au rouge avec le ruska dès août. La plupart des opérateurs ont encore beaucoup de disponibilité jusqu'en juin, en juillet, les meilleurs créneaux sont déjà partis.",
+    lead: "Le soleil de minuit ne se couche jamais. Les forêts s'ouvrent. Le saumon remonte les rivières et les fjälls virent au rouge avec le ruska dès août. La plupart des opérateurs ont encore beaucoup de disponibilité jusqu'en juin ; en juillet, les meilleurs créneaux sont déjà partis.",
     bookCta: "Réserver des activités d'été", browseCta: "Voir le guide d'été",
     imageKicker: "Catégorie été", imageH3: "8 façons de vivre le soleil de minuit",
     highlights: [
-      { title: 'Randonnée en fjell', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, longues journées, pas de foule.' },
+      { title: 'Randonnée en fjäll', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, longues journées, pas de foule.' },
       { title: 'Kayak & SUP', body: 'Îles du lac Inari, lacs au soleil de minuit, eau lisse comme un miroir jusqu\'à 1 h du matin.' },
       { title: 'Pêche au saumon à la mouche', body: 'Les montaisons de saumon du Tornionjoki culminent en juin-juillet.' },
-      { title: 'Tours au soleil de minuit', body: 'Photographie, cueillette, VTT en fjell, lumière 24 h sur 24.' },
+      { title: 'Tours au soleil de minuit', body: 'Photographie, cueillette, VTT en fjäll, lumière 24 h sur 24.' },
     ],
     gygTitle: 'Les tours les plus réservés de Laponie en ce moment', gygEyebrow: 'Réservable maintenant · Annulation gratuite',
   },
@@ -270,7 +270,7 @@ const fr: SectionCopy = {
     lodging: [
       { name: 'Igloos de verre', blurb: 'Dormez sous les aurores à travers un toit de verre bombé. Les nuitées les plus réservées de Laponie.' },
       { name: 'Chalets en rondins au bord du lac', blurb: 'Sauna à fumée, bain chaud au feu de bois, ponton privé. Toute l\'année.' },
-      { name: 'Resorts en fjell', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, juste au sud de la Laponie), ski au pied et activités d\'été.' },
+      { name: 'Resorts en fjäll', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, juste au sud de la Laponie), ski au pied et activités d\'été.' },
       { name: 'Boutique en ville', blurb: 'Rovaniemi · Kemi · Ivalo, hôtels design avec cuisine et accès au centre.' },
       { name: 'Cabanes sauna à fumée', blurb: 'La vraie expérience savusauna, petite, sombre, ridiculement chaude.' },
     ],
@@ -279,7 +279,7 @@ const fr: SectionCopy = {
   bookingCta: {
     eyebrow: 'Organisez tout le voyage', heading: 'Activités, séjours et voitures au même endroit',
     blurb: "Trois clics et votre voyage en Laponie est réglé, opérateurs choisis avec soin via GetYourGuide, les meilleures offres d'hébergement via Trip.com, et une voiture qui vous attend à l'aéroport.",
-    activities: 'Activités', activitiesDesc: 'Safaris husky, motoneiges, tours aurores, pêche sur glace, confirmation immédiate via GetYourGuide.',
+    activities: 'Activités', activitiesDesc: 'Safaris en traîneau de huskies, motoneiges, tours aurores, pêche blanche, confirmation immédiate via GetYourGuide.',
     browseTours: 'Voir les tours',
     stayNearby: 'Hébergement à proximité', stayNearbyDesc: 'Igloos de verre, chalets en rondins, hôtels ski-in, réservez le lit d\'abord, les meilleurs partent vite.',
     compareHotels: 'Comparer les hôtels',
@@ -302,9 +302,9 @@ const fr: SectionCopy = {
   },
   activityCard: { findBook: 'Trouver et réserver', planVisit: 'Préparez votre visite' },
   home: {
-    metaTitle: 'LaplandActivities: tours arctiques en Laponie',
+    metaTitle: 'LaplandActivities : activités et tours en Laponie',
     metaDescription: 'Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 10 destinations en Laponie et alentours via GetYourGuide.',
-    ogTitle: 'LaplandActivities: expériences arctiques choisies avec soin',
+    ogTitle: 'LaplandActivities : expériences arctiques choisies avec soin',
     categoriesKicker: 'Que faire', categoriesH2: 'Choisissez votre aventure',
     categoriesLead: '9 façons de vivre l\'Arctique, choisissez une catégorie et nous vous orientons vers des opérateurs choisis avec soin.',
     activitiesLabel: 'activités', viewAllCategories: 'Voir toutes les catégories',
@@ -315,7 +315,7 @@ const fr: SectionCopy = {
       { name: 'Hiver', months: 'nov. – mars', blurb: 'Neige épaisse, nuits polaires, pic des aurores. Motoneiges, huskies, saunas à fumée.', temp: '-15 à -5 °C' },
       { name: 'Printemps', months: 'avr. – mai', blurb: 'Neige et lumière du jour. Ski tardif, mise bas des rennes, aurores jusqu\'à mi-avril.', temp: '-5 à +5 °C' },
       { name: 'Été', months: 'juin – août', blurb: 'Le soleil de minuit ne se couche pas. Randonnée, kayak, pêche au saumon, VTT.', temp: '+10 à +25 °C' },
-      { name: 'Automne', months: 'sept. – oct.', blurb: 'Le ruska colore les fjells. Retour des premières aurores. Saison des champignons et des baies.', temp: '+5 à -5 °C' },
+      { name: 'Automne', months: 'sept. – oct.', blurb: 'Le ruska colore les fjälls. Retour des premières aurores. Saison des champignons et des baies.', temp: '+5 à -5 °C' },
     ],
     destinationsKicker: 'Où aller', destinationsH2: 'Destinations', viewAll: 'Voir tout', activitiesShort: 'activités',
   },
@@ -324,11 +324,11 @@ const fr: SectionCopy = {
     h2: 'Planifiez le reste de votre voyage arctique',
     lead: 'Les activités ne sont que la moitié du voyage. Ces guides frères de notre réseau lapon approfondissent le reste.',
     links: [
-      { pre: 'Envie de traîneau à chiens ? Notre', anchor: 'guide dédié aux safaris en husky', post: 'compare chenils, distances et prix.' },
+      { pre: 'Envie de traîneau à chiens ? Notre', anchor: 'guide dédié aux safaris en traîneau de huskies', post: 'compare chenils, distances et prix.' },
       { pre: 'Vous préférez votre propre accélérateur, voyez les meilleurs', anchor: 'itinéraires et prix des safaris en motoneige', post: 'à travers la Laponie.' },
       { pre: 'À la recherche de neige fraîche ? Découvrez', anchor: 'où skier en Laponie', post: 'avec des comparatifs station par station.' },
       { pre: 'Pour le côté tranquille de l\'Arctique, lisez sur les', anchor: 'aurores boréales et parcs nationaux', post: 'et les meilleurs ciels pour l\'aurore.' },
-      { pre: 'Et avant de réserver les excursions, choisissez', anchor: 'où loger en Laponie', post: ' : igloos, chalets et stations de fjell.' },
+      { pre: 'Et avant de réserver les excursions, choisissez', anchor: 'où loger en Laponie', post: ' : igloos, chalets et stations de fjäll.' },
     ],
   },
   faq: {
@@ -338,15 +338,15 @@ const fr: SectionCopy = {
     items: [
       {
         q: 'Quelles activités peut-on faire en Laponie ?',
-        a: 'En hiver, les classiques sont les traîneaux à chiens et à rennes, les safaris en motoneige, les chasses aux aurores, les raquettes, le ski de fond et alpin, la pêche blanche et le flottement sur glace. En été, la même nature se prête à la randonnée, au kayak et au canoë, au rafting, au VTT, à la pêche au saumon et à l’orpaillage. Toute l’année, le sauna à fumée et les expériences de culture sami révèlent une facette plus calme de l’Arctique.',
+        a: 'En hiver, les classiques sont les traîneaux à chiens et à rennes, les safaris en motoneige, les chasses aux aurores, les raquettes, le ski de fond et alpin, la pêche blanche et la flottaison en eau glacée. En été, la même nature se prête à la randonnée, au kayak et au canoë, au rafting, au VTT, à la pêche au saumon et à l’orpaillage. Toute l’année, le sauna à fumée et les expériences de culture sâme révèlent une facette plus calme de l’Arctique.',
       },
       {
         q: 'Quelles sont les meilleures activités d’hiver et d’été ?',
-        a: 'L’hiver (de novembre à mars) est la saison de la neige et de l’obscurité : motoneiges, traîneaux à chiens et tours d’aurores en dépendent. L’été (de juin à août) échange la neige contre le soleil de minuit, lorsque la lumière ne disparaît jamais totalement et que la randonnée, la pagaie et la pêche se pratiquent presque à toute heure. Le printemps garde de la neige avec bien plus de jour, et l’automne apporte les couleurs de la ruska et les premières aurores, deux intersaisons plus tranquilles.',
+        a: 'L’hiver (de novembre à mars) est la saison de la neige et de l’obscurité : motoneiges, traîneaux à chiens et tours d’aurores en dépendent. L’été (de juin à août) échange la neige contre le soleil de minuit, lorsque la lumière ne disparaît jamais totalement et que la randonnée, la pagaie et la pêche se pratiquent presque à toute heure. Le printemps garde de la neige avec bien plus de jour, et l’automne apporte les couleurs du ruska et les premières aurores, deux intersaisons plus tranquilles.',
       },
       {
         q: 'Combien coûtent les activités en Laponie ?',
-        a: 'Cela varie beaucoup selon l’activité, la durée et la taille du groupe. Une courte session partagée, comme une balade en renne ou un tour d’aurores en bus, se situe en bas de l’échelle ; les sorties de plusieurs heures ou privées, comme un long safari en husky ou une expédition guidée en motoneige, coûtent davantage, notamment parce qu’elles incluent combinaisons chaudes, bottes, équipement de sécurité et un guide. Pour des prix actuels et exacts, ouvrez n’importe quelle sortie via notre partenaire de réservation, le prix en direct s’affiche avant de confirmer.',
+        a: 'Cela varie beaucoup selon l’activité, la durée et la taille du groupe. Une courte session partagée, comme une balade en renne ou un tour d’aurores en bus, se situe en bas de l’échelle ; les sorties de plusieurs heures ou privées, comme un long safari en traîneau de huskies ou une expédition guidée en motoneige, coûtent davantage, notamment parce qu’elles incluent combinaisons chaudes, bottes, équipement de sécurité et un guide. Pour des prix actuels et exacts, ouvrez n’importe quelle sortie via notre partenaire de réservation, le prix en direct s’affiche avant de confirmer.',
       },
       {
         q: 'Les activités en Laponie conviennent-elles aux jeunes enfants ?',
@@ -399,7 +399,7 @@ const fr: SectionCopy = {
     keepExploringKicker: 'Continuer à explorer', otherDestinationsH2: 'Autres destinations', allDestinations: 'Toutes les destinations',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Réservez le village du Père Noël tôt le matin pour éviter la foule des bus de croisière.', icon: '🎅' },
+        { tip: 'Visitez le village du Père Noël tôt le matin pour éviter la foule des bus de croisière.', icon: '🎅' },
         { tip: 'Le certificat de passage du cercle polaire est gratuit au bureau de poste.', icon: '📮' },
         { tip: 'Arktikum présente l\'exposition d\'aurores la plus complète de Finlande.', icon: '🏛️' },
       ],
@@ -419,7 +419,7 @@ const fr: SectionCopy = {
         { tip: 'Les cabanes sauvages du parc national d\'Urho Kekkonen sont gratuites, premier arrivé premier servi.', icon: '🏕️' },
       ],
       inari: [
-        { tip: 'Comptez au moins trois heures au musée Siida, lisez aussi l\'aile en langue same.', icon: '🏛️' },
+        { tip: 'Comptez au moins trois heures au musée Siida, lisez aussi l\'aile en langue sâme.', icon: '🏛️' },
         { tip: 'Les croisières sur le lac Inari ne roulent que de juin à septembre.', icon: '⛵' },
         { tip: 'La saison des plaquebières culmine fin juillet sur le sentier Pielpajärvi.', icon: '🫐' },
       ],
@@ -446,8 +446,8 @@ const fr: SectionCopy = {
       ],
       kemijarvi: [
         { tip: 'Un départ quotidien du Santa Claus Express continue de Rovaniemi jusqu’à Kemijärvi.', icon: '🚂' },
-        { tip: 'Les grandes sculptures sur bois de la semaine annuelle restent en ville toute l’année.', icon: '🪵' },
-        { tip: 'Pyhä est à 50 km : les fjells se font à la journée depuis une base au bord du lac.', icon: '⛷️' },
+        { tip: 'Les grandes sculptures de la semaine annuelle de sculpture sur bois restent en ville toute l’année.', icon: '🪵' },
+        { tip: 'Pyhä est à 50 km : les fjälls se font à la journée depuis une base au bord du lac.', icon: '⛷️' },
       ],
     },
   },
@@ -461,7 +461,7 @@ const fr: SectionCopy = {
       { title: 'Opérateurs réels', text: 'Nous présentons des opérateurs locaux établis ; chaque réservation passe par GetYourGuide.' },
       { title: 'Expériences authentiques', text: 'Chaque activité est choisie pour le genre de détail qu\'on ne peut pas inventer.' },
       { title: 'Sûr et de confiance', text: 'Les opérateurs d\'activités en Finlande relèvent de la loi sur la sécurité des consommateurs et sont supervisés par Tukes, l\'autorité finlandaise de sécurité.' },
-      { title: 'Réseau #LaplandVibes', text: 'Membre d\'un réseau de 23 sites sur la Laponie finlandaise, votre boîte à outils complète.' },
+      { title: 'Réseau #LaplandVibes', text: 'Membre d\'un réseau de plus de 25 sites sur la Laponie finlandaise, votre boîte à outils complète.' },
     ],
     affiliateH2: 'Divulgation d\'affiliation',
     affiliateBody1: 'LaplandActivities perçoit une commission sur les réservations via des liens partenaires, Trip.com, GetYourGuide, EconomyBookings, EKTA. Cela ne vous coûte rien de plus et permet de garder le site gratuit. Les recommandations couvrent les opérateurs et hébergements qui tiennent leurs promesses. Lisez la divulgation complète dans nos',
@@ -498,7 +498,7 @@ const fr: SectionCopy = {
       eveningBody: "Une marche guidée jusqu'à l'affût et les heures les mieux éclairées de la soirée nordique.",
       overnightLabel: "Sortie de nuit",
       overnightBody: "La soirée prolongée jusqu'au matin, et souvent le spectacle le plus riche. Les heures de nuit font généralement sortir bien plus d'ours, des gros mâles jusqu'à, même en plein été, une mère et ses petits, et les nuits d'été, les ours vont nager.",
-      season: "L'encadrement et l'assurance sont inclus, et la saison va du 1er mai au 30 septembre. Le printemps amène les mères et leurs petits, et en plein été le soleil ne se couche pas du tout ici, si bien que vous pouvez observer et photographier les ours toute la nuit claire. Si la forêt reste vide, la garantie originale Bear Kuusamo vous fait revenir gratuitement pour une autre soirée.",
+      season: "L'encadrement et l'assurance sont inclus, et la saison va du 1er mai au 30 septembre. Le printemps amène les mères et leurs petits, et en plein été le soleil ne se couche pas du tout ici, si bien que vous pouvez observer et photographier les ours toute la nuit claire. Si la forêt reste vide, la garantie originale de Bear Kuusamo vous fait revenir gratuitement pour une autre soirée.",
       bookingPre: "Les tarifs actuels, les dates et les disponibilités sont sur ",
       bookingLink: "la page de réservation de Bear Kuusamo",
       bookingPost: ".",

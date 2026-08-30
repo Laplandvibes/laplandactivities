@@ -152,8 +152,8 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
   fr: {
     inSeasonKicker: 'Quand partir',
-    inSeasonNow: (s) => `Idéal en ce moment: ${s.toLowerCase()}`,
-    alsoGreat: (s) => `À ne pas manquer non plus: ${s.toLowerCase()}`,
+    inSeasonNow: (s) => `Idéal en ce moment : ${s.toLowerCase()}`,
+    alsoGreat: (s) => `À ne pas manquer non plus : ${s.toLowerCase()}`,
     yearRound: "toute l'année",
     whyKicker: 'La destination',
     whyH2: (p) => `Pourquoi aller à ${p}`,

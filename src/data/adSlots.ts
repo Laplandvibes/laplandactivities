@@ -77,7 +77,7 @@ const bearKuusamo: Partner = {
     },
     fr: {
       tagline: 'Une nuit dans un affût à ours, en lisière de Laponie',
-      description: "Les guides ours originels de Kuusamo, plus de vingt ans dans les forêts de la frontière est. Observez ours bruns sauvages, gloutons et pygargues depuis un affût photo.",
+      description: "Les guides ours originels de Kuusamo, plus de vingt ans dans les forêts de la frontière est. Observez des ours bruns sauvages, des gloutons et des pygargues depuis un affût photo.",
       cta: 'Planifiez votre nuit',
       articleLabel: "Lire l'article",
       articleUrl: 'https://laplandvibes.com/fr/blog/bear-kuusamo/',

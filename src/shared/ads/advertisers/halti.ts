@@ -91,7 +91,7 @@ const halti: AdSpec = {
     },
     fr: {
       eyebrow: 'Équipement pour le nord',
-      headline: 'Halti, l’équipement outdoor finlandais qui porte le nom du plus haut fjell de Finlande',
+      headline: 'Halti, l’équipement outdoor finlandais qui porte le nom du plus haut fjäll de Finlande',
       sub: 'Marque outdoor finlandaise depuis 1976, conçue exactement pour ce genre d’hiver. Tenues de ski, sous-couches, vestes techniques et bottes pour que la journée à −20° aille jusqu’au bout.',
       trust: ['Marque finlandaise depuis 1976', 'Conçue pour l’hiver nordique', 'Vêtements et équipement réunis'],
       cta: 'Voir l’équipement d’hiver',
@@ -99,7 +99,7 @@ const halti: AdSpec = {
     },
     it: {
       eyebrow: 'Attrezzatura per il nord',
-      headline: 'Halti, attrezzatura outdoor finlandese col nome del fjell più alto della Finlandia',
+      headline: 'Halti, attrezzatura outdoor finlandese col nome del fjäll più alto della Finlandia',
       sub: 'Marchio outdoor finlandese dal 1976, progettato esattamente per inverni così. Completi da sci, strati base, gusci e scarponi perché la giornata a −20° non finisca a metà.',
       trust: ['Marchio finlandese dal 1976', 'Fatto per l’inverno nordico', 'Abbigliamento e attrezzatura insieme'],
       cta: 'Vedi l’attrezzatura invernale',
@@ -107,7 +107,7 @@ const halti: AdSpec = {
     },
     nl: {
       eyebrow: 'Uitrusting voor het noorden',
-      headline: 'Halti, Finse outdooruitrusting vernoemd naar de hoogste fjell van Finland',
+      headline: 'Halti, Finse outdooruitrusting vernoemd naar de hoogste fjäll van Finland',
       sub: 'Een Fins outdoormerk sinds 1976, ontworpen voor precies dit soort winters. Skikleding, baselayers, shell-jassen en schoenen waarmee de dag van −20° niet halverwege eindigt.',
       trust: ['Fins merk sinds 1976', 'Gemaakt voor noordse winters', 'Kleding en uitrusting in één'],
       cta: 'Bekijk winteruitrusting',
