@@ -187,7 +187,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageKicker: 'Stagione invernale',
     imageH3: "L'Artico al massimo della magia",
     highlights: [
-      { title: 'Slitta coi husky', body: 'Guida la tua muta attraverso il bosco innevato e silenzioso.' },
+      { title: 'Slitta coi husky', body: 'Guidi la Sua muta attraverso il bosco innevato e silenzioso.' },
       { title: 'Safari in motoslitta', body: 'Laghi ghiacciati e sentieri di fjell, dal leggero alla gita di un giorno.' },
       { title: "Caccia all'aurora", body: 'Tour sotto cieli bui con guide che leggono le previsioni per te.' },
       { title: 'Pesca sul ghiaccio e sauna', body: 'Fora il ghiaccio, poi riscaldati in una vera sauna a fumo.' },

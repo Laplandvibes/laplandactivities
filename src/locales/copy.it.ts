@@ -321,11 +321,11 @@ const it: SectionCopy = {
   },
   relatedSites: {
     kicker: 'Altro da #LaplandVibes',
-    h2: 'Pianifica il resto del tuo viaggio artico',
+    h2: 'Pianifichi il resto del Suo viaggio artico',
     lead: 'Le attività sono solo metà del viaggio. Queste guide sorelle della nostra rete lappone approfondiscono il resto.',
     links: [
       { pre: 'Voglia di slitta trainata dai cani? La nostra', anchor: 'guida dedicata ai safari in husky', post: 'confronta canili, distanze e prezzi.' },
-      { pre: 'Preferisci il tuo acceleratore, guarda i migliori', anchor: 'itinerari e prezzi dei safari in motoslitta', post: 'in tutta la Lapponia.' },
+      { pre: 'Preferisce l’acceleratore? Guardi i migliori', anchor: 'itinerari e prezzi dei safari in motoslitta', post: 'in tutta la Lapponia.' },
       { pre: 'In cerca di neve fresca? Scopri', anchor: 'dove sciare in Lapponia', post: 'con confronti località per località.' },
       { pre: 'Per il lato tranquillo dell\'Artico, leggi su', anchor: 'aurora boreale e parchi nazionali', post: 'e i cieli migliori per l\'aurora.' },
       { pre: 'E prima di prenotare i tour, decidi', anchor: 'dove alloggiare in Lapponia', post: ': igloo, baite e resort di montagna.' },
@@ -354,7 +354,7 @@ const it: SectionCopy = {
       },
       {
         q: 'È necessario prenotare in anticipo le attività in Lapponia?',
-        a: 'Per le settimane più affollate, Natale e Capodanno, e il picco di aurore e sci da febbraio a marzo, sì, prenota con largo anticipo, perché i tour più richiesti con husky e motoslitta si riempiono. Nei periodi più tranquilli c’è più flessibilità, ma gli operatori più apprezzati e le partenze in piccoli gruppi si esauriscono comunque per primi. Prenotare in anticipo ti permette anche di inserire un margine per il cielo sereno nei piani per l’aurora invece di contendere gli ultimi posti.',
+        a: 'Per le settimane più affollate, Natale e Capodanno, e il picco di aurore e sci da febbraio a marzo, sì, prenota con largo anticipo, perché i tour più richiesti con husky e motoslitta si riempiono. Nei periodi più tranquilli c’è più flessibilità, ma gli operatori più apprezzati e le partenze in piccoli gruppi si esauriscono comunque per primi. Prenotare in anticipo Le permette anche di inserire un margine per il cielo sereno nei piani per l’aurora invece di contendere gli ultimi posti.',
       },
     ],
   },
@@ -484,7 +484,7 @@ const it: SectionCopy = {
     intro: {
       para1: "Nelle foreste di confine a est di Kuusamo, dove la foresta boreale prosegue ininterrotta verso il confine, gli orsi bruni escono dal limitare del bosco nel lungo crepuscolo del nord. Bear Kuusamo guida i viaggiatori in quella quiete da più di vent'anni. È il più antico operatore di osservazione degli orsi della regione di Ruka–Kuusamo e il più settentrionale del Paese.",
       para2Pre: "Questa è vera ",
-      para2Post: ", non uno zoo né uno spettacolo. I capanni sorgono in un tratto di foresta protetta che confina con il Parco nazionale di Paanajärvi, appena oltre il confine russo. Il fondatore Pekka Veteläinen e le sue guide collaborano con Metsähallitus e con i ricercatori e nascondono il cibo in punti sempre diversi, così che gli orsi cerchino e si nutrano come farebbero in natura. Gli orsi restano selvatici e non si abituano all'uomo; tu ottieni semplicemente un posto tranquillo e ben collocato per osservarli.",
+      para2Post: ", non uno zoo né uno spettacolo. I capanni sorgono in un tratto di foresta protetta che confina con il Parco nazionale di Paanajärvi, appena oltre il confine russo. Il fondatore Pekka Veteläinen e le sue guide collaborano con Metsähallitus e con i ricercatori e nascondono il cibo in punti sempre diversi, così che gli orsi cerchino e si nutrano come farebbero in natura. Gli orsi restano selvatici e non si abituano all'uomo; Lei ottiene semplicemente un posto tranquillo e ben collocato per osservarli.",
     },
     hide: {
       title: "Una notte in un capanno",
@@ -498,14 +498,14 @@ const it: SectionCopy = {
       eveningBody: "Una camminata guidata fino al capanno e le ore meglio illuminate della sera nordica.",
       overnightLabel: "Uscita notturna",
       overnightBody: "La sera prolungata fino al mattino e, spesso, lo spettacolo più ricco. Nelle ore notturne di solito escono molti più orsi, dai grandi maschi fino a, anche in piena estate, una madre con i suoi cuccioli, e nelle notti d'estate gli orsi vanno a nuotare.",
-      season: "Guida e assicurazione sono incluse e la stagione va dal 1° maggio al 30 settembre. La primavera porta madri con i cuccioli e, in piena estate, qui il sole non tramonta affatto, così puoi osservare e fotografare gli orsi per tutta la notte chiara. Se il bosco resta vuoto, la Garanzia Originale Bear Kuusamo ti riporta gratis per un'altra sera.",
+      season: "Guida e assicurazione sono incluse e la stagione va dal 1° maggio al 30 settembre. La primavera porta madri con i cuccioli e, in piena estate, qui il sole non tramonta affatto, così può osservare e fotografare gli orsi per tutta la notte chiara. Se il bosco resta vuoto, la Garanzia Originale Bear Kuusamo La riporta gratis per un'altra sera.",
       bookingPre: "Prezzi aggiornati, date e disponibilità sono su ",
       bookingLink: "la pagina di prenotazione di Bear Kuusamo",
       bookingPost: ".",
     },
     where: {
       title: "Dove si trova",
-      pre: "Kuusamo si trova nel nord-est della Finlandia, proprio a ridosso del confine della Lapponia, tra le alture e le foreste vetuste attorno al Parco nazionale di Oulanka. È la base naturale quando pianifichi il tuo ",
+      pre: "Kuusamo si trova nel nord-est della Finlandia, proprio a ridosso del confine della Lapponia, tra le alture e le foreste vetuste attorno al Parco nazionale di Oulanka. È la base naturale quando pianifica il Suo ",
       post: ": vola a Kuusamo, oppure arriva in auto da Ruka, e in meno di un'ora sei ai capanni.",
     },
     cta: "Prenota direttamente con Bear Kuusamo",
