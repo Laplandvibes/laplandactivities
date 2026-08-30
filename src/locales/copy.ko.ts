@@ -402,7 +402,7 @@ const ko: SectionCopy = {
     keepExploringKicker: '계속 탐색', otherDestinationsH2: '다른 목적지', allDestinations: '모든 목적지',
     tipsByDestination: {
       rovaniemi: [
-        { tip: '크루즈 버스 인파를 피하려면 산타클로스 마을은 이른 아침에 예약하세요.', icon: '🎅' },
+        { tip: '크루즈 버스 인파를 피하려면 산타클로스 마을은 이른 아침에 방문하세요.', icon: '🎅' },
         { tip: '북극권 횡단 증명서는 우체국에서 무료입니다.', icon: '📮' },
         { tip: 'Arktikum에는 라플란드 최고의 오로라 전시가 있습니다.', icon: '🏛️' },
       ],
@@ -464,7 +464,7 @@ const ko: SectionCopy = {
       { title: '실제 운영자', text: '현지에서 자리 잡은 운영자를 소개하며, 모든 예약은 GetYourGuide를 통해 진행됩니다.' },
       { title: '진정한 체험', text: '각 액티비티는 위조할 수 없는 세부사항을 기준으로 선정했습니다.' },
       { title: '안전과 신뢰', text: '핀란드의 액티비티 업체는 소비자 안전법의 적용을 받으며, 핀란드 안전 당국 Tukes의 감독을 받습니다.' },
-      { title: '#LaplandVibes 네트워크', text: '23개 사이트의 라플란드 네트워크의 일부, 완전한 여행 계획 도구.' },
+      { title: '#LaplandVibes 네트워크', text: '25개가 넘는 사이트로 이루어진 라플란드 네트워크의 일부, 완전한 여행 계획 도구.' },
     ],
     affiliateH2: '제휴 공시',
     affiliateBody1: 'LaplandActivities는 파트너 링크(Trip.com, GetYourGuide, EconomyBookings, EKTA)를 통해 예약 시 수수료를 받습니다. 추가 비용은 없으며, 사이트는 무료로 유지됩니다. 추천은 일관된 서비스를 제공하는 운영자와 숙소만 포함합니다. 전체 공시는',

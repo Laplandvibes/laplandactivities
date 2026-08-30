@@ -227,7 +227,7 @@ const en: SectionCopy = {
     allDestinations: 'All destinations',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Book Santa Claus Village early morning to skip the cruise-coach crowds.', icon: '🎅' },
+        { tip: 'Visit Santa Claus Village early morning to skip the cruise-coach crowds.', icon: '🎅' },
         { tip: 'The Arctic Circle crossing certificate is free at the post office.', icon: '📮' },
         { tip: 'Arktikum has the strongest aurora exhibition in Finland.', icon: '🏛️' },
       ],
@@ -290,7 +290,7 @@ const en: SectionCopy = {
       { title: 'Real operators', text: 'Listings feature established local operators, and every booking runs through GetYourGuide.' },
       { title: 'Authentic experiences', text: 'Each activity is chosen for the kind of detail you cannot fake.' },
       { title: 'Safe and trusted', text: 'Activity operators in Finland fall under the Consumer Safety Act and are supervised by Tukes, the national safety authority.' },
-      { title: '#LaplandVibes network', text: 'Part of a 23-site Finnish Lapland network, your full trip-planning toolkit.' },
+      { title: '#LaplandVibes network', text: 'Part of a 25+ site Finnish Lapland network, your full trip-planning toolkit.' },
     ],
     affiliateH2: 'Affiliate disclosure',
     affiliateBody1: 'LaplandActivities earns a commission when you book through partner links: Trip.com, GetYourGuide, EconomyBookings, EKTA. This costs you nothing extra and keeps the site free. Recommendations cover operators and properties that consistently deliver. Read the full disclosure in our',

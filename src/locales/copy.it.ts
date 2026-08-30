@@ -399,7 +399,7 @@ const it: SectionCopy = {
     keepExploringKicker: 'Continui a esplorare', otherDestinationsH2: 'Altre destinazioni', allDestinations: 'Tutte le destinazioni',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Prenoti il Villaggio di Babbo Natale al mattino presto per evitare la folla dei bus crocieristici.', icon: '🎅' },
+        { tip: 'Visiti il Villaggio di Babbo Natale al mattino presto per evitare la folla dei bus crocieristici.', icon: '🎅' },
         { tip: 'Il certificato di attraversamento del Circolo Polare è gratuito all\'ufficio postale.', icon: '📮' },
         { tip: 'Arktikum ha la mostra sull\'aurora più completa della Finlandia.', icon: '🏛️' },
       ],
@@ -461,7 +461,7 @@ const it: SectionCopy = {
       { title: 'Operatori reali', text: 'Presentiamo operatori locali affermati; ogni prenotazione passa per GetYourGuide.' },
       { title: 'Esperienze autentiche', text: 'Ogni attività è scelta per quel tipo di dettaglio che non si può falsificare.' },
       { title: 'Sicuro e affidabile', text: 'Gli operatori di attività in Finlandia rientrano nella legge sulla sicurezza dei consumatori e sono vigilati da Tukes, ente finlandese per la sicurezza.' },
-      { title: 'Rete #LaplandVibes', text: 'Parte di una rete di 23 siti sulla Lapponia finlandese, il Suo kit completo di pianificazione.' },
+      { title: 'Rete #LaplandVibes', text: 'Parte di una rete di oltre 25 siti sulla Lapponia finlandese, il Suo kit completo di pianificazione.' },
     ],
     affiliateH2: 'Divulgazione affiliazione',
     affiliateBody1: 'LaplandActivities guadagna una commissione sulle prenotazioni tramite link partner, Trip.com, GetYourGuide, EconomyBookings, EKTA. Non Le costa nulla in più e tiene gratuito il sito. Le raccomandazioni riguardano operatori e strutture che mantengono ciò che promettono. Legga la divulgazione completa nei nostri',

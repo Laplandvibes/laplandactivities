@@ -523,7 +523,7 @@ const zhCN: SectionCopy = {
       { title: '真实的运营商', text: '我们展示扎根本地的成熟运营商，所有预订均通过 GetYourGuide 完成。' },
       { title: '真实体验', text: '每个活动都因无法伪装的细节而入选。' },
       { title: '安全可信', text: '芬兰的活动运营商受消费者安全法约束，并由芬兰安全监管机构 Tukes 监督。' },
-      { title: '#LaplandVibes网络', text: '芬兰拉普兰23站网络的一部分，完整的行程规划工具箱。' },
+      { title: '#LaplandVibes网络', text: '芬兰拉普兰25+站网络的一部分，完整的行程规划工具箱。' },
     ],
     affiliateH2: '联盟披露',
     affiliateBody1: '当您通过合作伙伴链接预订时(Trip.com、GetYourGuide、EconomyBookings、EKTA),LaplandActivities将获得佣金。这不会让您多花钱,并维持本站免费。我们仅推荐持续兑现承诺的运营商与房源。请在我们的',

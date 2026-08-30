@@ -399,7 +399,7 @@ const nl: SectionCopy = {
     keepExploringKicker: 'Blijf verkennen', otherDestinationsH2: 'Andere bestemmingen', allDestinations: 'Alle bestemmingen',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Boek het Kerstmandorp \'s ochtends vroeg om de bezetting van de cruisebussen te ontlopen.', icon: '🎅' },
+        { tip: 'Bezoek het Kerstmandorp \'s ochtends vroeg om de bezetting van de cruisebussen te ontlopen.', icon: '🎅' },
         { tip: 'Het certificaat voor het oversteken van de Noordpoolcirkel is gratis bij het postkantoor.', icon: '📮' },
         { tip: 'Arktikum heeft de meest uitgebreide noorderlichttentoonstelling van Finland.', icon: '🏛️' },
       ],
@@ -461,7 +461,7 @@ const nl: SectionCopy = {
       { title: 'Echte aanbieders', text: 'We tonen gevestigde lokale aanbieders; elke boeking loopt via GetYourGuide.' },
       { title: 'Authentieke ervaringen', text: 'Elke activiteit is gekozen om het soort detail dat u niet kunt verzinnen.' },
       { title: 'Veilig en betrouwbaar', text: 'Activiteitenaanbieders in Finland vallen onder de consumentenveiligheidswet en staan onder toezicht van Tukes, de Finse veiligheidsautoriteit.' },
-      { title: '#LaplandVibes-netwerk', text: 'Onderdeel van een 23-site Fins Lapland-netwerk, uw complete reisplanning-toolkit.' },
+      { title: '#LaplandVibes-netwerk', text: 'Onderdeel van een Fins Lapland-netwerk van 25+ sites, uw complete reisplanning-toolkit.' },
     ],
     affiliateH2: 'Affiliate-disclosure',
     affiliateBody1: 'LaplandActivities verdient een commissie wanneer u boekt via partnerlinks, Trip.com, GetYourGuide, EconomyBookings, EKTA. Dit kost u niets extra en houdt de site gratis. Aanbevelingen omvatten aanbieders en accommodaties die consistent leveren. Lees de volledige disclosure in onze',

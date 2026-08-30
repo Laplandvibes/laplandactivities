@@ -227,7 +227,7 @@ const sv: SectionCopy = {
     allDestinations: 'Alla resmål',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Boka Jultomtens by tidigt på morgonen för att slippa bussgrupperna.', icon: '🎅' },
+        { tip: 'Besök Jultomtens by tidigt på morgonen för att slippa bussgrupperna.', icon: '🎅' },
         { tip: 'Diplomet för att ha korsat polcirkeln är gratis på posten.', icon: '📮' },
         { tip: 'Arktikum har Finlands mest omfattande norrskensutställning.', icon: '🏛️' },
       ],
@@ -290,7 +290,7 @@ const sv: SectionCopy = {
       { title: 'Riktiga researrangörer', text: 'Listningarna visar etablerade lokala researrangörer, och varje bokning går via GetYourGuide.' },
       { title: 'Autentiska upplevelser', text: 'Varje aktivitet är utvald för den sortens detaljer man inte kan fejka.' },
       { title: 'Säkert och pålitligt', text: 'Aktivitetsarrangörer i Finland omfattas av konsumentsäkerhetslagen och övervakas av Tukes, den nationella säkerhetsmyndigheten.' },
-      { title: '#LaplandVibes-nätverket', text: 'En del av ett nätverk med 23 sajter om finska Lappland, ditt kompletta verktyg för reseplanering.' },
+      { title: '#LaplandVibes-nätverket', text: 'En del av ett nätverk med över 25 sajter om finska Lappland, ditt kompletta verktyg för reseplanering.' },
     ],
     affiliateH2: 'Information om affiliatelänkar',
     affiliateBody1: 'LaplandActivities får provision när du bokar via partnerlänkar: Trip.com, GetYourGuide, EconomyBookings, EKTA. Det kostar dig inget extra och håller sajten gratis. Rekommendationerna omfattar researrangörer och boenden som konsekvent levererar. Läs hela informationen i våra',

@@ -460,7 +460,7 @@ const ptBR: SectionCopy = {
     allDestinations: 'Todos os destinos',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Reserve a Vila do Papai Noel logo de manhã para escapar das excursões dos cruzeiros.', icon: '🎅' },
+        { tip: 'Visite a Vila do Papai Noel logo de manhã para escapar das excursões dos cruzeiros.', icon: '🎅' },
         { tip: 'O certificado de cruzamento do Círculo Polar é grátis nos correios.', icon: '📮' },
         { tip: 'O Arktikum tem a melhor exposição sobre aurora da Finlândia.', icon: '🏛️' },
       ],
@@ -523,7 +523,7 @@ const ptBR: SectionCopy = {
       { title: 'Operadoras reais', text: 'Destacamos operadoras locais consolidadas; toda reserva passa pelo GetYourGuide.' },
       { title: 'Experiências autênticas', text: 'Cada atividade é escolhida pelo nível de detalhe que não dá para fingir.' },
       { title: 'Seguro e confiável', text: 'As operadoras de atividades na Finlândia estão sujeitas à lei de segurança do consumidor e são supervisionadas pela Tukes, a autoridade finlandesa de segurança.' },
-      { title: 'Rede #LaplandVibes', text: 'Parte de uma rede de 23 sites sobre a Lapônia, kit completo de planejamento da viagem.' },
+      { title: 'Rede #LaplandVibes', text: 'Parte de uma rede de mais de 25 sites sobre a Lapônia, kit completo de planejamento da viagem.' },
     ],
     affiliateH2: 'Aviso de afiliados',
     affiliateBody1: 'O LaplandActivities recebe comissão quando você reserva por links de parceiros, Trip.com, GetYourGuide, EconomyBookings, EKTA. Sem custo extra para você e ajuda a manter o site gratuito. Recomendamos operadoras e hospedagens que entregam de forma consistente. Leia o aviso completo nos nossos',

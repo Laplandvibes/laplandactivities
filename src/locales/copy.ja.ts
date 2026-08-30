@@ -460,7 +460,7 @@ const ja: SectionCopy = {
     allDestinations: 'すべての目的地',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'サンタクロース村は早朝に予約してクルーズバスの混雑を避けましょう。', icon: '🎅' },
+        { tip: 'サンタクロース村は早朝に訪れてクルーズバスの混雑を避けましょう。', icon: '🎅' },
         { tip: '北極圏横断証明書は郵便局で無料です。', icon: '📮' },
         { tip: 'Arktikum博物館はフィンランド最大のオーロラ展示があります。', icon: '🏛️' },
       ],
@@ -523,7 +523,7 @@ const ja: SectionCopy = {
       { title: '実在のオペレーター', text: '地元で実績のあるオペレーターを掲載し、すべての予約はGetYourGuide経由で行われます。' },
       { title: '本物の体験', text: '各アクティビティは、偽造できない細部にこだわって選んでいます。' },
       { title: '安全で信頼できる', text: 'フィンランドのアクティビティ事業者は消費者安全法の対象で、安全当局Tukesの監督を受けています。' },
-      { title: '#LaplandVibesネットワーク', text: '23サイトのフィンランド・ラップランドネットワークの一部。完全な旅行計画ツールキット。' },
+      { title: '#LaplandVibesネットワーク', text: '25以上のサイトからなるフィンランド・ラップランドネットワークの一部。完全な旅行計画ツールキット。' },
     ],
     affiliateH2: 'アフィリエイト開示',
     affiliateBody1: 'LaplandActivitiesはパートナーリンク経由のご予約から手数料を受け取ります。Trip.com、GetYourGuide、EconomyBookings、EKTA。これによりお客様に追加費用は発生せず、サイトを無料で維持できます。推薦は一貫して期待に応える施設とオペレーターを取り上げます。完全な開示は以下でお読みください:',

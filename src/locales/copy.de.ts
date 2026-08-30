@@ -460,7 +460,7 @@ const de: SectionCopy = {
     allDestinations: 'Alle Reiseziele',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Buchen Sie das Weihnachtsmanndorf für den frühen Morgen, um den Reisebus-Andrang zu vermeiden.', icon: '🎅' },
+        { tip: 'Besuchen Sie das Weihnachtsmanndorf am frühen Morgen, um den Reisebus-Andrang zu vermeiden.', icon: '🎅' },
         { tip: 'Die Polarkreis-Überquerungs-Urkunde gibt es kostenlos im Postamt.', icon: '📮' },
         { tip: 'Das Arktikum zeigt die ausführlichste Nordlicht-Ausstellung Finnlands.', icon: '🏛️' },
       ],
@@ -523,7 +523,7 @@ const de: SectionCopy = {
       { title: 'Echte Anbieter', text: 'Die Listings führen etablierte lokale Anbieter, und jede Buchung läuft über GetYourGuide.' },
       { title: 'Authentische Erlebnisse', text: 'Jede Aktivität ist nach der Art von Detail ausgewählt, die sich nicht vortäuschen lässt.' },
       { title: 'Sicher und vertrauenswürdig', text: 'Aktivitätsanbieter in Finnland unterliegen dem Verbrauchersicherheitsgesetz und werden von der Sicherheitsbehörde Tukes beaufsichtigt.' },
-      { title: '#LaplandVibes-Netzwerk', text: 'Teil eines Netzwerks aus 23 Seiten zu Finnisch-Lappland, Ihr vollständiges Werkzeug zur Reiseplanung.' },
+      { title: '#LaplandVibes-Netzwerk', text: 'Teil eines Netzwerks aus über 25 Seiten zu Finnisch-Lappland, Ihr vollständiges Werkzeug zur Reiseplanung.' },
     ],
     affiliateH2: 'Affiliate-Hinweis',
     affiliateBody1: 'LaplandActivities erhält eine Provision, wenn Sie über Partner-Links buchen, Trip.com, GetYourGuide, EconomyBookings, EKTA. Für Sie entstehen keine Mehrkosten, und die Seite bleibt kostenfrei. Empfohlen werden Anbieter und Unterkünfte, die nachweislich liefern. Den vollständigen Hinweis lesen Sie in den',

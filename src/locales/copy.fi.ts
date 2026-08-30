@@ -474,7 +474,7 @@ const fi: SectionCopy = {
     allDestinations: 'Kaikki kohteet',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Varaa Joulupukin pajakylä aikaiseksi aamuksi välttääksesi risteilybussien ruuhkat.', icon: '🎅' },
+        { tip: 'Mene Joulupukin pajakylään heti aamusta, niin vältät risteilybussien ruuhkat.', icon: '🎅' },
         { tip: 'Napapiirin ylitystodistus on ilmainen postitoimistossa.', icon: '📮' },
         { tip: 'Arktikumissa on Suomen vahvin revontulinäyttely.', icon: '🏛️' },
       ],
@@ -537,7 +537,7 @@ const fi: SectionCopy = {
       { title: 'Luotettavat toimijat', text: 'Listauksissa paikallisia, vakiintuneita toimijoita; jokainen varaus kulkee GetYourGuiden kautta.' },
       { title: 'Aidot elämykset', text: 'Jokainen aktiviteetti on valittu sellaisten yksityiskohtien perusteella, joita ei voi väärentää.' },
       { title: 'Turvallista ja luotettavaa', text: 'Ohjelmapalveluyritykset kuuluvat kuluttajaturvallisuuslain piiriin, ja niiden turvallisuutta valvoo Tukes.' },
-      { title: '#LaplandVibes-verkosto', text: 'Osa 23 sivuston Suomen Lapin verkostoa, täydellinen matkasuunnittelutyökalu.' },
+      { title: '#LaplandVibes-verkosto', text: 'Osa yli 25 sivuston Suomen Lapin verkostoa, täydellinen matkasuunnittelutyökalu.' },
     ],
     affiliateH2: 'Kumppanilinkit',
     affiliateBody1: 'LaplandActivities saa komission kun varaat kumppanilinkkien kautta: Sembo, GetYourGuide, EconomyBookings, EKTA. Sinulle se ei maksa mitään ylimääräistä ja pitää sivuston ilmaisena. Suosituksissa on vain toimijoita ja majoituspaikkoja, jotka toimittavat luvatun. Lue tarkemmin sivulta',
