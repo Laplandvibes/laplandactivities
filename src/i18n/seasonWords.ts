@@ -187,7 +187,7 @@ export const SEASON_SECTIONS: Record<Lang, {
     whyH2: (p) => `Waarom naar ${p}`,
     goodToKnowKicker: 'In het kort',
     goodToKnowH2: 'Goed om te weten',
-    accessLabel: 'Hoe kom je er',
+    accessLabel: 'Hoe komt u er',
     bestForLabel: 'Ideaal voor',
     elevationLabel: 'Hoogste punt',
     operatorsShort: 'Aanbieders',

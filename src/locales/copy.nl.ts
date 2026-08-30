@@ -296,11 +296,11 @@ const nl: SectionCopy = {
       { title: 'Tips van insiders', body: 'De tour die u op de partnersites pas in juni vindt.' },
     ],
     emailPlaceholder: 'Uw e-mailadres', subscribeBtn: 'Abonneren', subscribingBtn: 'Aanmelden…',
-    successTitle: 'Bijna klaar.', successBody: 'Bevestig je aanmelding via de e-mail die we net hebben gestuurd.',
+    successTitle: 'Bijna klaar.', successBody: 'Bevestig uw aanmelding via de e-mail die we net hebben gestuurd.',
     alreadyTitle: 'Al op de lijst!', alreadyBody: 'Het lijkt erop dat u al geabonneerd bent, tot snel.',
     footnote: 'Op elk moment opzegbaar.', errorFallback: 'Aanmelden mislukt. Probeer het opnieuw.',
   },
-  activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan je bezoek' },
+  activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan uw bezoek' },
   home: {
     metaTitle: 'LaplandActivities: Arctische tours in Lapland',
     metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 10 bestemmingen in en rond Lapland via GetYourGuide.',
@@ -321,14 +321,14 @@ const nl: SectionCopy = {
   },
   relatedSites: {
     kicker: 'Meer van #LaplandVibes',
-    h2: 'Plan de rest van je Arctische reis',
+    h2: 'Plan de rest van uw Arctische reis',
     lead: 'Activiteiten zijn maar de helft van de reis. Deze zustergidsen uit ons Lapland-netwerk gaan dieper op de rest in.',
     links: [
       { pre: 'Zin in een hondenslee? Onze', anchor: 'speciale husky-safarigids', post: 'vergelijkt kennels, afstanden en prijzen.' },
-      { pre: 'Liever je eigen gashendel, bekijk de beste', anchor: 'sneeuwscooter-routes & prijzen', post: 'in heel Lapland.' },
-      { pre: 'Op zoek naar verse poeder? Ontdek', anchor: 'waar je kunt skiën in Lapland', post: 'met vergelijkingen per skigebied.' },
+      { pre: 'Liever uw eigen gashendel, bekijk de beste', anchor: 'sneeuwscooter-routes & prijzen', post: 'in heel Lapland.' },
+      { pre: 'Op zoek naar verse poeder? Ontdek', anchor: 'waar u kunt skiën in Lapland', post: 'met vergelijkingen per skigebied.' },
       { pre: 'Voor de rustige kant van het noordpoolgebied, lees over', anchor: 'noorderlicht & nationale parken', post: 'en de beste aurorahemels.' },
-      { pre: 'En voordat je de tours boekt, bepaal', anchor: 'waar je kunt verblijven in Lapland', post: ': iglo\'s, hutten en fjell-resorts.' },
+      { pre: 'En voordat u de tours boekt, bepaal', anchor: 'waar u kunt verblijven in Lapland', post: ': iglo\'s, hutten en fjell-resorts.' },
     ],
   },
   faq: {
@@ -337,7 +337,7 @@ const nl: SectionCopy = {
     lead: 'De vragen die reizigers het vaakst stellen voordat ze een Arctische ervaring boeken.',
     items: [
       {
-        q: 'Welke activiteiten kun je in Lapland doen?',
+        q: 'Welke activiteiten kunt u in Lapland doen?',
         a: 'In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en afdalingsskiën, ijsvissen en ijsdrijven. In de zomer verandert dezelfde wildernis in wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied.',
       },
       {
@@ -346,15 +346,15 @@ const nl: SectionCopy = {
       },
       {
         q: 'Hoeveel kosten activiteiten in Lapland?',
-        a: 'Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte gedeelde sessie zoals een rendierrit of een aurora-bustocht zit aan de lage kant; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, juiste prijzen open je een tocht via onze boekingspartner, de live prijs verschijnt vóór je bevestigt.',
+        a: 'Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte gedeelde sessie zoals een rendierrit of een aurora-bustocht zit aan de lage kant; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, juiste prijzen opent u een tocht via onze boekingspartner, de live prijs verschijnt vóór u bevestigt.',
       },
       {
         q: 'Zijn activiteiten in Lapland geschikt voor jonge kinderen?',
         a: 'Veel wel, met de juiste keuze. Rendiersleeritten, bezoeken aan een huskyboerderij, rustige sneeuwschoenwandelingen, sleeën en een ontmoeting met de Kerstman werken goed voor kleine kinderen. Voor sneeuwscooters geldt meestal een minimumleeftijd om te besturen (kinderen rijden mee in een slee of aanhanger), en late noorderlichttochten kunnen voor de allerkleinsten lang en koud zijn. De meeste aanbieders vermelden leeftijdsgrenzen en gezinsopties op de activiteitenpagina, dus controleer dit vóór het boeken.',
       },
       {
-        q: 'Moet je activiteiten in Lapland vooraf boeken?',
-        a: 'Voor de drukste weken, Kerst en Nieuwjaar, en de aurora- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes heb je meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat je ook ruimte voor een heldere hemel inbouwen in je aurora-plannen in plaats van te strijden om de laatste plekken.',
+        q: 'Moet u activiteiten in Lapland vooraf boeken?',
+        a: 'Voor de drukste weken, Kerst en Nieuwjaar, en de aurora- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat u ook ruimte voor een heldere hemel inbouwen in uw aurora-plannen in plaats van te strijden om de laatste plekken.',
       },
     ],
   },
@@ -472,7 +472,7 @@ const nl: SectionCopy = {
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland | LaplandActivities",
-    metaDescription: "Bear Kuusamo brengt je naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland. Avond- en nachttochten, 1 mei tot 30 september.",
+    metaDescription: "Bear Kuusamo brengt u naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland. Avond- en nachttochten, 1 mei tot 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Commercieel partnerschap: Bear Kuusamo",
     anchorWatching: "beren spotten in Finland",
@@ -484,11 +484,11 @@ const nl: SectionCopy = {
     intro: {
       para1: "In de grensbossen ten oosten van Kuusamo, waar het boreale bos ononderbroken naar de grens loopt, stappen bruine beren in de lange noordelijke schemering uit de bosrand. Bear Kuusamo begeleidt reizigers al meer dan twintig jaar naar die stilte. Het is het oudste berenkijkbedrijf in de regio Ruka–Kuusamo en het noordelijkste van het land.",
       para2Pre: "Dit is echt ",
-      para2Post: ", geen dierentuin en geen show. De hutten staan in een beschermd stuk bos dat grenst aan Nationaal Park Paanajärvi, net over de Russische grens. Oprichter Pekka Veteläinen en zijn gidsen werken samen met Metsähallitus en onderzoekers en verstoppen het voer op steeds wisselende plekken, zodat de beren op hun natuurlijke manier zoeken en foerageren. De beren blijven wild en raken niet gewend aan mensen; jij krijgt gewoon een rustige, goed geplaatste plek om ze te bekijken.",
+      para2Post: ", geen dierentuin en geen show. De hutten staan in een beschermd stuk bos dat grenst aan Nationaal Park Paanajärvi, net over de Russische grens. Oprichter Pekka Veteläinen en zijn gidsen werken samen met Metsähallitus en onderzoekers en verstoppen het voer op steeds wisselende plekken, zodat de beren op hun natuurlijke manier zoeken en foerageren. De beren blijven wild en raken niet gewend aan mensen; u krijgt gewoon een rustige, goed geplaatste plek om ze te bekijken.",
     },
     hide: {
       title: "Een nacht in een hut",
-      body: "Zeven houten hutten staan aan de bosrand, gebouwd om menselijk geluid en geur binnen te houden. Panoramaramen geven kijkers een vrij zicht op de open plek, en fotografen hebben eigen camera-openingen met bean bags en videokoppen, zodat niemand door glas hoeft te schieten. De hoofdhut is rolstoeltoegankelijk en de toiletten zitten in eigen, aparte ruimtes. Vanuit de ramen zie je misschien bruine beren en, in de lente, een veelvraat die voorbijglipt, zeearenden boven je en de raven wier geroep de gidsen vertelt dat een beer dichtbij is.",
+      body: "Zeven houten hutten staan aan de bosrand, gebouwd om menselijk geluid en geur binnen te houden. Panoramaramen geven kijkers een vrij zicht op de open plek, en fotografen hebben eigen camera-openingen met bean bags en videokoppen, zodat niemand door glas hoeft te schieten. De hoofdhut is rolstoeltoegankelijk en de toiletten zitten in eigen, aparte ruimtes. Vanuit de ramen ziet u misschien bruine beren en, in de lente, een veelvraat die voorbijglipt, zeearenden boven u en de raven wier geroep de gidsen vertelt dat een beer dichtbij is.",
     },
     treeCaption: "Een jonge bruine beer klimt in een den bij de hutten.",
     treeCredit: "Foto: Piritta Paija / Bear Kuusamo",
@@ -498,15 +498,15 @@ const nl: SectionCopy = {
       eveningBody: "Een begeleide wandeling naar de hut en de best verlichte uren van de noordelijke avond.",
       overnightLabel: "Nachttocht",
       overnightBody: "De avond verlengd tot de ochtend, en vaak het rijkere schouwspel. In de nachtelijke uren komen er doorgaans veel meer beren, van grote mannetjes tot, zelfs midzomer, een moeder met haar jongen, en in zomernachten gaan de beren zwemmen.",
-      season: "Begeleiding en verzekering zijn inbegrepen, en het seizoen loopt van 1 mei tot 30 september. De lente brengt moeders met jongen, en midzomer gaat de zon hier helemaal niet onder, zodat je de hele lichte nacht door beren kunt bekijken en fotograferen. Blijft het bos leeg, dan brengt de Originele Berengarantie je gratis terug voor nog een avond.",
+      season: "Begeleiding en verzekering zijn inbegrepen, en het seizoen loopt van 1 mei tot 30 september. De lente brengt moeders met jongen, en midzomer gaat de zon hier helemaal niet onder, zodat u de hele lichte nacht door beren kunt bekijken en fotograferen. Blijft het bos leeg, dan brengt de Originele Berengarantie u gratis terug voor nog een avond.",
       bookingPre: "Actuele prijzen, data en beschikbaarheid staan op ",
       bookingLink: "de eigen boekingspagina van Bear Kuusamo",
       bookingPost: ".",
     },
     where: {
       title: "Waar het ligt",
-      pre: "Kuusamo ligt in het noordoosten van Finland, pal tegen de grens van Lapland, tussen de heuvels en oerbossen rond Nationaal Park Oulanka. Het is de natuurlijke uitvalsbasis wanneer je je eigen ",
-      post: " plant: vlieg naar Kuusamo of rijd over vanuit Ruka, en je bent binnen een uur bij de hutten.",
+      pre: "Kuusamo ligt in het noordoosten van Finland, pal tegen de grens van Lapland, tussen de heuvels en oerbossen rond Nationaal Park Oulanka. Het is de natuurlijke uitvalsbasis wanneer u uw eigen ",
+      post: " plant: vlieg naar Kuusamo of rijd over vanuit Ruka, en u bent binnen een uur bij de hutten.",
     },
     cta: "Boek rechtstreeks bij Bear Kuusamo",
     imageAlts: {
@@ -532,7 +532,7 @@ const nl: SectionCopy = {
   },
   cookie: {
     metaTitle: 'Cookiebeleid · LaplandActivities',
-    metaDescription: 'Welke cookies laplandactivities.fi plaatst, waarvoor ze dienen en hoe je je toestemming wijzigt. AVG- en ePrivacy-conforme cookieverklaring van Lapeso Oy.',
+    metaDescription: 'Welke cookies laplandactivities.fi plaatst, waarvoor ze dienen en hoe u uw toestemming wijzigt. AVG- en ePrivacy-conforme cookieverklaring van Lapeso Oy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities', h2: 'Verdwaald in het Noordpoolgebied?',

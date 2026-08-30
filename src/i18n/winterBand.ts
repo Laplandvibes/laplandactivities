@@ -204,7 +204,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageKicker: 'Winterseizoen',
     imageH3: 'Het noordpoolgebied op zijn magischst',
     highlights: [
-      { title: 'Husky-sledetocht', body: 'Bestuur je eigen team door het stille, besneeuwde bos.' },
+      { title: 'Husky-sledetocht', body: 'Bestuur uw eigen team door het stille, besneeuwde bos.' },
       { title: 'Sneeuwscootersafari\'s', body: 'Bevroren meren en fjell-paden, van rustig tot dagtocht.' },
       { title: 'Noorderlichtjacht', body: 'Tochten onder donkere hemel met gidsen die de voorspelling lezen.' },
       { title: 'IJsvissen & sauna', body: 'Boor het ijs open en warm daarna op in een echte rooksauna.' },
