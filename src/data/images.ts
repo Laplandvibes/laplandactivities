@@ -68,10 +68,10 @@ export const HERO = {
   ruskaRidge:       local('heroes/slider-03-summer-hike.webp'), // autumn ruska fell ridge + hikers
   salmonFishing:    local('activities/summer/salmon-fishing.webp'), // river salmon fishing, used by fishing category hero
 
-  // 2026-07-24 new destination heroes (Picsart gemini-3-pro-image 2K, unique to this site).
-  // kemijarvi file is named for an easy swap: Vesa has real Kemijärvi photos to drop in later.
-  pyhaLuosto:       local('heroes/pyha-luosto-fells.webp'),     // twin fells + national park, winter dusk
-  kemijarvi:        local('heroes/kemijarvi-lake-town.webp'),   // lake + rail + small-town winter vibe
+  // 2026-08-30: both destination heroes are now REAL photos from the July 2026 road trip
+  // (was Picsart AI 2026-07-24; AI originals in monorepo _reissu-2026-07/_ai-originals-backup/).
+  pyhaLuosto:       local('heroes/pyha-luosto-fells.webp'),     // real: summer fell panorama from Pyhä summit, 19.7.2026
+  kemijarvi:        local('heroes/kemijarvi-lake-town.webp'),   // real: mirror-calm Kemijärvi at golden hour, 18.7.2026
 } as const;
 
 // HERO_BRANDED — kept as alias for legacy data references
