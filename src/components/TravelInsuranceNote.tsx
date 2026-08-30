@@ -240,7 +240,7 @@ export default function TravelInsuranceNote({
           '这是联盟链接:若你通过它购买,我们可能获得佣金,而你无需额外付费。',
           '제휴 링크입니다. 이를 통해 구매하시면 추가 비용 없이 저희가 수수료를 받을 수 있습니다.',
           'Ceci est un lien d’affiliation : si vous achetez via ce lien, nous pouvons percevoir une commission, sans surcoût pour vous.',
-          'Questo è un link di affiliazione: se acquisti tramite esso possiamo ricevere una commissione, senza costi aggiuntivi per te.',
+          'Questo è un link di affiliazione: se acquisti tramite esso possiamo ricevere una commissione, senza costi aggiuntivi per Lei.',
           'Dit is een affiliatelink: koop je hierdoor, dan kunnen wij commissie ontvangen, zonder extra kosten voor jou.',
           'Detta är en affiliatelänk: köper du via den kan vi få provision, utan extra kostnad för dig.')}</p>
       </div>
