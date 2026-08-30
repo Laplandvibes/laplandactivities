@@ -84,7 +84,7 @@ export default function TravelInsuranceNote({
     '确认你的旅行保险到底保什么',
     '여행자 보험이 실제로 무엇을 보장하는지 확인하세요',
     'Vérifiez ce que votre assurance voyage couvre vraiment',
-    'Controlla cosa copre davvero la tua assicurazione di viaggio',
+    'Controlli cosa copre davvero la Sua assicurazione di viaggio',
     'Controleer wat je reisverzekering echt dekt',
     'Kolla vad din reseförsäkring faktiskt täcker')
 
@@ -161,7 +161,7 @@ export default function TravelInsuranceNote({
         'The operator will not insure you', 'Ohjelmapalvelu ei vakuuta sinua', 'Der Veranstalter versichert Sie nicht',
         '主催者はあなたを保険に入れてくれない', 'El operador no te asegura', 'A operadora não segura você',
         '活动商不会为你投保', '운영업체가 당신을 보험에 넣어주지 않습니다',
-        'Le prestataire ne vous assure pas', 'L’operatore non ti assicura',
+        'Le prestataire ne vous assure pas', 'L’operatore non La assicura',
         'De aanbieder verzekert jou niet', 'Arrangören försäkrar inte dig'),
       b: pick(lang,
         'A safari company insures its own liability, not your medical bill. If you break a wrist on a snowmobile, the cost of treatment and getting home is yours or your insurer\'s. That is the gap worth closing before you leave, not at the airport.',
@@ -173,7 +173,7 @@ export default function TravelInsuranceNote({
         '活动公司投保的是自身责任,不是你的医疗账单。若你在雪地摩托上摔断手腕,治疗与回国的费用由你或你的保险承担。这个缺口要在出发前补上,而不是在机场。',
         '사파리 업체가 드는 보험은 자사의 배상책임이지 당신의 치료비가 아닙니다. 스노모빌에서 손목이 부러지면 치료와 귀국 비용은 당신 또는 당신의 보험사 몫입니다. 이 공백은 공항이 아니라 떠나기 전에 메우는 것입니다.',
         'Une société de safari assure sa propre responsabilité, pas votre facture médicale. Si vous vous cassez le poignet en motoneige, les soins et le rapatriement sont à votre charge ou à celle de votre assureur. Cette faille se comble avant le départ, pas à l’aéroport.',
-        'Un’azienda di safari assicura la propria responsabilità, non il tuo conto medico. Se ti rompi un polso in motoslitta, cure e rientro li paghi tu o la tua assicurazione. Quel vuoto si chiude prima di partire, non in aeroporto.',
+        'Un’azienda di safari assicura la propria responsabilità, non il Suo conto medico. Se si rompe un polso in motoslitta, cure e rientro li paga Lei o la Sua assicurazione. Quel vuoto si chiude prima di partire, non in aeroporto.',
         'Een safaribedrijf verzekert zijn eigen aansprakelijkheid, niet jouw doktersrekening. Breek je een pols op een sneeuwscooter, dan zijn behandeling en thuiskomst voor jou of je verzekeraar. Dat gat dicht je vóór vertrek, niet op het vliegveld.',
         'Ett safariföretag försäkrar sitt eget ansvar, inte din vårdräkning. Bryter du handleden på en snöskoter står du eller ditt försäkringsbolag för vård och hemresa. Den luckan täpper man till före avresan, inte på flygplatsen.'),
     },
@@ -189,7 +189,7 @@ export default function TravelInsuranceNote({
     '如果你现有的保单止步于"轻度活动",EKTA 是一家把活动等级单独出售、并承保几乎任何国家旅客的保险公司。在重复购买之前,先和你已有的对比一下。',
     '기존 보험이 "가벼운 활동"에서 멈춘다면, EKTA는 액티비티 등급을 따로 판매하고 거의 모든 국가의 여행자를 보장하는 보험사 중 하나입니다. 중복 구매 전에 이미 가진 것과 비교해 보세요.',
     'Si votre contrat actuel s’arrête aux « charges légères », EKTA vend les paliers d’activité séparément et assure des voyageurs de presque tous les pays. Comparez avec ce que vous avez déjà avant de payer deux fois.',
-    'Se la tua polizza attuale si ferma ai "carichi leggeri", EKTA è una compagnia che vende i livelli di attività separatamente e assicura viaggiatori da quasi ogni paese. Confrontala con quello che hai già prima di pagare due volte.',
+    'Se la Sua polizza attuale si ferma ai "carichi leggeri", EKTA è una compagnia che vende i livelli di attività separatamente e assicura viaggiatori da quasi ogni paese. La confronti con quello che ha già prima di pagare due volte.',
     'Als je huidige polis stopt bij "lichte belasting": EKTA verkoopt de activiteitenniveaus apart en verzekert reizigers uit bijna elk land. Vergelijk het met wat je al hebt voordat je dubbel betaalt.',
     'Om din nuvarande försäkring slutar vid "lätta belastningar" säljer EKTA aktivitetsnivåerna separat och försäkrar resenärer från nästan alla länder. Jämför med det du redan har innan du betalar dubbelt.')
 
