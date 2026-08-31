@@ -400,7 +400,7 @@ const nl: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Bezoek het Kerstmandorp \'s ochtends vroeg om de bezetting van de cruisebussen te ontlopen.', icon: '🎅' },
-        { tip: 'Het certificaat voor het oversteken van de Noordpoolcirkel is gratis bij het postkantoor.', icon: '📮' },
+        { tip: 'De poolcirkellijn oversteken is gratis, maar het certificaat is een betaald souvenir bij de toeristeninformatie op de poolcirkel.', icon: '📜' },
         { tip: 'Arktikum heeft de meest uitgebreide noorderlichttentoonstelling van Finland.', icon: '🏛️' },
       ],
       levi: [

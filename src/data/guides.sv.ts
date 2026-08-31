@@ -13,7 +13,7 @@ const guides: Guides = {
       seasonSummer: 'Juni till augusti byter snön mot ett ljus som egentligen aldrig tar slut. Hundgårdarna håller öppet för sommarbesök och valpmöten, Arktikum och SantaPark går året runt, och stranden längs Kemijoki blir stadens mittpunkt. September och oktober ger ruskafärger på Ounasvaara och säsongens första norrsken, med betydligt färre människor på lederna.',
       planTitle: 'Planera en resa till Rovaniemi',
       planGetting: 'Rovaniemi har Lapplands bästa förbindelser: direktflyget från Helsingfors tar drygt en timme och tjugo minuter, och nattåget kommer på morgonen. De flesta hund-, ren- och norrskensarrangörer ligger inom tjugo minuters bilväg, och turerna inkluderar oftast hämtning vid hotellet, så bil är valfritt här.',
-      planStay: 'Två eller tre nätter räcker för Tomtens by, en stor safari och en norrskenskväll utan stress. Boka vinterns hund- och skoterturer i god tid för december och toppen i februari och mars. Polcirkelbeviset på postkontoret i Tomtens by kostar ingenting, och Ounasvaara ligger nära nog för en kvällsåkning.',
+      planStay: 'Två eller tre nätter räcker för Tomtens by, en stor safari och en norrskenskväll utan stress. Boka vinterns hund- och skoterturer i god tid för december och toppen i februari och mars. Att korsa polcirkeln kostar ingenting, men diplomet är en souvenir för några euro som säljs på turistinformationen vid polcirkeln, i polcirkeltornet eller i Julhusets butik, inte på postkontoret. Ounasvaara ligger nära nog för en kvällsåkning.',
     },
     levi: {
       seasonsTitle: 'Levi säsong för säsong',

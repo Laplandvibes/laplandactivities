@@ -461,7 +461,7 @@ const zhCN: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: '一早就去圣诞老人村，避开邮轮团的人潮。', icon: '🎅' },
-        { tip: '在邮局可免费领取北极圈穿越证书。', icon: '📮' },
+        { tip: '跨过北极圈的分界线免费，但穿越证书是付费纪念品，需在北极圈游客信息中心购买。', icon: '📜' },
         { tip: 'Arktikum拥有芬兰最出色的极光主题展。', icon: '🏛️' },
       ],
       levi: [

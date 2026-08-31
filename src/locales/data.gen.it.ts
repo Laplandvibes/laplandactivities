@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "La capitale della Lapponia e porta d'accesso alle avventure artiche. Ospita il Villaggio di Babbo Natale, ottimi collegamenti di trasporto e una vasta scelta di attività invernali ed estive.",
       "access": "Voli diretti da Helsinki (1 h 15)",
       "bestFor": "Primi viaggi e famiglie",
-      "why": "A Rovaniemi c’è l’infrastruttura della Lapponia: aeroporto internazionale, capolinea del treno notturno e la più ampia scelta di tour della regione. Oltre al Villaggio di Babbo Natale trovate il museo Arktikum sul fiume, le piste dell’Ounasvaara sopra la città e decine di operatori di husky, renne e aurore entro 20 minuti. Ideale per chi arriva per la prima volta e per le famiglie; ritirate il certificato gratuito di attraversamento del Circolo Polare all’ufficio postale di Babbo Natale."
+      "why": "A Rovaniemi c’è l’infrastruttura della Lapponia: aeroporto internazionale, capolinea del treno notturno e la più ampia scelta di tour della regione. Oltre al Villaggio di Babbo Natale trovate il museo Arktikum sul fiume, le piste dell’Ounasvaara sopra la città e decine di operatori di husky, renne e aurore entro 20 minuti. Ideale per chi arriva per la prima volta e per le famiglie. Attraversare la linea del Circolo Polare è gratis, mentre il certificato è un souvenir a pagamento: si compra all’ufficio turistico del Circolo Polare, alla torre del Circolo Polare o al negozio della Casa del Natale, non all’ufficio postale."
     },
     "levi": {
       "name": "Levi",
@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Città di confine tra Finlandia e Svezia, porta d'ingresso a esperienze artiche uniche. Crociera sul leggendario rompighiaccio Sampo, lo SnowCastle Winter Park e il più grande fiume di salmoni a corso libero d'Europa.",
       "access": "Volo a Kemi (15 min in auto)",
       "bestFor": "Esperienze uniche e divertimento per famiglie",
-      "why": "Tornio e Haparanda sono una sola città in due Paesi: si attraversa il confine a piedi in mezzo alla via dello shopping, IKEA Haparanda è accanto al valico e un giro di golf cambia Paese e fuso orario quattro volte. Kemi, a 25 minuti, aggiunge la crociera sul rompighiaccio Sampo e il parco di neve invernale dell’area SnowCastle. Sul Tornionjoki, il più grande fiume da salmoni a corso libero d’Europa, alle rapide di Kukkolankoski si pesca ancora con la rete tradizionale ogni estate."
+      "why": "Tornio e Haparanda sono una sola città in due Paesi: si attraversa il confine a piedi in mezzo alla via dello shopping, IKEA Haparanda è accanto al valico e un giro di golf cambia Paese e fuso orario quattro volte. Kemi, a 25 minuti, aggiunge la crociera sul rompighiaccio Sampo e il parco di neve invernale dell’area SnowCastle. Sul Tornionjoki, il più grande fiume da salmoni a corso libero d’Europa, alle rapide di Kukkolankoski si pesca ancora con il guadino tradizionale ogni estate."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -899,9 +899,9 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Esperienza coregone a Kukkolankoski",
-      "description": "Guardi la pesca tradizionale alle rapide di Kukkolankoski, poi assaggi il coregone grigliato alla fiamma preparato allo stesso modo da secoli. La più antica tradizione di pesca della Finlandia.",
+      "description": "Guardi la pesca tradizionale con il guadino alle rapide di Kukkolankoski, poi assaggi il coregone grigliato alla fiamma preparato allo stesso modo da secoli. La più antica tradizione di pesca della Finlandia.",
       "highlights": [
-        "Pesca tradizionale",
+        "Pesca con il guadino",
         "Coregone grigliato alla fiamma",
         "Rapide storiche"
       ],

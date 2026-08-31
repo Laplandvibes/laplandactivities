@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Die Hauptstadt Lapplands und das Tor zu arktischen Abenteuern. Hier finden Sie das Weihnachtsmanndorf, hervorragende Verkehrsverbindungen und eine große Auswahl an Winter- und Sommeraktivitäten.",
       "access": "Direktflug ab Helsinki (1 Std. 15)",
       "bestFor": "Erste Reisen und Familien",
-      "why": "In Rovaniemi sitzt Lapplands Infrastruktur: internationaler Flughafen, Endstation des Nachtzugs und die größte Tourenauswahl der Region. Neben dem Weihnachtsmanndorf warten das Arktikum-Museum am Flussufer, die Pisten des Ounasvaara direkt über der Stadt und Dutzende Husky-, Rentier- und Polarlicht-Anbieter im Umkreis von 20 Minuten. Ideal für Erstbesucher und Familien; das kostenlose Polarkreis-Zertifikat gibt es im Postamt des Weihnachtsmanns."
+      "why": "In Rovaniemi sitzt Lapplands Infrastruktur: internationaler Flughafen, Endstation des Nachtzugs und die größte Tourenauswahl der Region. Neben dem Weihnachtsmanndorf warten das Arktikum-Museum am Flussufer, die Pisten des Ounasvaara direkt über der Stadt und Dutzende Husky-, Rentier- und Polarlicht-Anbieter im Umkreis von 20 Minuten. Ideal für Erstbesucher und Familien. Die Polarkreislinie überqueren Sie gratis, die Urkunde dagegen ist ein kostenpflichtiges Souvenir aus der Touristeninformation am Polarkreis, dem Polarkreisturm oder dem Laden des Weihnachtshauses – nicht aus dem Postamt."
     },
     "levi": {
       "name": "Levi",
@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Kreuzfahrt auf dem Eisbrecher Sampo, dem SnowCastle Winter Park und Europas größtem frei fließendem Lachsfluss.",
       "access": "Flug nach Kemi (15 Min. mit dem Auto)",
       "bestFor": "Einzigartige Erlebnisse und Familienspaß",
-      "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und den winterlichen Schneepark des SnowCastle-Areals. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Netz gefischt."
+      "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und den winterlichen Schneepark des SnowCastle-Areals. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Kescher gefischt."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -959,9 +959,9 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Felchen-Erlebnis in Kukkolankoski",
-      "description": "Beobachten Sie das traditionelle Fischen an den Stromschnellen von Kukkolankoski und probieren Sie anschließend das über der Flamme gegrillte Felchen, seit Jahrhunderten auf dieselbe Weise zubereitet. Die älteste Fischereitradition Finnlands.",
+      "description": "Beobachten Sie das traditionelle Fischen mit dem Kescher an den Stromschnellen von Kukkolankoski und probieren Sie anschließend das über der Flamme gegrillte Felchen, seit Jahrhunderten auf dieselbe Weise zubereitet. Die älteste Fischereitradition Finnlands.",
       "highlights": [
-        "Traditionelles Fischen",
+        "Fischen mit dem Kescher",
         "Über der Flamme gegrilltes Felchen",
         "Historische Stromschnellen"
       ],

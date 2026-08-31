@@ -400,7 +400,7 @@ const it: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Visiti il Villaggio di Babbo Natale al mattino presto per evitare la folla dei bus crocieristici.', icon: '🎅' },
-        { tip: 'Il certificato di attraversamento del Circolo Polare è gratuito all\'ufficio postale.', icon: '📮' },
+        { tip: 'Attraversare la linea del Circolo Polare è gratis, ma il certificato è un souvenir a pagamento in vendita all\'ufficio turistico del Circolo Polare.', icon: '📜' },
         { tip: 'Arktikum ha la mostra sull\'aurora più completa della Finlandia.', icon: '🏛️' },
       ],
       levi: [

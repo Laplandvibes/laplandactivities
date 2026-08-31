@@ -14,7 +14,7 @@ const guides: Guides = {
       seasonSummer: 'Kesäkuusta elokuuhun lumi vaihtuu valoon, joka ei oikeastaan lopu. Huskytarhat ovat auki kesävierailuille ja pentutapaamisille, Arktikum ja SantaPark pyörivät ympäri vuoden, ja Kemijoen ranta on kaupungin keskus. Syys-lokakuussa ruska värittää Ounasvaaran ja kauden ensimmäiset revontulet palaavat, poluilla huomattavasti vähemmän väkeä.',
       planTitle: 'Rovaniemen matkan suunnittelu',
       planGetting: 'Rovaniemellä on Lapin parhaat yhteydet: suora lento Helsingistä kestää noin tunnin ja kaksikymmentä minuuttia, ja yöjuna saapuu aamulla. Suurin osa husky-, poro- ja revontulioperaattoreista on kahdenkymmenen minuutin ajomatkan päässä, ja retkiin kuuluu yleensä hotellikuljetus, joten auto ei ole täällä välttämätön.',
-      planStay: 'Kaksi tai kolme yötä riittää Joulupukin Pajakylään, yhteen isoon safariin ja revontuli-iltaan ilman kiirettä. Varaa talven husky- ja kelkkalähdöt hyvissä ajoin joulukuulle ja helmi-maaliskuun huipulle. Napapiirin ylitystodistus Pajakylän postista ei maksa mitään, ja Ounasvaara on tarpeeksi lähellä iltalaskettelua varten.',
+      planStay: 'Kaksi tai kolme yötä riittää Joulupukin Pajakylään, yhteen isoon safariin ja revontuli-iltaan ilman kiirettä. Varaa talven husky- ja kelkkalähdöt hyvissä ajoin joulukuulle ja helmi-maaliskuun huipulle. Napapiirin viivan ylitys ei maksa mitään, mutta ylitystodistus on maksullinen matkamuisto, muutaman euron hintainen: sen saa Napapiirin matkailuneuvonnasta, Napapiirin tornista tai Joulutalon myymälästä, ei postista. Ounasvaara on tarpeeksi lähellä iltalaskettelua varten.',
     },
     levi: {
       seasonsTitle: 'Levi kausi kerrallaan',

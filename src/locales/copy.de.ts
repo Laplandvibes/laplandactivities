@@ -461,7 +461,7 @@ const de: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Besuchen Sie das Weihnachtsmanndorf am frühen Morgen, um den Reisebus-Andrang zu vermeiden.', icon: '🎅' },
-        { tip: 'Die Polarkreis-Überquerungs-Urkunde gibt es kostenlos im Postamt.', icon: '📮' },
+        { tip: 'Die Polarkreislinie überqueren Sie gratis, die Urkunde ist ein kostenpflichtiges Souvenir aus der Touristeninformation am Polarkreis.', icon: '📜' },
         { tip: 'Das Arktikum zeigt die ausführlichste Nordlicht-Ausstellung Finnlands.', icon: '🏛️' },
       ],
       levi: [

@@ -1079,9 +1079,9 @@ export const activities: Activity[] = [
     duration: '2-3 hours',
     difficulty: 'Easy',
     season: ['summer'],
-    description: 'Watch traditional net fishing at Kukkolankoski rapids, then taste flame-grilled whitefish prepared the same way for centuries. Finland\'s oldest fishing tradition.',
+    description: 'Watch traditional dipnet fishing at Kukkolankoski rapids, then taste flame-grilled whitefish prepared the same way for centuries. Finland\'s oldest fishing tradition.',
     groupSize: '2-20',
-    highlights: ['Traditional fishing', 'Flame-grilled whitefish', 'Historic rapids'],
+    highlights: ['Traditional dipnetting', 'Flame-grilled whitefish', 'Historic rapids'],
   },
   {
     // Intra-EU border: NO tax-free/duty-free claims — the draw is price and range

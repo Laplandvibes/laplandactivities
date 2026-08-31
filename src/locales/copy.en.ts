@@ -228,7 +228,7 @@ const en: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Visit Santa Claus Village early morning to skip the cruise-coach crowds.', icon: '🎅' },
-        { tip: 'The Arctic Circle crossing certificate is free at the post office.', icon: '📮' },
+        { tip: 'Crossing the Arctic Circle line is free, but the certificate is a paid souvenir from the Arctic Circle Information point.', icon: '📜' },
         { tip: 'Arktikum has the strongest aurora exhibition in Finland.', icon: '🏛️' },
       ],
       levi: [

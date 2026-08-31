@@ -16,7 +16,7 @@ const guides: Guides = {
       seasonSummer: 'June to August swaps the snow for daylight that never really ends. The husky kennels stay open for summer visits and puppy meets, the Arktikum and SantaPark run year-round, and the Kemijoki riverbank becomes the centre of town. September and October bring ruska colours to Ounasvaara and the first auroras of the season, with far fewer people on the trails.',
       planTitle: 'Planning a Rovaniemi trip',
       planGetting: 'Rovaniemi has the best connections in Lapland: direct flights from Helsinki take about an hour and twenty minutes, and the night train arrives in the morning. Most husky, reindeer and aurora operators are within a twenty-minute drive, and tours normally include hotel pickup, so a car is optional here.',
-      planStay: 'Two or three nights covers Santa Claus Village, one big safari and an aurora evening without rushing. Book the winter husky and snowmobile departures well ahead for December and the February-March peak. The Arctic Circle crossing certificate at the Santa Claus Village post office costs nothing, and Ounasvaara is close enough for an evening ski.',
+      planStay: 'Two or three nights covers Santa Claus Village, one big safari and an aurora evening without rushing. Book the winter husky and snowmobile departures well ahead for December and the February-March peak. Crossing the Arctic Circle line costs nothing, but the certificate is a paid souvenir of a few euros from the Arctic Circle Information point, the Arctic Circle Tower or the Christmas House shop, not from the post office. Ounasvaara is close enough for an evening ski.',
     },
     levi: {
       seasonsTitle: 'Levi season by season',
@@ -69,7 +69,7 @@ const guides: Guides = {
     tornio: {
       seasonsTitle: 'Tornio, Haparanda and Kemi season by season',
       seasonWinter: 'Winter here builds things rather than just covers them. The snow park at the Kemi SnowCastle Area is built from scratch every winter, and the Icebreaker Sampo cruises out into the frozen Gulf of Bothnia and lets passengers float in survival suits between the ice floes. Neither exists in summer, which makes this the one Lapland destination whose headline attractions are strictly seasonal.',
-      seasonSummer: 'Summer belongs to the river. The Tornionjoki is the largest free-flowing salmon river in Europe, and at the Kukkolankoski rapids traditional net fishing still runs each summer. Green Zone Golf sends you back and forth across the border, changing country and time zone four times in a round, which only works while the ground is clear.',
+      seasonSummer: 'Summer belongs to the river. The Tornionjoki is the largest free-flowing salmon river in Europe, and at the Kukkolankoski rapids traditional dipnet fishing still runs each summer. Green Zone Golf sends you back and forth across the border, changing country and time zone four times in a round, which only works while the ground is clear.',
       planTitle: 'Planning a Tornio trip',
       planGetting: 'Kemi airport is about fifteen minutes from Tornio, and Kemi itself is roughly twenty-five minutes away, so the two towns work as one trip. Tornio and Haparanda are a single town in two countries: the border runs through the middle of the shopping street and you cross it on foot.',
       planStay: 'This is the easiest Lapland destination to combine with a shopping day, with IKEA Haparanda right by the crossing and prices worth comparing on both sides. One or two nights is enough for the icebreaker and the SnowCastle in winter, or the river and the golf course in summer.',
@@ -151,7 +151,7 @@ const guides: Guides = {
     },
     food: {
       coversTitle: 'Eating in the north',
-      covers: 'Food here is tied to fire and to the season. A kota or kammi is a cone-shaped hut with an open hearth in the middle, and dinner is cooked in front of you: reindeer, fish, flatbread, cloudberries. Away from the table there is foraging for wild berries and mushrooms, and at Kukkolankoski the whitefish is still caught with a traditional net.',
+      covers: 'Food here is tied to fire and to the season. A kota or kammi is a cone-shaped hut with an open hearth in the middle, and dinner is cooked in front of you: reindeer, fish, flatbread, cloudberries. Away from the table there is foraging for wild berries and mushrooms, and at Kukkolankoski the whitefish is still lifted from the rapids with a traditional long-handled dip net.',
       whenToGo: 'Campfire dinners run year-round and are at their best in the dark half of the year, when the fire is the only light in the room. Foraging is a late-summer and autumn activity: berries from July, mushrooms from August. The Kukkolankoski whitefish season belongs to summer, tied to the run in the river.',
       chooseTitle: 'Choosing a food experience',
       choosing: 'A kota dinner is usually a set menu with a guide who explains what you are eating and where it came from, so it works as an evening rather than a meal. Foraging trips are led by someone who can tell you what is safe, which is the whole point. Both suit mixed groups and neither demands any fitness.',

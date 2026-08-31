@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Hoofdstad van Lapland en toegangspoort tot Arctische avonturen. Hier vindt u het Kerstmandorp, uitstekende verbindingen en een groot aanbod aan winter- en zomeractiviteiten.",
       "access": "Directe vluchten vanuit Helsinki (1 u 15)",
       "bestFor": "Eerste bezoekers en gezinnen",
-      "why": "In Rovaniemi zit de infrastructuur van Lapland: een internationale luchthaven, het eindpunt van de nachttrein en de grootste keuze aan tours van de regio. Naast het Kerstmandorp vindt u het Arktikum-museum aan de rivier, de pistes van Ounasvaara boven de stad en tientallen husky-, rendier- en noorderlichtaanbieders binnen 20 minuten rijden. Ideaal voor eerste bezoekers en gezinnen; haal meteen het gratis poolcirkelcertificaat bij het postkantoor van de Kerstman."
+      "why": "In Rovaniemi zit de infrastructuur van Lapland: een internationale luchthaven, het eindpunt van de nachttrein en de grootste keuze aan tours van de regio. Naast het Kerstmandorp vindt u het Arktikum-museum aan de rivier, de pistes van Ounasvaara boven de stad en tientallen husky-, rendier- en noorderlichtaanbieders binnen 20 minuten rijden. Ideaal voor eerste bezoekers en gezinnen. De poolcirkellijn oversteken is gratis, het certificaat niet: dat koopt u bij de toeristeninformatie op de poolcirkel, in de poolcirkeltoren of in de winkel van het Kersthuis, niet bij het postkantoor."
     },
     "levi": {
       "name": "Levi",
@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke Arctische ervaringen. Met de legendarische ijsbreker Sampo, het SnowCastle Winter Park en de grootste vrij stromende zalmrivier van Europa.",
       "access": "Vlieg naar Kemi (15 min met de auto)",
       "bestFor": "Unieke ervaringen en gezinsplezier",
-      "why": "Tornio en Haparanda zijn één stad in twee landen: u steekt de grens te voet over midden in de winkelstraat, IKEA Haparanda ligt pal naast de overgang en een rondje golf wisselt vier keer van land en tijdzone. Kemi, 25 minuten verderop, voegt de ijsbreker Sampo en het winterse sneeuwpark van het SnowCastle-terrein toe. Op de Tornionjoki, Europa’s grootste vrij stromende zalmrivier, wordt bij de Kukkolankoski elke zomer nog traditioneel met netten gevist."
+      "why": "Tornio en Haparanda zijn één stad in twee landen: u steekt de grens te voet over midden in de winkelstraat, IKEA Haparanda ligt pal naast de overgang en een rondje golf wisselt vier keer van land en tijdzone. Kemi, 25 minuten verderop, voegt de ijsbreker Sampo en het winterse sneeuwpark van het SnowCastle-terrein toe. Op de Tornionjoki, Europa’s grootste vrij stromende zalmrivier, wordt bij de Kukkolankoski elke zomer nog traditioneel met het schepnet gevist."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -899,9 +899,9 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Kukkolankoski houting-ervaring",
-      "description": "Kijk naar traditionele netvisserij bij de stroomversnellingen van Kukkolankoski en proef daarna op vlam gegrilde houting die al eeuwen op dezelfde manier wordt bereid. De oudste visserijtraditie van Finland.",
+      "description": "Kijk naar traditionele schepnetvisserij bij de stroomversnellingen van Kukkolankoski en proef daarna op vlam gegrilde houting die al eeuwen op dezelfde manier wordt bereid. De oudste visserijtraditie van Finland.",
       "highlights": [
-        "Traditionele visserij",
+        "Traditionele schepnetvisserij",
         "Op vlam gegrilde houting",
         "Historische stroomversnellingen"
       ],

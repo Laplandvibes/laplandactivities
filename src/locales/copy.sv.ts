@@ -228,7 +228,7 @@ const sv: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Besök Jultomtens by tidigt på morgonen för att slippa bussgrupperna.', icon: '🎅' },
-        { tip: 'Diplomet för att ha korsat polcirkeln är gratis på posten.', icon: '📮' },
+        { tip: 'Att korsa polcirkeln är gratis, men diplomet är en souvenir som kostar och köps på turistinformationen vid polcirkeln.', icon: '📜' },
         { tip: 'Arktikum har Finlands mest omfattande norrskensutställning.', icon: '🏛️' },
       ],
       levi: [

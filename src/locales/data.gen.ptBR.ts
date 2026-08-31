@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "A capital da Lapônia e porta de entrada para as aventuras árticas. Abriga a Vila do Papai Noel, ótimas conexões de transporte e uma vasta gama de atividades de inverno e verão.",
       "access": "Voos diretos de Helsinque (1h15)",
       "bestFor": "Primeiras viagens e famílias",
-      "why": "Rovaniemi concentra a infraestrutura da Lapônia: aeroporto internacional, terminal do trem noturno e a maior oferta de passeios da região. Além da Vila do Papai Noel, há o museu Arktikum à beira do rio, as pistas de Ounasvaara logo acima da cidade e dezenas de operadoras de huskies, renas e auroras num raio de 20 minutos. Ideal para quem visita pela primeira vez e famílias; pegue o certificado gratuito de travessia do Círculo Polar no correio do Papai Noel."
+      "why": "Rovaniemi concentra a infraestrutura da Lapônia: aeroporto internacional, terminal do trem noturno e a maior oferta de passeios da região. Além da Vila do Papai Noel, há o museu Arktikum à beira do rio, as pistas de Ounasvaara logo acima da cidade e dezenas de operadoras de huskies, renas e auroras num raio de 20 minutos. Ideal para quem visita pela primeira vez e famílias. Cruzar a linha do Círculo Polar é grátis, mas o certificado é uma lembrança paga, vendida no posto de informações turísticas do Círculo Polar, na torre do Círculo Polar ou na loja da Casa do Natal, e não no correio."
     },
     "levi": {
       "name": "Levi",
@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "A cidade fronteiriça entre Finlândia e Suécia, porta de entrada para experiências árticas únicas. Cruzeiro no lendário quebra-gelo Sampo, o SnowCastle Winter Park e o maior rio de salmão de fluxo livre da Europa.",
       "access": "Voo para Kemi (15 min de carro)",
       "bestFor": "Experiências únicas e diversão em família",
-      "why": "Tornio e Haparanda são uma cidade em dois países: atravessa-se a fronteira a pé no meio da rua comercial, a IKEA Haparanda fica junto à travessia e uma rodada de golfe muda de país e de fuso quatro vezes. Kemi, a 25 minutos, soma o cruzeiro do quebra-gelo Sampo e o parque de neve de inverno da área do SnowCastle. No Tornionjoki, o maior rio de salmão de curso livre da Europa, as corredeiras de Kukkolankoski mantêm viva a pesca tradicional com rede todo verão."
+      "why": "Tornio e Haparanda são uma cidade em dois países: atravessa-se a fronteira a pé no meio da rua comercial, a IKEA Haparanda fica junto à travessia e uma rodada de golfe muda de país e de fuso quatro vezes. Kemi, a 25 minutos, soma o cruzeiro do quebra-gelo Sampo e o parque de neve de inverno da área do SnowCastle. No Tornionjoki, o maior rio de salmão de curso livre da Europa, as corredeiras de Kukkolankoski mantêm viva a pesca tradicional com puçá todo verão."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
@@ -899,9 +899,9 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Experiência do coregono em Kukkolankoski",
-      "description": "Observe a pesca tradicional nas corredeiras de Kukkolankoski, depois prove o coregono grelhado na chama preparado da mesma forma há séculos. A mais antiga tradição de pesca da Finlândia.",
+      "description": "Observe a pesca tradicional com puçá nas corredeiras de Kukkolankoski, depois prove o coregono grelhado na chama preparado da mesma forma há séculos. A mais antiga tradição de pesca da Finlândia.",
       "highlights": [
-        "Pesca tradicional",
+        "Pesca com puçá",
         "Coregono grelhado na chama",
         "Corredeiras históricas"
       ],

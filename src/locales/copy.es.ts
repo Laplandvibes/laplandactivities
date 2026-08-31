@@ -461,7 +461,7 @@ const es: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Visite el Pueblo de Papá Noel a primera hora para esquivar a los grupos de los cruceros.', icon: '🎅' },
-        { tip: 'El certificado de cruce del Círculo Polar es gratis en la oficina de correos.', icon: '📮' },
+        { tip: 'Cruzar la línea del Círculo Polar es gratis, pero el certificado es un recuerdo de pago que se compra en la oficina de turismo del Círculo Polar.', icon: '📜' },
         { tip: 'El Arktikum tiene la mejor exposición sobre auroras de Finlandia.', icon: '🏛️' },
       ],
       levi: [

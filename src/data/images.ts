@@ -183,7 +183,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /kayak|canoe|paddle|sup\b|raft|river run/i,                  img: local('activities/summer/kayak.webp') },
   { match: /icebreaker|sampo/i,                                        img: local('activities/winter/icebreaker-sampo.webp') },
   { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
-  // Kukkolankoski = SUMMER net-fishing at the rapids (Food & Drink). Its title carries
+  // Kukkolankoski = SUMMER dipnet fishing at the rapids (Food & Drink). Its title carries
   // "whitefish", but so do the ice-fishing descriptions ("jig for perch and whitefish"),
   // so match the unique place name — never bare /whitefish/ — and give it a river image,
   // not a winter ice one (season-accuracy release gate).

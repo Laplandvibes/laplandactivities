@@ -400,7 +400,7 @@ const fr: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Visitez le village du Père Noël tôt le matin pour éviter la foule des bus de croisière.', icon: '🎅' },
-        { tip: 'Le certificat de passage du cercle polaire est gratuit au bureau de poste.', icon: '📮' },
+        { tip: 'Franchir la ligne du cercle polaire est gratuit, mais le certificat est un souvenir payant vendu à l\'office de tourisme du cercle polaire.', icon: '📜' },
         { tip: 'Arktikum présente l\'exposition d\'aurores la plus complète de Finlande.', icon: '🏛️' },
       ],
       levi: [

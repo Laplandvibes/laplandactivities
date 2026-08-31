@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Lapin pääkaupunki ja portti arktisiin seikkailuihin. Täältä löytyvät Joulupukin Pajakylä, erinomaiset kulkuyhteydet ja runsaasti talvi- ja kesäaktiviteetteja.",
       "access": "Suorat lennot Helsingistä (1 h 20 min)",
       "bestFor": "Ensimmäiset matkat ja perheet",
-      "why": "Rovaniemellä on Lapin infrastruktuuri: kansainvälinen lentokenttä, yöjunan pääteasema ja alueen laajin retkivalikoima. Joulupukin Pajakylän lisäksi täältä löytyvät Arktikum joen rannalta, Ounasvaaran rinteet suoraan kaupungin yllä ja kymmenet husky-, poro- ja revontulitoimijat 20 minuutin säteellä. Se sopii ensikertalaisille ja perheille, joille varaamisen helppous ratkaisee. Hae samalla ilmainen napapiirin ylitystodistus Joulupukin pääpostista."
+      "why": "Rovaniemellä on Lapin infrastruktuuri: kansainvälinen lentokenttä, yöjunan pääteasema ja alueen laajin retkivalikoima. Joulupukin Pajakylän lisäksi täältä löytyvät Arktikum joen rannalta, Ounasvaaran rinteet suoraan kaupungin yllä ja kymmenet husky-, poro- ja revontulitoimijat 20 minuutin säteellä. Se sopii ensikertalaisille ja perheille, joille varaamisen helppous ratkaisee. Napapiirin viivan ylitys on ilmainen, mutta ylitystodistus on maksullinen matkamuisto: sen saa Napapiirin matkailuneuvonnasta, Napapiirin tornista tai Joulutalon myymälästä, ei postista."
     },
     "levi": {
       "name": "Levi",
@@ -959,9 +959,9 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Siikaelämys Kukkolankoskella",
-      "description": "Seuraa perinteistä kalastusta Kukkolankoskella ja maista sitten avotulella grillattua siikaa, joka valmistetaan samalla tavalla kuin vuosisatojen ajan. Suomen vanhin kalastusperinne.",
+      "description": "Seuraa perinteistä lippoamista Kukkolankoskella ja maista sitten avotulella grillattua siikaa, joka valmistetaan samalla tavalla kuin vuosisatojen ajan. Suomen vanhin kalastusperinne.",
       "highlights": [
-        "Perinteinen kalastus",
+        "Perinteinen lippoaminen",
         "Avotulella grillattu siika",
         "Historialliset kosket"
       ],

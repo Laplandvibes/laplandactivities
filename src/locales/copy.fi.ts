@@ -475,7 +475,7 @@ const fi: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Mene Joulupukin pajakylään heti aamusta, niin vältät risteilybussien ruuhkat.', icon: '🎅' },
-        { tip: 'Napapiirin ylitystodistus on ilmainen postitoimistossa.', icon: '📮' },
+        { tip: 'Napapiirin viivan ylitys on ilmainen, mutta ylitystodistus on maksullinen matkamuisto Napapiirin matkailuneuvonnasta.', icon: '📜' },
         { tip: 'Arktikumissa on Suomen vahvin revontulinäyttely.', icon: '🏛️' },
       ],
       levi: [

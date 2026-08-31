@@ -154,7 +154,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageH3: '가장 마법 같은 북극',
     highlights: [
       { title: '허스키 썰매', body: '고요한 설원의 숲을 직접 모는 썰매로 달리세요.' },
-      { title: '스노모빌 사파리', body: '얼어붙은 호수와 펠 트레일, 가볍게부터 종일 원정까지.' },
+      { title: '스노모빌 사파리', body: '얼어붙은 호수와 산 트레일, 가볍게부터 종일 원정까지.' },
       { title: '오로라 헌팅', body: '예보를 읽어주는 가이드와 함께하는 어두운 하늘 투어.' },
       { title: '얼음낚시 & 사우나', body: '얼음을 뚫고 진짜 스모크 사우나에서 몸을 녹이세요.' },
     ],

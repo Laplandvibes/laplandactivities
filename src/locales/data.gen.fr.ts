@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques. On y trouve le village du Père Noël, d'excellentes liaisons de transport et un vaste choix d'activités d'hiver comme d'été.",
       "access": "Vol direct depuis Helsinki (1 h 15)",
       "bestFor": "Premiers voyages et familles",
-      "why": "Rovaniemi concentre l’infrastructure de la Laponie : aéroport international, terminus du train de nuit et le plus grand choix d’excursions de la région. Au-delà du village du Père Noël, on y trouve le musée Arktikum au bord du fleuve, les pistes d’Ounasvaara juste au-dessus de la ville et des dizaines d’opérateurs de huskies, de rennes et d’aurores à 20 minutes. Idéal pour un premier séjour et les familles ; le certificat gratuit de passage du cercle polaire s’obtient au bureau de poste du Père Noël."
+      "why": "Rovaniemi concentre l’infrastructure de la Laponie : aéroport international, terminus du train de nuit et le plus grand choix d’excursions de la région. Au-delà du village du Père Noël, on y trouve le musée Arktikum au bord du fleuve, les pistes d’Ounasvaara juste au-dessus de la ville et des dizaines d’opérateurs de huskies, de rennes et d’aurores à 20 minutes. Idéal pour un premier séjour et les familles. Franchir la ligne du cercle polaire est gratuit, mais le certificat est un souvenir payant, vendu à l’office de tourisme du cercle polaire, à la tour du cercle polaire ou à la boutique de la Maison de Noël, et non à la poste."
     },
     "levi": {
       "name": "Levi",
@@ -901,7 +901,7 @@ const d: LangData = {
       "title": "Expérience corégone à Kukkolankoski",
       "description": "Observez la pêche traditionnelle à l’épuisette aux rapides de Kukkolankoski, puis goûtez du corégone grillé à la flamme préparé de la même façon depuis des siècles. La plus ancienne tradition de pêche de Finlande.",
       "highlights": [
-        "Pêche traditionnelle",
+        "Pêche à l’épuisette",
         "Corégone grillé à la flamme",
         "Rapides historiques"
       ],

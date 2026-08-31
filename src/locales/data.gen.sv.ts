@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta transportförbindelser och ett stort utbud av vinter- och sommaraktiviteter.",
       "access": "Direktflyg från Helsingfors (1 tim 20 min)",
       "bestFor": "Förstagångsbesökare och familjer",
-      "why": "I Rovaniemi finns Lapplands infrastruktur: internationell flygplats, nattågets slutstation och regionens största utbud av turer. Utöver Jultomtens by hittar du Arktikum-museet vid älvstranden, Ounasvaaras backar rakt ovanför staden och tiotals husky-, ren- och norrskensarrangörer inom 20 minuters bilfärd. Perfekt för förstagångsbesökare och familjer; hämta det kostnadsfria polcirkelcertifikatet på Jultomtens postkontor."
+      "why": "I Rovaniemi finns Lapplands infrastruktur: internationell flygplats, nattågets slutstation och regionens största utbud av turer. Utöver Jultomtens by hittar du Arktikum-museet vid älvstranden, Ounasvaaras backar rakt ovanför staden och tiotals husky-, ren- och norrskensarrangörer inom 20 minuters bilfärd. Perfekt för förstagångsbesökare och familjer. Att korsa polcirkeln är gratis, men diplomet är en souvenir som kostar och säljs på turistinformationen vid polcirkeln, i polcirkeltornet eller i Julhusets butik – inte på postkontoret."
     },
     "levi": {
       "name": "Levi",
@@ -899,9 +899,9 @@ const d: LangData = {
     },
     "tor-whitefish-festival": {
       "title": "Sikupplevelse vid Kukkolankoski",
-      "description": "Se traditionellt nätfiske vid forsarna i Kukkolankoski, och smaka sedan flamgrillad sik tillagad på samma sätt i århundraden. Finlands äldsta fisketradition.",
+      "description": "Se traditionellt håvfiske vid forsarna i Kukkolankoski, och smaka sedan flamgrillad sik tillagad på samma sätt i århundraden. Finlands äldsta fisketradition.",
       "highlights": [
-        "Traditionellt fiske",
+        "Traditionellt håvfiske",
         "Flamgrillad sik",
         "Historiska forsar"
       ],
