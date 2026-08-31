@@ -6,7 +6,7 @@ const d: LangData = {
   "categories": {
     "adventure": {
       "name": "探险",
-      "description": "雪地摩托狩猎之旅、冰上卡丁车、攀冰、河流漂流和野外生存课程。在北极荒野中点燃肾上腺素。"
+      "description": "雪地摩托探险之旅、冰上卡丁车、攀冰、河流漂流和野外生存课程。在北极荒野中点燃肾上腺素。"
     },
     "animals": {
       "name": "动物体验",
@@ -110,7 +110,7 @@ const d: LangData = {
       "name": "皮哈-卢奥斯托",
       "tagline": "最古老国家公园的双子山",
       "description": "两个山地村庄皮哈与卢奥斯托由远古山脉相连，中间是皮哈-卢奥斯托国家公园。滑雪、雪鞋徒步，还能在 Lampivaara 亲手挖一颗属于自己的紫水晶。",
-      "access": "飞往罗瓦涅米(车程 1 小时 30 分钟)",
+      "access": "飞往罗瓦涅米（车程 1 小时 30 分钟）",
       "bestFor": "国家公园滑雪者与家庭",
       "why": "两村之间的国家公园才是重点：约 220 米深的芬兰最深峡谷 Isokuru、穿越原始森林的木栈道，以及拉普兰最古老山脉上的开阔视野。在卢奥斯托的 Lampivaara，你可以在欧洲唯一仍在运营的紫水晶矿亲手挖矿并带走一颗；冬天有暖气雪地列车送你上山。皮哈的雪道中有世界杯级别的猫跳雪道 Huttu-Ukko，家庭则享有无需排队的缓坡。"
     },
@@ -118,7 +118,7 @@ const d: LangData = {
       "name": "凯米耶尔维",
       "tagline": "芬兰最北端的城市",
       "description": "芬兰最北端的城市坐落在自己的湖畔，夜火车圣诞老人特快在此到达终点。东拉普兰的安静大本营，距皮哈 50 公里。",
-      "access": "从赫尔辛基乘夜火车，或从罗瓦涅米自驾(1 小时)",
+      "access": "从赫尔辛基乘夜火车，或从罗瓦涅米自驾（1 小时）",
       "bestFor": "铁路旅行者与寻求宁静的人",
       "why": "凯米耶尔维是圣诞老人特快的终点城市：每天有一班车驶过罗瓦涅米继续前行，你可以在火车上入睡、在湖畔醒来。自 1985 年起，这座城市每年举办国际木雕周，大型木雕全年伫立街头。在 Uitonniemi 湖岸，Santa’s Little Village 把小木屋酒店与圣诞老人会面、极光之旅结合在一起；Suomu 滑雪场车程 40 分钟。"
     }
@@ -130,7 +130,7 @@ const d: LangData = {
   },
   "activities": {
     "rov-aurora-snowmobile": {
-      "title": "极光雪地摩托狩猎之旅",
+      "title": "极光雪地摩托探险之旅",
       "description": "在北极荒野中乘雪地摩托追逐极光，体验刺激的夜骑。在极光下围着篝火享用热饮稍作休息。",
       "highlights": [
         "观赏极光",
@@ -154,7 +154,7 @@ const d: LangData = {
       "category": "文化与遗产"
     },
     "rov-husky-safari": {
-      "title": "哈士奇狩猎之旅与犬舍参观",
+      "title": "哈士奇探险之旅与犬舍参观",
       "description": "亲自驾驭自己的哈士奇队穿越最长 18 公里的雪林，随后参观犬舍与幼犬相见，了解北极雪橇犬驾驭技艺。",
       "highlights": [
         "亲自驾驭雪橇",
@@ -215,7 +215,7 @@ const d: LangData = {
     },
     "rov-husky-summer": {
       "title": "夏季哈士奇犬舍参观与幼犬互动",
-      "description": "看看雪橇犬如何度假:夏季参观运营中的犬舍,见到当年出生的幼犬,了解哈士奇在两季之间如何训练与休整。安静、适合全家的行程,幼犬区是当之无愧的亮点。",
+      "description": "看看雪橇犬如何度假：夏季参观运营中的犬舍，见到当年出生的幼犬，了解哈士奇在两季之间如何训练与休整。安静、适合全家的行程，幼犬区是当之无愧的亮点。",
       "highlights": [
         "见到当年的幼犬",
         "参观运营犬舍",
@@ -346,7 +346,7 @@ const d: LangData = {
       "category": "动物体验"
     },
     "lev-husky-safari": {
-      "title": "Levi 哈士奇狩猎之旅",
+      "title": "Levi 哈士奇探险之旅",
       "description": "驾驭自己的哈士奇队穿越 Levi 周围寂静的荒野。15 公里路线穿行于冰封森林，途中在篝火旁稍作咖啡休憩。",
       "highlights": [
         "亲自驾驭雪橇",
@@ -466,7 +466,7 @@ const d: LangData = {
       "category": "北极光"
     },
     "yll-snowmobile": {
-      "title": "荒野雪地摩托狩猎之旅",
+      "title": "荒野雪地摩托探险之旅",
       "description": "骑行穿越 Ylläs 与 Pallas 两山之间未受侵扰的原始自然。路线穿越冰封沼泽、北方针叶林和开阔的山地景观。",
       "highlights": [
         "荒野路线",
@@ -490,7 +490,7 @@ const d: LangData = {
       "category": "夏季探险"
     },
     "yll-husky": {
-      "title": "Pallas-Yllästunturi 国家公园哈士奇全天狩猎之旅",
+      "title": "Pallas-Yllästunturi 国家公园哈士奇全天探险之旅",
       "description": "亲自驾驭自己的哈士奇队穿越 Pallas-Yllästunturi 国家公园，由位于 Ylläs 以北 Rauhala 的小型家庭农场经营，每团最多六位客人。",
       "highlights": [
         "小团体",
@@ -598,7 +598,7 @@ const d: LangData = {
       "category": "康养与桑拿"
     },
     "saa-snowmobile": {
-      "title": "Saariselkä 荒野雪地摩托狩猎之旅",
+      "title": "Saariselkä 荒野雪地摩托探险之旅",
       "description": "骑行穿越紧邻 Urho Kekkonen 国家公园的荒野山地。这里的景观比芬兰拉普兰其他任何地方都更荒蛮、更偏远。",
       "highlights": [
         "荒野边界",
@@ -766,7 +766,7 @@ const d: LangData = {
       "category": "探险"
     },
     "ruk-snowmobile": {
-      "title": "Ruka 荒野雪地摩托狩猎之旅",
+      "title": "Ruka 荒野雪地摩托探险之旅",
       "description": "骑行穿越 Kuusamo（拉普兰以南不远）一些最偏远的荒野地带。深厚积雪、冰封河流和内陆的寂静。",
       "highlights": [
         "偏远荒野",
@@ -778,7 +778,7 @@ const d: LangData = {
       "category": "探险"
     },
     "ruk-husky": {
-      "title": "Ruka 哈士奇狩猎之旅",
+      "title": "Ruka 哈士奇探险之旅",
       "description": "驾驭您自己的阿拉斯加哈士奇队穿越 Ruka 的森林。出发前先参观犬舍并与犬只相见。",
       "highlights": [
         "亲自驾驭雪橇",
