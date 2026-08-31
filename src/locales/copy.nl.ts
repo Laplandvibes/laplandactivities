@@ -524,15 +524,15 @@ const nl: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Privacybeleid · LaplandActivities',
-    metaDescription: 'Hoe Lapeso Oy (LaplandActivities) persoonsgegevens verwerkt: nieuwsbriefaanmeldingen, statistieken en affiliate-cookies. AVG- en ePrivacy-conform.',
+    metaDescription: 'Hoe LaPeso Oy (LaplandActivities) persoonsgegevens verwerkt: nieuwsbriefaanmeldingen, statistieken en affiliate-cookies. AVG- en ePrivacy-conform.',
   },
   terms: {
     metaTitle: 'Gebruiksvoorwaarden · LaplandActivities',
-    metaDescription: 'Gebruiksvoorwaarden van laplandactivities.fi: inhoud en licenties, affiliatevermelding, aansprakelijkheid en redactionele normen. Beheerd door Lapeso Oy, Finland.',
+    metaDescription: 'Gebruiksvoorwaarden van laplandactivities.fi: inhoud en licenties, affiliatevermelding, aansprakelijkheid en redactionele normen. Beheerd door LaPeso Oy, Finland.',
   },
   cookie: {
     metaTitle: 'Cookiebeleid · LaplandActivities',
-    metaDescription: 'Welke cookies laplandactivities.fi plaatst, waarvoor ze dienen en hoe u uw toestemming wijzigt. AVG- en ePrivacy-conforme cookieverklaring van Lapeso Oy.',
+    metaDescription: 'Welke cookies laplandactivities.fi plaatst, waarvoor ze dienen en hoe u uw toestemming wijzigt. AVG- en ePrivacy-conforme cookieverklaring van LaPeso Oy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities', h2: 'Verdwaald in het Noordpoolgebied?',

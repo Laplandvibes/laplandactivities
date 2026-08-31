@@ -527,15 +527,15 @@ const ko: SectionCopy = {
   },
   privacy: {
     metaTitle: '개인정보 처리방침 · LaplandActivities',
-    metaDescription: 'Lapeso Oy(LaplandActivities)가 개인정보를 처리하는 방식. 뉴스레터 신청, 분석, 제휴 쿠키를 다룹니다. GDPR 및 ePrivacy 준수.',
+    metaDescription: 'LaPeso Oy(LaplandActivities)가 개인정보를 처리하는 방식. 뉴스레터 신청, 분석, 제휴 쿠키를 다룹니다. GDPR 및 ePrivacy 준수.',
   },
   terms: {
     metaTitle: '이용약관 · LaplandActivities',
-    metaDescription: 'laplandactivities.fi 이용약관. 콘텐츠와 라이선스, 제휴 링크 공개, 책임 범위, 편집 기준을 안내합니다. 핀란드 Lapeso Oy가 운영합니다.',
+    metaDescription: 'laplandactivities.fi 이용약관. 콘텐츠와 라이선스, 제휴 링크 공개, 책임 범위, 편집 기준을 안내합니다. 핀란드 LaPeso Oy가 운영합니다.',
   },
   cookie: {
     metaTitle: '쿠키 정책 · LaplandActivities',
-    metaDescription: 'laplandactivities.fi가 사용하는 쿠키의 종류와 목적, 동의를 변경하는 방법. Lapeso Oy의 GDPR 및 ePrivacy 준수 쿠키 공개.',
+    metaDescription: 'laplandactivities.fi가 사용하는 쿠키의 종류와 목적, 동의를 변경하는 방법. LaPeso Oy의 GDPR 및 ePrivacy 준수 쿠키 공개.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities', h2: '북극에서 길을 잃으셨나요?',

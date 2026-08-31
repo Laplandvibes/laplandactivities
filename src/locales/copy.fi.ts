@@ -602,15 +602,15 @@ const fi: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Tietosuojakäytäntö · LaplandActivities',
-    metaDescription: 'Miten Lapeso Oy (LaplandActivities) käsittelee henkilötietoja: uutiskirjeen tilaukset, analytiikka ja kumppanuusevästeet. GDPR- ja ePrivacy-yhteensopiva.',
+    metaDescription: 'Miten LaPeso Oy (LaplandActivities) käsittelee henkilötietoja: uutiskirjeen tilaukset, analytiikka ja kumppanuusevästeet. GDPR- ja ePrivacy-yhteensopiva.',
   },
   terms: {
     metaTitle: 'Käyttöehdot · LaplandActivities',
-    metaDescription: 'Sivuston laplandactivities.fi käyttöehdot: sisältö ja käyttöoikeudet, kumppanuuslinkkien ilmoitus, vastuut ja toimitukselliset periaatteet. Lapeso Oy, Suomi.',
+    metaDescription: 'Sivuston laplandactivities.fi käyttöehdot: sisältö ja käyttöoikeudet, kumppanuuslinkkien ilmoitus, vastuut ja toimitukselliset periaatteet. LaPeso Oy, Suomi.',
   },
   cookie: {
     metaTitle: 'Evästekäytäntö · LaplandActivities',
-    metaDescription: 'Mitä evästeitä laplandactivities.fi asettaa, mihin niitä käytetään ja miten muutat suostumustasi. Lapeso Oy:n GDPR- ja ePrivacy-mukainen evästeseloste.',
+    metaDescription: 'Mitä evästeitä laplandactivities.fi asettaa, mihin niitä käytetään ja miten muutat suostumustasi. LaPeso Oy:n GDPR- ja ePrivacy-mukainen evästeseloste.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities',

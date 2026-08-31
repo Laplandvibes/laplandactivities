@@ -524,15 +524,15 @@ const it: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Informativa sulla privacy · LaplandActivities',
-    metaDescription: 'Come Lapeso Oy (LaplandActivities) tratta i dati personali: iscrizioni alla newsletter, statistiche e cookie di affiliazione. Conforme a GDPR ed ePrivacy.',
+    metaDescription: 'Come LaPeso Oy (LaplandActivities) tratta i dati personali: iscrizioni alla newsletter, statistiche e cookie di affiliazione. Conforme a GDPR ed ePrivacy.',
   },
   terms: {
     metaTitle: 'Condizioni d\'uso · LaplandActivities',
-    metaDescription: 'Condizioni d\'uso di laplandactivities.fi: contenuti e licenze, informativa sui link di affiliazione, responsabilità e standard editoriali. Gestito da Lapeso Oy.',
+    metaDescription: 'Condizioni d\'uso di laplandactivities.fi: contenuti e licenze, informativa sui link di affiliazione, responsabilità e standard editoriali. Gestito da LaPeso Oy.',
   },
   cookie: {
     metaTitle: 'Informativa sui cookie · LaplandActivities',
-    metaDescription: 'Quali cookie imposta laplandactivities.fi, a cosa servono e come modificare il consenso. Informativa cookie di Lapeso Oy conforme a GDPR ed ePrivacy.',
+    metaDescription: 'Quali cookie imposta laplandactivities.fi, a cosa servono e come modificare il consenso. Informativa cookie di LaPeso Oy conforme a GDPR ed ePrivacy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities', h2: 'Perso nell\'Artico?',

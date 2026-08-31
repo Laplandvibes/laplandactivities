@@ -588,15 +588,15 @@ const de: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Datenschutzerklärung · LaplandActivities',
-    metaDescription: 'Wie Lapeso Oy (LaplandActivities) personenbezogene Daten verarbeitet: Newsletter-Anmeldungen, Analyse und Affiliate-Cookies. DSGVO- und ePrivacy-konform.',
+    metaDescription: 'Wie LaPeso Oy (LaplandActivities) personenbezogene Daten verarbeitet: Newsletter-Anmeldungen, Analyse und Affiliate-Cookies. DSGVO- und ePrivacy-konform.',
   },
   terms: {
     metaTitle: 'Nutzungsbedingungen · LaplandActivities',
-    metaDescription: 'Nutzungsbedingungen für laplandactivities.fi: Inhalte, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von Lapeso Oy, Finnland.',
+    metaDescription: 'Nutzungsbedingungen für laplandactivities.fi: Inhalte, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von LaPeso Oy, Finnland.',
   },
   cookie: {
     metaTitle: 'Cookie-Richtlinie · LaplandActivities',
-    metaDescription: 'Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konform, von Lapeso Oy.',
+    metaDescription: 'Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konform, von LaPeso Oy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities',

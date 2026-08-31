@@ -524,15 +524,15 @@ const fr: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Politique de confidentialité · LaplandActivities',
-    metaDescription: 'Comment Lapeso Oy (LaplandActivities) traite les données personnelles : inscriptions à la newsletter, mesure d\'audience et cookies d\'affiliation. RGPD et ePrivacy.',
+    metaDescription: 'Comment LaPeso Oy (LaplandActivities) traite les données personnelles : inscriptions à la newsletter, mesure d\'audience et cookies d\'affiliation. RGPD et ePrivacy.',
   },
   terms: {
     metaTitle: 'Conditions d\'utilisation · LaplandActivities',
-    metaDescription: 'Conditions d\'utilisation de laplandactivities.fi : contenus et licences, mention d\'affiliation, responsabilité et règles éditoriales. Exploité par Lapeso Oy, Finlande.',
+    metaDescription: 'Conditions d\'utilisation de laplandactivities.fi : contenus et licences, mention d\'affiliation, responsabilité et règles éditoriales. Exploité par LaPeso Oy, Finlande.',
   },
   cookie: {
     metaTitle: 'Politique de cookies · LaplandActivities',
-    metaDescription: 'Quels cookies laplandactivities.fi dépose, à quoi ils servent et comment modifier votre consentement. Déclaration cookies RGPD et ePrivacy de Lapeso Oy.',
+    metaDescription: 'Quels cookies laplandactivities.fi dépose, à quoi ils servent et comment modifier votre consentement. Déclaration cookies RGPD et ePrivacy de LaPeso Oy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities', h2: 'Perdu·e dans l\'Arctique ?',
