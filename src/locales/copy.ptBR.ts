@@ -124,7 +124,7 @@ const ptBR: SectionCopy = {
     },
     iceFishing: {
       title: "Pesca no gelo: o jeito mais fácil de começar",
-      body: "Pilkki, uma vara curta e uma isca de jig, é a pesca mais amigável para iniciantes na Lapônia: gratuita, sem licença, qualquer idade, em lagos comuns sob o direito geral de pesca da Finlândia (conforme eräluvat.fi). As exceções são as corredeiras de rios de salmão, áreas proibidas e certos locais especiais, além de qualquer coisa além de uma única vara (bóias de fundo, redes, espinhéis), que exige a taxa e uma licença. Melhores águas: o Lago Inari, o Ounasjärvi e os lagos da região de Levi para perca, corégono e tímalo.",
+      body: "Pilkki, uma vara curta e uma isca de jig, é a pesca mais amigável para iniciantes na Lapônia: gratuita, sem licença, qualquer idade, em lagos comuns sob o direito geral de pesca da Finlândia (conforme eräluvat.fi). As exceções são as corredeiras de rios de salmão, áreas proibidas e certos locais especiais, além de qualquer coisa além de uma única vara (boias de fundo, redes, espinhéis), que exige a taxa e uma licença. Melhores águas: o Lago Inari, o Ounasjärvi e os lagos da região de Levi para perca, corégono e tímalo.",
       safetyTitle: "Segurança no gelo",
       safetyBody: "O gelo dos lagos é traiçoeiro perto de entradas, saídas, corredeiras e zonas de rebaixamento de reservatórios. Confira a espessura, fique longe de água corrente e leve um guia local em águas grandes e abertas como Inari. Isto é conselho de segurança, não regulamento, mas os lagos não pegam leve com ninguém.",
       cta: "Reserve uma pescaria no gelo com guia",
@@ -188,7 +188,7 @@ const ptBR: SectionCopy = {
       items: [
         {
           q: "Preciso de licença para pescar no gelo?",
-          a: "Não. A pesca no gelo básica (pilkki) com uma única vara de jig é um direito geral gratuito na Finlândia para todos, de qualquer idade, sem taxa e sem licença, em lagos comuns. É diferente apenas nas corredeiras de rios de salmão, áreas proibidas e locais especiais, ou se você usar bóias de fundo, redes ou espinhéis, que exigem a taxa nacional e uma licença de água (eräluvat.fi).",
+          a: "Não. A pesca no gelo básica (pilkki) com uma única vara de jig é um direito geral gratuito na Finlândia para todos, de qualquer idade, sem taxa e sem licença, em lagos comuns. É diferente apenas nas corredeiras de rios de salmão, áreas proibidas e locais especiais, ou se você usar boias de fundo, redes ou espinhéis, que exigem a taxa nacional e uma licença de água (eräluvat.fi).",
         },
         {
           q: "Posso pescar salmão no Teno em 2026?",
@@ -263,16 +263,16 @@ const ptBR: SectionCopy = {
   summerBand: {
     eyebrow: 'Verão 2026 · reservas abertas',
     h2: 'O verão na Lapônia é o segredo mais bem guardado.',
-    lead: 'O sol da meia-noite nunca se põe. As florestas se abrem. O salmão sobe e os fells ficam vermelhos com o ruska a partir de agosto. A maioria das operadoras tem boa disponibilidade até junho, em julho as melhores vagas vão embora.',
+    lead: 'O sol da meia-noite nunca se põe. As florestas se abrem. O salmão sobe e os montes ficam vermelhos com o ruska a partir de agosto. A maioria das operadoras tem boa disponibilidade até junho, em julho as melhores vagas vão embora.',
     bookCta: 'Reservar atividades de verão',
     browseCta: 'Ver guia de verão',
     imageKicker: 'Categoria verão',
     imageH3: '8 formas de sentir o sol da meia-noite',
     highlights: [
-      { title: 'Trilhas em fells', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, dias longos, sem multidão.' },
+      { title: 'Trilhas em montes', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, dias longos, sem multidão.' },
       { title: 'Caiaque e SUP', body: 'Ilhas do lago Inari, lagos do sol da meia-noite, água espelhada até 1h da manhã.' },
       { title: 'Pesca de salmão com mosca', body: 'A subida do salmão no Tornionjoki tem pico em junho–julho.' },
-      { title: 'Tours sob o sol da meia-noite', body: 'Fotografia, coleta, MTB nos fells, 24 h de luz.' },
+      { title: 'Tours sob o sol da meia-noite', body: 'Fotografia, coleta, MTB nos montes, 24 h de luz.' },
     ],
     gygTitle: 'Os tours mais reservados da Lapônia agora',
     gygEyebrow: 'Reservável agora · Cancelamento grátis',
@@ -350,7 +350,7 @@ const ptBR: SectionCopy = {
       { name: 'Inverno', months: 'Nov – Mar', blurb: 'Neve profunda, noite polar, pico de aurora. Snowmobile, huskies, sauna a fumaça.', temp: '-15 a -5°C' },
       { name: 'Primavera', months: 'Abr – Mai', blurb: 'Neve e luz. Esqui de fim de temporada, parto das renas, aurora até meados de abril.', temp: '-5 a +5°C' },
       { name: 'Verão', months: 'Jun – Ago', blurb: 'O sol da meia-noite nunca se põe. Trilhas, caiaque, pesca de salmão, MTB.', temp: '+10 a +25°C' },
-      { name: 'Outono', months: 'Set – Out', blurb: 'O ruska colore os fells. As primeiras auroras retornam. Temporada de cogumelos e frutas.', temp: '+5 a -5°C' },
+      { name: 'Outono', months: 'Set – Out', blurb: 'O ruska colore os montes. As primeiras auroras retornam. Temporada de cogumelos e frutas.', temp: '+5 a -5°C' },
     ],
     destinationsKicker: 'Para onde ir',
     destinationsH2: 'Destinos',
@@ -376,7 +376,7 @@ const ptBR: SectionCopy = {
     items: [
       {
         q: 'Quais atividades dá para fazer na Lapônia?',
-        a: 'No inverno, os clássicos são os trenós de huskies e renas, os safáris de moto de neve, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sami mostram um lado mais silencioso do Ártico.',
+        a: 'No inverno, os clássicos são os trenós de huskies e renas, os safáris de moto de neve, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sámi mostram um lado mais silencioso do Ártico.',
       },
       {
         q: 'Quais são as melhores atividades de inverno e de verão?',
@@ -588,7 +588,7 @@ const ptBR: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Política de privacidade · LaplandActivities',
-    metaDescription: 'Como a LaPeso Oy (LaplandActivities) trata os dados pessoais: inscrições na newsletter, análise de uso e cookies de afiliação. Em conformidade com RGPD e ePrivacy.',
+    metaDescription: 'Como a LaPeso Oy (LaplandActivities) trata os dados pessoais: inscrições na newsletter, análise de uso e cookies de afiliação. Em conformidade com GDPR e ePrivacy.',
   },
   terms: {
     metaTitle: 'Termos de uso · LaplandActivities',
@@ -596,7 +596,7 @@ const ptBR: SectionCopy = {
   },
   cookie: {
     metaTitle: 'Política de cookies · LaplandActivities',
-    metaDescription: 'Quais cookies o laplandactivities.fi utiliza, para que servem e como alterar seu consentimento. Aviso de cookies da LaPeso Oy conforme RGPD e ePrivacy.',
+    metaDescription: 'Quais cookies o laplandactivities.fi utiliza, para que servem e como alterar seu consentimento. Aviso de cookies da LaPeso Oy conforme GDPR e ePrivacy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities',

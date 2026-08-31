@@ -136,7 +136,7 @@
       "faq": [
         {
           "q": "Quais atividades dá para fazer na Lapônia?",
-          "a": "No inverno, os clássicos são os trenós de huskies e renas, os safáris de moto de neve, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sami mostram um lado mais silencioso do Ártico."
+          "a": "No inverno, os clássicos são os trenós de huskies e renas, os safáris de moto de neve, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sámi mostram um lado mais silencioso do Ártico."
         },
         {
           "q": "Quais são as melhores atividades de inverno e de verão?",
@@ -586,7 +586,7 @@
     },
     "pt-BR": {
       "title": "Política de privacidade · LaplandActivities",
-      "description": "Como a LaPeso Oy (LaplandActivities) trata os dados pessoais: inscrições na newsletter, análise de uso e cookies de afiliação. Em conformidade com RGPD e ePrivacy."
+      "description": "Como a LaPeso Oy (LaplandActivities) trata os dados pessoais: inscrições na newsletter, análise de uso e cookies de afiliação. Em conformidade com GDPR e ePrivacy."
     },
     "zh-CN": {
       "title": "隐私政策 · LaplandActivities",
@@ -686,7 +686,7 @@
     },
     "pt-BR": {
       "title": "Política de cookies · LaplandActivities",
-      "description": "Quais cookies o laplandactivities.fi utiliza, para que servem e como alterar seu consentimento. Aviso de cookies da LaPeso Oy conforme RGPD e ePrivacy."
+      "description": "Quais cookies o laplandactivities.fi utiliza, para que servem e como alterar seu consentimento. Aviso de cookies da LaPeso Oy conforme GDPR e ePrivacy."
     },
     "zh-CN": {
       "title": "Cookie 政策 · LaplandActivities",
@@ -986,7 +986,7 @@
     },
     "pt-BR": {
       "title": "Cultura e patrimônio · LaplandActivities",
-      "description": "Museus sami, Vila do Papai Noel, hotéis de gelo, garimpo de ouro, minas de ametista e o fascinante patrimônio ártico."
+      "description": "Museus sámi, Vila do Papai Noel, hotéis de gelo, garimpo de ouro, minas de ametista e o fascinante patrimônio ártico."
     },
     "zh-CN": {
       "title": "文化与遗产 · LaplandActivities",
@@ -1386,7 +1386,7 @@
     },
     "pt-BR": {
       "title": "Inari · LaplandActivities",
-      "description": "Às margens do lago Inari, com mais de 3.000 ilhas, é a capital cultural do povo sami finlandês. Abriga o museu Siida e uma natureza intocada."
+      "description": "Às margens do lago Inari, com mais de 3.000 ilhas, é a capital cultural do povo sámi finlandês. Abriga o museu Siida e uma natureza intocada."
     },
     "zh-CN": {
       "title": "Inari · LaplandActivities",

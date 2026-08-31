@@ -26,7 +26,7 @@ const d: LangData = {
     },
     "culture": {
       "name": "Cultura e patrimônio",
-      "description": "Museus sami, Vila do Papai Noel, hotéis de gelo, garimpo de ouro, minas de ametista e o fascinante patrimônio ártico."
+      "description": "Museus sámi, Vila do Papai Noel, hotéis de gelo, garimpo de ouro, minas de ametista e o fascinante patrimônio ártico."
     },
     "summer": {
       "name": "Aventuras de verão",
@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "A capital da Lapônia e porta de entrada para as aventuras árticas. Abriga a Vila do Papai Noel, ótimas conexões de transporte e uma vasta gama de atividades de inverno e verão.",
       "access": "Voos diretos de Helsinque (1h15)",
       "bestFor": "Primeiras viagens e famílias",
-      "why": "Rovaniemi concentra a infraestrutura da Lapônia: aeroporto internacional, terminal do trem noturno e a maior oferta de passeios da região. Além da Aldeia do Papai Noel, há o museu Arktikum à beira do rio, as pistas de Ounasvaara logo acima da cidade e dezenas de operadoras de huskies, renas e auroras num raio de 20 minutos. Ideal para quem visita pela primeira vez e famílias; pegue o certificado gratuito de travessia do Círculo Polar no correio do Papai Noel."
+      "why": "Rovaniemi concentra a infraestrutura da Lapônia: aeroporto internacional, terminal do trem noturno e a maior oferta de passeios da região. Além da Vila do Papai Noel, há o museu Arktikum à beira do rio, as pistas de Ounasvaara logo acima da cidade e dezenas de operadoras de huskies, renas e auroras num raio de 20 minutos. Ideal para quem visita pela primeira vez e famílias; pegue o certificado gratuito de travessia do Círculo Polar no correio do Papai Noel."
     },
     "levi": {
       "name": "Levi",
@@ -76,8 +76,8 @@ const d: LangData = {
     },
     "inari": {
       "name": "Inari",
-      "tagline": "Coração da cultura sami",
-      "description": "Às margens do lago Inari, com mais de 3.000 ilhas, é a capital cultural do povo sami finlandês. Abriga o museu Siida e uma natureza intocada.",
+      "tagline": "Coração da cultura sámi",
+      "description": "Às margens do lago Inari, com mais de 3.000 ilhas, é a capital cultural do povo sámi finlandês. Abriga o museu Siida e uma natureza intocada.",
       "access": "Voo para Ivalo (40 min de carro)",
       "bestFor": "Exploradores culturais e fotógrafos",
       "why": "Inari é a sede do Parlamento Sámi da Finlândia e o melhor lugar para conhecer a cultura sámi viva: comece no museu Siida e, no verão, navegue pelo lago Inari passando pela ilha sagrada de Ukonsaari. O vilarejo é pequeno e a natureza ao redor, imensa; à igreja do ermo de Pielpajärvi se chega a pé por pinheirais antigos. Recompensa quem vem pela cultura, pela fotografia e pelo silêncio."
@@ -335,10 +335,10 @@ const d: LangData = {
     },
     "lev-samiland": {
       "title": "Renas e cultura em Samiland",
-      "description": "Conheça as renas e aprenda sobre a cultura sami neste autêntico sítio patrimonial. Alimente as renas à mão no cercado de inverno, explore as exposições interna e externa e ouça os relatos do povo indígena.",
+      "description": "Conheça as renas e aprenda sobre a cultura sámi neste autêntico sítio patrimonial. Alimente as renas à mão no cercado de inverno, explore as exposições interna e externa e ouça os relatos do povo indígena.",
       "highlights": [
         "Alimentação das renas",
-        "Relatos sami",
+        "Relatos sámi",
         "Exposição externa"
       ],
       "duration": "2 h",
@@ -431,7 +431,7 @@ const d: LangData = {
     },
     "lev-kota-dinner": {
       "title": "Jantar lapônio em kammi junto ao fogo",
-      "description": "Jante em uma cabana de turfa tradicional de estilo sami (kammi) ao redor de um fogo aberto central. Salmão, rena e frutas silvestres da estação grelhados na chama.",
+      "description": "Jante em uma cabana de turfa tradicional de estilo sámi (kammi) ao redor de um fogo aberto central. Salmão, rena e frutas silvestres da estação grelhados na chama.",
       "highlights": [
         "Ambiente kammi tradicional",
         "Cozimento no fogo",
@@ -634,10 +634,10 @@ const d: LangData = {
       "category": "Aventura"
     },
     "ina-siida-museum": {
-      "title": "Siida, museu sami e centro da natureza",
-      "description": "O principal museu sami da Finlândia apresenta a cultura, a história e a natureza da região mais setentrional. Notável exposição ao ar livre ao longo das estações.",
+      "title": "Siida, museu sámi e centro da natureza",
+      "description": "O principal museu sámi da Finlândia apresenta a cultura, a história e a natureza da região mais setentrional. Notável exposição ao ar livre ao longo das estações.",
       "highlights": [
-        "Cultura sami",
+        "Cultura sámi",
         "Exposições da natureza",
         "Trilhas ao ar livre"
       ],
@@ -670,10 +670,10 @@ const d: LangData = {
       "category": "Aventuras de verão"
     },
     "ina-sami-experience": {
-      "title": "Autêntica criação sami de renas",
-      "description": "Junte-se a um verdadeiro pastor sami de renas para uma experiência cultural intimista. Aprenda as antigas tradições de criação que continuam hoje em Inari.",
+      "title": "Autêntica criação sámi de renas",
+      "description": "Junte-se a um verdadeiro pastor sámi de renas para uma experiência cultural intimista. Aprenda as antigas tradições de criação que continuam hoje em Inari.",
       "highlights": [
-        "Verdadeiro pastor sami",
+        "Verdadeiro pastor sámi",
         "Imersão cultural",
         "Interação com as renas"
       ],
