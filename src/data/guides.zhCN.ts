@@ -68,7 +68,7 @@ const guides: Guides = {
       seasonWinter: '这里的冬天不只是覆盖，还会建造。Kemi 的 SnowCastle 雪堡区雪上乐园每个冬天从零重建，破冰船 Sampo 驶入封冻的波的尼亚湾，让乘客穿着救生服在浮冰之间漂浮。两者夏天都不存在，这使它成为拉普兰唯一一个招牌景点严格限定于季节的目的地。',
       seasonSummer: '夏天属于河流。Tornionjoki 是欧洲最大的自由流淌鲑鱼河，Kukkolankoski 急流处至今每年夏天仍在进行传统抄网捕捞。Green Zone 高尔夫球场会让你来回跨越国界，一轮之内换四次国家和时区——只有地面无雪时才成立。',
       planTitle: '规划 Tornio 之行',
-      planGetting: 'Kemi 机场距 Tornio 约一刻钟，距 Kemi 本身约二十五分钟，两座城市可以当作一次行程来安排。Tornio 与 Haparanda 是横跨两国的同一座城：国界从商业街正中穿过，步行即可越过。',
+      planGetting: 'Kemi 机场距 Kemi 市区约十分钟，距 Tornio 约二十五分钟，两座城市可以当作一次行程来安排。Tornio 与 Haparanda 是横跨两国的同一座城：国界从商业街正中穿过，步行即可越过。',
       planStay: '这是拉普兰最容易和购物日搭配的目的地，IKEA Haparanda 就在过境点旁，两边的价格都值得比一比。冬天一两晚足够看破冰船和 SnowCastle，夏天则用来走河边和打一轮高尔夫。',
     },
     'pyha-luosto': {

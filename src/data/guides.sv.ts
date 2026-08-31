@@ -68,7 +68,7 @@ const guides: Guides = {
       seasonWinter: 'Här bygger vintern i stället för att bara täcka. Snöparken vid SnowCastle-området i Kemi byggs upp från grunden varje vinter, och isbrytaren Sampo går ut i den frusna Bottenviken och låter passagerarna flyta i räddningsdräkt mellan isflaken. Inget av dem finns på sommaren, vilket gör det här till det enda resmålet i Lappland vars huvudattraktioner är strikt säsongsbundna.',
       seasonSummer: 'Sommaren tillhör älven. Torne älv är Europas största fritt strömmande laxälv, och vid Kukkolaforsen pågår det traditionella håvfisket fortfarande varje sommar. Green Zone Golf skickar dig fram och tillbaka över gränsen: fyra byten av land och tidszon på en runda, vilket bara fungerar på snöfri mark.',
       planTitle: 'Planera en resa till Torneå',
-      planGetting: 'Kemi flygplats ligger en kvart från Torneå, och Kemi självt ungefär tjugofem minuter bort, så de två städerna fungerar som en enda resa. Torneå och Haparanda är en stad i två länder: gränsen går mitt genom affärsgatan och passeras till fots.',
+      planGetting: 'Kemi flygplats ligger ett tiotal minuter från Kemi självt, och Torneå ungefär tjugofem minuter bort, så de två städerna fungerar som en enda resa. Torneå och Haparanda är en stad i två länder: gränsen går mitt genom affärsgatan och passeras till fots.',
       planStay: 'Det här är det lapska resmål som lättast kombineras med en shoppingdag, med IKEA Haparanda alldeles vid gränsövergången och priser värda att jämföra på båda sidor. En eller två nätter räcker för isbrytaren och SnowCastle på vintern, eller för älven och golfbanan på sommaren.',
     },
     'pyha-luosto': {

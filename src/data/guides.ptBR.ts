@@ -68,7 +68,7 @@ const guides: Guides = {
       seasonWinter: 'Aqui o inverno constrói em vez de apenas cobrir. O parque de neve da área do SnowCastle de Kemi é erguido do zero todo inverno, e o quebra-gelo Sampo sai pelo golfo de Bótnia congelado e deixa os passageiros boiarem de macacão de sobrevivência entre as placas de gelo. Nenhum dos dois existe no verão, o que faz deste o único destino da Lapônia cujas atrações principais são estritamente sazonais.',
       seasonSummer: 'O verão é do rio. O Tornionjoki é o maior rio de salmão de curso livre da Europa, e nas corredeiras de Kukkolankoski a pesca tradicional com puçá continua acontecendo todo verão. O Green Zone Golf manda você de um lado a outro da fronteira: quatro trocas de país e de fuso horário em uma volta, o que só funciona com o chão livre de neve.',
       planTitle: 'Planejando uma viagem a Tornio',
-      planGetting: 'O aeroporto de Kemi fica a um quarto de hora de Tornio, e Kemi em si a uns vinte e cinco minutos, então as duas cidades funcionam como uma viagem só. Tornio e Haparanda são uma cidade em dois países: a fronteira passa no meio da rua de comércio e se atravessa a pé.',
+      planGetting: 'O aeroporto de Kemi fica a uns dez minutos da própria Kemi, e Tornio a uns vinte e cinco minutos, então as duas cidades funcionam como uma viagem só. Tornio e Haparanda são uma cidade em dois países: a fronteira passa no meio da rua de comércio e se atravessa a pé.',
       planStay: 'É o destino da Lapônia mais fácil de combinar com um dia de compras, com a IKEA Haparanda logo ao lado da travessia e preços que vale a pena comparar dos dois lados. Uma ou duas noites bastam no inverno para o quebra-gelo e o SnowCastle, ou no verão para o rio e o campo de golfe.',
     },
     'pyha-luosto': {
