@@ -49,7 +49,7 @@ const nl: SectionCopy = {
     },
     firstThings: {
       title: "Twee dingen om eerst te regelen",
-      body1: "Finland hanteert een tweelaags systeem. Laag één is de nationale visbeheerheffing (kalastonhoitomaksu), verschuldigd door iedereen van 18 tot 69 jaar die vist met een kunstaas, spinner of sleeplijn: 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag in 2026, volgens eräluvat.fi. Wie jonger dan 18 of 70 jaar en ouder is, vist er gratis van. Laag twee is een watergebonden vergunning voor het exacte meer of de rivier waar u vist.",
+      body1: "Finland hanteert een tweelaags systeem. Laag één is de nationale visbeheerheffing (kalastonhoitomaksu), verschuldigd door iedereen van 18 tot 69 jaar die vist met een kunstaas, spinner of sleeplijn: 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag in 2026, volgens eräluvat.fi. Wie jonger is dan 18 of 70 jaar of ouder, hoeft de heffing niet te betalen. Laag twee is een watergebonden vergunning voor het exacte meer of de rivier waar u vist.",
       body2: "De grote uitzondering: eenvoudig vissen met de dobber en ijsvissen (pilkki) zijn een gratis algemeen recht voor iedereen, van elke leeftijd, zonder heffing en zonder vergunning, op gewone wateren. Ook de breedtegraad telt: het grootste deel van Lapland ligt ten noorden van de 67°N-lijn, waar diverse minimummaten lager liggen. Controleer uw exacte stek altijd op de officiële beperkingenkaart voordat u vertrekt.",
       feeLink: "Nationale heffing: eräluvat.fi",
       mapLink: "Beperkingenkaart: kalastusrajoitus.fi",
@@ -110,7 +110,7 @@ const nl: SectionCopy = {
       title: "Tornio-zalm 2026: voordat u uitwerpt",
       rules: [
         "Seizoen: 8 juni 2026 vanaf 19:00 tot 15 augustus 2026.",
-        "16–25 augustus is een beperkte nasleep: alleen vlieg of kunstaas, weerhaakloze haken, en elke zalm boven 65 cm onmiddellijk terugzetten.",
+        "16–25 augustus is een beperkt naseizoen: alleen vlieg of kunstaas, weerhaakloze haken, en elke zalm boven 65 cm onmiddellijk terugzetten.",
         "Vangstlimiet: maximaal 1 zalm per 24 uur ÉN maximaal 2 zalmen voor het hele seizoen. Na uw tweede zalm stopt u met zalmvissen voor dat jaar.",
         "Wekelijkse sluiting: zondag 19:00 tot maandag 19:00 (Finse tijd).",
         "Minimummaat zalm 50 cm (de nationale regel voor dit deel van de Botnische Golf). De minimummaten voor vlagzalm variëren met de breedtegraad langs deze rivier: 30 cm ten noorden van 67°N, 35 cm ten zuiden ervan, dus controleer uw exacte traject op de pagina van eräluvat-gebied 2502.",
@@ -124,14 +124,14 @@ const nl: SectionCopy = {
     },
     iceFishing: {
       title: "IJsvissen: de makkelijkste manier om te beginnen",
-      body: "Pilkki, één korte hengel en een gejigd aasje, is het meest beginnervriendelijke vissen in Lapland: gratis, geen vergunning, elke leeftijd, op gewone meren onder het Finse algemene visrecht (volgens eräluvat.fi). De uitzonderingen zijn de stroomversnellingen van zalmrivieren, verboden gebieden en bepaalde bijzondere plekken, plus alles wat verder gaat dan één hengel (wippen, netten, zetlijnen), waarvoor de heffing en een vergunning nodig zijn. Beste wateren: het Inari-meer, de Ounasjärvi en de meren rond Levi voor baars, houting en vlagzalm.",
+      body: "Pilkki, één korte hengel met een jig, is het meest beginnervriendelijke vissen in Lapland: gratis, geen vergunning, elke leeftijd, op gewone meren onder het Finse algemene visrecht (volgens eräluvat.fi). De uitzonderingen zijn de stroomversnellingen van zalmrivieren, verboden gebieden en bepaalde bijzondere plekken, plus alles wat verder gaat dan één hengel (tip-ups, netten, zetlijnen), waarvoor de heffing en een vergunning nodig zijn. Beste wateren: het Inari-meer, de Ounasjärvi en de meren rond Levi voor baars, houting en vlagzalm.",
       safetyTitle: "IJsveiligheid",
       safetyBody: "Meerijs is onbetrouwbaar bij in- en uitstromen, stroomversnellingen en zones waar het waterpeil van reservoirs wordt afgelaten. Controleer de dikte, blijf van stromend water af, en neem een lokale gids mee op grote open wateren zoals Inari. Dit is veiligheidsadvies, geen regelgeving, maar de meren geven geen tweede kans.",
       cta: "Boek een begeleide ijsvistocht",
     },
     licenses: {
       title: "Vergunningen en heffingen",
-      fee: "Nationale visbeheerheffing (2026): 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag, volgens eräluvat.fi. Verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; gratis voor wie jonger dan 18 of 70 jaar en ouder is (en voor wie op 31 december 2023 65 was geworden). Bewaar het bewijs.",
+      fee: "Nationale visbeheerheffing (2026): 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag, volgens eräluvat.fi. Verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; gratis voor wie jonger is dan 18 of 70 jaar of ouder (en voor wie op 31 december 2023 65 was geworden). Bewaar het bewijs.",
       freeRights: "Gratis algemene rechten: vissen met de dobber, ijsvissen (pilkki) en het haringtuig zijn gratis voor iedereen: geen heffing, geen vergunning. Ook vissen met kunstaas aan één hengel is een algemeen recht, maar de groep van 18–69 heeft daarvoor toch de betaalde nationale heffing nodig. Niets hiervan geldt in de stroomversnellingen met trekvis of op verboden / bijzondere plekken.",
       waterPermits: "Watergebonden vergunningen: bovenop de heffing heeft vissen met kunstaas of meerdere hengels een vergunning nodig voor het exacte water: Metsähallitus-vergunningen voor staatswater via eräluvat.fi, lokale osakaskunta- / visserijgebiedvergunningen op gedeelde wateren, of de speciale grensriviervergunningen voor de Teno en de Tornio. De voorwaarden per vergunning zijn vaak strenger dan de nationale ondergrenzen.",
       sizesTitle: "Nationale minimummaten (ondergrenzen: lokale regels kunnen strenger zijn)",
@@ -147,7 +147,7 @@ const nl: SectionCopy = {
     },
     teno: {
       title: "De Teno, in detail",
-      body: "De Teno (Tenojoki / Tana) is een Fins-Noorse grensrivier met een eigen bilateraal quotasysteem. Het vissen op Atlantische zalm is voor het seizoen 2026 verboden, van kracht tot en met 31 december onder het protocol van de Teno-visserijovereenkomst, een verbod dat sinds 2021 standhoudt en elk jaar opnieuw wordt vastgesteld. (Een tributaire verordening van 2026, 367/2026, regelt de zijwateren vanaf 1 juni.) Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
+      body: "De Teno (Tenojoki / Tana) is een Fins-Noorse grensrivier met een eigen bilateraal quotasysteem. Het vissen op Atlantische zalm is voor het seizoen 2026 verboden, van kracht tot en met 31 december onder het protocol van de Teno-visserijovereenkomst, een verbod dat sinds 2021 standhoudt en elk jaar opnieuw wordt vastgesteld. (Een verordening voor de zijrivieren van 2026, 367/2026, regelt de zijwateren vanaf 1 juni.) Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
       whatYouCan: "Wat u wél kunt doen: koop de 'visvergunning voor andere soorten', 20 €/dag voor volwassenen, 10 €/dag voor onder-18, voor vlagzalm, houting en forel, uitsluitend lichte vlieguitrusting, geldig van 10 juni tot 20 augustus 2026, plus de nationale heffing. Zalm en zeeriddervis zijn uitgesloten.",
       warnThirdParty: "Koop hem alleen bij de officiële shop, tenonkalaluvat.fi. Boek de wettelijke vergunning niet via websites van derden. Een verkeerde of ongeldige vergunning op een grensrivier betekent illegaal vissen.",
     },
@@ -155,21 +155,21 @@ const nl: SectionCopy = {
       title: "De grens over naar Noorwegen: zeevissen en koningskrab",
       seaBody: "Zeevissen in Noorwegen is gratis voor iedereen, maar buitenlanders mogen alleen handgereedschap gebruiken: hengel, handlijn of jig; netten, korven en beuglijnen zijn verboden (precies daarom kunt u zelf geen koningskrab vangen). Uw vangst verkopen is illegaal. Winterkabeljauw voor de kust van Finnmark is de trekpleister, met ook heilbot en koolvis. Noorwegen publiceert zijn minimummaten op lovdata.no (Høstingsforskriften §47): kabeljauw 44 cm op open zee ten noorden van 62°N (55 cm dicht onder de kust), schelvis 40 cm, heilbot 84 cm en 7,2 kg, koolvis 45 cm met hengel en lijn. Eén aparte harde regel: zet elke heilbot boven 2 meter terug. Houd 100 m afstand van viskwekerijen, draag een reddingsvest, en let erop dat een vaarbewijs verplicht is voor iedereen geboren in 1980 of later op grotere vaartuigen.",
       exportTitle: "Vis mee naar huis nemen: de exportregel",
-      exportBody: "Ter plaatse eten, of een dag gratis vissen, is prima. Om vis over de grens mee te nemen bent u beperkt tot 15 kg per persoon, twee keer per kalenderjaar in 2026, dalend naar 10 kg vanaf 1 januari 2027, en alleen als de vangst afkomstig is van een toeristische visserij-onderneming die is geregistreerd bij het Directoraat voor Visserij, dat dagelijkse vangstrapporten moet indienen en uw exportdocument moet afgeven. Minimumleeftijd 12; trofeevis telt niet mee voor de limiet. Een koelbox vol kabeljauw meerijden vanaf een willekeurige rots is niet toegestaan. Volgens fiskeridir.no en toll.no.",
+      exportBody: "Ter plaatse eten, of een dag gratis vissen, is prima. Om vis over de grens mee te nemen bent u beperkt tot 15 kg per persoon, twee keer per kalenderjaar in 2026, dalend naar 10 kg vanaf 1 januari 2027, en alleen als de vangst afkomstig is van een toeristische visserij-onderneming die is geregistreerd bij het Directoraat voor Visserij, dat dagelijkse vangstrapporten moet indienen en uw exportdocument moet afgeven. Minimumleeftijd 12; trofeevis telt niet mee voor de limiet. Een koelbox vol kabeljauw van een willekeurige rots de grens over rijden is niet toegestaan. Volgens fiskeridir.no en toll.no.",
       crabTitle: "Koningskrab: alleen met een vergunde aanbieder",
-      crabBody: "Toeristen mogen zelf geen koningskrab vangen. Het is alleen legaal via een vergunde aanbieder met een toegewezen toeristenquotum, geconcentreerd rond Kirkenes en Varanger. Het quotagereguleerde gebied van Noorwegen ligt ten oosten van 26°O (ruwweg de Noordkaap), waar het minimale rugschild 13 cm is en het toeristenquotum voor 2026 10 ton mannelijke krabben bedraagt; ten westen van die lijn ligt een vrije bestrijdingszone. Vraag uw aanbieder naar de actuele regels voor maat en geslacht. Zij houden de vergunningsvoorwaarden. Volgens fiskeridir.no.",
+      crabBody: "Toeristen mogen zelf geen koningskrab vangen. Het is alleen legaal via een vergunde aanbieder met een toegewezen toeristenquotum, geconcentreerd rond Kirkenes en Varanger. Het quotagereguleerde gebied van Noorwegen ligt ten oosten van 26°O (ruwweg de Noordkaap), waar het minimale rugschild 13 cm is en het toeristenquotum voor 2026 10 ton mannelijke krabben bedraagt; ten westen van die lijn ligt een vrije bestrijdingszone. Vraag uw aanbieder naar de actuele regels voor maat en geslacht. De vergunningsvoorwaarden liggen bij hen. Volgens fiskeridir.no.",
       cta: "Boek een koningskrab-safari in Kirkenes",
       ribLabel: "Zomerse RIB-safari",
-      carNote: "Er komen betekent Noorwegen inrijden. Zie de opmerking over autohuur hieronder, want de meeste huurauto's van brokers vereisen een voorafgaande autorisatie en een grensoverschrijdingstoeslag voordat ze u laten oversteken.",
+      carNote: "Erheen gaan betekent Noorwegen inrijden. Zie de opmerking over autohuur hieronder, want de meeste huurauto's van brokers vereisen een voorafgaande autorisatie en een grensoverschrijdingstoeslag voordat ze u laten oversteken.",
     },
     gettingThere: {
-      title: "Er komen en een auto huren",
-      body: "De rivieren liggen ver van de luchthavens, dus een auto is feitelijk noodzakelijk. Rovaniemi (RVN) ontsluit de westelijke rivieren; Kittilä (KTT) past bij Ylläs, Kolari en Muonio; Ivalo (IVL) bereikt Inari, Utsjoki, Nuorgam en de verdere rit naar Kirkenes. Eén waarschuwing die het herhalen waard is: veel brokerauto's vereisen een voorafgaande autorisatie en een grensoverschrijdingstoeslag (rond de €60 is gezien) om Noorwegen in te rijden. Meld de oversteek bij het ophalen, anders is het contract ongeldig. Sommige lokale aanbieders bieden standaard Noord-Europese grensdekking.",
+      title: "Erheen reizen en een auto huren",
+      body: "De rivieren liggen ver van de luchthavens, dus een auto is feitelijk noodzakelijk. Rovaniemi (RVN) ontsluit de westelijke rivieren; Kittilä (KTT) past bij Ylläs, Kolari en Muonio; Ivalo (IVL) bereikt Inari, Utsjoki, Nuorgam en de verdere rit naar Kirkenes. Eén waarschuwing die het herhalen waard is: veel brokerauto's vereisen een voorafgaande autorisatie en een grensoverschrijdingstoeslag (bedragen rond de 60 € zijn gezien) om Noorwegen in te rijden. Meld de oversteek bij het ophalen, anders is het contract ongeldig. Sommige lokale aanbieders bieden standaard Noord-Europese grensdekking.",
       cta: "Huur een auto vanaf Rovaniemi (RVN)",
     },
     gear: {
       title: "Wat mee te nemen",
-      body: "Zomerrivieren vragen om ademende waadpakken, laagjes en muggenbescherming; het water blijft koud, zelfs onder de middernachtszon. Winter-pilkki vraagt om echt geïsoleerde kleding, een ijsboor en iets warms om op te zitten. U hebt niet veel nodig om te beginnen: een korte hengel, een handvol jigs en een warme thermosfles volstaan voor een eerste dag op het ijs. Koop of huur ter plaatse als u met weinig bagage komt vliegen.",
+      body: "Zomerrivieren vragen om ademende waadpakken, laagjes en muggenbescherming; het water blijft koud, zelfs onder de middernachtzon. Winter-pilkki vraagt om echt geïsoleerde kleding, een ijsboor en iets warms om op te zitten. U hebt niet veel nodig om te beginnen: een korte hengel, een handvol jigs en een warme thermosfles volstaan voor een eerste dag op het ijs. Koop of huur ter plaatse als u met weinig bagage komt vliegen.",
     },
     season: {
       title: "Het seizoen in één oogopslag",
@@ -178,7 +178,7 @@ const nl: SectionCopy = {
         { period: "apr–mei", what: "Voorjaarssluiting vlagzalm in het binnenland ten zuiden van 67°N (1 apr–31 mei)." },
         { period: "juni", what: "Rivieren gaan open; de Tornio-zalm opent 8 juni; de Teno blijft gesloten voor zalm; de Ivalojoki sluit elke maandag vanaf 15 juni." },
         { period: "jul–half aug", what: "Piek van de zomerzalm op de Tornio en de Simojoki." },
-        { period: "16–25 aug", what: "Beperkte Tornio-nasleep: vlieg of kunstaas, weerhaakloze haken, zet elke zalm boven 65 cm terug." },
+        { period: "16–25 aug", what: "Beperkt Tornio-naseizoen: vlieg of kunstaas, weerhaakloze haken, zet elke zalm boven 65 cm terug." },
         { period: "1 sep–30 nov", what: "Najaarssluiting voor forel en zalm in rivieren en beken." },
         { period: "Bronnen", what: "Data volgens eräluvat.fi, valtioneuvosto.fi en simojoki.com. Verifieer elk seizoen opnieuw." },
       ],
@@ -188,7 +188,7 @@ const nl: SectionCopy = {
       items: [
         {
           q: "Heb ik een vergunning nodig om te ijsvissen?",
-          a: "Nee. Basis-ijsvissen (pilkki) met één gejigde hengel is in Finland een gratis algemeen recht voor iedereen, van elke leeftijd, geen heffing en geen vergunning, op gewone meren. Het is alleen anders bij de stroomversnellingen van zalmrivieren, verboden gebieden en bijzondere plekken, of als u wippen, netten of zetlijnen gebruikt, waarvoor de nationale heffing en een watervergunning nodig zijn (eräluvat.fi).",
+          a: "Nee. Basis-ijsvissen (pilkki) met één hengel en een jig is in Finland een gratis algemeen recht voor iedereen, van elke leeftijd, geen heffing en geen vergunning, op gewone meren. Het is alleen anders bij de stroomversnellingen van zalmrivieren, verboden gebieden en bijzondere plekken, of als u tip-ups, netten of zetlijnen gebruikt, waarvoor de nationale heffing en een watervergunning nodig zijn (eräluvat.fi).",
         },
         {
           q: "Mag ik in 2026 op zalm vissen in de Teno?",
@@ -208,7 +208,7 @@ const nl: SectionCopy = {
         },
         {
           q: "Wat is de visheffing en wie is vrijgesteld?",
-          a: "De nationale visbeheerheffing voor 2026 is 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag (eräluvat.fi). Ze is verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; wie jonger dan 18 of 70 jaar en ouder is, is vrijgesteld, evenals wie op 31 december 2023 65 was geworden.",
+          a: "De nationale visbeheerheffing voor 2026 is 47 € voor het kalenderjaar, 16 € voor zeven dagen of 6 € voor één dag (eräluvat.fi). Ze is verplicht voor hengelaars met kunstaas, spinner en sleeplijn van 18 tot 69 jaar; wie jonger is dan 18 of 70 jaar of ouder, is vrijgesteld, evenals wie op 31 december 2023 65 was geworden.",
         },
         {
           q: "Welke Lapland-rivier is in 2026 het beste voor zalm?",
@@ -240,8 +240,8 @@ const nl: SectionCopy = {
     bookCta: 'Activiteiten boeken', bookCtaShort: 'Boek nu', allDestinations: 'Alle bestemmingen →', allCategories: 'Alle categorieën →',
   },
   hero: {
-    eyebrow: 'Fins Lapland · Van noorderlicht tot middernachtszon',
-    lead: "Sneeuwscooter-safari's, husky-slederitten, noorderlichtjachten, rooksauna's, rafting onder de middernachtszon. Boek direct bij zorgvuldig gekozen aanbieders in Rovaniemi, Levi, Ylläs, Saariselkä en daarbuiten.",
+    eyebrow: 'Fins Lapland · Van noorderlicht tot middernachtzon',
+    lead: "Sneeuwscooter-safari's, husky-slederitten, noorderlichtjachten, rooksauna's, rafting onder de middernachtzon. Boek direct bij zorgvuldig gekozen aanbieders in Rovaniemi, Levi, Ylläs, Saariselkä en daarbuiten.",
     primaryCta: 'Nu activiteiten boeken', secondaryCta: 'Bestemmingen bekijken',
     stayNearby: 'Overnachten in de buurt', stayNearbyDesc: 'Trip.com, beste tarieven',
     rentCar: 'Auto huren', rentCarDesc: 'Vanaf luchthaven Rovaniemi',
@@ -252,25 +252,25 @@ const nl: SectionCopy = {
   summerBand: {
     eyebrow: 'Zomer 2026 · nu boekbaar',
     h2: 'De zomer in Lapland is het best bewaarde geheim.',
-    lead: 'De middernachtszon gaat nooit onder. Bossen openen zich. Zalm zwemt stroomopwaarts en vanaf augustus kleuren de fjells rood door de ruska. De meeste aanbieders hebben tot juni ruime beschikbaarheid, in juli zijn de beste tijdslots al weg.',
+    lead: 'De middernachtzon gaat nooit onder. Bossen openen zich. Zalm zwemt stroomopwaarts en vanaf augustus kleuren de fjälls rood door de ruska. De meeste aanbieders hebben tot juni ruime beschikbaarheid, in juli zijn de beste tijdslots al weg.',
     bookCta: 'Boek zomeractiviteiten', browseCta: 'Bekijk zomergids',
-    imageKicker: 'Zomercategorie', imageH3: '8 manieren om de middernachtszon te voelen',
+    imageKicker: 'Zomercategorie', imageH3: '8 manieren om de middernachtzon te voelen',
     highlights: [
-      { title: 'Fjell-wandeling', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, lange dagen, geen drukte.' },
-      { title: 'Kajak en SUP', body: 'Eilanden van het Inari-meer, meren onder de middernachtszon, spiegelglad water tot 1 uur \'s nachts.' },
+      { title: 'Fjäll-wandeling', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, lange dagen, geen drukte.' },
+      { title: 'Kajak en SUP', body: 'Eilanden van het Inari-meer, meren onder de middernachtzon, spiegelglad water tot 1 uur \'s nachts.' },
       { title: 'Zalmvliegvissen', body: 'De zalmtrek op de Tornionjoki piekt in juni-juli.' },
-      { title: 'Middernachtszon-tours', body: 'Fotografie, foerageren, fjell-mountainbiken, 24 uur daglicht.' },
+      { title: 'Middernachtzon-tours', body: 'Fotografie, foerageren, fjäll-mountainbiken, 24 uur daglicht.' },
     ],
     gygTitle: 'De meest geboekte Lapland-tours van dit moment', gygEyebrow: 'Nu boekbaar · Gratis annuleren',
   },
   hotelsStrip: {
     kicker: 'Waar te verblijven', h2: 'Boek eerst het bed.',
-    lead: 'Activiteiten zijn eenvoudig, de meeste aanbieders breiden uit. De accommodatie die u écht wilt is maanden van tevoren vol. Leg eerst de kamer vast en boek dan pas de tours.',
+    lead: 'Activiteiten zijn eenvoudig te regelen, want de meeste aanbieders schalen op. De accommodatie die u écht wilt is maanden van tevoren vol. Leg eerst de kamer vast en boek dan pas de tours.',
     compareCta: 'Vergelijk Lapland-hotels',
     lodging: [
-      { name: 'Glaziglo\'s', blurb: 'Slaap onder het noorderlicht door een gewelfd glazen dak. De meest geboekte Lapland-nachten.' },
+      { name: 'Glazen iglo\'s', blurb: 'Slaap onder het noorderlicht door een gewelfd glazen dak. De meest geboekte Lapland-nachten.' },
       { name: 'Houten hutten aan het meer', blurb: 'Rooksauna, houtgestookte hot tub, eigen steiger. Het hele jaar door.' },
-      { name: 'Fjell-resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, net ten zuiden van Lapland), ski-in/ski-out plus zomeractiviteiten.' },
+      { name: 'Fjäll-resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, net ten zuiden van Lapland), ski-in/ski-out plus zomeractiviteiten.' },
       { name: 'Boutique in de stad', blurb: 'Rovaniemi · Kemi · Ivalo, designhotels met keuken en toegang tot het centrum.' },
       { name: 'Rooksauna-hutten', blurb: 'De echte savusauna-ervaring, klein, donker, belachelijk heet.' },
     ],
@@ -278,18 +278,18 @@ const nl: SectionCopy = {
   },
   bookingCta: {
     eyebrow: 'Plan de hele reis', heading: 'Boek activiteiten, verblijf en auto op één plek',
-    blurb: 'Drie taps en uw Lapland-reis staat, zorgvuldig gekozen aanbieders via GetYourGuide, de beste accommodatiedeals via Trip.com, en een auto die op u wacht op het vliegveld.',
+    blurb: 'Drie tikken en uw Lapland-reis staat, zorgvuldig gekozen aanbieders via GetYourGuide, de beste accommodatiedeals via Trip.com, en een auto die op u wacht op het vliegveld.',
     activities: 'Activiteiten', activitiesDesc: 'Husky-safari\'s, sneeuwscooters, noorderlicht-tours, ijsvissen, directe bevestiging via GetYourGuide.',
     browseTours: 'Bekijk tours',
-    stayNearby: 'Overnachten in de buurt', stayNearbyDesc: 'Glaziglo\'s, houten hutten, ski-in-hotels, boek eerst het bed, de beste zijn snel weg.',
+    stayNearby: 'Overnachten in de buurt', stayNearbyDesc: 'Glazen iglo\'s, houten hutten, ski-in-hotels, boek eerst het bed, de beste zijn snel weg.',
     compareHotels: 'Hotels vergelijken',
     rentCar: 'Auto huren', rentCarDesc: 'Vergelijk 600+ aanbieders op de luchthavens Rovaniemi, Kittilä, Ivalo en Kemi. Winterbanden inbegrepen.',
     findBestPrice: 'Beste prijs vinden',
     disclaimer: 'ⓘ Deze pagina bevat affiliate-links. LaplandVibes kan een commissie ontvangen bij uw boeking, zonder extra kosten voor u.',
   },
   newsletter: {
-    eyebrow: 'De #LaplandVibes-nieuwsbrief', h2: 'Ontvang de boekingsvensters die altijd uitverkopen.',
-    lead: 'Een korte e-mail als er iets te melden valt: hoe het noorderlichtseizoen zich aftekent, welke aanbieders ook in het modderseizoen open zijn en welke tours het eerst uitverkopen.',
+    eyebrow: 'De #LaplandVibes-nieuwsbrief', h2: 'Ontvang de boekingsvensters die altijd uitverkocht raken.',
+    lead: 'Een korte e-mail als er iets te melden valt: hoe het noorderlichtseizoen zich aftekent, welke aanbieders ook in het modderseizoen open zijn en welke tours het eerst uitverkocht zijn.',
     benefits: [
       { title: 'Noorderlicht-kennis', body: 'Wanneer het seizoen piekt, hoe u de Kp-index leest en welke maanden de donkerste hemel hebben.' },
       { title: 'Wat is nu open', body: 'Echte seizoensvensters voor husky\'s, sneeuwscooters en sauna\'s.' },
@@ -302,9 +302,9 @@ const nl: SectionCopy = {
   },
   activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan uw bezoek' },
   home: {
-    metaTitle: 'LaplandActivities: Arctische tours in Lapland',
+    metaTitle: 'LaplandActivities: arctische tours in Lapland',
     metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 10 bestemmingen in en rond Lapland via GetYourGuide.',
-    ogTitle: 'LaplandActivities: zorgvuldig gekozen Arctische ervaringen',
+    ogTitle: 'LaplandActivities: zorgvuldig gekozen arctische ervaringen',
     categoriesKicker: 'Wat te doen', categoriesH2: 'Kies uw avontuur',
     categoriesLead: '9 manieren om het Noordpoolgebied te beleven, kies een categorie en we verwijzen u door naar zorgvuldig gekozen aanbieders.',
     activitiesLabel: 'activiteiten', viewAllCategories: 'Bekijk alle categorieën',
@@ -314,39 +314,39 @@ const nl: SectionCopy = {
     seasons: [
       { name: 'Winter', months: 'nov – mrt', blurb: 'Diepe sneeuw, poolnachten, piek van het noorderlicht. Sneeuwscooters, husky\'s, rooksauna\'s.', temp: '-15 tot -5 °C' },
       { name: 'Lente', months: 'apr – mei', blurb: 'Sneeuw met daglicht. Laat-seizoensskiën, kalvende rendieren, noorderlicht tot half april.', temp: '-5 tot +5 °C' },
-      { name: 'Zomer', months: 'jun – aug', blurb: 'De middernachtszon gaat niet onder. Wandelen, kajakken, zalmvissen, mountainbiken.', temp: '+10 tot +25 °C' },
-      { name: 'Herfst', months: 'sep – okt', blurb: 'De ruska kleurt de fjells. Eerste noorderlicht keert terug. Paddenstoel- en bessenseizoen.', temp: '+5 tot -5 °C' },
+      { name: 'Zomer', months: 'jun – aug', blurb: 'De middernachtzon gaat niet onder. Wandelen, kajakken, zalmvissen, mountainbiken.', temp: '+10 tot +25 °C' },
+      { name: 'Herfst', months: 'sep – okt', blurb: 'De ruska kleurt de fjälls (heuvels). Eerste noorderlicht keert terug. Paddenstoel- en bessenseizoen.', temp: '+5 tot -5 °C' },
     ],
     destinationsKicker: 'Waarheen', destinationsH2: 'Bestemmingen', viewAll: 'Bekijk alle', activitiesShort: 'activiteiten',
   },
   relatedSites: {
     kicker: 'Meer van #LaplandVibes',
-    h2: 'Plan de rest van uw Arctische reis',
+    h2: 'Plan de rest van uw arctische reis',
     lead: 'Activiteiten zijn maar de helft van de reis. Deze zustergidsen uit ons Lapland-netwerk gaan dieper op de rest in.',
     links: [
       { pre: 'Zin in een hondenslee? Onze', anchor: 'speciale husky-safarigids', post: 'vergelijkt kennels, afstanden en prijzen.' },
-      { pre: 'Liever uw eigen gashendel, bekijk de beste', anchor: 'sneeuwscooter-routes & prijzen', post: 'in heel Lapland.' },
-      { pre: 'Op zoek naar verse poeder? Ontdek', anchor: 'waar u kunt skiën in Lapland', post: 'met vergelijkingen per skigebied.' },
-      { pre: 'Voor de rustige kant van het noordpoolgebied, lees over', anchor: 'noorderlicht & nationale parken', post: 'en de beste aurorahemels.' },
-      { pre: 'En voordat u de tours boekt, bepaal', anchor: 'waar u kunt verblijven in Lapland', post: ': iglo\'s, hutten en fjell-resorts.' },
+      { pre: 'Liever zelf gas geven? Bekijk de beste', anchor: 'sneeuwscooter-routes & prijzen', post: 'in heel Lapland.' },
+      { pre: 'Op zoek naar verse poedersneeuw? Ontdek', anchor: 'waar u kunt skiën in Lapland', post: 'met vergelijkingen per skigebied.' },
+      { pre: 'Voor de rustige kant van het noordpoolgebied, lees over', anchor: 'noorderlicht & nationale parken', post: 'en de beste noorderlichthemels.' },
+      { pre: 'En voordat u de tours boekt, bepaal', anchor: 'waar u kunt verblijven in Lapland', post: ': iglo\'s, hutten en fjäll-resorts.' },
     ],
   },
   faq: {
     kicker: 'Goed om te weten',
     h2: 'Lapland-activiteiten, beantwoord',
-    lead: 'De vragen die reizigers het vaakst stellen voordat ze een Arctische ervaring boeken.',
+    lead: 'De vragen die reizigers het vaakst stellen voordat ze een arctische ervaring boeken.',
     items: [
       {
         q: 'Welke activiteiten kunt u in Lapland doen?',
-        a: 'In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en afdalingsskiën, ijsvissen en ijsdrijven. In de zomer verandert dezelfde wildernis in wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied.',
+        a: 'In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en alpineskiën, ijsvissen en ijsdrijven. In de zomer verandert dezelfde wildernis in wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied.',
       },
       {
         q: 'Wat zijn de beste winter- en zomeractiviteiten?',
-        a: 'De winter (november tot maart) is het seizoen van sneeuw en duisternis: sneeuwscooters, hondensleeën en aurora-tochten hebben dat nodig. De zomer (juni tot augustus) ruilt de sneeuw in voor de middernachtzon, wanneer het licht nooit helemaal verdwijnt en wandelen, peddelen en vissen bijna de klok rond kunnen. De lente heeft nog sneeuw met veel meer daglicht, en de herfst brengt de ruska-kleuren en de eerste auroras, beide rustigere tussenseizoenen.',
+        a: 'De winter (november tot maart) is het seizoen van sneeuw en duisternis: sneeuwscooters, hondensleeën en noorderlichttochten hebben dat nodig. De zomer (juni tot augustus) ruilt de sneeuw in voor de middernachtzon, wanneer het licht nooit helemaal verdwijnt en wandelen, peddelen en vissen bijna de klok rond kunnen. De lente heeft nog sneeuw met veel meer daglicht, en de herfst brengt de ruska-kleuren en het eerste noorderlicht, beide rustigere tussenseizoenen.',
       },
       {
         q: 'Hoeveel kosten activiteiten in Lapland?',
-        a: 'Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte gedeelde sessie zoals een rendierrit of een aurora-bustocht zit aan de lage kant; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, juiste prijzen opent u een tocht via onze boekingspartner, de live prijs verschijnt vóór u bevestigt.',
+        a: 'Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte gedeelde sessie zoals een rendierrit of een noorderlichtbustocht zit aan de lage kant; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, juiste prijzen opent u een tocht via onze boekingspartner, de live prijs verschijnt voordat u bevestigt.',
       },
       {
         q: 'Zijn activiteiten in Lapland geschikt voor jonge kinderen?',
@@ -354,13 +354,13 @@ const nl: SectionCopy = {
       },
       {
         q: 'Moet u activiteiten in Lapland vooraf boeken?',
-        a: 'Voor de drukste weken, Kerst en Nieuwjaar, en de aurora- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat u ook ruimte voor een heldere hemel inbouwen in uw aurora-plannen in plaats van te strijden om de laatste plekken.',
+        a: 'Voor de drukste weken, Kerst en Nieuwjaar, en de noorderlicht- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat u ook ruimte voor een heldere hemel inbouwen in uw noorderlichtplannen in plaats van te strijden om de laatste plekken.',
       },
     ],
   },
   categoriesIndex: {
     metaTitle: 'Activiteitencategorieën · LaplandActivities',
-    metaDescription: 'Blader door Arctische activiteiten per categorie, avontuur, dieren, noorderlicht, wintersport, welness, cultuur, zomer en eten en drinken.',
+    metaDescription: 'Blader door arctische activiteiten per categorie, avontuur, dieren, noorderlicht, wintersport, wellness, cultuur, zomer en eten en drinken.',
     kicker: 'Wat te doen', h1: 'Activiteitencategorieën',
     lead: '9 manieren om het Noordpoolgebied te beleven, kies een thema en we verwijzen u door naar zorgvuldig gekozen aanbieders.',
     activitiesLabel: 'activiteiten', exploreAdventures: 'Ontdek avonturen', explore: 'Ontdek',
@@ -392,21 +392,21 @@ const nl: SectionCopy = {
     gygTitlePrefix: 'Zorgvuldig gekozen', gygTitleSuffix: 'tours', gygEyebrow: 'Nu boekbaar',
     allActivitiesKicker: 'Alle activiteiten',
     thingsToDoIn: 'dingen om te doen in', moreSoon: 'Meer activiteiten binnenkort voor',
-    sleepInPrefix: 'Slaap in', sleepInBlurb: 'Glaziglo\'s, houten hutten, ski-in-hotels, Trip.com bundelt de beste tarieven.',
+    sleepInPrefix: 'Slaap in', sleepInBlurb: 'Glazen iglo\'s, houten hutten, ski-in-hotels, Trip.com bundelt de beste tarieven.',
     compareHotels: 'Hotels vergelijken',
     driveYourself: 'Zelf rijden', driveYourselfBlurb: 'Lapland is uitgestrekt en huurauto\'s zijn al voorzien van winterbanden. Vergelijk 600+ aanbieders.',
     findBestPrice: 'Beste prijs vinden',
     keepExploringKicker: 'Blijf verkennen', otherDestinationsH2: 'Andere bestemmingen', allDestinations: 'Alle bestemmingen',
     tipsByDestination: {
       rovaniemi: [
-        { tip: 'Bezoek het Kerstmandorp \'s ochtends vroeg om de bezetting van de cruisebussen te ontlopen.', icon: '🎅' },
+        { tip: 'Bezoek het Kerstmandorp \'s ochtends vroeg om de drukte van de cruisebussen te ontlopen.', icon: '🎅' },
         { tip: 'De poolcirkellijn oversteken is gratis, maar het certificaat is een betaald souvenir bij de toeristeninformatie op de poolcirkel.', icon: '📜' },
         { tip: 'Arktikum heeft de meest uitgebreide noorderlichttentoonstelling van Finland.', icon: '🏛️' },
       ],
       levi: [
         { tip: 'Hullu Poro is de luidruchtigste après-ski van Lapland, ga op een vrijdag.', icon: '🍺' },
         { tip: 'Bearhill Husky is in piekweken weken van tevoren uitverkocht.', icon: '🐕' },
-        { tip: 'Nachtskiën onder het noorderlicht is een Levi-ding, alleen dec./jan.', icon: '⛷️' },
+        { tip: 'Nachtskiën onder het noorderlicht is typisch Levi, alleen in dec./jan.', icon: '⛷️' },
       ],
       yllas: [
         { tip: 'Ylläs heeft een van de donkerste, helderste noorderlichthemels van Finland.', icon: '✨' },
@@ -416,7 +416,7 @@ const nl: SectionCopy = {
       saariselka: [
         { tip: 'De Kiilopää-rooksauna draait het hele jaar, boek het middagblok.', icon: '🧖' },
         { tip: 'Goudwassen in Tankavaara, alles wat u vindt, mag u houden.', icon: '🥇' },
-        { tip: 'De wildernishutten van het UKK Nationaal Park zijn gratis, volgens wie het eerst komt.', icon: '🏕️' },
+        { tip: 'De wildernishutten van het UKK Nationaal Park zijn gratis: wie het eerst komt, het eerst maalt.', icon: '🏕️' },
       ],
       inari: [
         { tip: 'Reken minstens drie uur voor het Siida-museum, lees ook de Sami-talige vleugel.', icon: '🏛️' },
@@ -447,19 +447,19 @@ const nl: SectionCopy = {
       kemijarvi: [
         { tip: 'Eén vertrek per dag van de Santa Claus Express rijdt voorbij Rovaniemi door naar Kemijärvi.', icon: '🚂' },
         { tip: 'De grote houten beelden van de jaarlijkse beeldhouwweek staan het hele jaar in de stad.', icon: '🪵' },
-        { tip: 'Pyhä ligt op 50 km: dagtochten naar de fjells vanaf een basis aan het meer.', icon: '⛷️' },
+        { tip: 'Pyhä ligt op 50 km: dagtochten naar de fjälls vanaf een basis aan het meer.', icon: '⛷️' },
       ],
     },
   },
   about: {
     metaTitle: 'Over ons · LaplandActivities',
-    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen Arctische ervaringen in tien bestemmingen in en rond Fins Lapland.',
+    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen arctische ervaringen in tien bestemmingen in en rond Fins Lapland.',
     eyebrow: 'Over ons', h1: 'Een activiteitengids voor Fins Lapland',
     para1: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, een netwerk van onafhankelijke gidsen over accommodatie, eten, natuur, transport en tours in Fins Lapland.',
     para2: 'De site verwijst reizigers naar zorgvuldig gekozen lokale aanbieders in tien bestemmingen, van sneeuwscooter-safari\'s in Saariselkä tot zalmvissen op de Tornionjoki. Elke boeking loopt via GetYourGuide, dus u krijgt directe bevestiging en bij de meeste tours gratis annulering tot 24 uur van tevoren.',
     pillars: [
       { title: 'Echte aanbieders', text: 'We tonen gevestigde lokale aanbieders; elke boeking loopt via GetYourGuide.' },
-      { title: 'Authentieke ervaringen', text: 'Elke activiteit is gekozen om het soort detail dat u niet kunt verzinnen.' },
+      { title: 'Authentieke ervaringen', text: 'Elke activiteit is gekozen vanwege het soort detail dat u niet kunt verzinnen.' },
       { title: 'Veilig en betrouwbaar', text: 'Activiteitenaanbieders in Finland vallen onder de consumentenveiligheidswet en staan onder toezicht van Tukes, de Finse veiligheidsautoriteit.' },
       { title: '#LaplandVibes-netwerk', text: 'Onderdeel van een Fins Lapland-netwerk van 25+ sites, uw complete reisplanning-toolkit.' },
     ],
@@ -488,7 +488,7 @@ const nl: SectionCopy = {
     },
     hide: {
       title: "Een nacht in een hut",
-      body: "Zeven houten hutten staan aan de bosrand, gebouwd om menselijk geluid en geur binnen te houden. Panoramaramen geven kijkers een vrij zicht op de open plek, en fotografen hebben eigen camera-openingen met bean bags en videokoppen, zodat niemand door glas hoeft te schieten. De hoofdhut is rolstoeltoegankelijk en de toiletten zitten in eigen, aparte ruimtes. Vanuit de ramen ziet u misschien bruine beren en, in de lente, een veelvraat die voorbijglipt, zeearenden boven u en de raven wier geroep de gidsen vertelt dat een beer dichtbij is.",
+      body: "Zeven houten hutten staan aan de bosrand, gebouwd om menselijk geluid en geur binnen te houden. Panoramaramen geven kijkers een vrij zicht op de open plek, en fotografen hebben eigen camera-openingen met bean bags en videokoppen, zodat niemand door glas hoeft te fotograferen. De hoofdhut is rolstoeltoegankelijk en de toiletten zitten in eigen, aparte ruimtes. Vanuit de ramen ziet u misschien bruine beren en, in de lente, een veelvraat die voorbijglipt, zeearenden boven u en de raven wier geroep de gidsen vertelt dat een beer dichtbij is.",
     },
     treeCaption: "Een jonge bruine beer klimt in een den bij de hutten.",
     treeCredit: "Foto: Piritta Paija / Bear Kuusamo",
@@ -506,7 +506,7 @@ const nl: SectionCopy = {
     where: {
       title: "Waar het ligt",
       pre: "Kuusamo ligt in het noordoosten van Finland, pal tegen de grens van Lapland, tussen de heuvels en oerbossen rond Nationaal Park Oulanka. Het is de natuurlijke uitvalsbasis wanneer u uw eigen ",
-      post: " plant: vlieg naar Kuusamo of rijd over vanuit Ruka, en u bent binnen een uur bij de hutten.",
+      post: " plant: vlieg naar Kuusamo of rijd erheen vanuit Ruka, en u bent binnen een uur bij de hutten.",
     },
     cta: "Boek rechtstreeks bij Bear Kuusamo",
     imageAlts: {

@@ -55,7 +55,7 @@ const HOME_DESC: Record<Lang, string> = {
   ko: '핀란드 라플란드의 허스키 라이드, 순록 썰매, 스노모빌 사파리, 오로라 헌팅, 여름 하이킹.',
   fr: 'Safaris en traîneau de huskies, balades en traîneau de rennes, safaris en motoneige, chasses aux aurores et randonnées d\'été en Laponie finlandaise.',
   it: 'Giri in husky, slitte trainate da renne, safari in motoslitta, caccia all\'aurora ed escursioni estive nella Lapponia finlandese.',
-  nl: 'Husky-tochten, rendiersleeën, sneeuwscootersafari\'s, aurora-jachten en zomerwandelingen in Fins Lapland.',
+  nl: 'Husky-tochten, rendiersleeën, sneeuwscootersafari\'s, noorderlichtjachten en zomerwandelingen in Fins Lapland.',
   sv: 'Huskyturer, renslädar, snöskotersafarin, norrskensjakter och sommarvandringar i finska Lappland.',
 };
 

@@ -111,7 +111,7 @@ const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string;
   },
   nl: {
     title: 'Boek zorgvuldig gekozen tours',
-    eyebrow: 'Aangedreven door GetYourGuide',
+    eyebrow: 'Mogelijk gemaakt door GetYourGuide',
     subtitle: 'Gratis annulering tot 24 u op de meeste tours · Directe bevestiging',
     pricesNote: 'Prijzen en beschikbaarheid wijzigen dagelijks. Boek vooraf voor het hoogseizoen.',
   },

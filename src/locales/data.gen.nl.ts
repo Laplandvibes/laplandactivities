@@ -6,7 +6,7 @@ const d: LangData = {
   "categories": {
     "adventure": {
       "name": "Avontuur",
-      "description": "Sneeuwscooter-safari's, ice karting, ijsklimmen, wildwaterraften en survivalcursussen. Adrenaline in de Arctische wildernis."
+      "description": "Sneeuwscooter-safari's, ijskarten, ijsklimmen, wildwaterraften en survivalcursussen. Adrenaline in de arctische wildernis."
     },
     "animals": {
       "name": "Dierenervaringen",
@@ -21,8 +21,8 @@ const d: LangData = {
       "description": "Alpineskiën, langlaufen, snowboarden, fatbiken, sneeuwschoenwandelen en schaatsen in de beste resorts van Lapland."
     },
     "wellness": {
-      "name": "Welness en sauna",
-      "description": "Traditionele rooksauna's, ijszwemmen, Arctisch drijven, spa-behandelingen en de ultieme Noord-Europese wellnesservaring."
+      "name": "Wellness en sauna",
+      "description": "Traditionele rooksauna's, ijszwemmen, arctisch drijven, spa-behandelingen en de ultieme Noord-Europese wellnesservaring."
     },
     "culture": {
       "name": "Cultuur en erfgoed",
@@ -30,7 +30,7 @@ const d: LangData = {
     },
     "summer": {
       "name": "Zomeravontuur",
-      "description": "Wandelen onder de middernachtszon, kajakken, raften, mountainbiken, vissen, bessenplukken en golf onder het eindeloze Arctische daglicht."
+      "description": "Wandelen onder de middernachtzon, kajakken, raften, mountainbiken, vissen, bessenplukken en golf onder het eindeloze arctische daglicht."
     },
     "food": {
       "name": "Eten en drinken",
@@ -45,7 +45,7 @@ const d: LangData = {
     "rovaniemi": {
       "name": "Rovaniemi",
       "tagline": "De officiële thuisstad van de Kerstman",
-      "description": "Hoofdstad van Lapland en toegangspoort tot Arctische avonturen. Hier vindt u het Kerstmandorp, uitstekende verbindingen en een groot aanbod aan winter- en zomeractiviteiten.",
+      "description": "Hoofdstad van Lapland en toegangspoort tot arctische avonturen. Hier vindt u het Kerstmandorp, uitstekende verbindingen en een groot aanbod aan winter- en zomeractiviteiten.",
       "access": "Directe vluchten vanuit Helsinki (1 u 15)",
       "bestFor": "Eerste bezoekers en gezinnen",
       "why": "In Rovaniemi zit de infrastructuur van Lapland: een internationale luchthaven, het eindpunt van de nachttrein en de grootste keuze aan tours van de regio. Naast het Kerstmandorp vindt u het Arktikum-museum aan de rivier, de pistes van Ounasvaara boven de stad en tientallen husky-, rendier- en noorderlichtaanbieders binnen 20 minuten rijden. Ideaal voor eerste bezoekers en gezinnen. De poolcirkellijn oversteken is gratis, het certificaat niet: dat koopt u bij de toeristeninformatie op de poolcirkel, in de poolcirkeltoren of in de winkel van het Kersthuis, niet bij het postkantoor."
@@ -61,15 +61,15 @@ const d: LangData = {
     "yllas": {
       "name": "Ylläs",
       "tagline": "De langste pistes van Finland",
-      "description": "Twee skigebieden aan beide zijden van de Ylläs-fjell met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
+      "description": "Twee skigebieden aan beide zijden van de Ylläs-fjäll met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
       "access": "Vlieg naar Kittilä (35 min met de auto)",
       "bestFor": "Natuurliefhebbers en ervaren skiërs",
-      "why": "Ylläs bestaat uit twee rustige dorpen, Äkäslompolo en Ylläsjärvi, aan weerszijden van één grote fjell: samen 62 pistes en met ruim drie kilometer de langste afdalingen van Finland. Eromheen ligt zo’n 300 km geprepareerd langlaufspoor tot in het nationale park Pallas-Yllästunturi. Kies Ylläs boven Levi voor donkere noorderlichtluchten, nationale-parkstilte en lange skidagen; Äkäslompolo is de rustige kant, Ylläsjärvi heeft de bars."
+      "why": "Ylläs bestaat uit twee rustige dorpen, Äkäslompolo en Ylläsjärvi, aan weerszijden van één grote fjäll (heuvel): samen 62 pistes en met ruim drie kilometer de langste afdalingen van Finland. Eromheen ligt zo’n 300 km geprepareerd langlaufspoor tot in het nationale park Pallas-Yllästunturi. Kies Ylläs boven Levi voor donkere noorderlichtluchten, nationale-parkstilte en lange skidagen; Äkäslompolo is de rustige kant, Ylläsjärvi heeft de bars."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Toegangspoort tot het Urho Kekkonen Nationaal Park",
-      "description": "Het noordelijkste skigebied van Finland, grenzend aan een van de grootste wildernisgebieden van Europa. Beroemd om de noorderlichtweergave, het goudwassen en de legendarische rooksauna van Kiilopää.",
+      "description": "Het noordelijkste skigebied van Finland, grenzend aan een van de grootste wildernisgebieden van Europa. Beroemd om het noorderlicht, het goudwassen en de legendarische rooksauna van Kiilopää.",
       "access": "Vlieg naar Ivalo (30 min met de auto)",
       "bestFor": "Wildernisliefhebbers en noorderlichtjagers",
       "why": "Saariselkä ligt aan de rand van het nationale park Urho Kekkonen: gemarkeerde routes en open wildernishutten beginnen in het dorp zelf. Zo noordelijk zijn de noorderlichtkansen goed van september tot april, plus dingen die zuidelijker niet bestaan: goudwassen in Tankavaara, waar alles wat u vindt van u is, en de rooksauna van Kiilopää met een rol door de sneeuw erna. Voor reizigers die wildernis boven voorzieningen stellen."
@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Aan de oevers van het Inari-meer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk. Hier vindt u het Siida-museum en ongerepte wildernis.",
       "access": "Vlieg naar Ivalo (40 min met de auto)",
       "bestFor": "Cultuurliefhebbers en fotografen",
-      "why": "Inari is de zetel van het Finse Sámi-parlement en de beste plek om levende Sámi-cultuur te ontmoeten: begin in het Siida-museum en vaar in de zomer over het Inarimeer langs het heilige eiland Ukonsaari. Het dorp is klein en de wildernis eromheen enorm; naar de wilderniskerk van Pielpajärvi wandelt u door oud dennenbos. Het beloont wie komt voor cultuur, fotografie en stilte."
+      "why": "Inari is de zetel van het Finse Sami-parlement en de beste plek om levende Sami-cultuur te ontmoeten: begin in het Siida-museum en vaar in de zomer over het Inarimeer langs het heilige eiland Ukonsaari. Het dorp is klein en de wildernis eromheen enorm; naar de wilderniskerk van Pielpajärvi wandelt u door oud dennenbos. Het beloont wie komt voor cultuur, fotografie en stilte."
     },
     "ruka": {
       "name": "Ruka en Kuusamo",
@@ -88,12 +88,12 @@ const d: LangData = {
       "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland. Beroemd om berenobservatie, raften en het langste skiseizoen. Ruka ligt in Kuusamo, net ten zuiden van Lapland, met dezelfde sneeuw en dezelfde noordelijke winter.",
       "access": "Vlieg naar Kuusamo (25 min met de auto)",
       "bestFor": "Wandelaars, skiërs en natuurliefhebbers",
-      "why": "Ruka is een compact pistedorp met 41 pistes en 22 liften midden in het buitenland van Kuusamo: nationaal park Oulanka, de 82 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark het over."
+      "why": "Ruka is een compact pistedorp met 41 pistes en 22 liften midden in het buitengebied van Kuusamo: nationaal park Oulanka, de 82 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark het over."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Verborgen parel van Oost-Lapland",
-      "description": "Beroemd om de spectaculaire met sneeuw bekroonde bomen van Riisitunturi Nationaal Park en de bevroren watervallen van de Korouoma-canyon. Van de gebaande paden, pure wildernis.",
+      "description": "Beroemd om de spectaculaire met sneeuw bekroonde bomen van Riisitunturi Nationaal Park en de bevroren watervallen van de Korouoma-canyon. Buiten de gebaande paden, pure wildernis.",
       "access": "Met de auto vanuit Rovaniemi (2 u) of Ruka (1 u)",
       "bestFor": "Ontdekkers van het minder bekende",
       "why": "De troeven van Posio komen uit de natuur: de tykky-bomen van Riisitunturi, door de vorst tot sculpturen gebogen, en de bevroren watervallen van Korouoma, tot 40 meter hangend langs de canyonwand. Tel daar Pentik bij op, de noordelijkste keramiekfabriek ter wereld met galerieën en outlet, en de dag is vol, ver van de toeristische routes. Een auto is nodig; het past goed bij een reis naar Ruka of Rovaniemi."
@@ -101,18 +101,18 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda en Kemi",
       "tagline": "Arctische grensavonturen",
-      "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke Arctische ervaringen. Met de legendarische ijsbreker Sampo, het SnowCastle Winter Park en de grootste vrij stromende zalmrivier van Europa.",
+      "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke arctische ervaringen. Met de legendarische ijsbreker Sampo, het SnowCastle Winter Park en de grootste vrij stromende zalmrivier van Europa.",
       "access": "Vlieg naar Kemi (15 min met de auto)",
       "bestFor": "Unieke ervaringen en gezinsplezier",
       "why": "Tornio en Haparanda zijn één stad in twee landen: u steekt de grens te voet over midden in de winkelstraat, IKEA Haparanda ligt pal naast de overgang en een rondje golf wisselt vier keer van land en tijdzone. Kemi, 25 minuten verderop, voegt de ijsbreker Sampo en het winterse sneeuwpark van het SnowCastle-terrein toe. Op de Tornionjoki, Europa’s grootste vrij stromende zalmrivier, wordt bij de Kukkolankoski elke zomer nog traditioneel met het schepnet gevist."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",
-      "tagline": "Tweelingfjells in het oudste nationale park",
-      "description": "Twee fjelldorpen, Pyhä en Luosto, verbonden door een oeroude fjellketen met daartussen het nationale park Pyhä-Luosto. Skiën, sneeuwschoenwandelen en uw eigen amethist opgraven op de Lampivaara.",
+      "tagline": "Tweelingfjälls in het oudste nationale park",
+      "description": "Twee fjälldorpen, Pyhä en Luosto, verbonden door een oeroude fjällketen met daartussen het nationale park Pyhä-Luosto. Skiën, sneeuwschoenwandelen en uw eigen amethist opgraven op de Lampivaara.",
       "access": "Vlucht naar Rovaniemi (1 u 30 min rijden)",
       "bestFor": "Nationale-parkskiërs en gezinnen",
-      "why": "Het nationale park tussen de twee dorpen is de echte reden: Isokuru, met zo’n 220 meter de diepste kloof van Finland, vlonderpaden door oerbos en weidse uitzichten vanaf de oudste fjellketen van Lapland. Op de Lampivaara in Luosto graaft u in Europa’s enige actieve amethistmijn uw eigen steen en houdt u die; in de winter brengt een verwarmde sneeuwtrein u omhoog. Tot Pyhä’s pistes hoort Huttu-Ukko, een bultenpiste met wereldbekerverleden, en gezinnen krijgen zacht terrein zonder rijen."
+      "why": "Het nationale park tussen de twee dorpen is de echte reden: Isokuru, met zo’n 220 meter de diepste kloof van Finland, vlonderpaden door oerbos en weidse uitzichten vanaf de oudste fjällketen van Lapland. Op de Lampivaara in Luosto graaft u in Europa’s enige actieve amethistmijn uw eigen steen en houdt u die; in de winter brengt een verwarmde sneeuwtrein u omhoog. Tot Pyhä’s pistes hoort Huttu-Ukko, een bultenpiste met wereldbekerverleden, en gezinnen krijgen zacht terrein zonder rijen."
     },
     "kemijarvi": {
       "name": "Kemijärvi",
@@ -130,8 +130,8 @@ const d: LangData = {
   },
   "activities": {
     "rov-aurora-snowmobile": {
-      "title": "Aurora-sneeuwscooter-safari",
-      "description": "Jaag op het noorderlicht tijdens een opwindende sneeuwscootertocht door de Arctische wildernis. Inclusief warme drank bij een kampvuur onder het noorderlicht.",
+      "title": "Noorderlicht-sneeuwscootersafari",
+      "description": "Jaag op het noorderlicht tijdens een opwindende sneeuwscootertocht door de arctische wildernis. Inclusief warme drank bij een kampvuur onder het noorderlicht.",
       "highlights": [
         "Noorderlicht spotten",
         "Kampvuurpauze",
@@ -155,7 +155,7 @@ const d: LangData = {
     },
     "rov-husky-safari": {
       "title": "Husky-safari en kennelbezoek",
-      "description": "Bestuur uw eigen huskyteam door besneeuwde bossen over maximaal 18 km en bezoek daarna de kennel om de puppy's te ontmoeten en het Arctische sledehondenrijden te leren kennen.",
+      "description": "Bestuur uw eigen huskyteam door besneeuwde bossen over maximaal 18 km en bezoek daarna de kennel om de puppy's te ontmoeten en het arctische sledehondenrijden te leren kennen.",
       "highlights": [
         "Rijd uw eigen slee",
         "Puppybezoek",
@@ -190,11 +190,11 @@ const d: LangData = {
       "category": "Avontuur"
     },
     "rov-ice-karting": {
-      "title": "Familie sneeuwscooter en ice karting combo",
+      "title": "Gezinscombinatie sneeuwscooter en ijskarten",
       "description": "Begin met mini-sneeuwscooters voor kinderen en race daarna karts op een bevroren ijsbaan. Daarna opwarmen met warme chocolademelk.",
       "highlights": [
         "Kindersneeuwscooters",
-        "Ice-kartingbaan",
+        "IJskartbaan",
         "Familievriendelijk"
       ],
       "duration": "3 uur",
@@ -227,10 +227,10 @@ const d: LangData = {
     },
     "rov-ranua-zoo": {
       "title": "Ranua Wildlife Park, ijsberen",
-      "description": "Ontmoet Arctische dieren, waaronder de enige ijsberen van Finland. Loop over besneeuwde paden langs veelvraten, lynxen, wolven en zo'n 50 Arctische soorten.",
+      "description": "Ontmoet arctische dieren, waaronder de enige ijsberen van Finland. Loop over besneeuwde paden langs veelvraten, lynxen, wolven en zo'n 50 arctische soorten.",
       "highlights": [
         "IJsberen",
-        "50+ Arctische soorten",
+        "50+ arctische soorten",
         "Wandelpaden"
       ],
       "duration": "3-4 uur",
@@ -239,7 +239,7 @@ const d: LangData = {
     },
     "rov-ice-floating": {
       "title": "Arctisch ijsdrijven",
-      "description": "Drijf op een bevroren rivier in een droogpak onder de Arctische hemel. Een surrealistische, vredige ervaring gevolgd door warme dranken bij een open vuur.",
+      "description": "Drijf op een bevroren rivier in een droogpak onder de arctische hemel. Een surrealistische, vredige ervaring gevolgd door warme dranken bij een open vuur.",
       "highlights": [
         "Droogpak inbegrepen",
         "Warme dranken inbegrepen",
@@ -247,11 +247,11 @@ const d: LangData = {
       ],
       "duration": "3 uur",
       "difficulty": "Makkelijk",
-      "category": "Welness en sauna"
+      "category": "Wellness en sauna"
     },
     "rov-santapark": {
       "title": "SantaPark ondergrondse grot",
-      "description": "Een ondergronds kerstthemapark in een echte grot. Elfenschool, ijsgalerij, peperkoek bakken en gedenkwaardige shows diep onder de Arctische grond.",
+      "description": "Een ondergronds kerstthemapark in een echte grot. Elfenschool, ijsgalerij, peperkoek bakken en gedenkwaardige shows diep onder de arctische grond.",
       "highlights": [
         "Ondergrondse grot",
         "Elfenschool",
@@ -263,10 +263,10 @@ const d: LangData = {
     },
     "rov-arctic-snow-hotel": {
       "title": "Overnachting in Arctic Snow Hotel",
-      "description": "Slaap in een kamer geheel van ijs en sneeuw bij -5 °C in een knusse thermische slaapzak. Inclusief sauna, diner en aurora-wekservice.",
+      "description": "Slaap in een kamer geheel van ijs en sneeuw bij -5 °C in een knusse thermische slaapzak. Inclusief sauna, diner en noorderlichtwekservice.",
       "highlights": [
         "Overnachting in ijskamer",
-        "Aurora-wekservice",
+        "Noorderlichtwekservice",
         "Sauna en diner inbegrepen"
       ],
       "duration": "Overnachting",
@@ -287,7 +287,7 @@ const d: LangData = {
     },
     "rov-campfire-dinner": {
       "title": "Wildernis-kampvuurdiner",
-      "description": "Geniet van een traditioneel Laplands diner gekookt boven een open vuur in de wildernis. Gegrilde zalm, rendierworst en wild-bessendessert onder de Arctische hemel.",
+      "description": "Geniet van een traditioneel Laplands diner gekookt boven een open vuur in de wildernis. Gegrilde zalm, rendierworst en wild-bessendessert onder de arctische hemel.",
       "highlights": [
         "Open-vuur koken",
         "Laplands menu",
@@ -299,10 +299,10 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Levi skigebied, 44 pistes",
-      "description": "Het grootste skigebied van Finland met 44 pistes, 230 km langlauf-trails en een topklasse terreinpark. Avondskiën onder het noorderlicht beschikbaar.",
+      "description": "Het grootste skigebied van Finland met 44 pistes, 230 km langlauf-trails en een topklasse snowpark. Avondskiën onder het noorderlicht beschikbaar.",
       "highlights": [
         "44 pistes",
-        "Terreinpark",
+        "Snowpark",
         "Avondskiën"
       ],
       "duration": "Dagkaart",
@@ -310,11 +310,11 @@ const d: LangData = {
       "category": "Wintersport"
     },
     "lev-ice-karting": {
-      "title": "Ice karting op bevroren meer",
-      "description": "Race krachtige karts op een professioneel onderhouden ijsbaan op een bevroren meer. Drift door bochten met hoge snelheid in een adrenaline-Arctisch avontuur.",
+      "title": "IJskarten op een bevroren meer",
+      "description": "Race krachtige karts op een professioneel onderhouden ijsbaan op een bevroren meer. Drift door bochten met hoge snelheid in een arctisch avontuur vol adrenaline.",
       "highlights": [
         "Baan op bevroren meer",
-        "Hoge-snelheid driften",
+        "Driften op hoge snelheid",
         "Getimede ronden"
       ],
       "duration": "1,5 uur",
@@ -371,10 +371,10 @@ const d: LangData = {
     },
     "lev-aurora-photo": {
       "title": "Noorderlicht fotografietour",
-      "description": "Een op fotografie gerichte aurora-tour onder leiding van een professionele gids. Leer het licht vastleggen met uw camera onder het genot van warm bessensap.",
+      "description": "Een op fotografie gerichte noorderlichttour onder leiding van een professionele gids. Leer het licht vastleggen met uw camera onder het genot van warm bessensap.",
       "highlights": [
         "Cameratips en statieven",
-        "Beste aurora-spots",
+        "Beste noorderlichtplekken",
         "Warme dranken en snacks"
       ],
       "duration": "4 uur",
@@ -382,8 +382,8 @@ const d: LangData = {
       "category": "Noorderlicht"
     },
     "lev-midnight-sun-golf": {
-      "title": "Middernachtszon-golf",
-      "description": "Speel golf onder de middernachtszon op een van de noordelijkste banen ter wereld. Tee af om middernacht in helder daglicht tijdens de Arctische zomer.",
+      "title": "Middernachtzon-golf",
+      "description": "Speel golf onder de middernachtzon op een van de noordelijkste banen ter wereld. Tee af om middernacht in helder daglicht tijdens de arctische zomer.",
       "highlights": [
         "Middernachtstart",
         "18-hole baan",
@@ -419,9 +419,9 @@ const d: LangData = {
     },
     "lev-bike-park": {
       "title": "Levi Bike Park",
-      "description": "Stoeit op afdaaltrails in Levi Bike Park met lift-toegang, van beginner-flow trails tot expert zwarte-diamant-afdalingen.",
+      "description": "Rijd de afdaaltrails van Levi Bike Park met lifttoegang, van flowtrails voor beginners tot zwarte-diamant-afdalingen voor experts.",
       "highlights": [
-        "Lift-toegang",
+        "Lifttoegang",
         "Alle niveaus",
         "Verhuur beschikbaar"
       ],
@@ -443,7 +443,7 @@ const d: LangData = {
     },
     "yll-ski-resort": {
       "title": "Ylläs skigebied, langste pistes",
-      "description": "De langste pistes van Finland (3 km) aan beide zijden van de Ylläs-fjell. 62 pistes, een gondel en 300 km geprepareerde langlaufloipes door het nationaal park.",
+      "description": "De langste pistes van Finland (3 km) aan beide zijden van de Ylläs-fjäll. 62 pistes, een gondel en 300 km geprepareerde langlaufloipes door het nationaal park.",
       "highlights": [
         "3 km langste afdaling",
         "62 pistes",
@@ -454,12 +454,12 @@ const d: LangData = {
       "category": "Wintersport"
     },
     "yll-aurora-hunt": {
-      "title": "Noorderlichtjacht vanaf de Ylläs-fjell",
-      "description": "Ylläs heeft een van de donkerste, helderste nachthemels van Finland. Jaag op het noorderlicht met ervaren gidsen die de beste uitkijkpunten op en rond de fjell kennen.",
+      "title": "Noorderlichtjacht vanaf de Ylläs-fjäll",
+      "description": "Ylläs heeft een van de donkerste, helderste nachthemels van Finland. Jaag op het noorderlicht met ervaren gidsen die de beste uitkijkpunten op en rond de fjäll kennen.",
       "highlights": [
         "Dark Sky-gebied",
         "Ervaren gidsen",
-        "Uitzicht vanaf fjell-top"
+        "Uitzicht vanaf fjäll-top"
       ],
       "duration": "3 uur",
       "difficulty": "Makkelijk",
@@ -467,10 +467,10 @@ const d: LangData = {
     },
     "yll-snowmobile": {
       "title": "Sneeuwscooter-safari door de wildernis",
-      "description": "Rijd door de ongerepte wildernis tussen de Ylläs- en Pallas-fjells. Routes voeren door bevroren moerassen, boreale bossen en open fjell-landschappen.",
+      "description": "Rijd door de ongerepte wildernis tussen de Ylläs- en Pallas-fjälls. Routes voeren door bevroren moerassen, boreale bossen en open fjäll-landschappen.",
       "highlights": [
         "Wildernisroute",
-        "Fjell-landschappen",
+        "Fjäll-landschappen",
         "Warme uitrusting inbegrepen"
       ],
       "duration": "3 uur",
@@ -479,10 +479,10 @@ const d: LangData = {
     },
     "yll-pallas-hike": {
       "title": "Wandeling Pallas-Yllästunturi Nationaal Park",
-      "description": "Wandel door het meest bezochte nationaal park van Finland over gemarkeerde fjell-paden vanuit Ylläs. Opvallende fjell-naar-fjell-uitzichten, oude bossen en kristalheldere beekjes.",
+      "description": "Wandel door het meest bezochte nationaal park van Finland over gemarkeerde fjäll-paden vanuit Ylläs. Opvallende fjäll-naar-fjäll-uitzichten, oude bossen en kristalheldere beekjes.",
       "highlights": [
         "Nationaal park-trails",
-        "Fjell-top panorama's",
+        "Fjäll-top panorama's",
         "Gids inbegrepen"
       ],
       "duration": "5-7 uur",
@@ -502,8 +502,8 @@ const d: LangData = {
       "category": "Dierenervaringen"
     },
     "yll-snowshoe": {
-      "title": "Sneeuwschoenen in oeroud bos",
-      "description": "Wandel door ongerepte poedersneeuw in eeuwenoude bossen. Uw gids deelt verhalen van het bos terwijl u geniet van de totale stilte van de Arctische wildernis.",
+      "title": "Sneeuwschoenwandelen in oeroud bos",
+      "description": "Wandel door ongerepte poedersneeuw in eeuwenoude bossen. Uw gids deelt verhalen van het bos terwijl u geniet van de totale stilte van de arctische wildernis.",
       "highlights": [
         "Sneeuwschoenen inbegrepen",
         "Eeuwenoud bos",
@@ -527,7 +527,7 @@ const d: LangData = {
     },
     "yll-reindeer": {
       "title": "Rendierslederit in Ylläs",
-      "description": "Glijd door besneeuwde landschappen op een traditionele rendierslee. Het rustige tempo laat u de Arctische stilte opnemen en de bevroren schoonheid in zich opnemen.",
+      "description": "Glijd door besneeuwde landschappen op een traditionele rendierslee. In het rustige tempo neemt u de arctische stilte en de bevroren schoonheid in u op.",
       "highlights": [
         "Traditionele slee",
         "Winterlandschap",
@@ -539,7 +539,7 @@ const d: LangData = {
     },
     "yll-cross-country": {
       "title": "Langlaufen in Pallas",
-      "description": "Langlauf 300 km geprepareerde loipes door het Pallas-Yllästunturi Nationaal Park. Routes voor alle niveaus, van rustige meerlussen tot fjell-top-uitdagingen.",
+      "description": "Langlauf 300 km geprepareerde loipes door het Pallas-Yllästunturi Nationaal Park. Routes voor alle niveaus, van rustige meerlussen tot fjäll-top-uitdagingen.",
       "highlights": [
         "300 km loipenetwerk",
         "Nationaal-park-landschap",
@@ -551,7 +551,7 @@ const d: LangData = {
     },
     "saa-gold-panning": {
       "title": "Goudwassen bij Tankavaara",
-      "description": "Was naar echt goud in het Finse goudmuseum. Leer de technieken van de Laplandse goudkoorts van 1868 en houd alles wat u vindt.",
+      "description": "Was echt goud in het Finse goudmuseum. Leer de technieken van de Laplandse goudkoorts van 1868 en houd alles wat u vindt.",
       "highlights": [
         "Houd uw goud",
         "Museum inbegrepen",
@@ -563,19 +563,19 @@ const d: LangData = {
     },
     "saa-amethyst-mine": {
       "title": "Bezoek aan de amethistmijn",
-      "description": "Graaf uw eigen amethist bij de enige actieve amethistmijn van Europa boven op de Lampivaara-fjell. In de winter gaat u met de verwarmde Amethyst Pendolino-slee de fjell op; in de zomer is het een korte panoramische wandeling vanaf het café.",
+      "description": "Graaf uw eigen amethist bij de enige actieve amethistmijn van Europa boven op de Lampivaara-fjäll. In de winter gaat u met de verwarmde Amethyst Pendolino-slee de fjäll op; in de zomer is het een korte panoramische wandeling vanaf het café.",
       "highlights": [
         "Graaf uw eigen edelsteen",
         "Houd één amethist",
-        "Locatie op fjell-top"
+        "Locatie op fjäll-top"
       ],
       "duration": "3 uur",
       "difficulty": "Makkelijk",
       "category": "Cultuur en erfgoed"
     },
     "saa-uk-national-park": {
-      "title": "Trek door Urho Kekkonen Nationaal Park",
-      "description": "Verken een van de grootste wildernisgebieden van Europa. Dagwandelingen vanuit Kiilopää of meerdaagse trekkings door ongerepte fjell-landschappen met wildernishutten langs de route.",
+      "title": "Trektocht door Urho Kekkonen Nationaal Park",
+      "description": "Verken een van de grootste wildernisgebieden van Europa. Dagwandelingen vanuit Kiilopää of meerdaagse trekkings door ongerepte fjäll-landschappen met wildernishutten langs de route.",
       "highlights": [
         "Gratis toegang",
         "Wildernishutten",
@@ -587,7 +587,7 @@ const d: LangData = {
     },
     "saa-kiilopaa-sauna": {
       "title": "Kiilopää rooksauna en ijsduik",
-      "description": "Beleef de beroemdste rooksauna van Finland bij het Kiilopää-fjell-centrum. Warm op in de traditionele savusauna en spring daarna in de ijskoude fjell-beek Kiilopuro.",
+      "description": "Beleef de beroemdste rooksauna van Finland bij het Kiilopää-fjäll-centrum. Warm op in de traditionele savusauna en spring daarna in de ijskoude fjäll-beek Kiilopuro.",
       "highlights": [
         "Beroemde rooksauna",
         "IJszwemmen",
@@ -595,14 +595,14 @@ const d: LangData = {
       ],
       "duration": "2-3 uur",
       "difficulty": "Gemiddeld",
-      "category": "Welness en sauna"
+      "category": "Wellness en sauna"
     },
     "saa-snowmobile": {
       "title": "Sneeuwscooter-safari in Saariselkä-wildernis",
-      "description": "Rijd door de wilde fjells aan de rand van het Urho Kekkonen Nationaal Park. Het landschap is hier ruiger en afgelegener dan waar dan ook in Fins Lapland.",
+      "description": "Rijd door de wilde fjälls aan de rand van het Urho Kekkonen Nationaal Park. Het landschap is hier ruiger en afgelegener dan waar dan ook in Fins Lapland.",
       "highlights": [
         "Wildernisgrens",
-        "Fjell-landschappen",
+        "Fjäll-landschappen",
         "Warme uitrusting inbegrepen"
       ],
       "duration": "3 uur",
@@ -647,7 +647,7 @@ const d: LangData = {
     },
     "ina-lake-cruise": {
       "title": "Bootcruise op het Inari-meer",
-      "description": "Vaar over het op twee na grootste meer van Finland met meer dan 3.000 eilanden. Vaar langs het heilige eiland Ukonsaari en geniet van opvallende Arctische panorama's.",
+      "description": "Vaar over het op twee na grootste meer van Finland met meer dan 3.000 eilanden. Vaar langs het heilige eiland Ukonsaari en geniet van opvallende arctische panorama's.",
       "highlights": [
         "3.000 eilanden",
         "Uitzicht op Ukonsaari",
@@ -658,10 +658,10 @@ const d: LangData = {
       "category": "Zomeravontuur"
     },
     "ina-midnight-kayak": {
-      "title": "Middernachtszon-kajakken op Inari",
-      "description": "Peddel over het Inari-meer onder de middernachtszon en verken eilanden en oevers. Gouden licht weerkaatst op kalm water en creëert een unieke sfeer.",
+      "title": "Middernachtzon-kajakken op Inari",
+      "description": "Peddel over het Inari-meer onder de middernachtzon en verken eilanden en oevers. Gouden licht weerkaatst op kalm water en creëert een unieke sfeer.",
       "highlights": [
-        "Middernachtszon",
+        "Middernachtzon",
         "Eilandverkenning",
         "Wildwaarneming"
       ],
@@ -670,10 +670,10 @@ const d: LangData = {
       "category": "Zomeravontuur"
     },
     "ina-sami-experience": {
-      "title": "Authentieke Sami-rendierhoeding",
-      "description": "Sluit u aan bij een echte Sami-rendierhouder voor een intieme culturele ervaring. Leer over de eeuwenoude veehoudtradities die in Inari nog steeds voortbestaan.",
+      "title": "Authentieke Sami-rendierhouderij",
+      "description": "Sluit u aan bij een echte Sami-rendierhouder voor een intieme culturele ervaring. Leer over de eeuwenoude rendierhouderstradities die in Inari nog steeds voortbestaan.",
       "highlights": [
-        "Echte Sami-hoeder",
+        "Echte Sami-rendierhouder",
         "Culturele onderdompeling",
         "Interactie met rendieren"
       ],
@@ -682,7 +682,7 @@ const d: LangData = {
       "category": "Dierenervaringen"
     },
     "ina-pielpajärvi": {
-      "title": "Trek naar de wilderniskerk van Pielpajärvi",
+      "title": "Tocht naar de wilderniskerk van Pielpajärvi",
       "description": "Wandel (of ski in de winter) naar een van de meest afgelegen kerken van Finland, gebouwd in 1760 in de wildernis. Een prachtige 4,5 km trail door oerbos.",
       "highlights": [
         "Historische kerk",
@@ -695,7 +695,7 @@ const d: LangData = {
     },
     "ina-aurora": {
       "title": "Noorderlichtjacht vanuit Inari",
-      "description": "Inari biedt enkele van de donkerste luchten van Finland. Uw gids gebruikt realtime aurora-gegevens om de beste uitkijkpunten rond het meer te vinden.",
+      "description": "Inari biedt enkele van de donkerste luchten van Finland. Uw gids gebruikt realtime noorderlichtgegevens om de beste uitkijkpunten rond het meer te vinden.",
       "highlights": [
         "Donkerste luchten",
         "Realtime tracking",
@@ -707,7 +707,7 @@ const d: LangData = {
     },
     "ina-berry-foraging": {
       "title": "Wilde bessen en paddenstoelen plukken",
-      "description": "Foerageer met een lokale gids naar kruipbramen, vossenbessen en paddenstoelen in het Arctische bos. Leer traditionele bewaar- en kookmethoden.",
+      "description": "Zoek met een lokale gids naar kruipbramen, vossenbessen en paddenstoelen in het arctische bos. Leer traditionele bewaar- en kookmethoden.",
       "highlights": [
         "Kruipbramen",
         "Ervaren gids",
@@ -767,7 +767,7 @@ const d: LangData = {
     },
     "ruk-snowmobile": {
       "title": "Sneeuwscooter-safari door Ruka-wildernis",
-      "description": "Rijd door enkele van de meest afgelegen wildernisgebieden van Kuusamo, net ten zuiden van Lapland. Diepe sneeuw, bevroren rivieren en de stilte van de achterhoede.",
+      "description": "Rijd door enkele van de meest afgelegen wildernisgebieden van Kuusamo, net ten zuiden van Lapland. Diepe sneeuw, bevroren rivieren en de stilte van het achterland.",
       "highlights": [
         "Afgelegen wildernis",
         "Bevroren rivieren",
@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "IJsbreker Sampo cruise",
-      "description": "Vaar door de bevroren Oostzee op een echte ijsbreker en drijf daarna in zee in een overlevingspak. Een Arctische bucketlist-ervaring.",
+      "description": "Vaar door de bevroren Oostzee op een echte ijsbreker en drijf daarna in zee in een overlevingspak. Een arctische bucketlist-ervaring.",
       "highlights": [
         "Echte ijsbreker",
         "Zeedrijven",
@@ -879,7 +879,7 @@ const d: LangData = {
       "highlights": [
         "Twee landen",
         "Twee tijdzones",
-        "Middernachtszon-golf"
+        "Middernachtzon-golf"
       ],
       "duration": "3-4 uur",
       "difficulty": "Makkelijk",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Geweldige ijsviservaring",
-      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en houting met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd. Het is de makkelijkste manier om Arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
+      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en houting met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd. Het is de makkelijkste manier om arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
       "highlights": [
         "Techniek: boor uw eigen wak",
         "Geen vergunning nodig voor basis-ijsvissen",
@@ -982,7 +982,7 @@ const d: LangData = {
     },
     "pyh-national-park": {
       "title": "Nationaal park Pyhä-Luosto en Isokuru-kloof",
-      "description": "Wandel tussen de twee dorpen door de diepste kloof van Finland: Isokuru valt zo’n 220 meter tussen de fjells, met trappen en vlonderpaden langs de Uhriharju-kam en oerbos. Gratis toegang, goed gemarkeerde paden en dagroutes vanuit zowel Pyhä als Luosto.",
+      "description": "Wandel tussen de twee dorpen door de diepste kloof van Finland: Isokuru valt zo’n 220 meter tussen de fjälls, met trappen en vlonderpaden langs de Uhriharju-kam en oerbos. Gratis toegang, goed gemarkeerde paden en dagroutes vanuit zowel Pyhä als Luosto.",
       "highlights": [
         "Isokuru, de diepste kloof van Finland",
         "Gratis toegang",
@@ -1004,7 +1004,7 @@ const d: LangData = {
     },
     "pyh-aurora-snowshoe": {
       "title": "Noorderlicht-sneeuwschoentocht in Luosto",
-      "description": "Loop op sneeuwschoenen weg van de dorpslichten het stille bos onder de fjells in en wacht bij een kampvuur met warme dranken op het noorderlicht. Luosto is zo klein dat de echte duisternis op enkele minuten van uw hoteldeur begint.",
+      "description": "Loop op sneeuwschoenen weg van de dorpslichten het stille bos onder de fjälls in en wacht bij een kampvuur met warme dranken op het noorderlicht. Luosto is zo klein dat de echte duisternis op enkele minuten van uw hoteldeur begint.",
       "highlights": [
         "Donkere lucht vlak bij het dorp",
         "Sneeuwschoenen en uitrusting inbegrepen",
@@ -1037,7 +1037,7 @@ const d: LangData = {
     },
     "kem-suomu-ski": {
       "title": "Skigebied Suomu (Suomutunturi)",
-      "description": "Een rustig fjellgebied op de poolcirkel, zo’n 40 minuten van Kemijärvi: 10 lange pistes met mooi profiel, de langste 1,7 km, plus 75 km langlaufloipes waarvan 25 km verlicht. Hier wordt sinds 1965 geskied en de liftrijen zijn beroemd kort.",
+      "description": "Een rustig fjällgebied op de poolcirkel, zo’n 40 minuten van Kemijärvi: 10 lange pistes met mooi profiel, de langste 1,7 km, plus 75 km langlaufloipes waarvan 25 km verlicht. Hier wordt sinds 1965 geskied en de liftrijen zijn beroemd kort.",
       "highlights": [
         "10 lange pistes, langste 1,7 km",
         "75 km langlaufloipes",
