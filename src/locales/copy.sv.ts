@@ -37,7 +37,7 @@ const sv: SectionCopy = {
     imageH3: '8 sätt att uppleva midnattssolen',
     highlights: [
       { title: 'Fjällvandring', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas. Långa dagar, inga folkmassor.' },
-      { title: 'Kajak & SUP', body: 'Öarna i Inarisjön och sjöar under midnattssolen, spegelblankt vatten fram till klockan 01.' },
+      { title: 'Kajak & SUP', body: 'Öarna i Enare träsk och sjöar under midnattssolen, spegelblankt vatten fram till klockan 01.' },
       { title: 'Flugfiske efter lax', body: 'Lax vandrar upp i Tornionjoki med topp i juni–juli.' },
       { title: 'Midnattssolsturer', body: 'Fotografering, svampplockning, fjällcykling. Allt i dygnet-runt-ljus.' },
     ],
@@ -248,7 +248,7 @@ const sv: SectionCopy = {
       ],
       inari: [
         { tip: 'Siida-museet kräver minst tre timmar. Läs den samiskspråkiga avdelningen.', icon: '🏛️' },
-        { tip: 'Båtturer på Inarisjön går bara juni–september.', icon: '⛵' },
+        { tip: 'Båtturer på Enare träsk går bara juni–september.', icon: '⛵' },
         { tip: 'Hjortronsäsongen toppar i slutet av juli längs Pielpajärvi-leden.', icon: '🫐' },
       ],
       ruka: [
@@ -285,7 +285,7 @@ const sv: SectionCopy = {
     eyebrow: 'Om oss',
     h1: 'En aktivitetsguide till finska Lappland',
     para1: 'LaplandActivities är aktivitetsgrenen i #LaplandVibes-ekosystemet, ett nätverk av fristående guider som täcker boende, mat, natur, transport och turer i finska Lappland.',
-    para2: 'Sajten guidar resenärer till noggrant utvalda lokala researrangörer på tio resmål, från snöskotersafarier i Saariselkä till laxfiske i Tornionjoki. Varje bokning görs via GetYourGuide, så du får omedelbar bekräftelse och fri avbokning upp till 24 timmar på de flesta turer.',
+    para2: 'Sajten guidar resenärer till noggrant utvalda lokala researrangörer på tio resmål, från snöskotersafarier i Saariselkä till laxfiske i Torne älv. Varje bokning görs via GetYourGuide, så du får omedelbar bekräftelse och fri avbokning upp till 24 timmar på de flesta turer.',
     pillars: [
       { title: 'Riktiga researrangörer', text: 'Listningarna visar etablerade lokala researrangörer, och varje bokning går via GetYourGuide.' },
       { title: 'Autentiska upplevelser', text: 'Varje aktivitet är utvald för den sortens detaljer man inte kan fejka.' },
@@ -303,12 +303,12 @@ const sv: SectionCopy = {
   },
   fishing: {
     metaTitle: 'Fiske i Lappland och Norra ishavet | LaplandActivities',
-    metaDescription: 'Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbesafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver innan du kastar ut.',
+    metaDescription: 'Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver innan du kastar ut.',
     verifyBanner: 'Reglerna ändras varje år. Kontrollera de officiella tillståndsvillkoren innan du fiskar. Varje uppgift nedan namnger och länkar till sin källa.',
     hero: {
       eyebrow: 'Finska Lappland · Nordnorge',
       title: 'Fiske i Lappland och Norra ishavet',
-      sub: 'Tre fiskevatten, en resa: gratis pilkfiske på tillfrusna sjöar, licensbelagda sommarlaxälvar och kungskrabbesafarier över den norska gränsen. Här är vad som är öppet 2026 och reglerna som håller fisken återkommande.',
+      sub: 'Tre fiskevatten, en resa: gratis pilkfiske på tillfrusna sjöar, licensbelagda sommarlaxälvar och kungskrabbsafarier över den norska gränsen. Här är vad som är öppet 2026 och reglerna som håller fisken återkommande.',
       ctaBook: 'Boka en guidad pilkfisketur',
       ctaRules: 'Tillstånd och regler →',
       trustLine: 'Kontrollerat mot officiella finska (eräluvat.fi, MMM) och norska (fiskeridir.no) källor. Reglerna ändras varje år. Kontrollera ditt vatten innan du fiskar.',
@@ -382,7 +382,7 @@ const sv: SectionCopy = {
         {
           name: 'Ivalojoki',
           badge: 'Harr och öring · Stängt på måndagar',
-          body: 'Guldvaskningsland som rinner ut i Inarisjön, och den viktigaste lekälven för den vilda Inari-insjööringen. Säsongen 2026 på sträckan Toloskoski–Appisjokisuu löper 17 juni–31 augusti, med allt fiske stängt varje måndag (00.00–23.59) från och med 15 juni. Datum enligt eräluvat.fi område 1581.',
+          body: 'Guldvaskningsland som rinner ut i Enare träsk, och den viktigaste lekälven för den vilda Inari-insjööringen. Säsongen 2026 på sträckan Toloskoski–Appisjokisuu löper 17 juni–31 augusti, med allt fiske stängt varje måndag (00.00–23.59) från och med 15 juni. Datum enligt eräluvat.fi område 1581.',
           crNote: 'Inari-stammens insjööring är fridlyst: öring med kvarsittande fettfena under 50 cm (norr om 67°N) släpps direkt tillbaka, och älven stängs för öring 1 september–30 november.',
           officialLabel: 'Tillstånd: eräluvat.fi område 1581',
         },
@@ -404,7 +404,7 @@ const sv: SectionCopy = {
     },
     lakes: {
       title: 'Sjöarna',
-      body: 'Inarisjön, Finlands tredje största med sina cirka 1 040 km², är höjdpunkten: harr, abborre och sik inom räckhåll, plus den eftertraktade fjällrödingen (minimimått 45 cm i Inari, och en sällsynt fångst). Det är ett stort, exponerat vatten, så gå med en lokal guide. Mindre vatten som Ounasjärvi och sjöarna kring Levi ger lättfångad abborre, sik och harr. Enkelt pilkfiske på alla dessa är gratis; guidade turer säljs brett. Minimimått och tillstånd enligt eräluvat.fi.',
+      body: 'Enare träsk, Finlands tredje största med sina cirka 1 040 km², är höjdpunkten: harr, abborre och sik inom räckhåll, plus den eftertraktade fjällrödingen (minimimått 45 cm i Inari, och en sällsynt fångst). Det är ett stort, exponerat vatten, så gå med en lokal guide. Mindre vatten som Ounasjärvi och sjöarna kring Levi ger lättfångad abborre, sik och harr. Enkelt pilkfiske på alla dessa är gratis; guidade turer säljs brett. Minimimått och tillstånd enligt eräluvat.fi.',
     },
     tornioBox: {
       title: 'Torneälvens lax 2026: innan du kastar',
@@ -424,7 +424,7 @@ const sv: SectionCopy = {
     },
     iceFishing: {
       title: 'Pilkfiske: den enkla vägen in',
-      body: 'Pilkfiske, ett kort spö och ett pilkbete, är det mest nybörjarvänliga fisket i Lappland: gratis, utan tillstånd, oavsett ålder, på vanliga sjöar under Finlands allemansrätt för fiske (enligt eräluvat.fi). Undantagen är laxälvarnas forsar, förbjudna områden och vissa specialplatser, samt allt utöver ett enda spö (sax, nät, långrevar) som kräver avgiften och ett tillstånd. Bästa vattnen: Inarisjön, Ounasjärvi och sjöarna kring Levi för abborre, sik och harr.',
+      body: 'Pilkfiske, ett kort spö och ett pilkbete, är det mest nybörjarvänliga fisket i Lappland: gratis, utan tillstånd, oavsett ålder, på vanliga sjöar under Finlands allemansrätt för fiske (enligt eräluvat.fi). Undantagen är laxälvarnas forsar, förbjudna områden och vissa specialplatser, samt allt utöver ett enda spö (sax, nät, långrevar) som kräver avgiften och ett tillstånd. Bästa vattnen: Enare träsk, Ounasjärvi och sjöarna kring Levi för abborre, sik och harr.',
       safetyTitle: 'Issäkerhet',
       safetyBody: 'Sjöis är opålitlig nära inlopp, utlopp, forsar och zoner där vattenmagasin regleras. Kontrollera tjockleken, håll dig borta från strömmande vatten, och ta med en lokal guide på stora öppna vatten som Inari. Det här är säkerhetsråd, inte en föreskrift, men sjöarna gör inga undantag.',
       cta: 'Boka en guidad pilkfisketur',
@@ -440,7 +440,7 @@ const sv: SectionCopy = {
         'Öring (med kvarsittande fettfena): 50 cm norr om 67°N, 60 cm mellan 64° och 67°N. Helt fridlyst i alla havsområden sedan 2019.',
         'Harr: 30 cm norr om 67°N, 35 cm söder därom; vårfredning 1 april–31 maj inåt landet söder om 67°N.',
         'Gös (kuha): 42 cm. Gädda och abborre: inget statligt minimimått.',
-        'Fjällröding: 45 cm i Inarisjön. Sik: inget statligt minimimått.',
+        'Fjällröding: 45 cm i Enare träsk. Sik: inget statligt minimimått.',
         'Det här är statliga golv från fiskeriförordningen (1360/2015); ELY-centralerna kan justera dem med ±20 %, och älvspecifika regler går före, enligt eräluvat.fi och mmm.fi.',
       ],
       alwaysCheck: 'Kontrollera alltid kalastusrajoitus.fi för ditt exakta vatten innan du fiskar. Den visar varje begränsning enligt fiskerilagen, ELY-beslut och skyddade områden.',

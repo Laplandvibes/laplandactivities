@@ -13,7 +13,7 @@ const guides: Guides = {
       seasonSummer: 'Juni till augusti byter snön mot ett ljus som egentligen aldrig tar slut. Hundgårdarna håller öppet för sommarbesök och valpmöten, Arktikum och SantaPark går året runt, och stranden längs Kemijoki blir stadens mittpunkt. September och oktober ger ruskafärger på Ounasvaara och säsongens första norrsken, med betydligt färre människor på lederna.',
       planTitle: 'Planera en resa till Rovaniemi',
       planGetting: 'Rovaniemi har Lapplands bästa förbindelser: direktflyget från Helsingfors tar drygt en timme och tjugo minuter, och nattåget kommer på morgonen. De flesta hund-, ren- och norrskensarrangörer ligger inom tjugo minuters bilväg, och turerna inkluderar oftast hämtning vid hotellet, så bil är valfritt här.',
-      planStay: 'Två eller tre nätter räcker för Tomtens by, en stor safari och en norrskenskväll utan stress. Boka vinterns hund- och skoterturer i god tid för december och toppen i februari och mars. Att korsa polcirkeln kostar ingenting, men diplomet är en souvenir för några euro som säljs på turistinformationen vid polcirkeln, i polcirkeltornet eller i Julhusets butik, inte på postkontoret. Ounasvaara ligger nära nog för en kvällsåkning.',
+      planStay: 'Två eller tre nätter räcker för Jultomtens by, en stor safari och en norrskenskväll utan stress. Boka vinterns hund- och skoterturer i god tid för december och toppen i februari och mars. Att korsa polcirkeln kostar ingenting, men diplomet är en souvenir för några euro som säljs på turistinformationen vid polcirkeln, i polcirkeltornet eller i Julhusets butik, inte på postkontoret. Ounasvaara ligger nära nog för en kvällsåkning.',
     },
     levi: {
       seasonsTitle: 'Levi säsong för säsong',
@@ -34,14 +34,14 @@ const guides: Guides = {
     saariselka: {
       seasonsTitle: 'Saariselkä säsong för säsong',
       seasonWinter: 'Det här är Finlands nordligaste skidort, och latituden märks: chansen till norrsken sträcker sig från september till april, och midvinterdagarna är korta och blå. Skotersafarierna går rakt ut i vildmarken, och rökbastun på Kiilopää följd av en vak är en lokal vana här, inte ett turisttillägg.',
-      seasonSummer: 'Urho Kekkonens nationalpark börjar i byns utkant, och dess markerade leder och öppna ödestugor är gratis att använda. Sommar betyder långa vandringar under en sol som inte går ner, guldvaskning i Tankavaara där varje korn du hittar är ditt, och kungskrabbssafarier över gränsen till Kirkenes.',
+      seasonSummer: 'Urho Kekkonens nationalpark börjar i byns utkant, och dess markerade leder och öppna ödestugor är gratis att använda. Sommar betyder långa vandringar under en sol som inte går ner, guldvaskning i Tankavaara där varje korn du hittar är ditt, och kungskrabbsafarier över gränsen till Kirkenes.',
       planTitle: 'Planera en resa till Saariselkä',
       planGetting: 'Flyg till Ivalo och kör ungefär en halvtimme. Saariselkä går att gå runt i, men parkens ledstarter, Tankavaara och Kiilopää ligger utspridda: hyr bil eller välj turer med transfer. Enare ligger nära nog för en dagstur.',
       planStay: 'Kom hit om du vill ha vildmarken först och servicen sedan. Tre nätter ger utrymme för en lång vandring eller safari, en norrskenskväll och rökbastun. Dagsturerna till Norge är långa, så räkna en hel dag för kungskrabbssafarin. Ödestugorna fungerar i ankomstordning och går inte att boka.',
     },
     inari: {
       seasonsTitle: 'Enare säsong för säsong',
-      seasonWinter: 'Vintern är tyst och mörk här, vilket passar både norrskenet och skälet till att de flesta kommer: den samiska kulturen. Siida, samiskt museum och naturum, fyller en hel dag inomhus, och besöken hos renskötare visar riktigt arbete i stället för en uppspelad show. Sjön fryser till och vildmarken runt byn tömms.',
+      seasonWinter: 'Vintern är tyst och mörk här, vilket passar både norrskenet och skälet till att de flesta kommer: den samiska kulturen. Siida, samiskt museum och naturum, fyller en hel dag inomhus, och besöken hos renskötare visar riktigt arbete i stället för en uppspelad show. Sjön fryser till och vildmarken runt byn töms.',
       seasonSummer: 'Från juni öppnar sjön igen: båtturerna går förbi Ukonsaari, den heliga ön, och paddling under midnattssol drar ut en vanlig kväll till en hel natt. Ödemarkskyrkan i Pielpajärvi når du till fots genom gammal tallskog, och i slutet av juli mognar hjortronen på myrarna längs leden.',
       planTitle: 'Planera en resa till Enare',
       planGetting: 'Ivalo flygplats ligger ungefär fyrtio minuters bilväg bort. Byn i sig är liten och går att gå runt i, men allt annat är utspritt längs sjön och huvudvägen norrut, så bil hjälper. Många kombinerar Enare med Saariselkä i stället för att göra det till sin enda bas.',
@@ -120,7 +120,7 @@ const guides: Guides = {
       whenToGo: 'Lagrad snö låter Ruka öppna i oktober och åka in i maj, landets längsta säsong. De flesta orter går från november eller december till april. Midvintern har stämningen men mycket korta dagar; mars och april kombinerar fullt snötäcke med riktigt dagsljus, och då är spårnätet som bäst.',
       chooseTitle: 'Att välja skidort',
       choosing: 'Levi är störst, har kortast flygplatstransfer och mest afterski. Ylläs har de längsta nedfarterna och det största spårnätet med betydligt mindre liv och rörelse. Ruka har längst säsong och boende vid backen. Pyhä passar både familjer och puckelåkare, Ounasvaara en kväll efter en dag i Rovaniemi, och Suomu är det tysta alternativet.',
-      bring: 'Uthyrning finns på varje ort och ordnas lättare på plats än turerna. Ta med goggles och ansiktsskydd: vinden på kalfjäll gör mer skada än termometern antyder. Längdåkare bör kolla spårrapporten innan de väljer sida av fjället, eftersom preparingen skiljer sig mellan byarna.',
+      bring: 'Uthyrning finns på varje ort och ordnas lättare på plats än turerna. Ta med goggles och ansiktsskydd: vinden på kalfjäll gör mer skada än termometern antyder. Längdåkare bör kolla spårrapporten innan de väljer sida av fjället, eftersom prepareringen skiljer sig mellan byarna.',
     },
     wellness: {
       coversTitle: 'Bastu och arktiskt välbefinnande',
@@ -132,10 +132,10 @@ const guides: Guides = {
     },
     culture: {
       coversTitle: 'Samiskt arv, tomten och den arktiska berättelsen',
-      covers: 'Två trådar löper genom den här kategorin. Den ena är samisk kultur, som du möter bäst på Siida i Enare, samiskt museum och naturum i sätet för Finlands sameting, och på Samiland i Levi. Den andra är den arktiska berättelse regionen berättar om sig själv: Tomtens by och SantaPark i Rovaniemi, Arktikum vid älven, och de isbyggda platserna.',
+      covers: 'Två trådar löper genom den här kategorin. Den ena är samisk kultur, som du möter bäst på Siida i Enare, samiskt museum och naturum i sätet för Finlands sameting, och på Samiland i Levi. Den andra är den arktiska berättelse regionen berättar om sig själv: Jultomtens by och SantaPark i Rovaniemi, Arktikum vid älven, och de isbyggda platserna.',
       whenToGo: 'Museerna är öppna året runt och tar bäst hand om en dag med dåligt väder eller en kort vintereftermiddag. Ishotell och snöbyar finns bara när det är kallt, ungefär december till april. Guldvaskningen i Tankavaara och ametistgruvan på Lampivaara går båda säsongerna, med ett uppvärmt snötåg till gruvan på vintern.',
       chooseTitle: 'Att välja kulturbesök',
-      choosing: 'Vill du ha levande kultur snarare än en föreställning, börja med Siida och ett besök hos renskötare i arbete i Enare, inte med en show. Reser du med barn är Tomtens by och SantaPark byggda just för dem. Arktikum har landets starkaste norrskensutställning och bär en halvdag inomhus.',
+      choosing: 'Vill du ha levande kultur snarare än en föreställning, börja med Siida och ett besök hos renskötare i arbete i Enare, inte med en show. Reser du med barn är Jultomtens by och SantaPark byggda just för dem. Arktikum har landets starkaste norrskensutställning och bär en halvdag inomhus.',
       bring: 'Museer kräver bara tid, och Siida förtjänar minst tre timmar. På ishotell och i snöbyar är det minusgrader även inomhus, så behåll ytterlagren under besöket. I Tankavaara är allt du vaskar ditt, och på Lampivaara får du gräva och behålla en ametist.',
     },
     summer: {
@@ -148,15 +148,15 @@ const guides: Guides = {
     },
     food: {
       coversTitle: 'Att äta i norr',
-      covers: 'Maten här hänger ihop med eld och årstid. En kota eller kammi är en kupolformad koja med öppen eldstad i mitten, och maten lagas framför dig: ren, fisk, tunnbröd, hjortron. Utanför bordet finns plockning av vilda bär och svamp, och vid Kukkolaforsen fångas siken fortfarande med traditionell håv.',
+      covers: 'Maten här hänger ihop med eld och årstid. En kåta eller kammi är en kupolformad koja med öppen eldstad i mitten, och maten lagas framför dig: ren, fisk, tunnbröd, hjortron. Utanför bordet finns plockning av vilda bär och svamp, och vid Kukkolaforsen fångas siken fortfarande med traditionell håv.',
       whenToGo: 'Lägereldsmiddagar går året runt och kommer bäst till sin rätt under årets mörka halva, när elden är rummets enda ljus. Plockning hör till sensommaren och hösten: bär från juli, svamp från augusti. Siksäsongen vid Kukkolaforsen tillhör sommaren och följer vandringen i älven.',
       chooseTitle: 'Att välja matupplevelse',
-      choosing: 'En kotamiddag är oftast en fast meny med en guide som berättar vad du äter och varifrån det kommer, så den fungerar som en kväll snarare än som en måltid. Plockturer leds av någon som kan säga vad som är säkert, och det är hela poängen. Båda passar blandade sällskap och kräver ingen kondition.',
-      bring: 'Uppge allergier och specialkost vid bokningen, för det här är fasta menyer lagade över eld och ingen à la carte. Klä dig för att sitta stilla utomhus: i en kota är det varmt vid elden och kallt mot väggen. Allemansrätten låter dig plocka vilda bär och svamp överallt där du lagligen får vistas.',
+      choosing: 'En kåtamiddag är oftast en fast meny med en guide som berättar vad du äter och varifrån det kommer, så den fungerar som en kväll snarare än som en måltid. Plockturer leds av någon som kan säga vad som är säkert, och det är hela poängen. Båda passar blandade sällskap och kräver ingen kondition.',
+      bring: 'Uppge allergier och specialkost vid bokningen, för det här är fasta menyer lagade över eld och ingen à la carte. Klä dig för att sitta stilla utomhus: i en kåta är det varmt vid elden och kallt mot väggen. Allemansrätten låter dig plocka vilda bär och svamp överallt där du lagligen får vistas.',
     },
     fishing: {
       coversTitle: 'Fiske i tre sorters vatten',
-      covers: 'I det här hörnet av Arktis möts tre olika fisken: pimpelfiske på frusna sjöar, licenspliktiga sommarlaxälvar som Torne älv, och kungskrabbssafarier över den norska gränsen från Kirkenes. De har olika säsonger, olika regler och olika tillstånd, och sajten håller en egen fiskesida med gällande regler och officiella tillståndslänkar.',
+      covers: 'I det här hörnet av Arktis möts tre olika fisken: pimpelfiske på frusna sjöar, licenspliktiga sommarlaxälvar som Torne älv, och kungskrabbsafarier över den norska gränsen från Kirkenes. De har olika säsonger, olika regler och olika tillstånd, och sajten håller en egen fiskesida med gällande regler och officiella tillståndslänkar.',
       whenToGo: 'Pimpelfisket går under de frusna månaderna, ungefär december till april, och är lättast att ordna med kort varsel. Laxsäsongen är en sommarsäsong och hårt reglerad, med datum som sätts år för år. Kungskrabbssafarier går båda säsongerna: med skoter eller buss över isen på vintern, med RIB-båt på sommaren.',
       chooseTitle: 'Att välja fisketur',
       choosing: 'Guidat pimpelfiske är det bekväma alternativet: guiden borrar hålen, tar med utrustningen och bjuder oftast på mat vid elden. Laxfiske i Torne älv är ett allvarligt företag och kräver rätt tillstånd före första kastet. Kungskrabbsturerna är lika mycket båt- eller skoterutflykt som fiske, och slutar med fångsten på tallriken.',

@@ -22,7 +22,7 @@ const d: LangData = {
     },
     "wellness": {
       "name": "Wellness och bastu",
-      "description": "Traditionella rökbastur, isbad, arktisk flottning, spabehandlingar och den ultimata nordiska wellnessupplevelsen."
+      "description": "Traditionella rökbastur, isbad, arktisk isflytning, spabehandlingar och den ultimata nordiska wellnessupplevelsen."
     },
     "culture": {
       "name": "Kultur och arv",
@@ -34,7 +34,7 @@ const d: LangData = {
     },
     "food": {
       "name": "Mat och dryck",
-      "description": "Kotarestauranger, insamling av vildmat, bärplockning, renmiddagar under stjärnorna och lokala bryggeriturer."
+      "description": "Kåtarestauranger, insamling av vildmat, bärplockning, renmiddagar under stjärnorna och lokala bryggeriturer."
     },
     "fishing": {
       "name": "Fiske och pilkfiske",
@@ -53,10 +53,10 @@ const d: LangData = {
     "levi": {
       "name": "Levi",
       "tagline": "Finlands största skidort",
-      "description": "En förstklassig skiddestination med 44 pister och 230 km längdskidspår. Livlig efter-ski-stämning på Hullu Poro och utomhusaktiviteter året runt.",
+      "description": "En förstklassig skiddestination med 44 pister och 230 km längdskidspår. Livlig afterski-stämning på Hullu Poro och utomhusaktiviteter året runt.",
       "access": "Flyg till Kittilä (15 minuters bilfärd)",
       "bestFor": "Skidåkare och aktiva resenärer",
-      "why": "Levi packar Finlands största skidort, 44 pister och 26 liftar varav två gondoler, i en enda promenadvänlig by vid foten av Levitunturi. Alpina världscupen öppnar sin slalomsäsong här varje november, och när liftarna stänger drar folkmassan vidare till Hullu Poros efter-ski. Passar skidåkare och sällskap som vill ha restauranger och nattliv på gångavstånd från backen; på sommaren betjänar gondolen Levi Bike Park."
+      "why": "Levi packar Finlands största skidort, 44 pister och 26 liftar varav två gondoler, i en enda promenadvänlig by vid foten av Levitunturi. Alpina världscupen öppnar sin slalomsäsong här varje november, och när liftarna stänger drar folkmassan vidare till Hullu Poros afterski. Passar skidåkare och sällskap som vill ha restauranger och nattliv på gångavstånd från backen; på sommaren betjänar gondolen Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
@@ -77,7 +77,7 @@ const d: LangData = {
     "inari": {
       "name": "Inari",
       "tagline": "Hjärtat av den samiska kulturen",
-      "description": "Vid stränderna av Inarisjön med över 3 000 öar ligger den finska samekulturens huvudstad. Här finns Siida-museet och orörd vildmark.",
+      "description": "Vid stränderna av Enare träsk med över 3 000 öar ligger den finska samekulturens huvudstad. Här finns Siida-museet och orörd vildmark.",
       "access": "Flyg till Ivalo (40 minuters bilfärd)",
       "bestFor": "Kulturintresserade och fotografer",
       "why": "Inari är säte för Finlands sameting och den bästa platsen att möta levande samisk kultur: börja på Siida-museet och ta på sommaren en båttur på Enare träsk förbi den heliga ön Ukonsaari. Byn är liten och vildmarken runtomkring enorm; till Pielpajärvi ödemarkskyrka vandrar man genom gammal tallskog. Inari belönar den som kommer för kultur, fotografering och tystnad."
@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Här finns den legendariska björnstigen Karhunkierros, Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen. Ruka ligger i Kuusamo, strax söder om Lapplands gräns, med samma snö och samma nordliga vinter.",
       "access": "Flyg till Kuusamo (25 minuters bilfärd)",
       "bestFor": "Vandrare, skidåkare och naturintresserade",
-      "why": "Ruka är en kompakt backby med 41 pister och 22 liftar mitt i Kuusamos friluftsland: Oulanka nationalpark, den 82 km långa Karhunkierros-leden och forsar med fors-rafting från vår till höst. Tack vare sparad snö öppnar orten i oktober och åker ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
+      "why": "Ruka är en kompakt backby med 41 pister och 22 liftar mitt i Kuusamos friluftsland: Oulanka nationalpark, den 82 km långa Karhunkierros-leden och forsar med forsränning från vår till höst. Tack vare sparad snö öppnar orten i oktober och åker ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
     },
     "posio": {
       "name": "Posio",
@@ -646,7 +646,7 @@ const d: LangData = {
       "category": "Kultur och arv"
     },
     "ina-lake-cruise": {
-      "title": "Båtkryssning på Inarisjön",
+      "title": "Båtkryssning på Enare träsk",
       "description": "Kryssa över Finlands tredje största sjö med över 3 000 öar. Passera den heliga ön Ukonsaari och njut av slående arktiska panoramavyer.",
       "highlights": [
         "3 000 öar",
@@ -658,8 +658,8 @@ const d: LangData = {
       "category": "Sommaräventyr"
     },
     "ina-midnight-kayak": {
-      "title": "Kajakpaddling under midnattssolen på Inarisjön",
-      "description": "Paddla över Inarisjön under midnattssolen och utforska öar och strandlinjer. Det gyllene ljuset som speglas i det stilla vattnet skapar en säregen stämning.",
+      "title": "Kajakpaddling under midnattssolen på Enare träsk",
+      "description": "Paddla över Enare träsk under midnattssolen och utforska öar och strandlinjer. Det gyllene ljuset som speglas i det stilla vattnet skapar en säregen stämning.",
       "highlights": [
         "Midnattssol",
         "Utforskning av öar",
