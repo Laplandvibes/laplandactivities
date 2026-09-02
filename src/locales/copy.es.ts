@@ -319,7 +319,7 @@ const es: SectionCopy = {
     subscribeBtn: 'Suscribirse',
     subscribingBtn: 'Uniéndose…',
     successTitle: 'Ya casi.',
-    successBody: 'Confirma tu suscripción desde el correo que acabamos de enviarte.',
+    successBody: 'Confirme su suscripción desde el correo que acabamos de enviarle.',
     alreadyTitle: '¡Ya está en la lista!',
     alreadyBody: 'Parece que ya está suscrito: nos leemos pronto.',
     footnote: 'Baja en cualquier momento.',
@@ -327,7 +327,7 @@ const es: SectionCopy = {
   },
   activityCard: {
     findBook: 'Ver y reservar',
-    planVisit: 'Planifica tu visita',
+    planVisit: 'Planifique su visita',
   },
   home: {
     metaTitle: 'LaplandActivities: Tours árticos en Laponia',
@@ -359,11 +359,11 @@ const es: SectionCopy = {
   },
   relatedSites: {
     kicker: 'Más de #LaplandVibes',
-    h2: 'Planifica el resto de tu viaje ártico',
+    h2: 'Planifique el resto de su viaje ártico',
     lead: 'Las actividades son solo la mitad del viaje. Estas guías hermanas de nuestra red de Laponia profundizan en el resto.',
     links: [
       { pre: '¿Trineo de perros? Nuestra', anchor: 'guía dedicada de safaris en husky', post: 'compara perreras, distancias y precios.' },
-      { pre: 'Si prefieres tu propio acelerador, mira las mejores', anchor: 'rutas y precios de safaris en moto de nieve', post: 'por toda Laponia.' },
+      { pre: 'Si prefiere su propio acelerador, mire las mejores', anchor: 'rutas y precios de safaris en moto de nieve', post: 'por toda Laponia.' },
       { pre: '¿Buscas nieve fresca? Descubre', anchor: 'dónde esquiar en Laponia', post: 'con comparativas estación por estación.' },
       { pre: 'Para el lado tranquilo del Ártico, lee sobre', anchor: 'auroras boreales y parques nacionales', post: 'y los mejores cielos para la aurora.' },
       { pre: 'Y antes de reservar los tours, decide', anchor: 'dónde alojarte en Laponia', post: ': iglús, cabañas y resorts de montaña.' },
@@ -392,7 +392,7 @@ const es: SectionCopy = {
       },
       {
         q: '¿Hay que reservar las actividades de Laponia con antelación?',
-        a: 'En las semanas de mayor demanda, como Navidad y Año Nuevo y el pico de auroras y esquí de febrero a marzo, conviene reservar con tiempo, ya que los tours populares de huskies y motos de nieve se llenan. En periodos más tranquilos hay más flexibilidad, pero los operadores mejor valorados y las salidas en grupo pequeño se agotan primero igualmente. Reservar con antelación también te permite dar margen al cielo despejado en los planes de auroras en lugar de competir por las últimas plazas.',
+        a: 'En las semanas de mayor demanda, como Navidad y Año Nuevo y el pico de auroras y esquí de febrero a marzo, conviene reservar con tiempo, ya que los tours populares de huskies y motos de nieve se llenan. En periodos más tranquilos hay más flexibilidad, pero los operadores mejor valorados y las salidas en grupo pequeño se agotan primero igualmente. Reservar con antelación también le permite dar margen al cielo despejado en los planes de auroras en lugar de competir por las últimas plazas.',
       },
     ],
   },
@@ -548,11 +548,11 @@ const es: SectionCopy = {
     intro: {
       para1: "En los bosques fronterizos al este de Kuusamo, donde el bosque boreal se extiende sin cortes hacia la frontera, los osos pardos salen del límite del arbolado en el largo crepúsculo del norte. Bear Kuusamo lleva más de veinte años guiando a viajeros hacia esa quietud. Es la operación de observación de osos más antigua de la región de Ruka–Kuusamo y la más septentrional del país.",
       para2Pre: "Esto es auténtica ",
-      para2Post: ", no un zoológico ni un espectáculo. Los escondites se encuentran en una franja protegida de bosque que linda con el Parque Nacional de Paanajärvi, justo al otro lado de la frontera rusa. El fundador Pekka Veteläinen y sus guías trabajan con Metsähallitus y con investigadores, y esconden la comida en lugares cambiantes para que los osos busquen y se alimenten como lo harían de forma natural. Los osos siguen siendo salvajes y no se habitúan; tú solo consigues un asiento tranquilo y bien situado para observarlos.",
+      para2Post: ", no un zoológico ni un espectáculo. Los escondites se encuentran en una franja protegida de bosque que linda con el Parque Nacional de Paanajärvi, justo al otro lado de la frontera rusa. El fundador Pekka Veteläinen y sus guías trabajan con Metsähallitus y con investigadores, y esconden la comida en lugares cambiantes para que los osos busquen y se alimenten como lo harían de forma natural. Los osos siguen siendo salvajes y no se habitúan; usted solo consigue un asiento tranquilo y bien situado para observarlos.",
     },
     hide: {
       title: "Una noche en un escondite",
-      body: "Siete escondites de madera se alzan al borde del bosque, construidos para mantener dentro el sonido y el olor humanos. Los ventanales panorámicos ofrecen a quienes observan una vista despejada del claro, y los fotógrafos disponen de aberturas de cámara propias con sacos de apoyo y rótulas de vídeo, así que nadie dispara a través del cristal. El escondite principal es accesible para sillas de ruedas, y los baños están en sus propias salas separadas. Desde las ventanas puedes ver osos pardos y, en primavera, un glotón que pasa cerca, pigargos europeos sobre tu cabeza y los cuervos cuyos graznidos avisan a los guías de que un oso está cerca.",
+      body: "Siete escondites de madera se alzan al borde del bosque, construidos para mantener dentro el sonido y el olor humanos. Los ventanales panorámicos ofrecen a quienes observan una vista despejada del claro, y los fotógrafos disponen de aberturas de cámara propias con sacos de apoyo y rótulas de vídeo, así que nadie dispara a través del cristal. El escondite principal es accesible para sillas de ruedas, y los baños están en sus propias salas separadas. Desde las ventanas puede ver osos pardos y, en primavera, un glotón que pasa cerca, pigargos europeos sobre su cabeza y los cuervos cuyos graznidos avisan a los guías de que un oso está cerca.",
     },
     treeCaption: "Un joven oso pardo trepa a un pino cerca de los escondites.",
     treeCredit: "Foto: Piritta Paija / Bear Kuusamo",
@@ -562,15 +562,15 @@ const es: SectionCopy = {
       eveningBody: "Una caminata guiada hasta el escondite y las horas mejor iluminadas de la tarde nórdica.",
       overnightLabel: "Tour de noche",
       overnightBody: "La tarde prolongada hasta la mañana y, a menudo, el espectáculo más rico. Las horas nocturnas suelen sacar muchos más osos, desde grandes machos hasta, incluso en pleno verano, una madre con sus crías, y en las noches de verano los osos se van a nadar.",
-      season: "La guía y el seguro están incluidos, y la temporada va del 1 de mayo al 30 de septiembre. La primavera trae madres con crías, y en pleno verano el sol no se pone aquí en absoluto, así que puedes observar y fotografiar osos durante toda la noche luminosa. Si el bosque permanece vacío, la Garantía Original del Oso te trae de vuelta otra tarde sin coste.",
+      season: "La guía y el seguro están incluidos, y la temporada va del 1 de mayo al 30 de septiembre. La primavera trae madres con crías, y en pleno verano el sol no se pone aquí en absoluto, así que puede observar y fotografiar osos durante toda la noche luminosa. Si el bosque permanece vacío, la Garantía Original del Oso le trae de vuelta otra tarde sin coste.",
       bookingPre: "Los precios actuales, las fechas y la disponibilidad están en ",
       bookingLink: "la propia página de reservas de Bear Kuusamo",
       bookingPost: ".",
     },
     where: {
       title: "Dónde está",
-      pre: "Kuusamo se encuentra en el noreste de Finlandia, justo pegado a la frontera de Laponia, entre las colinas y los bosques primarios que rodean el Parque Nacional de Oulanka. Es la base natural cuando planeas tu propio ",
-      post: ": vuela a Kuusamo o cruza en coche desde Ruka y estarás en los escondites en menos de una hora.",
+      pre: "Kuusamo se encuentra en el noreste de Finlandia, justo pegado a la frontera de Laponia, entre las colinas y los bosques primarios que rodean el Parque Nacional de Oulanka. Es la base natural cuando planea su propio ",
+      post: ": vuele a Kuusamo o cruce en coche desde Ruka y estará en los escondites en menos de una hora.",
     },
     cta: "Reserva directamente con Bear Kuusamo",
     imageAlts: {
@@ -596,7 +596,7 @@ const es: SectionCopy = {
   },
   cookie: {
     metaTitle: 'Política de cookies · LaplandActivities',
-    metaDescription: 'Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar tu consentimiento. Declaración de cookies de LaPeso Oy conforme al RGPD y la ePrivacy.',
+    metaDescription: 'Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar su consentimiento. Declaración de cookies de LaPeso Oy conforme al RGPD y la ePrivacy.',
   },
   notFound: {
     metaTitle: '404 · LaplandActivities',

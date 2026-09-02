@@ -102,9 +102,9 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageKicker: 'Temporada de invierno',
     imageH3: 'El Ártico en su momento más mágico',
     highlights: [
-      { title: 'Trineo de huskies', body: 'Conduce tu propio tiro por el bosque nevado y silencioso.' },
+      { title: 'Trineo de huskies', body: 'Conduzca su propio tiro por el bosque nevado y silencioso.' },
       { title: 'Safaris en moto de nieve', body: 'Lagos helados y senderos de fjell, de suave a excursión de día.' },
-      { title: 'Caza de auroras', body: 'Tours de cielo oscuro con guías que leen el pronóstico por ti.' },
+      { title: 'Caza de auroras', body: 'Tours de cielo oscuro con guías que leen el pronóstico por usted.' },
       { title: 'Pesca en hielo y sauna', body: 'Perfora el hielo y luego entra en calor en una sauna de humo real.' },
     ],
     gygTitle: 'Los tours de invierno vuelan',
