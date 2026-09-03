@@ -8,10 +8,10 @@ const es: SectionCopy = {
     hero: {
       eyebrow: 'Laponia finlandesa · Noruega ártica',
       title: 'Pesca en Laponia y el océano Ártico',
-      sub: 'Tres pesquerías, un solo viaje: pesca en hielo gratuita en lagos helados, ríos de salmón con licencia en verano y safaris de cangrejo real al otro lado de la frontera noruega. Esto es lo que está abierto en 2026, y las normas que hacen que el pescado siga volviendo.',
+      sub: 'Tres modalidades de pesca, un solo viaje: pesca en hielo gratuita en lagos helados, ríos de salmón con licencia en verano y safaris de cangrejo real al otro lado de la frontera noruega. Estas son las temporadas abiertas en 2026, y las normas que hacen que los peces sigan volviendo.',
       ctaBook: 'Reserve una salida guiada de pesca en hielo',
       ctaRules: 'Licencias y normas →',
-      trustLine: 'Contrastado con fuentes oficiales finlandesas (eräluvat.fi, MMM) y noruegas (fiskeridir.no). Las normas cambian cada año: verifique su agua antes de pescar.',
+      trustLine: 'Verificado con fuentes oficiales finlandesas (eräluvat.fi, MMM) y noruegas (fiskeridir.no). Las normas cambian cada año: consulte la normativa de cada lago o río antes de pescar.',
     },
     eyebrows: {
       eco: 'El pez primero',
@@ -247,7 +247,7 @@ const es: SectionCopy = {
   },
   hero: {
     eyebrow: 'Laponia finlandesa · de la aurora al sol de medianoche',
-    lead: 'Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y rafting bajo el sol de medianoche. Reserve directamente con operadores seleccionados a mano en Rovaniemi, Levi, Ylläs, Saariselkä y más.',
+    lead: 'Safaris en motonieve, trineo de huskies, caza de auroras, saunas de humo y rafting bajo el sol de medianoche. Reserve directamente con operadores cuidadosamente seleccionados en Rovaniemi, Levi, Ylläs, Saariselkä y más.',
     primaryCta: 'Reservar actividades ahora',
     secondaryCta: 'Explorar destinos',
     stayNearby: 'Alójese cerca',
@@ -331,11 +331,11 @@ const es: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: Tours árticos en Laponia',
-    metaDescription: 'Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades seleccionadas a mano en 10 destinos de Laponia y alrededores mediante GetYourGuide.',
-    ogTitle: 'LaplandActivities: Experiencias árticas seleccionadas a mano',
+    metaDescription: 'Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades cuidadosamente seleccionadas en 10 destinos de Laponia y alrededores mediante GetYourGuide.',
+    ogTitle: 'LaplandActivities: Experiencias árticas cuidadosamente seleccionadas',
     categoriesKicker: 'Qué hacer',
     categoriesH2: 'Elija su aventura',
-    categoriesLead: 'Nueve formas de vivir el Ártico: elija una categoría y le enviamos a los operadores seleccionados.',
+    categoriesLead: 'Nueve formas de vivir el Ártico: elija una categoría y lo llevamos directamente a los operadores seleccionados.',
     activitiesLabel: 'actividades',
     viewAllCategories: 'Ver todas las categorías',
     gygTitle: 'Tours de Laponia mejor valorados esta semana',
@@ -348,9 +348,9 @@ const es: SectionCopy = {
     seasonsLead: 'Cada estación convierte Laponia en un país distinto.',
     seasons: [
       { name: 'Invierno', months: 'Nov – Mar', blurb: 'Nieve profunda, noche polar, pico de auroras. Motonieves, huskies, saunas de humo.', temp: '-15 a -5°C' },
-      { name: 'Primavera', months: 'Abr – May', blurb: 'Nieve y luz. Esquí de fin de temporada, partos de renos, auroras hasta mediados de abril.', temp: '-5 a +5°C' },
-      { name: 'Verano', months: 'Jun – Ago', blurb: 'El sol de medianoche no se pone. Senderismo, kayak, pesca de salmón, MTB.', temp: '+10 a +25°C' },
-      { name: 'Otoño', months: 'Sep – Oct', blurb: 'El ruska tiñe los fjells. Vuelven las primeras auroras. Temporada de setas y bayas.', temp: '+5 a -5°C' },
+      { name: 'Primavera', months: 'Abr – May', blurb: 'Nieve y luz. Esquí de fin de temporada, nacimiento de crías de reno, auroras hasta mediados de abril.', temp: '-5 a +5°C' },
+      { name: 'Verano', months: 'Jun – Ago', blurb: 'El sol de medianoche no se pone. Senderismo, kayak, pesca de salmón, bicicleta de montaña.', temp: '+10 a +25°C' },
+      { name: 'Otoño', months: 'Sep – Oct', blurb: 'El ruska tiñe las montañas. Vuelven las primeras auroras. Temporada de setas y bayas.', temp: '+5 a -5°C' },
     ],
     destinationsKicker: 'Dónde ir',
     destinationsH2: 'Destinos',
@@ -376,23 +376,23 @@ const es: SectionCopy = {
     items: [
       {
         q: '¿Qué actividades se pueden hacer en Laponia?',
-        a: 'En invierno, los clásicos son los trineos de huskies y renos, los safaris en moto de nieve, la caza de auroras, las raquetas de nieve, el esquí de fondo y alpino, la pesca en hielo y el ice floating. En verano, la misma naturaleza se convierte en senderismo, kayak y canoa, rafting, bicicleta de montaña, pesca de salmón y búsqueda de oro. Todo el año, la sauna de humo y las experiencias de cultura sami muestran un lado más tranquilo del Ártico.',
+        a: 'En invierno, los clásicos son los trineos de huskies y renos, los safaris en motonieve, la caza de auroras, las raquetas de nieve, el esquí de fondo y alpino, la pesca en hielo y la flotación en aguas heladas. En verano, la misma naturaleza se convierte en senderismo, kayak y canoa, rafting, bicicleta de montaña, pesca de salmón y búsqueda de oro. Todo el año, la sauna de humo y las experiencias de cultura sami muestran un lado más tranquilo del Ártico.',
       },
       {
         q: '¿Cuáles son las mejores actividades de invierno y de verano?',
-        a: 'El invierno (de noviembre a marzo) es la temporada de nieve y oscuridad: las motos de nieve, los trineos de perros y los tours de auroras lo necesitan. El verano (de junio a agosto) cambia la nieve por el sol de medianoche, cuando la luz nunca desaparece del todo y el senderismo, el remo y la pesca son posibles casi a cualquier hora. La primavera aún tiene nieve con mucha más luz, y el otoño trae los colores de la ruska y las primeras auroras; ambas son temporadas intermedias más tranquilas.',
+        a: 'El invierno (de noviembre a marzo) es la temporada de nieve y oscuridad: las motonieves, los trineos de huskies y los tours de auroras las necesitan. El verano (de junio a agosto) cambia la nieve por el sol de medianoche, cuando la luz nunca desaparece del todo y el senderismo, el remo y la pesca son posibles casi a cualquier hora. La primavera aún tiene nieve con mucha más luz, y el otoño trae los colores del ruska y las primeras auroras; ambas son temporadas intermedias más tranquilas.',
       },
       {
         q: '¿Cuánto cuestan las actividades en Laponia?',
-        a: 'Varía mucho según la actividad, la duración y el tamaño del grupo. Una sesión corta y compartida, como un paseo en reno o un tour de auroras en autobús, está en la gama baja; las salidas de varias horas o privadas, como un safari largo con huskies o una expedición guiada en moto de nieve, cuestan más, en parte porque incluyen monos térmicos, botas, equipo de seguridad y un guía. Para precios actuales y exactos, abre cualquier tour a través de nuestro socio de reservas: el precio en vivo se muestra antes de confirmar.',
+        a: 'Varía mucho según la actividad, la duración y el tamaño del grupo. Una sesión corta y compartida, como un paseo en reno o un tour de auroras en autobús, está entre las opciones más económicas; las salidas de varias horas o privadas, como un safari largo con huskies o una expedición guiada en motonieve, cuestan más, en parte porque incluyen trajes térmicos, botas, equipo de seguridad y un guía. Para precios actuales y exactos, abra cualquier tour a través de nuestro socio de reservas: el precio en vivo se muestra antes de confirmar.',
       },
       {
         q: '¿Las actividades de Laponia son adecuadas para niños pequeños?',
-        a: 'Muchas lo son, con la elección correcta. Los paseos en trineo de renos, las visitas a granjas de huskies, los paseos suaves con raquetas, el trineo y el encuentro con Papá Noel funcionan bien para los más pequeños. La moto de nieve suele tener una edad mínima para conducir (los niños viajan en un trineo o remolque), y las cazas de auroras nocturnas pueden ser largas y frías para los más pequeños. La mayoría de los operadores indican los límites de edad y las opciones familiares en la página de la actividad, así que compruébalo antes de reservar.',
+        a: 'Muchas lo son, con la elección correcta. Los paseos en trineo de renos, las visitas a granjas de huskies, los paseos suaves con raquetas, el trineo y el encuentro con Papá Noel funcionan bien para los más pequeños. La motonieve suele tener una edad mínima para conducir (los niños viajan en un trineo o remolque), y las cazas de auroras nocturnas pueden ser largas y frías para los más pequeños. La mayoría de los operadores indican los límites de edad y las opciones familiares en la página de la actividad, así que revíselo antes de reservar.',
       },
       {
         q: '¿Hay que reservar las actividades de Laponia con antelación?',
-        a: 'En las semanas de mayor demanda, como Navidad y Año Nuevo y el pico de auroras y esquí de febrero a marzo, conviene reservar con tiempo, ya que los tours populares de huskies y motos de nieve se llenan. En periodos más tranquilos hay más flexibilidad, pero los operadores mejor valorados y las salidas en grupo pequeño se agotan primero igualmente. Reservar con antelación también le permite dar margen al cielo despejado en los planes de auroras en lugar de competir por las últimas plazas.',
+        a: 'En las semanas de mayor demanda, como Navidad y Año Nuevo o el pico de auroras y esquí de febrero a marzo, conviene reservar con tiempo, ya que los tours populares de huskies y motos de nieve se llenan. En periodos más tranquilos hay más flexibilidad, pero los operadores mejor valorados y las salidas en grupo pequeño se agotan primero igualmente. Reservar con antelación también le permite elegir las noches con mejor pronóstico para ver auroras en lugar de competir por las últimas plazas.',
       },
     ],
   },
@@ -422,7 +422,7 @@ const es: SectionCopy = {
   },
   destinationsIndex: {
     metaTitle: 'Destinos de Laponia y Kuusamo · LaplandActivities',
-    metaDescription: 'Diez destinos icónicos de Laponia finlandesa y Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio y Tornio.',
+    metaDescription: 'Diez destinos icónicos de la Laponia finlandesa y de Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio y Tornio.',
     kicker: 'Dónde ir',
     h1: 'Destinos',
     lead: 'Diez destinos icónicos en Laponia y la vecina Kuusamo, cada uno con su carácter y su red de operadores.',

@@ -25,7 +25,7 @@ const d: LangData = {
       "description": "Traditionella rökbastur, isbad, arktisk isflytning, spabehandlingar och den ultimata nordiska wellnessupplevelsen."
     },
     "culture": {
-      "name": "Kultur och arv",
+      "name": "Kultur och kulturarv",
       "description": "Samiska museer, Jultomtens by, ishotell, guldvaskning, ametistgruvor och Arktis fascinerande kulturarv."
     },
     "summer": {
@@ -37,7 +37,7 @@ const d: LangData = {
       "description": "Kåtarestauranger, insamling av vildmat, bärplockning, renmiddagar under stjärnorna och lokala bryggeriturer."
     },
     "fishing": {
-      "name": "Fiske och pilkfiske",
+      "name": "Fiske och pimpelfiske",
       "description": "Gratis pilkfiske på tillfrusna sjöar, licensbelagda laxälvar som Torne älv och kungskrabbsafarier över den norska gränsen. Fiskbestånden går först: känn reglerna och släpp tillbaka det älven behöver."
     }
   },
@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta transportförbindelser och ett stort utbud av vinter- och sommaraktiviteter.",
       "access": "Direktflyg från Helsingfors (1 tim 20 min)",
       "bestFor": "Förstagångsbesökare och familjer",
-      "why": "I Rovaniemi finns Lapplands infrastruktur: internationell flygplats, nattågets slutstation och regionens största utbud av turer. Utöver Jultomtens by hittar du Arktikum-museet vid älvstranden, Ounasvaaras backar rakt ovanför staden och tiotals husky-, ren- och norrskensarrangörer inom 20 minuters bilfärd. Perfekt för förstagångsbesökare och familjer. Att korsa polcirkeln är gratis, men diplomet är en souvenir som kostar och säljs på turistinformationen vid polcirkeln, i polcirkeltornet eller i Julhusets butik – inte på postkontoret."
+      "why": "I Rovaniemi finns Lapplands infrastruktur: internationell flygplats, nattågets slutstation och regionens största utbud av turer. Utöver Jultomtens by hittar du Arktikum-museet vid älvstranden, Ounasvaaras backar rakt ovanför staden och tiotals husky-, ren- och norrskensarrangörer inom 20 minuters bilfärd. Perfekt för förstagångsbesökare och familjer. Att korsa polcirkeln är gratis, men diplomet är en souvenir för några euro som säljs på turistinformationen vid polcirkeln, i polcirkeltornet eller i Julhusets butik – inte på postkontoret."
     },
     "levi": {
       "name": "Levi",
@@ -56,7 +56,7 @@ const d: LangData = {
       "description": "En förstklassig skiddestination med 44 pister och 230 km längdskidspår. Livlig afterski-stämning på Hullu Poro och utomhusaktiviteter året runt.",
       "access": "Flyg till Kittilä (15 minuters bilfärd)",
       "bestFor": "Skidåkare och aktiva resenärer",
-      "why": "Levi packar Finlands största skidort, 44 pister och 26 liftar varav två gondoler, i en enda promenadvänlig by vid foten av Levitunturi. Alpina världscupen öppnar sin slalomsäsong här varje november, och när liftarna stänger drar folkmassan vidare till Hullu Poros afterski. Passar skidåkare och sällskap som vill ha restauranger och nattliv på gångavstånd från backen; på sommaren betjänar gondolen Levi Bike Park."
+      "why": "Levi rymmer Finlands största skidort, 44 pister och 26 liftar varav två gondoler, i en enda promenadvänlig by vid foten av Levitunturi. Alpina världscupen öppnar sin slalomsäsong här varje november, och när liftarna stänger drar folkmassan vidare till Hullu Poros afterski. Passar skidåkare och sällskap som vill ha restauranger och nattliv på gångavstånd från backen; på sommaren går gondolen till Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
@@ -72,7 +72,7 @@ const d: LangData = {
       "description": "Finlands nordligaste skidort, gränsande till ett av Europas största vildmarksområden. Känd för norrskensskådning, guldvaskning och den legendariska rökbastun i Kiilopää.",
       "access": "Flyg till Ivalo (30 minuters bilfärd)",
       "bestFor": "Vildmarkssökare och norrskensjägare",
-      "why": "Saariselkä ligger vid kanten av Urho Kekkonens nationalpark: markerade leder och öppna ödestugor börjar direkt i byn. Så här långt norrut syns norrskenet från september till april, och här finns sådant som saknas längre söderut: guldvaskning i Tankavaara, där varje korn du hittar är ditt, och Kiilopääs rökbastu följd av en rullning i snön. Bäst för resenärer som sätter vildmarken före servicen."
+      "why": "Saariselkä ligger i utkanten av Urho Kekkonens nationalpark: markerade leder och öppna ödestugor börjar direkt i byn. Så här långt norrut syns norrskenet från september till april, och här finns sådant som saknas längre söderut: guldvaskning i Tankavaara, där varje korn du hittar är ditt, och Kiilopääs rökbastu följd av en rullning i snön. Bäst för resenärer som sätter vildmarken före servicen."
     },
     "inari": {
       "name": "Inari",
@@ -85,16 +85,16 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka och Kuusamo",
       "tagline": "Hemvist för Finlands längsta skidsäsong",
-      "description": "Här finns den legendariska björnstigen Karhunkierros, Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen. Ruka ligger i Kuusamo, strax söder om Lapplands gräns, med samma snö och samma nordliga vinter.",
+      "description": "Här finns den legendariska vandringsleden Björnrundan (Karhunkierros), Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen. Ruka ligger i Kuusamo, strax söder om Lapplands gräns, med samma snö och samma nordliga vinter.",
       "access": "Flyg till Kuusamo (25 minuters bilfärd)",
       "bestFor": "Vandrare, skidåkare och naturintresserade",
-      "why": "Ruka är en kompakt backby med 41 pister och 22 liftar mitt i Kuusamos friluftsland: Oulanka nationalpark, den 82 km långa Karhunkierros-leden och forsar med forsränning från vår till höst. Tack vare sparad snö öppnar orten i oktober och åker ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
+      "why": "Ruka är en kompakt skidby med 41 pister och 22 liftar mitt i Kuusamos friluftsområden: Oulanka nationalpark, den 82 km långa Karhunkierros-leden och forsar med forsränning från vår till höst. Tack vare lagrad snö öppnar orten i oktober och håller öppet ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Östra Lapplands dolda pärla",
-      "description": "Känd för de spektakulära snökrönta träden i Riisitunturi nationalpark och de tillfrusna vattenfallen i Korouoma-kanjonen. Bortom de vanliga turiststråken, ren vildmark.",
-      "access": "Bilväg från Rovaniemi (2 tim) eller Ruka (1 tim)",
+      "description": "Känd för de spektakulära snötyngda träden i Riisitunturi nationalpark och de tillfrusna vattenfallen i Korouoma-kanjonen. Bortom de vanliga turiststråken, ren vildmark.",
+      "access": "Med bil från Rovaniemi (2 tim) eller Ruka (1 tim)",
       "bestFor": "Upptäckare av det mindre kända",
       "why": "Posios trumfkort kommer från naturen: Riisitunturis tykky-träd, böjda till skulpturer av frosten mitt i vintern, och Korouomas frusna vattenfall som hänger upp till 40 meter längs kanjonväggen. Lägg till Pentik, världens nordligaste keramikfabrik med gallerier och outlet, så fylls dagen långt från turiststråken. Bil behövs; Posio passar fint ihop med en resa till Ruka eller Rovaniemi."
     },
@@ -104,7 +104,7 @@ const d: LangData = {
       "description": "Gränsstaden mellan Finland och Sverige och porten till unika arktiska upplevelser. Här finns den legendariska isbrytarkryssningen med Sampo, SnowCastle Winter Park och Europas största fritt strömmande laxälv.",
       "access": "Flyg till Kemi (15 minuters bilfärd)",
       "bestFor": "Unika upplevelser och familjenöje",
-      "why": "Torneå och Haparanda är en stad i två länder: du korsar gränsen till fots mitt på affärsgatan, IKEA Haparanda ligger alldeles vid övergången och en golfrunda byter land och tidszon fyra gånger. Kemi, 25 minuter bort, bjuder på isbrytaren Sampos kryssning och SnowCastle som byggs upp på nytt varje vinter. I Torne älv, Europas största fritt strömmande laxälv, lever det traditionella håvfisket vid Kukkolankoski vidare varje sommar."
+      "why": "Torneå och Haparanda är en stad i två länder: du korsar gränsen till fots mitt på affärsgatan, IKEA Haparanda ligger alldeles vid övergången och en golfrunda byter land och tidszon fyra gånger. Kemi, 25 minuter bort, bjuder på isbrytaren Sampos kryssning och SnowCastle som byggs upp på nytt varje vinter. I Torne älv, Europas största fritt strömmande laxälv, lever det traditionella håvfisket vid Kukkolaforsen vidare varje sommar."
     },
     "pyha-luosto": {
       "name": "Pyhä-Luosto",

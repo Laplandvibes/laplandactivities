@@ -115,7 +115,7 @@ const sv: SectionCopy = {
     seasonsLead: 'Varje årstid förvandlar Lappland till ett annat land.',
     seasons: [
       { name: 'Vinter', months: 'nov – mar', blurb: 'Djup snö, polarnätter, norrsken på topp. Snöskoter, hundspann, rökbastu.', temp: '−15 till −5 °C' },
-      { name: 'Vår', months: 'apr – maj', blurb: 'Snö kombinerat med dagsljus. Sen skidåkning, renkalvning, norrsken fram till mitten av april.', temp: '−5 till +5 °C' },
+      { name: 'Vår', months: 'apr – maj', blurb: 'Snö kombinerat med dagsljus. Vårskidåkning, renkalvning, norrsken fram till mitten av april.', temp: '−5 till +5 °C' },
       { name: 'Sommar', months: 'jun – aug', blurb: 'Midnattssolen går aldrig ner. Vandring, kajak, laxfiske, mountainbike.', temp: '+10 till +25 °C' },
       { name: 'Höst', months: 'sep – okt', blurb: 'Ruska färgar fjällen. Norrskenet återvänder. Svamp- och bärsäsong.', temp: '+5 till −5 °C' },
     ],
@@ -143,7 +143,7 @@ const sv: SectionCopy = {
     items: [
       {
         q: 'Vilka aktiviteter kan man göra i Lappland?',
-        a: 'På vintern är klassikerna hundspann och rensläde, snöskotersafarier, norrskensjakt, snöskovandring, längd- och utförsåkning, pilkfiske och isflytning. På sommaren förvandlas samma vildmark till vandring, kajak och kanot, forsränning, mountainbike, laxfiske och guldvaskning. Året runt erbjuder rökbastun och samiska kulturupplevelser en annan, lugnare sida av Arktis.',
+        a: 'På vintern är klassikerna hundspann och rensläde, snöskotersafarier, norrskensjakt, snöskovandring, längd- och utförsåkning, pimpelfiske och isflytning. På sommaren förvandlas samma vildmark till vandring, kajak och kanot, forsränning, mountainbike, laxfiske och guldvaskning. Året runt erbjuder rökbastun och samiska kulturupplevelser en annan, lugnare sida av Arktis.',
       },
       {
         q: 'Vilka är de bästa aktiviteterna på vintern jämfört med sommaren?',
@@ -151,15 +151,15 @@ const sv: SectionCopy = {
       },
       {
         q: 'Vad kostar aktiviteter i Lappland?',
-        a: 'Det varierar mycket beroende på aktivitet, längd och gruppstorlek. Ett kort delat pass som en rentursresa eller en norrskensbussutflykt ligger i den lägre prisklassen; flertimmars- eller privata resor som en lång hundspannssafari eller en guidad snöskoterexpedition kostar mer, delvis eftersom de inkluderar varma overaller, kängor, säkerhetsutrustning och en guide. För aktuella, exakta priser, öppna vilken tur som helst via vår bokningspartner. Det aktuella priset visas innan du bokar.',
+        a: 'Det varierar mycket beroende på aktivitet, längd och gruppstorlek. En kort gruppaktivitet som en renslädetur eller en norrskensutflykt med buss ligger i den lägre prisklassen; turer på flera timmar eller privata turer, som en lång hundspannssafari eller en guidad snöskoterexpedition kostar mer, delvis eftersom de inkluderar varma overaller, kängor, säkerhetsutrustning och en guide. För aktuella och exakta priser: öppna vilken tur som helst via vår bokningspartner. Det aktuella priset visas innan du bokar.',
       },
       {
         q: 'Passar aktiviteterna i Lappland för små barn?',
-        a: 'Många gör det, med rätt val. Rensledturer, besök på huskygårdar, lugna snöskovandringar, pulkaåkning och att träffa jultomten fungerar bra för små barn. Snöskoterkörning har oftast en åldersgräns för att köra själv (barn åker med i en släde eller vagn), och sena norrskensjakter kan bli långa och kalla för de minsta. De flesta researrangörer anger åldersgränser och familjealternativ på aktivitetssidan, så kontrollera innan du bokar.',
+        a: 'Många gör det, med rätt val. Renslädturer, besök på huskygårdar, lugna snöskovandringar, pulkaåkning och att träffa jultomten fungerar bra för små barn. Snöskoterkörning har oftast en åldersgräns för att köra själv (barn åker med i en släde eller vagn), och sena norrskensjakter kan bli långa och kalla för de minsta. De flesta researrangörer anger åldersgränser och familjealternativ på aktivitetssidan, så kontrollera innan du bokar.',
       },
       {
         q: 'Behöver man boka aktiviteter i Lappland i förväg?',
-        a: 'Under de mest hektiska veckorna, jul och nyår samt norrskens- och skidtoppen i februari–mars, ja: boka i god tid, eftersom populära hundspanns- och snöskoterturer blir fullbokade. Under lugnare perioder har du mer flexibilitet, men de bäst rankade researrangörerna och avgångarna med små grupper blir ändå slutbokade först. Att boka i förväg gör det också lättare att bygga in flexibilitet för klar himmel i norrskensplanerna i stället för att tävla om de sista platserna.',
+        a: 'Under de mest hektiska veckorna, jul och nyår samt norrskens- och skidhögsäsongen i februari–mars, ja: boka i god tid, eftersom populära hundspanns- och snöskoterturer blir fullbokade. Under lugnare perioder har du mer flexibilitet, men de bäst rankade researrangörerna och avgångarna med små grupper blir ändå slutbokade först. Att boka i förväg gör det också lättare att bygga in flexibilitet för klar himmel i norrskensplanerna i stället för att tävla om de sista platserna.',
       },
     ],
   },
@@ -308,10 +308,10 @@ const sv: SectionCopy = {
     hero: {
       eyebrow: 'Finska Lappland · Nordnorge',
       title: 'Fiske i Lappland och Norra ishavet',
-      sub: 'Tre fiskevatten, en resa: gratis pilkfiske på tillfrusna sjöar, licensbelagda sommarlaxälvar och kungskrabbsafarier över den norska gränsen. Här är vad som är öppet 2026 och reglerna som håller fisken återkommande.',
+      sub: 'Tre fiskevatten, en resa: gratis pilkfiske på tillfrusna sjöar, licensbelagda sommarlaxälvar och kungskrabbsafarier över den norska gränsen. Så här ser 2026 ut, och reglerna som gör att fisken kommer tillbaka.',
       ctaBook: 'Boka en guidad pilkfisketur',
       ctaRules: 'Tillstånd och regler →',
-      trustLine: 'Kontrollerat mot officiella finska (eräluvat.fi, MMM) och norska (fiskeridir.no) källor. Reglerna ändras varje år. Kontrollera ditt vatten innan du fiskar.',
+      trustLine: 'Kontrollerat mot officiella finska (eräluvat.fi, MMM) och norska (fiskeridir.no) källor. Reglerna ändras varje år. Kontrollera reglerna för ditt fiskevatten innan du fiskar.',
     },
     eyebrows: {
       eco: 'Naturen först',
@@ -536,7 +536,7 @@ const sv: SectionCopy = {
     ],
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: etisk björnskådning i Finland, vid kanten av Lappland | LaplandActivities",
+    metaTitle: "Bear Kuusamo: etisk björnskådning i Finland, i utkanten av Lappland | LaplandActivities",
     metaDescription: "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland. Kvälls- och nattturer, 1 maj till 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kommersiellt samarbete: Bear Kuusamo",

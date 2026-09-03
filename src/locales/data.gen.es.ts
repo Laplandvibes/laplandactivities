@@ -26,7 +26,7 @@ const d: LangData = {
     },
     "culture": {
       "name": "Cultura y patrimonio",
-      "description": "Museos sami, la Aldea de Papá Noel, hoteles de hielo, búsqueda de oro, minas de amatista y el fascinante patrimonio ártico."
+      "description": "Museos sami, la Pueblo de Papá Noel, hoteles de hielo, búsqueda de oro, minas de amatista y el fascinante patrimonio ártico."
     },
     "summer": {
       "name": "Aventuras de verano",
@@ -45,10 +45,10 @@ const d: LangData = {
     "rovaniemi": {
       "name": "Rovaniemi",
       "tagline": "La ciudad oficial de Papá Noel",
-      "description": "La capital de Laponia y puerta de acceso a las aventuras árticas. Alberga la Aldea de Papá Noel, excelentes conexiones de transporte y una enorme variedad de actividades de invierno y verano.",
+      "description": "La capital de Laponia y puerta de acceso a las aventuras árticas. Alberga el Pueblo de Papá Noel, excelentes conexiones de transporte y una enorme variedad de actividades de invierno y verano.",
       "access": "Vuelos directos desde Helsinki (1 h 15)",
       "bestFor": "Primeros viajes y familias",
-      "why": "En Rovaniemi está la infraestructura de Laponia: aeropuerto internacional, terminal del tren nocturno y la mayor oferta de tours de la región. Además de la Aldea de Papá Noel encontrará el museo Arktikum junto al río, las pistas de Ounasvaara sobre la ciudad y decenas de operadores de huskies, renos y auroras a 20 minutos. Ideal para primeros viajes y familias. Cruzar la línea del Círculo Polar es gratis, pero el certificado es un recuerdo de pago que se vende en la oficina de turismo del Círculo Polar, en la torre del Círculo Polar o en la tienda de la Casa de la Navidad, no en la oficina de correos."
+      "why": "En Rovaniemi está la infraestructura de Laponia: aeropuerto internacional, terminal del tren nocturno y la mayor oferta de tours de la región. Además de la Pueblo de Papá Noel encontrará el museo Arktikum junto al río, las pistas de Ounasvaara sobre la ciudad y decenas de operadores de huskies, renos y auroras a 20 minutos. Ideal para un primer viaje y para familias. Cruzar la línea del Círculo Polar es gratis, pero el certificado es un recuerdo de pago que se vende en la oficina de turismo del Círculo Polar, en la torre del Círculo Polar o en la tienda de la Casa de la Navidad, no en la oficina de correos."
     },
     "levi": {
       "name": "Levi",
@@ -56,12 +56,12 @@ const d: LangData = {
       "description": "Destino de esquí de primer nivel con 44 pistas y 230 km de recorridos de fondo. Animado après-ski en el Hullu Poro y actividades al aire libre durante todo el año.",
       "access": "Vuelo a Kittilä (15 min en coche)",
       "bestFor": "Esquiadores y viajeros activos",
-      "why": "Levi concentra la mayor estación de esquí de Finlandia, 44 pistas y 26 remontes con dos telecabinas, en un solo pueblo transitable a pie al pie del Levitunturi. La Copa del Mundo de esquí alpino abre aquí su temporada de eslalon cada noviembre, y al cerrar los remontes la gente se traslada al après-ski del Hullu Poro. Perfecto para esquiadores y grupos que quieren restaurantes y vida nocturna a pie de pista; en verano la telecabina sirve al Levi Bike Park."
+      "why": "Levi concentra la mayor estación de esquí de Finlandia, 44 pistas y 26 remontes con dos telecabinas, en un solo pueblo que se recorre a pie, al pie del Levitunturi. La Copa del Mundo de esquí alpino abre aquí su temporada de eslalon cada noviembre, y al cerrar los remontes la gente se traslada al après-ski del Hullu Poro. Perfecto para esquiadores y grupos que quieren restaurantes y vida nocturna a pie de pista; en verano la telecabina sirve al Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
       "tagline": "Las pistas más largas de Finlandia",
-      "description": "Dos estaciones de esquí a ambos lados del fjell Ylläs ofrecen las bajadas más largas de Finlandia, hasta 3 km. Una experiencia de Laponia más tranquila y auténtica junto al Parque nacional de Pallas-Yllästunturi.",
+      "description": "Dos estaciones de esquí a ambos lados del monte Ylläs ofrecen las bajadas más largas de Finlandia, hasta 3 km. Una experiencia de Laponia más tranquila y auténtica junto al Parque nacional de Pallas-Yllästunturi.",
       "access": "Vuelo a Kittilä (35 min en coche)",
       "bestFor": "Amantes de la naturaleza y esquiadores expertos",
       "why": "Ylläs son dos pueblos tranquilos, Äkäslompolo y Ylläsjärvi, a ambos lados de un gran fjell: 62 pistas en total y los descensos más largos de Finlandia, de más de tres kilómetros. Alrededor se extienden unos 300 km de pistas de fondo preparadas que llegan al parque nacional Pallas-Yllästunturi. Elíjalo en lugar de Levi si busca cielos oscuros de auroras, silencio de parque nacional y jornadas largas de esquí; Äkäslompolo es el lado tranquilo, Ylläsjärvi tiene los bares."
@@ -72,15 +72,15 @@ const d: LangData = {
       "description": "La estación de esquí más septentrional de Finlandia, al borde de una de las mayores áreas salvajes de Europa. Famosa por la observación de auroras, la búsqueda de oro y la legendaria sauna de humo de Kiilopää.",
       "access": "Vuelo a Ivalo (30 min en coche)",
       "bestFor": "Buscadores de naturaleza salvaje y cazadores de auroras",
-      "why": "Saariselkä está al borde del parque nacional Urho Kekkonen: los senderos marcados y los refugios abiertos empiezan en el propio pueblo. Tan al norte hay auroras de septiembre a abril, y además cosas que no existen más al sur: el bateo de oro de Tankavaara, donde todo lo que encuentre es suyo, y la sauna de humo de Kiilopää con revolcón en la nieve. Para viajeros que ponen la naturaleza salvaje por delante de los servicios."
+      "why": "Saariselkä está al borde del parque nacional Urho Kekkonen: los senderos marcados y los refugios abiertos empiezan en el propio pueblo. Tan al norte hay auroras de septiembre a abril, y además cosas que no existen más al sur: el bateo de oro de Tankavaara, donde todo lo que encuentre es suyo, y la sauna de humo de Kiilopää con baño en la nieve. Para viajeros que ponen la naturaleza salvaje por delante de los servicios."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Corazón de la cultura sami",
-      "description": "A orillas del lago Inari, con más de 3.000 islas, es la capital cultural del pueblo sami finlandés. Sede del museo Siida y de una naturaleza intacta.",
+      "description": "A orillas del lago Inari, con más de 3000 islas, es la capital cultural del pueblo sami finlandés. Alberga el museo Siida y una naturaleza intacta.",
       "access": "Vuelo a Ivalo (40 min en coche)",
       "bestFor": "Exploradores culturales y fotógrafos",
-      "why": "Inari es la sede del Parlamento Sámi de Finlandia y el mejor lugar para conocer la cultura sámi viva: empiece en el museo Siida y en verano navegue por el lago Inari junto a la isla sagrada de Ukonsaari. El pueblo es pequeño y la naturaleza que lo rodea, enorme; a la iglesia del desierto de Pielpajärvi se llega a pie entre pinos centenarios. Premia a quien viene por la cultura, la fotografía y el silencio."
+      "why": "Inari es la sede del Parlamento Sami de Finlandia y el mejor lugar para conocer la cultura sami viva: empiece en el museo Siida y en verano navegue por el lago Inari junto a la isla sagrada de Ukonsaari. El pueblo es pequeño y la naturaleza que lo rodea, enorme; a la iglesia silvestre de Pielpajärvi se llega a pie entre pinos centenarios. Premia a quien viene por la cultura, la fotografía y el silencio."
     },
     "ruka": {
       "name": "Ruka y Kuusamo",
@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Sede del legendario sendero del oso Karhunkierros, del Parque nacional de Oulanka y de una de las mejores estaciones de esquí de Finlandia. Famosa por la observación de osos, el rafting y la temporada de esquí más larga. Ruka está en Kuusamo, justo al sur de Laponia, con la misma nieve y el mismo invierno nórdico.",
       "access": "Vuelo a Kuusamo (25 min en coche)",
       "bestFor": "Senderistas, esquiadores y amantes de la fauna",
-      "why": "Ruka es un pueblo de pistas compacto con 41 pistas y 22 remontes en pleno territorio outdoor de Kuusamo: el parque nacional de Oulanka, los 82 km del sendero Karhunkierros y rápidos con rafting de primavera a otoño. La nieve almacenada abre la temporada en octubre y se esquía hasta mayo, la más larga de Finlandia. En verano toman el relevo los escondites para observar osos pardos y el premiado bike park."
+      "why": "Ruka es un pueblo de esquí compacto con 41 pistas y 22 remontes en plena zona de actividades al aire libre de Kuusamo: el parque nacional de Oulanka, los 82 km del sendero Karhunkierros y rápidos con rafting de primavera a otoño. La nieve almacenada abre la temporada en octubre y se esquía hasta mayo, la más larga de Finlandia. En verano toman el relevo los observatorios para ver osos pardos y el premiado bike park."
     },
     "posio": {
       "name": "Posio",
@@ -142,7 +142,7 @@ const d: LangData = {
       "category": "Auroras boreales"
     },
     "rov-santa-village": {
-      "title": "Experiencia en la Aldea de Papá Noel",
+      "title": "Experiencia en la Pueblo de Papá Noel",
       "description": "Visite la casa oficial de Papá Noel justo en el Círculo Polar Ártico. Conozca a Papá Noel, envíe postales desde la Oficina de Correos Ártica y cruce la inolvidable línea del Círculo Polar.",
       "highlights": [
         "Encuentro con Papá Noel",
