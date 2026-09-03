@@ -48,7 +48,7 @@ const d: LangData = {
       "description": "La capitale della Lapponia e porta d'accesso alle avventure artiche. Ospita il Villaggio di Babbo Natale, ottimi collegamenti di trasporto e una vasta scelta di attività invernali ed estive.",
       "access": "Voli diretti da Helsinki (1 h 15)",
       "bestFor": "Primi viaggi e famiglie",
-      "why": "A Rovaniemi c’è l’infrastruttura della Lapponia: aeroporto internazionale, capolinea del treno notturno e la più ampia scelta di tour della regione. Oltre al Villaggio di Babbo Natale trovate il museo Arktikum sul fiume, le piste dell’Ounasvaara sopra la città e decine di operatori di husky, renne e aurore entro 20 minuti. Ideale per chi arriva per la prima volta e per le famiglie. Attraversare la linea del Circolo Polare è gratis, mentre il certificato è un souvenir a pagamento: si compra all’ufficio turistico del Circolo Polare, alla torre del Circolo Polare o al negozio della Casa del Natale, non all’ufficio postale."
+      "why": "A Rovaniemi c’è l’infrastruttura della Lapponia: aeroporto internazionale, capolinea del treno notturno e la più ampia scelta di tour della regione. Oltre al Villaggio di Babbo Natale trova il museo Arktikum sul fiume, le piste dell’Ounasvaara sopra la città e decine di operatori di husky, renne e aurore entro 20 minuti. Ideale per chi arriva per la prima volta e per le famiglie. Attraversare la linea del Circolo Polare è gratis, mentre il certificato è un souvenir a pagamento: si compra all’ufficio turistico del Circolo Polare, alla torre del Circolo Polare o al negozio della Casa del Natale, non all’ufficio postale."
     },
     "levi": {
       "name": "Levi",
@@ -72,7 +72,7 @@ const d: LangData = {
       "description": "La stazione sciistica più a nord della Finlandia, ai margini di una delle aree selvagge più grandi d'Europa. Famosa per l'osservazione dell'aurora, la ricerca dell'oro e la leggendaria sauna a fumo di Kiilopää.",
       "access": "Volo a Ivalo (30 min in auto)",
       "bestFor": "Cercatori di natura selvaggia e cacciatori di aurore",
-      "why": "Saariselkä sta sul bordo del parco nazionale Urho Kekkonen: sentieri segnati e rifugi aperti partono dal paese stesso. Così a nord le aurore si vedono da settembre ad aprile, e in più ci sono cose introvabili più a sud: la ricerca dell’oro a Tankavaara, dove ogni pagliuzza trovata è vostra, e la sauna a fumo di Kiilopää seguita da un tuffo nella neve. Il posto giusto per chi mette la natura selvaggia prima dei servizi."
+      "why": "Saariselkä sta sul bordo del parco nazionale Urho Kekkonen: sentieri segnati e rifugi aperti partono dal paese stesso. Così a nord le aurore si vedono da settembre ad aprile, e in più ci sono cose introvabili più a sud: la ricerca dell’oro a Tankavaara, dove ogni pagliuzza trovata è Sua, e la sauna a fumo di Kiilopää seguita da un tuffo nella neve. Il posto giusto per chi mette la natura selvaggia prima dei servizi."
     },
     "inari": {
       "name": "Inari",
@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Sulle sponde del lago Inari, con oltre 3.000 isole, è la capitale culturale del popolo sami finlandese. Sede del museo Siida e di una natura incontaminata.",
       "access": "Volo a Ivalo (40 min in auto)",
       "bestFor": "Esploratori culturali e fotografi",
-      "why": "Inari è la sede del Parlamento sámi di Finlandia e il posto migliore per incontrare la cultura sámi viva: si parte dal museo Siida e d’estate si naviga sul lago Inari davanti all’isola sacra di Ukonsaari. Il paese è piccolo e la natura intorno immensa; alla chiesa nel deserto di Pielpajärvi si arriva a piedi tra pini secolari. Premia chi viene per cultura, fotografia e silenzio."
+      "why": "Inari è la sede del Parlamento sami di Finlandia e il posto migliore per incontrare la cultura sámi viva: si parte dal museo Siida e d’estate si naviga sul lago Inari davanti all’isola sacra di Ukonsaari. Il paese è piccolo e la natura intorno immensa; alla chiesa nella natura selvaggia di Pielpajärvi si arriva a piedi tra pini secolari. Premia chi viene per cultura, fotografia e silenzio."
     },
     "ruka": {
       "name": "Ruka e Kuusamo",
@@ -93,7 +93,7 @@ const d: LangData = {
     "posio": {
       "name": "Posio",
       "tagline": "Gemma nascosta della Lapponia orientale",
-      "description": "Famosa per gli spettacolari alberi incoronati di neve del Parco nazionale Riisitunturi e per le cascate ghiacciate del canyon di Korouoma. Fuori dai sentieri battuti, natura pura.",
+      "description": "Famosa per gli spettacolari alberi carichi di neve del Parco nazionale Riisitunturi e per le cascate ghiacciate del canyon di Korouoma. Fuori dai sentieri battuti, natura pura.",
       "access": "In auto da Rovaniemi (2 h) o Ruka (1 h)",
       "bestFor": "Esploratori fuori dai sentieri battuti",
       "why": "Le carte di Posio sono naturali: gli alberi tykky del Riisitunturi, piegati in sculture dal gelo in pieno inverno, e le cascate ghiacciate del Korouoma, sospese fino a 40 metri sulla parete del canyon. Aggiungete Pentik, la fabbrica di ceramica più settentrionale del mondo con gallerie e spaccio, e la giornata è piena, lontano dalle rotte turistiche. Serve l’auto; si abbina bene a un viaggio a Ruka o Rovaniemi."

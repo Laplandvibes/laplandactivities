@@ -8,10 +8,10 @@ const nl: SectionCopy = {
     hero: {
       eyebrow: "Fins Lapland · Arctisch Noorwegen",
       title: "Vissen in Lapland en de Noordelijke IJszee",
-      sub: "Drie visgronden, één reis: gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren in de zomer en koningskrab-safari's over de Noorse grens. Dit is wat er in 2026 open is, en de regels die de vis laten terugkomen.",
+      sub: "Drie visgronden, één reis: gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren in de zomer en koningskrab-safari's over de Noorse grens. Wat er in 2026 open is – en de regels die de vis laten terugkeren.",
       ctaBook: "Boek een begeleide ijsvistocht",
       ctaRules: 'Vergunningen en regels →',
-      trustLine: "Gecontroleerd aan de hand van officiële Finse (eräluvat.fi, MMM) en Noorse (fiskeridir.no) bronnen. De regels veranderen elk jaar. Verifieer uw water voordat u gaat vissen.",
+      trustLine: "Gecontroleerd aan de hand van officiële Finse (eräluvat.fi, MMM) en Noorse (fiskeridir.no) bronnen. De regels veranderen elk jaar. Controleer de regels voor uw viswater voordat u gaat vissen.",
     },
     eyebrows: {
       eco: "Ecologie voorop",
@@ -188,14 +188,14 @@ const nl: SectionCopy = {
       items: [
         {
           q: "Heb ik een vergunning nodig om te ijsvissen?",
-          a: "Nee. Basis-ijsvissen (pilkki) met één hengel en een jig is in Finland een gratis algemeen recht voor iedereen, van elke leeftijd, geen heffing en geen vergunning, op gewone meren. Het is alleen anders bij de stroomversnellingen van zalmrivieren, verboden gebieden en bijzondere plekken, of als u tip-ups, netten of zetlijnen gebruikt, waarvoor de nationale heffing en een watervergunning nodig zijn (eräluvat.fi).",
+          a: "Nee. Eenvoudig ijsvissen (pilkki) met één hengel en een jig is in Finland een gratis algemeen recht voor iedereen, van elke leeftijd, geen heffing en geen vergunning, op gewone meren. Het is alleen anders bij de stroomversnellingen van zalmrivieren, verboden gebieden en bijzondere plekken, of als u automatische hengels, netten of zetlijnen gebruikt, waarvoor de landelijke visserijheffing en een visvergunning voor dat water nodig zijn (eräluvat.fi).",
         },
         {
           q: "Mag ik in 2026 op zalm vissen in de Teno?",
           a: "Nee. Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. U kunt op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag via tenonkalaluvat.fi, met uitsluiting van zalm.",
         },
         {
-          q: "Hoeveel zalm mag ik houden op de Tornio?",
+          q: "Hoeveel zalm mag ik meenemen uit de Tornio?",
           a: "In 2026 maximaal 1 zalm per 24 uur en maximaal 2 zalmen voor het hele seizoen. Beide limieten gelden tegelijk. Na uw tweede zalm moet u stoppen met zalmvissen voor dat jaar. De minimummaat is 50 cm (volgens eräluvat.fi-gebied 2502 en valtioneuvosto.fi).",
         },
         {
@@ -241,7 +241,7 @@ const nl: SectionCopy = {
   },
   hero: {
     eyebrow: 'Fins Lapland · Van noorderlicht tot middernachtzon',
-    lead: "Sneeuwscooter-safari's, husky-slederitten, noorderlichtjachten, rooksauna's, rafting onder de middernachtzon. Boek direct bij zorgvuldig gekozen aanbieders in Rovaniemi, Levi, Ylläs, Saariselkä en daarbuiten.",
+    lead: "Sneeuwscootersafari's, husky-safari's, noorderlichttochten, rooksauna's, rafting onder de middernachtzon. Boek direct bij zorgvuldig gekozen aanbieders in Rovaniemi, Levi, Ylläs, Saariselkä en daarbuiten.",
     primaryCta: 'Nu activiteiten boeken', secondaryCta: 'Bestemmingen bekijken',
     stayNearby: 'Overnachten in de buurt', stayNearbyDesc: 'Trip.com, beste tarieven',
     rentCar: 'Auto huren', rentCarDesc: 'Vanaf luchthaven Rovaniemi',
@@ -306,14 +306,14 @@ const nl: SectionCopy = {
     metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 10 bestemmingen in en rond Lapland via GetYourGuide.',
     ogTitle: 'LaplandActivities: zorgvuldig gekozen arctische ervaringen',
     categoriesKicker: 'Wat te doen', categoriesH2: 'Kies uw avontuur',
-    categoriesLead: '9 manieren om het Noordpoolgebied te beleven, kies een categorie en we verwijzen u door naar zorgvuldig gekozen aanbieders.',
+    categoriesLead: 'Negen manieren om het Noordpoolgebied te beleven. Kies een categorie, dan verwijzen we u door naar zorgvuldig gekozen aanbieders.',
     activitiesLabel: 'activiteiten', viewAllCategories: 'Bekijk alle categorieën',
     gygTitle: 'Best beoordeelde Lapland-tours deze week', gygEyebrow: 'Nu boekbaar',
     featuredKicker: 'Met de hand gekozen', featuredH2: 'Top-ervaringen', seeAllTours: 'Bekijk alle boekbare tours',
     seasonsKicker: 'Het hele jaar', seasonsH2: 'Vier seizoenen avontuur', seasonsLead: 'Elk seizoen maakt van Lapland een ander land.',
     seasons: [
       { name: 'Winter', months: 'nov – mrt', blurb: 'Diepe sneeuw, poolnachten, piek van het noorderlicht. Sneeuwscooters, husky\'s, rooksauna\'s.', temp: '-15 tot -5 °C' },
-      { name: 'Lente', months: 'apr – mei', blurb: 'Sneeuw met daglicht. Laat-seizoensskiën, kalvende rendieren, noorderlicht tot half april.', temp: '-5 tot +5 °C' },
+      { name: 'Lente', months: 'apr – mei', blurb: 'Sneeuw met daglicht. Skiën in het naseizoen, rendierkalfjes, noorderlicht tot half april.', temp: '-5 tot +5 °C' },
       { name: 'Zomer', months: 'jun – aug', blurb: 'De middernachtzon gaat niet onder. Wandelen, kajakken, zalmvissen, mountainbiken.', temp: '+10 tot +25 °C' },
       { name: 'Herfst', months: 'sep – okt', blurb: 'De ruska kleurt de fjälls (heuvels). Eerste noorderlicht keert terug. Paddenstoel- en bessenseizoen.', temp: '+5 tot -5 °C' },
     ],
@@ -338,15 +338,15 @@ const nl: SectionCopy = {
     items: [
       {
         q: 'Welke activiteiten kunt u in Lapland doen?',
-        a: 'In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en alpineskiën, ijsvissen en ijsdrijven. In de zomer verandert dezelfde wildernis in wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied.',
+        a: 'In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en alpineskiën, ijsvissen en ijsdrijven. In de zomer leent dezelfde wildernis zich voor wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied.',
       },
       {
         q: 'Wat zijn de beste winter- en zomeractiviteiten?',
-        a: 'De winter (november tot maart) is het seizoen van sneeuw en duisternis: sneeuwscooters, hondensleeën en noorderlichttochten hebben dat nodig. De zomer (juni tot augustus) ruilt de sneeuw in voor de middernachtzon, wanneer het licht nooit helemaal verdwijnt en wandelen, peddelen en vissen bijna de klok rond kunnen. De lente heeft nog sneeuw met veel meer daglicht, en de herfst brengt de ruska-kleuren en het eerste noorderlicht, beide rustigere tussenseizoenen.',
+        a: 'De winter (november tot maart) is het seizoen van sneeuw en duisternis: sneeuwscooters, hondensleeën en noorderlichttochten hebben dat nodig. De zomer (juni tot augustus) ruilt de sneeuw in voor de middernachtzon, wanneer het licht nooit helemaal verdwijnt en wandelen, peddelen en vissen bijna de klok rond mogelijk zijn. In de lente ligt er nog sneeuw, maar met veel meer daglicht, en de herfst brengt de ruska-kleuren en het eerste noorderlicht, beide rustigere tussenseizoenen.',
       },
       {
         q: 'Hoeveel kosten activiteiten in Lapland?',
-        a: 'Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte gedeelde sessie zoals een rendierrit of een noorderlichtbustocht zit aan de lage kant; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, juiste prijzen opent u een tocht via onze boekingspartner, de live prijs verschijnt voordat u bevestigt.',
+        a: 'Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte groepsactiviteit zoals een rendiersleerit of een noorderlichtbustocht zit aan de onderkant van de prijsschaal; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, exacte prijzen opent u een tocht via onze boekingspartner; de live prijs verschijnt voordat u bevestigt.',
       },
       {
         q: 'Zijn activiteiten in Lapland geschikt voor jonge kinderen?',
@@ -354,7 +354,7 @@ const nl: SectionCopy = {
       },
       {
         q: 'Moet u activiteiten in Lapland vooraf boeken?',
-        a: 'Voor de drukste weken, Kerst en Nieuwjaar, en de noorderlicht- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat u ook ruimte voor een heldere hemel inbouwen in uw noorderlichtplannen in plaats van te strijden om de laatste plekken.',
+        a: 'Voor de drukste weken, Kerst en Nieuwjaar, en de noorderlicht- en skipiek van februari tot maart geldt: boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en tochten in kleine groepen zijn toch het eerst uitverkocht. Wie vroeg boekt, kan bovendien speling voor heldere nachten inbouwen in de noorderlichtplannen in plaats van te strijden om de laatste plekken.',
       },
     ],
   },
@@ -479,7 +479,7 @@ const nl: SectionCopy = {
     anchorTour: "berentour in Finland",
     hero: {
       eyebrow: "Wilde dieren · Aan de rand van Lapland",
-      title: "Bear Kuusamo: beren kijken in Finland, aan de rand van Lapland",
+      title: "Bear Kuusamo: ethisch beren kijken in Finland, aan de rand van Lapland",
     },
     intro: {
       para1: "In de grensbossen ten oosten van Kuusamo, waar het boreale bos ononderbroken naar de grens loopt, stappen bruine beren in de lange noordelijke schemering uit de bosrand. Bear Kuusamo begeleidt reizigers al meer dan twintig jaar naar die stilte. Het is het oudste berenkijkbedrijf in de regio Ruka–Kuusamo en het noordelijkste van het land.",

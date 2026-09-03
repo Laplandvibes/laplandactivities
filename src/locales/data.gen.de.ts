@@ -48,15 +48,15 @@ const d: LangData = {
       "description": "Die Hauptstadt Lapplands und das Tor zu arktischen Abenteuern. Hier finden Sie das Weihnachtsmanndorf, hervorragende Verkehrsverbindungen und eine große Auswahl an Winter- und Sommeraktivitäten.",
       "access": "Direktflug ab Helsinki (1 Std. 15)",
       "bestFor": "Erste Reisen und Familien",
-      "why": "In Rovaniemi sitzt Lapplands Infrastruktur: internationaler Flughafen, Endstation des Nachtzugs und die größte Tourenauswahl der Region. Neben dem Weihnachtsmanndorf warten das Arktikum-Museum am Flussufer, die Pisten des Ounasvaara direkt über der Stadt und Dutzende Husky-, Rentier- und Polarlicht-Anbieter im Umkreis von 20 Minuten. Ideal für Erstbesucher und Familien. Die Polarkreislinie überqueren Sie gratis, die Urkunde dagegen ist ein kostenpflichtiges Souvenir aus der Touristeninformation am Polarkreis, dem Polarkreisturm oder dem Laden des Weihnachtshauses – nicht aus dem Postamt."
+      "why": "In Rovaniemi sitzt Lapplands Infrastruktur: internationaler Flughafen, Endstation des Nachtzugs und die größte Tourenauswahl der Region. Neben dem Weihnachtsmanndorf warten das Arktikum-Museum am Flussufer, die Pisten des Ounasvaara direkt über der Stadt und Dutzende Husky-, Rentier- und Polarlicht-Anbieter im Umkreis von 20 Minuten. Ideal für Erstbesucher und Familien. Den Polarkreis überqueren Sie gratis, die Urkunde dagegen ist ein kostenpflichtiges Souvenir aus der Touristeninformation am Polarkreis, dem Polarkreisturm oder dem Laden des Weihnachtshauses – nicht aus dem Postamt."
     },
     "levi": {
       "name": "Levi",
       "tagline": "Finnlands größtes Skigebiet",
       "description": "Ein erstklassiges Skigebiet mit 44 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten.",
-      "access": "Flug nach Kittilä (15 Min. mit dem Auto)",
+      "access": "Flughafen Kittilä (15 Min. mit dem Auto)",
       "bestFor": "Skifahrer und aktive Reisende",
-      "why": "Levi packt Finnlands größtes Skigebiet, 44 Pisten und 26 Lifte samt zwei Gondeln, in ein einziges fußläufiges Dorf am Fuß des Levitunturi. Jeden November eröffnet hier der alpine Weltcup seine Slalomsaison, und nach Liftschluss zieht die Menge ins Après-Ski des Hullu Poro. Perfekt für Skifahrer und Gruppen, die Restaurants und Nachtleben in Gehweite wollen; im Sommer bedient die Gondel den Levi Bike Park."
+      "why": "Levi packt Finnlands größtes Skigebiet, 44 Pisten und 26 Lifte samt zwei Gondeln, in ein einziges Dorf, in dem alles zu Fuß erreichbar ist, am Fuß des Levitunturi. Jeden November eröffnet hier der alpine Weltcup seine Slalomsaison, und nach Liftschluss zieht die Menge ins Après-Ski des Hullu Poro. Perfekt für Skifahrer und Gruppen, die Restaurants und Nachtleben in Gehweite wollen; im Sommer bringt die Gondel Biker in den Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
@@ -64,7 +64,7 @@ const d: LangData = {
       "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km. Ein ruhigeres, authentischeres Lappland-Erlebnis mit dem Nationalpark Pallas-Yllästunturi.",
       "access": "Flug nach Kittilä (35 Min. mit dem Auto)",
       "bestFor": "Naturliebhaber und erfahrene Skifahrer",
-      "why": "Ylläs besteht aus zwei ruhigen Dörfern, Äkäslompolo und Ylläsjärvi, auf beiden Seiten eines großen Fjälls: zusammen 62 Pisten und mit über drei Kilometern die längsten Abfahrten Finnlands. Drumherum liegen rund 300 km gespurte Loipen bis in den Nationalpark Pallas-Yllästunturi. Die richtige Wahl statt Levi für dunklen Polarlichthimmel, Nationalpark-Stille und lange Skitage; Äkäslompolo ist die ruhigere Seite, in Ylläsjärvi sind die Bars."
+      "why": "Ylläs besteht aus zwei ruhigen Dörfern, Äkäslompolo und Ylläsjärvi, auf beiden Seiten eines großen Fjälls: zusammen 62 Pisten und mit über drei Kilometern die längsten Abfahrten Finnlands. Drumherum liegen rund 300 km gespurte Loipen bis in den Nationalpark Pallas-Yllästunturi. Die bessere Wahl als Levi für dunklen Polarlichthimmel, Nationalpark-Stille und lange Skitage; Äkäslompolo ist die ruhigere Seite, in Ylläsjärvi sind die Bars."
     },
     "saariselka": {
       "name": "Saariselkä",
@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami. Hier finden Sie das Siida-Museum und unberührte Natur.",
       "access": "Flug nach Ivalo (40 Min. mit dem Auto)",
       "bestFor": "Kulturentdecker und Fotografen",
-      "why": "Inari ist Sitz des finnischen Sámi-Parlaments und der beste Ort, lebendige Sámi-Kultur zu erleben: erst das Siida-Museum, im Sommer dann eine Bootsfahrt über den Inarisee vorbei an der heiligen Insel Ukonsaari. Das Dorf ist klein, die Wildnis riesig; zur Wildniskirche von Pielpajärvi wandert man durch alten Kiefernwald. Es belohnt Reisende, die wegen Kultur, Fotografie und Stille kommen."
+      "why": "Inari ist Sitz des finnischen Sámi-Parlaments und der beste Ort, lebendige Sámi-Kultur zu erleben: erst das Siida-Museum, im Sommer dann eine Bootsfahrt über den Inarisee vorbei an der heiligen Insel Ukonsaari. Das Dorf ist klein, die Wildnis riesig; zur Wildniskirche von Pielpajärvi wandert man durch alten Kiefernwald. Ideal für Reisende, die wegen Kultur, Fotografie und Stille kommen."
     },
     "ruka": {
       "name": "Ruka und Kuusamo",
@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands. Berühmt für Bärenbeobachtung, Rafting und die längste Skisaison. Ruka liegt in Kuusamo, knapp südlich der Grenze Lapplands, mit demselben Schnee und demselben nordischen Winter.",
       "access": "Flug nach Kuusamo (25 Min. mit dem Auto)",
       "bestFor": "Wanderer, Skifahrer und Tierliebhaber",
-      "why": "Ruka ist ein kompaktes Pistendorf mit 41 Pisten und 22 Liften mitten in Kuusamos Outdoor-Land: Oulanka-Nationalpark, der 82 km lange Karhunkierros und Stromschnellen mit Rafting von Frühjahr bis Herbst. Dank Schneedepot öffnet das Gebiet im Oktober und fährt bis in den Mai, die längste Saison Finnlands. Im Sommer übernehmen Braunbär-Beobachtungsverstecke und der prämierte Bikepark."
+      "why": "Ruka ist ein kompaktes Skidorf mit 41 Pisten und 22 Liften mitten in Kuusamos Outdoor-Land: Oulanka-Nationalpark, der 82 km lange Karhunkierros und Stromschnellen mit Rafting von Frühjahr bis Herbst. Dank Schneedepot öffnet das Gebiet im Oktober, und der Betrieb läuft bis in den Mai, die längste Saison Finnlands. Im Sommer treten Braunbär-Verstecke und der prämierte Bikepark an ihre Stelle."
     },
     "posio": {
       "name": "Posio",
@@ -101,7 +101,7 @@ const d: LangData = {
     "tornio": {
       "name": "Tornio, Haparanda und Kemi",
       "tagline": "Arktische Abenteuer an der Grenze",
-      "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Kreuzfahrt auf dem Eisbrecher Sampo, dem SnowCastle Winter Park und Europas größtem frei fließendem Lachsfluss.",
+      "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen. Mit der legendären Fahrt auf dem Eisbrecher Sampo, dem SnowCastle Winter Park und Europas größtem frei fließendem Lachsfluss.",
       "access": "Flug nach Kemi (15 Min. mit dem Auto)",
       "bestFor": "Einzigartige Erlebnisse und Familienspaß",
       "why": "Tornio und Haparanda sind eine Stadt in zwei Ländern: Man überquert die Grenze zu Fuß mitten auf der Einkaufsstraße, IKEA Haparanda liegt direkt am Übergang, und eine Golfrunde wechselt viermal Land und Zeitzone. Kemi, 25 Minuten entfernt, bietet die Eisbrecher-Sampo-Fahrt und den winterlichen Schneepark des SnowCastle-Areals. Am Tornionjoki, Europas größtem frei fließendem Lachsfluss, wird an den Kukkolankoski-Stromschnellen im Sommer noch traditionell mit dem Kescher gefischt."

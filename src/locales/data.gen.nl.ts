@@ -46,7 +46,7 @@ const d: LangData = {
       "name": "Rovaniemi",
       "tagline": "De officiële thuisstad van de Kerstman",
       "description": "Hoofdstad van Lapland en toegangspoort tot arctische avonturen. Hier vindt u het Kerstmandorp, uitstekende verbindingen en een groot aanbod aan winter- en zomeractiviteiten.",
-      "access": "Directe vluchten vanuit Helsinki (1 u 15)",
+      "access": "Directe vluchten vanuit Helsinki (1 uur 15)",
       "bestFor": "Eerste bezoekers en gezinnen",
       "why": "In Rovaniemi zit de infrastructuur van Lapland: een internationale luchthaven, het eindpunt van de nachttrein en de grootste keuze aan tours van de regio. Naast het Kerstmandorp vindt u het Arktikum-museum aan de rivier, de pistes van Ounasvaara boven de stad en tientallen husky-, rendier- en noorderlichtaanbieders binnen 20 minuten rijden. Ideaal voor eerste bezoekers en gezinnen. De poolcirkellijn oversteken is gratis, het certificaat niet: dat koopt u bij de toeristeninformatie op de poolcirkel, in de poolcirkeltoren of in de winkel van het Kersthuis, niet bij het postkantoor."
     },
@@ -56,7 +56,7 @@ const d: LangData = {
       "description": "Een topbestemming met 44 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten.",
       "access": "Vlieg naar Kittilä (15 min met de auto)",
       "bestFor": "Skiërs en actieve reizigers",
-      "why": "Levi stopt het grootste skigebied van Finland, 44 pistes en 26 liften met twee gondels, in één beloopbaar dorp aan de voet van de Levitunturi. Elke november opent de alpine wereldbeker hier zijn slalomseizoen, en na sluiting van de liften verhuist de menigte naar de après-ski van Hullu Poro. Perfect voor skiërs en groepen die restaurants en nachtleven op loopafstand van de piste willen; in de zomer bedient de gondel het Levi Bike Park."
+      "why": "Levi verenigt het grootste skigebied van Finland, 44 pistes en 26 liften met twee gondels, in één dorp waar alles op loopafstand ligt, aan de voet van de Levitunturi. Elke november opent de alpine wereldbeker hier zijn slalomseizoen, en na sluiting van de liften trekt het publiek naar de après-ski van Hullu Poro. Perfect voor skiërs en groepen die restaurants en nachtleven op loopafstand van de piste willen; in de zomer brengt de gondel bikers naar het Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
@@ -64,23 +64,23 @@ const d: LangData = {
       "description": "Twee skigebieden aan beide zijden van de Ylläs-fjäll met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
       "access": "Vlieg naar Kittilä (35 min met de auto)",
       "bestFor": "Natuurliefhebbers en ervaren skiërs",
-      "why": "Ylläs bestaat uit twee rustige dorpen, Äkäslompolo en Ylläsjärvi, aan weerszijden van één grote fjäll (heuvel): samen 62 pistes en met ruim drie kilometer de langste afdalingen van Finland. Eromheen ligt zo’n 300 km geprepareerd langlaufspoor tot in het nationale park Pallas-Yllästunturi. Kies Ylläs boven Levi voor donkere noorderlichtluchten, nationale-parkstilte en lange skidagen; Äkäslompolo is de rustige kant, Ylläsjärvi heeft de bars."
+      "why": "Ylläs bestaat uit twee rustige dorpen, Äkäslompolo en Ylläsjärvi, aan weerszijden van één grote fjäll (heuvel): samen 62 pistes en met ruim drie kilometer de langste afdalingen van Finland. Eromheen ligt zo'n 300 km geprepareerde langlaufloipes tot in het nationale park Pallas-Yllästunturi. Kies Ylläs boven Levi voor donkere noorderlichtluchten, de stilte van het nationale park en lange skidagen; Äkäslompolo is de rustige kant, Ylläsjärvi heeft de bars."
     },
     "saariselka": {
       "name": "Saariselkä",
-      "tagline": "Toegangspoort tot het Urho Kekkonen Nationaal Park",
+      "tagline": "Toegangspoort tot Nationaal Park Urho Kekkonen",
       "description": "Het noordelijkste skigebied van Finland, grenzend aan een van de grootste wildernisgebieden van Europa. Beroemd om het noorderlicht, het goudwassen en de legendarische rooksauna van Kiilopää.",
       "access": "Vlieg naar Ivalo (30 min met de auto)",
       "bestFor": "Wildernisliefhebbers en noorderlichtjagers",
-      "why": "Saariselkä ligt aan de rand van het nationale park Urho Kekkonen: gemarkeerde routes en open wildernishutten beginnen in het dorp zelf. Zo noordelijk zijn de noorderlichtkansen goed van september tot april, plus dingen die zuidelijker niet bestaan: goudwassen in Tankavaara, waar alles wat u vindt van u is, en de rooksauna van Kiilopää met een rol door de sneeuw erna. Voor reizigers die wildernis boven voorzieningen stellen."
+      "why": "Saariselkä ligt aan de rand van het nationale park Urho Kekkonen: gemarkeerde routes en open wildernishutten beginnen in het dorp zelf. Zo noordelijk zijn de noorderlichtkansen goed van september tot april, en er is wat verder zuidelijk ontbreekt: goudwassen in Tankavaara, waar alles wat u vindt van u is, en de rooksauna van Kiilopää met een rol door de sneeuw erna. Voor reizigers die wildernis boven voorzieningen stellen."
     },
     "inari": {
       "name": "Inari",
       "tagline": "Hart van de Sami-cultuur",
-      "description": "Aan de oevers van het Inari-meer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk. Hier vindt u het Siida-museum en ongerepte wildernis.",
+      "description": "Aan de oevers van het Inarimeer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk. Hier vindt u het Siida-museum en ongerepte wildernis.",
       "access": "Vlieg naar Ivalo (40 min met de auto)",
       "bestFor": "Cultuurliefhebbers en fotografen",
-      "why": "Inari is de zetel van het Finse Sami-parlement en de beste plek om levende Sami-cultuur te ontmoeten: begin in het Siida-museum en vaar in de zomer over het Inarimeer langs het heilige eiland Ukonsaari. Het dorp is klein en de wildernis eromheen enorm; naar de wilderniskerk van Pielpajärvi wandelt u door oud dennenbos. Het beloont wie komt voor cultuur, fotografie en stilte."
+      "why": "Inari is de zetel van het Finse Sami-parlement en de beste plek om levende Sami-cultuur te ontmoeten: begin in het Siida-museum en vaar in de zomer over het Inarimeer langs het heilige eiland Ukonsaari. Het dorp is klein en de wildernis eromheen enorm; naar de wilderniskerk van Pielpajärvi wandelt u door oud dennenbos. Ideaal voor wie komt voor cultuur, fotografie en stilte."
     },
     "ruka": {
       "name": "Ruka en Kuusamo",
@@ -88,12 +88,12 @@ const d: LangData = {
       "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland. Beroemd om berenobservatie, raften en het langste skiseizoen. Ruka ligt in Kuusamo, net ten zuiden van Lapland, met dezelfde sneeuw en dezelfde noordelijke winter.",
       "access": "Vlieg naar Kuusamo (25 min met de auto)",
       "bestFor": "Wandelaars, skiërs en natuurliefhebbers",
-      "why": "Ruka is een compact pistedorp met 41 pistes en 22 liften midden in het buitengebied van Kuusamo: nationaal park Oulanka, de 82 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark het over."
+      "why": "Ruka is een compact skidorp met 41 pistes en 22 liften midden in de natuur van Kuusamo: nationaal park Oulanka, de 82 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark de plaats in."
     },
     "posio": {
       "name": "Posio",
       "tagline": "Verborgen parel van Oost-Lapland",
-      "description": "Beroemd om de spectaculaire met sneeuw bekroonde bomen van Riisitunturi Nationaal Park en de bevroren watervallen van de Korouoma-canyon. Buiten de gebaande paden, pure wildernis.",
+      "description": "Beroemd om de spectaculaire sneeuwbeladen bomen van Nationaal Park Riisitunturi en de bevroren watervallen van de Korouoma-canyon. Buiten de gebaande paden, pure wildernis.",
       "access": "Met de auto vanuit Rovaniemi (2 u) of Ruka (1 u)",
       "bestFor": "Ontdekkers van het minder bekende",
       "why": "De troeven van Posio komen uit de natuur: de tykky-bomen van Riisitunturi, door de vorst tot sculpturen gebogen, en de bevroren watervallen van Korouoma, tot 40 meter hangend langs de canyonwand. Tel daar Pentik bij op, de noordelijkste keramiekfabriek ter wereld met galerieën en outlet, en de dag is vol, ver van de toeristische routes. Een auto is nodig; het past goed bij een reis naar Ruka of Rovaniemi."

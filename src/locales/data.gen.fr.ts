@@ -45,7 +45,7 @@ const d: LangData = {
     "rovaniemi": {
       "name": "Rovaniemi",
       "tagline": "La ville officielle du Père Noël",
-      "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques. On y trouve le village du Père Noël, d'excellentes liaisons de transport et un vaste choix d'activités d'hiver comme d'été.",
+      "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques. On y trouve le Village du Père Noël, d’excellentes liaisons de transport et un vaste choix d'activités d'hiver comme d'été.",
       "access": "Vol direct depuis Helsinki (1 h 15)",
       "bestFor": "Premiers voyages et familles",
       "why": "Rovaniemi concentre l’infrastructure de la Laponie : aéroport international, terminus du train de nuit et le plus grand choix d’excursions de la région. Au-delà du village du Père Noël, on y trouve le musée Arktikum au bord du fleuve, les pistes d’Ounasvaara juste au-dessus de la ville et des dizaines d’opérateurs de huskies, de rennes et d’aurores à 20 minutes. Idéal pour un premier séjour et les familles. Franchir la ligne du cercle polaire est gratuit, mais le certificat est un souvenir payant, vendu à l’office de tourisme du cercle polaire, à la tour du cercle polaire ou à la boutique de la Maison de Noël, et non à la poste."
@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sâme finlandais. On y trouve le musée Siida et une nature préservée.",
       "access": "Vol vers Ivalo (40 min en voiture)",
       "bestFor": "Explorateurs culturels et photographes",
-      "why": "Inari est le siège du Parlement sâme de Finlande et le meilleur endroit pour rencontrer la culture sâme vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l’église de Pielpajärvi se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
+      "why": "Inari est le siège du Parlement sâme de Finlande et le meilleur endroit pour rencontrer la culture sâme vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l'église de Pielpajärvi, en pleine nature sauvage, se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
     },
     "ruka": {
       "name": "Ruka et Kuusamo",
@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Le sentier mythique du Karhunkierros, le parc national d'Oulanka et l'une des meilleures stations de ski de Finlande. Connue pour l'observation des ours, le rafting et la plus longue saison de ski. Ruka se trouve à Kuusamo, juste au sud de la Laponie, avec la même neige et le même hiver nordique.",
       "access": "Vol vers Kuusamo (25 min en voiture)",
       "bestFor": "Randonneurs, skieurs et passionnés de faune",
-      "why": "Ruka est un village-station compact, 41 pistes et 22 remontées, au cœur du terrain de jeu de Kuusamo : parc national d’Oulanka, sentier Karhunkierros de 82 km et rapides où l’on rafte du printemps à l’automne. Grâce à la neige stockée, la station ouvre en octobre et skie jusqu’en mai, la plus longue saison de Finlande. L’été, place aux affûts d’observation des ours bruns et au bike park primé."
+      "why": "Ruka est un village-station compact, 41 pistes et 22 remontées, au cœur du terrain de jeu de Kuusamo : parc national d’Oulanka, sentier Karhunkierros de 82 km et rapides où l’on pratique le rafting du printemps à l’automne. Grâce à la neige stockée, la station ouvre en octobre et reste skiable jusqu’en mai, la plus longue saison de Finlande. L’été, place aux affûts d’observation des ours bruns et au bike park primé."
     },
     "posio": {
       "name": "Posio",

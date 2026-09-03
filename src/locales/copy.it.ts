@@ -8,7 +8,7 @@ const it: SectionCopy = {
     hero: {
       eyebrow: 'Lapponia finlandese · Norvegia artica',
       title: 'Pesca in Lapponia e nell\'oceano Artico',
-      sub: 'Tre aree di pesca, un solo viaggio: pesca sul ghiaccio gratuita sui laghi gelati, fiumi da salmone su licenza in estate e safari al granchio reale oltre il confine norvegese. Ecco cosa è aperto nel 2026, e le regole che fanno tornare il pesce.',
+      sub: 'Tre aree di pesca, un solo viaggio: pesca sul ghiaccio gratuita sui laghi gelati, fiumi da salmone con permesso di pesca in estate e safari al granchio reale oltre il confine norvegese. Ecco cosa è aperto nel 2026, e le regole che fanno tornare il pesce.',
       ctaBook: 'Prenota un\'uscita guidata di pesca sul ghiaccio',
       ctaRules: 'Licenze e regole →',
       trustLine: 'Verificato con fonti ufficiali finlandesi (eräluvat.fi, MMM) e norvegesi (fiskeridir.no). Le regole cambiano ogni anno: verifichi il suo specchio d\'acqua prima di pescare.',
@@ -188,7 +188,7 @@ const it: SectionCopy = {
       items: [
         {
           q: 'Serve una licenza per la pesca sul ghiaccio?',
-          a: 'No. La pesca sul ghiaccio di base (pilkki) con una singola canna a jig è un diritto generale gratuito in Finlandia per tutti, a qualsiasi età, senza tariffa né permesso, sui laghi ordinari. Cambia solo alle rapide dei fiumi da salmone, nelle zone vietate e sui siti speciali, o se usa bilance, reti o palamiti, che richiedono la tariffa nazionale e un permesso dello specchio d\'acqua (eräluvat.fi).',
+          a: 'No. La pesca sul ghiaccio di base (pilkki) con una singola canna da pilkki rientra nel diritto di libero accesso alla natura, gratuito per tutti e a qualsiasi età, senza tariffa né permesso, sui laghi ordinari. Cambia solo alle rapide dei fiumi da salmone, nelle zone vietate e sui siti speciali, o se usa bilance, reti o palamiti, che richiedono la tariffa nazionale e un permesso dello specchio d\'acqua (eräluvat.fi).',
         },
         {
           q: 'Posso pescare il salmone nel Teno nel 2026?',
@@ -308,14 +308,14 @@ const it: SectionCopy = {
     categoriesKicker: 'Cosa fare', categoriesH2: 'Scelga la sua avventura',
     categoriesLead: '9 modi per vivere l\'Artico, scelga una categoria e La indirizzeremo verso gli operatori selezionati.',
     activitiesLabel: 'attività', viewAllCategories: 'Vedi tutte le categorie',
-    gygTitle: 'I tour della Lapponia più votati della settimana', gygEyebrow: 'Prenotabile ora',
+    gygTitle: 'I tour della Lapponia più apprezzati della settimana', gygEyebrow: 'Prenotabile ora',
     featuredKicker: 'Selezionati', featuredH2: 'Esperienze top', seeAllTours: 'Vedi tutti i tour prenotabili',
-    seasonsKicker: 'Tutto l\'anno', seasonsH2: 'Quattro stagioni di avventura', seasonsLead: 'Ogni stagione trasforma la Lapponia in un paese diverso.',
+    seasonsKicker: 'Tutto l\'anno', seasonsH2: 'Quattro stagioni di avventura', seasonsLead: 'Ogni stagione trasforma la Lapponia in un mondo diverso.',
     seasons: [
       { name: 'Inverno', months: 'nov – mar', blurb: 'Neve profonda, notti polari, picco di aurora. Motoslitte, husky, saune a fumo.', temp: '-15 a -5 °C' },
-      { name: 'Primavera', months: 'apr – mag', blurb: 'Neve con luce. Sci di fine stagione, parto delle renne, aurora fino a metà aprile.', temp: '-5 a +5 °C' },
+      { name: 'Primavera', months: 'apr – mag', blurb: 'Neve con luce. Sci di fine stagione, nascita dei piccoli di renna, aurora fino a metà aprile.', temp: '-5 a +5 °C' },
       { name: 'Estate', months: 'giu – ago', blurb: 'Il sole di mezzanotte non tramonta. Trekking, kayak, pesca al salmone, mountain bike.', temp: '+10 a +25 °C' },
-      { name: 'Autunno', months: 'set – ott', blurb: 'Il ruska colora i fjell. Tornano le prime aurore. Stagione di funghi e bacche.', temp: '+5 a -5 °C' },
+      { name: 'Autunno', months: 'set – ott', blurb: 'La ruska colora i fjäll. Tornano le prime aurore. Stagione di funghi e bacche.', temp: '+5 a -5 °C' },
     ],
     destinationsKicker: 'Dove andare', destinationsH2: 'Destinazioni', viewAll: 'Vedi tutto', activitiesShort: 'attività',
   },
@@ -338,7 +338,7 @@ const it: SectionCopy = {
     items: [
       {
         q: 'Quali attività si possono fare in Lapponia?',
-        a: 'In inverno i classici sono le slitte trainate da husky e renne, i safari in motoslitta, la caccia all’aurora, le ciaspolate, lo sci di fondo e alpino, la pesca sul ghiaccio e l’ice floating. In estate la stessa natura diventa trekking, kayak e canoa, rafting, mountain bike, pesca al salmone e ricerca dell’oro. Tutto l’anno, la sauna a fumo e le esperienze di cultura sami mostrano un lato più tranquillo dell’Artico.',
+        a: 'In inverno i classici sono le slitte trainate da husky e renne, i safari in motoslitta, la caccia all’aurora, le ciaspolate, lo sci di fondo e alpino, la pesca sul ghiaccio e il galleggiamento in tuta termica (ice floating). In estate la stessa natura diventa trekking, kayak e canoa, rafting, mountain bike, pesca al salmone e ricerca dell’oro. Tutto l’anno, la sauna a fumo e le esperienze di cultura sami mostrano un lato più tranquillo dell’Artico.',
       },
       {
         q: 'Quali sono le migliori attività invernali ed estive?',
@@ -350,11 +350,11 @@ const it: SectionCopy = {
       },
       {
         q: 'Le attività in Lapponia sono adatte ai bambini piccoli?',
-        a: 'Molte lo sono, con la scelta giusta. I giri in slitta trainata dalle renne, le visite alle fattorie degli husky, le tranquille passeggiate con le ciaspole, lo slittino e l’incontro con Babbo Natale funzionano bene per i più piccoli. La motoslitta ha di solito un’età minima per guidare (i bambini viaggiano in una slitta o in un rimorchio), e le cacce all’aurora a tarda notte possono essere lunghe e fredde per i piccolissimi. La maggior parte degli operatori indica i limiti di età e le opzioni per famiglie sulla pagina dell’attività, quindi controlla prima di prenotare.',
+        a: 'Molte lo sono, con la scelta giusta. I giri in slitta trainata dalle renne, le visite alle fattorie degli husky, le tranquille passeggiate con le ciaspole, lo slittino e l’incontro con Babbo Natale funzionano bene per i più piccoli. La motoslitta ha di solito un’età minima per guidare (i bambini viaggiano in una slitta o in un rimorchio), e le cacce all’aurora a tarda notte possono essere lunghe e fredde per i piccolissimi. La maggior parte degli operatori indica i limiti di età e le opzioni per famiglie sulla pagina dell’attività, quindi controlli prima di prenotare.',
       },
       {
         q: 'È necessario prenotare in anticipo le attività in Lapponia?',
-        a: 'Per le settimane più affollate, Natale e Capodanno, e il picco di aurore e sci da febbraio a marzo, sì, prenota con largo anticipo, perché i tour più richiesti con husky e motoslitta si riempiono. Nei periodi più tranquilli c’è più flessibilità, ma gli operatori più apprezzati e le partenze in piccoli gruppi si esauriscono comunque per primi. Prenotare in anticipo Le permette anche di inserire un margine per il cielo sereno nei piani per l’aurora invece di contendere gli ultimi posti.',
+        a: 'Per le settimane più affollate, Natale e Capodanno, e il picco di aurore e sci da febbraio a marzo, sì, prenoti con largo anticipo, perché i tour più richiesti con gli husky e in motoslitta si riempiono. Nei periodi più tranquilli c’è più flessibilità, ma gli operatori più apprezzati e le partenze in piccoli gruppi si esauriscono comunque per primi. Prenotare in anticipo Le permette anche di tenere qualche serata di riserva in attesa del cielo sereno invece di contendersi gli ultimi posti.',
       },
     ],
   },

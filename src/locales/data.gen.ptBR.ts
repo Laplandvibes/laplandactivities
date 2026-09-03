@@ -56,7 +56,7 @@ const d: LangData = {
       "description": "Destino de esqui de primeira linha com 44 pistas e 230 km de trilhas de cross-country. Animado après-ski no Hullu Poro e atividades ao ar livre o ano todo.",
       "access": "Voo para Kittilä (15 min de carro)",
       "bestFor": "Esquiadores e viajantes ativos",
-      "why": "Levi reúne a maior estação de esqui da Finlândia, 44 pistas e 26 teleféricos com duas gôndolas, num único vilarejo caminhável ao pé do Levitunturi. A Copa do Mundo de esqui alpino abre aqui sua temporada de slalom todo novembro, e quando os teleféricos fecham a multidão migra para o après-ski do Hullu Poro. Perfeito para esquiadores e grupos que querem restaurantes e vida noturna a pé; no verão a gôndola serve o Levi Bike Park."
+      "why": "Levi reúne a maior estação de esqui da Finlândia, 44 pistas e 26 teleféricos com duas gôndolas, num único vilarejo que dá para percorrer a pé, ao pé do Levitunturi. A Copa do Mundo de esqui alpino abre aqui sua temporada de slalom todo novembro, e quando os teleféricos fecham a multidão migra para o après-ski do Hullu Poro. Perfeito para esquiadores e grupos que querem restaurantes e vida noturna a poucos passos das pistas; no verão a gôndola serve o Levi Bike Park."
     },
     "yllas": {
       "name": "Ylläs",
@@ -64,15 +64,15 @@ const d: LangData = {
       "description": "Duas estações de esqui nos dois lados do monte Ylläs oferecem as descidas mais longas da Finlândia, de até 3 km. Uma experiência mais tranquila e autêntica da Lapônia com o Parque Nacional de Pallas-Yllästunturi.",
       "access": "Voo para Kittilä (35 min de carro)",
       "bestFor": "Amantes da natureza e esquiadores experientes",
-      "why": "Ylläs são dois vilarejos tranquilos, Äkäslompolo e Ylläsjärvi, em lados opostos de um grande monte: 62 pistas no total e as descidas mais longas da Finlândia, com mais de três quilômetros. Ao redor há cerca de 300 km de trilhas de cross-country preparadas que chegam ao parque nacional Pallas-Yllästunturi. Escolha-o no lugar de Levi se busca céus escuros de aurora, silêncio de parque nacional e longos dias de esqui."
+      "why": "Ylläs é formada por dois vilarejos tranquilos, Äkäslompolo e Ylläsjärvi, em lados opostos de um grande monte: 62 pistas no total e as descidas mais longas da Finlândia, com mais de três quilômetros. Ao redor há cerca de 300 km de trilhas de cross-country preparadas que chegam ao parque nacional Pallas-Yllästunturi. Prefira Ylläs a Levi se você busca céus escuros para ver a aurora, silêncio de parque nacional e longos dias de esqui."
     },
     "saariselka": {
       "name": "Saariselkä",
       "tagline": "Porta de entrada do Parque Nacional Urho Kekkonen",
       "description": "A estação de esqui mais ao norte da Finlândia, na borda de uma das maiores áreas selvagens da Europa. Famosa pela observação da aurora, pelo garimpo de ouro e pela lendária sauna de fumaça de Kiilopää.",
       "access": "Voo para Ivalo (30 min de carro)",
-      "bestFor": "Buscadores de natureza selvagem e caçadores de auroras",
-      "why": "Saariselkä fica na borda do parque nacional Urho Kekkonen: trilhas marcadas e cabanas abertas começam no próprio vilarejo. Tão ao norte, as auroras aparecem de setembro a abril, e ainda há coisas que não existem mais ao sul: a garimpagem de ouro em Tankavaara, onde tudo o que achar é seu, e a sauna de fumaça de Kiilopää seguida de um mergulho na neve. Para viajantes que põem a natureza selvagem antes dos serviços."
+      "bestFor": "Amantes da natureza selvagem e caçadores de auroras",
+      "why": "Saariselkä fica na borda do parque nacional Urho Kekkonen: as trilhas marcadas saem do próprio vilarejo, com cabanas abertas pelo caminho. Tão ao norte, as auroras aparecem de setembro a abril, e ainda há coisas que não existem mais ao sul: a garimpagem de ouro em Tankavaara, onde tudo o que achar é seu, e a sauna de fumaça de Kiilopää seguida de um mergulho na neve. Para viajantes que põem a natureza selvagem antes dos serviços."
     },
     "inari": {
       "name": "Inari",
@@ -85,10 +85,10 @@ const d: LangData = {
     "ruka": {
       "name": "Ruka e Kuusamo",
       "tagline": "Capital finlandesa da natureza selvagem",
-      "description": "Lar da lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia. Famosa pela observação de ursos, pelo rafting e pela temporada de esqui mais longa. Ruka fica em Kuusamo, logo ao sul da Lapônia, com a mesma neve e o mesmo inverno nórdico.",
+      "description": "Abriga a lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia. Famosa pela observação de ursos, pelo rafting e pela temporada de esqui mais longa. Ruka fica em Kuusamo, logo ao sul da Lapônia, com a mesma neve e o mesmo inverno nórdico.",
       "access": "Voo para Kuusamo (25 min de carro)",
       "bestFor": "Caminhantes, esquiadores e amantes da fauna",
-      "why": "Ruka é um vilarejo de pistas compacto com 41 pistas e 22 teleféricos no coração do território outdoor de Kuusamo: o parque nacional de Oulanka, os 82 km da trilha Karhunkierros e corredeiras com rafting da primavera ao outono. A neve armazenada abre a temporada em outubro e se esquia até maio, a mais longa da Finlândia. No verão entram em cena os esconderijos de observação de ursos-pardos e o premiado bike park."
+      "why": "Ruka é uma vila-estação compacta, com 41 pistas e 22 teleféricos no coração do território outdoor de Kuusamo: o parque nacional de Oulanka, os 82 km da trilha Karhunkierros e corredeiras com rafting da primavera ao outono. A neve armazenada abre a temporada em outubro e se esquia até maio, a mais longa da Finlândia. No verão entram em cena os abrigos de observação de ursos-pardos e o premiado bike park."
     },
     "posio": {
       "name": "Posio",

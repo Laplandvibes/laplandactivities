@@ -8,7 +8,7 @@ const de: SectionCopy = {
     hero: {
       eyebrow: 'Finnisch-Lappland · Arktisches Norwegen',
       title: 'Angeln in Lappland & im Nordmeer',
-      sub: 'Drei Angelreviere, eine Reise: kostenloses Eisangeln auf zugefrorenen Seen, lizenzierte Lachsflüsse im Sommer und Königskrabben-Safaris über die norwegische Grenze. Hier ist, was 2026 geöffnet ist, und die Regeln, die dafür sorgen, dass die Fische zurückkehren.',
+      sub: 'Drei Angelreviere, eine Reise: kostenloses Eisangeln auf zugefrorenen Seen, lizenzierte Lachsflüsse im Sommer und Königskrabben-Safaris über die norwegische Grenze. Was 2026 geöffnet ist – und die Regeln, die dafür sorgen, dass die Fische zurückkehren.',
       ctaBook: 'Geführte Eisangeltour buchen',
       ctaRules: 'Lizenzen & Regeln →',
       trustLine: 'Geprüft anhand offizieller finnischer (eräluvat.fi, MMM) und norwegischer (fiskeridir.no) Quellen. Die Vorschriften ändern sich jedes Jahr. Prüfen Sie Ihr Gewässer vor dem Angeln.',
@@ -188,7 +188,7 @@ const de: SectionCopy = {
       items: [
         {
           q: 'Brauche ich eine Lizenz zum Eisangeln?',
-          a: 'Nein. Einfaches Eisangeln (pilkki) mit einer einzelnen gejiggten Rute ist in Finnland für alle ein kostenloses allgemeines Recht, in jedem Alter, keine Abgabe und keine Genehmigung, an gewöhnlichen Seen. Anders ist es nur an Lachsfluss-Stromschnellen, in gesperrten Gebieten und an Sonderstellen, oder wenn Sie Eishaken-Automaten, Netze oder Setzangeln verwenden, die die staatliche Abgabe und eine Gewässergenehmigung erfordern (eräluvat.fi).',
+          a: 'Nein. Einfaches Eisangeln (pilkki) mit einer einzelnen Pilkrute ist in Finnland für alle ein kostenloses allgemeines Recht, in jedem Alter, keine Abgabe und keine Genehmigung, an gewöhnlichen Seen. Anders ist es nur an Lachsfluss-Stromschnellen, in gesperrten Gebieten und an Sonderstellen, oder wenn Sie automatische Eisangeln, Netze oder Setzangeln verwenden, die die staatliche Abgabe und eine Gewässergenehmigung erfordern (eräluvat.fi).',
         },
         {
           q: 'Darf ich 2026 im Teno auf Lachs angeln?',
@@ -200,7 +200,7 @@ const de: SectionCopy = {
         },
         {
           q: 'Darf ich meinen Fang aus Norwegen mit nach Hause nehmen?',
-          a: 'Nur über ein registriertes Tourismus-Angelcamp. Das Ausfuhrlimit beträgt 15 kg pro Person, zweimal pro Kalenderjahr im Jahr 2026 (sinkend auf 10 kg ab dem 1. Januar 2027), der Fang muss über einen bei der Fischereidirektion registrierten Betrieb kommen, und das Mindestalter beträgt 12 Jahre. Ein Tag kostenloses Angeln zum Essen vor Ort ist in Ordnung; die Ausfuhr selbst gefangenen Fisches nicht (fiskeridir.no).',
+          a: 'Nur über ein registriertes Tourismus-Angelcamp. Das Ausfuhrlimit beträgt 15 kg pro Person, zweimal pro Kalenderjahr im Jahr 2026 (sinkend auf 10 kg ab dem 1. Januar 2027), der Fang muss über einen bei der Fischereidirektion registrierten Betrieb kommen, und das Mindestalter beträgt 12 Jahre. Ein Tag kostenloses Angeln, um den Fang vor Ort zu essen, ist erlaubt; die Ausfuhr selbst gefangenen Fisches nicht (fiskeridir.no).',
         },
         {
           q: 'Darf ich Königskrabben selbst fangen?',
@@ -331,11 +331,11 @@ const de: SectionCopy = {
   },
   home: {
     metaTitle: 'LaplandActivities: arktische Touren in Lappland',
-    metaDescription: 'Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren und Rauchsaunas: handverlesene Aktivitäten in 10 Reisezielen in und um Lappland über GetYourGuide buchen.',
+    metaDescription: '… handverlesene Aktivitäten in zehn Reisezielen in und um Lappland über GetYourGuide buchen.',
     ogTitle: 'LaplandActivities: handverlesene arktische Erlebnisse',
     categoriesKicker: 'Was zu tun ist',
     categoriesH2: 'Wählen Sie Ihr Abenteuer',
-    categoriesLead: 'Neun Wege, die Arktis zu erleben. Wählen Sie eine Kategorie, und Sie werden zu handverlesenen Tour-Anbietern geleitet.',
+    categoriesLead: 'Neun Wege, die Arktis zu erleben. Wählen Sie eine Kategorie – wir führen Sie zu handverlesenen Anbietern.',
     activitiesLabel: 'Aktivitäten',
     viewAllCategories: 'Alle Kategorien ansehen',
     gygTitle: 'Bestbewertete Lappland-Touren diese Woche',
@@ -348,8 +348,8 @@ const de: SectionCopy = {
     seasonsLead: 'Jede Saison verwandelt Lappland in ein anderes Land.',
     seasons: [
       { name: 'Winter', months: 'Nov – Mär', blurb: 'Tiefer Schnee, Polarnächte, intensive Nordlichter. Schneemobile, Huskys, Rauchsaunas.', temp: '-15 bis -5 °C' },
-      { name: 'Frühling', months: 'Apr – Mai', blurb: 'Schnee mit Tageslicht. Skifahren spät in der Saison, Rentierkälber, Nordlichter bis Mitte April.', temp: '-5 bis +5 °C' },
-      { name: 'Sommer', months: 'Jun – Aug', blurb: 'Die Mitternachtssonne geht nicht unter. Wandern, Kajak, Lachsfischen, Mountainbiking.', temp: '+10 bis +25 °C' },
+      { name: 'Frühling', months: 'Apr – Mai', blurb: 'Schnee mit Tageslicht. Skifahren im Spätwinter, Rentierkälber, Polarlichter bis Mitte April.', temp: '-5 bis +5 °C' },
+      { name: 'Sommer', months: 'Jun – Aug', blurb: 'Die Mitternachtssonne geht nicht unter. Wandern, Kajakfahren, Lachsangeln, Mountainbiken.', temp: '+10 bis +25 °C' },
       { name: 'Herbst', months: 'Sep – Okt', blurb: 'Ruska färbt die Fjälls. Die ersten Nordlichter kehren zurück. Pilz- und Beerensaison.', temp: '+5 bis -5 °C' },
     ],
     destinationsKicker: 'Wohin reisen',
@@ -376,7 +376,7 @@ const de: SectionCopy = {
     items: [
       {
         q: 'Welche Aktivitäten kann man in Lappland unternehmen?',
-        a: 'Im Winter sind die Klassiker Husky- und Rentierschlittenfahrten, Schneemobil-Safaris, Nordlicht-Touren, Schneeschuhwandern, Langlauf und Abfahrtski, Eisangeln und Eis-Floating. Im Sommer wird dieselbe Wildnis zum Wandern, Kajak- und Kanufahren, Wildwasser-Rafting, Mountainbiken, Lachsangeln und Goldwaschen. Ganzjährig bieten die Rauchsauna und Erlebnisse rund um die Sámi-Kultur eine andere, ruhigere Seite der Arktis.',
+        a: 'Im Winter sind die Klassiker Husky- und Rentierschlittenfahrten, Schneemobil-Safaris, Nordlicht-Touren, Schneeschuhwandern, Langlauf und Abfahrtski, Eisangeln und Eis-Floating. Im Sommer wird dieselbe Wildnis zum Wandern, Kajak- und Kanufahren, Wildwasser-Rafting, Mountainbiken, Lachsangeln und Goldwaschen. Ganzjährig bieten die Rauchsauna und Erlebnisse rund um die Kultur der Samen eine andere, ruhigere Seite der Arktis.',
       },
       {
         q: 'Was sind die besten Winter- bzw. Sommeraktivitäten?',
@@ -384,15 +384,15 @@ const de: SectionCopy = {
       },
       {
         q: 'Wie viel kosten Aktivitäten in Lappland?',
-        a: 'Das hängt stark von Aktivität, Dauer und Gruppengröße ab. Eine kurze Gruppenaktivität wie eine Rentierfahrt oder eine Nordlicht-Bustour liegt am unteren Ende; mehrstündige oder private Touren wie eine lange Husky-Safari oder eine geführte Schneemobil-Expedition kosten mehr, auch weil warme Overalls, Stiefel, Sicherheitsausrüstung und ein Guide enthalten sind. Aktuelle, genaue Preise sehen Sie, wenn Sie eine Tour über unseren Buchungspartner öffnen. Der Live-Preis wird vor der Buchung angezeigt.',
+        a: 'Das hängt stark von Aktivität, Dauer und Gruppengröße ab. Eine kurze Gruppenaktivität wie eine Rentierfahrt oder eine Polarlicht-Bustour liegt am unteren Ende der Preisspanne; mehrstündige oder private Touren wie eine lange Husky-Safari oder eine geführte Schneemobil-Expedition kosten mehr, auch weil warme Overalls, Stiefel, Sicherheitsausrüstung und ein Guide enthalten sind. Aktuelle, genaue Preise sehen Sie, wenn Sie eine Tour über unseren Buchungspartner öffnen. Der Live-Preis wird vor der Buchung angezeigt.',
       },
       {
         q: 'Sind Aktivitäten in Lappland für kleine Kinder geeignet?',
-        a: 'Viele sind es, mit der richtigen Wahl. Rentierschlittenfahrten, Besuche auf der Huskyfarm, sanfte Schneeschuhwanderungen, Schlittenfahren und das Treffen mit dem Weihnachtsmann eignen sich gut für kleine Kinder. Beim Schneemobilfahren gibt es meist ein Mindestalter zum Fahren (Kinder fahren im Schlitten oder Anhänger mit), und späte Nordlicht-Touren können für die Kleinsten lang und kalt sein. Die meisten Anbieter nennen Altersgrenzen und Familienoptionen auf der Aktivitätsseite, also am besten vor der Buchung prüfen.',
+        a: 'Viele schon – wenn Sie richtig wählen. Rentierschlittenfahrten, Besuche auf der Huskyfarm, sanfte Schneeschuhwanderungen, Schlittenfahren und das Treffen mit dem Weihnachtsmann eignen sich gut für kleine Kinder. Beim Schneemobilfahren gilt meist ein Mindestalter für Fahrer (Kinder fahren im Schlitten oder Anhänger mit), und späte Nordlicht-Touren können für die Kleinsten lang und kalt sein. Die meisten Anbieter nennen Altersgrenzen und Familienoptionen auf der Aktivitätsseite, also am besten vor der Buchung prüfen.',
       },
       {
         q: 'Muss man Aktivitäten in Lappland im Voraus buchen?',
-        a: 'Für die geschäftigsten Wochen, also Weihnachten und Neujahr sowie den Nordlicht- und Ski-Höhepunkt von Februar bis März, gilt: buchen Sie früh, denn beliebte Husky- und Schneemobiltouren sind schnell ausgebucht. In ruhigeren Zeiten haben Sie mehr Spielraum, aber die bestbewerteten Anbieter und Kleingruppen-Abfahrten sind trotzdem zuerst ausverkauft. Frühzeitig zu buchen lässt Sie zudem Spielraum für klare Nächte in Ihre Nordlicht-Pläne einbauen, statt um die letzten Plätze zu konkurrieren.',
+        a: 'Für die stärksten Wochen, also Weihnachten und Neujahr sowie den Nordlicht- und Ski-Höhepunkt von Februar bis März, gilt: buchen Sie früh, denn beliebte Husky- und Schneemobiltouren sind schnell ausgebucht. In ruhigeren Zeiten haben Sie mehr Spielraum, aber die bestbewerteten Anbieter und Kleingruppen-Termine sind trotzdem zuerst ausverkauft. Wer früh bucht, kann außerdem Puffertage für klare Nächte in seine Polarlicht-Pläne einplanen, statt um die letzten Plätze zu konkurrieren.',
       },
     ],
   },
@@ -461,7 +461,7 @@ const de: SectionCopy = {
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Besuchen Sie das Weihnachtsmanndorf am frühen Morgen, um den Reisebus-Andrang zu vermeiden.', icon: '🎅' },
-        { tip: 'Die Polarkreislinie überqueren Sie gratis, die Urkunde ist ein kostenpflichtiges Souvenir aus der Touristeninformation am Polarkreis.', icon: '📜' },
+        { tip: 'Den Polarkreis überqueren Sie gratis, die Urkunde ist ein kostenpflichtiges Souvenir aus der Touristeninformation am Polarkreis.', icon: '📜' },
         { tip: 'Das Arktikum zeigt die ausführlichste Nordlicht-Ausstellung Finnlands.', icon: '🏛️' },
       ],
       levi: [

@@ -8,10 +8,10 @@ const ptBR: SectionCopy = {
     hero: {
       eyebrow: "Lapônia finlandesa · Noruega Ártica",
       title: "Pesca na Lapônia e no Oceano Ártico",
-      sub: "Três pesqueiros, uma viagem: pesca no gelo gratuita em lagos congelados, rios de salmão licenciados no verão e safáris de caranguejo-real do outro lado da fronteira norueguesa. Aqui está o que está aberto em 2026, e as regras que fazem os peixes voltarem.",
+      sub: "Três áreas de pesca, uma viagem: pesca no gelo gratuita em lagos congelados, rios de salmão com pesca mediante licença no verão e safáris de caranguejo-real do outro lado da fronteira norueguesa. Veja o que está aberto em 2026, e as regras que fazem os peixes voltarem.",
       ctaBook: "Reserve uma pescaria no gelo com guia",
       ctaRules: 'Licenças e regras →',
-      trustLine: "Verificado com fontes oficiais finlandesas (eräluvat.fi, MMM) e norueguesas (fiskeridir.no). As regras mudam todo ano. Confira a sua água antes de pescar.",
+      trustLine: "Verificado com fontes oficiais finlandesas (eräluvat.fi, MMM) e norueguesas (fiskeridir.no). As regras mudam todo ano. Confira as regras do lago ou rio antes de pescar.",
     },
     eyebrows: {
       eco: "Ecologia em primeiro lugar",
@@ -188,7 +188,7 @@ const ptBR: SectionCopy = {
       items: [
         {
           q: "Preciso de licença para pescar no gelo?",
-          a: "Não. A pesca no gelo básica (pilkki) com uma única vara de jig é um direito geral gratuito na Finlândia para todos, de qualquer idade, sem taxa e sem licença, em lagos comuns. É diferente apenas nas corredeiras de rios de salmão, áreas proibidas e locais especiais, ou se você usar boias de fundo, redes ou espinhéis, que exigem a taxa nacional e uma licença de água (eräluvat.fi).",
+          a: "Não. A pesca no gelo básica (pilkki) com uma única vara de jig faz parte do direito de acesso livre à natureza, gratuito para todos na Finlândia, de qualquer idade, sem taxa e sem licença, em lagos comuns. É diferente apenas nas corredeiras de rios de salmão, áreas proibidas e locais especiais, ou se você usar boias de fundo, redes ou espinhéis, que exigem a taxa nacional e a autorização do dono da área de pesca (eräluvat.fi).",
         },
         {
           q: "Posso pescar salmão no Teno em 2026?",
@@ -345,12 +345,12 @@ const ptBR: SectionCopy = {
     seeAllTours: 'Ver todos os tours reserváveis',
     seasonsKicker: 'O ano todo',
     seasonsH2: 'Quatro estações de aventura',
-    seasonsLead: 'Cada estação transforma a Lapônia em um país diferente.',
+    seasonsLead: 'Cada estação transforma a Lapônia em outro mundo.',
     seasons: [
       { name: 'Inverno', months: 'Nov – Mar', blurb: 'Neve profunda, noite polar, pico de aurora. Snowmobile, huskies, sauna a fumaça.', temp: '-15 a -5°C' },
-      { name: 'Primavera', months: 'Abr – Mai', blurb: 'Neve e luz. Esqui de fim de temporada, parto das renas, aurora até meados de abril.', temp: '-5 a +5°C' },
+      { name: 'Primavera', months: 'Abr – Mai', blurb: 'Neve e luz. Esqui de fim de temporada, nascimento dos filhotes de rena, aurora até meados de abril.', temp: '-5 a +5°C' },
       { name: 'Verão', months: 'Jun – Ago', blurb: 'O sol da meia-noite nunca se põe. Trilhas, caiaque, pesca de salmão, MTB.', temp: '+10 a +25°C' },
-      { name: 'Outono', months: 'Set – Out', blurb: 'O ruska colore os montes. As primeiras auroras retornam. Temporada de cogumelos e frutas.', temp: '+5 a -5°C' },
+      { name: 'Outono', months: 'Set – Out', blurb: 'O ruska colore os montes. As primeiras auroras retornam. Temporada de cogumelos e frutas vermelhas.', temp: '+5 a -5°C' },
     ],
     destinationsKicker: 'Para onde ir',
     destinationsH2: 'Destinos',
@@ -376,15 +376,15 @@ const ptBR: SectionCopy = {
     items: [
       {
         q: 'Quais atividades dá para fazer na Lapônia?',
-        a: 'No inverno, os clássicos são os trenós de huskies e renas, os safáris de moto de neve, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sámi mostram um lado mais silencioso do Ártico.',
+        a: 'No inverno, os clássicos são os trenós de huskies e renas, os safáris de snowmobile, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sámi mostram um lado mais silencioso do Ártico.',
       },
       {
         q: 'Quais são as melhores atividades de inverno e de verão?',
-        a: 'O inverno (de novembro a março) é a estação da neve e da escuridão: motos de neve, trenós puxados por cães e tours de aurora dependem disso. O verão (de junho a agosto) troca a neve pelo sol da meia-noite, quando a luz nunca some de vez e trilhas, remada e pesca rolam quase o dia inteiro. A primavera ainda tem neve com muito mais luz, e o outono traz as cores da ruska e as primeiras auroras, ambas são temporadas intermediárias mais tranquilas.',
+        a: 'O inverno (de novembro a março) é a estação da neve e da escuridão: motos de neve, trenós puxados por cães e tours de aurora dependem disso. O verão (de junho a agosto) troca a neve pelo sol da meia-noite, quando a luz nunca some de vez e trilhas, remadas e pescarias são possíveis quase o dia inteiro. A primavera ainda tem neve com muito mais luz, e o outono traz as cores da ruska e as primeiras auroras, ambas são temporadas intermediárias mais tranquilas.',
       },
       {
         q: 'Quanto custam as atividades na Lapônia?',
-        a: 'Varia bastante conforme a atividade, a duração e o tamanho do grupo. Uma sessão curta e compartilhada, como um passeio de rena ou um tour de aurora de ônibus, fica na faixa mais baixa; passeios de várias horas ou privativos, como um longo safári de husky ou uma expedição guiada de moto de neve, custam mais, em parte porque incluem macacões térmicos, botas, equipamento de segurança e um guia. Para preços atuais e exatos, abra qualquer passeio pelo nosso parceiro de reservas, o preço ao vivo aparece antes de você confirmar.',
+        a: 'Varia bastante conforme a atividade, a duração e o tamanho do grupo. Uma sessão curta e compartilhada, como um passeio de rena ou um tour de aurora de ônibus, fica na faixa mais baixa; passeios de várias horas ou privativos, como um longo safári de husky ou uma expedição guiada de moto de neve, custam mais, em parte porque incluem macacões térmicos, botas, equipamento de segurança e um guia. Para preços atuais e exatos, abra qualquer passeio pelo nosso parceiro de reservas, o preço atualizado aparece antes de você confirmar.',
       },
       {
         q: 'As atividades da Lapônia são adequadas para crianças pequenas?',
@@ -392,7 +392,7 @@ const ptBR: SectionCopy = {
       },
       {
         q: 'Precisa reservar as atividades da Lapônia com antecedência?',
-        a: 'Para as semanas mais movimentadas, Natal e Ano Novo, e o pico de aurora e esqui de fevereiro a março, sim, reserve com bastante antecedência, pois os tours populares de husky e moto de neve lotam. Em períodos mais tranquilos há mais flexibilidade, mas os operadores mais bem avaliados e as saídas em grupo pequeno esgotam primeiro mesmo assim. Reservar antes também permite dar margem para o céu limpo nos planos de aurora, em vez de disputar as últimas vagas.',
+        a: 'Para as semanas mais movimentadas, Natal e Ano Novo, e o pico de aurora e esqui de fevereiro a março, sim, reserve com bastante antecedência, pois os tours populares de husky e moto de neve lotam. Em períodos mais tranquilos há mais flexibilidade, mas os operadores mais bem avaliados e as saídas em grupo pequeno esgotam primeiro mesmo assim. Reservar antes também permite guardar noites extras à espera de céu limpo, em vez de disputar as últimas vagas.',
       },
     ],
   },

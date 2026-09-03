@@ -8,7 +8,7 @@ const fr: SectionCopy = {
     hero: {
       eyebrow: 'Laponie finlandaise · Norvège arctique',
       title: 'Pêche en Laponie et dans l\'océan Arctique',
-      sub: 'Trois pêcheries, un seul voyage : pêche blanche gratuite sur les lacs gelés, rivières à saumon sous licence en été et safaris au crabe royal de l\'autre côté de la frontière norvégienne. Voici ce qui est ouvert en 2026, et les règles qui font revenir le poisson.',
+      sub: 'Trois terrains de pêche, un seul voyage : pêche sur glace gratuite sur les lacs gelés, rivières à saumon soumises à permis en été et safaris au crabe royal de l\'autre côté de la frontière norvégienne. Voici ce qui est ouvert en 2026, et les règles qui font revenir le poisson.',
       ctaBook: 'Réserver une sortie guidée de pêche blanche',
       ctaRules: 'Permis et règles →',
       trustLine: 'Vérifié auprès de sources officielles finlandaises (eräluvat.fi, MMM) et norvégiennes (fiskeridir.no). La réglementation change chaque année : vérifiez votre plan d\'eau avant de pêcher.',
@@ -308,9 +308,9 @@ const fr: SectionCopy = {
     categoriesKicker: 'Que faire', categoriesH2: 'Choisissez votre aventure',
     categoriesLead: '9 façons de vivre l\'Arctique, choisissez une catégorie et nous vous orientons vers des opérateurs choisis avec soin.',
     activitiesLabel: 'activités', viewAllCategories: 'Voir toutes les catégories',
-    gygTitle: 'Tours de Laponie les mieux notés cette semaine', gygEyebrow: 'Réservable maintenant',
+    gygTitle: 'Excursions en Laponie les mieux notées cette semaine', gygEyebrow: 'Réservable maintenant',
     featuredKicker: 'Sélectionné', featuredH2: 'Expériences phares', seeAllTours: 'Voir tous les tours réservables',
-    seasonsKicker: 'Toute l\'année', seasonsH2: 'Quatre saisons d\'aventure', seasonsLead: 'Chaque saison transforme la Laponie en un pays différent.',
+    seasonsKicker: 'Toute l\'année', seasonsH2: 'Quatre saisons d\'aventure', seasonsLead: 'Chaque saison transforme la Laponie en une tout autre contrée.',
     seasons: [
       { name: 'Hiver', months: 'nov. – mars', blurb: 'Neige épaisse, nuits polaires, pic des aurores. Motoneiges, huskies, saunas à fumée.', temp: '-15 à -5 °C' },
       { name: 'Printemps', months: 'avr. – mai', blurb: 'Neige et lumière du jour. Ski tardif, mise bas des rennes, aurores jusqu\'à mi-avril.', temp: '-5 à +5 °C' },
@@ -346,15 +346,15 @@ const fr: SectionCopy = {
       },
       {
         q: 'Combien coûtent les activités en Laponie ?',
-        a: 'Cela varie beaucoup selon l’activité, la durée et la taille du groupe. Une courte session partagée, comme une balade en renne ou un tour d’aurores en bus, se situe en bas de l’échelle ; les sorties de plusieurs heures ou privées, comme un long safari en traîneau de huskies ou une expédition guidée en motoneige, coûtent davantage, notamment parce qu’elles incluent combinaisons chaudes, bottes, équipement de sécurité et un guide. Pour des prix actuels et exacts, ouvrez n’importe quelle sortie via notre partenaire de réservation, le prix en direct s’affiche avant de confirmer.',
+        a: 'Cela varie beaucoup selon l’activité, la durée et la taille du groupe. Une sortie courte en groupe, comme une balade en renne ou un tour d’aurores en bus, se situe dans le bas de la fourchette de prix ; les sorties de plusieurs heures ou privées, comme un long safari en traîneau de huskies ou une expédition guidée en motoneige, coûtent davantage, notamment parce qu’elles incluent combinaisons thermiques, bottes, équipement de sécurité et un guide. Pour des prix actuels et exacts, ouvrez n’importe quelle sortie via notre partenaire de réservation, le prix actualisé s’affiche avant la confirmation.',
       },
       {
         q: 'Les activités en Laponie conviennent-elles aux jeunes enfants ?',
-        a: 'Beaucoup le sont, avec le bon choix. Les balades en traîneau de rennes, les visites de ferme de huskies, les douces sorties en raquettes, la luge et la rencontre avec le Père Noël conviennent bien aux jeunes enfants. La motoneige a généralement un âge minimum pour conduire (les enfants montent dans un traîneau ou une remorque), et les chasses aux aurores tardives peuvent être longues et froides pour les tout-petits. La plupart des prestataires indiquent les limites d’âge et les options familiales sur la page de l’activité, vérifiez donc avant de réserver.',
+        a: 'Beaucoup conviennent, à condition de bien choisir. Les balades en traîneau de rennes, les visites de fermes de huskies, les douces sorties en raquettes, la luge et la rencontre avec le Père Noël conviennent bien aux jeunes enfants. La motoneige a généralement un âge minimum pour conduire (les enfants montent dans un traîneau ou une remorque), et les chasses aux aurores tardives peuvent être longues et froides pour les tout-petits. La plupart des prestataires indiquent les limites d’âge et les options familiales sur la page de l’activité, vérifiez donc avant de réserver.',
       },
       {
         q: 'Faut-il réserver les activités en Laponie à l’avance ?',
-        a: 'Pour les semaines les plus chargées, Noël et le Nouvel An, ainsi que le pic d’aurores et de ski de février à mars, oui, réservez bien à l’avance, car les tours de huskies et de motoneige populaires se remplissent. En période plus calme, vous avez plus de souplesse, mais les prestataires les mieux notés et les départs en petit groupe se remplissent quand même en premier. Réserver à l’avance permet aussi d’intégrer une marge pour le ciel dégagé dans vos plans d’aurores plutôt que de disputer les dernières places.',
+        a: 'Pour les semaines les plus chargées, Noël et le Nouvel An, ainsi que le pic d’aurores et de ski de février à mars, oui, réservez bien à l’avance, car les tours de huskies et de motoneige populaires se remplissent. En période plus calme, vous avez plus de souplesse, mais les prestataires les mieux notés et les départs en petit groupe se remplissent quand même en premier. Réserver à l’avance permet aussi de garder quelques soirs de battement en attendant un ciel dégagé plutôt que de vous disputer les dernières places.',
       },
     ],
   },
