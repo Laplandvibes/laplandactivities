@@ -97,7 +97,7 @@ const en: SectionCopy = {
     planVisit: 'Plan your visit',
   },
   home: {
-    metaTitle: 'LaplandActivities: book hand-picked Arctic tours in Finnish Lapland',
+    metaTitle: 'LaplandActivities: hand-picked Arctic tours in Lapland',
     metaDescription: 'Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 destinations in and around Lapland through GetYourGuide and trusted local operators.',
     ogTitle: 'LaplandActivities · Hand-Picked Arctic Experiences',
     categoriesKicker: 'What to Do',
