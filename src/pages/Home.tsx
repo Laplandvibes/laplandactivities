@@ -1,3 +1,6 @@
+import ProductRail from '../shared/ads/ProductRail'
+import scandinavianoutdoorRail from '../shared/ads/rails/scandinavianoutdoor'
+import scandinavianoutdoorPicks from '../shared/ads/data/scandinavianoutdoorPicks'
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Snowflake, Leaf, Sun, Trees, Sparkles } from 'lucide-react';
@@ -8,8 +11,6 @@ import Newsletter from '../components/Newsletter';
 import AffiliateCTA from '../components/AffiliateCTA';
 import SummerBand from '../components/SummerBand';
 import HotelsStrip from '../components/HotelsStrip';
-import AdUnit from '../shared/ads/AdUnit';
-import scandinavianOutdoorAd from '../shared/ads/advertisers/scandinavianOutdoor';
 import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots';
 import { AD_SLOTS } from '../data/adSlots';
 import { categories } from '../data/categories';
@@ -430,10 +431,11 @@ export default function Home() {
           disclosure lives in the shared Footer bottom strip. */}
       <section className="px-4 pb-16 bg-deep-night">
         <div className="max-w-5xl mx-auto">
-          <AdUnit
-            spec={scandinavianOutdoorAd}
-            sid="home_activities_gear"
+          <ProductRail
+            partner={scandinavianoutdoorRail}
+            snapshot={scandinavianoutdoorPicks}
             lang={lang}
+            sid="home_activities_gear"
             variant="dark"
             onCtaClick={(specKey, sid, url) => trackEvent('affiliate_click', { event_category: 'monetisation', event_label: specKey, affiliate_type: `ad_unit:${sid}`, outbound_url: url })}
           />

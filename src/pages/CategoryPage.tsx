@@ -1,3 +1,6 @@
+import ProductRail from '../shared/ads/ProductRail'
+import haltiRail from '../shared/ads/rails/halti'
+import haltiPicks from '../shared/ads/data/haltiPicks'
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Sparkles, Snowflake, Sun } from 'lucide-react';
@@ -10,7 +13,6 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../shared/ads/AdUnit';
 import bearKuusamoAd from '../shared/ads/advertisers/bearkuusamo';
 import onnipyoraAd from '../shared/ads/advertisers/onnipyora';
-import haltiAd from '../shared/ads/advertisers/halti';
 import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
@@ -215,10 +217,11 @@ export default function CategoryPage() {
       {(slug === 'northern-lights' || slug === 'adventure') && (
         <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
           <div className="max-w-7xl mx-auto">
-            <AdUnit
-              spec={haltiAd}
-              sid={`${slug === 'northern-lights' ? 'northern_lights' : 'adventure'}_category_winter_gear`}
+            <ProductRail
+              partner={haltiRail}
+              snapshot={haltiPicks}
               lang={lang}
+              sid="`${slug === 'northern-lights' ? 'northern_lights' : 'adventure"
               variant="dark"
               onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
             />
