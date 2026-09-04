@@ -19,7 +19,7 @@ const picks: PartnerSnapshot = {
   "products": [
     {
       "sku": "shopify_ZZ_4882534400047_46359050486085",
-      "name": "Halti Pallas II Naisten X-stretch",
+      "name": "Halti Pallas II Naisten X-stretch Ulkoilutakki",
       "shelf": "takit",
       "category": "Takit",
       "brand": "Halti",
@@ -30,7 +30,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_15699758940485_57193413443909",
-      "name": "Halti Grets Joggersit",
+      "name": "Halti Grets Joggersit Naisten",
       "shelf": "housut",
       "category": "Housut",
       "brand": "Halti",
@@ -41,7 +41,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_16070580928837_58783263097157",
-      "name": "Halti Jalava DX Paljasjalkanilkkuri",
+      "name": "Halti Jalava DX Paljasjalkanilkkuri Lasten",
       "shelf": "jalkineet",
       "category": "Jalkineet",
       "brand": "Halti",
@@ -52,7 +52,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_15844050403653_57818987331909",
-      "name": "Halti Samoy Tekninen Kauluspaita",
+      "name": "Halti Samoy Tekninen Kauluspaita Naisten",
       "shelf": "paidat",
       "category": "Paidat",
       "brand": "Halti",
@@ -63,7 +63,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_15259395522885_55497444327749",
-      "name": "Halti Thermel Välitakki",
+      "name": "Halti Thermel Välitakki Naisten",
       "shelf": "midlayers",
       "category": "Midlayers",
       "brand": "Halti",
@@ -74,7 +74,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_15391179997509_56080376791365",
-      "name": "Halti Framover Hiihtoliivi",
+      "name": "Halti Framover Hiihtoliivi Unisex",
       "shelf": "liivit",
       "category": "Liivit",
       "brand": "Halti",
@@ -85,7 +85,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_6767508488239_47034238533957",
-      "name": "Halti Neva Merino Kerrasto",
+      "name": "Halti Neva Merino Kerrasto Naisten",
       "shelf": "alusasut",
       "category": "Alusasut",
       "brand": "Halti",
@@ -96,7 +96,7 @@ const picks: PartnerSnapshot = {
     },
     {
       "sku": "shopify_ZZ_15412314407237_56147743048005",
-      "name": "Halti Huuru Maastohiihtopuku",
+      "name": "Halti Huuru Maastohiihtopuku Naisten",
       "shelf": "puvut",
       "category": "Puvut",
       "brand": "Halti",
