@@ -536,7 +536,7 @@ const sv: SectionCopy = {
     ],
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: etisk björnskådning i Finland, i utkanten av Lappland | LaplandActivities",
+    metaTitle: "Bear Kuusamo: etisk björnskådning vid Lapplands gräns | LaplandActivities",
     metaDescription: "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland. Kvälls- och nattturer, 1 maj till 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kommersiellt samarbete: Bear Kuusamo",

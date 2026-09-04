@@ -549,7 +549,7 @@ const fi: SectionCopy = {
     backHome: '← Takaisin etusivulle',
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: eettistä karhunkatselua Suomessa, Lapin rajalla | LaplandActivities",
+    metaTitle: "Bear Kuusamo: eettistä karhunkatselua Lapin rajalla | LaplandActivities",
     metaDescription: "Bear Kuusamo vie kojuille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kaupallinen yhteistyö: Bear Kuusamo",

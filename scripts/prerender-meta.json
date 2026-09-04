@@ -1,7 +1,7 @@
 {
   "/": {
     "en": {
-      "title": "LaplandActivities: book hand-picked Arctic tours in Finnish Lapland",
+      "title": "LaplandActivities: hand-picked Arctic tours in Lapland",
       "description": "Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 destinations in and around Lapland through GetYourGuide and trusted local operators.",
       "faq": [
         {
@@ -419,7 +419,7 @@
       "description": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland."
     },
     "fi": {
-      "title": "Bear Kuusamo: eettistä karhunkatselua Suomessa, Lapin rajalla | LaplandActivities",
+      "title": "Bear Kuusamo: eettistä karhunkatselua Lapin rajalla | LaplandActivities",
       "description": "Bear Kuusamo vie kojuille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9."
     },
     "de": {
@@ -459,7 +459,7 @@
       "description": "Bear Kuusamo brengt u naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland."
     },
     "sv": {
-      "title": "Bear Kuusamo: etisk björnskådning i Finland, i utkanten av Lappland | LaplandActivities",
+      "title": "Bear Kuusamo: etisk björnskådning vid Lapplands gräns | LaplandActivities",
       "description": "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland."
     }
   },
