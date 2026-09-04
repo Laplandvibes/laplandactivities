@@ -102,7 +102,7 @@ const en: SectionCopy = {
     ogTitle: 'LaplandActivities · Hand-Picked Arctic Experiences',
     categoriesKicker: 'What to Do',
     categoriesH2: 'Choose Your Adventure',
-    categoriesLead: 'Nine ways to experience the Arctic. Pick a category and we will route you to the hand-picked tour operators.',
+    categoriesLead: 'Nine ways to experience the Arctic. Pick a category and we will point you to the right hand-picked operators.',
     activitiesLabel: 'activities',
     viewAllCategories: 'View all categories',
     gygTitle: 'Top-rated Lapland tours this week',
@@ -114,10 +114,10 @@ const en: SectionCopy = {
     seasonsH2: 'Four Seasons of Adventure',
     seasonsLead: 'Each season turns Lapland into a different country.',
     seasons: [
-      { name: 'Winter', months: 'Nov – Mar', blurb: 'Deep snow, polar nights, peak aurora. Snowmobiles, huskies, smoke saunas.', temp: '-15 to -5°C' },
+      { name: 'Winter', months: 'Nov – Mar', blurb: 'Deep snow, polar night, peak aurora. Snowmobiles, huskies, smoke saunas.', temp: '-15 to -5°C' },
       { name: 'Spring', months: 'Apr – May', blurb: 'Snow plus daylight. Late-season skiing, reindeer calving, aurora to mid-April.', temp: '-5 to +5°C' },
       { name: 'Summer', months: 'Jun – Aug', blurb: 'Midnight sun never sets. Hiking, kayaking, salmon fishing, mountain biking.', temp: '+10 to +25°C' },
-      { name: 'Autumn', months: 'Sep – Oct', blurb: 'Ruska colours the fells. First aurora returns. Mushroom and berry season.', temp: '+5 to -5°C' },
+      { name: 'Autumn', months: 'Sep – Oct', blurb: 'Ruska colours the fells. The first auroras return. Mushroom and berry season.', temp: '+5 to -5°C' },
     ],
     destinationsKicker: 'Where to Go',
     destinationsH2: 'Destinations',
@@ -147,11 +147,11 @@ const en: SectionCopy = {
       },
       {
         q: 'What are the best winter vs summer activities?',
-        a: 'Winter (November to March) is the season for snow and darkness: snowmobiles, dog sledding and aurora tours all need that. Summer (June to August) trades the snow for the midnight sun, when the light never fully fades and hiking, paddling and fishing run almost around the clock. Spring still has snow with far more daylight, and autumn brings the ruska colours and the first auroras. Both are quieter shoulder seasons.',
+        a: 'Winter (November to March) is the season for snow and darkness: snowmobiles, dog sledding and aurora tours all depend on it. Summer (June to August) trades the snow for the midnight sun, when the light never fully fades and hiking, paddling and fishing run almost around the clock. Spring still has snow with far more daylight, and autumn brings the ruska colours and the first auroras. Both are quieter shoulder seasons.',
       },
       {
         q: 'How much do Lapland activities cost?',
-        a: 'It varies a lot by activity, length and group size. A short shared session like a reindeer ride or an aurora bus tour sits at the lower end; multi-hour or private trips such as a long husky safari or a guided snowmobile expedition cost more, partly because they include warm overalls, boots, safety gear and a guide. For current, accurate prices, open any tour through our booking partner; the live price is shown before you commit.',
+        a: 'It varies a lot by activity, length and group size. A short group outing such as a reindeer ride or an aurora bus tour sits at the lower end; longer or private trips such as a full-day husky safari or a guided snowmobile expedition cost more, partly because they include warm overalls, boots, safety gear and a guide. For current, accurate prices, open any tour through our booking partner; the live price is shown before you commit.',
       },
       {
         q: 'Are Lapland activities suitable for young children?',
@@ -159,7 +159,7 @@ const en: SectionCopy = {
       },
       {
         q: 'Do you need to book Lapland activities in advance?',
-        a: 'For the busiest weeks, Christmas and New Year and the February–March aurora and ski peak, yes: book well ahead, as popular husky and snowmobile tours fill up. In quieter periods you have more flexibility, but the best-rated operators and small-group departures still sell out first. Booking ahead also lets you build clear-sky flexibility into aurora plans rather than competing for the last seats.',
+        a: 'For the busiest weeks — Christmas, New Year and the February–March aurora and ski peak — yes: book well ahead, as popular husky and snowmobile tours fill up. In quieter periods you have more flexibility, but the best-rated operators and small-group departures still sell out first. Booking ahead also lets you keep your aurora nights flexible and wait for a clear sky rather than competing for the last seats.',
       },
     ],
   },
@@ -192,7 +192,7 @@ const en: SectionCopy = {
     metaDescription: 'Ten iconic destinations in Finnish Lapland and Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio and Tornio.',
     kicker: 'Where to Go',
     h1: 'Destinations',
-    lead: 'Ten iconic destinations across Lapland and neighbouring Kuusamo, each with its own character and operator network.',
+    lead: 'Ten iconic destinations across Lapland and neighbouring Kuusamo, each with its own character and its own set of operators.',
     activitiesLabel: 'activities',
     explore: 'Explore',
     gygTitle: 'Most-booked Lapland tours',
@@ -308,10 +308,10 @@ const en: SectionCopy = {
     hero: {
       eyebrow: 'Finnish Lapland · Arctic Norway',
       title: 'Fishing in Lapland & the Arctic Ocean',
-      sub: 'Three fisheries, one trip: free ice fishing on frozen lakes, licensed summer salmon rivers, and king-crab safaris across the Norwegian border. Here is what is open in 2026, and the rules that keep the fish coming back.',
+      sub: 'Three kinds of fishing, one trip: free ice fishing on frozen lakes, licensed summer salmon rivers, and king-crab safaris across the Norwegian border. Here is what is open in 2026, and the rules that keep the fish coming back.',
       ctaBook: 'Book a guided ice-fishing trip',
       ctaRules: 'Licences & rules →',
-      trustLine: 'Checked against official Finnish (eräluvat.fi, MMM) and Norwegian (fiskeridir.no) sources. Regulations change every year. Verify your water before fishing.',
+      trustLine: 'Checked against official Finnish (eräluvat.fi, MMM) and Norwegian (fiskeridir.no) sources. Regulations change every year. Check the rules for the water you plan to fish.',
     },
     eyebrows: {
       eco: 'Eco-first',

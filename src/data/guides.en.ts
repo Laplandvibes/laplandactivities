@@ -170,8 +170,8 @@ const guides: Guides = {
   indexes: {
     destList: {
       leadTitle: 'How the ten destinations differ',
-      lead: 'Lapland is not one place with one season. Rovaniemi has the airport, the night train and the widest choice of tours; Levi and Ruka are ski villages you can walk end to end; Ylläs and Saariselkä trade nightlife for dark skies and national-park silence. Inari is where Sámi culture is met rather than performed, and Posio, Tornio and Kemijärvi are the quiet ones.',
-      note: 'Distances up here are real: two destinations that look close on a map can be a two-hour drive apart. Pick one base for a short trip and add a second only if you have a week. Every page below lists the operators working that destination, what runs in which season, and how to get there.',
+      lead: 'Lapland is not one place with one season. Rovaniemi has the airport, the night train and the widest choice of tours; Levi and Ruka are ski villages you can walk end to end; Ylläs and Saariselkä trade nightlife for dark skies and national-park silence. Inari is where you meet Sámi culture rather than watch it performed, and Posio, Tornio and Kemijärvi are the quiet ones.',
+      note: 'Distances up here are real: two destinations that look close on a map can be a two-hour drive apart. Pick one base for a short trip and add a second only if you have a week. Every page below lists the operators working in that destination, what runs in which season, and how to get there.',
     },
     catList: {
       leadTitle: 'Choosing by activity instead of by place',

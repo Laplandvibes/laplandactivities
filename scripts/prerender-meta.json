@@ -10,11 +10,11 @@
         },
         {
           "q": "What are the best winter vs summer activities?",
-          "a": "Winter (November to March) is the season for snow and darkness: snowmobiles, dog sledding and aurora tours all need that. Summer (June to August) trades the snow for the midnight sun, when the light never fully fades and hiking, paddling and fishing run almost around the clock. Spring still has snow with far more daylight, and autumn brings the ruska colours and the first auroras. Both are quieter shoulder seasons."
+          "a": "Winter (November to March) is the season for snow and darkness: snowmobiles, dog sledding and aurora tours all depend on it. Summer (June to August) trades the snow for the midnight sun, when the light never fully fades and hiking, paddling and fishing run almost around the clock. Spring still has snow with far more daylight, and autumn brings the ruska colours and the first auroras. Both are quieter shoulder seasons."
         },
         {
           "q": "How much do Lapland activities cost?",
-          "a": "It varies a lot by activity, length and group size. A short shared session like a reindeer ride or an aurora bus tour sits at the lower end; multi-hour or private trips such as a long husky safari or a guided snowmobile expedition cost more, partly because they include warm overalls, boots, safety gear and a guide. For current, accurate prices, open any tour through our booking partner; the live price is shown before you commit."
+          "a": "It varies a lot by activity, length and group size. A short group outing such as a reindeer ride or an aurora bus tour sits at the lower end; longer or private trips such as a full-day husky safari or a guided snowmobile expedition cost more, partly because they include warm overalls, boots, safety gear and a guide. For current, accurate prices, open any tour through our booking partner; the live price is shown before you commit."
         },
         {
           "q": "Are Lapland activities suitable for young children?",
@@ -22,7 +22,7 @@
         },
         {
           "q": "Do you need to book Lapland activities in advance?",
-          "a": "For the busiest weeks, Christmas and New Year and the February–March aurora and ski peak, yes: book well ahead, as popular husky and snowmobile tours fill up. In quieter periods you have more flexibility, but the best-rated operators and small-group departures still sell out first. Booking ahead also lets you build clear-sky flexibility into aurora plans rather than competing for the last seats."
+          "a": "For the busiest weeks — Christmas, New Year and the February–March aurora and ski peak — yes: book well ahead, as popular husky and snowmobile tours fill up. In quieter periods you have more flexibility, but the best-rated operators and small-group departures still sell out first. Booking ahead also lets you keep your aurora nights flexible and wait for a clear sky rather than competing for the last seats."
         }
       ]
     },
@@ -32,15 +32,15 @@
       "faq": [
         {
           "q": "Mitä aktiviteetteja Lapissa voi tehdä?",
-          "a": "Talvella klassikoita ovat husky- ja porovaljakot, moottorikelkkasafarit, revontuliretket, lumikenkäily, maasto- ja lasketteluhiihto, pilkkiminen ja avantokelluminen. Kesällä sama erämaa muuttuu vaellukseksi, melonnaksi, koskenlaskuksi, maastopyöräilyksi, lohenkalastukseksi ja kullanhuuhdonnaksi. Ympäri vuoden savusauna ja saamelaiskulttuurin elämykset tarjoavat hiljaisemman puolen arktisesta."
+          "a": "Talvella klassikoita ovat husky- ja porovaljakot, moottorikelkkasafarit, revontuliretket, lumikenkäily, maastohiihto ja laskettelu, pilkkiminen ja avantokelluminen. Kesällä samassa erämaassa vaelletaan, melotaan ja lasketaan koskia, maastopyöräilyksi, lohenkalastukseksi ja kullanhuuhdonnaksi. Ympäri vuoden savusauna ja saamelaiskulttuurin elämykset näyttävät arktisen pohjolan hiljaisemman puolen."
         },
         {
           "q": "Mitkä ovat parhaat talvi- ja kesäaktiviteetit?",
-          "a": "Talvi (marraskuusta maaliskuuhun) on lumen ja pimeyden aikaa: moottorikelkat, koiravaljakot ja revontuliretket tarvitsevat sen. Kesä (kesäkuusta elokuuhun) vaihtaa lumen keskiyön aurinkoon, jolloin valo ei täysin haalistu ja vaellus, melonta ja kalastus onnistuvat lähes kellon ympäri. Keväällä on yhä lunta mutta paljon enemmän valoa, ja syksy tuo ruskan ja ensimmäiset revontulet. Molemmat ovat hiljaisempia väliaikoja."
+          "a": "Talvi (marraskuusta maaliskuuhun) on lumen ja pimeyden aikaa: moottorikelkat, koiravaljakot ja revontuliretket vaativat kaikki sitä. Kesä (kesäkuusta elokuuhun) vaihtaa lumen keskiyön aurinkoon, jolloin valo ei koskaan täysin katoa ja vaellus, melonta ja kalastus onnistuvat lähes kellon ympäri. Keväällä on yhä lunta mutta paljon enemmän valoa, ja syksy tuo ruskan ja ensimmäiset revontulet. Molemmat ovat hiljaisempia väliaikoja."
         },
         {
           "q": "Paljonko Lapin aktiviteetit maksavat?",
-          "a": "Hinta vaihtelee paljon aktiviteetin, keston ja ryhmäkoon mukaan. Lyhyt jaettu hetki kuten porokyyti tai revontulibussiretki on edullisemmasta päästä; usean tunnin tai yksityiset retket kuten pitkä husky-safari tai opastettu moottorikelkkaretki maksavat enemmän, osin koska niihin sisältyvät lämpöhaalarit, saappaat, turvavarusteet ja opas. Ajantasaiset, tarkat hinnat näet avaamalla minkä tahansa retken varauskumppanimme kautta; hinta näkyy ennen vahvistusta."
+          "a": "Hinta vaihtelee paljon aktiviteetin, keston ja ryhmäkoon mukaan. Lyhyt ryhmäretki, kuten porokyyti tai revontulibussiretki, on edullisemmasta päästä; usean tunnin tai yksityiset retket kuten pitkä husky-safari tai opastettu moottorikelkkaretki maksavat enemmän, osin koska niihin sisältyvät lämpöhaalarit, saappaat, turvavarusteet ja opas. Ajantasaiset, tarkat hinnat näet avaamalla minkä tahansa retken varauskumppanimme kautta; hinta näkyy ennen vahvistusta."
         },
         {
           "q": "Sopivatko Lapin aktiviteetit pienille lapsille?",
@@ -48,17 +48,17 @@
         },
         {
           "q": "Pitääkö Lapin aktiviteetit varata etukäteen?",
-          "a": "Kiireisimpinä viikkoina, jouluna ja uutenavuotena sekä helmi–maaliskuun revontuli- ja hiihtohuippuna, kyllä: varaa hyvissä ajoin, sillä suositut husky- ja moottorikelkkaretket täyttyvät. Hiljaisempina aikoina on enemmän joustoa, mutta parhaiten arvioidut järjestäjät ja pienryhmälähdöt myydään silti ensin loppuun. Etukäteen varaaminen antaa myös pelivaraa revontulisuunnitelmiin kirkkaan taivaan mukaan sen sijaan, että kilpailisit viimeisistä paikoista."
+          "a": "Kiireisimpinä viikkoina, jouluna ja uutenavuotena sekä helmi–maaliskuun revontuli- ja hiihtohuippuna, kyllä: varaa hyvissä ajoin, sillä suositut husky- ja moottorikelkkaretket täyttyvät. Hiljaisempina aikoina on enemmän joustoa, mutta parhaiten arvioidut järjestäjät ja pienryhmälähdöt myydään silti ensin loppuun. Etukäteen varaaminen jättää myös liikkumavaraa: voit ajoittaa revontuliretken kirkkaalle yölle sen sijaan, että kilpailisit viimeisistä paikoista."
         }
       ]
     },
     "de": {
       "title": "LaplandActivities: arktische Touren in Lappland",
-      "description": "Schneemobiltouren, Schlittenhundefahrten, Nordlicht-Touren und Rauchsaunas: handverlesene Aktivitäten in 10 Reisezielen in und um Lappland über GetYourGuide buchen.",
+      "description": "… handverlesene Aktivitäten in zehn Reisezielen in und um Lappland über GetYourGuide buchen.",
       "faq": [
         {
           "q": "Welche Aktivitäten kann man in Lappland unternehmen?",
-          "a": "Im Winter sind die Klassiker Husky- und Rentierschlittenfahrten, Schneemobil-Safaris, Nordlicht-Touren, Schneeschuhwandern, Langlauf und Abfahrtski, Eisangeln und Eis-Floating. Im Sommer wird dieselbe Wildnis zum Wandern, Kajak- und Kanufahren, Wildwasser-Rafting, Mountainbiken, Lachsangeln und Goldwaschen. Ganzjährig bieten die Rauchsauna und Erlebnisse rund um die Sámi-Kultur eine andere, ruhigere Seite der Arktis."
+          "a": "Im Winter sind die Klassiker Husky- und Rentierschlittenfahrten, Schneemobil-Safaris, Nordlicht-Touren, Schneeschuhwandern, Langlauf und Abfahrtski, Eisangeln und Eis-Floating. Im Sommer wird dieselbe Wildnis zum Wandern, Kajak- und Kanufahren, Wildwasser-Rafting, Mountainbiken, Lachsangeln und Goldwaschen. Ganzjährig bieten die Rauchsauna und Erlebnisse rund um die Kultur der Samen eine andere, ruhigere Seite der Arktis."
         },
         {
           "q": "Was sind die besten Winter- bzw. Sommeraktivitäten?",
@@ -66,21 +66,21 @@
         },
         {
           "q": "Wie viel kosten Aktivitäten in Lappland?",
-          "a": "Das hängt stark von Aktivität, Dauer und Gruppengröße ab. Eine kurze Gruppenaktivität wie eine Rentierfahrt oder eine Nordlicht-Bustour liegt am unteren Ende; mehrstündige oder private Touren wie eine lange Husky-Safari oder eine geführte Schneemobil-Expedition kosten mehr, auch weil warme Overalls, Stiefel, Sicherheitsausrüstung und ein Guide enthalten sind. Aktuelle, genaue Preise sehen Sie, wenn Sie eine Tour über unseren Buchungspartner öffnen. Der Live-Preis wird vor der Buchung angezeigt."
+          "a": "Das hängt stark von Aktivität, Dauer und Gruppengröße ab. Eine kurze Gruppenaktivität wie eine Rentierfahrt oder eine Polarlicht-Bustour liegt am unteren Ende der Preisspanne; mehrstündige oder private Touren wie eine lange Husky-Safari oder eine geführte Schneemobil-Expedition kosten mehr, auch weil warme Overalls, Stiefel, Sicherheitsausrüstung und ein Guide enthalten sind. Aktuelle, genaue Preise sehen Sie, wenn Sie eine Tour über unseren Buchungspartner öffnen. Der Live-Preis wird vor der Buchung angezeigt."
         },
         {
           "q": "Sind Aktivitäten in Lappland für kleine Kinder geeignet?",
-          "a": "Viele sind es, mit der richtigen Wahl. Rentierschlittenfahrten, Besuche auf der Huskyfarm, sanfte Schneeschuhwanderungen, Schlittenfahren und das Treffen mit dem Weihnachtsmann eignen sich gut für kleine Kinder. Beim Schneemobilfahren gibt es meist ein Mindestalter zum Fahren (Kinder fahren im Schlitten oder Anhänger mit), und späte Nordlicht-Touren können für die Kleinsten lang und kalt sein. Die meisten Anbieter nennen Altersgrenzen und Familienoptionen auf der Aktivitätsseite, also am besten vor der Buchung prüfen."
+          "a": "Viele schon – wenn Sie richtig wählen. Rentierschlittenfahrten, Besuche auf der Huskyfarm, sanfte Schneeschuhwanderungen, Schlittenfahren und das Treffen mit dem Weihnachtsmann eignen sich gut für kleine Kinder. Beim Schneemobilfahren gilt meist ein Mindestalter für Fahrer (Kinder fahren im Schlitten oder Anhänger mit), und späte Nordlicht-Touren können für die Kleinsten lang und kalt sein. Die meisten Anbieter nennen Altersgrenzen und Familienoptionen auf der Aktivitätsseite, also am besten vor der Buchung prüfen."
         },
         {
           "q": "Muss man Aktivitäten in Lappland im Voraus buchen?",
-          "a": "Für die geschäftigsten Wochen, also Weihnachten und Neujahr sowie den Nordlicht- und Ski-Höhepunkt von Februar bis März, gilt: buchen Sie früh, denn beliebte Husky- und Schneemobiltouren sind schnell ausgebucht. In ruhigeren Zeiten haben Sie mehr Spielraum, aber die bestbewerteten Anbieter und Kleingruppen-Abfahrten sind trotzdem zuerst ausverkauft. Frühzeitig zu buchen lässt Sie zudem Spielraum für klare Nächte in Ihre Nordlicht-Pläne einbauen, statt um die letzten Plätze zu konkurrieren."
+          "a": "Für die stärksten Wochen, also Weihnachten und Neujahr sowie den Nordlicht- und Ski-Höhepunkt von Februar bis März, gilt: buchen Sie früh, denn beliebte Husky- und Schneemobiltouren sind schnell ausgebucht. In ruhigeren Zeiten haben Sie mehr Spielraum, aber die bestbewerteten Anbieter und Kleingruppen-Termine sind trotzdem zuerst ausverkauft. Wer früh bucht, kann außerdem Puffertage für klare Nächte in seine Polarlicht-Pläne einplanen, statt um die letzten Plätze zu konkurrieren."
         }
       ]
     },
     "ja": {
       "title": "LaplandActivities｜フィンランド・ラップランドの厳選北極ツアー予約",
-      "description": "スノーモービルサファリ、ハスキーそり、オーロラハント、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、ラップランドとその周辺の10の目的地で厳選アクティビティを予約。",
+      "description": "スノーモービル・サファリ、ハスキーそり、オーロラハンティング、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、ラップランドとその周辺の10の目的地で厳選アクティビティを予約。",
       "faq": [
         {
           "q": "ラップランドではどんなアクティビティができますか？",
@@ -136,15 +136,15 @@
       "faq": [
         {
           "q": "Quais atividades dá para fazer na Lapônia?",
-          "a": "No inverno, os clássicos são os trenós de huskies e renas, os safáris de moto de neve, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sámi mostram um lado mais silencioso do Ártico."
+          "a": "No inverno, os clássicos são os trenós de huskies e renas, os safáris de snowmobile, a caça à aurora, as caminhadas com raquetes de neve, o esqui cross-country e alpino, a pesca no gelo e o ice floating. No verão, a mesma natureza vira trilha, caiaque e canoagem, rafting, mountain bike, pesca de salmão e garimpo de ouro. O ano todo, a sauna de fumaça e as experiências da cultura sámi mostram um lado mais silencioso do Ártico."
         },
         {
           "q": "Quais são as melhores atividades de inverno e de verão?",
-          "a": "O inverno (de novembro a março) é a estação da neve e da escuridão: motos de neve, trenós puxados por cães e tours de aurora dependem disso. O verão (de junho a agosto) troca a neve pelo sol da meia-noite, quando a luz nunca some de vez e trilhas, remada e pesca rolam quase o dia inteiro. A primavera ainda tem neve com muito mais luz, e o outono traz as cores da ruska e as primeiras auroras, ambas são temporadas intermediárias mais tranquilas."
+          "a": "O inverno (de novembro a março) é a estação da neve e da escuridão: motos de neve, trenós puxados por cães e tours de aurora dependem disso. O verão (de junho a agosto) troca a neve pelo sol da meia-noite, quando a luz nunca some de vez e trilhas, remadas e pescarias são possíveis quase o dia inteiro. A primavera ainda tem neve com muito mais luz, e o outono traz as cores da ruska e as primeiras auroras, ambas são temporadas intermediárias mais tranquilas."
         },
         {
           "q": "Quanto custam as atividades na Lapônia?",
-          "a": "Varia bastante conforme a atividade, a duração e o tamanho do grupo. Uma sessão curta e compartilhada, como um passeio de rena ou um tour de aurora de ônibus, fica na faixa mais baixa; passeios de várias horas ou privativos, como um longo safári de husky ou uma expedição guiada de moto de neve, custam mais, em parte porque incluem macacões térmicos, botas, equipamento de segurança e um guia. Para preços atuais e exatos, abra qualquer passeio pelo nosso parceiro de reservas, o preço ao vivo aparece antes de você confirmar."
+          "a": "Varia bastante conforme a atividade, a duração e o tamanho do grupo. Uma sessão curta e compartilhada, como um passeio de rena ou um tour de aurora de ônibus, fica na faixa mais baixa; passeios de várias horas ou privativos, como um longo safári de husky ou uma expedição guiada de moto de neve, custam mais, em parte porque incluem macacões térmicos, botas, equipamento de segurança e um guia. Para preços atuais e exatos, abra qualquer passeio pelo nosso parceiro de reservas, o preço atualizado aparece antes de você confirmar."
         },
         {
           "q": "As atividades da Lapônia são adequadas para crianças pequenas?",
@@ -152,17 +152,17 @@
         },
         {
           "q": "Precisa reservar as atividades da Lapônia com antecedência?",
-          "a": "Para as semanas mais movimentadas, Natal e Ano Novo, e o pico de aurora e esqui de fevereiro a março, sim, reserve com bastante antecedência, pois os tours populares de husky e moto de neve lotam. Em períodos mais tranquilos há mais flexibilidade, mas os operadores mais bem avaliados e as saídas em grupo pequeno esgotam primeiro mesmo assim. Reservar antes também permite dar margem para o céu limpo nos planos de aurora, em vez de disputar as últimas vagas."
+          "a": "Para as semanas mais movimentadas, Natal e Ano Novo, e o pico de aurora e esqui de fevereiro a março, sim, reserve com bastante antecedência, pois os tours populares de husky e moto de neve lotam. Em períodos mais tranquilos há mais flexibilidade, mas os operadores mais bem avaliados e as saídas em grupo pequeno esgotam primeiro mesmo assim. Reservar antes também permite guardar noites extras à espera de céu limpo, em vez de disputar as últimas vagas."
         }
       ]
     },
     "zh-CN": {
       "title": "LaplandActivities: 在芬兰拉普兰预订精选北极行程",
-      "description": "雪地摩托安全游、哈士奇雪橇、极光追逐、烟桑拿等。在拉普兰及周边10个目的地通过GetYourGuide与可信本地运营商预订精选活动。",
+      "description": "雪地摩托之旅、哈士奇雪橇、极光追逐、烟熏桑拿等。在拉普兰及周边10个目的地通过GetYourGuide与可信本地运营商预订精选活动。",
       "faq": [
         {
           "q": "在拉普兰可以做哪些活动？",
-          "a": "冬季的经典项目有哈士奇和驯鹿雪橇、雪地摩托、追极光、雪鞋徒步、越野与高山滑雪、冰钓和漂浮体验。到了夏季，同一片荒野则变成徒步、皮划艇与独木舟、激流漂流、山地骑行、钓鲑鱼和淘金。一年四季，烟熏桑拿和萨米文化体验都展现着北极更安静的一面。"
+          "a": "冬季的经典项目有哈士奇和驯鹿雪橇、雪地摩托、追极光、雪鞋徒步、越野与高山滑雪、冰钓和干衣漂浮体验。到了夏季，同一片荒野则变成徒步、皮划艇与独木舟、激流漂流、山地骑行、钓鲑鱼和淘金。一年四季，烟熏桑拿和萨米文化体验都展现着北极更安静的一面。"
         },
         {
           "q": "冬季和夏季分别有哪些最佳活动？",
@@ -170,7 +170,7 @@
         },
         {
           "q": "拉普兰的活动费用是多少？",
-          "a": "费用因活动、时长和团队规模差别很大。像驯鹿乘骑或极光巴士团这样的短时拼团项目价格较低；长时间或包团的行程，例如长程哈士奇雪橇或带向导的雪地摩托远征，价格较高，部分原因是其中已含保暖连体服、雪靴、安全装备和向导。如需最新准确价格，可通过我们的预订合作伙伴打开任意行程，确认前会显示实时价格。"
+          "a": "费用因活动、时长和团队规模差别很大。像驯鹿雪橇或极光巴士团这样的短时拼团项目价格较低；长时间或包团的行程，例如长程哈士奇雪橇或带向导的雪地摩托远征，价格较高，部分原因是其中已含保暖连体服、雪靴、安全装备和向导。如需最新准确价格，可通过我们的预订合作伙伴打开任意行程，确认前会显示实时价格。"
         },
         {
           "q": "拉普兰的活动适合幼童吗？",
@@ -184,7 +184,7 @@
     },
     "ko": {
       "title": "LaplandActivities: 라플란드의 엄선한 북극 투어 예약",
-      "description": "스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나 등. 라플란드와 그 주변 10개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.",
+      "description": "스노모빌 사파리, 허스키 썰매, 오로라 헌팅, 스모크 사우나 등. 라플란드와 그 주변 10개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.",
       "faq": [
         {
           "q": "라플란드에서는 어떤 액티비티를 할 수 있나요?",
@@ -222,15 +222,15 @@
         },
         {
           "q": "Combien coûtent les activités en Laponie ?",
-          "a": "Cela varie beaucoup selon l’activité, la durée et la taille du groupe. Une courte session partagée, comme une balade en renne ou un tour d’aurores en bus, se situe en bas de l’échelle ; les sorties de plusieurs heures ou privées, comme un long safari en traîneau de huskies ou une expédition guidée en motoneige, coûtent davantage, notamment parce qu’elles incluent combinaisons chaudes, bottes, équipement de sécurité et un guide. Pour des prix actuels et exacts, ouvrez n’importe quelle sortie via notre partenaire de réservation, le prix en direct s’affiche avant de confirmer."
+          "a": "Cela varie beaucoup selon l’activité, la durée et la taille du groupe. Une sortie courte en groupe, comme une balade en renne ou un tour d’aurores en bus, se situe dans le bas de la fourchette de prix ; les sorties de plusieurs heures ou privées, comme un long safari en traîneau de huskies ou une expédition guidée en motoneige, coûtent davantage, notamment parce qu’elles incluent combinaisons thermiques, bottes, équipement de sécurité et un guide. Pour des prix actuels et exacts, ouvrez n’importe quelle sortie via notre partenaire de réservation, le prix actualisé s’affiche avant la confirmation."
         },
         {
           "q": "Les activités en Laponie conviennent-elles aux jeunes enfants ?",
-          "a": "Beaucoup le sont, avec le bon choix. Les balades en traîneau de rennes, les visites de ferme de huskies, les douces sorties en raquettes, la luge et la rencontre avec le Père Noël conviennent bien aux jeunes enfants. La motoneige a généralement un âge minimum pour conduire (les enfants montent dans un traîneau ou une remorque), et les chasses aux aurores tardives peuvent être longues et froides pour les tout-petits. La plupart des prestataires indiquent les limites d’âge et les options familiales sur la page de l’activité, vérifiez donc avant de réserver."
+          "a": "Beaucoup conviennent, à condition de bien choisir. Les balades en traîneau de rennes, les visites de fermes de huskies, les douces sorties en raquettes, la luge et la rencontre avec le Père Noël conviennent bien aux jeunes enfants. La motoneige a généralement un âge minimum pour conduire (les enfants montent dans un traîneau ou une remorque), et les chasses aux aurores tardives peuvent être longues et froides pour les tout-petits. La plupart des prestataires indiquent les limites d’âge et les options familiales sur la page de l’activité, vérifiez donc avant de réserver."
         },
         {
           "q": "Faut-il réserver les activités en Laponie à l’avance ?",
-          "a": "Pour les semaines les plus chargées, Noël et le Nouvel An, ainsi que le pic d’aurores et de ski de février à mars, oui, réservez bien à l’avance, car les tours de huskies et de motoneige populaires se remplissent. En période plus calme, vous avez plus de souplesse, mais les prestataires les mieux notés et les départs en petit groupe se remplissent quand même en premier. Réserver à l’avance permet aussi d’intégrer une marge pour le ciel dégagé dans vos plans d’aurores plutôt que de disputer les dernières places."
+          "a": "Pour les semaines les plus chargées, Noël et le Nouvel An, ainsi que le pic d’aurores et de ski de février à mars, oui, réservez bien à l’avance, car les tours de huskies et de motoneige populaires se remplissent. En période plus calme, vous avez plus de souplesse, mais les prestataires les mieux notés et les départs en petit groupe se remplissent quand même en premier. Réserver à l’avance permet aussi de garder quelques soirs de battement en attendant un ciel dégagé plutôt que de vous disputer les dernières places."
         }
       ]
     },
@@ -240,7 +240,7 @@
       "faq": [
         {
           "q": "Quali attività si possono fare in Lapponia?",
-          "a": "In inverno i classici sono le slitte trainate da husky e renne, i safari in motoslitta, la caccia all’aurora, le ciaspolate, lo sci di fondo e alpino, la pesca sul ghiaccio e l’ice floating. In estate la stessa natura diventa trekking, kayak e canoa, rafting, mountain bike, pesca al salmone e ricerca dell’oro. Tutto l’anno, la sauna a fumo e le esperienze di cultura sami mostrano un lato più tranquillo dell’Artico."
+          "a": "In inverno i classici sono le slitte trainate da husky e renne, i safari in motoslitta, la caccia all’aurora, le ciaspolate, lo sci di fondo e alpino, la pesca sul ghiaccio e il galleggiamento in tuta termica (ice floating). In estate la stessa natura diventa trekking, kayak e canoa, rafting, mountain bike, pesca al salmone e ricerca dell’oro. Tutto l’anno, la sauna a fumo e le esperienze di cultura sami mostrano un lato più tranquillo dell’Artico."
         },
         {
           "q": "Quali sono le migliori attività invernali ed estive?",
@@ -252,11 +252,11 @@
         },
         {
           "q": "Le attività in Lapponia sono adatte ai bambini piccoli?",
-          "a": "Molte lo sono, con la scelta giusta. I giri in slitta trainata dalle renne, le visite alle fattorie degli husky, le tranquille passeggiate con le ciaspole, lo slittino e l’incontro con Babbo Natale funzionano bene per i più piccoli. La motoslitta ha di solito un’età minima per guidare (i bambini viaggiano in una slitta o in un rimorchio), e le cacce all’aurora a tarda notte possono essere lunghe e fredde per i piccolissimi. La maggior parte degli operatori indica i limiti di età e le opzioni per famiglie sulla pagina dell’attività, quindi controlla prima di prenotare."
+          "a": "Molte lo sono, con la scelta giusta. I giri in slitta trainata dalle renne, le visite alle fattorie degli husky, le tranquille passeggiate con le ciaspole, lo slittino e l’incontro con Babbo Natale funzionano bene per i più piccoli. La motoslitta ha di solito un’età minima per guidare (i bambini viaggiano in una slitta o in un rimorchio), e le cacce all’aurora a tarda notte possono essere lunghe e fredde per i piccolissimi. La maggior parte degli operatori indica i limiti di età e le opzioni per famiglie sulla pagina dell’attività, quindi controlli prima di prenotare."
         },
         {
           "q": "È necessario prenotare in anticipo le attività in Lapponia?",
-          "a": "Per le settimane più affollate, Natale e Capodanno, e il picco di aurore e sci da febbraio a marzo, sì, prenota con largo anticipo, perché i tour più richiesti con husky e motoslitta si riempiono. Nei periodi più tranquilli c’è più flessibilità, ma gli operatori più apprezzati e le partenze in piccoli gruppi si esauriscono comunque per primi. Prenotare in anticipo Le permette anche di inserire un margine per il cielo sereno nei piani per l’aurora invece di contendere gli ultimi posti."
+          "a": "Per le settimane più affollate, Natale e Capodanno, e il picco di aurore e sci da febbraio a marzo, sì, prenoti con largo anticipo, perché i tour più richiesti con gli husky e in motoslitta si riempiono. Nei periodi più tranquilli c’è più flessibilità, ma gli operatori più apprezzati e le partenze in piccoli gruppi si esauriscono comunque per primi. Prenotare in anticipo Le permette anche di tenere qualche serata di riserva in attesa del cielo sereno invece di contendersi gli ultimi posti."
         }
       ]
     },
@@ -266,15 +266,15 @@
       "faq": [
         {
           "q": "Welke activiteiten kunt u in Lapland doen?",
-          "a": "In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en alpineskiën, ijsvissen en ijsdrijven. In de zomer verandert dezelfde wildernis in wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied."
+          "a": "In de winter zijn de klassiekers husky- en rendiersleeën, sneeuwscootersafari’s, noorderlichttochten, sneeuwschoenwandelen, langlaufen en alpineskiën, ijsvissen en ijsdrijven. In de zomer leent dezelfde wildernis zich voor wandelen, kajakken en kanoën, wildwaterraften, mountainbiken, zalmvissen en goudzoeken. Het hele jaar door tonen de rooksauna en de ervaringen rond de Sami-cultuur een rustigere kant van het Noordpoolgebied."
         },
         {
           "q": "Wat zijn de beste winter- en zomeractiviteiten?",
-          "a": "De winter (november tot maart) is het seizoen van sneeuw en duisternis: sneeuwscooters, hondensleeën en noorderlichttochten hebben dat nodig. De zomer (juni tot augustus) ruilt de sneeuw in voor de middernachtzon, wanneer het licht nooit helemaal verdwijnt en wandelen, peddelen en vissen bijna de klok rond kunnen. De lente heeft nog sneeuw met veel meer daglicht, en de herfst brengt de ruska-kleuren en het eerste noorderlicht, beide rustigere tussenseizoenen."
+          "a": "De winter (november tot maart) is het seizoen van sneeuw en duisternis: sneeuwscooters, hondensleeën en noorderlichttochten hebben dat nodig. De zomer (juni tot augustus) ruilt de sneeuw in voor de middernachtzon, wanneer het licht nooit helemaal verdwijnt en wandelen, peddelen en vissen bijna de klok rond mogelijk zijn. In de lente ligt er nog sneeuw, maar met veel meer daglicht, en de herfst brengt de ruska-kleuren en het eerste noorderlicht, beide rustigere tussenseizoenen."
         },
         {
           "q": "Hoeveel kosten activiteiten in Lapland?",
-          "a": "Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte gedeelde sessie zoals een rendierrit of een noorderlichtbustocht zit aan de lage kant; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, juiste prijzen opent u een tocht via onze boekingspartner, de live prijs verschijnt voordat u bevestigt."
+          "a": "Dat verschilt sterk per activiteit, duur en groepsgrootte. Een korte groepsactiviteit zoals een rendiersleerit of een noorderlichtbustocht zit aan de onderkant van de prijsschaal; tochten van meerdere uren of privétochten zoals een lange husky-safari of een begeleide sneeuwscooterexpeditie kosten meer, deels omdat warme overalls, laarzen, veiligheidsuitrusting en een gids inbegrepen zijn. Voor actuele, exacte prijzen opent u een tocht via onze boekingspartner; de live prijs verschijnt voordat u bevestigt."
         },
         {
           "q": "Zijn activiteiten in Lapland geschikt voor jonge kinderen?",
@@ -282,7 +282,7 @@
         },
         {
           "q": "Moet u activiteiten in Lapland vooraf boeken?",
-          "a": "Voor de drukste weken, Kerst en Nieuwjaar, en de noorderlicht- en skipiek van februari tot maart, ja, boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en vertrekken in kleine groepen zijn toch het eerst uitverkocht. Vooraf boeken laat u ook ruimte voor een heldere hemel inbouwen in uw noorderlichtplannen in plaats van te strijden om de laatste plekken."
+          "a": "Voor de drukste weken, Kerst en Nieuwjaar, en de noorderlicht- en skipiek van februari tot maart geldt: boek ruim van tevoren, want populaire husky- en sneeuwscootertochten raken vol. In rustigere periodes hebt u meer flexibiliteit, maar de best beoordeelde aanbieders en tochten in kleine groepen zijn toch het eerst uitverkocht. Wie vroeg boekt, kan bovendien speling voor heldere nachten inbouwen in de noorderlichtplannen in plaats van te strijden om de laatste plekken."
         }
       ]
     },
@@ -1178,7 +1178,7 @@
     },
     "ja": {
       "title": "Rovaniemi · LaplandActivities",
-      "description": "ラップランドの州都であり、北極圏アドベンチャーの玄関口。サンタクロース村があり、交通アクセスに優れ、冬も夏も豊富なアクティビティが楽しめます。"
+      "description": "ラップランド地方の中心都市であり、北極圏アドベンチャーの玄関口。サンタクロース村があり、交通アクセスに優れ、冬も夏も豊富なアクティビティが楽しめます。"
     },
     "es": {
       "title": "Rovaniemi · LaplandActivities",
@@ -1194,7 +1194,7 @@
     },
     "ko": {
       "title": "로바니에미 · LaplandActivities",
-      "description": "라플란드의 수도이자 북극 모험의 관문. 산타클로스 마을이 있고, 교통편이 좋으며, 겨울과 여름 액티비티가 풍부합니다."
+      "description": "라플란드의 중심 도시이자 북극 모험의 관문. 산타클로스 마을이 있고, 교통편이 좋으며, 겨울과 여름 액티비티가 풍부합니다."
     },
     "fr": {
       "title": "Rovaniemi · LaplandActivities",
@@ -1220,7 +1220,7 @@
     },
     "fi": {
       "title": "Levi · LaplandActivities",
-      "description": "Suomen johtava hiihtokohde, jossa on 44 rinnettä ja 230 km hiihtolatuja. Vilkas after ski Hullu Porossa ja ulkoaktiviteetteja ympäri vuoden."
+      "description": "Suomen johtava hiihtokohde, jossa on 44 rinnettä ja 230 km hiihtolatuja. Vilkas afterski Hullussa Porossa ja ulkoaktiviteetteja ympäri vuoden."
     },
     "de": {
       "title": "Levi · LaplandActivities",
@@ -1228,7 +1228,7 @@
     },
     "ja": {
       "title": "Levi · LaplandActivities",
-      "description": "44本のゲレンデと230kmのクロスカントリーコースを誇る一流のスキーデスティネーション。Hullu Poroの活気あるアプレスキーと、一年を通じたアウトドアアクティビティ。"
+      "description": "44本のコースと230kmのクロスカントリーコースを誇る一流のスキーリゾート。フッル・ポロの活気あるアフタースキーと、一年を通じたアウトドアアクティビティ。"
     },
     "es": {
       "title": "Levi · LaplandActivities",
@@ -1244,7 +1244,7 @@
     },
     "ko": {
       "title": "레비 · LaplandActivities",
-      "description": "44개의 슬로프와 230km의 크로스컨트리 코스를 보유한 최고급 스키 목적지. 훌루 포로(Hullu Poro)의 활기찬 애프터 스키와 사계절 야외 액티비티."
+      "description": "슬로프 44면과 230km의 크로스컨트리 코스를 보유한 최고급 스키 리조트. 훌루 포로(Hullu Poro)의 활기찬 애프터 스키와 사계절 야외 액티비티."
     },
     "fr": {
       "title": "Levi · LaplandActivities",
@@ -1270,7 +1270,7 @@
     },
     "fi": {
       "title": "Ylläs · LaplandActivities",
-      "description": "Kaksi hiihtokeskusta Ylläs-tunturin molemmin puolin tarjoavat Suomen pisimmät laskut, jopa 3 km."
+      "description": "Kaksi hiihtokeskusta Yllästunturin molemmin puolin tarjoaa Suomen pisimmät laskut, jopa 3 km."
     },
     "de": {
       "title": "Ylläs · LaplandActivities",
@@ -1278,7 +1278,7 @@
     },
     "ja": {
       "title": "Ylläs · LaplandActivities",
-      "description": "Ylläsフェルの両側に位置する2つのスキーリゾートが、最長3kmというフィンランド屈指の滑走を提供します。Pallas-Yllästunturi国立公園とともに、より静かで本物のラップランド体験を。"
+      "description": "ユッラス・フェルの両側に位置する2つのスキーリゾートが、最長3kmというフィンランド屈指の滑走を提供します。Pallas-Yllästunturi国立公園とともに、より静かで本物のラップランド体験を。"
     },
     "es": {
       "title": "Ylläs · LaplandActivities",
@@ -1290,7 +1290,7 @@
     },
     "zh-CN": {
       "title": "Ylläs · LaplandActivities",
-      "description": "Ylläs 山两侧的两座滑雪度假村提供芬兰最长的滑降雪道，长达 3.2 公里。搭配 Pallas-Yllästunturi 国家公园，是更宁静、更纯正的拉普兰体验。"
+      "description": "于拉斯山两侧的两座滑雪度假村提供芬兰最长的滑降雪道，长达 3.2 公里。搭配 Pallas-Yllästunturi 国家公园，是更宁静、更纯正的拉普兰体验。"
     },
     "ko": {
       "title": "윌래스 · LaplandActivities",
@@ -1328,7 +1328,7 @@
     },
     "ja": {
       "title": "Saariselkä · LaplandActivities",
-      "description": "フィンランド最北のスキーリゾートで、ヨーロッパ最大級の原生自然に隣接しています。オーロラ観察、砂金採り、そして伝説的なKiilopääのスモークサウナで知られています。"
+      "description": "フィンランド最北のスキーリゾートで、ヨーロッパ最大級の原生自然に隣接しています。オーロラ観察、砂金採り、そして伝説的なキーロパーのスモークサウナで知られています。"
     },
     "es": {
       "title": "Saariselkä · LaplandActivities",
@@ -1378,7 +1378,7 @@
     },
     "ja": {
       "title": "Inari · LaplandActivities",
-      "description": "3,000を超える島々を抱えるInari湖のほとりにあり、フィンランドのサーミの人々の文化的中心地です。Siida博物館と手つかずの自然があります。"
+      "description": "3,000を超える島々を抱えるイナリ湖のほとりにあり、フィンランドのサーミの人々の文化的中心地です。Siida博物館と手つかずの自然があります。"
     },
     "es": {
       "title": "Inari · LaplandActivities",
@@ -1406,7 +1406,7 @@
     },
     "nl": {
       "title": "Inari · LaplandActivities",
-      "description": "Aan de oevers van het Inari-meer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk."
+      "description": "Aan de oevers van het Inarimeer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk."
     },
     "sv": {
       "title": "Inari · LaplandActivities",
@@ -1428,7 +1428,7 @@
     },
     "ja": {
       "title": "RukaとKuusamo · LaplandActivities",
-      "description": "伝説的なクマの道Karhunkierros、Oulanka国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。Rukaはラップランドのすぐ南のKuusamoに位置し、同じ雪と同じ北国の冬が楽しめます。"
+      "description": "伝説的なクマの道カルフンキエッロス、オウランカ国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。Rukaはラップランドのすぐ南のKuusamoに位置し、同じ雪と同じ北国の冬が楽しめます。"
     },
     "es": {
       "title": "Ruka y Kuusamo · LaplandActivities",
@@ -1436,11 +1436,11 @@
     },
     "pt-BR": {
       "title": "Ruka e Kuusamo · LaplandActivities",
-      "description": "Lar da lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia."
+      "description": "Abriga a lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia."
     },
     "zh-CN": {
       "title": "Ruka 与 Kuusamo · LaplandActivities",
-      "description": "传奇的 Karhunkierros 熊径、Oulanka 国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。Ruka 位于 Kuusamo，在拉普兰以南不远，同样的雪，同样的北国冬季。"
+      "description": "传奇的卡尔胡恩基耶罗斯（熊径）、奥兰卡国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。Ruka 位于 Kuusamo，在拉普兰以南不远，同样的雪，同样的北国冬季。"
     },
     "ko": {
       "title": "루카와 쿠사모 · LaplandActivities",
@@ -1478,7 +1478,7 @@
     },
     "ja": {
       "title": "Posio · LaplandActivities",
-      "description": "Riisitunturi国立公園の壮観な雪冠をいただく木々と、Korouoma渓谷の凍った滝で有名です。人里離れた、純粋な原生自然。"
+      "description": "リーシトゥントゥリ国立公園の壮観な樹氷と、コロウオマ渓谷の氷瀑で有名です。人里離れた、純粋な原生自然。"
     },
     "es": {
       "title": "Posio · LaplandActivities",
@@ -1502,11 +1502,11 @@
     },
     "it": {
       "title": "Posio · LaplandActivities",
-      "description": "Famosa per gli spettacolari alberi incoronati di neve del Parco nazionale Riisitunturi e per le cascate ghiacciate del canyon di Korouoma."
+      "description": "Famosa per gli spettacolari alberi carichi di neve del Parco nazionale Riisitunturi e per le cascate ghiacciate del canyon di Korouoma."
     },
     "nl": {
       "title": "Posio · LaplandActivities",
-      "description": "Beroemd om de spectaculaire met sneeuw bekroonde bomen van Riisitunturi Nationaal Park en de bevroren watervallen van de Korouoma-canyon."
+      "description": "Beroemd om de spectaculaire sneeuwbeladen bomen van Nationaal Park Riisitunturi en de bevroren watervallen van de Korouoma-canyon."
     },
     "sv": {
       "title": "Posio · LaplandActivities",
@@ -1540,7 +1540,7 @@
     },
     "zh-CN": {
       "title": "Tornio、Haparanda 与 Kemi · LaplandActivities",
-      "description": "芬兰与瑞典之间的边境城市，是通往独特北极体验的门户。可乘坐传奇的 Sampo 破冰船巡航、参观 SnowCastle 冬季公园，并垂钓欧洲最大的自由流淌的鲑鱼河。"
+      "description": "芬兰与瑞典之间的边境城市，是通往独特北极体验的门户。可乘坐传奇的桑普号破冰船巡航、参观 SnowCastle 冬季公园，并垂钓欧洲最大的自由流淌的鲑鱼河。"
     },
     "ko": {
       "title": "토르니오·하파란다·케미 · LaplandActivities",
@@ -1570,7 +1570,7 @@
     },
     "fi": {
       "title": "Pyhä-Luosto · LaplandActivities",
-      "description": "Kaksi tunturikylää, Pyhä ja Luosto, joita yhdistää ikivanha tunturijono ja niiden välissä Pyhä-Luoston kansallispuisto."
+      "description": "Kaksi tunturikylää, Pyhä ja Luosto, joita yhdistävät ikivanha tunturijono ja niiden välissä levittäytyvä Pyhä-Luoston kansallispuisto."
     },
     "de": {
       "title": "Pyhä-Luosto · LaplandActivities",
@@ -1628,7 +1628,7 @@
     },
     "ja": {
       "title": "ケミヤルヴィ · LaplandActivities",
-      "description": "フィンランド最北の市は自分の湖のほとりにあり、夜行列車サンタクロース・エクスプレスの終着点。東ラップランドの静かな拠点で、ピュハまで50kmです。"
+      "description": "フィンランド最北の市は、同じ名を持つ湖のほとりにあり、夜行列車サンタクロース・エクスプレスの終着点。東ラップランドの静かな拠点で、ピュハまで50kmです。"
     },
     "es": {
       "title": "Kemijärvi · LaplandActivities",
@@ -1644,7 +1644,7 @@
     },
     "ko": {
       "title": "케미야르비 · LaplandActivities",
-      "description": "핀란드 최북단 도시는 자기만의 호숫가에 있으며, 야간열차 산타클로스 익스프레스가 여기서 끝납니다. 동부 라플란드의 조용한 거점으로, 퓌해까지 50km입니다."
+      "description": "핀란드 최북단 도시는 같은 이름의 호숫가에 자리하며, 야간열차 산타클로스 익스프레스가 여기서 끝납니다. 동부 라플란드의 조용한 거점으로, 퓌해까지 50km입니다."
     },
     "fr": {
       "title": "Kemijärvi · LaplandActivities",

@@ -11,7 +11,7 @@ const fi: SectionCopy = {
       sub: 'Kolme kalavesialuetta, yksi matka: ilmainen pilkkiminen jäätyneillä järvillä, luvanvaraiset kesän lohijoet ja kuningasrapusafarit Norjan rajan yli. Tässä se, mikä on auki 2026, ja säännöt, joiden ansiosta kalat palaavat.',
       ctaBook: 'Varaa opastettu pilkkiretki',
       ctaRules: 'Luvat ja säännöt →',
-      trustLine: 'Tarkistettu virallisia suomalaisia (eräluvat.fi, MMM) ja norjalaisia (fiskeridir.no) lähteitä vasten. Säännöt muuttuvat vuosittain. Varmista vesialueesi ennen kalastusta.',
+      trustLine: 'Tiedot on tarkistettu virallisista suomalaisista (eräluvat.fi, MMM) ja norjalaisista (fiskeridir.no) lähteistä. Säännöt muuttuvat vuosittain. Tarkista kalastusalueen säännöt ennen kalastusta.',
     },
     eyebrows: {
       eco: 'Luonto edellä',
@@ -195,7 +195,7 @@ const fi: SectionCopy = {
           a: 'Et. Atlantinlohen kalastus Tenon pääuomassa on kielletty vuonna 2026, voimassa 31. joulukuuta asti Suomen ja Norjan Tenon kalastussopimuksen mukaan. Voit kalastaa muita lajeja (harjus, siika, taimen) 20 €/vrk maksavalla "muiden lajien" luvalla tenonkalaluvat.fi:stä, lohi pois lukien.',
         },
         {
-          q: 'Kuinka monta lohta saan pitää Torniolla?',
+          q: 'Kuinka monta lohta saan pitää Tornionjoella?',
           a: 'Vuonna 2026 enintään 1 lohi per 24 tuntia ja enintään 2 lohta koko kaudella. Molemmat rajat pätevät yhtä aikaa. Toisen lohesi jälkeen sinun on lopetettava lohenkalastus loppuvuodeksi. Alamitta on 50 cm (eräluvat.fi-alueen 2502 ja valtioneuvosto.fi:n mukaan).',
         },
         {
@@ -208,7 +208,7 @@ const fi: SectionCopy = {
         },
         {
           q: 'Mikä on kalastusmaksu ja kuka on siitä vapautettu?',
-          a: 'Valtakunnallinen kalastonhoitomaksu vuodelle 2026 on 47 € kalenterivuodelta, 16 € seitsemältä vuorokaudelta tai 6 € yhdeltä vuorokaudelta (eräluvat.fi). Se vaaditaan viehe-, uistin- ja vetouistinkalastajilta 18–69-vuotiaana; alle 18-vuotiaat ja kaikki 70 vuotta täyttäneet ovat vapautettuja, samoin ne, jotka täyttivät 65 vuotta 31. joulukuuta 2023 mennessä.',
+          a: 'Valtakunnallinen kalastonhoitomaksu vuodelle 2026 on 47 € kalenterivuodelta, 16 € seitsemältä vuorokaudelta tai 6 € yhdeltä vuorokaudelta (eräluvat.fi). Se vaaditaan 18–69-vuotiailta viehe-, uistin- ja vetouistinkalastajilta; alle 18-vuotiaat ja kaikki 70 vuotta täyttäneet ovat vapautettuja, samoin ne, jotka täyttivät 65 vuotta 31. joulukuuta 2023 mennessä.',
         },
         {
           q: 'Mikä Lapin joki on paras lohelle 2026?',
@@ -332,10 +332,10 @@ const fi: SectionCopy = {
   home: {
     metaTitle: 'LaplandActivities: arktiset retket Suomen Lapissa',
     metaDescription: 'Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kymmenessä kohteessa Lapissa ja lähialueilla GetYourGuiden kautta.',
-    ogTitle: 'LaplandActivities · luotettavia arktisia elämyksiä',
+    ogTitle: 'LaplandActivities · käsin valitut arktiset elämykset',
     categoriesKicker: 'Mitä tehdä',
     categoriesH2: 'Valitse seikkailusi',
-    categoriesLead: 'Yhdeksän tapaa kokea Arktis. Valitse kategoria, niin ohjataan luotettavien retkijärjestäjien luokse.',
+    categoriesLead: 'Yhdeksän tapaa kokea arktinen Lappi. Valitse kategoria, niin ohjaamme sinut käsin valittujen retkijärjestäjien luo.',
     activitiesLabel: 'aktiviteettia',
     viewAllCategories: 'Katso kaikki kategoriat',
     gygTitle: 'Tämän viikon parhaiten arvioidut Lapin retket',
@@ -345,7 +345,7 @@ const fi: SectionCopy = {
     seeAllTours: 'Katso kaikki varattavat retket',
     seasonsKicker: 'Ympärivuotinen',
     seasonsH2: 'Neljä vuodenaikaa, neljä seikkailua',
-    seasonsLead: 'Jokainen vuodenaika muuttaa Lapin eri maaksi.',
+    seasonsLead: 'Jokainen vuodenaika tekee Lapista aivan toisen maan.',
     seasons: [
       { name: 'Talvi', months: 'marras – maalis', blurb: 'Paksu lumi, kaamos, parhaat revontulet. Moottorikelkat, huskyt, savusaunat.', temp: '-15…-5°C' },
       { name: 'Kevät', months: 'huhti – touko', blurb: 'Lunta ja päivänvaloa. Kevätlaskettelua, poron vasomista, revontulia huhtikuun puoliväliin.', temp: '-5…+5°C' },
@@ -378,15 +378,15 @@ const fi: SectionCopy = {
     items: [
       {
         q: 'Mitä aktiviteetteja Lapissa voi tehdä?',
-        a: 'Talvella klassikoita ovat husky- ja porovaljakot, moottorikelkkasafarit, revontuliretket, lumikenkäily, maasto- ja lasketteluhiihto, pilkkiminen ja avantokelluminen. Kesällä sama erämaa muuttuu vaellukseksi, melonnaksi, koskenlaskuksi, maastopyöräilyksi, lohenkalastukseksi ja kullanhuuhdonnaksi. Ympäri vuoden savusauna ja saamelaiskulttuurin elämykset tarjoavat hiljaisemman puolen arktisesta.',
+        a: 'Talvella klassikoita ovat husky- ja porovaljakot, moottorikelkkasafarit, revontuliretket, lumikenkäily, maastohiihto ja laskettelu, pilkkiminen ja avantokelluminen. Kesällä samassa erämaassa vaelletaan, melotaan ja lasketaan koskia, maastopyöräilyksi, lohenkalastukseksi ja kullanhuuhdonnaksi. Ympäri vuoden savusauna ja saamelaiskulttuurin elämykset näyttävät arktisen pohjolan hiljaisemman puolen.',
       },
       {
         q: 'Mitkä ovat parhaat talvi- ja kesäaktiviteetit?',
-        a: 'Talvi (marraskuusta maaliskuuhun) on lumen ja pimeyden aikaa: moottorikelkat, koiravaljakot ja revontuliretket tarvitsevat sen. Kesä (kesäkuusta elokuuhun) vaihtaa lumen keskiyön aurinkoon, jolloin valo ei täysin haalistu ja vaellus, melonta ja kalastus onnistuvat lähes kellon ympäri. Keväällä on yhä lunta mutta paljon enemmän valoa, ja syksy tuo ruskan ja ensimmäiset revontulet. Molemmat ovat hiljaisempia väliaikoja.',
+        a: 'Talvi (marraskuusta maaliskuuhun) on lumen ja pimeyden aikaa: moottorikelkat, koiravaljakot ja revontuliretket vaativat kaikki sitä. Kesä (kesäkuusta elokuuhun) vaihtaa lumen keskiyön aurinkoon, jolloin valo ei koskaan täysin katoa ja vaellus, melonta ja kalastus onnistuvat lähes kellon ympäri. Keväällä on yhä lunta mutta paljon enemmän valoa, ja syksy tuo ruskan ja ensimmäiset revontulet. Molemmat ovat hiljaisempia väliaikoja.',
       },
       {
         q: 'Paljonko Lapin aktiviteetit maksavat?',
-        a: 'Hinta vaihtelee paljon aktiviteetin, keston ja ryhmäkoon mukaan. Lyhyt jaettu hetki kuten porokyyti tai revontulibussiretki on edullisemmasta päästä; usean tunnin tai yksityiset retket kuten pitkä husky-safari tai opastettu moottorikelkkaretki maksavat enemmän, osin koska niihin sisältyvät lämpöhaalarit, saappaat, turvavarusteet ja opas. Ajantasaiset, tarkat hinnat näet avaamalla minkä tahansa retken varauskumppanimme kautta; hinta näkyy ennen vahvistusta.',
+        a: 'Hinta vaihtelee paljon aktiviteetin, keston ja ryhmäkoon mukaan. Lyhyt ryhmäretki, kuten porokyyti tai revontulibussiretki, on edullisemmasta päästä; usean tunnin tai yksityiset retket kuten pitkä husky-safari tai opastettu moottorikelkkaretki maksavat enemmän, osin koska niihin sisältyvät lämpöhaalarit, saappaat, turvavarusteet ja opas. Ajantasaiset, tarkat hinnat näet avaamalla minkä tahansa retken varauskumppanimme kautta; hinta näkyy ennen vahvistusta.',
       },
       {
         q: 'Sopivatko Lapin aktiviteetit pienille lapsille?',
@@ -394,7 +394,7 @@ const fi: SectionCopy = {
       },
       {
         q: 'Pitääkö Lapin aktiviteetit varata etukäteen?',
-        a: 'Kiireisimpinä viikkoina, jouluna ja uutenavuotena sekä helmi–maaliskuun revontuli- ja hiihtohuippuna, kyllä: varaa hyvissä ajoin, sillä suositut husky- ja moottorikelkkaretket täyttyvät. Hiljaisempina aikoina on enemmän joustoa, mutta parhaiten arvioidut järjestäjät ja pienryhmälähdöt myydään silti ensin loppuun. Etukäteen varaaminen antaa myös pelivaraa revontulisuunnitelmiin kirkkaan taivaan mukaan sen sijaan, että kilpailisit viimeisistä paikoista.',
+        a: 'Kiireisimpinä viikkoina, jouluna ja uutenavuotena sekä helmi–maaliskuun revontuli- ja hiihtohuippuna, kyllä: varaa hyvissä ajoin, sillä suositut husky- ja moottorikelkkaretket täyttyvät. Hiljaisempina aikoina on enemmän joustoa, mutta parhaiten arvioidut järjestäjät ja pienryhmälähdöt myydään silti ensin loppuun. Etukäteen varaaminen jättää myös liikkumavaraa: voit ajoittaa revontuliretken kirkkaalle yölle sen sijaan, että kilpailisit viimeisistä paikoista.',
       },
     ],
   },
@@ -403,7 +403,7 @@ const fi: SectionCopy = {
     metaDescription: 'Selaa arktisia aktiviteetteja kategorioittain: seikkailu, eläinkokemukset, revontulet, talviurheilu, hyvinvointi, kulttuuri, kesäaktiviteetit ja ruoka.',
     kicker: 'Mitä tehdä',
     h1: 'Aktiviteettikategoriat',
-    lead: 'Yhdeksän tapaa kokea Arktis. Valitse aihe, niin ohjataan luotettavien toimijoiden luokse.',
+    lead: 'Yhdeksän tapaa kokea arktinen Lappi. Valitse aihe, niin ohjataan luotettavien toimijoiden luokse.',
     activitiesLabel: 'aktiviteettia',
     exploreAdventures: 'Tutustu seikkailuihin',
     explore: 'Tutustu',
