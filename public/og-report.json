@@ -1,0 +1,86 @@
+{
+  "version": "20260905",
+  "domain": "laplandactivities.fi",
+  "brand": "ACTIVITIES",
+  "tagline": "Hand-picked Arctic tours in Lapland",
+  "generated": "2026-09-05T21:47:03.561Z",
+  "staticFallbackSeason": "summer",
+  "seasons": {
+    "summer": {
+      "heroUrl": "https://laplandactivities.fi/images/heroes/slider-03-summer-hike.webp",
+      "heroAlt": "Hikers on a Lapland fjell ridge under the midnight sun",
+      "heroSha": "88e2f31c247f4895",
+      "bytes": 197804,
+      "sha256": "146d5e4cec868c427f8910d888cdf8a4de4b6a3f443edf148527f8e0f280b334",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 18605,
+      "inkBox": [
+        347,
+        493,
+        852,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 79.4,
+      "centerSq": 82.8,
+      "photoRegion": 94.4,
+      "photoRegionRef": 94.4,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 509,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    },
+    "winter": {
+      "heroUrl": "https://laplandactivities.fi/images/heroes/slider-01-husky-aurora.webp",
+      "heroAlt": "Husky team running across a frozen lake under aurora",
+      "heroSha": "e2b9b5e39ee26caf",
+      "bytes": 126046,
+      "sha256": "e6802b7e9a15ed7f280ecc310e83aad15b3d014eb64b0bcb03b0cccb8992b247",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 18605,
+      "inkBox": [
+        347,
+        493,
+        852,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 119.9,
+      "centerSq": 121.7,
+      "photoRegion": 149.6,
+      "photoRegionRef": 149.6,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 509,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    }
+  }
+}
