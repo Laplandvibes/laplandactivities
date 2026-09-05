@@ -1,7 +1,7 @@
 // GENEROITU TIEDOSTO — älä muokkaa käsin.
 // Lähde: adtraction -tuotesyöte, Halti (ohjelma 1622199570).
 // Päivitä: node scripts/sync_partner_feeds.mjs halti --refresh
-// Hinnat ovat 2026-09-04 hintoja ja ne renderöidään tarkistuspäivän kanssa.
+// Hinnat ovat 2026-09-05 hintoja ja ne renderöidään tarkistuspäivän kanssa.
 
 import type { PartnerSnapshot } from './partnerTypes'
 
@@ -15,95 +15,95 @@ const picks: PartnerSnapshot = {
     "cookieDays": 30
   },
   "route": "/go/halti",
-  "fetchedAt": "2026-09-04",
+  "fetchedAt": "2026-09-05",
   "products": [
     {
-      "sku": "shopify_ZZ_4882534400047_46359050486085",
-      "name": "Halti Pallas II Naisten X-stretch Ulkoilutakki",
-      "shelf": "takit",
-      "category": "Takit",
-      "brand": "Halti",
-      "price": 80,
-      "currency": "EUR",
-      "url": "http://www.halti.fi/products/pallas-ii-naisten-x-stretch-takki?&variant=46359050486085",
-      "image": "/images/partners/halti/shopify_ZZ_4882534400047_46359050486085.webp"
-    },
-    {
-      "sku": "shopify_ZZ_15699758940485_57193413443909",
-      "name": "Halti Grets Joggersit Naisten",
-      "shelf": "housut",
-      "category": "Housut",
-      "brand": "Halti",
-      "price": 80,
-      "currency": "EUR",
-      "url": "http://www.halti.fi/products/grets-joggersit-naisten?&variant=57193413443909",
-      "image": "/images/partners/halti/shopify_ZZ_15699758940485_57193413443909.webp"
-    },
-    {
-      "sku": "shopify_ZZ_16070580928837_58783263097157",
-      "name": "Halti Jalava DX Paljasjalkanilkkuri Lasten",
-      "shelf": "jalkineet",
-      "category": "Jalkineet",
-      "brand": "Halti",
-      "price": 80,
-      "currency": "EUR",
-      "url": "http://www.halti.fi/products/jalava-dx-paljasjalkanilkkuri-lasten?&variant=58783263097157",
-      "image": "/images/partners/halti/shopify_ZZ_16070580928837_58783263097157.webp"
-    },
-    {
-      "sku": "shopify_ZZ_15844050403653_57818987331909",
-      "name": "Halti Samoy Tekninen Kauluspaita Naisten",
+      "sku": "shopify_ZZ_15810225668421_57684303380805",
+      "name": "Halti Tuntu II Pitkähihainen Merino Paita Miesten",
       "shelf": "paidat",
       "category": "Paidat",
       "brand": "Halti",
-      "price": 80,
+      "price": 100,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/samoy-tekninen-kauluspaita-naisten?&variant=57818987331909",
-      "image": "/images/partners/halti/shopify_ZZ_15844050403653_57818987331909.webp"
+      "url": "http://www.halti.fi/products/tuntu-ii-pitkahihainen-merino-paita-miesten?&variant=57684303380805",
+      "image": "/images/partners/halti/shopify_ZZ_15810225668421_57684303380805.webp"
     },
     {
-      "sku": "shopify_ZZ_15259395522885_55497444327749",
-      "name": "Halti Thermel Välitakki Naisten",
+      "sku": "shopify_ZZ_7139665575983_41294962688047",
+      "name": "Halti Streams Hybrid Välitakki Naisten",
       "shelf": "midlayers",
       "category": "Midlayers",
       "brand": "Halti",
-      "price": 80,
-      "currency": "EUR",
-      "url": "http://www.halti.fi/products/thermel-valitakki-naisten?&variant=55497444327749",
-      "image": "/images/partners/halti/shopify_ZZ_15259395522885_55497444327749.webp"
-    },
-    {
-      "sku": "shopify_ZZ_15391179997509_56080376791365",
-      "name": "Halti Framover Hiihtoliivi Unisex",
-      "shelf": "liivit",
-      "category": "Liivit",
-      "brand": "Halti",
       "price": 100,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/framover-hiihtoliivi-unisex?&variant=56080376791365",
-      "image": "/images/partners/halti/shopify_ZZ_15391179997509_56080376791365.webp"
+      "url": "http://www.halti.fi/products/streams-naisten-hybrid-valitakki?&variant=41294962688047",
+      "image": "/images/partners/halti/shopify_ZZ_7139665575983_41294962688047.webp"
     },
     {
-      "sku": "shopify_ZZ_6767508488239_47034238533957",
-      "name": "Halti Neva Merino Kerrasto Naisten",
+      "sku": "shopify_ZZ_15409801855301_56139772363077",
+      "name": "Halti Kevo 2 DX Talvikenkä Miesten",
+      "shelf": "jalkineet",
+      "category": "Jalkineet",
+      "brand": "Halti",
+      "price": 110,
+      "currency": "EUR",
+      "url": "http://www.halti.fi/products/kevo-2-dx-talvikenka-miesten?&variant=56139772363077",
+      "image": "/images/partners/halti/shopify_ZZ_15409801855301_56139772363077.webp"
+    },
+    {
+      "sku": "shopify_ZZ_15221953528133_55373603209541",
+      "name": "Halti Hossa II Merino Kerrasto Miesten",
       "shelf": "alusasut",
       "category": "Alusasut",
       "brand": "Halti",
-      "price": 100,
+      "price": 120,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/neva-naisten-kerrasto?&variant=47034238533957",
-      "image": "/images/partners/halti/shopify_ZZ_6767508488239_47034238533957.webp"
+      "url": "http://www.halti.fi/products/hossa-ii-merino-kerrasto-miesten?&variant=55373603209541",
+      "image": "/images/partners/halti/shopify_ZZ_15221953528133_55373603209541.webp"
     },
     {
-      "sku": "shopify_ZZ_15412314407237_56147743048005",
-      "name": "Halti Huuru Maastohiihtopuku Naisten",
-      "shelf": "puvut",
-      "category": "Puvut",
+      "sku": "shopify_ZZ_15931469660485_58202476511557",
+      "name": "Halti Pallas Evo Short X-stretch Housut Naisten",
+      "shelf": "housut",
+      "category": "Housut",
+      "brand": "Halti",
+      "price": 130,
+      "currency": "EUR",
+      "url": "http://www.halti.fi/products/pallas-evo-short-x-stretch-housut-naisten?&variant=58202476511557",
+      "image": "/images/partners/halti/shopify_ZZ_15931469660485_58202476511557.webp"
+    },
+    {
+      "sku": "shopify_ZZ_8624216342853_46945195589957",
+      "name": "Halti Exhale Stormwall Takki Miesten",
+      "shelf": "takit",
+      "category": "Takit",
+      "brand": "Halti",
+      "price": 170,
+      "currency": "EUR",
+      "url": "http://www.halti.fi/products/exhale-stormwall-takki-miesten?&variant=46945195589957",
+      "image": "/images/partners/halti/shopify_ZZ_8624216342853_46945195589957.webp"
+    },
+    {
+      "sku": "shopify_ZZ_15264904806725_55532774359365",
+      "name": "Halti Huippu Hybrid Untuvaliivi Naisten",
+      "shelf": "liivit",
+      "category": "Liivit",
       "brand": "Halti",
       "price": 180,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/huuru-maastohiihtopuku-naisten?&variant=56147743048005",
-      "image": "/images/partners/halti/shopify_ZZ_15412314407237_56147743048005.webp"
+      "url": "http://www.halti.fi/products/huippu-hybrid-untuvaliivi-naisten?&variant=55532774359365",
+      "image": "/images/partners/halti/shopify_ZZ_15264904806725_55532774359365.webp"
+    },
+    {
+      "sku": "shopify_ZZ_8704108069189_47226718388549",
+      "name": "Halti Siide Plus Hiihtopuku Naisten",
+      "shelf": "puvut",
+      "category": "Puvut",
+      "brand": "Halti",
+      "price": 210,
+      "currency": "EUR",
+      "url": "http://www.halti.fi/products/siide-plus-hiihtopuku-naisten?&variant=47226718388549",
+      "image": "/images/partners/halti/shopify_ZZ_8704108069189_47226718388549.webp"
     }
   ]
 }
