@@ -595,7 +595,7 @@ const es: SectionCopy = {
     metaDescription: 'Condiciones de uso de laplandactivities.fi: contenidos y licencias, aviso de enlaces de afiliación, responsabilidad y normas editoriales. Gestionado por LaPeso Oy.',
   },
   cookie: {
-    metaTitle: 'Política de cookies · LaplandActivities',
+    metaTitle: 'Política de cookies y consentimiento · LaplandActivities',
     metaDescription: 'Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar su consentimiento. Declaración de cookies de LaPeso Oy conforme al RGPD y la ePrivacy.',
   },
   notFound: {

@@ -94,6 +94,7 @@ async function main() {
 
   // Load the real modules through Vite SSR so TS resolves exactly as at runtime.
   let COPY = null, categories = null, destinations = null, localizeCategory = null, localizeDestination = null;
+  let destinationTitle = null, categoryTitle = null;
   let viteServer = null;
   try {
     const vite = await import('vite');
@@ -116,6 +117,10 @@ async function main() {
     COPY = copyMod.COPY;
     categories = (await load('/src/data/categories.ts')).categories;
     destinations = (await load('/src/data/destinations.ts')).destinations;
+    // [LV-DUP 2026-09-06] localized title builders shared with the React pages.
+    const titlesMod = await load('/src/lib/pageTitles.ts');
+    destinationTitle = titlesMod.destinationTitle;
+    categoryTitle = titlesMod.categoryTitle;
     const dataMod = await load('/src/locales/data.ts');
     localizeCategory = dataMod.localizeCategory;
     localizeDestination = dataMod.localizeDestination;
@@ -126,7 +131,7 @@ async function main() {
     if (viteServer) await viteServer.close();
   }
 
-  if (!COPY || !categories || !destinations || !localizeCategory || !localizeDestination) {
+  if (!COPY || !categories || !destinations || !localizeCategory || !localizeDestination || !destinationTitle || !categoryTitle) {
     writeFileSync(OUT_FILE, '{}\n', 'utf-8');
     console.error('[meta] sources not loaded — wrote empty map (prerender falls back to routes.json)');
     return;
@@ -187,7 +192,7 @@ async function main() {
       const lc = localizeCategory(cat, lang);
       if (!lc || !lc.name) continue;
       byLang[lang] = {
-        title: titleOf(lc.name),
+        title: categoryTitle(lc.name, lang),
         description: clampMeta(lc.description, DESC_MAX, lang),
       };
     }
@@ -203,7 +208,7 @@ async function main() {
       const ld = localizeDestination(dest, lang);
       if (!ld || !ld.name) continue;
       byLang[lang] = {
-        title: titleOf(ld.name),
+        title: destinationTitle(ld.name, lang),
         description: clampMeta(ld.description, DESC_MAX, lang),
       };
     }

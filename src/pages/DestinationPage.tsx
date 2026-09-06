@@ -10,6 +10,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
 import { imageForDestination, assignActivityImages, focalFor } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
+import { destinationTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
 import { localizeDestination, localizeCategory } from '../locales/data';
 import { destinationGuide } from '../data/guideI18n';
@@ -80,11 +81,11 @@ export default function DestinationPage() {
   return (
     <>
       <Helmet>
-        <title>{destination.name} · LaplandActivities</title>
+        <title>{destinationTitle(destination.name, lang)}</title>
         <meta name="description" content={`${acts.length}+ ${c.activitiesShort}, ${destination.name}, Finnish Lapland. ${destination.tagline}.`} />
         <link rel="canonical" href={pageUrl} />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={`${destination.name} · LaplandActivities`} />
+        <meta property="og:title" content={destinationTitle(destination.name, lang)} />
         <meta property="og:description" content={destination.description} />
         <meta property="og:image" content={`https://laplandactivities.fi${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({

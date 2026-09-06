@@ -681,7 +681,7 @@
       "description": "laplandactivities.fi が使用するクッキーの種類と目的、同意の変更方法。LaPeso Oy による GDPR および ePrivacy 準拠のクッキー開示。"
     },
     "es": {
-      "title": "Política de cookies · LaplandActivities",
+      "title": "Política de cookies y consentimiento · LaplandActivities",
       "description": "Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar su consentimiento. Declaración de cookies de LaPeso Oy conforme al RGPD y la ePrivacy."
     },
     "pt-BR": {
@@ -715,951 +715,951 @@
   },
   "/categories/adventure": {
     "en": {
-      "title": "Adventure · LaplandActivities",
+      "title": "Adventure in Lapland · LaplandActivities",
       "description": "Snowmobile safaris, ice karting, ice climbing, river rafting, and survival courses. Get your adrenaline pumping in the Arctic wilderness."
     },
     "fi": {
-      "title": "Seikkailu · LaplandActivities",
+      "title": "Seikkailu Lapissa · LaplandActivities",
       "description": "Moottorikelkkasafareita, jääkartingia, jääkiipeilyä, koskenlaskua ja selviytymiskursseja. Adrenaliinia arktisessa erämaassa."
     },
     "de": {
-      "title": "Abenteuer · LaplandActivities",
+      "title": "Abenteuer in Lappland · LaplandActivities",
       "description": "Schneemobil-Safaris, Ice-Karting, Eisklettern, Wildwasser-Rafting und Survival-Kurse. Für den Adrenalinkick in der arktischen Natur."
     },
     "ja": {
-      "title": "アドベンチャー · LaplandActivities",
+      "title": "ラップランドのアドベンチャー · LaplandActivities",
       "description": "スノーモービルサファリ、アイスカート、アイスクライミング、川下りラフティング、サバイバル講座。北極圏の大自然でアドレナリンを解き放ちましょう。"
     },
     "es": {
-      "title": "Aventura · LaplandActivities",
+      "title": "Aventura en Laponia · LaplandActivities",
       "description": "Safaris en motonieve, karting sobre hielo, escalada en hielo, rafting fluvial y cursos de supervivencia. Para disparar la adrenalina en plena naturaleza ártica."
     },
     "pt-BR": {
-      "title": "Aventura · LaplandActivities",
+      "title": "Aventura na Lapônia · LaplandActivities",
       "description": "Safáris de snowmobile, kart no gelo, escalada no gelo, rafting em rios e cursos de sobrevivência. Para subir a adrenalina na natureza ártica."
     },
     "zh-CN": {
-      "title": "探险 · LaplandActivities",
+      "title": "拉普兰探险 · LaplandActivities",
       "description": "雪地摩托探险之旅、冰上卡丁车、攀冰、河流漂流和野外生存课程。在北极荒野中点燃肾上腺素。"
     },
     "ko": {
-      "title": "어드벤처 · LaplandActivities",
+      "title": "라플란드 어드벤처 · LaplandActivities",
       "description": "스노모빌 사파리, 아이스 카팅, 빙벽 등반, 강 래프팅, 서바이벌 코스. 북극 황야에서 아드레날린을 분출시키세요."
     },
     "fr": {
-      "title": "Aventure · LaplandActivities",
+      "title": "Aventure en Laponie · LaplandActivities",
       "description": "Safaris en motoneige, karting sur glace, escalade sur glace, rafting en eaux vives et stages de survie. Pour faire monter l'adrénaline en pleine nature arctique."
     },
     "it": {
-      "title": "Avventura · LaplandActivities",
+      "title": "Avventura in Lapponia · LaplandActivities",
       "description": "Safari in motoslitta, ice karting, arrampicata su ghiaccio, rafting fluviale e corsi di sopravvivenza. Per far salire l'adrenalina nella natura artica."
     },
     "nl": {
-      "title": "Avontuur · LaplandActivities",
+      "title": "Avontuur in Lapland · LaplandActivities",
       "description": "Sneeuwscooter-safari's, ijskarten, ijsklimmen, wildwaterraften en survivalcursussen. Adrenaline in de arctische wildernis."
     },
     "sv": {
-      "title": "Äventyr · LaplandActivities",
+      "title": "Äventyr i Lappland · LaplandActivities",
       "description": "Snöskotersafarier, iskarting, isklättring, forsränning och överlevnadskurser. Få adrenalinet att pumpa i den arktiska vildmarken."
     }
   },
   "/categories/animals": {
     "en": {
-      "title": "Animal Experiences · LaplandActivities",
+      "title": "Animal Experiences in Lapland · LaplandActivities",
       "description": "Husky dog sledding, reindeer farm visits, wild bear watching, and polar bears at Ranua Zoo. Meet the incredible animals of the Arctic."
     },
     "fi": {
-      "title": "Eläinkokemukset · LaplandActivities",
+      "title": "Eläinkokemukset Lapissa · LaplandActivities",
       "description": "Huskyajeluja, porotilavierailuja, villien karhujen tarkkailua ja jääkarhuja Ranuan eläinpuistossa. Tapaa arktisen luonnon uskomattomat eläimet."
     },
     "de": {
-      "title": "Tiererlebnisse · LaplandActivities",
+      "title": "Tiererlebnisse in Lappland · LaplandActivities",
       "description": "Husky-Schlittenfahrten, Besuche auf Rentierfarmen, Beobachtung wilder Bären und Eisbären im Zoo von Ranua. Begegnungen mit den faszinierenden Tieren der Arktis."
     },
     "ja": {
-      "title": "動物とのふれあい · LaplandActivities",
+      "title": "ラップランドの動物とのふれあい · LaplandActivities",
       "description": "ハスキー犬ぞり、トナカイ牧場訪問、野生のクマ観察、ラヌア動物園のホッキョクグマ。北極圏の素晴らしい動物たちに出会えます。"
     },
     "es": {
-      "title": "Experiencias con animales · LaplandActivities",
+      "title": "Experiencias con animales en Laponia · LaplandActivities",
       "description": "Trineo tirado por huskies, visitas a granjas de renos, avistamiento de osos salvajes y osos polares en el zoo de Ranua."
     },
     "pt-BR": {
-      "title": "Experiências com animais · LaplandActivities",
+      "title": "Experiências com animais na Lapônia · LaplandActivities",
       "description": "Trenó puxado por huskies, visitas a fazendas de renas, observação de ursos selvagens e ursos polares no zoológico de Ranua."
     },
     "zh-CN": {
-      "title": "动物体验 · LaplandActivities",
+      "title": "拉普兰动物体验 · LaplandActivities",
       "description": "哈士奇雪橇、参观驯鹿农场、观赏野生棕熊以及 Ranua 动物园的北极熊。与北极令人惊叹的动物近距离相遇。"
     },
     "ko": {
-      "title": "동물 체험 · LaplandActivities",
+      "title": "라플란드 동물 체험 · LaplandActivities",
       "description": "허스키 썰매, 순록 농장 방문, 야생 곰 관찰, 라누아 동물원의 북극곰. 북극의 놀라운 동물들을 만나보세요."
     },
     "fr": {
-      "title": "Rencontres animales · LaplandActivities",
+      "title": "Rencontres animales en Laponie · LaplandActivities",
       "description": "Traîneau à huskies, fermes de rennes, observation d'ours sauvages et ours polaires au zoo de Ranua. À la rencontre des incroyables animaux de l'Arctique."
     },
     "it": {
-      "title": "Esperienze con gli animali · LaplandActivities",
+      "title": "Esperienze con gli animali in Lapponia · LaplandActivities",
       "description": "Slitta trainata dai husky, visite alle fattorie delle renne, avvistamento di orsi selvatici e orsi polari allo zoo di Ranua."
     },
     "nl": {
-      "title": "Dierenervaringen · LaplandActivities",
+      "title": "Dierenervaringen in Lapland · LaplandActivities",
       "description": "Husky-sledetochten, rendierboerderijen, wilde berenobservatie en ijsberen in Ranua Zoo. Maak kennis met de bijzondere dieren van het Noordpoolgebied."
     },
     "sv": {
-      "title": "Djurupplevelser · LaplandActivities",
+      "title": "Djurupplevelser i Lappland · LaplandActivities",
       "description": "Hundspann med huskies, besök på rengårdar, skådning av vilda björnar och isbjörnar i Ranua Zoo. Möt Arktis fascinerande djurliv."
     }
   },
   "/categories/northern-lights": {
     "en": {
-      "title": "Northern Lights · LaplandActivities",
+      "title": "Northern Lights in Lapland · LaplandActivities",
       "description": "Guided aurora hunts, photography tours, snowmobile aurora chases, and snowshoe expeditions under the dancing lights."
     },
     "fi": {
-      "title": "Revontulet · LaplandActivities",
+      "title": "Revontulet Lapissa · LaplandActivities",
       "description": "Opastettuja revontuliretkiä, valokuvauskierroksia, moottorikelkka-ajoja ja lumikenkäretkiä tanssivien valojen alla."
     },
     "de": {
-      "title": "Nordlichter · LaplandActivities",
+      "title": "Nordlichter in Lappland · LaplandActivities",
       "description": "Geführte Nordlichtjagden, Fototouren, Verfolgungsfahrten mit dem Schneemobil und Schneeschuhtouren unter den tanzenden Lichtern."
     },
     "ja": {
-      "title": "オーロラ · LaplandActivities",
+      "title": "ラップランドのオーロラ · LaplandActivities",
       "description": "ガイド付きオーロラハント、撮影ツアー、スノーモービルでのオーロラ追跡、舞い踊る光の下でのスノーシュー遠征。"
     },
     "es": {
-      "title": "Auroras boreales · LaplandActivities",
+      "title": "Auroras boreales en Laponia · LaplandActivities",
       "description": "Cacerías guiadas de auroras, tours fotográficos, persecuciones en motonieve y excursiones con raquetas de nieve bajo las luces danzantes."
     },
     "pt-BR": {
-      "title": "Aurora boreal · LaplandActivities",
+      "title": "Aurora boreal na Lapônia · LaplandActivities",
       "description": "Caça guiada à aurora, tours fotográficos, perseguições de snowmobile e caminhadas com raquetes de neve sob as luzes dançantes."
     },
     "zh-CN": {
-      "title": "北极光 · LaplandActivities",
+      "title": "拉普兰北极光 · LaplandActivities",
       "description": "专人带领的极光追逐、摄影之旅、雪地摩托追光，以及在舞动光幕下的雪鞋探险。"
     },
     "ko": {
-      "title": "오로라 · LaplandActivities",
+      "title": "라플란드 오로라 · LaplandActivities",
       "description": "가이드 오로라 헌트, 사진 투어, 스노모빌 오로라 추적, 춤추는 빛 아래의 스노슈 원정."
     },
     "fr": {
-      "title": "Aurores boréales · LaplandActivities",
+      "title": "Aurores boréales en Laponie · LaplandActivities",
       "description": "Chasses guidées aux aurores, tours photo, sorties en motoneige et expéditions en raquettes sous les lumières dansantes."
     },
     "it": {
-      "title": "Aurora boreale · LaplandActivities",
+      "title": "Aurora boreale in Lapponia · LaplandActivities",
       "description": "Caccia guidata all'aurora, tour fotografici, inseguimenti in motoslitta ed escursioni con le ciaspole sotto le luci danzanti."
     },
     "nl": {
-      "title": "Noorderlicht · LaplandActivities",
+      "title": "Noorderlicht in Lapland · LaplandActivities",
       "description": "Begeleide noorderlichtjachten, fototours, sneeuwscootertochten en sneeuwschoen-expedities onder het dansende licht."
     },
     "sv": {
-      "title": "Norrsken · LaplandActivities",
+      "title": "Norrsken i Lappland · LaplandActivities",
       "description": "Guidade norrskensjakter, fototurer, norrskensturer med snöskoter och snöskoexpeditioner under det dansande skenet."
     }
   },
   "/categories/winter-sports": {
     "en": {
-      "title": "Winter Sports · LaplandActivities",
+      "title": "Winter Sports in Lapland · LaplandActivities",
       "description": "Downhill skiing, cross-country, snowboarding, fat biking, snowshoeing, and ice skating across Lapland's top-tier resorts."
     },
     "fi": {
-      "title": "Talviurheilu · LaplandActivities",
+      "title": "Talviurheilu Lapissa · LaplandActivities",
       "description": "Laskettelua, maastohiihtoa, lumilautailua, läskipyöräilyä, lumikenkäilyä ja luistelua Lapin parhailla hiihtokeskuksilla."
     },
     "de": {
-      "title": "Wintersport · LaplandActivities",
+      "title": "Wintersport in Lappland · LaplandActivities",
       "description": "Alpinski, Langlauf, Snowboard, Fatbike, Schneeschuhwandern und Eislaufen in den besten Skigebieten Lapplands."
     },
     "ja": {
-      "title": "ウィンタースポーツ · LaplandActivities",
+      "title": "ラップランドのウィンタースポーツ · LaplandActivities",
       "description": "アルペンスキー、クロスカントリー、スノーボード、ファットバイク、スノーシュー、アイススケート。ラップランド屈指のリゾートで。"
     },
     "es": {
-      "title": "Deportes de invierno · LaplandActivities",
+      "title": "Deportes de invierno en Laponia · LaplandActivities",
       "description": "Esquí alpino, esquí de fondo, snowboard, fat bike, raquetas de nieve y patinaje en los mejores resorts de Laponia."
     },
     "pt-BR": {
-      "title": "Esportes de inverno · LaplandActivities",
+      "title": "Esportes de inverno na Lapônia · LaplandActivities",
       "description": "Esqui alpino, esqui cross-country, snowboard, fat bike, caminhadas com raquetes de neve e patinação nos melhores resorts da Lapônia."
     },
     "zh-CN": {
-      "title": "冬季运动 · LaplandActivities",
+      "title": "拉普兰冬季运动 · LaplandActivities",
       "description": "在拉普兰最好的度假胜地体验高山滑雪、越野滑雪、单板滑雪、胖胎自行车、雪鞋健行和滑冰。"
     },
     "ko": {
-      "title": "겨울 스포츠 · LaplandActivities",
+      "title": "라플란드 겨울 스포츠 · LaplandActivities",
       "description": "활강 스키, 크로스컨트리, 스노보드, 팻 바이크, 스노슈 트레킹, 아이스 스케이팅, 라플란드 최고의 리조트에서."
     },
     "fr": {
-      "title": "Sports d'hiver · LaplandActivities",
+      "title": "Sports d'hiver en Laponie · LaplandActivities",
       "description": "Ski alpin, ski de fond, snowboard, fat bike, raquettes et patin à glace dans les meilleures stations de Laponie."
     },
     "it": {
-      "title": "Sport invernali · LaplandActivities",
+      "title": "Sport invernali in Lapponia · LaplandActivities",
       "description": "Sci alpino, sci di fondo, snowboard, fat bike, ciaspolate e pattinaggio nei migliori resort della Lapponia."
     },
     "nl": {
-      "title": "Wintersport · LaplandActivities",
+      "title": "Wintersport in Lapland · LaplandActivities",
       "description": "Alpineskiën, langlaufen, snowboarden, fatbiken, sneeuwschoenwandelen en schaatsen in de beste resorts van Lapland."
     },
     "sv": {
-      "title": "Vintersport · LaplandActivities",
+      "title": "Vintersport i Lappland · LaplandActivities",
       "description": "Utförsåkning, längdskidåkning, snowboard, fatbike, snöskovandring och skridskoåkning i Lapplands bästa skidorter."
     }
   },
   "/categories/wellness": {
     "en": {
-      "title": "Wellness & Sauna · LaplandActivities",
+      "title": "Wellness & Sauna in Lapland · LaplandActivities",
       "description": "Traditional smoke saunas, ice swimming, Arctic floating, spa treatments, and the ultimate Nordic wellness experiences."
     },
     "fi": {
-      "title": "Hyvinvointi ja sauna · LaplandActivities",
+      "title": "Hyvinvointi ja sauna Lapissa · LaplandActivities",
       "description": "Perinteisiä savusaunoja, avantouintia, arktista kelluntaa, spa-hoitoja ja parasta pohjoismaista hyvinvointia."
     },
     "de": {
-      "title": "Wellness und Sauna · LaplandActivities",
+      "title": "Wellness und Sauna in Lappland · LaplandActivities",
       "description": "Traditionelle Rauchsaunen, Eisbaden, arktisches Floating, Spa-Behandlungen und das ultimative nordische Wellness-Erlebnis."
     },
     "ja": {
-      "title": "ウェルネスとサウナ · LaplandActivities",
+      "title": "ラップランドのウェルネスとサウナ · LaplandActivities",
       "description": "伝統的なスモークサウナ、アイススイミング、北極圏フローティング、スパトリートメント、そして究極の北欧ウェルネス体験。"
     },
     "es": {
-      "title": "Bienestar y sauna · LaplandActivities",
+      "title": "Bienestar y sauna en Laponia · LaplandActivities",
       "description": "Saunas de humo tradicionales, baños en el hielo, flotación ártica, tratamientos de spa y la máxima experiencia de bienestar nórdico."
     },
     "pt-BR": {
-      "title": "Bem-estar e sauna · LaplandActivities",
+      "title": "Bem-estar e sauna na Lapônia · LaplandActivities",
       "description": "Saunas de fumaça tradicionais, mergulho no gelo, flutuação ártica, tratamentos de spa e a melhor experiência de bem-estar nórdica."
     },
     "zh-CN": {
-      "title": "康养与桑拿 · LaplandActivities",
+      "title": "拉普兰康养与桑拿 · LaplandActivities",
       "description": "传统烟熏桑拿、冰泳、北极漂浮、水疗护理，以及极致的北欧康养体验。"
     },
     "ko": {
-      "title": "웰니스와 사우나 · LaplandActivities",
+      "title": "라플란드 웰니스와 사우나 · LaplandActivities",
       "description": "전통 스모크 사우나, 얼음 수영, 북극 부유, 스파 트리트먼트, 그리고 궁극의 노르딕 웰니스 체험."
     },
     "fr": {
-      "title": "Bien-être et sauna · LaplandActivities",
+      "title": "Bien-être et sauna en Laponie · LaplandActivities",
       "description": "Saunas à fumée traditionnels, bain glacé, flottaison arctique, soins spa et la quintessence du bien-être nordique."
     },
     "it": {
-      "title": "Benessere e sauna · LaplandActivities",
+      "title": "Benessere e sauna in Lapponia · LaplandActivities",
       "description": "Saune a fumo tradizionali, nuotata nel ghiaccio, galleggiamento artico, trattamenti spa e la massima esperienza di benessere nordica."
     },
     "nl": {
-      "title": "Wellness en sauna · LaplandActivities",
+      "title": "Wellness en sauna in Lapland · LaplandActivities",
       "description": "Traditionele rooksauna's, ijszwemmen, arctisch drijven, spa-behandelingen en de ultieme Noord-Europese wellnesservaring."
     },
     "sv": {
-      "title": "Wellness och bastu · LaplandActivities",
+      "title": "Wellness och bastu i Lappland · LaplandActivities",
       "description": "Traditionella rökbastur, isbad, arktisk isflytning, spabehandlingar och den ultimata nordiska wellnessupplevelsen."
     }
   },
   "/categories/culture": {
     "en": {
-      "title": "Culture & Heritage · LaplandActivities",
+      "title": "Culture & Heritage in Lapland · LaplandActivities",
       "description": "Sámi museums, Santa Claus Village, ice hotels, gold panning, amethyst mines, and the fascinating heritage of the Arctic."
     },
     "fi": {
-      "title": "Kulttuuri ja perintö · LaplandActivities",
+      "title": "Kulttuuri ja perintö Lapissa · LaplandActivities",
       "description": "Saamelaismuseoita, Joulupukin Pajakylä, jäähotelleja, kullanhuuhdontaa, ametistikaivoksia ja kiehtovaa arktista perintöä."
     },
     "de": {
-      "title": "Kultur und Erbe · LaplandActivities",
+      "title": "Kultur und Erbe in Lappland · LaplandActivities",
       "description": "Sami-Museen, das Weihnachtsmanndorf, Eishotels, Goldwaschen, Amethystminen und das faszinierende Erbe der Arktis."
     },
     "ja": {
-      "title": "文化と伝統 · LaplandActivities",
+      "title": "ラップランドの文化と伝統 · LaplandActivities",
       "description": "サーミ博物館、サンタクロース村、アイスホテル、砂金採り、アメジスト鉱山、そして北極圏の魅力あふれる伝統。"
     },
     "es": {
-      "title": "Cultura y patrimonio · LaplandActivities",
+      "title": "Cultura y patrimonio en Laponia · LaplandActivities",
       "description": "Museos sami, la Pueblo de Papá Noel, hoteles de hielo, búsqueda de oro, minas de amatista y el fascinante patrimonio ártico."
     },
     "pt-BR": {
-      "title": "Cultura e patrimônio · LaplandActivities",
+      "title": "Cultura e patrimônio na Lapônia · LaplandActivities",
       "description": "Museus sámi, Vila do Papai Noel, hotéis de gelo, garimpo de ouro, minas de ametista e o fascinante patrimônio ártico."
     },
     "zh-CN": {
-      "title": "文化与遗产 · LaplandActivities",
+      "title": "拉普兰文化与遗产 · LaplandActivities",
       "description": "萨米博物馆、圣诞老人村、冰雪酒店、淘金、紫水晶矿，以及迷人的北极遗产。"
     },
     "ko": {
-      "title": "문화와 유산 · LaplandActivities",
+      "title": "라플란드 문화와 유산 · LaplandActivities",
       "description": "사미 박물관, 산타클로스 마을, 아이스 호텔, 사금 채취, 자수정 광산, 북극의 매혹적인 유산."
     },
     "fr": {
-      "title": "Culture et patrimoine · LaplandActivities",
+      "title": "Culture et patrimoine en Laponie · LaplandActivities",
       "description": "Musées sâmes, village du Père Noël, hôtels de glace, orpaillage, mine d'améthyste et le patrimoine fascinant de l'Arctique."
     },
     "it": {
-      "title": "Cultura e patrimonio · LaplandActivities",
+      "title": "Cultura e patrimonio in Lapponia · LaplandActivities",
       "description": "Musei sami, Villaggio di Babbo Natale, hotel di ghiaccio, ricerca dell'oro, miniere di ametista e l'affascinante patrimonio artico."
     },
     "nl": {
-      "title": "Cultuur en erfgoed · LaplandActivities",
+      "title": "Cultuur en erfgoed in Lapland · LaplandActivities",
       "description": "Sami-musea, Kerstmandorp, ijshotels, goudwassen, amethistmijnen en het boeiende erfgoed van het Noordpoolgebied."
     },
     "sv": {
-      "title": "Kultur och kulturarv · LaplandActivities",
+      "title": "Kultur och kulturarv i Lappland · LaplandActivities",
       "description": "Samiska museer, Jultomtens by, ishotell, guldvaskning, ametistgruvor och Arktis fascinerande kulturarv."
     }
   },
   "/categories/summer": {
     "en": {
-      "title": "Summer Adventures · LaplandActivities",
+      "title": "Summer Adventures in Lapland · LaplandActivities",
       "description": "Midnight sun hiking, kayaking, river rafting, mountain biking, fishing, berry picking, and golf under the endless Arctic daylight."
     },
     "fi": {
-      "title": "Kesäseikkailut · LaplandActivities",
+      "title": "Kesäseikkailut Lapissa · LaplandActivities",
       "description": "Vaelluksia keskiyön auringossa, melontaa, koskenlaskua, maastopyöräilyä, kalastusta, marjastusta ja golfia loputtoman arktisen valon alla."
     },
     "de": {
-      "title": "Sommerabenteuer · LaplandActivities",
+      "title": "Sommerabenteuer in Lappland · LaplandActivities",
       "description": "Wanderungen unter der Mitternachtssonne, Kajakfahren, Rafting, Mountainbiken, Angeln, Beerenpflücken und Golf im endlosen arktischen Tageslicht."
     },
     "ja": {
-      "title": "夏のアクティビティ · LaplandActivities",
+      "title": "ラップランドの夏のアクティビティ · LaplandActivities",
       "description": "白夜のハイキング、カヤック、ラフティング、マウンテンバイク、釣り、ベリー摘み、そして果てしない北極圏の陽光の下でのゴルフ。"
     },
     "es": {
-      "title": "Aventuras de verano · LaplandActivities",
+      "title": "Aventuras de verano en Laponia · LaplandActivities",
       "description": "Excursiones bajo el sol de medianoche, kayak, rafting, bicicleta de montaña, pesca, recolección de bayas y golf bajo la luz ártica interminable."
     },
     "pt-BR": {
-      "title": "Aventuras de verão · LaplandActivities",
+      "title": "Aventuras de verão na Lapônia · LaplandActivities",
       "description": "Caminhadas sob o sol da meia-noite, caiaque, rafting, mountain bike, pesca, coleta de frutas silvestres e golfe sob a luz ártica sem fim."
     },
     "zh-CN": {
-      "title": "夏季探险 · LaplandActivities",
+      "title": "拉普兰夏季探险 · LaplandActivities",
       "description": "午夜阳光下的徒步、皮划艇、漂流、山地自行车、垂钓、采摘浆果，以及在无尽北极日光下的高尔夫。"
     },
     "ko": {
-      "title": "여름 액티비티 · LaplandActivities",
+      "title": "라플란드 여름 액티비티 · LaplandActivities",
       "description": "백야 트레킹, 카약, 강 래프팅, 산악 자전거, 낚시, 베리 따기, 끝없는 북극 일광 아래의 골프."
     },
     "fr": {
-      "title": "Aventures d'été · LaplandActivities",
+      "title": "Aventures d'été en Laponie · LaplandActivities",
       "description": "Randonnée au soleil de minuit, kayak, rafting, VTT, pêche, cueillette de baies et golf sous le jour arctique sans fin."
     },
     "it": {
-      "title": "Avventure estive · LaplandActivities",
+      "title": "Avventure estive in Lapponia · LaplandActivities",
       "description": "Escursioni al sole di mezzanotte, kayak, rafting, mountain bike, pesca, raccolta di bacche e golf sotto la luce artica senza fine."
     },
     "nl": {
-      "title": "Zomeravontuur · LaplandActivities",
+      "title": "Zomeravontuur in Lapland · LaplandActivities",
       "description": "Wandelen onder de middernachtzon, kajakken, raften, mountainbiken, vissen, bessenplukken en golf onder het eindeloze arctische daglicht."
     },
     "sv": {
-      "title": "Sommaräventyr · LaplandActivities",
+      "title": "Sommaräventyr i Lappland · LaplandActivities",
       "description": "Vandring under midnattssolen, kajakpaddling, forsränning, mountainbike, fiske, bärplockning och golf under det oändliga arktiska dagsljuset."
     }
   },
   "/categories/food": {
     "en": {
-      "title": "Food & Drink · LaplandActivities",
+      "title": "Food & Drink in Lapland · LaplandActivities",
       "description": "Kota restaurants, wild food foraging, berry picking, reindeer dinners under the stars, and local brewery tours."
     },
     "fi": {
-      "title": "Ruoka ja juoma · LaplandActivities",
+      "title": "Ruoka ja juoma Lapissa · LaplandActivities",
       "description": "Kotaravintoloita, villiruoan keräilyä, marjastusta, poroillallisia tähtitaivaan alla ja paikallisia panimokierroksia."
     },
     "de": {
-      "title": "Essen und Trinken · LaplandActivities",
+      "title": "Essen und Trinken in Lappland · LaplandActivities",
       "description": "Kota-Restaurants, Sammeln wilder Zutaten, Beerenpflücken, Rentier-Dinner unter den Sternen und Touren durch lokale Brauereien."
     },
     "ja": {
-      "title": "食と飲み物 · LaplandActivities",
+      "title": "ラップランドの食と飲み物 · LaplandActivities",
       "description": "コタレストラン、野生の食材採集、ベリー摘み、星空の下でのトナカイディナー、地元の醸造所めぐり。"
     },
     "es": {
-      "title": "Comida y bebida · LaplandActivities",
+      "title": "Comida y bebida en Laponia · LaplandActivities",
       "description": "Restaurantes kota, recolección de alimentos silvestres, bayas, cenas a base de reno bajo las estrellas y tours por las cervecerías locales."
     },
     "pt-BR": {
-      "title": "Comida e bebida · LaplandActivities",
+      "title": "Comida e bebida na Lapônia · LaplandActivities",
       "description": "Restaurantes kota, coleta de alimentos silvestres, frutas vermelhas, jantares de rena sob as estrelas e tours por cervejarias locais."
     },
     "zh-CN": {
-      "title": "美食与饮品 · LaplandActivities",
+      "title": "拉普兰美食与饮品 · LaplandActivities",
       "description": "kota 餐厅、野外采食、采摘浆果、星空下的驯鹿晚餐，以及当地酒厂之旅。"
     },
     "ko": {
-      "title": "음식과 음료 · LaplandActivities",
+      "title": "라플란드 음식과 음료 · LaplandActivities",
       "description": "코타 레스토랑, 야생 식재료 채집, 베리 따기, 별 아래의 순록 디너, 현지 양조장 투어."
     },
     "fr": {
-      "title": "Gastronomie · LaplandActivities",
+      "title": "Gastronomie en Laponie · LaplandActivities",
       "description": "Restaurants kota, cueillette en forêt, baies sauvages, dîners au renne sous les étoiles et tours des brasseries locales."
     },
     "it": {
-      "title": "Cibo e bevande · LaplandActivities",
+      "title": "Cibo e bevande in Lapponia · LaplandActivities",
       "description": "Ristoranti kota, raccolta di cibo selvatico, bacche, cene a base di renna sotto le stelle e tour dei birrifici locali."
     },
     "nl": {
-      "title": "Eten en drinken · LaplandActivities",
+      "title": "Eten en drinken in Lapland · LaplandActivities",
       "description": "Kota-restaurants, foerageren in de natuur, bessen plukken, rendierdiners onder de sterren en lokale brouwerijtours."
     },
     "sv": {
-      "title": "Mat och dryck · LaplandActivities",
+      "title": "Mat och dryck i Lappland · LaplandActivities",
       "description": "Kåtarestauranger, insamling av vildmat, bärplockning, renmiddagar under stjärnorna och lokala bryggeriturer."
     }
   },
   "/categories/fishing": {
     "en": {
-      "title": "Fishing & Ice Fishing · LaplandActivities",
+      "title": "Fishing & Ice Fishing in Lapland · LaplandActivities",
       "description": "Free ice fishing on frozen lakes, licensed salmon rivers like the Tornio, and king crab safaris across the Norwegian border."
     },
     "fi": {
-      "title": "Kalastus ja pilkkiminen · LaplandActivities",
+      "title": "Kalastus ja pilkkiminen Lapissa · LaplandActivities",
       "description": "Ilmaista pilkkimistä jäätyneillä järvillä, luvanvaraisia lohijoita kuten Tornionjoki ja kuningasrapusafareja Norjan rajan yli."
     },
     "de": {
-      "title": "Angeln & Eisangeln · LaplandActivities",
+      "title": "Angeln & Eisangeln in Lappland · LaplandActivities",
       "description": "Kostenloses Eisangeln auf zugefrorenen Seen, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris über die norwegische Grenze."
     },
     "ja": {
-      "title": "釣りとアイスフィッシング · LaplandActivities",
+      "title": "ラップランドの釣りとアイスフィッシング · LaplandActivities",
       "description": "凍った湖での無料アイスフィッシング、トルニオ川などの許可制サーモンリバー、ノルウェー国境を越えるタラバガニサファリ。まず魚の資源：ルールを知り、川が必要とする分は戻しましょう。"
     },
     "es": {
-      "title": "Pesca y pesca en hielo · LaplandActivities",
+      "title": "Pesca y pesca en hielo en Laponia · LaplandActivities",
       "description": "Pesca en hielo gratuita en lagos helados, ríos de salmón con licencia como el Tornio y safaris de cangrejo real al otro lado de la frontera noruega."
     },
     "pt-BR": {
-      "title": "Pesca e pesca no gelo · LaplandActivities",
+      "title": "Pesca e pesca no gelo na Lapônia · LaplandActivities",
       "description": "Pesca no gelo gratuita em lagos congelados, rios de salmão licenciados como o Tornio e safáris de caranguejo-real do outro lado da fronteira norueguesa."
     },
     "zh-CN": {
-      "title": "钓鱼与冰钓 · LaplandActivities",
+      "title": "拉普兰钓鱼与冰钓 · LaplandActivities",
       "description": "冰封湖面上的免费冰钓、托尔尼奥河等持证三文鱼河，以及跨越挪威边境的帝王蟹之旅。鱼群优先：了解规定，把河流需要的放流回去。"
     },
     "ko": {
-      "title": "낚시와 얼음낚시 · LaplandActivities",
+      "title": "라플란드 낚시와 얼음낚시 · LaplandActivities",
       "description": "얼어붙은 호수에서의 무료 얼음낚시, 토르니오 같은 허가제 연어강, 그리고 노르웨이 국경 너머의 킹크랩 사파리. 물고기 자원이 먼저입니다: 규정을 알고, 강이 필요로 하는 만큼 방류하세요."
     },
     "fr": {
-      "title": "Pêche et pêche blanche · LaplandActivities",
+      "title": "Pêche et pêche blanche en Laponie · LaplandActivities",
       "description": "Pêche blanche gratuite sur les lacs gelés, rivières à saumon sous licence comme le Tornio et safaris au crabe royal de l'autre côté de la frontière norvégienne."
     },
     "it": {
-      "title": "Pesca e pesca sul ghiaccio · LaplandActivities",
+      "title": "Pesca e pesca sul ghiaccio in Lapponia · LaplandActivities",
       "description": "Pesca sul ghiaccio gratuita sui laghi gelati, fiumi da salmone su licenza come il Tornio e safari al granchio reale oltre il confine norvegese."
     },
     "nl": {
-      "title": "Vissen en ijsvissen · LaplandActivities",
+      "title": "Vissen en ijsvissen in Lapland · LaplandActivities",
       "description": "Gratis ijsvissen op bevroren meren, vergunningsplichtige zalmrivieren zoals de Tornio en koningskrab-safari's over de Noorse grens."
     },
     "sv": {
-      "title": "Fiske och pimpelfiske · LaplandActivities",
+      "title": "Fiske och pimpelfiske i Lappland · LaplandActivities",
       "description": "Gratis pilkfiske på tillfrusna sjöar, licensbelagda laxälvar som Torne älv och kungskrabbsafarier över den norska gränsen."
     }
   },
   "/destinations/rovaniemi": {
     "en": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: activities and tours · LaplandActivities",
       "description": "The capital of Lapland and gateway to arctic adventures. Home to Santa Claus Village, excellent transport links, and a huge range of winter and summer activities."
     },
     "fi": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: aktiviteetit ja retket · LaplandActivities",
       "description": "Lapin pääkaupunki ja portti arktisiin seikkailuihin. Täältä löytyvät Joulupukin Pajakylä, erinomaiset kulkuyhteydet ja runsaasti talvi- ja kesäaktiviteetteja."
     },
     "de": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: Aktivitäten und Touren · LaplandActivities",
       "description": "Die Hauptstadt Lapplands und das Tor zu arktischen Abenteuern."
     },
     "ja": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemiのアクティビティとツアー · LaplandActivities",
       "description": "ラップランド地方の中心都市であり、北極圏アドベンチャーの玄関口。サンタクロース村があり、交通アクセスに優れ、冬も夏も豊富なアクティビティが楽しめます。"
     },
     "es": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: actividades y excursiones · LaplandActivities",
       "description": "La capital de Laponia y puerta de acceso a las aventuras árticas."
     },
     "pt-BR": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: atividades e passeios · LaplandActivities",
       "description": "A capital da Lapônia e porta de entrada para as aventuras árticas."
     },
     "zh-CN": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi活动与旅行团 · LaplandActivities",
       "description": "拉普兰的首府，也是通往北极探险的门户。这里有圣诞老人村、便捷的交通连接，以及丰富多样的冬季与夏季活动。"
     },
     "ko": {
-      "title": "로바니에미 · LaplandActivities",
+      "title": "로바니에미 액티비티와 투어 · LaplandActivities",
       "description": "라플란드의 중심 도시이자 북극 모험의 관문. 산타클로스 마을이 있고, 교통편이 좋으며, 겨울과 여름 액티비티가 풍부합니다."
     },
     "fr": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: activités et excursions · LaplandActivities",
       "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques."
     },
     "it": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: attività ed escursioni · LaplandActivities",
       "description": "La capitale della Lapponia e porta d'accesso alle avventure artiche."
     },
     "nl": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: activiteiten en tours · LaplandActivities",
       "description": "Hoofdstad van Lapland en toegangspoort tot arctische avonturen."
     },
     "sv": {
-      "title": "Rovaniemi · LaplandActivities",
+      "title": "Rovaniemi: aktiviteter och turer · LaplandActivities",
       "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta transportförbindelser och ett stort utbud av vinter- och sommaraktiviteter."
     }
   },
   "/destinations/levi": {
     "en": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: activities and tours · LaplandActivities",
       "description": "A premier ski destination with 44 slopes and 230 km of cross-country trails. Vibrant après-ski scene at Hullu Poro and year-round outdoor activities."
     },
     "fi": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: aktiviteetit ja retket · LaplandActivities",
       "description": "Suomen johtava hiihtokohde, jossa on 44 rinnettä ja 230 km hiihtolatuja. Vilkas afterski Hullussa Porossa ja ulkoaktiviteetteja ympäri vuoden."
     },
     "de": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: Aktivitäten und Touren · LaplandActivities",
       "description": "Ein erstklassiges Skigebiet mit 44 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten."
     },
     "ja": {
-      "title": "Levi · LaplandActivities",
+      "title": "Leviのアクティビティとツアー · LaplandActivities",
       "description": "44本のコースと230kmのクロスカントリーコースを誇る一流のスキーリゾート。フッル・ポロの活気あるアフタースキーと、一年を通じたアウトドアアクティビティ。"
     },
     "es": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: actividades y excursiones · LaplandActivities",
       "description": "Destino de esquí de primer nivel con 44 pistas y 230 km de recorridos de fondo. Animado après-ski en el Hullu Poro y actividades al aire libre durante todo el año."
     },
     "pt-BR": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: atividades e passeios · LaplandActivities",
       "description": "Destino de esqui de primeira linha com 44 pistas e 230 km de trilhas de cross-country. Animado après-ski no Hullu Poro e atividades ao ar livre o ano todo."
     },
     "zh-CN": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi活动与旅行团 · LaplandActivities",
       "description": "顶级滑雪目的地，拥有 44 条雪道和 230 公里的越野滑雪路线。Hullu Poro 有热闹的滑雪后派对，全年皆有户外活动。"
     },
     "ko": {
-      "title": "레비 · LaplandActivities",
+      "title": "레비 액티비티와 투어 · LaplandActivities",
       "description": "슬로프 44면과 230km의 크로스컨트리 코스를 보유한 최고급 스키 리조트. 훌루 포로(Hullu Poro)의 활기찬 애프터 스키와 사계절 야외 액티비티."
     },
     "fr": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: activités et excursions · LaplandActivities",
       "description": "Une destination de ski de premier plan avec 44 pistes et 230 km de pistes de fond. Ambiance après-ski animée au Hullu Poro et activités de plein air toute l'année."
     },
     "it": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: attività ed escursioni · LaplandActivities",
       "description": "Destinazione sciistica di primo piano con 44 piste e 230 km di percorsi per il fondo. Vivace après-ski all'Hullu Poro e attività outdoor tutto l'anno."
     },
     "nl": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: activiteiten en tours · LaplandActivities",
       "description": "Een topbestemming met 44 pistes en 230 km langlaufloipes. Levendige après-ski in Hullu Poro en het hele jaar door outdoor-activiteiten."
     },
     "sv": {
-      "title": "Levi · LaplandActivities",
+      "title": "Levi: aktiviteter och turer · LaplandActivities",
       "description": "En förstklassig skiddestination med 44 pister och 230 km längdskidspår. Livlig afterski-stämning på Hullu Poro och utomhusaktiviteter året runt."
     }
   },
   "/destinations/yllas": {
     "en": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: activities and tours · LaplandActivities",
       "description": "Two ski resorts on either side of Ylläs fell offer the longest runs in Finland at 3 km."
     },
     "fi": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: aktiviteetit ja retket · LaplandActivities",
       "description": "Kaksi hiihtokeskusta Yllästunturin molemmin puolin tarjoaa Suomen pisimmät laskut, jopa 3 km."
     },
     "de": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: Aktivitäten und Touren · LaplandActivities",
       "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km."
     },
     "ja": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläsのアクティビティとツアー · LaplandActivities",
       "description": "ユッラス・フェルの両側に位置する2つのスキーリゾートが、最長3kmというフィンランド屈指の滑走を提供します。Pallas-Yllästunturi国立公園とともに、より静かで本物のラップランド体験を。"
     },
     "es": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: actividades y excursiones · LaplandActivities",
       "description": "Dos estaciones de esquí a ambos lados del monte Ylläs ofrecen las bajadas más largas de Finlandia, hasta 3 km."
     },
     "pt-BR": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: atividades e passeios · LaplandActivities",
       "description": "Duas estações de esqui nos dois lados do monte Ylläs oferecem as descidas mais longas da Finlândia, de até 3 km."
     },
     "zh-CN": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs活动与旅行团 · LaplandActivities",
       "description": "于拉斯山两侧的两座滑雪度假村提供芬兰最长的滑降雪道，长达 3.2 公里。搭配 Pallas-Yllästunturi 国家公园，是更宁静、更纯正的拉普兰体验。"
     },
     "ko": {
-      "title": "윌래스 · LaplandActivities",
+      "title": "윌래스 액티비티와 투어 · LaplandActivities",
       "description": "윌래스 산 양쪽 두 개의 스키 리조트가 3km로 핀란드 최장 슬로프를 제공합니다. 팔라스-윌래스툰투리 국립공원과 함께 더 조용하고 진정한 라플란드 경험."
     },
     "fr": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: activités et excursions · LaplandActivities",
       "description": "Deux stations de ski de part et d'autre du fjäll Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km."
     },
     "it": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: attività ed escursioni · LaplandActivities",
       "description": "Due stazioni sciistiche sui due lati del fjell Ylläs offrono le discese più lunghe della Finlandia, fino a 3 km."
     },
     "nl": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: activiteiten en tours · LaplandActivities",
       "description": "Twee skigebieden aan beide zijden van de Ylläs-fjäll met de langste afdalingen van Finland (3 km)."
     },
     "sv": {
-      "title": "Ylläs · LaplandActivities",
+      "title": "Ylläs: aktiviteter och turer · LaplandActivities",
       "description": "Två skidorter på var sin sida om Ylläsfjället erbjuder Finlands längsta nedfarter på 3 km."
     }
   },
   "/destinations/saariselka": {
     "en": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: activities and tours · LaplandActivities",
       "description": "The northernmost ski resort in Finland, bordering one of Europe's largest wilderness areas."
     },
     "fi": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: aktiviteetit ja retket · LaplandActivities",
       "description": "Suomen pohjoisin hiihtokeskus yhden Euroopan suurimman erämaa-alueen reunalla."
     },
     "de": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: Aktivitäten und Touren · LaplandActivities",
       "description": "Das nördlichste Skigebiet Finnlands, am Rand eines der größten Wildnisgebiete Europas."
     },
     "ja": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkäのアクティビティとツアー · LaplandActivities",
       "description": "フィンランド最北のスキーリゾートで、ヨーロッパ最大級の原生自然に隣接しています。オーロラ観察、砂金採り、そして伝説的なキーロパーのスモークサウナで知られています。"
     },
     "es": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: actividades y excursiones · LaplandActivities",
       "description": "La estación de esquí más septentrional de Finlandia, al borde de una de las mayores áreas salvajes de Europa."
     },
     "pt-BR": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: atividades e passeios · LaplandActivities",
       "description": "A estação de esqui mais ao norte da Finlândia, na borda de uma das maiores áreas selvagens da Europa."
     },
     "zh-CN": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä活动与旅行团 · LaplandActivities",
       "description": "芬兰最北的滑雪度假胜地，毗邻欧洲最大的荒野地区之一。以观赏极光、淘金和传奇的 Kiilopää 烟熏桑拿闻名。"
     },
     "ko": {
-      "title": "사리셀카 · LaplandActivities",
+      "title": "사리셀카 액티비티와 투어 · LaplandActivities",
       "description": "핀란드 최북단 스키 리조트로, 유럽 최대의 황야 지역 중 하나에 인접해 있습니다. 오로라 관찰, 사금 채취, 그리고 전설적인 킬로패 스모크 사우나로 유명합니다."
     },
     "fr": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: activités et excursions · LaplandActivities",
       "description": "La station de ski la plus au nord de Finlande, à la lisière d'une des plus vastes zones sauvages d'Europe."
     },
     "it": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: attività ed escursioni · LaplandActivities",
       "description": "La stazione sciistica più a nord della Finlandia, ai margini di una delle aree selvagge più grandi d'Europa."
     },
     "nl": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: activiteiten en tours · LaplandActivities",
       "description": "Het noordelijkste skigebied van Finland, grenzend aan een van de grootste wildernisgebieden van Europa."
     },
     "sv": {
-      "title": "Saariselkä · LaplandActivities",
+      "title": "Saariselkä: aktiviteter och turer · LaplandActivities",
       "description": "Finlands nordligaste skidort, gränsande till ett av Europas största vildmarksområden."
     }
   },
   "/destinations/inari": {
     "en": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: activities and tours · LaplandActivities",
       "description": "Located on the shores of Lake Inari with over 3,000 islands, this is the cultural capital of the Finnish Sámi people."
     },
     "fi": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: aktiviteetit ja retket · LaplandActivities",
       "description": "Yli 3 000 saaren Inarijärven rannalla sijaitseva Suomen saamelaisten kulttuuripääkaupunki. Täällä ovat Siida-museo ja koskematon erämaa."
     },
     "de": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: Aktivitäten und Touren · LaplandActivities",
       "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami. Hier finden Sie das Siida-Museum und unberührte Natur."
     },
     "ja": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inariのアクティビティとツアー · LaplandActivities",
       "description": "3,000を超える島々を抱えるイナリ湖のほとりにあり、フィンランドのサーミの人々の文化的中心地です。Siida博物館と手つかずの自然があります。"
     },
     "es": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: actividades y excursiones · LaplandActivities",
       "description": "A orillas del lago Inari, con más de 3000 islas, es la capital cultural del pueblo sami finlandés. Alberga el museo Siida y una naturaleza intacta."
     },
     "pt-BR": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: atividades e passeios · LaplandActivities",
       "description": "Às margens do lago Inari, com mais de 3.000 ilhas, é a capital cultural do povo sámi finlandês. Abriga o museu Siida e uma natureza intocada."
     },
     "zh-CN": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari活动与旅行团 · LaplandActivities",
       "description": "坐落在拥有逾 3,000 座岛屿的 Inari 湖畔，是芬兰萨米人的文化首府。这里有 Siida 博物馆和未受侵扰的原始自然。"
     },
     "ko": {
-      "title": "이나리 · LaplandActivities",
+      "title": "이나리 액티비티와 투어 · LaplandActivities",
       "description": "3,000개 이상의 섬이 있는 이나리 호숫가에 위치한 핀란드 사미인의 문화 수도. 시이다 박물관과 청정 황야의 본거지."
     },
     "fr": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: activités et excursions · LaplandActivities",
       "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sâme finlandais. On y trouve le musée Siida et une nature préservée."
     },
     "it": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: attività ed escursioni · LaplandActivities",
       "description": "Sulle sponde del lago Inari, con oltre 3.000 isole, è la capitale culturale del popolo sami finlandese. Sede del museo Siida e di una natura incontaminata."
     },
     "nl": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: activiteiten en tours · LaplandActivities",
       "description": "Aan de oevers van het Inarimeer met meer dan 3.000 eilanden ligt de culturele hoofdstad van het Finse Sami-volk."
     },
     "sv": {
-      "title": "Inari · LaplandActivities",
+      "title": "Inari: aktiviteter och turer · LaplandActivities",
       "description": "Vid stränderna av Enare träsk med över 3 000 öar ligger den finska samekulturens huvudstad. Här finns Siida-museet och orörd vildmark."
     }
   },
   "/destinations/ruka": {
     "en": {
-      "title": "Ruka & Kuusamo · LaplandActivities",
+      "title": "Ruka & Kuusamo: activities and tours · LaplandActivities",
       "description": "Home to the legendary Karhunkierros Bear Trail, Oulanka National Park, and one of Finland's best ski resorts."
     },
     "fi": {
-      "title": "Ruka ja Kuusamo · LaplandActivities",
+      "title": "Ruka ja Kuusamo: aktiviteetit ja retket · LaplandActivities",
       "description": "Täältä löytyvät legendaarinen Karhunkierros, Oulangan kansallispuisto ja yksi Suomen parhaista hiihtokeskuksista."
     },
     "de": {
-      "title": "Ruka und Kuusamo · LaplandActivities",
+      "title": "Ruka und Kuusamo: Aktivitäten und Touren · LaplandActivities",
       "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands."
     },
     "ja": {
-      "title": "RukaとKuusamo · LaplandActivities",
+      "title": "RukaとKuusamoのアクティビティとツアー · LaplandActivities",
       "description": "伝説的なクマの道カルフンキエッロス、オウランカ国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。Rukaはラップランドのすぐ南のKuusamoに位置し、同じ雪と同じ北国の冬が楽しめます。"
     },
     "es": {
-      "title": "Ruka y Kuusamo · LaplandActivities",
+      "title": "Ruka y Kuusamo: actividades y excursiones · LaplandActivities",
       "description": "Sede del legendario sendero del oso Karhunkierros, del Parque nacional de Oulanka y de una de las mejores estaciones de esquí de Finlandia."
     },
     "pt-BR": {
-      "title": "Ruka e Kuusamo · LaplandActivities",
+      "title": "Ruka e Kuusamo: atividades e passeios · LaplandActivities",
       "description": "Abriga a lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia."
     },
     "zh-CN": {
-      "title": "Ruka 与 Kuusamo · LaplandActivities",
+      "title": "Ruka 与 Kuusamo活动与旅行团 · LaplandActivities",
       "description": "传奇的卡尔胡恩基耶罗斯（熊径）、奥兰卡国家公园以及芬兰最好的滑雪度假村之一都坐落于此。以观熊、漂流和最长的滑雪季而闻名。Ruka 位于 Kuusamo，在拉普兰以南不远，同样的雪，同样的北国冬季。"
     },
     "ko": {
-      "title": "루카와 쿠사모 · LaplandActivities",
+      "title": "루카와 쿠사모 액티비티와 투어 · LaplandActivities",
       "description": "전설적인 카르훈키에로스 곰의 길, 오울란카 국립공원, 그리고 핀란드 최고의 스키 리조트 중 하나의 본거지. 곰 관찰, 강 래프팅, 가장 긴 스키 시즌으로 유명합니다. 루카는 라플란드 바로 남쪽의 쿠사모에 있으며, 같은 눈과 같은 북부의 겨울을 즐길 수 있습니다."
     },
     "fr": {
-      "title": "Ruka et Kuusamo · LaplandActivities",
+      "title": "Ruka et Kuusamo: activités et excursions · LaplandActivities",
       "description": "Le sentier mythique du Karhunkierros, le parc national d'Oulanka et l'une des meilleures stations de ski de Finlande."
     },
     "it": {
-      "title": "Ruka e Kuusamo · LaplandActivities",
+      "title": "Ruka e Kuusamo: attività ed escursioni · LaplandActivities",
       "description": "Sede del leggendario sentiero dell'orso Karhunkierros, del Parco nazionale di Oulanka e di una delle migliori stazioni sciistiche della Finlandia."
     },
     "nl": {
-      "title": "Ruka en Kuusamo · LaplandActivities",
+      "title": "Ruka en Kuusamo: activiteiten en tours · LaplandActivities",
       "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland."
     },
     "sv": {
-      "title": "Ruka och Kuusamo · LaplandActivities",
+      "title": "Ruka och Kuusamo: aktiviteter och turer · LaplandActivities",
       "description": "Här finns den legendariska vandringsleden Björnrundan (Karhunkierros), Oulanka nationalpark och en av Finlands bästa skidorter."
     }
   },
   "/destinations/posio": {
     "en": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: activities and tours · LaplandActivities",
       "description": "Famous for the spectacular snow-crowned trees of Riisitunturi National Park and the frozen waterfalls of Korouoma canyon. Off the beaten path, pure wilderness."
     },
     "fi": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: aktiviteetit ja retket · LaplandActivities",
       "description": "Tunnettu Riisitunturin kansallispuiston upeista tykkypuista ja Korouoman rotkon jäätyneistä vesiputouksista. Poissa valtareiteiltä, puhdasta erämaata."
     },
     "de": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: Aktivitäten und Touren · LaplandActivities",
       "description": "Berühmt für die spektakulären schneegekrönten Bäume des Nationalparks Riisitunturi und die gefrorenen Wasserfälle des Korouoma-Canyons."
     },
     "ja": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posioのアクティビティとツアー · LaplandActivities",
       "description": "リーシトゥントゥリ国立公園の壮観な樹氷と、コロウオマ渓谷の氷瀑で有名です。人里離れた、純粋な原生自然。"
     },
     "es": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: actividades y excursiones · LaplandActivities",
       "description": "Famosa por los espectaculares árboles coronados de nieve del Parque nacional Riisitunturi y por las cascadas heladas del cañón de Korouoma."
     },
     "pt-BR": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: atividades e passeios · LaplandActivities",
       "description": "Famosa pelas espetaculares árvores coroadas de neve do Parque Nacional Riisitunturi e pelas cachoeiras congeladas do cânion de Korouoma."
     },
     "zh-CN": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio活动与旅行团 · LaplandActivities",
       "description": "以 Riisitunturi 国家公园壮观的雪冠树木和 Korouoma 峡谷的冰封瀑布闻名。远离人迹，纯粹荒野。"
     },
     "ko": {
-      "title": "포시오 · LaplandActivities",
+      "title": "포시오 액티비티와 투어 · LaplandActivities",
       "description": "리시툰투리 국립공원의 장관을 이루는 눈에 덮인 나무들과 코로우오마 협곡의 얼어붙은 폭포로 유명합니다. 잘 알려지지 않은 순수한 황야."
     },
     "fr": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: activités et excursions · LaplandActivities",
       "description": "Réputée pour les arbres couronnés de neige du parc national de Riisitunturi et les cascades gelées du canyon de Korouoma."
     },
     "it": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: attività ed escursioni · LaplandActivities",
       "description": "Famosa per gli spettacolari alberi carichi di neve del Parco nazionale Riisitunturi e per le cascate ghiacciate del canyon di Korouoma."
     },
     "nl": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: activiteiten en tours · LaplandActivities",
       "description": "Beroemd om de spectaculaire sneeuwbeladen bomen van Nationaal Park Riisitunturi en de bevroren watervallen van de Korouoma-canyon."
     },
     "sv": {
-      "title": "Posio · LaplandActivities",
+      "title": "Posio: aktiviteter och turer · LaplandActivities",
       "description": "Känd för de spektakulära snötyngda träden i Riisitunturi nationalpark och de tillfrusna vattenfallen i Korouoma-kanjonen."
     }
   },
   "/destinations/tornio": {
     "en": {
-      "title": "Tornio, Haparanda & Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda & Kemi: activities and tours · LaplandActivities",
       "description": "The Finland-Sweden twin town and gateway to unique Arctic experiences."
     },
     "fi": {
-      "title": "Tornio, Haaparanta ja Kemi · LaplandActivities",
+      "title": "Tornio, Haaparanta ja Kemi: aktiviteetit ja retket · LaplandActivities",
       "description": "Suomen ja Ruotsin rajakaupunki ja portti ainutlaatuisiin arktisiin elämyksiin."
     },
     "de": {
-      "title": "Tornio, Haparanda und Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda und Kemi: Aktivitäten und Touren · LaplandActivities",
       "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen."
     },
     "ja": {
-      "title": "Tornio・Haparanda・Kemi · LaplandActivities",
+      "title": "Tornio・Haparanda・Kemiのアクティビティとツアー · LaplandActivities",
       "description": "フィンランドとスウェーデンの国境の街で、唯一無二の北極圏体験への入口。伝説的な砕氷船Sampoでのクルーズ、SnowCastleウィンターパーク、そしてヨーロッパ最大の自然のまま流れるサーモンの川があります。"
     },
     "es": {
-      "title": "Tornio, Haparanda y Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda y Kemi: actividades y excursiones · LaplandActivities",
       "description": "Ciudad fronteriza entre Finlandia y Suecia, puerta de entrada a experiencias árticas únicas."
     },
     "pt-BR": {
-      "title": "Tornio, Haparanda e Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda e Kemi: atividades e passeios · LaplandActivities",
       "description": "A cidade fronteiriça entre Finlândia e Suécia, porta de entrada para experiências árticas únicas."
     },
     "zh-CN": {
-      "title": "Tornio、Haparanda 与 Kemi · LaplandActivities",
+      "title": "Tornio、Haparanda 与 Kemi活动与旅行团 · LaplandActivities",
       "description": "芬兰与瑞典之间的边境城市，是通往独特北极体验的门户。可乘坐传奇的桑普号破冰船巡航、参观 SnowCastle 冬季公园，并垂钓欧洲最大的自由流淌的鲑鱼河。"
     },
     "ko": {
-      "title": "토르니오·하파란다·케미 · LaplandActivities",
+      "title": "토르니오·하파란다·케미 액티비티와 투어 · LaplandActivities",
       "description": "핀란드-스웨덴 국경 마을이자 독특한 북극 체험의 관문. 전설적인 쇄빙선 삼포 크루즈, SnowCastle 윈터 파크, 유럽에서 가장 큰 자연 그대로 흐르는 연어 강이 있습니다."
     },
     "fr": {
-      "title": "Tornio, Haparanda et Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda et Kemi: activités et excursions · LaplandActivities",
       "description": "La ville frontière entre la Finlande et la Suède, point d'accès à des expériences arctiques uniques."
     },
     "it": {
-      "title": "Tornio, Haparanda e Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda e Kemi: attività ed escursioni · LaplandActivities",
       "description": "Città di confine tra Finlandia e Svezia, porta d'ingresso a esperienze artiche uniche."
     },
     "nl": {
-      "title": "Tornio, Haparanda en Kemi · LaplandActivities",
+      "title": "Tornio, Haparanda en Kemi: activiteiten en tours · LaplandActivities",
       "description": "De grensstad tussen Finland en Zweden, toegangspoort tot unieke arctische ervaringen."
     },
     "sv": {
-      "title": "Torneå, Haparanda och Kemi · LaplandActivities",
+      "title": "Torneå, Haparanda och Kemi: aktiviteter och turer · LaplandActivities",
       "description": "Gränsstaden mellan Finland och Sverige och porten till unika arktiska upplevelser."
     }
   },
   "/destinations/pyha-luosto": {
     "en": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: activities and tours · LaplandActivities",
       "description": "Two fell villages, Pyhä and Luosto, joined by an ancient fell chain with Pyhä-Luosto National Park between them."
     },
     "fi": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: aktiviteetit ja retket · LaplandActivities",
       "description": "Kaksi tunturikylää, Pyhä ja Luosto, joita yhdistävät ikivanha tunturijono ja niiden välissä levittäytyvä Pyhä-Luoston kansallispuisto."
     },
     "de": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: Aktivitäten und Touren · LaplandActivities",
       "description": "Zwei Fjälldörfer, Pyhä und Luosto, verbunden durch eine uralte Fjällkette, dazwischen der Nationalpark Pyhä-Luosto."
     },
     "ja": {
-      "title": "ピュハ・ルオスト · LaplandActivities",
+      "title": "ピュハ・ルオストのアクティビティとツアー · LaplandActivities",
       "description": "太古の山脈で結ばれた2つの山村、ピュハとルオスト。その間にピュハ・ルオスト国立公園が広がります。スキー、スノーシュー、そしてランピヴァーラで自分だけのアメジスト掘りを。"
     },
     "es": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: actividades y excursiones · LaplandActivities",
       "description": "Dos pueblos de fjell, Pyhä y Luosto, unidos por una cadena montañosa antiquísima con el parque nacional Pyhä-Luosto en medio."
     },
     "pt-BR": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: atividades e passeios · LaplandActivities",
       "description": "Dois vilarejos de monte, Pyhä e Luosto, unidos por uma cadeia montanhosa antiquíssima com o parque nacional Pyhä-Luosto no meio."
     },
     "zh-CN": {
-      "title": "皮哈-卢奥斯托 · LaplandActivities",
+      "title": "皮哈-卢奥斯托活动与旅行团 · LaplandActivities",
       "description": "两个山地村庄皮哈与卢奥斯托由远古山脉相连，中间是皮哈-卢奥斯托国家公园。滑雪、雪鞋徒步，还能在 Lampivaara 亲手挖一颗属于自己的紫水晶。"
     },
     "ko": {
-      "title": "퓌해-루오스토 · LaplandActivities",
+      "title": "퓌해-루오스토 액티비티와 투어 · LaplandActivities",
       "description": "태고의 산줄기로 이어진 두 산악 마을 퓌해와 루오스토, 그 사이에 퓌해-루오스토 국립공원이 있습니다. 스키와 스노슈잉, 그리고 람피바라에서 나만의 자수정 캐기까지."
     },
     "fr": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: activités et excursions · LaplandActivities",
       "description": "Deux villages de fjäll, Pyhä et Luosto, reliés par une chaîne montagneuse très ancienne, avec le parc national de Pyhä-Luosto entre eux."
     },
     "it": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: attività ed escursioni · LaplandActivities",
       "description": "Due paesi di fjell, Pyhä e Luosto, uniti da una catena montuosa antichissima con in mezzo il parco nazionale Pyhä-Luosto."
     },
     "nl": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: activiteiten en tours · LaplandActivities",
       "description": "Twee fjälldorpen, Pyhä en Luosto, verbonden door een oeroude fjällketen met daartussen het nationale park Pyhä-Luosto."
     },
     "sv": {
-      "title": "Pyhä-Luosto · LaplandActivities",
+      "title": "Pyhä-Luosto: aktiviteter och turer · LaplandActivities",
       "description": "Två fjällbyar, Pyhä och Luosto, förbundna av en urgammal fjällkedja med Pyhä-Luosto nationalpark emellan."
     }
   },
   "/destinations/kemijarvi": {
     "en": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: activities and tours · LaplandActivities",
       "description": "Finland's northernmost town sits on its own lake, where the Santa Claus Express night train ends its run."
     },
     "fi": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: aktiviteetit ja retket · LaplandActivities",
       "description": "Suomen pohjoisin kaupunki oman järvensä rannalla, jonne Santa Claus Express -yöjuna päättyy. Rauhallinen tukikohta itäiseen Lappiin, Pyhä 50 km päässä."
     },
     "de": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: Aktivitäten und Touren · LaplandActivities",
       "description": "Finnlands nördlichste Stadt liegt an ihrem eigenen See, wo der Nachtzug Santa Claus Express endet. Eine ruhige Basis für Ost-Lappland, Pyhä nur 50 km entfernt."
     },
     "ja": {
-      "title": "ケミヤルヴィ · LaplandActivities",
+      "title": "ケミヤルヴィのアクティビティとツアー · LaplandActivities",
       "description": "フィンランド最北の市は、同じ名を持つ湖のほとりにあり、夜行列車サンタクロース・エクスプレスの終着点。東ラップランドの静かな拠点で、ピュハまで50kmです。"
     },
     "es": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: actividades y excursiones · LaplandActivities",
       "description": "La ciudad más septentrional de Finlandia está junto a su propio lago, donde termina el tren nocturno Santa Claus Express."
     },
     "pt-BR": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: atividades e passeios · LaplandActivities",
       "description": "A cidade mais setentrional da Finlândia fica à beira do seu próprio lago, onde termina o trem noturno Santa Claus Express."
     },
     "zh-CN": {
-      "title": "凯米耶尔维 · LaplandActivities",
+      "title": "凯米耶尔维活动与旅行团 · LaplandActivities",
       "description": "芬兰最北端的城市坐落在自己的湖畔，夜火车圣诞老人特快在此到达终点。东拉普兰的安静大本营，距皮哈 50 公里。"
     },
     "ko": {
-      "title": "케미야르비 · LaplandActivities",
+      "title": "케미야르비 액티비티와 투어 · LaplandActivities",
       "description": "핀란드 최북단 도시는 같은 이름의 호숫가에 자리하며, 야간열차 산타클로스 익스프레스가 여기서 끝납니다. 동부 라플란드의 조용한 거점으로, 퓌해까지 50km입니다."
     },
     "fr": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: activités et excursions · LaplandActivities",
       "description": "La ville la plus septentrionale de Finlande borde son propre lac, là où s’arrête le train de nuit Santa Claus Express."
     },
     "it": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: attività ed escursioni · LaplandActivities",
       "description": "La città più settentrionale della Finlandia si affaccia sul proprio lago, dove termina il treno notturno Santa Claus Express."
     },
     "nl": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: activiteiten en tours · LaplandActivities",
       "description": "De noordelijkste stad van Finland ligt aan haar eigen meer, waar de nachttrein Santa Claus Express eindigt."
     },
     "sv": {
-      "title": "Kemijärvi · LaplandActivities",
+      "title": "Kemijärvi: aktiviteter och turer · LaplandActivities",
       "description": "Finlands nordligaste stad ligger vid sin egen sjö, där nattåget Santa Claus Express slutar. En lugn bas för östra Lappland, med Pyhä 50 km bort."
     }
   }

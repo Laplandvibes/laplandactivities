@@ -17,6 +17,7 @@ import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
+import { categoryTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
 import { categoryGuide } from '../data/guideI18n';
@@ -77,11 +78,11 @@ export default function CategoryPage() {
   return (
     <>
       <Helmet>
-        <title>{category.name} · LaplandActivities</title>
+        <title>{categoryTitle(category.name, lang)}</title>
         <meta name="description" content={`${category.description}`} />
         <link rel="canonical" href={pageUrl} />
         <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={`${category.name} · LaplandActivities`} />
+        <meta property="og:title" content={categoryTitle(category.name, lang)} />
         <meta property="og:description" content={category.description} />
         <meta property="og:image" content={`https://laplandactivities.fi${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({
