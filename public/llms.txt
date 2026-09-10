@@ -22,4 +22,4 @@ English (default, no prefix), Finnish (/fi), German (/de), Japanese (/ja), Spani
 
 - Hub: https://laplandvibes.com/
 - Sitemap: https://laplandactivities.fi/sitemap.xml
-- Contact: info@laplandactivities.fi
+- Contact: info@laplandvibes.com

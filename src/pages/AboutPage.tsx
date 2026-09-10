@@ -55,9 +55,9 @@ export default function AboutPage() {
           <h2 className="font-heading text-3xl text-snow tracking-wide mb-3">{c.contactH2}</h2>
           <p className="text-snow/65 text-sm leading-relaxed">
             {c.contactBody1}
-            <a href="mailto:info@laplandactivities.fi" className="text-arctic-cyan hover:underline">info@laplandactivities.fi</a>
+            <a href="mailto:info@laplandvibes.com" className="text-arctic-cyan hover:underline">info@laplandvibes.com</a>
             {c.contactBody2}{' '}
-            <a href="mailto:sales@laplandactivities.fi" className="text-arctic-cyan hover:underline">sales@laplandactivities.fi</a>.
+            <a href="mailto:info@laplandvibes.com" className="text-arctic-cyan hover:underline">info@laplandvibes.com</a>.
           </p>
 
           <div className="mt-12">
