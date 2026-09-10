@@ -37,8 +37,8 @@ export default function CategoriesIndex() {
         <section className="px-4 sm:px-6 max-w-7xl mx-auto pt-8">
           <div className="text-center mb-10 sm:mb-14">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.kicker}</span>
-            <h1 className="font-heading text-5xl sm:text-7xl text-snow mt-2 tracking-wide">{c.h1}</h1>
-            <p className="text-snow/65 mt-4 max-w-2xl mx-auto text-lg">{c.lead}</p>
+            <h1 className="font-heading text-5xl sm:text-7xl xl:text-8xl text-snow mt-2 tracking-wide">{c.h1}</h1>
+            <p className="text-snow/65 mt-4 max-w-2xl xl:max-w-4xl mx-auto text-lg xl:text-xl">{c.lead}</p>
           </div>
 
           {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
