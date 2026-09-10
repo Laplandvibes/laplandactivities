@@ -31,7 +31,7 @@ export default function Hero() {
           <span className="text-vibe-pink">ACTIVITIES</span>
         </h1>
 
-        <p className="text-snow/90 text-base sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+        <p className="text-snow/90 text-base sm:text-xl xl:text-2xl max-w-2xl xl:max-w-4xl mx-auto mb-10 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
           {c.lead}
         </p>
 
