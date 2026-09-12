@@ -37,7 +37,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           <Link
             to={to(`/destinations/${activity.destinationSlug}`)}
-            className="bg-deep-night/70 backdrop-blur-sm text-snow text-[11px] px-2.5 py-1 rounded-full inline-flex items-center gap-1 hover:bg-deep-night/90 transition-colors border border-white/15"
+            className="bg-deep-night/70 backdrop-blur-sm text-snow text-[11px] px-3 py-2 min-h-10 items-center rounded-full inline-flex items-center gap-1 hover:bg-deep-night/90 transition-colors border border-white/15"
           >
             <MapPin className="w-3 h-3" /> {destName}
           </Link>
