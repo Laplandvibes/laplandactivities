@@ -205,7 +205,7 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-10">
-            <Link to={to('/categories')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 font-semibold transition-colors">
+            <Link to={to('/categories')} className="lv-tap inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 font-semibold transition-colors">
               {c.viewAllCategories} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -279,7 +279,7 @@ export default function Home() {
               <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.destinationsKicker}</span>
               <h2 className="font-heading text-3xl sm:text-5xl text-snow mt-1 tracking-wide">{totalDestinations} {c.destinationsH2}</h2>
             </div>
-            <Link to={to('/destinations')} className="inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 text-sm font-semibold">
+            <Link to={to('/destinations')} className="lv-tap inline-flex items-center gap-2 text-vibe-pink hover:text-pink-300 text-sm font-semibold">
               {c.viewAll} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -412,7 +412,7 @@ export default function Home() {
                         <Link
                           key={route}
                           to={to(route)}
-                          className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-arctic-cyan hover:text-vibe-pink transition-colors"
+                          className="lv-tap inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold uppercase tracking-wider text-arctic-cyan hover:text-vibe-pink transition-colors"
                         >
                           {COPY[lang].nav[label]} <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                         </Link>

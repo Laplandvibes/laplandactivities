@@ -128,7 +128,7 @@ export default function CategoryPage() {
       {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07) */}
       <div className="border-b border-white/5 bg-deep-night">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          <Link to={to('/categories')} className="inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
+          <Link to={to('/categories')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
             <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allCategoriesNav}
           </Link>
         </div>

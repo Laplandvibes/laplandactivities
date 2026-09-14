@@ -147,7 +147,7 @@ export default function DestinationPage() {
       {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07) */}
       <div className="border-b border-white/5 bg-deep-night">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
-          <Link to={to('/destinations')} className="inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
+          <Link to={to('/destinations')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
             <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
           </Link>
         </div>
@@ -367,7 +367,7 @@ export default function DestinationPage() {
               <span className="text-arctic-cyan text-xs font-semibold tracking-[0.25em] uppercase">{c.keepExploringKicker}</span>
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1">{c.otherDestinationsH2}</h2>
             </div>
-            <Link to={to('/destinations')} className="text-vibe-pink text-sm font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
+            <Link to={to('/destinations')} className="lv-tap text-vibe-pink text-sm font-semibold inline-flex items-center gap-1 hover:gap-2 transition-all">
               {c.allDestinations} <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

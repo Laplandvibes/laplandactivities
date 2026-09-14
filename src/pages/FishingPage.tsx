@@ -84,7 +84,7 @@ function OfficialLink({ href, children }: { href: string; children: ReactNode })
       href={withReferral(href, 'laplandactivities_fishing')}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-1 text-arctic-cyan hover:underline text-sm font-medium"
+      className="lv-tap inline-flex items-center gap-1 text-arctic-cyan hover:underline text-sm font-medium"
     >
       {children}
       <ExternalLink className="w-3 h-3 shrink-0" aria-hidden="true" />
