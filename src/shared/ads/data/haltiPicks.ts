@@ -1,7 +1,7 @@
 // GENEROITU TIEDOSTO — älä muokkaa käsin.
 // Lähde: adtraction -tuotesyöte, Halti (ohjelma 1622199570).
 // Päivitä: node scripts/sync_partner_feeds.mjs halti --refresh
-// Hinnat ovat 2026-09-05 hintoja ja ne renderöidään tarkistuspäivän kanssa.
+// Hinnat ovat 2026-09-15 hintoja ja ne renderöidään tarkistuspäivän kanssa.
 
 import type { PartnerSnapshot } from './partnerTypes'
 
@@ -15,73 +15,73 @@ const picks: PartnerSnapshot = {
     "cookieDays": 30
   },
   "route": "/go/halti",
-  "fetchedAt": "2026-09-05",
+  "fetchedAt": "2026-09-15",
   "products": [
     {
-      "sku": "shopify_ZZ_15810225668421_57684303380805",
-      "name": "Halti Tuntu II Pitkähihainen Merino Paita Miesten",
+      "sku": "shopify_ZZ_7173616107567_41422317715503",
+      "name": "Halti Woolforce Naisten Merinovillapaita",
       "shelf": "paidat",
       "category": "Paidat",
       "brand": "Halti",
-      "price": 100,
+      "price": 90,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/tuntu-ii-pitkahihainen-merino-paita-miesten?&variant=57684303380805",
-      "image": "/images/partners/halti/shopify_ZZ_15810225668421_57684303380805.webp"
+      "url": "http://www.halti.fi/products/woolforce-naisten-merinovillapaita?&variant=41422317715503",
+      "image": "/images/partners/halti/shopify_ZZ_7173616107567_41422317715503.webp"
     },
     {
-      "sku": "shopify_ZZ_7139665575983_41294962688047",
-      "name": "Halti Streams Hybrid Välitakki Naisten",
+      "sku": "shopify_ZZ_14994257543493_54420492943685",
+      "name": "Halti Soolo Välitakki Naisten",
       "shelf": "midlayers",
       "category": "Midlayers",
       "brand": "Halti",
       "price": 100,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/streams-naisten-hybrid-valitakki?&variant=41294962688047",
-      "image": "/images/partners/halti/shopify_ZZ_7139665575983_41294962688047.webp"
+      "url": "http://www.halti.fi/products/soolo-valitakki-naisten?&variant=54420492943685",
+      "image": "/images/partners/halti/shopify_ZZ_14994257543493_54420492943685.webp"
     },
     {
-      "sku": "shopify_ZZ_15409801855301_56139772363077",
-      "name": "Halti Kevo 2 DX Talvikenkä Miesten",
-      "shelf": "jalkineet",
-      "category": "Jalkineet",
-      "brand": "Halti",
-      "price": 110,
-      "currency": "EUR",
-      "url": "http://www.halti.fi/products/kevo-2-dx-talvikenka-miesten?&variant=56139772363077",
-      "image": "/images/partners/halti/shopify_ZZ_15409801855301_56139772363077.webp"
-    },
-    {
-      "sku": "shopify_ZZ_15221953528133_55373603209541",
-      "name": "Halti Hossa II Merino Kerrasto Miesten",
+      "sku": "shopify_ZZ_6767508488239_47034238533957",
+      "name": "Halti Neva Merino Kerrasto Naisten",
       "shelf": "alusasut",
       "category": "Alusasut",
       "brand": "Halti",
-      "price": 120,
+      "price": 100,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/hossa-ii-merino-kerrasto-miesten?&variant=55373603209541",
-      "image": "/images/partners/halti/shopify_ZZ_15221953528133_55373603209541.webp"
+      "url": "http://www.halti.fi/products/neva-naisten-kerrasto?&variant=47034238533957",
+      "image": "/images/partners/halti/shopify_ZZ_6767508488239_47034238533957.webp"
     },
     {
-      "sku": "shopify_ZZ_15931469660485_58202476511557",
-      "name": "Halti Pallas Evo Short X-stretch Housut Naisten",
+      "sku": "shopify_ZZ_9728881688901_50275761062213",
+      "name": "Halti Vedenpitävä Nastakenkä Naisille",
+      "shelf": "jalkineet",
+      "category": "Jalkineet",
+      "brand": "Halti",
+      "price": 119,
+      "currency": "EUR",
+      "url": "http://www.halti.fi/products/vedenpitava-nastakenka-naisille?&variant=50275761062213",
+      "image": "/images/partners/halti/shopify_ZZ_9728881688901_50275761062213.webp"
+    },
+    {
+      "sku": "shopify_ZZ_15370041229637_55983095349573",
+      "name": "Halti Vuoksi II Short DX Kuorihousut Miesten",
       "shelf": "housut",
       "category": "Housut",
       "brand": "Halti",
       "price": 130,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/pallas-evo-short-x-stretch-housut-naisten?&variant=58202476511557",
-      "image": "/images/partners/halti/shopify_ZZ_15931469660485_58202476511557.webp"
+      "url": "http://www.halti.fi/products/vuoksi-ii-short-dx-kuorihousut-miesten?&variant=55983095349573",
+      "image": "/images/partners/halti/shopify_ZZ_15370041229637_55983095349573.webp"
     },
     {
-      "sku": "shopify_ZZ_8624216342853_46945195589957",
-      "name": "Halti Exhale Stormwall Takki Miesten",
+      "sku": "shopify_ZZ_8834110193989_47675612594501",
+      "name": "Halti Pallas Evo Plus X-stretch Takki Naisten",
       "shelf": "takit",
       "category": "Takit",
       "brand": "Halti",
-      "price": 170,
+      "price": 160,
       "currency": "EUR",
-      "url": "http://www.halti.fi/products/exhale-stormwall-takki-miesten?&variant=46945195589957",
-      "image": "/images/partners/halti/shopify_ZZ_8624216342853_46945195589957.webp"
+      "url": "http://www.halti.fi/products/pallas-evo-plus-x-stretch-takki-naisten?&variant=47675612594501",
+      "image": "/images/partners/halti/shopify_ZZ_8834110193989_47675612594501.webp"
     },
     {
       "sku": "shopify_ZZ_15264904806725_55532774359365",
