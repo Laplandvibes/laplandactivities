@@ -8,8 +8,9 @@ import compression from 'vite-plugin-compression2'
 // any shared component using useContext (CookieBanner, NewsletterPopup, Footer)
 // will mount with a null context and the whole tree renders blank in production.
 // See lv_critical_react_dedupe.md.
+import { trailingSlashLinks } from "./src/shared/router/trailingSlashPlugin";
 export default defineConfig({
-  plugins: [react(), tailwindcss(), compression({ algorithms: ['brotliCompress'], threshold: 1024 })],
+  plugins: [trailingSlashLinks(), react(), tailwindcss(), compression({ algorithms: ['brotliCompress'], threshold: 1024 })],
   resolve: {
     dedupe: ['react', 'react-dom', 'react-router', 'react-router-dom'],
   },

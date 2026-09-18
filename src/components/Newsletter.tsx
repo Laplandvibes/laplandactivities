@@ -252,7 +252,7 @@ export default function Newsletter() {
               <span>
                 {cc.checkbox}{' '}
                 <a
-                  href={to('/privacy')}
+                  href={to('/privacy/')}
                   target="_blank"
                   rel="noopener"
                   className="underline underline-offset-2 hover:text-white"

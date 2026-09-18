@@ -10,6 +10,9 @@ import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 import LanguageSwitcher from '../i18n/LanguageSwitcher';
 
+/** Sama sivu loppukauttaviivasta riippumatta: sisääntulo on `/x/`, linkki voi olla `/x` (18.9.2026). */
+const samePath = (a: string, b: string) => a.replace(/\/+$/, '') === b.replace(/\/+$/, '');
+
 export default function Navigation() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -84,7 +87,7 @@ export default function Navigation() {
         <div className="hidden lg:flex items-center gap-3 xl:gap-6" ref={dropRef}>
           <Link
             to={to('/')}
-            className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.home}
           </Link>
@@ -155,14 +158,14 @@ export default function Navigation() {
 
           <Link
             to={to('/fishing')}
-            className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/fishing') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/fishing')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.fishing}
           </Link>
 
           <Link
             to={to('/about')}
-            className={`text-sm font-medium tracking-wide transition-colors ${pathname === to('/about') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/about')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.about}
           </Link>
@@ -199,7 +202,7 @@ export default function Navigation() {
       {/* Mobile menu */}
       {open && (
         <div className="lg:hidden bg-deep-night border-t border-white/10 px-4 pb-5 max-h-[80vh] overflow-y-auto">
-          <Link to={to('/')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.home}</Link>
+          <Link to={to('/')} className={`block py-3 text-sm font-medium border-b border-white/5 ${samePath(pathname, to('/')) ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.home}</Link>
 
           <details className="py-2 border-b border-white/5">
             <summary className="text-sm font-medium text-snow/70 cursor-pointer flex items-center justify-between py-1">
@@ -236,9 +239,9 @@ export default function Navigation() {
             </div>
           </details>
 
-          <Link to={to('/fishing')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/fishing') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.fishing}</Link>
+          <Link to={to('/fishing')} className={`block py-3 text-sm font-medium border-b border-white/5 ${samePath(pathname, to('/fishing')) ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.fishing}</Link>
 
-          <Link to={to('/about')} className={`block py-3 text-sm font-medium border-b border-white/5 ${pathname === to('/about') ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.about}</Link>
+          <Link to={to('/about')} className={`block py-3 text-sm font-medium border-b border-white/5 ${samePath(pathname, to('/about')) ? 'text-vibe-pink' : 'text-snow/70'}`}>{c.about}</Link>
 
           <AffiliateCTA
             partner="activities"
