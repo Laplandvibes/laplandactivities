@@ -38,7 +38,7 @@ const onnipyora: AdSpec = {
     fi: {
       eyebrow: 'Maastopyöräily',
       headline: 'Onnipyörä, sähkömaastopyörät ja fatbiket kotimaasta',
-      sub: 'Suomalainen sähköpyöräkauppa: täysjousitetut ja jäykkäperäiset sähkömaastopyörät, sähköfatbiket talvipoluille sekä Woom-lasten- ja nuortenpyörät. Sähköpyörät toimitetaan ajovalmiiksi koottuina ja huollon tarkastamina — verkkokauppa toimittaa vain Suomeen.',
+      sub: 'Suomalainen sähköpyöräkauppa: täysjousitetut ja jäykkäperäiset sähkömaastopyörät, sähköfatbiket talvipoluille sekä Woom-lasten- ja nuortenpyörät. Sähköpyörät toimitetaan ajovalmiiksi koottuina ja huollon tarkastamina. Verkkokauppa toimittaa vain Suomeen.',
       trust: ['Sähkömaastopyörät ja fatbiket', 'Ajovalmiiksi koottu ja tarkastettu', 'Huolto Turussa, Helsingissä ja Lappeenrannassa'],
       cta: 'Selaa valikoimaa',
       poweredBy: 'Pyörät Onnipyörältä',
