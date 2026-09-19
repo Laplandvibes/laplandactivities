@@ -1,5 +1,6 @@
 import { MapPin, ExternalLink, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import PhotoCredit from './PhotoCredit';
 import type { Activity } from '../data/activities';
 import { isBookable, gygQueryForActivity, PARTNER_PAGE } from '../data/activities';
 import { imageForActivity } from '../data/images';
@@ -34,6 +35,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
           loading="lazy"
          decoding="async" width="800" height="600"/>
         <div className="absolute inset-0 bg-gradient-to-t from-deep-night/85 via-deep-night/30 to-transparent" />
+        <PhotoCredit src={img} />
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           <Link
             to={to(`/destinations/${activity.destinationSlug}`)}

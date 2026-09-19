@@ -28,7 +28,7 @@
     },
     "fi": {
       "title": "LaplandActivities: arktiset retket Suomen Lapissa",
-      "description": "Moottorikelkkasafarit, huskysafarit, revontuliretket, savusaunat. Varaa luotettavia aktiviteetteja kymmenessä kohteessa Lapissa ja lähialueilla GetYourGuiden kautta.",
+      "description": "Moottorikelkka- ja huskysafarit, revontuliretket ja savusaunat. Varaa luotettavia aktiviteetteja kymmenessä Lapin kohteessa GetYourGuiden kautta.",
       "faq": [
         {
           "q": "Mitä aktiviteetteja Lapissa voi tehdä?",
@@ -54,7 +54,7 @@
     },
     "de": {
       "title": "LaplandActivities: arktische Touren in Lappland",
-      "description": "… handverlesene Aktivitäten in zehn Reisezielen in und um Lappland über GetYourGuide buchen.",
+      "description": "Schneemobil-Safaris, Husky-Schlittenfahrten, Nordlichtjagden und Rauchsaunen. Handverlesene Aktivitäten in zehn Reisezielen in Lappland, buchbar über GetYourGuide.",
       "faq": [
         {
           "q": "Welche Aktivitäten kann man in Lappland unternehmen?",
@@ -106,7 +106,7 @@
     },
     "es": {
       "title": "LaplandActivities: Tours árticos en Laponia",
-      "description": "Safaris en motonieve, trineo de huskies, cazas de aurora, saunas de humo y más. Reserve actividades cuidadosamente seleccionadas en 10 destinos de Laponia y alrededores mediante GetYourGuide.",
+      "description": "Safaris en motonieve, trineo de huskies, cazas de aurora y saunas de humo. Reserve actividades en 10 destinos de Laponia mediante GetYourGuide.",
       "faq": [
         {
           "q": "¿Qué actividades se pueden hacer en Laponia?",
@@ -132,7 +132,7 @@
     },
     "pt-BR": {
       "title": "LaplandActivities: Tours árticos na Lapônia",
-      "description": "Safáris de snowmobile, trenó de huskies, caçadas de aurora, saunas a fumaça e mais. Reserve atividades escolhidas a dedo em 10 destinos na Lapônia e arredores via GetYourGuide.",
+      "description": "Safáris de snowmobile, trenó de huskies e caçadas de aurora. Atividades escolhidas a dedo em 10 destinos na Lapônia, com operadoras locais de confiança.",
       "faq": [
         {
           "q": "Quais atividades dá para fazer na Lapônia?",
@@ -158,7 +158,7 @@
     },
     "zh-CN": {
       "title": "LaplandActivities: 在芬兰拉普兰预订精选北极行程",
-      "description": "雪地摩托之旅、哈士奇雪橇、极光追逐、烟熏桑拿等。在拉普兰及周边10个目的地通过GetYourGuide与可信本地运营商预订精选活动。",
+      "description": "雪地摩托之旅、哈士奇雪橇、极光追逐、烟熏桑拿等。在拉普兰及周边10个目的地通过 GetYourGuide与可信本地运营商预订精选活动。",
       "faq": [
         {
           "q": "在拉普兰可以做哪些活动？",
@@ -210,11 +210,11 @@
     },
     "fr": {
       "title": "LaplandActivities : activités et tours en Laponie",
-      "description": "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 10 destinations en Laponie et alentours via GetYourGuide.",
+      "description": "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée. Réservez dans 10 destinations en Laponie via GetYourGuide.",
       "faq": [
         {
           "q": "Quelles activités peut-on faire en Laponie ?",
-          "a": "En hiver, les classiques sont les traîneaux à chiens et à rennes, les safaris en motoneige, les chasses aux aurores, les raquettes, le ski de fond et alpin, la pêche blanche et la flottaison en eau glacée. En été, la même nature se prête à la randonnée, au kayak et au canoë, au rafting, au VTT, à la pêche au saumon et à l’orpaillage. Toute l’année, le sauna à fumée et les expériences de culture sâme révèlent une facette plus calme de l’Arctique."
+          "a": "En hiver, les classiques sont les traîneaux à chiens et à rennes, les safaris en motoneige, les chasses aux aurores, les raquettes, le ski de fond et alpin, la pêche blanche et la flottaison en eau glacée. En été, la même nature se prête à la randonnée, au kayak et au canoë, au rafting, au VTT, à la pêche au saumon et à l’orpaillage. Toute l’année, le sauna à fumée et les expériences de culture sami révèlent une facette plus calme de l’Arctique."
         },
         {
           "q": "Quelles sont les meilleures activités d’hiver et d’été ?",
@@ -236,7 +236,7 @@
     },
     "it": {
       "title": "LaplandActivities: tour artici in Lapponia",
-      "description": "Safari in motoslitta, slitta dei husky, caccia all'aurora, saune a fumo e altro. Prenoti attività in 10 destinazioni in Lapponia e dintorni tramite GetYourGuide.",
+      "description": "Safari in motoslitta, slitta trainata dagli husky, caccia all'aurora, saune a fumo e altro. Prenoti attività in 10 destinazioni in Lapponia e dintorni tramite GetYourGuide.",
       "faq": [
         {
           "q": "Quali attività si possono fare in Lapponia?",
@@ -315,62 +315,62 @@
   },
   "/about": {
     "en": {
-      "title": "About · LaplandActivities",
-      "description": "LaplandActivities is the activities spoke of the LaplandVibes ecosystem: hand-picked Arctic experiences across ten destinations in and around Finnish Lapland."
+      "title": "About LaplandActivities: who we are and how we choose",
+      "description": "LaplandActivities is run by LaPeso Oy from Finland. We list Lapland tours we would book ourselves, link to the operator or GetYourGuide, and earn a commission on…"
     },
     "fi": {
-      "title": "Tietoja · LaplandActivities",
-      "description": "LaplandActivities on #LaplandVibes-ekosysteemin aktiviteettiopas: luotettavia arktisia elämyksiä kymmenessä kohteessa Suomen Lapissa ja lähialueilla."
+      "title": "Tietoa meistä: keitä olemme ja miten retket valitaan",
+      "description": "LaplandActivitiesin julkaisee LaPeso Oy. Listaamme Lapin retkiä, jotka varaisimme itsekin, linkitämme järjestäjälle tai GetYourGuideen ja saamme provision."
     },
     "de": {
-      "title": "Über uns · LaplandActivities",
-      "description": "Die Aktivitäten-Sektion des #LaplandVibes-Ökosystems: handverlesene arktische Erlebnisse in zehn Reisezielen in und um Finnisch-Lappland."
+      "title": "Über LaplandActivities: wer wir sind und wie wir auswählen",
+      "description": "LaplandActivities wird von der finnischen LaPeso Oy betrieben."
     },
     "ja": {
-      "title": "当サイトについて｜LaplandActivities",
-      "description": "LaplandActivitiesはLaplandVibesエコシステムのアクティビティ部門。フィンランド・ラップランドとその周辺の10の目的地で厳選した北極体験。"
+      "title": "LaplandActivitiesについて：運営者とツアーの選び方",
+      "description": "LaplandActivitiesはフィンランドのLaPeso Oyが運営しています。自分たちでも予約したいラップランドのツアーを掲載し、催行会社やGetYourGuideにリンクし、予約から手数料を受け取ります。"
     },
     "es": {
-      "title": "Acerca de · LaplandActivities",
-      "description": "LaplandActivities es la rama de actividades del ecosistema LaplandVibes: experiencias árticas seleccionadas a mano en diez destinos en la Laponia finlandesa y…"
+      "title": "Sobre LaplandActivities: quiénes somos y cómo elegimos",
+      "description": "LaplandActivities lo gestiona la empresa finlandesa LaPeso Oy."
     },
     "pt-BR": {
-      "title": "Sobre · LaplandActivities",
-      "description": "LaplandActivities é o ramo de atividades do ecossistema LaplandVibes, experiências árticas escolhidas a dedo em dez destinos na Lapônia finlandesa e arredores."
+      "title": "Sobre o LaplandActivities: quem somos e como escolhemos",
+      "description": "O LaplandActivities é mantido pela empresa finlandesa LaPeso Oy."
     },
     "zh-CN": {
-      "title": "关于 · LaplandActivities",
-      "description": "LaplandActivities是LaplandVibes生态中的活动分支，覆盖芬兰拉普兰及周边十个目的地的精选北极体验。"
+      "title": "关于LaplandActivities：我们是谁，如何挑选行程",
+      "description": "LaplandActivities由芬兰公司LaPeso Oy运营。我们只收录自己也愿意预订的拉普兰行程，链接到运营商或GetYourGuide，并从预订中获得佣金。"
     },
     "ko": {
-      "title": "소개 · LaplandActivities",
-      "description": "LaplandActivities는 #LaplandVibes 생태계의 액티비티 거점, 라플란드와 그 주변 10개 목적지의 엄선한 북극 체험."
+      "title": "LaplandActivities 소개: 운영자와 투어 선정 기준",
+      "description": "LaplandActivities는 핀란드 기업 LaPeso Oy가 운영합니다. 저희가 직접 예약할 만한 라플란드 투어만 싣고, 운영사나 GetYourGuide로 연결하며, 예약 시 수수료를 받습니다."
     },
     "fr": {
-      "title": "À propos · LaplandActivities",
-      "description": "LaplandActivities est le pôle activités de l'écosystème #LaplandVibes, expériences arctiques choisies avec soin dans dix destinations en Laponie finlandaise et…"
+      "title": "À propos de LaplandActivities : qui nous sommes",
+      "description": "LaplandActivities est édité par la société finlandaise LaPeso Oy."
     },
     "it": {
-      "title": "Chi siamo · LaplandActivities",
-      "description": "LaplandActivities è il polo attività dell'ecosistema #LaplandVibes, esperienze artiche scelte con cura in dieci destinazioni nella Lapponia finlandese e dintorni."
+      "title": "Chi siamo: LaplandActivities e come scegliamo le escursioni",
+      "description": "LaplandActivities è gestito dalla società finlandese LaPeso Oy."
     },
     "nl": {
-      "title": "Over ons · LaplandActivities",
-      "description": "LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen arctische ervaringen in tien bestemmingen in en rond Fins Lapland."
+      "title": "Over LaplandActivities: wie wij zijn en hoe wij kiezen",
+      "description": "LaplandActivities wordt beheerd door het Finse LaPeso Oy."
     },
     "sv": {
-      "title": "Om oss · LaplandActivities",
-      "description": "LaplandActivities är aktivitetsgrenen i LaplandVibes-ekosystemet: noggrant utvalda arktiska upplevelser på tio resmål i finska Lappland med omnejd."
+      "title": "Om LaplandActivities: vilka vi är och hur vi väljer turer",
+      "description": "LaplandActivities drivs av finska LaPeso Oy. Vi listar turer i finska Lappland som vi själva skulle boka, länkar till arrangören eller GetYourGuide och får provision…"
     }
   },
   "/fishing": {
     "en": {
       "title": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
-      "description": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links you need before you…"
+      "description": "Free ice fishing, licensed salmon rivers like the Tornio and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links."
     },
     "fi": {
       "title": "Kalastus Lapissa ja Jäämerellä | LaplandActivities",
-      "description": "Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit, mukana 2026 säännöt, maksut ja viralliset lupalinkit, jotka tarvitset…"
+      "description": "Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit: kauden 2026 säännöt, maksut ja viralliset lupalinkit."
     },
     "de": {
       "title": "Angeln in Lappland & im Nordmeer | LaplandActivities",
@@ -382,11 +382,11 @@
     },
     "es": {
       "title": "Pesca en Laponia y el océano Ártico | LaplandActivities",
-      "description": "Pesca en hielo gratuita, ríos de salmón con licencia como el Tornio y safaris de cangrejo real en Noruega, con las normas de 2026, las tasas y los enlaces oficiales…"
+      "description": "Pesca en hielo gratuita, ríos de salmón con licencia como el Tornio y safaris de cangrejo real en Noruega: normas, tasas 2026 y enlaces de permisos."
     },
     "pt-BR": {
       "title": "Pesca na Lapônia e no Oceano Ártico | LaplandActivities",
-      "description": "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega, com as regras, taxas e links oficiais de licença de 2026…"
+      "description": "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega: regras, taxas e licenças de 2026 antes de pescar."
     },
     "zh-CN": {
       "title": "拉普兰与北冰洋钓鱼指南 | LaplandActivities",
@@ -397,15 +397,15 @@
       "description": "얼음낚시는 무료, 토르니오 같은 허가제 연어강, 노르웨이 킹크랩 사파리까지: 낚싯대를 던지기 전에 알아야 할 2026년 규정, 요금, 공식 허가 링크를 담았습니다."
     },
     "fr": {
-      "title": "Pêche en Laponie et dans l'océan Arctique | LaplandActivities",
-      "description": "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège, avec les règles 2026, les redevances et les liens…"
+      "title": "Pêche en Laponie et en Arctique | LaplandActivities",
+      "description": "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège : règles 2026 et permis officiels."
     },
     "it": {
       "title": "Pesca in Lapponia e nell'oceano Artico | LaplandActivities",
-      "description": "Pesca sul ghiaccio gratuita, fiumi da salmone su licenza come il Tornio e safari al granchio reale in Norvegia, con le regole 2026, le tariffe e i link ufficiali dei…"
+      "description": "Pesca sul ghiaccio gratuita, fiumi da salmone su licenza come il Tornio e safari al granchio reale in Norvegia: regole, tariffe e permessi 2026."
     },
     "nl": {
-      "title": "Vissen in Lapland en de Noordelijke IJszee | LaplandActivities",
+      "title": "IJsvissen en zalmvissen in Fins Lapland | LaplandActivities",
       "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026…"
     },
     "sv": {
@@ -415,11 +415,11 @@
   },
   "/bear-kuusamo": {
     "en": {
-      "title": "Bear Kuusamo: Ethical Bear Watching in Finland | LaplandActivities",
-      "description": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland."
+      "title": "Bear Kuusamo: ethical bear watching in Finland | LaplandActivities",
+      "description": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, May to September."
     },
     "fi": {
-      "title": "Bear Kuusamo: eettistä karhunkatselua Lapin rajalla | LaplandActivities",
+      "title": "Bear Kuusamo: eettistä karhunkatselua Lapin rajalla",
       "description": "Bear Kuusamo vie kojuille katselemaan villejä ruskeakarhuja Kuusamon rajametsissä, aivan Lapin rajalla. Ilta- ja yöretket 1.5.–30.9."
     },
     "de": {
@@ -427,16 +427,16 @@
       "description": "Bear Kuusamo führt zu Verstecken für wilde Braunbären in den Grenzwäldern östlich von Kuusamo. Abend- und Nachttouren, 1. Mai bis 30. September."
     },
     "ja": {
-      "title": "Bear Kuusamo：フィンランドでの倫理的なクマ観察、ラップランドの境で | LaplandActivities",
-      "description": "Bear Kuusamoは、ラップランドの境に位置するクーサモ東部の国境の森で、野生のヒグマを観察するガイド付きハイドを運営しています。夕方ツアーと一泊ツアー、5月1日から9月30日。"
+      "title": "Bear Kuusamo｜ラップランドの境のクマ観察ツアー",
+      "description": "Bear Kuusamoは、ラップランド境のクーサモ東部の森で野生のヒグマ観察ハイドを運営。夕方・一泊ツアー、5月1日〜9月30日。"
     },
     "es": {
-      "title": "Bear Kuusamo: observación ética de osos en Finlandia | LaplandActivities",
-      "description": "Bear Kuusamo lleva a escondites para ver osos pardos salvajes en los bosques fronterizos al este de Kuusamo, al borde de Laponia."
+      "title": "Bear Kuusamo: observación ética de osos | LaplandActivities",
+      "description": "Bear Kuusamo lleva a escondites para ver osos pardos salvajes cerca de Kuusamo, al borde de Laponia. Tours de tarde y noche, 1 de mayo–30 de septiembre."
     },
     "pt-BR": {
-      "title": "Bear Kuusamo: observação ética de ursos na Finlândia | LaplandActivities",
-      "description": "A Bear Kuusamo leva a esconderijos para ver ursos-pardos selvagens nas florestas de fronteira a leste de Kuusamo, na borda da Lapônia."
+      "title": "Bear Kuusamo: observação ética de ursos | LaplandActivities",
+      "description": "A Bear Kuusamo leva você a esconderijos para ver ursos-pardos selvagens a leste de Kuusamo, na borda da Lapônia. De 1º de maio a 30 de setembro."
     },
     "zh-CN": {
       "title": "Bear Kuusamo：在芬兰、拉普兰边缘进行合乎道德的观熊 | LaplandActivities",
@@ -447,12 +447,12 @@
       "description": "Bear Kuusamo는 라플란드 경계에 자리한 쿠사모 동쪽 국경 숲에서 야생 불곰을 관찰하는 가이드 은신처를 운영합니다. 저녁 투어와 1박 투어, 5월 1일부터 9월 30일까지."
     },
     "fr": {
-      "title": "Bear Kuusamo : observation éthique des ours en Finlande | LaplandActivities",
-      "description": "Bear Kuusamo emmène dans des affûts pour observer des ours bruns sauvages dans les forêts frontalières à l'est de Kuusamo, aux portes de la Laponie."
+      "title": "Bear Kuusamo : observation des ours en Finlande",
+      "description": "Bear Kuusamo emmène en affût observer des ours bruns sauvages près de Kuusamo, aux portes de la Laponie. Sorties du soir et de nuit, mai-septembre."
     },
     "it": {
-      "title": "Bear Kuusamo: osservazione etica degli orsi in Finlandia | LaplandActivities",
-      "description": "Bear Kuusamo porta ai capanni per osservare orsi bruni selvatici nelle foreste di confine a est di Kuusamo, ai margini della Lapponia."
+      "title": "Bear Kuusamo: osservazione degli orsi in Finlandia | LaplandActivities",
+      "description": "Bear Kuusamo porta in capanno a osservare orsi bruni selvatici nelle foreste a est di Kuusamo, ai margini della Lapponia."
     },
     "nl": {
       "title": "Bear Kuusamo: ethisch beren kijken in Finland | LaplandActivities",
@@ -482,7 +482,7 @@
     },
     "es": {
       "title": "Categorías de actividades · LaplandActivities",
-      "description": "Explore actividades árticas por categoría: aventura, experiencias con animales, aurora boreal, deportes de invierno, bienestar, cultura, verano y gastronomía."
+      "description": "Explore actividades árticas por categoría: aventura, animales, aurora boreal, deportes de invierno, bienestar, cultura, verano y gastronomía."
     },
     "pt-BR": {
       "title": "Categorias de atividades · LaplandActivities",
@@ -582,11 +582,11 @@
     },
     "es": {
       "title": "Política de privacidad · LaplandActivities",
-      "description": "Cómo LaPeso Oy (LaplandActivities) trata los datos personales: suscripciones al boletín, analítica y cookies de afiliación. Conforme al RGPD y a la ePrivacy."
+      "description": "Cómo LaPeso Oy (LaplandActivities) trata sus datos: boletín, analítica y cookies de afiliación. Conforme al RGPD y la ePrivacy."
     },
     "pt-BR": {
       "title": "Política de privacidade · LaplandActivities",
-      "description": "Como a LaPeso Oy (LaplandActivities) trata os dados pessoais: inscrições na newsletter, análise de uso e cookies de afiliação. Em conformidade com GDPR e ePrivacy."
+      "description": "Como a LaPeso Oy (LaplandActivities) trata seus dados: newsletter, análise de uso e cookies de afiliação. Conforme GDPR e ePrivacy."
     },
     "zh-CN": {
       "title": "隐私政策 · LaplandActivities",
@@ -598,7 +598,7 @@
     },
     "fr": {
       "title": "Politique de confidentialité · LaplandActivities",
-      "description": "Comment LaPeso Oy (LaplandActivities) traite les données personnelles : inscriptions à la newsletter, mesure d'audience et cookies d'affiliation. RGPD et ePrivacy."
+      "description": "Comment LaPeso Oy (LaplandActivities) traite vos données : inscriptions newsletter, mesure d'audience et cookies d'affiliation. RGPD et ePrivacy."
     },
     "it": {
       "title": "Informativa sulla privacy · LaplandActivities",
@@ -632,11 +632,11 @@
     },
     "es": {
       "title": "Condiciones de uso · LaplandActivities",
-      "description": "Condiciones de uso de laplandactivities.fi: contenidos y licencias, aviso de enlaces de afiliación, responsabilidad y normas editoriales. Gestionado por LaPeso Oy."
+      "description": "Condiciones de uso de laplandactivities.fi: contenidos, licencias, enlaces de afiliación, responsabilidad y normas editoriales. Gestionado por LaPeso Oy."
     },
     "pt-BR": {
       "title": "Termos de uso · LaplandActivities",
-      "description": "Termos de uso do laplandactivities.fi: conteúdo e licenças, aviso de links de afiliação, responsabilidade e padrões editoriais. Operado pela LaPeso Oy, Finlândia."
+      "description": "Termos de uso do laplandactivities.fi: conteúdo, licenças, afiliação, responsabilidade e padrões editoriais. Operado pela LaPeso Oy, Finlândia."
     },
     "zh-CN": {
       "title": "使用条款 · LaplandActivities",
@@ -648,7 +648,7 @@
     },
     "fr": {
       "title": "Conditions d'utilisation · LaplandActivities",
-      "description": "Conditions d'utilisation de laplandactivities.fi : contenus et licences, mention d'affiliation, responsabilité et règles éditoriales."
+      "description": "Conditions d'utilisation de laplandactivities.fi : contenus, licences, affiliation, responsabilité et règles éditoriales. Exploité par LaPeso Oy."
     },
     "it": {
       "title": "Condizioni d'uso · LaplandActivities",
@@ -656,7 +656,7 @@
     },
     "nl": {
       "title": "Gebruiksvoorwaarden · LaplandActivities",
-      "description": "Gebruiksvoorwaarden van laplandactivities.fi: inhoud en licenties, affiliatevermelding, aansprakelijkheid en redactionele normen. Beheerd door LaPeso Oy, Finland."
+      "description": "Gebruiksvoorwaarden van laplandactivities.fi: inhoud, licenties, affiliate-informatie, aansprakelijkheid en redactionele normen."
     },
     "sv": {
       "title": "Användarvillkor · LaplandActivities",
@@ -682,7 +682,7 @@
     },
     "es": {
       "title": "Política de cookies y consentimiento · LaplandActivities",
-      "description": "Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar su consentimiento. Declaración de cookies de LaPeso Oy conforme al RGPD y la ePrivacy."
+      "description": "Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar su consentimiento. Declaración de LaPeso Oy conforme al RGPD y la ePrivacy."
     },
     "pt-BR": {
       "title": "Política de cookies · LaplandActivities",
@@ -802,7 +802,7 @@
     },
     "it": {
       "title": "Esperienze con gli animali in Lapponia · LaplandActivities",
-      "description": "Slitta trainata dai husky, visite alle fattorie delle renne, avvistamento di orsi selvatici e orsi polari allo zoo di Ranua."
+      "description": "Slitta trainata dagli husky, visite alle fattorie delle renne, avvistamento di orsi selvatici e orsi polari allo zoo di Ranua."
     },
     "nl": {
       "title": "Dierenervaringen in Lapland · LaplandActivities",
@@ -998,7 +998,7 @@
     },
     "fr": {
       "title": "Culture et patrimoine en Laponie · LaplandActivities",
-      "description": "Musées sâmes, village du Père Noël, hôtels de glace, orpaillage, mine d'améthyste et le patrimoine fascinant de l'Arctique."
+      "description": "Musées samis, village du Père Noël, hôtels de glace, orpaillage, mine d'améthyste et le patrimoine fascinant de l'Arctique."
     },
     "it": {
       "title": "Cultura e patrimonio in Lapponia · LaplandActivities",
@@ -1177,7 +1177,7 @@
       "description": "Die Hauptstadt Lapplands und das Tor zu arktischen Abenteuern."
     },
     "ja": {
-      "title": "Rovaniemiのアクティビティとツアー · LaplandActivities",
+      "title": "ロヴァニエミのアクティビティとツアー · LaplandActivities",
       "description": "ラップランド地方の中心都市であり、北極圏アドベンチャーの玄関口。サンタクロース村があり、交通アクセスに優れ、冬も夏も豊富なアクティビティが楽しめます。"
     },
     "es": {
@@ -1227,7 +1227,7 @@
       "description": "Ein erstklassiges Skigebiet mit 44 Pisten und 230 km Langlaufloipen. Lebhaftes Après-Ski im Hullu Poro und ganzjährige Outdoor-Aktivitäten."
     },
     "ja": {
-      "title": "Leviのアクティビティとツアー · LaplandActivities",
+      "title": "レヴィのアクティビティとツアー · LaplandActivities",
       "description": "44本のコースと230kmのクロスカントリーコースを誇る一流のスキーリゾート。フッル・ポロの活気あるアフタースキーと、一年を通じたアウトドアアクティビティ。"
     },
     "es": {
@@ -1277,7 +1277,7 @@
       "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km."
     },
     "ja": {
-      "title": "Ylläsのアクティビティとツアー · LaplandActivities",
+      "title": "ユッラスのアクティビティとツアー · LaplandActivities",
       "description": "ユッラス・フェルの両側に位置する2つのスキーリゾートが、最長3kmというフィンランド屈指の滑走を提供します。Pallas-Yllästunturi国立公園とともに、より静かで本物のラップランド体験を。"
     },
     "es": {
@@ -1327,7 +1327,7 @@
       "description": "Das nördlichste Skigebiet Finnlands, am Rand eines der größten Wildnisgebiete Europas."
     },
     "ja": {
-      "title": "Saariselkäのアクティビティとツアー · LaplandActivities",
+      "title": "サーリセルカのアクティビティとツアー · LaplandActivities",
       "description": "フィンランド最北のスキーリゾートで、ヨーロッパ最大級の原生自然に隣接しています。オーロラ観察、砂金採り、そして伝説的なキーロパーのスモークサウナで知られています。"
     },
     "es": {
@@ -1377,7 +1377,7 @@
       "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami. Hier finden Sie das Siida-Museum und unberührte Natur."
     },
     "ja": {
-      "title": "Inariのアクティビティとツアー · LaplandActivities",
+      "title": "イナリのアクティビティとツアー · LaplandActivities",
       "description": "3,000を超える島々を抱えるイナリ湖のほとりにあり、フィンランドのサーミの人々の文化的中心地です。Siida博物館と手つかずの自然があります。"
     },
     "es": {
@@ -1398,7 +1398,7 @@
     },
     "fr": {
       "title": "Inari: activités et excursions · LaplandActivities",
-      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sâme finlandais. On y trouve le musée Siida et une nature préservée."
+      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sami finlandais. On y trouve le musée Siida et une nature préservée."
     },
     "it": {
       "title": "Inari: attività ed escursioni · LaplandActivities",
@@ -1427,7 +1427,7 @@
       "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands."
     },
     "ja": {
-      "title": "RukaとKuusamoのアクティビティとツアー · LaplandActivities",
+      "title": "ルカ・クーサモのアクティビティとツアー · LaplandActivities",
       "description": "伝説的なクマの道カルフンキエッロス、オウランカ国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。Rukaはラップランドのすぐ南のKuusamoに位置し、同じ雪と同じ北国の冬が楽しめます。"
     },
     "es": {
@@ -1477,7 +1477,7 @@
       "description": "Berühmt für die spektakulären schneegekrönten Bäume des Nationalparks Riisitunturi und die gefrorenen Wasserfälle des Korouoma-Canyons."
     },
     "ja": {
-      "title": "Posioのアクティビティとツアー · LaplandActivities",
+      "title": "ポシオのアクティビティとツアー · LaplandActivities",
       "description": "リーシトゥントゥリ国立公園の壮観な樹氷と、コロウオマ渓谷の氷瀑で有名です。人里離れた、純粋な原生自然。"
     },
     "es": {
@@ -1527,7 +1527,7 @@
       "description": "Die Grenzstadt zwischen Finnland und Schweden, das Tor zu einzigartigen arktischen Erlebnissen."
     },
     "ja": {
-      "title": "Tornio・Haparanda・Kemiのアクティビティとツアー · LaplandActivities",
+      "title": "トルニオ・ハパランダ・ケミのアクティビティとツアー · LaplandActivities",
       "description": "フィンランドとスウェーデンの国境の街で、唯一無二の北極圏体験への入口。伝説的な砕氷船Sampoでのクルーズ、SnowCastleウィンターパーク、そしてヨーロッパ最大の自然のまま流れるサーモンの川があります。"
     },
     "es": {

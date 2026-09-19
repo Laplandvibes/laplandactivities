@@ -1,6 +1,7 @@
 import { Hotel, ArrowRight } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
 import SmartImage from './SmartImage';
+import PhotoCredit from './PhotoCredit';
 import { HERO, MKT } from '../data/images';
 import { useLang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
@@ -93,6 +94,7 @@ export default function HotelsStrip() {
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
+                <PhotoCredit src={m.src} links={false} className="!bottom-auto !top-2" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{m.label ?? partnerLabel}</p>
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>

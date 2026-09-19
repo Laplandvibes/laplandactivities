@@ -17,6 +17,7 @@ import { categories } from '../data/categories';
 import { destinations } from '../data/destinations';
 import { activities, getFeaturedActivities, getActivitiesByCategory, getActivitiesByDestination } from '../data/activities';
 import { imageForActivity, imageForCategory, imageForDestination, assignActivityImages, focalFor } from '../data/images';
+import PhotoCredit from '../components/PhotoCredit';
 import { gygSlugForCategory, hotelsQueryForDestination } from '../data/affiliate';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
@@ -57,7 +58,7 @@ const HOME_DESC: Record<Lang, string> = {
   fr: 'Safaris en traîneau de huskies, balades en traîneau de rennes, safaris en motoneige, chasses aux aurores et randonnées d\'été en Laponie finlandaise.',
   it: 'Giri in husky, slitte trainate da renne, safari in motoslitta, caccia all\'aurora ed escursioni estive nella Lapponia finlandese.',
   nl: 'Husky-tochten, rendiersleeën, sneeuwscootersafari\'s, noorderlichtjachten en zomerwandelingen in Fins Lapland.',
-  sv: 'Huskyturer, renslädar, snöskotersafarin, norrskensjakter och sommarvandringar i finska Lappland.',
+  sv: 'Huskyturer, renslädar, snöskotersafarier, norrskensjakter och sommarvandringar i finska Lappland.',
 };
 
 const SEASON_ICONS = [Snowflake, Trees, Sun, Leaf];
@@ -152,15 +153,9 @@ export default function Home() {
 
       <Hero />
 
-
-
-
-      {/* PÄÄKUMPPANI-banneri heti heron alla — sivun paras mainospaikka,
-          tyhjänä kompakti house-ad → LV Media -portaali */}
-      <MainPartnerBanner config={AD_SLOTS} locale={lang} className="bg-deep-night" />
-
-      <SummerBand />
-
+      {/* Heron alle se mitä lukija tuli hakemaan: kategoriat kuvakortteina.
+          Ei mainosta eikä talon omaa puhetta ensimmäiseksi (Vesa 18.9.2026
+          etusivusääntö, 19.9. tälle sivustolle: "heti action"). */}
       {/* CATEGORIES bento */}
       <section id="categories" className="py-16 sm:py-24 px-4 bg-deep-night">
         <div className="max-w-7xl mx-auto">
@@ -191,8 +186,9 @@ export default function Home() {
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }}
                     loading="lazy"
-                   decoding="async" width="1920" height="1080" fetchPriority="high"/>
+                    decoding="async" width="1920" height="1080"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
+                  <PhotoCredit src={imageForCategory(cat.slug)} links={false} className="!bottom-auto !top-2" />
                   <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
@@ -211,10 +207,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Kumppaniosio ylhäällä (LV Media): kakkospääkumppani + 6 premium-
-          paikkaa — pääkumppanit eivät näy vierekkäin (banneri heron alla ↑) */}
-      <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
 
       {/* Varattavat GYG-tuotteet — korkealla sivulla mutta myytyjen mainospaikkojen ALAPUOLELLA.
           Vain YKSI varaustuoteosio etusivulla (Vesa 2026-08-03: kaksi samanlaista
@@ -243,6 +235,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <SummerBand />
 
       <section id="seasons" className="py-16 sm:py-24 px-4 aurora-bg relative overflow-hidden border-y border-white/5">
         <div className="absolute inset-0 shimmer pointer-events-none" />
@@ -295,6 +289,7 @@ export default function Home() {
               >
                 <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
+                <PhotoCredit src={imageForDestination(dest.slug)} links={false} className="!bottom-auto !top-2" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                   <h3 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-arctic-cyan text-xs font-medium mt-0.5">{dest.tagline}</p>
@@ -319,6 +314,7 @@ export default function Home() {
               >
                 <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/30 to-transparent" />
+                <PhotoCredit src={imageForDestination(dest.slug)} links={false} className="!bottom-auto !top-2" />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
                   <h3 className="font-heading text-base sm:text-lg text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-snow/75 text-[10px] line-clamp-1">{dest.tagline}</p>
@@ -329,6 +325,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Kumppanikortit (Bear Kuusamo) sisällön jälkeen, ei ennen sitä. */}
+      <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
 
       <HotelsStrip />
 
@@ -442,6 +441,10 @@ export default function Home() {
         </div>
       </section>
 
+
+      {/* Yksi myyntikyltti koko sivulla (verkostosääntö 4.9.2026), ja se on
+          sivun lopussa, ei heron alla (Vesa 19.9.2026). */}
+      <MainPartnerBanner config={AD_SLOTS} locale={lang} houseAdTone="subtle" className="bg-deep-night border-t border-white/5" />
 
       <Newsletter />
 

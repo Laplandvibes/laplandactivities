@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Vid stränderna av Enare träsk med över 3 000 öar ligger den finska samekulturens huvudstad. Här finns Siida-museet och orörd vildmark.",
       "access": "Flyg till Ivalo (40 minuters bilfärd)",
       "bestFor": "Kulturintresserade och fotografer",
-      "why": "Inari är säte för Finlands sameting och den bästa platsen att möta levande samisk kultur: börja på Siida-museet och ta på sommaren en båttur på Enare träsk förbi den heliga ön Ukonsaari. Byn är liten och vildmarken runtomkring enorm; till Pielpajärvi ödemarkskyrka vandrar man genom gammal tallskog. Inari belönar den som kommer för kultur, fotografering och tystnad."
+      "why": "Inari är säte för Sametinget i Finland och den bästa platsen att möta levande samisk kultur: börja på Siida-museet och ta på sommaren en båttur på Enare träsk förbi den heliga ön Ukonsaari. Byn är liten och vildmarken runtomkring enorm; till Pielpajärvi ödemarkskyrka vandrar man genom gammal tallskog. Inari belönar den som kommer för kultur, fotografering och tystnad."
     },
     "ruka": {
       "name": "Ruka och Kuusamo",

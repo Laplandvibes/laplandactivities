@@ -44,7 +44,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
   },
   fi: {
     eyebrow: 'Talvikausi: varattavissa nyt',
-    h2: 'Lappi talvella on sitä aitoa.',
+    h2: 'Lappi on talvella taianomaisimmillaan.',
     lead: 'Lumi asettuu marraskuussa ja kaamos tuo voimakkaimmat revontulet. Husky- ja moottorikelkkasafarit, porokyydit ja savusaunat pyörivät koko kauden. Joulun ja helmi–maaliskuun huiput varataan ensimmäisinä.',
     bookCta: 'Varaa talviaktiviteetti',
     browseCta: 'Selaa talviopasta',
@@ -120,7 +120,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageH3: 'O Ártico no seu auge mágico',
     highlights: [
       { title: 'Trenó de huskies', body: 'Conduza sua própria matilha pela floresta nevada e silenciosa.' },
-      { title: 'Safáris de moto de neve', body: 'Lagos congelados e trilhas de fjäll, do leve à expedição de dia inteiro.' },
+      { title: 'Safáris de moto de neve', body: 'Lagos congelados e trilhas nos montes, do passeio leve à expedição de dia inteiro.' },
       { title: 'Caça à aurora', body: 'Passeios de céu escuro com guias que leem a previsão para você.' },
       { title: 'Pesca no gelo e sauna', body: 'Fure o gelo e depois se aqueça numa sauna de fumaça de verdade.' },
     ],

@@ -707,7 +707,7 @@ const d: LangData = {
     },
     "ina-lake-cruise": {
       "title": "Veneristeily Inarijärvellä",
-      "description": "Pursehdi Suomen kolmanneksi suurimmalla järvellä, jossa on yli 3 000 saarta. Risteile pyhän Ukonsaaren ohi ja nauti upeista arktisista maisemista.",
+      "description": "Purjehdi Suomen kolmanneksi suurimmalla järvellä, jossa on yli 3 000 saarta. Risteile pyhän Ukonsaaren ohi ja nauti upeista arktisista maisemista.",
       "highlights": [
         "3 000 saarta",
         "Ukonsaaren näkymät",
@@ -911,11 +911,11 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Sampo-jäänmurtajaristeily",
-      "description": "Pursehdi jäätyneen Itämeren halki aidolla jäänmurtajalla ja kellu sitten jäätyneessä meressä pelastuspuvussa. Bucket list -tason arktinen elämys.",
+      "description": "Purjehdi jäätyneen Itämeren halki aidolla jäänmurtajalla ja kellu sitten jäätyneessä meressä pelastuspuvussa. Kerran elämässä koettava arktinen elämys.",
       "highlights": [
         "Aito jäänmurtaja",
         "Merikellunta",
-        "Bucket list"
+        "Kerran elämässä"
       ],
       "duration": "4 h",
       "difficulty": "Helppo",

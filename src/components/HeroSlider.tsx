@@ -2,9 +2,12 @@ import { useEffect, useState } from 'react';
 import SmartImage from './SmartImage';
 import { HERO, focalFor } from '../data/images';
 import { currentSeasonBucket } from '../i18n/seasonWords';
+import PhotoCredit from './PhotoCredit';
 
 /**
- * Auto-rotating hero slider — brand-clean cinematic images cycling every 6 s.
+ * Auto-rotating hero slider — real photographs cycling every 6 s (19.9.2026: AI frames
+ * replaced by Wikimedia Commons photos of the actual places + one own Ruka photo; credits
+ * in data/photoCredits.ts, shown bottom-right via <PhotoCredit />).
  * Pure CSS cross-fade, no animation libraries (LV brand rule). The ordering is
  * season-aware (owner finding #3): in summer the midnight-sun frames lead; in
  * winter the aurora/snow frames lead — so the first frame a visitor sees matches
@@ -18,23 +21,18 @@ interface Slide {
   season: 'summer' | 'winter' | 'any';
 }
 
-const SUMMER_LED: Slide[] = [
-  { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Hikers on a Lapland fjell ridge under the midnight sun', fallback: HERO.snowyForest, season: 'summer' },
-  { src: '/images/heroes/slider-07-kayak-lake.webp', alt: 'Kayaker on a glassy Lapland lake at midnight sun', fallback: HERO.snowyForest, season: 'summer' },
-  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer in front of a Sámi lavvu at dusk', fallback: HERO.campfire, season: 'any' },
-  { src: '/images/heroes/slider-02-snowmobile-fells.webp', alt: 'Snowmobile rider crossing a snowy fjell ridge at golden hour', fallback: HERO.huskySnowmobile, season: 'winter' },
-  { src: '/images/heroes/slider-01-husky-aurora.webp', alt: 'Husky team running across a frozen lake under aurora', fallback: HERO.huskyAurora, season: 'winter' },
-  { src: '/images/heroes/slider-04-glass-igloo.webp', alt: 'Glass igloos and a smoke sauna by a frozen lake at twilight', fallback: HERO.glassIgloo, season: 'winter' },
-];
+const S = {
+  husky:     { src: '/images/heroes/slider-01-husky-aurora.webp', alt: 'Husky team on a snowy forest trail at Saija, Salla', fallback: HERO.huskyAurora, season: 'winter' as const },
+  snowmobile:{ src: '/images/heroes/slider-02-snowmobile-fells.webp', alt: 'Snowmobile on frozen Lake Inari', fallback: HERO.huskySnowmobile, season: 'winter' as const },
+  ruka:      { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Summer view over the fells from Rukatunturi, Kuusamo', fallback: HERO.snowyForest, season: 'summer' as const },
+  igloo:     { src: '/images/heroes/slider-04-glass-igloo.webp', alt: 'Aurora cabins with glass roofs in Inari', fallback: HERO.glassIgloo, season: 'winter' as const },
+  reindeer:  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer sled in a snowy forest on Hietaliete island, Kemi', fallback: HERO.campfire, season: 'any' as const },
+  kayak:     { src: '/images/heroes/slider-07-kayak-lake.webp', alt: 'Kuuva channel on Lake Inari in summer', fallback: HERO.snowyForest, season: 'summer' as const },
+  aurora:    { src: '/images/activities/northern-lights/aurora-lake.webp', alt: 'Green northern lights over Levi fell, Kittilä', fallback: HERO.huskyAurora, season: 'winter' as const },
+};
 
-const WINTER_LED: Slide[] = [
-  { src: '/images/heroes/slider-01-husky-aurora.webp', alt: 'Husky team running across a frozen lake under aurora', fallback: HERO.huskyAurora, season: 'winter' },
-  { src: '/images/heroes/slider-02-snowmobile-fells.webp', alt: 'Snowmobile rider crossing a snowy fjell ridge at golden hour', fallback: HERO.huskySnowmobile, season: 'winter' },
-  { src: '/images/heroes/slider-06-snowmobile-aurora-couple.webp', alt: 'Two snowmobile riders watching the aurora together', fallback: HERO.huskyAurora, season: 'winter' },
-  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer in front of a Sámi lavvu at dusk', fallback: HERO.campfire, season: 'any' },
-  { src: '/images/heroes/slider-04-glass-igloo.webp', alt: 'Glass igloos and a smoke sauna by a frozen lake at twilight', fallback: HERO.glassIgloo, season: 'winter' },
-  { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Hikers on a Lapland fjell ridge under the midnight sun', fallback: HERO.snowyForest, season: 'summer' },
-];
+const SUMMER_LED: Slide[] = [S.ruka, S.kayak, S.reindeer, S.snowmobile, S.husky, S.igloo];
+const WINTER_LED: Slide[] = [S.husky, S.snowmobile, S.aurora, S.reindeer, S.igloo, S.ruka];
 
 const slides: Slide[] = currentSeasonBucket() === 'summer' ? SUMMER_LED : WINTER_LED;
 
@@ -70,6 +68,8 @@ export default function HeroSlider() {
           />
         </div>
       ))}
+
+      <PhotoCredit src={slides[idx].src} className="!bottom-3 !right-3" />
 
       {/* indicator dots */}
       <div className="absolute bottom-24 sm:bottom-28 left-1/2 -translate-x-1/2 flex gap-2 z-10">

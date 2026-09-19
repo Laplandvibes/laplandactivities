@@ -31,6 +31,12 @@ export type SectionCopy = {
     auroraToursDesc: string;
     allCategories: string;
     allCategoriesDesc: string;
+    huskyReindeer: string;
+    huskyReindeerDesc: string;
+    snowmobileTours: string;
+    snowmobileToursDesc: string;
+    summerAdventures: string;
+    summerAdventuresDesc: string;
     scrollAria: string;
   };
   summerBand: {
@@ -200,16 +206,22 @@ export type SectionCopy = {
     metaDescription: string;
     eyebrow: string;
     h1: string;
-    para1: string;
-    para2: string;
-    pillars: { title: string; text: string }[];
-    affiliateH2: string;
-    affiliateBody1: string;
-    affiliateBody2: string;
-    termsLink: string;
+    lead: string;
+    whoH2: string;
+    whoBody: string;
+    howH2: string;
+    howItems: string[];
+    earnH2: string;
+    earnBody: string;
+    notH2: string;
+    notItems: string[];
+    factsH2: string;
+    facts: { label: string; value: string }[];
     contactH2: string;
-    contactBody1: string;
-    contactBody2: string;
+    contactBody: string;
+    termsLead: string;
+    termsLink: string;
+    termsAfter: string;
     backHome: string;
   };
   fishing: {

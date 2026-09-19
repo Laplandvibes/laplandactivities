@@ -1,14 +1,16 @@
-import { ChevronDown, Sparkles, Hotel, Car } from 'lucide-react';
+import { ChevronDown, Sparkles, Dog, Sun, Snowflake } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import AffiliateCTA from './AffiliateCTA';
 import HeroSlider from './HeroSlider';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
+import { currentSeasonBucket } from '../i18n/seasonWords';
 
 export default function Hero() {
   const lang = useLang();
   const to = useLocalePath();
   const c = COPY[lang].hero;
+  const summer = currentSeasonBucket() === 'summer';
 
   // Keep the hero height in `vh`. Tailwind v4 does NOT emit CSS for `svh`
   // arbitrary values here (min-h-[92svh] compiles to nothing at all), so the
@@ -53,37 +55,52 @@ export default function Hero() {
           </Link>
         </div>
 
+        {/* Pikakortit = aktiviteetteja, ei majoitusta eikä vuokra-autoa (Vesa 19.9.2026:
+            "miksi etusivun hero-osiossa lukee vuokraa auto? ei se ole varmaan se ykkösjuttu
+            kun tullaan aktiviteettisivulle"). Majoitus ja auto elävät HotelsStripissä ja
+            BookingCTA:ssa alempana. Kolmas kortti vaihtuu kauden mukaan. */}
         <div className="hidden sm:grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mb-12">
-          <AffiliateCTA
-            partner="hotels"
-            sid="hero_strip_hotels"
-            destination="Lapland, Finland"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors"
-          >
-            <Hotel className="w-4 h-4 text-vibe-pink mb-1" />
-            <p className="font-heading tracking-wide text-base">{c.stayNearby}</p>
-            <p className="text-snow/80 text-xs">{c.stayNearbyDesc}</p>
-          </AffiliateCTA>
-          <AffiliateCTA
-            partner="cars"
-            sid="hero_strip_cars"
-            destination="RVN"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors"
-          >
-            <Car className="w-4 h-4 text-vibe-pink mb-1" />
-            <p className="font-heading tracking-wide text-base">{c.rentCar}</p>
-            <p className="text-snow/80 text-xs">{c.rentCarDesc}</p>
-          </AffiliateCTA>
           <AffiliateCTA
             partner="activities-search"
             sid="hero_strip_aurora"
             destination="northern lights lapland"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors col-span-2 sm:col-span-1"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors"
           >
             <Sparkles className="w-4 h-4 text-vibe-pink mb-1" />
             <p className="font-heading tracking-wide text-base">{c.auroraTours}</p>
             <p className="text-snow/80 text-xs">{c.auroraToursDesc}</p>
           </AffiliateCTA>
+          <AffiliateCTA
+            partner="activities-search"
+            sid="hero_strip_husky_reindeer"
+            destination="husky reindeer lapland"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors"
+          >
+            <Dog className="w-4 h-4 text-vibe-pink mb-1" />
+            <p className="font-heading tracking-wide text-base">{c.huskyReindeer}</p>
+            <p className="text-snow/80 text-xs">{c.huskyReindeerDesc}</p>
+          </AffiliateCTA>
+          {summer ? (
+            <Link
+              to={to('/categories/summer')}
+              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors col-span-2 sm:col-span-1"
+            >
+              <Sun className="w-4 h-4 text-vibe-pink mb-1" />
+              <p className="font-heading tracking-wide text-base">{c.summerAdventures}</p>
+              <p className="text-snow/80 text-xs">{c.summerAdventuresDesc}</p>
+            </Link>
+          ) : (
+            <AffiliateCTA
+              partner="activities-search"
+              sid="hero_strip_snowmobile"
+              destination="snowmobile safari lapland"
+              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors col-span-2 sm:col-span-1"
+            >
+              <Snowflake className="w-4 h-4 text-vibe-pink mb-1" />
+              <p className="font-heading tracking-wide text-base">{c.snowmobileTours}</p>
+              <p className="text-snow/80 text-xs">{c.snowmobileToursDesc}</p>
+            </AffiliateCTA>
+          )}
           <Link
             to={to('/categories')}
             className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors col-span-2 sm:col-span-1"

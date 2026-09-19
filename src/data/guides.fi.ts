@@ -50,7 +50,7 @@ const guides: Guides = {
     },
     ruka: {
       seasonsTitle: 'Ruka kausi kerrallaan',
-      seasonWinter: 'Säilölumen ansiosta Ruka avaa lokakuussa ja pysyy auki toukokuulle, Suomen pisin hiihtokausi, 41 rinteellä ja 22 hissillä. Kylä on suoraan rinteiden päällä, joten matka sängystä hissille on lyhyt. Rinteiden ulkopuolella on kelkkasafareita, huskyretkiä ja jääkiipeilyä Korouoman jäätyneillä putouksilla.',
+      seasonWinter: 'Säilölumi antaa Rukan aueta lokakuussa ja pysyä auki toukokuulle, Suomen pisin hiihtokausi, 41 rinteellä ja 22 hissillä. Kylä on suoraan rinteiden päällä, joten matka sängystä hissille on lyhyt. Rinteiden ulkopuolella on kelkkasafareita, huskyretkiä ja jääkiipeilyä Korouoman jäätyneillä putouksilla.',
       seasonSummer: 'Kesä kääntää kohteen täysin. Karhunkatselu kojuista pyörii valoisat kuukaudet, Kitkajoki kantaa koskenlaskuretkiä keväästä syksyyn, ja 82 kilometrin Karhunkierros Oulangan kansallispuistossa on maan tunnetuimpia vaelluksia. Bike park palvelee niitä, jotka haluavat laskun ilman lunta.',
       planTitle: 'Rukan matkan suunnittelu',
       planGetting: 'Kuusamon lentoasemalta on noin 25 minuuttia. Ruka sijaitsee Kuusamossa aivan virallisen Lapin rajan eteläpuolella, samassa lumessa ja samassa pohjoisessa talvessa. Auto kannattaa olla Oulankaa, Korouomaa ja karhukojuja varten, sillä ne kaikki ovat kylän ulkopuolella.',

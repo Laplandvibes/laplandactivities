@@ -2,7 +2,7 @@ import type { SectionCopy } from './types'
 
 const nl: SectionCopy = {
   fishing: {
-    metaTitle: "Vissen in Lapland en de Noordelijke IJszee | LaplandActivities",
+    metaTitle: "IJsvissen en zalmvissen in Fins Lapland | LaplandActivities",
     metaDescription: "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026 die u nodig hebt voordat u uitwerpt.",
     verifyBanner: "De regels veranderen elk jaar. Controleer de officiële vergunningsvoorwaarden voordat u gaat vissen. Elk cijfer hieronder noemt en linkt naar zijn bron.",
     hero: {
@@ -247,6 +247,12 @@ const nl: SectionCopy = {
     rentCar: 'Auto huren', rentCarDesc: 'Vanaf luchthaven Rovaniemi',
     auroraTours: 'Noorderlicht-tours', auroraToursDesc: 'Zorgvuldig gekozen aanbieders',
     allCategories: 'Alle categorieën', allCategoriesDesc: '9 manieren om het Noordpoolgebied te beleven',
+    huskyReindeer: "Husky en rendier",
+    huskyReindeerDesc: "Sleetochten en boerderijbezoek",
+    snowmobileTours: "Sneeuwscootersafari's",
+    snowmobileToursDesc: "Safari's met gids",
+    summerAdventures: "Zomeravonturen",
+    summerAdventuresDesc: "Wandelingen, rivieren, middernachtzon",
     scrollAria: 'Scroll naar categorieën',
   },
   summerBand: {
@@ -369,7 +375,7 @@ const nl: SectionCopy = {
   categoryPage: {
     notFoundH1: 'Categorie niet gevonden', backCategories: '← Terug naar categorieën',
     allCategoriesNav: 'Alle categorieën', bookToursPrefix: 'Boek',
-    activitiesCount: (n, name) => `${n} ${name.toLowerCase()}-activiteiten`,
+    activitiesCount: (n, name) => `${name}: ${n} activiteiten`,
     comingSoon: 'Activiteiten voor deze categorie komen binnenkort.',
     gygTitlePrefix: 'Meest geboekt:', gygEyebrow: 'Zorgvuldig gekozen aanbieders',
     browseOthers: 'Bekijk andere categorieën', allCategoriesLink: 'Alle categorieën →',
@@ -452,23 +458,41 @@ const nl: SectionCopy = {
     },
   },
   about: {
-    metaTitle: 'Over ons · LaplandActivities',
-    metaDescription: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, zorgvuldig gekozen arctische ervaringen in tien bestemmingen in en rond Fins Lapland.',
-    eyebrow: 'Over ons', h1: 'Een activiteitengids voor Fins Lapland',
-    para1: 'LaplandActivities is de activiteiten-hub van het #LaplandVibes-ecosysteem, een netwerk van onafhankelijke gidsen over accommodatie, eten, natuur, transport en tours in Fins Lapland.',
-    para2: 'De site verwijst reizigers naar zorgvuldig gekozen lokale aanbieders in tien bestemmingen, van sneeuwscooter-safari\'s in Saariselkä tot zalmvissen op de Tornionjoki. Elke boeking loopt via GetYourGuide, dus u krijgt directe bevestiging en bij de meeste tours gratis annulering tot 24 uur van tevoren.',
-    pillars: [
-      { title: 'Echte aanbieders', text: 'We tonen gevestigde lokale aanbieders; elke boeking loopt via GetYourGuide.' },
-      { title: 'Authentieke ervaringen', text: 'Elke activiteit is gekozen vanwege het soort detail dat u niet kunt verzinnen.' },
-      { title: 'Veilig en betrouwbaar', text: 'Activiteitenaanbieders in Finland vallen onder de consumentenveiligheidswet en staan onder toezicht van Tukes, de Finse veiligheidsautoriteit.' },
-      { title: '#LaplandVibes-netwerk', text: 'Onderdeel van een Fins Lapland-netwerk van 25+ sites, uw complete reisplanning-toolkit.' },
+    metaTitle: "Over LaplandActivities: wie wij zijn en hoe wij kiezen",
+    metaDescription: "LaplandActivities wordt beheerd door het Finse LaPeso Oy. Wij tonen tours in Lapland die wij zelf zouden boeken, linken naar de aanbieder of GetYourGuide en ontvangen commissie op boekingen.",
+    eyebrow: "Over ons",
+    h1: "Wie er achter LaplandActivities zit",
+    lead: "Een Finse gids voor tours in Lapland, geschreven en bijgehouden door hetzelfde kleine team dat de andere #LaplandVibes-sites beheert.",
+    whoH2: "Wie wij zijn",
+    whoBody: "LaplandActivities wordt uitgegeven door LaPeso Oy, een Fins bedrijf opgericht door Vesa Pesola. Wij rijden zelf de routes waarover wij schrijven en fotograferen de plekken waar mogelijk met onze eigen camera: de zomerfoto's op deze site komen van de rondreis in juli 2026 van Ruka naar Tornio. De site hoort bij het #LaplandVibes-netwerk, waarin elke site één onderwerp uitdiept. Deze gaat over wat u in Lapland kunt doen.",
+    howH2: "Hoe een activiteit op deze site komt",
+    howItems: [
+      "Zij bestaat als echt, boekbaar product van een met naam genoemde aanbieder, of als vrij toegankelijke plek zoals een nationaal park.",
+      "Wij controleren seizoen, duur en wat is inbegrepen op de pagina van de aanbieder of GetYourGuide voordat wij haar opnemen.",
+      "Wij tonen niets wat wij niet in eigen woorden kunnen beschrijven.",
+      "Prijzen staan hier niet omdat zij veranderen; de actuele prijs verschijnt vóór het boeken.",
     ],
-    affiliateH2: 'Affiliate-disclosure',
-    affiliateBody1: 'LaplandActivities verdient een commissie wanneer u boekt via partnerlinks, Trip.com, GetYourGuide, EconomyBookings, EKTA. Dit kost u niets extra en houdt de site gratis. Aanbevelingen omvatten aanbieders en accommodaties die consistent leveren. Lees de volledige disclosure in onze',
-    affiliateBody2: '.',
-    termsLink: 'Gebruiksvoorwaarden', contactH2: 'Contact',
-    contactBody1: 'Mail naar ', contactBody2: ', voor partnerships:',
-    backHome: '← Terug naar home',
+    earnH2: "Hoe wij geld verdienen",
+    earnBody: "Wanneer u via een link op deze site boekt, betaalt de partner (GetYourGuide, Sembo, Trip.com, EconomyBookings of EKTA) ons een commissie. U betaalt dezelfde prijs als op de site van de partner. Enkele partnerkaarten zijn betaalde plaatsingen en zijn als zodanig gemarkeerd. Commissie bepaalt nooit een aanbeveling: een activiteit die tegenvalt, wordt verwijderd.",
+    notH2: "Wat wij niet doen",
+    notItems: [
+      "Wij nemen zelf geen boekingen of betalingen aan; uw overeenkomst is met de aanbieder of het boekingsplatform.",
+      "Wij kunnen een boeking niet wijzigen, annuleren of terugbetalen. Neem contact op met het platform waar u hebt geboekt.",
+      "Wij verkopen uw e-mailadres niet. De nieuwsbrief is van ons en u meldt zich met één klik af.",
+    ],
+    factsH2: "Bedrijfsgegevens",
+    facts: [
+      { label: "Uitgever", value: "LaPeso Oy" },
+      { label: "Bedrijfsnummer (Y-tunnus)", value: "3309136-7" },
+      { label: "Land", value: "Finland" },
+      { label: "E-mail", value: "info@laplandvibes.com" },
+    ],
+    contactH2: "Contact",
+    contactBody: "Aanbieders, partners en lezers bereiken ons op hetzelfde adres. Wij lezen elk bericht en antwoorden in het Fins of Engels.",
+    termsLead: "De volledige toelichting op partnerlinks en onze redactionele uitgangspunten staan in onze",
+    termsLink: "gebruiksvoorwaarden",
+    termsAfter: ".",
+    backHome: "Terug naar home",
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland | LaplandActivities",
@@ -528,7 +552,7 @@ const nl: SectionCopy = {
   },
   terms: {
     metaTitle: 'Gebruiksvoorwaarden · LaplandActivities',
-    metaDescription: 'Gebruiksvoorwaarden van laplandactivities.fi: inhoud en licenties, affiliatevermelding, aansprakelijkheid en redactionele normen. Beheerd door LaPeso Oy, Finland.',
+    metaDescription: "Gebruiksvoorwaarden van laplandactivities.fi: inhoud, licenties, affiliate-informatie, aansprakelijkheid en redactionele normen.",
   },
   cookie: {
     metaTitle: 'Cookiebeleid · LaplandActivities',

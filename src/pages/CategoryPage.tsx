@@ -1,6 +1,5 @@
 import ProductRail from '../shared/ads/ProductRail'
-import haltiRail from '../shared/ads/rails/halti'
-import haltiPicks from '../shared/ads/data/haltiPicks'
+import { topicRailFor } from '../data/topicRails'
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { ArrowLeft, Sparkles, Snowflake, Sun } from 'lucide-react';
@@ -12,10 +11,10 @@ import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../shared/ads/AdUnit';
 import bearKuusamoAd from '../shared/ads/advertisers/bearkuusamo';
-import onnipyoraAd from '../shared/ads/advertisers/onnipyora';
 import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
+import PhotoCredit from '../components/PhotoCredit';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { categoryTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
@@ -52,6 +51,7 @@ export default function CategoryPage() {
   const gygSlug = gygSlugForCategory(slug || 'adventure');
   const gygQ = gygQForCategory(slug || 'adventure');
   const heroImg = imageForCategory(slug || '');
+  const topicRail = topicRailFor(slug || '', lang);
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
   const pageUrl = `https://laplandactivities.fi${to(`/categories/${slug}`)}`.replace(/\/?$/, '/');
 
@@ -102,9 +102,10 @@ export default function CategoryPage() {
 
       {/* HERO — same family as DestinationPage: icon badge above a full-size H1,
           not a small heading beside a floating icon box (Vesa 2026-07-07). */}
-      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
+      <section className="relative min-h-[42vh] md:min-h-[46vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
+        <PhotoCredit src={heroImg} className="!bottom-3 !right-3" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <category.icon className="w-7 h-7 text-vibe-pink" />
@@ -133,6 +134,57 @@ export default function CategoryPage() {
           </Link>
         </div>
       </div>
+
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          {acts.length === 0 ? (
+            <p className="text-snow/80">{c.comingSoon}</p>
+          ) : !splittable ? (
+            <>
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-8">{c.activitiesCount(acts.length, category.name)}</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                {ordered.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+              </div>
+            </>
+          ) : (
+            <>
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-10">{c.activitiesCount(acts.length, category.name)}</h2>
+              {inSeason.length > 0 && (
+                <div className="mb-12">
+                  <div className="flex items-center gap-2.5 mb-5">
+                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
+                      <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
+                    </span>
+                    <div>
+                      <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
+                      <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                    {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                  </div>
+                </div>
+              )}
+              {offSeason.length > 0 && (
+                <div>
+                  <div className="flex items-center gap-2.5 mb-5">
+                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
+                      <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
+                    </span>
+                    <div>
+                      <p className="text-arctic-cyan text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
+                      <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.alsoGreat(seasonOtherWord)}</h3>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                    {offSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                  </div>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      </section>
 
       {/* WHAT THIS COVERS + HOW TO CHOOSE — the category page's own editorial.
           Written per language in src/data/guides.<lang>.ts; the prerenderer
@@ -190,96 +242,27 @@ export default function CategoryPage() {
         </section>
       )}
 
-      {/* AFFILIATE (Onnipyörä) — Adtraction-komissiolinkki Workerin kautta,
-          ei maksettu paikka. Näkyy kategorioissa joissa on pyöräilysisältöä:
-          summer (Levi Bike Park) ja winter-sports (Fat Bike Tour). Speksissä
-          on VAIN fi-copy tarkoituksella — kauppa toimittaa ainoastaan Suomeen,
-          joten AdUnit renderöi tyhjää muilla 11 kielellä (dokumentoitu
-          käyttäytyminen, älä lisää en-fallbackia). */}
-      {(slug === 'summer' || slug === 'winter-sports') && (
-        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
-          <div className="max-w-7xl mx-auto">
-            <AdUnit
-              spec={onnipyoraAd}
-              sid={`${slug === 'summer' ? 'summer' : 'winter_sports'}_category_bike_gear`}
-              lang={lang}
-              variant="dark"
-              onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
-            />
-          </div>
-        </section>
-      )}
-
-      {/* AFFILIATE (Halti) — Adtraction-komissiolinkki Workerin kautta (Vesa
-          2026-08-03: "halti vaatteet jne adtractionista"). Talvivaatekulma sopii
-          kylmäsisältöihin: revontulet (pakkasyö ulkona) ja seikkailu (safarit).
-          Speksissä täysi 12 kielen copy. winter-sports jätetty Onnipyörälle —
-          yksi varustemainos per kategoriasivu. */}
-      {(slug === 'northern-lights' || slug === 'adventure') && (
+      {/* MAINOKSET SIVUN AIHEESTA KÄSIN (lv_permanent_rules §20, Vesa 14.9. + 19.9.2026).
+          Otsikko on lukijan tilanne tällä sivulla, ei tuotteen kuvaus; kuvat ovat
+          kumppanin omia tuotekuvia syötteestä; logo ja brändiväri tulevat mitatusta
+          partnerBrand-taulusta. Onnipyörä poistettu 19.9.: syötteessä on vain lasten-
+          pyöriä ja Jopoja, mutta mainos lupasi sähkömaastopyöriä ja fatbikeja, ja
+          Vesa: "aivan helvetin ruma ja yrityksen logot ja mitkään ei näy". Bear Kuusamo
+          (maksettu paikka) pysyy animals-sivulla, nyt ruudukon JÄLKEEN. */}
+      {topicRail && (
         <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
           <div className="max-w-7xl mx-auto">
             <ProductRail
-              partner={haltiRail}
-              snapshot={haltiPicks}
+              partner={topicRail.partner}
+              snapshot={topicRail.snapshot}
               lang={lang}
-              sid="`${slug === 'northern-lights' ? 'northern_lights' : 'adventure"
+              sid={topicRail.sid}
               variant="dark"
               onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
             />
           </div>
         </section>
       )}
-
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
-        <div className="max-w-7xl mx-auto">
-          {acts.length === 0 ? (
-            <p className="text-snow/80">{c.comingSoon}</p>
-          ) : !splittable ? (
-            <>
-              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-8">{c.activitiesCount(acts.length, category.name)}</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                {ordered.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
-              </div>
-            </>
-          ) : (
-            <>
-              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-10">{c.activitiesCount(acts.length, category.name)}</h2>
-              {inSeason.length > 0 && (
-                <div className="mb-12">
-                  <div className="flex items-center gap-2.5 mb-5">
-                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
-                      <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
-                    </span>
-                    <div>
-                      <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
-                      <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                    {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
-                  </div>
-                </div>
-              )}
-              {offSeason.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-2.5 mb-5">
-                    <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
-                      <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
-                    </span>
-                    <div>
-                      <p className="text-arctic-cyan text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
-                      <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.alsoGreat(seasonOtherWord)}</h3>
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                    {offSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
-                  </div>
-                </div>
-              )}
-            </>
-          )}
-        </div>
-      </section>
 
       <GetYourGuideWidget
         locationId="2652"

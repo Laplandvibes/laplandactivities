@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami. Hier finden Sie das Siida-Museum und unberührte Natur.",
       "access": "Flug nach Ivalo (40 Min. mit dem Auto)",
       "bestFor": "Kulturentdecker und Fotografen",
-      "why": "Inari ist Sitz des finnischen Sámi-Parlaments und der beste Ort, lebendige Sámi-Kultur zu erleben: erst das Siida-Museum, im Sommer dann eine Bootsfahrt über den Inarisee vorbei an der heiligen Insel Ukonsaari. Das Dorf ist klein, die Wildnis riesig; zur Wildniskirche von Pielpajärvi wandert man durch alten Kiefernwald. Ideal für Reisende, die wegen Kultur, Fotografie und Stille kommen."
+      "why": "Inari ist Sitz des finnischen Sami-Parlaments und der beste Ort, lebendige Sami-Kultur zu erleben: erst das Siida-Museum, im Sommer dann eine Bootsfahrt über den Inarisee vorbei an der heiligen Insel Ukonsaari. Das Dorf ist klein, die Wildnis riesig; zur Wildniskirche von Pielpajärvi wandert man durch alten Kiefernwald. Ideal für Reisende, die wegen Kultur, Fotografie und Stille kommen."
     },
     "ruka": {
       "name": "Ruka und Kuusamo",
@@ -359,7 +359,7 @@ const d: LangData = {
     },
     "lev-ski-resort": {
       "title": "Skigebiet Levi, 44 Pisten",
-      "description": "Das größte Skigebiet Finnlands mit 44 Pisten, 230 km Langlaufloipen und einem erstklassigen Snowpark. Nachtskifahren unter dem Nordlicht.",
+      "description": "Das größte Skigebiet Finnlands mit 44 Pisten, 26 Liften, 230 km Langlaufloipen und einem erstklassigen Snowpark. Nachtskifahren unter dem Nordlicht.",
       "highlights": [
         "44 Pisten",
         "Snowpark",
@@ -779,7 +779,7 @@ const d: LangData = {
     },
     "ruk-ski-resort": {
       "title": "Skigebiet Ruka",
-      "description": "41 Pisten, die längste Skisaison Finnlands (Oktober-Mai) und Langlaufloipen auf Weltcup-Niveau. Nachtskifahren verfügbar.",
+      "description": "41 Pisten und 22 Lifte, die längste Skisaison Finnlands (Oktober-Mai) und Langlaufloipen auf Weltcup-Niveau. Nachtskifahren verfügbar.",
       "highlights": [
         "41 Pisten",
         "Längste Saison",

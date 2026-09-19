@@ -2,8 +2,8 @@ import type { SectionCopy } from './types'
 
 const fr: SectionCopy = {
   fishing: {
-    metaTitle: 'Pêche en Laponie et dans l\'océan Arctique | LaplandActivities',
-    metaDescription: 'Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège, avec les règles 2026, les redevances et les liens officiels des permis à connaître avant de lancer.',
+    metaTitle: "Pêche en Laponie et en Arctique | LaplandActivities",
+    metaDescription: "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège : règles 2026 et permis officiels.",
     verifyBanner: 'La réglementation change chaque année : vérifiez les conditions officielles du permis avant de pêcher. Chaque chiffre ci-dessous cite et relie sa source.',
     hero: {
       eyebrow: 'Laponie finlandaise · Norvège arctique',
@@ -247,6 +247,12 @@ const fr: SectionCopy = {
     rentCar: 'Louer une voiture', rentCarDesc: 'Depuis l\'aéroport de Rovaniemi',
     auroraTours: 'Tours aurores', auroraToursDesc: 'Opérateurs choisis avec soin',
     allCategories: 'Toutes les catégories', allCategoriesDesc: '9 façons de vivre l\'Arctique',
+    huskyReindeer: "Huskies et rennes",
+    huskyReindeerDesc: "Balades en traîneau et fermes",
+    snowmobileTours: "Safaris en motoneige",
+    snowmobileToursDesc: "Safaris guidés",
+    summerAdventures: "Aventures d'été",
+    summerAdventuresDesc: "Randonnées, rivières, soleil de minuit",
     scrollAria: 'Faire défiler vers les catégories',
   },
   summerBand: {
@@ -303,7 +309,7 @@ const fr: SectionCopy = {
   activityCard: { findBook: 'Trouver et réserver', planVisit: 'Préparez votre visite' },
   home: {
     metaTitle: 'LaplandActivities : activités et tours en Laponie',
-    metaDescription: 'Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, etc. Réservez des activités dans 10 destinations en Laponie et alentours via GetYourGuide.',
+    metaDescription: "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée. Réservez dans 10 destinations en Laponie via GetYourGuide.",
     ogTitle: 'LaplandActivities : expériences arctiques choisies avec soin',
     categoriesKicker: 'Que faire', categoriesH2: 'Choisissez votre aventure',
     categoriesLead: '9 façons de vivre l\'Arctique, choisissez une catégorie et nous vous orientons vers des opérateurs choisis avec soin.',
@@ -338,7 +344,7 @@ const fr: SectionCopy = {
     items: [
       {
         q: 'Quelles activités peut-on faire en Laponie ?',
-        a: 'En hiver, les classiques sont les traîneaux à chiens et à rennes, les safaris en motoneige, les chasses aux aurores, les raquettes, le ski de fond et alpin, la pêche blanche et la flottaison en eau glacée. En été, la même nature se prête à la randonnée, au kayak et au canoë, au rafting, au VTT, à la pêche au saumon et à l’orpaillage. Toute l’année, le sauna à fumée et les expériences de culture sâme révèlent une facette plus calme de l’Arctique.',
+        a: 'En hiver, les classiques sont les traîneaux à chiens et à rennes, les safaris en motoneige, les chasses aux aurores, les raquettes, le ski de fond et alpin, la pêche blanche et la flottaison en eau glacée. En été, la même nature se prête à la randonnée, au kayak et au canoë, au rafting, au VTT, à la pêche au saumon et à l’orpaillage. Toute l’année, le sauna à fumée et les expériences de culture sami révèlent une facette plus calme de l’Arctique.',
       },
       {
         q: 'Quelles sont les meilleures activités d’hiver et d’été ?',
@@ -369,7 +375,7 @@ const fr: SectionCopy = {
   categoryPage: {
     notFoundH1: 'Catégorie introuvable', backCategories: '← Retour aux catégories',
     allCategoriesNav: 'Toutes les catégories', bookToursPrefix: 'Réserver',
-    activitiesCount: (n, name) => `${n} activités ${name.toLowerCase()}`,
+    activitiesCount: (n, name) => `${name} : ${n} activités`,
     comingSoon: 'Les activités pour cette catégorie arrivent bientôt.',
     gygTitlePrefix: 'Les plus réservées', gygEyebrow: 'Opérateurs choisis avec soin',
     browseOthers: 'Parcourir les autres catégories', allCategoriesLink: 'Toutes les catégories →',
@@ -419,7 +425,7 @@ const fr: SectionCopy = {
         { tip: 'Les cabanes sauvages du parc national d\'Urho Kekkonen sont gratuites, premier arrivé premier servi.', icon: '🏕️' },
       ],
       inari: [
-        { tip: 'Comptez au moins trois heures au musée Siida, lisez aussi l\'aile en langue sâme.', icon: '🏛️' },
+        { tip: 'Comptez au moins trois heures au musée Siida, lisez aussi l\'aile en langue sami.', icon: '🏛️' },
         { tip: 'Les croisières sur le lac Inari ne roulent que de juin à septembre.', icon: '⛵' },
         { tip: 'La saison des plaquebières culmine fin juillet sur le sentier Pielpajärvi.', icon: '🫐' },
       ],
@@ -452,27 +458,45 @@ const fr: SectionCopy = {
     },
   },
   about: {
-    metaTitle: 'À propos · LaplandActivities',
-    metaDescription: 'LaplandActivities est le pôle activités de l\'écosystème #LaplandVibes, expériences arctiques choisies avec soin dans dix destinations en Laponie finlandaise et alentours.',
-    eyebrow: 'À propos', h1: 'Un guide d\'activités en Laponie finlandaise',
-    para1: 'LaplandActivities est le pôle activités de l\'écosystème #LaplandVibes, un réseau de guides indépendants couvrant hébergement, gastronomie, nature, transport et tours en Laponie finlandaise.',
-    para2: 'Le site oriente les voyageurs vers des opérateurs locaux choisis avec soin dans dix destinations, des safaris en motoneige à Saariselkä à la pêche au saumon sur le Tornionjoki. Chaque réservation passe par GetYourGuide, vous obtenez donc une confirmation immédiate et l\'annulation gratuite jusqu\'à 24 h sur la plupart des tours.',
-    pillars: [
-      { title: 'Opérateurs réels', text: 'Nous présentons des opérateurs locaux établis ; chaque réservation passe par GetYourGuide.' },
-      { title: 'Expériences authentiques', text: 'Chaque activité est choisie pour le genre de détail qu\'on ne peut pas inventer.' },
-      { title: 'Sûr et de confiance', text: 'Les opérateurs d\'activités en Finlande relèvent de la loi sur la sécurité des consommateurs et sont supervisés par Tukes, l\'autorité finlandaise de sécurité.' },
-      { title: 'Réseau #LaplandVibes', text: 'Membre d\'un réseau de plus de 25 sites sur la Laponie finlandaise, votre boîte à outils complète.' },
+    metaTitle: "À propos de LaplandActivities : qui nous sommes",
+    metaDescription: "LaplandActivities est édité par la société finlandaise LaPeso Oy. Nous listons des excursions en Laponie que nous réserverions nous-mêmes, renvoyons vers l'opérateur ou GetYourGuide et touchons une commission.",
+    eyebrow: "À propos",
+    h1: "Qui se cache derrière LaplandActivities",
+    lead: "Un guide finlandais des excursions en Laponie, écrit et mis à jour par la même petite équipe qui anime les autres sites #LaplandVibes.",
+    whoH2: "Qui nous sommes",
+    whoBody: "LaplandActivities est publié par LaPeso Oy, une société finlandaise fondée par Vesa Pesola. Nous parcourons nous-mêmes les routes dont nous parlons et photographions les lieux avec notre propre appareil dès que possible : les photos d'été de ce site viennent du road trip de juillet 2026, de Ruka à Tornio. Le site fait partie du réseau #LaplandVibes, où chaque site approfondit un sujet. Celui-ci répond à la question : que faire en Laponie.",
+    howH2: "Comment une activité arrive sur ce site",
+    howItems: [
+      "Elle existe comme produit réel et réservable chez un opérateur nommé, ou comme lieu public gratuit, par exemple un parc national.",
+      "Nous vérifions la saison, la durée et le contenu sur la page de l'opérateur ou de GetYourGuide avant de la publier.",
+      "Nous ne publions rien que nous ne puissions décrire avec nos propres mots.",
+      "Les prix ne figurent pas ici parce qu'ils changent ; le prix à jour s'affiche avant la réservation.",
     ],
-    affiliateH2: 'Divulgation d\'affiliation',
-    affiliateBody1: 'LaplandActivities perçoit une commission sur les réservations via des liens partenaires, Trip.com, GetYourGuide, EconomyBookings, EKTA. Cela ne vous coûte rien de plus et permet de garder le site gratuit. Les recommandations couvrent les opérateurs et hébergements qui tiennent leurs promesses. Lisez la divulgation complète dans nos',
-    affiliateBody2: '.',
-    termsLink: 'Conditions d\'utilisation', contactH2: 'Contact',
-    contactBody1: 'Écrivez à ', contactBody2: ', pour les partenariats :',
-    backHome: '← Retour à l\'accueil',
+    earnH2: "Comment nous gagnons de l'argent",
+    earnBody: "Lorsque vous réservez via un lien de ce site, le partenaire (GetYourGuide, Sembo, Trip.com, EconomyBookings ou EKTA) nous verse une commission. Vous payez le même prix que sur le site du partenaire. Quelques cartes partenaires sont des emplacements payés et signalés comme tels. La commission ne décide jamais d'une recommandation : une activité décevante est retirée.",
+    notH2: "Ce que nous ne faisons pas",
+    notItems: [
+      "Nous ne prenons ni réservations ni paiements ; votre contrat est conclu avec l'opérateur ou la plateforme de réservation.",
+      "Nous ne pouvons ni modifier, ni annuler, ni rembourser une réservation. Contactez la plateforme sur laquelle vous avez réservé.",
+      "Nous ne vendons pas votre adresse e-mail. La newsletter est la nôtre et vous la quittez en un clic.",
+    ],
+    factsH2: "Coordonnées de l'entreprise",
+    facts: [
+      { label: "Éditeur", value: "LaPeso Oy" },
+      { label: "Numéro d'entreprise (Y-tunnus)", value: "3309136-7" },
+      { label: "Pays", value: "Finlande" },
+      { label: "E-mail", value: "info@laplandvibes.com" },
+    ],
+    contactH2: "Contact",
+    contactBody: "Opérateurs, partenaires et lecteurs nous joignent à la même adresse. Nous lisons chaque message et répondons en finnois ou en anglais.",
+    termsLead: "L'information complète sur les liens d'affiliation et nos principes éditoriaux figurent dans nos",
+    termsLink: "conditions d'utilisation",
+    termsAfter: ".",
+    backHome: "Retour à l'accueil",
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo : observation éthique des ours en Finlande | LaplandActivities",
-    metaDescription: "Bear Kuusamo emmène dans des affûts pour observer des ours bruns sauvages dans les forêts frontalières à l'est de Kuusamo, aux portes de la Laponie. Sorties du soir et de nuit, du 1er mai au 30 septembre.",
+    metaTitle: "Bear Kuusamo : observation des ours en Finlande",
+    metaDescription: "Bear Kuusamo emmène en affût observer des ours bruns sauvages près de Kuusamo, aux portes de la Laponie. Sorties du soir et de nuit, mai-septembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Partenariat commercial : Bear Kuusamo",
     anchorWatching: "observation des ours en Finlande",
@@ -524,11 +548,11 @@ const fr: SectionCopy = {
   },
   privacy: {
     metaTitle: 'Politique de confidentialité · LaplandActivities',
-    metaDescription: 'Comment LaPeso Oy (LaplandActivities) traite les données personnelles : inscriptions à la newsletter, mesure d\'audience et cookies d\'affiliation. RGPD et ePrivacy.',
+    metaDescription: "Comment LaPeso Oy (LaplandActivities) traite vos données : inscriptions newsletter, mesure d'audience et cookies d'affiliation. RGPD et ePrivacy.",
   },
   terms: {
     metaTitle: 'Conditions d\'utilisation · LaplandActivities',
-    metaDescription: 'Conditions d\'utilisation de laplandactivities.fi : contenus et licences, mention d\'affiliation, responsabilité et règles éditoriales. Exploité par LaPeso Oy, Finlande.',
+    metaDescription: "Conditions d'utilisation de laplandactivities.fi : contenus, licences, affiliation, responsabilité et règles éditoriales. Exploité par LaPeso Oy.",
   },
   cookie: {
     metaTitle: 'Politique de cookies · LaplandActivities',

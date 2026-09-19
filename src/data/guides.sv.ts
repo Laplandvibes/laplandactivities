@@ -132,7 +132,7 @@ const guides: Guides = {
     },
     culture: {
       coversTitle: 'Samiskt arv, tomten och den arktiska berättelsen',
-      covers: 'Två trådar löper genom den här kategorin. Den ena är samisk kultur, som du möter bäst på Siida i Enare, samiskt museum och naturum i sätet för Finlands sameting, och på Samiland i Levi. Den andra är den arktiska berättelse regionen berättar om sig själv: Jultomtens by och SantaPark i Rovaniemi, Arktikum vid älven, och de isbyggda platserna.',
+      covers: 'Två trådar löper genom den här kategorin. Den ena är samisk kultur, som du möter bäst på Siida i Enare, samiskt museum och naturum i sätet för Sametinget i Finland, och på Samiland i Levi. Den andra är den arktiska berättelse regionen berättar om sig själv: Jultomtens by och SantaPark i Rovaniemi, Arktikum vid älven, och de isbyggda platserna.',
       whenToGo: 'Museerna är öppna året runt och tar bäst hand om en dag med dåligt väder eller en kort vintereftermiddag. Ishotell och snöbyar finns bara när det är kallt, ungefär december till april. Guldvaskningen i Tankavaara och ametistgruvan på Lampivaara går båda säsongerna, med ett uppvärmt snötåg till gruvan på vintern.',
       chooseTitle: 'Att välja kulturbesök',
       choosing: 'Vill du ha levande kultur snarare än en föreställning, börja med Siida och ett besök hos renskötare i arbete i Enare, inte med en show. Reser du med barn är Jultomtens by och SantaPark byggda just för dem. Arktikum har landets starkaste norrskensutställning och bär en halvdag inomhus.',

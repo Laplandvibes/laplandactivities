@@ -913,7 +913,7 @@ const d: LangData = {
       "title": "Gran experiencia de pesca en hielo",
       "description": "Perfore su propio agujero en un lago helado cerca de Rovaniemi y pesque a jig perca y coregono con un guía experimentado. La pesca en hielo básica no necesita licencia ni edad mínima en Finlandia: es la forma más fácil de probar la pesca ártica antes de decidir si merece la pena el permiso anual para pescar con señuelo en otros lugares. Termina con un almuerzo asado a la llama.",
       "highlights": [
-        "Técnica de perforar tu propio agujero",
+        "Técnica de perforar su propio agujero",
         "Sin licencia para la pesca en hielo básica",
         "Almuerzo asado a la llama incluido"
       ],

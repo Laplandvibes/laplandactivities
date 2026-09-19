@@ -41,11 +41,11 @@ const guides: Guides = {
     },
     inari: {
       seasonsTitle: 'Inari saison par saison',
-      seasonWinter: 'L\'hiver est ici silencieux et sombre, ce qui sert autant les aurores que la raison pour laquelle on vient : la culture sâme. Siida, musée sâme et centre nature, remplit une journée à l\'intérieur, et les visites d\'élevage de rennes montrent un travail réel plutôt qu\'un spectacle. Le lac gèle entièrement et l\'immensité autour du village se vide.',
+      seasonWinter: 'L\'hiver est ici silencieux et sombre, ce qui sert autant les aurores que la raison pour laquelle on vient : la culture sami. Siida, musée sami et centre nature, remplit une journée à l\'intérieur, et les visites d\'élevage de rennes montrent un travail réel plutôt qu\'un spectacle. Le lac gèle entièrement et l\'immensité autour du village se vide.',
       seasonSummer: 'À partir de juin, le lac rouvre : les bateaux passent devant Ukonsaari, l\'île sacrée, et le kayak sous le soleil de minuit étire une soirée ordinaire sur toute la nuit. On rejoint à pied l\'église de nature sauvage de Pielpajärvi à travers une vieille pinède, et fin juillet les plaquebières mûrissent dans les tourbières le long du sentier.',
       planTitle: 'Préparer un séjour à Inari',
       planGetting: 'L\'aéroport d\'Ivalo est à une quarantaine de minutes par la route. Le village lui-même est petit et se fait à pied, mais tout le reste s\'étale le long du lac et de la route qui monte vers le nord : une voiture aide. Beaucoup associent Inari à Saariselkä plutôt que d\'en faire une base unique.',
-      planStay: 'Accordez au moins une demi-journée à Siida, aile en langue sâme comprise. Les sorties en bateau sur le lac Inari ne circulent que de juin à septembre : ici, l\'été et l\'hiver sont deux voyages différents et non deux variantes du même. C\'est une destination pour la culture, la photographie et le calme, pas pour les services de station.',
+      planStay: 'Accordez au moins une demi-journée à Siida, aile en langue sami comprise. Les sorties en bateau sur le lac Inari ne circulent que de juin à septembre : ici, l\'été et l\'hiver sont deux voyages différents et non deux variantes du même. C\'est une destination pour la culture, la photographie et le calme, pas pour les services de station.',
     },
     ruka: {
       seasonsTitle: 'Ruka saison par saison',
@@ -100,7 +100,7 @@ const guides: Guides = {
     },
     animals: {
       coversTitle: 'Rencontrer les animaux de l\'Arctique',
-      covers: 'Cela couvre les traîneaux à chiens et les visites de chenils, les fermes de rennes et les sorties en traîneau, l\'observation des ours bruns sauvages depuis des affûts dans les forêts à l\'est de Kuusamo, et le parc animalier de Ranua, où vivent des ours polaires dans le zoo le plus septentrional du monde. Les visites chez les éleveurs sâmes à Inari et Samiland à Levi se situent à la frontière avec la catégorie culture.',
+      covers: 'Cela couvre les traîneaux à chiens et les visites de chenils, les fermes de rennes et les sorties en traîneau, l\'observation des ours bruns sauvages depuis des affûts dans les forêts à l\'est de Kuusamo, et le parc animalier de Ranua, où vivent des ours polaires dans le zoo le plus septentrional du monde. Les visites chez les éleveurs samis à Inari et Samiland à Levi se situent à la frontière avec la catégorie culture.',
       whenToGo: 'Le traîneau demande de la neige : les sorties chiens et rennes ont lieu environ de novembre à avril. Les chenils restent ouverts l\'été pour les visites et les rencontres avec les chiots, sans traîneau. Pour les ours, c\'est l\'inverse : les affûts fonctionnent pendant les mois clairs, du printemps au début de l\'automne, quand les ours sont actifs et les nuits assez claires.',
       chooseTitle: 'Choisir sa rencontre animalière',
       choosing: 'Décidez d\'abord si vous voulez conduire ou être conduit. Les safaris que vous menez vous-même vous mettent debout sur les patins avec votre propre attelage, en général à deux qui alternent ; les sorties passager et les visites de ferme conviennent aux jeunes enfants et à tous ceux qui préfèrent du temps avec les chiens à des kilomètres parcourus. Le traîneau à rennes est lent par nature, et c\'est le but.',
@@ -131,8 +131,8 @@ const guides: Guides = {
       bring: 'Apportez maillot et serviette ; la plupart des lieux louent les deux en cas d\'oubli. En Finlande, on va au sauna généralement sans maillot lors des séances séparées par sexe, et avec lors des séances mixtes publiques : demandez sur place. Prévoyez du temps pour refroidir correctement au lieu d\'enchaîner sur l\'activité suivante.',
     },
     culture: {
-      coversTitle: 'Héritage sâme, Père Noël et récit arctique',
-      covers: 'Deux fils traversent cette catégorie. Le premier est la culture sâme, que l\'on rencontre au mieux à Siida, à Inari, musée sâme et centre nature au siège du Parlement sâme de Finlande, et à Samiland, à Levi. Le second est le récit arctique que la région fait d\'elle-même : le village du Père Noël et le SantaPark à Rovaniemi, l\'Arktikum au bord du fleuve, et les lieux bâtis en glace.',
+      coversTitle: 'Héritage sami, Père Noël et récit arctique',
+      covers: 'Deux fils traversent cette catégorie. Le premier est la culture sami, que l\'on rencontre au mieux à Siida, à Inari, musée sami et centre nature au siège du Parlement sami de Finlande, et à Samiland, à Levi. Le second est le récit arctique que la région fait d\'elle-même : le village du Père Noël et le SantaPark à Rovaniemi, l\'Arktikum au bord du fleuve, et les lieux bâtis en glace.',
       whenToGo: 'Les musées sont ouverts toute l\'année et tirent le meilleur parti d\'une journée de mauvais temps ou d\'un court après-midi d\'hiver. Les hôtels de glace et les villages de neige n\'existent que par temps froid, environ de décembre à avril. L\'orpaillage à Tankavaara et la mine d\'améthyste du Lampivaara fonctionnent aux deux saisons, avec un train des neiges chauffé vers la mine en hiver.',
       chooseTitle: 'Choisir sa visite culturelle',
       choosing: 'Si vous voulez une culture vivante plutôt qu\'un spectacle, commencez par Siida et une visite chez des éleveurs de rennes en activité à Inari, pas par une représentation. Avec des enfants, le village du Père Noël et le SantaPark sont faits pour eux. L\'Arktikum possède la plus solide exposition sur les aurores du pays et remplit une demi-journée à l\'abri.',
@@ -167,7 +167,7 @@ const guides: Guides = {
   indexes: {
     destList: {
       leadTitle: 'Ce qui distingue les dix destinations',
-      lead: 'La Laponie n\'est pas un seul lieu avec une seule saison. Rovaniemi a l\'aéroport, le train de nuit et le plus large choix d\'excursions. Levi et Ruka sont des villages de ski que l\'on traverse à pied. Ylläs et Saariselkä échangent la vie nocturne contre un ciel noir et le silence du parc national. À Inari, la culture sâme se rencontre au lieu de se jouer, et Posio, Tornio et Kemijärvi sont les destinations calmes.',
+      lead: 'La Laponie n\'est pas un seul lieu avec une seule saison. Rovaniemi a l\'aéroport, le train de nuit et le plus large choix d\'excursions. Levi et Ruka sont des villages de ski que l\'on traverse à pied. Ylläs et Saariselkä échangent la vie nocturne contre un ciel noir et le silence du parc national. À Inari, la culture sami se rencontre au lieu de se jouer, et Posio, Tornio et Kemijärvi sont les destinations calmes.',
       note: 'Les distances sont réelles ici : deux destinations proches sur la carte peuvent être séparées par deux heures de route. Pour un court séjour, choisissez une seule base et n\'en ajoutez une seconde que si vous avez une semaine. Chaque page ci-dessous indique les prestataires locaux, ce qui fonctionne à quelle saison et comment s\'y rendre.',
     },
     catList: {

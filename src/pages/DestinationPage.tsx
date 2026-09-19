@@ -9,6 +9,7 @@ import BookingCTA from '../components/BookingCTA';
 import AffiliateCTA from '../components/AffiliateCTA';
 import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
 import { imageForDestination, assignActivityImages, focalFor } from '../data/images';
+import PhotoCredit from '../components/PhotoCredit';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { destinationTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
@@ -111,6 +112,7 @@ export default function DestinationPage() {
           loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.94) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
+        <PhotoCredit src={heroImg} className="!bottom-3 !right-3" />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
@@ -152,6 +154,81 @@ export default function DestinationPage() {
           </Link>
         </div>
       </div>
+
+      {/* Heron ja murupolun alle heti se mitä lukija tuli hakemaan: aktiviteetit
+          (Vesa 19.9.2026 kategoriasivusta: "pitäisi alkaa tällä gridillä, heti action";
+          sama sääntö tänne). "Miksi" ja "Hyvä tietää" tulevat ruudukon jälkeen. */}
+      {/* EI GYG-auto-widgetiä kohdesivuilla (Vesa 2026-08-03): (1) widget +
+          aktiviteettigrid oli kaksi varausosiota peräkkäin, ja (2) widgetin
+          sisältöä ei voi suodattaa — Rukalla se nosti kilpailevan karhunkatselu-
+          safarin, vaikka Bear Kuusamo on maksava kumppanimme. Auto-widget elää
+          indeksisivuilla (Lappi-taso l2652, jossa Kuusamo-tuotteet eivät listaudu). */}
+
+      {/* ALL ACTIVITIES — split by season (in-season first, then the other season) */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+          <div className="mb-8">
+            <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.allActivitiesKicker}</span>
+            {/* Ei lukumäärää otsikkoon: featured-kortti renderöityy ylempänä
+                Must-do-osiossa, joten "8 tekemistä" istui 7 kortin gridin päällä
+                (Vesa 2026-08-03). Luku elää Good to know -paneelissa. */}
+            <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide">{c.thingsToDoIn} {destIn}</h2>
+          </div>
+
+          {/* category jump chips */}
+          <div className="flex flex-wrap gap-2 mb-10">
+            {categoryGroups.map((g) => (
+              <Link
+                key={g.slug}
+                to={to(`/categories/${g.slug}`)}
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border border-white/15 bg-white/5 text-snow/80 hover:bg-vibe-pink/15 hover:border-vibe-pink/40 hover:text-snow transition-colors"
+              >
+                <g.icon className="w-3.5 h-3.5" /> {g.name} ({g.activities.length})
+              </Link>
+            ))}
+          </div>
+
+          {/* In-season block */}
+          {inSeason.length > 0 && (
+            <div className="mb-12">
+              <div className="flex items-center gap-2.5 mb-5">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
+                  <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
+                </span>
+                <div>
+                  <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
+                  <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+              </div>
+            </div>
+          )}
+
+          {/* Off-season block */}
+          {offSeason.length > 0 && (
+            <div>
+              <div className="flex items-center gap-2.5 mb-5">
+                <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
+                  <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
+                </span>
+                <div>
+                  <p className="text-arctic-cyan text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
+                  <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.alsoGreat(seasonOtherWord)}</h3>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+                {offSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+              </div>
+            </div>
+          )}
+
+          {restActivities.length === 0 && (
+            <p className="text-snow/80">{c.moreSoon} {destination.name}.</p>
+          )}
+        </div>
+      </section>
 
       {/* WHY VISIT + GOOD TO KNOW — premium combined intro panel (no flat void) */}
       <section className="lv-aurora-veil bg-deep-night py-12 sm:py-16 px-4 sm:px-6 border-b border-white/5">
@@ -259,78 +336,6 @@ export default function DestinationPage() {
         </section>
       )}
 
-      {/* EI GYG-auto-widgetiä kohdesivuilla (Vesa 2026-08-03): (1) widget +
-          aktiviteettigrid oli kaksi varausosiota peräkkäin, ja (2) widgetin
-          sisältöä ei voi suodattaa — Rukalla se nosti kilpailevan karhunkatselu-
-          safarin, vaikka Bear Kuusamo on maksava kumppanimme. Auto-widget elää
-          indeksisivuilla (Lappi-taso l2652, jossa Kuusamo-tuotteet eivät listaudu). */}
-
-      {/* ALL ACTIVITIES — split by season (in-season first, then the other season) */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-8">
-            <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.allActivitiesKicker}</span>
-            {/* Ei lukumäärää otsikkoon: featured-kortti renderöityy ylempänä
-                Must-do-osiossa, joten "8 tekemistä" istui 7 kortin gridin päällä
-                (Vesa 2026-08-03). Luku elää Good to know -paneelissa. */}
-            <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide">{c.thingsToDoIn} {destIn}</h2>
-          </div>
-
-          {/* category jump chips */}
-          <div className="flex flex-wrap gap-2 mb-10">
-            {categoryGroups.map((g) => (
-              <Link
-                key={g.slug}
-                to={to(`/categories/${g.slug}`)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border border-white/15 bg-white/5 text-snow/80 hover:bg-vibe-pink/15 hover:border-vibe-pink/40 hover:text-snow transition-colors"
-              >
-                <g.icon className="w-3.5 h-3.5" /> {g.name} ({g.activities.length})
-              </Link>
-            ))}
-          </div>
-
-          {/* In-season block */}
-          {inSeason.length > 0 && (
-            <div className="mb-12">
-              <div className="flex items-center gap-2.5 mb-5">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
-                  <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
-                </span>
-                <div>
-                  <p className="text-vibe-pink text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
-                  <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
-              </div>
-            </div>
-          )}
-
-          {/* Off-season block */}
-          {offSeason.length > 0 && (
-            <div>
-              <div className="flex items-center gap-2.5 mb-5">
-                <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
-                  <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
-                </span>
-                <div>
-                  <p className="text-arctic-cyan text-[11px] font-semibold tracking-[0.22em] uppercase">{sec.inSeasonKicker}</p>
-                  <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.alsoGreat(seasonOtherWord)}</h3>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                {offSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
-              </div>
-            </div>
-          )}
-
-          {restActivities.length === 0 && (
-            <p className="text-snow/80">{c.moreSoon} {destination.name}.</p>
-          )}
-        </div>
-      </section>
-
       {/* Cross-sell: hotels + cars */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -381,6 +386,7 @@ export default function DestinationPage() {
               >
                 <img src={imageForDestination(d.slug)} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
+                <PhotoCredit src={imageForDestination(d.slug)} links={false} className="!bottom-auto !top-2" />
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
                   <h3 className="font-heading text-lg sm:text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
                   <p className="text-snow/80 text-xs line-clamp-1">{d.tagline}</p>

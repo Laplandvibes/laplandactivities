@@ -10,7 +10,7 @@ const d: LangData = {
     },
     "animals": {
       "name": "Esperienze con gli animali",
-      "description": "Slitta trainata dai husky, visite alle fattorie delle renne, avvistamento di orsi selvatici e orsi polari allo zoo di Ranua. Per incontrare gli incredibili animali dell'Artico."
+      "description": "Slitta trainata dagli husky, visite alle fattorie delle renne, avvistamento di orsi selvatici e orsi polari allo zoo di Ranua. Per incontrare gli incredibili animali dell'Artico."
     },
     "northern-lights": {
       "name": "Aurora boreale",
@@ -80,7 +80,7 @@ const d: LangData = {
       "description": "Sulle sponde del lago Inari, con oltre 3.000 isole, è la capitale culturale del popolo sami finlandese. Sede del museo Siida e di una natura incontaminata.",
       "access": "Volo a Ivalo (40 min in auto)",
       "bestFor": "Esploratori culturali e fotografi",
-      "why": "Inari è la sede del Parlamento sami di Finlandia e il posto migliore per incontrare la cultura sámi viva: si parte dal museo Siida e d’estate si naviga sul lago Inari davanti all’isola sacra di Ukonsaari. Il paese è piccolo e la natura intorno immensa; alla chiesa nella natura selvaggia di Pielpajärvi si arriva a piedi tra pini secolari. Premia chi viene per cultura, fotografia e silenzio."
+      "why": "Inari è la sede del Parlamento sami di Finlandia e il posto migliore per incontrare la cultura sami viva: si parte dal museo Siida e d’estate si naviga sul lago Inari davanti all’isola sacra di Ukonsaari. Il paese è piccolo e la natura intorno immensa; alla chiesa nella natura selvaggia di Pielpajärvi si arriva a piedi tra pini secolari. Premia chi viene per cultura, fotografia e silenzio."
     },
     "ruka": {
       "name": "Ruka e Kuusamo",
@@ -971,9 +971,9 @@ const d: LangData = {
     },
     "pyh-amethyst-mine": {
       "title": "Miniera di ametista di Lampivaara",
-      "description": "Scavate la vostra gemma nell’unica miniera di ametista attiva d’Europa, in cima al Lampivaara a Luosto, e tenete una pietra che stia nel palmo della mano. D’inverno sale il treno della neve riscaldato Amethyst Pendolino; d’estate è una passeggiata panoramica con vista sul parco nazionale.",
+      "description": "Scavi la Sua gemma nell’unica miniera di ametista attiva d’Europa, in cima al Lampivaara a Luosto, e tenga una pietra che stia nel palmo della mano. D’inverno sale il treno della neve riscaldato Amethyst Pendolino; d’estate è una passeggiata panoramica con vista sul parco nazionale.",
       "highlights": [
-        "Scavate e tenete la vostra ametista",
+        "Scavi e tenga la Sua ametista",
         "Treno della neve riscaldato d’inverno",
         "Vista sul parco nazionale"
       ],
@@ -982,7 +982,7 @@ const d: LangData = {
     },
     "pyh-national-park": {
       "title": "Parco nazionale Pyhä-Luosto e gola di Isokuru",
-      "description": "Camminate tra i due paesi attraverso la gola più profonda della Finlandia: Isokuru precipita di circa 220 metri tra i fjell, con scale e passerelle lungo il crinale di Uhriharju e la foresta vergine. Ingresso libero, sentieri ben segnati e itinerari giornalieri sia da Pyhä sia da Luosto.",
+      "description": "Cammini tra i due paesi attraverso la gola più profonda della Finlandia: Isokuru precipita di circa 220 metri tra i fjell, con scale e passerelle lungo il crinale di Uhriharju e la foresta vergine. Ingresso libero, sentieri ben segnati e itinerari giornalieri sia da Pyhä sia da Luosto.",
       "highlights": [
         "Isokuru, la gola più profonda della Finlandia",
         "Ingresso libero",
@@ -1004,7 +1004,7 @@ const d: LangData = {
     },
     "pyh-aurora-snowshoe": {
       "title": "Ciaspolata sotto l’aurora a Luosto",
-      "description": "Allontanatevi con le ciaspole dalle luci del paese verso la foresta silenziosa sotto i fjell e aspettate l’aurora accanto al fuoco con bevande calde. Luosto è così piccola che il buio vero comincia a pochi minuti dalla porta dell’hotel.",
+      "description": "Si allontani con le ciaspole dalle luci del paese verso la foresta silenziosa sotto i fjell e aspetti l'aurora accanto al fuoco con bevande calde. Luosto è così piccola che il buio vero comincia a pochi minuti dalla porta dell’hotel.",
       "highlights": [
         "Cielo buio a due passi dal paese",
         "Ciaspole e attrezzatura incluse",
@@ -1015,7 +1015,7 @@ const d: LangData = {
     },
     "kem-ice-fishing": {
       "title": "Pesca sul ghiaccio sul lago Kemijärvi",
-      "description": "Praticate un foro nel ghiaccio del lago cittadino e pescate persici con una guida locale, bevande calde comprese. La pesca sul ghiaccio di base non richiede licenza in Finlandia, e il lago comincia dalle vie della riva: pesca lappone senza trasferimenti.",
+      "description": "Pratichi un foro nel ghiaccio del lago cittadino e peschi persici con una guida locale, bevande calde comprese. La pesca sul ghiaccio di base non richiede licenza in Finlandia, e il lago comincia dalle vie della riva: pesca lappone senza trasferimenti.",
       "highlights": [
         "Il lago inizia dalla riva cittadina",
         "Nessuna licenza richiesta",
@@ -1026,9 +1026,9 @@ const d: LangData = {
     },
     "kem-husky-safari": {
       "title": "Safari con gli husky alla guida",
-      "description": "Guidate la vostra slitta su un anello forestale di 5 km in piccolo gruppo, poi incontrate i cani e i loro addestratori alla fattoria. Partono solo poche slitte alla volta: istruzioni vere, niente code.",
+      "description": "Guidi la Sua slitta su un anello forestale di 5 km in piccolo gruppo, poi incontri i cani e i loro addestratori alla fattoria. Partono solo poche slitte alla volta: istruzioni vere, niente code.",
       "highlights": [
-        "Guidate la vostra slitta",
+        "Guidi la Sua slitta",
         "Solo piccoli gruppi",
         "Incontro con i cani dopo il giro"
       ],
@@ -1059,7 +1059,7 @@ const d: LangData = {
     },
     "tor-haparanda-shopping": {
       "title": "Giornata di shopping oltre confine a Haparanda",
-      "description": "Attraversate a piedi il confine finno-svedese in pieno centro e dedicate la giornata ai negozi sui due lati della stessa via. IKEA Haparanda è accanto al valico, e il lato svedese aggiunge supermercati e outlet; prezzi e assortimenti cambiano da un Paese all’altro, ed è questo il bello. Ricordate l’ora di differenza per gli orari di apertura.",
+      "description": "Attraversi a piedi il confine finno-svedese in pieno centro e dedichi la giornata ai negozi sui due lati della stessa via. IKEA Haparanda è accanto al valico, e il lato svedese aggiunge supermercati e outlet; prezzi e assortimenti cambiano da un Paese all’altro, ed è questo il bello. Ricordi l'ora di differenza per gli orari di apertura.",
       "highlights": [
         "Confine a piedi",
         "IKEA Haparanda",

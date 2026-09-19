@@ -57,9 +57,9 @@ const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string;
   },
   fi: {
     title: 'Varaa käsin valittuja kierroksia',
-    eyebrow: 'Tarjoaa GetYourGuide',
+    eyebrow: 'GetYourGuiden tarjoama',
     subtitle: 'Useimmissa tuotteissa ilmainen peruutus 24 h asti · Vahvistus heti',
-    pricesNote: 'Hinnat ja saatavuus muuttuvat päivittäin. Varaa ajoissa sesonkiin.',
+    pricesNote: 'Hinnat ja saatavuus muuttuvat päivittäin. Varaa ajoissa ennen sesonkihuippua.',
   },
   de: {
     title: 'Handverlesene Touren buchen',
@@ -69,7 +69,7 @@ const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string;
   },
   ja: {
     title: '厳選ツアーを予約',
-    eyebrow: '提供:GetYourGuide',
+    eyebrow: '提供：GetYourGuide',
     subtitle: 'ほとんどのツアーで24時間前まで無料キャンセル · 即時確定',
     pricesNote: '料金と空き状況は毎日変動します。ピークシーズンはお早めにご予約ください。',
   },
@@ -87,7 +87,7 @@ const DEFAULTS: Record<Lang, { title: string; eyebrow: string; subtitle: string;
   },
   'zh-CN': {
     title: '预订精选行程',
-    eyebrow: '由GetYourGuide提供',
+    eyebrow: '由 GetYourGuide 提供',
     subtitle: '大多数行程在24小时前可免费取消 · 即时确认',
     pricesNote: '价格与可订情况每日变化。旺季请提前预订。',
   },

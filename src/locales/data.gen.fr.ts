@@ -26,7 +26,7 @@ const d: LangData = {
     },
     "culture": {
       "name": "Culture et patrimoine",
-      "description": "Musées sâmes, village du Père Noël, hôtels de glace, orpaillage, mine d'améthyste et le patrimoine fascinant de l'Arctique."
+      "description": "Musées samis, village du Père Noël, hôtels de glace, orpaillage, mine d'améthyste et le patrimoine fascinant de l'Arctique."
     },
     "summer": {
       "name": "Aventures d'été",
@@ -76,11 +76,11 @@ const d: LangData = {
     },
     "inari": {
       "name": "Inari",
-      "tagline": "Cœur de la culture sâme",
-      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sâme finlandais. On y trouve le musée Siida et une nature préservée.",
+      "tagline": "Cœur de la culture sami",
+      "description": "Au bord du lac Inari et de ses 3 000 îles, c'est la capitale culturelle du peuple sami finlandais. On y trouve le musée Siida et une nature préservée.",
       "access": "Vol vers Ivalo (40 min en voiture)",
       "bestFor": "Explorateurs culturels et photographes",
-      "why": "Inari est le siège du Parlement sâme de Finlande et le meilleur endroit pour rencontrer la culture sâme vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l'église de Pielpajärvi, en pleine nature sauvage, se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
+      "why": "Inari est le siège du Parlement sami de Finlande et le meilleur endroit pour rencontrer la culture sami vivante : commencez par le musée Siida, puis, l’été, naviguez sur le lac Inari devant l’île sacrée d’Ukonsaari. Le village est petit, la nature immense ; l'église de Pielpajärvi, en pleine nature sauvage, se rejoint à pied à travers une vieille pinède. Inari récompense ceux qui viennent pour la culture, la photo et le silence."
     },
     "ruka": {
       "name": "Ruka et Kuusamo",
@@ -335,10 +335,10 @@ const d: LangData = {
     },
     "lev-samiland": {
       "title": "Rennes et culture à Samiland",
-      "description": "Rencontrez les rennes et découvrez la culture sâme sur ce site patrimonial authentique. Nourrissez les rennes à la main dans l'enclos d'hiver, explorez les expositions intérieure et extérieure et écoutez les récits du peuple autochtone.",
+      "description": "Rencontrez les rennes et découvrez la culture sami sur ce site patrimonial authentique. Nourrissez les rennes à la main dans l'enclos d'hiver, explorez les expositions intérieure et extérieure et écoutez les récits du peuple autochtone.",
       "highlights": [
         "Nourrissage des rennes",
-        "Récits sâmes",
+        "Récits samis",
         "Exposition extérieure"
       ],
       "duration": "2 h",
@@ -431,7 +431,7 @@ const d: LangData = {
     },
     "lev-kota-dinner": {
       "title": "Dîner lapon en kammi au coin du feu",
-      "description": "Dînez dans une hutte de tourbe traditionnelle de style sâme (kammi) autour d'un feu ouvert central. Saumon, renne et baies sauvages de saison grillés à la flamme.",
+      "description": "Dînez dans une hutte de tourbe traditionnelle de style sami (kammi) autour d'un feu ouvert central. Saumon, renne et baies sauvages de saison grillés à la flamme.",
       "highlights": [
         "Cadre kammi traditionnel",
         "Cuisine au feu de bois",
@@ -634,10 +634,10 @@ const d: LangData = {
       "category": "Aventure"
     },
     "ina-siida-museum": {
-      "title": "Siida, musée sâme et centre nature",
-      "description": "Le premier musée sâme de Finlande met en valeur la culture, l'histoire et la nature de la région la plus septentrionale de Finlande. Exposition en plein air remarquable au fil des saisons.",
+      "title": "Siida, musée sami et centre nature",
+      "description": "Le premier musée sami de Finlande met en valeur la culture, l'histoire et la nature de la région la plus septentrionale de Finlande. Exposition en plein air remarquable au fil des saisons.",
       "highlights": [
-        "Culture sâme",
+        "Culture sami",
         "Expositions nature",
         "Sentiers extérieurs"
       ],
@@ -670,10 +670,10 @@ const d: LangData = {
       "category": "Aventures d'été"
     },
     "ina-sami-experience": {
-      "title": "Élevage de rennes sâme authentique",
-      "description": "Rejoignez un véritable éleveur de rennes sâme pour une expérience culturelle intime. Découvrez les traditions ancestrales d'élevage qui perdurent aujourd'hui à Inari.",
+      "title": "Élevage de rennes sami authentique",
+      "description": "Rejoignez un véritable éleveur de rennes sami pour une expérience culturelle intime. Découvrez les traditions ancestrales d'élevage qui perdurent aujourd'hui à Inari.",
       "highlights": [
-        "Véritable éleveur sâme",
+        "Véritable éleveur sami",
         "Immersion culturelle",
         "Interaction avec les rennes"
       ],

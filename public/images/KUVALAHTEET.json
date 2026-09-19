@@ -1,0 +1,115 @@
+{
+  "_ohje": "Nimetyn yrityksen tai kohteen kuvan alkupera (portti: node scripts/audit_kohdekuvat.mjs). Lajit: 'oma-valokuva' = LV:n itse ottama kuva oikeasta paikasta, 'kumppanin-tiedosto' = yrityksen oma aineisto, 'commons' = Wikimedia Commons -valokuva oikeasta paikasta (tekija + lisenssi src/data/photoCredits.ts). AI ja stock eivat kelpaa nimetylle yritykselle. Taysi kuitti photoCredits.ts.",
+  "/images/activities/culture/santa-village.webp": {
+    "laji": "oma-valokuva",
+    "kohde": "Joulupukin pajakyla, Rovaniemi",
+    "lahde": "LaplandVibes 20.7.2026 (master 20260720_113905.jpg), paaovi ja Joulupukki-kyltti.",
+    "lisatty": "2026-09-19",
+    "korvasi": "festive-forest.webp (AI, ei enaa kaytossa)"
+  },
+  "/images/heroes/rovaniemi-summer-santa.webp": {
+    "laji": "oma-valokuva",
+    "kohde": "Joulupukin pajakyla, Rovaniemi",
+    "lahde": "LaplandVibes 20.7.2026 (20260720_115907.jpg), aukio ja kellotorni.",
+    "lisatty": "2026-09-19",
+    "korvasi": "rovaniemi-winter-village.webp (AI) kesakautena"
+  },
+  "/images/activities/culture/santa-village-winter.webp": {
+    "laji": "commons",
+    "kohde": "Joulupukin pajakyla, Rovaniemi (talvi)",
+    "lahde": "Wikimedia Commons File:Santa Claus Village 04.jpg, Moskenes, CC BY-SA 4.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "festive-forest.webp (AI)"
+  },
+  "/images/activities/culture/santas-little-village.webp": {
+    "laji": "oma-valokuva",
+    "kohde": "Santa's Little Village / Hotel Uitonniemi, Kemijarvi",
+    "lahde": "LaplandVibes 18.7.2026 (20260718_125738.jpg), hotellin omat punaiset rantamokit.",
+    "lisatty": "2026-09-19",
+    "korvasi": "festive-forest.webp (AI)"
+  },
+  "/images/activities/summer/mtb-bikepark.webp": {
+    "laji": "oma-valokuva",
+    "kohde": "Levi Bike Park, Kittila",
+    "lahde": "LaplandVibes 20.7.2026 (20260720_182156.jpg), Bike Fest -portti ja hissi.",
+    "lisatty": "2026-09-19",
+    "korvasi": "mtb-bikepark.webp (AI)"
+  },
+  "/images/activities/culture/arctic-city.webp": {
+    "laji": "commons",
+    "kohde": "Arktikum, Rovaniemi",
+    "lahde": "Wikimedia Commons File:Arktikum Rovaniemi 2022-09-15 01.jpg, Leonhard Lenz, CC0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "arctic-city.webp (AI)"
+  },
+  "/images/activities/culture/sami-heritage.webp": {
+    "laji": "commons",
+    "kohde": "Siida, Inari",
+    "lahde": "Wikimedia Commons File:Y1A9551 Lapland (15807819162).jpg, Ninara, CC BY 2.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "sami-heritage.webp (AI)"
+  },
+  "/images/activities/winter/icebreaker-sampo.webp": {
+    "laji": "commons",
+    "kohde": "Jaanmurtaja Sampo, Kemi",
+    "lahde": "Wikimedia Commons File:2017-03-23 Sampo in Port of Kemi (Finland) 02.jpg, Eduard47, CC BY-SA 4.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "icebreaker-sampo.webp (AI)"
+  },
+  "/images/activities/culture/snowcastle-kemi.webp": {
+    "laji": "commons",
+    "kohde": "LumiLinna SnowCastle, Kemi",
+    "lahde": "Wikimedia Commons File:LumiLinna SnowCastle 2012, outside view.JPG, CookMeSomeKai, CC BY-SA 3.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "ice-architecture.webp (AI)"
+  },
+  "/images/activities/culture/ice-architecture.webp": {
+    "laji": "commons",
+    "kohde": "LumiLinna SnowCastle, Kemi (ravintola)",
+    "lahde": "Wikimedia Commons File:LumiLinna SnowCastle 2012, restaurant area 1.JPG, CookMeSomeKai, CC BY-SA 3.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "ice-architecture.webp (AI)"
+  },
+  "/images/activities/culture/snow-village.webp": {
+    "laji": "commons",
+    "kohde": "Lainio Snow Village (Lapland Hotels SnowVillage), Kittila",
+    "lahde": "Wikimedia Commons File:Lainio Snow Village Kittila 20190417 02.jpg, Estormiz, CC0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "ice-architecture.webp (AI)"
+  },
+  "/images/activities/culture/gold-panning.webp": {
+    "laji": "commons",
+    "kohde": "Tankavaaran kultakyla, Sodankyla",
+    "lahde": "Wikimedia Commons File:Tankavaara-Finland-2012-07-02-10-18-012.jpg, Karl Brodowsky, CC BY-SA 3.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "gold-panning.webp (AI)"
+  },
+  "/images/activities/wellness/sauna-interior.webp": {
+    "laji": "oma-valokuva",
+    "kohde": "Grand Hotel Mustaparta, Tornio (sauna) - kaytossa paikattomana hyvinvointikategorian kuvana",
+    "lahde": "LaplandVibes 21.7.2026 (20260721_203739.jpg).",
+    "lisatty": "2026-09-19",
+    "korvasi": "smoke-sauna-cabin-saariselka.webp (AI) kategoriaherona"
+  },
+  "/images/activities/food/campfire-salmon.webp": {
+    "laji": "oma-valokuva",
+    "kohde": "Kuusamon Portti, Kuusamo (annos) - kaytossa ruokakategorian yleiskuvana",
+    "lahde": "LaplandVibes 16.7.2026 (20260716_195820.jpg).",
+    "lisatty": "2026-09-19",
+    "korvasi": "campfire-salmon.webp (AI)"
+  },
+  "/images/hotels/fell-resort-levi.webp": {
+    "laji": "commons",
+    "kohde": "Levi / Sirkka, Kittila",
+    "lahde": "Wikimedia Commons File:Sirkka from Levi, Finland.jpg, DanielMichaelPerry, CC0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "fell-resort-levi.webp (AI)"
+  },
+  "/images/activities/winter/ounasvaara-winter.webp": {
+    "laji": "commons",
+    "kohde": "Ounasvaara, Rovaniemi",
+    "lahde": "Wikimedia Commons File:Luminen Ounasvaara.jpg, Sadenayttely, CC BY-SA 4.0.",
+    "lisatty": "2026-09-19",
+    "korvasi": "fell-resort-levi.webp (AI) kortissa"
+  }
+}

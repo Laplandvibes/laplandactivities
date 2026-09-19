@@ -7,6 +7,7 @@ import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { WINTER_BAND, WINTER_SEARCH_Q } from '../i18n/winterBand';
 import { currentSeasonBucket } from '../i18n/seasonWords';
+import PhotoCredit from './PhotoCredit';
 
 // Summer highlight icons/queries (slots 1:1 with copy.summerBand.highlights).
 const SUMMER_ICONS = [Mountain, Waves, Fish, Compass];
@@ -84,6 +85,7 @@ export default function SummerBand() {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
+              <PhotoCredit src={bandImg} className="!bottom-auto !top-2" />
               <div className="absolute inset-0 bg-gradient-to-t from-deep-night/80 via-deep-night/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-vibe-pink text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">{c.imageKicker}</p>
