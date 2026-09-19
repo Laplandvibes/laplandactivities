@@ -230,6 +230,8 @@ export type SectionCopy = {
     /** Visible "regulations change yearly — verify before fishing" banner line. */
     verifyBanner: string;
     hero: { eyebrow: string; title: string; sub: string; ctaBook: string; ctaRules: string; trustLine: string };
+    /** 2.0 (19.9.2026): kolme valintalaattaa heti heron alla — pilkki / joet / meri ja rapu — ankkurilinkit sivun osioihin. */
+    chooser: { kicker: string; ice: string; iceSub: string; rivers: string; riversSub: string; norway: string; norwaySub: string };
     /** Section eyebrows (uppercase kicker labels) used across the page's sections. */
     eyebrows: { eco: string; freshwater: string; legal: string; liability: string; explore: string };
     /** Alt text for the three section photos (screen-reader visible). */

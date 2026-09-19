@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const nl: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Kies uw manier', ice: 'IJsvissen', iceSub: 'Gratis, geen vergunning. Een boor, een korte hengel en een bevroren meer.', rivers: 'Zalm- en vlagzalmrivieren', riversSub: 'Vergunning nodig. Tornio open, Teno gesloten in 2026.', norway: 'Zee en koningskrab', norwaySub: 'In Noorwegen: zeevissen is vrij, koningskrab alleen met gids.' },
     metaTitle: "IJsvissen en zalmvissen in Fins Lapland | LaplandActivities",
     metaDescription: "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026 die u nodig hebt voordat u uitwerpt.",
     verifyBanner: "De regels veranderen elk jaar. Controleer de officiële vergunningsvoorwaarden voordat u gaat vissen. Elk cijfer hieronder noemt en linkt naar zijn bron.",

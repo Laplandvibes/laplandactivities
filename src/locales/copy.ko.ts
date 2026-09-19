@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const ko: SectionCopy = {
   fishing: {
+    chooser: { kicker: '방법을 고르세요', ice: '얼음낚시', iceSub: '무료, 허가 불필요. 얼음 드릴과 짧은 낚싯대, 얼어붙은 호수면 충분합니다.', rivers: '연어와 그레일링 강', riversSub: '허가 필요. 토르니오강은 개방, 테노강은 2026년 금어.', norway: '바다와 킹크랩', norwaySub: '노르웨이 쪽: 바다낚시는 자유, 킹크랩은 가이드와 함께만.' },
     metaTitle: "라플란드와 북극해에서 즐기는 낚시 | LaplandActivities",
     metaDescription: "얼음낚시는 무료, 토르니오 같은 허가제 연어강, 노르웨이 킹크랩 사파리까지: 낚싯대를 던지기 전에 알아야 할 2026년 규정, 요금, 공식 허가 링크를 담았습니다.",
     verifyBanner: "규정은 해마다 바뀝니다. 낚시 전에 공식 허가 조건을 확인하세요. 아래 모든 수치는 출처를 명시하고 링크를 답니다.",

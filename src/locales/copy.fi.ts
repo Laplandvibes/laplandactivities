@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const fi: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Valitse tapasi', ice: 'Pilkkiminen', iceSub: 'Ilmaista, ei lupaa. Kaira, lyhyt vapa ja jäätynyt järvi.', rivers: 'Lohi- ja harjusjoet', riversSub: 'Lupa tarvitaan. Tornionjoki auki, Teno kiinni 2026.', norway: 'Meri ja kuningasrapu', norwaySub: 'Norjan puolella: merikalastus on vapaata, rapu vain oppaan kanssa.' },
     metaTitle: 'Kalastus Lapissa ja Jäämerellä | LaplandActivities',
     metaDescription: 'Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit: kauden 2026 säännöt, maksut ja viralliset lupalinkit.',
     verifyBanner: 'Säännöt muuttuvat vuosittain. Tarkista virallisen luvan ehdot ennen kalastusta. Jokainen alla oleva luku nimeää ja linkittää lähteensä.',

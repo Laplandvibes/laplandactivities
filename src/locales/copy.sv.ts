@@ -323,6 +323,7 @@ const sv: SectionCopy = {
     backHome: "Tillbaka till startsidan",
   },
   fishing: {
+    chooser: { kicker: 'Välj ditt sätt', ice: 'Pimpelfiske', iceSub: 'Gratis, inget tillstånd. Isborr, kort spö och en frusen sjö.', rivers: 'Lax- och harrälvar', riversSub: 'Tillstånd krävs. Torne älv öppen, Tana stängd 2026.', norway: 'Hav och kungskrabba', norwaySub: 'På norska sidan: havsfiske är fritt, kungskrabba bara med guide.' },
     metaTitle: 'Fiske i Lappland och Norra ishavet | LaplandActivities',
     metaDescription: 'Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver innan du kastar ut.',
     verifyBanner: 'Reglerna ändras varje år. Kontrollera de officiella tillståndsvillkoren innan du fiskar. Varje uppgift nedan namnger och länkar till sin källa.',

@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const it: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Scegli il tuo modo', ice: 'Pesca sul ghiaccio', iceSub: 'Gratis e senza permesso. Una trivella, una canna corta e un lago ghiacciato.', rivers: 'Fiumi di salmone e temolo', riversSub: 'Serve il permesso. Tornio aperto, Teno chiuso nel 2026.', norway: 'Mare e granchio reale', norwaySub: 'In Norvegia: pesca in mare libera, granchio reale solo con guida.' },
     metaTitle: 'Pesca in Lapponia e nell\'oceano Artico | LaplandActivities',
     metaDescription: "Pesca sul ghiaccio gratuita, fiumi da salmone su licenza come il Tornio e safari al granchio reale in Norvegia: regole, tariffe e permessi 2026.",
     verifyBanner: 'Le regole cambiano ogni anno: verifichi le condizioni ufficiali del permesso prima di pescare. Ogni cifra qui sotto cita e collega la propria fonte.',

@@ -10,6 +10,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { focalFor } from '../data/images';
+import PhotoCredit from '../components/PhotoCredit';
 import { withReferral } from '../lib/referral';
 
 // Direct official licence/regulation links — plain <a>, never affiliate.
@@ -50,6 +51,19 @@ const RIVER_META = [
   { href: OFFICIAL.ivaloArea, ss: 'Inari', sid: 'fishing_river_ivalojoki' },
   { href: OFFICIAL.simojoki, ss: 'Kemi', sid: 'fishing_river_simojoki' },
   { href: OFFICIAL.permits, ss: 'Saariselkä', sid: 'fishing_river_wilderness' },
+];
+
+// 2.0 (19.9.2026): jokikortin oma valokuva — järjestys = copy.fishing.rivers.cards.
+// Tornionjoki oma (Korpikoski, Pello 21.7.2026), muut Wikimedia Commons oikeasta joesta
+// (kuitit src/data/photoCredits.ts): Teno Utsjoki, Ounasjoki Rovaniemi, Ivalojoki Ivalo,
+// Simojoki Hanskankoski, Luttojoki UKK-puisto.
+const RIVER_IMG = [
+  '/images/activities/fishing/fishing-river.webp',
+  '/images/activities/fishing/teno-valley.webp',
+  '/images/activities/fishing/ounasjoki.webp',
+  '/images/activities/fishing/ivalojoki.webp',
+  '/images/activities/fishing/simojoki.webp',
+  '/images/activities/fishing/luttojoki.webp',
 ];
 
 // Section photos (photographic, text-free, people-free). Native 16:9; rendered
@@ -205,6 +219,36 @@ export default function FishingPage() {
 
       <PageBreadcrumb />
 
+      {/* 2.0 — VALITSE TAPASI: kolme laattaa heti heron alla (Vesa 19.9.2026: sivun alku oli
+          tekstimuuri). Laatat ovat vaaleita paperikortteja (sama kieli kuin etusivun
+          vuodenaikakortit) ja ankkuroivat osioihin #ice / #rivers / #norway. */}
+      <section className="bg-deep-night px-4 sm:px-6 pt-8 pb-4">
+        <div className="max-w-7xl mx-auto">
+          <p className={`${EYEBROW} mb-3`}>{c.chooser.kicker}</p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {([
+              { href: '#ice', Icon: Snowflake, img: FISHING_IMG.ice, title: c.chooser.ice, sub: c.chooser.iceSub },
+              { href: '#rivers', Icon: Fish, img: RIVER_IMG[0], title: c.chooser.rivers, sub: c.chooser.riversSub },
+              { href: '#norway', Icon: Anchor, img: FISHING_IMG.kingCrab, title: c.chooser.norway, sub: c.chooser.norwaySub },
+            ] as const).map((t) => (
+              <a key={t.href} href={t.href} className="group rounded-2xl overflow-hidden bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] hover:border-vibe-pink/50 transition-colors flex flex-col">
+                <div className="relative h-36 sm:h-40 overflow-hidden">
+                  <img src={t.img} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(t.img) }} />
+                  <PhotoCredit src={t.img} links={false} />
+                </div>
+                <div className="p-5 flex items-start gap-3">
+                  <span className="inline-flex shrink-0 w-10 h-10 rounded-xl bg-vibe-pink/12 items-center justify-center"><t.Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" /></span>
+                  <span>
+                    <span className="block font-heading text-2xl text-deep-night tracking-wide leading-none group-hover:text-vibe-pink transition-colors">{t.title}</span>
+                    <span className="block text-deep-night/70 text-sm leading-relaxed mt-1.5">{t.sub}</span>
+                  </span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* VERIFY BANNER */}
       <div className="bg-amber-500/10 border-y border-amber-400/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-start gap-2.5">
@@ -251,14 +295,11 @@ export default function FishingPage() {
         </section>
 
         {/* RIVERS */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
+        <section id="rivers" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <p className={`${EYEBROW} mb-3`}>{c.eyebrows.freshwater}</p>
             <h2 className={H2}>{c.rivers.title}</h2>
             <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.rivers.lead}</p>
-            <div className="mt-8">
-              <SectionImage src={FISHING_IMG.river} alt={c.imageAlts.river} />
-            </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
                 const meta = RIVER_META[i] ?? RIVER_META[0];
@@ -269,12 +310,19 @@ export default function FishingPage() {
                   : closed
                   ? 'bg-red-500/15 text-red-300 border-red-400/30'
                   : 'bg-white/5 text-snow/75 border-white/15';
+                const img = RIVER_IMG[i] ?? RIVER_IMG[0];
                 return (
-                  <div key={card.name} className={`${CARD} p-6 flex flex-col`}>
-                    <span className={`inline-flex self-start items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-wide uppercase ${badgeColor}`}>
-                      {card.badge}
-                    </span>
-                    <h3 className="font-heading text-2xl text-snow tracking-wide mt-3 mb-2">{card.name}</h3>
+                  <div key={card.name} className={`${CARD} overflow-hidden flex flex-col`}>
+                    <div className="relative h-44 overflow-hidden">
+                      <img src={img} alt={card.name} loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(img) }} />
+                      <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/20 to-transparent" />
+                      <span className={`absolute left-4 bottom-3 inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-wide uppercase backdrop-blur-sm ${badgeColor}`}>
+                        {card.badge}
+                      </span>
+                      <PhotoCredit src={img} links={false} />
+                    </div>
+                    <div className="p-6 flex flex-col flex-1">
+                    <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{card.name}</h3>
                     <p className="text-snow/70 text-sm leading-relaxed">{card.body}</p>
                     <p className="text-snow/60 text-xs leading-relaxed mt-3 flex items-start gap-1.5">
                       <Fish className="w-3.5 h-3.5 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
@@ -292,6 +340,7 @@ export default function FishingPage() {
                         <MapPin className="w-3.5 h-3.5" />
                         {compareHotels} · {meta.ss}
                       </AffiliateCTA>
+                    </div>
                     </div>
                   </div>
                 );
@@ -347,7 +396,7 @@ export default function FishingPage() {
         </section>
 
         {/* ICE FISHING */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
+        <section id="ice" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-2.5 mb-3">
               <Snowflake className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
@@ -428,7 +477,7 @@ export default function FishingPage() {
         </section>
 
         {/* NORWAY */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
+        <section id="norway" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-2.5 mb-3">
               <Waves className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />

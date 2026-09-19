@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const es: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Elige tu modalidad', ice: 'Pesca en hielo', iceSub: 'Gratis y sin permiso. Un taladro, una caña corta y un lago helado.', rivers: 'Ríos de salmón y tímalo', riversSub: 'Se necesita permiso. Tornio abierto, Teno cerrado en 2026.', norway: 'Mar y cangrejo real', norwaySub: 'En Noruega: la pesca en el mar es libre; el cangrejo real, solo con guía.' },
     metaTitle: 'Pesca en Laponia y el océano Ártico | LaplandActivities',
     metaDescription: "Pesca en hielo gratuita, ríos de salmón con licencia como el Tornio y safaris de cangrejo real en Noruega: normas, tasas 2026 y enlaces de permisos.",
     verifyBanner: 'Las normas cambian cada año: consulte las condiciones oficiales del permiso antes de pescar. Cada cifra de abajo cita y enlaza su fuente.',

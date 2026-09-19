@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const fr: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Choisissez votre pêche', ice: 'Pêche sur glace', iceSub: 'Gratuite, sans permis. Une tarière, une canne courte et un lac gelé.', rivers: 'Rivières à saumon et ombre', riversSub: 'Permis obligatoire. Tornio ouverte, Teno fermée en 2026.', norway: 'Mer et crabe royal', norwaySub: 'Côté norvégien : pêche en mer libre, crabe royal uniquement avec un guide.' },
     metaTitle: "Pêche en Laponie et en Arctique | LaplandActivities",
     metaDescription: "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège : règles 2026 et permis officiels.",
     verifyBanner: 'La réglementation change chaque année : vérifiez les conditions officielles du permis avant de pêcher. Chaque chiffre ci-dessous cite et relie sa source.',

@@ -141,6 +141,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /museum|m[uu]seo/i,                                          img: local('activities/culture/arctic-city.webp') },
   // Karhunkierros = "Bear's Ring" HIKING trail (summer trek) — NOT wildlife. Must match before /bear/.
   { match: /karhunkierros|bear.?s ring|little bear.?s ring/i,           img: local('activities/summer/oulanka-ruska-trail.webp') },
+  { match: /raft|river run|kitkajoki/i,                                 img: local('activities/adventure/kitkajoki-rapids.webp') },
   // Ranua Zoo genuinely has a polar bear — that's the only correct use of polar-bears.webp.
   { match: /polar bear|ranua/i,                                         img: local('activities/wildlife/polar-bears.webp') },
   // Wolverine/lynx/fox: no dedicated image yet → generic green-summer wilderness (not a bear).
@@ -150,11 +151,11 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // Reindeer & husky each rotate over 2 distinct images so the animals category
   // no longer shows the same reindeer/husky photo on three sibling cards.
   { match: /reindeer|s[áa]mi|lavvu|kota dinner/i,
-        imgs: [local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp')] },
+        imgs: [local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp'), local('activities/winter/reindeer-farm-inari.webp'), local('activities/winter/reindeer-sleds-inari.webp'), local('activities/summer/reindeer-kilpisjarvi.webp'), local('activities/summer/reindeer-saytsjarvi.webp')] },
   // imgs[0] EI ole slider-01: se on hero-sliderin kuva, ja huskykortti nayttaisi
   // etusivulla saman kuvan kahdesti (mitattu 2026-08-23).
   { match: /husky|husk[iy]|sled dog|kennel/i,
-        imgs: [local('activities/winter/husky-kennel.webp'), local('heroes/husky-sled-day.webp')] },
+        imgs: [local('activities/winter/husky-kennel.webp'), local('activities/winter/sled-dogs-lapland.webp'), local('activities/winter/husky-ride-ruka.webp'), local('activities/winter/husky-dogs-ruka.webp'), local('activities/winter/husky-ready-ruka.webp')] },
 
   // Sports / activities — BEFORE lodging because activity titles are the strongest
   // signal (a "snowmobile expedition" must match snowmobile even if the description
@@ -186,14 +187,14 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /ruka ski|rukatunturi/i,                                     img: local('heroes/ruka-winter-slopes.webp') },
   { match: /yll[äa]s ski|yll[äa]stunturi/i,                             img: local('heroes/yllas-winter-road.webp') },
   { match: /pyh[äa] ski|pyh[äa]tunturi/i,                               img: local('heroes/pyha-winter-slopes.webp') },
-  { match: /levi ski|levitunturi/i,                                     img: local('hotels/fell-resort-levi.webp') },
+  { match: /levi ski|levitunturi/i,                                     img: local('activities/winter/levi-north-slope.webp') },
   // Hike BEFORE ski/sauna — hiking is the primary signal; a summer hike whose description
   // mentions a winter cross-country ski route or a Kiilopää sauna must still show a hiking
   // image, not a snowy ski resort or a sauna. ("trail" dropped — it false-matches ski/sled/bike trails.)
   { match: /\bhiking\b|\bhike\b|\btrek\b|fjell hike|fell hike|karhunkierros/i,
         imgs: [local('categories/summer.webp'), local('activities/summer/pallas-fells.webp')] },
   { match: /\bski(ing)?\b|slope|piste|biathlon|cross[- ]country|snowboard/i,
-        imgs: [local('hotels/fell-resort-levi.webp'), local('heroes/pyha-winter-slopes.webp'), local('activities/winter/cross-country.webp')] },
+        imgs: [local('activities/winter/levi-south-slope.webp'), local('heroes/pyha-winter-slopes.webp'), local('activities/winter/cross-country.webp'), local('activities/winter/levi-piste1.webp'), local('activities/winter/downhill-skiers.webp'), local('hotels/fell-resort-levi.webp')] },
   // Aurora is a PRIMARY signal — must beat the generic boat/fish/berry rules below, whose
   // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
   { match: /aurora|northern light|revontul/i,
@@ -205,7 +206,6 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /king crab|kongekrabbe|crab safari/i,
         imgs: [local('activities/fishing/fishing-kingcrab.webp'), local('activities/fishing/fishing-kingcrab-2.webp')] },
   { match: /kayak|canoe|paddle|sup\b/i,                                img: local('activities/summer/kayak-inari.webp') },
-  { match: /raft|river run/i,                                           img: local('activities/summer/oulanka-ruska-trail.webp') },
   { match: /icebreaker|sampo/i,                                        img: local('activities/winter/icebreaker-sampo.webp') },
   { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
   // Kukkolankoski = SUMMER dipnet fishing at the rapids (Food & Drink). Its title carries

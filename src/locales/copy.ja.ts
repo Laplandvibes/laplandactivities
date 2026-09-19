@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const ja: SectionCopy = {
   fishing: {
+    chooser: { kicker: '楽しみ方を選ぶ', ice: 'アイスフィッシング', iceSub: '無料・許可不要。ドリルと短い竿、凍った湖があれば十分です。', rivers: 'サーモンとグレイリングの川', riversSub: '許可が必要。トルニオ川は解禁、テノ川は2026年禁漁。', norway: '海とタラバガニ', norwaySub: 'ノルウェー側：海釣りは自由、タラバガニはガイド同行のみ。' },
     metaTitle: 'ラップランドと北極海の釣り | LaplandActivities',
     metaDescription: '無料のアイスフィッシング、トルニオ川などの許可制サーモンリバー、ノルウェーのタラバガニサファリ。2026年のルール・料金・公式許可リンクを、竿を出す前にまとめて。',
     verifyBanner: '規則は毎年変わります。釣行前に公式の許可条件を確認してください。以下の数値はすべて出典を明記し、リンクしています。',

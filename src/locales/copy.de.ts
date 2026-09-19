@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const de: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Wählen Sie Ihre Art', ice: 'Eisangeln', iceSub: 'Kostenlos, ohne Schein. Eisbohrer, kurze Rute, zugefrorener See.', rivers: 'Lachs- und Äschenflüsse', riversSub: 'Schein nötig. Tornio offen, Teno 2026 geschlossen.', norway: 'Meer und Königskrabbe', norwaySub: 'Drüben in Norwegen: Meeresangeln frei, Königskrabbe nur mit Guide.' },
     metaTitle: 'Angeln in Lappland & im Nordmeer | LaplandActivities',
     metaDescription: 'Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris: die Regeln, Gebühren und offiziellen Genehmigungslinks für 2026.',
     verifyBanner: 'Die Vorschriften ändern sich jedes Jahr. Prüfen Sie die offiziellen Genehmigungsbedingungen vor dem Angeln. Jede Zahl unten nennt und verlinkt ihre Quelle.',

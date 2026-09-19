@@ -323,6 +323,7 @@ const en: SectionCopy = {
     backHome: "Back to home",
   },
   fishing: {
+    chooser: { kicker: 'Pick your way', ice: 'Ice fishing', iceSub: 'Free, no permit. An auger, a short rod and a frozen lake.', rivers: 'Salmon & grayling rivers', riversSub: 'Permit needed. Tornio open, Teno closed in 2026.', norway: 'Sea & king crab', norwaySub: 'Across in Norway: sea fishing is free, king crab only with a guide.' },
     metaTitle: 'Fishing in Lapland & the Arctic Ocean | LaplandActivities',
     metaDescription: "Free ice fishing, licensed salmon rivers like the Tornio and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links.",
     verifyBanner: 'Regulations change every year. Check the official permit terms before you fish. Every figure below names and links its source.',

@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const zhCN: SectionCopy = {
   fishing: {
+    chooser: { kicker: '选择你的方式', ice: '冰钓', iceSub: '免费、无需许可。一把冰钻、一根短竿和一片冰湖。', rivers: '鲑鱼与茴鱼河流', riversSub: '需要许可证。托尔尼奥河开放，特诺河2026年禁渔。', norway: '海钓与帝王蟹', norwaySub: '在挪威一侧：海钓免费，帝王蟹仅限随导游。' },
     metaTitle: "拉普兰与北冰洋钓鱼指南 | LaplandActivities",
     metaDescription: "免费冰钓、托尔尼奥河等持证三文鱼河，以及挪威帝王蟹之旅，附上你下竿前需要的 2026 年规定、费用和官方许可链接。",
     verifyBanner: "规定每年都会变化，钓鱼前请查阅官方许可条款。下文每一个数字都标明并链接其来源。",

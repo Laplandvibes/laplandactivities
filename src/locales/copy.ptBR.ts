@@ -2,6 +2,7 @@ import type { SectionCopy } from './types'
 
 const ptBR: SectionCopy = {
   fishing: {
+    chooser: { kicker: 'Escolha o seu jeito', ice: 'Pesca no gelo', iceSub: 'Grátis e sem licença. Uma broca, uma vara curta e um lago congelado.', rivers: 'Rios de salmão e tímalo', riversSub: 'Licença necessária. Tornio aberto, Teno fechado em 2026.', norway: 'Mar e caranguejo-real', norwaySub: 'Do lado norueguês: pesca no mar é livre; caranguejo-real só com guia.' },
     metaTitle: "Pesca na Lapônia e no Oceano Ártico | LaplandActivities",
     metaDescription: "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega: regras, taxas e licenças de 2026 antes de pescar.",
     verifyBanner: "As regras mudam todo ano. Confira os termos oficiais da licença antes de pescar. Cada número abaixo cita e faz link para sua fonte.",
