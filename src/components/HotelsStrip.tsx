@@ -108,9 +108,10 @@ export default function HotelsStrip() {
                      yrityksen mökit eivät saa esittää Lomarengasta (§24). Brändikortti: kumppanin oma
                      logo valkoisella laatalla (sininen sanamerkki ei erotu tummalta — logopolariteetti-
                      sääntö: tumma merkki ⇒ valkoinen chip). Vesa 19.9.: "ei ole edes logoa eikä kuvaa". */
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#123A63] via-[#0F172A] to-[#1e1b4b] flex items-center justify-center" aria-hidden="true">
-                    <span className="rounded-xl bg-white px-5 py-4 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.8)]">
-                      <img src="/images/partners/lomarengas.png" alt="" width={472} height={150} loading="lazy" decoding="async" className="h-9 sm:h-11 w-auto" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#123A63] via-[#0F172A] to-[#1e1b4b]" aria-hidden="true">
+                    {/* Logo kortin ylälaitaan: keskellä se jäi tekstilohkon alle (mitattu livenä 19.9.). */}
+                    <span className="absolute top-5 left-5 sm:top-6 sm:left-6 inline-flex rounded-xl bg-white px-4 py-3 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.8)]">
+                      <img src="/images/partners/lomarengas.png" alt="" width={472} height={150} loading="lazy" decoding="async" className="h-7 sm:h-8 w-auto" />
                     </span>
                   </div>
                 )}
@@ -119,7 +120,10 @@ export default function HotelsStrip() {
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night via-deep-night/85 via-45% to-deep-night/25" />
                 {m.src && <PhotoCredit src={m.src} links={false} />}
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]`}>{m.label ?? (m.hotel ? `${partnerLabel} · ${m.hotel}` : partnerLabel)}</p>
+                  {/* Kumppanin nimi tekstinä vain kun logoa ei ole: Lomarengas-kortissa logo sanoo sen jo. */}
+                  {m.src && (
+                    <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]`}>{m.label ?? (m.hotel ? `${partnerLabel} · ${m.hotel}` : partnerLabel)}</p>
+                  )}
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
