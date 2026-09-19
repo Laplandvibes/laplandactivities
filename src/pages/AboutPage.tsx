@@ -12,7 +12,8 @@ import { COPY } from '../locales/copy';
  * abstraktia lupausta ilman yhtään tarkistettavaa faktaa. Uusi sivu vastaa neljään
  * kysymykseen, jotka lukija ja kumppani oikeasti kysyvät: kuka, miten valitaan,
  * mistä raha tulee, mitä emme tee. Yritystiedot (LaPeso Oy, Y-tunnus 3309136-7)
- * näkyvät, ja perustajan oma valokuva on aito (public/vesa-lapland.webp).
+ * näkyvät, ja perustajan oma valokuva on aito (public/vesa-pesola-2026.webp; 19.9.2026 LinkedIn-kuva,
+ * tiedostonimi vaihdettiin koska sama nimi jäi selainten välimuistiin).
  * Copy 12 kielellä copy.<lang>.ts `about`.
  */
 export default function AboutPage() {
@@ -58,7 +59,7 @@ export default function AboutPage() {
           {/* Kuka: aito valokuva perustajasta, ei kuvituskuvaa. */}
           <section className="grid grid-cols-1 sm:grid-cols-[160px_minmax(0,1fr)] gap-6 items-start mb-12">
             <img
-              src="/vesa-lapland.webp"
+              src="/vesa-pesola-2026.webp"
               alt="Vesa Pesola"
               width={480}
               height={480}

@@ -41,25 +41,6 @@ export default function CategoriesIndex() {
             <p className="text-snow/65 mt-4 max-w-2xl xl:max-w-4xl mx-auto text-lg xl:text-xl">{c.lead}</p>
           </div>
 
-          {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
-              harvests via routes.json, so crawler and reader see one text. */}
-          {guide && (
-            <section className="mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
-              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.leadTitle}</h2>
-              <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-4">{guide.lead}</p>
-              <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>
-            </section>
-          )}
-
-          {/* Matkavakuutus ja aktiviteettitasot — sisältöosio kumppanilinkillä,
-              EI mainoskortti. Tämä sivu on koko sivuston "mitä varaan"
-              -pinta, joten "tarkista mitä vakuutuksesi kattaa ennen kuin
-              varaat" kuuluu tähän. Ks. komponentin otsikkokommentti —
-              jokainen tasoväite on lainattu EKTA:n omalta sivulta. */}
-          <section className="mb-10 sm:mb-14 max-w-4xl mx-auto">
-            <TravelInsuranceNote sid="categories_insurance" />
-          </section>
-
           <Link
             to={to(`/categories/${hero.slug}`)}
             className="group relative block rounded-2xl overflow-hidden h-72 sm:h-96 mb-6 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
@@ -103,6 +84,26 @@ export default function CategoriesIndex() {
               );
             })}
           </div>
+
+          {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
+              harvests via routes.json, so crawler and reader see one text. */}
+          {guide && (
+            <section className="mt-12 sm:mt-16 mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
+              <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.leadTitle}</h2>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-4">{guide.lead}</p>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>
+            </section>
+          )}
+
+          {/* Matkavakuutus ja aktiviteettitasot — sisältöosio kumppanilinkillä,
+              EI mainoskortti. Tämä sivu on koko sivuston "mitä varaan"
+              -pinta, joten "tarkista mitä vakuutuksesi kattaa ennen kuin
+              varaat" kuuluu tähän. Ks. komponentin otsikkokommentti —
+              jokainen tasoväite on lainattu EKTA:n omalta sivulta. */}
+          <section className="mb-10 sm:mb-14 max-w-4xl mx-auto">
+            <TravelInsuranceNote sid="categories_insurance" />
+          </section>
+
         </section>
       </main>
 

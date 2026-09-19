@@ -104,18 +104,26 @@ export default function HotelsStrip() {
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
-                  /* Ei valokuvaa: Lomarengasilta ei ole kumppanin omaa kuvaa eikä Lapin mökistä oikeaa kuvaa,
-                     ja toisen yrityksen mökit eivät saa esittää Lomarengasta (§24). Brändin sallima liukuväri. */
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#0d2818] via-[#0F172A] to-[#1e1b4b]" aria-hidden="true" />
+                  /* Lomarengas: ei kumppanin omaa mökkikuvaa eikä oikeaa Lapin mökkikuvaa, ja toisen
+                     yrityksen mökit eivät saa esittää Lomarengasta (§24). Brändikortti: kumppanin oma
+                     logo valkoisella laatalla (sininen sanamerkki ei erotu tummalta — logopolariteetti-
+                     sääntö: tumma merkki ⇒ valkoinen chip). Vesa 19.9.: "ei ole edes logoa eikä kuvaa". */
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#123A63] via-[#0F172A] to-[#1e1b4b] flex items-center justify-center" aria-hidden="true">
+                    <span className="rounded-xl bg-white px-5 py-4 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.8)]">
+                      <img src="/images/partners/lomarengas.png" alt="" width={472} height={150} loading="lazy" decoding="async" className="h-9 sm:h-11 w-auto" />
+                    </span>
+                  </div>
                 )}
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
+                {/* Vesa 19.9.: "tekstit ei erotu". Kirkas kuva (revontulet, valaistu hotelli) söi
+                    vanhan scrimin — pohja tummennettu ja musteet saavat varjon. */}
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-night via-deep-night/85 via-45% to-deep-night/25" />
                 {m.src && <PhotoCredit src={m.src} links={false} />}
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{m.label ?? (m.hotel ? `${partnerLabel} · ${m.hotel}` : partnerLabel)}</p>
-                  <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
+                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]`}>{m.label ?? (m.hotel ? `${partnerLabel} · ${m.hotel}` : partnerLabel)}</p>
+                  <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
-                  <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-3 max-w-md">{l.blurb}</p>
+                  <p className="text-snow/85 text-sm leading-relaxed mt-2 mb-3 max-w-md drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">{l.blurb}</p>
                   <span className="inline-flex items-center gap-1 text-vibe-pink text-sm font-semibold group-hover:translate-x-1 transition-transform">
                     {c.comparePrices} <ArrowRight className="w-4 h-4" />
                   </span>
