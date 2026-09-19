@@ -188,7 +188,7 @@ export default function Home() {
                     loading="lazy"
                     decoding="async" width="1920" height="1080"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
-                  <PhotoCredit src={imageForCategory(cat.slug)} links={false} className="!bottom-auto !top-2" />
+                  <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
                   <div className="absolute bottom-0 left-0 p-4 sm:p-6">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
@@ -252,13 +252,13 @@ export default function Home() {
               const Icon = SEASON_ICONS[i] ?? Sun;
               const accent = SEASON_ACCENTS[i] ?? 'vibe-pink';
               return (
-                <div key={s.name} className="bg-deep-night/55 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                <div key={s.name} className="bg-[#F3F6FA] border border-white/60 rounded-2xl p-6 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]">
                   <div className="flex items-center gap-2 mb-3">
                     <Icon className={`w-5 h-5 text-${accent}`} />
-                    <h3 className="font-heading text-2xl text-snow tracking-wide">{s.name}</h3>
+                    <h3 className="font-heading text-2xl text-deep-night tracking-wide">{s.name}</h3>
                   </div>
-                  <p className="text-snow/80 text-xs mb-2">{s.months} · {s.temp}</p>
-                  <p className="text-snow/75 text-sm leading-relaxed">{s.blurb}</p>
+                  <p className="text-deep-night/65 text-xs mb-2">{s.months} · {s.temp}</p>
+                  <p className="text-deep-night/85 text-sm leading-relaxed">{s.blurb}</p>
                 </div>
               );
             })}
@@ -289,7 +289,7 @@ export default function Home() {
               >
                 <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
-                <PhotoCredit src={imageForDestination(dest.slug)} links={false} className="!bottom-auto !top-2" />
+                <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                   <h3 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-arctic-cyan text-xs font-medium mt-0.5">{dest.tagline}</p>
@@ -314,7 +314,7 @@ export default function Home() {
               >
                 <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/30 to-transparent" />
-                <PhotoCredit src={imageForDestination(dest.slug)} links={false} className="!bottom-auto !top-2" />
+                <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
                   <h3 className="font-heading text-base sm:text-lg text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-snow/75 text-[10px] line-clamp-1">{dest.tagline}</p>

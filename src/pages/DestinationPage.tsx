@@ -112,7 +112,7 @@ export default function DestinationPage() {
           loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
         />
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.94) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
-        <PhotoCredit src={heroImg} className="!bottom-3 !right-3" />
+        <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
@@ -386,7 +386,7 @@ export default function DestinationPage() {
               >
                 <img src={imageForDestination(d.slug)} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
-                <PhotoCredit src={imageForDestination(d.slug)} links={false} className="!bottom-auto !top-2" />
+                <PhotoCredit src={imageForDestination(d.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">
                   <h3 className="font-heading text-lg sm:text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
                   <p className="text-snow/80 text-xs line-clamp-1">{d.tagline}</p>

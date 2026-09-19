@@ -113,10 +113,10 @@ export default function Navigation() {
                   <Link
                     key={d.slug}
                     to={to(`/destinations/${d.slug}`)}
-                    className="block px-3 py-2 rounded-lg text-snow/80 hover:text-snow hover:bg-white/5 text-sm"
+                    className="block px-3 py-2 rounded-lg hover:bg-white/5 text-sm"
                   >
-                    {d.name}
-                    <span className="text-snow/75 text-xs block">{d.tagline}</span>
+                    <span className="block font-semibold text-snow">{d.name}</span>
+                    <span className="text-snow/55 text-[11px] leading-snug block">{d.tagline}</span>
                   </Link>
                   );
                 })}

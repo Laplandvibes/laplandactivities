@@ -6,7 +6,6 @@ import { ArrowLeft, Sparkles, Snowflake, Sun } from 'lucide-react';
 import { getCategoryBySlug, categories } from '../data/categories';
 import { getActivitiesByCategory } from '../data/activities';
 import ActivityCard from '../components/ActivityCard';
-import BookingCTA from '../components/BookingCTA';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../shared/ads/AdUnit';
@@ -58,11 +57,15 @@ export default function CategoryPage() {
   // Season split — for year-round categories (adventure, animals, wellness, culture,
   // food) surface this-season activities first, then the other season. Single-season
   // categories (aurora, winter sports, summer) render as one plain grid.
-  const splittable = !SINGLE_SEASON.has(slug || '');
   const bucket = currentSeasonBucket();
   const otherBucket = bucket === 'summer' ? 'winter' : 'summer';
-  const inSeason = splittable ? acts.filter((a) => inBucket(a, bucket)) : acts;
-  const offSeason = splittable ? acts.filter((a) => !inBucket(a, bucket)) : [];
+  // Vesa 19.9.2026 (seikkailu kesällä: 1 kortti "Juuri nyt parasta" + 13 talvikorttia): kausijako
+  // vain kun MOLEMMISSA ryhmissä on vähintään kolme korttia, muuten yksi ruudukko kauden kortit edellä.
+  const seasonNow = !SINGLE_SEASON.has(slug || '') ? acts.filter((a) => inBucket(a, bucket)) : acts;
+  const seasonOff = !SINGLE_SEASON.has(slug || '') ? acts.filter((a) => !inBucket(a, bucket)) : [];
+  const splittable = seasonNow.length >= 3 && seasonOff.length >= 3;
+  const inSeason = splittable ? seasonNow : [...seasonNow, ...seasonOff];
+  const offSeason = splittable ? seasonOff : [];
   const seasonNowWord = bucket === 'summer' ? words.summer : words.winter;
   const seasonOtherWord = otherBucket === 'summer' ? words.summer : words.winter;
   const SeasonNowIcon = bucket === 'summer' ? Sun : Snowflake;
@@ -105,7 +108,7 @@ export default function CategoryPage() {
       <section className="relative min-h-[42vh] md:min-h-[46vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
-        <PhotoCredit src={heroImg} className="!bottom-3 !right-3" />
+        <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <category.icon className="w-7 h-7 text-vibe-pink" />
@@ -186,6 +189,20 @@ export default function CategoryPage() {
         </div>
       </section>
 
+      {/* VARAA SUORAAN — heti ruudukon perään, jotta sivulla on YKSI varauskokonaisuus
+          (Vesa 19.9.2026: "ei kait samalla sivulla useampaa eri kohtaa eri varauksille tarvitse
+          olla tai sitten ne pitää kategorisoida"): ruudukko = kaikki aktiviteetit (haku),
+          tämä = varatuimmat tuotteet hintoineen. Yleinen BookingCTA-nauha poistettu sivun lopusta. */}
+      <GetYourGuideWidget
+        locationId="2652"
+        cmpTag={`laplandactivities-cat-${slug}`}
+        title={`${c.gygTitlePrefix} ${category.name}`}
+        eyebrow={c.gygEyebrow}
+        /* Adblock-fallbackin CTA hakee tämän kategorian retkiä, ei geneeristä
+           "Lapland"-listaa (auditti 2026-08-03). */
+        fallbackQuery={gygQ ? `${gygQ} lapland` : 'Lapland'}
+      />
+
       {/* WHAT THIS COVERS + HOW TO CHOOSE — the category page's own editorial.
           Written per language in src/data/guides.<lang>.ts; the prerenderer
           harvests the same record via routes.json, so crawler and reader get the
@@ -257,22 +274,12 @@ export default function CategoryPage() {
               snapshot={topicRail.snapshot}
               lang={lang}
               sid={topicRail.sid}
-              variant="dark"
+              variant="light"
               onCtaClick={(specKey, adSid, url) => trackAffiliateClick(specKey, `ad_unit:${adSid}`, url)}
             />
           </div>
         </section>
       )}
-
-      <GetYourGuideWidget
-        locationId="2652"
-        cmpTag={`laplandactivities-cat-${slug}`}
-        title={`${c.gygTitlePrefix} ${category.name}`}
-        eyebrow={c.gygEyebrow}
-        /* Adblock-fallbackin CTA hakee tämän kategorian retkiä, ei geneeristä
-           "Lapland"-listaa (auditti 2026-08-03). */
-        fallbackQuery={gygQ ? `${gygQ} lapland` : 'Lapland'}
-      />
 
       {/* Featured partner — surfaced on the wildlife (animals) listing only.
           Direct partner deal, normal-follow internal link to the /bear-kuusamo guide. */}
@@ -339,7 +346,6 @@ export default function CategoryPage() {
         </div>
       </section>
 
-      <BookingCTA sidTag={`cat_${slug}`} gygSlug={gygSlug} gygQ={gygQ} />
     </>
   );
 }

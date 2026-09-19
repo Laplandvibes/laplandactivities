@@ -24,15 +24,17 @@ interface Slide {
 const S = {
   husky:     { src: '/images/heroes/slider-01-husky-aurora.webp', alt: 'Husky team on a snowy forest trail at Saija, Salla', fallback: HERO.huskyAurora, season: 'winter' as const },
   snowmobile:{ src: '/images/heroes/slider-02-snowmobile-fells.webp', alt: 'Snowmobile on frozen Lake Inari', fallback: HERO.huskySnowmobile, season: 'winter' as const },
-  ruka:      { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Summer view over the fells from Rukatunturi, Kuusamo', fallback: HERO.snowyForest, season: 'summer' as const },
+  ruka:      { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Ruka gondola lift above the summer forest and lakes, Kuusamo', fallback: HERO.snowyForest, season: 'summer' as const },
   igloo:     { src: '/images/heroes/slider-04-glass-igloo.webp', alt: 'Aurora cabins with glass roofs in Inari', fallback: HERO.glassIgloo, season: 'winter' as const },
   reindeer:  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer sled in a snowy forest on Hietaliete island, Kemi', fallback: HERO.campfire, season: 'any' as const },
   kayak:     { src: '/images/heroes/slider-07-kayak-lake.webp', alt: 'Kuuva channel on Lake Inari in summer', fallback: HERO.snowyForest, season: 'summer' as const },
   aurora:    { src: '/images/activities/northern-lights/aurora-lake.webp', alt: 'Green northern lights over Levi fell, Kittilä', fallback: HERO.huskyAurora, season: 'winter' as const },
 };
 
-const SUMMER_LED: Slide[] = [S.ruka, S.kayak, S.reindeer, S.snowmobile, S.husky, S.igloo];
-const WINTER_LED: Slide[] = [S.husky, S.snowmobile, S.aurora, S.reindeer, S.igloo, S.ruka];
+// 19.9.2026 Vesa: ensimmäinen ruutu näytti rakennustyömaalta (Ruka Park heinäkuussa: soraa, hiekkakasa,
+// lumitykit). Kesä alkaa nyt aktiviteetilla (melonta Inarijärvellä) ja Rukan kuva on gondoli metsän yllä.
+const SUMMER_LED: Slide[] = [S.kayak, S.ruka, S.reindeer, S.snowmobile, S.husky, S.igloo];
+const WINTER_LED: Slide[] = [S.husky, S.snowmobile, S.aurora, S.reindeer, S.igloo, S.kayak];
 
 const slides: Slide[] = currentSeasonBucket() === 'summer' ? SUMMER_LED : WINTER_LED;
 
@@ -69,7 +71,7 @@ export default function HeroSlider() {
         </div>
       ))}
 
-      <PhotoCredit src={slides[idx].src} className="!bottom-3 !right-3" />
+      <PhotoCredit src={slides[idx].src} />
 
       {/* indicator dots */}
       <div className="absolute bottom-24 sm:bottom-28 left-1/2 -translate-x-1/2 flex gap-2 z-10">

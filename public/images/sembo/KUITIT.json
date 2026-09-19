@@ -1,0 +1,35 @@
+{
+  "_ohje": "Sembo-hotellien omat kuvat hoteldealsin fetch-sembo-media.mjs-ajosta 11.9.2026 (Vesan kuvalupa 10.9.: kumppanin oma kuva sille hotellille, johon kortti vie; jos Sembo/Adtraction vastustaa, poista kansio). Eri ruutu kuin hoteldealsin kortissa.",
+  "/images/sembo/levinIglut.webp": {
+    "hotelli": "Golden Crown Levin Iglut",
+    "semboSivu": "sembo.fi hotel-details/2512109",
+    "ehdokas": 4,
+    "alkupera": "hoteldeals public/images/sembo/levinIglut-4.webp",
+    "haettu": "2026-09-11",
+    "lisatty": "2026-09-19"
+  },
+  "/images/sembo/leviHotelSpa.webp": {
+    "hotelli": "Levi Hotel Spa",
+    "semboSivu": "sembo.fi hotel-details/24638",
+    "ehdokas": 2,
+    "alkupera": "hoteldeals public/images/sembo/leviHotelSpa-2.webp",
+    "haettu": "2026-09-11",
+    "lisatty": "2026-09-19"
+  },
+  "/images/sembo/arcticTreeHouse.webp": {
+    "hotelli": "Arctic TreeHouse Hotel",
+    "semboSivu": "sembo.fi hotel-details/922953",
+    "ehdokas": 2,
+    "alkupera": "hoteldeals public/images/sembo/arcticTreeHouse-2.webp",
+    "haettu": "2026-09-11",
+    "lisatty": "2026-09-19"
+  },
+  "/images/sembo/kakslauttanen.webp": {
+    "hotelli": "Kakslauttanen Arctic Resort",
+    "semboSivu": "sembo.fi hotel-details/1679682",
+    "ehdokas": 2,
+    "alkupera": "hoteldeals public/images/sembo/kakslauttanen-2.webp",
+    "haettu": "2026-09-11",
+    "lisatty": "2026-09-19"
+  }
+}

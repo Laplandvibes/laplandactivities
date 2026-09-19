@@ -9,7 +9,7 @@
  */
 export interface PhotoCredit {
   /** 'own' = LaplandVibesin oma valokuva, 'commons' = Wikimedia Commons */
-  kind: 'own' | 'commons';
+  kind: 'own' | 'commons' | 'partner';
   author: string;
   license: string;
   licenseUrl?: string;
@@ -20,11 +20,15 @@ export interface PhotoCredit {
 }
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
+  '/images/sembo/levinIglut.webp': { kind: 'partner', author: "Golden Crown Levin Iglut", license: 'Sembo', pageUrl: "https://www.sembo.fi/hotel-details/2512109", place: "Levi, Kittilä", date: '2026-09' },
+  '/images/sembo/leviHotelSpa.webp': { kind: 'partner', author: "Levi Hotel Spa", license: 'Sembo', pageUrl: "https://www.sembo.fi/hotel-details/24638", place: "Levi, Kittilä", date: '2026-09' },
+  '/images/sembo/arcticTreeHouse.webp': { kind: 'partner', author: "Arctic TreeHouse Hotel", license: 'Sembo', pageUrl: "https://www.sembo.fi/hotel-details/922953", place: "Rovaniemi", date: '2026-09' },
+  '/images/sembo/kakslauttanen.webp': { kind: 'partner', author: "Kakslauttanen Arctic Resort", license: 'Sembo', pageUrl: "https://www.sembo.fi/hotel-details/1679682", place: "Saariselkä, Inari", date: '2026-09' },
   '/images/activities/summer/salmon-fishing.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Tornionjoki, Korpikoski, Pello", date: '2026-07', title: "20260721_172809.jpg" },
   '/images/activities/fishing/fishing-river.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Tornionjoki, Korpikoski, Pello", date: '2026-07', title: "20260721_172911.jpg" },
   '/images/activities/summer/lapland-river.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Tornionjoki, Korpikoski, Pello", date: '2026-07', title: "20260721_172900.jpg" },
   '/images/categories/summer.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Pyhätunturi, Pelkosenniemi", date: '2026-07', title: "20260719_162302.jpg" },
-  '/images/heroes/slider-03-summer-hike.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Rukatunturi, Kuusamo", date: '2026-07', title: "20260717_141649.jpg" },
+  '/images/heroes/slider-03-summer-hike.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Rukan gondoli, Rukatunturi, Kuusamo", date: '2026-07', title: "20260717_140759.jpg" },
   '/images/heroes/ruka-fell.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Rukatunturi, Kuusamo", date: '2026-07', title: "20260717_140510.jpg" },
   '/images/activities/summer/mtb-bikepark.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Levi Bike Park, Kittilä", date: '2026-07', title: "20260720_182156.jpg" },
   '/images/activities/summer/foraging.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Levi, Kittilä", date: '2026-07', title: "20260720_220228.jpg" },
@@ -75,7 +79,11 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   "/images/activities/winter/husky-kennel.webp": { kind: 'commons', author: "Markus Trienke", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ASaija_2014-031-0_(15419288134).jpg", title: "Saija 2014-031-0 (15419288134).jpg", date: "2014-12-08" },
   "/images/activities/winter/icebreaker-sampo.webp": { kind: 'commons', author: "Eduard47", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3A2017-03-23_Sampo_in_Port_of_Kemi_(Finland)_02.jpg", title: "2017-03-23 Sampo in Port of Kemi (Finland) 02.jpg", date: "2017-03-23" },
   "/images/activities/winter/ounasvaara-winter.webp": { kind: 'commons', author: "Sadenäyttely", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ALuminen_Ounasvaara.jpg", title: "Luminen Ounasvaara.jpg", date: "2020-12-25" },
+  "/images/activities/winter/snowmobile-kuntivaara.webp": { kind: 'commons', author: "Timo Newton-Syms from Helsinki, Finland &amp; Maidenhead, Berkshire, UK", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3AKuntivaara_(12525322344).jpg", title: "Kuntivaara (12525322344).jpg", date: "2014-02-14" },
   "/images/activities/winter/snowmobile-river.webp": { kind: 'commons', author: "Manfred Werner - Tsui", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3AInari%2C_Suomi_-_Finland_2013-03-10_Inarij%C3%A4rvi_snowmobile_f.jpg", title: "Inari, Suomi - Finland 2013-03-10 Inarijärvi snowmobile f.jpg", date: "2013-03-10" },
+  "/images/activities/winter/snowmobile-ruka-forest.webp": { kind: 'commons', author: "Timo Newton-Syms from Helsinki, Finland &amp; Maidenhead, Berkshire, UK", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ASnowmobiles_(24854072859).jpg", title: "Snowmobiles (24854072859).jpg", date: "2016-02-21" },
+  "/images/activities/winter/snowmobile-ruka-lake.webp": { kind: 'commons', author: "Timo Newton-Syms from Helsinki, Finland &amp; Maidenhead, Berkshire, UK", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ASnowmobiles_(12525089445).jpg", title: "Snowmobiles (12525089445).jpg", date: "2014-02-14" },
+  "/images/activities/winter/snowmobile-saariselka.webp": { kind: 'commons', author: "Timo Newton-Syms from Helsinki, Finland &amp; Maidenhead, Berkshire, UK", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ASnowmobiles_(301004843).jpg", title: "Snowmobiles (301004843).jpg", date: "2002-12-30" },
   "/images/activities/winter/snowshoe-forest.webp": { kind: 'commons', author: "Anneli Salo", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ASnowshoers_Lumikengill%C3%A4_IMG_4606_C.JPG", title: "Snowshoers Lumikengillä IMG 4606 C.JPG", date: "2011-03-27" },
   "/images/heroes/husky-sled-day.webp": { kind: 'commons', author: "Markus Trienke", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ARune_(15854308540).jpg", title: "Rune (15854308540).jpg", date: "2014-12-08" },
   "/images/heroes/inari-summer-lake.webp": { kind: 'commons', author: "Richard Mortel from Riyadh, Saudi Arabia", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3AInarijarvi_Lake%2C_Finland_(6)_(36288896690).jpg", title: "Inarijarvi Lake, Finland (6) (36288896690).jpg", date: "Taken on 1" },

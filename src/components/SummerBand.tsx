@@ -85,7 +85,7 @@ export default function SummerBand() {
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
-              <PhotoCredit src={bandImg} className="!bottom-auto !top-2" />
+              <PhotoCredit src={bandImg} />
               <div className="absolute inset-0 bg-gradient-to-t from-deep-night/80 via-deep-night/20 to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-vibe-pink text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">{c.imageKicker}</p>
@@ -106,11 +106,11 @@ export default function SummerBand() {
                 partner="activities-search"
                 sid={sid}
                 destination={q}
-                className="group bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 hover:border-vibe-pink/40 rounded-2xl p-4 sm:p-5 transition-all flex flex-col"
+                className="group bg-[#F3F6FA] hover:bg-white border border-white/60 hover:border-vibe-pink/50 rounded-2xl p-4 sm:p-5 transition-all flex flex-col shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]"
               >
                 <Icon className="w-5 h-5 text-vibe-pink mb-3" />
-                <p className="font-body font-bold text-snow text-[15px] leading-snug mb-1">{h.title}</p>
-                <p className="text-snow/75 text-xs sm:text-sm leading-relaxed">{h.body}</p>
+                <p className="font-body font-bold text-deep-night text-[15px] leading-snug mb-1 group-hover:text-vibe-pink transition-colors">{h.title}</p>
+                <p className="text-deep-night/75 text-xs sm:text-sm leading-relaxed">{h.body}</p>
               </AffiliateCTA>
             );
           })}

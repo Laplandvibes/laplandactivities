@@ -19,13 +19,19 @@ export default function PhotoCredit({ src, links = true, className = '' }: { src
   const lang = useLang();
   const c = creditFor(src);
   if (!c) return null;
-  const base = `pointer-events-auto absolute bottom-1.5 right-1.5 z-10 max-w-[92%] rounded-md bg-black/55 px-1.5 py-0.5 text-[10px] leading-tight text-white/90 ${className}`;
+  // Vesa 19.9.2026: "hieman liikaa saa huomiota kuvan ottaja ja ne pitäisi aina olla oikea alalaita"
+  // ⇒ 9 px, 60 % muste, aina oikea alakulma; täysi tekijä + linkit Tietoja-sivun luettelossa.
+  const base = `pointer-events-auto absolute bottom-1 right-1 z-10 max-w-[58%] truncate rounded bg-black/35 px-1 py-px text-[9px] leading-tight text-white/60 ${className}`;
+  if (c.kind === 'partner') {
+    // Kumppanin (esim. Sembo) oma hotellikuva: lähde näkyviin, ei lisenssilinkkiä (kuvalupa 10.9.2026).
+    return <span className={base}>{OWN_LABEL[lang]?.split(':')[0] ?? 'Photo'}: {c.author} · {c.license}</span>;
+  }
   if (c.kind === 'own') {
     return <span className={base}>{OWN_LABEL[lang] ?? OWN_LABEL.en}{c.date ? ` ${c.date.slice(0, 4)}` : ''}</span>;
   }
   const lic = c.license;
   if (!links) {
-    return <span className={base}>© {c.author} · <span className="whitespace-nowrap">{lic}</span> · Wikimedia Commons</span>;
+    return <span className={base}>© {c.author} · <span className="whitespace-nowrap">{lic}</span></span>;
   }
   return (
     <span className={base}>

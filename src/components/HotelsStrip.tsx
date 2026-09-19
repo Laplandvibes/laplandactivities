@@ -27,17 +27,26 @@ import { COPY } from '../locales/copy';
  *     → per-kortin label. dest-URLit mitattu 23.8. (200 + canonical).
  */
 const META: {
+  /** Kumppanin (Sembo) oma kuva siitä hotellista, johon kortti vie — tyhjä = tekstikortti ilman valokuvaa. */
   src: string; fallback: string; sid: string; query: string; accent: string;
   trip?: [string, string]; sembo?: [string, string];
   partner?: 'lomarengas'; destFi?: string; label?: string;
+  /** Hotellin nimi, joka näytetään kumppanin nimen perässä (Sembo · Levi Hotel Spa). */
+  hotel?: string;
 }[] = [
-  { src: '/images/hotels/glass-igloo-interior.webp',     fallback: MKT.igluCouple,    sid: 'hotels_strip_glass_igloo',  query: 'Golden Crown Levin Iglut, Levi, Finland', accent: 'vibe-pink',
-    trip: ['38182', '9528161'], sembo: ['2512109', '360006'] },
-  { src: '/images/hotels/red-lake-cabin.webp',       fallback: HERO.snowyForest,  sid: 'hotels_strip_log_cabin',    query: 'https://www.lomarengas.fi/en/cottages/lapland', accent: 'aurora-green',
+  // 19.9.2026: jokainen Sembo-kortti vie NIMETTYYN hotelliin ja näyttää sen oman kuvan (Vesan
+  // kuvalupa 10.9., sama kuin hoteldeals/wellness; kuitit public/images/sembo/KUITIT.json).
+  // Id-parit hoteldealsin propertyBooking.ts:stä (mitattu livenä 11.9.).
+  { src: '/images/sembo/levinIglut.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_glass_igloo', query: 'Golden Crown Levin Iglut, Levi, Finland', accent: 'vibe-pink',
+    trip: ['38182', '9528161'], sembo: ['2512109', '360006'], hotel: 'Golden Crown Levin Iglut' },
+  { src: '', fallback: '', sid: 'hotels_strip_log_cabin', query: 'https://www.lomarengas.fi/en/cottages/lapland', accent: 'aurora-green',
     partner: 'lomarengas', destFi: 'https://www.lomarengas.fi/mokit/lappi', label: 'Lomarengas' },
-  { src: '/images/hotels/fell-resort-village.webp',         fallback: HERO.snowyForest,  sid: 'hotels_strip_fell_resort',  query: 'Levi, Finland',                accent: 'arctic-cyan' },
-  { src: '/images/hotels/boutique-hotel-rovaniemi.webp', fallback: HERO.huskyAurora,  sid: 'hotels_strip_boutique',     query: 'Rovaniemi, Finland',           accent: 'vibe-pink' },
-  { src: '/images/hotels/smoke-sauna-ice.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_smoke_sauna', query: 'Saariselkä, Finland',           accent: 'aurora-green' },
+  { src: '/images/sembo/leviHotelSpa.webp', fallback: HERO.snowyForest, sid: 'hotels_strip_fell_resort', query: 'Levi Hotel Spa, Levi, Finland', accent: 'arctic-cyan',
+    trip: ['38182', '2164910'], sembo: ['24638', '360006'], hotel: 'Levi Hotel Spa' },
+  { src: '/images/sembo/arcticTreeHouse.webp', fallback: HERO.huskyAurora, sid: 'hotels_strip_boutique', query: 'Arctic TreeHouse Hotel, Rovaniemi, Finland', accent: 'vibe-pink',
+    trip: ['1794', '10035619'], sembo: ['922953', '360732'], hotel: 'Arctic TreeHouse Hotel' },
+  { src: '/images/sembo/kakslauttanen.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_smoke_sauna', query: 'Kakslauttanen Arctic Resort, Saariselkä, Finland', accent: 'aurora-green',
+    trip: ['56309', '8669535'], sembo: ['1679682', '360014'], hotel: 'Kakslauttanen Arctic Resort' },
 ];
 
 export default function HotelsStrip() {
@@ -86,17 +95,23 @@ export default function HotelsStrip() {
                 query={Object.keys(propParams).length ? propParams : undefined}
                 className={`group relative rounded-2xl overflow-hidden border border-white/10 hover:border-vibe-pink/40 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all aspect-[4/3] ${idx === 0 ? 'lg:col-span-2 lg:row-span-2 lg:aspect-auto lg:min-h-[480px]' : ''}`}
               >
-                <SmartImage
-                  src={m.src}
-                  fallback={m.fallback}
-                  alt={l.name}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
+                {m.src ? (
+                  <SmartImage
+                    src={m.src}
+                    fallback={m.fallback}
+                    alt={m.hotel ? `${m.hotel} — ${l.name}` : l.name}
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  /* Ei valokuvaa: Lomarengasilta ei ole kumppanin omaa kuvaa eikä Lapin mökistä oikeaa kuvaa,
+                     ja toisen yrityksen mökit eivät saa esittää Lomarengasta (§24). Brändin sallima liukuväri. */
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#0d2818] via-[#0F172A] to-[#1e1b4b]" aria-hidden="true" />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
-                <PhotoCredit src={m.src} links={false} className="!bottom-auto !top-2" />
+                {m.src && <PhotoCredit src={m.src} links={false} />}
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{m.label ?? partnerLabel}</p>
+                  <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5`}>{m.label ?? (m.hotel ? `${partnerLabel} · ${m.hotel}` : partnerLabel)}</p>
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
