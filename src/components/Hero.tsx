@@ -20,7 +20,11 @@ export default function Hero() {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-deep-night">
       <HeroSlider />
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-night/60 via-deep-night/25 to-deep-night pointer-events-none" />
+      {/* 20.9.2026: kesan ensimmainen ruutu (melonta Inarijarvella) on vaalea, ja heroteksti-portti
+          mittasi leadille 2,74:1 rajan 4,5:1 sijaan. Keskiosan tummennus 25 % -> 65 % on se kohta
+          jossa leipateksti istuu; ylareuna ja alareuna ennallaan. Ala kevenna tata ilman mittausta:
+          npm run build && node ../scripts/portti.mjs --site laplandactivities-new --taso selain */}
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-night/70 via-deep-night/65 to-deep-night pointer-events-none" />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto pt-20">
         <p className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
