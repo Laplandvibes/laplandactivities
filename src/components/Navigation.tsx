@@ -95,10 +95,13 @@ export default function Navigation() {
             sanamerkin oikea reuna ja ensimmäinen linkki koskettivat toisiaan (mitattu:
             molemmat x=373). ml-6 erottaa logon linkeistä, ja linkkiväli kiristettiin
             lg:llä, jotta rivi mahtuu ilman että xl muuttuu. */}
+        {/* 🔴 Jokainen linkki min-h-11 (44 px): navi-portti mittasi tasaiset <Link>-linkit
+            20 px korkeiksi 12 kielellä × 3 leveydellä (108 löydöstä 20.9.2026). Pudotusvalikot
+            olivat jo inline-flex eivätkä osuneet mittaan. Ylätunniste on 64 px, joten 44 px mahtuu. */}
         <nav aria-label="Main" className="hidden lg:flex items-center gap-2.5 xl:gap-6 ml-4 xl:ml-10" ref={dropRef}>
           <Link
             to={to('/')}
-            className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`inline-flex items-center min-h-11 text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.home}
           </Link>
@@ -169,14 +172,14 @@ export default function Navigation() {
 
           <Link
             to={to('/fishing')}
-            className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/fishing')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`inline-flex items-center min-h-11 text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/fishing')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.fishing}
           </Link>
 
           <Link
             to={to('/about')}
-            className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/about')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`inline-flex items-center min-h-11 text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/about')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.about}
           </Link>
