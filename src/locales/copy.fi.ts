@@ -238,19 +238,19 @@ const fi: SectionCopy = {
   },
   nav: {
     home: 'Etusivu',
-    destinations: 'Kohteet',
+    destinations: 'Matkakohteet',
     categories: 'Kategoriat',
     about: 'Tietoja', fishing: 'Kalastusopas',
     bookCta: 'Varaa aktiviteetti',
     bookCtaShort: 'Varaa nyt',
-    allDestinations: 'Kaikki kohteet →',
+    allDestinations: 'Kaikki matkakohteet →',
     allCategories: 'Kaikki kategoriat →',
   },
   hero: {
     eyebrow: 'Suomen Lappi · revontulet ja keskiyön aurinko',
     lead: 'Moottorikelkkasafareja, huskysafareja, revontuliretkiä, savusaunoja ja koskenlaskua keskiyön auringossa. Varaa suoraan luotettavilta paikallisilta toimijoilta Rovaniemellä, Levillä, Ylläksellä, Saariselällä ja muualla.',
     primaryCta: 'Varaa aktiviteetti',
-    secondaryCta: 'Selaa kohteita',
+    secondaryCta: 'Selaa matkakohteita',
     stayNearby: 'Majoitus lähistöllä',
     stayNearbyDesc: 'Sembo, parhaat hinnat',
     rentCar: 'Vuokraa auto',
@@ -367,9 +367,12 @@ const fi: SectionCopy = {
       { name: 'Syksy', months: 'syys – loka', blurb: 'Ruska värittää tunturit. Ensimmäiset revontulet palaavat. Sienien ja marjojen kausi.', temp: '+5…-5°C' },
     ],
     destinationsKicker: 'Minne mennä',
-    // Otsikko renderöityy "{lukumäärä} {tämä}" → partitiivi, ei "10 Kohteet"
+    // Otsikko renderöityy "{lukumäärä} {tämä}" → partitiivi, ei "10 Matkakohteet"
     // (sama vikaperhe kuin "8 tekemistä kohteessa X", Vesa 2026-08-03).
-    destinationsH2: 'kohdetta',
+    // 20.9.2026: "kohde" → "matkakohde" navigoinnissa ja otsikoissa (Vesa: "toi kohteet voi
+    // vähän sekoittaa" — sana tarkoittaa suomessa myös maalia ja esinettä). Lauseen sisällä
+    // "kohteessa/kohteita" jää ennalleen: siellä se on luonteva eikä monitulkintainen.
+    destinationsH2: 'matkakohdetta',
     viewAll: 'Katso kaikki',
     activitiesShort: 'aktiviteettia',
   },
@@ -437,20 +440,20 @@ const fi: SectionCopy = {
     allCategoriesLink: 'Kaikki kategoriat →',
   },
   destinationsIndex: {
-    metaTitle: 'Lapin ja Kuusamon kohteet · LaplandActivities',
-    metaDescription: 'Kymmenen ikonista kohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio ja Tornio.',
+    metaTitle: 'Lapin ja Kuusamon matkakohteet · LaplandActivities',
+    metaDescription: 'Kymmenen ikonista matkakohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio ja Tornio.',
     kicker: 'Minne mennä',
-    h1: 'Kohteet',
-    lead: 'Kymmenen ikonista kohdetta Lapissa ja Kuusamossa, jokaisella oma luonne ja toimijaverkosto.',
+    h1: 'Matkakohteet',
+    lead: 'Kymmenen ikonista matkakohdetta Lapissa ja Kuusamossa, jokaisella oma luonne ja toimijaverkosto.',
     activitiesLabel: 'aktiviteettia',
     explore: 'Tutustu',
     gygTitle: 'Varatuimmat Lapin retket',
     gygEyebrow: 'Kaikissa kohteissa',
   },
   destinationPage: {
-    notFoundH1: 'Kohdetta ei löydy',
-    backDestinations: '← Takaisin kohteisiin',
-    allDestinationsNav: 'Kaikki kohteet',
+    notFoundH1: 'Matkakohdetta ei löydy',
+    backDestinations: '← Takaisin matkakohteisiin',
+    allDestinationsNav: 'Kaikki matkakohteet',
     bookActivitiesIn: 'Varaa aktiviteetit: {dest}',
     stayIn: 'Yövy',
     activitiesShort: 'aktiviteettia',
@@ -484,8 +487,8 @@ const fi: SectionCopy = {
     driveYourselfBlurb: 'Lappi on laaja ja vuokra-autot on jo varustettu talvirenkailla. Vertaile yli 600 toimittajaa.',
     findBestPrice: 'Etsi paras hinta',
     keepExploringKicker: 'Jatka tutkimista',
-    otherDestinationsH2: 'Muita kohteita',
-    allDestinations: 'Kaikki kohteet',
+    otherDestinationsH2: 'Muita matkakohteita',
+    allDestinations: 'Kaikki matkakohteet',
     tipsByDestination: {
       rovaniemi: [
         { tip: 'Mene Joulupukin pajakylään heti aamusta, niin vältät risteilybussien ruuhkat.', icon: '🎅' },

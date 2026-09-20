@@ -1,8 +1,5 @@
-import {
-  Dog, Fish, Flame, Mountain, Snowflake, Sparkles, Waves, Landmark, Gauge,
-  Footprints, Compass, ExternalLink,
-} from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
+import { pickIcon } from '../lib/pickIcon';
 import { gygHref } from '../shared/gyg/picks';
 import type { GygPick } from '../shared/gyg/picks';
 import { picksForDestination } from '../data/destinationPicks';
@@ -31,24 +28,7 @@ import { trackAffiliateClick } from '../lib/analytics';
  * Mobiilissa vaakavieritys (karuselli), sm+ ruudukko. Jokaisella kortilla oma sid,
  * joten klikit erottuvat Workerin D1-lokissa kortti kortilta.
  */
-const ICONS: Array<[RegExp, LucideIcon]> = [
-  [/husky|sled dog|dog sled/i, Dog],
-  [/reindeer/i, Compass],
-  [/snowmobile|safari/i, Gauge],
-  [/karting/i, Gauge],
-  [/sauna|smoke/i, Flame],
-  [/fish/i, Fish],
-  [/ski|cross-country/i, Snowflake],
-  [/canoe|kayak|boating|cruise|water/i, Waves],
-  [/snowshoe|hike|hiking|trail|forest|treasures/i, Mountain],
-  [/aurora|northern lights/i, Sparkles],
-  [/museum|siida|village/i, Landmark],
-  [/horse|riding/i, Footprints],
-];
-function iconFor(title: string): LucideIcon {
-  for (const [re, Icon] of ICONS) if (re.test(title)) return Icon;
-  return Compass;
-}
+
 
 export default function DestinationPicks({ slug }: { slug: string }) {
   const lang = useLang();
@@ -67,7 +47,7 @@ export default function DestinationPicks({ slug }: { slug: string }) {
 
         <div className="flex gap-4 overflow-x-auto pb-3 -mx-4 px-4 snap-x snap-mandatory sm:mx-0 sm:px-0 sm:overflow-visible sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5">
           {rows.map((p) => {
-            const Icon = iconFor(p.title);
+            const Icon = pickIcon(p.title);
             return (
               <a
                 key={p.path}

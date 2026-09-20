@@ -1,6 +1,6 @@
 import { MapPin, Clock, Ticket, ArrowUpRight } from 'lucide-react';
 import { ACTIVITIES_PICKS, gygHref, GYG_PRICE_AS_OF } from '../shared/gyg/picks';
-import { GYG_IMAGES } from '../data/gygImages';
+import { pickIcon } from '../lib/pickIcon';
 import { useLang } from '../i18n/useLang';
 
 /**
@@ -206,17 +206,16 @@ export default function GygPicks() {
             rel="sponsored nofollow noopener"
             className="group flex flex-col overflow-hidden rounded-2xl border bg-white/5 border-white/10 no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#22D3EE]/50"
           >
-            {GYG_IMAGES[p.path] ? (
-              <img
-                src={GYG_IMAGES[p.path]}
-                alt=""
-                loading="lazy"
-                className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-            ) : (
-              /* Brand-approved fallback: a gradient, never a stock photo. */
-              <div className="aspect-[4/3] w-full bg-gradient-to-br from-[#0d2818] via-[#0F172A] to-[#1e1b4b]" />
-            )}
+            {/* 🔴 Ei kuvaa: tuotekortti on lupaus yhdestä nimetystä tuotteesta, joten
+                yleiskuva samasta lajista (§24) ja tekoälykuva ovat molemmat poissuljettuja,
+                ja GetYourGuiden oma kuva kuuluu järjestäjälle. Ikoni + typografia kantavat
+                kortin, sama ratkaisu kuin kohdesivujen DestinationPicks-karusellissa.
+                Poistetut AI-kuvat: ks. src/data/gygImages.ts. */}
+            {(() => { const Icon = pickIcon(p.title); return (
+              <span className="mx-5 mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
+                <Icon className="h-5 w-5 text-[#F472B6]" aria-hidden="true" />
+              </span>
+            ); })()}
 
             <div className="flex flex-1 flex-col p-5">
               <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#22D3EE]">

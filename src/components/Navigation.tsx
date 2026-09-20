@@ -73,7 +73,10 @@ export default function Navigation() {
         <div className="flex items-center gap-3 sm:gap-5 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="laplandactivities.fi" />
           <Link to={to('/')} className="flex items-center min-h-11" aria-label="LaplandActivities home">
-            <span className="font-heading tracking-wide text-2xl sm:text-3xl">
+            {/* 🔴 lg:text-2xl: 1024 px:ssä koko rivi (sanamerkki + 5 linkkiä + kielivalitsin +
+                CTA) on kortilla. 30 px:n sanamerkki työnsi "Varaa nyt" -painikkeen 9 px yli
+                palstan oikean reunan (mitattu 20.9.2026). Täysi koko palaa xl:stä ylöspäin. */}
+            <span className="font-heading tracking-wide text-2xl sm:text-3xl lg:text-2xl xl:text-3xl">
               <span className="text-vibe-pink">#</span>
               <span className="text-snow">LAPLAND</span>
               <span className="text-vibe-pink">ACTIVITIES</span>
@@ -83,8 +86,12 @@ export default function Navigation() {
 
         {/* Desktop nav only from lg up — at md (768-1023px) the full item row is
             ~230px wider than the viewport (wide Bebas logo + 5 links + lang + CTA),
-            so tablets get the mobile hamburger instead. */}
-        <div className="hidden lg:flex items-center gap-3 xl:gap-6" ref={dropRef}>
+            so tablets get the mobile hamburger instead.
+            🔴 20.9.2026: "Kohteet" → "Matkakohteet" kasvatti riviä ~43 px, ja 1024 px:ssä
+            sanamerkin oikea reuna ja ensimmäinen linkki koskettivat toisiaan (mitattu:
+            molemmat x=373). ml-6 erottaa logon linkeistä, ja linkkiväli kiristettiin
+            lg:llä, jotta rivi mahtuu ilman että xl muuttuu. */}
+        <div className="hidden lg:flex items-center gap-2.5 xl:gap-6 ml-4 xl:ml-10" ref={dropRef}>
           <Link
             to={to('/')}
             className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
