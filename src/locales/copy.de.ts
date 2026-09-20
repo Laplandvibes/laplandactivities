@@ -284,6 +284,13 @@ const de: SectionCopy = {
     gygTitle: 'Lapplands meistgebuchte Touren gerade jetzt',
     gygEyebrow: 'Jetzt buchbar · Kostenlose Stornierung',
   },
+  destPicks: {
+    kicker: "Unsere Auswahl",
+    h2: "Das würden wir hier selbst buchen",
+    lede: "Handverlesen und vor der Aufnahme einzeln geöffnet. Preis und Verfügbarkeit stehen auf der Partnerseite, deshalb drucken wir sie hier nicht ab.",
+    cta: "Verfügbarkeit prüfen",
+    disclosure: "Partnerlinks: Für eine Buchung erhalten wir eine Provision, für Sie bleibt der Preis gleich.",
+  },
   hotelsStrip: {
     kicker: 'Wo Sie übernachten',
     h2: 'Buchen Sie zuerst das Bett.',

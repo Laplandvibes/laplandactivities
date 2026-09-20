@@ -50,6 +50,13 @@ const en: SectionCopy = {
     gygTitle: "Lapland's most-booked tours right now",
     gygEyebrow: 'Bookable now · Free cancellation',
   },
+  destPicks: {
+    kicker: "Our picks",
+    h2: "The ones we would book here",
+    lede: "Hand-picked and opened one by one before listing. Prices and availability live on the partner's page, so we do not print them here.",
+    cta: "Check availability",
+    disclosure: "Affiliate links: booking through them pays us a commission, at no extra cost to you.",
+  },
   hotelsStrip: {
     kicker: 'Where to stay',
     h2: 'Book the bed first.',

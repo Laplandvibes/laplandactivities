@@ -270,6 +270,13 @@ const it: SectionCopy = {
     ],
     gygTitle: 'I tour più prenotati della Lapponia in questo momento', gygEyebrow: 'Prenotabile ora · Cancellazione gratuita',
   },
+  destPicks: {
+    kicker: "La nostra selezione",
+    h2: "Quello che prenoteremmo qui",
+    lede: "Scelte a mano e aperte una per una prima di essere elencate. Prezzo e disponibilità vivono sulla pagina del partner, perciò non li stampiamo qui.",
+    cta: "Vedi disponibilità",
+    disclosure: "Link di affiliazione: una prenotazione ci frutta una commissione, per te il prezzo è lo stesso.",
+  },
   hotelsStrip: {
     kicker: 'Dove soggiornare', h2: 'Prima prenoti il letto.',
     lead: 'Le attività sono facili, la maggior parte degli operatori aggiunge capienza. L\'alloggio che vuole davvero si esaurisce con mesi di anticipo. Si assicuri prima la stanza, poi prenoti i tour.',

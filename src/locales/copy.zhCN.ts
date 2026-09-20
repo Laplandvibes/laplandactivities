@@ -284,6 +284,13 @@ const zhCN: SectionCopy = {
     gygTitle: '拉普兰当前预订最多的行程',
     gygEyebrow: '当前可订 · 免费取消',
   },
+  destPicks: {
+    kicker: "我们的精选",
+    h2: "我们自己会在这里订的",
+    lede: "逐一打开核对后才列出。价格与可订情况以合作伙伴页面为准，因此不在此处标注。",
+    cta: "查看可订日期",
+    disclosure: "含联盟链接：通过链接预订我们会获得佣金，您的价格不变。",
+  },
   hotelsStrip: {
     kicker: '住在哪里',
     h2: '先订好住宿。',

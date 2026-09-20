@@ -10,6 +10,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
 import { imageForDestination, assignActivityImages, focalFor } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
+import DestinationPicks from '../components/DestinationPicks';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { destinationTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
@@ -310,6 +311,8 @@ export default function DestinationPage() {
       )}
 
       {/* MUST-DO + LOCAL TIPS — premium surfaces */}
+      <DestinationPicks slug={slug || ''} />
+
       {featured && (
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 items-start">

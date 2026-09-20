@@ -270,6 +270,13 @@ const nl: SectionCopy = {
     ],
     gygTitle: 'De meest geboekte Lapland-tours van dit moment', gygEyebrow: 'Nu boekbaar · Gratis annuleren',
   },
+  destPicks: {
+    kicker: "Onze keuze",
+    h2: "Dit zouden wij hier zelf boeken",
+    lede: "Met de hand gekozen en stuk voor stuk geopend voordat ze in de lijst kwamen. Prijs en beschikbaarheid staan op de pagina van de partner, dus drukken we ze hier niet af.",
+    cta: "Bekijk beschikbaarheid",
+    disclosure: "Affiliate links: een boeking levert ons commissie op, voor jou blijft de prijs gelijk.",
+  },
   hotelsStrip: {
     kicker: 'Waar te verblijven', h2: 'Boek eerst het bed.',
     lead: 'Activiteiten zijn eenvoudig te regelen, want de meeste aanbieders schalen op. De accommodatie die u écht wilt is maanden van tevoren vol. Leg eerst de kamer vast en boek dan pas de tours.',

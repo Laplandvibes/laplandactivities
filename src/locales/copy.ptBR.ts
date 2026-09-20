@@ -284,6 +284,13 @@ const ptBR: SectionCopy = {
     gygTitle: 'Os tours mais reservados da Lapônia agora',
     gygEyebrow: 'Reservável agora · Cancelamento grátis',
   },
+  destPicks: {
+    kicker: "Nossa seleção",
+    h2: "O que reservaríamos aqui",
+    lede: "Escolhidas a dedo e abertas uma a uma antes de entrar na lista. Preço e disponibilidade ficam na página do parceiro, por isso não os imprimimos aqui.",
+    cta: "Ver disponibilidade",
+    disclosure: "Links de afiliado: uma reserva nos rende comissão e para você o preço é o mesmo.",
+  },
   hotelsStrip: {
     kicker: 'Onde se hospedar',
     h2: 'Reserve a cama primeiro.',

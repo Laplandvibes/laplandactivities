@@ -284,6 +284,13 @@ const fi: SectionCopy = {
     gygTitle: 'Lapin varatuimmat retket juuri nyt',
     gygEyebrow: 'Varattavissa nyt · Ilmainen peruutus',
   },
+  destPicks: {
+    kicker: "Meidän poimintamme",
+    h2: "Nämä varaisimme täältä itse",
+    lede: "Käsin valitut ja avattu yksitellen ennen listausta. Hinta ja saatavuus elävät kumppanin sivulla, joten emme painata niitä tähän.",
+    cta: "Katso saatavuus",
+    disclosure: "Kumppanilinkit: varauksesta maksetaan meille provisio, sinulle hinta on sama.",
+  },
   hotelsStrip: {
     kicker: 'Missä yöpyä',
     h2: 'Varaa ensin sänky.',

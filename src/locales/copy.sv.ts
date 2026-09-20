@@ -50,6 +50,13 @@ const sv: SectionCopy = {
     gygTitle: 'Lapplands mest bokade turer just nu',
     gygEyebrow: 'Bokningsbart nu · Fri avbokning',
   },
+  destPicks: {
+    kicker: "Våra val",
+    h2: "Det här skulle vi boka själva",
+    lede: "Handplockade och öppnade ett i taget före listningen. Pris och tillgänglighet finns på partnerns sida, därför trycker vi dem inte här.",
+    cta: "Se tillgänglighet",
+    disclosure: "Partnerlänkar: en bokning ger oss provision, priset för dig är detsamma.",
+  },
   hotelsStrip: {
     kicker: 'Var du kan bo',
     h2: 'Boka sängen först.',

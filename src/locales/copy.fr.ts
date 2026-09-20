@@ -270,6 +270,13 @@ const fr: SectionCopy = {
     ],
     gygTitle: 'Les tours les plus réservés de Laponie en ce moment', gygEyebrow: 'Réservable maintenant · Annulation gratuite',
   },
+  destPicks: {
+    kicker: "Notre sélection",
+    h2: "Ce que nous réserverions ici",
+    lede: "Choisies une à une et ouvertes avant d'être listées. Le prix et les disponibilités vivent sur la page du partenaire, nous ne les imprimons donc pas ici.",
+    cta: "Voir les disponibilités",
+    disclosure: "Liens d'affiliation : une réservation nous rapporte une commission, le prix reste le même pour vous.",
+  },
   hotelsStrip: {
     kicker: 'Où séjourner', h2: "Réservez d'abord le lit.",
     lead: "Les activités, c'est facile, la plupart des opérateurs ajoutent des places. L'hébergement que vous voulez vraiment se réserve des mois à l'avance. Verrouillez la chambre, puis réservez les visites.",
