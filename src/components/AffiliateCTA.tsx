@@ -1,4 +1,5 @@
 import type { ReactNode, AnchorHTMLAttributes } from 'react';
+import { GYG_LOCALE_PREFIX } from '../shared/gyg/picks';
 import { useLang } from '../i18n/useLang';
 
 /**
@@ -119,7 +120,22 @@ export function buildAffiliateHref({
         if (!place.length && !/lapland|rovaniemi|levi|yll|saariselk|ruka|inari|kemi|salla/i.test(q)) place.push('lapland');
         params.set('q', [q, ...place].join(' '));
       } else {
-        path = dest;
+        // 🔴🔴 Tuotelinkki ilman slugia: `-t<id>/`. GYG kaantaa tuotepolun molemmat
+        // osat, ja englanninkielinen slugi ohjaa kaannetylla kielella HAKUSIVULLE
+        // (mitattu 20.9.2026 kuningasrapusafarista: `/s?…&et=1158887&lc=97740`).
+        // Vika ei nay englanniksi testattaessa — siksi se eli sivustolla nain kauan.
+        // Sijaintisivut jaavat ennalleen; Worker hoitaa niiden kieliprefiksin.
+        const tid = dest.match(/-t(\d+)$/);
+        if (tid) {
+          // 🔴 Kieliprefiksi rakennetaan itse: Worker ei lisaa sita id-polkuun
+          // (mitattu 20.9.2026). Prefiksillinen polku menee lapi sellaisenaan ja
+          // GYG avaa oikean kieliversion tuotesivusta.
+          const prefix = GYG_LOCALE_PREFIX[lang];
+          path = prefix ? `${prefix}/-t${tid[1]}/` : `-t${tid[1]}/`;
+          if (prefix) params.delete('language');
+        } else {
+          path = dest;
+        }
         if (q && !dest) params.set('q', q);
       }
     }

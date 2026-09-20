@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Plane, Mountain, Compass, ArrowLeft, ArrowRight, Sparkles, Hotel, Car, Snowflake, Sun } from 'lucide-react';
+import { MapPin, Plane, Mountain, Compass, ArrowLeft, ArrowRight, Sparkles, Hotel, Car } from 'lucide-react';
 import { getDestinationBySlug, destinations } from '../data/destinations';
 import { getActivitiesByDestination } from '../data/activities';
 import { categories } from '../data/categories';
@@ -17,7 +17,7 @@ import { destinationTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
 import { localizeDestination, localizeCategory } from '../locales/data';
 import { destinationGuide } from '../data/guideI18n';
-import { SEASON_WORD, SEASON_SECTIONS, currentSeasonBucket, inBucket } from '../i18n/seasonWords';
+import { SEASON_WORD, SEASON_SECTIONS, SEASON_ICON, currentSeason, inSeason as isInSeason, counterpartSeason } from '../i18n/seasonWords';
 
 export default function DestinationPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -61,15 +61,23 @@ export default function DestinationPage() {
   const featured = acts.find((a) => a.featured) || acts[0];
   const restActivities = acts.filter((a) => a.id !== featured?.id);
 
-  // --- Season split (owner finding #3: make kesä/talvi explicit) ---
-  const bucket = currentSeasonBucket();             // 'summer' in May–Sep, else 'winter'
-  const otherBucket = bucket === 'summer' ? 'winter' : 'summer';
-  const inSeason = restActivities.filter((a) => inBucket(a, bucket));
-  const offSeason = restActivities.filter((a) => !inBucket(a, bucket));
-  const seasonNowWord = bucket === 'summer' ? words.summer : words.winter;
-  const seasonOtherWord = otherBucket === 'summer' ? words.summer : words.winter;
-  const SeasonNowIcon = bucket === 'summer' ? Sun : Snowflake;
-  const SeasonOtherIcon = otherBucket === 'summer' ? Sun : Snowflake;
+  // --- Kausijako TODELLISEN vuodenajan mukaan (Vesa 20.9.2026: "parasta nyt kesä,
+  // vaikka on jo syksy"). Aktiviteetit on merkitty neljälle kaudelle, ja otsikko
+  // kertoo sen kauden joka oikeasti on menossa. ---
+  const bucket = currentSeason();
+  const otherBucket = counterpartSeason(bucket);
+  const nowList = restActivities.filter((a) => isInSeason(a, bucket));
+  const offList = restActivities.filter((a) => isInSeason(a, otherBucket) && !isInSeason(a, bucket));
+  // 🔴 Jako vain kun molemmissa on kolme korttia. Yhden kortin "Juuri nyt parasta"
+  // näyttää rikkinäiseltä, ei kausitietoiselta (sama sääntö kuin kategoriasivulla,
+  // Vesa 19.9.). Muuten yksi ruudukko, kauden kortit edellä.
+  const splittable = nowList.length >= 3 && offList.length >= 3;
+  const inSeason = splittable ? nowList : [...nowList, ...restActivities.filter((a) => !isInSeason(a, bucket))];
+  const offSeason = splittable ? offList : [];
+  const seasonNowWord = words[bucket];
+  const seasonOtherWord = words[otherBucket];
+  const SeasonNowIcon = SEASON_ICON[bucket];
+  const SeasonOtherIcon = SEASON_ICON[otherBucket];
 
   // Single list-aware image pass over [featured, in-season…, off-season…] so multi-image
   // themes (husky/reindeer) alternate and never repeat on adjacent cards across the grids.

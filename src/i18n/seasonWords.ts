@@ -1,3 +1,5 @@
+import { Sun, Snowflake, Leaf, Sprout } from 'lucide-react';
+import type { LucideIcon } from 'lucide-react';
 import type { Lang } from './useLang';
 import type { Activity } from '../data/activities';
 
@@ -6,7 +8,7 @@ import type { Activity } from '../data/activities';
 // the deep SectionCopy blocks so the 4 season words + a few headings live in one
 // place across all 11 locales. Native, natural wording per language.
 
-type Season = 'winter' | 'spring' | 'summer' | 'autumn';
+export type Season = 'winter' | 'spring' | 'summer' | 'autumn';
 
 export const SEASON_WORD: Record<Lang, Record<Season, string>> = {
   en: { winter: 'Winter', spring: 'Spring', summer: 'Summer', autumn: 'Autumn' },
@@ -213,7 +215,47 @@ export const SEASON_SECTIONS: Record<Lang, {
 // May=spring, Oct=autumn folded into the nearest dominant bucket for the split.
 export function currentSeasonBucket(): 'winter' | 'summer' {
   const m = new Date().getMonth() + 1;
-  return m >= 5 && m <= 9 ? 'summer' : 'winter';
+  return m >= 5 && m <= 8 ? 'summer' : 'winter';
+}
+
+/**
+ * TODELLINEN vuodenaika, kuukauden mukaan.
+ *
+ * Vesa 20.9.2026: *"täällä lukee parasta nyt kesä, vaikka on jo syksy, eikö päivity
+ * päivämäärän mukaan tekstit oikein ja myös sisältö?"* — ei päivittynyt. Vuosi oli
+ * jaettu vain kahtia, ja syyskuu luettiin kesäksi, joten kohdesivu lupasi "Juuri nyt
+ * parasta: kesä" ruska-aikaan.
+ *
+ * 🔴 Rajat on valittu Lapin oman kauden mukaan, ei kalenterin neljänneksinä, ja
+ * sivuston oma teksti sanoo saman: talvibannerissa lukee *"Lumi asettuu marraskuussa"*.
+ *   · kesä    6–8   — vaellus, melonta, kalastus; keskiyön aurinko päättyy heinäkuussa
+ *   · syksy   9–10  — ruska; lumeton maa, mutta revontulet ovat jo alkaneet
+ *   · talvi   11–4  — lumi asettuu marraskuussa, hiihtokausi kestää huhtikuun läpi
+ *   · kevät   5     — kevättalvi ja sulaminen
+ * 🔴 Älä siirrä rajoja tuntumalla: jokainen raja on lupaus siitä, mitä maassa on.
+ */
+export function currentSeason(now: Date = new Date()): Season {
+  const m = now.getMonth() + 1;
+  if (m >= 6 && m <= 8) return 'summer';
+  if (m === 9 || m === 10) return 'autumn';
+  if (m === 5) return 'spring';
+  return 'winter';
+}
+
+/** Kuuluuko aktiviteetti TÄHÄN vuodenaikaan — oman kausimerkintänsä mukaan. */
+export function inSeason(a: Activity, s: Season): boolean {
+  return a.season.includes(s);
+}
+
+/**
+ * Mikä kausi nostetaan "Myös tämä kannattaa" -otsikkoon.
+ * Syksystä ja talvesta katsotaan eteenpäin siihen kauteen, jota varataan seuraavaksi.
+ */
+export function counterpartSeason(s: Season): Season {
+  if (s === 'summer') return 'winter';
+  if (s === 'autumn') return 'winter';
+  if (s === 'spring') return 'summer';
+  return 'summer';
 }
 
 // Does an activity belong to the given coarse bucket?
@@ -221,3 +263,12 @@ export function inBucket(a: Activity, bucket: 'winter' | 'summer'): boolean {
   if (bucket === 'summer') return a.season.includes('summer') || a.season.includes('autumn');
   return a.season.includes('winter') || a.season.includes('spring');
 }
+
+/** Vuodenajan ikoni otsikkoon. Syksylla lehti, kevaalla verso — ei aurinkoa eika lunta,
+ *  jotka olisivat vaara lupaus maassa olevasta saasta. */
+export const SEASON_ICON: Record<Season, LucideIcon> = {
+  winter: Snowflake,
+  spring: Sprout,
+  summer: Sun,
+  autumn: Leaf,
+};

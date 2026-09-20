@@ -79,6 +79,41 @@ export const GYG_PRICE_AS_OF = "2026-07-29";
 const GO = "https://go.laplandvibes.com/go/activities";
 
 /**
+ * 🔴🔴 TUOTELINKKI ILMAN SLUGIA: `-t<id>/`.
+ *
+ * Vesa 20.9.2026: *"rapusafari ei mene syvalinkkina, miksi ei?"*
+ *
+ * GetYourGuide kaantaa tuotepolun MOLEMMAT osat (sijainnin ja tuotteen). Kun polku
+ * rakennetaan englanninkielisesta slugista, kaannetylla kielella sita ei ole olemassa
+ * ja GYG ohjaa HAKUSIVULLE: mitattu `…/s?…&et=1158887&lc=97740` kuningasrapusafarista.
+ *
+ * 🔴 Vika on erityisen paha siksi, etta se ei nay testaajalle: englanniksi linkki
+ * toimii. Vesa katsoi suomeksi ja paatyi hakuun. Sama vika mitattiin samana paivana
+ * laplandhuskysafarisissa (fi-fi/-t437502 → "Huskysafari paivalla", de-de → "Husky-Safari
+ * bei Tag", bare /-t453311 → englanniksi), ja korjattu muoto on tama.
+ *
+ * Tunnusta ei voi kaantaa vaarin. Sijaintisivut (ei `-t<id>`) jaavat ennalleen:
+ * Worker hoitaa niiden kieliprefiksin.
+ */
+export const GYG_LOCALE_PREFIX: Record<string, string> = {
+  fi: 'fi-fi', de: 'de-de', ja: 'ja-jp', es: 'es-es', 'pt-BR': 'pt-br',
+  'zh-CN': 'zh-cn', ko: 'ko-kr', fr: 'fr-fr', it: 'it-it', nl: 'nl-nl', sv: 'sv-se',
+};
+
+export function gygProductPath(path: string, lang?: string): string {
+  const m = path.match(/-t(\d+)\/?$/);
+  if (!m) return path;
+  const prefix = lang ? GYG_LOCALE_PREFIX[lang] : undefined;
+  // 🔴 Kieliprefiksi on PAKKO rakentaa itse. Worker EI lisaa sita id-polkuun —
+  // mitattu 20.9.2026: `/go/activities/-t437502/?language=fi` ohjasi osoitteeseen
+  // `getyourguide.com/-t437502/` ilman prefiksia, eli englanniksi. Prefiksillinen
+  // polku menee Workerin lapi sellaisenaan, ja GYG avaa sen kieliversion:
+  // `/fi-fi/-t1200620/` → "Kirkkoniemi: kesainen kuninkaallisen taskuravun safari"
+  // (todennettu selaimessa). Englanti ei tarvitse prefiksia.
+  return prefix ? `${prefix}/-t${m[1]}/` : `-t${m[1]}/`;
+}
+
+/**
  * Affiliate href through the redirect Worker (LV rule: never a raw partner URL
  * in source). The Worker appends `partner_id` and resolves per-site attribution
  * from the Referer header. Verified end-to-end 2026-07-29.
@@ -109,9 +144,12 @@ export function gygHref(pick: GygPick, lang?: string, sidOverride?: string): str
     fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt-br",
     "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv",
   };
+  const productPath = gygProductPath(pick.path, lang);
   const code = lang ? L[lang] : undefined;
-  if (code) p.set("language", code);
-  return `${GO}/${pick.path}?${p.toString()}`;
+  // 🔴 `language` vain kun polku EI kanna kielta. Molemmat yhdessa riskeeraisi
+  // kaksinkertaisen prefiksin (sama syy kuin huskysivuston sijaintilinkeissa).
+  if (code && !productPath.includes('/-t')) p.set("language", code);
+  return `${GO}/${productPath}?${p.toString()}`;
 }
 
 /** Family-bookable experiences for laplandkids.com. */

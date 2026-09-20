@@ -20,7 +20,7 @@ import { categoryTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
 import { categoryGuide } from '../data/guideI18n';
-import { SEASON_WORD, SEASON_SECTIONS, currentSeasonBucket, inBucket } from '../i18n/seasonWords';
+import { SEASON_WORD, SEASON_SECTIONS, SEASON_ICON, currentSeason, inSeason as isInSeason, counterpartSeason } from '../i18n/seasonWords';
 
 // Categories that are inherently single-season — no split, no season chrome.
 const SINGLE_SEASON = new Set(['northern-lights', 'winter-sports', 'summer']);
@@ -58,18 +58,20 @@ export default function CategoryPage() {
   // Season split — for year-round categories (adventure, animals, wellness, culture,
   // food) surface this-season activities first, then the other season. Single-season
   // categories (aurora, winter sports, summer) render as one plain grid.
-  const bucket = currentSeasonBucket();
-  const otherBucket = bucket === 'summer' ? 'winter' : 'summer';
+  // Kausijako TODELLISEN vuodenajan mukaan, ei kahtiajaolla (Vesa 20.9.2026).
+  const bucket = currentSeason();
+  const otherBucket = counterpartSeason(bucket);
   // Vesa 19.9.2026 (seikkailu kesällä: 1 kortti "Juuri nyt parasta" + 13 talvikorttia): kausijako
   // vain kun MOLEMMISSA ryhmissä on vähintään kolme korttia, muuten yksi ruudukko kauden kortit edellä.
-  const seasonNow = !SINGLE_SEASON.has(slug || '') ? acts.filter((a) => inBucket(a, bucket)) : acts;
-  const seasonOff = !SINGLE_SEASON.has(slug || '') ? acts.filter((a) => !inBucket(a, bucket)) : [];
+  const seasonNow = !SINGLE_SEASON.has(slug || '') ? acts.filter((a) => isInSeason(a, bucket)) : acts;
+  const seasonOff = !SINGLE_SEASON.has(slug || '')
+    ? acts.filter((a) => isInSeason(a, otherBucket) && !isInSeason(a, bucket)) : [];
   const splittable = seasonNow.length >= 3 && seasonOff.length >= 3;
   const inSeason = splittable ? seasonNow : [...seasonNow, ...seasonOff];
   const offSeason = splittable ? seasonOff : [];
-  const seasonNowWord = bucket === 'summer' ? words.summer : words.winter;
-  const seasonOtherWord = otherBucket === 'summer' ? words.summer : words.winter;
-  const SeasonNowIcon = bucket === 'summer' ? Sun : Snowflake;
+  const seasonNowWord = words[bucket];
+  const seasonOtherWord = words[otherBucket];
+  const SeasonNowIcon = SEASON_ICON[bucket];
   const SeasonOtherIcon = otherBucket === 'summer' ? Sun : Snowflake;
   // Single list-aware image pass over the displayed order.
   const ordered = [...inSeason, ...offSeason];

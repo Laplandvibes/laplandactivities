@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { respImg } from '../lib/respImg';
 import SmartImage from './SmartImage';
 import { HERO, focalFor } from '../data/images';
-import { currentSeasonBucket } from '../i18n/seasonWords';
+import { currentSeason } from '../i18n/seasonWords';
 import PhotoCredit from './PhotoCredit';
 
 /**
@@ -36,8 +36,22 @@ const S = {
 // lumitykit). Kesä alkaa nyt aktiviteetilla (melonta Inarijärvellä) ja Rukan kuva on gondoli metsän yllä.
 const SUMMER_LED: Slide[] = [S.kayak, S.ruka, S.reindeer, S.snowmobile, S.husky, S.igloo];
 const WINTER_LED: Slide[] = [S.husky, S.snowmobile, S.aurora, S.reindeer, S.igloo, S.kayak];
+/**
+ * Syksy (syys-lokakuu) on ruska-aika: maassa ei ole lunta, mutta revontulet ovat jo
+ * alkaneet. Siksi kierto alkaa tunturimaisemasta ja revontulista, ei melonnasta eika
+ * huskyvaljakosta — kumpikin niista lupaisi vaaran kauden (Vesa 20.9.2026:
+ * "parasta nyt kesa, vaikka on jo syksy").
+ */
+const AUTUMN_LED: Slide[] = [S.ruka, S.aurora, S.reindeer, S.igloo, S.husky, S.snowmobile];
+/** Kevat (toukokuu) on kevattalvi: lumi sulaa mutta hiihtokausi on juuri paattynyt. */
+const SPRING_LED: Slide[] = [S.ruka, S.reindeer, S.kayak, S.aurora, S.husky, S.igloo];
 
-const slides: Slide[] = currentSeasonBucket() === 'summer' ? SUMMER_LED : WINTER_LED;
+const season = currentSeason();
+const slides: Slide[] =
+  season === 'summer' ? SUMMER_LED
+  : season === 'autumn' ? AUTUMN_LED
+  : season === 'spring' ? SPRING_LED
+  : WINTER_LED;
 
 const ROTATE_MS = 6000;
 
