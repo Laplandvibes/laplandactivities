@@ -1,4 +1,8 @@
 import { Hotel, ArrowRight } from 'lucide-react';
+
+/** Oma valokuvamme: jarven rannan hirsimokki, Kemijarvi 7/2026 (© LaPeso Oy).
+ *  Kuvakuitti: src/data/photoCredits.ts. Kayttosaanto: ks. Lomarengas-kortti alla. */
+const LOMARENGAS_PHOTO = '/images/hotels/log-cabin-lakeside.webp';
 import { respImg } from '../lib/respImg';
 import AffiliateCTA from './AffiliateCTA';
 import SmartImage from './SmartImage';
@@ -106,20 +110,41 @@ export default function HotelsStrip() {
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
-                  /* Lomarengas: ei kumppanin omaa mökkikuvaa eikä oikeaa Lapin mökkikuvaa, ja toisen
-                     yrityksen mökit eivät saa esittää Lomarengasta (§24). Brändikortti: kumppanin oma
-                     logo valkoisella laatalla (sininen sanamerkki ei erotu tummalta — logopolariteetti-
-                     sääntö: tumma merkki ⇒ valkoinen chip). Vesa 19.9.: "ei ole edes logoa eikä kuvaa". */
-                  <div className="absolute inset-0 bg-gradient-to-br from-[#123A63] via-[#0F172A] to-[#1e1b4b]" aria-hidden="true">
-                    {/* Logo kortin ylälaitaan: keskellä se jäi tekstilohkon alle (mitattu livenä 19.9.). */}
-                    <span className="absolute top-5 left-5 sm:top-6 sm:left-6 inline-flex rounded-xl bg-white px-4 py-3 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.8)]">
-                      <img src="/images/partners/lomarengas.png" alt="" width={472} height={150} loading="lazy" decoding="async" className="h-7 sm:h-8 w-auto" />
+                  /* LOMARENGAS — oma valokuvamme taustalle, kumppanin logo oikeaan ylakulmaan.
+                     Vesa 20.9.2026: *"miksi tuosta lomarenkaan mainoksesta et saa hienoa, logo oikea
+                     ylakulma ja kuva taustalle?"*
+
+                     🔴 Miksi tassa EI ole kumppanin omaa kuvaa: Lomarengas ei ole toimittanut
+                     kuvatiedostoja, ja se on pyydettava heilta. Siihen asti kuva on MEIDAN OMA
+                     valokuvamme (Kemijarvi 7/2026, © LaPeso Oy) ja se on merkitty kuvakuittiin
+                     nakyvasti — kortti ei siis vaita kuvan olevan Lomarenkaan mokki.
+                     Sen verran §24 sallii ja vaatii: kortti ei lupaa yhta nimettya kohdetta vaan
+                     mokkiluokan, ja kuva on oma aito Lapin kuva, ei yleinen stock muualta.
+                     🔴 Ala vaihda tahan generoitua kuvaa eika toisen yrityksen mokkia. */
+                  <div className="absolute inset-0" aria-hidden="true">
+                    <img
+                      src={LOMARENGAS_PHOTO}
+                      {...respImg(LOMARENGAS_PHOTO, 'card')}
+                      alt=""
+                      loading="lazy"
+                      decoding="async"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    {/* Logo oikeaan ylakulmaan valkoiselle laatalle: Lomarenkaan sanamerkki on
+                        sininen eika erotu tummalta pohjalta (logopolariteettisaanto). */}
+                    <span className="absolute top-4 right-4 sm:top-5 sm:right-5 inline-flex rounded-xl bg-white px-3.5 py-2.5 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.85)]">
+                      <img src="/images/partners/lomarengas.png" alt="" width={472} height={150} loading="lazy" decoding="async" className="h-6 sm:h-7 w-auto" />
                     </span>
                   </div>
                 )}
                 {/* Vesa 19.9.: "tekstit ei erotu". Kirkas kuva (revontulet, valaistu hotelli) söi
                     vanhan scrimin — pohja tummennettu ja musteet saavat varjon. */}
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night via-deep-night/85 via-45% to-deep-night/25" />
+                {/* SCRIM: alhaalta painottuva, ei koko kortin peittava.
+                    Vesa 19.9. *"tekstit ei erotu"* korjattiin tummentamalla kortti 45 %:iin asti;
+                    20.9. *"onko overlayta liikaa"* — oli. Teksti istuu kortin ALAREUNASSA, joten
+                    tummennus kuuluu sinne ja kuva saa jaada nakyviin ylaosassa. Musteilla on
+                    lisaksi oma varjo, joka kantaa kirkkaankin kuvan paalla. */}
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-night via-deep-night/70 via-32% to-transparent" />
                 {m.src && <PhotoCredit src={m.src} links={false} />}
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
                   {/* Kumppanin nimi tekstinä vain kun logoa ei ole: Lomarengas-kortissa logo sanoo sen jo. */}

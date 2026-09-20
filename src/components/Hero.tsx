@@ -20,11 +20,27 @@ export default function Hero() {
   return (
     <section className="relative min-h-[92vh] flex items-center justify-center overflow-hidden bg-deep-night">
       <HeroSlider />
-      {/* 20.9.2026: kesan ensimmainen ruutu (melonta Inarijarvella) on vaalea, ja heroteksti-portti
-          mittasi leadille 2,74:1 rajan 4,5:1 sijaan. Keskiosan tummennus 25 % -> 65 % on se kohta
-          jossa leipateksti istuu; ylareuna ja alareuna ennallaan. Ala kevenna tata ilman mittausta:
+      {/* PEITE: kaksi kerrosta, ei yhta paksua.
+          Vesa 20.9.2026: *"onko overlayta liikaa, jopa etusivun hero osiossakin?"* — oli.
+          Edellinen versio tummensi KOKO kuvan 65-70 %:lla, koska heroteksti-portti mittasi
+          leadille 2,74:1 rajan 4,5:1 sijaan. Se korjasi kontrastin mutta tappoi valokuvan:
+          kuva oli ostettu, valittu ja rajattu, ja sitten peitetty.
+
+          🔴 Oikea tapa on tummentaa SE KOHTA jossa teksti on, ei koko kuvaa. Portti mittaa
+          tekstin todellisen taustan pikseleina, joten paikallinen tummennus kelpaa silla
+          tasmalleen yhta hyvin kuin kokonainen — ja kuva jaa nakyviin.
+          Kerros 1: kevyt pohjustus + alareunan hairoltapa sivun taustaan (kuva ei saa katketa
+          viivaan). Kerros 2: soikea tummennus tekstipalstan kohdalla.
+          🔴 Ala kevenna kumpaakaan ilman mittausta:
           npm run build && node ../scripts/portti.mjs --site laplandactivities-new --taso selain */}
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-night/70 via-deep-night/65 to-deep-night pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-night/45 via-deep-night/25 to-deep-night pointer-events-none" />
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            'radial-gradient(ellipse 96% 74% at 50% 49%, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.70) 50%, rgba(15,23,42,0) 84%)',
+        }}
+      />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto pt-20">
         <p className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
