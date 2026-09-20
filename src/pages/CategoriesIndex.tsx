@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { respImg } from '../lib/respImg';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { categories } from '../data/categories';
@@ -45,7 +46,7 @@ export default function CategoriesIndex() {
             to={to(`/categories/${hero.slug}`)}
             className="group relative block rounded-2xl overflow-hidden h-72 sm:h-96 mb-6 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
           >
-            <img src={imageForCategory(hero.slug)} alt={hero.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{ objectPosition: focalFor(imageForCategory(hero.slug)) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
+            <img src={imageForCategory(hero.slug)} {...respImg(imageForCategory(hero.slug), 'hero')} alt={hero.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{ objectPosition: focalFor(imageForCategory(hero.slug)) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
             <div className="absolute inset-0 bg-gradient-to-r from-deep-night/95 via-deep-night/40 to-transparent" />
             <div className="absolute bottom-0 left-0 p-8 sm:p-12 max-w-xl">
               <h2 className="font-heading text-4xl sm:text-5xl text-snow tracking-wide mb-2 group-hover:text-vibe-pink transition-colors">{hero.name}</h2>
@@ -68,7 +69,7 @@ export default function CategoriesIndex() {
                   to={to(`/categories/${cat.slug}`)}
                   className="group relative rounded-2xl overflow-hidden h-72 sm:h-80 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
                 >
-                  <img src={imageForCategory(cat.slug)} alt={cat.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
+                  <img src={imageForCategory(cat.slug)} {...respImg(imageForCategory(cat.slug), 'card')} alt={cat.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
                     <h2 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{cat.name}</h2>

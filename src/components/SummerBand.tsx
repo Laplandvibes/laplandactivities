@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { respImg } from '../lib/respImg';
 import { Sun, Snowflake, ArrowRight, Compass, Waves, Mountain, Fish, Dog, Sparkles, Flame } from 'lucide-react';
 import AffiliateCTA from './AffiliateCTA';
 import SmartImage from './SmartImage';
@@ -80,6 +81,7 @@ export default function SummerBand() {
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] sm:aspect-[16/10] lg:aspect-[4/5] border border-white/10">
               <SmartImage
                 src={bandImg}
+                {...respImg(bandImg, 'half')}
                 fallback={bandImgFallback}
                 alt={c.imageH3}
                 loading="lazy"

@@ -12,11 +12,26 @@ https://laplandactivities.pages.dev/*
 # <<< LV-PAGESDEV-NOINDEX
 
 # >>> LV-LINK-PRELOAD (managed by apply_link_preload_headers.py)
-/
-  Link: </images/heroes/slider-03-summer-hike.webp>; rel=preload; as=image; fetchpriority=high
-
-/index.html
-  Link: </images/heroes/slider-03-summer-hike.webp>; rel=preload; as=image; fetchpriority=high
+# 🔴🔴 TAMA SIVUSTO EI KAYTA KUVAN ESILATAUSTA — ala lisaa sita takaisin.
+#
+# Mitattu 20.9.2026. Lohkossa oli:
+#   Link: </images/heroes/slider-03-summer-hike.webp>; rel=preload; as=image
+# eika se ole se kuva joka nakyy ensimmaisena. Heron ruutujarjestys valitaan
+# vuodenajan mukaan ajonaikana (HeroSlider: SUMMER_LED / WINTER_LED, kausiraja
+# touko–syyskuu), joten syyskuussa ensimmainen ruutu on melontakuva ja
+# lokakuussa husky. Staattinen otsake ei voi seurata sita: se lataa joka
+# kaynnilla kuvan jota ei nayteta = noin 300 kt hukkaan.
+#
+# 🔴 Toinen syy: hero kayttaa nyt srcset-kokovalintaa (src/lib/respImg.ts).
+# Esilataus ILMAN imagesrcset-kenttaa hakee aina taysikokoisen tiedoston, eli
+# puhelin lataisi seka 1920 px:n kuvan (preload) etta 768 px:n kuvan (srcset).
+# Se olisi huonompi kuin ei esilatausta lainkaan.
+#
+# Korvaava ratkaisu on koodissa: ensimmainen ruutu on loading="eager" ja
+# fetchPriority="high", ja se on AINA oikea kuva.
+#
+# Jos apply_link_preload_headers.py ajetaan verkostolle, tama sivusto on
+# jatettava listalta pois.
 # <<< LV-LINK-PRELOAD
 
 # >>> LV-SECURITY (managed)

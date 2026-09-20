@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { respImg } from '../lib/respImg';
 import { Link } from 'react-router-dom';
 import { MapPin, ArrowRight } from 'lucide-react';
 import { destinations } from '../data/destinations';
@@ -61,7 +62,7 @@ export default function DestinationsIndex() {
                   to={to(`/destinations/${dest.slug}`)}
                   className="group relative rounded-2xl overflow-hidden h-80 sm:h-96 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
                 >
-                  <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="1920" height="1080" fetchPriority="high"/>
+                  <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="1920" height="1080" fetchPriority="high"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                     <div className="flex items-center gap-2 text-snow/80 text-xs mb-2">
@@ -91,7 +92,7 @@ export default function DestinationsIndex() {
                   to={to(`/destinations/${dest.slug}`)}
                   className="group relative rounded-2xl overflow-hidden h-64 sm:h-72 border border-white/10 hover:border-vibe-pink/30 transition-all"
                 >
-                  <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
+                  <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                   <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-5">
                     <div className="flex items-center gap-1 text-snow/75 text-xs mb-1">

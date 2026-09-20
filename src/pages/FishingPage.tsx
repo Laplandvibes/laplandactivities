@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
@@ -78,6 +79,7 @@ function SectionImage({ src, alt }: { src: string; alt: string }) {
   return (
     <img
       src={src}
+      {...respImg(src, 'half')}
       alt={alt}
       loading="lazy"
       decoding="async"
@@ -173,6 +175,7 @@ export default function FishingPage() {
       <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img
           src={heroImg}
+          {...respImg(heroImg, 'hero')}
           alt=""
           aria-hidden="true"
           className="absolute inset-0 w-full h-full object-cover"
@@ -233,7 +236,7 @@ export default function FishingPage() {
             ] as const).map((t) => (
               <a key={t.href} href={t.href} className="group rounded-2xl overflow-hidden bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] hover:border-vibe-pink/50 transition-colors flex flex-col">
                 <div className="relative h-36 sm:h-40 overflow-hidden">
-                  <img src={t.img} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(t.img) }} />
+                  <img src={t.img} {...respImg(t.img, 'card')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(t.img) }} />
                   <PhotoCredit src={t.img} links={false} />
                 </div>
                 <div className="p-5 flex items-start gap-3">

@@ -1,4 +1,5 @@
 import { MapPin, ExternalLink, ArrowRight } from 'lucide-react';
+import { respImg } from '../lib/respImg';
 import { Link } from 'react-router-dom';
 import PhotoCredit from './PhotoCredit';
 import { withReferral } from '../lib/referral';
@@ -34,6 +35,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
       <div className="h-52 relative overflow-hidden">
         <img
           src={img}
+          {...respImg(img, 'card')}
           alt={activity.title}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="lazy"

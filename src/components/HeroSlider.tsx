@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { respImg } from '../lib/respImg';
 import SmartImage from './SmartImage';
 import { HERO, focalFor } from '../data/images';
 import { currentSeasonBucket } from '../i18n/seasonWords';
@@ -60,6 +61,7 @@ export default function HeroSlider() {
         >
           <SmartImage
             src={s.src}
+            {...respImg(s.src, 'hero')}
             fallback={s.fallback}
             alt={s.alt}
             loading={i === 0 ? 'eager' : 'lazy'}

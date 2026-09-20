@@ -1,4 +1,5 @@
 import { Hotel, ArrowRight } from 'lucide-react';
+import { respImg } from '../lib/respImg';
 import AffiliateCTA from './AffiliateCTA';
 import SmartImage from './SmartImage';
 import PhotoCredit from './PhotoCredit';
@@ -98,6 +99,7 @@ export default function HotelsStrip() {
                 {m.src ? (
                   <SmartImage
                     src={m.src}
+                    {...respImg(m.src, 'card')}
                     fallback={m.fallback}
                     alt={m.hotel ? `${m.hotel} — ${l.name}` : l.name}
                     loading="lazy"

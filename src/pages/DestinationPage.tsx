@@ -1,4 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
+import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
 import { MapPin, Plane, Mountain, Compass, ArrowLeft, ArrowRight, Sparkles, Hotel, Car, Snowflake, Sun } from 'lucide-react';
 import { getDestinationBySlug, destinations } from '../data/destinations';
@@ -107,6 +108,7 @@ export default function DestinationPage() {
       <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img
           src={heroImg}
+          {...respImg(heroImg, 'hero')}
           alt={destination.name}
           className="absolute inset-0 w-full h-full object-cover"
           style={{ objectPosition: focalFor(heroImg) }}
@@ -387,7 +389,7 @@ export default function DestinationPage() {
                 to={to(`/destinations/${d.slug}`)}
                 className="group relative rounded-xl overflow-hidden h-44 sm:h-56 border border-white/10 hover:border-vibe-pink/30 transition-all"
               >
-                <img src={imageForDestination(d.slug)} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
+                <img src={imageForDestination(d.slug)} {...respImg(imageForDestination(d.slug), 'card')} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
                 <PhotoCredit src={imageForDestination(d.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4">

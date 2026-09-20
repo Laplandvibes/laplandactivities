@@ -1,4 +1,5 @@
 import ProductRail from '../shared/ads/ProductRail'
+import { respImg } from '../lib/respImg';
 import { topicRailFor } from '../data/topicRails'
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
@@ -106,7 +107,7 @@ export default function CategoryPage() {
       {/* HERO — same family as DestinationPage: icon badge above a full-size H1,
           not a small heading beside a floating icon box (Vesa 2026-07-07). */}
       <section className="relative min-h-[50vh] md:min-h-[56vh] flex items-center overflow-hidden pt-16 bg-deep-night">
-        <img src={heroImg} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
+        <img src={heroImg} {...respImg(heroImg, 'hero')} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
         <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
@@ -295,6 +296,7 @@ export default function CategoryPage() {
                 <div className="relative min-h-[200px] md:min-h-[240px]">
                   <img
                     src="/images/activities/bear-kuusamo/bear-hero.webp"
+                    {...respImg('/images/activities/bear-kuusamo/bear-hero.webp', 'half')}
                     alt={bk.imageAlts.hero}
                     loading="lazy"
                     decoding="async"

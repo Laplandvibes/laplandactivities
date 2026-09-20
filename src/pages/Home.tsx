@@ -1,4 +1,5 @@
 import ProductRail from '../shared/ads/ProductRail'
+import { respImg } from '../lib/respImg';
 import scandinavianoutdoorRail from '../shared/ads/rails/scandinavianoutdoor'
 import scandinavianoutdoorPicks from '../shared/ads/data/scandinavianoutdoorPicks'
 import { Helmet } from 'react-helmet-async';
@@ -182,6 +183,7 @@ export default function Home() {
                 >
                   <img
                     src={imageForCategory(cat.slug)}
+                    {...respImg(imageForCategory(cat.slug), 'card')}
                     alt={cat.name}
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }}
@@ -287,7 +289,7 @@ export default function Home() {
                 to={to(`/destinations/${dest.slug}`)}
                 className="group relative rounded-2xl overflow-hidden h-72 sm:h-80 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
               >
-                <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
+                <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
@@ -312,7 +314,7 @@ export default function Home() {
                 to={to(`/destinations/${dest.slug}`)}
                 className="group relative rounded-xl overflow-hidden h-44 sm:h-52 border border-white/10 hover:border-vibe-pink/30 transition-all"
               >
-                <img src={imageForDestination(dest.slug)} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
+                <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/30 to-transparent" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-3">
