@@ -139,7 +139,7 @@ export default function DestinationPage() {
               partner="activities"
               sid={`hero_${slug}_book`}
               destination={gygSlug}
-              className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+              className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <Sparkles className="w-4 h-4" />
               {c.bookActivitiesIn.replace('{dest}', destination.name)}

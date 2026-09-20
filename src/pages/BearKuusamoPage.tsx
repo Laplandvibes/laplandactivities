@@ -265,7 +265,7 @@ export default function BearKuusamoPage() {
               rel="noopener"
               data-sid="cta_book"
               onClick={() => trackPartnerClick('cta_book')}
-              className="inline-flex items-center gap-2 mt-8 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+              className="inline-flex items-center gap-2 mt-8 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <PawPrint className="w-4 h-4" />
               {c.cta}

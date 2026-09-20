@@ -63,7 +63,7 @@ export default function SummerBand() {
                 partner="activities-search"
                 sid={sectionSid}
                 destination={heroQuery}
-                className="inline-flex items-center justify-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-7 py-3.5 rounded-full text-base font-semibold transition-all shadow-xl shadow-vibe-pink/30"
+                className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-7 py-3.5 rounded-full text-base font-semibold transition-all shadow-xl shadow-vibe-pink/30"
               >
                 <SeasonIcon className="w-5 h-5" />
                 {c.bookCta}

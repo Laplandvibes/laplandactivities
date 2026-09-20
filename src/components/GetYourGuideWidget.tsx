@@ -233,7 +233,7 @@ export default function GetYourGuideWidget({
               partner="activities-search"
               sid={`${cmpTag.replace(/[^a-z0-9_]/gi, '_')}_fallback`}
               destination={fallbackQuery}
-              className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white font-bold px-6 py-3 rounded-full text-sm transition-colors"
+              className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors"
             >
               {BROWSE_CTA[lang] ?? BROWSE_CTA.en}
               <ArrowUpRight className="w-4 h-4" strokeWidth={2.4} />

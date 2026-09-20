@@ -82,7 +82,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         {partnerPath ? (
           <Link
             to={to(partnerPath)}
-            className="inline-flex items-center justify-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+            className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
             {c.findBook} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
@@ -91,7 +91,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
             partner="activities-search"
             sid={sid}
             destination={gygQ}
-            className="inline-flex items-center justify-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+            className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
             {c.findBook} <ExternalLink className="w-3.5 h-3.5" />
           </AffiliateCTA>

@@ -203,7 +203,7 @@ export default function FishingPage() {
               partner="activities"
               sid="fishing_hero_cta"
               destination="rovaniemi-l2653/great-ice-fishing-experience-in-lapland-t539112"
-              className="inline-flex items-center justify-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+              className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <Fish className="w-4 h-4" />
               {c.hero.ctaBook}
@@ -389,7 +389,7 @@ export default function FishingPage() {
                 partner="hotels"
                 sid="fishing_tornio_stay"
                 destination="Pello"
-                className="inline-flex items-center gap-2 mt-6 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                className="inline-flex items-center gap-2 mt-6 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
               >
                 <MapPin className="w-4 h-4" />
                 {c.tornioBox.ctaStay}
@@ -421,7 +421,7 @@ export default function FishingPage() {
                 partner="activities"
                 sid="fishing_ice_rovaniemi"
                 destination="rovaniemi-l2653/rovaniemi-ice-fishing-experience-t195392"
-                className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
               >
                 <Fish className="w-4 h-4" />
                 {c.iceFishing.cta}
@@ -513,7 +513,7 @@ export default function FishingPage() {
                 partner="activities"
                 sid="fishing_crab_kirkenes"
                 destination="kirkenes-l97740/saariselka-king-crab-safari-to-kirkenes-with-lunch-t1158887"
-                className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
               >
                 <Anchor className="w-4 h-4" />
                 {c.norway.cta}
@@ -545,7 +545,7 @@ export default function FishingPage() {
                 partner="cars"
                 sid="fishing_getting_there"
                 destination="RVN"
-                className="inline-flex items-center gap-2 bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
               >
                 <Car className="w-4 h-4" />
                 {c.gettingThere.cta}

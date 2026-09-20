@@ -119,7 +119,7 @@ export default function AboutPage() {
             <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6">
               <h2 className="font-heading text-2xl text-snow tracking-wide mb-3">{c.contactH2}</h2>
               <p className="text-snow/75 text-sm leading-relaxed mb-4">{c.contactBody}</p>
-              <a href="mailto:info@laplandvibes.com" className="lv-tap inline-flex items-center gap-2 rounded-full bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-2.5 text-sm font-semibold transition-colors">
+              <a href="mailto:info@laplandvibes.com" className="lv-tap inline-flex items-center gap-2 rounded-full bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 text-sm font-semibold transition-colors">
                 <Mail className="w-4 h-4" aria-hidden="true" /> info@laplandvibes.com
               </a>
             </div>

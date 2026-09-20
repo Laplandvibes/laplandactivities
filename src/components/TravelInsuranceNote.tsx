@@ -225,7 +225,7 @@ export default function TravelInsuranceNote({
           href={href}
           target="_blank"
           rel="sponsored nofollow noopener"
-          className="mt-5 inline-flex items-center gap-2 rounded-full bg-vibe-pink px-7 py-3.5 font-semibold text-white no-underline transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-arctic-cyan"
+          className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#DB2777] px-7 py-3.5 font-semibold text-white no-underline transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-arctic-cyan"
         >
           {cta}
           <ArrowRight className="h-4 w-4" aria-hidden="true" />
