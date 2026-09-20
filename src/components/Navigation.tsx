@@ -62,7 +62,11 @@ export default function Navigation() {
   );
 
   return (
-    <nav
+    // 🔴 20.9.2026: juurielementti <nav> → <header>. Verkoston uusi navi-portti etsii
+    // sivun ylätunnisteen <header>-maamerkistä (hubin merkintätapa) eikä löytänyt sitä
+    // täältä: 36 löydöstä, 12 kieltä × 3 leveyttä, kaikki "<header> puuttuu".
+    // <header> on oikea maamerkki sivun ylätunnisteelle; linkkirivi sen sisällä on <nav>.
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all border-b ${
         scrolled
           ? 'bg-deep-night/95 backdrop-blur-md border-white/10 shadow-lg'
@@ -91,7 +95,7 @@ export default function Navigation() {
             sanamerkin oikea reuna ja ensimmäinen linkki koskettivat toisiaan (mitattu:
             molemmat x=373). ml-6 erottaa logon linkeistä, ja linkkiväli kiristettiin
             lg:llä, jotta rivi mahtuu ilman että xl muuttuu. */}
-        <div className="hidden lg:flex items-center gap-2.5 xl:gap-6 ml-4 xl:ml-10" ref={dropRef}>
+        <nav aria-label="Main" className="hidden lg:flex items-center gap-2.5 xl:gap-6 ml-4 xl:ml-10" ref={dropRef}>
           <Link
             to={to('/')}
             className={`text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
@@ -190,7 +194,7 @@ export default function Navigation() {
             <span className="xl:hidden">{c.bookCtaShort}</span>
             <span className="hidden xl:inline">{c.bookCta}</span>
           </AffiliateCTA>
-        </div>
+        </nav>
 
         <div className="lg:hidden flex items-center gap-2">
           <div className="relative inline-flex items-center">
@@ -260,6 +264,6 @@ export default function Navigation() {
           </AffiliateCTA>
         </div>
       )}
-    </nav>
+    </header>
   );
 }
