@@ -257,7 +257,7 @@ const ko: SectionCopy = {
     scrollAria: '카테고리로 스크롤',
   },
   summerBand: {
-    eyebrow: '2026년 여름 · 지금 예약 가능',
+    eyebrow: "여름 시즌 · 지금 예약 가능",
     h2: '라플란드의 여름은 가장 잘 알려지지 않은 비밀입니다.',
     lead: '백야는 결코 지지 않습니다. 숲이 열립니다. 연어가 거슬러 오르고, 8월부터 산맥은 루스카로 붉게 물듭니다. 대부분의 운영자는 6월까지 폭넓은 가용성이 있지만, 7월이 되면 가장 좋은 시간은 모두 매진됩니다.',
     bookCta: '여름 액티비티 예약', browseCta: '여름 가이드 둘러보기',
@@ -393,7 +393,7 @@ const ko: SectionCopy = {
     notFoundH1: '목적지를 찾을 수 없음', backDestinations: '← 목적지로 돌아가기',
     allDestinationsNav: '모든 목적지', bookActivitiesIn: '액티비티 예약: {dest}',
     stayIn: '숙박:', activitiesShort: '액티비티',
-    mustDoKicker: '필수 체험', mustDoH2: '가장 많이 예약된 체험',
+    mustDoKicker: '필수 체험', mustDoH2: "에디터 추천",
     localKicker: '현지 정보', localH2: '인사이더 팁',
     operatorsLabel: '신뢰할 수 있는 운영자:',
     gygTitlePrefix: '엄선한', gygTitleSuffix: '투어', gygEyebrow: '지금 예약 가능',
@@ -468,7 +468,7 @@ const ko: SectionCopy = {
     h1: "LaplandActivities를 만드는 사람들",
     lead: "핀란드에서 만드는 라플란드 투어 가이드입니다. 다른 #LaplandVibes 사이트를 운영하는 같은 소규모 팀이 글을 쓰고 업데이트합니다.",
     whoH2: "저희는 누구인가",
-    whoBody: "LaplandActivities는 Vesa Pesola가 설립한 핀란드 기업 LaPeso Oy가 발행합니다. 글로 쓰는 길은 직접 달리고, 가능한 한 저희 카메라로 촬영합니다. 이 사이트의 여름 사진은 2026년 7월 루카에서 토르니오까지 다녀온 여행에서 찍은 것입니다. 사이트는 #LaplandVibes 네트워크의 하나로, 각 사이트가 한 가지 주제를 깊이 다룹니다. 이 사이트의 주제는 라플란드에서 무엇을 할까입니다.",
+    whoBody: "LaplandActivities는 Vesa Pesola가 설립한 핀란드 기업 LaPeso Oy가 발행합니다. 이 사이트는 각 사이트가 하나의 주제를 다루는 #LaplandVibes 네트워크에 속하며, 라플란드에서 할 수 있는 일을 소개합니다. 모든 사진은 이미지에 출처를 표시하고 전체 목록은 이 페이지 끝에 있습니다. 직접 촬영한 사진, 위키미디어 공용의 사진, 제휴사가 제공한 사진이 있습니다.",
     howH2: "활동이 사이트에 실리기까지",
     howItems: [
       "이름이 명시된 운영사의 실제 예약 가능한 상품이거나, 국립공원처럼 누구나 갈 수 있는 무료 장소여야 합니다.",

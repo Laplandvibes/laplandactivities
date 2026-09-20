@@ -34,7 +34,7 @@ const sv: SectionCopy = {
     scrollAria: 'Skrolla till kategorier',
   },
   summerBand: {
-    eyebrow: 'Sommaren 2026 · boka nu',
+    eyebrow: "Sommarsäsongen · boka nu",
     h2: 'Lappland på sommaren är den bäst bevarade hemligheten.',
     lead: 'Midnattssolen går aldrig ner. Skogarna öppnar sig. Laxen vandrar och fjällen färgas röda av ruska från augusti. De flesta researrangörer har fortfarande gott om lediga platser i juni. I juli är de bästa tiderna redan bokade.',
     bookCta: 'Boka sommaraktiviteter',
@@ -212,7 +212,7 @@ const sv: SectionCopy = {
     stayIn: 'Bo i',
     activitiesShort: 'aktiviteter',
     mustDoKicker: 'Måste göra',
-    mustDoH2: 'Mest bokade upplevelse',
+    mustDoH2: "Vårt val på orten",
     localKicker: 'Lokal kunskap',
     localH2: 'Insidertips',
     operatorsLabel: 'Pålitliga researrangörer i',
@@ -292,7 +292,7 @@ const sv: SectionCopy = {
     h1: "Vem som står bakom LaplandActivities",
     lead: "En finsk guide till turer i Lappland, skriven och uppdaterad av samma lilla team som driver de övriga #LaplandVibes-sajterna.",
     whoH2: "Vilka vi är",
-    whoBody: "LaplandActivities ges ut av LaPeso Oy, ett finskt företag grundat av Vesa Pesola. Vi kör själva de vägar vi skriver om och fotograferar platserna med egen kamera när det går: sommarbilderna på den här sajten är från rundresan i juli 2026 från Ruka till Torneå. Sajten ingår i nätverket #LaplandVibes, där varje sajt går på djupet i ett ämne. Den här handlar om vad man kan göra i Lappland.",
+    whoBody: "LaplandActivities ges ut av LaPeso Oy, ett finskt företag grundat av Vesa Pesola. Webbplatsen ingår i nätverket #LaplandVibes, där varje sajt täcker ett ämne; den här handlar om vad man kan göra i Lappland. Varje bild anger sin källa i själva bilden och hela listan finns längst ned på sidan: några är våra egna, andra kommer från Wikimedia Commons eller från en partner.",
     howH2: "Så hamnar en aktivitet på sajten",
     howItems: [
       "Den finns som en riktig, bokningsbar produkt hos en namngiven arrangör eller som en fri plats, till exempel en nationalpark.",

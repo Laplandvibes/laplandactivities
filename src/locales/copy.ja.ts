@@ -268,7 +268,7 @@ const ja: SectionCopy = {
     scrollAria: 'カテゴリーへスクロール',
   },
   summerBand: {
-    eyebrow: '2026年夏、予約受付中',
+    eyebrow: "夏シーズン・予約受付中",
     h2: 'ラップランドの夏は最大の隠れた魅力。',
     lead: '白夜は沈まない。森が開ける。サーモンが遡上し、8月から山々がルスカで赤く染まる。ほとんどのオペレーターは6月まで広く空きがある。7月までにベストの枠はなくなる。',
     bookCta: '夏のアクティビティを予約',
@@ -446,7 +446,7 @@ const ja: SectionCopy = {
     stayIn: '宿泊:',
     activitiesShort: '件',
     mustDoKicker: '必須',
-    mustDoH2: '最も予約されている体験',
+    mustDoH2: "編集部のおすすめ",
     localKicker: '地元情報',
     localH2: 'インサイダーのヒント',
     operatorsLabel: '信頼できるオペレーター:',
@@ -526,7 +526,7 @@ const ja: SectionCopy = {
     h1: "LaplandActivitiesの運営者",
     lead: "ラップランドのツアーを紹介するフィンランド発のガイドです。ほかの#LaplandVibesサイトを運営する同じ小さなチームが執筆と更新を行っています。",
     whoH2: "私たちについて",
-    whoBody: "LaplandActivitiesは、Vesa Pesolaが設立したフィンランドの企業LaPeso Oyが発行しています。記事にする道は自分たちで走り、可能な限り自分たちのカメラで撮影しています。このサイトの夏の写真は、2026年7月にルカからトルニオまで巡った旅で撮ったものです。サイトは#LaplandVibesネットワークの一つで、各サイトが一つのテーマを掘り下げます。このサイトのテーマは「ラップランドで何をするか」です。",
+    whoBody: "LaplandActivitiesは、Vesa Pesolaが設立したフィンランドの企業LaPeso Oyが発行しています。本サイトは、各サイトがひとつのテーマを扱う#LaplandVibesネットワークの一つで、ラップランドでできることを紹介します。写真の出典は画像内に明記し、一覧はこのページの末尾にあります。自社で撮影したもの、Wikimedia Commonsのもの、提携先が提供したものがあります。",
     howH2: "掲載までの流れ",
     howItems: [
       "催行会社名が明記された実在の予約可能な商品であるか、国立公園のように誰でも訪れられる場所であること。",

@@ -268,7 +268,7 @@ const es: SectionCopy = {
     scrollAria: 'Bajar a categorías',
   },
   summerBand: {
-    eyebrow: 'Verano 2026 · reservas abiertas',
+    eyebrow: "Temporada de verano · reserva ya",
     h2: 'El verano lapón es el secreto mejor guardado.',
     lead: 'El sol de medianoche nunca se pone. Los bosques se abren. Suben los salmones y los fjells se vuelven rojos con el ruska desde agosto. La mayoría de operadores tienen disponibilidad hasta junio; en julio se acaban las mejores plazas.',
     bookCta: 'Reservar actividades de verano',
@@ -446,7 +446,7 @@ const es: SectionCopy = {
     stayIn: 'Alojarse en',
     activitiesShort: 'actividades',
     mustDoKicker: 'Imprescindible',
-    mustDoH2: 'Experiencia más reservada',
+    mustDoH2: "Nuestra elección en este destino",
     localKicker: 'Información local',
     localH2: 'Consejos de locales',
     operatorsLabel: 'Operadores de confianza en',
@@ -526,7 +526,7 @@ const es: SectionCopy = {
     h1: "Quién está detrás de LaplandActivities",
     lead: "Una guía finlandesa de excursiones en Laponia, escrita y actualizada por el mismo equipo pequeño que gestiona el resto de sitios #LaplandVibes.",
     whoH2: "Quiénes somos",
-    whoBody: "LaplandActivities lo publica LaPeso Oy, una empresa finlandesa fundada por Vesa Pesola. Recorremos nosotros mismos las rutas sobre las que escribimos y fotografiamos los lugares con nuestra cámara siempre que es posible: las fotos de verano de este sitio son del viaje de julio de 2026 entre Ruka y Tornio. El sitio forma parte de la red #LaplandVibes, en la que cada sitio profundiza en un tema. Este trata de qué hacer en Laponia.",
+    whoBody: "LaplandActivities lo publica LaPeso Oy, una empresa finlandesa fundada por Vesa Pesola. El sitio forma parte de la red #LaplandVibes, donde cada sitio trata un tema; este trata de lo que se puede hacer en Laponia. Cada fotografía indica su fuente en la propia imagen y la lista completa está al final de esta página: algunas son nuestras, otras proceden de Wikimedia Commons y otras son imágenes propias de un socio.",
     howH2: "Cómo llega una actividad a este sitio",
     howItems: [
       "Existe como producto real y reservable de un operador con nombre, o como lugar público gratuito, por ejemplo un parque nacional.",

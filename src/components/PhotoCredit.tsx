@@ -52,18 +52,18 @@ const LIST_TITLE: Record<string, string> = {
   fr: 'Crédits photo', it: 'Crediti fotografici', nl: 'Fotoverantwoording',
 };
 const LIST_LEAD: Record<string, string> = {
-  en: 'Summer photographs are our own from the July 2026 road trip. The photographs below come from Wikimedia Commons under the licence shown; each link opens the original file and its licence.',
-  fi: 'Kesäkuvat ovat omiamme heinäkuun 2026 kiertomatkalta. Alla luetellut kuvat ovat Wikimedia Commonsista mainitulla lisenssillä; linkit avaavat alkuperäisen tiedoston ja lisenssin.',
-  de: 'Die Sommerfotos sind unsere eigenen von der Rundreise im Juli 2026. Die folgenden Fotos stammen von Wikimedia Commons unter der angegebenen Lizenz; jeder Link öffnet die Originaldatei und ihre Lizenz.',
-  sv: 'Sommarbilderna är våra egna från rundresan i juli 2026. Bilderna nedan kommer från Wikimedia Commons under angiven licens; länkarna öppnar originalfilen och licensen.',
-  ja: '夏の写真は2026年7月の旅で撮影した自社の写真です。以下の写真はWikimedia Commonsから記載のライセンスで使用しており、リンク先で元ファイルとライセンスを確認できます。',
-  es: 'Las fotos de verano son nuestras, del viaje de julio de 2026. Las fotos siguientes proceden de Wikimedia Commons con la licencia indicada; cada enlace abre el archivo original y su licencia.',
-  'pt-BR': 'As fotos de verão são nossas, da viagem de julho de 2026. As fotos abaixo vêm do Wikimedia Commons com a licença indicada; cada link abre o arquivo original e sua licença.',
-  'zh-CN': '夏季照片是我们在2026年7月旅途中拍摄的。以下照片来自维基共享资源，采用所示许可协议；链接指向原始文件及其许可。',
-  ko: '여름 사진은 2026년 7월 여행에서 직접 촬영한 것입니다. 아래 사진은 위키미디어 공용에서 표시된 라이선스로 사용하며, 링크는 원본 파일과 라이선스로 연결됩니다.',
-  fr: "Les photos d'été sont les nôtres, prises lors du road trip de juillet 2026. Les photos ci-dessous proviennent de Wikimedia Commons sous la licence indiquée ; chaque lien ouvre le fichier original et sa licence.",
-  it: "Le foto estive sono nostre, scattate nel viaggio di luglio 2026. Le foto qui sotto provengono da Wikimedia Commons con la licenza indicata; ogni link apre il file originale e la sua licenza.",
-  nl: "De zomerfoto's zijn van onszelf, gemaakt tijdens de rondreis in juli 2026. De foto's hieronder komen van Wikimedia Commons onder de vermelde licentie; elke link opent het originele bestand en de licentie.",
+  en: "Some of the photographs on this site are our own. The ones listed below come from Wikimedia Commons under the licence shown; each link opens the original file and its licence.",
+  fi: "Osa sivuston kuvista on omiamme. Alla luetellut kuvat ovat Wikimedia Commonsista mainitulla lisenssillä; linkit avaavat alkuperäisen tiedoston ja lisenssin.",
+  de: "Ein Teil der Fotos auf dieser Website stammt von uns. Die unten aufgeführten Fotos kommen von Wikimedia Commons unter der angegebenen Lizenz; jeder Link öffnet die Originaldatei und ihre Lizenz.",
+  sv: "En del av bilderna på webbplatsen är våra egna. Bilderna nedan kommer från Wikimedia Commons under angiven licens; länkarna öppnar originalfilen och licensen.",
+  ja: "本サイトの写真の一部は自社で撮影したものです。以下の写真はWikimedia Commonsから記載のライセンスで使用しており、リンク先で元ファイルとライセンスを確認できます。",
+  es: "Algunas fotos del sitio son nuestras. Las que aparecen abajo proceden de Wikimedia Commons con la licencia indicada; cada enlace abre el archivo original y su licencia.",
+  'pt-BR': "Algumas fotos do site são nossas. As listadas abaixo vêm do Wikimedia Commons com a licença indicada; cada link abre o arquivo original e sua licença.",
+  'zh-CN': "本站部分照片为我们自己拍摄。以下照片来自维基共享资源，采用所示许可协议；链接指向原始文件及其许可。",
+  ko: "이 사이트의 사진 일부는 직접 촬영한 것입니다. 아래 사진은 위키미디어 공용에서 표시된 라이선스로 사용하며, 링크는 원본 파일과 라이선스로 연결됩니다.",
+  fr: "Une partie des photos du site sont les nôtres. Celles listées ci-dessous proviennent de Wikimedia Commons sous la licence indiquée ; chaque lien ouvre le fichier original et sa licence.",
+  it: "Alcune foto del sito sono nostre. Quelle elencate qui sotto provengono da Wikimedia Commons con la licenza indicata; ogni link apre il file originale e la sua licenza.",
+  nl: "Een deel van de foto's op de site is van onszelf. De foto's hieronder komen van Wikimedia Commons onder de vermelde licentie; elke link opent het originele bestand en de licentie.",
 };
 
 /** Tietoja-sivun kuvaluettelo: kaikki Commons-kuvat tekijöineen ja lisenssilinkkeineen. */

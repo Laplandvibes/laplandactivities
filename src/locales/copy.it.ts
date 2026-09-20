@@ -257,7 +257,7 @@ const it: SectionCopy = {
     scrollAria: 'Scorri verso le categorie',
   },
   summerBand: {
-    eyebrow: 'Estate 2026 · prenotazioni aperte',
+    eyebrow: "Stagione estiva · prenota ora",
     h2: "L'estate in Lapponia è il segreto meglio custodito.",
     lead: "Il sole di mezzanotte non tramonta mai. Le foreste si aprono. Risalgono i salmoni e i fjell virano al rosso del ruska da agosto. La maggior parte degli operatori ha ampia disponibilità fino a giugno, a luglio i posti migliori sono già andati.",
     bookCta: 'Prenota le attività estive', browseCta: 'Sfoglia la guida estiva',
@@ -393,7 +393,7 @@ const it: SectionCopy = {
     notFoundH1: 'Destinazione non trovata', backDestinations: '← Torna alle destinazioni',
     allDestinationsNav: 'Tutte le destinazioni', bookActivitiesIn: 'Prenota attività a {dest}',
     stayIn: 'Soggiorni a', activitiesShort: 'attività',
-    mustDoKicker: 'Da non perdere', mustDoH2: 'L\'esperienza più prenotata',
+    mustDoKicker: 'Da non perdere', mustDoH2: "La nostra scelta in zona",
     localKicker: 'Info locali', localH2: 'Consigli da insider',
     operatorsLabel: 'Operatori di fiducia a',
     gygTitlePrefix: 'Tour', gygTitleSuffix: 'selezionati', gygEyebrow: 'Prenotabile ora',
@@ -465,7 +465,7 @@ const it: SectionCopy = {
     h1: "Chi c'è dietro LaplandActivities",
     lead: "Una guida finlandese alle escursioni in Lapponia, scritta e aggiornata dallo stesso piccolo gruppo che cura gli altri siti #LaplandVibes.",
     whoH2: "Chi siamo",
-    whoBody: "LaplandActivities è pubblicato da LaPeso Oy, società finlandese fondata da Vesa Pesola. Percorriamo di persona le strade di cui scriviamo e fotografiamo i luoghi con la nostra macchina fotografica ogni volta che è possibile: le foto estive di questo sito vengono dal viaggio di luglio 2026 da Ruka a Tornio. Il sito fa parte della rete #LaplandVibes, in cui ogni sito approfondisce un tema. Questo risponde alla domanda: cosa fare in Lapponia.",
+    whoBody: "LaplandActivities è pubblicato da LaPeso Oy, azienda finlandese fondata da Vesa Pesola. Il sito fa parte della rete #LaplandVibes, in cui ogni sito tratta un solo tema; questo racconta che cosa si può fare in Lapponia. Ogni foto indica la fonte sull'immagine stessa e l'elenco completo è in fondo a questa pagina: alcune sono nostre, altre vengono da Wikimedia Commons o da un partner.",
     howH2: "Come un'attività arriva su questo sito",
     howItems: [
       "Esiste come prodotto reale e prenotabile di un operatore con nome e cognome, oppure come luogo pubblico gratuito, per esempio un parco nazionale.",

@@ -268,7 +268,7 @@ const ptBR: SectionCopy = {
     scrollAria: 'Rolar até as categorias',
   },
   summerBand: {
-    eyebrow: 'Verão 2026 · reservas abertas',
+    eyebrow: "Temporada de verão · reserve agora",
     h2: 'O verão na Lapônia é o segredo mais bem guardado.',
     lead: 'O sol da meia-noite nunca se põe. As florestas se abrem. O salmão sobe e os montes ficam vermelhos com o ruska a partir de agosto. A maioria das operadoras tem boa disponibilidade até junho, em julho as melhores vagas vão embora.',
     bookCta: 'Reservar atividades de verão',
@@ -446,7 +446,7 @@ const ptBR: SectionCopy = {
     stayIn: 'Hospedar em',
     activitiesShort: 'atividades',
     mustDoKicker: 'Imperdível',
-    mustDoH2: 'Experiência mais reservada',
+    mustDoH2: "A nossa escolha neste destino",
     localKicker: 'Informação local',
     localH2: 'Dicas de quem mora ali',
     operatorsLabel: 'Operadoras confiáveis em',
@@ -526,7 +526,7 @@ const ptBR: SectionCopy = {
     h1: "Quem está por trás do LaplandActivities",
     lead: "Um guia finlandês de passeios na Lapônia, escrito e atualizado pela mesma equipe pequena que cuida dos outros sites #LaplandVibes.",
     whoH2: "Quem somos",
-    whoBody: "O LaplandActivities é publicado pela LaPeso Oy, empresa finlandesa fundada por Vesa Pesola. Nós mesmos percorremos as rotas sobre as quais escrevemos e fotografamos os lugares com nossa câmera sempre que possível: as fotos de verão deste site são da viagem de julho de 2026 entre Ruka e Tornio. O site faz parte da rede #LaplandVibes, em que cada site aprofunda um tema. Este trata do que fazer na Lapônia.",
+    whoBody: "O LaplandActivities é publicado pela LaPeso Oy, empresa finlandesa fundada por Vesa Pesola. O site faz parte da rede #LaplandVibes, em que cada site trata de um tema; este mostra o que dá para fazer na Lapônia. Cada foto indica a fonte na própria imagem e a lista completa está no fim desta página: algumas são nossas, outras vêm do Wikimedia Commons e outras são imagens do próprio parceiro.",
     howH2: "Como uma atividade entra neste site",
     howItems: [
       "Ela existe como produto real e reservável de uma operadora identificada, ou como lugar público gratuito, por exemplo um parque nacional.",

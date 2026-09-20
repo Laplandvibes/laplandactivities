@@ -368,6 +368,20 @@ export function imageForDestination(slug: string): string {
 // horizons and most subjects framed; override per file where the subject is
 // high or low in frame. Owner finding 2026-06-26 — now a standard release gate.
 const FOCAL: Record<string, string> = {
+  // 20.9.2026 (Vesa: "alasivujen herot leikattu liian mataliksi ja kuvat ei näy kuten pitää"):
+  // oletus 'center 35%' näyttää maisemakuvasta taivaan. Näissä aihe on kehyksen keskellä tai
+  // alempana, joten ankkuri lasketaan. Mitattu renderöidyltä hero-kaistalta.
+  '/images/activities/adventure/korouoma-frozen.webp': 'center 50%',
+  '/images/activities/winter/downhill-skiers.webp': 'center 55%',
+  '/images/activities/wellness/sauna-interior.webp': 'center 50%',
+  '/images/activities/culture/sami-duodji.webp': 'center 50%',
+  '/images/activities/summer/lapland-river.webp': 'center 50%',
+  '/images/activities/food/lapland-plate.webp': 'center 50%',
+  '/images/activities/fishing/fishing-ice.webp': 'center 50%',
+  '/images/heroes/rovaniemi-winter-village.webp': 'center 50%',
+  '/images/heroes/levi-summer-fell.webp': 'center 45%',
+  '/images/activities/summer/ukk-reindeer-fell.webp': 'center 55%',
+  '/images/activities/culture/snowcastle-kemi.webp': 'center 55%',
   // Subject's head/helmet is near the TOP → anchor higher so it's never cropped.
   '/images/activities/summer/mtb-bikepark.webp': 'center 50%',
   '/images/activities/summer/salmon-fishing.webp': 'center 55%',

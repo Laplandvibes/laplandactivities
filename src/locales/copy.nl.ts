@@ -257,7 +257,7 @@ const nl: SectionCopy = {
     scrollAria: 'Scroll naar categorieën',
   },
   summerBand: {
-    eyebrow: 'Zomer 2026 · nu boekbaar',
+    eyebrow: "Zomerseizoen · nu te boeken",
     h2: 'De zomer in Lapland is het best bewaarde geheim.',
     lead: 'De middernachtzon gaat nooit onder. Bossen openen zich. Zalm zwemt stroomopwaarts en vanaf augustus kleuren de fjälls rood door de ruska. De meeste aanbieders hebben tot juni ruime beschikbaarheid, in juli zijn de beste tijdslots al weg.',
     bookCta: 'Boek zomeractiviteiten', browseCta: 'Bekijk zomergids',
@@ -393,7 +393,7 @@ const nl: SectionCopy = {
     notFoundH1: 'Bestemming niet gevonden', backDestinations: '← Terug naar bestemmingen',
     allDestinationsNav: 'Alle bestemmingen', bookActivitiesIn: 'Boek activiteiten: {dest}',
     stayIn: 'Verblijf in', activitiesShort: 'activiteiten',
-    mustDoKicker: 'Niet missen', mustDoH2: 'Meest geboekte ervaring',
+    mustDoKicker: 'Niet missen', mustDoH2: "Onze keuze ter plaatse",
     localKicker: 'Lokale info', localH2: 'Insider-tips',
     operatorsLabel: 'Vertrouwde aanbieders in',
     gygTitlePrefix: 'Zorgvuldig gekozen', gygTitleSuffix: 'tours', gygEyebrow: 'Nu boekbaar',
@@ -465,7 +465,7 @@ const nl: SectionCopy = {
     h1: "Wie er achter LaplandActivities zit",
     lead: "Een Finse gids voor tours in Lapland, geschreven en bijgehouden door hetzelfde kleine team dat de andere #LaplandVibes-sites beheert.",
     whoH2: "Wie wij zijn",
-    whoBody: "LaplandActivities wordt uitgegeven door LaPeso Oy, een Fins bedrijf opgericht door Vesa Pesola. Wij rijden zelf de routes waarover wij schrijven en fotograferen de plekken waar mogelijk met onze eigen camera: de zomerfoto's op deze site komen van de rondreis in juli 2026 van Ruka naar Tornio. De site hoort bij het #LaplandVibes-netwerk, waarin elke site één onderwerp uitdiept. Deze gaat over wat u in Lapland kunt doen.",
+    whoBody: "LaplandActivities wordt uitgegeven door LaPeso Oy, een Fins bedrijf opgericht door Vesa Pesola. De site hoort bij het #LaplandVibes-netwerk, waarin elke site één onderwerp behandelt; deze gaat over wat je in Lapland kunt doen. Bij elke foto staat de bron in de afbeelding zelf en de volledige lijst staat onderaan deze pagina: sommige zijn van onszelf, andere komen van Wikimedia Commons of van een partner.",
     howH2: "Hoe een activiteit op deze site komt",
     howItems: [
       "Zij bestaat als echt, boekbaar product van een met naam genoemde aanbieder, of als vrij toegankelijke plek zoals een nationaal park.",

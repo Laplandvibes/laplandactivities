@@ -268,7 +268,7 @@ const de: SectionCopy = {
     scrollAria: 'Zu Kategorien scrollen',
   },
   summerBand: {
-    eyebrow: 'Sommer 2026 · jetzt buchbar',
+    eyebrow: "Sommersaison · jetzt buchbar",
     h2: 'Lappland im Sommer ist das bestgehütete Geheimnis.',
     lead: 'Die Mitternachtssonne geht nicht unter. Die Wälder öffnen sich. Der Lachs zieht, und ab August färben sich die Fjälls durch die Ruska rot. Bis Ende Juni haben die meisten Anbieter gute Verfügbarkeit, im Juli sind die besten Slots vergeben.',
     bookCta: 'Sommeraktivität buchen',
@@ -446,7 +446,7 @@ const de: SectionCopy = {
     stayIn: 'Übernachten in',
     activitiesShort: 'Aktivitäten',
     mustDoKicker: 'Pflichtprogramm',
-    mustDoH2: 'Meistgebuchtes Erlebnis',
+    mustDoH2: "Unsere Empfehlung vor Ort",
     localKicker: 'Lokales Wissen',
     localH2: 'Insider-Tipps',
     operatorsLabel: 'Handverlesene Anbieter in',
@@ -526,7 +526,7 @@ const de: SectionCopy = {
     h1: "Wer hinter LaplandActivities steht",
     lead: "Ein finnischer Führer zu Touren in Lappland, geschrieben und gepflegt vom selben kleinen Team, das auch die übrigen #LaplandVibes-Seiten betreibt.",
     whoH2: "Wer wir sind",
-    whoBody: "LaplandActivities wird von LaPeso Oy herausgegeben, einem finnischen Unternehmen, das Vesa Pesola gegründet hat. Wir fahren die Strecken, über die wir schreiben, selbst und fotografieren die Orte mit eigener Kamera, wann immer es geht: Die Sommerbilder dieser Seite stammen von der Rundreise im Juli 2026 von Ruka bis Tornio. Die Seite gehört zum #LaplandVibes-Netzwerk, in dem jede Seite ein Thema vertieft. Diese hier zeigt, was man in Lappland unternehmen kann.",
+    whoBody: "LaplandActivities wird von LaPeso Oy herausgegeben, einem finnischen Unternehmen, das Vesa Pesola gegründet hat. Die Website gehört zum #LaplandVibes-Netzwerk, in dem jede Seite ein Thema behandelt; diese zeigt, was man in Lappland unternehmen kann. Jedes Foto nennt seine Quelle im Bild selbst, die vollständige Liste steht am Ende dieser Seite: einige sind unsere eigenen, andere stammen von Wikimedia Commons oder von einem Partner.",
     howH2: "Wie eine Aktivität auf diese Seite kommt",
     howItems: [
       "Sie existiert als echtes, buchbares Produkt eines namentlich genannten Veranstalters oder als frei zugänglicher Ort wie ein Nationalpark.",

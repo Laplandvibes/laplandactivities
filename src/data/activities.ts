@@ -1350,7 +1350,46 @@ const NON_BOOKABLE = new Set<string>([
   'pyh-ski-resort',        // lift tickets at the resort / pyha.fi
   'kem-suomu-ski',         // lift tickets at the resort / suomutunturi.fi
   'kem-santas-village',    // booked directly with the village (santaslittlevillage.fi)
-]);
+  // 20.9.2026 (Vesa: "kertoo Levin laskettelurinteestä ja vie Ylläksen yleiseen hakuun"):
+  // hissilippua ei osteta GetYourGuidelta vaan keskuksen omalta sivulta. Pyhä ja Suomu olivat
+  // jo tällä listalla — Levi, Ylläs ja Ruka puuttuivat, ja niiden kortit lähettivät lukijan
+  // geneeriseen hakuun. Sama sääntö kaikille viidelle.
+  'lev-ski-resort',
+  'yll-ski-resort',
+  'ruk-ski-resort',
+])
+
+// Ei-varattavan kohteen VIRALLINEN sivu. Ilman tätä kortin "Suunnittele käynti" linkitti
+// samalle kohdesivulle, jolla lukija jo seisoi — klikkaus ei tehnyt mitään (Vesa 20.9.2026:
+// "miksi Levin SnowVillageen ei voi painaa?"). Jokainen osoite mitattu 20.9.2026 (GET + selain-UA,
+// HTTP 200, ei uudelleenohjausta muualle). Nämä ovat toimituksellisia lähdelinkkejä, eivät
+// affiliate-linkkejä: ei sponsored/nofollow, mutta utm-merkintä withReferral-funktiolla.
+export const OFFICIAL_SITE: Record<string, string> = {
+  'rov-arktikum': 'https://arktikum.fi/',
+  'rov-santapark': 'https://santapark.fi/',
+  'ina-siida-museum': 'https://siida.fi/',
+  'pos-pentik': 'https://www.pentik.com/',
+  'saa-uk-national-park': 'https://www.luontoon.fi/en/urho-kekkonen',
+  'ina-pielpajärvi': 'https://www.luontoon.fi/en/pielpajarvi',
+  'pos-riisitunturi': 'https://www.luontoon.fi/en/riisitunturi',
+  'ruk-karhunkierros': 'https://www.luontoon.fi/en/bear-trail',
+  'yll-pallas-hike': 'https://www.luontoon.fi/en/pallas-yllastunturi',
+  'pyh-national-park': 'https://www.luontoon.fi/en/pyha-luosto',
+  'tor-snowcastle': 'https://www.snowcastle.net/',
+  // 🔴 lev-snowvillage ja yll-lainio-snow ovat SAMA kohde: Lapland Hotels SnowVillage
+  // Lainiossa, 30 min Leviltä ja Ylläkseltä. Kortteja on kaksi, koska kumpikin kylä
+  // markkinoi sitä omanaan. Molemmat osoittavat kohteen omalle sivulle.
+  'lev-snowvillage': 'https://www.laplandhotels.com/EN/hotels-in-lapland/yllas/lapland-hotels-snowvillage/',
+  'yll-lainio-snow': 'https://www.laplandhotels.com/EN/hotels-in-lapland/yllas/lapland-hotels-snowvillage/',
+  'pyh-ski-resort': 'https://pyha.fi/',
+  'kem-suomu-ski': 'https://www.suomutunturi.fi/',
+  'kem-santas-village': 'https://santaslittlevillage.fi/',
+  'lev-ski-resort': 'https://www.levi.fi/',
+  'yll-ski-resort': 'https://yllas.fi/',
+  'ruk-ski-resort': 'https://www.ruka.fi/',
+  // tor-haparanda-shopping: omatoiminen ostospäivä kahdessa maassa, ei yhtä virallista
+  // sivua ⇒ ei riviä, jolloin kortti putoaa kategoriasivulle (ks. ActivityCard).
+};;
 
 // Concise GYG search query per activity: "<activity type> <place>" — the proven
 // pattern that lands on real, relevant results (verified against GYG /s/?q=).

@@ -257,7 +257,7 @@ const fr: SectionCopy = {
     scrollAria: 'Faire défiler vers les catégories',
   },
   summerBand: {
-    eyebrow: 'Été 2026 · réservations ouvertes',
+    eyebrow: "Saison estivale · réservez maintenant",
     h2: "L'été en Laponie est le secret le mieux gardé.",
     lead: "Le soleil de minuit ne se couche jamais. Les forêts s'ouvrent. Le saumon remonte les rivières et les fjälls virent au rouge avec le ruska dès août. La plupart des opérateurs ont encore beaucoup de disponibilité jusqu'en juin ; en juillet, les meilleurs créneaux sont déjà partis.",
     bookCta: "Réserver des activités d'été", browseCta: "Voir le guide d'été",
@@ -393,7 +393,7 @@ const fr: SectionCopy = {
     notFoundH1: 'Destination introuvable', backDestinations: '← Retour aux destinations',
     allDestinationsNav: 'Toutes les destinations', bookActivitiesIn: 'Réserver à {dest}',
     stayIn: 'Séjourner à', activitiesShort: 'activités',
-    mustDoKicker: 'À ne pas manquer', mustDoH2: 'L\'expérience la plus réservée',
+    mustDoKicker: 'À ne pas manquer', mustDoH2: "Notre choix sur place",
     localKicker: 'Info locale', localH2: 'Conseils d\'initiés',
     operatorsLabel: 'Opérateurs de confiance à',
     gygTitlePrefix: 'Tours', gygTitleSuffix: 'sélectionnés', gygEyebrow: 'Réservable maintenant',
@@ -465,7 +465,7 @@ const fr: SectionCopy = {
     h1: "Qui se cache derrière LaplandActivities",
     lead: "Un guide finlandais des excursions en Laponie, écrit et mis à jour par la même petite équipe qui anime les autres sites #LaplandVibes.",
     whoH2: "Qui nous sommes",
-    whoBody: "LaplandActivities est publié par LaPeso Oy, une société finlandaise fondée par Vesa Pesola. Nous parcourons nous-mêmes les routes dont nous parlons et photographions les lieux avec notre propre appareil dès que possible : les photos d'été de ce site viennent du road trip de juillet 2026, de Ruka à Tornio. Le site fait partie du réseau #LaplandVibes, où chaque site approfondit un sujet. Celui-ci répond à la question : que faire en Laponie.",
+    whoBody: "LaplandActivities est publié par LaPeso Oy, une société finlandaise fondée par Vesa Pesola. Le site appartient au réseau #LaplandVibes, où chaque site traite d'un seul sujet ; celui-ci porte sur ce que l'on peut faire en Laponie. Chaque photo indique sa source sur l'image même et la liste complète figure en bas de cette page : certaines sont les nôtres, d'autres viennent de Wikimedia Commons ou d'un partenaire.",
     howH2: "Comment une activité arrive sur ce site",
     howItems: [
       "Elle existe comme produit réel et réservable chez un opérateur nommé, ou comme lieu public gratuit, par exemple un parc national.",

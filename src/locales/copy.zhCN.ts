@@ -268,7 +268,7 @@ const zhCN: SectionCopy = {
     scrollAria: '滚动到分类',
   },
   summerBand: {
-    eyebrow: '2026年夏季 · 现在可订',
+    eyebrow: "夏季 · 现可预订",
     h2: '夏天的拉普兰是最被低估的秘密。',
     lead: '午夜阳光永不落下，森林敞开，八月起鲑鱼洄游、山地泛红。多数运营商在六月仍有充足名额，七月后好位置便所剩无几。',
     bookCta: '预订夏季活动',
@@ -446,7 +446,7 @@ const zhCN: SectionCopy = {
     stayIn: '住在：',
     activitiesShort: '项目',
     mustDoKicker: '必玩',
-    mustDoH2: '预订最多的体验',
+    mustDoH2: "编辑推荐",
     localKicker: '本地情报',
     localH2: '本地人的建议',
     operatorsLabel: '可信运营商：',
@@ -526,7 +526,7 @@ const zhCN: SectionCopy = {
     h1: "LaplandActivities背后是谁",
     lead: "一份来自芬兰的拉普兰行程指南，由运营其他#LaplandVibes网站的同一个小团队撰写和更新。",
     whoH2: "我们是谁",
-    whoBody: "LaplandActivities由LaPeso Oy出版，这是一家由Vesa Pesola创立的芬兰公司。我们亲自驾车走过所写的每一条路线，并尽可能用自己的相机拍摄：本站的夏季照片来自2026年7月从鲁卡到托尔尼奥的环线之旅。本站属于#LaplandVibes网络，每个网站深入一个主题。这个网站的主题是：在拉普兰做什么。",
+    whoBody: "LaplandActivities 由芬兰公司 LaPeso Oy 出版，创始人为 Vesa Pesola。本站属于 #LaplandVibes 网络，其中每个网站专注一个主题；本站介绍在拉普兰可以做什么。每张照片都在图上标注来源，完整清单在本页末尾：部分为我们自己拍摄，部分来自维基共享资源，部分为合作伙伴提供的图片。",
     howH2: "一项活动如何进入本站",
     howItems: [
       "它是有名有姓的运营商提供的真实可预订产品，或是国家公园这样免费开放的公共场所。",

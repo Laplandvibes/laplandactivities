@@ -34,7 +34,7 @@ const en: SectionCopy = {
     scrollAria: 'Scroll to categories',
   },
   summerBand: {
-    eyebrow: 'Summer 2026 · booking now',
+    eyebrow: "Summer season · booking now",
     h2: 'Lapland in summer is the best-kept secret.',
     lead: 'Midnight sun never sets. Forests open up. Salmon are running and the fells turn red with ruska from August. Most operators still have wide availability through June. By July the best slots are gone.',
     bookCta: 'Book summer activities',
@@ -212,7 +212,7 @@ const en: SectionCopy = {
     stayIn: 'Stay in',
     activitiesShort: 'activities',
     mustDoKicker: 'Must-Do',
-    mustDoH2: 'Most-booked experience',
+    mustDoH2: "Our pick in this destination",
     localKicker: 'Local intel',
     localH2: 'Insider tips',
     operatorsLabel: 'Trusted operators in',
@@ -292,7 +292,7 @@ const en: SectionCopy = {
     h1: "Who is behind LaplandActivities",
     lead: "A Finnish guide to Lapland tours, written and kept up to date by the same small team that runs the other #LaplandVibes sites.",
     whoH2: "Who we are",
-    whoBody: "LaplandActivities is published by LaPeso Oy, a Finnish company founded by Vesa Pesola. We drive the routes we write about and photograph the places with our own camera whenever we can: the summer photos on this site come from the July 2026 road trip from Ruka to Tornio. The site is one of the #LaplandVibes network of Lapland guides, each covering one topic in depth. This one covers what to do.",
+    whoBody: "LaplandActivities is published by LaPeso Oy, a Finnish company founded by Vesa Pesola. The site belongs to the #LaplandVibes network, where each site covers one topic; this one covers what there is to do in Lapland. Every photograph names its source on the image itself, and the full list is at the end of this page: some are our own, some come from Wikimedia Commons, and some are a partner's own pictures.",
     howH2: "How an activity gets on this site",
     howItems: [
       "It exists as a real, bookable product from a named operator, or as a free public place such as a national park.",

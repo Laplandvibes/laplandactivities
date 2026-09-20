@@ -268,7 +268,7 @@ const fi: SectionCopy = {
     scrollAria: 'Vieritä kategorioihin',
   },
   summerBand: {
-    eyebrow: 'Kesä 2026 · varattavissa nyt',
+    eyebrow: "Kesäkausi · varattavissa nyt",
     h2: 'Lappi kesällä on parhaiten varjeltu salaisuus.',
     lead: 'Keskiyön aurinko ei laske. Metsät avautuvat. Lohi nousee ja tunturit punertuvat ruskan myötä elokuusta alkaen. Useimmilla toimijoilla on hyvin tilaa kesäkuun loppuun asti. Heinäkuussa parhaat ajat on jo varattu.',
     bookCta: 'Varaa kesäaktiviteetti',
@@ -448,7 +448,7 @@ const fi: SectionCopy = {
     stayIn: 'Yövy',
     activitiesShort: 'aktiviteettia',
     mustDoKicker: 'Pakko tehdä',
-    mustDoH2: 'Varatuin elämys',
+    mustDoH2: "Toimituksen poiminta täältä",
     localKicker: 'Paikallistietoa',
     localH2: 'Sisäpiirivinkit',
     operatorsLabel: 'Luotettavat toimijat kohteessa',
@@ -540,7 +540,7 @@ const fi: SectionCopy = {
     h1: "Kuka LaplandActivitiesin takana on",
     lead: "Suomalainen opas Lapin retkiin. Sivustoa kirjoittaa ja päivittää sama pieni porukka, joka pyörittää muitakin #LaplandVibes-sivustoja.",
     whoH2: "Keitä olemme",
-    whoBody: "LaplandActivitiesin julkaisee LaPeso Oy, Vesa Pesolan perustama suomalainen yritys. Ajamme itse reitit, joista kirjoitamme, ja kuvaamme paikat omalla kameralla aina kun se on mahdollista: tämän sivuston kesäkuvat ovat heinäkuun 2026 kiertomatkalta Rukalta Tornioon. Sivusto kuuluu #LaplandVibes-verkostoon, jonka jokainen sivusto keskittyy yhteen aiheeseen. Tämä sivusto kertoo, mitä Lapissa voi tehdä.",
+    whoBody: "LaplandActivitiesin julkaisee LaPeso Oy, Vesa Pesolan perustama suomalainen yritys. Sivusto kuuluu #LaplandVibes-verkostoon, jossa jokainen sivusto keskittyy yhteen aiheeseen; tämä kertoo, mitä Lapissa voi tehdä. Jokaisen kuvan lähde lukee kuvassa ja koko luettelo on tämän sivun lopussa: osa on omia valokuviamme, osa Wikimedia Commonsista ja osa kumppanin omia kuvia.",
     howH2: "Miten retki päätyy tälle sivustolle",
     howItems: [
       "Se on nimetyn järjestäjän oikea, varattava tuote tai ilmainen julkinen kohde, kuten kansallispuisto.",
