@@ -189,9 +189,16 @@ export default function Home() {
                     style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }}
                     loading="lazy"
                     decoding="async" width="1920" height="1080"/>
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
+                  {/* TUMMENNUS ANKKUROIDAAN TEKSTIIN, ei kortin korkeuteen.
+                      Kortin kokoinen liukuvari on aina vaara jollekin korttikoolle: iso
+                      otsikko on korkea laatikko, ja sen ylaosa yltaa peitteen kevyeen
+                      kohtaan. Kun liukuvari on tekstilohkon OMA ja lohkolla on ylapehmuste,
+                      se osuu oikeaan kohtaan korttikoosta riippumatta — ja kortin oma peite
+                      saa jaada kevyeksi, jolloin valokuva nakyy (Vesa 20.9.: "onko overlayta
+                      liikaa"). */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-deep-night/70 via-deep-night/20 to-transparent" />
                   <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
-                  <div className="absolute bottom-0 left-0 p-4 sm:p-6">
+                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-14 sm:pt-16 bg-gradient-to-t from-deep-night via-deep-night/92 via-55% to-transparent">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
                     }`}>{cat.name}</h3>

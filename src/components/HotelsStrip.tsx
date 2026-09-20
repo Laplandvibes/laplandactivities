@@ -139,24 +139,43 @@ export default function HotelsStrip() {
                 )}
                 {/* Vesa 19.9.: "tekstit ei erotu". Kirkas kuva (revontulet, valaistu hotelli) söi
                     vanhan scrimin — pohja tummennettu ja musteet saavat varjon. */}
-                {/* SCRIM: alhaalta painottuva, ei koko kortin peittava.
-                    Vesa 19.9. *"tekstit ei erotu"* korjattiin tummentamalla kortti 45 %:iin asti;
-                    20.9. *"onko overlayta liikaa"* — oli. Teksti istuu kortin ALAREUNASSA, joten
-                    tummennus kuuluu sinne ja kuva saa jaada nakyviin ylaosassa. Musteilla on
-                    lisaksi oma varjo, joka kantaa kirkkaankin kuvan paalla. */}
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night via-deep-night/70 via-32% to-transparent" />
+                {/* SCRIM KAHDESSA OSASSA — tama on kolmas versio, ja kaksi edellista olivat
+                    kumpikin yhta liikaa johonkin suuntaan:
+                      19.9. "tekstit ei erotu"  → tummensin KOKO kortin 45 %:iin asti
+                      20.9. "onko overlayta liikaa" → kevensin KOKO kortin
+                      20.9. "teksti ei oikein erotu" → kevennys osui myos tekstiin
+                    Teksti istuu kortin ALAREUNASSA. Siksi tummennus kuuluu sinne eika muualle:
+                    kuva saa jaada kirkkaaksi ylaosassa, ja muste saa taakseen sen mita se
+                    tarvitsee. Yksi tasainen peite ei voi palvella molempia. */}
+                {/* (a) hyvin kevyt koko kortille: ottaa karjen pois eika peita mitaan */}
+                <div className="absolute inset-0 bg-deep-night/12" />
+                {/* (b) tekstin oma kaista: alin 60 % kortista, taysin tumma alareunassa */}
+                <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-deep-night via-deep-night/88 via-38% to-transparent" />
                 {m.src && <PhotoCredit src={m.src} links={false} />}
                 <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
-                  {/* Kumppanin nimi tekstinä vain kun logoa ei ole: Lomarengas-kortissa logo sanoo sen jo. */}
-                  {m.src && (
-                    <p className={`text-${m.accent} text-[10px] font-semibold tracking-[0.25em] uppercase mb-1.5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]`}>{m.label ?? (m.hotel ? `${partnerLabel} · ${m.hotel}` : partnerLabel)}</p>
+                  {/* YLARIVI = KOHTEEN NIMI, ei varauskanavan nimi.
+                      🔴 Tassa luki aiemmin "TRIP.COM · Golden Crown Levin Iglut", ja samassa
+                      kortissa kuvakuitti sanoi "Sembo". Vesa 20.9.: *"miksi täällä lukee
+                      tripo.com ja kuvat kuitenkin sembo?"* Molemmat olivat totta, mutta yhdessa
+                      ne vain sekoittavat: varauskanava vaihtuu kielen mukaan (fi → Sembo,
+                      muut → Trip.com), kun taas kuvatiedosto on Sembon kaikilla kielilla.
+                      Kortin ylarivin tehtava on kertoa MIKA KOHDE kuvassa on. Varauskanava
+                      sanotaan CTA-rivilla, jossa se on lupaus siita mihin klikkaus vie.
+                      🔴 Valkoisena, ei korostusvarilla: 10 px korostusvari valokuvan paalla on
+                      verkoston mitattu heikoin tekstityyppi (skiresorts 14.9.). */}
+                  {m.src && m.hotel && (
+                    <p className="text-snow/90 text-[11px] font-semibold tracking-[0.18em] uppercase mb-1.5 drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">{m.hotel}</p>
                   )}
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
                   <p className="text-snow/85 text-sm leading-relaxed mt-2 mb-3 max-w-md drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">{l.blurb}</p>
+                  {/* Varauskanava tassa, ei ylarivilla: nain lukija tietaa ENNEN klikkausta
+                      mihin han menee, eika se sekoitu kuvakuittiin. Kumppanin nimi on
+                      erisnimi, joten se ei tarvitse kaannosta 12 kielelle. */}
                   <span className="inline-flex items-center gap-1 text-vibe-pink text-sm font-semibold group-hover:translate-x-1 transition-transform">
-                    {c.comparePrices} <ArrowRight className="w-4 h-4" />
+                    {c.comparePrices}
+                    {m.label ? '' : ` · ${partnerLabel}`} <ArrowRight className="w-4 h-4" />
                   </span>
                 </div>
               </AffiliateCTA>

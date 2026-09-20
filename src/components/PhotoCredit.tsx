@@ -21,7 +21,13 @@ export default function PhotoCredit({ src, links = true, className = '' }: { src
   if (!c) return null;
   // Vesa 19.9.2026: "hieman liikaa saa huomiota kuvan ottaja ja ne pitäisi aina olla oikea alalaita"
   // ⇒ 9 px, 60 % muste, aina oikea alakulma; täysi tekijä + linkit Tietoja-sivun luettelossa.
-  const base = `pointer-events-auto absolute bottom-1 right-1 z-10 max-w-[58%] truncate rounded bg-black/35 px-1 py-px text-[9px] leading-tight text-white/60 ${className}`;
+  // 🔴 Pohja on `bg-black/55`, ei kevyempi. Kun kuitti tehtiin 19.9. huomaamattomaksi
+  // (Vesa: "liikaa huomiota kuvan ottajalle"), pohja laskettiin 35 %:iin mutta ylla oleva
+  // mitattu arvo jai kommenttiin — mitattu 20.9. uudelleen: lisenssilinkki oli silloin
+  // 4,13:1 kun raja on 4,5:1, ja 85 % pikseleista alle rajan. Kuitti on lisenssin vaatima
+  // nimeaminen (CC BY-SA), joten sen on oltava luettava; huomaamattomuus tehdaan koolla ja
+  // sijainnilla, ei kontrastia alentamalla.
+  const base = `pointer-events-auto absolute bottom-1 right-1 z-10 max-w-[58%] truncate rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white/70 ${className}`;
   if (c.kind === 'partner') {
     // Kumppanin (esim. Sembo) oma hotellikuva: lähde näkyviin, ei lisenssilinkkiä (kuvalupa 10.9.2026).
     return <span className={base}>{OWN_LABEL[lang]?.split(':')[0] ?? 'Photo'}: {c.author} · {c.license}</span>;

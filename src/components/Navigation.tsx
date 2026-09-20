@@ -192,7 +192,7 @@ export default function Navigation() {
             partner="activities"
             sid="nav_book_now"
             destination="lappi-suomi-l2652"
-            className="whitespace-nowrap bg-vibe-pink hover:bg-vibe-pink/90 text-white px-4 xl:px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+            className="whitespace-nowrap bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 xl:px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
             <span className="xl:hidden">{c.bookCtaShort}</span>
             <span className="hidden xl:inline">{c.bookCta}</span>
@@ -261,7 +261,7 @@ export default function Navigation() {
             partner="activities"
             sid="mobile_nav_book_now"
             destination="lappi-suomi-l2652"
-            className="block mt-2 text-center bg-vibe-pink hover:bg-vibe-pink/90 text-white px-5 py-3 rounded-full text-sm font-semibold"
+            className="block mt-2 text-center bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-3 rounded-full text-sm font-semibold"
           >
             {c.bookCta}
           </AffiliateCTA>
