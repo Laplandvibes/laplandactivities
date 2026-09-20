@@ -6,6 +6,7 @@
  * Tyhjät paikat renderöivät house-adin → https://laplandvibes.com/media/site/laplandactivities
  */
 import type { HomeAdSlotsConfig } from '../shared/HomeAdSlots';
+import { respImg } from '../lib/respImg';
 import type { Partner } from '../shared/PartnerSlot';
 import { DEFAULT_PREMIUM_SPOTS } from '../shared/PremiumSpotGrid';
 
@@ -25,6 +26,9 @@ import { DEFAULT_PREMIUM_SPOTS } from '../shared/PremiumSpotGrid';
  * Copy on Niinan hyväksymää tekstiä (shared/ads/advertisers/bearkuusamo.ts
  * headline per kieli) — älä keksi uutta kumppanicopya tähän.
  */
+const BEAR_HERO = '/images/activities/bear-kuusamo/bear-hero.webp';
+const BEAR_HERO_RESP = respImg(BEAR_HERO, 'half');
+
 const bearKuusamo: Partner = {
   name: 'Bear Kuusamo',
   tagline: 'Yö karhukojulla, aivan Lapin rajalla',
@@ -34,7 +38,12 @@ const bearKuusamo: Partner = {
   // fi-lokaalissa kortti vie bearkuusamo.comin fi-kieliversioon Workerin kautta
   // (Niina/Bear 2026-07-30). PartnerSlot valitsee urlFi:n kun locale on fi.
   urlFi: 'https://go.laplandvibes.com/go/bearkuusamo?sid=home_card_a&dest=https%3A%2F%2Fbearkuusamo.com%2Ffi%2F',
-  imageSrc: '/images/activities/bear-kuusamo/bear-hero.webp',
+  imageSrc: BEAR_HERO,
+  // Kokovaihtoehdot: kortti on puolet leveydesta tyopoydalla ja koko leveys
+  // puhelimessa. Ilman tata puhelin lataisi 1600 px:n tiedoston (126 kt) — se on
+  // etusivun toiseksi raskain lataus heti heron jalkeen (mitattu 20.9.2026).
+  imageSrcSet: BEAR_HERO_RESP.srcSet,
+  imageSizes: BEAR_HERO_RESP.sizes,
   // Kumppanin logo kortin kuvan oikeaan yläkulmaan (Vesa 2026-07-29). Tumma
   // versio, koska PartnerSlot piirtää sen valkoiselle chipille valokuvan päälle.
   logoSrc: '/images/partners/bearkuusamo.png',

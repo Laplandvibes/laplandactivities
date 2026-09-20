@@ -41,6 +41,23 @@ export type Partner = {
    */
   urlFi?: string;
   imageSrc?: string;
+  /**
+   * Kokovaihtoehdot kortin kuvalle: `srcset` ja `sizes` sellaisenaan.
+   *
+   * 🔴 MIKSI SIVUSTO ANTAA NAMA, EI KOMPONENTTI: kapeat kopiot generoidaan
+   * sivustokohtaisesti (`scripts/gen_responsive_images.mjs`) ja niiden lista on
+   * sivuston omassa datassa. Jaettu komponentti ei voi tietaa mille kuville
+   * kopioita on olemassa, ja arvaus tuottaisi srcset-rivin tiedostoon jota ei
+   * ole — se nakyisi lukijalle rikkinaisena kuvana.
+   *
+   * 🔴 `sizes` on pakko antaa `srcSet`:n kanssa. Ilman sita selain olettaa kuvan
+   * olevan koko ikkunan levyinen ja valitsee kortillekin suurimman tiedoston,
+   * eli mitaan ei saasty. Mitattu laplandactivitiesissa 20.9.2026.
+   *
+   * Jos naita ei anneta, kortti toimii tasmalleen kuten ennen.
+   */
+  imageSrcSet?: string;
+  imageSizes?: string;
   /** Lifestyle/mood photo for ad units that show both a photo and the logo. */
   photoSrc?: string;
   /**
@@ -407,6 +424,8 @@ export default function PartnerSlot({ partner, variant, locale, className, place
           {partner.imageSrc ? (
             <img
               src={partner.imageSrc}
+              srcSet={partner.imageSrcSet}
+              sizes={partner.imageSrcSet ? partner.imageSizes : undefined}
               alt={partner.name}
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
             />

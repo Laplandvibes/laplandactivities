@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
 import { Moon, Sun, MapPin, ExternalLink, PawPrint } from 'lucide-react';
 import PageBreadcrumb from '../components/PageBreadcrumb';
@@ -129,6 +130,7 @@ export default function BearKuusamoPage() {
         <div className="relative overflow-hidden">
           <img
             src={IMG.hero}
+            {...respImg(IMG.hero, 'hero')}
             alt=""
             aria-hidden="true"
             className="w-full h-[44vh] min-h-[300px] md:h-[56vh] max-h-[640px] object-cover"
@@ -203,6 +205,7 @@ export default function BearKuusamoPage() {
             <figure className="mt-8">
               <img
                 src={IMG.tree}
+                {...respImg(IMG.tree, 'half')}
                 alt={c.imageAlts.tree}
                 loading="lazy"
                 decoding="async"

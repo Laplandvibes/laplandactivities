@@ -33,6 +33,26 @@ const SIZES: Record<ImgKind, string> = {
   half: '(min-width: 1024px) 50vw, 100vw',
 };
 
+/**
+ * 🔴🔴 Hakutaulu rakennetaan avaimet NORMALISOIDEN, eikä manifestia lueta suoraan.
+ *
+ * Mitattu livenä 20.9.2026: ensimmäinen versio palautti tyhjän jokaiselle kuvalle,
+ * eikä yhtäkään kapeaa tiedostoa ladattu. Syy ei ollut haussa vaan siinä, mitä
+ * manifestille tapahtuu buildissa: `version-images.mjs` leimaa `?v=<tiiviste>`
+ * jokaiseen `/images/…`-merkkijonoon kaikissa dist-tiedostoissa — myös tämän
+ * manifestin omiin AVAIMIIN. Silloin avain on `/images/x.webp?v=abc` ja haku
+ * tehdään polulla `/images/x.webp`, eikä osuma ole mahdollinen.
+ *
+ * Täsmälleen sama vika oli kuvakuiteissa (`photoCredits.ts`) aiemmin samana
+ * päivänä, ja sielläkin se näkyi vasta livenä: lähdekoodi on oikein, build
+ * rikkoo sen. Ainoa kestävä korjaus on normalisoida molemmat puolet.
+ */
+const cleanPath = (s: string) => s.replace(/[?#].*$/, '');
+
+const BY_PATH: Record<string, { full: number; small: number[] }> = Object.fromEntries(
+  Object.entries(RESPONSIVE_WIDTHS).map(([k, v]) => [cleanPath(k), v]),
+);
+
 export function respImg(src: string | undefined, kind: ImgKind = 'card') {
   if (!src) return {};
 
@@ -48,9 +68,9 @@ export function respImg(src: string | undefined, kind: ImgKind = 'card') {
   // Kopio saa LÄHTEEN tiivisteen, ja se on oikein: kopiot generoidaan uudelleen
   // kun lähde muuttuu (generaattori vertaa muokkausaikaa), joten lähteen
   // tiivisteen vaihtuminen vaihtaa myös kopioiden osoitteet.
-  const clean = src.replace(/[?#].*$/, '');
+  const clean = cleanPath(src);
   const query = src.slice(clean.length);
-  const entry = RESPONSIVE_WIDTHS[clean];
+  const entry = BY_PATH[clean];
   if (!entry || entry.small.length === 0) return {};
 
   const parts = entry.small.map(
