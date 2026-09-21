@@ -50,10 +50,16 @@ export default function Hero() {
             npm run build && node ../scripts/portti.mjs --site laplandactivities-new --portti heroteksti */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -inset-x-6 -inset-y-8 sm:-inset-x-10 -z-10"
+          className="pointer-events-none absolute -inset-x-16 -inset-y-16 sm:-inset-x-28 sm:-inset-y-20 -z-10"
           style={{
             background:
-              'radial-gradient(ellipse 104% 58% at 50% 46%, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.82) 64%, rgba(15,23,42,0) 94%)',
+              // 🔴 Vesa 21.9.2026: "liian tumma tuo tekstin taustalaatikko, se saisi
+              // haivyttya enemman kohti reunoja, nyt toi laatikko on kaikki mihin silmat
+              // keskittyy". Syy oli pysahdyksissa: peite pysyi 0,82:ssa 64 %:iin asti ja
+              // putosi sitten nollaan 30 %:n matkalla - se lukee suorakulmiona. Nyt ydin
+              // on yhta tumma mutta laskeuma jakautuu koko sateelle, ja soikiolle on
+              // annettu enemman tilaa (-inset), jottei reuna osu tekstilohkon rajaan.
+              'radial-gradient(ellipse 118% 76% at 50% 46%, rgba(15,23,42,0.74) 0%, rgba(15,23,42,0.68) 30%, rgba(15,23,42,0.50) 54%, rgba(15,23,42,0.26) 74%, rgba(15,23,42,0.09) 88%, rgba(15,23,42,0) 100%)',
           }}
         />
         <p className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
