@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PhotoCredit from './PhotoCredit';
 import { withReferral } from '../lib/referral';
 import type { Activity } from '../data/activities';
-import { isBookable, gygQueryForActivity, PARTNER_PAGE, OFFICIAL_SITE } from '../data/activities';
+import { isBookable, gygQueryForActivity, PARTNER_PAGE, OFFICIAL_SITE, HOTEL_SEARCH } from '../data/activities';
 import { imageForActivity } from '../data/images';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -28,6 +28,8 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   // Ei-varattava kohde: oma virallinen sivu, jos sellainen on mitattu; muuten kategoriasivu.
   // EI koskaan takaisin samalle kohdesivulle — se oli kuollut klikkaus (Vesa 20.9.2026).
   const officialSite = OFFICIAL_SITE[rawActivity.id];
+  // 🔴 Hotelli ennen virallista sivua: majoituksesta meilla on kumppani (Vesa 21.9.).
+  const hotelSearch = HOTEL_SEARCH[rawActivity.id];
   const sid = `card_${rawActivity.id}`.slice(0, 50).replace(/-/g, '_');
 
   return (
@@ -91,6 +93,15 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
             partner="activities-search"
             sid={sid}
             destination={gygQ}
+            className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+          >
+            {c.findBook} <ExternalLink className="w-3.5 h-3.5" />
+          </AffiliateCTA>
+        ) : hotelSearch ? (
+          <AffiliateCTA
+            partner="hotels"
+            sid={sid}
+            query={{ ss: hotelSearch }}
             className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
             {c.findBook} <ExternalLink className="w-3.5 h-3.5" />

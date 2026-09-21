@@ -222,6 +222,27 @@ export default function Home() {
           peräkkäin) — GYG-auto-widget elää alasivuilla (kohde- ja kategoriaindeksit). */}
       <GygPicks />
 
+      {/* Scandinavian Outdoor: varusteet juuri katsottuihin retkiin.
+          🔴 Vesa 21.9.2026: *"nostaisin myös scandinavian outdoorisin mainosta etusivulla
+          hieman ylemmäksi niin ihmiset näkee sen"* — oli uutiskirjeen ylapuolella, eli
+          kaukana. Paikka on nyt heti varattavien retkien perassa: lukija on juuri
+          katsonut kelkkasafareita ja huskyajeluita, ja seuraava kysymys on mita palle.
+          Eri tuote kuin GYG-retket, joten ne eivat syo toisiaan.
+          Different product than the GYG activity CTAs, so no cannibalisation;
+          disclosure lives in the shared Footer bottom strip. */}
+      <section className="px-4 pb-16 bg-deep-night">
+        <div className="max-w-5xl mx-auto">
+          <ProductRail
+            partner={scandinavianoutdoorRail}
+            snapshot={scandinavianoutdoorPicks}
+            lang={lang}
+            sid="home_activities_gear"
+            variant="dark"
+            onCtaClick={(specKey, sid, url) => trackEvent('affiliate_click', { event_category: 'monetisation', event_label: specKey, affiliate_type: `ad_unit:${sid}`, outbound_url: url })}
+          />
+        </div>
+      </section>
+
       <section id="experiences" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
@@ -434,21 +455,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Scandinavian Outdoor ad — gear for the activities above (shared/ads).
-          Different product than the GYG activity CTAs, so no cannibalisation;
-          disclosure lives in the shared Footer bottom strip. */}
-      <section className="px-4 pb-16 bg-deep-night">
-        <div className="max-w-5xl mx-auto">
-          <ProductRail
-            partner={scandinavianoutdoorRail}
-            snapshot={scandinavianoutdoorPicks}
-            lang={lang}
-            sid="home_activities_gear"
-            variant="dark"
-            onCtaClick={(specKey, sid, url) => trackEvent('affiliate_click', { event_category: 'monetisation', event_label: specKey, affiliate_type: `ad_unit:${sid}`, outbound_url: url })}
-          />
-        </div>
-      </section>
 
 
       {/* Yksi myyntikyltti koko sivulla (verkostosääntö 4.9.2026), ja se on

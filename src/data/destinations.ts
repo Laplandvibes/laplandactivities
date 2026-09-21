@@ -53,7 +53,10 @@ export const destinations: Destination[] = [
     slug: 'yllas',
     gygLocationId: '87669',
     name: 'Ylläs',
-    tagline: 'The Longest Slopes in Finland',
+    // 🔴 Iskulause nakyy ymparivuoden, joten se ei saa vaittaa kautta (Vesa 21.9.2026:
+    // "the longest slopes in finland ja kesakuva?"). Rinteet ovat yha description- ja
+    // why-kentissa, joissa ne kuuluvat.
+    tagline: 'Two Villages, One Fell, One National Park',
     description: 'Two ski resorts on either side of Ylläs fell offer the longest runs in Finland at 3 km. A quieter, more authentic Lapland experience with Pallas-Yllästunturi National Park.',
     why: 'Ylläs is two quiet villages, Äkäslompolo and Ylläsjärvi, on opposite sides of one big fell, with 62 slopes between them and downhill runs of over three kilometres, the longest in Finland. Around them spreads about 300 km of maintained cross-country track reaching into Pallas-Yllästunturi National Park. Choose it over Levi if you want dark aurora skies, national-park silence and long ski days rather than nightlife; Äkäslompolo is the calmer side, Ylläsjärvi has the bars.',
     access: 'Fly to Kittilä (35 min drive)',

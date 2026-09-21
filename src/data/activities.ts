@@ -1364,6 +1364,22 @@ const NON_BOOKABLE = new Set<string>([
 // "miksi Levin SnowVillageen ei voi painaa?"). Jokainen osoite mitattu 20.9.2026 (GET + selain-UA,
 // HTTP 200, ei uudelleenohjausta muualle). Nämä ovat toimituksellisia lähdelinkkejä, eivät
 // affiliate-linkkejä: ei sponsored/nofollow, mutta utm-merkintä withReferral-funktiolla.
+/**
+ * Kohteet joiden "virallinen sivu" on MAJOITUSKUMPPANIN hotelli.
+ *
+ * Vesa 21.9.2026: *"miten tämä voi viedä lapland hotelsin sivulle ilman affilinkkiä
+ * vaikka heille meillä on sembo?"* — ei voi. OFFICIAL_SITE on lukijapalvelua museoille
+ * ja kansallispuistoille, joista emme saa mitaan. Hotelli on eri asia: majoituksesta
+ * meilla on kumppani (fi → Sembo, muut → Trip.com), ja ilman sita linkki vie rahaa pois.
+ *
+ * Arvo on hakulause, joka syotetaan Workerin `ss`-parametriin. Nimi tarkistettu
+ * kumppanin omalta sivulta, ei arvattu.
+ */
+export const HOTEL_SEARCH: Record<string, string> = {
+  'lev-snowvillage': 'Lapland Hotels SnowVillage, Ylläs, Finland',
+  'yll-lainio-snow': 'Lapland Hotels SnowVillage, Ylläs, Finland',
+};
+
 export const OFFICIAL_SITE: Record<string, string> = {
   'rov-arktikum': 'https://arktikum.fi/',
   'rov-santapark': 'https://santapark.fi/',
