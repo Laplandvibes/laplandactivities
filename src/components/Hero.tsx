@@ -33,16 +33,29 @@ export default function Hero() {
           viivaan). Kerros 2: soikea tummennus tekstipalstan kohdalla.
           🔴 Ala kevenna kumpaakaan ilman mittausta:
           npm run build && node ../scripts/portti.mjs --site laplandactivities-new --taso selain */}
-      <div className="absolute inset-0 bg-gradient-to-b from-deep-night/45 via-deep-night/25 to-deep-night pointer-events-none" />
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background:
-            'radial-gradient(ellipse 96% 74% at 50% 49%, rgba(15,23,42,0.86) 0%, rgba(15,23,42,0.70) 50%, rgba(15,23,42,0) 84%)',
-        }}
-      />
+      {/* Kevyt pohjustus koko kuvalle: ottaa karjen pois, ei peita. Alareuna sulaa
+          sivun taustaan, ettei kuva katkea viivaan. */}
+      <div className="absolute inset-0 bg-gradient-to-b from-deep-night/30 via-deep-night/10 to-deep-night pointer-events-none" />
 
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto pt-20">
+        {/* TUMMENNUS ANKKUROIDAAN TEKSTIIN, ei kuvaan.
+            Vesa 20.9.: *"onko overlayta liikaa"* → kevensin. 21.9.: *"hero osion paalla on
+            liikaa overlayta ja tummaa, ei kuvat nay"* → oli yha. Syy: tummennus oli
+            IKKUNAN kokoinen soikio (96 % x 74 %, ydin 86 %), jotta 12 px:n ingressi
+            lapaisi kontrastimittarin. Se peitti koko valokuvan.
+            Nyt soikio on TEKSTILOHKON kokoinen ja kulkee sen mukana: muste saa taakseen
+            sen mita tarvitsee, ja kuva jaa nakyviin kaikkialla muualla. Sama ratkaisu
+            kuin korttien teksteissa (20.9.).
+            🔴 Ala kevenna ilman mittausta:
+            npm run build && node ../scripts/portti.mjs --site laplandactivities-new --portti heroteksti */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -inset-x-6 -inset-y-8 sm:-inset-x-10 -z-10"
+          style={{
+            background:
+              'radial-gradient(ellipse 104% 58% at 50% 46%, rgba(15,23,42,0.90) 0%, rgba(15,23,42,0.82) 64%, rgba(15,23,42,0) 94%)',
+          }}
+        />
         <p className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-6 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
           {c.eyebrow}
         </p>

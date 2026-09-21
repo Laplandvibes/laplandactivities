@@ -344,8 +344,8 @@ const ptBR: SectionCopy = {
     planVisit: 'Planeje sua visita',
   },
   home: {
-    metaTitle: 'LaplandActivities: Tours árticos na Lapônia',
-    metaDescription: "Safáris de snowmobile, trenó de huskies e caçadas de aurora. Atividades escolhidas a dedo em 10 destinos na Lapônia, com operadoras locais de confiança.",
+    metaTitle: 'O que fazer na Lapônia: 79 atividades em 10 destinos',
+    metaDescription: 'Safáris de snowmobile, passeios de trenó com huskies, caça à aurora e saunas a fumaça em Rovaniemi, Levi, Ylläs, Saariselkä e mais seis destinos.',
     ogTitle: 'LaplandActivities: Experiências árticas escolhidas a dedo',
     categoriesKicker: 'O que fazer',
     categoriesH2: 'Escolha sua aventura',

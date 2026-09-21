@@ -110,8 +110,8 @@ const en: SectionCopy = {
     planVisit: 'Plan your visit',
   },
   home: {
-    metaTitle: 'LaplandActivities: hand-picked Arctic tours in Lapland',
-    metaDescription: 'Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 destinations in and around Lapland through GetYourGuide and trusted local operators.',
+    metaTitle: 'Things to Do in Lapland: 79 Activities in 10 Destinations',
+    metaDescription: 'Snowmobile safaris, husky sledding, aurora hunts and smoke saunas in Rovaniemi, Levi, Ylläs, Saariselkä and six more. Live prices from the operators.',
     ogTitle: 'LaplandActivities · Hand-Picked Arctic Experiences',
     categoriesKicker: 'What to Do',
     categoriesH2: 'Choose Your Adventure',

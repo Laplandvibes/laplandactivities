@@ -344,8 +344,8 @@ const es: SectionCopy = {
     planVisit: 'Planifique su visita',
   },
   home: {
-    metaTitle: 'LaplandActivities: Tours árticos en Laponia',
-    metaDescription: "Safaris en motonieve, trineo de huskies, cazas de aurora y saunas de humo. Reserve actividades en 10 destinos de Laponia mediante GetYourGuide.",
+    metaTitle: 'Qué hacer en Laponia: 79 actividades en 10 destinos',
+    metaDescription: 'Safaris en moto de nieve, trineos de huskies, cazas de auroras y saunas de humo en Rovaniemi, Levi, Ylläs, Saariselkä y seis destinos más.',
     ogTitle: 'LaplandActivities: Experiencias árticas cuidadosamente seleccionadas',
     categoriesKicker: 'Qué hacer',
     categoriesH2: 'Elija su aventura',

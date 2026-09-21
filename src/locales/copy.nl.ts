@@ -316,8 +316,8 @@ const nl: SectionCopy = {
   },
   activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan uw bezoek' },
   home: {
-    metaTitle: 'LaplandActivities: arctische tours in Lapland',
-    metaDescription: 'Sneeuwscooter-safari\'s, husky-slederitten, noorderlichtjachten, rooksauna\'s en meer. Boek zorgvuldig gekozen activiteiten in 10 bestemmingen in en rond Lapland via GetYourGuide.',
+    metaTitle: 'Excursies in Lapland: 79 activiteiten in 10 bestemmingen',
+    metaDescription: 'Sneeuwscootersafari\'s, huskysledetochten, noorderlichtjachten en rooksauna\'s in Rovaniemi, Levi, Ylläs, Saariselkä en zes andere bestemmingen.',
     ogTitle: 'LaplandActivities: zorgvuldig gekozen arctische ervaringen',
     categoriesKicker: 'Wat te doen', categoriesH2: 'Kies uw avontuur',
     categoriesLead: 'Negen manieren om het Noordpoolgebied te beleven. Kies een categorie, dan verwijzen we u door naar zorgvuldig gekozen aanbieders.',

@@ -316,8 +316,8 @@ const fr: SectionCopy = {
   },
   activityCard: { findBook: 'Trouver et réserver', planVisit: 'Préparez votre visite' },
   home: {
-    metaTitle: 'LaplandActivities : activités et tours en Laponie',
-    metaDescription: "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée. Réservez dans 10 destinations en Laponie via GetYourGuide.",
+    metaTitle: 'Que faire en Laponie : 79 activités dans 10 destinations',
+    metaDescription: 'Safaris en motoneige, traîneau à chiens, chasses aux aurores et saunas à fumée à Rovaniemi, Levi, Ylläs, Saariselkä et six autres destinations.',
     ogTitle: 'LaplandActivities : expériences arctiques choisies avec soin',
     categoriesKicker: 'Que faire', categoriesH2: 'Choisissez votre aventure',
     categoriesLead: '9 façons de vivre l\'Arctique, choisissez une catégorie et nous vous orientons vers des opérateurs choisis avec soin.',

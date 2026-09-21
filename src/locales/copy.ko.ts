@@ -316,8 +316,8 @@ const ko: SectionCopy = {
   },
   activityCard: { findBook: '찾아서 예약', planVisit: '방문 계획하기' },
   home: {
-    metaTitle: 'LaplandActivities: 라플란드의 엄선한 북극 투어 예약',
-    metaDescription: '스노모빌 사파리, 허스키 썰매, 오로라 헌팅, 스모크 사우나 등. 라플란드와 그 주변 10개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.',
+    metaTitle: '라플란드 여행: 10개 지역 79가지 액티비티',
+    metaDescription: '로바니에미, 레비, 윙래스, 사리셀카 등 10개 지역의 스노모빌 사파리, 허스키 썸매, 오로라 투어, 스모크 사우나를 현지 운영사 가격으로 예약하세요.',
     ogTitle: 'LaplandActivities: 엄선한 북극 체험',
     categoriesKicker: '무엇을 할까', categoriesH2: '어드벤처를 선택하세요',
     categoriesLead: '북극을 체험하는 9가지 방법, 카테고리를 고르면 엄선한 투어 운영자로 안내해드립니다.',

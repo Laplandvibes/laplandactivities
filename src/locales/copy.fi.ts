@@ -344,8 +344,8 @@ const fi: SectionCopy = {
     planVisit: 'Suunnittele käynti',
   },
   home: {
-    metaTitle: 'LaplandActivities: arktiset retket Suomen Lapissa',
-    metaDescription: 'Moottorikelkka- ja huskysafarit, revontuliretket ja savusaunat. Varaa luotettavia aktiviteetteja kymmenessä Lapin kohteessa GetYourGuiden kautta.',
+    metaTitle: 'Tekemistä Lapissa: 79 aktiviteettia 10 kohteessa',
+    metaDescription: 'Moottorikelkkasafarit, huskyajelut, revontuliretket ja savusaunat Rovaniemellä, Levillä, Ylläksellä, Saariselällä ja kuudessa muussa kohteessa.',
     ogTitle: 'LaplandActivities · käsin valitut arktiset elämykset',
     categoriesKicker: 'Mitä tehdä',
     categoriesH2: 'Valitse seikkailusi',

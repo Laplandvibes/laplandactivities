@@ -344,8 +344,8 @@ const zhCN: SectionCopy = {
     planVisit: '规划行程',
   },
   home: {
-    metaTitle: 'LaplandActivities: 在芬兰拉普兰预订精选北极行程',
-    metaDescription: '雪地摩托之旅、哈士奇雪橇、极光追逐、烟熏桑拿等。在拉普兰及周边10个目的地通过 GetYourGuide与可信本地运营商预订精选活动。',
+    metaTitle: '拉普兰旅游：10个目的地，79项活动',
+    metaDescription: '在罗瓦涅米、莱维、于拉斯、萨里塞尔卡等10个目的地预订雪地摩托、哈士奇雪橇、极光追寻与烟熏桑拿，价格直接来自当地运营商。',
     ogTitle: 'LaplandActivities: 精选北极体验',
     categoriesKicker: '可以做什么',
     categoriesH2: '选择您的冒险',

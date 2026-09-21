@@ -344,8 +344,8 @@ const ja: SectionCopy = {
     planVisit: '訪問を計画する',
   },
   home: {
-    metaTitle: 'LaplandActivities｜フィンランド・ラップランドの厳選北極ツアー予約',
-    metaDescription: 'スノーモービル・サファリ、ハスキーそり、オーロラハンティング、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、ラップランドとその周辺の10の目的地で厳選アクティビティを予約。',
+    metaTitle: 'ラップランド観光：10の拠点で79のアクティビティ',
+    metaDescription: 'ロヴァニエミ、レヴィ、ユッラス、サーリセルカなど10の拠点で、スノーモービル、ハスキー犬ぞり、オーロラツアー、スモークサウナを予約できます。',
     ogTitle: 'LaplandActivities｜厳選の北極体験',
     categoriesKicker: 'やること',
     categoriesH2: '冒険を選ぶ',

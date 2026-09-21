@@ -1,8 +1,8 @@
 {
   "/": {
     "en": {
-      "title": "LaplandActivities: hand-picked Arctic tours in Lapland",
-      "description": "Snowmobile safaris, husky sledding, aurora hunts, smoke saunas and more. Book hand-picked activities across 8 destinations in and around Lapland through GetYourGuide and trusted local operators.",
+      "title": "Things to Do in Lapland: 79 Activities in 10 Destinations",
+      "description": "Snowmobile safaris, husky sledding, aurora hunts and smoke saunas in Rovaniemi, Levi, Ylläs, Saariselkä and six more. Live prices from the operators.",
       "faq": [
         {
           "q": "What activities can you do in Lapland?",
@@ -27,8 +27,8 @@
       ]
     },
     "fi": {
-      "title": "LaplandActivities: arktiset retket Suomen Lapissa",
-      "description": "Moottorikelkka- ja huskysafarit, revontuliretket ja savusaunat. Varaa luotettavia aktiviteetteja kymmenessä Lapin kohteessa GetYourGuiden kautta.",
+      "title": "Tekemistä Lapissa: 79 aktiviteettia 10 kohteessa",
+      "description": "Moottorikelkkasafarit, huskyajelut, revontuliretket ja savusaunat Rovaniemellä, Levillä, Ylläksellä, Saariselällä ja kuudessa muussa kohteessa.",
       "faq": [
         {
           "q": "Mitä aktiviteetteja Lapissa voi tehdä?",
@@ -53,8 +53,8 @@
       ]
     },
     "de": {
-      "title": "LaplandActivities: arktische Touren in Lappland",
-      "description": "Schneemobil-Safaris, Husky-Schlittenfahrten, Nordlichtjagden und Rauchsaunen. Handverlesene Aktivitäten in zehn Reisezielen in Lappland, buchbar über GetYourGuide.",
+      "title": "Lappland Aktivitäten: 79 Touren in Rovaniemi, Levi & mehr",
+      "description": "Schneemobil-Safaris, Husky-Schlittenfahrten, Nordlichter-Touren und Rauchsaunen in Rovaniemi, Levi, Ylläs, Saariselkä und sechs weiteren Orten.",
       "faq": [
         {
           "q": "Welche Aktivitäten kann man in Lappland unternehmen?",
@@ -79,8 +79,8 @@
       ]
     },
     "ja": {
-      "title": "LaplandActivities｜フィンランド・ラップランドの厳選北極ツアー予約",
-      "description": "スノーモービル・サファリ、ハスキーそり、オーロラハンティング、スモークサウナほか。GetYourGuideと信頼できる地元オペレーター経由で、ラップランドとその周辺の10の目的地で厳選アクティビティを予約。",
+      "title": "ラップランド観光：10の拠点で79のアクティビティ",
+      "description": "ロヴァニエミ、レヴィ、ユッラス、サーリセルカなど10の拠点で、スノーモービル、ハスキー犬ぞり、オーロラツアー、スモークサウナを予約できます。",
       "faq": [
         {
           "q": "ラップランドではどんなアクティビティができますか？",
@@ -105,8 +105,8 @@
       ]
     },
     "es": {
-      "title": "LaplandActivities: Tours árticos en Laponia",
-      "description": "Safaris en motonieve, trineo de huskies, cazas de aurora y saunas de humo. Reserve actividades en 10 destinos de Laponia mediante GetYourGuide.",
+      "title": "Qué hacer en Laponia: 79 actividades en 10 destinos",
+      "description": "Safaris en moto de nieve, trineos de huskies, cazas de auroras y saunas de humo en Rovaniemi, Levi, Ylläs, Saariselkä y seis destinos más.",
       "faq": [
         {
           "q": "¿Qué actividades se pueden hacer en Laponia?",
@@ -131,8 +131,8 @@
       ]
     },
     "pt-BR": {
-      "title": "LaplandActivities: Tours árticos na Lapônia",
-      "description": "Safáris de snowmobile, trenó de huskies e caçadas de aurora. Atividades escolhidas a dedo em 10 destinos na Lapônia, com operadoras locais de confiança.",
+      "title": "O que fazer na Lapônia: 79 atividades em 10 destinos",
+      "description": "Safáris de snowmobile, passeios de trenó com huskies, caça à aurora e saunas a fumaça em Rovaniemi, Levi, Ylläs, Saariselkä e mais seis destinos.",
       "faq": [
         {
           "q": "Quais atividades dá para fazer na Lapônia?",
@@ -157,8 +157,8 @@
       ]
     },
     "zh-CN": {
-      "title": "LaplandActivities: 在芬兰拉普兰预订精选北极行程",
-      "description": "雪地摩托之旅、哈士奇雪橇、极光追逐、烟熏桑拿等。在拉普兰及周边10个目的地通过 GetYourGuide与可信本地运营商预订精选活动。",
+      "title": "拉普兰旅游：10个目的地，79项活动",
+      "description": "在罗瓦涅米、莱维、于拉斯、萨里塞尔卡等10个目的地预订雪地摩托、哈士奇雪橇、极光追寻与烟熏桑拿，价格直接来自当地运营商。",
       "faq": [
         {
           "q": "在拉普兰可以做哪些活动？",
@@ -183,8 +183,8 @@
       ]
     },
     "ko": {
-      "title": "LaplandActivities: 라플란드의 엄선한 북극 투어 예약",
-      "description": "스노모빌 사파리, 허스키 썰매, 오로라 헌팅, 스모크 사우나 등. 라플란드와 그 주변 10개 목적지의 엄선한 액티비티를 GetYourGuide와 신뢰할 수 있는 현지 운영자를 통해 예약하세요.",
+      "title": "라플란드 여행: 10개 지역 79가지 액티비티",
+      "description": "로바니에미, 레비, 윙래스, 사리셀카 등 10개 지역의 스노모빌 사파리, 허스키 썸매, 오로라 투어, 스모크 사우나를 현지 운영사 가격으로 예약하세요.",
       "faq": [
         {
           "q": "라플란드에서는 어떤 액티비티를 할 수 있나요?",
@@ -209,8 +209,8 @@
       ]
     },
     "fr": {
-      "title": "LaplandActivities : activités et tours en Laponie",
-      "description": "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée. Réservez dans 10 destinations en Laponie via GetYourGuide.",
+      "title": "Que faire en Laponie : 79 activités dans 10 destinations",
+      "description": "Safaris en motoneige, traîneau à chiens, chasses aux aurores et saunas à fumée à Rovaniemi, Levi, Ylläs, Saariselkä et six autres destinations.",
       "faq": [
         {
           "q": "Quelles activités peut-on faire en Laponie ?",
@@ -235,8 +235,8 @@
       ]
     },
     "it": {
-      "title": "LaplandActivities: tour artici in Lapponia",
-      "description": "Safari in motoslitta, slitta trainata dagli husky, caccia all'aurora, saune a fumo e altro. Prenoti attività in 10 destinazioni in Lapponia e dintorni tramite GetYourGuide.",
+      "title": "Cosa fare in Lapponia: 79 attività in 10 destinazioni",
+      "description": "Safari in motoslitta, slitte trainate dai husky, cacce all'aurora e saune a fumo a Rovaniemi, Levi, Ylläs, Saariselkä e altre sei destinazioni.",
       "faq": [
         {
           "q": "Quali attività si possono fare in Lapponia?",
@@ -261,8 +261,8 @@
       ]
     },
     "nl": {
-      "title": "LaplandActivities: arctische tours in Lapland",
-      "description": "Sneeuwscooter-safari's, husky-slederitten, noorderlichtjachten, rooksauna's en meer. Boek zorgvuldig gekozen activiteiten in 10 bestemmingen in en rond Lapland via GetYourGuide.",
+      "title": "Excursies in Lapland: 79 activiteiten in 10 bestemmingen",
+      "description": "Sneeuwscootersafari's, huskysledetochten, noorderlichtjachten en rooksauna's in Rovaniemi, Levi, Ylläs, Saariselkä en zes andere bestemmingen.",
       "faq": [
         {
           "q": "Welke activiteiten kunt u in Lapland doen?",
@@ -287,8 +287,8 @@
       ]
     },
     "sv": {
-      "title": "Arktiska turer i finska Lappland – noggrant utvalda",
-      "description": "Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 10 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.",
+      "title": "Aktiviteter i Lappland: 79 upplevelser på 10 orter",
+      "description": "Skotersafari, hundspann, norrskensturer och rökbastu i Rovaniemi, Levi, Ylläs, Saariselkä och sex orter till. Priser direkt från arrangörerna.",
       "faq": [
         {
           "q": "Vilka aktiviteter kan man göra i Lappland?",

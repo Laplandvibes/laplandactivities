@@ -316,8 +316,8 @@ const it: SectionCopy = {
   },
   activityCard: { findBook: 'Trova e prenota', planVisit: 'Pianifica la visita' },
   home: {
-    metaTitle: 'LaplandActivities: tour artici in Lapponia',
-    metaDescription: 'Safari in motoslitta, slitta trainata dagli husky, caccia all\'aurora, saune a fumo e altro. Prenoti attività in 10 destinazioni in Lapponia e dintorni tramite GetYourGuide.',
+    metaTitle: 'Cosa fare in Lapponia: 79 attività in 10 destinazioni',
+    metaDescription: 'Safari in motoslitta, slitte trainate dai husky, cacce all\'aurora e saune a fumo a Rovaniemi, Levi, Ylläs, Saariselkä e altre sei destinazioni.',
     ogTitle: 'LaplandActivities: esperienze artiche scelte con cura',
     categoriesKicker: 'Cosa fare', categoriesH2: 'Scelga la sua avventura',
     categoriesLead: '9 modi per vivere l\'Artico, scelga una categoria e La indirizzeremo verso gli operatori selezionati.',

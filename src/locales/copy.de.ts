@@ -344,8 +344,8 @@ const de: SectionCopy = {
     planVisit: 'Besuch planen',
   },
   home: {
-    metaTitle: 'LaplandActivities: arktische Touren in Lappland',
-    metaDescription: "Schneemobil-Safaris, Husky-Schlittenfahrten, Nordlichtjagden und Rauchsaunen. Handverlesene Aktivitäten in zehn Reisezielen in Lappland, buchbar über GetYourGuide.",
+    metaTitle: 'Lappland Aktivitäten: 79 Touren in Rovaniemi, Levi & mehr',
+    metaDescription: 'Schneemobil-Safaris, Husky-Schlittenfahrten, Nordlichter-Touren und Rauchsaunen in Rovaniemi, Levi, Ylläs, Saariselkä und sechs weiteren Orten.',
     ogTitle: 'LaplandActivities: handverlesene arktische Erlebnisse',
     categoriesKicker: 'Was zu tun ist',
     categoriesH2: 'Wählen Sie Ihr Abenteuer',

@@ -110,8 +110,8 @@ const sv: SectionCopy = {
     planVisit: 'Planera ditt besök',
   },
   home: {
-    metaTitle: 'Arktiska turer i finska Lappland – noggrant utvalda',
-    metaDescription: 'Snöskotersafarier, hundspann, norrskensjakt, rökbastu och mycket mer. Boka noggrant utvalda aktiviteter på 10 resmål i Lappland med omnejd via GetYourGuide och pålitliga lokala researrangörer.',
+    metaTitle: 'Aktiviteter i Lappland: 79 upplevelser på 10 orter',
+    metaDescription: 'Skotersafari, hundspann, norrskensturer och rökbastu i Rovaniemi, Levi, Ylläs, Saariselkä och sex orter till. Priser direkt från arrangörerna.',
     ogTitle: 'LaplandActivities · Noggrant utvalda arktiska upplevelser',
     categoriesKicker: 'Vad du kan göra',
     categoriesH2: 'Välj ditt äventyr',
