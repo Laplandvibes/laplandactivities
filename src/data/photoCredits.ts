@@ -85,6 +85,11 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   // Vesa 21.9.2026: "tassa voisi nakya talviurheilu, olisiko jostain kumparelaskua
   // tms?" ja "ei sen tarvitse olla Rukalta". Viisi laskijaa kumpareilla, lumipoly
   // nousee; kaikilla kypara ja lasit, joten kukaan ei ole tunnistettavissa.
+  // Vesa 21.9.2026: "varmaan loytyisi tahan nayttavampikin sauna taustalle".
+  // Morgamojan eramaasauna Lemmenjoen kultamailla, Inari — aito Lapin eramaasauna,
+  // ei ihmisia eika logoja. Rajattu 16:9 (4032x3024 -> 4032x2268, y=300), koska
+  // yksityiskohtainen valokuva pakkautuu huonosti ja turhat pikselit maksavat.
+  "/images/activities/wellness/wilderness-sauna-morgamoja.webp": { kind: 'commons', author: "Antto12345", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0", pageUrl: "https://commons.wikimedia.org/wiki/File:Morgamojan_sauna.jpg", title: "Morgamojan sauna.jpg", date: "2021-07-09" },
   "/images/activities/winter/moguls-action.webp": { kind: 'commons', author: "Dominic Trewin", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File:Ben_Cavet_skiing_the_moguls.jpg", title: "Ben Cavet skiing the moguls.jpg", date: "2010-02-22" },
   "/images/activities/winter/downhill-skiers.webp": { kind: 'commons', author: "Estormiz", license: "CC0", licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en", pageUrl: "https://commons.wikimedia.org/wiki/File%3AYll%C3%A4stunturi_20100308.jpg", title: "Yllästunturi 20100308.jpg", date: "Taken on 8" },
   "/images/activities/winter/husky-dogs-ruka.webp": { kind: 'commons', author: "Timo Newton-Syms from Helsinki, Finland &amp; Maidenhead, Berkshire, UK", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3AHusky_Dogs_(3185281871).jpg", title: "Husky Dogs (3185281871).jpg", date: "2009-01-06" },

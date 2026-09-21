@@ -341,7 +341,10 @@ const CATEGORY_HERO: Record<string, string> = {
   // nakya talviurheilu ... jotain kumparelaskua tms"). Nyt kumparelaskua actionilla.
   'winter-sports':  local('activities/winter/moguls-action.webp'),
   // Oma kuva: Grand Hotel Mustaparran sauna, Tornio 21.7.2026 (paikaton pinta, ei väitä kohdetta)
-  wellness:         local('activities/wellness/sauna-interior.webp'),
+  // 🔴 Kausikohtainen 21.9.2026: kesalla Morgamojan eramaasauna (Inari), talvella
+  // LV:n OMA kuva Mustaparran saunasta (Tornio). Oma valokuva sailyy siella missa
+  // se toimii, eika kesainen ulkokuva ole ruudulla tammikuussa.
+  wellness:         seasonal(local('activities/wellness/sauna-interior.webp'), local('activities/wellness/wilderness-sauna-morgamoja.webp')),
   culture:          local('activities/culture/sami-duodji.webp'),
   // SummerBand kayttaa categories/summer.webp:ia, joten kategoriakortti tarvitsee oman.
   summer:           local('activities/summer/lapland-river.webp'),
@@ -405,6 +408,8 @@ const FOCAL: Record<string, string> = {
   '/images/activities/winter/downhill-skiers.webp': 'center 55%',
   // Laskijat ovat kuvan ylapuoliskossa; rajaus pitaa heidat nakyvissa matalassa herossa.
   '/images/activities/winter/moguls-action.webp': 'center 42%',
+  // Mokki tayttaa kehyksen; hieman alas, jottei katto leikkaudu matalassa herossa.
+  '/images/activities/wellness/wilderness-sauna-morgamoja.webp': 'center 55%',
   '/images/activities/wellness/sauna-interior.webp': 'center 50%',
   '/images/activities/culture/sami-duodji.webp': 'center 50%',
   '/images/activities/summer/lapland-river.webp': 'center 50%',

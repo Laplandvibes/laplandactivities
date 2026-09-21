@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 122
+// Kuvia joilla kopiot: 123
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -65,6 +65,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/wellness/ice-floating.webp": { full: 1184, small: [768] },
   "/images/activities/wellness/sauna-interior.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wellness/spa-hottub.webp": { full: 1184, small: [768] },
+  "/images/activities/wellness/wilderness-sauna-morgamoja.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/wildlife/brown-bear-summer.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wildlife/polar-bears.webp": { full: 1184, small: [768] },
   "/images/activities/winter/cross-country.webp": { full: 1600, small: [768, 1280] },
