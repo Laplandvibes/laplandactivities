@@ -19,7 +19,12 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   const activity = localizeActivity(rawActivity, lang);
   const rawDest = getDestinationBySlug(rawActivity.destinationSlug);
   const destName = rawDest ? localizeDestination(rawDest, lang).name : rawActivity.destination;
+  // 🔴 Tyhja merkkijono on eksplisiittinen "ei omaa valokuvaa": ruudukko antaa sen
+  // silloin kun kortille osuva kuva on jo sivun hero, eika sama valokuva saa nakya
+  // sivulla kahdesti. `undefined` EI kelpaa siihen, koska se palaisi samaan
+  // matcheriin ja valitsisi saman kuvan uudelleen. Tilalle brandin gradientti.
   const img = image ?? imageForActivity(rawActivity);
+  const omaKuva = img !== '';
   const bookable = isBookable(rawActivity);
   const gygQ = gygQueryForActivity(rawActivity);
   // Paid-partner activity (Bear Kuusamo): CTA routes to our partner feature
@@ -35,15 +40,19 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   return (
     <div className="group bg-white/[0.04] hover:bg-white/[0.07] rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-vibe-pink/10 flex flex-col">
       <div className="h-52 relative overflow-hidden">
-        <img
-          src={img}
-          {...respImg(img, 'card')}
-          alt={activity.title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          loading="lazy"
-         decoding="async" width="800" height="600"/>
+        {omaKuva ? (
+          <img
+            src={img}
+            {...respImg(img, 'card')}
+            alt={activity.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            loading="lazy"
+           decoding="async" width="800" height="600"/>
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-[#0d2818] via-[#0F172A] to-[#1e1b4b]" aria-hidden="true" />
+        )}
         <div className="absolute inset-0 bg-gradient-to-t from-deep-night/85 via-deep-night/30 to-transparent" />
-        <PhotoCredit src={img} />
+        {omaKuva && <PhotoCredit src={img} />}
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           <Link
             to={to(`/destinations/${activity.destinationSlug}`)}

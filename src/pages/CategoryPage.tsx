@@ -75,7 +75,8 @@ export default function CategoryPage() {
   const SeasonOtherIcon = otherBucket === 'summer' ? Sun : Snowflake;
   // Single list-aware image pass over the displayed order.
   const ordered = [...inSeason, ...offSeason];
-  const orderedImgs = assignActivityImages(ordered);
+  // heroImg mukaan: sama valokuva ei saa olla seka sivun hero etta kortin kuva.
+  const orderedImgs = assignActivityImages(ordered, heroImg);
   const imgFor = (id: string) => {
     const i = ordered.findIndex((a) => a.id === id);
     return i >= 0 ? orderedImgs[i] : undefined;

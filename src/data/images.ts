@@ -290,14 +290,37 @@ export function imageForActivity(act: ActivityImageInput | string): string {
 // List-aware assignment for GRIDS: round-robins each theme's image pool across the
 // cards in list order, so multi-image themes (reindeer, husky) strictly alternate and
 // never repeat on adjacent cards. Single-call sites keep using imageForActivity.
-export function assignActivityImages(acts: ActivityImageInput[]): string[] {
+export function assignActivityImages(acts: ActivityImageInput[], heroImg?: string): string[] {
+  // 🔴🔴 SIVUTASON VARAUSTAULU. Sama valokuva saa esiintya sivulla tasmalleen kerran
+  // (saanto 27), ja se koskee myos sivun heroa — aiemmin tata ei tarkistettu lainkaan.
+  // Mitattu 21.9.2026 seikkailukategoriassa: hero ja "Ice Climbing at Korouoma" olivat
+  // sama kuva, ja kun hero vaihdettiin, kaksi korttia otti saman kuvan. Kumpikin on
+  // sama vika. Nyt hero varataan ensin, ja jokainen kortti ottaa ensimmaisen VAPAAN
+  // kuvan omasta poolistaan.
+  //
+  // 🔴 Jos poolissa ei ole vapaata kuvaa, palautetaan tyhja merkkijono = "ei omaa
+  // valokuvaa", jolloin kortti piirtaa brandin gradienttipaikanpitajan. Se on
+  // tietoinen valinta: duplikaatti tai vaaran aiheen kuva olisi huonompi. Tyhja
+  // paluuarvo on merkki siita etta kategoriaan tarvitaan lisaa oikeita kuvia.
+  const varatut = new Set<string>(heroImg ? [heroImg] : []);
   const counters: Record<number, number> = {};
   return acts.map((act) => {
     const m = matchEntry(act);
-    if (!m) return imageForCategory(act.categorySlug || 'adventure');
-    if (m.imgs.length === 1) return m.imgs[0];
+    if (!m) {
+      const fallback = imageForCategory(act.categorySlug || 'adventure');
+      if (varatut.has(fallback)) return '';
+      varatut.add(fallback);
+      return fallback;
+    }
+    // Aloitetaan siita kuvasta jonka kierratys antaisi, ja otetaan ensimmainen vapaa.
     const n = (counters[m.idx] = (counters[m.idx] ?? 0) + 1) - 1;
-    return m.imgs[n % m.imgs.length];
+    for (let i = 0; i < m.imgs.length; i++) {
+      const ehdokas = m.imgs[(n + i) % m.imgs.length];
+      if (varatut.has(ehdokas)) continue;
+      varatut.add(ehdokas);
+      return ehdokas;
+    }
+    return '';
   });
 }
 
@@ -306,7 +329,12 @@ export function assignActivityImages(acts: ActivityImageInput[]): string[] {
 const CATEGORY_HERO: Record<string, string> = {
   // Kesä: oma kuva, sähköfatbike Pyhän polulla 19.7.2026 (kayak.webp-nimi on historiallinen)
   // Kesä: oma kuva Levi Bike Parkin portilta 20.7.2026 (Vesa 19.9.: Pyhän sähköfatbike-kuvaa "ei käytetä")
-  adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/summer/mtb-bikepark.webp')),
+  // 🔴🔴 Kesahero oli Levi Bike Parkin portti, mutta kategoriassa ei ole yhtaan
+  // pyorailyaktiviteettia (14 kpl: 13 talvea + 1 koskenlasku, mitattu 21.9.2026).
+  // Hero lupasi lajin jota sivu ei tarjoa. Nyt kesalla nakyy se yksi kesalaji joka
+  // kategoriassa on: Kitkajoen kosket. Pyorakuva jaa kayttoon siella missa
+  // pyorailyaktiviteetti oikeasti on (matchEntry: /mountain bike|mtb|cycling/).
+  adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/kitkajoki-rapids.webp')),
   animals:          seasonal(local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp')),
   'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
   'winter-sports':  local('activities/winter/downhill-skiers.webp'),

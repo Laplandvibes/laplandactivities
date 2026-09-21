@@ -1,4 +1,4 @@
-import { Bike, Dog, Sparkles, Mountain, Heart, Utensils, Sun, Shield, Fish } from 'lucide-react';
+import { Zap, Dog, Sparkles, Mountain, Heart, Utensils, Sun, Shield, Fish } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { HERO, MKT } from './images';
 
@@ -16,7 +16,10 @@ export const categories: Category[] = [
     slug: 'adventure',
     name: 'Adventure',
     description: 'Snowmobile safaris, ice karting, ice climbing, river rafting, and survival courses. Get your adrenaline pumping in the Arctic wilderness.',
-    icon: Bike,
+    // 🔴 Ikoni oli Bike, mutta kategoriassa EI OLE yhtaan pyorailyaktiviteettia:
+    // 14 aktiviteettia, joista 13 talvea ja 1 koskenlasku (mitattu 21.9.2026).
+    // Pyora lupasi jotain mita sivulla ei ole. Zap = adrenaliini, jota kuvaus lupaa.
+    icon: Zap,
     color: 'bg-orange/10 text-orange border-orange/20',
     image: MKT.huskySnowmobile,  // husky + snowmobile aurora scene, no text
   },
