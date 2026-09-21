@@ -337,7 +337,9 @@ const CATEGORY_HERO: Record<string, string> = {
   adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/kitkajoki-rapids.webp')),
   animals:          seasonal(local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp')),
   'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
-  'winter-sports':  local('activities/winter/downhill-skiers.webp'),
+  // 🔴 Oli tyhja sumuinen rinne ilman yhtaan laskijaa (Vesa 21.9.2026: "tassa voisi
+  // nakya talviurheilu ... jotain kumparelaskua tms"). Nyt kumparelaskua actionilla.
+  'winter-sports':  local('activities/winter/moguls-action.webp'),
   // Oma kuva: Grand Hotel Mustaparran sauna, Tornio 21.7.2026 (paikaton pinta, ei väitä kohdetta)
   wellness:         local('activities/wellness/sauna-interior.webp'),
   culture:          local('activities/culture/sami-duodji.webp'),
@@ -401,6 +403,8 @@ const FOCAL: Record<string, string> = {
   // alempana, joten ankkuri lasketaan. Mitattu renderöidyltä hero-kaistalta.
   '/images/activities/adventure/korouoma-frozen.webp': 'center 50%',
   '/images/activities/winter/downhill-skiers.webp': 'center 55%',
+  // Laskijat ovat kuvan ylapuoliskossa; rajaus pitaa heidat nakyvissa matalassa herossa.
+  '/images/activities/winter/moguls-action.webp': 'center 42%',
   '/images/activities/wellness/sauna-interior.webp': 'center 50%',
   '/images/activities/culture/sami-duodji.webp': 'center 50%',
   '/images/activities/summer/lapland-river.webp': 'center 50%',
