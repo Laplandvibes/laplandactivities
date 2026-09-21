@@ -322,7 +322,7 @@ const d: LangData = {
       "category": "어드벤처"
     },
     "lev-snowvillage": {
-      "title": "Levi SnowVillage 방문",
+      "title": "SnowVillage 얼음 호텔, 레비에서 30분",
       "description": "레비에서 30분 거리 라이니오에 있는, 얼음과 눈으로 만든 마을 전체를 거닐어보세요. 정교하게 조각된 방, 아이스 바, 그리고 채플. 매년 새로운 테마로 재건됩니다.",
       "highlights": [
         "얼음 조각",

@@ -382,7 +382,7 @@ const d: LangData = {
       "category": "アドベンチャー"
     },
     "lev-snowvillage": {
-      "title": "Levi SnowVillage見学",
+      "title": "SnowVillage 氷のホテル（Leviから30分）",
       "description": "Leviから30分、Lainioにある氷と雪でできた村全体を歩いてみましょう。精巧に彫られた部屋、アイスバー、チャペルがあります。毎年新しいテーマで作り直されます。",
       "highlights": [
         "氷の彫刻",

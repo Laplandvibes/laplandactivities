@@ -382,7 +382,7 @@ const d: LangData = {
       "category": "Abenteuer"
     },
     "lev-snowvillage": {
-      "title": "Besuch im SnowVillage von Levi",
+      "title": "SnowVillage-Eishotel, 30 Min. von Levi",
       "description": "Durchschreiten Sie ein ganzes Dorf aus Eis und Schnee, 30 Minuten von Levi entfernt in Lainio, mit fein gemeißelten Räumen, einer Eisbar und einer Kapelle. Jedes Jahr ein neues Thema.",
       "highlights": [
         "Eisskulpturen",

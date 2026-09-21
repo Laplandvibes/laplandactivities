@@ -322,7 +322,7 @@ const d: LangData = {
       "category": "Avventura"
     },
     "lev-snowvillage": {
-      "title": "Visita allo SnowVillage di Levi",
+      "title": "Hotel di ghiaccio SnowVillage, a 30 min da Levi",
       "description": "Percorra un intero villaggio fatto di ghiaccio e neve, a 30 minuti da Levi a Lainio, con stanze finemente scolpite, un ice bar e una cappella. Nuovo tema ogni anno.",
       "highlights": [
         "Sculture di ghiaccio",

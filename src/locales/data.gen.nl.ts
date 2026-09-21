@@ -322,7 +322,7 @@ const d: LangData = {
       "category": "Avontuur"
     },
     "lev-snowvillage": {
-      "title": "Levi SnowVillage bezoek",
+      "title": "SnowVillage-ijshotel, 30 min van Levi",
       "description": "Wandel door een heel dorp van ijs en sneeuw, op 30 minuten van Levi in Lainio, met fijn uitgehakte kamers, een ijsbar en een kapel. Elk jaar een nieuw thema.",
       "highlights": [
         "IJssculpturen",

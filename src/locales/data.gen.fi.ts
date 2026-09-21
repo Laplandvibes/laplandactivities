@@ -382,7 +382,7 @@ const d: LangData = {
       "category": "Seikkailu"
     },
     "lev-snowvillage": {
-      "title": "Vierailu Levin SnowVillagessa",
+      "title": "SnowVillage-jäähotelli, 30 min Levistä",
       "description": "Kierrä kokonainen jäästä ja lumesta tehty kylä Lainiossa, 30 minuutin päässä Levistä, jossa on hienosti veistettyjä huoneita, jääbaari ja kappeli. Uusi teema joka vuosi.",
       "highlights": [
         "Jääveistokset",

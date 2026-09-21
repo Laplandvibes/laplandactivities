@@ -322,7 +322,7 @@ const d: LangData = {
       "category": "探险"
     },
     "lev-snowvillage": {
-      "title": "参观 Levi SnowVillage",
+      "title": "SnowVillage 冰雪酒店（距莱维 30 分钟）",
       "description": "漫步于一整座由冰雪打造的村庄，距 Levi 30 分钟车程，位于 Lainio，欣赏精雕细琢的房间、冰吧和小教堂。每年以全新主题重建。",
       "highlights": [
         "冰雕",

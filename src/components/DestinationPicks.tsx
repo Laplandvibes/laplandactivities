@@ -30,6 +30,17 @@ import { trackAffiliateClick } from '../lib/analytics';
  */
 
 
+/**
+ * Keston desimaalierotin kielen mukaan.
+ *
+ * Datassa kesto on kielineutraalissa muodossa ("2,5 h", "6,5–7 h") mutta pilkulla,
+ * joka on oikein suomessa ja muissa eurooppalaisissa kielissa. Englanti, japani,
+ * korea ja kiina kayttavat pistetta, ja "2,5 h" nayttaa niissa virheelta.
+ * Tunti-lyhenne "h" on sellaisenaan kaikissa 12 kielessa.
+ */
+const PISTEKIELET = new Set(['en', 'ja', 'ko', 'zh-CN']);
+const kesto = (d: string, lang: string) => (PISTEKIELET.has(lang) ? d.replace(/,/g, '.') : d);
+
 export default function DestinationPicks({ slug }: { slug: string }) {
   const lang = useLang();
   const c = COPY[lang].destPicks;
@@ -65,7 +76,7 @@ export default function DestinationPicks({ slug }: { slug: string }) {
                 </p>
                 <p className="text-deep-night/60 text-xs mt-1.5">
                   {p.place}
-                  {p.duration ? ` · ${p.duration}` : ''}
+                  {p.duration ? ` · ${kesto(p.duration, lang)}` : ''}
                 </p>
                 <span className="mt-auto pt-4 inline-flex items-center gap-1.5 text-vibe-pink text-sm font-semibold">
                   {c.cta} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />

@@ -284,7 +284,7 @@ export const activities: Activity[] = [
   },
   {
     id: 'lev-snowvillage',
-    title: 'Levi SnowVillage Visit',
+    title: 'SnowVillage Ice Hotel, 30 min from Levi',
     operator: 'Lapland Hotels SnowVillage',
     destination: 'Levi',
     destinationSlug: 'levi',
