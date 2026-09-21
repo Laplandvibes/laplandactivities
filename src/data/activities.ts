@@ -1415,23 +1415,23 @@ const GYG_QUERY: Record<string, string> = {
   'rov-aurora-snowmobile':  'aurora snowmobile rovaniemi',
   // Ilman tätä riviä fallback tuotti kategorialabelin "animal experiences
   // rovaniemi", jota kukaan ei kirjoita GYG-hakuun (auditti 2026-08-03).
-  'rov-husky-summer':       'husky kennel visit rovaniemi',
+  'rov-husky-summer':       'summer husky kennel puppy rovaniemi',
   'rov-santa-village':      'santa claus village rovaniemi',
-  'rov-husky-safari':       'husky safari rovaniemi',
+  'rov-husky-safari':       'husky safari kennel visit rovaniemi',
   'rov-reindeer-farm':      'reindeer sleigh rovaniemi',
   'rov-snowmobile-full':    'snowmobile safari rovaniemi',
   'rov-ice-karting':        'snowmobile ice karting rovaniemi',
   'rov-ranua-zoo':          'ranua zoo rovaniemi',
   'rov-ice-floating':       'ice floating rovaniemi',
   'rov-arctic-snow-hotel':  'snow hotel rovaniemi',
-  'rov-ounasvaara-ski':     'skiing rovaniemi',
+  'rov-ounasvaara-ski':     'skiing snowboarding ounasvaara rovaniemi',
   'rov-campfire-dinner':    'wilderness dinner rovaniemi',
   // Levi
   'lev-ski-resort':         'levi ski',
   'lev-ice-karting':        'ice karting levi',
-  'lev-samiland':           'reindeer sami levi',
+  'lev-samiland':           'samiland reindeer sami culture levi',
   'lev-husky-safari':       'husky safari levi',
-  'lev-snowmobile':         'snowmobile safari levi',
+  'lev-snowmobile':         'snowmobile reindeer farm levi',
   'lev-aurora-photo':       'northern lights photography levi',
   'lev-midnight-sun-golf':  'golf levi',
   'lev-ice-fishing':        'ice fishing levi',
@@ -1449,7 +1449,7 @@ const GYG_QUERY: Record<string, string> = {
   // Saariselkä
   'saa-gold-panning':       'gold panning tankavaara',
   'saa-amethyst-mine':      'amethyst mine saariselka',
-  'saa-kiilopaa-sauna':     'smoke sauna saariselka',
+  'saa-kiilopaa-sauna':     'smoke sauna ice swim saariselka',
   'saa-snowmobile':         'snowmobile safari saariselka',
   'saa-aurora-hunt':        'northern lights saariselka',
   'saa-ice-fishing':        'ice fishing saariselka',
@@ -1458,7 +1458,7 @@ const GYG_QUERY: Record<string, string> = {
   'ina-midnight-kayak':     'kayak inari',
   'ina-sami-experience':    'reindeer sami inari',
   'ina-aurora':             'northern lights inari',
-  'ina-berry-foraging':     'foraging inari',
+  'ina-berry-foraging':     'berry mushroom foraging inari',
   // Ruka / Kuusamo
   'ruk-ski-resort':         'ruka ski',
   // 🔴 EI 'ruk-bear-watching'-riviä: karhunkatselu kuuluu maksavalle
