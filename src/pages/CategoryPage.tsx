@@ -138,9 +138,10 @@ export default function CategoryPage() {
             sisällöstä ilman että kuva vaalenee. pointer-events-none, ettei se
             varasta klikkiä kuvakrediitiltä. */}
         <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-white/12 via-white/5 to-transparent pointer-events-none" aria-hidden="true" />
-        {/* Kun hero on video, nakyvissa oleva sisalto on video — silloin myos
-            tekijamerkinnan on oltava videon, ei sen alla olevan valokuvan. */}
-        <PhotoCredit src={video ? video.webm : heroImg} />
+        {/* 🔴 Mixkit Free License EI vaadi nimeamista, joten videolla ei ole omaa
+            merkintaa. Merkinta koskee alla olevaa valokuvaa, joka on se mita
+            vahemman liiketta pyytaneet nakevat. */}
+        <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <category.icon className="w-7 h-7 text-vibe-pink" />

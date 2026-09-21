@@ -198,7 +198,11 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // Aurora is a PRIMARY signal — must beat the generic boat/fish/berry rules below, whose
   // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
   { match: /aurora|northern light|revontul/i,
-        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-people.webp')] },
+        // 🔴 Pooli oli KAKSI kuvaa seitsemalle revontulikortille, joten sama kuva
+        // toistui kolmesti. Kolme uutta Lapin revontulikuvaa (Levi, Inari) laajentaa
+        // poolin viiteen. Vesa 21.9.: "joku kuva pakko olla" — toisto on parempi kuin
+        // tyhja kortti, mutta oikea korjaus on lisata kuvia.
+        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-levi-curtain.webp'), local('activities/northern-lights/aurora-people.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp')] },
   // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
   // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
   // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
@@ -291,36 +295,36 @@ export function imageForActivity(act: ActivityImageInput | string): string {
 // cards in list order, so multi-image themes (reindeer, husky) strictly alternate and
 // never repeat on adjacent cards. Single-call sites keep using imageForActivity.
 export function assignActivityImages(acts: ActivityImageInput[], heroImg?: string): string[] {
-  // 🔴🔴 SIVUTASON VARAUSTAULU. Sama valokuva saa esiintya sivulla tasmalleen kerran
-  // (saanto 27), ja se koskee myos sivun heroa — aiemmin tata ei tarkistettu lainkaan.
-  // Mitattu 21.9.2026 seikkailukategoriassa: hero ja "Ice Climbing at Korouoma" olivat
-  // sama kuva, ja kun hero vaihdettiin, kaksi korttia otti saman kuvan. Kumpikin on
-  // sama vika. Nyt hero varataan ensin, ja jokainen kortti ottaa ensimmaisen VAPAAN
-  // kuvan omasta poolistaan.
-  //
-  // 🔴 Jos poolissa ei ole vapaata kuvaa, palautetaan tyhja merkkijono = "ei omaa
-  // valokuvaa", jolloin kortti piirtaa brandin gradienttipaikanpitajan. Se on
-  // tietoinen valinta: duplikaatti tai vaaran aiheen kuva olisi huonompi. Tyhja
-  // paluuarvo on merkki siita etta kategoriaan tarvitaan lisaa oikeita kuvia.
-  const varatut = new Set<string>(heroImg ? [heroImg] : []);
+  // 🔴🔴 EI KOSKAAN TYHJAA KORTTIA. Vesa 21.9.2026: *"ja mitä nämä on ilman kuvia?
+  // joku kuva pakko olla"* — revontulikategoriassa kolme korttia jai gradientille,
+  // koska tama funktio kieltaytyi toistamasta kuvaa kun uniikit loppuivat. Se oli
+  // MINUN virhearvioni samana paivana: valitsin tyhjan kortin duplikaatin sijaan.
+  // Oikea jarjestys on:
+  //   1. uniikki kuva omasta poolista
+  //   2. jos ne loppuvat, VAHITEN kaytetty kuva poolista (toisto)
+  //   3. vasta jos poolia ei ole lainkaan, kategorian oma kuva
+  // Sivun hero varataan yha ensin, joten hero ei paady kortiksi ellei muuta ole.
+  const kaytto = new Map<string, number>();
+  if (heroImg) kaytto.set(heroImg, 1);
+  const ota = (ehdokkaat: string[]): string => {
+    let paras = ehdokkaat[0];
+    let vahiten = Infinity;
+    for (const e of ehdokkaat) {
+      const n = kaytto.get(e) ?? 0;
+      if (n < vahiten) { vahiten = n; paras = e; }
+      if (n === 0) break; // ensimmainen kayttamaton riittaa
+    }
+    kaytto.set(paras, (kaytto.get(paras) ?? 0) + 1);
+    return paras;
+  };
   const counters: Record<number, number> = {};
   return acts.map((act) => {
     const m = matchEntry(act);
-    if (!m) {
-      const fallback = imageForCategory(act.categorySlug || 'adventure');
-      if (varatut.has(fallback)) return '';
-      varatut.add(fallback);
-      return fallback;
-    }
-    // Aloitetaan siita kuvasta jonka kierratys antaisi, ja otetaan ensimmainen vapaa.
+    if (!m) return ota([imageForCategory(act.categorySlug || 'adventure')]);
+    // Aloitetaan siita kuvasta jonka kierratys antaisi, jotta jarjestys sailyy.
     const n = (counters[m.idx] = (counters[m.idx] ?? 0) + 1) - 1;
-    for (let i = 0; i < m.imgs.length; i++) {
-      const ehdokas = m.imgs[(n + i) % m.imgs.length];
-      if (varatut.has(ehdokas)) continue;
-      varatut.add(ehdokas);
-      return ehdokas;
-    }
-    return '';
+    const jarjestys = m.imgs.map((_, i) => m.imgs[(n + i) % m.imgs.length]);
+    return ota(jarjestys);
   });
 }
 
@@ -438,6 +442,9 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/yllas-winter-road.webp': 'center 50%',
   '/images/heroes/reindeer-winter.webp': 'center 50%',
   '/images/activities/northern-lights/aurora-lake.webp': 'center 45%',
+  '/images/activities/northern-lights/aurora-levi-curtain.webp': 'center 45%',
+  '/images/activities/northern-lights/aurora-inari-bands.webp': 'center 45%',
+  '/images/activities/northern-lights/aurora-levi-bands.webp': 'center 45%',
   '/images/og/og-default.webp': 'center 45%',
   // Reindeer herd walks along the lower third → keep animals in frame.
   '/images/heroes/reindeer-herd-sunset.webp': 'center 55%',

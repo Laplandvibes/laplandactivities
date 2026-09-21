@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 123
+// Kuvia joilla kopiot: 126
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -45,7 +45,10 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/food/campfire-salmon.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/food/lapland-plate.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/food/salmon-plate.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/northern-lights/aurora-inari-bands.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/northern-lights/aurora-lake.webp": { full: 1920, small: [768, 1280] },
+  "/images/activities/northern-lights/aurora-levi-bands.webp": { full: 1920, small: [768, 1280] },
+  "/images/activities/northern-lights/aurora-levi-curtain.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/northern-lights/aurora-people.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/northern-lights/snowmobile-aurora.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/foraging.webp": { full: 1600, small: [768, 1280] },
