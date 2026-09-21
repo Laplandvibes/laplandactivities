@@ -20,6 +20,7 @@ import { categoryTitle } from '../lib/pageTitles';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
 import { categoryGuide } from '../data/guideI18n';
+import { CATEGORY_VIDEO } from '../data/heroVideo';
 import { SEASON_WORD, SEASON_SECTIONS, SEASON_ICON, currentSeason, inSeason as isInSeason, counterpartSeason } from '../i18n/seasonWords';
 
 // Categories that are inherently single-season — no split, no season chrome.
@@ -51,6 +52,8 @@ export default function CategoryPage() {
   const gygSlug = gygSlugForCategory(slug || 'adventure');
   const gygQ = gygQForCategory(slug || 'adventure');
   const heroImg = imageForCategory(slug || '');
+  // Liikkuva hero vain niille kategorioille joille sellainen on; muut valokuva.
+  const video = CATEGORY_VIDEO[slug || ''];
   const topicRail = topicRailFor(slug || '', lang);
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
   const pageUrl = `https://laplandactivities.fi${to(`/categories/${slug}`)}`.replace(/\/?$/, '/');
@@ -111,13 +114,33 @@ export default function CategoryPage() {
           not a small heading beside a floating icon box (Vesa 2026-07-07). */}
       <section className="relative min-h-[50vh] md:min-h-[56vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} {...respImg(heroImg, 'hero')} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
+        {/* 🔴🔴 VALOKUVA JÄÄ ALLE, VIDEO TULEE PÄÄLLE. Kaksi syytä:
+            1) Jos hero olisi pelkkä <video>, kontrastiportti ei enää löytäisi heroa
+               lainkaan ja lakkaisi mittaamasta tämän sivun tekstiä — se näkyisi
+               vihreänä vaikka mitään ei mitattaisi.
+            2) `motion-reduce:hidden` piilottaa videon niiltä, jotka ovat pyytäneet
+               vähemmän liikettä; silloin alla oleva valokuva on se mitä he näkevät.
+            Video on mykkä ja silmukassa, eikä sillä ole ääniraitaa lähteessäkään. */}
+        {video && (
+          <video
+            className="absolute inset-0 w-full h-full object-cover motion-reduce:hidden"
+            autoPlay muted loop playsInline preload="metadata"
+            poster={heroImg}
+            aria-hidden="true"
+          >
+            <source src={video.webm} type="video/webm" />
+            <source src={video.mp4} type="video/mp4" />
+          </video>
+        )}
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
         {/* Vesa 21.9.2026: "joku liukuma hero-osion alareunaan olisi siisti lisä,
             joku liukuva valkoinen". Ohut vaalea pyyhkäisy alareunassa erottaa heron
             sisällöstä ilman että kuva vaalenee. pointer-events-none, ettei se
             varasta klikkiä kuvakrediitiltä. */}
         <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-white/12 via-white/5 to-transparent pointer-events-none" aria-hidden="true" />
-        <PhotoCredit src={heroImg} />
+        {/* Kun hero on video, nakyvissa oleva sisalto on video — silloin myos
+            tekijamerkinnan on oltava videon, ei sen alla olevan valokuvan. */}
+        <PhotoCredit src={video ? video.webm : heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
             <category.icon className="w-7 h-7 text-vibe-pink" />
