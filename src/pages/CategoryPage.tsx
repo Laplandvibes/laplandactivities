@@ -112,6 +112,11 @@ export default function CategoryPage() {
       <section className="relative min-h-[50vh] md:min-h-[56vh] flex items-center overflow-hidden pt-16 bg-deep-night">
         <img src={heroImg} {...respImg(heroImg, 'hero')} alt={category.name} className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(heroImg) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }} />
+        {/* Vesa 21.9.2026: "joku liukuma hero-osion alareunaan olisi siisti lisä,
+            joku liukuva valkoinen". Ohut vaalea pyyhkäisy alareunassa erottaa heron
+            sisällöstä ilman että kuva vaalenee. pointer-events-none, ettei se
+            varasta klikkiä kuvakrediitiltä. */}
+        <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-white/12 via-white/5 to-transparent pointer-events-none" aria-hidden="true" />
         <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">

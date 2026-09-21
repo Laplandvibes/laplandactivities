@@ -39,7 +39,9 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
 
   return (
     <div className="group bg-white/[0.04] hover:bg-white/[0.07] rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-vibe-pink/10 flex flex-col">
-      <div className="h-52 relative overflow-hidden">
+      {/* Vesa 21.9.2026: "voisiko kuvien korkeus kategoriaosiossa olla vähän
+          korkeemmat, kuvat ei oikein näy". 208 px -> 240/272 px. */}
+      <div className="h-60 sm:h-68 relative overflow-hidden">
         {omaKuva ? (
           <img
             src={img}
