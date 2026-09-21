@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "Finnlands längste Pisten",
+      "tagline": "Zwei Dörfer, ein Fjell, ein Nationalpark",
       "description": "Zwei Skigebiete auf beiden Seiten des Fjälls Ylläs bieten die längsten Abfahrten Finnlands, bis zu 3 km. Ein ruhigeres, authentischeres Lappland-Erlebnis mit dem Nationalpark Pallas-Yllästunturi.",
       "access": "Flug nach Kittilä (35 Min. mit dem Auto)",
       "bestFor": "Naturliebhaber und erfahrene Skifahrer",

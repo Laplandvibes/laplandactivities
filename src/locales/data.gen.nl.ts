@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "De langste pistes van Finland",
+      "tagline": "Twee dorpen, één berg, één nationaal park",
       "description": "Twee skigebieden aan beide zijden van de Ylläs-fjäll met de langste afdalingen van Finland (3 km). Een rustigere, authentiekere Lapland-ervaring met het Nationaal Park Pallas-Yllästunturi.",
       "access": "Vlieg naar Kittilä (35 min met de auto)",
       "bestFor": "Natuurliefhebbers en ervaren skiërs",

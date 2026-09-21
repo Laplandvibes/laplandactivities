@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "Le piste più lunghe della Finlandia",
+      "tagline": "Due villaggi, una montagna, un parco nazionale",
       "description": "Due stazioni sciistiche sui due lati del fjell Ylläs offrono le discese più lunghe della Finlandia, fino a 3 km. Un'esperienza di Lapponia più tranquilla e autentica con il Parco nazionale di Pallas-Yllästunturi.",
       "access": "Volo a Kittilä (35 min in auto)",
       "bestFor": "Amanti della natura e sciatori esperti",

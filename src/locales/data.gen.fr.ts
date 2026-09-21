@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "Les plus longues pistes de Finlande",
+      "tagline": "Deux villages, une montagne, un parc national",
       "description": "Deux stations de ski de part et d'autre du fjäll Ylläs offrent les plus longues descentes de Finlande, jusqu'à 3 km. Une Laponie plus calme et authentique avec le parc national Pallas-Yllästunturi.",
       "access": "Vol vers Kittilä (35 min en voiture)",
       "bestFor": "Amoureux de la nature et skieurs aguerris",

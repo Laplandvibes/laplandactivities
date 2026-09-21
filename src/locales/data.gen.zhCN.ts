@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "芬兰最长的雪道",
+      "tagline": "两个村庄、一座山、一座国家公园",
       "description": "于拉斯山两侧的两座滑雪度假村提供芬兰最长的滑降雪道，长达 3.2 公里。搭配 Pallas-Yllästunturi 国家公园，是更宁静、更纯正的拉普兰体验。",
       "access": "飞往 Kittilä（车程 35 分钟）",
       "bestFor": "自然爱好者与资深滑雪者",

@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "Suomen pisimmät rinteet",
+      "tagline": "Kaksi kylää, yksi tunturi, yksi kansallispuisto",
       "description": "Kaksi hiihtokeskusta Yllästunturin molemmin puolin tarjoaa Suomen pisimmät laskut, jopa 3 km. Rauhallisempi ja aidompi Lapin kokemus Pallas-Yllästunturin kansallispuiston kupeessa.",
       "access": "Lento Kittilään (35 min ajomatka)",
       "bestFor": "Luonnonystävät ja kokeneet hiihtäjät",

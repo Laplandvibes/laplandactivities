@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "Finlands längsta pister",
+      "tagline": "Två byar, ett fjäll, en nationalpark",
       "description": "Två skidorter på var sin sida om Ylläsfjället erbjuder Finlands längsta nedfarter på 3 km. En lugnare, mer autentisk Lapplandsupplevelse med Pallas-Yllästunturi nationalpark.",
       "access": "Flyg till Kittilä (35 minuters bilfärd)",
       "bestFor": "Naturälskare och erfarna skidåkare",

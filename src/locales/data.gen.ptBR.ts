@@ -60,7 +60,7 @@ const d: LangData = {
     },
     "yllas": {
       "name": "Ylläs",
-      "tagline": "As pistas mais longas da Finlândia",
+      "tagline": "Duas vilas, uma montanha, um parque nacional",
       "description": "Duas estações de esqui nos dois lados do monte Ylläs oferecem as descidas mais longas da Finlândia, de até 3 km. Uma experiência mais tranquila e autêntica da Lapônia com o Parque Nacional de Pallas-Yllästunturi.",
       "access": "Voo para Kittilä (35 min de carro)",
       "bestFor": "Amantes da natureza e esquiadores experientes",
