@@ -216,7 +216,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
         // toistui kolmesti. Kolme uutta Lapin revontulikuvaa (Levi, Inari) laajentaa
         // poolin viiteen. Vesa 21.9.: "joku kuva pakko olla" — toisto on parempi kuin
         // tyhja kortti, mutta oikea korjaus on lisata kuvia.
-        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-levi-curtain.webp'), local('activities/northern-lights/aurora-people.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp')] },
+        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-inari-juutuanvuono.webp'), local('activities/northern-lights/aurora-people.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp')] },
   // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
   // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
   // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
@@ -456,7 +456,7 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/yllas-winter-road.webp': 'center 50%',
   '/images/heroes/reindeer-winter.webp': 'center 50%',
   '/images/activities/northern-lights/aurora-lake.webp': 'center 45%',
-  '/images/activities/northern-lights/aurora-levi-curtain.webp': 'center 45%',
+  '/images/activities/northern-lights/aurora-inari-juutuanvuono.webp': 'center 40%',
   '/images/activities/northern-lights/aurora-inari-bands.webp': 'center 45%',
   '/images/activities/northern-lights/aurora-levi-bands.webp': 'center 45%',
   '/images/og/og-default.webp': 'center 45%',
