@@ -43,7 +43,8 @@
           if (!/^\/((fi|de|ja|es|br|cn|kr|fr|it|nl|sv)\/?)?$/.test(location.pathname || '/')) return;
           var m = new Date().getMonth() + 1;
           var src = m >= 6 && m <= 8 ? '/images/heroes/slider-07-kayak-lake.webp'
-            : (m >= 9 && m <= 10) || m === 5 ? '/images/heroes/slider-03-summer-hike.webp'
+            : m >= 9 && m <= 10 ? '/images/heroes/slider-08-ruska-hetta-pallas.webp'
+            : m === 5 ? '/images/heroes/slider-03-summer-hike.webp'
             : '/images/heroes/slider-01-husky-aurora.webp';
           var puhdas = src.replace(/[?#].*$/, '');
           var q = src.slice(puhdas.length);

@@ -19,7 +19,8 @@ const WINTER_ICONS = [Dog, Sparkles, Flame, Fish];
 /**
  * Seasonal hero band on Home. Owner finding #3: a summer hero must not sit above
  * winter content. This band flips its WHOLE payload (copy, image, GYG queries,
- * accent icon) to match the live season — summer May–Sep, winter Oct–Apr — so the
+ * accent icon) to match the live season — currentSeasonBucket(): spring+summer (May–Aug)
+ * show summer, autumn+winter (Sep–Apr) show the coming winter — so the
  * page a visitor lands on is internally consistent.
  */
 export default function SummerBand() {

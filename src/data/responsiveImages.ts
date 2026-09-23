@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 126
+// Kuvia joilla kopiot: 127
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -67,6 +67,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/summer/ukk-reindeer-fell.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wellness/ice-floating.webp": { full: 1184, small: [768] },
   "/images/activities/wellness/sauna-interior.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/wellness/smoke-sauna-siida-inari.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wellness/spa-hottub.webp": { full: 1184, small: [768] },
   "/images/activities/wellness/wilderness-sauna-morgamoja.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/wildlife/brown-bear-summer.webp": { full: 1600, small: [768, 1280] },
@@ -121,6 +122,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/slider-05-reindeer-lavvu.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-06-snowmobile-aurora-couple.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-07-kayak-lake.webp": { full: 1920, small: [768, 1280] },
+  "/images/heroes/slider-08-ruska-hetta-pallas.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/snowmobile-safari.webp": { full: 1280, small: [768] },
   "/images/heroes/tornio-river-dusk.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/winter-band-snowmobile-trail.webp": { full: 1920, small: [768, 1280] },
@@ -133,7 +135,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/hotels/glass-igloo-interior.webp": { full: 1184, small: [768] },
   "/images/hotels/log-cabin-lakeside.webp": { full: 1600, small: [768, 1280] },
   "/images/hotels/red-lake-cabin.webp": { full: 1600, small: [768, 1280] },
-  "/images/hotels/smoke-sauna-cabin-saariselka.webp": { full: 1600, small: [768, 1280] },
   "/images/hotels/smoke-sauna-ice.webp": { full: 1600, small: [768, 1280] },
   "/images/og/og-default.webp": { full: 1200, small: [768] },
 };

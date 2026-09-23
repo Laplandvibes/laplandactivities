@@ -17,14 +17,23 @@
 //   /hotels/log-cabin-lakeside.webp            (red log cabin, lakeside)
 //   /hotels/fell-resort-levi.webp              (alpine ski resort)
 //   /hotels/boutique-hotel-rovaniemi.webp      (modern hotel exterior)
-//   /hotels/smoke-sauna-cabin-saariselka.webp  (savusauna cabin)
+//   /activities/wellness/smoke-sauna-siida-inari.webp  (savusauna, Siidan ulkomuseo, Inari)
 //   /og/og-default.webp                        (wide aurora composition for OG)
+
+import { currentSeason } from '../i18n/seasonWords';
 
 const local = (file: string) => `/images/${file}`;
 
-// Automatic seasonal switch — summer 1 May–30 Sep, winter 1 Oct–30 Apr (runtime, every year).
-const isSummerSeason = (): boolean => { const m = new Date().getMonth() + 1; return m >= 5 && m <= 9; };
-const seasonal = (winter: string, summer: string): string => (isSummerSeason() ? summer : winter);
+// 🔴 Kausikuva = SAMA kalenteri kuin tekstit (currentSeason, src/i18n/seasonWords.ts).
+// 23.9.2026 asti tassa oli oma saanto (kesa touko-syys, talvi loka-huhti), joten
+// lokakuussa kuva oli luminen kun teksti sanoi "syksy" ja lumi tulee marraskuussa.
+// Lumikuva vain talvella (11-4). Syksylla oma ruskakuva jos annettu, muuten lumeton.
+const seasonal = (winter: string, summer: string, autumn?: string): string => {
+  const s = currentSeason();
+  if (s === 'winter') return winter;
+  if (s === 'autumn' && autumn) return autumn;
+  return summer;
+};
 
 // === SAFE / CONFIRMED-CLEAN HIGH-RES POOL ===
 // 🔴🔴 2026-08-23: tama lohko VAITTI ennen etta "every alias maps to a UNIQUE
@@ -64,7 +73,12 @@ export const HERO = {
   iceLake:          local('heroes/inari-winter-lake.webp'),
   fells:            local('hotels/fell-resort-levi.webp'),
   midnightSun:      local('heroes/levi-summer-fell.webp'),          // oma: Levitunturin kesäpanoraama 20.7.2026
-  smokesauna:       local('hotels/smoke-sauna-cabin-saariselka.webp'),
+  // 🔴 23.9.2026: tassa oli Utsjoen savusaunan kiuas nimella "smoke-sauna-cabin-saariselka",
+  // ja SAMA Commons-kuva oli laplandwellnessin saunasivulla. Kaksi vikaa: kuva ei saa
+  // olla kahdella sivustolla, ja tiedostonimi valehteli paikan (inventaario r. 257 kieltaa
+  // juuri sen). Kiilopaan savusaunasta ei ole yhtaan vapaata kuvaa (Commons haettu
+  // luokittain 23.9.), joten tilalla on oikea Lapin savusauna, ja kuvakuitti nimeaa paikan.
+  smokesauna:       local('activities/wellness/smoke-sauna-siida-inari.webp'),
   fjell:            local('heroes/slider-02-snowmobile-fells.webp'),
   village:          local('hotels/boutique-hotel-rovaniemi.webp'),
 
@@ -110,7 +124,7 @@ export const MKT = {
   igluDramatic:      HERO.glassIgloo,
   reindeerSled:      HERO.santaClaus,             // slider-05-reindeer-lavvu
   iceFishing:        local('activities/fishing/ice-fishing-hole.webp'), // pilkkiavanto, ei revontulia
-  saunaWinter:       HERO.smokesauna,             // hotels/smoke-sauna-cabin
+  saunaWinter:       HERO.smokesauna,             // savusauna, Siida, Inari
 } as const;
 
 // === Activity → image matcher ===
@@ -232,7 +246,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
 
   // Lodging / structures (after sports)
   { match: /glass igloo|aurora cabin|igloo/i,                           img: local('heroes/slider-04-glass-igloo.webp') },
-  { match: /smoke sauna|savusauna|kiilop[ää]+/i,                        img: local('hotels/smoke-sauna-cabin-saariselka.webp') },
+  { match: /smoke sauna|savusauna|kiilop[ää]+/i,                        img: local('activities/wellness/smoke-sauna-siida-inari.webp') },
   { match: /ice (hotel|chapel|castle|restaurant|gallery)|snowcastle|snow ?hotel|ice village/i,
                                                                         img: local('activities/culture/ice-architecture.webp') },
   { match: /ice floating|float experience|arctic float/i,               img: local('activities/wellness/ice-floating.webp') },

@@ -210,12 +210,19 @@ export const SEASON_SECTIONS: Record<Lang, {
   },
 };
 
-// Current season at runtime (Finnish Lapland): coarse mapping used only to decide
-// which activity bucket to surface first. Winter Nov–Apr, Summer Jun–Sep, with
-// May=spring, Oct=autumn folded into the nearest dominant bucket for the split.
-export function currentSeasonBucket(): 'winter' | 'summer' {
-  const m = new Date().getMonth() + 1;
-  return m >= 5 && m <= 8 ? 'summer' : 'winter';
+/**
+ * Kaksijako VARAUSKAISTOILLE (etusivun heron CTA, SummerBand): mita lukijan kannattaa
+ * varata SEURAAVAKSI. Kevat ja kesa -> kesan tarjonta; syksy ja talvi -> talven, koska
+ * syyskuussa varataan jo joulukuuta (talvikaistan oma teksti: "Lumi asettuu marraskuussa").
+ *
+ * 🔴 23.9.2026: tama oli OMA kuukausitaulunsa (touko-elo), kuvilla oli kolmas (touko-syys)
+ * ja teksteilla neljas (currentSeason). Lokakuussa sivu nayttyi talvikuvia, sanoi "syksy"
+ * ja kaista mainosti talvea — kolme eri vastausta samaan kysymykseen. Nyt KAIKKI johtuvat
+ * currentSeason()-funktiosta; talla on vain oma tulkintansa, ei omaa kalenteria.
+ */
+export function currentSeasonBucket(now: Date = new Date()): 'winter' | 'summer' {
+  const s = currentSeason(now);
+  return s === 'summer' || s === 'spring' ? 'summer' : 'winter';
 }
 
 /**

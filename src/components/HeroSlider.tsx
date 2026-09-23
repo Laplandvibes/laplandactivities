@@ -19,12 +19,15 @@ interface Slide {
   src: string;
   alt: string;
   fallback: string;
-  season: 'summer' | 'winter' | 'any';
+  season: 'summer' | 'autumn' | 'winter' | 'any';
 }
 
 const S = {
   husky:     { src: '/images/heroes/slider-01-husky-aurora.webp', alt: 'Husky team on a snowy forest trail at Saija, Salla', fallback: HERO.huskyAurora, season: 'winter' as const },
   snowmobile:{ src: '/images/heroes/slider-02-snowmobile-fells.webp', alt: 'Snowmobile on frozen Lake Inari', fallback: HERO.huskySnowmobile, season: 'winter' as const },
+  // 23.9.2026: syksyn ensimmainen ruutu oli heinakuun vihrea Rukan gondoli, jonka alt-teksti
+  // sanoi "summer forest" — syyskuussa. Ruska on Hetta-Pallas-reitilta (Commons, CC BY-SA 4.0).
+  ruska:     { src: '/images/heroes/slider-08-ruska-hetta-pallas.webp', alt: 'Autumn ruska colours on the Hetta–Pallas hiking trail, Enontekiö', fallback: HERO.snowyForest, season: 'autumn' as const },
   ruka:      { src: '/images/heroes/slider-03-summer-hike.webp', alt: 'Ruka gondola lift above the summer forest and lakes, Kuusamo', fallback: HERO.snowyForest, season: 'summer' as const },
   igloo:     { src: '/images/heroes/slider-04-glass-igloo.webp', alt: 'Aurora cabins with glass roofs in Inari', fallback: HERO.glassIgloo, season: 'winter' as const },
   reindeer:  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer sled in a snowy forest on Hietaliete island, Kemi', fallback: HERO.campfire, season: 'any' as const },
@@ -42,7 +45,7 @@ const WINTER_LED: Slide[] = [S.husky, S.snowmobile, S.aurora, S.reindeer, S.iglo
  * huskyvaljakosta — kumpikin niista lupaisi vaaran kauden (Vesa 20.9.2026:
  * "parasta nyt kesa, vaikka on jo syksy").
  */
-const AUTUMN_LED: Slide[] = [S.ruka, S.aurora, S.reindeer, S.igloo, S.husky, S.snowmobile];
+const AUTUMN_LED: Slide[] = [S.ruska, S.aurora, S.ruka, S.reindeer, S.igloo, S.husky];
 /** Kevat (toukokuu) on kevattalvi: lumi sulaa mutta hiihtokausi on juuri paattynyt. */
 const SPRING_LED: Slide[] = [S.ruka, S.reindeer, S.kayak, S.aurora, S.husky, S.igloo];
 
