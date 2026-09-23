@@ -357,7 +357,11 @@ const CATEGORY_HERO: Record<string, string> = {
   'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
   // 🔴 Oli tyhja sumuinen rinne ilman yhtaan laskijaa (Vesa 21.9.2026: "tassa voisi
   // nakya talviurheilu ... jotain kumparelaskua tms"). Nyt kumparelaskua actionilla.
-  'winter-sports':  local('activities/winter/moguls-action.webp'),
+  // 🔴 23.9.2026: tassa oli Commonsin 'Ben Cavet skiing the moguls' — NIMETTY brittilainen
+  // kilpailija, ei Lappia, ja nimi nakyi sivuston kuvaluettelossa. Kaupallisen sivun paakuvana
+  // nimetty urheilija nayttaa suosittelijalta. Tilalle Pexels 3714137 (Volker Meyer, 2020):
+  // kasvot kyparan ja lasien takana, taustalla vain taivas, joten kuva ei vaita paikkaa.
+  'winter-sports':  local('activities/winter/skier-powder-carve.webp'),
   // Oma kuva: Grand Hotel Mustaparran sauna, Tornio 21.7.2026 (paikaton pinta, ei väitä kohdetta)
   // 🔴 Kausikohtainen 21.9.2026: kesalla Morgamojan eramaasauna (Inari), talvella
   // LV:n OMA kuva Mustaparran saunasta (Tornio). Oma valokuva sailyy siella missa
@@ -425,7 +429,7 @@ const FOCAL: Record<string, string> = {
   '/images/activities/adventure/korouoma-frozen.webp': 'center 50%',
   '/images/activities/winter/downhill-skiers.webp': 'center 55%',
   // Laskijat ovat kuvan ylapuoliskossa; rajaus pitaa heidat nakyvissa matalassa herossa.
-  '/images/activities/winter/moguls-action.webp': 'center 42%',
+  '/images/activities/winter/skier-powder-carve.webp': 'center 40%',
   // Mokki tayttaa kehyksen; hieman alas, jottei katto leikkaudu matalassa herossa.
   '/images/activities/wellness/wilderness-sauna-morgamoja.webp': 'center 55%',
   '/images/activities/wellness/sauna-interior.webp': 'center 50%',
