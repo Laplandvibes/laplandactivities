@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const fi: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Valitse tapasi', ice: 'Pilkkiminen', iceSub: 'Ilmaista, ei lupaa. Kaira, lyhyt vapa ja jäätynyt järvi.', rivers: 'Lohi- ja harjusjoet', riversSub: 'Lupa tarvitaan. Tornionjoki auki, Teno kiinni 2026.', norway: 'Meri ja kuningasrapu', norwaySub: 'Norjan puolella: merikalastus on vapaata, rapu vain oppaan kanssa.' },
-    metaTitle: 'Kalastus Lapissa ja Jäämerellä | LaplandActivities',
+    metaTitle: 'Kalastus Lapissa ja Jäämerellä',
     metaDescription: 'Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit: kauden 2026 säännöt, maksut ja viralliset lupalinkit.',
     verifyBanner: 'Säännöt muuttuvat vuosittain. Tarkista virallisen luvan ehdot ennen kalastusta. Jokainen alla oleva luku nimeää ja linkittää lähteensä.',
     hero: {
@@ -416,7 +416,7 @@ const fi: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Aktiviteettikategoriat · LaplandActivities',
+    metaTitle: 'Aktiviteettikategoriat',
     metaDescription: 'Selaa arktisia aktiviteetteja kategorioittain: seikkailu, eläinkokemukset, revontulet, talviurheilu, hyvinvointi, kulttuuri, kesäaktiviteetit ja ruoka.',
     kicker: 'Mitä tehdä',
     h1: 'Aktiviteettikategoriat',
@@ -440,7 +440,7 @@ const fi: SectionCopy = {
     allCategoriesLink: 'Kaikki kategoriat →',
   },
   destinationsIndex: {
-    metaTitle: 'Lapin ja Kuusamon matkakohteet · LaplandActivities',
+    metaTitle: 'Lapin ja Kuusamon matkakohteet',
     metaDescription: 'Kymmenen ikonista matkakohdetta Suomen Lapissa ja Kuusamossa: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio ja Tornio.',
     kicker: 'Minne mennä',
     h1: 'Matkakohteet',
@@ -633,19 +633,19 @@ const fi: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Tietosuojakäytäntö · LaplandActivities',
+    metaTitle: 'Tietosuojakäytäntö',
     metaDescription: 'Miten LaPeso Oy (LaplandActivities) käsittelee henkilötietoja: uutiskirjeen tilaukset, analytiikka ja kumppanuusevästeet. GDPR- ja ePrivacy-yhteensopiva.',
   },
   terms: {
-    metaTitle: 'Käyttöehdot · LaplandActivities',
+    metaTitle: 'Käyttöehdot',
     metaDescription: 'Sivuston laplandactivities.fi käyttöehdot: sisältö ja käyttöoikeudet, kumppanuuslinkkien ilmoitus, vastuut ja toimitukselliset periaatteet. LaPeso Oy, Suomi.',
   },
   cookie: {
-    metaTitle: 'Evästekäytäntö · LaplandActivities',
+    metaTitle: 'Evästekäytäntö',
     metaDescription: 'Mitä evästeitä laplandactivities.fi asettaa, mihin niitä käytetään ja miten muutat suostumustasi. LaPeso Oy:n GDPR- ja ePrivacy-mukainen evästeseloste.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities',
+    metaTitle: '404',
     h2: 'Eksyitkö Arktisille?',
     body: 'Tätä sivua ei ole olemassa. Ehkä revontulet siirsivät sen.',
     backCta: 'Takaisin etusivulle',

@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const nl: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Kies uw manier', ice: 'IJsvissen', iceSub: 'Gratis, geen vergunning. Een boor, een korte hengel en een bevroren meer.', rivers: 'Zalm- en vlagzalmrivieren', riversSub: 'Vergunning nodig. Tornio open, Teno gesloten in 2026.', norway: 'Zee en koningskrab', norwaySub: 'In Noorwegen: zeevissen is vrij, koningskrab alleen met gids.' },
-    metaTitle: "IJsvissen en zalmvissen in Fins Lapland | LaplandActivities",
+    metaTitle: "IJsvissen en zalmvissen in Fins Lapland",
     metaDescription: "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026 die u nodig hebt voordat u uitwerpt.",
     verifyBanner: "De regels veranderen elk jaar. Controleer de officiële vergunningsvoorwaarden voordat u gaat vissen. Elk cijfer hieronder noemt en linkt naar zijn bron.",
     hero: {
@@ -373,7 +373,7 @@ const nl: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Activiteitencategorieën · LaplandActivities',
+    metaTitle: 'Activiteitencategorieën',
     metaDescription: 'Blader door arctische activiteiten per categorie, avontuur, dieren, noorderlicht, wintersport, wellness, cultuur, zomer en eten en drinken.',
     kicker: 'Wat te doen', h1: 'Activiteitencategorieën',
     lead: '9 manieren om het Noordpoolgebied te beleven, kies een thema en we verwijzen u door naar zorgvuldig gekozen aanbieders.',
@@ -389,7 +389,7 @@ const nl: SectionCopy = {
     browseOthers: 'Bekijk andere categorieën', allCategoriesLink: 'Alle categorieën →',
   },
   destinationsIndex: {
-    metaTitle: 'Bestemmingen in Lapland & Kuusamo · LaplandActivities',
+    metaTitle: 'Bestemmingen in Lapland & Kuusamo',
     metaDescription: 'Tien iconische bestemmingen in Lapland en Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio en Tornio.',
     kicker: 'Waarheen', h1: 'Bestemmingen',
     lead: 'Tien iconische bestemmingen in Lapland en het naburige Kuusamo, elk met een eigen karakter en aanbiedersnetwerk.',
@@ -503,7 +503,7 @@ const nl: SectionCopy = {
     backHome: "Terug naar home",
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland | LaplandActivities",
+    metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland",
     metaDescription: "Bear Kuusamo brengt u naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland. Avond- en nachttochten, 1 mei tot 30 september.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Commercieel partnerschap: Bear Kuusamo",
@@ -555,19 +555,19 @@ const nl: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Privacybeleid · LaplandActivities',
+    metaTitle: 'Privacybeleid',
     metaDescription: 'Hoe LaPeso Oy (LaplandActivities) persoonsgegevens verwerkt: nieuwsbriefaanmeldingen, statistieken en affiliate-cookies. AVG- en ePrivacy-conform.',
   },
   terms: {
-    metaTitle: 'Gebruiksvoorwaarden · LaplandActivities',
+    metaTitle: 'Gebruiksvoorwaarden',
     metaDescription: "Gebruiksvoorwaarden van laplandactivities.fi: inhoud, licenties, affiliate-informatie, aansprakelijkheid en redactionele normen.",
   },
   cookie: {
-    metaTitle: 'Cookiebeleid · LaplandActivities',
+    metaTitle: 'Cookiebeleid',
     metaDescription: 'Welke cookies laplandactivities.fi plaatst, waarvoor ze dienen en hoe u uw toestemming wijzigt. AVG- en ePrivacy-conforme cookieverklaring van LaPeso Oy.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities', h2: 'Verdwaald in het Noordpoolgebied?',
+    metaTitle: '404', h2: 'Verdwaald in het Noordpoolgebied?',
     body: 'Deze pagina bestaat niet. Misschien heeft het noorderlicht hem verplaatst.',
     backCta: 'Terug naar home',
   },

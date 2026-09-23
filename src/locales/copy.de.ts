@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const de: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Wählen Sie Ihre Art', ice: 'Eisangeln', iceSub: 'Kostenlos, ohne Schein. Eisbohrer, kurze Rute, zugefrorener See.', rivers: 'Lachs- und Äschenflüsse', riversSub: 'Schein nötig. Tornio offen, Teno 2026 geschlossen.', norway: 'Meer und Königskrabbe', norwaySub: 'Drüben in Norwegen: Meeresangeln frei, Königskrabbe nur mit Guide.' },
-    metaTitle: 'Angeln in Lappland & im Nordmeer | LaplandActivities',
+    metaTitle: 'Angeln in Lappland & im Nordmeer',
     metaDescription: 'Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris: die Regeln, Gebühren und offiziellen Genehmigungslinks für 2026.',
     verifyBanner: 'Die Vorschriften ändern sich jedes Jahr. Prüfen Sie die offiziellen Genehmigungsbedingungen vor dem Angeln. Jede Zahl unten nennt und verlinkt ihre Quelle.',
     hero: {
@@ -411,7 +411,7 @@ const de: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Aktivitätskategorien · LaplandActivities',
+    metaTitle: 'Aktivitätskategorien',
     metaDescription: 'Arktische Aktivitäten nach Kategorie durchsuchen: Abenteuer, Tiererlebnisse, Nordlicht, Wintersport, Wellness, Kultur, Sommeraktivitäten und Kulinarik.',
     kicker: 'Was zu tun ist',
     h1: 'Aktivitätskategorien',
@@ -435,7 +435,7 @@ const de: SectionCopy = {
     allCategoriesLink: 'Alle Kategorien →',
   },
   destinationsIndex: {
-    metaTitle: 'Reiseziele in Lappland & Kuusamo · LaplandActivities',
+    metaTitle: 'Reiseziele in Lappland & Kuusamo',
     metaDescription: 'Zehn ikonische Reiseziele in Lappland und Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio und Tornio.',
     kicker: 'Wohin reisen',
     h1: 'Reiseziele',
@@ -616,19 +616,19 @@ const de: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Datenschutzerklärung · LaplandActivities',
+    metaTitle: 'Datenschutzerklärung',
     metaDescription: 'Wie LaPeso Oy (LaplandActivities) personenbezogene Daten verarbeitet: Newsletter-Anmeldungen, Analyse und Affiliate-Cookies. DSGVO- und ePrivacy-konform.',
   },
   terms: {
-    metaTitle: 'Nutzungsbedingungen · LaplandActivities',
+    metaTitle: 'Nutzungsbedingungen',
     metaDescription: 'Nutzungsbedingungen für laplandactivities.fi: Inhalte, Affiliate-Hinweis, Haftung und redaktionelle Standards. Betrieben von LaPeso Oy, Finnland.',
   },
   cookie: {
-    metaTitle: 'Cookie-Richtlinie · LaplandActivities',
+    metaTitle: 'Cookie-Richtlinie',
     metaDescription: 'Welche Cookies laplandactivities.fi setzt, wozu sie dienen und wie Sie Ihre Einwilligung ändern. DSGVO- und ePrivacy-konform, von LaPeso Oy.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities',
+    metaTitle: '404',
     h2: 'Verirrt in der Arktis?',
     body: 'Diese Seite existiert nicht. Vielleicht haben die Nordlichter sie verschoben.',
     backCta: 'Zurück zur Startseite',

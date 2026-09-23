@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const zhCN: SectionCopy = {
   fishing: {
     chooser: { kicker: '选择你的方式', ice: '冰钓', iceSub: '免费、无需许可。一把冰钻、一根短竿和一片冰湖。', rivers: '鲑鱼与茴鱼河流', riversSub: '需要许可证。托尔尼奥河开放，特诺河2026年禁渔。', norway: '海钓与帝王蟹', norwaySub: '在挪威一侧：海钓免费，帝王蟹仅限随导游。' },
-    metaTitle: "拉普兰与北冰洋钓鱼指南 | LaplandActivities",
+    metaTitle: "拉普兰与北冰洋钓鱼指南",
     metaDescription: "免费冰钓、托尔尼奥河等持证三文鱼河，以及挪威帝王蟹之旅，附上你下竿前需要的 2026 年规定、费用和官方许可链接。",
     verifyBanner: "规定每年都会变化，钓鱼前请查阅官方许可条款。下文每一个数字都标明并链接其来源。",
     hero: {
@@ -411,7 +411,7 @@ const zhCN: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: '活动分类 · LaplandActivities',
+    metaTitle: '活动分类',
     metaDescription: '按分类浏览北极活动，冒险、与动物互动、北极光、冬季运动、养生、文化、夏季冒险与美食体验。',
     kicker: '可以做什么',
     h1: '活动分类',
@@ -435,7 +435,7 @@ const zhCN: SectionCopy = {
     allCategoriesLink: '全部分类 →',
   },
   destinationsIndex: {
-    metaTitle: '拉普兰与库萨莫目的地 · LaplandActivities',
+    metaTitle: '拉普兰与库萨莫目的地',
     metaDescription: '芬兰拉普兰与库萨莫的十个标志性目的地：罗瓦涅米、莱维、于拉斯、萨利色尔卡、伊纳里、鲁卡、皮哈-卢奥斯托、凯米耶尔维、波西奥与托尔尼奥。',
     kicker: '该去哪里',
     h1: '目的地',
@@ -564,7 +564,7 @@ const zhCN: SectionCopy = {
     backHome: "返回首页",
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo：在芬兰、拉普兰边缘进行合乎道德的观熊 | LaplandActivities",
+    metaTitle: "Bear Kuusamo：在芬兰、拉普兰边缘进行合乎道德的观熊",
     metaDescription: "Bear Kuusamo 在库萨莫以东、拉普兰边缘的边境森林中经营导览观熊掩体，观察野生棕熊。傍晚团与过夜团，5月1日至9月30日。",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "商业合作：Bear Kuusamo",
@@ -616,19 +616,19 @@ const zhCN: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: '隐私政策 · LaplandActivities',
+    metaTitle: '隐私政策',
     metaDescription: 'LaPeso Oy（LaplandActivities）如何处理个人数据：通讯订阅、访问分析与联盟推广 Cookie。符合 GDPR 与 ePrivacy 要求。',
   },
   terms: {
-    metaTitle: '使用条款 · LaplandActivities',
+    metaTitle: '使用条款',
     metaDescription: 'laplandactivities.fi 的使用条款：内容与授权、联盟链接披露、责任范围与编辑准则。由芬兰 LaPeso Oy 运营。',
   },
   cookie: {
-    metaTitle: 'Cookie 政策 · LaplandActivities',
+    metaTitle: 'Cookie 政策',
     metaDescription: 'laplandactivities.fi 使用哪些 Cookie、用途以及如何更改同意设置。LaPeso Oy 依据 GDPR 与 ePrivacy 提供的 Cookie 说明。',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities',
+    metaTitle: '404',
     h2: '在北极迷路了？',
     body: '此页面不存在。也许是极光把它带走了。',
     backCta: '返回首页',

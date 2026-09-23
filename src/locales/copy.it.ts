@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const it: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Scegli il tuo modo', ice: 'Pesca sul ghiaccio', iceSub: 'Gratis e senza permesso. Una trivella, una canna corta e un lago ghiacciato.', rivers: 'Fiumi di salmone e temolo', riversSub: 'Serve il permesso. Tornio aperto, Teno chiuso nel 2026.', norway: 'Mare e granchio reale', norwaySub: 'In Norvegia: pesca in mare libera, granchio reale solo con guida.' },
-    metaTitle: 'Pesca in Lapponia e nell\'oceano Artico | LaplandActivities',
+    metaTitle: 'Pesca in Lapponia e nell\'oceano Artico',
     metaDescription: "Pesca sul ghiaccio gratuita, fiumi da salmone su licenza come il Tornio e safari al granchio reale in Norvegia: regole, tariffe e permessi 2026.",
     verifyBanner: 'Le regole cambiano ogni anno: verifichi le condizioni ufficiali del permesso prima di pescare. Ogni cifra qui sotto cita e collega la propria fonte.',
     hero: {
@@ -373,7 +373,7 @@ const it: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Categorie di attività · LaplandActivities',
+    metaTitle: 'Categorie di attività',
     metaDescription: 'Sfogli le attività artiche per categoria, avventura, animali, aurora, sport invernali, benessere, cultura, estate e gastronomia.',
     kicker: 'Cosa fare', h1: 'Categorie di attività',
     lead: '9 modi per vivere l\'Artico, scelga un tema e La indirizzeremo verso gli operatori selezionati.',
@@ -389,7 +389,7 @@ const it: SectionCopy = {
     browseOthers: 'Sfoglia altre categorie', allCategoriesLink: 'Tutte le categorie →',
   },
   destinationsIndex: {
-    metaTitle: 'Destinazioni di Lapponia e Kuusamo · LaplandActivities',
+    metaTitle: 'Destinazioni di Lapponia e Kuusamo',
     metaDescription: 'Dieci destinazioni iconiche tra Lapponia finlandese e Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio e Tornio.',
     kicker: 'Dove andare', h1: 'Destinazioni',
     lead: 'Dieci destinazioni iconiche tra Lapponia e la vicina Kuusamo, ciascuna con il proprio carattere e rete di operatori.',
@@ -503,7 +503,7 @@ const it: SectionCopy = {
     backHome: "Torna alla home",
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: osservazione degli orsi in Finlandia | LaplandActivities",
+    metaTitle: "Bear Kuusamo: osservazione degli orsi in Finlandia",
     metaDescription: "Bear Kuusamo porta in capanno a osservare orsi bruni selvatici nelle foreste a est di Kuusamo, ai margini della Lapponia. Tour serali e notturni, 1 maggio–30 settembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Collaborazione commerciale: Bear Kuusamo",
@@ -555,19 +555,19 @@ const it: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Informativa sulla privacy · LaplandActivities',
+    metaTitle: 'Informativa sulla privacy',
     metaDescription: 'Come LaPeso Oy (LaplandActivities) tratta i dati personali: iscrizioni alla newsletter, statistiche e cookie di affiliazione. Conforme a GDPR ed ePrivacy.',
   },
   terms: {
-    metaTitle: 'Condizioni d\'uso · LaplandActivities',
+    metaTitle: 'Condizioni d\'uso',
     metaDescription: 'Condizioni d\'uso di laplandactivities.fi: contenuti e licenze, informativa sui link di affiliazione, responsabilità e standard editoriali. Gestito da LaPeso Oy.',
   },
   cookie: {
-    metaTitle: 'Informativa sui cookie · LaplandActivities',
+    metaTitle: 'Informativa sui cookie',
     metaDescription: 'Quali cookie imposta laplandactivities.fi, a cosa servono e come modificare il consenso. Informativa cookie di LaPeso Oy conforme a GDPR ed ePrivacy.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities', h2: 'Perso nell\'Artico?',
+    metaTitle: '404', h2: 'Perso nell\'Artico?',
     body: 'Questa pagina non esiste. Forse l\'aurora l\'ha spostata.',
     backCta: 'Torna alla home',
   },

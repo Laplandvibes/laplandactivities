@@ -49,8 +49,6 @@ const OUT_FILE = resolve(__dirname, 'prerender-meta.json');
 // Keep in sync with src/i18n/useLang.ts Lang union + the COPY keys.
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
 
-// Site brand suffix used in the runtime <title> of category/destination pages.
-const TITLE_SUFFIX = 'LaplandActivities';
 // Max meta-description length (Google snippet range upper bound).
 const DESC_MAX = 165;
 
@@ -138,7 +136,6 @@ async function main() {
   }
 
   const meta = {};
-  const titleOf = (name) => `${name} · ${TITLE_SUFFIX}`;
 
   // ---- HOME ('/') : localized title + description, plus the existing FAQ array ----
   const home = {};

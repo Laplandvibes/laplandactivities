@@ -8,7 +8,7 @@
  * Shared by scripts/generate-prerender-meta.mjs (served HTML, loaded through
  * Vite SSR) and the React pages (hydrated), so the two never drift.
  */
-const SUFFIX = 'LaplandActivities';
+// No " · LaplandActivities" suffix since 2026-09-22 (Vesa: the domain already shows it).
 
 const DEST_TAIL: Record<string, string> = {
   en: 'activities and tours',
@@ -37,19 +37,19 @@ const IN_LAPLAND: Record<string, string> = {
   'pt-BR': 'na Lapônia',
 };
 
-/** "Levi: aktiviteetit ja retket · LaplandActivities" */
+/** "Levi: aktiviteetit ja retket" */
 export function destinationTitle(name: string, lang: string): string {
   const tail = DEST_TAIL[lang] ?? DEST_TAIL.en;
-  if (lang === 'ja') return `${name}の${tail} · ${SUFFIX}`;
-  if (lang === 'zh-CN') return `${name}${tail} · ${SUFFIX}`;
-  if (lang === 'ko') return `${name} ${tail} · ${SUFFIX}`;
-  return `${name}: ${tail} · ${SUFFIX}`;
+  if (lang === 'ja') return `${name}の${tail}`;
+  if (lang === 'zh-CN') return `${name}${tail}`;
+  if (lang === 'ko') return `${name} ${tail}`;
+  return `${name}: ${tail}`;
 }
 
-/** "Seikkailu Lapissa · LaplandActivities" */
+/** "Seikkailu Lapissa" */
 export function categoryTitle(name: string, lang: string): string {
-  if (lang === 'ja') return `ラップランドの${name} · ${SUFFIX}`;
-  if (lang === 'zh-CN') return `拉普兰${name} · ${SUFFIX}`;
-  if (lang === 'ko') return `라플란드 ${name} · ${SUFFIX}`;
-  return `${name} ${IN_LAPLAND[lang] ?? IN_LAPLAND.en} · ${SUFFIX}`;
+  if (lang === 'ja') return `ラップランドの${name}`;
+  if (lang === 'zh-CN') return `拉普兰${name}`;
+  if (lang === 'ko') return `라플란드 ${name}`;
+  return `${name} ${IN_LAPLAND[lang] ?? IN_LAPLAND.en}`;
 }

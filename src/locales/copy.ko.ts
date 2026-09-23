@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const ko: SectionCopy = {
   fishing: {
     chooser: { kicker: '방법을 고르세요', ice: '얼음낚시', iceSub: '무료, 허가 불필요. 얼음 드릴과 짧은 낚싯대, 얼어붙은 호수면 충분합니다.', rivers: '연어와 그레일링 강', riversSub: '허가 필요. 토르니오강은 개방, 테노강은 2026년 금어.', norway: '바다와 킹크랩', norwaySub: '노르웨이 쪽: 바다낚시는 자유, 킹크랩은 가이드와 함께만.' },
-    metaTitle: "라플란드와 북극해에서 즐기는 낚시 | LaplandActivities",
+    metaTitle: "라플란드와 북극해에서 즐기는 낚시",
     metaDescription: "얼음낚시는 무료, 토르니오 같은 허가제 연어강, 노르웨이 킹크랩 사파리까지: 낚싯대를 던지기 전에 알아야 할 2026년 규정, 요금, 공식 허가 링크를 담았습니다.",
     verifyBanner: "규정은 해마다 바뀝니다. 낚시 전에 공식 허가 조건을 확인하세요. 아래 모든 수치는 출처를 명시하고 링크를 답니다.",
     hero: {
@@ -373,7 +373,7 @@ const ko: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: '액티비티 카테고리 · LaplandActivities',
+    metaTitle: '액티비티 카테고리',
     metaDescription: '카테고리별 북극 액티비티, 어드벤처, 동물 체험, 오로라, 겨울 스포츠, 웰니스, 문화, 여름 액티비티, 음식.',
     kicker: '무엇을 할까', h1: '액티비티 카테고리',
     lead: '북극을 체험하는 9가지 방법, 주제를 고르면 엄선한 운영자로 안내해드립니다.',
@@ -389,7 +389,7 @@ const ko: SectionCopy = {
     browseOthers: '다른 카테고리 둘러보기', allCategoriesLink: '모든 카테고리 →',
   },
   destinationsIndex: {
-    metaTitle: '라플란드와 쿠사모 목적지 · LaplandActivities',
+    metaTitle: '라플란드와 쿠사모 목적지',
     metaDescription: '라플란드와 쿠사모의 10개 대표 목적지: 로바니에미, 레비, 윌래스, 사리셀카, 이나리, 루카, 퓌해-루오스토, 케미야르비, 포시오, 토르니오.',
     kicker: '어디로 갈까', h1: '목적지',
     lead: '라플란드와 이웃한 쿠사모의 10개 대표 목적지, 각각 고유한 개성과 운영자 네트워크를 갖추고 있습니다.',
@@ -506,7 +506,7 @@ const ko: SectionCopy = {
     backHome: "홈으로",
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: 핀란드, 라플란드 경계에서의 윤리적인 곰 관찰 | LaplandActivities",
+    metaTitle: "Bear Kuusamo: 핀란드, 라플란드 경계에서의 윤리적인 곰 관찰",
     metaDescription: "Bear Kuusamo는 라플란드 경계에 자리한 쿠사모 동쪽 국경 숲에서 야생 불곰을 관찰하는 가이드 은신처를 운영합니다. 저녁 투어와 1박 투어, 5월 1일부터 9월 30일까지.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "상업적 제휴: Bear Kuusamo",
@@ -558,19 +558,19 @@ const ko: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: '개인정보 처리방침 · LaplandActivities',
+    metaTitle: '개인정보 처리방침',
     metaDescription: 'LaPeso Oy(LaplandActivities)가 개인정보를 처리하는 방식. 뉴스레터 신청, 분석, 제휴 쿠키를 다룹니다. GDPR 및 ePrivacy 준수.',
   },
   terms: {
-    metaTitle: '이용약관 · LaplandActivities',
+    metaTitle: '이용약관',
     metaDescription: 'laplandactivities.fi 이용약관. 콘텐츠와 라이선스, 제휴 링크 공개, 책임 범위, 편집 기준을 안내합니다. 핀란드 LaPeso Oy가 운영합니다.',
   },
   cookie: {
-    metaTitle: '쿠키 정책 · LaplandActivities',
+    metaTitle: '쿠키 정책',
     metaDescription: 'laplandactivities.fi가 사용하는 쿠키의 종류와 목적, 동의를 변경하는 방법. LaPeso Oy의 GDPR 및 ePrivacy 준수 쿠키 공개.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities', h2: '북극에서 길을 잃으셨나요?',
+    metaTitle: '404', h2: '북극에서 길을 잃으셨나요?',
     body: '이 페이지는 존재하지 않습니다. 아마 오로라가 옮겼나 봅니다.',
     backCta: '홈으로 돌아가기',
   },

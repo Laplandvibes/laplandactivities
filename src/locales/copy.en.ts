@@ -177,7 +177,7 @@ const en: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Activity Categories · LaplandActivities',
+    metaTitle: 'Activity Categories',
     metaDescription: 'Browse Arctic activities by category: adventure, animal experiences, northern lights, winter sports, wellness, culture, summer adventures and food experiences.',
     kicker: 'What to Do',
     h1: 'Activity Categories',
@@ -201,7 +201,7 @@ const en: SectionCopy = {
     allCategoriesLink: 'All categories →',
   },
   destinationsIndex: {
-    metaTitle: 'Destinations in Lapland & Kuusamo · LaplandActivities',
+    metaTitle: 'Destinations in Lapland & Kuusamo',
     metaDescription: 'Ten iconic destinations in Finnish Lapland and Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio and Tornio.',
     kicker: 'Where to Go',
     h1: 'Destinations',
@@ -331,7 +331,7 @@ const en: SectionCopy = {
   },
   fishing: {
     chooser: { kicker: 'Pick your way', ice: 'Ice fishing', iceSub: 'Free, no permit. An auger, a short rod and a frozen lake.', rivers: 'Salmon & grayling rivers', riversSub: 'Permit needed. Tornio open, Teno closed in 2026.', norway: 'Sea & king crab', norwaySub: 'Across in Norway: sea fishing is free, king crab only with a guide.' },
-    metaTitle: 'Fishing in Lapland & the Arctic Ocean | LaplandActivities',
+    metaTitle: 'Fishing in Lapland & the Arctic Ocean',
     metaDescription: "Free ice fishing, licensed salmon rivers like the Tornio and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links.",
     verifyBanner: 'Regulations change every year. Check the official permit terms before you fish. Every figure below names and links its source.',
     hero: {
@@ -565,7 +565,7 @@ const en: SectionCopy = {
     ],
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: ethical bear watching in Finland | LaplandActivities",
+    metaTitle: "Bear Kuusamo: ethical bear watching in Finland",
     metaDescription: "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, May to September.",
     breadcrumb: 'Bear Kuusamo',
     partnershipLabel: 'Commercial partnership · Bear Kuusamo',
@@ -617,19 +617,19 @@ const en: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Privacy Policy · LaplandActivities',
+    metaTitle: 'Privacy Policy',
     metaDescription: 'How LaPeso Oy (LaplandActivities) processes personal data: newsletter signups, analytics and affiliate cookies. GDPR and ePrivacy compliant.',
   },
   terms: {
-    metaTitle: 'Terms of Use · LaplandActivities',
+    metaTitle: 'Terms of Use',
     metaDescription: 'Terms of use for laplandactivities.fi: content and licensing, affiliate disclosure, liability and editorial standards. Operated by LaPeso Oy, Finland.',
   },
   cookie: {
-    metaTitle: 'Cookie Policy · LaplandActivities',
+    metaTitle: 'Cookie Policy',
     metaDescription: 'Which cookies laplandactivities.fi sets, what they are used for and how to change your consent. GDPR and ePrivacy cookie disclosure from LaPeso Oy.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities',
+    metaTitle: '404',
     h2: 'Lost in the Arctic?',
     body: 'This page does not exist. Maybe the aurora moved it.',
     backCta: 'Back to Home',

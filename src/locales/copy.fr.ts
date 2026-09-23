@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const fr: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Choisissez votre pêche', ice: 'Pêche sur glace', iceSub: 'Gratuite, sans permis. Une tarière, une canne courte et un lac gelé.', rivers: 'Rivières à saumon et ombre', riversSub: 'Permis obligatoire. Tornio ouverte, Teno fermée en 2026.', norway: 'Mer et crabe royal', norwaySub: 'Côté norvégien : pêche en mer libre, crabe royal uniquement avec un guide.' },
-    metaTitle: "Pêche en Laponie et en Arctique | LaplandActivities",
+    metaTitle: "Pêche en Laponie et en Arctique",
     metaDescription: "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège : règles 2026 et permis officiels.",
     verifyBanner: 'La réglementation change chaque année : vérifiez les conditions officielles du permis avant de pêcher. Chaque chiffre ci-dessous cite et relie sa source.',
     hero: {
@@ -373,7 +373,7 @@ const fr: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Catégories d\'activités · LaplandActivities',
+    metaTitle: 'Catégories d\'activités',
     metaDescription: 'Parcourez les activités arctiques par catégorie, aventure, animaux, aurores, sports d\'hiver, bien-être, culture, été et gastronomie.',
     kicker: 'Que faire', h1: 'Catégories d\'activités',
     lead: '9 façons de vivre l\'Arctique, choisissez un fil et nous vous orientons vers des opérateurs choisis avec soin.',
@@ -389,7 +389,7 @@ const fr: SectionCopy = {
     browseOthers: 'Parcourir les autres catégories', allCategoriesLink: 'Toutes les catégories →',
   },
   destinationsIndex: {
-    metaTitle: 'Destinations Laponie & Kuusamo · LaplandActivities',
+    metaTitle: 'Destinations Laponie & Kuusamo',
     metaDescription: 'Dix destinations emblématiques en Laponie et à Kuusamo : Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio et Tornio.',
     kicker: 'Où aller', h1: 'Destinations',
     lead: 'Dix destinations emblématiques en Laponie et dans la voisine Kuusamo, chacune avec son caractère et son réseau d\'opérateurs.',
@@ -555,19 +555,19 @@ const fr: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Politique de confidentialité · LaplandActivities',
+    metaTitle: 'Politique de confidentialité',
     metaDescription: "Comment LaPeso Oy (LaplandActivities) traite vos données : inscriptions newsletter, mesure d'audience et cookies d'affiliation. RGPD et ePrivacy.",
   },
   terms: {
-    metaTitle: 'Conditions d\'utilisation · LaplandActivities',
+    metaTitle: 'Conditions d\'utilisation',
     metaDescription: "Conditions d'utilisation de laplandactivities.fi : contenus, licences, affiliation, responsabilité et règles éditoriales. Exploité par LaPeso Oy.",
   },
   cookie: {
-    metaTitle: 'Politique de cookies · LaplandActivities',
+    metaTitle: 'Politique de cookies',
     metaDescription: 'Quels cookies laplandactivities.fi dépose, à quoi ils servent et comment modifier votre consentement. Déclaration cookies RGPD et ePrivacy de LaPeso Oy.',
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities', h2: 'Perdu·e dans l\'Arctique ?',
+    metaTitle: '404', h2: 'Perdu·e dans l\'Arctique ?',
     body: 'Cette page n\'existe pas. Peut-être que l\'aurore l\'a déplacée.',
     backCta: 'Retour à l\'accueil',
   },

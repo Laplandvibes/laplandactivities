@@ -3,7 +3,7 @@ import type { SectionCopy } from './types'
 const es: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Elige tu modalidad', ice: 'Pesca en hielo', iceSub: 'Gratis y sin permiso. Un taladro, una caña corta y un lago helado.', rivers: 'Ríos de salmón y tímalo', riversSub: 'Se necesita permiso. Tornio abierto, Teno cerrado en 2026.', norway: 'Mar y cangrejo real', norwaySub: 'En Noruega: la pesca en el mar es libre; el cangrejo real, solo con guía.' },
-    metaTitle: 'Pesca en Laponia y el océano Ártico | LaplandActivities',
+    metaTitle: 'Pesca en Laponia y el océano Ártico',
     metaDescription: "Pesca en hielo gratuita, ríos de salmón con licencia como el Tornio y safaris de cangrejo real en Noruega: normas, tasas 2026 y enlaces de permisos.",
     verifyBanner: 'Las normas cambian cada año: consulte las condiciones oficiales del permiso antes de pescar. Cada cifra de abajo cita y enlaza su fuente.',
     hero: {
@@ -411,7 +411,7 @@ const es: SectionCopy = {
     ],
   },
   categoriesIndex: {
-    metaTitle: 'Categorías de actividades · LaplandActivities',
+    metaTitle: 'Categorías de actividades',
     metaDescription: "Explore actividades árticas por categoría: aventura, animales, aurora boreal, deportes de invierno, bienestar, cultura, verano y gastronomía.",
     kicker: 'Qué hacer',
     h1: 'Categorías de actividades',
@@ -435,7 +435,7 @@ const es: SectionCopy = {
     allCategoriesLink: 'Todas las categorías →',
   },
   destinationsIndex: {
-    metaTitle: 'Destinos de Laponia y Kuusamo · LaplandActivities',
+    metaTitle: 'Destinos de Laponia y Kuusamo',
     metaDescription: 'Diez destinos icónicos de la Laponia finlandesa y de Kuusamo: Rovaniemi, Levi, Ylläs, Saariselkä, Inari, Ruka, Pyhä-Luosto, Kemijärvi, Posio y Tornio.',
     kicker: 'Dónde ir',
     h1: 'Destinos',
@@ -564,7 +564,7 @@ const es: SectionCopy = {
     backHome: "Volver al inicio",
   },
   bearKuusamo: {
-    metaTitle: "Bear Kuusamo: observación ética de osos | LaplandActivities",
+    metaTitle: "Bear Kuusamo: observación ética de osos",
     metaDescription: "Bear Kuusamo lleva a escondites para ver osos pardos salvajes cerca de Kuusamo, al borde de Laponia. Tours de tarde y noche, 1 de mayo–30 de septiembre.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Colaboración comercial: Bear Kuusamo",
@@ -616,19 +616,19 @@ const es: SectionCopy = {
     },
   },
   privacy: {
-    metaTitle: 'Política de privacidad · LaplandActivities',
+    metaTitle: 'Política de privacidad',
     metaDescription: "Cómo LaPeso Oy (LaplandActivities) trata sus datos: boletín, analítica y cookies de afiliación. Conforme al RGPD y la ePrivacy.",
   },
   terms: {
-    metaTitle: 'Condiciones de uso · LaplandActivities',
+    metaTitle: 'Condiciones de uso',
     metaDescription: "Condiciones de uso de laplandactivities.fi: contenidos, licencias, enlaces de afiliación, responsabilidad y normas editoriales. Gestionado por LaPeso Oy.",
   },
   cookie: {
-    metaTitle: 'Política de cookies y consentimiento · LaplandActivities',
+    metaTitle: 'Política de cookies y consentimiento',
     metaDescription: "Qué cookies instala laplandactivities.fi, para qué sirven y cómo cambiar su consentimiento. Declaración de LaPeso Oy conforme al RGPD y la ePrivacy.",
   },
   notFound: {
-    metaTitle: '404 · LaplandActivities',
+    metaTitle: '404',
     h2: '¿Perdido en el Ártico?',
     body: 'Esta página no existe. Quizá la aurora se la llevó.',
     backCta: 'Volver al inicio',
