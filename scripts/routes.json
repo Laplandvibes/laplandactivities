@@ -24,7 +24,13 @@
         "file": "src/data/guides.{lang}.ts",
         "key": "destList"
       }
-    ]
+    ],
+    "ogImage": "/og/destinations.jpg",
+    "ogCard": {
+      "heroKesa": "/images/heroes/levi-summer-fell.webp",
+      "heroTalvi": "/images/hotels/fell-resort-levi.webp",
+      "line": "Pick a base, then the tours nearby"
+    }
   },
   {
     "path": "/categories",
@@ -39,19 +45,35 @@
         "file": "src/data/guides.{lang}.ts",
         "key": "catList"
       }
-    ]
+    ],
+    "ogImage": "/og/categories.jpg",
+    "ogCard": {
+      "heroKesa": "/images/heroes/reindeer-herd-sunset.webp",
+      "heroTalvi": "/images/activities/adventure/korouoma-frozen.webp",
+      "line": "Tours sorted by what you want to do"
+    }
   },
   {
     "path": "/about",
     "fallbackTitle": "About | LaplandActivities",
-    "copyKey": "about"
+    "copyKey": "about",
+    "ogImage": "/og/about.jpg",
+    "ogCard": {
+      "hero": "/og/src/about-vesa-pesola.jpg",
+      "line": "Who picks the tours, and how we earn"
+    }
   },
   {
     "path": "/fishing",
     "fallbackTitle": "Fishing in Lapland & the Arctic Ocean | LaplandActivities",
     "fallbackDescription": "Free ice fishing, licensed salmon rivers like the Tornio, and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links you need before you cast.",
     "appendSiteName": false,
-    "copyKey": "fishing"
+    "copyKey": "fishing",
+    "ogImage": "/og/fishing.jpg",
+    "ogCard": {
+      "hero": "/images/activities/summer/salmon-fishing.webp",
+      "line": "Ice holes, salmon rivers, king crab"
+    }
   },
   {
     "path": "/bear-kuusamo",

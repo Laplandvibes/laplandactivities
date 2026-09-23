@@ -1,0 +1,324 @@
+{
+  "destinations": {
+    "route": "/destinations",
+    "line": "Pick a base, then the tours nearby",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/heroes/levi-summer-fell.webp",
+        "bytes": 140686,
+        "sha256": "180faac04f8a353f8ba682d85498cf7799e86dc75ca8ffd5afb9e1e5287751ac",
+        "heroSha": "11271e7be77b9303",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18178,
+        "inkBox": [
+          357,
+          493,
+          841,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 103,
+        "centerSq": 104.3,
+        "photoRegion": 126.6,
+        "photoRegionRef": 126.6,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 475,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/hotels/fell-resort-levi.webp",
+        "bytes": 220244,
+        "sha256": "46449b38481cd6af5020e40d46049b1f260ae1d0455a0c2118b06c4bd03fe400",
+        "heroSha": "264a0d696fdb8b97",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18178,
+        "inkBox": [
+          357,
+          493,
+          841,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 64.9,
+        "centerSq": 69.2,
+        "photoRegion": 74.7,
+        "photoRegionRef": 74.7,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 475,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      }
+    }
+  },
+  "categories": {
+    "route": "/categories",
+    "line": "Tours sorted by what you want to do",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/heroes/reindeer-herd-sunset.webp",
+        "bytes": 250431,
+        "sha256": "ce021b0497f7ea08d32faf6653dcb33f6b9ec236c158520ec5fcb5fcf4acccf4",
+        "heroSha": "bf589ee80205875a",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18384,
+        "inkBox": [
+          345,
+          493,
+          854,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 77.9,
+        "centerSq": 81.6,
+        "photoRegion": 92.4,
+        "photoRegionRef": 92.4,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 510,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/activities/adventure/korouoma-frozen.webp",
+        "bytes": 199745,
+        "sha256": "6ed3d12df9f10687b9cb183faebfe45795b57d976f370aef32a49db0d12a0b8f",
+        "heroSha": "b8b83a094b63a3ba",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18384,
+        "inkBox": [
+          345,
+          493,
+          854,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 93.2,
+        "centerSq": 100.1,
+        "photoRegion": 113.3,
+        "photoRegionRef": 113.3,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 510,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      }
+    }
+  },
+  "about": {
+    "route": "/about",
+    "line": "Who picks the tours, and how we earn",
+    "kaudet": {
+      "summer": {
+        "hero": "/og/src/about-vesa-pesola.jpg",
+        "bytes": 51997,
+        "sha256": "5756230a48398faec77430fe4051b1e4ac091d6ab3178b1023b782fa302b0ab6",
+        "heroSha": "3661a1136d098afc",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18679,
+        "inkBox": [
+          335,
+          493,
+          863,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 93.2,
+        "centerSq": 96.1,
+        "photoRegion": 113.3,
+        "photoRegionRef": 113.3,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 531,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/og/src/about-vesa-pesola.jpg",
+        "bytes": 51997,
+        "sha256": "5756230a48398faec77430fe4051b1e4ac091d6ab3178b1023b782fa302b0ab6",
+        "heroSha": "3661a1136d098afc",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18679,
+        "inkBox": [
+          335,
+          493,
+          863,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 93.2,
+        "centerSq": 96.1,
+        "photoRegion": 113.3,
+        "photoRegionRef": 113.3,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 531,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "fishing": {
+    "route": "/fishing",
+    "line": "Ice holes, salmon rivers, king crab",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/activities/summer/salmon-fishing.webp",
+        "bytes": 158187,
+        "sha256": "3db020d24fddf2f6e0bc1bcc36f7bc41315d8fb17c673b36759fb96d8671efe3",
+        "heroSha": "0575950c1cc31f72",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18158,
+        "inkBox": [
+          357,
+          493,
+          841,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 101,
+        "centerSq": 117,
+        "photoRegion": 124,
+        "photoRegionRef": 124,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 466,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/activities/summer/salmon-fishing.webp",
+        "bytes": 158187,
+        "sha256": "3db020d24fddf2f6e0bc1bcc36f7bc41315d8fb17c673b36759fb96d8671efe3",
+        "heroSha": "0575950c1cc31f72",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 18158,
+        "inkBox": [
+          357,
+          493,
+          841,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 101,
+        "centerSq": 117,
+        "photoRegion": 124,
+        "photoRegionRef": 124,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 466,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  }
+}
