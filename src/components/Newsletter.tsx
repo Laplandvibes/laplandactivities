@@ -48,7 +48,7 @@ const CONSENT_COPY: Record<Lang, { checkbox: string; privacy: string }> = {
     privacy: 'Política de privacidad',
   },
   'pt-BR': {
-    checkbox: 'Aceito receber a newsletter da LaplandVibes no e-mail informado, com dicas de viagem, informações de temporada e ofertas. Tenho 18 anos ou mais.',
+    checkbox: 'Aceito receber a newsletter do LaplandVibes no e-mail informado, com dicas de viagem, informações de temporada e ofertas. Tenho 18 anos ou mais.',
     privacy: 'Política de Privacidade',
   },
   'zh-CN': {

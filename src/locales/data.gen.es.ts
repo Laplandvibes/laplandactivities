@@ -993,7 +993,7 @@ const d: LangData = {
     },
     "pyh-ski-resort": {
       "title": "Estación de esquí de Pyhä",
-      "description": "Una estación junto al parque nacional con 280 metros de desnivel y pistas para los dos extremos: terreno familiar suave por un lado y, por el otro, Huttu-Ukko, una pista de baches que ha acogido Copas del Mundo de freestyle. Forfaits y alquiler en la estación.",
+      "description": "Una estación junto al parque nacional con 280 metros de desnivel y pistas para los dos extremos: terreno familiar suave por un lado y, por el otro, Huttu-Ukko, una pista de baches que ha acogido Copas del Mundo de freestyle. Pases de esquí y alquiler en la estación.",
       "highlights": [
         "280 m de desnivel",
         "Pista de baches de Copa del Mundo",

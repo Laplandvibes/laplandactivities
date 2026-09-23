@@ -21,7 +21,7 @@ const guides: Guides = {
       seasonSummer: 'En verano la telecabina sube al Levi Bike Park en lugar de a los esquiadores, y la fjeld se abre al senderismo. El golf bajo el sol de medianoche es la rareza local: salida cerca de la medianoche y vuelta entera a plena luz. Los 230 kilómetros de pistas de esquí de fondo del invierno sirven, sin nieve, como rutas de marcha y carrera.',
       planTitle: 'Planificar un viaje a Levi',
       planGetting: 'Desde el aeropuerto de Kittilä llegará en unos quince minutos, el traslado más corto de todos los destinos de esquí lapones. El pueblo está al pie del Levitunturi y se recorre a pie de punta a punta, así que la mayoría prescinde del coche de alquiler salvo que planee excursiones a Ylläs o hacia Kittilä.',
-      planStay: 'Levi merece más que un fin de semana: de tres a cinco noches dan para esquiar, hacer un safari y aún reservar una velada en el Hullu Poro. Las camas a pie de pista y las salidas de huskies mejor valoradas se agotan primero en la semana de Navidad y en las vacaciones escolares finlandesas de marzo. Los forfaits y el alquiler de material, en cambio, se resuelven más fácilmente al llegar que las excursiones.',
+      planStay: 'Levi merece más que un fin de semana: de tres a cinco noches dan para esquiar, hacer un safari y aún reservar una velada en el Hullu Poro. Las camas a pie de pista y las salidas de huskies mejor valoradas se agotan primero en la semana de Navidad y en las vacaciones escolares finlandesas de marzo. Los pases de esquí y el alquiler de material, en cambio, se resuelven más fácilmente al llegar que las excursiones.',
     },
     yllas: {
       seasonsTitle: 'Ylläs temporada a temporada',

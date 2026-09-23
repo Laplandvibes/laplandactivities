@@ -372,7 +372,7 @@ const ptBR: SectionCopy = {
     activitiesShort: 'atividades',
   },
   relatedSites: {
-    kicker: 'Mais da #LaplandVibes',
+    kicker: 'Mais do #LaplandVibes',
     h2: 'Planeje o resto da sua viagem ártica',
     lead: 'As atividades são só metade da viagem. Estes guias irmãos da nossa rede da Lapônia aprofundam o resto.',
     links: [
