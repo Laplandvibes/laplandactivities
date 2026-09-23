@@ -213,8 +213,10 @@ export default function BearKuusamoPage() {
                 height="820"
                 className="w-full h-auto rounded-2xl border border-white/10 shadow-lg shadow-black/20"
               />
-              <figcaption className="text-snow/60 text-sm leading-relaxed mt-3">
-                {c.treeCaption} <span className="text-snow/45">{c.treeCredit}</span>
+              {/* Kuvateksti on virke ja krediitti lähdeviite ⇒ leipätekstiä: 16 px, muste /80 ja /75,
+                  ei 14 px /60 ja /45 (§33, Vesa 20.9.2026). */}
+              <figcaption className="text-snow/80 text-base leading-relaxed mt-3">
+                {c.treeCaption} <span className="text-snow/75">{c.treeCredit}</span>
               </figcaption>
             </figure>
           </div>
