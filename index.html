@@ -29,6 +29,37 @@
       })();
     </script>
     <!-- /LV-LOCALE-TITLE -->
+    <!-- LV-HERO-PRELOAD: etusivun ensimmainen liukukuva ladataan heti, ei Reactin jalkeen.
+         Mitattu 23.9.2026 Lighthousella (mobiili): LCP 5,6 s, josta 2,3 s oli "Load Delay" —
+         heron <img> syntyy vasta kun JS-nippu on ajettu, joten selain ei tiennyt kuvasta.
+         Kausi = SAMA saanto kuin src/i18n/seasonWords.ts currentSeason(), ja ensimmainen
+         kuva = HeroSlider.tsx:n *_LED[0]. Jos muutat jompaakumpaa, muuta tama.
+         🔴 Vain LAHTEEN polku kirjoitetaan tanne: version-images.mjs leimaa sen ?v=:lla,
+         ja kapeat versiot johdetaan siita kuten respImg() tekee. Jos -768-polku
+         kirjoitettaisiin kasin, se saisi OMAN tiivisteensa ja kuva ladattaisiin kahdesti. -->
+    <script>
+      (function () {
+        try {
+          if (!/^\/((fi|de|ja|es|br|cn|kr|fr|it|nl|sv)\/?)?$/.test(location.pathname || '/')) return;
+          var m = new Date().getMonth() + 1;
+          var src = m >= 6 && m <= 8 ? '/images/heroes/slider-07-kayak-lake.webp'
+            : (m >= 9 && m <= 10) || m === 5 ? '/images/heroes/slider-03-summer-hike.webp'
+            : '/images/heroes/slider-01-husky-aurora.webp';
+          var puhdas = src.replace(/[?#].*$/, '');
+          var q = src.slice(puhdas.length);
+          var set = [768, 1280].map(function (w) {
+            return puhdas.replace(/\.webp$/, '-' + w + '.webp') + q + ' ' + w + 'w';
+          }).concat(src + ' 1920w').join(', ');
+          var l = document.createElement('link');
+          l.rel = 'preload'; l.as = 'image';
+          l.setAttribute('imagesrcset', set);
+          l.setAttribute('imagesizes', '100vw');
+          l.setAttribute('fetchpriority', 'high');
+          l.href = src;
+          document.head.appendChild(l);
+        } catch (e) { /* fail silent */ }
+      })();
+    </script>
     <!-- LV-SYNC-LOCALE-REDIRECT (managed by scripts/inject_sync_redirect.mjs) -->
     <script>
       (function () {
