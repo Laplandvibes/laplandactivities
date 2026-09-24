@@ -345,7 +345,8 @@ export default function Home() {
                 <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/30 to-transparent" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
+                {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten kuvaus jää sen yläpuolelle. */}
+                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5">
                   <h3 className="font-heading text-base sm:text-lg text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-snow/75 text-[10px] line-clamp-1">{dest.tagline}</p>
                 </div>
