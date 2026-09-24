@@ -4,6 +4,7 @@ import { trackNewsletterSignup } from '../lib/analytics';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import FounderByline from '../shared/FounderByline';
+import { SUPABASE_URL, SUPABASE_ANON_KEY } from '../lib/supabase';
 
 /**
  * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,
@@ -16,8 +17,6 @@ function track(event: string, data?: Record<string, unknown>) {
   } catch { /* ignore */ }
 }
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY as string | undefined;
 const SOURCE = 'laplandactivities-inline';
 
 type Status = 'idle' | 'loading' | 'success' | 'already' | 'error';
