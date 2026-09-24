@@ -284,7 +284,7 @@ export default function CategoryPage() {
               lang={lang}
               variant="light"
               imageSrc="/images/activities/bear-kuusamo/bear-hero.webp"
-              articleHref={to('/bear-kuusamo')}
+              articleHref={to('/bear-kuusamo/')}
               onArticleClick={(_k, adSid) => trackPartnerClick(`article:${adSid}`)}
               onCtaClick={(_specKey, adSid) => trackPartnerClick(adSid)}
             />
