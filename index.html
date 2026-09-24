@@ -12,19 +12,29 @@
           for (var p in map) {
             if (path === '/' + p || path.indexOf('/' + p + '/') === 0) { loc = map[p]; break; }
           }
-          // 🔴🔴 EI YLIKIRJOITETA ESIRENDEROITYA OTSIKKOA (21.9.2026).
-          // Taman skriptin alkuperainen syy oli, etta /fi ja /de tarjoiltiin EN-otsikolla
-          // kunnes React hydratoi. Sivustot esirenderoidaan nyt kielittain, joten
-          // palvelin lahettaa jo oikean otsikon — ja koska alla oleva taulu on kasin
-          // yllapidetty NELJAS kopio otsikoista, se ehti vanhentua ja vilautti vanhaa
-          // otsikkoa. Mitattu 21.9.2026 selaimessa: laplandactivities.fi palautti
-          // "Things to Do in Lapland: 79 Activities…", valilehti naytti hetken
-          // "LaplandActivities: Book Hand-Picked Arctic Tours…", ja React korjasi sen.
-          // Nyt taulua kaytetaan vain kun palvelin EI antanut omaa otsikkoa
-          // (esirenderoimaton reitti) tai kun otsikko on yha kuoren oletus.
-          var nyt = (document.title || '').trim();
+          // 🔴🔴 EI YLIKIRJOITETA ESIRENDEROITYA OTSIKKOA (21.9.2026, ajoitus korjattu 24.9.2026).
+          // T on kasin yllapidetty kopio etusivun otsikoista ja ehti vanhentua; sivut esirenderoidaan
+          // kielittain, joten palvelin lahettaa jo oikean otsikon. 21.9. vartija ei toiminut: tama
+          // lohko on headin alussa ja title-elementti jasennetaan vasta sen jalkeen, joten ajohetkella
+          // document.title oli '' ja kirjoitus loi oman elementin palvelimen otsikon eteen (mitattu
+          // 24.9.2026: laplandchristmas.com/fi/accommodation/ valilehdella "Joulu Lapissa: ..." 12 ms,
+          // kunnes React vaihtoi sivun oman 763 ms). Siksi vertailu vasta readyState 'interactive'
+          // -hetkella: koko HTML on jasennetty, Reactin moduuliskripti ei viela ajanut. T:ta kaytetaan
+          // vain kun otsikko puuttuu tai muunkielinen reitti kantaa yha kuoren EN-oletusta
+          // (= esirenderoimaton reitti). Lahde: scripts/lib/otsikkovartija.mjs, ala muokkaa kasin.
           var oletus = "LaplandActivities: book hand-picked Arctic tours in Finnish Lapland";
-          if (T[loc] && (!nyt || nyt === oletus)) document.title = T[loc];
+          var aseta = function () {
+            try {
+              var nyt = (document.title || '').trim();
+              if (T[loc] && (!nyt || (nyt === oletus && loc !== 'en'))) document.title = T[loc];
+            } catch (e) { /* fail silent */ }
+          };
+          if (document.readyState === 'loading') {
+            document.addEventListener('readystatechange', function kun() {
+              document.removeEventListener('readystatechange', kun);
+              aseta();
+            });
+          } else aseta();
         } catch (e) { /* fail silent */ }
       })();
     </script>
