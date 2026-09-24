@@ -7,7 +7,15 @@ import { useLang } from '../i18n/useLang';
  * Linkin sisällä olevassa kortissa (Home-ruudukko, kohdelaatat) renderöidään pelkkä teksti ja
  * täydet linkit ovat Tietoja-sivun kuvaluettelossa (<PhotoCreditList />). Sama malli kuin
  * stayinlapland 18.9.2026. Lisenssin nimi on `whitespace-nowrap`, ettei "CC BY-SA 4.0" katkea
- * 375 px:ssä. Pohja `bg-black/55` on osa mitattua kontrastia (probe_text_contrast 18.9.).
+ * 375 px:ssä.
+ *
+ * Kontrasti mitoitetaan kirkkaimman mahdollisen kuvan mukaan, koska kuitti osuu mihin tahansa
+ * kuvaan. Pohja `bg-black/55` ja täysvalkoinen teksti ovat pari: puhtaan valkoisen (#FFF) kuvan
+ * päällä pohja piirtyy harmaana #737373, ja valkoinen teksti on sitä vasten 4,74:1 (raja 9 px:n
+ * tekstille 4,5:1). Tummempi kuva vain parantaa lukua. Läpikuultava muste ei riitä samassa
+ * kohdassa: `text-white/70` 3,23:1, `text-white/95` 4,46:1 (laskettu WCAG 2.x -kaavalla).
+ * Mitattu selaimessa 24.9.2026 (25 sivua, 375 + 1440 px): jokainen kuitti yli 4,5:1:n; heikoin,
+ * /fishing-sivun kuningasrapukortti, huonoin 10 % 6,6:1 (1280 px) ja 6,9:1 (375 px).
  */
 const OWN_LABEL: Record<string, string> = {
   en: 'Photo: LaplandVibes', fi: 'Kuva: LaplandVibes', de: 'Foto: LaplandVibes', sv: 'Foto: LaplandVibes',
@@ -20,14 +28,12 @@ export default function PhotoCredit({ src, links = true, className = '' }: { src
   const c = creditFor(src);
   if (!c) return null;
   // Vesa 19.9.2026: "hieman liikaa saa huomiota kuvan ottaja ja ne pitäisi aina olla oikea alalaita"
-  // ⇒ 9 px, 60 % muste, aina oikea alakulma; täysi tekijä + linkit Tietoja-sivun luettelossa.
-  // 🔴 Pohja on `bg-black/55`, ei kevyempi. Kun kuitti tehtiin 19.9. huomaamattomaksi
-  // (Vesa: "liikaa huomiota kuvan ottajalle"), pohja laskettiin 35 %:iin mutta ylla oleva
-  // mitattu arvo jai kommenttiin — mitattu 20.9. uudelleen: lisenssilinkki oli silloin
-  // 4,13:1 kun raja on 4,5:1, ja 85 % pikseleista alle rajan. Kuitti on lisenssin vaatima
-  // nimeaminen (CC BY-SA), joten sen on oltava luettava; huomaamattomuus tehdaan koolla ja
-  // sijainnilla, ei kontrastia alentamalla.
-  const base = `pointer-events-auto absolute bottom-1 right-1 z-10 max-w-[58%] truncate rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white/70 ${className}`;
+  // ⇒ 9 px ja aina oikea alakulma; täysi tekijä + linkit Tietoja-sivun luettelossa.
+  // Huomaamattomuus tehdään koolla ja sijainnilla, ei kontrastilla: kuitti on CC BY / BY-SA
+  // -lisenssin vaatima nimeäminen, joten sen on oltava luettava. Pohjaa ei kevennetä eikä
+  // mustetta tehdä läpikuultavaksi (`bg-black/35` + valkoinen = 2,43:1 valkoisen kuvan päällä;
+  // muut luvut yllä).
+  const base = `pointer-events-auto absolute bottom-1 right-1 z-10 max-w-[58%] truncate rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white ${className}`;
   if (c.kind === 'partner') {
     // Kumppanin (esim. Sembo) oma hotellikuva: lähde näkyviin, ei lisenssilinkkiä (kuvalupa 10.9.2026).
     return <span className={base}>{OWN_LABEL[lang]?.split(':')[0] ?? 'Photo'}: {c.author} · {c.license}</span>;
