@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 127
+// Kuvia joilla kopiot: 126
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -45,16 +45,17 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/food/campfire-salmon.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/food/lapland-plate.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/food/salmon-plate.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/northern-lights/aurora-enontekio-hetta.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/northern-lights/aurora-inari-bands.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/northern-lights/aurora-inari-juutuanvuono.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/northern-lights/aurora-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/northern-lights/aurora-levi-bands.webp": { full: 1920, small: [768, 1280] },
-  "/images/activities/northern-lights/aurora-people.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/northern-lights/snowmobile-aurora.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/foraging.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/golf.webp": { full: 1280, small: [768] },
   "/images/activities/summer/kayak-inari.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/kayak.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/summer/kiilopaa-view-east.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/lake-cruise.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/lapland-river.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/summer/mtb-bikepark.webp": { full: 1600, small: [768, 1280] },
@@ -64,7 +65,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/summer/reindeer-saytsjarvi.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/riisitunturi-tykky.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/salmon-fishing.webp": { full: 1920, small: [768, 1280] },
-  "/images/activities/summer/ukk-reindeer-fell.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wellness/ice-floating.webp": { full: 1184, small: [768] },
   "/images/activities/wellness/sauna-interior.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wellness/smoke-sauna-siida-inari.webp": { full: 1600, small: [768, 1280] },
@@ -83,7 +83,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/winter/kids-snow-play.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/levi-north-slope.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/levi-piste1.webp": { full: 1600, small: [768, 1280] },
-  "/images/activities/winter/levi-south-slope.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/winter/ounasvaara-slope-april.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/ounasvaara-winter.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/pyha-summer-lift.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/reindeer-farm-inari.webp": { full: 1600, small: [768, 1280] },
@@ -101,6 +101,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/inari-summer-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/inari-winter-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/kemijarvi-lake-town.webp": { full: 1920, small: [768, 1280] },
+  "/images/heroes/levi-black-run-view.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/levi-summer-fell.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/posio-summer-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/posio-winter-tykky.webp": { full: 1920, small: [768, 1280] },
@@ -129,8 +130,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/yllas-summer-village.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-winter-road.webp": { full: 1920, small: [768, 1280] },
   "/images/hotels/boutique-hotel-rovaniemi.webp": { full: 1600, small: [768, 1280] },
-  "/images/hotels/fell-resort-levi.webp": { full: 1920, small: [768, 1280] },
-  "/images/hotels/fell-resort-village.webp": { full: 1600, small: [768, 1280] },
   "/images/hotels/glass-igloo-aurora.webp": { full: 1184, small: [768] },
   "/images/hotels/glass-igloo-interior.webp": { full: 1184, small: [768] },
   "/images/hotels/log-cabin-lakeside.webp": { full: 1600, small: [768, 1280] },

@@ -47,7 +47,7 @@ export const destinations: Destination[] = [
     bestFor: 'Skiers & active travelers',
     operators: ['Lapland Safaris', 'Wild Nordic Finland', 'Kinos Safaris', 'Levi Husky Park'],
     image: HERO.fells,
-    heroImage: HERO.fells, // fell-resort-levi — the one photo actually OF Levi
+    heroImage: HERO.fells, // levi-black-run-view: the one photo actually OF Levi (Commons, kallerna, 26.9.2026)
   },
   {
     slug: 'yllas',

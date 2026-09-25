@@ -15,7 +15,7 @@
 //   /categories/summer.webp                    (summer landscape, vertical-friendly)
 //   /hotels/glass-igloo-aurora.webp            (single igloo + aurora)
 //   /hotels/log-cabin-lakeside.webp            (red log cabin, lakeside)
-//   /hotels/fell-resort-levi.webp              (alpine ski resort)
+//   /heroes/levi-black-run-view.webp           (Levi, näkymä Black-rinteen yläpäästä)
 //   /hotels/boutique-hotel-rovaniemi.webp      (modern hotel exterior)
 //   /activities/wellness/smoke-sauna-siida-inari.webp  (savusauna, Siidan ulkomuseo, Inari)
 //   /og/og-default.webp                        (wide aurora composition for OG)
@@ -39,7 +39,7 @@ const seasonal = (winter: string, summer: string, autumn?: string): string => {
 // 🔴🔴 2026-08-23: tama lohko VAITTI ennen etta "every alias maps to a UNIQUE
 // entry ... guarantees no two surfaces share the same image at the same time".
 // Se ei pitanyt paikkaansa, ja juuri se vakuutus piilotti ongelman. Mitattuna
-// renderoidylta etusivulta: slider-03 x3, slider-05 x3, fell-resort-levi x3,
+// renderoidylta etusivulta: slider-03 x3, slider-05 x3, fell-resort-levi x3 (nyt levi-black-run-view),
 // og-default x3, ja viisi muuta x2. Aliaksia on enemman kuin kuvia, joten osa
 // niista OSOITTAA VALTTAMATTA samaan tiedostoon.
 //
@@ -71,7 +71,7 @@ export const HERO = {
   kidsSnow:         local('heroes/winter-band-snowmobile-trail.webp'),
   cabin:            local('hotels/log-cabin-lakeside.webp'),
   iceLake:          local('heroes/inari-winter-lake.webp'),
-  fells:            local('hotels/fell-resort-levi.webp'),
+  fells:            local('heroes/levi-black-run-view.webp'),
   midnightSun:      local('heroes/levi-summer-fell.webp'),          // oma: Levitunturin kesäpanoraama 20.7.2026
   // 🔴 23.9.2026: tassa oli Utsjoen savusaunan kiuas nimella "smoke-sauna-cabin-saariselka",
   // ja SAMA Commons-kuva oli laplandwellnessin saunasivulla. Kaksi vikaa: kuva ei saa
@@ -195,7 +195,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /ice climb|frozen waterfall|korouoma/i,
         imgs: [local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/ice-climbing.webp')] },
   { match: /pallas/i,                                                   img: local('activities/summer/pallas-fells.webp') },
-  { match: /urho kekkonen|kiilop/i,                                     img: local('activities/summer/ukk-reindeer-fell.webp') },
+  { match: /urho kekkonen|kiilop/i,                                     img: local('activities/summer/kiilopaa-view-east.webp') },
   { match: /pielpaj/i,                                                  img: local('heroes/inari-summer-lake.webp') },
   { match: /ounasvaara/i,                                               img: local('activities/winter/ounasvaara-winter.webp') },
   { match: /ruka ski|rukatunturi/i,                                     img: local('heroes/ruka-winter-slopes.webp') },
@@ -208,7 +208,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /\bhiking\b|\bhike\b|\btrek\b|fjell hike|fell hike|karhunkierros/i,
         imgs: [local('categories/summer.webp'), local('activities/summer/pallas-fells.webp')] },
   { match: /\bski(ing)?\b|slope|piste|biathlon|cross[- ]country|snowboard/i,
-        imgs: [local('activities/winter/levi-south-slope.webp'), local('heroes/pyha-winter-slopes.webp'), local('activities/winter/cross-country.webp'), local('activities/winter/levi-piste1.webp'), local('activities/winter/downhill-skiers.webp'), local('hotels/fell-resort-levi.webp')] },
+        imgs: [local('activities/winter/ounasvaara-slope-april.webp'), local('heroes/pyha-winter-slopes.webp'), local('activities/winter/cross-country.webp'), local('activities/winter/levi-piste1.webp'), local('activities/winter/downhill-skiers.webp'), local('heroes/levi-black-run-view.webp')] },
   // Aurora is a PRIMARY signal — must beat the generic boat/fish/berry rules below, whose
   // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
   { match: /aurora|northern light|revontul/i,
@@ -216,7 +216,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
         // toistui kolmesti. Kolme uutta Lapin revontulikuvaa (Levi, Inari) laajentaa
         // poolin viiteen. Vesa 21.9.: "joku kuva pakko olla" — toisto on parempi kuin
         // tyhja kortti, mutta oikea korjaus on lisata kuvia.
-        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-inari-juutuanvuono.webp'), local('activities/northern-lights/aurora-people.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp')] },
+        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-inari-juutuanvuono.webp'), local('activities/northern-lights/aurora-enontekio-hetta.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp')] },
   // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
   // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
   // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
@@ -389,13 +389,13 @@ export function imageForCategory(slug: string): string {
 const DEST_HERO: Record<string, string> = {
   // Kesä: oma kuva Joulupukin pajakylän aukiolta 20.7.2026. Talvi: AI kunnes Commons-kuva valittu.
   rovaniemi:  seasonal(local('heroes/rovaniemi-winter-village.webp'), local('heroes/rovaniemi-summer-santa.webp')),
-  levi:       seasonal(local('hotels/fell-resort-levi.webp'), local('heroes/levi-summer-fell.webp')),
+  levi:       seasonal(local('heroes/levi-black-run-view.webp'), local('heroes/levi-summer-fell.webp')),
   // Kesä: oma kuva Äkäslompolon yli Ylläkseltä 21.7.2026 (ennen Levin bike park -kuva = väärä paikka)
   yllas:      seasonal(local('heroes/yllas-winter-road.webp'), local('heroes/yllas-summer-village.webp')),
   // Saariselka: sama kuva molemmissa kausissa (kuten rovaniemi/pyha-luosto). Talvipaikka
   // oli savusaunakuva, joka on wellness-kategorian kuva, ja kesapaikka kajakki, joka on
   // seikkailukategorian kuva - eli kumpikin kausi oli duplikaatti etusivulla.
-  saariselka: seasonal(local('heroes/saariselka-winter.webp'), local('activities/summer/ukk-reindeer-fell.webp')),
+  saariselka: seasonal(local('heroes/saariselka-winter.webp'), local('activities/summer/kiilopaa-view-east.webp')),
   inari:      seasonal(local('heroes/inari-winter-lake.webp'), local('heroes/inari-summer-lake.webp')),
   // Ruka: kesapaikka oli porolauma, joka on elainkategorian kuva. Oma tunturikuva.
   ruka:       seasonal(local('heroes/ruka-winter-slopes.webp'), local('heroes/ruka-fell.webp')),
@@ -439,7 +439,7 @@ const FOCAL: Record<string, string> = {
   '/images/activities/fishing/fishing-ice.webp': 'center 50%',
   '/images/heroes/rovaniemi-winter-village.webp': 'center 50%',
   '/images/heroes/levi-summer-fell.webp': 'center 45%',
-  '/images/activities/summer/ukk-reindeer-fell.webp': 'center 55%',
+  '/images/activities/summer/kiilopaa-view-east.webp': 'center 55%',
   '/images/activities/culture/snowcastle-kemi.webp': 'center 55%',
   // Subject's head/helmet is near the TOP → anchor higher so it's never cropped.
   '/images/activities/summer/mtb-bikepark.webp': 'center 50%',
@@ -473,7 +473,7 @@ const FOCAL: Record<string, string> = {
   // Hikers stand on the ridge in the vertical centre.
   '/images/heroes/slider-03-summer-hike.webp': 'center 50%',
   // Fell resort village sits low → keep it visible.
-  '/images/hotels/fell-resort-levi.webp': 'center 50%',
+  '/images/heroes/levi-black-run-view.webp': 'center 50%',
   // Summer lake: paddler + sun are in the lower-mid → anchor low.
   '/images/categories/summer.webp': 'center 50%',
   '/images/heroes/ruka-fell.webp': 'center 50%',
