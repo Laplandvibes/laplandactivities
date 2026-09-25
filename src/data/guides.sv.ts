@@ -20,7 +20,7 @@ const guides: Guides = {
       seasonWinter: 'Skidsäsongen är huvudnumret: 44 nedfarter och 26 liftar, varav två gondoler, från novembermörkret till aprils långa ljusa dagar. Alpina världscupen inleder sin slalomsäsong här varje november. Norrskensfototurer, hundspannssafarier och skoterturer till en rengård fyller timmarna när liftarna står stilla.',
       seasonSummer: 'På sommaren kör gondolen upp Levi Bike Park i stället för skidåkare, och fjället öppnar sig för vandring. Golf under midnattssol är den lokala kuriositeten: utslag kring midnatt och rundan i fullt dagsljus. Vinterns 230 kilometer skidspår fungerar snöfria som vandrings- och löpleder.',
       planTitle: 'Planera en resa till Levi',
-      planGetting: 'Från Kittilä flygplats är du framme på ungefär en kvart, den kortaste flygplatstransfern av alla lapska skidorter. Byn ligger vid foten av Levitunturi och går att gå igenom, så de flesta struntar i hyrbilen om de inte planerar dagsturer till Ylläs eller åt Kittilähållet.',
+      planGetting: 'Från Kittilä flygplats är du framme på ungefär en kvart, den kortaste flygplatstransfern av alla skidorter i Lappland. Byn ligger vid foten av Levitunturi och går att gå igenom, så de flesta struntar i hyrbilen om de inte planerar dagsturer till Ylläs eller åt Kittilähållet.',
       planStay: 'Levi förtjänar mer än en helg: tre till fem nätter räcker för skidåkning, en safari och ändå en kväll på Hullu Poro. Bäddar vid backen och de högst betygsatta hundspannsturerna tar slut först under julveckan och sportlovet i mars. Liftkort och utrustningshyra ordnar du däremot lättare på plats än turerna.',
     },
     yllas: {
@@ -69,7 +69,7 @@ const guides: Guides = {
       seasonSummer: 'Sommaren tillhör älven. Torne älv är Europas största fritt strömmande laxälv, och vid Kukkolaforsen pågår det traditionella håvfisket fortfarande varje sommar. Green Zone Golf skickar dig fram och tillbaka över gränsen: fyra byten av land och tidszon på en runda, vilket bara fungerar på snöfri mark.',
       planTitle: 'Planera en resa till Torneå',
       planGetting: 'Kemi flygplats ligger ett tiotal minuter från Kemi självt, och Torneå ungefär tjugofem minuter bort, så de två städerna fungerar som en enda resa. Torneå och Haparanda är en stad i två länder: gränsen går mitt genom affärsgatan och passeras till fots.',
-      planStay: 'Det här är det lapska resmål som lättast kombineras med en shoppingdag, med IKEA Haparanda alldeles vid gränsövergången och priser värda att jämföra på båda sidor. En eller två nätter räcker för isbrytaren och SnowCastle på vintern, eller för älven och golfbanan på sommaren.',
+      planStay: 'Det här är det resmål i Lappland som lättast kombineras med en shoppingdag, med IKEA Haparanda alldeles vid gränsövergången och priser värda att jämföra på båda sidor. En eller två nätter räcker för isbrytaren och SnowCastle på vintern, eller för älven och golfbanan på sommaren.',
     },
     'pyha-luosto': {
       seasonsTitle: 'Pyhä-Luosto säsong för säsong',
