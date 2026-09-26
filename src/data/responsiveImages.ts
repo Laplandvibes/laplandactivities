@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 123
+// Kuvia joilla kopiot: 125
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -122,6 +122,8 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/slider-06-snowmobile-aurora-couple.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-07-kayak-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-08-ruska-hetta-pallas.webp": { full: 1920, small: [768, 1280] },
+  "/images/heroes/slider-09-hike-saana.webp": { full: 1920, small: [768, 1280] },
+  "/images/heroes/slider-10-husky-team.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/snowmobile-safari.webp": { full: 1280, small: [768] },
   "/images/heroes/tornio-river-dusk.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-summer-village.webp": { full: 1920, small: [768, 1280] },

@@ -14,8 +14,8 @@
  * kerrotaan: otsikon "· cropped" näkyy Tietoja-sivun kuvaluettelossa (CC BY 4.0 §3(a)(1)(B)).
  */
 export interface PhotoCredit {
-  /** 'own' = LaplandVibesin oma valokuva, 'commons' = Wikimedia Commons */
-  kind: 'own' | 'commons' | 'partner';
+  /** 'own' = LaplandVibesin oma valokuva, 'commons' = Wikimedia Commons, 'pexels' = Pexels-lisenssi */
+  kind: 'own' | 'commons' | 'partner' | 'pexels';
   author: string;
   license: string;
   licenseUrl?: string;
@@ -146,6 +146,13 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
   // kuvattu 27.9.2022. Ei ihmisia, ei kylttejä. 26.9.2026: ei enaa rajattu (oli 16:9, y=225);
   // koko kuva 4800x3200 -> 1920x1280, ankkuri images.ts FOCAL 'center 39%'.
   "/images/heroes/slider-08-ruska-hetta-pallas.webp": { kind: 'commons', author: "kallerna", license: "CC BY-SA 4.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0", pageUrl: "https://commons.wikimedia.org/wiki/File:Hetta-Pallas_6.jpg", title: "Hetta-Pallas 6.jpg", date: "2022-09-27" },
+  // 26.9.2026: etusivun kesän ja talven ENSIMMÄINEN liukukuva = sivuston jakokortin lähde, joten ei CC BY-SA
+  // (§34.2). Vaellus: Saanan polku, Kilpisjärvi 25.6.2022, vain pienennys 2642x1806 -> 1920x1312.
+  // Huskyt: Pexels 60050 (ladattu 2016, ei ihmisiä, paikaton — alt ei väitä paikkaa), 4839x3369 -> 1920x1337.
+  // Molemmat tarkistettu verkoston kaikkia kuvia vasten (64x36, lähin 30/55 > 12); Pexels 2531014 hylättiin,
+  // koska se on laplandchristmasin aktiviteettiherona (0,5).
+  "/images/heroes/slider-09-hike-saana.webp": { kind: 'commons', author: "Ninara", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File:Saana,_Kilpisj%C3%A4rvi,_Lapland_(52200490025).jpg", title: "Saana, Kilpisjärvi, Lapland (52200490025).jpg", date: "2022-06-25" },
+  "/images/heroes/slider-10-husky-team.webp": { kind: 'pexels', author: "Pixabay", license: "Pexels", licenseUrl: "https://www.pexels.com/license/", pageUrl: "https://www.pexels.com/photo/huskeys-driving-sled-through-white-snow-60050/", title: "Pexels 60050", date: "2016-03-14" },
   "/images/heroes/slider-07-kayak-lake.webp": { kind: 'commons', author: "Mangroveroots", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3AKuuvan_kanava.jpg", title: "Kuuvan kanava.jpg", date: "2013-07-16" },
   "/images/heroes/winter-band-snowmobile-trail.webp": { kind: 'commons', author: "Ximonic (Simo Räsänen)", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ASunset_from_Laukukero_in_Muonio%2C_Finland%2C_2019_January.jpg", title: "Sunset from Laukukero in Muonio, Finland, 2019 January.jpg", date: "2019-01-20" },
   "/images/heroes/yllas-winter-road.webp": { kind: 'commons', author: "Rofraja", license: "CC0", licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en", pageUrl: "https://commons.wikimedia.org/wiki/File%3AWinter_in_%C3%84k%C3%A4slompolo%2C_Lapland_(direction_south).png", title: "Winter in Äkäslompolo, Lapland (direction south).png · cropped", date: "2024-01-26" },

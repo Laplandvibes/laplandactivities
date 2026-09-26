@@ -33,12 +33,19 @@ const S = {
   reindeer:  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer sled in a snowy forest on Hietaliete island, Kemi', fallback: HERO.campfire, season: 'any' as const },
   kayak:     { src: '/images/heroes/slider-07-kayak-lake.webp', alt: 'Kuuva channel on Lake Inari in summer', fallback: HERO.snowyForest, season: 'summer' as const },
   aurora:    { src: '/images/activities/northern-lights/aurora-lake.webp', alt: 'Green northern lights over Levi fell, Kittilä', fallback: HERO.huskyAurora, season: 'winter' as const },
+  // 26.9.2026: kesän ja talven ENSIMMÄINEN ruutu on sivuston jakokortin lähde (harvest_heroes.mjs
+  // ottaa etusivun ensimmäisen kuvan heinä- ja tammikuun kellolla). Kortti on muunnelma, joten sen
+  // lähde ei saa olla CC BY-SA (lv_permanent_rules §34.2): kajakki ja Saijan huskyt ovat BY-SA.
+  // Vaellus = Ninara CC BY 2.0, huskyt = Pexels 60050 (paikaton, alt ei väitä paikkaa). Kesä alkaa yhä
+  // aktiviteetilla (Vesa 19.9.). Pexels 2531014 hylättiin: sama kuva on laplandchristmasin herona.
+  hike:      { src: '/images/heroes/slider-09-hike-saana.webp', alt: 'Hiker descending the Saana fell trail at Kilpisjärvi, Enontekiö, in June', fallback: HERO.snowyForest, season: 'summer' as const },
+  huskyTeam: { src: '/images/heroes/slider-10-husky-team.webp', alt: 'Four sled huskies in harness running along a snowy forest trail', fallback: HERO.huskyAurora, season: 'winter' as const },
 };
 
 // 19.9.2026 Vesa: ensimmäinen ruutu näytti rakennustyömaalta (Ruka Park heinäkuussa: soraa, hiekkakasa,
 // lumitykit). Kesä alkaa nyt aktiviteetilla (melonta Inarijärvellä) ja Rukan kuva on gondoli metsän yllä.
-const SUMMER_LED: Slide[] = [S.kayak, S.ruka, S.reindeer, S.snowmobile, S.husky, S.igloo];
-const WINTER_LED: Slide[] = [S.husky, S.snowmobile, S.aurora, S.reindeer, S.igloo, S.kayak];
+const SUMMER_LED: Slide[] = [S.hike, S.kayak, S.ruka, S.reindeer, S.snowmobile, S.husky, S.igloo];
+const WINTER_LED: Slide[] = [S.huskyTeam, S.snowmobile, S.aurora, S.reindeer, S.igloo, S.kayak];
 /**
  * Syksy (syys-lokakuu) on ruska-aika: maassa ei ole lunta, mutta revontulet ovat jo
  * alkaneet. Siksi kierto alkaa tunturimaisemasta ja revontulista, ei melonnasta eika

@@ -423,6 +423,10 @@ export function imageForDestination(slug: string): string {
 // horizons and most subjects framed; override per file where the subject is
 // high or low in frame. Owner finding 2026-06-26 — now a standard release gate.
 const FOCAL: Record<string, string> = {
+  // 26.9.2026 jakokorttikuvat: vaeltaja seisoo 29 % leveydestä ja 70 % korkeudesta, joten kapea
+  // puhelinkehys (≈ 32 % leveydestä) ankkuroidaan vasemmalle; huskyjen päät ovat 35–45 %:n korkeudella.
+  '/images/heroes/slider-09-hike-saana.webp': '35% 60%',
+  '/images/heroes/slider-10-husky-team.webp': 'center 45%',
   // 26.9.2026: CC BY-SA -kuvat ovat nyt RAJAAMATTOMIA (rajaus = muokattu teos, SA-velvoite).
   // Vanhat tiedostot olivat 16:9-rajauksia, joten jokaiselle laskettiin ankkuri, joka nayttaa
   // 2,5:1-kaistassa (alasivujen herot ja korttikaistat) saman alueen kuin vanha tiedosto ja sen
