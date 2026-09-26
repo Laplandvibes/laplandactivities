@@ -20,7 +20,7 @@ const guides: Guides = {
       seasonWinter: 'La temporada de esquí es lo principal: 44 pistas y 26 remontes, dos de ellos telecabinas, desde la oscuridad de noviembre hasta los largos días claros de abril. La Copa del Mundo alpina abre aquí su temporada de eslalon cada noviembre. Las salidas de fotografía de auroras, los safaris de huskies y las rutas en motonieve hasta una granja de renos llenan las horas en que los remontes están cerrados.',
       seasonSummer: 'En verano la telecabina sube al Levi Bike Park en lugar de a los esquiadores, y la fjeld se abre al senderismo. El golf bajo el sol de medianoche es la rareza local: salida cerca de la medianoche y vuelta entera a plena luz. Los 230 kilómetros de pistas de esquí de fondo del invierno sirven, sin nieve, como rutas de marcha y carrera.',
       planTitle: 'Planificar un viaje a Levi',
-      planGetting: 'Desde el aeropuerto de Kittilä llegará en unos quince minutos, el traslado más corto de todos los destinos de esquí lapones. El pueblo está al pie del Levitunturi y se recorre a pie de punta a punta, así que la mayoría prescinde del coche de alquiler salvo que planee excursiones a Ylläs o hacia Kittilä.',
+      planGetting: 'Desde el aeropuerto de Kittilä llegará en unos quince minutos, el traslado más corto de todos los destinos de esquí de Laponia. El pueblo está al pie del Levitunturi y se recorre a pie de punta a punta, así que la mayoría prescinde del coche de alquiler salvo que planee excursiones a Ylläs o hacia Kittilä.',
       planStay: 'Levi merece más que un fin de semana: de tres a cinco noches dan para esquiar, hacer un safari y aún reservar una velada en el Hullu Poro. Las camas a pie de pista y las salidas de huskies mejor valoradas se agotan primero en la semana de Navidad y en las vacaciones escolares finlandesas de marzo. Los pases de esquí y el alquiler de material, en cambio, se resuelven más fácilmente al llegar que las excursiones.',
     },
     yllas: {
@@ -61,7 +61,7 @@ const guides: Guides = {
       seasonSummer: 'Sin nieve, ese mismo cañón se convierte en una ruta de senderismo por un valle de falla empinado y boscoso, y Riisitunturi se abre como una caminata de fjeld más sencilla, con vistas largas sobre los lagos. Pentik, la fábrica de cerámica más septentrional del mundo, mantiene sus galerías y su tienda de fábrica abiertas todo el año y llena las horas cuando el tiempo cambia.',
       planTitle: 'Planificar un viaje a Posio',
       planGetting: 'Necesita coche. Posio está a unas dos horas de Rovaniemi y a una de Ruka, y encaja de forma natural como excursión de un día desde cualquiera de los dos más que como base propia. Aquí no hay una red de traslados como la de las estaciones.',
-      planStay: 'Tome Posio como el día tranquilo dentro de un viaje lapón más amplio: un parque nacional, un cañón y la fábrica de cerámica lo llenan con holgura. Los fotógrafos deberían venir entre enero y marzo por los árboles cargados de nieve. Los senderos están señalizados pero los servicios escasean, así que lleve comida y bebida.',
+      planStay: 'Tome Posio como el día tranquilo dentro de un viaje más amplio por Laponia: un parque nacional, un cañón y la fábrica de cerámica lo llenan con holgura. Los fotógrafos deberían venir entre enero y marzo por los árboles cargados de nieve. Los senderos están señalizados pero los servicios escasean, así que lleve comida y bebida.',
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda y Kemi temporada a temporada',
@@ -69,7 +69,7 @@ const guides: Guides = {
       seasonSummer: 'El verano es del río. El Tornionjoki es el mayor río salmonero de curso libre de Europa, y en los rápidos de Kukkolankoski la pesca tradicional con salabre sigue practicándose cada verano. El Green Zone Golf le hace cruzar la frontera de un lado a otro: cuatro cambios de país y de huso horario en una vuelta, algo que solo funciona con el suelo despejado.',
       planTitle: 'Planificar un viaje a Tornio',
       planGetting: 'El aeropuerto de Kemi está a unos diez minutos de la propia Kemi, y Tornio a unos veinticinco minutos, así que las dos ciudades funcionan como un solo viaje. Tornio y Haparanda son una ciudad en dos países: la frontera pasa por el medio de la calle comercial y se cruza a pie.',
-      planStay: 'Es el destino lapón más fácil de combinar con un día de compras, con IKEA Haparanda justo al lado del paso fronterizo y precios que merece la pena comparar en ambos lados. Una o dos noches bastan para el rompehielos y el SnowCastle en invierno, o para el río y el campo de golf en verano.',
+      planStay: 'Es el destino de Laponia más fácil de combinar con un día de compras, con IKEA Haparanda justo al lado del paso fronterizo y precios que merece la pena comparar en ambos lados. Una o dos noches bastan para el rompehielos y el SnowCastle en invierno, o para el río y el campo de golf en verano.',
     },
     'pyha-luosto': {
       seasonsTitle: 'Pyhä-Luosto temporada a temporada',

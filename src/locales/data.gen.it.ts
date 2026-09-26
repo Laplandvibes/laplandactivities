@@ -179,7 +179,7 @@ const d: LangData = {
     },
     "rov-snowmobile-full": {
       "title": "Spedizione in motoslitta nella natura selvaggia (giornata intera)",
-      "description": "Un viaggio in motoslitta di un'intera giornata nel profondo della natura lappone. Attraversi fiumi gelati, percorra sentieri forestali e si fermi in una baita per il pranzo.",
+      "description": "Un viaggio in motoslitta di un'intera giornata nella natura più profonda della Lapponia. Attraversi fiumi gelati, percorra sentieri forestali e si fermi in una baita per il pranzo.",
       "highlights": [
         "Spedizione di un'intera giornata",
         "Pranzo in baita",
@@ -287,10 +287,10 @@ const d: LangData = {
     },
     "rov-campfire-dinner": {
       "title": "Cena al falò in natura selvaggia",
-      "description": "Si goda una tradizionale cena lappone cotta sul fuoco aperto nella natura. Salmone alla griglia, salsiccia di renna e dolce ai frutti di bosco sotto il cielo artico.",
+      "description": "Si goda una cena tradizionale della Lapponia cotta sul fuoco aperto nella natura. Salmone alla griglia, salsiccia di renna e dolce ai frutti di bosco sotto il cielo artico.",
       "highlights": [
         "Cottura al fuoco aperto",
-        "Menù lappone",
+        "Menù tipico della Lapponia",
         "Ambientazione selvaggia"
       ],
       "duration": "3 h",
@@ -395,7 +395,7 @@ const d: LangData = {
     },
     "lev-ice-fishing": {
       "title": "Pesca sul ghiaccio su lago gelato",
-      "description": "Trapani il ghiaccio di un lago gelato e peschi persico e coregone con le tecniche tradizionali lapponi. La pesca viene cotta sul fuoco aperto.",
+      "description": "Trapani il ghiaccio di un lago gelato e peschi persico e coregone con le tecniche tradizionali della Lapponia. La pesca viene cotta sul fuoco aperto.",
       "highlights": [
         "Pesca e cottura",
         "Tecniche tradizionali",
@@ -430,7 +430,7 @@ const d: LangData = {
       "category": "Avventure estive"
     },
     "lev-kota-dinner": {
-      "title": "Cena lappone nel kammi accanto al fuoco",
+      "title": "Cena tipica della Lapponia nel kammi accanto al fuoco",
       "description": "Ceni in una tradizionale capanna di torba in stile sami (kammi) attorno a un fuoco aperto centrale. Salmone, renna e bacche selvatiche di stagione grigliati alla fiamma.",
       "highlights": [
         "Ambientazione kammi tradizionale",
@@ -551,7 +551,7 @@ const d: LangData = {
     },
     "saa-gold-panning": {
       "title": "Ricerca dell'oro a Tankavaara",
-      "description": "Cerchi oro vero al museo dell'oro della Finlandia. Impari le tecniche della corsa all'oro lappone del 1868 e tenga l'oro che trova.",
+      "description": "Cerchi oro vero al museo dell'oro della Finlandia. Impari le tecniche della corsa all'oro del 1868 in Lapponia e tenga l'oro che trova.",
       "highlights": [
         "Tenga il suo oro",
         "Museo incluso",
@@ -1015,7 +1015,7 @@ const d: LangData = {
     },
     "kem-ice-fishing": {
       "title": "Pesca sul ghiaccio sul lago Kemijärvi",
-      "description": "Pratichi un foro nel ghiaccio del lago cittadino e peschi persici con una guida locale, bevande calde comprese. La pesca sul ghiaccio di base non richiede licenza in Finlandia, e il lago comincia dalle vie della riva: pesca lappone senza trasferimenti.",
+      "description": "Pratichi un foro nel ghiaccio del lago cittadino e peschi persici con una guida locale, bevande calde comprese. La pesca sul ghiaccio di base non richiede licenza in Finlandia, e il lago comincia dalle vie della riva: pesca in Lapponia senza trasferimenti.",
       "highlights": [
         "Il lago inizia dalla riva cittadina",
         "Nessuna licenza richiesta",

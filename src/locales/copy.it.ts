@@ -336,7 +336,7 @@ const it: SectionCopy = {
   relatedSites: {
     kicker: 'Altro da #LaplandVibes',
     h2: 'Pianifichi il resto del Suo viaggio artico',
-    lead: 'Le attività sono solo metà del viaggio. Queste guide sorelle della nostra rete lappone approfondiscono il resto.',
+    lead: 'Le attività sono solo metà del viaggio. Queste guide sorelle della nostra rete dedicata alla Lapponia approfondiscono il resto.',
     links: [
       { pre: 'Voglia di slitta trainata dai cani? La nostra', anchor: 'guida dedicata ai safari in husky', post: 'confronta canili, distanze e prezzi.' },
       { pre: 'Preferisce l’acceleratore? Guardi i migliori', anchor: 'itinerari e prezzi dei safari in motoslitta', post: 'in tutta la Lapponia.' },

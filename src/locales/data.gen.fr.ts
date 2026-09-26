@@ -179,7 +179,7 @@ const d: LangData = {
     },
     "rov-snowmobile-full": {
       "title": "Expédition motoneige d'une journée en pleine nature",
-      "description": "Une virée motoneige d'une journée entière au cœur de la nature lapone. Traversez des rivières gelées, parcourez des sentiers forestiers et faites halte dans une cabane isolée pour déjeuner.",
+      "description": "Une virée motoneige d'une journée entière au cœur de la nature sauvage de Laponie. Traversez des rivières gelées, parcourez des sentiers forestiers et faites halte dans une cabane isolée pour déjeuner.",
       "highlights": [
         "Expédition d'une journée",
         "Déjeuner en cabane isolée",
@@ -287,10 +287,10 @@ const d: LangData = {
     },
     "rov-campfire-dinner": {
       "title": "Dîner au feu de camp en pleine nature",
-      "description": "Savourez un dîner lapon traditionnel cuit au feu de bois en pleine nature. Saumon grillé, saucisse de renne et dessert aux baies sauvages sous le ciel arctique.",
+      "description": "Savourez un dîner traditionnel de Laponie cuit au feu de bois en pleine nature. Saumon grillé, saucisse de renne et dessert aux baies sauvages sous le ciel arctique.",
       "highlights": [
         "Cuisine au feu de bois",
-        "Menu lapon",
+        "Menu typique de Laponie",
         "Cadre sauvage"
       ],
       "duration": "3 h",
@@ -395,7 +395,7 @@ const d: LangData = {
     },
     "lev-ice-fishing": {
       "title": "Pêche blanche sur lac gelé",
-      "description": "Percez la glace d'un lac gelé et pêchez perche et corégone selon les méthodes lapones traditionnelles. La prise est cuite au feu de bois.",
+      "description": "Percez la glace d'un lac gelé et pêchez perche et corégone selon les méthodes traditionnelles de Laponie. La prise est cuite au feu de bois.",
       "highlights": [
         "Pêche et cuisson",
         "Méthodes traditionnelles",
@@ -430,7 +430,7 @@ const d: LangData = {
       "category": "Aventures d'été"
     },
     "lev-kota-dinner": {
-      "title": "Dîner lapon en kammi au coin du feu",
+      "title": "Dîner typique de Laponie en kammi au coin du feu",
       "description": "Dînez dans une hutte de tourbe traditionnelle de style sami (kammi) autour d'un feu ouvert central. Saumon, renne et baies sauvages de saison grillés à la flamme.",
       "highlights": [
         "Cadre kammi traditionnel",
@@ -551,7 +551,7 @@ const d: LangData = {
     },
     "saa-gold-panning": {
       "title": "Orpaillage à Tankavaara",
-      "description": "Cherchez de l'or véritable au musée de l'or de Finlande. Apprenez les techniques de la ruée vers l'or lapone de 1868 et gardez l'or trouvé.",
+      "description": "Cherchez de l'or véritable au musée de l'or de Finlande. Apprenez les techniques de la ruée vers l'or de 1868 en Laponie et gardez l'or trouvé.",
       "highlights": [
         "Gardez votre or",
         "Musée inclus",
@@ -1015,7 +1015,7 @@ const d: LangData = {
     },
     "kem-ice-fishing": {
       "title": "Pêche blanche sur le lac Kemijärvi",
-      "description": "Percez votre trou dans la glace du lac de la ville et pêchez la perche avec un guide local, boissons chaudes comprises. La pêche blanche de base ne demande aucun permis en Finlande, et le lac commence au ras des rues du rivage : la pêche lapone sans temps de transfert.",
+      "description": "Percez votre trou dans la glace du lac de la ville et pêchez la perche avec un guide local, boissons chaudes comprises. La pêche blanche de base ne demande aucun permis en Finlande, et le lac commence au ras des rues du rivage : la pêche en Laponie sans temps de transfert.",
       "highlights": [
         "Le lac commence au bord de la ville",
         "Aucun permis requis",

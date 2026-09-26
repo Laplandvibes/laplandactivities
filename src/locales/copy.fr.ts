@@ -336,7 +336,7 @@ const fr: SectionCopy = {
   relatedSites: {
     kicker: 'Plus de #LaplandVibes',
     h2: 'Planifiez le reste de votre voyage arctique',
-    lead: 'Les activités ne sont que la moitié du voyage. Ces guides frères de notre réseau lapon approfondissent le reste.',
+    lead: 'Les activités ne sont que la moitié du voyage. Ces guides frères de notre réseau consacré à la Laponie approfondissent le reste.',
     links: [
       { pre: 'Envie de traîneau à chiens ? Notre', anchor: 'guide dédié aux safaris en traîneau de huskies', post: 'compare chenils, distances et prix.' },
       { pre: 'Vous préférez votre propre accélérateur, voyez les meilleurs', anchor: 'itinéraires et prix des safaris en motoneige', post: 'à travers la Laponie.' },

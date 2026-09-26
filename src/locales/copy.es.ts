@@ -269,7 +269,7 @@ const es: SectionCopy = {
   },
   summerBand: {
     eyebrow: "Temporada de verano · reserva ya",
-    h2: 'El verano lapón es el secreto mejor guardado.',
+    h2: 'El verano en Laponia es el secreto mejor guardado.',
     lead: 'El sol de medianoche nunca se pone. Los bosques se abren. Suben los salmones y los fjells se vuelven rojos con el ruska desde agosto. La mayoría de operadores tienen disponibilidad hasta junio; en julio se acaban las mejores plazas.',
     bookCta: 'Reservar actividades de verano',
     browseCta: 'Ver guía de verano',

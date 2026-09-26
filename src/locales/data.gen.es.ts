@@ -179,7 +179,7 @@ const d: LangData = {
     },
     "rov-snowmobile-full": {
       "title": "Expedición en motonieve por la naturaleza salvaje (día completo)",
-      "description": "Un viaje en motonieve de día completo en lo más profundo de la naturaleza lapona. Cruce ríos helados, recorra senderos forestales y deténgase en una cabaña salvaje para almorzar.",
+      "description": "Un viaje en motonieve de día completo en lo más profundo de la naturaleza de Laponia. Cruce ríos helados, recorra senderos forestales y deténgase en una cabaña salvaje para almorzar.",
       "highlights": [
         "Expedición de día completo",
         "Almuerzo en cabaña",
@@ -287,10 +287,10 @@ const d: LangData = {
     },
     "rov-campfire-dinner": {
       "title": "Cena junto a la hoguera en la naturaleza salvaje",
-      "description": "Disfrute de una cena lapona tradicional cocinada al fuego abierto en la naturaleza. Salmón a la parrilla, salchicha de reno y postre de frutos del bosque bajo el cielo ártico.",
+      "description": "Disfrute de una cena tradicional de Laponia cocinada al fuego abierto en la naturaleza. Salmón a la parrilla, salchicha de reno y postre de frutos del bosque bajo el cielo ártico.",
       "highlights": [
         "Cocina al fuego abierto",
-        "Menú lapón",
+        "Menú típico de Laponia",
         "Entorno salvaje"
       ],
       "duration": "3 h",
@@ -395,7 +395,7 @@ const d: LangData = {
     },
     "lev-ice-fishing": {
       "title": "Pesca en el hielo sobre lago helado",
-      "description": "Perfore el hielo de un lago helado y pesque perca y coregono con las técnicas tradicionales lapones. La captura se cocina al fuego abierto.",
+      "description": "Perfore el hielo de un lago helado y pesque perca y coregono con las técnicas tradicionales de Laponia. La captura se cocina al fuego abierto.",
       "highlights": [
         "Pesca y cocina",
         "Técnicas tradicionales",
@@ -430,7 +430,7 @@ const d: LangData = {
       "category": "Aventuras de verano"
     },
     "lev-kota-dinner": {
-      "title": "Cena lapona en kammi junto al fuego",
+      "title": "Cena típica de Laponia en kammi junto al fuego",
       "description": "Cene en una cabaña de turba tradicional de estilo sami (kammi) alrededor de un fuego abierto central. Salmón, reno y bayas silvestres de temporada asados a la llama.",
       "highlights": [
         "Entorno kammi tradicional",
@@ -551,7 +551,7 @@ const d: LangData = {
     },
     "saa-gold-panning": {
       "title": "Búsqueda de oro en Tankavaara",
-      "description": "Busque oro de verdad en el museo del oro de Finlandia. Aprenda las técnicas de la fiebre del oro lapona de 1868 y quédese con el oro que encuentre.",
+      "description": "Busque oro de verdad en el museo del oro de Finlandia. Aprenda las técnicas de la fiebre del oro de 1868 en Laponia y quédese con el oro que encuentre.",
       "highlights": [
         "Quédese con su oro",
         "Museo incluido",
@@ -1015,7 +1015,7 @@ const d: LangData = {
     },
     "kem-ice-fishing": {
       "title": "Pesca en hielo en el lago Kemijärvi",
-      "description": "Perfore un agujero en el hielo del lago de la ciudad y pesque percas con un guía local, bebidas calientes incluidas. La pesca en hielo básica no requiere licencia en Finlandia, y el lago empieza en las calles de la orilla: pesca lapona sin traslados.",
+      "description": "Perfore un agujero en el hielo del lago de la ciudad y pesque percas con un guía local, bebidas calientes incluidas. La pesca en hielo básica no requiere licencia en Finlandia, y el lago empieza en las calles de la orilla: pesca en Laponia sin traslados.",
       "highlights": [
         "El lago empieza en la orilla urbana",
         "Sin licencia",

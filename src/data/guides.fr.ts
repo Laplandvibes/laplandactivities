@@ -20,7 +20,7 @@ const guides: Guides = {
       seasonWinter: 'La saison de ski est l\'essentiel : 44 pistes et 26 remontées, dont deux télécabines, de l\'obscurité de novembre aux longues journées claires d\'avril. La Coupe du monde alpine y ouvre sa saison de slalom chaque mois de novembre. Sorties photo aurores, safaris en traîneau et virées en motoneige jusqu\'à une ferme de rennes remplissent les heures où les remontées sont fermées.',
       seasonSummer: 'L\'été, la télécabine dessert le Levi Bike Park au lieu des skieurs, et le fjäll s\'ouvre à la randonnée. Le golf sous le soleil de minuit est la curiosité locale : départ vers minuit et parcours en plein jour. Les 230 kilomètres de pistes de ski de fond de l\'hiver servent, une fois la neige partie, de sentiers de marche et de course.',
       planTitle: 'Préparer un séjour à Levi',
-      planGetting: 'Depuis l\'aéroport de Kittilä, comptez une quinzaine de minutes : c\'est le transfert le plus court de toutes les stations lapones. Le village se trouve au pied du Levitunturi et se traverse à pied, si bien que la plupart des visiteurs se passent de voiture, sauf s\'ils prévoient des excursions vers Ylläs ou du côté de Kittilä.',
+      planGetting: 'Depuis l\'aéroport de Kittilä, comptez une quinzaine de minutes : c\'est le transfert le plus court de toutes les stations de Laponie. Le village se trouve au pied du Levitunturi et se traverse à pied, si bien que la plupart des visiteurs se passent de voiture, sauf s\'ils prévoient des excursions vers Ylläs ou du côté de Kittilä.',
       planStay: 'Levi mérite plus qu\'un week-end : trois à cinq nuits permettent de skier, de faire un safari et de garder une soirée pour le Hullu Poro. Les lits au pied des pistes et les meilleurs départs traîneau partent en premier pour la semaine de Noël et les vacances scolaires de mars. Forfaits et location de matériel se règlent en revanche plus facilement sur place que les excursions.',
     },
     yllas: {
@@ -61,7 +61,7 @@ const guides: Guides = {
       seasonSummer: 'Sans neige, le même canyon devient un itinéraire de randonnée dans une vallée de faille escarpée et boisée, et Riisitunturi s\'ouvre en marche plus facile sur le fjäll, avec de longues vues sur les lacs. Pentik, la fabrique de céramique la plus septentrionale du monde, garde ses galeries et son magasin d\'usine ouverts toute l\'année et occupe les heures de mauvais temps.',
       planTitle: 'Préparer un séjour à Posio',
       planGetting: 'Il vous faut une voiture. Posio est à environ deux heures de Rovaniemi et une heure de Ruka, et se prête naturellement à une excursion depuis l\'une ou l\'autre plutôt qu\'à un séjour complet. Il n\'y a pas ici de réseau de transferts comme dans les stations.',
-      planStay: 'Traitez Posio comme la journée calme d\'un voyage lapon plus large : un parc national, un canyon et la fabrique de céramique la remplissent confortablement. Les photographes viendront entre janvier et mars pour les arbres chargés de givre. Les sentiers sont balisés mais les services sont rares : emportez de quoi manger et boire.',
+      planStay: 'Traitez Posio comme la journée calme d\'un voyage plus large en Laponie : un parc national, un canyon et la fabrique de céramique la remplissent confortablement. Les photographes viendront entre janvier et mars pour les arbres chargés de givre. Les sentiers sont balisés mais les services sont rares : emportez de quoi manger et boire.',
     },
     tornio: {
       seasonsTitle: 'Tornio, Haparanda et Kemi saison par saison',
@@ -69,7 +69,7 @@ const guides: Guides = {
       seasonSummer: 'L\'été appartient au fleuve. Le Tornionjoki est le plus grand fleuve à saumons à cours libre d\'Europe, et aux rapides de Kukkolankoski la pêche traditionnelle à l\'épuisette a toujours lieu chaque été. Le Green Zone Golf vous fait franchir la frontière plusieurs fois : quatre changements de pays et de fuseau horaire dans un parcours, ce qui ne marche que sur un sol dégagé.',
       planTitle: 'Préparer un séjour à Tornio',
       planGetting: 'L\'aéroport de Kemi est à une dizaine de minutes de Kemi même, et Tornio à environ vingt-cinq minutes : les deux villes se visitent comme un seul séjour. Tornio et Haparanda forment une ville en deux pays : la frontière passe au milieu de la rue commerçante et se franchit à pied.',
-      planStay: 'C\'est la destination lapone la plus facile à combiner avec une journée shopping, avec IKEA Haparanda juste au passage de la frontière et des prix à comparer des deux côtés. Une ou deux nuits suffisent pour le brise-glace et le SnowCastle en hiver, ou pour le fleuve et le golf en été.',
+      planStay: 'C\'est la destination de Laponie la plus facile à combiner avec une journée shopping, avec IKEA Haparanda juste au passage de la frontière et des prix à comparer des deux côtés. Une ou deux nuits suffisent pour le brise-glace et le SnowCastle en hiver, ou pour le fleuve et le golf en été.',
     },
     'pyha-luosto': {
       seasonsTitle: 'Pyhä-Luosto saison par saison',
