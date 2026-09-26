@@ -423,6 +423,41 @@ export function imageForDestination(slug: string): string {
 // horizons and most subjects framed; override per file where the subject is
 // high or low in frame. Owner finding 2026-06-26 — now a standard release gate.
 const FOCAL: Record<string, string> = {
+  // 26.9.2026: CC BY-SA -kuvat ovat nyt RAJAAMATTOMIA (rajaus = muokattu teos, SA-velvoite).
+  // Vanhat tiedostot olivat 16:9-rajauksia, joten jokaiselle laskettiin ankkuri, joka nayttaa
+  // 2,5:1-kaistassa (alasivujen herot ja korttikaistat) saman alueen kuin vanha tiedosto ja sen
+  // aiempi ankkuri. Ilman riviä oletus 35 % nayttaisi korkeammasta kuvasta liikaa taivasta.
+  // Lumilinnan 55 % pitaa lipun LUMILINNA-tekstin 16:9-kehyksen ylapuolella; Jatkankynttilan
+  // panoraamassa 80 % pitaa K-Citymarketin pylvaan ja Lapland Safarisin kyltin (vasen 0-13 %) ulkona.
+  '/images/activities/adventure/ice-climbing.webp': 'center 43%',
+  '/images/activities/adventure/kitkajoki-rapids.webp': 'center 48%',
+  '/images/activities/culture/ice-architecture.webp': 'center 43%',
+  '/images/activities/culture/santa-village-winter.webp': 'center 41%',
+  '/images/activities/fishing/fishing-kingcrab-2.webp': 'center 43%',
+  '/images/activities/fishing/fishing-kingcrab.webp': 'center 42%',
+  '/images/activities/fishing/kukkolankoski.webp': 'center 41%',
+  '/images/activities/fishing/luttojoki.webp': 'center 43%',
+  '/images/activities/food/campfire-salmon.webp': 'center 44%',
+  '/images/activities/summer/kayak-inari.webp': 'center 43%',
+  '/images/activities/summer/lake-cruise.webp': 'center 41%',
+  '/images/activities/summer/reindeer-saytsjarvi.webp': 'center 41%',
+  '/images/activities/summer/riisitunturi-tykky.webp': 'center 41%',
+  '/images/activities/winter/husky-dogs-ruka.webp': 'center 43%',
+  '/images/activities/winter/husky-kennel.webp': 'center 41%',
+  '/images/activities/winter/husky-ready-ruka.webp': 'center 43%',
+  '/images/activities/winter/husky-ride-ruka.webp': 'center 43%',
+  '/images/activities/winter/icebreaker-sampo.webp': 'center 41%',
+  '/images/activities/winter/ounasvaara-winter.webp': 'center 39%',
+  '/images/activities/winter/reindeer-farm-inari.webp': 'center 41%',
+  '/images/activities/winter/reindeer-sleds-inari.webp': 'center 41%',
+  '/images/activities/winter/sled-dogs-lapland.webp': 'center 41%',
+  '/images/activities/winter/snowmobile-kuntivaara.webp': 'center 41%',
+  '/images/activities/winter/snowmobile-river.webp': 'center 41%',
+  '/images/activities/winter/snowmobile-saariselka.webp': 'center 43%',
+  '/images/activities/winter/snowshoe-forest.webp': 'center 41%',
+  '/images/heroes/husky-sled-day.webp': 'center 41%',
+  '/images/heroes/slider-08-ruska-hetta-pallas.webp': 'center 39%',
+  '/images/hotels/boutique-hotel-rovaniemi.webp': 'center 41%',
   // 20.9.2026 (Vesa: "alasivujen herot leikattu liian mataliksi ja kuvat ei näy kuten pitää"):
   // oletus 'center 35%' näyttää maisemakuvasta taivaan. Näissä aihe on kehyksen keskellä tai
   // alempana, joten ankkuri lasketaan. Mitattu renderöidyltä hero-kaistalta.
@@ -431,13 +466,13 @@ const FOCAL: Record<string, string> = {
   // Laskijat ovat kuvan ylapuoliskossa; rajaus pitaa heidat nakyvissa matalassa herossa.
   '/images/activities/winter/skier-powder-carve.webp': 'center 40%',
   // Mokki tayttaa kehyksen; hieman alas, jottei katto leikkaudu matalassa herossa.
-  '/images/activities/wellness/wilderness-sauna-morgamoja.webp': 'center 55%',
+  '/images/activities/wellness/wilderness-sauna-morgamoja.webp': 'center 47%',
   '/images/activities/wellness/sauna-interior.webp': 'center 50%',
   '/images/activities/culture/sami-duodji.webp': 'center 50%',
   '/images/activities/summer/lapland-river.webp': 'center 50%',
   '/images/activities/food/lapland-plate.webp': 'center 50%',
   '/images/activities/fishing/fishing-ice.webp': 'center 50%',
-  '/images/heroes/rovaniemi-winter-village.webp': 'center 50%',
+  '/images/heroes/rovaniemi-winter-village.webp': '80% 50%',
   '/images/heroes/levi-summer-fell.webp': 'center 45%',
   '/images/activities/summer/kiilopaa-view-east.webp': 'center 55%',
   '/images/activities/culture/snowcastle-kemi.webp': 'center 55%',
@@ -447,10 +482,10 @@ const FOCAL: Record<string, string> = {
   '/images/activities/fishing/fishing-river.webp': 'center 50%',
   '/images/activities/fishing/fishing-ice-dusk.webp': 'center 45%',
   // Wide aurora arcs read best with the sky kept — anchor a touch low.
-  '/images/heroes/slider-01-husky-aurora.webp': 'center 55%',
+  '/images/heroes/slider-01-husky-aurora.webp': 'center 53%',
   '/images/heroes/slider-04-glass-igloo.webp': 'center 50%',
   '/images/heroes/slider-07-kayak-lake.webp': 'center 50%',
-  '/images/heroes/saariselka-winter.webp': 'center 45%',
+  '/images/heroes/saariselka-winter.webp': 'center 47%',
   '/images/heroes/inari-winter-lake.webp': 'center 50%',
   '/images/heroes/inari-summer-lake.webp': 'center 50%',
   '/images/heroes/posio-winter-tykky.webp': 'center 50%',
@@ -459,16 +494,16 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/ruka-winter-slopes.webp': 'center 50%',
   '/images/heroes/yllas-winter-road.webp': 'center 50%',
   '/images/heroes/reindeer-winter.webp': 'center 50%',
-  '/images/activities/northern-lights/aurora-lake.webp': 'center 45%',
+  '/images/activities/northern-lights/aurora-lake.webp': 'center 47%',
   '/images/activities/northern-lights/aurora-inari-juutuanvuono.webp': 'center 40%',
   '/images/activities/northern-lights/aurora-inari-bands.webp': 'center 45%',
   '/images/activities/northern-lights/aurora-levi-bands.webp': 'center 45%',
   '/images/og/og-default.webp': 'center 45%',
   // Reindeer herd walks along the lower third → keep animals in frame.
   '/images/heroes/reindeer-herd-sunset.webp': 'center 55%',
-  '/images/heroes/slider-05-reindeer-lavvu.webp': 'center 55%',
+  '/images/heroes/slider-05-reindeer-lavvu.webp': 'center 53%',
   // Snowmobile rider sits at mid-right; default centre is fine but nudge up.
-  '/images/heroes/slider-02-snowmobile-fells.webp': 'center 55%',
+  '/images/heroes/slider-02-snowmobile-fells.webp': 'center 53%',
   '/images/heroes/snowmobile-safari.webp': 'center 40%',
   // Hikers stand on the ridge in the vertical centre.
   '/images/heroes/slider-03-summer-hike.webp': 'center 50%',
@@ -485,6 +520,23 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/pyha-luosto-fells.webp': 'center 40%',
   '/images/heroes/kemijarvi-lake-town.webp': 'center 30%',
 };
+
+// 26.9.2026: nayttotason lisarajaus kohdesivun herolle, kun rajaamattoman CC BY-SA -kuvan
+// reunassa on vieraan yrityksen kyltti. Jatkankynttilan panoraamassa (3,17:1) K-Citymarketin
+// pylvas on 12,8 % ja Lapland Safarisin kyltti 6,3 % vasemmasta reunasta. Hero on
+// tyopoydalla ~3:1 (1920x648 mitattu), joten object-cover nayttaa koko leveyden eika mikaan
+// object-position piilota niita. CSS-skaalaus 1,2 oikeasta reunasta jattaa vasemman 17 %
+// kehyksen ulkopuolelle kaikilla leveyksilla. Tiedosto on yha koko valokuva: tama on
+// nayton rajaus kuten object-fit, ei muokattu teos. Puhelimessa (alle md) ei tarvita: kapea
+// kehys nayttaa 80 %:n ankkurilla vain sillan tornin ympariston.
+const HERO_FRAME: Record<string, string> = {
+  '/images/heroes/rovaniemi-winter-village.webp': 'md:origin-right md:scale-[1.2]',
+};
+
+/** Lisaluokat kohdesivun hero-kuvalle (tyhja useimmille). */
+export function heroFrameClass(src: string): string {
+  return HERO_FRAME[src] ?? '';
+}
 
 /** Safe object-position for a hero image so heads/helmets are never cropped. */
 export function focalFor(src: string): string {

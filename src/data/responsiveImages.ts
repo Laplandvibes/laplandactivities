@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 126
+// Kuvia joilla kopiot: 123
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -93,7 +93,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/winter/snowmobile-kuntivaara.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/snowmobile-river.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/snowmobile-ruka-forest.webp": { full: 1600, small: [768, 1280] },
-  "/images/activities/winter/snowmobile-ruka-lake.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/winter/snowmobile-ruka-lake.webp": { full: 1687, small: [768, 1280] },
   "/images/activities/winter/snowmobile-saariselka.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/snowshoe-forest.webp": { full: 1600, small: [768, 1280] },
   "/images/categories/summer.webp": { full: 1920, small: [768, 1280] },
@@ -106,11 +106,9 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/posio-summer-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/posio-winter-tykky.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/pyha-luosto-fells.webp": { full: 1920, small: [768, 1280] },
-  "/images/heroes/pyha-winter-slopes.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/reindeer-herd-sunset.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/reindeer-winter.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/rovaniemi-summer-santa.webp": { full: 1920, small: [768, 1280] },
-  "/images/heroes/rovaniemi-winter-village.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/ruka-fell.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/ruka-winter-slopes.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/saariselka-fell.webp": { full: 1600, small: [768, 1280] },
@@ -126,7 +124,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/slider-08-ruska-hetta-pallas.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/snowmobile-safari.webp": { full: 1280, small: [768] },
   "/images/heroes/tornio-river-dusk.webp": { full: 1920, small: [768, 1280] },
-  "/images/heroes/winter-band-snowmobile-trail.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-summer-village.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-winter-road.webp": { full: 1920, small: [768, 1280] },
   "/images/hotels/boutique-hotel-rovaniemi.webp": { full: 1600, small: [768, 1280] },

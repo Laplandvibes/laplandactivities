@@ -9,7 +9,7 @@ import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
 import AffiliateCTA from '../components/AffiliateCTA';
 import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
-import { imageForDestination, assignActivityImages, focalFor } from '../data/images';
+import { imageForDestination, assignActivityImages, focalFor, heroFrameClass } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
 import DestinationPicks from '../components/DestinationPicks';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -118,7 +118,7 @@ export default function DestinationPage() {
           src={heroImg}
           {...respImg(heroImg, 'hero')}
           alt={destination.name}
-          className="absolute inset-0 w-full h-full object-cover"
+          className={`absolute inset-0 w-full h-full object-cover ${heroFrameClass(heroImg)}`}
           style={{ objectPosition: focalFor(heroImg) }}
           loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
         />

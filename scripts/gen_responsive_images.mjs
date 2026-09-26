@@ -60,6 +60,8 @@ const WIDTHS = [768, 1280];
 const MIN_SOURCE_WIDTH = 1100;
 /** Kopio tehdään vain jos lähde on selvästi leveämpi, muuten se olisi lähes sama tiedosto. */
 const MIN_GAIN = 1.15;
+/** Tätä leveämpi kuva (leveys/korkeus) on panoraama: ei kopioita, ks. silmukka. */
+const MAX_ASPECT = 2;
 
 /** `-768.webp` on johdannainen, ei lähde — muuten seuraava ajo tekisi kopiosta kopion. */
 const DERIVATIVE_RE = new RegExp(`-(${WIDTHS.join('|')})\\.webp$`);
@@ -90,6 +92,13 @@ for (const file of sources) {
   }
   const w = meta.width || 0;
   if (w < MIN_SOURCE_WIDTH) continue;
+  // 🔴 Panoraama (≥ 2:1) ei saa kapeita kopioita (26.9.2026). CC BY-SA -kuvat ovat nyt
+  // rajaamattomia, ja kolme niistä on 2,1–3,2:1. object-cover skaalaa ne kehyksen
+  // KORKEUDEN mukaan, joten piirretty leveys on kehyksen korkeus × kuvasuhde (puhelimen
+  // herossa ~1 900 px), ei 100vw. `sizes`-rivi olettaa leveyden = ikkuna, jolloin selain
+  // valitsisi 1280×404-kopion ja venyttäisi sen 4×. Ilman kopioita `respImg()` palauttaa
+  // tyhjän ja kuva ladataan täysikokoisena. Sama havainto: laplandweddings 25.9.2026.
+  if (meta.height && w / meta.height >= MAX_ASPECT) continue;
 
   const webPath = '/' + path.relative(path.join(ROOT, 'public'), file).split(path.sep).join('/');
   const widths = [];
