@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { MapPin, Clock, Ticket, ArrowUpRight } from 'lucide-react';
-import { ACTIVITIES_PICKS, gygHref, GYG_PRICE_AS_OF } from '../shared/gyg/picks';
+import { ACTIVITIES_PICKS, gygHref, GYG_PRICE_AS_OF, localizePicks } from '../shared/gyg/picks';
 import { pickIcon } from '../lib/pickIcon';
 import { useLang } from '../i18n/useLang';
 import type { Lang } from '../i18n/useLang';
@@ -203,7 +203,9 @@ export default function GygPicks() {
   const lang = useLang();
   const t = (m: Record<string, string>): string => m[lang] ?? m.en;
   const L = COPY;
-  const rows = ACTIVITIES_PICKS;
+  // Title, place and duration in the page's language (2026-09-26). A row with no
+  // translation for this locale is dropped rather than shown in English.
+  const rows = localizePicks(ACTIVITIES_PICKS, lang);
 
   /**
    * Latautuiko GetYourGuiden widget? Jos ei, kavija ei ole antanut
@@ -272,7 +274,7 @@ export default function GygPicks() {
                 ja GetYourGuiden oma kuva kuuluu järjestäjälle. Ikoni + typografia kantavat
                 kortin, sama ratkaisu kuin kohdesivujen DestinationPicks-karusellissa.
                 Poistetut AI-kuvat: ks. src/data/gygImages.ts. */}
-            {(() => { const Icon = pickIcon(p.title); return (
+            {(() => { const Icon = pickIcon(p.source.title); return (
               <span className="mx-5 mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
                 <Icon className="h-5 w-5 text-[#F472B6]" aria-hidden="true" />
               </span>
