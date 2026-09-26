@@ -450,7 +450,7 @@ const FOCAL: Record<string, string> = {
   '/images/activities/winter/husky-kennel.webp': 'center 41%',
   '/images/activities/winter/husky-ready-ruka.webp': 'center 43%',
   '/images/activities/winter/husky-ride-ruka.webp': 'center 43%',
-  '/images/activities/winter/icebreaker-sampo.webp': 'center 41%',
+  '/images/activities/winter/icebreaker-sampo.webp': '65% 85%',
   '/images/activities/winter/ounasvaara-winter.webp': 'center 39%',
   '/images/activities/winter/reindeer-farm-inari.webp': 'center 41%',
   '/images/activities/winter/reindeer-sleds-inari.webp': 'center 41%',
