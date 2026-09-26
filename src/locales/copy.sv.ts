@@ -93,7 +93,7 @@ const sv: SectionCopy = {
     benefits: [
       { title: 'Norrskenskunskap', body: 'När säsongen är som bäst, hur du läser Kp-index och vilka månader som har mörkast himmel.' },
       { title: 'Vad som är öppet just nu', body: 'Verkliga säsongsfönster för hundspann, snöskoter och bastu.' },
-      { title: 'Lokala tips', body: 'Turen du inte hittar på partnersajterna förrän i juni.' },
+      { title: 'Lokala tips', body: 'Säsongens turer och när de går att boka.' },
     ],
     emailPlaceholder: 'Din e-postadress',
     subscribeBtn: 'Prenumerera',

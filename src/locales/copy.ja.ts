@@ -327,7 +327,7 @@ const ja: SectionCopy = {
     benefits: [
       { title: 'オーロラの基礎知識', body: 'シーズンのピークはいつか、Kp指数の読み方、そして最も暗い月はいつか。' },
       { title: '今営業中の施設', body: 'ハスキー、スノーモービル、サウナの実際の季節ウィンドウ。' },
-      { title: '地元限定のヒント', body: '6月まで提携サイトに掲載されないツアー。' },
+      { title: '地元のヒント', body: '季節のツアーと、予約が始まる時期。' },
     ],
     emailPlaceholder: 'メールアドレス',
     subscribeBtn: '購読',

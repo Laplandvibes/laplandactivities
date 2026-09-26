@@ -327,7 +327,7 @@ const ptBR: SectionCopy = {
     benefits: [
       { title: 'Aurora na prática', body: 'Quando a temporada chega ao auge, como ler o índice Kp e quais meses têm o céu mais escuro.' },
       { title: 'O que está aberto agora', body: 'Janelas sazonais reais para huskies, snowmobile e sauna.' },
-      { title: 'Dicas só de quem mora lá', body: 'O tour que você não acha nos sites parceiros até junho.' },
+      { title: 'Dicas de quem mora lá', body: 'Passeios da temporada e quando abrem as reservas.' },
     ],
     emailPlaceholder: 'Seu e-mail',
     subscribeBtn: 'Assinar',

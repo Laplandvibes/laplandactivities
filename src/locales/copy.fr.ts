@@ -307,7 +307,7 @@ const fr: SectionCopy = {
     benefits: [
       { title: 'Comprendre les aurores', body: "Quand la saison bat son plein, comment lire l'indice Kp et quels mois offrent le ciel le plus sombre." },
       { title: 'Ce qui est ouvert', body: 'Les vraies fenêtres saisonnières pour huskies, motoneiges et saunas.' },
-      { title: 'Conseils d\'initiés', body: 'Le tour introuvable sur les sites partenaires avant juin.' },
+      { title: 'Conseils d\'initiés', body: 'Les excursions de saison et quand les réserver.' },
     ],
     emailPlaceholder: 'Votre adresse e-mail', subscribeBtn: "S'abonner", subscribingBtn: 'Inscription…',
     successTitle: 'Presque fini.', successBody: 'Confirmez votre inscription depuis l\'e-mail que nous venons de vous envoyer.',

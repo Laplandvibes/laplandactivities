@@ -327,7 +327,7 @@ const zhCN: SectionCopy = {
     benefits: [
       { title: '极光季节指南', body: '极光季何时最佳、如何读懂 Kp 指数，以及哪些月份夜空最暗。' },
       { title: '当前可参加什么', body: '哈士奇、雪地摩托与桑拿的真实季节窗口。' },
-      { title: '只有本地人知道的建议', body: '六月之前合作站点上还看不到的行程。' },
+      { title: '本地人的建议', body: '当季行程，以及何时开放预订。' },
     ],
     emailPlaceholder: '您的电子邮箱',
     subscribeBtn: '订阅',

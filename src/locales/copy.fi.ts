@@ -327,7 +327,7 @@ const fi: SectionCopy = {
     benefits: [
       { title: 'Revontulikaudet', body: 'Milloin revontulikausi on parhaimmillaan, miten Kp-lukua luetaan ja mitkä kuukaudet ovat pimeimmät.' },
       { title: 'Mikä on auki nyt', body: 'Todelliset kausi-ikkunat huskysafareille, moottorikelkoille ja saunoille.' },
-      { title: 'Paikallisten vinkit', body: 'Retket joita ei löydy kumppanisivuilta kuin vasta kesäkuussa.' },
+      { title: 'Paikallisten vinkit', body: 'Kauden retket ja se, milloin niihin voi varata.' },
     ],
     emailPlaceholder: 'Sähköpostiosoitteesi',
     subscribeBtn: 'Tilaa',

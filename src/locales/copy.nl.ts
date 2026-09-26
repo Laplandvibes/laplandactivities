@@ -307,7 +307,7 @@ const nl: SectionCopy = {
     benefits: [
       { title: 'Noorderlicht-kennis', body: 'Wanneer het seizoen piekt, hoe u de Kp-index leest en welke maanden de donkerste hemel hebben.' },
       { title: 'Wat is nu open', body: 'Echte seizoensvensters voor husky\'s, sneeuwscooters en sauna\'s.' },
-      { title: 'Tips van insiders', body: 'De tour die u op de partnersites pas in juni vindt.' },
+      { title: 'Tips van insiders', body: 'Seizoenstours en vanaf wanneer u ze kunt boeken.' },
     ],
     emailPlaceholder: 'Uw e-mailadres', subscribeBtn: 'Abonneren', subscribingBtn: 'Aanmelden…',
     successTitle: 'Bijna klaar.', successBody: 'Bevestig uw aanmelding via de e-mail die we net hebben gestuurd.',

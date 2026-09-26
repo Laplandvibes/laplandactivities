@@ -307,7 +307,7 @@ const ko: SectionCopy = {
     benefits: [
       { title: '오로라 시즌 가이드', body: '시즌이 언제 절정인지, Kp 지수를 읽는 법, 그리고 어떤 달의 하늘이 가장 어두운지.' },
       { title: '지금 운영 중', body: '허스키, 스노모빌, 사우나의 실제 시즌 윈도우.' },
-      { title: '현지인만 아는 팁', body: '6월까지는 파트너 사이트에서 찾을 수 없는 투어.' },
+      { title: '현지인의 팁', body: '시즌 투어와 예약이 열리는 시기.' },
     ],
     emailPlaceholder: '이메일 주소', subscribeBtn: '구독하기', subscribingBtn: '구독 중…',
     successTitle: '거의 다 됐습니다.', successBody: '방금 보내드린 이메일에서 구독을 확인해 주세요.',

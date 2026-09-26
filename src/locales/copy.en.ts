@@ -93,7 +93,7 @@ const en: SectionCopy = {
     benefits: [
       { title: 'Aurora know-how', body: 'When the season peaks, how to read the Kp index, and which months have the darkest skies.' },
       { title: 'What is open now', body: 'Real seasonal windows for huskies, snowmobiles and saunas.' },
-      { title: 'Local-only tips', body: 'The tour you cannot find on the partner sites until June.' },
+      { title: 'Local tips', body: 'Seasonal tours and when they open for booking.' },
     ],
     emailPlaceholder: 'Your email address',
     subscribeBtn: 'Subscribe',

@@ -307,7 +307,7 @@ const it: SectionCopy = {
     benefits: [
       { title: "Capire l'aurora", body: "Quando la stagione è al culmine, come leggere l'indice Kp e quali mesi hanno i cieli più bui." },
       { title: 'Cosa è aperto ora', body: 'Vere finestre stagionali per husky, motoslitte e saune.' },
-      { title: 'Consigli da insider', body: 'Il tour che sui siti partner appare solo a giugno.' },
+      { title: 'Consigli da insider', body: 'I tour di stagione e quando aprono le prenotazioni.' },
     ],
     emailPlaceholder: 'Il Suo indirizzo e-mail', subscribeBtn: 'Iscriviti', subscribingBtn: 'Iscrizione…',
     successTitle: 'Ci siamo quasi.', successBody: 'Conferma l\'iscrizione dall\'e-mail che Le abbiamo appena inviato.',

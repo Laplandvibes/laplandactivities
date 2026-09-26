@@ -327,7 +327,7 @@ const es: SectionCopy = {
     benefits: [
       { title: 'Claves de la aurora', body: 'Cuándo alcanza su punto álgido la temporada, cómo leer el índice Kp y qué meses son los más oscuros.' },
       { title: 'Qué está abierto ahora', body: 'Ventanas estacionales reales para huskies, motonieves y saunas.' },
-      { title: 'Consejos de locales', body: 'El tour que no encontrará en los partners hasta junio.' },
+      { title: 'Consejos de locales', body: 'Tours de temporada y cuándo se pueden reservar.' },
     ],
     emailPlaceholder: 'Su correo electrónico',
     subscribeBtn: 'Suscribirse',

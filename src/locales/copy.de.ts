@@ -327,7 +327,7 @@ const de: SectionCopy = {
     benefits: [
       { title: 'Nordlicht-Wissen', body: 'Wann die Saison ihren Höhepunkt hat, wie man den Kp-Index liest und welche Monate am dunkelsten sind.' },
       { title: 'Was gerade geöffnet ist', body: 'Reale Saisonfenster für Huskys, Schneemobile und Saunas.' },
-      { title: 'Tipps von Einheimischen', body: 'Die Tour, die Sie auf den Partnerseiten erst im Juni finden.' },
+      { title: 'Tipps von Einheimischen', body: 'Saisonale Touren und ab wann sie buchbar sind.' },
     ],
     emailPlaceholder: 'Ihre E-Mail-Adresse',
     subscribeBtn: 'Abonnieren',
