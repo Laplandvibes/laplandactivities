@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import ScrollToTop from './components/ScrollToTop';
 import NewsletterPopup from './components/NewsletterPopup';
-import SharedFooter from './shared/Footer';
+import SharedFooter from './components/Footer';
 import SharedCookieBanner from './shared/CookieBanner';
 const Home = lazy(() => import('./pages/Home'))
 const DestinationsIndex = lazy(() => import('./pages/DestinationsIndex'))
