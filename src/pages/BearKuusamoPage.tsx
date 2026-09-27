@@ -114,7 +114,6 @@ export default function BearKuusamoPage() {
         <meta property="og:type" content="article" />
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDescription} />
-        <meta property="og:image" content={heroImgAbs} />
         <meta property="og:url" content={pageUrl} />
         <meta name="twitter:card" content="summary_large_image" />
         <script type="application/ld+json">{JSON.stringify(articleLd)}</script>

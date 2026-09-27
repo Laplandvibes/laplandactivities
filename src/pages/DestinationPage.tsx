@@ -98,7 +98,6 @@ export default function DestinationPage() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={destinationTitle(destination.name, lang)} />
         <meta property="og:description" content={destination.description} />
-        <meta property="og:image" content={`https://laplandactivities.fi${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'TouristDestination',

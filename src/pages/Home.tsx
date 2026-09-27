@@ -97,7 +97,6 @@ export default function Home() {
         <meta property="og:title" content={c.ogTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:url" content={URL_SEG[lang] ? `https://laplandactivities.fi/${URL_SEG[lang]}/` : 'https://laplandactivities.fi/'} />
-        <meta property="og:image" content="https://laplandactivities.fi/og-default.jpg" />
         {(Object.keys(URL_SEG) as Lang[]).map((l) => (
           <link key={l} rel="alternate" hrefLang={l} href={URL_SEG[l] ? `https://laplandactivities.fi/${URL_SEG[l]}/` : 'https://laplandactivities.fi/'} />
         ))}

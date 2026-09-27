@@ -94,7 +94,6 @@ export default function CategoryPage() {
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={categoryTitle(category.name, lang)} />
         <meta property="og:description" content={category.description} />
-        <meta property="og:image" content={`https://laplandactivities.fi${heroImg}`} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Article',
