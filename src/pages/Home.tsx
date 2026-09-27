@@ -321,7 +321,7 @@ export default function Home() {
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                   <h3 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
-                  <p className="text-arctic-cyan text-xs font-medium mt-0.5">{dest.tagline}</p>
+                  <p className="text-arctic-cyan-light text-xs font-medium mt-0.5">{dest.tagline}</p>
                   <div className="flex items-center justify-between mt-3 text-snow/80 text-xs">
                     <span>{getActivitiesByDestination(dest.slug).length} {c.activitiesShort}</span>
                     <Sparkles className="w-3.5 h-3.5 text-vibe-pink" />

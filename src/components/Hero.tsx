@@ -50,7 +50,7 @@ export default function Hero() {
             npm run build && node ../scripts/portti.mjs --site laplandactivities-new --portti heroteksti */}
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute -inset-x-16 -inset-y-16 sm:-inset-x-28 sm:-inset-y-20 -z-10"
+          className="lv-soikio-reuna pointer-events-none absolute -inset-x-16 -inset-y-16 sm:-inset-x-28 sm:-inset-y-20 -z-10"
           style={{
             background:
               // 🔴 Vesa 21.9.2026: "liian tumma tuo tekstin taustalaatikko, se saisi
@@ -66,11 +66,18 @@ export default function Hero() {
           {c.eyebrow}
         </p>
 
-        <h1 className="font-heading text-5xl sm:text-7xl md:text-8xl tracking-wider mb-4 leading-[0.95] drop-shadow-[0_0_40px_rgba(236,72,153,0.55)] [text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
-          <span className="text-vibe-pink">#</span>
-          <span className="text-snow">LAPLAND</span>
-          <span className="text-vibe-pink">ACTIVITIES</span>
-        </h1>
+        {/* Sanamerkin oma tummennus: pinkit # ja ACTIVITIES ovat sanamerkin päissä, joissa
+            tekstilohkon soikio on heikoimmillaan. Sanamerkin levyinen ja sumennettu, jottei
+            reuna lue laatikkona. Sisarelementtinä eikä h1:n sisällä: h1:n drop-shadow-suodin
+            värjäisi sen pinkiksi. */}
+        <div className="relative w-fit max-w-full mx-auto">
+          <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-8 -z-10 rounded-full bg-deep-night/50 blur-2xl" />
+          <h1 className="font-heading text-5xl sm:text-7xl md:text-8xl tracking-wider mb-4 leading-[0.95] drop-shadow-[0_0_40px_rgba(236,72,153,0.55)] [text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
+            <span className="text-vibe-pink">#</span>
+            <span className="text-snow">LAPLAND</span>
+            <span className="text-vibe-pink">ACTIVITIES</span>
+          </h1>
+        </div>
 
         <p className="text-snow/90 text-base sm:text-xl xl:text-2xl max-w-2xl xl:max-w-4xl mx-auto mb-10 leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
           {c.lead}

@@ -124,34 +124,40 @@ export default function DestinationPage() {
         <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.94) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
         <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
-            <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
-          </span>
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
-            {destination.name}
-          </h1>
-          <p className="text-vibe-pink text-lg sm:text-2xl font-semibold mt-1 mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">{destination.tagline}</p>
-          <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">{destination.description}</p>
+          {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
+              mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
+              näkyy muualla. */}
+          <div className="relative w-fit max-w-full">
+            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/45 blur-2xl" />
+            <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+              <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
+            </span>
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
+              {destination.name}
+            </h1>
+            <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">{destination.tagline}</p>
+            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">{destination.description}</p>
 
-          <div className="flex flex-wrap gap-3 mt-6">
-            <AffiliateCTA
-              partner="activities"
-              sid={`hero_${slug}_book`}
-              destination={gygSlug}
-              className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
-            >
-              <Sparkles className="w-4 h-4" />
-              {c.bookActivitiesIn.replace('{dest}', destination.name)}
-            </AffiliateCTA>
-            <AffiliateCTA
-              partner="hotels"
-              sid={`hero_${slug}_hotels`}
-              destination={hotelsQ}
-              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-snow border border-white/25 px-6 py-3 rounded-full text-sm font-semibold transition-all"
-            >
-              <Hotel className="w-4 h-4" />
-              {c.stayIn} {destIn}
-            </AffiliateCTA>
+            <div className="flex flex-wrap gap-3 mt-6">
+              <AffiliateCTA
+                partner="activities"
+                sid={`hero_${slug}_book`}
+                destination={gygSlug}
+                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+              >
+                <Sparkles className="w-4 h-4" />
+                {c.bookActivitiesIn.replace('{dest}', destination.name)}
+              </AffiliateCTA>
+              <AffiliateCTA
+                partner="hotels"
+                sid={`hero_${slug}_hotels`}
+                destination={hotelsQ}
+                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-snow border border-white/25 px-6 py-3 rounded-full text-sm font-semibold transition-all"
+              >
+                <Hotel className="w-4 h-4" />
+                {c.stayIn} {destIn}
+              </AffiliateCTA>
+            </div>
           </div>
         </div>
       </section>
@@ -402,7 +408,7 @@ export default function DestinationPage() {
                 {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten aktiviteettirivi jää sen yläpuolelle. */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 sm:p-4 sm:pb-5">
                   <h3 className="font-heading text-lg sm:text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
-                  <p className="text-snow/80 text-xs line-clamp-1">{d.tagline}</p>
+                  <p className="text-snow/90 text-xs line-clamp-1">{d.tagline}</p>
                   <div className="flex items-center gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">
                     <MapPin className="w-3 h-3" /> {getActivitiesByDestination(d.slug).length} {c.activitiesShort}
                   </div>

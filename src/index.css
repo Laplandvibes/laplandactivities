@@ -73,6 +73,10 @@
   --color-deep-night:   #0F172A;
   --color-vibe-pink:    #EC4899;
   --color-arctic-cyan:  #06B6D4;
+  /* Pieni turkoosi teksti valokuvan päällä: sama sävy kuin hubissa (cyan-300).
+     #06B6D4 tarvitsee valkoisen kuvan päällä ~85 %:n tummennuksen 4,5:1:een,
+     #67E8F9 ~70 %. */
+  --color-arctic-cyan-light: #67E8F9;
   --color-snow:         #F9FAFB;
   --color-finland-blue: #002F6C;
   --color-aurora-green: #10B981;
@@ -181,6 +185,36 @@
   /* Readable warm-white heading on dark — AA, ample weight. */
   .lv-head {
     color: #FDFEFF;
+  }
+
+  /* Tekstin tausta valokuvan päällä kortin alareunassa: tekstilohkon oma, ei koko
+     kortin. Tasainen tummennus tekstin kohdalla ja häivytys lohkon yläpehmusteessa,
+     joten lohkolla on oltava pt-14 (3.5rem). Tummennus kasvaa tekstin mukana
+     (korttikoko, 12 kieltä) ja kuva jää näkyviin tekstin yläpuolella. Mitoitus
+     kirkkaimman kuvan mukaan: valkoisen kuvan päällä 0,80 antaa #F9A8D4:lle 5,3:1,
+     #67E8F9:lle 6,6:1 ja snow/80:lle 6,5:1 (raja 4,5:1). */
+  .lv-scrim-text {
+    background-image: linear-gradient(to top,
+      rgb(15 23 42 / 0.8) 0,
+      rgb(15 23 42 / 0.8) calc(100% - 3.5rem),
+      rgb(15 23 42 / 0) 100%);
+  }
+  /* Etusivun tekstisoikion reunat häipyvät nollaan elementin rajalla: ellipsi ulottuu
+     laatikon yli, joten muuten laatikon reuna näkyy kovana viivana. Häivytysvyöhyke on
+     soikion inset (tekstilohkon ulkopuoli), joten tekstin kohdalla tummuus on ennallaan. */
+  .lv-soikio-reuna {
+    --hx: 4rem;
+    --hy: 4rem;
+    mask-image:
+      linear-gradient(to right, transparent, #000 var(--hx), #000 calc(100% - var(--hx)), transparent),
+      linear-gradient(to bottom, transparent, #000 var(--hy), #000 calc(100% - var(--hy)), transparent);
+    mask-composite: intersect;
+  }
+  @media (min-width: 640px) {
+    .lv-soikio-reuna {
+      --hx: 7rem;
+      --hy: 5rem;
+    }
   }
 }
 

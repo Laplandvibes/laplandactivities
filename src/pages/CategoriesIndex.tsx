@@ -8,6 +8,7 @@ import { imageForCategory, focalFor } from '../data/images';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import BookingCTA from '../components/BookingCTA';
 import PageBreadcrumb from '../components/PageBreadcrumb';
+import PhotoCredit from '../components/PhotoCredit';
 import TravelInsuranceNote from '../components/TravelInsuranceNote';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
@@ -47,13 +48,17 @@ export default function CategoriesIndex() {
             className="group relative block rounded-2xl overflow-hidden h-72 sm:h-96 mb-6 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
           >
             <img src={imageForCategory(hero.slug)} {...respImg(imageForCategory(hero.slug), 'hero')} alt={hero.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{ objectPosition: focalFor(imageForCategory(hero.slug)) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
-            <div className="absolute inset-0 bg-gradient-to-r from-deep-night/95 via-deep-night/40 to-transparent" />
-            <div className="absolute bottom-0 left-0 p-8 sm:p-12 max-w-xl">
+            <PhotoCredit src={imageForCategory(hero.slug)} links={false} />
+            {/* Tummennus tekstilohkon takana sumennettuna paneelina, ei koko kortin yli:
+                kuva näkyy muualla ja paneelin reuna häipyy ilman viivaa. Puhelimessa tummempi:
+                kuvan kirkkain kohta (koskivaahto) osuu rajauksessa tekstin alariville. */}
+            <div className="absolute bottom-0 left-0 p-8 sm:p-12 max-w-xl isolate">
+              <div aria-hidden="true" className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] bg-deep-night/85 sm:bg-deep-night/75 blur-2xl" />
               <h2 className="font-heading text-4xl sm:text-5xl text-snow tracking-wide mb-2 group-hover:text-vibe-pink transition-colors">{hero.name}</h2>
-              <p className="text-snow/65 text-sm sm:text-base leading-relaxed mb-3">{hero.description}</p>
+              <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-3">{hero.description}</p>
               <div className="flex items-center gap-4">
                 <span className="text-xs text-snow/75">{heroCount} {c.activitiesLabel}</span>
-                <span className="text-vibe-pink text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform">
+                <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform">
                   {c.exploreAdventures} <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
@@ -70,13 +75,14 @@ export default function CategoriesIndex() {
                   className="group relative rounded-2xl overflow-hidden h-72 sm:h-80 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
                 >
                   <img src={imageForCategory(cat.slug)} {...respImg(imageForCategory(cat.slug), 'card')} alt={cat.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
+                  {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kortin: kuva näkyy tekstin yläpuolella. */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 pt-14 lv-scrim-text">
                     <h2 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{cat.name}</h2>
                     <p className="text-snow/80 text-sm leading-relaxed mb-3 line-clamp-2 mt-1">{cat.description}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
-                      <span className="text-vibe-pink text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>

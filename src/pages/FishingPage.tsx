@@ -45,14 +45,16 @@ const OFFICIAL = {
 // Simojoki, wilderness). ss = the nearest sensible town (anchorHotelsSs forces
 // ", Finland" so the lodging partner never geocodes to the wrong country).
 // (Lodging is resolved by the Worker: Sembo for fi, Trip.com elsewhere.)
+// status = tilamerkin väri (auki vihreä, kiinni punainen, muu neutraali). Luetaan tästä
+// eikä käännetystä merkkitekstistä, jotta väri on sama kaikilla 12 kielellä.
 const RIVER_META = [
-  { href: OFFICIAL.tornioArea, ss: 'Pello', sid: 'fishing_river_tornionjoki' },
-  { href: OFFICIAL.tenoLuvat, ss: 'Nuorgam', sid: 'fishing_river_teno' },
-  { href: OFFICIAL.ounasArea, ss: 'Rovaniemi', sid: 'fishing_river_ounasjoki' },
-  { href: OFFICIAL.ivaloArea, ss: 'Inari', sid: 'fishing_river_ivalojoki' },
-  { href: OFFICIAL.simojoki, ss: 'Kemi', sid: 'fishing_river_simojoki' },
-  { href: OFFICIAL.permits, ss: 'Saariselkä', sid: 'fishing_river_wilderness' },
-];
+  { href: OFFICIAL.tornioArea, ss: 'Pello', sid: 'fishing_river_tornionjoki', status: 'open' },
+  { href: OFFICIAL.tenoLuvat, ss: 'Nuorgam', sid: 'fishing_river_teno', status: 'closed' },
+  { href: OFFICIAL.ounasArea, ss: 'Rovaniemi', sid: 'fishing_river_ounasjoki', status: 'info' },
+  { href: OFFICIAL.ivaloArea, ss: 'Inari', sid: 'fishing_river_ivalojoki', status: 'info' },
+  { href: OFFICIAL.simojoki, ss: 'Kemi', sid: 'fishing_river_simojoki', status: 'open' },
+  { href: OFFICIAL.permits, ss: 'Saariselkä', sid: 'fishing_river_wilderness', status: 'info' },
+] as const;
 
 // 2.0 (19.9.2026): jokikortin oma valokuva — järjestys = copy.fishing.rivers.cards.
 // Tornionjoki oma (Korpikoski, Pello 21.7.2026), muut Wikimedia Commons oikeasta joesta
@@ -190,32 +192,38 @@ export default function FishingPage() {
           style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.96) 0%, rgba(15,23,42,0.80) 45%, rgba(15,23,42,0.48) 100%)' }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          <p className={`${EYEBROW} mb-3`}>{c.hero.eyebrow}</p>
-          <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
-            {c.hero.title}
-          </h1>
-          <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">
-            {c.hero.sub}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3">
-            <AffiliateCTA
-              partner="activities"
-              sid="fishing_hero_cta"
-              destination="rovaniemi-l2653/great-ice-fishing-experience-in-lapland-t539112"
-              className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
-            >
-              <Fish className="w-4 h-4" />
-              {c.hero.ctaBook}
-            </AffiliateCTA>
-            <a
-              href="#licences"
-              className="inline-flex items-center justify-center gap-2 border border-snow/40 hover:border-snow text-snow px-6 py-3 rounded-full text-sm font-semibold transition-all"
-            >
-              <ScrollText className="w-4 h-4" />
-              {c.hero.ctaRules}
-            </a>
+          {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
+              mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
+              näkyy muualla. */}
+          <div className="relative w-fit max-w-full">
+            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/45 blur-2xl" />
+            <p className="text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase mb-3">{c.hero.eyebrow}</p>
+            <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
+              {c.hero.title}
+            </h1>
+            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">
+              {c.hero.sub}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <AffiliateCTA
+                partner="activities"
+                sid="fishing_hero_cta"
+                destination="rovaniemi-l2653/great-ice-fishing-experience-in-lapland-t539112"
+                className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+              >
+                <Fish className="w-4 h-4" />
+                {c.hero.ctaBook}
+              </AffiliateCTA>
+              <a
+                href="#licences"
+                className="inline-flex items-center justify-center gap-2 border border-snow/40 hover:border-snow text-snow px-6 py-3 rounded-full text-sm font-semibold transition-all"
+              >
+                <ScrollText className="w-4 h-4" />
+                {c.hero.ctaRules}
+              </a>
+            </div>
+            <p className="text-snow/70 text-xs leading-relaxed mt-5 max-w-2xl">{c.hero.trustLine}</p>
           </div>
-          <p className="text-snow/70 text-xs leading-relaxed mt-5 max-w-2xl">{c.hero.trustLine}</p>
         </div>
       </section>
 
@@ -305,13 +313,13 @@ export default function FishingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
                 const meta = RIVER_META[i] ?? RIVER_META[0];
-                const open = /open/i.test(card.badge);
-                const closed = /closed/i.test(card.badge);
-                const badgeColor = open
-                  ? 'bg-emerald-500/15 text-emerald-300 border-emerald-400/30'
-                  : closed
-                  ? 'bg-red-500/15 text-red-300 border-red-400/30'
-                  : 'bg-white/5 text-snow/75 border-white/15';
+                // Merkki on valokuvan päällä: pohja tumma ja lähes peittävä, sävy tulee
+                // tekstistä ja reunasta (valkoisen kuvan päällä kaikki kolme ≥ 5,5:1).
+                const badgeColor = meta.status === 'open'
+                  ? 'bg-emerald-950/85 text-emerald-300 border-emerald-400/40'
+                  : meta.status === 'closed'
+                  ? 'bg-red-950/85 text-red-300 border-red-400/40'
+                  : 'bg-deep-night/85 text-snow/85 border-white/20';
                 const img = RIVER_IMG[i] ?? RIVER_IMG[0];
                 return (
                   <div key={card.name} className={`${CARD} overflow-hidden flex flex-col`}>

@@ -142,22 +142,28 @@ export default function CategoryPage() {
             vahemman liiketta pyytaneet nakevat. */}
         <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
-            <category.icon className="w-7 h-7 text-vibe-pink" />
-          </div>
-          <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">{category.name}</h1>
-          <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-3 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">{category.description}</p>
+          {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
+              mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
+              näkyy muualla. */}
+          <div className="relative w-fit max-w-full">
+            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/45 blur-2xl" />
+            <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/55 backdrop-blur-sm border border-vibe-pink/40 items-center justify-center mb-4 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+              <category.icon className="w-7 h-7 text-vibe-pink" />
+            </div>
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">{category.name}</h1>
+            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-3 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">{category.description}</p>
 
-          <AffiliateCTA
-            partner="activities"
-            sid={`hero_cat_${slug}_book`}
-            destination={gygSlug}
-            query={gygQ ? { q: gygQ } : undefined}
-            className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
-          >
-            <Sparkles className="w-4 h-4" />
-            {c.bookToursPrefix} {category.name}
-          </AffiliateCTA>
+            <AffiliateCTA
+              partner="activities"
+              sid={`hero_cat_${slug}_book`}
+              destination={gygSlug}
+              query={gygQ ? { q: gygQ } : undefined}
+              className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+            >
+              <Sparkles className="w-4 h-4" />
+              {c.bookToursPrefix} {category.name}
+            </AffiliateCTA>
+          </div>
         </div>
       </section>
 

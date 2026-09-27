@@ -8,6 +8,7 @@ import { imageForDestination, focalFor } from '../data/images';
 import BookingCTA from '../components/BookingCTA';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import PageBreadcrumb from '../components/PageBreadcrumb';
+import PhotoCredit from '../components/PhotoCredit';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeDestination } from '../locales/data';
@@ -63,17 +64,18 @@ export default function DestinationsIndex() {
                   className="group relative rounded-2xl overflow-hidden h-80 sm:h-96 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
                 >
                   <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="1920" height="1080" fetchPriority="high"/>
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/40 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                  <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
+                  {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kortin: kuva näkyy tekstin yläpuolella. */}
+                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 pt-14 sm:pt-14 lv-scrim-text">
                     <div className="flex items-center gap-2 text-snow/80 text-xs mb-2">
                       <MapPin className="w-3.5 h-3.5" /> {dest.access}
                     </div>
                     <h2 className="font-heading text-3xl sm:text-4xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h2>
-                    <p className="text-arctic-cyan text-sm font-medium mb-2">{dest.tagline}</p>
-                    <p className="text-snow/65 text-sm leading-relaxed mb-3 line-clamp-2 hidden sm:block">{dest.description}</p>
+                    <p className="text-arctic-cyan-light text-sm font-medium mb-2">{dest.tagline}</p>
+                    <p className="text-snow/80 text-sm leading-relaxed mb-3 line-clamp-2 hidden sm:block">{dest.description}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
-                      <span className="text-vibe-pink text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>
@@ -93,16 +95,16 @@ export default function DestinationsIndex() {
                   className="group relative rounded-2xl overflow-hidden h-64 sm:h-72 border border-white/10 hover:border-vibe-pink/30 transition-all"
                 >
                   <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
+                  <div className="absolute bottom-0 left-0 right-0 p-5 pt-14 lv-scrim-text">
                     <div className="flex items-center gap-1 text-snow/75 text-xs mb-1">
                       <MapPin className="w-3 h-3" /> {dest.access.split('(')[0].trim()}
                     </div>
                     <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h2>
-                    <p className="text-arctic-cyan text-xs font-medium mb-2">{dest.tagline}</p>
+                    <p className="text-arctic-cyan-light text-xs font-medium mb-2">{dest.tagline}</p>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
-                      <span className="text-vibe-pink text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>

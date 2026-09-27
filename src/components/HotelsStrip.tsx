@@ -149,10 +149,11 @@ export default function HotelsStrip() {
                     tarvitsee. Yksi tasainen peite ei voi palvella molempia. */}
                 {/* (a) hyvin kevyt koko kortille: ottaa karjen pois eika peita mitaan */}
                 <div className="absolute inset-0 bg-deep-night/12" />
-                {/* (b) tekstin oma kaista: alin 60 % kortista, taysin tumma alareunassa */}
-                <div className="absolute inset-x-0 bottom-0 h-[60%] bg-gradient-to-t from-deep-night via-deep-night/88 via-38% to-transparent" />
+                {/* (b) tekstilohkon oma tausta (lv-scrim-text): kulkee tekstin korkeuden mukana,
+                    joten kapealla kortilla, jossa teksti vie yli puolet kortista, ylärivitkin
+                    ovat tummalla. Kortin korkeuteen sidottu kaista ei tee sitä. */}
                 {m.src && <PhotoCredit src={m.src} links={false} />}
-                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6">
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 pt-14 sm:pt-14 lv-scrim-text">
                   {/* YLARIVI = KOHTEEN NIMI, ei varauskanavan nimi.
                       🔴 Tassa luki aiemmin "TRIP.COM · Golden Crown Levin Iglut", ja samassa
                       kortissa kuvakuitti sanoi "Sembo". Vesa 20.9.: *"miksi täällä lukee
@@ -173,7 +174,7 @@ export default function HotelsStrip() {
                   {/* Varauskanava tassa, ei ylarivilla: nain lukija tietaa ENNEN klikkausta
                       mihin han menee, eika se sekoitu kuvakuittiin. Kumppanin nimi on
                       erisnimi, joten se ei tarvitse kaannosta 12 kielelle. */}
-                  <span className="inline-flex items-center gap-1 text-vibe-pink text-sm font-semibold group-hover:translate-x-1 transition-transform">
+                  <span className="inline-flex items-center gap-1 text-[#F9A8D4] text-sm font-semibold group-hover:translate-x-1 transition-transform">
                     {c.comparePrices}
                     {m.label ? '' : ` · ${partnerLabel}`} <ArrowRight className="w-4 h-4" />
                   </span>
