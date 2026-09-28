@@ -132,7 +132,7 @@ const guides: Guides = {
     },
     culture: {
       coversTitle: '萨米传统、圣诞老人与北极叙事',
-      covers: '这一类里有两条线索。一条是萨米文化，最好的入口是 Inari 的 Siida——设在芬兰萨米议会所在地的萨米博物馆兼自然中心，以及 Levi 的 Samiland。另一条是这片地区讲述自身的北极叙事：罗瓦涅米的圣诞老人村和 SantaPark、河畔的 Arktikum，以及那些用冰建成的场所。',
+      covers: '这一类里有两条线索。一条是萨米文化，最好的入口是 Inari 的 Siida（设在芬兰萨米议会所在地的萨米博物馆兼自然中心）以及 Levi 的 Samiland。另一条是这片地区讲述自身的北极叙事：罗瓦涅米的圣诞老人村和 SantaPark、河畔的 Arktikum，以及那些用冰建成的场所。',
       whenToGo: '博物馆全年开放，最能救回一个坏天气的白天或隆冬里短暂的下午。冰酒店和雪村只在冷的时候存在，大致从十二月到四月。Tankavaara 的淘金和 Lampivaara 的紫水晶矿两季都运作，冬天有带暖气的雪地列车通往矿场。',
       chooseTitle: '怎么挑一处文化目的地',
       choosing: '如果你要的是活着的文化而不是表演，那就从 Siida 和 Inari 一次真正的驯鹿放牧参观开始，而不是从一场演出开始。带孩子出行的话，圣诞老人村和 SantaPark 本来就是为他们建的。Arktikum 拥有全国最扎实的极光展览，在室内撑得起半天。',
