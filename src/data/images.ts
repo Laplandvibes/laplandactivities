@@ -389,7 +389,8 @@ export function imageForCategory(slug: string): string {
 // all showed the same summer photo, and Rovaniemi's summer hero was a river
 // cityscape — Rovaniemi is marketed Santa-first, always).
 const DEST_HERO: Record<string, string> = {
-  // Kesä: oma kuva Joulupukin Lahjatalosta 20.7.2026 (1.10.2026: aukiokuva 115907 jäi laplandweddingsille). Talvi: AI kunnes Commons-kuva valittu.
+  // Kesä: Commons Frbg, Christmas House 22.7.2019 (BY-SA 4.0, ei rajattu; kohdesivulla ei omaa jakokorttia). 1.10.2026: oma 115907 jäi
+  // weddingsille, ja oma pystykuva 114201 ei kestänyt 2,7:1-heroa. Talvi: AI kunnes Commons-kuva valittu.
   rovaniemi:  seasonal(local('heroes/rovaniemi-winter-village.webp'), local('heroes/rovaniemi-summer-santa.webp')),
   levi:       seasonal(local('heroes/levi-black-run-view.webp'), local('heroes/levi-summer-fell.webp')),
   // Kesä: oma kuva Äkäslompolon yli Ylläkseltä 21.7.2026 (ennen Levin bike park -kuva = väärä paikka)
@@ -519,7 +520,7 @@ const FOCAL: Record<string, string> = {
   '/images/categories/summer.webp': 'center 50%',
   '/images/heroes/ruka-fell.webp': 'center 50%',
   '/images/heroes/yllas-summer-village.webp': 'center 45%',
-  '/images/heroes/rovaniemi-summer-santa.webp': 'center 50%',
+  '/images/heroes/rovaniemi-summer-santa.webp': '60% 45%',
   '/images/heroes/tornio-river-dusk.webp': 'center 50%',
   // New destination heroes: pyha fell tops sit mid-high; kemijarvi fells sit on the horizon
   // in the upper third (open water fills the rest) → anchor upper-mid.

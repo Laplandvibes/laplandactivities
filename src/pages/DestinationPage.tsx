@@ -121,7 +121,7 @@ export default function DestinationPage() {
           style={{ objectPosition: focalFor(heroImg) }}
           loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
         />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.94) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,1) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
         <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
@@ -162,8 +162,12 @@ export default function DestinationPage() {
         </div>
       </section>
 
-      {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07) */}
-      <div className="border-b border-white/5 bg-deep-night">
+      {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07).
+          1.10.2026 (Vesa: "siirtymä hero osiosta seuraavaan osioon on jotenkin outo"): heron tummennus
+          päättyi 0,94:ään, joten kuvan alareuna jäi näkyviin kovana saumana, ja tämän kaistan border-b +
+          seuraavan osion border-t piirsivät kaksi viivaa päällekkäin. Nyt tummennus = tausta reunassa,
+          eikä viivoja: kuva liukuu murupolkuun ja aktiviteettiosioon. */}
+      <div className="bg-deep-night">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
           <Link to={to('/destinations')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
             <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
@@ -181,7 +185,7 @@ export default function DestinationPage() {
           indeksisivuilla (Lappi-taso l2652, jossa Kuusamo-tuotteet eivät listaudu). */}
 
       {/* ALL ACTIVITIES — split by season (in-season first, then the other season) */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.allActivitiesKicker}</span>

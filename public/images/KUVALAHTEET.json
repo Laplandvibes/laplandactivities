@@ -8,9 +8,9 @@
     "korvasi": "festive-forest.webp (AI, ei enaa kaytossa)"
   },
   "/images/heroes/rovaniemi-summer-santa.webp": {
-    "laji": "oma-valokuva",
-    "kohde": "Joulupukin pajakyla, Rovaniemi",
-    "lahde": "LaplandVibes 20.7.2026 (20260720_114201.jpg), Joulupukin Lahjatalo, kyltti ja liput (vaakarajaus 0,700-3000,2388). Vaihdettu 1.10.2026: 115907 (aukio) on laplandweddingsin (Vesa hyvaksyi 20.9.) ja oli myos luxuryvillasilla.",
+    "laji": "commons",
+    "kohde": "Joulupukin pajakyla, Rovaniemi (Christmas House)",
+    "lahde": "Wikimedia Commons File:Christmas House.jpg, Frbg, CC BY-SA 4.0, 22.7.2019 (sha1 0b731dcc), vain pienennys 4608x2592 -> 1920x1080. Vaihdettu 1.10.2026 ilta: oma 20260720_114201 (Lahjatalo) oli pystykuvasta leikattu kaista, josta 2,7:1-hero naytti vain katon ja katkenneen kyltin (Vesa). Sita ennen 115907 = laplandweddingsin.",
     "lisatty": "2026-10-01",
     "korvasi": "rovaniemi-winter-village.webp (AI) kesakautena"
   },
