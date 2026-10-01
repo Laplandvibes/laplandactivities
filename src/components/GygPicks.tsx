@@ -246,17 +246,23 @@ export default function GygPicks() {
 
         {/* Jarjestajien omat tuotekuvat, arvosanat ja TAMAN PAIVAN hinnat.
             `key` kielella: kielenvaihto uudelleenrakentaa widgetin. */}
-        <div
-          ref={boxRef}
-          key={`gyg-${lang}`}
-          className={blocked ? 'h-0 overflow-hidden' : 'min-h-[320px]'}
-          data-gyg-widget="activities"
-          data-gyg-partner-id="VRMKD7N"
-          data-gyg-locale-code={GYG_LOCALE[lang]}
-          data-gyg-cmp="lv_laplandactivities_home"
-          data-gyg-tour-ids={TOUR_IDS}
-          data-gyg-number-of-items="4"
-        />
+        {/* Widget valitsee sarakkeet omasta leveydestään: puhelimessa yksi (kortit
+            pinossa ~1 450 px), tabletilla kolme ja yksinäinen neljäs, ~1 100 px:stä
+            neljä. Alle xl:n laatikko on siksi neljän kortin levyinen ja rivi
+            vierittyy sivuttain, seuraava kortti näkyy reunassa; xl:stä palsta riittää. */}
+        <div className={blocked ? '' : '-mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto overscroll-x-contain xl:mx-0 xl:px-0 xl:overflow-visible'}>
+          <div
+            ref={boxRef}
+            key={`gyg-${lang}`}
+            className={blocked ? 'h-0 overflow-hidden' : 'min-h-[160px] w-[1120px] xl:w-auto'}
+            data-gyg-widget="activities"
+            data-gyg-partner-id="VRMKD7N"
+            data-gyg-locale-code={GYG_LOCALE[lang]}
+            data-gyg-cmp="lv_laplandactivities_home"
+            data-gyg-tour-ids={TOUR_IDS}
+            data-gyg-number-of-items="4"
+          />
+        </div>
 
         {/* Varapolku: nayttaa vain jos widget ei latautunut. Hinta on talloin
             katalogin hinta paivayksineen, ei tamanpaivainen. */}
@@ -267,7 +273,7 @@ export default function GygPicks() {
             href={gygHref(p, lang)}
             target="_blank"
             rel="sponsored nofollow noopener"
-            className="group flex flex-col overflow-hidden rounded-2xl border bg-white/5 border-white/10 no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#22D3EE]/50"
+            className="group flex flex-row items-center gap-3 p-4 sm:flex-col sm:items-stretch sm:gap-0 sm:p-0 overflow-hidden rounded-2xl border bg-white/5 border-white/10 no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#22D3EE]/50"
           >
             {/* 🔴 Ei kuvaa: tuotekortti on lupaus yhdestä nimetystä tuotteesta, joten
                 yleiskuva samasta lajista (§24) ja tekoälykuva ovat molemmat poissuljettuja,
@@ -275,12 +281,12 @@ export default function GygPicks() {
                 kortin, sama ratkaisu kuin kohdesivujen DestinationPicks-karusellissa.
                 Poistetut AI-kuvat: ks. src/data/gygImages.ts. */}
             {(() => { const Icon = pickIcon(p.source.title); return (
-              <span className="mx-5 mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
+              <span className="self-start sm:self-auto sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
                 <Icon className="h-5 w-5 text-[#F472B6]" aria-hidden="true" />
               </span>
             ); })()}
 
-            <div className="flex flex-1 flex-col p-5">
+            <div className="flex min-w-0 flex-1 flex-col sm:p-5">
               <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#22D3EE]">
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                 {p.place}
@@ -294,12 +300,12 @@ export default function GygPicks() {
                   live, the x-height came out smaller than the 11px legal line below
                   it. Sized to match the site's other Bebas card titles and the fake
                   bold dropped. */}
-              <h3 className="mt-2 flex-1 text-lg sm:text-xl tracking-wide leading-tight text-[#F9FAFB]">{p.title}</h3>
+              <h3 className="mt-0.5 sm:mt-2 sm:flex-1 text-lg sm:text-xl tracking-wide leading-tight text-[#F9FAFB]">{p.title}</h3>
 
               {/* Only when a real length exists — one source row carried a sales
                   badge in this field, and a badge is not a duration. */}
               {p.duration && (
-                <p className="mt-2 inline-flex items-center gap-1.5 text-sm text-white/60">
+                <p className="mt-1 sm:mt-2 inline-flex items-center gap-1.5 text-sm text-white/60">
                   <Clock className="h-3.5 w-3.5" aria-hidden="true" />
                   {p.duration}
                 </p>
@@ -313,13 +319,13 @@ export default function GygPicks() {
                   the rows we opened, but the catalogue does not record the unit
                   and some GetYourGuide products are priced per group. */}
               {p.price && (
-                <p className="mt-3 flex items-baseline gap-1.5">
+                <p className="mt-1 sm:mt-3 flex items-baseline gap-1.5">
                   <span className="text-[11px] uppercase tracking-wider text-white/60">{t(L.priceFrom)}</span>
                   <span className="text-lg font-bold text-[#F9FAFB]">{p.price}</span>
                 </p>
               )}
 
-              <span className="mt-4 inline-flex items-center justify-center gap-2 rounded-full bg-[#DB2777] px-4 py-2.5 text-sm font-bold text-white transition-opacity group-hover:opacity-90">
+              <span className="mt-4 hidden sm:inline-flex items-center justify-center gap-2 rounded-full bg-[#DB2777] px-4 py-2.5 text-sm font-bold text-white transition-opacity group-hover:opacity-90">
                 <Ticket className="h-4 w-4" aria-hidden="true" />
                 {t(L.ctaProduct)}
                 <ArrowUpRight className="h-3.5 w-3.5" aria-hidden="true" />
@@ -327,10 +333,13 @@ export default function GygPicks() {
 
               {/* Per-rivin priceAsOf voittaa katalogin päiväyksen: rivin hinta on
                   voitu lukea eri päivänä kuin katalogiajo (ks. picks.ts). */}
-              <span className="mt-2 text-center text-[11px] text-white/60">
+              <span className="mt-1 sm:mt-2 text-left sm:text-center text-[11px] text-white/60">
                 {p.price ? `${t(L.priceSource)} ${fiDate(p.priceAsOf ?? GYG_PRICE_AS_OF, lang)}` : t(L.via)}
               </span>
             </div>
+
+            {/* Puhelimessa rivillä ei ole nappia; nuoli kertoo, että linkki avaa GetYourGuiden. */}
+            <ArrowUpRight className="h-5 w-5 shrink-0 self-center text-[#22D3EE] sm:hidden" aria-hidden="true" />
           </a>
         ))}
         </div>
