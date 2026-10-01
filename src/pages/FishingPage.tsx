@@ -57,7 +57,7 @@ const RIVER_META = [
 ] as const;
 
 // 2.0 (19.9.2026): jokikortin oma valokuva — järjestys = copy.fishing.rivers.cards.
-// Tornionjoki oma (Korpikoski, Pello 21.7.2026), muut Wikimedia Commons oikeasta joesta
+// Tornionjoki Karungista (Methem, CC BY 4.0, 1.10.2026), muut Wikimedia Commons oikeasta joesta
 // (kuitit src/data/photoCredits.ts): Teno Utsjoki, Ounasjoki Rovaniemi, Ivalojoki Ivalo,
 // Simojoki Hanskankoski, Luttojoki UKK-puisto.
 const RIVER_IMG = [
@@ -191,6 +191,8 @@ export default function FishingPage() {
           className="absolute inset-0"
           style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.96) 0%, rgba(15,23,42,0.80) 45%, rgba(15,23,42,0.48) 100%)' }}
         />
+        {/* CC BY 2.5 -kuva: tekijä + lisenssi näkyviin (PhotoCredit, oikea alakulma). */}
+        <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
               mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva

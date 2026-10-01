@@ -475,7 +475,7 @@ const FOCAL: Record<string, string> = {
   '/images/activities/wellness/wilderness-sauna-morgamoja.webp': 'center 47%',
   '/images/activities/wellness/sauna-interior.webp': 'center 50%',
   '/images/activities/culture/sami-duodji.webp': 'center 50%',
-  '/images/activities/summer/lapland-river.webp': 'center 50%',
+  '/images/activities/summer/lapland-river.webp': 'center 62%',
   '/images/activities/food/lapland-plate.webp': 'center 50%',
   '/images/activities/fishing/fishing-ice.webp': 'center 50%',
   '/images/heroes/rovaniemi-winter-village.webp': '80% 50%',
@@ -484,8 +484,8 @@ const FOCAL: Record<string, string> = {
   '/images/activities/culture/snowcastle-kemi.webp': 'center 55%',
   // Subject's head/helmet is near the TOP → anchor higher so it's never cropped.
   '/images/activities/summer/mtb-bikepark.webp': 'center 50%',
-  '/images/activities/summer/salmon-fishing.webp': 'center 55%',
-  '/images/activities/fishing/fishing-river.webp': 'center 50%',
+  '/images/activities/summer/salmon-fishing.webp': '77% 50%',
+  '/images/activities/fishing/fishing-river.webp': '68% 55%',
   '/images/activities/fishing/fishing-ice-dusk.webp': 'center 45%',
   // Wide aurora arcs read best with the sky kept — anchor a touch low.
   '/images/heroes/slider-01-husky-aurora.webp': 'center 53%',
