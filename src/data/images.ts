@@ -85,7 +85,9 @@ export const HERO = {
   // Animal-experience card variety — derived from existing in-repo Drive imagery
   // (hero_01 / mkt_04), downscaled to WebP+AVIF. Feeds the reindeer/husky rotation
   // so sibling cards no longer repeat the same single image.
-  reindeerSunset:   local('heroes/reindeer-herd-sunset.webp'),  // reindeer herd, golden sunset
+  // 1.10.2026: oli oma kuva 20260721_140201 (Jänkä), saman hetken sisarruutu laplandweddingsin 140157:lle
+  // (Vesa hyvaksyi weddingsin 20.9.) => Commons: Heikki Immonen, Äkäskero 29.7.2011, CC BY 3.0, ei rajattu.
+  reindeerSunset:   local('heroes/reindeer-herd-sunset.webp'),  // reindeer bull on Äkäskero fell, July
   huskyDay:         local('heroes/husky-sled-day.webp'),        // daytime husky-sled team
   skiResortWinter:  local('heroes/pyha-winter-slopes.webp'),     // Pyhätunturi, Commons (kallerna)
   ruskaRidge:       local('activities/summer/oulanka-ruska-trail.webp'), // Commons: Karhunkierros ruskassa (Ninara CC BY 2.0)
@@ -94,7 +96,7 @@ export const HERO = {
   // 2026-08-30: both destination heroes are now REAL photos from the July 2026 road trip
   // (was Picsart AI 2026-07-24; AI originals in monorepo _reissu-2026-07/_ai-originals-backup/).
   pyhaLuosto:       local('heroes/pyha-luosto-fells.webp'),     // real: summer fell panorama from Pyhä summit, 19.7.2026
-  kemijarvi:        local('heroes/kemijarvi-lake-town.webp'),   // real: mirror-calm Kemijärvi at golden hour, 18.7.2026
+  kemijarvi:        local('heroes/kemijarvi-lake-town.webp'),   // real: Kemijärvi lake + fells on the horizon, 18.7.2026 18.57 (1.10.2026: 221602 was weddings' sister frame)
 } as const;
 
 // HERO_BRANDED — kept as alias for legacy data references
@@ -387,7 +389,7 @@ export function imageForCategory(slug: string): string {
 // all showed the same summer photo, and Rovaniemi's summer hero was a river
 // cityscape — Rovaniemi is marketed Santa-first, always).
 const DEST_HERO: Record<string, string> = {
-  // Kesä: oma kuva Joulupukin pajakylän aukiolta 20.7.2026. Talvi: AI kunnes Commons-kuva valittu.
+  // Kesä: oma kuva Joulupukin Lahjatalosta 20.7.2026 (1.10.2026: aukiokuva 115907 jäi laplandweddingsille). Talvi: AI kunnes Commons-kuva valittu.
   rovaniemi:  seasonal(local('heroes/rovaniemi-winter-village.webp'), local('heroes/rovaniemi-summer-santa.webp')),
   levi:       seasonal(local('heroes/levi-black-run-view.webp'), local('heroes/levi-summer-fell.webp')),
   // Kesä: oma kuva Äkäslompolon yli Ylläkseltä 21.7.2026 (ennen Levin bike park -kuva = väärä paikka)
@@ -503,8 +505,8 @@ const FOCAL: Record<string, string> = {
   '/images/activities/northern-lights/aurora-inari-bands.webp': 'center 45%',
   '/images/activities/northern-lights/aurora-levi-bands.webp': 'center 45%',
   '/images/og/og-default.webp': 'center 45%',
-  // Reindeer herd walks along the lower third → keep animals in frame.
-  '/images/heroes/reindeer-herd-sunset.webp': 'center 55%',
+  // Reindeer stands left of centre a little below the middle → keep it in frame.
+  '/images/heroes/reindeer-herd-sunset.webp': 'center 60%',
   '/images/heroes/slider-05-reindeer-lavvu.webp': 'center 53%',
   // Snowmobile rider sits at mid-right; default centre is fine but nudge up.
   '/images/heroes/slider-02-snowmobile-fells.webp': 'center 53%',
@@ -519,10 +521,10 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/yllas-summer-village.webp': 'center 45%',
   '/images/heroes/rovaniemi-summer-santa.webp': 'center 50%',
   '/images/heroes/tornio-river-dusk.webp': 'center 50%',
-  // New destination heroes: pyha fell tops sit mid-high; kemijarvi town+train band
-  // is in the UPPER third (frozen lake fills the lower two thirds) → anchor high.
+  // New destination heroes: pyha fell tops sit mid-high; kemijarvi fells sit on the horizon
+  // in the upper third (open water fills the rest) → anchor upper-mid.
   '/images/heroes/pyha-luosto-fells.webp': 'center 40%',
-  '/images/heroes/kemijarvi-lake-town.webp': 'center 30%',
+  '/images/heroes/kemijarvi-lake-town.webp': 'center 35%',
 };
 
 // 26.9.2026: nayttotason lisarajaus kohdesivun herolle, kun rajaamattoman CC BY-SA -kuvan
