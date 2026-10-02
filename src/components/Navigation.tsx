@@ -9,6 +9,11 @@ import EcosystemMenu from '../shared/EcosystemMenu';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
 import LanguageSwitcher from '../i18n/LanguageSwitcher';
+import type { CSSProperties } from 'react';
+
+// Sanamerkin leveys 1 px:n fontilla (Bebas Neue + tracking-wide). Puhelin- ja tablettinavissa koko lasketaan
+// tästä ja vapaasta tilasta (index.css LV-NAV-SANAMERKKI): 24 px (tabletilla 30 px), pienempi vain kun ei mahdu.
+const WM_STYLE = { '--lv-wm-k': 6.79, '--lv-wm-max-md': '30px' } as CSSProperties;
 
 /** Sama sivu loppukauttaviivasta riippumatta: sisääntulo on `/x/`, linkki voi olla `/x` (18.9.2026). */
 const samePath = (a: string, b: string) => a.replace(/\/+$/, '') === b.replace(/\/+$/, '');
@@ -73,19 +78,21 @@ export default function Navigation() {
           : 'bg-deep-night/70 backdrop-blur-sm border-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-3 sm:gap-5 shrink-0">
+      <div className="lv-navrivi max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <div className="lv-navvasen flex items-center gap-3 sm:gap-5 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="laplandactivities.fi" />
-          <Link to={to('/')} className="flex items-center min-h-11" aria-label="LaplandActivities home">
-            {/* 🔴 lg:text-2xl: 1024 px:ssä koko rivi (sanamerkki + 5 linkkiä + kielivalitsin +
-                CTA) on kortilla. 30 px:n sanamerkki työnsi "Varaa nyt" -painikkeen 9 px yli
-                palstan oikean reunan (mitattu 20.9.2026). Täysi koko palaa xl:stä ylöspäin. */}
-            <span className="font-heading tracking-wide text-2xl sm:text-3xl lg:text-2xl xl:text-3xl">
-              <span className="text-vibe-pink">#</span>
-              <span className="text-snow">LAPLAND</span>
-              <span className="text-vibe-pink">ACTIVITIES</span>
-            </span>
-          </Link>
+          <div className="lv-wm-paikka">
+            <Link to={to('/')} className="flex items-center min-h-11" aria-label="LaplandActivities home">
+              {/* 🔴 lg:text-2xl: 1024 px:ssä koko rivi (sanamerkki + 5 linkkiä + kielivalitsin +
+                  CTA) on kortilla. 30 px:n sanamerkki työnsi "Varaa nyt" -painikkeen 9 px yli
+                  palstan oikean reunan (mitattu 20.9.2026). Täysi koko palaa xl:stä ylöspäin. */}
+              <span className="lv-wm font-heading tracking-wide text-2xl sm:text-3xl lg:text-2xl xl:text-3xl" data-lv-sanamerkki="" style={WM_STYLE}>
+                <span className="text-vibe-pink">#</span>
+                <span className="text-snow">LAPLAND</span>
+                <span className="text-vibe-pink">ACTIVITIES</span>
+              </span>
+            </Link>
+          </div>
         </div>
 
         {/* Desktop nav only from lg up — at md (768-1023px) the full item row is
