@@ -78,7 +78,7 @@ export default function Navigation() {
           : 'bg-deep-night/95 backdrop-blur-md border-white/10'
       }`}
     >
-      <div className="lv-navrivi max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <div className="lv-navrivi max-w-screen-2xl mx-auto px-4 sm:px-6 xl:px-8 h-16 flex items-center justify-between">
         <div className="lv-navvasen flex items-center gap-3 sm:gap-5 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="laplandactivities.fi" />
           <div className="lv-wm-paikka">
