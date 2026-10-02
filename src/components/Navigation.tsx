@@ -75,7 +75,7 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all border-b ${
         scrolled
           ? 'bg-deep-night/95 backdrop-blur-md border-white/10 shadow-lg'
-          : 'bg-deep-night/70 backdrop-blur-sm border-transparent'
+          : 'bg-deep-night/95 backdrop-blur-md border-white/10'
       }`}
     >
       <div className="lv-navrivi max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
