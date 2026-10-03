@@ -108,7 +108,7 @@ export default function Navigation() {
         <nav aria-label="Main" className="hidden lg:flex items-center gap-2.5 xl:gap-6 ml-4 xl:ml-10" ref={dropRef}>
           <Link
             to={to('/')}
-            className={`inline-flex items-center min-h-11 text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`inline-flex items-center min-h-11 text-sm font-medium transition-colors ${samePath(pathname, to('/')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.home}
           </Link>
@@ -120,7 +120,7 @@ export default function Navigation() {
               onClick={() => setDrop(drop === 'destinations' ? null : 'destinations')}
               aria-expanded={drop === 'destinations'}
               aria-haspopup="true"
-              className={`text-sm font-medium tracking-wide transition-colors inline-flex items-center gap-1 ${pathname.includes('/destinations') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+              className={`text-sm font-medium transition-colors inline-flex items-center gap-1 ${pathname.includes('/destinations') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
             >
               {c.destinations} <ChevronDown className={`w-3.5 h-3.5 transition-transform ${drop === 'destinations' ? 'rotate-180' : ''}`} />
             </button>
@@ -152,7 +152,7 @@ export default function Navigation() {
               onClick={() => setDrop(drop === 'categories' ? null : 'categories')}
               aria-expanded={drop === 'categories'}
               aria-haspopup="true"
-              className={`text-sm font-medium tracking-wide transition-colors inline-flex items-center gap-1 ${pathname.includes('/categories') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+              className={`text-sm font-medium transition-colors inline-flex items-center gap-1 ${pathname.includes('/categories') ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
             >
               {c.categories} <ChevronDown className={`w-3.5 h-3.5 transition-transform ${drop === 'categories' ? 'rotate-180' : ''}`} />
             </button>
@@ -179,14 +179,14 @@ export default function Navigation() {
 
           <Link
             to={to('/fishing')}
-            className={`inline-flex items-center min-h-11 text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/fishing')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`inline-flex items-center min-h-11 text-sm font-medium transition-colors ${samePath(pathname, to('/fishing')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.fishing}
           </Link>
 
           <Link
             to={to('/about')}
-            className={`inline-flex items-center min-h-11 text-sm font-medium tracking-wide transition-colors ${samePath(pathname, to('/about')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
+            className={`inline-flex items-center min-h-11 text-sm font-medium transition-colors ${samePath(pathname, to('/about')) ? 'text-snow' : 'text-snow/65 hover:text-snow'}`}
           >
             {c.about}
           </Link>
