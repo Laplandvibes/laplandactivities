@@ -355,7 +355,8 @@ const CATEGORY_HERO: Record<string, string> = {
   // kategoriassa on: Kitkajoen kosket. Pyorakuva jaa kayttoon siella missa
   // pyorailyaktiviteetti oikeasti on (matchEntry: /mountain bike|mtb|cycling/).
   adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/kitkajoki-rapids.webp')),
-  animals:          seasonal(local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp')),
+  // 4.10.2026 (Vesa: talvella ei kesäkuvaa): syyskuva syys–lokakuulle, ettei kesän poro näy lokakuussa.
+  animals:          seasonal(local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp'), local('heroes/reindeer-autumn-saariselka.webp')),
   'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
   // 🔴 Oli tyhja sumuinen rinne ilman yhtaan laskijaa (Vesa 21.9.2026: "tassa voisi
   // nakya talviurheilu ... jotain kumparelaskua tms"). Nyt kumparelaskua actionilla.
@@ -368,7 +369,8 @@ const CATEGORY_HERO: Record<string, string> = {
   // 🔴 Kausikohtainen 21.9.2026: kesalla Morgamojan eramaasauna (Inari), talvella
   // LV:n OMA kuva Mustaparran saunasta (Tornio). Oma valokuva sailyy siella missa
   // se toimii, eika kesainen ulkokuva ole ruudulla tammikuussa.
-  wellness:         seasonal(local('activities/wellness/sauna-interior.webp'), local('activities/wellness/wilderness-sauna-morgamoja.webp')),
+  // 4.10.2026: syksyllä (syys–loka) sama saunan sisäkuva kuin talvella: vuodenajaton, ei kesän rantasaunaa lokakuussa.
+  wellness:         seasonal(local('activities/wellness/sauna-interior.webp'), local('activities/wellness/wilderness-sauna-morgamoja.webp'), local('activities/wellness/sauna-interior.webp')),
   culture:          local('activities/culture/sami-duodji.webp'),
   // SummerBand kayttaa categories/summer.webp:ia, joten kategoriakortti tarvitsee oman.
   summer:           local('activities/summer/lapland-river.webp'),
@@ -376,7 +378,8 @@ const CATEGORY_HERO: Record<string, string> = {
   food:             local('activities/food/lapland-plate.webp'),
   // Distinct from the /fishing GUIDE hero (salmon-fishing.webp): the category grid
   // gets its own seasonal scene — river fishing in summer, ice fishing at dusk in winter.
-  fishing:          seasonal(local('activities/fishing/fishing-ice.webp'), local('activities/fishing/fishing-river.webp')),
+  // 4.10.2026: syksyllä avovesikalastus myöhäissyksyn joella (vene, uisteluvavat, ensilumi rannalla), ei jäätä eikä kesää.
+  fishing:          seasonal(local('activities/fishing/fishing-ice.webp'), local('activities/fishing/fishing-river.webp'), local('activities/fishing/fishing-autumn-keminmaa.webp')),
 };
 
 export function imageForCategory(slug: string): string {

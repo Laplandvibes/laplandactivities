@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 125
+// Kuvia joilla kopiot: 127
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kitkajoki-rapids.webp": { full: 1600, small: [768, 1280] },
@@ -29,6 +29,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/culture/santas-little-village.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/culture/snow-village.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/culture/snowcastle-kemi.webp": { full: 1600, small: [768, 1280] },
+  "/images/activities/fishing/fishing-autumn-keminmaa.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/fishing/fishing-ice-day.webp": { full: 1400, small: [768] },
   "/images/activities/fishing/fishing-ice-dusk.webp": { full: 1400, small: [768] },
   "/images/activities/fishing/fishing-ice.webp": { full: 1400, small: [768] },
@@ -106,6 +107,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/posio-summer-lake.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/posio-winter-tykky.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/pyha-luosto-fells.webp": { full: 1920, small: [768, 1280] },
+  "/images/heroes/reindeer-autumn-saariselka.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/reindeer-herd-sunset.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/reindeer-winter.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/rovaniemi-summer-santa.webp": { full: 1920, small: [768, 1280] },
