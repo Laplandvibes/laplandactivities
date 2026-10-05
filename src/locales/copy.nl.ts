@@ -32,7 +32,7 @@ const nl: SectionCopy = {
       stories: [
         {
           title: "De ineenstorting van de Teno-zalm",
-          body: "De Teno (Tenojoki / Tana) was een van de grote Atlantische-zalmrivieren ter wereld. De bestanden liepen zo ver terug dat Finland en Noorwegen het zalmvissen op de hoofdrivier vanaf 2021 verboden, en het verbod geldt ook voor 2026 tot en met 31 december onder de Teno-visserijovereenkomst van beide landen. Vlagzalm en houting mogen met de juiste vergunning worden bevist; zalm niet.",
+          body: "De Teno (Tenojoki / Tana) was een van de grote Atlantische-zalmrivieren ter wereld. De bestanden liepen zo ver terug dat Finland en Noorwegen het zalmvissen op de hoofdrivier vanaf 2021 verboden, en het verbod geldt ook voor 2026 tot en met 31 december onder de Teno-visserijovereenkomst van beide landen. Vlagzalm en marene mogen met de juiste vergunning worden bevist; zalm niet.",
         },
         {
           title: "Roze zalm, een ongenode gast",
@@ -69,7 +69,7 @@ const nl: SectionCopy = {
         {
           name: "Teno / Tana",
           badge: "Zalm gesloten 2026",
-          body: "Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. Plan hier geen zalmreis. U kunt nog wel op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag, uitsluitend lichte vlieguitrusting, alleen verkocht via de officiële shop tenonkalaluvat.fi. Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
+          body: "Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. Plan hier geen zalmreis. U kunt nog wel op andere soorten vissen (vlagzalm, marene, forel) met de vergunning voor 'andere soorten' van 20 €/dag, uitsluitend lichte vlieguitrusting, alleen verkocht via de officiële shop tenonkalaluvat.fi. Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
           crNote: "Zalm en zeeriddervis vallen buiten de vergunning voor andere soorten. Een per ongeluk gevangen zalm terugzetten is verplicht, geen keuze.",
           officialLabel: "Vergunning: tenonkalaluvat.fi",
         },
@@ -105,7 +105,7 @@ const nl: SectionCopy = {
     },
     lakes: {
       title: "De meren",
-      body: "Het Inari-meer, met circa 1.040 km² het op twee na grootste van Finland, is de blikvanger: vlagzalm, baars en houting binnen bereik, plus de gewilde riddervis (minimaal 45 cm in Inari, en een zeldzame vangst). Het is groot, open water, dus ga met een local of een gids. Kleinere wateren zoals de Ounasjärvi en de meren rond Levi geven gemakkelijk baars, houting en vlagzalm. Basis-ijsvissen is er overal gratis; begeleide tochten worden ruim aangeboden. Minimummaten en vergunningen volgens eräluvat.fi.",
+      body: "Het Inari-meer, met circa 1.040 km² het op twee na grootste van Finland, is de blikvanger: vlagzalm, baars en marene binnen bereik, plus de gewilde riddervis (minimaal 45 cm in Inari, en een zeldzame vangst). Het is groot, open water, dus ga met een local of een gids. Kleinere wateren zoals de Ounasjärvi en de meren rond Levi geven gemakkelijk baars, marene en vlagzalm. Basis-ijsvissen is er overal gratis; begeleide tochten worden ruim aangeboden. Minimummaten en vergunningen volgens eräluvat.fi.",
     },
     tornioBox: {
       title: "Tornio-zalm 2026: voordat u uitwerpt",
@@ -125,7 +125,7 @@ const nl: SectionCopy = {
     },
     iceFishing: {
       title: "IJsvissen: de makkelijkste manier om te beginnen",
-      body: "Pilkki, één korte hengel met een jig, is het meest beginnervriendelijke vissen in Lapland: gratis, geen vergunning, elke leeftijd, op gewone meren onder het Finse algemene visrecht (volgens eräluvat.fi). De uitzonderingen zijn de stroomversnellingen van zalmrivieren, verboden gebieden en bepaalde bijzondere plekken, plus alles wat verder gaat dan één hengel (tip-ups, netten, zetlijnen), waarvoor de heffing en een vergunning nodig zijn. Beste wateren: het Inari-meer, de Ounasjärvi en de meren rond Levi voor baars, houting en vlagzalm.",
+      body: "Pilkki, één korte hengel met een jig, is het meest beginnervriendelijke vissen in Lapland: gratis, geen vergunning, elke leeftijd, op gewone meren onder het Finse algemene visrecht (volgens eräluvat.fi). De uitzonderingen zijn de stroomversnellingen van zalmrivieren, verboden gebieden en bepaalde bijzondere plekken, plus alles wat verder gaat dan één hengel (tip-ups, netten, zetlijnen), waarvoor de heffing en een vergunning nodig zijn. Beste wateren: het Inari-meer, de Ounasjärvi en de meren rond Levi voor baars, marene en vlagzalm.",
       safetyTitle: "IJsveiligheid",
       safetyBody: "Meerijs is onbetrouwbaar bij in- en uitstromen, stroomversnellingen en zones waar het waterpeil van reservoirs wordt afgelaten. Controleer de dikte, blijf van stromend water af, en neem een lokale gids mee op grote open wateren zoals Inari. Dit is veiligheidsadvies, geen regelgeving, maar de meren geven geen tweede kans.",
       cta: "Boek een begeleide ijsvistocht",
@@ -141,7 +141,7 @@ const nl: SectionCopy = {
         "Forel (vetvin intact): 50 cm ten noorden van 67°N, 60 cm tussen 64° en 67°N. Volledig beschermd in alle zeegebieden sinds 2019.",
         "Vlagzalm: 30 cm ten noorden van 67°N, 35 cm ten zuiden ervan; voorjaarssluiting 1 apr–31 mei in het binnenland ten zuiden van 67°N.",
         "Snoekbaars (kuha): 42 cm. Snoek en baars: geen nationale minimummaat.",
-        "Riddervis: 45 cm in het Inari-meer. Houting: geen nationale minimummaat.",
+        "Riddervis: 45 cm in het Inari-meer. Marene: geen nationale minimummaat.",
         "Dit zijn nationale ondergrenzen uit het Visserijbesluit (1360/2015); ELY-centra kunnen ze met ±20 % aanpassen en riviergebonden regels gaan voor, volgens eräluvat.fi en mmm.fi.",
       ],
       alwaysCheck: "Controleer altijd kalastusrajoitus.fi voor uw exacte water voordat u gaat vissen. Het toont elke beperking onder de Visserijwet, ELY-besluiten en beschermde gebieden.",
@@ -149,7 +149,7 @@ const nl: SectionCopy = {
     teno: {
       title: "De Teno, in detail",
       body: "De Teno (Tenojoki / Tana) is een Fins-Noorse grensrivier met een eigen bilateraal quotasysteem. Het vissen op Atlantische zalm is voor het seizoen 2026 verboden, van kracht tot en met 31 december onder het protocol van de Teno-visserijovereenkomst, een verbod dat sinds 2021 standhoudt en elk jaar opnieuw wordt vastgesteld. (Een verordening voor de zijrivieren van 2026, 367/2026, regelt de zijwateren vanaf 1 juni.) Status volgens valtioneuvosto.fi en tenonkalatalousalue.fi.",
-      whatYouCan: "Wat u wél kunt doen: koop de 'visvergunning voor andere soorten', 20 €/dag voor volwassenen, 10 €/dag voor onder-18, voor vlagzalm, houting en forel, uitsluitend lichte vlieguitrusting, geldig van 10 juni tot 20 augustus 2026, plus de nationale heffing. Zalm en zeeriddervis zijn uitgesloten.",
+      whatYouCan: "Wat u wél kunt doen: koop de 'visvergunning voor andere soorten', 20 €/dag voor volwassenen, 10 €/dag voor onder-18, voor vlagzalm, marene en forel, uitsluitend lichte vlieguitrusting, geldig van 10 juni tot 20 augustus 2026, plus de nationale heffing. Zalm en zeeriddervis zijn uitgesloten.",
       warnThirdParty: "Koop hem alleen bij de officiële shop, tenonkalaluvat.fi. Boek de wettelijke vergunning niet via websites van derden. Een verkeerde of ongeldige vergunning op een grensrivier betekent illegaal vissen.",
     },
     norway: {
@@ -193,7 +193,7 @@ const nl: SectionCopy = {
         },
         {
           q: "Mag ik in 2026 op zalm vissen in de Teno?",
-          a: "Nee. Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. U kunt op andere soorten vissen (vlagzalm, houting, forel) met de vergunning voor 'andere soorten' van 20 €/dag via tenonkalaluvat.fi, met uitsluiting van zalm.",
+          a: "Nee. Het vissen op Atlantische zalm in de hoofdgeul van de Teno is voor 2026 verboden, van kracht tot en met 31 december onder de Fins-Noorse Teno-overeenkomst. U kunt op andere soorten vissen (vlagzalm, marene, forel) met de vergunning voor 'andere soorten' van 20 €/dag via tenonkalaluvat.fi, met uitsluiting van zalm.",
         },
         {
           q: "Hoeveel zalm mag ik meenemen uit de Tornio?",

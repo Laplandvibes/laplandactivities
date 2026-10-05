@@ -395,7 +395,7 @@ const d: LangData = {
     },
     "lev-ice-fishing": {
       "title": "Pesca en el hielo sobre lago helado",
-      "description": "Perfore el hielo de un lago helado y pesque perca y coregono con las técnicas tradicionales de Laponia. La captura se cocina al fuego abierto.",
+      "description": "Perfore el hielo de un lago helado y pesque perca y corégono con las técnicas tradicionales de Laponia. La captura se cocina al fuego abierto.",
       "highlights": [
         "Pesca y cocina",
         "Técnicas tradicionales",
@@ -623,7 +623,7 @@ const d: LangData = {
     },
     "saa-ice-fishing": {
       "title": "Experiencia de pesca en el hielo ártico",
-      "description": "Perfore el grueso hielo de un lago helado y pesque perca y coregono con métodos tradicionales; después, entre en calor con un almuerzo junto a la hoguera en un lavvu.",
+      "description": "Perfore el grueso hielo de un lago helado y pesque perca y corégono con métodos tradicionales; después, entre en calor con un almuerzo junto a la hoguera en un lavvu.",
       "highlights": [
         "Almuerzo de pesca y cocina",
         "Métodos tradicionales",
@@ -898,11 +898,11 @@ const d: LangData = {
       "category": "Aventuras de verano"
     },
     "tor-whitefish-festival": {
-      "title": "Experiencia del coregono en Kukkolankoski",
-      "description": "Contemple la pesca tradicional con salabre en los rápidos de Kukkolankoski y luego pruebe el coregono asado a la llama, preparado de la misma manera desde hace siglos. La tradición pesquera más antigua de Finlandia.",
+      "title": "Experiencia del corégono en Kukkolankoski",
+      "description": "Contemple la pesca tradicional con salabre en los rápidos de Kukkolankoski y luego pruebe el corégono asado a la llama, preparado de la misma manera desde hace siglos. La tradición pesquera más antigua de Finlandia.",
       "highlights": [
         "Pesca con salabre",
-        "Coregono asado a la llama",
+        "Corégono asado a la llama",
         "Rápidos históricos"
       ],
       "duration": "2-3 h",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Gran experiencia de pesca en hielo",
-      "description": "Perfore su propio agujero en un lago helado cerca de Rovaniemi y pesque a jig perca y coregono con un guía experimentado. La pesca en hielo básica no necesita licencia ni edad mínima en Finlandia: es la forma más fácil de probar la pesca ártica antes de decidir si merece la pena el permiso anual para pescar con señuelo en otros lugares. Termina con un almuerzo asado a la llama.",
+      "description": "Perfore su propio agujero en un lago helado cerca de Rovaniemi y pesque a jig perca y corégono con un guía experimentado. La pesca en hielo básica no necesita licencia ni edad mínima en Finlandia: es la forma más fácil de probar la pesca ártica antes de decidir si merece la pena el permiso anual para pescar con señuelo en otros lugares. Termina con un almuerzo asado a la llama.",
       "highlights": [
         "Técnica de perforar su propio agujero",
         "Sin licencia para la pesca en hielo básica",
@@ -935,11 +935,11 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Pesca en hielo ártica en grupo reducido",
-      "description": "Una versión con grupo limitado de la salida de pesca en hielo, con más asesoramiento individual sobre la técnica que en los tours más grandes. Pesque perca y coregono a través del hielo en un lago tranquilo y llévese a casa solo lo que piense comer: la pesca pilkki siempre ha sido a pequeña escala, y por eso los lagos de Laponia se mantienen sanos.",
+      "description": "Una versión con grupo limitado de la salida de pesca en hielo, con más asesoramiento individual sobre la técnica que en los tours más grandes. Pesque perca y corégono a través del hielo en un lago tranquilo y llévese a casa solo lo que piense comer: la pesca pilkki siempre ha sido a pequeña escala, y por eso los lagos de Laponia se mantienen sanos.",
       "highlights": [
         "Grupo reducido y limitado",
         "Más atención individual del guía",
-        "Perca y coregono a través del hielo"
+        "Perca y corégono a través del hielo"
       ],
       "duration": "3 h",
       "difficulty": "Fácil",

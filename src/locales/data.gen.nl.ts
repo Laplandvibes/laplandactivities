@@ -395,7 +395,7 @@ const d: LangData = {
     },
     "lev-ice-fishing": {
       "title": "IJsvissen op bevroren meer",
-      "description": "Boor door het ijs van een bevroren meer en vis op baars en houting met traditionele Laplandse technieken. De vangst wordt boven open vuur bereid.",
+      "description": "Boor door het ijs van een bevroren meer en vis op baars en marene met traditionele Laplandse technieken. De vangst wordt boven open vuur bereid.",
       "highlights": [
         "Vangen en bereiden",
         "Traditionele methoden",
@@ -623,7 +623,7 @@ const d: LangData = {
     },
     "saa-ice-fishing": {
       "title": "Arctisch ijsvissen",
-      "description": "Boor door dik ijs op een bevroren meer en vis op baars en houting met traditionele methoden. Daarna warmt u op met een kampvuurlunch in een lavvu.",
+      "description": "Boor door dik ijs op een bevroren meer en vis op baars en marene met traditionele methoden. Daarna warmt u op met een kampvuurlunch in een lavvu.",
       "highlights": [
         "Vangen en bereiden lunch",
         "Traditionele methoden",
@@ -898,11 +898,11 @@ const d: LangData = {
       "category": "Zomeravontuur"
     },
     "tor-whitefish-festival": {
-      "title": "Kukkolankoski houting-ervaring",
-      "description": "Kijk naar traditionele schepnetvisserij bij de stroomversnellingen van Kukkolankoski en proef daarna op vlam gegrilde houting die al eeuwen op dezelfde manier wordt bereid. De oudste visserijtraditie van Finland.",
+      "title": "Beleef de marene bij Kukkolankoski",
+      "description": "Kijk naar traditionele schepnetvisserij bij de stroomversnellingen van Kukkolankoski en proef daarna op vlam gegrilde marene die al eeuwen op dezelfde manier wordt bereid. De oudste visserijtraditie van Finland.",
       "highlights": [
         "Traditionele schepnetvisserij",
-        "Op vlam gegrilde houting",
+        "Op vlam gegrilde marene",
         "Historische stroomversnellingen"
       ],
       "duration": "2-3 uur",
@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "act-ice-fishing-great": {
       "title": "Geweldige ijsviservaring",
-      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en houting met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd. Het is de makkelijkste manier om arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
+      "description": "Boor uw eigen wak in een bevroren meer bij Rovaniemi en jig op baars en marene met een ervaren gids. Basis-ijsvissen vereist in Finland geen vergunning en geen minimumleeftijd. Het is de makkelijkste manier om arctisch vissen te proberen voordat u beslist of de jaarvergunning voor kunstaasvissen elders de moeite waard is. Eindigt met een boven vuur gegrilde lunch.",
       "highlights": [
         "Techniek: boor uw eigen wak",
         "Geen vergunning nodig voor basis-ijsvissen",
@@ -935,11 +935,11 @@ const d: LangData = {
     },
     "act-ice-fishing-smallgroup": {
       "title": "Arctisch ijsvissen in kleine groep",
-      "description": "Een versie van de ijsvistocht met een beperkte groep, met meer persoonlijke begeleiding op techniek dan de grotere tours. Vis op baars en houting door het ijs op een rustig meer, en neem alleen mee wat u van plan bent te eten. Pilkki-vissen is altijd kleinschalig geweest, en juist daarom blijven de meren van Lapland gezond.",
+      "description": "Een versie van de ijsvistocht met een beperkte groep, met meer persoonlijke begeleiding op techniek dan de grotere tours. Vis op baars en marene door het ijs op een rustig meer, en neem alleen mee wat u van plan bent te eten. Pilkki-vissen is altijd kleinschalig geweest, en juist daarom blijven de meren van Lapland gezond.",
       "highlights": [
         "Beperkte kleine groepsgrootte",
         "Meer individuele aandacht van de gids",
-        "Baars en houting door het ijs"
+        "Baars en marene door het ijs"
       ],
       "duration": "3 uur",
       "difficulty": "Makkelijk",

@@ -32,7 +32,7 @@ const ptBR: SectionCopy = {
       stories: [
         {
           title: "O colapso do salmão do Teno",
-          body: "O Teno (Tenojoki / Tana) foi um dos grandes rios de salmão-do-atlântico do mundo. Seus estoques caíram tanto que a Finlândia e a Noruega proibiram a pesca de salmão no rio principal a partir de 2021, e a proibição continua valendo para 2026 até 31 de dezembro sob o acordo de pesca do Teno entre os dois países. O tímalo e o corégono podem ser pescados com a licença certa; o salmão, não.",
+          body: "O Teno (Tenojoki / Tana) foi um dos grandes rios de salmão-do-atlântico do mundo. Seus estoques caíram tanto que a Finlândia e a Noruega proibiram a pesca de salmão no rio principal a partir de 2021, e a proibição continua valendo para 2026 até 31 de dezembro sob o acordo de pesca do Teno entre os dois países. O tímalo e o coregono podem ser pescados com a licença certa; o salmão, não.",
         },
         {
           title: "Salmão-rosa, um convidado indesejado",
@@ -69,7 +69,7 @@ const ptBR: SectionCopy = {
         {
           name: "Teno / Tana",
           badge: "Salmão fechado 2026",
-          body: "A pesca de salmão-do-atlântico no canal principal do Teno está proibida em 2026, em vigor até 31 de dezembro sob o acordo do Teno entre Finlândia e Noruega. Não planeje uma viagem de salmão aqui. Você ainda pode pescar outras espécies (tímalo, corégono, truta) com a licença de 'outras espécies' de 20 €/dia, apenas equipamento leve de mosca, vendida somente pela loja oficial tenonkalaluvat.fi. Status conforme valtioneuvosto.fi e tenonkalatalousalue.fi.",
+          body: "A pesca de salmão-do-atlântico no canal principal do Teno está proibida em 2026, em vigor até 31 de dezembro sob o acordo do Teno entre Finlândia e Noruega. Não planeje uma viagem de salmão aqui. Você ainda pode pescar outras espécies (tímalo, coregono, truta) com a licença de 'outras espécies' de 20 €/dia, apenas equipamento leve de mosca, vendida somente pela loja oficial tenonkalaluvat.fi. Status conforme valtioneuvosto.fi e tenonkalatalousalue.fi.",
           crNote: "Salmão e salvelino-marinho ficam de fora da licença de outras espécies. Soltar um salmão fisgado por acaso é obrigatório, não uma escolha.",
           officialLabel: "Licença: tenonkalaluvat.fi",
         },
@@ -105,7 +105,7 @@ const ptBR: SectionCopy = {
     },
     lakes: {
       title: "Os lagos",
-      body: "O Lago Inari, o terceiro maior da Finlândia, com cerca de 1.040 km², é o destaque: tímalo, perca e corégono ao alcance, além do cobiçado salvelino-ártico (mínimo de 45 cm em Inari, e uma captura rara). É água grande e exposta, então vá com um local ou um guia. Águas menores como o Ounasjärvi e os lagos da região de Levi rendem perca, corégono e tímalo com facilidade. A pesca no gelo básica em todos eles é gratuita; passeios com guia são vendidos amplamente. Mínimos e licenças conforme eräluvat.fi.",
+      body: "O Lago Inari, o terceiro maior da Finlândia, com cerca de 1.040 km², é o destaque: tímalo, perca e coregono ao alcance, além do cobiçado salvelino-ártico (mínimo de 45 cm em Inari, e uma captura rara). É água grande e exposta, então vá com um local ou um guia. Águas menores como o Ounasjärvi e os lagos da região de Levi rendem perca, coregono e tímalo com facilidade. A pesca no gelo básica em todos eles é gratuita; passeios com guia são vendidos amplamente. Mínimos e licenças conforme eräluvat.fi.",
     },
     tornioBox: {
       title: "Salmão do Tornio 2026: antes de lançar",
@@ -125,7 +125,7 @@ const ptBR: SectionCopy = {
     },
     iceFishing: {
       title: "Pesca no gelo: o jeito mais fácil de começar",
-      body: "Pilkki, uma vara curta e uma isca de jig, é a pesca mais amigável para iniciantes na Lapônia: gratuita, sem licença, qualquer idade, em lagos comuns sob o direito geral de pesca da Finlândia (conforme eräluvat.fi). As exceções são as corredeiras de rios de salmão, áreas proibidas e certos locais especiais, além de qualquer coisa além de uma única vara (boias de fundo, redes, espinhéis), que exige a taxa e uma licença. Melhores águas: o Lago Inari, o Ounasjärvi e os lagos da região de Levi para perca, corégono e tímalo.",
+      body: "Pilkki, uma vara curta e uma isca de jig, é a pesca mais amigável para iniciantes na Lapônia: gratuita, sem licença, qualquer idade, em lagos comuns sob o direito geral de pesca da Finlândia (conforme eräluvat.fi). As exceções são as corredeiras de rios de salmão, áreas proibidas e certos locais especiais, além de qualquer coisa além de uma única vara (boias de fundo, redes, espinhéis), que exige a taxa e uma licença. Melhores águas: o Lago Inari, o Ounasjärvi e os lagos da região de Levi para perca, coregono e tímalo.",
       safetyTitle: "Segurança no gelo",
       safetyBody: "O gelo dos lagos é traiçoeiro perto de entradas, saídas, corredeiras e zonas de rebaixamento de reservatórios. Confira a espessura, fique longe de água corrente e leve um guia local em águas grandes e abertas como Inari. Isto é conselho de segurança, não regulamento, mas os lagos não pegam leve com ninguém.",
       cta: "Reserve uma pescaria no gelo com guia",
@@ -141,7 +141,7 @@ const ptBR: SectionCopy = {
         "Truta (adiposa intacta): 50 cm ao norte de 67°N, 60 cm entre 64° e 67°N. Totalmente protegida em todas as áreas marinhas desde 2019.",
         "Tímalo: 30 cm ao norte de 67°N, 35 cm ao sul; fechamento de primavera 1 abr–31 mai no interior ao sul de 67°N.",
         "Lucioperca (kuha): 42 cm. Lúcio e perca: sem tamanho mínimo nacional.",
-        "Salvelino-ártico: 45 cm no Lago Inari. Corégono: sem tamanho mínimo nacional.",
+        "Salvelino-ártico: 45 cm no Lago Inari. Coregono: sem tamanho mínimo nacional.",
         "Estes são pisos nacionais do Decreto de Pesca (1360/2015); os centros ELY podem ajustá-los em ±20 % e regras específicas de rio prevalecem, conforme eräluvat.fi e mmm.fi.",
       ],
       alwaysCheck: "Sempre confira o kalastusrajoitus.fi para a sua água exata antes de pescar. Ele mostra cada restrição sob a Lei de Pesca, decisões dos ELY e áreas protegidas.",
@@ -149,7 +149,7 @@ const ptBR: SectionCopy = {
     teno: {
       title: "O Teno, em detalhe",
       body: "O Teno (Tenojoki / Tana) é um rio de fronteira entre Finlândia e Noruega com seu próprio sistema bilateral de cotas. A pesca de salmão-do-atlântico está proibida na temporada de 2026, em vigor até 31 de dezembro sob o protocolo do acordo de pesca do Teno, uma proibição que se mantém desde 2021 e é redefinida a cada ano. (Um decreto de afluentes de 2026, 367/2026, rege as águas laterais a partir de 1 de junho.) Status conforme valtioneuvosto.fi e tenonkalatalousalue.fi.",
-      whatYouCan: "O que você pode fazer: compre a 'licença de pesca para outras espécies', 20 €/dia para adultos, 10 €/dia para menores de 18, para tímalo, corégono e truta, apenas equipamento leve de mosca, válida de 10 de junho a 20 de agosto de 2026, mais a taxa nacional. Salmão e salvelino-marinho ficam de fora.",
+      whatYouCan: "O que você pode fazer: compre a 'licença de pesca para outras espécies', 20 €/dia para adultos, 10 €/dia para menores de 18, para tímalo, coregono e truta, apenas equipamento leve de mosca, válida de 10 de junho a 20 de agosto de 2026, mais a taxa nacional. Salmão e salvelino-marinho ficam de fora.",
       warnThirdParty: "Compre-a apenas na loja oficial, tenonkalaluvat.fi. Não reserve a licença legal por sites de terceiros: uma licença errada ou inválida em um rio de fronteira significa pescar ilegalmente.",
     },
     norway: {
@@ -193,7 +193,7 @@ const ptBR: SectionCopy = {
         },
         {
           q: "Posso pescar salmão no Teno em 2026?",
-          a: "Não. A pesca de salmão-do-atlântico no canal principal do Teno está proibida em 2026, em vigor até 31 de dezembro sob o acordo do Teno entre Finlândia e Noruega. Você pode pescar outras espécies (tímalo, corégono, truta) com a licença de 'outras espécies' de 20 €/dia da tenonkalaluvat.fi, com o salmão excluído.",
+          a: "Não. A pesca de salmão-do-atlântico no canal principal do Teno está proibida em 2026, em vigor até 31 de dezembro sob o acordo do Teno entre Finlândia e Noruega. Você pode pescar outras espécies (tímalo, coregono, truta) com a licença de 'outras espécies' de 20 €/dia da tenonkalaluvat.fi, com o salmão excluído.",
         },
         {
           q: "Quantos salmões posso guardar no Tornio?",
