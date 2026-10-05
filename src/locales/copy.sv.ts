@@ -294,7 +294,7 @@ const sv: SectionCopy = {
   },
   about: {
     metaTitle: "Om LaplandActivities: vilka vi är och hur vi väljer turer",
-    metaDescription: "LaplandActivities drivs av finska LaPeso Oy. Vi listar turer i finska Lappland som vi själva skulle boka, länkar till arrangören eller GetYourGuide och får provision på bokningar.",
+    metaDescription: "LaplandActivities drivs av finska LaPeso Oy. Vi listar turer i Lappland som vi själva skulle boka, länkar till arrangören eller GetYourGuide och får provision.",
     eyebrow: "Om oss",
     h1: "Vem som står bakom LaplandActivities",
     lead: "En finsk guide till turer i Lappland, skriven och uppdaterad av samma lilla team som driver de övriga #LaplandVibes-sajterna.",
@@ -332,7 +332,7 @@ const sv: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Välj ditt sätt', ice: 'Pimpelfiske', iceSub: 'Gratis, inget tillstånd. Isborr, kort spö och en frusen sjö.', rivers: 'Lax- och harrälvar', riversSub: 'Tillstånd krävs. Torne älv öppen, Tana stängd 2026.', norway: 'Hav och kungskrabba', norwaySub: 'På norska sidan: havsfiske är fritt, kungskrabba bara med guide.' },
     metaTitle: 'Fiske i Lappland och Norra ishavet',
-    metaDescription: 'Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver innan du kastar ut.',
+    metaDescription: 'Gratis pilkfiske, licensbelagda laxälvar som Torneälven och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar.',
     verifyBanner: 'Reglerna ändras varje år. Kontrollera de officiella tillståndsvillkoren innan du fiskar. Varje uppgift nedan namnger och länkar till sin källa.',
     hero: {
       eyebrow: 'Finska Lappland · Nordnorge',
@@ -566,7 +566,7 @@ const sv: SectionCopy = {
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: etisk björnskådning vid Lapplands gräns",
-    metaDescription: "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland. Kvälls- och nattturer, 1 maj till 30 september.",
+    metaDescription: "Bear Kuusamo tar dig till gömslen för att se vilda brunbjörnar i gränsskogarna öster om Kuusamo, vid kanten av Lappland.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Kommersiellt samarbete: Bear Kuusamo",
     anchorWatching: "björnskådning i Finland",
@@ -622,7 +622,7 @@ const sv: SectionCopy = {
   },
   terms: {
     metaTitle: 'Användarvillkor',
-    metaDescription: 'Användarvillkor för laplandactivities.fi: innehåll och licenser, information om affiliatelänkar, ansvar och redaktionella principer. Drivs av LaPeso Oy, Finland.',
+    metaDescription: 'Användarvillkor för laplandactivities.fi: innehåll och licenser, information om affiliatelänkar, ansvar och redaktionella principer.',
   },
   cookie: {
     metaTitle: 'Cookiepolicy',

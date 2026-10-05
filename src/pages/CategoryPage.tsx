@@ -17,6 +17,7 @@ import { imageForCategory, assignActivityImages, focalFor } from '../data/images
 import PhotoCredit from '../components/PhotoCredit';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { categoryTitle } from '../lib/pageTitles';
+import { categoryMetaDescription } from '../lib/pageMeta';
 import { COPY } from '../locales/copy';
 import { localizeCategory } from '../locales/data';
 import { categoryGuide } from '../data/guideI18n';
@@ -57,6 +58,8 @@ export default function CategoryPage() {
   const topicRail = topicRailFor(slug || '', lang);
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
   const pageUrl = `https://laplandactivities.fi${to(`/categories/${slug}`)}`.replace(/\/?$/, '/');
+  // Same function as scripts/generate-prerender-meta.mjs, so the served HTML says the same.
+  const metaDescription = categoryMetaDescription(category.slug, category.description, lang);
 
   // Season split — for year-round categories (adventure, animals, wellness, culture,
   // food) surface this-season activities first, then the other season. Single-season
@@ -89,11 +92,11 @@ export default function CategoryPage() {
     <>
       <Helmet>
         <title>{categoryTitle(category.name, lang)}</title>
-        <meta name="description" content={`${category.description}`} />
+        <meta name="description" content={metaDescription} />
         <link rel="canonical" href={pageUrl} />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={categoryTitle(category.name, lang)} />
-        <meta property="og:description" content={category.description} />
+        <meta property="og:description" content={metaDescription} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'Article',

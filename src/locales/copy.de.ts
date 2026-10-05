@@ -528,7 +528,7 @@ const de: SectionCopy = {
   },
   about: {
     metaTitle: "Über LaplandActivities: wer wir sind und wie wir auswählen",
-    metaDescription: "LaplandActivities wird von der finnischen LaPeso Oy betrieben. Wir listen Lappland-Touren, die wir selbst buchen würden, verlinken zum Veranstalter oder zu GetYourGuide und erhalten eine Provision.",
+    metaDescription: "LaplandActivities gehört der finnischen LaPeso Oy. Wir zeigen Touren, die wir selbst buchen würden, und erhalten Provision, wenn Sie über unsere Links buchen.",
     eyebrow: "Über uns",
     h1: "Wer hinter LaplandActivities steht",
     lead: "Ein finnischer Führer zu Touren in Lappland, geschrieben und gepflegt vom selben kleinen Team, das auch die übrigen #LaplandVibes-Seiten betreibt.",

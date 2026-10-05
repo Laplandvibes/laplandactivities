@@ -4,7 +4,7 @@ const nl: SectionCopy = {
   fishing: {
     chooser: { kicker: 'Kies uw manier', ice: 'IJsvissen', iceSub: 'Gratis, geen vergunning. Een boor, een korte hengel en een bevroren meer.', rivers: 'Zalm- en vlagzalmrivieren', riversSub: 'Vergunning nodig. Tornio open, Teno gesloten in 2026.', norway: 'Zee en koningskrab', norwaySub: 'In Noorwegen: zeevissen is vrij, koningskrab alleen met gids.' },
     metaTitle: "IJsvissen en zalmvissen in Fins Lapland",
-    metaDescription: "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026 die u nodig hebt voordat u uitwerpt.",
+    metaDescription: "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en vergunningslinks voor 2026.",
     verifyBanner: "De regels veranderen elk jaar. Controleer de officiële vergunningsvoorwaarden voordat u gaat vissen. Elk cijfer hieronder noemt en linkt naar zijn bron.",
     hero: {
       eyebrow: "Fins Lapland · Arctisch Noorwegen",
@@ -467,7 +467,7 @@ const nl: SectionCopy = {
   },
   about: {
     metaTitle: "Over LaplandActivities: wie wij zijn en hoe wij kiezen",
-    metaDescription: "LaplandActivities wordt beheerd door het Finse LaPeso Oy. Wij tonen tours in Lapland die wij zelf zouden boeken, linken naar de aanbieder of GetYourGuide en ontvangen commissie op boekingen.",
+    metaDescription: "LaplandActivities wordt beheerd door het Finse LaPeso Oy. Wij tonen tours die wij zelf zouden boeken en ontvangen commissie op boekingen.",
     eyebrow: "Over ons",
     h1: "Wie er achter LaplandActivities zit",
     lead: "Een Finse gids voor tours in Lapland, geschreven en bijgehouden door hetzelfde kleine team dat de andere #LaplandVibes-sites beheert.",
@@ -504,7 +504,7 @@ const nl: SectionCopy = {
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: ethisch beren kijken in Finland",
-    metaDescription: "Bear Kuusamo brengt u naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland. Avond- en nachttochten, 1 mei tot 30 september.",
+    metaDescription: "Bear Kuusamo brengt u naar hutten om wilde bruine beren te zien in de grensbossen ten oosten van Kuusamo, aan de rand van Lapland.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Commercieel partnerschap: Bear Kuusamo",
     anchorWatching: "beren spotten in Finland",

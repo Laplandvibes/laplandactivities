@@ -316,7 +316,7 @@
   "/about": {
     "en": {
       "title": "About LaplandActivities: who we are and how we choose",
-      "description": "LaplandActivities is run by LaPeso Oy from Finland. We list Lapland tours we would book ourselves, link to the operator or GetYourGuide, and earn a commission on…"
+      "description": "LaplandActivities is run by LaPeso Oy from Finland. We list Lapland tours we would book ourselves, link to the operator or GetYourGuide, and earn a commission."
     },
     "fi": {
       "title": "Tietoa meistä: keitä olemme ja miten retket valitaan",
@@ -324,7 +324,7 @@
     },
     "de": {
       "title": "Über LaplandActivities: wer wir sind und wie wir auswählen",
-      "description": "LaplandActivities wird von der finnischen LaPeso Oy betrieben."
+      "description": "LaplandActivities gehört der finnischen LaPeso Oy. Wir zeigen Touren, die wir selbst buchen würden, und erhalten Provision, wenn Sie über unsere Links buchen."
     },
     "ja": {
       "title": "LaplandActivitiesについて：運営者とツアーの選び方",
@@ -332,11 +332,11 @@
     },
     "es": {
       "title": "Sobre LaplandActivities: quiénes somos y cómo elegimos",
-      "description": "LaplandActivities lo gestiona la empresa finlandesa LaPeso Oy."
+      "description": "LaplandActivities lo gestiona la finlandesa LaPeso Oy. Publicamos excursiones que reservaríamos nosotros mismos y recibimos una comisión por las reservas."
     },
     "pt-BR": {
       "title": "Sobre o LaplandActivities: quem somos e como escolhemos",
-      "description": "O LaplandActivities é mantido pela empresa finlandesa LaPeso Oy."
+      "description": "O LaplandActivities é mantido pela finlandesa LaPeso Oy. Listamos passeios na Lapônia que nós mesmos reservaríamos e recebemos comissão pelas reservas."
     },
     "zh-CN": {
       "title": "关于LaplandActivities：我们是谁，如何挑选行程",
@@ -348,19 +348,19 @@
     },
     "fr": {
       "title": "À propos de LaplandActivities : qui nous sommes",
-      "description": "LaplandActivities est édité par la société finlandaise LaPeso Oy."
+      "description": "LaplandActivities est édité par la société finlandaise LaPeso Oy. Nous listons des excursions que nous réserverions nous-mêmes et touchons une commission."
     },
     "it": {
       "title": "Chi siamo: LaplandActivities e come scegliamo le escursioni",
-      "description": "LaplandActivities è gestito dalla società finlandese LaPeso Oy."
+      "description": "LaplandActivities è gestito dalla finlandese LaPeso Oy. Pubblichiamo escursioni che prenoteremmo noi stessi e riceviamo una commissione sulle prenotazioni."
     },
     "nl": {
       "title": "Over LaplandActivities: wie wij zijn en hoe wij kiezen",
-      "description": "LaplandActivities wordt beheerd door het Finse LaPeso Oy."
+      "description": "LaplandActivities wordt beheerd door het Finse LaPeso Oy. Wij tonen tours die wij zelf zouden boeken en ontvangen commissie op boekingen."
     },
     "sv": {
       "title": "Om LaplandActivities: vilka vi är och hur vi väljer turer",
-      "description": "LaplandActivities drivs av finska LaPeso Oy. Vi listar turer i finska Lappland som vi själva skulle boka, länkar till arrangören eller GetYourGuide och får provision…"
+      "description": "LaplandActivities drivs av finska LaPeso Oy. Vi listar turer i Lappland som vi själva skulle boka, länkar till arrangören eller GetYourGuide och får provision."
     }
   },
   "/fishing": {
@@ -406,17 +406,17 @@
     },
     "nl": {
       "title": "IJsvissen en zalmvissen in Fins Lapland",
-      "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en officiële vergunningslinks van 2026…"
+      "description": "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en vergunningslinks voor 2026."
     },
     "sv": {
       "title": "Fiske i Lappland och Norra ishavet",
-      "description": "Gratis pilkfiske, licensbelagda laxälvar som Torneälven, och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar du behöver…"
+      "description": "Gratis pilkfiske, licensbelagda laxälvar som Torneälven och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar."
     }
   },
   "/bear-kuusamo": {
     "en": {
       "title": "Bear Kuusamo: ethical bear watching in Finland",
-      "description": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, May to September."
+      "description": "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland."
     },
     "fi": {
       "title": "Bear Kuusamo: eettistä karhunkatselua Lapin rajalla",
@@ -490,7 +490,7 @@
     },
     "zh-CN": {
       "title": "活动分类",
-      "description": "按分类浏览北极活动，冒险、与动物互动、北极光、冬季运动、养生、文化、夏季冒险与美食体验。"
+      "description": "按分类浏览北极活动：冒险、与动物互动、北极光、冬季运动、养生、文化、夏季冒险与美食体验。雪地摩托探险之旅、冰上卡丁车、攀冰、河流漂流和野外生存课程。"
     },
     "ko": {
       "title": "액티비티 카테고리",
@@ -660,7 +660,7 @@
     },
     "sv": {
       "title": "Användarvillkor",
-      "description": "Användarvillkor för laplandactivities.fi: innehåll och licenser, information om affiliatelänkar, ansvar och redaktionella principer. Drivs av LaPeso Oy, Finland."
+      "description": "Användarvillkor för laplandactivities.fi: innehåll och licenser, information om affiliatelänkar, ansvar och redaktionella principer."
     }
   },
   "/cookie-policy": {
@@ -740,7 +740,7 @@
     },
     "zh-CN": {
       "title": "拉普兰探险",
-      "description": "雪地摩托探险之旅、冰上卡丁车、攀冰、河流漂流和野外生存课程。在北极荒野中点燃肾上腺素。"
+      "description": "雪地摩托探险之旅、冰上卡丁车、攀冰、河流漂流和野外生存课程。在北极荒野中点燃肾上腺素。拉普兰的探险多半靠引擎，或者离不开冰。"
     },
     "ko": {
       "title": "라플란드 어드벤처",
@@ -748,7 +748,7 @@
     },
     "fr": {
       "title": "Aventure en Laponie",
-      "description": "Safaris en motoneige, karting sur glace, escalade sur glace, rafting en eaux vives et stages de survie. Pour faire monter l'adrénaline en pleine nature arctique."
+      "description": "Safaris en motoneige, karting sur glace, escalade sur glace, rafting en eaux vives et stages de survie."
     },
     "it": {
       "title": "Avventura in Lapponia",
@@ -790,7 +790,7 @@
     },
     "zh-CN": {
       "title": "拉普兰动物体验",
-      "description": "哈士奇雪橇、参观驯鹿农场、观赏野生棕熊以及 Ranua 动物园的北极熊。与北极令人惊叹的动物近距离相遇。"
+      "description": "哈士奇雪橇、参观驯鹿农场、观赏野生棕熊以及 Ranua 动物园的北极熊。与北极令人惊叹的动物近距离相遇。棕熊观察屋位于 Kuusamo 以东的森林里。"
     },
     "ko": {
       "title": "라플란드 동물 체험",
@@ -840,11 +840,11 @@
     },
     "zh-CN": {
       "title": "拉普兰北极光",
-      "description": "专人带领的极光追逐、摄影之旅、雪地摩托追光，以及在舞动光幕下的雪鞋探险。"
+      "description": "专人带领的极光追逐、摄影之旅、雪地摩托追光，以及在舞动光幕下的雪鞋探险。这里的极光行程是追，而不是找个观景台：向导盯着云量预报和活动指数，把车开向当晚看起来最有戏的那片天空缺口。"
     },
     "ko": {
       "title": "라플란드 오로라",
-      "description": "가이드 오로라 헌트, 사진 투어, 스노모빌 오로라 추적, 춤추는 빛 아래의 스노슈 원정."
+      "description": "가이드 오로라 헌트, 사진 투어, 스노모빌 오로라 추적, 춤추는 빛 아래의 스노슈 원정. 이곳의 오로라 투어는 전망대가 아니라 사냥입니다."
     },
     "fr": {
       "title": "Aurores boréales en Laponie",
@@ -890,7 +890,7 @@
     },
     "zh-CN": {
       "title": "拉普兰冬季运动",
-      "description": "在拉普兰最好的度假胜地体验高山滑雪、越野滑雪、单板滑雪、胖胎自行车、雪鞋健行和滑冰。"
+      "description": "在拉普兰最好的度假胜地体验高山滑雪、越野滑雪、单板滑雪、胖胎自行车、雪鞋健行和滑冰。本指南里有六座山丘设有缆车：罗瓦涅米上方的 Ounasvaara，以及 Levi、Ylläs、Ruka、Pyhä 和 Suomu。"
     },
     "ko": {
       "title": "라플란드 겨울 스포츠",
@@ -940,11 +940,11 @@
     },
     "zh-CN": {
       "title": "拉普兰康养与桑拿",
-      "description": "传统烟熏桑拿、冰泳、北极漂浮、水疗护理，以及极致的北欧康养体验。"
+      "description": "传统烟熏桑拿、冰泳、北极漂浮、水疗护理，以及极致的北欧康养体验。在拉普兰，休养意味着冷热交替，而不是理疗室。"
     },
     "ko": {
       "title": "라플란드 웰니스와 사우나",
-      "description": "전통 스모크 사우나, 얼음 수영, 북극 부유, 스파 트리트먼트, 그리고 궁극의 노르딕 웰니스 체험."
+      "description": "전통 스모크 사우나, 얼음 수영, 북극 부유, 스파 트리트먼트, 그리고 궁극의 노르딕 웰니스 체험. 라플란드의 웰니스는 시술실이 아니라 뜨거움과 차가움을 번갈아 겪는 일입니다."
     },
     "fr": {
       "title": "Bien-être et sauna en Laponie",
@@ -990,11 +990,11 @@
     },
     "zh-CN": {
       "title": "拉普兰文化与遗产",
-      "description": "萨米博物馆、圣诞老人村、冰雪酒店、淘金、紫水晶矿，以及迷人的北极遗产。"
+      "description": "萨米博物馆、圣诞老人村、冰雪酒店、淘金、紫水晶矿，以及迷人的北极遗产。萨米文化最好的入口是 Inari 的 Siida 和 Levi 的 Samiland。"
     },
     "ko": {
       "title": "라플란드 문화와 유산",
-      "description": "사미 박물관, 산타클로스 마을, 아이스 호텔, 사금 채취, 자수정 광산, 북극의 매혹적인 유산."
+      "description": "사미 박물관, 산타클로스 마을, 아이스 호텔, 사금 채취, 자수정 광산, 북극의 매혹적인 유산. 사미 문화는 이나리의 시이다와 레비의 사미란드가 가장 좋은 입구입니다."
     },
     "fr": {
       "title": "Culture et patrimoine en Laponie",
@@ -1040,11 +1040,11 @@
     },
     "zh-CN": {
       "title": "拉普兰夏季探险",
-      "description": "午夜阳光下的徒步、皮划艇、漂流、山地自行车、垂钓、采摘浆果，以及在无尽北极日光下的高尔夫。"
+      "description": "午夜阳光下的徒步、皮划艇、漂流、山地自行车、垂钓、采摘浆果，以及在无尽北极日光下的高尔夫。夏天把同一片风景变成徒步、划桨和骑行的场地。"
     },
     "ko": {
       "title": "라플란드 여름 액티비티",
-      "description": "백야 트레킹, 카약, 강 래프팅, 산악 자전거, 낚시, 베리 따기, 끝없는 북극 일광 아래의 골프."
+      "description": "백야 트레킹, 카약, 강 래프팅, 산악 자전거, 낚시, 베리 따기, 끝없는 북극 일광 아래의 골프. 여름이 되면 같은 풍경이 트레킹과 패들링, 자전거의 무대로 바뀝니다."
     },
     "fr": {
       "title": "Aventures d'été en Laponie",
@@ -1078,7 +1078,7 @@
     },
     "ja": {
       "title": "ラップランドの食と飲み物",
-      "description": "コタレストラン、野生の食材採集、ベリー摘み、星空の下でのトナカイディナー、地元の醸造所めぐり。"
+      "description": "コタレストラン、野生の食材採集、ベリー摘み、星空の下でのトナカイディナー、地元の醸造所めぐり。ここでの食事は火と季節に結びついています。"
     },
     "es": {
       "title": "Comida y bebida en Laponia",
@@ -1090,11 +1090,11 @@
     },
     "zh-CN": {
       "title": "拉普兰美食与饮品",
-      "description": "kota 餐厅、野外采食、采摘浆果、星空下的驯鹿晚餐，以及当地酒厂之旅。"
+      "description": "kota 餐厅、野外采食、采摘浆果、星空下的驯鹿晚餐，以及当地酒厂之旅。这里的食物离不开火与季节。kota 或 kammi 是中央设有明火灶的锥形木屋，饭菜就在你面前做出来：驯鹿肉、鱼、薄饼和云莓。"
     },
     "ko": {
       "title": "라플란드 음식과 음료",
-      "description": "코타 레스토랑, 야생 식재료 채집, 베리 따기, 별 아래의 순록 디너, 현지 양조장 투어."
+      "description": "코타 레스토랑, 야생 식재료 채집, 베리 따기, 별 아래의 순록 디너, 현지 양조장 투어. 이곳의 음식은 불과 계절에 묶여 있습니다."
     },
     "fr": {
       "title": "Gastronomie en Laponie",
@@ -1166,7 +1166,7 @@
   "/destinations/rovaniemi": {
     "en": {
       "title": "Rovaniemi: activities and tours",
-      "description": "The capital of Lapland and gateway to arctic adventures. Home to Santa Claus Village, excellent transport links, and a huge range of winter and summer activities."
+      "description": "The capital of Lapland and gateway to arctic adventures. Home to Santa Claus Village, great transport links, and a huge range of winter and summer activities."
     },
     "fi": {
       "title": "Rovaniemi: aktiviteetit ja retket",
@@ -1174,7 +1174,7 @@
     },
     "de": {
       "title": "Rovaniemi: Aktivitäten und Touren",
-      "description": "Die Hauptstadt Lapplands und das Tor zu arktischen Abenteuern."
+      "description": "Lapplands Hauptstadt und das Tor zu arktischen Abenteuern, mit dem Weihnachtsmanndorf, hervorragenden Verbindungen und vielen Winter- und Sommeraktivitäten."
     },
     "ja": {
       "title": "ロヴァニエミのアクティビティとツアー",
@@ -1182,11 +1182,11 @@
     },
     "es": {
       "title": "Rovaniemi: actividades y excursiones",
-      "description": "La capital de Laponia y puerta de acceso a las aventuras árticas."
+      "description": "La capital de Laponia y puerta de acceso a las aventuras árticas, con el Pueblo de Papá Noel, excelentes conexiones y mucho que hacer en invierno y verano."
     },
     "pt-BR": {
       "title": "Rovaniemi: atividades e passeios",
-      "description": "A capital da Lapônia e porta de entrada para as aventuras árticas."
+      "description": "A capital da Lapônia e porta de entrada para as aventuras árticas. Abriga a Vila do Papai Noel, ótimas conexões e muitas atividades de inverno e verão."
     },
     "zh-CN": {
       "title": "Rovaniemi活动与旅行团",
@@ -1198,19 +1198,19 @@
     },
     "fr": {
       "title": "Rovaniemi: activités et excursions",
-      "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques."
+      "description": "Capitale de la Laponie et porte d'entrée des aventures arctiques, avec le Village du Père Noël, d’excellentes liaisons et des activités d'hiver comme d'été."
     },
     "it": {
       "title": "Rovaniemi: attività ed escursioni",
-      "description": "La capitale della Lapponia e porta d'accesso alle avventure artiche."
+      "description": "La capitale della Lapponia e porta d'accesso alle avventure artiche. Ospita il Villaggio di Babbo Natale, ottimi collegamenti e attività invernali ed estive."
     },
     "nl": {
       "title": "Rovaniemi: activiteiten en tours",
-      "description": "Hoofdstad van Lapland en toegangspoort tot arctische avonturen."
+      "description": "Hoofdstad van Lapland en toegangspoort tot arctische avonturen. Hier vindt u het Kerstmandorp, uitstekende verbindingen en volop winter- en zomeractiviteiten."
     },
     "sv": {
       "title": "Rovaniemi: aktiviteter och turer",
-      "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta transportförbindelser och ett stort utbud av vinter- och sommaraktiviteter."
+      "description": "Lapplands huvudstad och porten till arktiska äventyr. Här finns Jultomtens by, utmärkta förbindelser och ett stort utbud av vinter- och sommaraktiviteter."
     }
   },
   "/destinations/levi": {
@@ -1232,7 +1232,7 @@
     },
     "es": {
       "title": "Levi: actividades y excursiones",
-      "description": "Destino de esquí de primer nivel con 44 pistas y 230 km de recorridos de fondo. Animado après-ski en el Hullu Poro y actividades al aire libre durante todo el año."
+      "description": "Destino de esquí de primer nivel con 44 pistas y 230 km de recorridos de fondo."
     },
     "pt-BR": {
       "title": "Levi: atividades e passeios",
@@ -1248,7 +1248,7 @@
     },
     "fr": {
       "title": "Levi: activités et excursions",
-      "description": "Une destination de ski de premier plan avec 44 pistes et 230 km de pistes de fond. Ambiance après-ski animée au Hullu Poro et activités de plein air toute l'année."
+      "description": "Une destination de ski de premier plan avec 44 pistes et 230 km de pistes de fond."
     },
     "it": {
       "title": "Levi: attività ed escursioni",
@@ -1374,7 +1374,7 @@
     },
     "de": {
       "title": "Inari: Aktivitäten und Touren",
-      "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami. Hier finden Sie das Siida-Museum und unberührte Natur."
+      "description": "Am Ufer des Inarisees mit über 3.000 Inseln gelegen, ist Inari die kulturelle Hauptstadt der finnischen Sami."
     },
     "ja": {
       "title": "イナリのアクティビティとツアー",
@@ -1428,7 +1428,7 @@
     },
     "ja": {
       "title": "ルカ・クーサモのアクティビティとツアー",
-      "description": "伝説的なクマの道カルフンキエッロス、オウランカ国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。Rukaはラップランドのすぐ南のKuusamoに位置し、同じ雪と同じ北国の冬が楽しめます。"
+      "description": "伝説的なクマの道カルフンキエッロス、オウランカ国立公園、そしてフィンランド屈指のスキーリゾートの拠点。クマ観察、ラフティング、そして最も長いスキーシーズンで知られています。"
     },
     "es": {
       "title": "Ruka y Kuusamo: actividades y excursiones",
@@ -1444,7 +1444,7 @@
     },
     "ko": {
       "title": "루카와 쿠사모 액티비티와 투어",
-      "description": "전설적인 카르훈키에로스 곰의 길, 오울란카 국립공원, 그리고 핀란드 최고의 스키 리조트 중 하나의 본거지. 곰 관찰, 강 래프팅, 가장 긴 스키 시즌으로 유명합니다. 루카는 라플란드 바로 남쪽의 쿠사모에 있으며, 같은 눈과 같은 북부의 겨울을 즐길 수 있습니다."
+      "description": "전설적인 카르훈키에로스 곰의 길, 오울란카 국립공원, 그리고 핀란드 최고의 스키 리조트 중 하나의 본거지. 곰 관찰, 강 래프팅, 가장 긴 스키 시즌으로 유명합니다."
     },
     "fr": {
       "title": "Ruka et Kuusamo: activités et excursions",
@@ -1490,7 +1490,7 @@
     },
     "zh-CN": {
       "title": "Posio活动与旅行团",
-      "description": "以 Riisitunturi 国家公园壮观的雪冠树木和 Korouoma 峡谷的冰封瀑布闻名。远离人迹，纯粹荒野。"
+      "description": "以 Riisitunturi 国家公园壮观的雪冠树木和 Korouoma 峡谷的冰封瀑布闻名。远离人迹，纯粹荒野。从罗瓦涅米或 Ruka 出发，当天往返最方便。"
     },
     "ko": {
       "title": "포시오 액티비티와 투어",

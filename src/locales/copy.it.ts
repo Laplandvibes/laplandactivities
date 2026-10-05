@@ -467,7 +467,7 @@ const it: SectionCopy = {
   },
   about: {
     metaTitle: "Chi siamo: LaplandActivities e come scegliamo le escursioni",
-    metaDescription: "LaplandActivities è gestito dalla società finlandese LaPeso Oy. Pubblichiamo escursioni in Lapponia che prenoteremmo noi stessi, rimandiamo all'operatore o a GetYourGuide e riceviamo una commissione sulle prenotazioni.",
+    metaDescription: "LaplandActivities è gestito dalla finlandese LaPeso Oy. Pubblichiamo escursioni che prenoteremmo noi stessi e riceviamo una commissione sulle prenotazioni.",
     eyebrow: "Chi siamo",
     h1: "Chi c'è dietro LaplandActivities",
     lead: "Una guida finlandese alle escursioni in Lapponia, scritta e aggiornata dallo stesso piccolo gruppo che cura gli altri siti #LaplandVibes.",
@@ -504,7 +504,7 @@ const it: SectionCopy = {
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: osservazione degli orsi in Finlandia",
-    metaDescription: "Bear Kuusamo porta in capanno a osservare orsi bruni selvatici nelle foreste a est di Kuusamo, ai margini della Lapponia. Tour serali e notturni, 1 maggio–30 settembre.",
+    metaDescription: "Bear Kuusamo porta in capanno a osservare orsi bruni selvatici nelle foreste a est di Kuusamo, ai margini della Lapponia.",
     breadcrumb: "Bear Kuusamo",
     partnershipLabel: "Collaborazione commerciale: Bear Kuusamo",
     anchorWatching: "osservazione degli orsi in Finlandia",

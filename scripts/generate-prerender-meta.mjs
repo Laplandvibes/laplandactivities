@@ -14,22 +14,20 @@
  * React pages use (via Vite SSR) and emits per-route × per-locale {title, description}
  * into the meta map, so the static HTML matches what users see — one source of truth.
  *
- * Routes covered (per locale, all 11 langs):
+ * Routes covered (per locale, all 12 langs):
  *   /                         home  — COPY[lang].home.metaTitle / .metaDescription (+ faq)
- *   /about                    about — COPY[lang].about.metaTitle / .metaDescription
+ *   /about, /fishing, …       COPY[lang].<key>.metaTitle / .metaDescription, as written
  *   /categories               index — COPY[lang].categoriesIndex.metaTitle / .metaDescription
  *   /destinations             index — COPY[lang].destinationsIndex.metaTitle / .metaDescription
- *   /categories/{slug}        ×8    — `${localizeCategory.name} — LaplandActivities`
- *                                     / clamped localizeCategory.description
- *   /destinations/{slug}      ×8    — `${localizeDestination.name} — LaplandActivities`
- *                                     / clamped localizeDestination.description
+ *   /categories/{slug}        categoryTitle() / categoryMetaDescription()
+ *   /destinations/{slug}      destinationTitle() / destinationMetaDescription()
  *
- * Titles mirror the runtime <title> in CategoryPage.tsx / DestinationPage.tsx
- * (`${name} — LaplandActivities`). Descriptions reuse the already-native localized data
- * descriptions, clamped to a clean complete-sentence prefix ≤ 165 chars (Google's snippet
- * range) so they read as descriptive native copy in every language. The category/
- * destination index pages and /home description already had localized COPY meta; we now
- * surface them through the prerenderer too.
+ * Titles come from src/lib/pageTitles.ts and the category/destination descriptions from
+ * src/lib/pageMeta.ts: the React pages call the same functions, so the served HTML and the
+ * hydrated page cannot disagree. COPY meta descriptions are passed through unchanged, as the
+ * pages render them. Every description must sit inside the prerenderer's window (70–160
+ * characters, CJK 100–200 width units); one outside it is listed at the end of the run,
+ * because the prerenderer would then cut or extend the served text and the browser would not.
  *
  * Consumed by ../_prerender_routes.mjs via --meta=scripts/prerender-meta.json.
  * Degrades gracefully: on any error it exits 0 with an empty/partial map and the
@@ -49,37 +47,6 @@ const OUT_FILE = resolve(__dirname, 'prerender-meta.json');
 // Keep in sync with src/i18n/useLang.ts Lang union + the COPY keys.
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
 
-// Max meta-description length (Google snippet range upper bound).
-const DESC_MAX = 165;
-
-/**
- * Clamp a description to a clean, native, complete-sentence prefix ≤ max chars.
- * Latin scripts split on . ! ?  — CJK (ja/zh-CN/ko) also honor 。！？. Falls back to a
- * word-boundary (latin) or hard (CJK) cut with an ellipsis only when even the first
- * sentence overflows. Returns descriptive copy (no banned adjectives are introduced —
- * the source data already avoids "stunning/breathtaking/world-class").
- */
-function clampMeta(text, max, lang) {
-  text = String(text || '').replace(/\s+/g, ' ').trim();
-  if (text.length <= max) return text;
-  const cjk = lang === 'ja' || lang === 'zh-CN' || lang === 'ko';
-  const enders = cjk ? /[。.!?！？]/g : /[.!?]/g;
-  let best = '';
-  let m;
-  while ((m = enders.exec(text)) !== null) {
-    const end = m.index + 1;
-    if (end <= max) best = text.slice(0, end);
-    else break;
-  }
-  const floor = cjk ? 24 : 55;
-  if (best && best.trim().length >= floor) return best.trim();
-  if (cjk) return text.slice(0, max).replace(/[、，,；;：:\s]+$/, '') + '…';
-  const slice = text.slice(0, max + 1);
-  const lastSpace = slice.lastIndexOf(' ');
-  return (lastSpace > 50 ? slice.slice(0, lastSpace) : text.slice(0, max))
-    .replace(/[\s,;:.\-–—]+$/, '') + '…';
-}
-
 async function main() {
   const needed = ['src/locales/copy.ts', 'src/data/categories.ts', 'src/data/destinations.ts', 'src/locales/data.ts'];
   for (const f of needed) {
@@ -93,6 +60,7 @@ async function main() {
   // Load the real modules through Vite SSR so TS resolves exactly as at runtime.
   let COPY = null, categories = null, destinations = null, localizeCategory = null, localizeDestination = null;
   let destinationTitle = null, categoryTitle = null;
+  let destinationMetaDescription = null, categoryMetaDescription = null, inDescriptionWindow = null;
   let viteServer = null;
   try {
     const vite = await import('vite');
@@ -119,6 +87,11 @@ async function main() {
     const titlesMod = await load('/src/lib/pageTitles.ts');
     destinationTitle = titlesMod.destinationTitle;
     categoryTitle = titlesMod.categoryTitle;
+    // Category and destination meta descriptions, shared with the React pages.
+    const metaMod = await load('/src/lib/pageMeta.ts');
+    destinationMetaDescription = metaMod.destinationMetaDescription;
+    categoryMetaDescription = metaMod.categoryMetaDescription;
+    inDescriptionWindow = metaMod.inDescriptionWindow;
     const dataMod = await load('/src/locales/data.ts');
     localizeCategory = dataMod.localizeCategory;
     localizeDestination = dataMod.localizeDestination;
@@ -129,7 +102,8 @@ async function main() {
     if (viteServer) await viteServer.close();
   }
 
-  if (!COPY || !categories || !destinations || !localizeCategory || !localizeDestination || !destinationTitle || !categoryTitle) {
+  if (!COPY || !categories || !destinations || !localizeCategory || !localizeDestination || !destinationTitle || !categoryTitle
+    || !destinationMetaDescription || !categoryMetaDescription || !inDescriptionWindow) {
     writeFileSync(OUT_FILE, '{}\n', 'utf-8');
     console.error('[meta] sources not loaded — wrote empty map (prerender falls back to routes.json)');
     return;
@@ -174,7 +148,8 @@ async function main() {
       const sec = (COPY[lang] && COPY[lang][key]) || (COPY.en && COPY.en[key]) || {};
       const entry = {};
       if (sec.metaTitle) entry.title = sec.metaTitle;
-      if (sec.metaDescription) entry.description = clampMeta(sec.metaDescription, DESC_MAX, lang);
+      // As written: the page renders COPY[lang][key].metaDescription unchanged.
+      if (sec.metaDescription) entry.description = sec.metaDescription;
       if (Object.keys(entry).length) byLang[lang] = entry;
     }
     if (Object.keys(byLang).length) meta[path] = byLang;
@@ -190,7 +165,7 @@ async function main() {
       if (!lc || !lc.name) continue;
       byLang[lang] = {
         title: categoryTitle(lc.name, lang),
-        description: clampMeta(lc.description, DESC_MAX, lang),
+        description: categoryMetaDescription(cat.slug, lc.description, lang),
       };
     }
     if (Object.keys(byLang).length) { meta[path] = byLang; catCount++; }
@@ -206,7 +181,7 @@ async function main() {
       if (!ld || !ld.name) continue;
       byLang[lang] = {
         title: destinationTitle(ld.name, lang),
-        description: clampMeta(ld.description, DESC_MAX, lang),
+        description: destinationMetaDescription(dest.slug, ld.description, lang),
       };
     }
     if (Object.keys(byLang).length) { meta[path] = byLang; destCount++; }
@@ -220,6 +195,22 @@ async function main() {
   }
   if (meta['/destinations/levi'] && meta['/destinations/levi'].de) {
     console.log(`[meta] sample /destinations/levi de: "${meta['/destinations/levi'].de.title}" | ${meta['/destinations/levi'].de.description}`);
+  }
+
+  // A description outside the window is cut or extended by the prerenderer while the browser
+  // keeps it as written: the served HTML and the hydrated page would then show two texts.
+  const outside = [];
+  for (const [path, byLang] of Object.entries(meta)) {
+    for (const [lang, entry] of Object.entries(byLang)) {
+      const d = String(entry.description || '').replace(/\s+/g, ' ').trim();
+      if (d && !inDescriptionWindow(d)) outside.push(`${path} ${lang} (${d.length} chars)`);
+    }
+  }
+  if (outside.length) {
+    console.warn(`[meta] WARNING ${outside.length} description(s) outside 70-160 chars / CJK 100-200 width; fix the source (COPY metaDescription or src/lib/pageMeta.ts):`);
+    for (const o of outside) console.warn(`[meta]   ${o}`);
+  } else {
+    console.log('[meta] all descriptions inside the prerender window (70-160 chars, CJK 100-200 width)');
   }
 }
 

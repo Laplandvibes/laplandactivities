@@ -14,6 +14,7 @@ import PhotoCredit from '../components/PhotoCredit';
 import DestinationPicks from '../components/DestinationPicks';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { destinationTitle } from '../lib/pageTitles';
+import { destinationMetaDescription } from '../lib/pageMeta';
 import { COPY } from '../locales/copy';
 import { localizeDestination, localizeCategory } from '../locales/data';
 import { destinationGuide } from '../data/guideI18n';
@@ -53,6 +54,8 @@ export default function DestinationPage() {
   const heroImg = imageForDestination(slug || '');
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
   const pageUrl = `https://laplandactivities.fi${to(`/destinations/${slug}`)}`.replace(/\/?$/, '/');
+  // Same function as scripts/generate-prerender-meta.mjs, so the served HTML says the same.
+  const metaDescription = destinationMetaDescription(destination.slug, destination.description, lang);
 
   const categoryGroups = categories
     .map((cat) => ({ ...localizeCategory(cat, lang), activities: acts.filter((a) => a.categorySlug === cat.slug) }))
@@ -93,11 +96,11 @@ export default function DestinationPage() {
     <>
       <Helmet>
         <title>{destinationTitle(destination.name, lang)}</title>
-        <meta name="description" content={`${acts.length}+ ${c.activitiesShort}, ${destination.name}, Finnish Lapland. ${destination.tagline}.`} />
+        <meta name="description" content={metaDescription} />
         <link rel="canonical" href={pageUrl} />
         <meta name="robots" content="index, follow" />
         <meta property="og:title" content={destinationTitle(destination.name, lang)} />
-        <meta property="og:description" content={destination.description} />
+        <meta property="og:description" content={metaDescription} />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'TouristDestination',

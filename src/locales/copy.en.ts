@@ -294,7 +294,7 @@ const en: SectionCopy = {
   },
   about: {
     metaTitle: "About LaplandActivities: who we are and how we choose",
-    metaDescription: "LaplandActivities is run by LaPeso Oy from Finland. We list Lapland tours we would book ourselves, link to the operator or GetYourGuide, and earn a commission on bookings.",
+    metaDescription: "LaplandActivities is run by LaPeso Oy from Finland. We list Lapland tours we would book ourselves, link to the operator or GetYourGuide, and earn a commission.",
     eyebrow: "About",
     h1: "Who is behind LaplandActivities",
     lead: "A Finnish guide to Lapland tours, written and kept up to date by the same small team that runs the other #LaplandVibes sites.",
@@ -566,7 +566,7 @@ const en: SectionCopy = {
   },
   bearKuusamo: {
     metaTitle: "Bear Kuusamo: ethical bear watching in Finland",
-    metaDescription: "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland. Evening and overnight tours, May to September.",
+    metaDescription: "Bear Kuusamo runs guided hides for wild brown bears in the border forests east of Kuusamo, on the edge of Lapland.",
     breadcrumb: 'Bear Kuusamo',
     partnershipLabel: 'Commercial partnership · Bear Kuusamo',
     anchorWatching: 'bear watching in Finland',

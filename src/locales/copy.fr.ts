@@ -467,7 +467,7 @@ const fr: SectionCopy = {
   },
   about: {
     metaTitle: "À propos de LaplandActivities : qui nous sommes",
-    metaDescription: "LaplandActivities est édité par la société finlandaise LaPeso Oy. Nous listons des excursions en Laponie que nous réserverions nous-mêmes, renvoyons vers l'opérateur ou GetYourGuide et touchons une commission.",
+    metaDescription: "LaplandActivities est édité par la société finlandaise LaPeso Oy. Nous listons des excursions que nous réserverions nous-mêmes et touchons une commission.",
     eyebrow: "À propos",
     h1: "Qui se cache derrière LaplandActivities",
     lead: "Un guide finlandais des excursions en Laponie, écrit et mis à jour par la même petite équipe qui anime les autres sites #LaplandVibes.",

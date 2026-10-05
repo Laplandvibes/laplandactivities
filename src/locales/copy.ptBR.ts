@@ -528,7 +528,7 @@ const ptBR: SectionCopy = {
   },
   about: {
     metaTitle: "Sobre o LaplandActivities: quem somos e como escolhemos",
-    metaDescription: "O LaplandActivities é mantido pela empresa finlandesa LaPeso Oy. Listamos passeios na Lapônia que nós mesmos reservaríamos, linkamos para a operadora ou o GetYourGuide e recebemos comissão pelas reservas.",
+    metaDescription: "O LaplandActivities é mantido pela finlandesa LaPeso Oy. Listamos passeios na Lapônia que nós mesmos reservaríamos e recebemos comissão pelas reservas.",
     eyebrow: "Sobre nós",
     h1: "Quem está por trás do LaplandActivities",
     lead: "Um guia finlandês de passeios na Lapônia, escrito e atualizado pela mesma equipe pequena que cuida dos outros sites #LaplandVibes.",

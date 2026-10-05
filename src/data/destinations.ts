@@ -4,7 +4,8 @@ export interface Destination {
   slug: string;
   name: string;
   tagline: string;
-  /** Short hero lead (1-2 sentences). Also used as meta/OG description. */
+  /** Short hero lead (1-2 sentences). The meta/OG description is built from it by
+   *  destinationMetaDescription() in src/lib/pageMeta.ts. */
   description: string;
   /** "Why go" body — MUST differ from the hero lead and add substance
    *  (what's there, who it suits, one concrete local detail). Vesa 2026-07-24:
