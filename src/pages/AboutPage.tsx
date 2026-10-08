@@ -28,7 +28,6 @@ export default function AboutPage() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={`https://laplandactivities.fi${path}`.replace(/\/?$/, '/')} />
-        <meta name="robots" content="index, follow" />
         <script type="application/ld+json">{JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'AboutPage',

@@ -93,8 +93,6 @@ export default function Home() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={URL_SEG[lang] ? `https://laplandactivities.fi/${URL_SEG[lang]}/` : 'https://laplandactivities.fi/'} />
-        <meta name="robots" content="index, follow" />
-        <meta property="og:title" content={c.ogTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:url" content={URL_SEG[lang] ? `https://laplandactivities.fi/${URL_SEG[lang]}/` : 'https://laplandactivities.fi/'} />
         {(Object.keys(URL_SEG) as Lang[]).map((l) => (

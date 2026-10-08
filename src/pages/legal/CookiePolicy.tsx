@@ -15,7 +15,6 @@ export default function CookiePolicy() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={`https://laplandactivities.fi${path}`.replace(/\/?$/, '/')} />
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <CookieContent siteId="laplandactivities" siteName="LaplandActivities" lang={lang} />
     </>

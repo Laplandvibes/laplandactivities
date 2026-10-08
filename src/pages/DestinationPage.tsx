@@ -98,7 +98,6 @@ export default function DestinationPage() {
         <title>{destinationTitle(destination.name, lang)}</title>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={pageUrl} />
-        <meta name="robots" content="index, follow" />
         <meta property="og:title" content={destinationTitle(destination.name, lang)} />
         <meta property="og:description" content={metaDescription} />
         <script type="application/ld+json">{JSON.stringify({

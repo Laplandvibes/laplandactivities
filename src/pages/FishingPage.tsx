@@ -162,7 +162,6 @@ export default function FishingPage() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={pageUrl} />
-        <meta name="robots" content="index, follow" />
         <meta property="og:type" content="article" />
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDescription} />

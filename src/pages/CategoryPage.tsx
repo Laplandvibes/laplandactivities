@@ -94,7 +94,6 @@ export default function CategoryPage() {
         <title>{categoryTitle(category.name, lang)}</title>
         <meta name="description" content={metaDescription} />
         <link rel="canonical" href={pageUrl} />
-        <meta name="robots" content="index, follow" />
         <meta property="og:title" content={categoryTitle(category.name, lang)} />
         <meta property="og:description" content={metaDescription} />
         <script type="application/ld+json">{JSON.stringify({

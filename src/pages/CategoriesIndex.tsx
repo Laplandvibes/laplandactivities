@@ -30,7 +30,6 @@ export default function CategoriesIndex() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={`https://laplandactivities.fi${path}`.replace(/\/?$/, '/')} />
-        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <main className="pt-16 pb-12 bg-deep-night min-h-screen">

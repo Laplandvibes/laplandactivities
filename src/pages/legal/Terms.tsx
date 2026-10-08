@@ -15,7 +15,6 @@ export default function Terms() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={`https://laplandactivities.fi${path}`.replace(/\/?$/, '/')} />
-        <meta name="robots" content="index, follow" />
       </Helmet>
       <TermsContent siteName="LaplandActivities" siteUrl="laplandactivities.fi" lang={lang} />
     </>
