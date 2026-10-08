@@ -162,7 +162,9 @@ export default function FishingPage() {
         <title>{c.metaTitle}</title>
         <meta name="description" content={c.metaDescription} />
         <link rel="canonical" href={pageUrl} />
-        <meta property="og:type" content="article" />
+        {/* og:type EI täällä (8.10.2026): esirenderöity HTML sanoo "website", ja se on oikein tälle sivulle
+            (opas ilman näkyvää julkaisupäivää tai article:published_timea). Helmet lisäsi toisen og:typen
+            arvolla "article" staattisen rinnalle (gate:og-js "ristiriita"). */}
         <meta property="og:title" content={c.metaTitle} />
         <meta property="og:description" content={c.metaDescription} />
         <meta property="og:url" content={pageUrl} />
