@@ -542,7 +542,7 @@ const zhCN: SectionCopy = {
       "价格会变动，因此不在此列出；预订前会显示最新价格。",
     ],
     earnH2: "我们如何盈利",
-    earnBody: "当您通过本站链接预订时，合作方（GetYourGuide、Sembo、Trip.com、EconomyBookings或EKTA）会向我们支付佣金。您支付的价格与合作方网站相同。少数合作伙伴卡片是付费展位，并已标明。佣金从不左右推荐：令人失望的活动会被移除。",
+    earnBody: "当您通过本站链接预订时，合作方（GetYourGuide、Sembo、Trip.com或EconomyBookings）会向我们支付佣金。您支付的价格与合作方网站相同。少数合作伙伴卡片是付费展位，并已标明。佣金从不左右推荐：令人失望的活动会被移除。",
     notH2: "我们不做什么",
     notItems: [
       "我们不受理预订或付款；您的合同对象是运营商或预订平台。",

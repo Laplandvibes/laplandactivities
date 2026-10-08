@@ -542,7 +542,7 @@ const de: SectionCopy = {
       "Preise drucken wir nicht ab, weil sie sich ändern; der aktuelle Preis erscheint vor der Buchung.",
     ],
     earnH2: "Womit wir Geld verdienen",
-    earnBody: "Wenn Sie über einen Link auf dieser Seite buchen, zahlt uns der Partner (GetYourGuide, Sembo, Trip.com, EconomyBookings oder EKTA) eine Provision. Sie zahlen denselben Preis wie auf der Partnerseite. Einige Partnerkarten sind bezahlte Platzierungen und als solche gekennzeichnet. Die Provision entscheidet nie über eine Empfehlung: Eine Aktivität, die enttäuscht, wird entfernt.",
+    earnBody: "Wenn Sie über einen Link auf dieser Seite buchen, zahlt uns der Partner (GetYourGuide, Sembo, Trip.com oder EconomyBookings) eine Provision. Sie zahlen denselben Preis wie auf der Partnerseite. Einige Partnerkarten sind bezahlte Platzierungen und als solche gekennzeichnet. Die Provision entscheidet nie über eine Empfehlung: Eine Aktivität, die enttäuscht, wird entfernt.",
     notH2: "Was wir nicht tun",
     notItems: [
       "Wir nehmen selbst keine Buchungen oder Zahlungen entgegen; Ihr Vertrag besteht mit dem Veranstalter oder der Buchungsplattform.",

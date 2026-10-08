@@ -308,7 +308,7 @@ const sv: SectionCopy = {
       "Priser trycks inte här eftersom de ändras; det aktuella priset visas innan du bokar.",
     ],
     earnH2: "Så tjänar vi pengar",
-    earnBody: "När du bokar via en länk på sajten betalar partnern (GetYourGuide, Sembo, Trip.com, EconomyBookings eller EKTA) oss en provision. Du betalar samma pris som på partnerns egen sida. Några partnerkort är betalda placeringar och är märkta som sådana. Provisionen avgör aldrig vad vi rekommenderar: en aktivitet som gör besviken tas bort.",
+    earnBody: "När du bokar via en länk på sajten betalar partnern (GetYourGuide, Sembo, Trip.com eller EconomyBookings) oss en provision. Du betalar samma pris som på partnerns egen sida. Några partnerkort är betalda placeringar och är märkta som sådana. Provisionen avgör aldrig vad vi rekommenderar: en aktivitet som gör besviken tas bort.",
     notH2: "Det här gör vi inte",
     notItems: [
       "Vi tar inte emot bokningar eller betalningar själva; ditt avtal är med arrangören eller bokningsplattformen.",

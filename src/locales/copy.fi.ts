@@ -559,7 +559,7 @@ const fi: SectionCopy = {
       "Emme julkaise hintoja tässä, koska ne vaihtuvat; ajantasainen hinta näkyy ennen varausta.",
     ],
     earnH2: "Mistä saamme rahaa",
-    earnBody: "Kun varaat tämän sivuston linkin kautta, kumppani (GetYourGuide, Sembo, Trip.com, EconomyBookings tai EKTA) maksaa meille provision. Sinä maksat saman hinnan kuin kumppanin omalla sivulla. Muutama kumppanikortti on maksettu mainospaikka, ja ne on merkitty. Provisio ei koskaan ratkaise suositusta: pettymyksen tuottanut retki poistetaan.",
+    earnBody: "Kun varaat tämän sivuston linkin kautta, kumppani (GetYourGuide, Sembo, Trip.com tai EconomyBookings) maksaa meille provision. Sinä maksat saman hinnan kuin kumppanin omalla sivulla. Muutama kumppanikortti on maksettu mainospaikka, ja ne on merkitty. Provisio ei koskaan ratkaise suositusta: pettymyksen tuottanut retki poistetaan.",
     notH2: "Mitä emme tee",
     notItems: [
       "Emme ota vastaan varauksia emmekä maksuja; sopimuksesi syntyy järjestäjän tai varausalustan kanssa.",

@@ -308,7 +308,7 @@ const en: SectionCopy = {
       "Prices are not printed here because they change; the live price shows before you book.",
     ],
     earnH2: "How we make money",
-    earnBody: "When you book through a link on this site, the partner (GetYourGuide, Sembo, Trip.com, EconomyBookings or EKTA) pays us a commission. You pay the same price as on the partner site. A few partner cards are paid placements and are marked as such. Commission never decides a recommendation: an activity that disappoints is removed.",
+    earnBody: "When you book through a link on this site, the partner (GetYourGuide, Sembo, Trip.com or EconomyBookings) pays us a commission. You pay the same price as on the partner site. A few partner cards are paid placements and are marked as such. Commission never decides a recommendation: an activity that disappoints is removed.",
     notH2: "What we do not do",
     notItems: [
       "We do not take bookings or payments ourselves; your contract is with the operator or the booking platform.",

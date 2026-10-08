@@ -481,7 +481,7 @@ const nl: SectionCopy = {
       "Prijzen staan hier niet omdat zij veranderen; de actuele prijs verschijnt vóór het boeken.",
     ],
     earnH2: "Hoe wij geld verdienen",
-    earnBody: "Wanneer u via een link op deze site boekt, betaalt de partner (GetYourGuide, Sembo, Trip.com, EconomyBookings of EKTA) ons een commissie. U betaalt dezelfde prijs als op de site van de partner. Enkele partnerkaarten zijn betaalde plaatsingen en zijn als zodanig gemarkeerd. Commissie bepaalt nooit een aanbeveling: een activiteit die tegenvalt, wordt verwijderd.",
+    earnBody: "Wanneer u via een link op deze site boekt, betaalt de partner (GetYourGuide, Sembo, Trip.com of EconomyBookings) ons een commissie. U betaalt dezelfde prijs als op de site van de partner. Enkele partnerkaarten zijn betaalde plaatsingen en zijn als zodanig gemarkeerd. Commissie bepaalt nooit een aanbeveling: een activiteit die tegenvalt, wordt verwijderd.",
     notH2: "Wat wij niet doen",
     notItems: [
       "Wij nemen zelf geen boekingen of betalingen aan; uw overeenkomst is met de aanbieder of het boekingsplatform.",

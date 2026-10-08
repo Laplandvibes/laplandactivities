@@ -542,7 +542,7 @@ const ptBR: SectionCopy = {
       "Não publicamos preços porque eles mudam; o preço atual aparece antes de você reservar.",
     ],
     earnH2: "Como ganhamos dinheiro",
-    earnBody: "Quando você reserva por um link deste site, o parceiro (GetYourGuide, Sembo, Trip.com, EconomyBookings ou EKTA) nos paga uma comissão. Você paga o mesmo preço do site do parceiro. Alguns cartões de parceiros são espaços pagos e estão marcados como tal. A comissão nunca decide uma recomendação: uma atividade que decepciona é removida.",
+    earnBody: "Quando você reserva por um link deste site, o parceiro (GetYourGuide, Sembo, Trip.com ou EconomyBookings) nos paga uma comissão. Você paga o mesmo preço do site do parceiro. Alguns cartões de parceiros são espaços pagos e estão marcados como tal. A comissão nunca decide uma recomendação: uma atividade que decepciona é removida.",
     notH2: "O que não fazemos",
     notItems: [
       "Não recebemos reservas nem pagamentos; seu contrato é com a operadora ou com a plataforma de reservas.",
