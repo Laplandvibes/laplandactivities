@@ -6,19 +6,38 @@ import SmartImage from './SmartImage';
 import { HERO } from '../data/images';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
-import { WINTER_BAND, WINTER_SEARCH_Q } from '../i18n/winterBand';
+import { WINTER_BAND } from '../i18n/winterBand';
 import { currentSeasonBucket } from '../i18n/seasonWords';
 import PhotoCredit from './PhotoCredit';
 
-// Summer highlight icons/queries (slots 1:1 with copy.summerBand.highlights).
+// Summer highlight icons (slots 1:1 with copy.summerBand.highlights).
 const SUMMER_ICONS = [Mountain, Waves, Fish, Compass];
-const SUMMER_Q = ['hiking', 'kayak', 'salmon fishing', 'midnight sun tour'];
 // Winter highlight icons (slots 1:1 with WINTER_BAND.highlights).
 const WINTER_ICONS = [Dog, Sparkles, Flame, Fish];
 
+// GYG-polku per kortti (paikat 1:1 kuten ikonit). 🔴 8.10.2026 asti nämä olivat hakusanoja
+// ("salmon fishing lapland"), joita GYG:n /s?q= ei ole totellut 23.8. jälkeen; Worker taittoi
+// ne aihekategoriaan turvaverkkona. Nyt polku suoraan. Kaikki Lapin tason kategoriat on
+// mitattu (hubin gygCategories.ts 10.8./23.8.: vaellus 147, melonta 24, kalastus 103,
+// husky 134, moottorikelkka 186, revontulet 307). Keskiyön auringolle GYG:ssä ei ole
+// kategoriaa ⇒ Lapin sijaintisivu. Kortit ovat aihekortteja, eivät varausnappeja.
+const LAPLAND_CAT = 'lapland-finland-l2652';
+const SUMMER_PATHS = [
+  `${LAPLAND_CAT}/hiking-tc71`,
+  `${LAPLAND_CAT}/canoe-kayak-tours-tc61`,
+  `${LAPLAND_CAT}/fishing-tours-tc62`,
+  'lappi-suomi-l2652',
+];
+const WINTER_PATHS = [
+  `${LAPLAND_CAT}/dog-sledding-husky-tours-tc118`,
+  `${LAPLAND_CAT}/snowmobile-tours-tc119`,
+  `${LAPLAND_CAT}/northern-lights-tc310`,
+  `${LAPLAND_CAT}/fishing-tours-tc62`,
+];
+
 /**
  * Seasonal hero band on Home. Owner finding #3: a summer hero must not sit above
- * winter content. This band flips its WHOLE payload (copy, image, GYG queries,
+ * winter content. This band flips its WHOLE payload (copy, image, GYG paths,
  * accent icon) to match the live season — currentSeasonBucket(): spring+summer (May–Aug)
  * show summer, autumn+winter (Sep–Apr) show the coming winter — so the
  * page a visitor lands on is internally consistent.
@@ -31,7 +50,7 @@ export default function SummerBand() {
   const c = isSummer ? COPY[lang].summerBand : WINTER_BAND[lang];
   const SeasonIcon = isSummer ? Sun : Snowflake;
   const icons = isSummer ? SUMMER_ICONS : WINTER_ICONS;
-  const searchQ = isSummer ? SUMMER_Q : WINTER_SEARCH_Q;
+  const gygPaths = isSummer ? SUMMER_PATHS : WINTER_PATHS;
   const sids = isSummer
     ? ['summer_hiking', 'summer_kayak', 'summer_fishing', 'summer_midnight']
     : ['winter_husky', 'winter_snowmobile', 'winter_aurora', 'winter_icefishing'];
@@ -40,8 +59,10 @@ export default function SummerBand() {
   // ei hero-sliderin kuvan kierrätystä (Vesa 2026-07-12).
   const bandImg = isSummer ? '/images/categories/summer.webp' : '/images/heroes/winter-band-snowmobile-trail.webp';
   const bandImgFallback = isSummer ? HERO.snowyForest : HERO.huskyAurora;
-  const sectionSid = isSummer ? 'summer_band_book' : 'winter_band_book';
-  const heroQuery = isSummer ? 'midnight sun lapland' : 'husky snowmobile lapland';
+  // Pääpainike on selausnappi ("Selaa retkiä", 8.10.2026) ⇒ oma sid. Kesä: Lapin lista;
+  // talvi: Lapin talvilajien kategoria (648 tuotetta, picks.ts CATEGORY_LINKS).
+  const sectionSid = isSummer ? 'summer_band_browse' : 'winter_band_browse';
+  const sectionPath = isSummer ? 'lappi-suomi-l2652' : `${LAPLAND_CAT}/snow-winter-sports-tc113`;
 
   return (
     <section className="lv-aurora-veil bg-deep-night border-y border-white/5">
@@ -61,9 +82,9 @@ export default function SummerBand() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <AffiliateCTA
-                partner="activities-search"
+                partner="activities"
                 sid={sectionSid}
-                destination={heroQuery}
+                destination={sectionPath}
                 className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-7 py-3.5 rounded-full text-base font-semibold transition-all shadow-xl shadow-vibe-pink/30"
               >
                 <SeasonIcon className="w-5 h-5" />
@@ -103,13 +124,12 @@ export default function SummerBand() {
           {c.highlights.map((h, i) => {
             const Icon = icons[i] ?? Compass;
             const sid = sids[i] ?? `season_${i}`;
-            const q = `${searchQ[i] ?? h.title.toLowerCase()} lapland`;
             return (
               <AffiliateCTA
                 key={sid}
-                partner="activities-search"
+                partner="activities"
                 sid={sid}
-                destination={q}
+                destination={gygPaths[i] ?? 'lappi-suomi-l2652'}
                 className="group bg-[#F3F6FA] hover:bg-white border border-white/60 hover:border-vibe-pink/50 rounded-2xl p-4 sm:p-5 transition-all flex flex-col shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]"
               >
                 <Icon className="w-5 h-5 text-vibe-pink mb-3" />

@@ -238,12 +238,12 @@ const ko: SectionCopy = {
   },
   nav: {
     home: '홈', destinations: '목적지', categories: '카테고리', about: '소개', fishing: '낚시 가이드',
-    bookCta: '액티비티 예약', bookCtaShort: '예약하기', allDestinations: '모든 목적지 →', allCategories: '모든 카테고리 →',
+    bookCta: '투어 둘러보기', bookCtaShort: '투어 둘러보기', allDestinations: '모든 목적지 →', allCategories: '모든 카테고리 →',
   },
   hero: {
     eyebrow: '라플란드 · 오로라부터 백야까지',
     lead: '스노모빌 사파리, 허스키 썰매, 오로라 헌트, 스모크 사우나, 백야 아래의 강 래프팅. 로바니에미, 레비, 윌래스, 사리셀카 등에서 엄선한 운영자에게 직접 예약하세요.',
-    primaryCta: '지금 액티비티 예약', secondaryCta: '목적지 둘러보기',
+    primaryCta: '투어 둘러보기', secondaryCta: '목적지 둘러보기',
     stayNearby: '인근 숙소', stayNearbyDesc: 'Trip.com, 최저가',
     rentCar: '렌터카', rentCarDesc: '로바니에미 공항에서',
     auroraTours: '오로라 투어', auroraToursDesc: '엄선한 운영자',
@@ -260,7 +260,7 @@ const ko: SectionCopy = {
     eyebrow: "여름 시즌 · 지금 예약 가능",
     h2: '라플란드의 여름은 가장 잘 알려지지 않은 비밀입니다.',
     lead: '백야는 결코 지지 않습니다. 숲이 열립니다. 연어가 거슬러 오르고, 8월부터 산맥은 루스카로 붉게 물듭니다. 대부분의 운영자는 6월까지 폭넓은 가용성이 있지만, 7월이 되면 가장 좋은 시간은 모두 매진됩니다.',
-    bookCta: '여름 액티비티 예약', browseCta: '여름 가이드 둘러보기',
+    bookCta: '투어 둘러보기', browseCta: '여름 가이드 둘러보기',
     imageKicker: '여름 카테고리', imageH3: '백야를 느끼는 8가지 방법',
     highlights: [
       { title: '산악 트레킹', body: '팔라스-윌래스툰투리, 카르훈키에로스, 헤타-팔라스, 긴 하루, 인파 없음.' },
@@ -314,7 +314,7 @@ const ko: SectionCopy = {
     alreadyTitle: '이미 구독 중이십니다!', alreadyBody: '이미 구독되어 있는 것 같습니다. 곧 다시 인사드리겠습니다.',
     footnote: '언제든지 구독 해지 가능합니다.', errorFallback: '구독에 실패했습니다. 다시 시도해 주세요.',
   },
-  activityCard: { findBook: '찾아서 예약', planVisit: '방문 계획하기' },
+  activityCard: { findBook: '찾아서 예약', browseTours: '투어 둘러보기', planVisit: '방문 계획하기' },
   home: {
     metaTitle: '라플란드 여행: 10개 지역 79가지 액티비티',
     metaDescription: '로바니에미, 레비, 윙래스, 사리셀카 등 10개 지역의 스노모빌 사파리, 허스키 썸매, 오로라 투어, 스모크 사우나를 현지 운영사 가격으로 예약하세요.',
@@ -382,7 +382,7 @@ const ko: SectionCopy = {
   },
   categoryPage: {
     notFoundH1: '카테고리를 찾을 수 없음', backCategories: '← 카테고리로 돌아가기',
-    allCategoriesNav: '모든 카테고리', bookToursPrefix: '예약:',
+    allCategoriesNav: '모든 카테고리',
     activitiesCount: (n, name) => `${name}: ${n}개 액티비티`,
     comingSoon: '이 카테고리의 액티비티는 곧 추가됩니다.',
     gygTitlePrefix: '인기', gygEyebrow: '엄선한 운영자',
@@ -398,7 +398,7 @@ const ko: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: '목적지를 찾을 수 없음', backDestinations: '← 목적지로 돌아가기',
-    allDestinationsNav: '모든 목적지', bookActivitiesIn: '액티비티 예약: {dest}',
+    allDestinationsNav: '모든 목적지', bookActivitiesIn: '투어 둘러보기: {dest}',
     stayIn: '숙박:', activitiesShort: '액티비티',
     mustDoKicker: '필수 체험', mustDoH2: "에디터 추천",
     localKicker: '현지 정보', localH2: '인사이더 팁',

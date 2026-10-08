@@ -238,12 +238,12 @@ const fr: SectionCopy = {
   },
   nav: {
     home: 'Accueil', destinations: 'Destinations', categories: 'Catégories', about: 'À propos', fishing: 'Guide de pêche',
-    bookCta: 'Réserver des activités', bookCtaShort: 'Réserver', allDestinations: 'Toutes les destinations →', allCategories: 'Toutes les catégories →',
+    bookCta: 'Voir les tours', bookCtaShort: 'Voir les tours', allDestinations: 'Toutes les destinations →', allCategories: 'Toutes les catégories →',
   },
   hero: {
     eyebrow: 'Laponie finlandaise · Des aurores au soleil de minuit',
     lead: "Safaris en motoneige, traîneau de huskies, chasse aux aurores, saunas à fumée, rafting sous le soleil de minuit. Réservez directement auprès d'opérateurs choisis avec soin à Rovaniemi, Levi, Ylläs, Saariselkä et au-delà.",
-    primaryCta: 'Réserver maintenant', secondaryCta: 'Parcourir les destinations',
+    primaryCta: 'Voir les tours', secondaryCta: 'Parcourir les destinations',
     stayNearby: 'Hébergement à proximité', stayNearbyDesc: 'Trip.com, meilleurs tarifs',
     rentCar: 'Louer une voiture', rentCarDesc: 'Depuis l\'aéroport de Rovaniemi',
     auroraTours: 'Tours aurores', auroraToursDesc: 'Opérateurs choisis avec soin',
@@ -260,7 +260,7 @@ const fr: SectionCopy = {
     eyebrow: "Saison estivale · réservez maintenant",
     h2: "L'été en Laponie est le secret le mieux gardé.",
     lead: "Le soleil de minuit ne se couche jamais. Les forêts s'ouvrent. Le saumon remonte les rivières et les fjälls virent au rouge avec le ruska dès août. La plupart des opérateurs ont encore beaucoup de disponibilité jusqu'en juin ; en juillet, les meilleurs créneaux sont déjà partis.",
-    bookCta: "Réserver des activités d'été", browseCta: "Voir le guide d'été",
+    bookCta: 'Voir les tours', browseCta: "Voir le guide d'été",
     imageKicker: "Catégorie été", imageH3: "8 façons de vivre le soleil de minuit",
     highlights: [
       { title: 'Randonnée en fjäll', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, longues journées, pas de foule.' },
@@ -314,7 +314,7 @@ const fr: SectionCopy = {
     alreadyTitle: 'Déjà inscrit·e !', alreadyBody: "Il semble que vous soyez déjà abonné·e, à très vite.",
     footnote: 'Désinscription à tout moment.', errorFallback: "L'inscription a échoué. Veuillez réessayer.",
   },
-  activityCard: { findBook: 'Trouver et réserver', planVisit: 'Préparez votre visite' },
+  activityCard: { findBook: 'Trouver et réserver', browseTours: 'Voir les tours', planVisit: 'Préparez votre visite' },
   home: {
     metaTitle: 'Que faire en Laponie : 79 activités dans 10 destinations',
     metaDescription: 'Safaris en motoneige, traîneau à chiens, chasses aux aurores et saunas à fumée à Rovaniemi, Levi, Ylläs, Saariselkä et six autres destinations.',
@@ -382,7 +382,7 @@ const fr: SectionCopy = {
   },
   categoryPage: {
     notFoundH1: 'Catégorie introuvable', backCategories: '← Retour aux catégories',
-    allCategoriesNav: 'Toutes les catégories', bookToursPrefix: 'Réserver',
+    allCategoriesNav: 'Toutes les catégories',
     activitiesCount: (n, name) => `${name} : ${n} activités`,
     comingSoon: 'Les activités pour cette catégorie arrivent bientôt.',
     gygTitlePrefix: 'Les plus réservées', gygEyebrow: 'Opérateurs choisis avec soin',
@@ -398,7 +398,7 @@ const fr: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: 'Destination introuvable', backDestinations: '← Retour aux destinations',
-    allDestinationsNav: 'Toutes les destinations', bookActivitiesIn: 'Réserver à {dest}',
+    allDestinationsNav: 'Toutes les destinations', bookActivitiesIn: 'Voir les tours à {dest}',
     stayIn: 'Séjourner à', activitiesShort: 'activités',
     mustDoKicker: 'À ne pas manquer', mustDoH2: "Notre choix sur place",
     localKicker: 'Info locale', localH2: 'Conseils d\'initiés',

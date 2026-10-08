@@ -18,18 +18,16 @@ export type WinterBandCopy = {
   highlights: { title: string; body: string }[];
   gygTitle: string;
   gygEyebrow: string;
-  /** GYG search query per highlight slot (stable English keywords). */
 };
 
-// Stable English GYG search queries per winter highlight slot.
-export const WINTER_SEARCH_Q = ['husky safari', 'snowmobile safari', 'northern lights', 'ice fishing'];
+// GYG-polut kortteihin: SummerBand.tsx WINTER_PATHS (hakusanat poistettu 8.10.2026).
 
 export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
   en: {
     eyebrow: 'Winter season: booking now',
     h2: 'Lapland in winter is the real thing.',
     lead: 'Snow settles in November and the polar night brings the strongest aurora. Husky and snowmobile safaris, reindeer sleighs and smoke saunas run all season. The Christmas and February–March peaks book out first.',
-    bookCta: 'Book winter activities',
+    bookCta: 'Browse tours',
     browseCta: 'Browse winter guide',
     imageKicker: 'Winter season',
     imageH3: 'The Arctic at its most magic',
@@ -46,7 +44,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Talvikausi: varattavissa nyt',
     h2: 'Lappi on talvella taianomaisimmillaan.',
     lead: 'Lumi asettuu marraskuussa ja kaamos tuo voimakkaimmat revontulet. Husky- ja moottorikelkkasafarit, porokyydit ja savusaunat pyörivät koko kauden. Joulun ja helmi–maaliskuun huiput varataan ensimmäisinä.',
-    bookCta: 'Varaa talviaktiviteetti',
+    bookCta: 'Selaa retkiä',
     browseCta: 'Selaa talviopasta',
     imageKicker: 'Talvikausi',
     imageH3: 'Arktinen taikamaisimmillaan',
@@ -63,7 +61,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Wintersaison: jetzt buchbar',
     h2: 'Lappland im Winter ist das Echte.',
     lead: 'Im November fällt der Schnee, und die Polarnacht bringt die stärksten Polarlichter. Husky- und Schneemobil-Safaris, Rentierschlitten und Rauchsaunen laufen die ganze Saison. Die Hochzeiten um Weihnachten und im Februar/März sind zuerst ausgebucht.',
-    bookCta: 'Winteraktivitäten buchen',
+    bookCta: 'Touren ansehen',
     browseCta: 'Winter-Guide ansehen',
     imageKicker: 'Wintersaison',
     imageH3: 'Die Arktis von ihrer magischsten Seite',
@@ -80,7 +78,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: '冬シーズン：予約受付中',
     h2: '冬のラップランドこそ本物。',
     lead: '11月に雪が積もり、極夜が最も強いオーロラをもたらします。ハスキーやスノーモービルのサファリ、トナカイそり、スモークサウナはシーズン中ずっと楽しめます。クリスマスと2〜3月の繁忙期から先に埋まります。',
-    bookCta: '冬のアクティビティを予約',
+    bookCta: 'ツアーを見る',
     browseCta: '冬ガイドを見る',
     imageKicker: '冬シーズン',
     imageH3: '最も幻想的な北極',
@@ -97,7 +95,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Temporada de invierno: reserva ahora',
     h2: 'La Laponia de invierno es lo auténtico.',
     lead: 'La nieve llega en noviembre y la noche polar trae las auroras más intensas. Los safaris en husky y moto de nieve, los trineos de renos y las saunas de humo funcionan toda la temporada: la Navidad y el pico de febrero-marzo se agotan primero.',
-    bookCta: 'Reservar actividades de invierno',
+    bookCta: 'Ver tours',
     browseCta: 'Ver guía de invierno',
     imageKicker: 'Temporada de invierno',
     imageH3: 'El Ártico en su momento más mágico',
@@ -114,7 +112,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Temporada de inverno: reserve agora',
     h2: 'A Lapônia no inverno é a coisa de verdade.',
     lead: 'A neve chega em novembro e a noite polar traz as auroras mais fortes. Safáris de husky e moto de neve, trenós de renas e saunas de fumaça funcionam a temporada toda. O Natal e o pico de fevereiro-março esgotam primeiro.',
-    bookCta: 'Reservar atividades de inverno',
+    bookCta: 'Ver tours',
     browseCta: 'Ver guia de inverno',
     imageKicker: 'Temporada de inverno',
     imageH3: 'O Ártico no seu auge mágico',
@@ -131,7 +129,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: '冬季：现在预订',
     h2: '冬天的拉普兰才是真正的拉普兰。',
     lead: '11月开始积雪，极夜带来最强的极光。哈士奇与雪地摩托之旅、驯鹿雪橇和烟熏桑拿整个冬季运营，圣诞节和2至3月的旺季最先订满。',
-    bookCta: '预订冬季活动',
+    bookCta: '浏览行程',
     browseCta: '查看冬季指南',
     imageKicker: '冬季',
     imageH3: '最具魔力的北极',
@@ -148,7 +146,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: '겨울 시즌: 지금 예약',
     h2: '겨울의 라플란드가 진짜입니다.',
     lead: '11월에 눈이 쌓이고 극야가 가장 강한 오로라를 선사합니다. 허스키와 스노모빌 사파리, 순록 썰매, 스모크 사우나가 시즌 내내 운영되며, 크리스마스와 2~3월 성수기가 가장 먼저 마감됩니다.',
-    bookCta: '겨울 액티비티 예약',
+    bookCta: '투어 둘러보기',
     browseCta: '겨울 가이드 보기',
     imageKicker: '겨울 시즌',
     imageH3: '가장 마법 같은 북극',
@@ -165,7 +163,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: "Saison d'hiver : réservez maintenant",
     h2: "La Laponie en hiver, c'est l'essentiel.",
     lead: "La neige s'installe en novembre et la nuit polaire offre les aurores les plus intenses. Safaris en traîneau de huskies et en motoneige, traîneaux de rennes et saunas à fumée fonctionnent toute la saison. Noël et le pic de février-mars partent en premier.",
-    bookCta: "Réserver des activités d'hiver",
+    bookCta: 'Voir les tours',
     browseCta: "Voir le guide d'hiver",
     imageKicker: "Saison d'hiver",
     imageH3: "L'Arctique au plus magique",
@@ -182,7 +180,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Stagione invernale: prenota ora',
     h2: "La Lapponia d'inverno è quella vera.",
     lead: "La neve arriva a novembre e la notte polare porta le aurore più intense. Safari in husky e motoslitta, slitte trainate da renne e saune a fumo sono attivi tutta la stagione: Natale e il picco di febbraio-marzo si esauriscono per primi.",
-    bookCta: 'Prenota attività invernali',
+    bookCta: 'Sfoglia i tour',
     browseCta: 'Vedi la guida invernale',
     imageKicker: 'Stagione invernale',
     imageH3: "L'Artico al massimo della magia",
@@ -199,7 +197,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Winterseizoen: nu boeken',
     h2: 'Lapland in de winter is het echte werk.',
     lead: 'In november valt de sneeuw en de poolnacht brengt het sterkste noorderlicht. Husky- en sneeuwscootersafari\'s, rendiersleeën en rooksauna\'s draaien het hele seizoen. Kerst en de piek van februari-maart zijn het eerst vol.',
-    bookCta: 'Boek winteractiviteiten',
+    bookCta: 'Bekijk tours',
     browseCta: 'Bekijk wintergids',
     imageKicker: 'Winterseizoen',
     imageH3: 'Het noordpoolgebied op zijn magischst',
@@ -216,7 +214,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     eyebrow: 'Vintersäsong: bokningsbart nu',
     h2: 'Lappland på vintern är den äkta varan.',
     lead: 'Snön lägger sig i november och polarnatten ger det starkaste norrskenet. Hundspann- och snöskotersafarier, renslädar och rökbastur går hela säsongen. Julen och februari–mars-toppen bokas upp först.',
-    bookCta: 'Boka vinteraktiviteter',
+    bookCta: 'Utforska turer',
     browseCta: 'Se vinterguiden',
     imageKicker: 'Vintersäsong',
     imageH3: 'Arktis på sitt mest storslagna',

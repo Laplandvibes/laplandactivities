@@ -140,8 +140,12 @@ interface Props {
   eyebrow?: string;
   /** Optional sub-line under the heading. */
   subtitle?: string;
-  /** GYG search query for the ad-block fallback CTA (never 404s). Defaults to 'Lapland'. */
-  fallbackQuery?: string;
+  /**
+   * GYG path for the ad-block fallback CTA ("Selaa retkiä GetYourGuidessa"): a
+   * category (`…/…-tcNNN`) or location (`…-lNNNN`). Defaults to the Lapland list.
+   * Was a search word until 8.10.2026; GYG's /s?q= has ignored the query since 23.8.
+   */
+  fallbackPath?: string;
 }
 
 export default function GetYourGuideWidget({
@@ -151,7 +155,7 @@ export default function GetYourGuideWidget({
   title,
   eyebrow,
   subtitle,
-  fallbackQuery = 'Lapland',
+  fallbackPath = 'lappi-suomi-l2652',
 }: Props) {
   const lang = useLang();
   const d = DEFAULTS[lang];
@@ -230,9 +234,9 @@ export default function GetYourGuideWidget({
               {FALLBACK_LEAD[lang] ?? FALLBACK_LEAD.en}
             </p>
             <AffiliateCTA
-              partner="activities-search"
+              partner="activities"
               sid={`${cmpTag.replace(/[^a-z0-9_]/gi, '_')}_fallback`}
-              destination={fallbackQuery}
+              destination={fallbackPath}
               className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white font-bold px-6 py-3 rounded-full text-sm transition-colors"
             >
               {BROWSE_CTA[lang] ?? BROWSE_CTA.en}

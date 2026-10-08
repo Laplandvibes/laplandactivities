@@ -22,16 +22,19 @@ export type AffiliatePartner =
    * the Lomarengas NAME must be visible at the placement — pass a label.
    */
   | 'lomarengas'
-  | 'activities'
   /**
-   * GetYourGuide keyword SEARCH (lands on GYG `/s?q=…` via the Worker). Use for
-   * a SPECIFIC activity card where we want the user to land on results for that
-   * exact experience + place (e.g. "salmon fishing tornio"), not the broad
-   * location page. `destination` carries the concise search query.
-   * Owner-mandated 2026-06-26: booking links must target the specific
-   * activity, not a generic Lapland search.
+   * GetYourGuide. `destination` is a GYG PATH, always one of three shapes:
+   *   product   `<location-lNNN>/<slug-tNNNNN>`  → a "Varaa" / "Etsi ja varaa" button
+   *   category  `<location-lNNN>/<name-tcNNN>`  → a browse button ("Selaa retkiä")
+   *   location  `<name-lNNNN>`                  → a browse button
+   * 🔴 There is no search variant any more. The old `activities-search` partner
+   * sent a keyword to GYG's `/s?q=`, which stopped honouring the query on
+   * 2026-08-23; the Worker has folded such words into a Lapland list (23.8.) and
+   * a topic category (LV-GYG-TOPIC, 4.10.) since. That is the Worker's safety
+   * net, not a link pattern: a "book" button that lands on a list breaks its
+   * promise (removed 8.10.2026, every card now carries a product or browse path).
    */
-  | 'activities-search';
+  | 'activities';
 
 export interface AffiliateCTAProps
   extends Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'href' | 'target' | 'rel'> {
@@ -40,7 +43,8 @@ export interface AffiliateCTAProps
   sid: string;
   /**
    * For hotels/cars: search query passed as `?ss=...`.
-   * For activities: GYG slug appended to the path (e.g. 'rovaniemi-l2653').
+   * For activities: GYG path appended to the Worker path — product (`…-tNNNNN`),
+   * category (`…/…-tcNNN`) or location (`rovaniemi-l2653`). Never search words.
    */
   destination?: string;
   /** Extra query params (checkin, pickup_date, currency, …). Merged after sid + ss. */
@@ -90,57 +94,38 @@ export function buildAffiliateHref({
   lang = "en",
 }: Pick<AffiliateCTAProps, 'partner' | 'sid' | 'destination' | 'query'> & { lang?: _Lang }): string {
   const sid = cleanSid(rawSid);
-  if (partner === 'activities' || partner === 'activities-search') {
+  if (partner === 'activities') {
     // Reitittää Workerin kautta 2026-08-03 alkaen. Tämän korvaama suora
     // GYG-linkitys oli toukokuun 2026 kiertotapa (/go/activities/<slug>
-    // romahti silloin GYG:n etusivulle); Worker on 2026-08-02 lähtien
-    // hoitanut slugin, /s?q=-haun JA kielen polkuprefiksin (verifioitu
-    // livenä 3.8.: tuoteslug+fi, haku+ja, sijaintislug+de). Suora linkitys
-    // menettäisi D1-klikkilokin ja veisi partner_id:n bundleen.
+    // romahti silloin GYG:n etusivulle). Suora linkitys menettäisi
+    // D1-klikkilokin ja veisi partner_id:n bundleen.
+    //
+    // 🔴 8.10.2026: hakusanoja (?q=) ei enää rakenneta. GYG:n `/s?q=` lakkasi
+    // suodattamasta 23.8.2026 (Worker LV-GYG-SEARCH-DEAD), joten sijaintislugin ja
+    // hakusanan yhdistelmä, jonka tämä haara ennen kokosi, avasi yleislistan.
+    // `destination` on aina tuote-, kategoria- tai sijaintipolku (ks. AffiliatePartner).
     const params = new URLSearchParams({ sid });
     const gygLang = GYG_WORKER_LANG[lang];
     if (gygLang) params.set('language', gygLang);
-    let path = '';
-    if (partner === 'activities-search') {
-      // `destination` on tiivis hakulause (esim. "salmon fishing tornio").
-      if (destination) params.set('q', destination);
-    } else {
-      const dest = (destination ?? '').replace(/^\/+|\/+$/g, '');
-      const q = query?.q?.trim();
-      const isDeepLink = dest.includes('/') || /-t\d+$/.test(dest);
-      if (q && dest && !isDeepLink) {
-        // 🔴 GYG:n sijaintisivut OHITTAVAT ?q=:n kokonaan (hubin auditti
-        // 2026-07-31: rovaniemi-l2653/?q=reindeer renderöi saman suodattamattoman
-        // listan). destination+q → /s-haku, jossa slugin paikkasanat taitetaan
-        // hakutekstiin — sama semantiikka kuin hubin AffiliateCTA:ssa.
-        const place = dest
-          .replace(/-l\d+$/, '')
-          .split('-')
-          .filter((w) => w && !['finland', 'suomi', 'lappi'].includes(w) && !q.toLowerCase().includes(w));
-        if (!place.length && !/lapland|rovaniemi|levi|yll|saariselk|ruka|inari|kemi|salla/i.test(q)) place.push('lapland');
-        params.set('q', [q, ...place].join(' '));
-      } else {
-        // 🔴🔴 Tuotelinkki ilman slugia: `-t<id>/`. GYG kaantaa tuotepolun molemmat
-        // osat, ja englanninkielinen slugi ohjaa kaannetylla kielella HAKUSIVULLE
-        // (mitattu 20.9.2026 kuningasrapusafarista: `/s?…&et=1158887&lc=97740`).
-        // Vika ei nay englanniksi testattaessa — siksi se eli sivustolla nain kauan.
-        // Sijaintisivut jaavat ennalleen; Worker hoitaa niiden kieliprefiksin.
-        const tid = dest.match(/-t(\d+)$/);
-        if (tid) {
-          // 🔴 Kieliprefiksi rakennetaan itse: Worker ei lisaa sita id-polkuun
-          // (mitattu 20.9.2026). Prefiksillinen polku menee lapi sellaisenaan ja
-          // GYG avaa oikean kieliversion tuotesivusta.
-          const prefix = GYG_LOCALE_PREFIX[lang];
-          path = prefix ? `${prefix}/-t${tid[1]}/` : `-t${tid[1]}/`;
-          if (prefix) params.delete('language');
-        } else {
-          path = dest;
-        }
-        if (q && !dest) params.set('q', q);
-      }
+    const dest = (destination ?? '').replace(/^\/+|\/+$/g, '');
+    let path = dest;
+    // 🔴🔴 Tuotelinkki ilman slugia: `-t<id>/`. GYG kaantaa tuotepolun molemmat
+    // osat, ja englanninkielinen slugi ohjaa kaannetylla kielella HAKUSIVULLE
+    // (mitattu 20.9.2026 kuningasrapusafarista: `/s?…&et=1158887&lc=97740`).
+    // Vika ei nay englanniksi testattaessa — siksi se eli sivustolla nain kauan.
+    // Kategoria- ja sijaintisivut (`-tcNNN`, `-lNNN`) jaavat ennalleen; Worker
+    // hoitaa niiden kieliprefiksin `language`-parametrista.
+    const tid = dest.match(/-t(\d+)$/);
+    if (tid) {
+      // 🔴 Kieliprefiksi rakennetaan itse: Worker ei lisaa sita id-polkuun
+      // (mitattu 20.9.2026). Prefiksillinen polku menee lapi sellaisenaan ja
+      // GYG avaa oikean kieliversion tuotesivusta.
+      const prefix = GYG_LOCALE_PREFIX[lang];
+      path = prefix ? `${prefix}/-t${tid[1]}/` : `-t${tid[1]}/`;
+      if (prefix) params.delete('language');
     }
-    // Muut lisäparametrit kulkevat Workerille (q on jo käsitelty yllä).
-    if (query) for (const [k, v] of Object.entries(query)) if (v && k !== 'q') params.set(k, v);
+    // Muut lisäparametrit kulkevat Workerille sellaisenaan.
+    if (query) for (const [k, v] of Object.entries(query)) if (v) params.set(k, v);
     return `${REDIRECT_HOST}/go/activities${path ? `/${path}` : ''}?${params.toString()}`;
   }
   const params = new URLSearchParams({ sid, ...(query || {}) });

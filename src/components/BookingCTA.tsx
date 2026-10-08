@@ -6,9 +6,8 @@ import { COPY } from '../locales/copy';
 interface Props {
   destinationSlug?: string;
   hotelsQuery?: string;
+  /** GYG location or category path (never search words). Defaults to the Lapland list. */
   gygSlug?: string;
-  /** Optional GYG search filter (?q=) — category pages pass this to target tours of that type. */
-  gygQ?: string;
   pickupIata?: string;
   /**
    * Sivutunniste sidiin. Ilman tätä 12 eri sivua (etusivu, molemmat indeksit,
@@ -27,7 +26,6 @@ export default function BookingCTA({
   destinationSlug = 'lapland',
   hotelsQuery = 'Lapland, Finland',
   gygSlug = 'lappi-suomi-l2652',
-  gygQ,
   pickupIata = 'RVN',
   sidTag,
   eyebrow,
@@ -64,7 +62,6 @@ export default function BookingCTA({
             partner="activities"
             sid={`bookcta_activities_${tag}`}
             destination={gygSlug}
-            query={gygQ ? { q: gygQ } : undefined}
             className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-vibe-pink/40 hover:border-vibe-pink p-6 backdrop-blur-sm transition-all"
           >
             <div className="w-11 h-11 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30 flex items-center justify-center mb-3">

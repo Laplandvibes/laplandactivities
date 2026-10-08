@@ -197,7 +197,7 @@ export default function Navigation() {
 
           <AffiliateCTA
             partner="activities"
-            sid="nav_book_now"
+            sid="nav_browse"
             destination="lappi-suomi-l2652"
             className="whitespace-nowrap bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 xl:px-5 py-2 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
@@ -266,7 +266,7 @@ export default function Navigation() {
 
           <AffiliateCTA
             partner="activities"
-            sid="mobile_nav_book_now"
+            sid="mobile_nav_browse"
             destination="lappi-suomi-l2652"
             className="block mt-2 text-center bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-3 rounded-full text-sm font-semibold"
           >

@@ -83,10 +83,13 @@ export default function Hero() {
           {c.lead}
         </p>
 
+        {/* 🔴 Pääpainike on SELAUSNAPPI ("Selaa retkiä", 8.10.2026): se avaa GYG:n Lapin
+            listan, ei tuotetta, joten se ei saa luvata varausta. Varausnapit ("Etsi ja varaa")
+            ovat korteissa, joissa kullakin on oma tuotteensa (data/activities.ts GYG_PRODUCT). */}
         <div className="flex flex-col sm:flex-row gap-3 justify-center items-stretch sm:items-center mb-10 max-w-2xl mx-auto">
           <AffiliateCTA
             partner="activities"
-            sid="hero_book_lapland"
+            sid="hero_browse_lapland"
             destination="lappi-suomi-l2652"
             className="flex-1 inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-8 py-4 rounded-full text-base font-semibold transition-all shadow-xl shadow-vibe-pink/30"
           >
@@ -104,12 +107,14 @@ export default function Hero() {
         {/* Pikakortit = aktiviteetteja, ei majoitusta eikä vuokra-autoa (Vesa 19.9.2026:
             "miksi etusivun hero-osiossa lukee vuokraa auto? ei se ole varmaan se ykkösjuttu
             kun tullaan aktiviteettisivulle"). Majoitus ja auto elävät HotelsStripissä ja
-            BookingCTA:ssa alempana. Kolmas kortti vaihtuu kauden mukaan. */}
+            BookingCTA:ssa alempana. Kolmas kortti vaihtuu kauden mukaan.
+            Kortit ovat aihekortteja: kukin avaa GYG:n Lapin KATEGORIAsivun (mitattu: revontulet 307,
+            husky 134, moottorikelkka 186 tuotetta, hubin gygCategories.ts 10.8.), ei hakua. */}
         <div className="hidden sm:grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl mx-auto mb-12">
           <AffiliateCTA
-            partner="activities-search"
+            partner="activities"
             sid="hero_strip_aurora"
-            destination="northern lights lapland"
+            destination="lapland-finland-l2652/northern-lights-tc310"
             className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors"
           >
             <Sparkles className="w-4 h-4 text-vibe-pink mb-1" />
@@ -117,9 +122,9 @@ export default function Hero() {
             <p className="text-snow/80 text-xs">{c.auroraToursDesc}</p>
           </AffiliateCTA>
           <AffiliateCTA
-            partner="activities-search"
+            partner="activities"
             sid="hero_strip_husky_reindeer"
-            destination="husky reindeer lapland"
+            destination="lapland-finland-l2652/dog-sledding-husky-tours-tc118"
             className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors"
           >
             <Dog className="w-4 h-4 text-vibe-pink mb-1" />
@@ -137,9 +142,9 @@ export default function Hero() {
             </Link>
           ) : (
             <AffiliateCTA
-              partner="activities-search"
+              partner="activities"
               sid="hero_strip_snowmobile"
-              destination="snowmobile safari lapland"
+              destination="lapland-finland-l2652/snowmobile-tours-tc119"
               className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-left transition-colors col-span-2 sm:col-span-1"
             >
               <Snowflake className="w-4 h-4 text-vibe-pink mb-1" />

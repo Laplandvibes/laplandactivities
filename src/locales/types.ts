@@ -12,8 +12,13 @@ export type SectionCopy = {
     categories: string;
     about: string;
     fishing: string;
+    /**
+     * Nav CTA → GetYourGuide's Lapland list. 🔴 A BROWSE label since 8.10.2026
+     * ("Selaa retkiä"): the link opens a list, not a product, so it must not say
+     * "book" (the key name predates that rule).
+     */
     bookCta: string;
-    /** Short nav CTA shown at md (768-1023px) where the desktop nav is crowded. */
+    /** Short nav CTA shown at md (768-1023px) where the desktop nav is crowded. Browse label, as bookCta. */
     bookCtaShort: string;
     allDestinations: string;
     allCategories: string;
@@ -21,6 +26,7 @@ export type SectionCopy = {
   hero: {
     eyebrow: string;
     lead: string;
+    /** Hero CTA → GetYourGuide's Lapland list. Browse label since 8.10.2026 (a list, not a product). */
     primaryCta: string;
     secondaryCta: string;
     stayNearby: string;
@@ -43,6 +49,7 @@ export type SectionCopy = {
     eyebrow: string;
     h2: string;
     lead: string;
+    /** Band CTA → a GetYourGuide list. Browse label since 8.10.2026 (key name predates that rule). */
     bookCta: string;
     browseCta: string;
     imageKicker: string;
@@ -92,7 +99,14 @@ export type SectionCopy = {
     errorFallback: string;
   };
   activityCard: {
+    /** CTA for a card linked to ONE GetYourGuide product (GYG_PRODUCT). */
     findBook: string;
+    /**
+     * CTA for a bookable card with no matching product (GYG_BROWSE): it opens a
+     * category or place list on GetYourGuide, so it says "browse", never "book".
+     * Same wording as bookingCta.browseTours.
+     */
+    browseTours: string;
     /** CTA for non-bookable cards (museums, free parks) → destination page. */
     planVisit: string;
   };
@@ -149,7 +163,6 @@ export type SectionCopy = {
     notFoundH1: string;
     backCategories: string;
     allCategoriesNav: string;
-    bookToursPrefix: string;
     activitiesCount: (n: number, name: string) => string;
     comingSoon: string;
     gygTitlePrefix: string;
@@ -172,6 +185,7 @@ export type SectionCopy = {
     notFoundH1: string;
     backDestinations: string;
     allDestinationsNav: string;
+    /** Hero CTA → the destination's GetYourGuide list. Browse label since 8.10.2026 ({dest} = place name). */
     bookActivitiesIn: string;
     stayIn: string;
     activitiesShort: string;

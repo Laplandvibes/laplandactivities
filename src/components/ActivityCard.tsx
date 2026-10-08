@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PhotoCredit from './PhotoCredit';
 import { withReferral } from '../lib/referral';
 import type { Activity } from '../data/activities';
-import { isBookable, gygQueryForActivity, PARTNER_PAGE, OFFICIAL_SITE, HOTEL_SEARCH } from '../data/activities';
+import { isBookable, gygTargetForActivity, PARTNER_PAGE, OFFICIAL_SITE, HOTEL_SEARCH } from '../data/activities';
 import { imageForActivity } from '../data/images';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -26,9 +26,11 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   const img = image ?? imageForActivity(rawActivity);
   const omaKuva = img !== '';
   const bookable = isBookable(rawActivity);
-  const gygQ = gygQueryForActivity(rawActivity);
+  // GYG: tuote ("Etsi ja varaa") tai selaussivu ("Selaa retkiä"), ei koskaan hakua.
+  // Varausnappi yleislistaan oli rikottu lupaus (8.10.2026, ks. GYG_PRODUCT).
+  const gyg = gygTargetForActivity(rawActivity);
   // Paid-partner activity (Bear Kuusamo): CTA routes to our partner feature
-  // page, never to a GYG search — see PARTNER_PAGE in data/activities.ts.
+  // page, never to GetYourGuide — see PARTNER_PAGE in data/activities.ts.
   const partnerPath = PARTNER_PAGE[rawActivity.id];
   // Ei-varattava kohde: oma virallinen sivu, jos sellainen on mitattu; muuten kategoriasivu.
   // EI koskaan takaisin samalle kohdesivulle — se oli kuollut klikkaus (Vesa 20.9.2026).
@@ -36,6 +38,8 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   // 🔴 Hotelli ennen virallista sivua: majoituksesta meilla on kumppani (Vesa 21.9.).
   const hotelSearch = HOTEL_SEARCH[rawActivity.id];
   const sid = `card_${rawActivity.id}`.slice(0, 50).replace(/-/g, '_');
+  // Oma sid kummallekin GYG-nappityypille, jotta tuote- ja selausklikit erottuvat D1:ssä.
+  const gygSid = `card_${gyg.kind === 'product' ? 'book' : 'browse'}_${rawActivity.id}`.slice(0, 50).replace(/-/g, '_');
 
   return (
     <div className="group bg-white/[0.04] hover:bg-white/[0.07] rounded-2xl border border-white/10 overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-vibe-pink/10 flex flex-col">
@@ -101,12 +105,12 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
           </Link>
         ) : bookable ? (
           <AffiliateCTA
-            partner="activities-search"
-            sid={sid}
-            destination={gygQ}
+            partner="activities"
+            sid={gygSid}
+            destination={gyg.path}
             className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
-            {c.findBook} <ExternalLink className="w-3.5 h-3.5" />
+            {gyg.kind === 'product' ? c.findBook : c.browseTours} <ExternalLink className="w-3.5 h-3.5" />
           </AffiliateCTA>
         ) : hotelSearch ? (
           <AffiliateCTA

@@ -238,12 +238,12 @@ const nl: SectionCopy = {
   },
   nav: {
     home: 'Home', destinations: 'Bestemmingen', categories: 'Categorieën', about: 'Over ons', fishing: 'Visgids',
-    bookCta: 'Activiteiten boeken', bookCtaShort: 'Boek nu', allDestinations: 'Alle bestemmingen →', allCategories: 'Alle categorieën →',
+    bookCta: 'Bekijk tours', bookCtaShort: 'Bekijk tours', allDestinations: 'Alle bestemmingen →', allCategories: 'Alle categorieën →',
   },
   hero: {
     eyebrow: 'Fins Lapland · Van noorderlicht tot middernachtzon',
     lead: "Sneeuwscootersafari's, husky-safari's, noorderlichttochten, rooksauna's, rafting onder de middernachtzon. Boek direct bij zorgvuldig gekozen aanbieders in Rovaniemi, Levi, Ylläs, Saariselkä en daarbuiten.",
-    primaryCta: 'Nu activiteiten boeken', secondaryCta: 'Bestemmingen bekijken',
+    primaryCta: 'Bekijk tours', secondaryCta: 'Bestemmingen bekijken',
     stayNearby: 'Overnachten in de buurt', stayNearbyDesc: 'Trip.com, beste tarieven',
     rentCar: 'Auto huren', rentCarDesc: 'Vanaf luchthaven Rovaniemi',
     auroraTours: 'Noorderlicht-tours', auroraToursDesc: 'Zorgvuldig gekozen aanbieders',
@@ -260,7 +260,7 @@ const nl: SectionCopy = {
     eyebrow: "Zomerseizoen · nu te boeken",
     h2: 'De zomer in Lapland is het best bewaarde geheim.',
     lead: 'De middernachtzon gaat nooit onder. Bossen openen zich. Zalm zwemt stroomopwaarts en vanaf augustus kleuren de fjälls rood door de ruska. De meeste aanbieders hebben tot juni ruime beschikbaarheid, in juli zijn de beste tijdslots al weg.',
-    bookCta: 'Boek zomeractiviteiten', browseCta: 'Bekijk zomergids',
+    bookCta: 'Bekijk tours', browseCta: 'Bekijk zomergids',
     imageKicker: 'Zomercategorie', imageH3: '8 manieren om de middernachtzon te voelen',
     highlights: [
       { title: 'Fjäll-wandeling', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, lange dagen, geen drukte.' },
@@ -314,7 +314,7 @@ const nl: SectionCopy = {
     alreadyTitle: 'Al op de lijst!', alreadyBody: 'Het lijkt erop dat u al geabonneerd bent, tot snel.',
     footnote: 'Op elk moment opzegbaar.', errorFallback: 'Aanmelden mislukt. Probeer het opnieuw.',
   },
-  activityCard: { findBook: 'Zoek en boek', planVisit: 'Plan uw bezoek' },
+  activityCard: { findBook: 'Zoek en boek', browseTours: 'Bekijk tours', planVisit: 'Plan uw bezoek' },
   home: {
     metaTitle: 'Excursies in Lapland: 79 activiteiten in 10 bestemmingen',
     metaDescription: 'Sneeuwscootersafari\'s, huskysledetochten, noorderlichtjachten en rooksauna\'s in Rovaniemi, Levi, Ylläs, Saariselkä en zes andere bestemmingen.',
@@ -382,7 +382,7 @@ const nl: SectionCopy = {
   },
   categoryPage: {
     notFoundH1: 'Categorie niet gevonden', backCategories: '← Terug naar categorieën',
-    allCategoriesNav: 'Alle categorieën', bookToursPrefix: 'Boek',
+    allCategoriesNav: 'Alle categorieën',
     activitiesCount: (n, name) => `${name}: ${n} activiteiten`,
     comingSoon: 'Activiteiten voor deze categorie komen binnenkort.',
     gygTitlePrefix: 'Meest geboekt:', gygEyebrow: 'Zorgvuldig gekozen aanbieders',
@@ -398,7 +398,7 @@ const nl: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: 'Bestemming niet gevonden', backDestinations: '← Terug naar bestemmingen',
-    allDestinationsNav: 'Alle bestemmingen', bookActivitiesIn: 'Boek activiteiten: {dest}',
+    allDestinationsNav: 'Alle bestemmingen', bookActivitiesIn: 'Bekijk tours: {dest}',
     stayIn: 'Verblijf in', activitiesShort: 'activiteiten',
     mustDoKicker: 'Niet missen', mustDoH2: "Onze keuze ter plaatse",
     localKicker: 'Lokale info', localH2: 'Insider-tips',

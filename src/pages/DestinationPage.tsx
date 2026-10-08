@@ -144,7 +144,7 @@ export default function DestinationPage() {
             <div className="flex flex-wrap gap-3 mt-6">
               <AffiliateCTA
                 partner="activities"
-                sid={`hero_${slug}_book`}
+                sid={`hero_${slug}_browse`}
                 destination={gygSlug}
                 className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
               >

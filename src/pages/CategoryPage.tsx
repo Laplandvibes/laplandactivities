@@ -12,7 +12,7 @@ import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../shared/ads/AdUnit';
 import bearKuusamoAd from '../shared/ads/advertisers/bearkuusamo';
 import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
-import { gygSlugForCategory, gygQForCategory } from '../data/affiliate';
+import { gygPathForCategory } from '../data/affiliate';
 import { imageForCategory, assignActivityImages, focalFor } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -50,8 +50,8 @@ export default function CategoryPage() {
     );
   }
 
-  const gygSlug = gygSlugForCategory(slug || 'adventure');
-  const gygQ = gygQForCategory(slug || 'adventure');
+  // GYG-kategoriasivu (tai kulttuurille Rovaniemen sijaintisivu), ei hakusanaa: ks. affiliate.ts.
+  const gygPath = gygPathForCategory(slug || 'adventure');
   const heroImg = imageForCategory(slug || '');
   // Liikkuva hero vain niille kategorioille joille sellainen on; muut valokuva.
   const video = CATEGORY_VIDEO[slug || ''];
@@ -156,15 +156,16 @@ export default function CategoryPage() {
             <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">{category.name}</h1>
             <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-3 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">{category.description}</p>
 
+            {/* Selausnappi: avaa kategorian listan GYG:ssä, ei tuotetta ⇒ "Selaa retkiä", ei "Varaa"
+                (8.10.2026). Oma sid, koska nappityyppi vaihtui varauksesta selaukseen. */}
             <AffiliateCTA
               partner="activities"
-              sid={`hero_cat_${slug}_book`}
-              destination={gygSlug}
-              query={gygQ ? { q: gygQ } : undefined}
+              sid={`hero_cat_${slug}_browse`}
+              destination={gygPath}
               className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <Sparkles className="w-4 h-4" />
-              {c.bookToursPrefix} {category.name}
+              {COPY[lang].bookingCta.browseTours}
             </AffiliateCTA>
           </div>
         </div>
@@ -239,9 +240,9 @@ export default function CategoryPage() {
         cmpTag={`laplandactivities-cat-${slug}`}
         title={`${c.gygTitlePrefix} ${category.name}`}
         eyebrow={c.gygEyebrow}
-        /* Adblock-fallbackin CTA hakee tämän kategorian retkiä, ei geneeristä
-           "Lapland"-listaa (auditti 2026-08-03). */
-        fallbackQuery={gygQ ? `${gygQ} lapland` : 'Lapland'}
+        /* Adblock-fallbackin CTA avaa tämän kategorian listan, ei geneeristä
+           Lapin listaa (auditti 2026-08-03; polku eikä hakusana 8.10.2026). */
+        fallbackPath={gygPath}
       />
 
       {/* WHAT THIS COVERS + HOW TO CHOOSE — the category page's own editorial.

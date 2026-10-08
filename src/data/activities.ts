@@ -1,3 +1,5 @@
+import { GYG_SLUG, gygSlugForDestination } from './affiliate';
+
 export interface Activity {
   id: string;
   title: string;
@@ -1318,13 +1320,13 @@ export const activities: Activity[] = [
   },
 ];
 
-// === Bookability + GetYourGuide search query ===
+// === Bookability + GetYourGuide target (product or browse page) ===
 //
 // Owner rule (2026-06-26): a booking CTA goes ONLY on genuinely GYG-bookable
 // guided experiences (safaris, tours, cruises, climbs). NOT on free landmarks,
 // museums, walk-in attractions, free national-park treks, or factory shops —
-// those would 404 or land on an irrelevant generic search. Non-bookable cards
-// instead route to the destination page (handled in ActivityCard).
+// those would 404 or land on an irrelevant generic list. Non-bookable cards
+// instead route to OFFICIAL_SITE / HOTEL_SEARCH / the category page (ActivityCard).
 //
 // `NON_BOOKABLE` is an explicit allow-list of activity ids that are NOT sold as
 // GYG products (verified case by case). Everything else is bookable.
@@ -1357,6 +1359,15 @@ const NON_BOOKABLE = new Set<string>([
   'lev-ski-resort',
   'yll-ski-resort',
   'ruk-ski-resort',
+  // 8.10.2026 (GYG-nappien korjaus): sama sääntö viidelle muulle paikalle, joita GetYourGuide
+  // ei myy lainkaan. Kortin "Etsi ja varaa" vei Workerin turvaverkon kautta paikkakunnan
+  // yleislistaan, koska GYG:ssä ei ole golfia, bike park -hissilippua eikä Kukkolankosken
+  // kalastajakylää. Hissilippu, viherkierros ja kylävierailu ostetaan paikan päältä.
+  'rov-ounasvaara-ski',     // Ounasvaaran hissilippu = rinnekeskuksen oma myynti
+  'lev-midnight-sun-golf',  // viherkierros = Levi Golfin oma varaus
+  'lev-bike-park',          // bike park -hissilippu = Levin oma myynti
+  'tor-green-zone',         // viherkierros = Green Zone Golfin oma varaus
+  'tor-whitefish-festival', // Kukkolankoski: kylä, nuottakalastus ja ravintola paikan päällä
 ])
 
 // Ei-varattavan kohteen VIRALLINEN sivu. Ilman tätä kortin "Suunnittele käynti" linkitti
@@ -1403,94 +1414,137 @@ export const OFFICIAL_SITE: Record<string, string> = {
   'lev-ski-resort': 'https://www.levi.fi/',
   'yll-ski-resort': 'https://yllas.fi/',
   'ruk-ski-resort': 'https://www.ruka.fi/',
+  // Mitattu 8.10.2026 (GET + selain-UA, HTTP 200, otsikko luettu): Ounasvaara "Ounasvaara
+  // Outdoor Resort", Levi Golf "Etusivu | Levi Golf", Levi "Levi Bike Park | Levi", Green Zone
+  // Golf "Green Zone Golf", Kukkolankoski "Kukkolankoski | Kalan suojaama kylä". Levi Golfilla,
+  // Green Zone Golfilla ja Kukkolankoskella ei ole toimivaa /en/-polkua (404 / ohjaus etusivulle).
+  'rov-ounasvaara-ski': 'https://ounasvaara.fi/en/',
+  'lev-midnight-sun-golf': 'https://levigolf.fi/',
+  'lev-bike-park': 'https://www.levi.fi/en/biking/bike-park/',
+  'tor-green-zone': 'https://greenzonegolf.com/',
+  'tor-whitefish-festival': 'https://kukkolankoski.fi/',
   // tor-haparanda-shopping: omatoiminen ostospäivä kahdessa maassa, ei yhtä virallista
   // sivua ⇒ ei riviä, jolloin kortti putoaa kategoriasivulle (ks. ActivityCard).
 };;
 
-// Concise GYG search query per activity: "<activity type> <place>" — the proven
-// pattern that lands on real, relevant results (verified against GYG /s/?q=).
-// Keyed by id; falls back to a keyword guess + destination if absent.
-const GYG_QUERY: Record<string, string> = {
+// === GetYourGuide target per card (8.10.2026) ===
+//
+// 🔴 Ennen tätä jokainen kortti rakensi hakulauseen ("husky safari levi") ja kortin nappi
+// "Etsi ja varaa" vei sen GYG:n hakuun. GYG:n `/s?q=` kuoli 23.8.2026; siitä asti Worker on
+// taittanut hakusanat Lapin yleislistaan ja 4.10. alkaen aihekategoriaan (LV-GYG-TOPIC).
+// Se on Workerin turvaverkko, ei linkkimalli: "varaa"-nappi lupasi tuotteen ja vei listaan.
+//
+// Nyt jokaisella varattavalla kortilla on YKSI kahdesta:
+//   • GYG_PRODUCT — tuote, jonka aihe JA paikkakunta vastaavat korttia. Nappi "Etsi ja
+//                   varaa" (activityCard.findBook), sid `card_book_<id>`.
+//   • GYG_BROWSE  — kun sopivaa tuotetta ei ole: kategoria oikealla paikkakunnalla tai
+//                   paikkakunnan oma sijaintisivu. Nappi "Selaa retkiä" (activityCard.
+//                   browseTours), sid `card_browse_<id>`. Selausnappi ei lupaa tuotetta.
+//
+// Lähteet, ei arvauksia (GYG:tä ei haeta: Cloudflare-tarkistus, verkosto ei kierrä sitä):
+//   [picks]   = src/shared/gyg/picks.ts (selaimessa avattu 29.7.–3.8.2026)
+//   [catalog] = monorepon _gyg-catalog/catalog.json (839 tuotetta, GYG:n kategoriasivuilta 30.7.2026)
+//   [fishing] = sama tuote kuin FishingPage.tsx:n napissa
+//   [dest]    = src/data/destinationPicks.ts (avattu selaimessa 20.9.2026, uusin mittaus)
+// 🔴 Katalogin tuote voi olla poistunut sen jälkeen: 20.9. mitattiin 11 poistunutta, mm.
+// Rovaniemen revontulimoottorikelkkasafari t301248 (destinationPicks.ts "Poistuneet"). Avaa jokainen uusi polku selaimessa
+// Workerin kautta ja lue h1 ennen julkaisua (muisti gyg_haku_kuoli_verkosto_20261004).
+// 🔴 Älä lisää karhunkatselulle GYG-riviä: ruk-bear-watching kuuluu PARTNER_PAGElle.
+export const GYG_PRODUCT: Record<string, string> = {
   // Rovaniemi
-  'rov-aurora-snowmobile':  'aurora snowmobile rovaniemi',
-  // Ilman tätä riviä fallback tuotti kategorialabelin "animal experiences
-  // rovaniemi", jota kukaan ei kirjoita GYG-hakuun (auditti 2026-08-03).
-  'rov-husky-summer':       'summer husky kennel puppy rovaniemi',
-  'rov-santa-village':      'santa claus village rovaniemi',
-  'rov-husky-safari':       'husky safari kennel visit rovaniemi',
-  'rov-reindeer-farm':      'reindeer sleigh rovaniemi',
-  'rov-snowmobile-full':    'snowmobile safari rovaniemi',
-  'rov-ice-karting':        'snowmobile ice karting rovaniemi',
-  'rov-ranua-zoo':          'ranua zoo rovaniemi',
-  'rov-ice-floating':       'ice floating rovaniemi',
-  'rov-arctic-snow-hotel':  'snow hotel rovaniemi',
-  'rov-ounasvaara-ski':     'skiing snowboarding ounasvaara rovaniemi',
-  'rov-campfire-dinner':    'wilderness dinner rovaniemi',
+  'rov-aurora-snowmobile': 'rovaniemi-l2653/rovaniemi-drive-new-2025-snowmobiles-aurora-adventure-t1120706',  // [catalog] Northern Lights Snowmobile Tour (t301248 poistui 20.9.)
+  'rov-santa-village':     'rovaniemi-l2653/the-santa-claus-village-visit-t434430',                              // [picks] CHRISTMAS_PICKS
+  'rov-husky-safari':      'rovaniemi-l2653/running-with-the-pack-5km-husky-ride-and-a-kennel-tour-t462648',     // [catalog] 5km Husky Ride and a Kennel Tour
+  'rov-reindeer-farm':     'rovaniemi-l2653/rovaniemi-reindeer-experience-with-sleigh-ride-t300556',             // [picks] ACTIVITIES_PICKS
+  'rov-husky-summer':      'rovaniemi-l2653/rovaniemi-summer-husky-kennel-tour-and-cart-ride-t982487',           // [catalog] Summer Husky Kennel Tour and Cart Ride
+  'rov-snowmobile-full':   'rovaniemi-l2653/full-day-snowmobile-tour-in-rovaniemi-t509765',                      // [catalog] Full Day Snowmobile Tour in Rovaniemi
+  'rov-ice-karting':       'rovaniemi-l2653/rovaniemi-ice-karting-open-race-t311913',                            // [dest] Arctic Ice Karting Tour (ei minikelkkoja)
+  'rov-ranua-zoo':         'rovaniemi-l2653/rovaniemi-ranua-s-wildlife-park-ticket-with-transportation-t786889', // [picks] TOURS_PICKS
+  'rov-ice-floating':      'rovaniemi-l2653/daytime-ice-floating-rovaniemi-frozen-lake-experience-t486232',      // [catalog] Daytime Ice Floating
+  'rov-arctic-snow-hotel': 'rovaniemi-l2653/rovaniemi-overnight-snowhotel-adventure-t1074394',                   // [catalog] Overnight SnowHotel Adventure
   // Levi
-  'lev-ski-resort':         'levi ski',
-  'lev-ice-karting':        'ice karting levi',
-  'lev-samiland':           'samiland reindeer sami culture levi',
-  'lev-husky-safari':       'husky safari levi',
-  'lev-snowmobile':         'snowmobile reindeer farm levi',
-  'lev-aurora-photo':       'northern lights photography levi',
-  'lev-midnight-sun-golf':  'golf levi',
-  'lev-ice-fishing':        'ice fishing levi',
-  'lev-fatbike':            'fat bike levi',
-  'lev-bike-park':          'mountain bike levi',
-  'lev-kota-dinner':        'lappish dinner levi',
+  'lev-ice-karting':       'sirkka-l139331/icekarting-levi-experience-t495459',                                  // [catalog] Levi Ice-Karting Experience
+  'lev-samiland':          'kittila-l165074/levi-fell-summit-tour-and-samiland-visit-t988932',                   // [catalog] Fell Summit Tour & Samiland Cultural Visit
+  'lev-husky-safari':      'sirkka-l139331/levi-husky-adventure-self-drive-safari-15km-t510769',                 // [catalog] Husky Adventure Self-Drive Safari 15km
+  'lev-snowmobile':        'sirkka-l139331/husky-and-reindeer-farm-visit-with-snowmobiling-in-levi-t886209',     // [catalog] reindeer farm visit with snowmobiling
+  'lev-aurora-photo':      'sirkka-l139331/levi-guided-northern-lights-photography-experience-t1220978',         // [catalog] Guided Northern Lights Photography Experience
+  'lev-ice-fishing':       'sirkka-l139331/levi-ice-fishing-on-a-frozen-lake-t468799',                           // [catalog] Ice Fishing on a Frozen Lake with BBQ
+  'lev-fatbike':           'sirkka-l139331/levi-e-fatbike-adventure-in-snowy-forest-t515201',                    // [catalog] E-Fatbike Adventure in Snowy Forest
+  'lev-kota-dinner':       'sirkka-l139331/levi-campfire-dinner-at-the-fell-whisperer-s-home-t1418294',          // [catalog] Campfire Dinner at the Fell Whisperer's Home
   // Ylläs
-  'yll-ski-resort':         'yllas ski',
-  'yll-aurora-hunt':        'northern lights yllas',
-  'yll-snowmobile':         'snowmobile safari yllas',
-  'yll-husky':              'husky safari yllas',
-  'yll-snowshoe':           'snowshoe yllas',
-  'yll-reindeer':           'reindeer sleigh yllas',
-  'yll-cross-country':      'cross country skiing yllas',
+  'yll-aurora-hunt':       'akaslompolo-l2931/yllas-seeking-northern-lights-photo-tour-t672280',                 // [catalog] Ylläs seeking northern lights
+  'yll-snowmobile':        'akaslompolo-l2931/yllas-wilderness-snowmobile-tour-t96006',                          // [dest] Full Day Snowmobile Tour to Wilderness
+  'yll-snowshoe':          'yllasjarvi-l248346/yllas-forest-hike-with-snowshoes-t97047',                         // [catalog] Ylläs forest hike with snowshoes
   // Saariselkä
-  'saa-gold-panning':       'gold panning tankavaara',
-  'saa-amethyst-mine':      'amethyst mine saariselka',
-  'saa-kiilopaa-sauna':     'smoke sauna ice swim saariselka',
-  'saa-snowmobile':         'snowmobile safari saariselka',
-  'saa-aurora-hunt':        'northern lights saariselka',
-  'saa-ice-fishing':        'ice fishing saariselka',
+  'saa-gold-panning':      'ivalo-l187030/ivalo-saariselka-gold-panning-in-lapland-s-gold-rush-area-t1243827',   // [picks] CULTURE_PICKS (Saariselkä/Ivalo, ei Tankavaara)
+  'saa-amethyst-mine':     'rovaniemi-l2653/luosto-private-amethyst-mine-tour-with-arctic-guide-t1073428',       // [catalog] Luosto: Amethyst Mine Tour
+  'saa-kiilopaa-sauna':    'kakslauttanen-l192152/saariselka-river-sauna-experience-in-muotka-t1000862',         // [catalog] River Sauna in Muotka (Saariselkä, ei Kiilopää)
+  'saa-snowmobile':        'saariselka-l181615/saariselka-snowmobile-safari-on-tundra-with-bbq-t790865',         // [picks] SNOWMOBILE_PICKS
+  'saa-aurora-hunt':       'saariselka-l181615/saariselka-aurora-hunting-tour-with-northern-lights-experts-t826892', // [dest] Aurora Hunting Photography Tour (bus/minivan)
+  'saa-ice-fishing':       'saariselka-l181615/saariselka-kakslauttanen-ice-fishing-experience-barbecue-t865688', // [catalog] Ice Fishing Experience + barbecue
   // Inari
-  'ina-lake-cruise':        'lake inari cruise',
-  'ina-midnight-kayak':     'kayak inari',
-  'ina-sami-experience':    'reindeer sami inari',
-  'ina-aurora':             'northern lights inari',
-  'ina-berry-foraging':     'berry mushroom foraging inari',
+  'ina-lake-cruise':       'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872',            // [catalog] Lake Inari Scenic Boat cruise
+  'ina-sami-experience':   'inari-l245909/inari-sami-reindeer-herding-family-workshop-visitlunch-t1303463',      // [catalog] Sámi Reindeer Herding Workshop & Visit
+  'ina-aurora':            'ivalo-l187030/inariivalo-aurora-hunting-tour-by-car-with-warm-drinks-t863793',       // [catalog] Inari/Ivalo: Aurora Hunting Tour
   // Ruka / Kuusamo
-  'ruk-ski-resort':         'ruka ski',
-  // 🔴 EI 'ruk-bear-watching'-riviä: karhunkatselu kuuluu maksavalle
-  // kumppanille (Bear Kuusamo) — PARTNER_PAGE reitittää kortin CTA:n
-  // /bear-kuusamo-sivulle. GYG-hakukysely tässä olisi latautunut ase:
-  // jos jokin tuleva koodipolku ohittaisi PARTNER_PAGEn, se mainostaisi
-  // kilpailijaa. Poistettu 2026-08-03.
-  'ruk-river-rafting':      'rafting ruka',
-  'ruk-snowmobile':         'snowmobile safari ruka',
-  'ruk-husky':              'husky safari ruka',
-  'ruk-ice-climbing':       'ice climbing korouoma',
-  'ruk-aurora':             'northern lights ruka',
+  'ruk-river-rafting':     'kuusamo-l113322/from-ruka-river-rafting-fun-for-families-t492078',                   // [catalog] From Ruka: River rafting
+  'ruk-snowmobile':        'ruka-l192178/ruka-4h-snowmobile-safari-with-snack-and-campfire-t1107299',            // [dest] 4 h Snowmobile Safari
+  'ruk-husky':             'ruka-l192178/ruka-10km-husky-sled-ride-with-snacks-and-campfire-t1107156',           // [dest] 10 km Husky Sled Ride
+  'ruk-aurora':            'ruka-l192178/ruka-evening-snowshoe-hike-in-search-of-northern-lights-t1134130',      // [catalog] Evening snowshoe hike for northern lights
   // Posio
-  'pos-korouoma':           'korouoma frozen waterfall',
-  // Pyhä-Luosto (GYG location pyha-luosto-national-park-l161152 verified 2026-07-24)
-  'pyh-amethyst-mine':      'amethyst mine luosto',
-  'pyh-aurora-snowshoe':    'northern lights luosto',
-  // Kemijärvi (GYG location kemijarvi-l208937 verified 2026-07-24: real ice-fishing + husky products)
-  'kem-ice-fishing':        'ice fishing kemijarvi',
-  'kem-husky-safari':       'husky kemijarvi',
+  'pos-korouoma':          'rovaniemi-l2653/rovaniemi-korouoma-canyon-frozen-waterfalls-tour-t349531',           // [picks] VISIT_PICKS
   // Tornio / Kemi
-  'tor-icebreaker':         'icebreaker sampo kemi',
-  'tor-green-zone':         'golf tornio',
-  'tor-salmon-fishing':     'salmon fishing tornio',
-  'tor-whitefish-festival': 'kukkolankoski tornio',
-  // Fishing & Ice Fishing
-  'act-ice-fishing-great':               'great ice fishing experience rovaniemi',
-  'act-ice-fishing-rovaniemi':            'ice fishing rovaniemi',
-  'act-ice-fishing-smallgroup':           'small group ice fishing lapland',
-  'act-kingcrab-kirkenes-saariselka':     'king crab safari kirkenes saariselka',
-  'act-kingcrab-rib-kirkenes':            'king crab rib safari kirkenes',
+  'tor-icebreaker':        'kemi-l98127/kemi-afternoon-icebreaker-sampo-cruise-and-ice-floating-t504004',        // [picks] HUB_PICKS + [dest]
+  // Pyhä-Luosto
+  'pyh-amethyst-mine':     'rovaniemi-l2653/luosto-private-amethyst-mine-tour-with-arctic-guide-t1073428',       // [catalog] Luosto: Amethyst Mine Tour
+  // Fishing
+  'act-ice-fishing-great':            'rovaniemi-l2653/great-ice-fishing-experience-in-lapland-t539112',                     // [fishing] fishing_hero_cta
+  'act-ice-fishing-rovaniemi':        'rovaniemi-l2653/rovaniemi-ice-fishing-experience-t195392',                            // [fishing] fishing_ice_rovaniemi + [catalog]
+  'act-kingcrab-kirkenes-saariselka': 'kirkenes-l97740/saariselka-king-crab-safari-to-kirkenes-with-lunch-t1158887',          // [fishing] fishing_crab_kirkenes + [catalog]
+  'act-kingcrab-rib-kirkenes':        'kirkenes-l97740/kirkenes-summer-king-crab-safari-by-rib-with-king-crab-meal-t1200620', // [fishing] fishing_crab_rib
 };
+
+/**
+ * Selaussivu korteille, joille ei löytynyt tuotetta, jonka aihe JA paikkakunta osuvat.
+ * Kategoria vain kun pari (paikkakunta × kategoria) on mitattu; muuten paikkakunnan oma
+ * sijaintisivu, koska väärä paikkakunta on pahempi kuin laaja lista (husky Ylläksellä ≠
+ * husky Rovaniemellä). Lapin tason kategoria vain kortille, jonka paikka on "Lappi".
+ */
+export const GYG_BROWSE: Record<string, string> = {
+  // [catalog] rovaniemi × dinner-packages (31 tulosta 29.7.); ei omaa nuotioillallistuotetta
+  'rov-campfire-dinner':        'rovaniemi-l2653/dinner-packages-tc100',
+  // Ylläs × husky = 0 tuotetta (hubin gygCategories.ts, mitattu 10.8.); ei poro- eikä latutuotetta
+  'yll-husky':                  GYG_SLUG.yllas,
+  'yll-reindeer':               GYG_SLUG.yllas,
+  'yll-cross-country':          GYG_SLUG.yllas,
+  // Inarissa ei melonta- eikä marjastustuotetta katalogissa
+  'ina-midnight-kayak':         GYG_SLUG.inari,
+  'ina-berry-foraging':         GYG_SLUG.inari,
+  // Korouoma on Posiossa; jääkiipeilytuote vain Pyhätunturilla (väärä paikka)
+  'ruk-ice-climbing':           GYG_SLUG.posio,
+  // Tornionjoen lohelle ei GYG-tuotetta
+  'tor-salmon-fishing':         GYG_SLUG.tornio,
+  // Luoston revontuli-lumikenkäretkeä ei katalogissa
+  'pyh-aurora-snowshoe':        GYG_SLUG['pyha-luosto'],
+  // Kemijärven omat tuotteet: sijaintisivu (ks. affiliate.ts, mitattu 24.7.)
+  'kem-ice-fishing':            GYG_SLUG.kemijarvi,
+  'kem-husky-safari':           GYG_SLUG.kemijarvi,
+  // Pienryhmälupausta ei voi todentaa yhdestäkään tuotteesta ⇒ Lapin kalastuskategoria
+  // (hubin gygCategories.ts: Lappi × fishing 103, kärjessä pilkkiretket, mitattu 23.8.)
+  'act-ice-fishing-smallgroup': 'lapland-finland-l2652/fishing-tours-tc62',
+};
+
+export type GygTarget = { kind: 'product' | 'browse'; path: string };
+
+/**
+ * Kortin GYG-kohde. Tuntematon id (uusi kortti ilman riviä) putoaa kohteen omalle
+ * sijaintisivulle selausnappina, EI koskaan varausnappina yleislistaan.
+ */
+export function gygTargetForActivity(a: Activity): GygTarget {
+  const product = GYG_PRODUCT[a.id];
+  if (product) return { kind: 'product', path: product };
+  return { kind: 'browse', path: GYG_BROWSE[a.id] ?? gygSlugForDestination(a.destinationSlug) };
+}
 
 // === Paid-partner routing (Vesa 2026-07-25) ===
 // Activities owned by a SIGNED LV partner must never send booking intent to a
@@ -1504,13 +1558,6 @@ export const PARTNER_PAGE: Record<string, string> = {
 
 export function isBookable(a: Activity): boolean {
   return !NON_BOOKABLE.has(a.id);
-}
-
-export function gygQueryForActivity(a: Activity): string {
-  if (GYG_QUERY[a.id]) return GYG_QUERY[a.id];
-  // Fallback: category keyword + destination, lower-cased.
-  const cat = a.category.toLowerCase().replace(/[^a-z ]/g, '').trim();
-  return `${cat} ${a.destination}`.toLowerCase();
 }
 
 export function getActivityById(id: string) {

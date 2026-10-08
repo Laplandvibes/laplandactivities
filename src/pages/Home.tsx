@@ -19,7 +19,7 @@ import { destinations } from '../data/destinations';
 import { activities, getFeaturedActivities, getActivitiesByCategory, getActivitiesByDestination } from '../data/activities';
 import { imageForActivity, imageForCategory, imageForDestination, assignActivityImages, focalFor } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
-import { gygSlugForCategory, hotelsQueryForDestination } from '../data/affiliate';
+import { hotelsQueryForDestination } from '../data/affiliate';
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { localizeCategory, localizeDestination } from '../locales/data';
@@ -365,7 +365,6 @@ export default function Home() {
         sidTag="home"
         destinationSlug="lapland"
         hotelsQuery={hotelsQueryForDestination('lapland')}
-        gygSlug={gygSlugForCategory('adventure')}
         pickupIata="RVN"
       />
 

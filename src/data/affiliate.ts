@@ -43,18 +43,32 @@ export const GYG_SLUG: Record<string, string> = {
   lapland:    'lappi-suomi-l2652',
 };
 
-// Per-category fallback slug (the SDK shows tagged tours of that type when
-// rendered alongside `data-gyg-q="..."`, but we use the slug primarily).
-export const GYG_BY_CATEGORY: Record<string, string> = {
-  adventure:        'lappi-suomi-l2652',
-  animals:          'lappi-suomi-l2652',
-  'northern-lights': 'lappi-suomi-l2652',
-  'winter-sports':  'lappi-suomi-l2652',
-  wellness:         'lappi-suomi-l2652',
-  culture:          'rovaniemi-l2653', // Santa, Sámi, Arktikum — Rovaniemi-anchored
-  summer:           'lappi-suomi-l2652',
-  food:             'lappi-suomi-l2652',
-  fishing:          'lappi-suomi-l2652',
+/**
+ * GYG-selaussivu per kategoriasivu: kategoriasivun hero-nappi ("Selaa retkiä") ja
+ * mainosesto-varakortti vievät tänne.
+ *
+ * 🔴 8.10.2026 asti tämä oli sijaintisivu + hakusana (`GYG_Q_BY_CATEGORY`, ?q=). GYG:n
+ * `/s?q=` kuoli 23.8.2026, joten hakusana ei suodattanut mitään: Worker taittoi sen ensin
+ * Lapin yleislistaan ja 4.10. alkaen aihekategoriaan (turvaverkko, ei linkkimalli). Polku
+ * kirjoitetaan nyt suoraan. Jokainen kategoriapolku on mitattu Lapin tasolla:
+ * northern-lights 307, snowmobile 186, husky 134, hiking 147, fishing 103 (hubin
+ * gygCategories.ts, 10.8. ja 23.8.), snow-winter-sports 648 (picks.ts CATEGORY_LINKS),
+ * wellness-spas 51, food-drinks 318 (Workerin GYG_TOPICS, 4.10.).
+ *
+ * animals = husky eikä wildlife: Lapin eläinsafarilistassa voi näkyä Kuusamon karhutuote,
+ * jonka sopimuskumppanimme (Bear Kuusamo) sopimus sulkee pois. Kulttuurille GYG:ssä ei ole
+ * kategoriaa ⇒ Rovaniemen sijaintisivu (Joulupukki, saamelaiskulttuuri, Arktikum).
+ */
+export const GYG_CATEGORY_PATH: Record<string, string> = {
+  adventure:         'lapland-finland-l2652/snowmobile-tours-tc119',
+  animals:           'lapland-finland-l2652/dog-sledding-husky-tours-tc118',
+  'northern-lights': 'lapland-finland-l2652/northern-lights-tc310',
+  'winter-sports':   'lapland-finland-l2652/snow-winter-sports-tc113',
+  wellness:          'lapland-finland-l2652/wellness-spas-tc92',
+  culture:           'rovaniemi-l2653',
+  summer:            'lapland-finland-l2652/hiking-tc71',
+  food:              'lapland-finland-l2652/food-drinks-tc103',
+  fishing:           'lapland-finland-l2652/fishing-tours-tc62',
 };
 
 // Lähin EconomyBookingsin PALVELEMA kenttä per kohde (auditti 2026-08-03:
@@ -87,25 +101,6 @@ export function carsIataForDestination(slug: string): string {
 export function hotelsQueryForDestination(slug: string): string {
   return HOTELS_QUERY[slug] ?? HOTELS_QUERY.lapland;
 }
-export function gygSlugForCategory(slug: string): string {
-  return GYG_BY_CATEGORY[slug] ?? GYG_SLUG.lapland;
-}
-
-// Per-category GYG search filter (?q=). Lands a category page on tours of THAT type
-// instead of ALL activities at the location — the biggest GYG conversion fix
-// (lv memory: 2026-06-15_gyg_targeting_monetization.md). Empty string => no filter
-// (e.g. homepage/destination pages stay broad on purpose).
-export const GYG_Q_BY_CATEGORY: Record<string, string> = {
-  adventure:         'snowmobile',
-  animals:           'husky',
-  'northern-lights': 'northern lights',
-  'winter-sports':   'snowmobile',
-  wellness:          'sauna',
-  culture:           'sami',
-  summer:            'hiking',
-  food:              'food',
-  fishing:           'fishing',
-};
-export function gygQForCategory(slug: string): string {
-  return GYG_Q_BY_CATEGORY[slug] ?? '';
+export function gygPathForCategory(slug: string): string {
+  return GYG_CATEGORY_PATH[slug] ?? GYG_SLUG.lapland;
 }

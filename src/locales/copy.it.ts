@@ -238,12 +238,12 @@ const it: SectionCopy = {
   },
   nav: {
     home: 'Home', destinations: 'Destinazioni', categories: 'Categorie', about: 'Chi siamo', fishing: 'Guida di pesca',
-    bookCta: 'Prenota attività', bookCtaShort: 'Prenota', allDestinations: 'Tutte le destinazioni →', allCategories: 'Tutte le categorie →',
+    bookCta: 'Sfoglia i tour', bookCtaShort: 'Sfoglia i tour', allDestinations: 'Tutte le destinazioni →', allCategories: 'Tutte le categorie →',
   },
   hero: {
     eyebrow: 'Lapponia finlandese · Dall\'aurora al sole di mezzanotte',
     lead: 'Safari in motoslitta, slitta trainata dagli husky, caccia all\'aurora, saune a fumo, rafting fluviale sotto il sole di mezzanotte. Prenoti direttamente da operatori scelti con cura a Rovaniemi, Levi, Ylläs, Saariselkä e oltre.',
-    primaryCta: 'Prenoti ora le attività', secondaryCta: 'Sfoglia destinazioni',
+    primaryCta: 'Sfoglia i tour', secondaryCta: 'Sfoglia destinazioni',
     stayNearby: 'Alloggio vicino', stayNearbyDesc: 'Trip.com, tariffe migliori',
     rentCar: 'Noleggia un\'auto', rentCarDesc: 'Dall\'aeroporto di Rovaniemi',
     auroraTours: 'Tour aurora', auroraToursDesc: 'Operatori scelti con cura',
@@ -260,7 +260,7 @@ const it: SectionCopy = {
     eyebrow: "Stagione estiva · prenota ora",
     h2: "L'estate in Lapponia è il segreto meglio custodito.",
     lead: "Il sole di mezzanotte non tramonta mai. Le foreste si aprono. Risalgono i salmoni e i fjell virano al rosso del ruska da agosto. La maggior parte degli operatori ha ampia disponibilità fino a giugno, a luglio i posti migliori sono già andati.",
-    bookCta: 'Prenota le attività estive', browseCta: 'Sfoglia la guida estiva',
+    bookCta: 'Sfoglia i tour', browseCta: 'Sfoglia la guida estiva',
     imageKicker: 'Categoria estate', imageH3: '8 modi per sentire il sole di mezzanotte',
     highlights: [
       { title: 'Escursioni in fjell', body: 'Pallas-Yllästunturi, Karhunkierros, Hetta-Pallas, giornate lunghe, nessuna folla.' },
@@ -314,7 +314,7 @@ const it: SectionCopy = {
     alreadyTitle: 'Già nella lista!', alreadyBody: 'Sembra che Lei sia già iscritto, a presto.',
     footnote: 'Disiscrizione in qualsiasi momento.', errorFallback: 'Iscrizione non riuscita. Per favore riprovi.',
   },
-  activityCard: { findBook: 'Trova e prenota', planVisit: 'Pianifica la visita' },
+  activityCard: { findBook: 'Trova e prenota', browseTours: 'Sfoglia i tour', planVisit: 'Pianifica la visita' },
   home: {
     metaTitle: 'Cosa fare in Lapponia: 79 attività in 10 destinazioni',
     metaDescription: 'Safari in motoslitta, slitte trainate dai husky, cacce all\'aurora e saune a fumo a Rovaniemi, Levi, Ylläs, Saariselkä e altre sei destinazioni.',
@@ -382,7 +382,7 @@ const it: SectionCopy = {
   },
   categoryPage: {
     notFoundH1: 'Categoria non trovata', backCategories: '← Torna alle categorie',
-    allCategoriesNav: 'Tutte le categorie', bookToursPrefix: 'Prenota',
+    allCategoriesNav: 'Tutte le categorie',
     activitiesCount: (n, name) => `${name}: ${n} attività`,
     comingSoon: 'Le attività di questa categoria arriveranno presto.',
     gygTitlePrefix: 'Più prenotate', gygEyebrow: 'Operatori scelti con cura',
@@ -398,7 +398,7 @@ const it: SectionCopy = {
   },
   destinationPage: {
     notFoundH1: 'Destinazione non trovata', backDestinations: '← Torna alle destinazioni',
-    allDestinationsNav: 'Tutte le destinazioni', bookActivitiesIn: 'Prenota attività a {dest}',
+    allDestinationsNav: 'Tutte le destinazioni', bookActivitiesIn: 'Sfoglia i tour a {dest}',
     stayIn: 'Soggiorni a', activitiesShort: 'attività',
     mustDoKicker: 'Da non perdere', mustDoH2: "La nostra scelta in zona",
     localKicker: 'Info locali', localH2: 'Consigli da insider',
