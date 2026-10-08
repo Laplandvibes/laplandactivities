@@ -275,7 +275,7 @@ const nl: SectionCopy = {
     h2: "Dit zouden wij hier zelf boeken",
     lede: "Met de hand gekozen en stuk voor stuk geopend voordat ze in de lijst kwamen. Prijs en beschikbaarheid staan op de pagina van de partner, dus drukken we ze hier niet af.",
     cta: "Bekijk beschikbaarheid",
-    disclosure: "Affiliate links: een boeking levert ons commissie op, voor jou blijft de prijs gelijk.",
+    disclosure: "Affiliate links: een boeking levert ons commissie op, voor u blijft de prijs gelijk.",
   },
   hotelsStrip: {
     kicker: 'Waar te verblijven', h2: 'Boek eerst het bed.',
@@ -472,7 +472,7 @@ const nl: SectionCopy = {
     h1: "Wie er achter LaplandActivities zit",
     lead: "Een Finse gids voor tours in Lapland, geschreven en bijgehouden door hetzelfde kleine team dat de andere #LaplandVibes-sites beheert.",
     whoH2: "Wie wij zijn",
-    whoBody: "LaplandActivities wordt uitgegeven door LaPeso Oy, een Fins bedrijf opgericht door Vesa Pesola. De site hoort bij het #LaplandVibes-netwerk, waarin elke site één onderwerp behandelt; deze gaat over wat je in Lapland kunt doen. Bij elke foto staat de bron in de afbeelding zelf en de volledige lijst staat onderaan deze pagina: sommige zijn van onszelf, andere komen van Wikimedia Commons of van een partner.",
+    whoBody: "LaplandActivities wordt uitgegeven door LaPeso Oy, een Fins bedrijf opgericht door Vesa Pesola. De site hoort bij het #LaplandVibes-netwerk, waarin elke site één onderwerp behandelt; deze gaat over wat er in Lapland te doen is. Bij elke foto staat de bron in de afbeelding zelf en de volledige lijst staat onderaan deze pagina: sommige zijn van onszelf, andere komen van Wikimedia Commons of van een partner.",
     howH2: "Hoe een activiteit op deze site komt",
     howItems: [
       "Zij bestaat als echt, boekbaar product van een met naam genoemde aanbieder, of als vrij toegankelijke plek zoals een nationaal park.",
