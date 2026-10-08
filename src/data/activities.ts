@@ -1454,9 +1454,7 @@ export const GYG_PRODUCT: Record<string, string> = {
   // Rovaniemi
   'rov-aurora-snowmobile': 'rovaniemi-l2653/rovaniemi-drive-new-2025-snowmobiles-aurora-adventure-t1120706',  // [catalog] Northern Lights Snowmobile Tour (t301248 poistui 20.9.)
   'rov-santa-village':     'rovaniemi-l2653/the-santa-claus-village-visit-t434430',                              // [picks] CHRISTMAS_PICKS
-  'rov-husky-safari':      'rovaniemi-l2653/running-with-the-pack-5km-husky-ride-and-a-kennel-tour-t462648',     // [catalog] 5km Husky Ride and a Kennel Tour
   'rov-reindeer-farm':     'rovaniemi-l2653/rovaniemi-reindeer-experience-with-sleigh-ride-t300556',             // [picks] ACTIVITIES_PICKS
-  'rov-husky-summer':      'rovaniemi-l2653/rovaniemi-summer-husky-kennel-tour-and-cart-ride-t982487',           // [catalog] Summer Husky Kennel Tour and Cart Ride
   'rov-snowmobile-full':   'rovaniemi-l2653/full-day-snowmobile-tour-in-rovaniemi-t509765',                      // [catalog] Full Day Snowmobile Tour in Rovaniemi
   'rov-ice-karting':       'rovaniemi-l2653/rovaniemi-ice-karting-open-race-t311913',                            // [dest] Arctic Ice Karting Tour (ei minikelkkoja)
   'rov-ranua-zoo':         'rovaniemi-l2653/rovaniemi-ranua-s-wildlife-park-ticket-with-transportation-t786889', // [picks] TOURS_PICKS
@@ -1466,11 +1464,9 @@ export const GYG_PRODUCT: Record<string, string> = {
   'lev-ice-karting':       'sirkka-l139331/icekarting-levi-experience-t495459',                                  // [catalog] Levi Ice-Karting Experience
   'lev-samiland':          'kittila-l165074/levi-fell-summit-tour-and-samiland-visit-t988932',                   // [catalog] Fell Summit Tour & Samiland Cultural Visit
   'lev-husky-safari':      'sirkka-l139331/levi-husky-adventure-self-drive-safari-15km-t510769',                 // [catalog] Husky Adventure Self-Drive Safari 15km
-  'lev-snowmobile':        'sirkka-l139331/husky-and-reindeer-farm-visit-with-snowmobiling-in-levi-t886209',     // [catalog] reindeer farm visit with snowmobiling
   'lev-aurora-photo':      'sirkka-l139331/levi-guided-northern-lights-photography-experience-t1220978',         // [catalog] Guided Northern Lights Photography Experience
   'lev-ice-fishing':       'sirkka-l139331/levi-ice-fishing-on-a-frozen-lake-t468799',                           // [catalog] Ice Fishing on a Frozen Lake with BBQ
   'lev-fatbike':           'sirkka-l139331/levi-e-fatbike-adventure-in-snowy-forest-t515201',                    // [catalog] E-Fatbike Adventure in Snowy Forest
-  'lev-kota-dinner':       'sirkka-l139331/levi-campfire-dinner-at-the-fell-whisperer-s-home-t1418294',          // [catalog] Campfire Dinner at the Fell Whisperer's Home
   // Ylläs
   'yll-aurora-hunt':       'akaslompolo-l2931/yllas-seeking-northern-lights-photo-tour-t672280',                 // [catalog] Ylläs seeking northern lights
   'yll-snowmobile':        'akaslompolo-l2931/yllas-wilderness-snowmobile-tour-t96006',                          // [dest] Full Day Snowmobile Tour to Wilderness
@@ -1478,7 +1474,6 @@ export const GYG_PRODUCT: Record<string, string> = {
   // Saariselkä
   'saa-gold-panning':      'ivalo-l187030/ivalo-saariselka-gold-panning-in-lapland-s-gold-rush-area-t1243827',   // [picks] CULTURE_PICKS (Saariselkä/Ivalo, ei Tankavaara)
   'saa-amethyst-mine':     'rovaniemi-l2653/luosto-private-amethyst-mine-tour-with-arctic-guide-t1073428',       // [catalog] Luosto: Amethyst Mine Tour
-  'saa-kiilopaa-sauna':    'kakslauttanen-l192152/saariselka-river-sauna-experience-in-muotka-t1000862',         // [catalog] River Sauna in Muotka (Saariselkä, ei Kiilopää)
   'saa-snowmobile':        'saariselka-l181615/saariselka-snowmobile-safari-on-tundra-with-bbq-t790865',         // [picks] SNOWMOBILE_PICKS
   'saa-aurora-hunt':       'saariselka-l181615/saariselka-aurora-hunting-tour-with-northern-lights-experts-t826892', // [dest] Aurora Hunting Photography Tour (bus/minivan)
   'saa-ice-fishing':       'saariselka-l181615/saariselka-kakslauttanen-ice-fishing-experience-barbecue-t865688', // [catalog] Ice Fishing Experience + barbecue
@@ -1487,7 +1482,6 @@ export const GYG_PRODUCT: Record<string, string> = {
   'ina-sami-experience':   'inari-l245909/inari-sami-reindeer-herding-family-workshop-visitlunch-t1303463',      // [catalog] Sámi Reindeer Herding Workshop & Visit
   'ina-aurora':            'ivalo-l187030/inariivalo-aurora-hunting-tour-by-car-with-warm-drinks-t863793',       // [catalog] Inari/Ivalo: Aurora Hunting Tour
   // Ruka / Kuusamo
-  'ruk-river-rafting':     'kuusamo-l113322/from-ruka-river-rafting-fun-for-families-t492078',                   // [catalog] From Ruka: River rafting
   'ruk-snowmobile':        'ruka-l192178/ruka-4h-snowmobile-safari-with-snack-and-campfire-t1107299',            // [dest] 4 h Snowmobile Safari
   'ruk-husky':             'ruka-l192178/ruka-10km-husky-sled-ride-with-snacks-and-campfire-t1107156',           // [dest] 10 km Husky Sled Ride
   'ruk-aurora':            'ruka-l192178/ruka-evening-snowshoe-hike-in-search-of-northern-lights-t1134130',      // [catalog] Evening snowshoe hike for northern lights
@@ -1532,6 +1526,17 @@ export const GYG_BROWSE: Record<string, string> = {
   // Pienryhmälupausta ei voi todentaa yhdestäkään tuotteesta ⇒ Lapin kalastuskategoria
   // (hubin gygCategories.ts: Lappi × fishing 103, kärjessä pilkkiretket, mitattu 23.8.)
   'act-ice-fishing-smallgroup': 'lapland-finland-l2652/fishing-tours-tc62',
+  // Luettu Workerin kautta selaimessa 8.10.2026. Kuollut tuote ohjautuu GYG:llä sijaintisivulle
+  // ja pudottaa partner_id:n, joten varaus ei kohdistuisi: t982487 (kesähusky), t1418294 (Levin
+  // nuotioillallinen), t492078 (Rukan koskenlasku). Ne ja kortit, joiden tuote lupaa muuta kuin
+  // kortti (18 km vs 5 km husky, Kiilopään savusauna vs Muotkan jokisauna, kelkkasafari vs
+  // husky-poro-kelkkayhdistelmä), selaavat oikean paikkakunnan listaa.
+  'rov-husky-safari':           'rovaniemi-l2653/dog-sledding-husky-tours-tc118',
+  'rov-husky-summer':           'rovaniemi-l2653/dog-sledding-husky-tours-tc118',
+  'lev-snowmobile':             'levi-sirkka-l150197/snowmobile-tours-tc119',
+  'lev-kota-dinner':            'levi-sirkka-l150197',
+  'saa-kiilopaa-sauna':         'saariselka-l181615',
+  'ruk-river-rafting':          'kuusamo-l113322',
 };
 
 export type GygTarget = { kind: 'product' | 'browse'; path: string };
