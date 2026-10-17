@@ -145,6 +145,13 @@ function labelColon(lang: string): string {
   return ': ';
 }
 
+/** Avainluvun koko pituuden mukaan: CJK-merkki on kahden latinalaisen levyinen, ja pitkä
+ *  päivämääräväli (fr "8 juin–15 août", zh "6月8日–8月15日") ei mahdu kahden sarakkeen laattaan isona. */
+function factSize(v: string): string {
+  const w = [...v].reduce((n, ch) => n + (/[　-鿿가-힯]/.test(ch) ? 2 : 1), 0);
+  return w <= 6 ? 'text-5xl sm:text-6xl' : w <= 11 ? 'text-3xl sm:text-5xl' : 'text-2xl sm:text-3xl';
+}
+
 /** "Lohi: yleisesti 60 cm …" -> ['Lohi', 'yleisesti 60 cm …']. Ilman kaksoispistettä koko rivi on runko. */
 function splitLabel(s: string): [string, string] {
   const m = s.match(/^([^:：]{1,40})[:：]\s*(.+)$/);
@@ -237,7 +244,12 @@ export default function FishingPage() {
         <div className="absolute inset-x-0 bottom-24 sm:bottom-28 h-6">
           <PhotoCredit src={heroImg} />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-32 md:pt-16 md:pb-36 w-full">
+        {/* Murupolku heron yläreunaan: laatat nousevat heron päälle, joten heron alla se jäisi
+            laattojen perään (puhelimessa keskelle sivua). */}
+        <div className="absolute inset-x-0 top-16 z-20">
+          <PageBreadcrumb variant="overlay" />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-32 md:pt-24 md:pb-36 w-full">
           {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
               mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
               näkyy muualla. */}
@@ -304,7 +316,6 @@ export default function FishingPage() {
         </div>
       </section>
 
-      <PageBreadcrumb />
 
       {/* VERIFY BANNER */}
       <div className="bg-amber-500/10 border-y border-amber-400/30">
@@ -402,21 +413,31 @@ export default function FishingPage() {
           </div>
         </section>
 
-        {/* TORNION LOHI 2026 — paperiarkki, säännöt numeroituina laattoina */}
+        {/* TORNION LOHI 2026 — paperiarkki. 17.10.2026 (Vesa: "aivan kamala tyyli ja teksti ja kokonaisuus,
+            selkeämmin ja firmimmät tekstit, rivitykset"): yhdeksän pitkää virkettä laatoissa oli puhelimessa
+            ~1 700 px. Nyt neljä avainlukua tummissa laatoissa isolla ja loput säännöt lyhyinä riveinä. */}
         <section className="px-4 sm:px-6 pb-14 sm:pb-18">
           <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
             <p className={`${EYEBROW_PAPER} mb-2`}>{c.eyebrows.liability}</p>
-            <h2 className={H2_PAPER}>{c.tornioBox.title}</h2>
-            <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
-              {c.tornioBox.rules.map((r, i) => (
-                <li key={i} className="rounded-2xl bg-white border border-deep-night/10 p-4 flex items-start gap-3">
-                  <span className="inline-flex shrink-0 w-8 h-8 rounded-full bg-deep-night text-snow font-heading text-lg items-center justify-center" aria-hidden="true">{i + 1}</span>
-                  <span className="text-deep-night/85 text-sm leading-relaxed">{r}</span>
-                </li>
+            <h2 className={`${H2_PAPER} text-balance`}>{c.tornioBox.title}</h2>
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
+              {c.tornioBox.facts.map((f) => (
+                <div key={f.label} className="rounded-2xl bg-deep-night px-4 py-4 sm:px-5 sm:py-5">
+                  <span className={`block font-heading text-snow tracking-wide leading-none ${factSize(f.value)}`}>{f.value}</span>
+                  <span className="block text-snow/80 text-sm leading-snug mt-2">{f.label}</span>
+                </div>
               ))}
-            </ol>
-            <p className="mt-5 rounded-xl bg-amber-100 border border-amber-300 px-4 py-3 text-amber-950 text-base leading-relaxed flex items-start gap-2">
-              <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0 mt-1" aria-hidden="true" />
+            </div>
+            <dl className="grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 mt-6">
+              {c.tornioBox.items.map((it) => (
+                <div key={it.label} className="border-t border-deep-night/10 py-3 sm:grid sm:grid-cols-[11rem_1fr] sm:gap-x-4">
+                  <dt className="text-deep-night font-bold text-[15px] leading-snug">{it.label}</dt>
+                  <dd className="text-deep-night/80 text-[15px] leading-snug mt-0.5 sm:mt-0">{it.text}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mt-5 border-l-4 border-amber-400 pl-3 text-deep-night/80 text-[15px] leading-snug flex items-start gap-2">
+              <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" aria-hidden="true" />
               <span>{c.tornioBox.verifyLine}</span>
             </p>
             <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-6">

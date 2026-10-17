@@ -260,7 +260,8 @@ export type SectionCopy = {
     /** River cards: Tornio, Teno, Ounasjoki, Ivalojoki, Simojoki, wilderness. */
     rivers: { title: string; lead: string; cards: { name: string; badge: string; body: string; crNote: string; officialLabel: string }[] };
     lakes: { title: string; body: string };
-    tornioBox: { title: string; rules: string[]; verifyLine: string; ctaStay: string };
+    /** 17.10.2026: avainluvut isoina + säännöt lyhyinä riveinä (oli 9 pitkää virkettä). */
+    tornioBox: { title: string; facts: { value: string; label: string }[]; items: { label: string; text: string }[]; verifyLine: string; ctaStay: string };
     iceFishing: { title: string; body: string; safetyTitle: string; safetyBody: string; cta: string };
     licenses: { title: string; fee: string; freeRights: string; waterPermits: string; sizesTitle: string; sizes: string[]; alwaysCheck: string };
     teno: { title: string; body: string; whatYouCan: string; warnThirdParty: string };

@@ -11,7 +11,13 @@ import { COPY } from '../locales/copy';
  * Breadcrumbs returns null on the home route and on unmapped routes, so mounting
  * it unconditionally is safe.
  */
-export default function PageBreadcrumb() {
+/**
+ * variant="overlay": murupolku heron YLÄREUNASSA navin alla, puoliläpinäkyvällä kaistalla.
+ * Kalastusoppaassa (17.10.2026) valitse tapasi -laatat nousevat heron päälle, joten heron alle
+ * mountattu murupolku jäi laattojen perään, puhelimessa kolmen pinotun laatan alle keskelle
+ * sivua (Vesa: "miksi murupolku on keskellä sivua mobiilissa?").
+ */
+export default function PageBreadcrumb({ variant = 'band' }: { variant?: 'band' | 'overlay' } = {}) {
   const lang = useLang();
   const c = COPY[lang].nav;
   const to = useLocalePath();
@@ -27,7 +33,7 @@ export default function PageBreadcrumb() {
       lang={lang}
       to={to}
       labelMap={labelMap}
-      className="bg-deep-night text-snow border-b border-white/10"
+      className={variant === 'overlay' ? 'bg-deep-night/70 backdrop-blur-sm text-snow border-b border-white/10' : 'bg-deep-night text-snow border-b border-white/10'}
       accentClassName="hover:text-vibe-pink hover:opacity-100"
     />
   );
