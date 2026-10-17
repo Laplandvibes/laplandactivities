@@ -25,9 +25,18 @@ export type ImgKind =
   /** Kortti ruudukossa: yksi kolmasosa työpöydällä, puolikas tabletilla. */
   | 'card'
   /** Iso kortti: puolikas työpöydällä, koko leveys puhelimessa. */
-  | 'half';
+  | 'half'
+  /**
+   * Alasivun hero, jonka kuva on puhelimessa oma kaistansa (42svh, teksti alla).
+   * 🔴 17.10.2026 (Vesa: "hero kuva on aivan pixelöitynyt"): kaista on puhelimessa lähes
+   * neliö, ja 16:9-kuva täyttää sen KORKEUDEN mukaan, joten piirretty leveys on noin
+   * 1,6 × ikkuna. Rivillä '100vw' selain valitsi 390 px:n puhelimeen (DPR 3) 1280-kopion
+   * ja venytti sen 1 900 pikseliin. Tabletista ylöspäin kaista on leveä ja 100vw pitää.
+   */
+  | 'band';
 
 const SIZES: Record<ImgKind, string> = {
+  band: '(max-width: 639px) 160vw, 100vw',
   hero: '100vw',
   card: '(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw',
   half: '(min-width: 1024px) 50vw, 100vw',

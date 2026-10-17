@@ -85,7 +85,8 @@ export default function DestinationPage() {
   // Single list-aware image pass over [featured, in-season…, off-season…] so multi-image
   // themes (husky/reindeer) alternate and never repeat on adjacent cards across the grids.
   const ordered = featured ? [featured, ...inSeason, ...offSeason] : [...inSeason, ...offSeason];
-  const orderedImgs = assignActivityImages(ordered);
+  // 17.10.2026: hero varataan ensin (sama kuin kategoriasivulla), ettei kortti toista heroa: Tornion ostospäivä oli heron kuva.
+  const orderedImgs = assignActivityImages(ordered, heroImg);
   const imgFor = (id: string) => {
     const i = ordered.findIndex((a) => a.id === id);
     return i >= 0 ? orderedImgs[i] : undefined;
@@ -113,34 +114,40 @@ export default function DestinationPage() {
         })}</script>
       </Helmet>
 
-      {/* HERO — focal-fixed so heads/helmets are never cropped */}
-      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
-        <img
-          src={heroImg}
-          {...respImg(heroImg, 'hero')}
-          alt={destination.name}
-          className={`absolute inset-0 w-full h-full object-cover ${heroFrameClass(heroImg)}`}
-          style={{ objectPosition: focalFor(heroImg) }}
-          loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
-        />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,1) 0%, rgba(15,23,42,0.55) 40%, rgba(15,23,42,0.15) 75%, rgba(15,23,42,0.05) 100%)' }} />
-        {/* 17.10.2026 (Vesa: "kaikki on jotenkin tummaa taustaa vasten"): yläosa 0,30 -> 0,05, jotta valokuva
-            näkyy. Pohja pysyy 1,0:ssa (ei saumaa seuraavaan osioon, 1.10.2026); teksti luetaan omasta paneelistaan. */}
-        <PhotoCredit src={heroImg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
-          {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
-              mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
-              näkyy muualla. */}
-          <div className="relative w-fit max-w-full">
-            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/60 blur-2xl" />
-            <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
+      {/* HERO — verkoston heromalli (skiresorts, transport, wellness; muisti
+          feedback_hero_kuva_puhtaana_otsikko_alle). 17.10.2026 Vesa: "enkä pidä noiden h1 tekstien
+          taustoista ollenkaan minkään alasivun hero osiossa". Tekstin takana oli sumennettu tumma
+          laikku, ja puhelimessa teksti peitti kuvan alaosan, joten Rovaniemeltä näkyi vain tornin
+          huippu. Nyt alle 1024 px kuva on oma puhdas kaistansa ja teksti sen alla sivun pohjalla;
+          lg+:ssa teksti on kuvan päällä vasemmalla, ja lukukelpoisuus tulee vaakaliukumasta, joka
+          jättää kuvan oikean puolen kirkkaaksi. */}
+      <section className="relative bg-deep-night pt-16 lg:min-h-[64vh] lg:flex lg:items-center overflow-hidden">
+        <div
+          className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:absolute lg:inset-0 lg:h-auto lg:min-h-0 overflow-hidden"
+          data-lv-tp-tausta="hero"
+        >
+          <img
+            src={heroImg}
+            {...respImg(heroImg, 'band')}
+            alt={destination.name}
+            className={`absolute inset-0 w-full h-full object-cover ${heroFrameClass(heroImg)}`}
+            style={{ objectPosition: focalFor(heroImg) }}
+            loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
+          />
+          <div aria-hidden="true" className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#0F172A]/85 via-[#0F172A]/70 via-55% to-transparent" />
+          <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent" />
+          <PhotoCredit src={heroImg} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-10 lg:py-16 w-full">
+          <div className="max-w-2xl">
+            <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/70 border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3">
               <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
             </span>
-            <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
+            <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {destination.name}
             </h1>
-            <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3 drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">{destination.tagline}</p>
-            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed drop-shadow-[0_2px_14px_rgba(0,0,0,0.95)]">{destination.description}</p>
+            <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3">{destination.tagline}</p>
+            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed">{destination.description}</p>
 
             <div className="flex flex-wrap gap-3 mt-6">
               <AffiliateCTA

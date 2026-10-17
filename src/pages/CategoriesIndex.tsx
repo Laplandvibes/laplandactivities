@@ -47,11 +47,10 @@ export default function CategoriesIndex() {
           >
             <img src={imageForCategory(hero.slug)} {...respImg(imageForCategory(hero.slug), 'hero')} alt={hero.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" style={{ objectPosition: focalFor(imageForCategory(hero.slug)) }} loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"/>
             <PhotoCredit src={imageForCategory(hero.slug)} links={false} />
-            {/* Tummennus tekstilohkon takana sumennettuna paneelina, ei koko kortin yli:
-                kuva näkyy muualla ja paneelin reuna häipyy ilman viivaa. Puhelimessa tummempi:
-                kuvan kirkkain kohta (koskivaahto) osuu rajauksessa tekstin alariville. */}
-            <div className="absolute bottom-0 left-0 p-8 sm:p-12 max-w-xl isolate">
-              <div aria-hidden="true" className="pointer-events-none absolute -inset-8 -z-10 rounded-[3rem] bg-deep-night/85 sm:bg-deep-night/75 blur-2xl" />
+            {/* 17.10.2026 (Vesa: sumennetut tekstitaustat "kauheat"): sumennettu laikku pois, sama
+                alareunan tekstisoikko (lv-scrim-text) kuin muissa tämän sivun korteissa. */}
+            <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12 pt-16 sm:pt-16 lv-scrim-text">
+              <div className="max-w-xl">
               <h2 className="font-heading text-4xl sm:text-5xl text-snow tracking-wide mb-2 group-hover:text-vibe-pink transition-colors">{hero.name}</h2>
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-3">{hero.description}</p>
               <div className="flex items-center gap-4">
@@ -59,6 +58,7 @@ export default function CategoriesIndex() {
                 <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform">
                   {c.exploreAdventures} <ArrowRight className="w-4 h-4" />
                 </span>
+              </div>
               </div>
             </div>
           </Link>

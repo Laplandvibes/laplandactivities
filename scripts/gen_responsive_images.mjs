@@ -55,7 +55,10 @@ const MANIFEST = path.join(ROOT, 'src', 'data', 'responsiveImages.ts');
 const CHECK = process.argv.includes('--check');
 
 /** Leveydet, joille kopiot tehdään. 768 = puhelin, 1280 = tabletti ja kapea kannettava. */
-const WIDTHS = [768, 1280];
+const WIDTHS = [768, 1280, 1920];
+// 17.10.2026: 1920 lisätty. Herojen lähde on nyt 2560 px (Vesa: "hero kuva on aivan pixelöitynyt"),
+// ja ilman 1920-kopiota jokainen yli 1280 px:n ruutu lataisi koko 2560 px:n tiedoston. Kopio syntyy
+// vain kuville, jotka ovat yli 1920 × MIN_GAIN = 2208 px leveitä, eli käytännössä 2560 px:n heroille.
 /** Tätä kapeampaa kuvaa ei kannata pienentää — säästö jää kohinaksi. */
 const MIN_SOURCE_WIDTH = 1100;
 /** Kopio tehdään vain jos lähde on selvästi leveämpi, muuten se olisi lähes sama tiedosto. */

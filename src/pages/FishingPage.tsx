@@ -70,17 +70,24 @@ const RIVER_IMG = [
   '/images/activities/fishing/luttojoki.webp',
 ];
 
-// Section photos (photographic, text-free, people-free). Native 16:9; rendered
-// full-width h-auto so nothing crops at 375px. AVIF sibling exists on disk.
-// 17.10.2026: Joet-osion otsikkokaista (koski, ei sama kuva kuin yksikään jokikortti) ja
 // Järvet-kortin kuva (Inarijärvi, oma 12.10.2026).
-const RIVER_BAND = '/images/activities/fishing/kukkolankoski.webp';
 const LAKE_IMG = '/images/activities/fishing/inarijarvi-shore.webp';
 
 const FISHING_IMG = {
   river: '/images/activities/fishing/fishing-river.webp',
-  ice: '/images/activities/fishing/fishing-ice.webp',
+  // 17.10.2026: kuvausteksti (imageAlts.ice, 12 kieltä) kertoo kairatusta reiästä ja jäähän pystytetystä kairasta,
+  // eli se on kirjoitettu tälle kuvalle. Ennen osiossa oli fishing-ice (pilkkijöitä joen jäällä) väärällä kuvauksella.
+  ice: '/images/activities/fishing/ice-fishing-hole.webp',
   kingCrab: '/images/activities/fishing/fishing-kingcrab.webp',
+};
+
+// 🔴 17.10.2026 (Vesa: "käytetty jo muualla sivulla"): valitsimen laatoilla oli samat kuvat kuin
+// osioilla, joihin ne vievät (pilkki, ensimmäinen jokikortti, kuningasrapu), joten sama kuva näkyi
+// sivulla kahdesti. Laatoilla on nyt omat kuvat, joita ei käytetä muualla tällä sivulla.
+const CHOOSER_IMG = {
+  ice: '/images/activities/fishing/fishing-ice.webp',
+  rivers: '/images/activities/fishing/kukkolankoski.webp',
+  norway: '/images/activities/fishing/fishing-kingcrab-2.webp',
 };
 
 
@@ -218,48 +225,45 @@ export default function FishingPage() {
       </Helmet>
 
       {/* HERO */}
-      <section className="relative min-h-[56vh] md:min-h-[60vh] flex items-center overflow-hidden pt-16 bg-deep-night">
-        <img
-          src={heroImg}
-          {...respImg(heroImg, 'hero')}
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
-          style={{ objectPosition: focalFor(heroImg) }}
-          loading="eager"
-          decoding="async"
-          width="1920"
-          height="1080"
-          fetchPriority="high"
-        />
-        {/* Vesa 17.10.2026: "aivan liikaa overlayta kuvan päällä". Ennen 0,48–0,96 koko kuvan
-            yli, eli kuvaa ei näkynyt missään. Nyt sama kevyt pohja kuin kategoriasivujen
-            herossa; tekstin luettavuus tulee tekstilohkon omasta sumennetusta paneelista. */}
+      {/* 17.10.2026 (Vesa: "enkä pidä noiden h1 tekstien taustoista ollenkaan minkään alasivun hero
+          osiossa"): sumennettu laikku pois, verkoston heromalli kuten kohde- ja kategoriasivuilla.
+          Alle 1024 px kuva on puhdas kaista ja teksti sen alla; lg+:ssa teksti kuvan päällä
+          vasemmalla vaakaliukuman varassa. Valitse tapasi -laatat nousevat yhä heron alareunaan. */}
+      <section className="relative bg-deep-night pt-16 lg:min-h-[60vh] lg:flex lg:items-center overflow-hidden">
         <div
-          className="absolute inset-0"
-          style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }}
-        />
-        {/* CC BY 2.5 -kuva: tekijä + lisenssi näkyviin. Valitse tapasi -laatat nousevat heron
-            alareunan päälle, joten kuitti on niiden yläpuolella omassa kaistassaan. */}
-        <div className="absolute inset-x-0 bottom-24 sm:bottom-28 h-6">
-          <PhotoCredit src={heroImg} />
+          className="relative h-[42svh] min-h-[240px] sm:h-[380px] md:h-[440px] lg:absolute lg:inset-0 lg:h-auto lg:min-h-0 overflow-hidden"
+          data-lv-tp-tausta="hero"
+        >
+          <img
+            src={heroImg}
+            {...respImg(heroImg, 'band')}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 w-full h-full object-cover"
+            style={{ objectPosition: focalFor(heroImg) }}
+            loading="eager"
+            decoding="async"
+            width="1920"
+            height="1080"
+            fetchPriority="high"
+          />
+          <div aria-hidden="true" className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#0F172A]/85 via-[#0F172A]/70 via-55% to-transparent" />
+          {/* CC BY 2.5 -kuva: tekijä + lisenssi näkyviin. lg+:ssa laatat nousevat heron alareunan
+              päälle, joten kuitti on niiden yläpuolella. */}
+          <div className="absolute inset-x-0 bottom-0 lg:bottom-28 h-6">
+            <PhotoCredit src={heroImg} />
+          </div>
         </div>
-        {/* Murupolku heron yläreunaan: laatat nousevat heron päälle, joten heron alla se jäisi
-            laattojen perään (puhelimessa keskelle sivua). */}
-        <div className="absolute inset-x-0 top-16 z-20">
-          <PageBreadcrumb variant="overlay" />
-        </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-20 pb-32 md:pt-24 md:pb-36 w-full">
-          {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
-              mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
-              näkyy muualla. */}
-          <div className="relative w-fit max-w-full">
-            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/65 blur-2xl" />
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-32 sm:pb-36 lg:pt-16 lg:pb-40 w-full">
+          <div className="max-w-2xl">
+            {/* Murupolku otsikon yläpuolelle: laatat nousevat heron alareunan päälle, joten heron
+                alla se jäisi laattojen perään (puhelimessa keskelle sivua). */}
+            <PageBreadcrumb variant="inline" />
             <p className="text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase mb-3">{c.hero.eyebrow}</p>
-            <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
+            <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {c.hero.title}
             </h1>
-            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 drop-shadow-[0_2px_16px_rgba(0,0,0,0.98)]">
+            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6">
               {c.hero.sub}
             </p>
             <div className="flex flex-col sm:flex-row gap-3">
@@ -280,7 +284,7 @@ export default function FishingPage() {
                 {c.hero.ctaRules}
               </a>
             </div>
-            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.95)]">{c.hero.trustLine}</p>
+            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl">{c.hero.trustLine}</p>
           </div>
         </div>
       </section>
@@ -294,9 +298,9 @@ export default function FishingPage() {
           <p className={`${EYEBROW} mb-3 text-[#F9A8D4]`}>{c.chooser.kicker}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {([
-              { href: '#ice', Icon: Snowflake, img: FISHING_IMG.ice, title: c.chooser.ice, sub: c.chooser.iceSub },
-              { href: '#rivers', Icon: Fish, img: RIVER_IMG[0], title: c.chooser.rivers, sub: c.chooser.riversSub },
-              { href: '#norway', Icon: Anchor, img: FISHING_IMG.kingCrab, title: c.chooser.norway, sub: c.chooser.norwaySub },
+              { href: '#ice', Icon: Snowflake, img: CHOOSER_IMG.ice, title: c.chooser.ice, sub: c.chooser.iceSub },
+              { href: '#rivers', Icon: Fish, img: CHOOSER_IMG.rivers, title: c.chooser.rivers, sub: c.chooser.riversSub },
+              { href: '#norway', Icon: Anchor, img: CHOOSER_IMG.norway, title: c.chooser.norway, sub: c.chooser.norwaySub },
             ] as const).map((t) => (
               <a key={t.href} href={t.href} className="group rounded-2xl overflow-hidden bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-20px_rgba(0,0,0,0.8)] hover:border-vibe-pink/50 transition-colors flex flex-col">
                 <div className="relative h-28 sm:h-40 overflow-hidden">
@@ -347,22 +351,13 @@ export default function FishingPage() {
           </div>
         </section>
 
-        {/* JOET — valokuvakaista otsikon takana, kortit sen alla */}
-        <section id="rivers" className="scroll-mt-20 pt-10 sm:pt-14">
-          <div className="relative h-60 sm:h-80 overflow-hidden">
-            <img src={RIVER_BAND} {...respImg(RIVER_BAND, 'hero')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="1066" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(RIVER_BAND) }} />
-            <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0F172A 0%, rgba(15,23,42,0.80) 30%, rgba(15,23,42,0.15) 70%, rgba(15,23,42,0) 100%)' }} />
-            <div className="absolute inset-x-0 top-2 h-6">
-              <PhotoCredit src={RIVER_BAND} />
-            </div>
-            <div className="absolute inset-x-0 bottom-0">
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-6">
-                <p className={`${EYEBROW} mb-2 text-[#F9A8D4]`}>{c.eyebrows.freshwater}</p>
-                <h2 className="font-heading text-5xl sm:text-7xl text-snow tracking-wide leading-none drop-shadow-[0_3px_20px_rgba(0,0,0,0.9)]">{c.rivers.title}</h2>
-              </div>
-            </div>
-          </div>
+        {/* JOET — tavallinen osion otsikko ja kuusi jokikorttia. 17.10.2026 (Vesa: "miten tämä joet on
+            näin paska osio ja kuva täysi leveä, ihan kuin olisi uusi hero osio"): koko leveyden
+            valokuvakaista otsikon takana näytti toiselta herolta keskellä sivua. Kuvat ovat korteissa. */}
+        <section id="rivers" className="scroll-mt-20 pt-6 sm:pt-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14 sm:pb-18">
+            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.freshwater}</p>
+            <h2 className={`${H2} mb-3`}>{c.rivers.title}</h2>
             <p className="text-snow/80 text-base leading-relaxed max-w-3xl">{c.rivers.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
@@ -422,9 +417,11 @@ export default function FishingPage() {
             <h2 className={`${H2_PAPER} text-balance`}>{c.tornioBox.title}</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
               {c.tornioBox.facts.map((f) => (
-                <div key={f.label} className="rounded-2xl bg-deep-night px-4 py-4 sm:px-5 sm:py-5">
+                // 17.10.2026 (Vesa: "miksi numero ei ole keskitetty laatikkoon"): luku ja selite keskelle
+                // laattaa vaaka- ja pystysuunnassa. Sääntö koko verkostolle: lukulaatta on aina keskitetty.
+                <div key={f.label} className="rounded-2xl bg-deep-night px-4 py-5 sm:px-5 sm:py-6 flex flex-col items-center justify-center text-center">
                   <span className={`block font-heading text-snow tracking-wide leading-none ${factSize(f.value)}`}>{f.value}</span>
-                  <span className="block text-snow/80 text-sm leading-snug mt-2">{f.label}</span>
+                  <span className="block text-snow/80 text-sm leading-snug mt-2 text-balance">{f.label}</span>
                 </div>
               ))}
             </div>
@@ -496,15 +493,16 @@ export default function FishingPage() {
           </div>
         </section>
 
-        {/* PILKKIMINEN — valokuva koko leveydeltä, teksti lasipaneelissa sen päällä */}
-        <section id="ice" className="relative scroll-mt-20 overflow-hidden">
-          <img src={FISHING_IMG.ice} {...respImg(FISHING_IMG.ice, 'hero')} alt={c.imageAlts.ice} loading="lazy" decoding="async" width="1400" height="788" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.ice) }} />
-          <div className="absolute inset-0 bg-gradient-to-b from-deep-night via-deep-night/10 via-25% to-deep-night/60" aria-hidden="true" />
-          <div className="absolute inset-x-0 top-14 h-6">
-            <PhotoCredit src={FISHING_IMG.ice} />
-          </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
-            <div className="max-w-xl rounded-3xl bg-deep-night/85 backdrop-blur-md border border-white/15 p-6 sm:p-8 shadow-2xl shadow-black/50">
+        {/* PILKKIMINEN — kuva vasemmalla, teksti oikealla, kuten Järvet-kortti. 17.10.2026 (Vesa:
+            "toteutettu tosi poor"): koko leveyden valokuva lasipaneelin takana oli kolmas
+            hero-tyylinen kaista sivulla, ja kuva oli sama kuin valitsimen laatassa. */}
+        <section id="ice" className="scroll-mt-20 px-4 sm:px-6 pb-14 sm:pb-18">
+          <div className="max-w-7xl mx-auto lv-surface rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-[2fr_3fr]">
+            <div className="relative h-64 sm:h-80 lg:h-auto lg:min-h-[28rem] overflow-hidden">
+              <img src={FISHING_IMG.ice} {...respImg(FISHING_IMG.ice, 'half')} alt={c.imageAlts.ice} loading="lazy" decoding="async" width="1704" height="959" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.ice) }} />
+              <PhotoCredit src={FISHING_IMG.ice} at="top" wrap />
+            </div>
+            <div className="p-6 sm:p-8 lg:p-10">
               <div className="flex items-center gap-2.5 mb-3">
                 <Snowflake className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
                 <h2 className={H2}>{c.iceFishing.title}</h2>

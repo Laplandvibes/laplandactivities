@@ -139,142 +139,120 @@ export const MKT = {
 // When Vesa generates per-activity-type images in a Tier 2 batch, the map
 // below grows.
 
-// Order is significant — first match wins, so SPECIFIC keywords come before
-// GENERIC ones. e.g. "Polar Bears" must match `bear` before `trail` (which
-// might appear in the description) sweeps it to summer-hike.
+// 🔴🔴 17.10.2026 (Vesa: "aja itse -huskysafari ja siellä on santa claus kyläkuva?",
+// "miten voi olla kaksi eri kohdetta samalla kuvalla?"). Kolme vikaa, mitattu kaikilta
+// 28 suomenkieliseltä sivulta (15 samaa kuvaa kahdessa kortissa saman sivun sisällä):
+//   1. Säännöt luettiin koko kuvauksesta, joten sivulause voitti otsikon: "Self-Drive"
+//      osui /elf/-sääntöön (joulukylä), "Arctic Ice Fishing" kuvauksen Sámi-sanaan (poro),
+//      "Wilderness Campfire Dinner" sääntöön "kota dinner" (poro).
+//   2. Paikkasääntö (Pallas, Kiilopää, Ounasvaara) oli ennen lajia: hiihtokortti sai
+//      kesätunturin, savusaunakortti maisemakuvan.
+//   3. Nimetyllä kohteella oli yksi kuva kahdelle kortille (SantaPark = joulukylä,
+//      Arctic Snow Hotel = Ounasvaaran maisema, kaksi Lainio-korttia, kaksi ametistikorttia).
+// Nyt: säännöt ensin OTSIKKOON (vasta jos otsikko ei osu mihinkään, kuvaukseen), sanarajat,
+// järjestys nimetty kohde → laji → paikkamaisema → yleinen, ja nimetyille kohteille omat
+// kuvat. Ruudukko ottaa toisen osuneen säännön kuvan ennen kuin toistaa saman kuvan.
+// Tarkistus: renderöidyt sivut, ei tämä lista (kortit + kuva samalla sivulla).
 const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
-  // Specific named places / cultural items first — Tier 2 imagery where available
-  // Heritage / real named places → GENERIC non-claiming theme images (no fabricated building/landmark). Per Vesa 2026-06-22.
+  // === A. Nimetyt kohteet ja paikat (tarkin ensin) ===
   { match: /little village|uitonniemi/i,                                img: local('activities/culture/santas-little-village.webp') },
-  { match: /santa(park)?|christmas|joulu|elf|arctic circle (cross|line|marker)/i,
+  // SantaPark on maanalainen luola Syväsenvaarassa, ei Joulupukin Pajakylä (Commons, Timo Newton-Syms 2010).
+  { match: /santa ?park|underground cave/i,                             img: local('activities/culture/santapark.webp') },
+  { match: /santa claus village|\bsanta\b|christmas|joulu|\belf\b|\belves\b|arctic circle (cross|line|marker)/i,
                                                                         img: seasonal(local('activities/culture/santa-village-winter.webp'), local('activities/culture/santa-village.webp')) },
   { match: /gold pan(ning)?|tankavaara/i,                               img: local('activities/culture/gold-panning.webp') },
-  // 17.10.2026: oli tekoälykuva; nyt Commons Ninara 2020, Lapin ametisti (CC BY 2.0).
-  { match: /amethyst|lampivaara|mine\b/i,                               img: local('activities/culture/amethyst.webp') },
+  // Kaksi korttia samasta kaivoksesta (Saariselkä ja Pyhä-Luosto) ⇒ kaksi kuvaa (Ninara 2020, molemmat CC BY 2.0).
+  { match: /amethyst|lampivaara|\bmine\b/i,
+        imgs: [local('activities/culture/amethyst.webp'), local('activities/culture/amethyst-2.webp')] },
   { match: /s[íi]ida/i,                                                 img: local('activities/culture/sami-heritage.webp') },
   { match: /samiland/i,                                                 img: local('activities/culture/sami-duodji.webp') },
   { match: /arktikum/i,                                                 img: local('activities/culture/arctic-city.webp') },
-  // 17.10.2026: oli tekoälykuva, nyt oma kuva Pentikmäeltä Posiolta 10.10.2026.
   { match: /pentik/i,                                                   img: local('activities/culture/ceramics.webp') },
-  { match: /museum|m[uu]seo/i,                                          img: local('activities/culture/arctic-city.webp') },
-  // Karhunkierros = "Bear's Ring" HIKING trail (summer trek) — NOT wildlife. Must match before /bear/.
-  { match: /karhunkierros|bear.?s ring|little bear.?s ring/i,           img: local('activities/summer/oulanka-ruska-trail.webp') },
-  { match: /raft|river run|kitkajoki/i,                                 img: local('activities/adventure/kitkajoki-rapids.webp') },
-  // Ranua Zoo genuinely has a polar bear — that's the only correct use of polar-bears.webp.
-  // 17.10.2026: oli tekoälykuva (jääkarhu lumimetsässä), nyt oma kuva Ranuan eläinpuistosta 10.10.2026.
-  { match: /polar bear|ranua/i,                                         img: local('activities/wildlife/polar-bears.webp') },
-  // Wolverine/lynx/fox: no dedicated image yet → generic green-summer wilderness (not a bear).
-  { match: /wolverine|lynx|fox|arctic hare/i,                           img: local('categories/summer.webp') },
-  // Brown-bear watching (Kuusamo) is a SUMMER hide activity — real brown-bear-in-summer image (Gamma GPT Image 2, #83).
-  { match: /bear|wildlife/i,                                            img: local('activities/wildlife/brown-bear-summer.webp') },
-  // Reindeer & husky each rotate over 2 distinct images so the animals category
-  // no longer shows the same reindeer/husky photo on three sibling cards.
-  { match: /reindeer|s[áa]mi|lavvu|kota dinner/i,
-        imgs: [local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp'), local('activities/winter/reindeer-farm-inari.webp'), local('activities/winter/reindeer-sleds-inari.webp'), local('activities/summer/reindeer-kilpisjarvi.webp'), local('activities/summer/reindeer-saytsjarvi.webp')] },
-  // imgs[0] EI ole slider-01: se on hero-sliderin kuva, ja huskykortti nayttaisi
-  // etusivulla saman kuvan kahdesti (mitattu 2026-08-23).
-  { match: /husky|husk[iy]|sled dog|kennel/i,
-        imgs: [local('activities/winter/husky-kennel.webp'), local('activities/winter/sled-dogs-lapland.webp'), local('activities/winter/husky-ride-ruka.webp'), local('activities/winter/husky-dogs-ruka.webp'), local('activities/winter/husky-ready-ruka.webp')] },
-
-  // Sports / activities — BEFORE lodging because activity titles are the strongest
-  // signal (a "snowmobile expedition" must match snowmobile even if the description
-  // mentions "cabin lunch")
-  // imgs[0] EI ole slider-02: sama syy kuin huskylla.
-  { match: /snowmobile|kelkka|skidoo/i,
-        imgs: [local('activities/winter/snowmobile-river.webp'), local('activities/winter/snowmobile-ruka-lake.webp'), local('activities/winter/snowmobile-kuntivaara.webp'), local('activities/winter/snowmobile-ruka-forest.webp'), local('activities/winter/snowmobile-saariselka.webp')] },
-  { match: /ice ?kart|go.?kart|karting/i,                              img: local('heroes/inari-winter-lake.webp') },
-  { match: /arctic snow ?hotel/i,                                       img: local('activities/winter/ounasvaara-winter.webp') },
-  { match: /snow ?village|lainio/i,                                     img: local('activities/culture/snow-village.webp') },
+  { match: /\bmuseum\b|museo/i,                                         img: local('activities/culture/arctic-city.webp') },
+  // Arctic SnowHotelista ei ole vapaata kuvaa ⇒ paikaton jäähotellin sisäkuva (Pexels 10937086), ei toisen hotellin nimettyä kuvaa.
+  { match: /arctic snow ?hotel/i,                                       img: local('activities/culture/ice-hotel.webp') },
+  // SnowVillage ja Lainio Snow Village ovat SAMA kohde Levin ja Ylläksen listoilla ⇒ kaksi eri kuvaa paikasta (Estormiz, CC0).
+  { match: /snow ?village|lainio/i,
+        imgs: [local('activities/culture/snow-village.webp'), local('activities/culture/snow-village-2.webp')] },
   { match: /snowcastle|snow castle|lumilinna/i,                         img: local('activities/culture/snowcastle-kemi.webp') },
-  { match: /snowshoe/i,                                                img: local('activities/winter/snowshoe-forest.webp') },
-  // 17.10.2026: oli tekoälykuva; nyt Pexels 35808751 (läskipyörä lumisella metsäpolulla, paikaton).
-  { match: /fat ?bike/i,                                               img: local('activities/winter/fatbike-snow.webp') },
-  // Riisitunturi "tykky" snow-crowned trees = an ICONIC WINTER scene, even though the
-  // activity sits in the year-round "Summer Adventures" category. Must match BEFORE the
-  // generic /summer/ catch-all (its category string contains "summer") so it does NOT
-  // inherit the summer-lake image (owner-reported mismatch 2026-06-26). No dedicated
-  // tykky image on disk yet → use the snowy-fell winter scene; FLAGGED for generation.
+  { match: /icebreaker|\bsampo\b/i,                                     img: local('activities/winter/icebreaker-sampo.webp') },
+  // Ranua Zoo genuinely has a polar bear — that's the only correct use of polar-bears.webp (oma kuva 10.10.2026).
+  { match: /polar bear|ranua/i,                                         img: local('activities/wildlife/polar-bears.webp') },
+  // Karhunkierros = "Bear's Ring" HIKING trail (summer trek) — NOT wildlife. Must match before /bear/.
+  { match: /karhunkierros|bear.?s ring/i,                               img: local('activities/summer/oulanka-ruska-trail.webp') },
+  { match: /kitkajoki|kitka river|\braft(ing)?\b|river run|white ?water/i,        img: local('activities/adventure/kitkajoki-rapids.webp') },
+  { match: /kukkolankoski/i,                                            img: local('activities/fishing/kukkolankoski.webp') },
+  { match: /green zone/i,                                               img: local('activities/summer/golf-tornio.webp') },
+  // Oma kuva Haaparannan keskustan opastetolpasta 15.10.2026 (ennen sama kuin Tornion hero).
+  { match: /haparanda|haaparanta|ikea|shopping/i,                       img: local('activities/culture/haparanda-border.webp') },
+  // Oma kuva Suomutunturin rinteistä 9.10.2026 (ennen Ounasvaaran rinne = väärä paikka).
+  { match: /suomu/i,                                                    img: local('activities/winter/suomu-slopes.webp') },
+  { match: /ounasvaara/i,                                               img: local('activities/winter/ounasvaara-slope-april.webp') },
+  { match: /ruka ski/i,                                     img: local('heroes/ruka-winter-slopes.webp') },
+  { match: /yll[äa]s ski/i,                             img: local('heroes/yllas-winter-road.webp') },
+  { match: /pyh[äa] ski/i,                               img: local('heroes/pyha-winter-slopes.webp') },
+  { match: /levi ski/i,                                     img: local('activities/winter/levi-north-slope.webp') },
   { match: /pyh[äa]-luosto national park|isokuru/i,                      img: local('activities/winter/pyha-summer-lift.webp') },
-  { match: /riisitunturi|tykky|snow.?tree|snow.?crown/i,               img: local('activities/summer/riisitunturi-tykky.webp') },
-  // Frozen-waterfall / ice-climbing BEFORE hike — a frozen Korouoma gorge is a winter ice
-  // activity, not a summer hike. ("korouoma" alone dropped: it's a green hiking gorge in summer.)
+  { match: /riisitunturi|tykky|snow.?trees?\b|snow.?crown/i,            img: local('activities/summer/riisitunturi-tykky.webp') },
   { match: /ice climb|frozen waterfall|korouoma/i,
         imgs: [local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/ice-climbing.webp')] },
-  { match: /pallas/i,                                                   img: local('activities/summer/pallas-fells.webp') },
-  { match: /urho kekkonen|kiilop/i,                                     img: local('activities/summer/kiilopaa-view-east.webp') },
-  { match: /pielpaj/i,                                                  img: local('heroes/inari-summer-lake.webp') },
-  { match: /ounasvaara/i,                                               img: local('activities/winter/ounasvaara-winter.webp') },
-  { match: /ruka ski|rukatunturi/i,                                     img: local('heroes/ruka-winter-slopes.webp') },
-  { match: /yll[äa]s ski|yll[äa]stunturi/i,                             img: local('heroes/yllas-winter-road.webp') },
-  { match: /pyh[äa] ski|pyh[äa]tunturi/i,                               img: local('heroes/pyha-winter-slopes.webp') },
-  { match: /levi ski|levitunturi/i,                                     img: local('activities/winter/levi-north-slope.webp') },
-  // Hike BEFORE ski/sauna — hiking is the primary signal; a summer hike whose description
-  // mentions a winter cross-country ski route or a Kiilopää sauna must still show a hiking
-  // image, not a snowy ski resort or a sauna. ("trail" dropped — it false-matches ski/sled/bike trails.)
-  { match: /\bhiking\b|\bhike\b|\btrek\b|fjell hike|fell hike|karhunkierros/i,
-        imgs: [local('categories/summer.webp'), local('activities/summer/pallas-fells.webp')] },
-  { match: /\bski(ing)?\b|slope|piste|biathlon|cross[- ]country|snowboard/i,
-        imgs: [local('activities/winter/ounasvaara-slope-april.webp'), local('heroes/pyha-winter-slopes.webp'), local('activities/winter/cross-country.webp'), local('activities/winter/levi-piste1.webp'), local('activities/winter/downhill-skiers.webp'), local('heroes/levi-black-run-view.webp')] },
-  // Aurora is a PRIMARY signal — must beat the generic boat/fish/berry rules below, whose
-  // keywords can appear in an aurora tour's English description. Winter-primary rules above still win.
-  { match: /aurora|northern light|revontul/i,
-        // 🔴 Pooli oli KAKSI kuvaa seitsemalle revontulikortille, joten sama kuva
-        // toistui kolmesti. Kolme uutta Lapin revontulikuvaa (Levi, Inari) laajentaa
-        // poolin viiteen. Vesa 21.9.: "joku kuva pakko olla" — toisto on parempi kuin
-        // tyhja kortti, mutta oikea korjaus on lisata kuvia.
-        imgs: [local('activities/northern-lights/aurora-lake.webp'), local('activities/northern-lights/aurora-inari-juutuanvuono.webp'), local('activities/northern-lights/aurora-enontekio-hetta.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp')] },
-  // King crab (Barents Sea, Norway) is a boat/RIB "safari" whose description says
-  // "RIB-boat", so it MUST precede the water rules (kayak/boat) AND the ice-fishing rule
-  // (the category string "Fishing & Ice Fishing" makes /ice fish/ match it too). Two
-  // variants so the pair of Saariselkä king-crab cards never show the same photo.
   { match: /king crab|kongekrabbe|crab safari/i,
         imgs: [local('activities/fishing/fishing-kingcrab.webp'), local('activities/fishing/fishing-kingcrab-2.webp')] },
-  { match: /kayak|canoe|paddle|sup\b/i,                                img: local('activities/summer/kayak-inari.webp') },
-  { match: /icebreaker|sampo/i,                                        img: local('activities/winter/icebreaker-sampo.webp') },
-  { match: /boat|cruise|lake.*tour/i,                                  img: local('activities/summer/lake-cruise.webp') },
-  // Kukkolankoski = SUMMER dipnet fishing at the rapids (Food & Drink). Its title carries
-  // "whitefish", but so do the ice-fishing descriptions ("jig for perch and whitefish"),
-  // so match the unique place name — never bare /whitefish/ — and give it a river image,
-  // not a winter ice one (season-accuracy release gate).
-  { match: /kukkolankoski/i,                                           img: local('activities/fishing/kukkolankoski.webp') },
-  { match: /teno|tana river|utsjoki/i,                                  img: local('activities/fishing/teno-valley.webp') },
-  { match: /salmon|fly[- ]?fish|tornionjoki|teno river/i,               img: local('activities/summer/salmon-fishing.webp') },
-  // Ice fishing (winter) — 3 distinct, season-accurate photos so sibling cards on one
-  // destination page (Rovaniemi has three) never repeat. assignActivityImages round-robins them.
-  { match: /ice[ -]?fish/i,
-        imgs: [local('activities/fishing/fishing-ice.webp'), local('activities/fishing/ice-fishing-hole.webp'), local('activities/fishing/fishing-ice-day.webp')] },
-  { match: /fish(ing)?/i,                                               img: local('activities/fishing/fishing-river.webp') },
-  { match: /mountain bike|mtb|cycling|bike park/i,                      img: local('activities/summer/mtb-bikepark.webp') },
-  // 17.10.2026: oli yksi tekoälykuva molemmille golfkorteille. Green Zone (Tornio–Haaparanta) saa oikean
-  // kuvan Tornion kentästä (Commons, Rolf Palmberg), Levin keskiyön golf paikattoman Pexels-kuvan suomalaiselta
-  // kentältä illan auringossa (Huy Vu, 38798133). Levin kentästä ei löytynyt vapaata kuvaa.
-  { match: /green zone/i,                                               img: local('activities/summer/golf-tornio.webp') },
-  { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
-  { match: /berry|cloudberry|forag|mushroom/i,                          img: local('activities/summer/foraging.webp') },
-  { match: /campfire|kota cook|kammi|outdoor (cooking|dinner)/i,
-        imgs: [local('activities/food/campfire-salmon.webp'), local('activities/food/salmon-plate.webp')] },
+  { match: /pielpaj/i,                                                  img: local('heroes/inari-summer-lake.webp') },
 
-  // Lodging / structures (after sports)
-  { match: /glass igloo|aurora cabin|igloo/i,                           img: local('heroes/slider-04-glass-igloo.webp') },
-  { match: /smoke sauna|savusauna|kiilop[ää]+/i,                        img: local('activities/wellness/smoke-sauna-siida-inari.webp') },
-  { match: /ice (hotel|chapel|castle|restaurant|gallery)|snowcastle|snow ?hotel|ice village/i,
-                                                                        img: local('activities/culture/ice-architecture.webp') },
-  // 17.10.2026: oli tekoälykuva; nyt Pexels 11776624 (droonikuva, punainen kelluntapuku jäisessä vedessä, 2022, paikaton).
-  { match: /ice floating|float experience|arctic float/i,               img: local('activities/wellness/ice-floating.webp') },
-  // 17.10.2026: hot tub- ja spa|wellness|massage -säännöt poistettu: ne osoittivat tekoälykuvaan (palju revontulten
-  // alla), eikä yksikään kortti käyttänyt sitä (mitattu renderöidyistä /fi/-sivuista). Hyvinvointikortit osuvat
-  // saunasääntöihin tai kategorian kuvaan.
-  { match: /float/i,                                                    img: local('activities/wellness/ice-floating.webp') },
+  // === B. Laji (otsikon pääsana voittaa paikan) ===
+  // 17.10.2026: revontulet ENNEN kelkkaa ja lumikenkiä. Kaikki seitsemän revontuliotsikkoa ovat
+  // revontuliretkiä (Aurora Borealis Snowmobile Safari, Northern Lights Snowshoe Hike), ja kun kelkka
+  // voitti, revontulisivulla näkyi päivänvalossa ajettu kelkka ja kaksi samaa lumikenkäkuvaa.
+  // aurora-lake (etusivun slider) ja juutuanvuono (kategorian hero) poolin lopussa.
+  { match: /aurora|northern lights?|revontul/i,
+        imgs: [local('activities/northern-lights/aurora-enontekio-hetta.webp'), local('activities/northern-lights/aurora-inari-bands.webp'), local('activities/northern-lights/aurora-levi-bands.webp'), local('activities/northern-lights/aurora-kemijarvi-arc.webp'), local('activities/northern-lights/aurora-kemijarvi-cabin.webp'), local('activities/northern-lights/aurora-inari-juutuanvuono.webp'), local('activities/northern-lights/aurora-lake.webp')] },
+  // imgs[0] EI ole slider-02/slider-01: ne ovat hero-sliderin kuvia.
+  { match: /snowmobile|kelkka|skidoo/i,
+        imgs: [local('activities/winter/snowmobile-river.webp'), local('activities/winter/snowmobile-ruka-lake.webp'), local('activities/winter/snowmobile-kuntivaara.webp'), local('activities/winter/snowmobile-ruka-forest.webp'), local('activities/winter/snowmobile-saariselka.webp'), local('heroes/slider-02-snowmobile-fells.webp')] },
+  { match: /husky|huskies|sled dogs?|kennel/i,
+        imgs: [local('activities/winter/husky-kennel.webp'), local('activities/winter/sled-dogs-lapland.webp'), local('activities/winter/husky-ride-ruka.webp'), local('activities/winter/husky-dogs-ruka.webp'), local('activities/winter/husky-ready-ruka.webp'), local('heroes/husky-sled-day.webp')] },
+  { match: /reindeer|\bs[áa]mi\b|lavvu/i,
+        imgs: [local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp'), local('activities/winter/reindeer-farm-inari.webp'), local('activities/winter/reindeer-sleds-inari.webp'), local('activities/summer/reindeer-kilpisjarvi.webp'), local('activities/summer/reindeer-saytsjarvi.webp')] },
+  { match: /ice ?kart|go.?kart|karting/i,                               img: local('heroes/inari-winter-lake.webp') },
+  { match: /snowshoe/i,                                                 img: local('activities/winter/snowshoe-forest.webp') },
+  { match: /fat ?bike/i,                                                img: local('activities/winter/fatbike-snow.webp') },
+  // Ahma, ilves, kettu: ei omaa kuvaa ⇒ kesäinen erämaa, ei karhu.
+  { match: /wolverine|lynx|\bfox\b|arctic hare/i,                       img: local('categories/summer.webp') },
+  { match: /\bbears?\b|wildlife/i,                                      img: local('activities/wildlife/brown-bear-summer.webp') },
+  { match: /smoke sauna|savusauna/i,                                    img: local('activities/wellness/smoke-sauna-siida-inari.webp') },
+  { match: /ice floating|\bfloat(ing)?\b/i,                              img: local('activities/wellness/ice-floating.webp') },
   { match: /sauna/i,                                                    img: local('activities/wellness/sauna-interior.webp') },
+  // Pilkkikortteja on kalastuskategoriassa kuusi ⇒ neljä eri kuvaa (+ kallerna, Pilkkijä, CC BY-SA 3.0).
+  { match: /ice[ -]?fish/i,
+        imgs: [local('activities/fishing/fishing-ice.webp'), local('activities/fishing/ice-fishing-hole.webp'), local('activities/fishing/fishing-ice-day.webp'), local('activities/fishing/ice-fishing-drill.webp')] },
+  { match: /salmon|fly[- ]?fish|tornionjoki/i,                          img: local('activities/summer/salmon-fishing.webp') },
+  { match: /\bteno\b|tana river|utsjoki/i,                              img: local('activities/fishing/teno-valley.webp') },
+  { match: /kayak|canoe|paddl|\bsup\b/i,                                img: local('activities/summer/kayak-inari.webp') },
+  { match: /\bboat\b|cruise|lake.*tour/i,                                          img: local('activities/summer/lake-cruise.webp') },
+  { match: /cross[- ]country/i,                                         img: local('activities/winter/cross-country.webp') },
+  { match: /\bski(ing|er|ers)?\b|slopes?\b|piste|biathlon|snowboard/i,
+        imgs: [local('activities/winter/ounasvaara-slope-april.webp'), local('heroes/pyha-winter-slopes.webp'), local('activities/winter/cross-country.webp'), local('activities/winter/levi-piste1.webp'), local('activities/winter/downhill-skiers.webp'), local('heroes/levi-black-run-view.webp')] },
+  { match: /mountain bike|\bmtb\b|cycling|bike park/i,                  img: local('activities/summer/mtb-bikepark.webp') },
+  { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
+  { match: /berr(y|ies)|forag|mushroom/i,                               img: local('activities/summer/foraging.webp') },
+  { match: /campfire|open fire|\bkota\b|kammi|outdoor (cooking|dinner)/i,
+        imgs: [local('activities/food/campfire-salmon.webp'), local('activities/food/salmon-plate.webp')] },
+  { match: /glass igloo|aurora cabin|igloo/i,                           img: local('heroes/slider-04-glass-igloo.webp') },
+  { match: /ice (hotel|chapel|castle|restaurant|gallery)|snow ?hotel|ice village/i,
+                                                                        img: local('activities/culture/ice-architecture.webp') },
+
+  // === C. Paikkamaisema (vasta kun otsikossa ei ole lajia) ===
+  { match: /pallas/i,                                                   img: local('activities/summer/pallas-fells.webp') },
+  { match: /urho kekkonen|kiilop/i,                                     img: local('activities/summer/kiilopaa-view-east.webp') },
+
+  // === D. Yleiset ===
+  { match: /\bhik(e|ing)\b|\btrek\b|fell hike/i,
+        imgs: [local('categories/summer.webp'), local('activities/summer/pallas-fells.webp')] },
+  { match: /fish(ing)?/i,                                               img: local('activities/fishing/fishing-river.webp') },
   { match: /cabin|log house|lakeside lodge/i,                           img: local('hotels/log-cabin-lakeside.webp') },
-
-  // Generic outdoor
-  { match: /midnight sun|summer/i,                                       img: local('categories/summer.webp') },
-
-  // City/destination tour catch-alls
+  { match: /midnight sun|summer/i,                                      img: local('categories/summer.webp') },
   { match: /city tour|rovaniemi tour|kemi tour|tornio tour/i,           img: local('hotels/boutique-hotel-rovaniemi.webp') },
-  // Haparanda border-shopping day (Tornio page) — urban scene, not a nature shot.
-  { match: /haparanda|ikea|shopping/i,                                  img: local('heroes/tornio-river-dusk.webp') },
 ];
 
 export interface ActivityImageInput {
@@ -296,14 +274,14 @@ function hay(act: ActivityImageInput): string {
   return `${act.title || ''} | ${act.category || ''} | ${act.description || ''}`;
 }
 
-// Matched keyword entry's index + its image pool (singletons normalised to 1-element).
-function matchEntry(act: ActivityImageInput): { idx: number; imgs: string[] } | null {
-  const haystack = hay(act);
-  for (let i = 0; i < KEYWORD_IMAGE.length; i++) {
-    const e = KEYWORD_IMAGE[i];
-    if (e.match.test(haystack)) return { idx: i, imgs: e.imgs ?? [e.img!] };
-  }
-  return null;
+/** Kaikki osuvat säännöt järjestyksessä: otsikon osumat; jos niitä ei ole, kuvauksen ja kategorian. */
+function matchAll(act: ActivityImageInput): { idx: number; imgs: string[] }[] {
+  const pick = (text: string) => KEYWORD_IMAGE
+    .map((e, i) => ({ e, i }))
+    .filter(({ e }) => e.match.test(text))
+    .map(({ e, i }) => ({ idx: i, imgs: e.imgs ?? [e.img!] }));
+  const byTitle = pick(act.title || '');
+  return byTitle.length ? byTitle : pick(`${act.category || ''} | ${act.description || ''}`);
 }
 
 export function imageForActivity(act: ActivityImageInput | string): string {
@@ -312,7 +290,7 @@ export function imageForActivity(act: ActivityImageInput | string): string {
   if (typeof act === 'string') {
     return imageForCategory('adventure');
   }
-  const m = matchEntry(act);
+  const m = matchAll(act)[0];
   if (m) return m.imgs.length > 1 ? pickStable(hay(act), m.imgs) : m.imgs[0];
   return imageForCategory(act.categorySlug || 'adventure');
 }
@@ -321,36 +299,39 @@ export function imageForActivity(act: ActivityImageInput | string): string {
 // cards in list order, so multi-image themes (reindeer, husky) strictly alternate and
 // never repeat on adjacent cards. Single-call sites keep using imageForActivity.
 export function assignActivityImages(acts: ActivityImageInput[], heroImg?: string): string[] {
-  // 🔴🔴 EI KOSKAAN TYHJAA KORTTIA. Vesa 21.9.2026: *"ja mitä nämä on ilman kuvia?
-  // joku kuva pakko olla"* — revontulikategoriassa kolme korttia jai gradientille,
-  // koska tama funktio kieltaytyi toistamasta kuvaa kun uniikit loppuivat. Se oli
-  // MINUN virhearvioni samana paivana: valitsin tyhjan kortin duplikaatin sijaan.
-  // Oikea jarjestys on:
-  //   1. uniikki kuva omasta poolista
-  //   2. jos ne loppuvat, VAHITEN kaytetty kuva poolista (toisto)
-  //   3. vasta jos poolia ei ole lainkaan, kategorian oma kuva
+  // 🔴🔴 EI KOSKAAN TYHJAA KORTTIA (Vesa 21.9.2026: "joku kuva pakko olla") eikä samaa kuvaa
+  // kahdesti samalla sivulla, kun toinen osuva kuva on olemassa (17.10.2026). Jarjestys:
+  //   1. kayttamaton kuva ensimmaisen osuneen saannon poolista
+  //   2. kayttamaton kuva seuraavien osuneiden saantojen pooleista (esim. revontuli-
+  //      lumikenkaretki: lumikenka kaytetty ⇒ revontuli)
+  //   3. vasta sitten VAHITEN kaytetty kuva (toisto), ei koskaan aiheeton kuva
+  //   4. jos mikaan saanto ei osu, kategorian oma kuva
   // Sivun hero varataan yha ensin, joten hero ei paady kortiksi ellei muuta ole.
   const kaytto = new Map<string, number>();
   if (heroImg) kaytto.set(heroImg, 1);
-  const ota = (ehdokkaat: string[]): string => {
-    let paras = ehdokkaat[0];
-    let vahiten = Infinity;
-    for (const e of ehdokkaat) {
-      const n = kaytto.get(e) ?? 0;
-      if (n < vahiten) { vahiten = n; paras = e; }
-      if (n === 0) break; // ensimmainen kayttamaton riittaa
-    }
-    kaytto.set(paras, (kaytto.get(paras) ?? 0) + 1);
-    return paras;
-  };
   const counters: Record<number, number> = {};
   return acts.map((act) => {
-    const m = matchEntry(act);
-    if (!m) return ota([imageForCategory(act.categorySlug || 'adventure')]);
-    // Aloitetaan siita kuvasta jonka kierratys antaisi, jotta jarjestys sailyy.
-    const n = (counters[m.idx] = (counters[m.idx] ?? 0) + 1) - 1;
-    const jarjestys = m.imgs.map((_, i) => m.imgs[(n + i) % m.imgs.length]);
-    return ota(jarjestys);
+    const ms = matchAll(act);
+    if (!ms.length) {
+      const c = imageForCategory(act.categorySlug || 'adventure');
+      kaytto.set(c, (kaytto.get(c) ?? 0) + 1);
+      return c;
+    }
+    // Ehdokkaat: jokaisen osuneen saannon pooli omassa kierrossaan, saantojen jarjestyksessa.
+    const ehdokkaat: { img: string; idx: number }[] = [];
+    for (const m of ms) {
+      const n = counters[m.idx] ?? 0;
+      m.imgs.forEach((_, i) => ehdokkaat.push({ img: m.imgs[(n + i) % m.imgs.length], idx: m.idx }));
+    }
+    let valittu = ehdokkaat.find((e) => !kaytto.get(e.img));
+    if (!valittu) {
+      // Kaikki osuneet kuvat kaytossa: vahiten kaytetty ensimmaisen saannon poolista.
+      const eka = ehdokkaat.filter((e) => e.idx === ms[0].idx);
+      valittu = eka.reduce((a, b) => ((kaytto.get(b.img) ?? 0) < (kaytto.get(a.img) ?? 0) ? b : a), eka[0]);
+    }
+    counters[valittu.idx] = (counters[valittu.idx] ?? 0) + 1;
+    kaytto.set(valittu.img, (kaytto.get(valittu.img) ?? 0) + 1);
+    return valittu.img;
   });
 }
 
@@ -369,7 +350,8 @@ const CATEGORY_HERO: Record<string, string> = {
   adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/kitkajoki-rapids.webp'), local('activities/adventure/kevo-river-frost.webp')),
   // 4.10.2026 (Vesa: talvella ei kesäkuvaa): syyskuva syys–lokakuulle, ettei kesän poro näy lokakuussa.
   animals:          seasonal(local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp'), local('heroes/reindeer-autumn-saariselka.webp')),
-  'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
+  // 17.10.2026: oli aurora-lake, joka on myös etusivun sliderissa, joten etusivulla sama kuva näkyi kahdesti.
+  'northern-lights': local('activities/northern-lights/aurora-inari-juutuanvuono.webp'),
   // 🔴 Oli tyhja sumuinen rinne ilman yhtaan laskijaa (Vesa 21.9.2026: "tassa voisi
   // nakya talviurheilu ... jotain kumparelaskua tms"). Nyt kumparelaskua actionilla.
   // 🔴 23.9.2026: tassa oli Commonsin 'Ben Cavet skiing the moguls' — NIMETTY brittilainen
@@ -426,7 +408,9 @@ const DEST_HERO: Record<string, string> = {
   tornio:     seasonal(local('activities/culture/snowcastle-kemi.webp'), local('heroes/tornio-river-dusk.webp')),
   // New 2026-07-24: dedicated generated heroes (same image both seasons, like rovaniemi).
   'pyha-luosto': seasonal(local('heroes/pyha-winter-slopes.webp'), local('heroes/pyha-luosto-fells.webp')),
-  kemijarvi:  local('heroes/kemijarvi-lake-town.webp'),
+  // 17.10.2026 (Vesa: "hero kuva on aivan pixelöitynyt"): syksyllä oma kuva Perävaaralta 9.10.2026 klo 16.26,
+  // järvi, saaret ja kaupunki kirkkoineen taivaanrannassa; 2560 px suoraan 4000 px:n masterista, ei rajausta.
+  kemijarvi:  seasonal(local('heroes/kemijarvi-lake-town.webp'), local('heroes/kemijarvi-lake-town.webp'), local('heroes/kemijarvi-autumn.webp')),
 };
 
 export function imageForDestination(slug: string): string {
@@ -527,6 +511,15 @@ const FOCAL: Record<string, string> = {
   '/images/activities/wellness/ice-floating.webp': '48% 62%',
   '/images/activities/summer/golf-tornio.webp': 'center 50%',
   '/images/activities/culture/amethyst.webp': 'center 50%',
+  // 17.10.2026: nimettyjen kohteiden omat kuvat (ennen kaksi korttia samalla kuvalla) ja kaksi omaa lokakuun kuvaa.
+  '/images/activities/culture/santapark.webp': 'center 62%',
+  '/images/activities/culture/snow-village-2.webp': '60% 58%',
+  '/images/activities/culture/amethyst-2.webp': 'center 62%',
+  '/images/activities/culture/ice-hotel.webp': 'center 55%',
+  '/images/activities/fishing/ice-fishing-drill.webp': 'center 85%',
+  '/images/activities/winter/suomu-slopes.webp': 'center 55%',
+  '/images/activities/culture/haparanda-border.webp': '30% 40%',
+  '/images/heroes/kemijarvi-autumn.webp': 'center 78%',
   '/images/heroes/posio-winter-tykky.webp': 'center 50%',
   '/images/heroes/posio-summer-lake.webp': 'center 50%',
   '/images/heroes/pyha-winter-slopes.webp': 'center 50%',
@@ -537,6 +530,8 @@ const FOCAL: Record<string, string> = {
   '/images/activities/northern-lights/aurora-inari-juutuanvuono.webp': 'center 40%',
   '/images/activities/northern-lights/aurora-inari-bands.webp': 'center 45%',
   '/images/activities/northern-lights/aurora-levi-bands.webp': 'center 45%',
+  '/images/activities/northern-lights/aurora-kemijarvi-arc.webp': 'center 40%',
+  '/images/activities/northern-lights/aurora-kemijarvi-cabin.webp': 'center 48%',
   '/images/og/og-default.webp': 'center 45%',
   // Reindeer stands left of centre a little below the middle → keep it in frame.
   '/images/heroes/reindeer-herd-sunset.webp': 'center 60%',
@@ -551,7 +546,9 @@ const FOCAL: Record<string, string> = {
   '/images/categories/summer.webp': 'center 50%',
   '/images/heroes/ruka-fell.webp': 'center 50%',
   '/images/heroes/yllas-summer-village.webp': 'center 45%',
-  '/images/heroes/rovaniemi-summer-santa.webp': '60% 45%',
+  // 17.10.2026 (Vesa: "rovaniemikin niin näkyy vain talon piippu"): puhelimen kuvakaista näyttää kuvasta
+  // noin 60 % leveydestä; 58 % pitää molemmat siivet ja oven ruudussa, 62 % vähentää tyhjää taivasta.
+  '/images/heroes/rovaniemi-summer-santa.webp': '58% 62%',
   '/images/heroes/tornio-river-dusk.webp': 'center 50%',
   // New destination heroes: pyha fell tops sit mid-high; kemijarvi fells sit on the horizon
   // in the upper third (open water fills the rest) → anchor upper-mid.
