@@ -607,6 +607,7 @@ const zhCN: SectionCopy = {
       tree: "一只年幼的野生棕熊在 Bear Kuusamo 掩体附近爬上一棵松树。摄影：Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "了解 Bear Kuusamo",
     photoCredit: "摄影：Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "商业合作",

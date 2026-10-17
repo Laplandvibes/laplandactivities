@@ -624,6 +624,7 @@ const fi: SectionCopy = {
       tree: "Nuori villi ruskeakarhu kiipeää mäntyyn Bear Kuusamon kojujen lähellä. Kuva: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Lue lisää Bear Kuusamosta",
     photoCredit: "Kuvat: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Kaupallinen yhteistyö",

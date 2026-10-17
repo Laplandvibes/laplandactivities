@@ -549,6 +549,7 @@ const ko: SectionCopy = {
       tree: "Bear Kuusamo 은신처 근처에서 소나무에 오르는 어린 야생 불곰. 사진: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Bear Kuusamo 자세히 보기",
     photoCredit: "사진: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "상업적 제휴",

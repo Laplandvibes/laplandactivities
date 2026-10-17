@@ -409,7 +409,7 @@ export default function DestinationPage() {
                 className="group relative rounded-xl overflow-hidden h-44 sm:h-56 border border-white/10 hover:border-vibe-pink/30 transition-all"
               >
                 <img src={imageForDestination(d.slug)} {...respImg(imageForDestination(d.slug), 'card')} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(d.slug)} links={false} />
                 {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten aktiviteettirivi jää sen yläpuolelle. */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 sm:p-4 sm:pb-5">

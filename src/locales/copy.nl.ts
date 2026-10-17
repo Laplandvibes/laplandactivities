@@ -546,6 +546,7 @@ const nl: SectionCopy = {
       tree: "Een jonge wilde bruine beer die in een den klimt bij de hutten van Bear Kuusamo. Foto: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Meer over Bear Kuusamo",
     photoCredit: "Foto's: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Commercieel partnerschap",

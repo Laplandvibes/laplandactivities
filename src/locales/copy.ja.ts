@@ -607,6 +607,7 @@ const ja: SectionCopy = {
       tree: "Bear Kuusamoのハイドの近くでマツの木に登る、若い野生のヒグマ。写真：Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Bear Kuusamoの詳細を見る",
     photoCredit: "写真：Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "商業タイアップ",

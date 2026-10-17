@@ -546,6 +546,7 @@ const fr: SectionCopy = {
       tree: "Un jeune ours brun sauvage grimpant à un pin près des affûts de Bear Kuusamo. Photo : Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "En savoir plus sur Bear Kuusamo",
     photoCredit: "Photos : Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Partenariat commercial",

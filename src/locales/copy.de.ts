@@ -607,6 +607,7 @@ const de: SectionCopy = {
       tree: "Ein junger wilder Braunbär klettert nahe den Verstecken von Bear Kuusamo auf eine Kiefer. Foto: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Mehr über Bear Kuusamo",
     photoCredit: "Fotos: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Bezahlte Partnerschaft",

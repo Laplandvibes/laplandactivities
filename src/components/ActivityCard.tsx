@@ -57,7 +57,9 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         ) : (
           <div className="w-full h-full bg-gradient-to-br from-[#0d2818] via-[#0F172A] to-[#1e1b4b]" aria-hidden="true" />
         )}
-        <div className="absolute inset-0 bg-gradient-to-t from-deep-night/85 via-deep-night/30 to-transparent" />
+        {/* Ei koko kuvan tummennusta (Vesa 17.10.2026: "ihan kuin olisi jotain päällä"). Kuvan
+            päällä on vain paikkalappu ja kuvakuitti, ja kummallakin on oma pohjansa, joten
+            liukuväri ei lukenut tekstiä vaan himmensi valokuvan. */}
         {omaKuva && <PhotoCredit src={img} />}
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           <Link
@@ -97,11 +99,14 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         )}
 
         {partnerPath ? (
+          // Nappi vie OMALLE kumppanisivulle, ei varaukseen eikä hakuun: "Etsi ja varaa"
+          // lupasi muuta kuin klikkaus tekee (Vesa 17.10.2026). PARTNER_PAGEssa on yksi
+          // kumppani; toinen kumppani tarvitsee oman tekstinsä.
           <Link
             to={to(partnerPath)}
             className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
           >
-            {c.findBook} <ArrowRight className="w-3.5 h-3.5" />
+            {COPY[lang].bearKuusamo.activityCardCta} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
         ) : bookable ? (
           <AffiliateCTA

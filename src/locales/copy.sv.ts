@@ -608,6 +608,7 @@ const sv: SectionCopy = {
       tree: "En ung vild brunbjörn som klättrar i en tall nära Bear Kuusamos gömslen. Foto: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Läs mer om Bear Kuusamo",
     photoCredit: "Foto: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Kommersiellt samarbete",

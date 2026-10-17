@@ -607,6 +607,7 @@ const es: SectionCopy = {
       tree: "Un joven oso pardo salvaje trepando a un pino cerca de los escondites de Bear Kuusamo. Foto: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Más sobre Bear Kuusamo",
     photoCredit: "Fotos: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Colaboración comercial",

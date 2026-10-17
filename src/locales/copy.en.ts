@@ -608,6 +608,7 @@ const en: SectionCopy = {
       tree: 'A young wild brown bear climbing a pine tree near the Bear Kuusamo hides. Photo: Piritta Paija / Bear Kuusamo',
     },
     logoAlt: 'Bear Kuusamo',
+    activityCardCta: 'Read about Bear Kuusamo',
     photoCredit: 'Photos: Piritta Paija / Bear Kuusamo',
     card: {
       eyebrow: 'Commercial partnership',

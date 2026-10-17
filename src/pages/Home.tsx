@@ -169,13 +169,17 @@ export default function Home() {
             {categories.map((rawCat, i) => {
               const cat = localizeCategory(rawCat, lang);
               const isBig = i === 0 || i === 5;
+              // 9 kategoriaa + 2 isoa korttia jätti ruudukkoon tyhjän paikan (lg: 15/16 ruutua,
+              // puhelin 11/12). Viimeinen kortti kahden levyiseksi täyttää sen molemmissa.
+              const isWide = i === categories.length - 1;
               const count = getActivitiesByCategory(cat.slug).length;
               return (
                 <Link
                   key={cat.slug}
                   to={to(`/categories/${cat.slug}`)}
                   className={`group relative rounded-2xl overflow-hidden hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all border border-white/10 hover:border-vibe-pink/30 ${
-                    isBig ? 'col-span-2 row-span-2 h-64 sm:h-96' : 'h-40 sm:h-[calc(12rem-0.5rem)]'
+                    // Pienet kortit 184 → 216 px (sm+): valokuvasta näkyi alle puolet tekstipohjan yläpuolella.
+                    isBig ? 'col-span-2 row-span-2 h-72 sm:h-[28rem]' : isWide ? 'col-span-2 h-44 sm:h-[13.5rem]' : 'h-44 sm:h-[13.5rem]'
                   }`}
                 >
                   <img
@@ -193,9 +197,11 @@ export default function Home() {
                       se osuu oikeaan kohtaan korttikoosta riippumatta — ja kortin oma peite
                       saa jaada kevyeksi, jolloin valokuva nakyy (Vesa 20.9.: "onko overlayta
                       liikaa"). */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-deep-night/70 via-deep-night/20 to-transparent" />
+                  {/* 17.10.2026 (Vesa: "ihan kuin olisi jotain päällä"): koko kortin liukuväri pois ja
+                      tekstipohja matalammaksi. Ennen pienessä kortissa tekstipohja peitti 75 %
+                      korkeudesta ja sen alaosa oli 92–100 % tumma, joten kuvasta näkyi yläreuna. */}
                   <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
-                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-14 sm:pt-16 bg-gradient-to-t from-deep-night via-deep-night/92 via-55% to-transparent">
+                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 bg-gradient-to-t from-deep-night/95 via-deep-night/75 via-45% to-transparent">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
                     }`}>{cat.name}</h3>
@@ -315,7 +321,7 @@ export default function Home() {
                 className="group relative rounded-2xl overflow-hidden h-72 sm:h-80 border border-white/10 hover:border-vibe-pink/30 hover:shadow-2xl hover:shadow-vibe-pink/10 transition-all"
               >
                 <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                   <h3 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
@@ -340,7 +346,7 @@ export default function Home() {
                 className="group relative rounded-xl overflow-hidden h-44 sm:h-52 border border-white/10 hover:border-vibe-pink/30 transition-all"
               >
                 <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten kuvaus jää sen yläpuolelle. */}
                 <div className="absolute bottom-0 left-0 right-0 p-3 pb-5">

@@ -607,6 +607,7 @@ const ptBR: SectionCopy = {
       tree: "Um jovem urso-pardo selvagem subindo num pinheiro perto dos esconderijos da Bear Kuusamo. Foto: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Saiba mais sobre a Bear Kuusamo",
     photoCredit: "Fotos: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Parceria comercial",

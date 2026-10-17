@@ -310,6 +310,8 @@ export type SectionCopy = {
     cta: string;
     imageAlts: { hero: string; tree: string };
     logoAlt: string;
+    /** Aktiviteettikortin nappi, joka vie omalle kumppanisivulle (ei varausta, ei GYG-hakua). */
+    activityCardCta: string;
     photoCredit: string;
     /** Discovery card surfaced on the /categories/animals listing. */
     card: { eyebrow: string; title: string; blurb: string; cta: string };

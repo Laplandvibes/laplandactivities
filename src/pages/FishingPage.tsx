@@ -188,9 +188,12 @@ export default function FishingPage() {
           height="1080"
           fetchPriority="high"
         />
+        {/* Vesa 17.10.2026: "aivan liikaa overlayta kuvan päällä". Ennen 0,48–0,96 koko kuvan
+            yli, eli kuvaa ei näkynyt missään. Nyt sama kevyt pohja kuin kategoriasivujen
+            herossa; tekstin luettavuus tulee tekstilohkon omasta sumennetusta paneelista. */}
         <div
           className="absolute inset-0"
-          style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.96) 0%, rgba(15,23,42,0.80) 45%, rgba(15,23,42,0.48) 100%)' }}
+          style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }}
         />
         {/* CC BY 2.5 -kuva: tekijä + lisenssi näkyviin (PhotoCredit, oikea alakulma). */}
         <PhotoCredit src={heroImg} />
@@ -328,7 +331,7 @@ export default function FishingPage() {
                   <div key={card.name} className={`${CARD} overflow-hidden flex flex-col`}>
                     <div className="relative h-44 overflow-hidden">
                       <img src={img} alt={card.name} loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(img) }} />
-                      <div className="absolute inset-0 bg-gradient-to-t from-deep-night/90 via-deep-night/20 to-transparent" />
+                      {/* Ei tummennusta: tilamerkillä ja kuitilla on oma pohja (17.10.2026). */}
                       <span className={`absolute left-4 bottom-3 inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-wide uppercase backdrop-blur-sm ${badgeColor}`}>
                         {card.badge}
                       </span>

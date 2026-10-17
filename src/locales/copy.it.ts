@@ -546,6 +546,7 @@ const it: SectionCopy = {
       tree: "Un giovane orso bruno selvatico che si arrampica su un pino vicino ai capanni di Bear Kuusamo. Foto: Piritta Paija / Bear Kuusamo",
     },
     logoAlt: "Bear Kuusamo",
+    activityCardCta: "Scopri Bear Kuusamo",
     photoCredit: "Foto: Piritta Paija / Bear Kuusamo",
     card: {
       eyebrow: "Collaborazione commerciale",
