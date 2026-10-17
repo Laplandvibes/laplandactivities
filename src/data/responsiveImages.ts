@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 131
+// Kuvia joilla kopiot: 127
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kevo-river-frost.webp": { full: 1920, small: [768, 1280] },
@@ -16,8 +16,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/adventure/korouoma-frozen.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/bear-kuusamo/bear-hero.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/bear-kuusamo/bear-tree.webp": { full: 1200, small: [768] },
-  "/images/activities/culture/amethyst-mine.webp": { full: 1184, small: [768] },
-  "/images/activities/culture/amethyst.webp": { full: 1280, small: [768] },
+  "/images/activities/culture/amethyst.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/culture/arctic-city.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/culture/ceramics.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/culture/festive-forest.webp": { full: 1280, small: [768] },
@@ -32,7 +31,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/culture/snowcastle-kemi.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/fishing/fishing-autumn-keminmaa.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/fishing/fishing-ice-day.webp": { full: 1920, small: [768, 1280] },
-  "/images/activities/fishing/fishing-ice-dusk.webp": { full: 1400, small: [768] },
   "/images/activities/fishing/fishing-ice.webp": { full: 1400, small: [768] },
   "/images/activities/fishing/fishing-kingcrab-2.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/fishing/fishing-kingcrab.webp": { full: 1400, small: [768] },
@@ -68,16 +66,15 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/activities/summer/reindeer-saytsjarvi.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/riisitunturi-tykky.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/summer/salmon-fishing.webp": { full: 1920, small: [768, 1280] },
-  "/images/activities/wellness/ice-floating.webp": { full: 1184, small: [768] },
+  "/images/activities/wellness/ice-floating.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/wellness/sauna-interior.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wellness/smoke-sauna-siida-inari.webp": { full: 1600, small: [768, 1280] },
-  "/images/activities/wellness/spa-hottub.webp": { full: 1184, small: [768] },
   "/images/activities/wellness/wilderness-sauna-morgamoja.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/wildlife/brown-bear-summer.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/wildlife/polar-bears.webp": { full: 1920, small: [768, 1280] },
   "/images/activities/winter/cross-country.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/downhill-skiers.webp": { full: 1920, small: [768, 1280] },
-  "/images/activities/winter/fatbike-snow.webp": { full: 1280, small: [768] },
+  "/images/activities/winter/fatbike-snow.webp": { full: 1440, small: [768] },
   "/images/activities/winter/husky-dogs-ruka.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/husky-kennel.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/winter/husky-ready-ruka.webp": { full: 1600, small: [768, 1280] },
@@ -130,7 +127,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/slider-08-ruska-hetta-pallas.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-09-hike-saana.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-10-husky-team.webp": { full: 1920, small: [768, 1280] },
-  "/images/heroes/snowmobile-safari.webp": { full: 1280, small: [768] },
   "/images/heroes/tornio-river-dusk.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-summer-village.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-winter-road.webp": { full: 1920, small: [768, 1280] },

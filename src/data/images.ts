@@ -149,6 +149,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /santa(park)?|christmas|joulu|elf|arctic circle (cross|line|marker)/i,
                                                                         img: seasonal(local('activities/culture/santa-village-winter.webp'), local('activities/culture/santa-village.webp')) },
   { match: /gold pan(ning)?|tankavaara/i,                               img: local('activities/culture/gold-panning.webp') },
+  // 17.10.2026: oli tekoälykuva; nyt Commons Ninara 2020, Lapin ametisti (CC BY 2.0).
   { match: /amethyst|lampivaara|mine\b/i,                               img: local('activities/culture/amethyst.webp') },
   { match: /s[íi]ida/i,                                                 img: local('activities/culture/sami-heritage.webp') },
   { match: /samiland/i,                                                 img: local('activities/culture/sami-duodji.webp') },
@@ -186,6 +187,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /snow ?village|lainio/i,                                     img: local('activities/culture/snow-village.webp') },
   { match: /snowcastle|snow castle|lumilinna/i,                         img: local('activities/culture/snowcastle-kemi.webp') },
   { match: /snowshoe/i,                                                img: local('activities/winter/snowshoe-forest.webp') },
+  // 17.10.2026: oli tekoälykuva; nyt Pexels 35808751 (läskipyörä lumisella metsäpolulla, paikaton).
   { match: /fat ?bike/i,                                               img: local('activities/winter/fatbike-snow.webp') },
   // Riisitunturi "tykky" snow-crowned trees = an ICONIC WINTER scene, even though the
   // activity sits in the year-round "Summer Adventures" category. Must match BEFORE the
@@ -243,6 +245,10 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
         imgs: [local('activities/fishing/fishing-ice.webp'), local('activities/fishing/ice-fishing-hole.webp'), local('activities/fishing/fishing-ice-day.webp')] },
   { match: /fish(ing)?/i,                                               img: local('activities/fishing/fishing-river.webp') },
   { match: /mountain bike|mtb|cycling|bike park/i,                      img: local('activities/summer/mtb-bikepark.webp') },
+  // 17.10.2026: oli yksi tekoälykuva molemmille golfkorteille. Green Zone (Tornio–Haaparanta) saa oikean
+  // kuvan Tornion kentästä (Commons, Rolf Palmberg), Levin keskiyön golf paikattoman Pexels-kuvan suomalaiselta
+  // kentältä illan auringossa (Huy Vu, 38798133). Levin kentästä ei löytynyt vapaata kuvaa.
+  { match: /green zone|two countries/i,                                 img: local('activities/summer/golf-tornio.webp') },
   { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
   { match: /berry|cloudberry|forag|mushroom/i,                          img: local('activities/summer/foraging.webp') },
   { match: /campfire|kota cook|kammi|outdoor (cooking|dinner)/i,
@@ -253,9 +259,11 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /smoke sauna|savusauna|kiilop[ää]+/i,                        img: local('activities/wellness/smoke-sauna-siida-inari.webp') },
   { match: /ice (hotel|chapel|castle|restaurant|gallery)|snowcastle|snow ?hotel|ice village/i,
                                                                         img: local('activities/culture/ice-architecture.webp') },
+  // 17.10.2026: oli tekoälykuva; nyt Pexels 11776624 (droonikuva, punainen kelluntapuku jäisessä vedessä, 2022, paikaton).
   { match: /ice floating|float experience|arctic float/i,               img: local('activities/wellness/ice-floating.webp') },
-  { match: /hot tub|wood[- ]fired tub|jacuzzi/i,                        img: local('activities/wellness/spa-hottub.webp') },
-  { match: /spa|wellness|massage/i,                                     img: local('activities/wellness/spa-hottub.webp') },
+  // 17.10.2026: hot tub- ja spa|wellness|massage -säännöt poistettu: ne osoittivat tekoälykuvaan (palju revontulten
+  // alla), eikä yksikään kortti käyttänyt sitä (mitattu renderöidyistä /fi/-sivuista). Hyvinvointikortit osuvat
+  // saunasääntöihin tai kategorian kuvaan.
   { match: /float/i,                                                    img: local('activities/wellness/ice-floating.webp') },
   { match: /sauna/i,                                                    img: local('activities/wellness/sauna-interior.webp') },
   { match: /cabin|log house|lakeside lodge/i,                           img: local('hotels/log-cabin-lakeside.webp') },
@@ -496,7 +504,6 @@ const FOCAL: Record<string, string> = {
   '/images/activities/summer/mtb-bikepark.webp': 'center 50%',
   '/images/activities/summer/salmon-fishing.webp': '77% 50%',
   '/images/activities/fishing/fishing-river.webp': '68% 55%',
-  '/images/activities/fishing/fishing-ice-dusk.webp': 'center 45%',
   // Wide aurora arcs read best with the sky kept — anchor a touch low.
   '/images/heroes/slider-01-husky-aurora.webp': 'center 53%',
   '/images/heroes/slider-04-glass-igloo.webp': 'center 50%',
@@ -514,6 +521,12 @@ const FOCAL: Record<string, string> = {
   '/images/activities/fishing/teno-valley.webp': 'center 50%',
   '/images/activities/fishing/ivalojoki.webp': 'center 55%',
   '/images/activities/culture/ceramics.webp': 'center 50%',
+  // 17.10.2026: pystykuvat vaakakorttiin, aihe alaosassa (golfarit ja auto, läskipyörä); kelluja keskellä alhaalla.
+  '/images/activities/summer/golf.webp': 'center 68%',
+  '/images/activities/winter/fatbike-snow.webp': 'center 70%',
+  '/images/activities/wellness/ice-floating.webp': '48% 62%',
+  '/images/activities/summer/golf-tornio.webp': 'center 50%',
+  '/images/activities/culture/amethyst.webp': 'center 50%',
   '/images/heroes/posio-winter-tykky.webp': 'center 50%',
   '/images/heroes/posio-summer-lake.webp': 'center 50%',
   '/images/heroes/pyha-winter-slopes.webp': 'center 50%',
@@ -530,7 +543,6 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/slider-05-reindeer-lavvu.webp': 'center 53%',
   // Snowmobile rider sits at mid-right; default centre is fine but nudge up.
   '/images/heroes/slider-02-snowmobile-fells.webp': 'center 53%',
-  '/images/heroes/snowmobile-safari.webp': 'center 40%',
   // Hikers stand on the ridge in the vertical centre.
   '/images/heroes/slider-03-summer-hike.webp': 'center 50%',
   // Fell resort village sits low → keep it visible.

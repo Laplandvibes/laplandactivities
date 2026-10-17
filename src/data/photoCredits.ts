@@ -26,6 +26,12 @@ export interface PhotoCredit {
 }
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
+  // 17.10.2026: seitsemän tekoälykuvan vaihto. Commons + Pexels, ladattu ja tarkistettu 17.10.2026 (Commons sha1 = API).
+  '/images/activities/culture/amethyst.webp': { kind: 'commons', author: "Ninara", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3ARovaniemi%2C_Finland_(49987796306).jpg", title: "Rovaniemi, Finland (49987796306).jpg", place: "Lapin ametisti, Rovaniemi", date: "2020-06-05" },
+  '/images/activities/summer/golf-tornio.webp': { kind: 'commons', author: "Rolf Palmberg", license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0", pageUrl: "https://commons.wikimedia.org/wiki/File%3AGolf6_ww.jpg", title: "Golf6 ww.jpg", place: "Tornion golfkenttä", date: "2007" },
+  '/images/activities/summer/golf.webp': { kind: 'pexels', author: "Huy Vu", license: "Pexels", licenseUrl: "https://www.pexels.com/license/", pageUrl: "https://www.pexels.com/photo/golfers-enjoying-sunset-on-finnish-course-38798133/", title: "Pexels 38798133", date: "2026-07-30" },
+  '/images/activities/winter/fatbike-snow.webp': { kind: 'pexels', author: "Mark Twineham", license: "Pexels", licenseUrl: "https://www.pexels.com/license/", pageUrl: "https://www.pexels.com/photo/fat-bike-on-snowy-forest-trail-35808751/", title: "Pexels 35808751", date: "2023-03-15" },
+  '/images/activities/wellness/ice-floating.webp': { kind: 'pexels', author: "Annabelle Santerre", license: "Pexels", licenseUrl: "https://www.pexels.com/license/", pageUrl: "https://www.pexels.com/photo/a-man-in-red-jacket-swimming-on-frozen-lake-11776624/", title: "Pexels 11776624", date: "2022-03-12" },
   // 17.10.2026: omat kuvat lokakuun 2026 reissulta (master D:/_puhelin_staging/reissu_2026-10, _reissu-2026-10/KUVA-INVENTAARIO.md §5).
   '/images/activities/wildlife/polar-bears.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Ranuan eläinpuisto, Ranua", date: '2026-10', title: "20261010_153517.jpg" },
   '/images/activities/culture/ceramics.webp': { kind: 'own', author: 'LaplandVibes', license: '© LaPeso Oy', place: "Pentikmäki, Posio", date: '2026-10', title: "20261010_130325.jpg" },
