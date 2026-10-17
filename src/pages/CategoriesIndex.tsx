@@ -49,11 +49,11 @@ export default function CategoriesIndex() {
             <PhotoCredit src={imageForCategory(hero.slug)} links={false} />
             {/* 17.10.2026 (Vesa: sumennetut tekstitaustat "kauheat"): sumennettu laikku pois, sama
                 alareunan tekstisoikko (lv-scrim-text) kuin muissa tämän sivun korteissa. */}
-            <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12 pt-16 sm:pt-16 lv-scrim-text">
-              <div className="max-w-xl">
+            <div className="absolute bottom-0 left-0 right-0 p-8 sm:p-12 pt-16 sm:pt-16 lv-scrim-text text-center lg:text-left">
+              <div className="max-w-xl mx-auto lg:mx-0">
               <h2 className="font-heading text-4xl sm:text-5xl text-snow tracking-wide mb-2 group-hover:text-vibe-pink transition-colors">{hero.name}</h2>
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-3">{hero.description}</p>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center justify-center lg:justify-start gap-4">
                 <span className="text-xs text-snow/75">{heroCount} {c.activitiesLabel}</span>
                 <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform">
                   {c.exploreAdventures} <ArrowRight className="w-4 h-4" />
@@ -75,10 +75,10 @@ export default function CategoriesIndex() {
                   <img src={imageForCategory(cat.slug)} {...respImg(imageForCategory(cat.slug), 'card')} alt={cat.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                   <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
                   {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kortin: kuva näkyy tekstin yläpuolella. */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 pt-14 lv-scrim-text">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 pt-14 lv-scrim-text text-center lg:text-left">
                     <h2 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{cat.name}</h2>
                     <p className="text-snow/80 text-sm leading-relaxed mb-3 line-clamp-2 mt-1">{cat.description}</p>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-center gap-4 lg:justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
                       <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
@@ -93,7 +93,7 @@ export default function CategoriesIndex() {
           {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
               harvests via routes.json, so crawler and reader see one text. */}
           {guide && (
-            <section className="mt-12 sm:mt-16 mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
+            <section className="mt-12 sm:mt-16 mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto text-center lg:text-left">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.leadTitle}</h2>
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-4">{guide.lead}</p>
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>

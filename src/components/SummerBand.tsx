@@ -68,7 +68,7 @@ export default function SummerBand() {
     <section className="lv-aurora-veil bg-deep-night border-y border-white/5">
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-14 sm:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-10">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-vibe-pink/15 border border-vibe-pink/35 mb-4">
               <SeasonIcon className="w-3.5 h-3.5 text-vibe-pink" />
               <span className="text-vibe-pink text-[11px] font-semibold tracking-[0.2em] uppercase">{c.eyebrow}</span>
@@ -76,11 +76,11 @@ export default function SummerBand() {
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lv-head tracking-wide leading-[0.95] mb-4">
               {c.h2}
             </h2>
-            <p className="text-snow/80 text-base sm:text-lg leading-relaxed max-w-xl mb-7">
+            <p className="text-snow/80 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-7 max-lg:text-balance">
               {c.lead}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
               <AffiliateCTA
                 partner="activities"
                 sid={sectionSid}
@@ -112,7 +112,7 @@ export default function SummerBand() {
               <PhotoCredit src={bandImg} />
               {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kuvan. pb-5: kuvakuitti
                   ulottuu kortin alareunasta 17 px:iin, joten teksti jää sen yläpuolelle. */}
-              <div className="absolute inset-x-0 bottom-0 p-4 pt-14 pb-5 lv-scrim-text">
+              <div className="absolute inset-x-0 bottom-0 p-4 pt-14 pb-5 lv-scrim-text text-center lg:text-left">
                 <p className="text-[#F9A8D4] text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">{c.imageKicker}</p>
                 <p className="font-heading text-snow text-2xl tracking-wide leading-tight">{c.imageH3}</p>
               </div>
@@ -130,9 +130,9 @@ export default function SummerBand() {
                 partner="activities"
                 sid={sid}
                 destination={gygPaths[i] ?? 'lappi-suomi-l2652'}
-                className="group bg-[#F3F6FA] hover:bg-white border border-white/60 hover:border-vibe-pink/50 rounded-2xl p-4 sm:p-5 transition-all flex flex-col shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]"
+                className="group bg-[#F3F6FA] hover:bg-white border border-white/60 hover:border-vibe-pink/50 rounded-2xl p-4 sm:p-5 transition-all flex flex-col shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] text-center lg:text-left"
               >
-                <Icon className="w-5 h-5 text-vibe-pink mb-3" />
+                <Icon className="w-5 h-5 text-vibe-pink mb-3 self-center lg:self-start" />
                 <p className="font-body font-bold text-deep-night text-[15px] leading-snug mb-1 group-hover:text-vibe-pink transition-colors">{h.title}</p>
                 <p className="text-deep-night/75 text-xs sm:text-sm leading-relaxed">{h.body}</p>
               </AffiliateCTA>

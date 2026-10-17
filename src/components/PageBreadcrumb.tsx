@@ -38,7 +38,7 @@ export default function PageBreadcrumb({ variant = 'band' }: { variant?: 'band' 
       to={to}
       labelMap={labelMap}
       className={variant === 'overlay' ? 'bg-deep-night/70 backdrop-blur-sm text-snow border-b border-white/10' : variant === 'inline' ? 'text-snow mb-2' : 'bg-deep-night text-snow border-b border-white/10'}
-      containerClassName={variant === 'inline' ? '' : undefined}
+      containerClassName={variant === 'inline' ? 'justify-center lg:justify-start' : 'max-w-7xl mx-auto px-4 sm:px-6 justify-center lg:justify-start'}
       accentClassName="hover:text-vibe-pink hover:opacity-100"
     />
   );

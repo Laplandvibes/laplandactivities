@@ -204,7 +204,7 @@ export default function Home() {
                       tekstipohja matalammaksi. Ennen pienessä kortissa tekstipohja peitti 75 %
                       korkeudesta ja sen alaosa oli 92–100 % tumma, joten kuvasta näkyi yläreuna. */}
                   <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
-                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 bg-gradient-to-t from-deep-night/95 via-deep-night/75 via-45% to-transparent">
+                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 bg-gradient-to-t from-deep-night/95 via-deep-night/75 via-45% to-transparent text-center lg:text-left">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
                     }`}>{cat.name}</h3>
@@ -251,7 +251,7 @@ export default function Home() {
 
       <section id="experiences" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+          <div className="flex flex-col items-center text-center gap-4 mb-10 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div>
               <span className="text-arctic-cyan text-xs font-semibold tracking-[0.25em] uppercase">{c.featuredKicker}</span>
               <h2 className="font-heading text-3xl sm:text-5xl text-snow mt-1 tracking-wide">{c.featuredH2}</h2>
@@ -288,8 +288,8 @@ export default function Home() {
               const Icon = SEASON_ICONS[i] ?? Sun;
               const accent = SEASON_ACCENTS[i] ?? 'vibe-pink';
               return (
-                <div key={s.name} className="bg-[#F3F6FA] border border-white/60 rounded-2xl p-6 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]">
-                  <div className="flex items-center gap-2 mb-3">
+                <div key={s.name} className="bg-[#F3F6FA] border border-white/60 rounded-2xl p-6 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] text-center lg:text-left">
+                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-3">
                     <Icon className={`w-5 h-5 text-${accent}`} />
                     <h3 className="font-heading text-2xl text-deep-night tracking-wide">{s.name}</h3>
                   </div>
@@ -304,7 +304,7 @@ export default function Home() {
 
       <section id="destinations" className="py-16 sm:py-24 px-4 bg-deep-night">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+          <div className="flex flex-col items-center text-center gap-4 mb-10 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div>
               <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.destinationsKicker}</span>
               <h2 className="font-heading text-3xl sm:text-5xl text-snow mt-1 tracking-wide">{totalDestinations} {c.destinationsH2}</h2>
@@ -326,10 +326,10 @@ export default function Home() {
                 <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-center lg:text-left">
                   <h3 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-arctic-cyan-light text-xs font-medium mt-0.5">{dest.tagline}</p>
-                  <div className="flex items-center justify-between mt-3 text-snow/80 text-xs">
+                  <div className="flex items-center justify-center gap-2 lg:justify-between mt-3 text-snow/80 text-xs">
                     <span>{getActivitiesByDestination(dest.slug).length} {c.activitiesShort}</span>
                     <Sparkles className="w-3.5 h-3.5 text-vibe-pink" />
                   </div>
@@ -352,7 +352,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                 {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten kuvaus jää sen yläpuolelle. */}
-                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5">
+                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 text-center lg:text-left">
                   <h3 className="font-heading text-base sm:text-lg text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-snow/75 text-[10px] line-clamp-1">{dest.tagline}</p>
                 </div>

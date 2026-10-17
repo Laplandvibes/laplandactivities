@@ -62,9 +62,9 @@ export default function BookingCTA({
             partner="activities"
             sid={`bookcta_activities_${tag}`}
             destination={gygSlug}
-            className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-vibe-pink/40 hover:border-vibe-pink p-6 backdrop-blur-sm transition-all"
+            className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-vibe-pink/40 hover:border-vibe-pink p-6 backdrop-blur-sm transition-all text-center lg:text-left"
           >
-            <div className="w-11 h-11 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30 flex items-center justify-center mb-3">
+            <div className="w-11 h-11 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30 flex items-center justify-center mb-3 mx-auto lg:mx-0">
               <Sparkles className="w-5 h-5 text-vibe-pink" />
             </div>
             <p className="font-heading text-2xl text-snow tracking-wide mb-1">
@@ -82,9 +82,9 @@ export default function BookingCTA({
             partner="hotels"
             sid={`bookcta_hotels_${tag}`}
             destination={hotelsQuery}
-            className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-arctic-cyan/40 hover:border-arctic-cyan p-6 backdrop-blur-sm transition-all"
+            className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-arctic-cyan/40 hover:border-arctic-cyan p-6 backdrop-blur-sm transition-all text-center lg:text-left"
           >
-            <div className="w-11 h-11 rounded-xl bg-arctic-cyan/15 border border-arctic-cyan/30 flex items-center justify-center mb-3">
+            <div className="w-11 h-11 rounded-xl bg-arctic-cyan/15 border border-arctic-cyan/30 flex items-center justify-center mb-3 mx-auto lg:mx-0">
               <Hotel className="w-5 h-5 text-arctic-cyan" />
             </div>
             <p className="font-heading text-2xl text-snow tracking-wide mb-1">
@@ -102,9 +102,9 @@ export default function BookingCTA({
             partner="cars"
             sid={`bookcta_cars_${tag}`}
             destination={pickupIata}
-            className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-aurora-green/40 hover:border-aurora-green p-6 backdrop-blur-sm transition-all"
+            className="group rounded-2xl bg-deep-night/70 hover:bg-deep-night/95 border border-aurora-green/40 hover:border-aurora-green p-6 backdrop-blur-sm transition-all text-center lg:text-left"
           >
-            <div className="w-11 h-11 rounded-xl bg-aurora-green/15 border border-aurora-green/30 flex items-center justify-center mb-3">
+            <div className="w-11 h-11 rounded-xl bg-aurora-green/15 border border-aurora-green/30 flex items-center justify-center mb-3 mx-auto lg:mx-0">
               <Car className="w-5 h-5 text-aurora-green" />
             </div>
             <p className="font-heading text-2xl text-snow tracking-wide mb-1">

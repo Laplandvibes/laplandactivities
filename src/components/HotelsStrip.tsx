@@ -64,13 +64,13 @@ export default function HotelsStrip() {
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 bg-deep-night border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+        <div className="flex flex-col items-center text-center gap-4 mb-10 lg:flex-row lg:items-end lg:justify-between lg:text-left">
           <div>
             <p className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.kicker}</p>
             <h2 className="font-heading text-4xl sm:text-5xl text-snow tracking-wide mt-1 leading-tight">
               {c.h2}
             </h2>
-            <p className="text-snow/65 mt-3 max-w-xl text-sm sm:text-base">
+            <p className="text-snow/65 mt-3 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base max-lg:text-balance">
               {c.lead}
             </p>
           </div>
@@ -154,7 +154,7 @@ export default function HotelsStrip() {
                     joten kapealla kortilla, jossa teksti vie yli puolet kortista, ylärivitkin
                     ovat tummalla. Kortin korkeuteen sidottu kaista ei tee sitä. */}
                 {m.src && <PhotoCredit src={m.src} links={false} />}
-                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 pt-14 sm:pt-14 lv-scrim-text">
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 pt-14 sm:pt-14 lv-scrim-text text-center lg:text-left">
                   {/* YLARIVI = KOHTEEN NIMI, ei varauskanavan nimi.
                       🔴 Tassa luki aiemmin "TRIP.COM · Golden Crown Levin Iglut", ja samassa
                       kortissa kuvakuitti sanoi "Sembo". Vesa 20.9.: *"miksi täällä lukee
@@ -171,7 +171,7 @@ export default function HotelsStrip() {
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
-                  <p className="text-snow/85 text-sm leading-relaxed mt-2 mb-3 max-w-md drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">{l.blurb}</p>
+                  <p className="text-snow/85 text-sm leading-relaxed mt-2 mb-3 max-w-md mx-auto lg:mx-0 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">{l.blurb}</p>
                   {/* Varauskanava tassa, ei ylarivilla: nain lukija tietaa ENNEN klikkausta
                       mihin han menee, eika se sekoitu kuvakuittiin. Kumppanin nimi on
                       erisnimi, joten se ei tarvitse kaannosta 12 kielelle. */}

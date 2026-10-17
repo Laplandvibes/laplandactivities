@@ -139,7 +139,9 @@ export default function DestinationPage() {
           <PhotoCredit src={heroImg} />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-10 lg:py-16 w-full">
-          <div className="max-w-2xl">
+          {/* 17.10.2026 (Vesa: "eikö tablet ja mobiilissa pitäisi olla keskitetty nämä tekstit?"): alle 1024 px
+              koko sivu yhdellä keskiakselilla, lg+ sarakkeen vasen reuna. Listat ja kuvake-rivit jäävät vasemmalle. */}
+          <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
             <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/70 border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3">
               <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
             </span>
@@ -147,9 +149,9 @@ export default function DestinationPage() {
               {destination.name}
             </h1>
             <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3">{destination.tagline}</p>
-            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed">{destination.description}</p>
+            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed max-lg:text-balance">{destination.description}</p>
 
-            <div className="flex flex-wrap gap-3 mt-6">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
               <AffiliateCTA
                 partner="activities"
                 sid={`hero_${slug}_browse`}
@@ -179,7 +181,7 @@ export default function DestinationPage() {
           seuraavan osion border-t piirsivät kaksi viivaa päällekkäin. Nyt tummennus = tausta reunassa,
           eikä viivoja: kuva liukuu murupolkuun ja aktiviteettiosioon. */}
       <div className="bg-deep-night">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 text-center lg:text-left">
           <Link to={to('/destinations')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
             <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
           </Link>
@@ -198,7 +200,7 @@ export default function DestinationPage() {
       {/* ALL ACTIVITIES — split by season (in-season first, then the other season) */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night">
         <div className="max-w-7xl mx-auto">
-          <div className="mb-8">
+          <div className="mb-8 text-center lg:text-left">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.allActivitiesKicker}</span>
             {/* Ei lukumäärää otsikkoon: featured-kortti renderöityy ylempänä
                 Must-do-osiossa, joten "8 tekemistä" istui 7 kortin gridin päällä
@@ -207,7 +209,7 @@ export default function DestinationPage() {
           </div>
 
           {/* category jump chips */}
-          <div className="flex flex-wrap gap-2 mb-10">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-10">
             {categoryGroups.map((g) => (
               <Link
                 key={g.slug}
@@ -222,7 +224,7 @@ export default function DestinationPage() {
           {/* In-season block */}
           {inSeason.length > 0 && (
             <div className="mb-12">
-              <div className="flex items-center gap-2.5 mb-5">
+              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-5">
                 <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
                   <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
                 </span>
@@ -240,7 +242,7 @@ export default function DestinationPage() {
           {/* Off-season block */}
           {offSeason.length > 0 && (
             <div>
-              <div className="flex items-center gap-2.5 mb-5">
+              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-5">
                 <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
                   <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
                 </span>
@@ -264,24 +266,24 @@ export default function DestinationPage() {
       {/* WHY VISIT + GOOD TO KNOW — premium combined intro panel (no flat void) */}
       <section className="lv-aurora-veil bg-deep-night py-12 sm:py-16 px-4 sm:px-6 border-b border-white/5">
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
-          <div className="lg:col-span-3 lv-surface rounded-3xl p-6 sm:p-8">
+          <div className="lg:col-span-3 lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{sec.whyKicker}</span>
             <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 mb-4">{sec.whyH2(destination.name)}</h2>
             {/* why ≠ hero lead (Vesa 2026-07-24: the two were verbatim identical on one screen) */}
             <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{destination.why}</p>
             <div className="mt-5 pt-5 border-t border-white/10">
               <p className="text-snow/70 text-xs uppercase tracking-[0.18em] font-semibold mb-2">{sec.operatorsShort}</p>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-2">
                 {destination.operators.map((op) => (
                   <span key={op} className="text-xs text-snow/75 font-medium bg-white/5 border border-white/10 px-3 py-1 rounded-full">{op}</span>
                 ))}
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2 lv-surface-pink rounded-3xl p-6 sm:p-8">
+          <div className="lg:col-span-2 lv-surface-pink rounded-3xl p-6 sm:p-8 text-center lg:text-left">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{sec.goodToKnowKicker}</span>
             <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 mb-5">{sec.goodToKnowH2}</h2>
-            <ul className="space-y-4">
+            <ul className="space-y-4 text-left max-w-md mx-auto lg:max-w-none">
               <li className="flex items-start gap-3">
                 <Plane className="w-5 h-5 text-vibe-pink shrink-0 mt-0.5" />
                 <div>
@@ -322,14 +324,14 @@ export default function DestinationPage() {
       {guide && (
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-b border-white/5">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="lv-surface rounded-3xl p-6 sm:p-8">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.seasonsTitle}</h2>
               <div className="space-y-4">
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.seasonWinter}</p>
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.seasonSummer}</p>
               </div>
             </div>
-            <div className="lv-surface rounded-3xl p-6 sm:p-8">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.planTitle}</h2>
               <div className="space-y-4">
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.planGetting}</p>
@@ -346,16 +348,16 @@ export default function DestinationPage() {
       {featured && (
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6 items-start">
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 text-center lg:text-left">
               <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.mustDoKicker}</span>
               <h2 className="font-heading text-2xl sm:text-3xl lv-head tracking-wide mt-1 mb-4">{c.mustDoH2}</h2>
               <ActivityCard activity={featured} image={imgFor(featured.id)} />
             </div>
             {tips.length > 0 && (
-              <div className="lg:col-span-2">
+              <div className="lg:col-span-2 text-center lg:text-left">
                 <span className="text-arctic-cyan text-xs font-semibold tracking-[0.25em] uppercase">{c.localKicker}</span>
                 <h2 className="font-heading text-2xl sm:text-3xl lv-head tracking-wide mt-1 mb-4">{c.localH2}</h2>
-                <div className="lv-surface rounded-2xl p-5 sm:p-6 space-y-4">
+                <div className="lv-surface rounded-2xl p-5 sm:p-6 space-y-4 text-left">
                   {tips.map((tip, i) => (
                     <div key={i} className="flex gap-3 items-start">
                       <span className="text-2xl shrink-0">{tip.icon}</span>
@@ -376,9 +378,9 @@ export default function DestinationPage() {
             partner="hotels"
             sid={`crossell_${slug}_hotels`}
             destination={hotelsQ}
-            className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all"
+            className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all text-center lg:text-left"
           >
-            <Hotel className="w-6 h-6 text-arctic-cyan mb-3" />
+            <Hotel className="w-6 h-6 text-arctic-cyan mb-3 mx-auto lg:mx-0" />
             <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.sleepInPrefix} {destIn}</p>
             <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.sleepInBlurb}</p>
             <span className="inline-flex items-center gap-1 text-arctic-cyan text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.compareHotels} <ArrowRight className="w-4 h-4" /></span>
@@ -387,9 +389,9 @@ export default function DestinationPage() {
             partner="cars"
             sid={`crossell_${slug}_cars`}
             destination={carsIata}
-            className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all"
+            className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all text-center lg:text-left"
           >
-            <Car className="w-6 h-6 text-aurora-green mb-3" />
+            <Car className="w-6 h-6 text-aurora-green mb-3 mx-auto lg:mx-0" />
             <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.driveYourself}</p>
             <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.driveYourselfBlurb}</p>
             <span className="inline-flex items-center gap-1 text-aurora-green text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.findBestPrice} <ArrowRight className="w-4 h-4" /></span>
@@ -400,7 +402,7 @@ export default function DestinationPage() {
       {/* Other destinations */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
-          <div className="flex items-end justify-between mb-8">
+          <div className="flex flex-col items-center text-center gap-3 mb-8 lg:flex-row lg:items-end lg:justify-between lg:text-left">
             <div>
               <span className="text-arctic-cyan text-xs font-semibold tracking-[0.25em] uppercase">{c.keepExploringKicker}</span>
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1">{c.otherDestinationsH2}</h2>
@@ -421,10 +423,10 @@ export default function DestinationPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(d.slug)} links={false} />
                 {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten aktiviteettirivi jää sen yläpuolelle. */}
-                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 sm:p-4 sm:pb-5">
+                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 sm:p-4 sm:pb-5 text-center lg:text-left">
                   <h3 className="font-heading text-lg sm:text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
                   <p className="text-snow/90 text-xs line-clamp-1">{d.tagline}</p>
-                  <div className="flex items-center gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">
+                  <div className="flex items-center justify-center lg:justify-start gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">
                     <MapPin className="w-3 h-3" /> {getActivitiesByDestination(d.slug).length} {c.activitiesShort}
                   </div>
                 </div>

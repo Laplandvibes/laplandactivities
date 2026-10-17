@@ -71,7 +71,8 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         </div>
       </div>
 
-      <div className="p-5 flex flex-col flex-1">
+      {/* 17.10.2026 (Vesa: tabletilla ja puhelimella tekstit keskelle): pystykortin sisältö keskelle alle 1024 px, lg+ vasen reuna. */}
+      <div className="p-5 flex flex-col flex-1 text-center lg:text-left">
         <Link
           to={to(`/categories/${activity.categorySlug}`)}
           className="text-[11px] text-arctic-cyan font-semibold tracking-wide uppercase mb-1 block hover:text-arctic-cyan/80 transition-colors"
@@ -86,7 +87,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         </p>
 
         {activity.highlights.length > 0 && (
-          <div className="flex flex-wrap gap-1.5 mb-4">
+          <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 mb-4">
             {activity.highlights.slice(0, 3).map((h) => (
               <span
                 key={h}

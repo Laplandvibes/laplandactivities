@@ -255,7 +255,9 @@ export default function FishingPage() {
           </div>
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-32 sm:pb-36 lg:pt-16 lg:pb-40 w-full">
-          <div className="max-w-2xl">
+          {/* 17.10.2026 (Vesa: tabletilla ja puhelimella tekstit keskelle): alle 1024 px otsikot, ingressit,
+              laatikot ja linkkirivit keskelle; kuvake tekstin vieressä -rivit, lajilaatat ja taulukot vasemmalle. */}
+          <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
             {/* Murupolku otsikon yläpuolelle: laatat nousevat heron alareunan päälle, joten heron
                 alla se jäisi laattojen perään (puhelimessa keskelle sivua). */}
             <PageBreadcrumb variant="inline" />
@@ -263,10 +265,10 @@ export default function FishingPage() {
             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {c.hero.title}
             </h1>
-            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6">
+            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 max-lg:text-balance">
               {c.hero.sub}
             </p>
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
               <AffiliateCTA
                 partner="activities"
                 sid="fishing_hero_cta"
@@ -284,7 +286,7 @@ export default function FishingPage() {
                 {c.hero.ctaRules}
               </a>
             </div>
-            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl">{c.hero.trustLine}</p>
+            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl mx-auto lg:mx-0">{c.hero.trustLine}</p>
           </div>
         </div>
       </section>
@@ -295,7 +297,7 @@ export default function FishingPage() {
           pohjan, valokuvakaistojen ja vaaleiden paperiarkkien välillä. */}
       <section className="relative z-10 -mt-24 sm:-mt-28 px-4 sm:px-6 pb-4">
         <div className="max-w-7xl mx-auto">
-          <p className={`${EYEBROW} mb-3 text-[#F9A8D4]`}>{c.chooser.kicker}</p>
+          <p className={`${EYEBROW} mb-3 text-[#F9A8D4] text-center lg:text-left`}>{c.chooser.kicker}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {([
               { href: '#ice', Icon: Snowflake, img: CHOOSER_IMG.ice, title: c.chooser.ice, sub: c.chooser.iceSub },
@@ -307,7 +309,7 @@ export default function FishingPage() {
                   <img src={t.img} {...respImg(t.img, 'card')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(t.img) }} />
                   <PhotoCredit src={t.img} links={false} />
                 </div>
-                <div className="p-5 flex items-start gap-3">
+                <div className="p-5 flex flex-col items-center gap-3 text-center lg:text-left lg:flex-row lg:items-start">
                   <span className="inline-flex shrink-0 w-10 h-10 rounded-xl bg-vibe-pink/12 items-center justify-center"><t.Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" /></span>
                   <span>
                     <span className="block font-heading text-2xl text-deep-night tracking-wide leading-none group-hover:text-vibe-pink transition-colors">{t.title}</span>
@@ -323,9 +325,9 @@ export default function FishingPage() {
 
       {/* VERIFY BANNER */}
       <div className="bg-amber-500/10 border-y border-amber-400/30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-start gap-2.5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-start justify-center lg:justify-start gap-2.5">
           <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-amber-100/90 text-sm leading-relaxed">{c.verifyBanner}</p>
+          <p className="text-amber-100/90 text-sm leading-relaxed max-lg:text-center">{c.verifyBanner}</p>
         </div>
       </div>
 
@@ -333,7 +335,7 @@ export default function FishingPage() {
         {/* KAKSI ASIAA ENSIN — paperiarkki: maksu ja ilmainen pilkkiminen rinnakkain */}
         <section className="px-4 sm:px-6 pt-12 sm:pt-16 pb-6">
           <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
-            <h2 className={H2_PAPER}>{c.firstThings.title}</h2>
+            <h2 className={`${H2_PAPER} text-center lg:text-left`}>{c.firstThings.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-6">
               <div className="flex items-start gap-4">
                 <span className="inline-flex shrink-0 w-12 h-12 rounded-2xl bg-[#BE185D]/10 items-center justify-center"><Ticket className="w-6 h-6 text-[#BE185D]" aria-hidden="true" /></span>
@@ -344,7 +346,7 @@ export default function FishingPage() {
                 <Clamp text={c.firstThings.body2} more={c.readMore} lang={lang} onPaper className="text-deep-night/80 text-base leading-relaxed" />
               </div>
             </div>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-6 pt-5 border-t border-deep-night/10">
+            <div className="flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-2 mt-6 pt-5 border-t border-deep-night/10">
               <OfficialLink href={OFFICIAL.fee} onPaper>{c.firstThings.feeLink}</OfficialLink>
               <OfficialLink href={OFFICIAL.restrictionMap} onPaper>{c.firstThings.mapLink}</OfficialLink>
             </div>
@@ -356,9 +358,9 @@ export default function FishingPage() {
             valokuvakaista otsikon takana näytti toiselta herolta keskellä sivua. Kuvat ovat korteissa. */}
         <section id="rivers" className="scroll-mt-20 pt-6 sm:pt-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14 sm:pb-18">
-            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.freshwater}</p>
-            <h2 className={`${H2} mb-3`}>{c.rivers.title}</h2>
-            <p className="text-snow/80 text-base leading-relaxed max-w-3xl">{c.rivers.lead}</p>
+            <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.freshwater}</p>
+            <h2 className={`${H2} mb-3 text-center lg:text-left`}>{c.rivers.title}</h2>
+            <p className="text-snow/80 text-base leading-relaxed max-w-3xl mx-auto lg:mx-0 text-center lg:text-left max-lg:text-balance">{c.rivers.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
                 const meta = RIVER_META[i] ?? RIVER_META[0];
@@ -380,14 +382,14 @@ export default function FishingPage() {
                       </span>
                       <PhotoCredit src={img} links={false} at="top" wrap />
                     </div>
-                    <div className="p-6 flex flex-col flex-1">
+                    <div className="p-6 flex flex-col flex-1 text-center lg:text-left">
                       <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{card.name}</h3>
                       <Clamp text={card.body} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
-                      <p className="mt-4 rounded-xl bg-vibe-pink/10 border border-vibe-pink/20 px-3.5 py-2.5 text-snow/85 text-xs leading-relaxed flex items-start gap-2">
+                      <p className="mt-4 rounded-xl bg-vibe-pink/10 border border-vibe-pink/20 px-3.5 py-2.5 text-snow/85 text-xs leading-relaxed flex items-start gap-2 text-left">
                         <Fish className="w-3.5 h-3.5 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
                         <span>{card.crNote}</span>
                       </p>
-                      <div className="mt-auto pt-5 flex flex-col gap-2.5">
+                      <div className="mt-auto pt-5 flex flex-col items-center lg:items-start gap-2.5">
                         <OfficialLink href={meta.href}>{card.officialLabel}</OfficialLink>
                         <AffiliateCTA
                           partner="hotels"
@@ -413,8 +415,8 @@ export default function FishingPage() {
             ~1 700 px. Nyt neljä avainlukua tummissa laatoissa isolla ja loput säännöt lyhyinä riveinä. */}
         <section className="px-4 sm:px-6 pb-14 sm:pb-18">
           <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
-            <p className={`${EYEBROW_PAPER} mb-2`}>{c.eyebrows.liability}</p>
-            <h2 className={`${H2_PAPER} text-balance`}>{c.tornioBox.title}</h2>
+            <p className={`${EYEBROW_PAPER} mb-2 text-center lg:text-left`}>{c.eyebrows.liability}</p>
+            <h2 className={`${H2_PAPER} text-balance text-center lg:text-left`}>{c.tornioBox.title}</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mt-6">
               {c.tornioBox.facts.map((f) => (
                 // 17.10.2026 (Vesa: "miksi numero ei ole keskitetty laatikkoon"): luku ja selite keskelle
@@ -437,7 +439,7 @@ export default function FishingPage() {
               <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" aria-hidden="true" />
               <span>{c.tornioBox.verifyLine}</span>
             </p>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-6">
+            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 mt-6">
               <AffiliateCTA
                 partner="hotels"
                 sid="fishing_tornio_stay"
@@ -461,7 +463,7 @@ export default function FishingPage() {
                 <img src={LAKE_IMG} {...respImg(LAKE_IMG, 'half')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1920" height="1440" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(LAKE_IMG) }} />
                 <PhotoCredit src={LAKE_IMG} links={false} />
               </div>
-              <div className="p-6 sm:p-8">
+              <div className="p-6 sm:p-8 text-center lg:text-left">
                 <h2 className={H2}>{c.lakes.title}</h2>
                 <div className="mt-3">
                   <Clamp text={c.lakes.body} more={c.readMore} lang={lang} className="text-snow/75 text-base leading-relaxed" />
@@ -473,17 +475,17 @@ export default function FishingPage() {
             </div>
             <div className="lv-surface rounded-2xl overflow-hidden flex flex-col border-red-400/25">
               <div className="h-1.5 bg-gradient-to-r from-red-500/70 via-red-400/40 to-transparent" aria-hidden="true" />
-              <div className="p-6 sm:p-8 flex flex-col flex-1">
+              <div className="p-6 sm:p-8 flex flex-col flex-1 text-center lg:text-left">
                 <h2 className={H2}>{c.teno.title}</h2>
                 <div className="mt-3">
                   <Clamp text={c.teno.body} more={c.readMore} lang={lang} className="text-snow/75 text-base leading-relaxed" />
                 </div>
                 <p className="mt-4 rounded-xl bg-emerald-500/10 border border-emerald-400/25 px-4 py-3 text-snow/85 text-sm leading-relaxed">{c.teno.whatYouCan}</p>
-                <p className="text-snow/80 text-sm leading-relaxed mt-4 flex items-start gap-2">
+                <p className="text-snow/80 text-sm leading-relaxed mt-4 flex items-start gap-2 text-left">
                   <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
                   <span>{c.teno.warnThirdParty}</span>
                 </p>
-                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-auto pt-5">
+                <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-2 mt-auto pt-5">
                   <OfficialLink href={OFFICIAL.tenoLuvat}>tenonkalaluvat.fi</OfficialLink>
                   <OfficialLink href={OFFICIAL.tenoSaadokset}>tenonkalatalousalue.fi</OfficialLink>
                   <OfficialLink href={OFFICIAL.tenoVN}>valtioneuvosto.fi</OfficialLink>
@@ -502,20 +504,20 @@ export default function FishingPage() {
               <img src={FISHING_IMG.ice} {...respImg(FISHING_IMG.ice, 'half')} alt={c.imageAlts.ice} loading="lazy" decoding="async" width="1704" height="959" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.ice) }} />
               <PhotoCredit src={FISHING_IMG.ice} at="top" wrap />
             </div>
-            <div className="p-6 sm:p-8 lg:p-10">
-              <div className="flex items-center gap-2.5 mb-3">
+            <div className="p-6 sm:p-8 lg:p-10 text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-3">
                 <Snowflake className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
                 <h2 className={H2}>{c.iceFishing.title}</h2>
               </div>
               <Clamp text={c.iceFishing.body} more={c.readMore} lang={lang} className="text-snow/80 text-base leading-relaxed" />
               <div className="mt-5 rounded-xl bg-amber-500/10 border border-amber-400/30 p-4">
-                <h3 className="font-heading text-lg text-snow tracking-wide mb-1 flex items-center gap-2">
+                <h3 className="font-heading text-lg text-snow tracking-wide mb-1 flex items-center justify-center lg:justify-start gap-2">
                   <AlertTriangle className="w-4 h-4 text-amber-400" aria-hidden="true" />
                   {c.iceFishing.safetyTitle}
                 </h3>
                 <Clamp text={c.iceFishing.safetyBody} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
               </div>
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-6">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 mt-6">
                 <AffiliateCTA
                   partner="activities"
                   sid="fishing_ice_rovaniemi"
@@ -534,15 +536,15 @@ export default function FishingPage() {
         {/* LUVAT JA MAKSUT — kolme korttia + alamitat lajilaattoina paperilla */}
         <section id="licences" className="scroll-mt-20 px-4 sm:px-6 py-14 sm:py-18">
           <div className="max-w-7xl mx-auto">
-            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.legal}</p>
-            <h2 className={H2}>{c.licenses.title}</h2>
+            <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.legal}</p>
+            <h2 className={`${H2} text-center lg:text-left`}>{c.licenses.title}</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
               {([
                 { Icon: Ticket, text: c.licenses.fee },
                 { Icon: Gift, text: c.licenses.freeRights },
                 { Icon: ListChecks, text: c.licenses.waterPermits },
               ] as const).map(({ Icon, text }, i) => (
-                <div key={i} className="lv-surface rounded-2xl p-6">
+                <div key={i} className="lv-surface rounded-2xl p-6 text-center lg:text-left">
                   <span className="inline-flex w-11 h-11 rounded-xl bg-vibe-pink/12 items-center justify-center mb-4"><Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" /></span>
                   <Clamp text={text} more={c.readMore} lang={lang} className="text-snow/80 text-sm leading-relaxed" />
                 </div>
@@ -550,7 +552,7 @@ export default function FishingPage() {
             </div>
 
             <div className={`${PAPER} p-6 sm:p-10 mt-8`}>
-              <h3 className="font-heading text-2xl sm:text-3xl text-deep-night tracking-wide flex items-center gap-2.5">
+              <h3 className="font-heading text-2xl sm:text-3xl text-deep-night tracking-wide flex items-center justify-center lg:justify-start gap-2.5">
                 <Ruler className="w-6 h-6 text-[#BE185D]" aria-hidden="true" />
                 {c.licenses.sizesTitle}
               </h3>
@@ -565,12 +567,12 @@ export default function FishingPage() {
                   );
                 })}
               </ul>
-              <p className="text-deep-night/80 text-base leading-relaxed mt-4">{c.licenses.sizes[c.licenses.sizes.length - 1]}</p>
+              <p className="text-deep-night/80 text-base leading-relaxed mt-4 text-center lg:text-left">{c.licenses.sizes[c.licenses.sizes.length - 1]}</p>
               <p className="text-deep-night/85 text-sm leading-relaxed mt-5 flex items-start gap-2">
                 <ShieldCheck className="w-4 h-4 text-[#BE185D] shrink-0 mt-0.5" aria-hidden="true" />
                 <span>{c.licenses.alwaysCheck}</span>
               </p>
-              <div className="flex flex-wrap gap-x-5 gap-y-2 mt-5 pt-5 border-t border-deep-night/10">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-2 mt-5 pt-5 border-t border-deep-night/10">
                 <OfficialLink href={OFFICIAL.fee} onPaper>eräluvat.fi: fee</OfficialLink>
                 <OfficialLink href={OFFICIAL.permits} onPaper>eräluvat.fi: permits</OfficialLink>
                 <OfficialLink href={OFFICIAL.sizes} onPaper>eräluvat.fi: sizes</OfficialLink>
@@ -589,27 +591,27 @@ export default function FishingPage() {
                 <img src={FISHING_IMG.kingCrab} {...respImg(FISHING_IMG.kingCrab, 'half')} alt={c.imageAlts.kingCrab} loading="lazy" decoding="async" width="1400" height="990" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.kingCrab) }} />
                 <PhotoCredit src={FISHING_IMG.kingCrab} />
               </div>
-              <div>
-                <div className="flex items-center gap-2.5 mb-3">
+              <div className="text-center lg:text-left">
+                <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-3">
                   <Waves className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
                   <h2 className={H2}>{c.norway.title}</h2>
                 </div>
                 <Clamp text={c.norway.seaBody} more={c.readMore} lang={lang} className="text-snow/80 text-base leading-relaxed" />
-                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
+                <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-2 mt-4">
                   <OfficialLink href={OFFICIAL.fiskeridirReg}>fiskeridir.no: regulations</OfficialLink>
                   <OfficialLink href={OFFICIAL.lovdata}>lovdata.no: §47</OfficialLink>
                 </div>
               </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
-              <div className="lv-surface rounded-2xl p-6 sm:p-8 flex flex-col">
+              <div className="lv-surface rounded-2xl p-6 sm:p-8 flex flex-col text-center lg:text-left">
                 <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{c.norway.crabTitle}</h3>
                 <Clamp text={c.norway.crabBody} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
-                <p className="text-snow/70 text-sm leading-relaxed mt-4 flex items-start gap-2">
+                <p className="text-snow/70 text-sm leading-relaxed mt-4 flex items-start gap-2 text-left">
                   <Car className="w-4 h-4 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
                   <span>{c.norway.carNote}</span>
                 </p>
-                <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-auto pt-5">
+                <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-3 mt-auto pt-5">
                   <AffiliateCTA
                     partner="activities"
                     sid="fishing_crab_kirkenes"
@@ -631,10 +633,10 @@ export default function FishingPage() {
                   <OfficialLink href={OFFICIAL.fiskeridirCrab}>fiskeridir.no: king crab</OfficialLink>
                 </div>
               </div>
-              <div className="lv-surface rounded-2xl p-6 sm:p-8 flex flex-col">
+              <div className="lv-surface rounded-2xl p-6 sm:p-8 flex flex-col text-center lg:text-left">
                 <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{c.norway.exportTitle}</h3>
                 <Clamp text={c.norway.exportBody} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
-                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-auto pt-5">
+                <div className="flex flex-wrap justify-center lg:justify-start gap-x-5 gap-y-2 mt-auto pt-5">
                   <OfficialLink href={OFFICIAL.fiskeridirExport}>fiskeridir.no: export quota</OfficialLink>
                   <OfficialLink href={OFFICIAL.toll}>toll.no</OfficialLink>
                 </div>
@@ -646,15 +648,15 @@ export default function FishingPage() {
         {/* KALAT ENSIN — neljä lyhyttä tarinaa: otsikko näkyy, runko aukeaa */}
         <section className="border-t border-white/5 px-4 sm:px-6 py-14 sm:py-18 bg-gradient-to-b from-white/[0.03] to-transparent">
           <div className="max-w-7xl mx-auto">
-            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.eco}</p>
-            <h2 className={H2}>{c.eco.title}</h2>
-            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.eco.lead}</p>
+            <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.eco}</p>
+            <h2 className={`${H2} text-center lg:text-left`}>{c.eco.title}</h2>
+            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl mx-auto lg:mx-0 text-center lg:text-left max-lg:text-balance">{c.eco.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {c.eco.stories.map((s, i) => {
                 const Icon = ECO_ICONS[i] ?? Fish;
                 return (
-                  <div key={s.title} className="lv-surface rounded-2xl p-6">
-                    <Icon className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
+                  <div key={s.title} className="lv-surface rounded-2xl p-6 text-center lg:text-left">
+                    <Icon className="w-6 h-6 text-vibe-pink mb-3 mx-auto lg:mx-0" aria-hidden="true" />
                     <h3 className="font-heading text-xl text-snow tracking-wide mb-2">{s.title}</h3>
                     <Clamp text={s.body} more={c.readMore} lang={lang} className="text-snow/70 text-sm leading-relaxed" />
                   </div>
@@ -667,7 +669,7 @@ export default function FishingPage() {
         {/* KAUSI YHDELLÄ SILMÄYKSELLÄ — paperiarkki, jaksot laattoina */}
         <section className="px-4 sm:px-6 pb-14 sm:pb-18">
           <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
-            <h2 className={`${H2_PAPER} flex items-center gap-2.5`}>
+            <h2 className={`${H2_PAPER} flex items-center justify-center lg:justify-start gap-2.5`}>
               <CalendarDays className="w-7 h-7 text-[#BE185D]" aria-hidden="true" />
               {c.season.title}
             </h2>
@@ -680,7 +682,7 @@ export default function FishingPage() {
               ))}
             </dl>
             {c.season.rows.length > 0 && (
-              <p className="text-deep-night/80 text-base leading-relaxed mt-4">
+              <p className="text-deep-night/80 text-base leading-relaxed mt-4 text-center lg:text-left">
                 <span className="font-semibold">{c.season.rows[c.season.rows.length - 1].period}{labelColon(lang)}</span>
                 {c.season.rows[c.season.rows.length - 1].what}
               </p>
@@ -691,13 +693,13 @@ export default function FishingPage() {
         {/* SINNE PÄÄSY + VARUSTEET — kaksi korttia rinnakkain */}
         <section className="px-4 sm:px-6 pb-14 sm:pb-18">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
-            <div className="lv-surface rounded-2xl p-6 sm:p-8">
-              <div className="flex items-center gap-2.5 mb-3">
+            <div className="lv-surface rounded-2xl p-6 sm:p-8 text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-3">
                 <Car className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
                 <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.gettingThere.title}</h2>
               </div>
               <Clamp text={c.gettingThere.body} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
-              <div className="flex flex-wrap gap-3 mt-6">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
                 <AffiliateCTA
                   partner="cars"
                   sid="fishing_getting_there"
@@ -725,8 +727,8 @@ export default function FishingPage() {
                 </AffiliateCTA>
               </div>
             </div>
-            <div className="lv-surface rounded-2xl p-6 sm:p-8">
-              <div className="flex items-center gap-2.5 mb-3">
+            <div className="lv-surface rounded-2xl p-6 sm:p-8 text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-3">
                 <Backpack className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
                 <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.gear.title}</h2>
               </div>
@@ -738,7 +740,7 @@ export default function FishingPage() {
         {/* FAQ */}
         <section className="py-14 sm:py-18 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2.5 mb-6">
+            <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-6">
               <HelpCircle className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
               <h2 className={H2}>{c.faq.title}</h2>
             </div>
@@ -759,10 +761,10 @@ export default function FishingPage() {
         {/* KEEP EXPLORING — cross-links */}
         <section className="py-14 sm:py-18 border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.explore}</p>
+            <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.explore}</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link to={to('/categories/fishing')} className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block">
-                <Fish className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
+              <Link to={to('/categories/fishing')} className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block text-center lg:text-left">
+                <Fish className="w-6 h-6 text-vibe-pink mb-3 mx-auto lg:mx-0" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1">{c.crossLinks[0].title}</h3>
                 <p className="text-snow/65 text-sm">{c.crossLinks[0].blurb}</p>
               </Link>
@@ -770,9 +772,9 @@ export default function FishingPage() {
                 href="https://laplandnature.com/freshwater/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block"
+                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block text-center lg:text-left"
               >
-                <Waves className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
+                <Waves className="w-6 h-6 text-arctic-cyan mb-3 mx-auto lg:mx-0" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
                   {c.crossLinks[1].title} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </h3>
@@ -782,9 +784,9 @@ export default function FishingPage() {
                 href="https://laplandvisit.com/arctic-norway/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block"
+                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block text-center lg:text-left"
               >
-                <MapPin className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
+                <MapPin className="w-6 h-6 text-arctic-cyan mb-3 mx-auto lg:mx-0" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
                   {c.crossLinks[2].title} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </h3>

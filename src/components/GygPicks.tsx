@@ -236,12 +236,12 @@ export default function GygPicks() {
   return (
     <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#0F172A]">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-10 sm:mb-12">
+        <div className="mb-10 sm:mb-12 text-center lg:text-left">
           <p className="font-bold tracking-[0.18em] uppercase text-sm mb-3 text-[#22D3EE]">{t(L.kicker)}</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-[#F9FAFB]">
             {t(L.headingProduct)}
           </h2>
-          <p className="max-w-2xl text-white/70">{t(L.ledeProduct)}</p>
+          <p className="max-w-2xl mx-auto lg:mx-0 text-white/70 max-lg:text-balance">{t(L.ledeProduct)}</p>
         </div>
 
         {/* Jarjestajien omat tuotekuvat, arvosanat ja TAMAN PAIVAN hinnat.
@@ -281,12 +281,13 @@ export default function GygPicks() {
                 kortin, sama ratkaisu kuin kohdesivujen DestinationPicks-karusellissa.
                 Poistetut AI-kuvat: ks. src/data/gygImages.ts. */}
             {(() => { const Icon = pickIcon(p.source.title); return (
-              <span className="self-start sm:self-auto sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
+              <span className="self-start sm:self-center lg:self-auto sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
                 <Icon className="h-5 w-5 text-[#F472B6]" aria-hidden="true" />
               </span>
             ); })()}
 
-            <div className="flex min-w-0 flex-1 flex-col sm:p-5">
+            {/* Puhelimessa rivikortti (kuvake vieressä) vasemmalle; 640–1023 px pystykortti keskelle; lg+ vasemmalle. */}
+            <div className="flex min-w-0 flex-1 flex-col sm:p-5 sm:max-lg:text-center">
               <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#22D3EE]">
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                 {p.place}
@@ -319,7 +320,7 @@ export default function GygPicks() {
                   the rows we opened, but the catalogue does not record the unit
                   and some GetYourGuide products are priced per group. */}
               {p.price && (
-                <p className="mt-1 sm:mt-3 flex items-baseline gap-1.5">
+                <p className="mt-1 sm:mt-3 flex items-baseline sm:max-lg:justify-center gap-1.5">
                   <span className="text-[11px] uppercase tracking-wider text-white/60">{t(L.priceFrom)}</span>
                   <span className="text-lg font-bold text-[#F9FAFB]">{p.price}</span>
                 </p>
