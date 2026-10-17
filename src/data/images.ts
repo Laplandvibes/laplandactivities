@@ -248,7 +248,7 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   // 17.10.2026: oli yksi tekoälykuva molemmille golfkorteille. Green Zone (Tornio–Haaparanta) saa oikean
   // kuvan Tornion kentästä (Commons, Rolf Palmberg), Levin keskiyön golf paikattoman Pexels-kuvan suomalaiselta
   // kentältä illan auringossa (Huy Vu, 38798133). Levin kentästä ei löytynyt vapaata kuvaa.
-  { match: /green zone|two countries/i,                                 img: local('activities/summer/golf-tornio.webp') },
+  { match: /green zone/i,                                               img: local('activities/summer/golf-tornio.webp') },
   { match: /golf/i,                                                     img: local('activities/summer/golf.webp') },
   { match: /berry|cloudberry|forag|mushroom/i,                          img: local('activities/summer/foraging.webp') },
   { match: /campfire|kota cook|kammi|outdoor (cooking|dinner)/i,
