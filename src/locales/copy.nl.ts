@@ -6,6 +6,7 @@ const nl: SectionCopy = {
     metaTitle: "IJsvissen en zalmvissen in Fins Lapland",
     metaDescription: "Gratis ijsvissen, vergunningsplichtige zalmrivieren zoals de Tornio en Noorse koningskrab-safari's, met de regels, tarieven en vergunningslinks voor 2026.",
     verifyBanner: "De regels veranderen elk jaar. Controleer de officiële vergunningsvoorwaarden voordat u gaat vissen. Elk cijfer hieronder noemt en linkt naar zijn bron.",
+    readMore: "Lees verder",
     hero: {
       eyebrow: "Fins Lapland · Arctisch Noorwegen",
       title: "Vissen in Lapland en de Noordelijke IJszee",

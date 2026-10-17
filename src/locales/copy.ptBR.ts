@@ -6,6 +6,7 @@ const ptBR: SectionCopy = {
     metaTitle: "Pesca na Lapônia e no Oceano Ártico",
     metaDescription: "Pesca no gelo gratuita, rios de salmão licenciados como o Tornio e safáris de caranguejo-real na Noruega: regras, taxas e licenças de 2026 antes de pescar.",
     verifyBanner: "As regras mudam todo ano. Confira os termos oficiais da licença antes de pescar. Cada número abaixo cita e faz link para sua fonte.",
+    readMore: "Ler mais",
     hero: {
       eyebrow: "Lapônia finlandesa · Noruega Ártica",
       title: "Pesca na Lapônia e no Oceano Ártico",

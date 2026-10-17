@@ -23,7 +23,11 @@ const OWN_LABEL: Record<string, string> = {
   ko: '사진: LaplandVibes', fr: 'Photo : LaplandVibes', it: 'Foto: LaplandVibes', nl: 'Foto: LaplandVibes',
 };
 
-export default function PhotoCredit({ src, links = true, className = '' }: { src?: string; links?: boolean; className?: string }) {
+// at/wrap (17.10.2026): kortissa, jonka alakulmassa on oma lappu (paikka, tila), kuitti nousee
+// yläkulmaan ja saa rivittyä koko kuvan levyiseksi. Typistetty (truncate) kuitti katkaisi
+// lisenssin nimen, ja kun kortin tummennus poistettiin, katkaistu teksti jäi kirkkaan
+// kuvan päälle (korttiteksti-portti: levi-north-slope, 41 % alle 4,5:1). Lisenssin on näyttävä.
+export default function PhotoCredit({ src, links = true, className = '', at = 'bottom', wrap = false }: { src?: string; links?: boolean; className?: string; at?: 'top' | 'bottom'; wrap?: boolean }) {
   const lang = useLang();
   const c = creditFor(src);
   if (!c) return null;
@@ -33,7 +37,7 @@ export default function PhotoCredit({ src, links = true, className = '' }: { src
   // -lisenssin vaatima nimeäminen, joten sen on oltava luettava. Pohjaa ei kevennetä eikä
   // mustetta tehdä läpikuultavaksi (`bg-black/35` + valkoinen = 2,43:1 valkoisen kuvan päällä;
   // muut luvut yllä).
-  const base = `pointer-events-auto absolute bottom-1 right-1 z-10 max-w-[58%] truncate rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white ${className}`;
+  const base = `pointer-events-auto absolute ${at === 'top' ? 'top-1' : 'bottom-1'} right-1 z-10 ${wrap ? 'max-w-[calc(100%-0.5rem)]' : 'max-w-[58%] truncate'} rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white ${className}`;
   if (c.kind === 'partner') {
     // Kumppanin (esim. Sembo) oma hotellikuva: lähde näkyviin, ei lisenssilinkkiä (kuvalupa 10.9.2026).
     return <span className={base}>{OWN_LABEL[lang]?.split(':')[0] ?? 'Photo'}: {c.author} · {c.license}</span>;

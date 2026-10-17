@@ -182,9 +182,12 @@ export default function Home() {
                     isBig ? 'col-span-2 row-span-2 h-72 sm:h-[28rem]' : isWide ? 'col-span-2 h-44 sm:h-[13.5rem]' : 'h-44 sm:h-[13.5rem]'
                   }`}
                 >
+                  {/* 17.10.2026 (Vesa: "kuvat näyttää pixelöidyltä"): leveä kortti on puolet ruudukosta,
+                      mutta sizes kertoi selaimelle kolmanneksen. 1440 px:n näytöllä 150 %:n skaalauksella
+                      630 px:n korttiin tuli 768 px:n kuva, eli se venyi 1,2-kertaiseksi. */}
                   <img
                     src={imageForCategory(cat.slug)}
-                    {...respImg(imageForCategory(cat.slug), 'card')}
+                    {...respImg(imageForCategory(cat.slug), isBig || isWide ? 'half' : 'card')}
                     alt={cat.name}
                     className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     style={{ objectPosition: focalFor(imageForCategory(cat.slug)) }}

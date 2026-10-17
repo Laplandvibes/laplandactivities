@@ -6,6 +6,7 @@ const fr: SectionCopy = {
     metaTitle: "Pêche en Laponie et en Arctique",
     metaDescription: "Pêche blanche gratuite, rivières à saumon sous licence comme le Tornio et safaris au crabe royal en Norvège : règles 2026 et permis officiels.",
     verifyBanner: 'La réglementation change chaque année : vérifiez les conditions officielles du permis avant de pêcher. Chaque chiffre ci-dessous cite et relie sa source.',
+    readMore: "Lire la suite",
     hero: {
       eyebrow: 'Laponie finlandaise · Norvège arctique',
       title: 'Pêche en Laponie et dans l\'océan Arctique',

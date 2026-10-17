@@ -6,6 +6,7 @@ const it: SectionCopy = {
     metaTitle: 'Pesca in Lapponia e nell\'oceano Artico',
     metaDescription: "Pesca sul ghiaccio gratuita, fiumi da salmone su licenza come il Tornio e safari al granchio reale in Norvegia: regole, tariffe e permessi 2026.",
     verifyBanner: 'Le regole cambiano ogni anno: verifichi le condizioni ufficiali del permesso prima di pescare. Ogni cifra qui sotto cita e collega la propria fonte.',
+    readMore: "Continua a leggere",
     hero: {
       eyebrow: 'Lapponia finlandese · Norvegia artica',
       title: 'Pesca in Lapponia e nell\'oceano Artico',

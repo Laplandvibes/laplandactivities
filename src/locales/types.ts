@@ -245,6 +245,8 @@ export type SectionCopy = {
     metaDescription: string;
     /** Visible "regulations change yearly — verify before fishing" banner line. */
     verifyBanner: string;
+    /** Pitkän kappaleen avausnappi (rivit katkaistu, koko teksti DOMissa). 17.10.2026 */
+    readMore: string;
     hero: { eyebrow: string; title: string; sub: string; ctaBook: string; ctaRules: string; trustLine: string };
     /** 2.0 (19.9.2026): kolme valintalaattaa heti heron alla — pilkki / joet / meri ja rapu — ankkurilinkit sivun osioihin. */
     chooser: { kicker: string; ice: string; iceSub: string; rivers: string; riversSub: string; norway: string; norwaySub: string };

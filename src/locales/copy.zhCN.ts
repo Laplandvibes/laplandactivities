@@ -6,6 +6,7 @@ const zhCN: SectionCopy = {
     metaTitle: "拉普兰与北冰洋钓鱼指南",
     metaDescription: "免费冰钓、托尔尼奥河等持证三文鱼河，以及挪威帝王蟹之旅，附上你下竿前需要的 2026 年规定、费用和官方许可链接。",
     verifyBanner: "规定每年都会变化，钓鱼前请查阅官方许可条款。下文每一个数字都标明并链接其来源。",
+    readMore: "展开全文",
     hero: {
       eyebrow: "芬兰拉普兰 · 北极挪威",
       title: "拉普兰与北冰洋钓鱼指南",

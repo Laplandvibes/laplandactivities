@@ -6,6 +6,7 @@ const fi: SectionCopy = {
     metaTitle: 'Kalastus Lapissa ja Jäämerellä',
     metaDescription: 'Ilmainen pilkkiminen, luvanvaraiset lohijoet kuten Tornionjoki ja Norjan kuningasrapusafarit: kauden 2026 säännöt, maksut ja viralliset lupalinkit.',
     verifyBanner: 'Säännöt muuttuvat vuosittain. Tarkista virallisen luvan ehdot ennen kalastusta. Jokainen alla oleva luku nimeää ja linkittää lähteensä.',
+    readMore: "Lue lisää",
     hero: {
       eyebrow: "Suomen Lappi ja Jäämeren rannikko",
       title: 'Kalastus Lapissa ja Jäämerellä',

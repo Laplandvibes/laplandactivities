@@ -334,6 +334,7 @@ const sv: SectionCopy = {
     metaTitle: 'Fiske i Lappland och Norra ishavet',
     metaDescription: 'Gratis pilkfiske, licensbelagda laxälvar som Torneälven och norska kungskrabbsafarier, med 2026 års regler, avgifter och officiella tillståndslänkar.',
     verifyBanner: 'Reglerna ändras varje år. Kontrollera de officiella tillståndsvillkoren innan du fiskar. Varje uppgift nedan namnger och länkar till sin källa.',
+    readMore: "Läs mer",
     hero: {
       eyebrow: 'Finska Lappland · Nordnorge',
       title: 'Fiske i Lappland och Norra ishavet',

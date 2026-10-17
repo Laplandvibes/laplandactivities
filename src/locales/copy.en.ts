@@ -334,6 +334,7 @@ const en: SectionCopy = {
     metaTitle: 'Fishing in Lapland & the Arctic Ocean',
     metaDescription: "Free ice fishing, licensed salmon rivers like the Tornio and Norwegian king-crab safaris, with the 2026 rules, fees and official permit links.",
     verifyBanner: 'Regulations change every year. Check the official permit terms before you fish. Every figure below names and links its source.',
+    readMore: 'Read more',
     hero: {
       eyebrow: 'Finnish Lapland · Arctic Norway',
       title: 'Fishing in Lapland & the Arctic Ocean',

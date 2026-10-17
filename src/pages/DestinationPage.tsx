@@ -123,14 +123,16 @@ export default function DestinationPage() {
           style={{ objectPosition: focalFor(heroImg) }}
           loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
         />
-        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,1) 0%, rgba(15,23,42,0.62) 45%, rgba(15,23,42,0.30) 100%)' }} />
+        <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(15,23,42,1) 0%, rgba(15,23,42,0.55) 40%, rgba(15,23,42,0.15) 75%, rgba(15,23,42,0.05) 100%)' }} />
+        {/* 17.10.2026 (Vesa: "kaikki on jotenkin tummaa taustaa vasten"): yläosa 0,30 -> 0,05, jotta valokuva
+            näkyy. Pohja pysyy 1,0:ssa (ei saumaa seuraavaan osioon, 1.10.2026); teksti luetaan omasta paneelistaan. */}
         <PhotoCredit src={heroImg} />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
           {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
               mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
               näkyy muualla. */}
           <div className="relative w-fit max-w-full">
-            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/45 blur-2xl" />
+            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/60 blur-2xl" />
             <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/55 backdrop-blur-sm border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3 shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
             </span>

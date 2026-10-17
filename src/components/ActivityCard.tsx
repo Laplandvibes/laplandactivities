@@ -60,7 +60,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         {/* Ei koko kuvan tummennusta (Vesa 17.10.2026: "ihan kuin olisi jotain päällä"). Kuvan
             päällä on vain paikkalappu ja kuvakuitti, ja kummallakin on oma pohjansa, joten
             liukuväri ei lukenut tekstiä vaan himmensi valokuvan. */}
-        {omaKuva && <PhotoCredit src={img} />}
+        {omaKuva && <PhotoCredit src={img} at="top" wrap />}
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           <Link
             to={to(`/destinations/${activity.destinationSlug}`)}

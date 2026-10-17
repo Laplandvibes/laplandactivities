@@ -1,10 +1,11 @@
-import type { ReactNode } from 'react';
+import { useState, type ReactNode } from 'react';
 import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import {
   Fish, Waves, Snowflake, ShieldCheck, AlertTriangle, MapPin, Car,
   Backpack, CalendarDays, HelpCircle, ExternalLink, ScrollText, Anchor,
+  Ticket, Ruler, Gift, ListChecks,
 } from 'lucide-react';
 import PageBreadcrumb from '../components/PageBreadcrumb';
 import AffiliateCTA from '../components/AffiliateCTA';
@@ -58,8 +59,8 @@ const RIVER_META = [
 
 // 2.0 (19.9.2026): jokikortin oma valokuva — järjestys = copy.fishing.rivers.cards.
 // Tornionjoki Karungista (Methem, CC BY 4.0, 1.10.2026), muut Wikimedia Commons oikeasta joesta
-// (kuitit src/data/photoCredits.ts): Teno Utsjoki, Ounasjoki Rovaniemi, Ivalojoki Ivalo,
-// Simojoki Hanskankoski, Luttojoki UKK-puisto.
+// (kuitit src/data/photoCredits.ts): Ounasjoki Rovaniemi, Simojoki Hanskankoski, Luttojoki UKK-puisto.
+// 17.10.2026: Teno (tie 970, Utsjoki) ja Ivalojoki (Ivalo) omia kuvia lokakuun 2026 reissulta.
 const RIVER_IMG = [
   '/images/activities/fishing/fishing-river.webp',
   '/images/activities/fishing/teno-valley.webp',
@@ -71,38 +72,31 @@ const RIVER_IMG = [
 
 // Section photos (photographic, text-free, people-free). Native 16:9; rendered
 // full-width h-auto so nothing crops at 375px. AVIF sibling exists on disk.
+// 17.10.2026: Joet-osion otsikkokaista (koski, ei sama kuva kuin yksikään jokikortti) ja
+// Järvet-kortin kuva (Inarijärvi, oma 12.10.2026).
+const RIVER_BAND = '/images/activities/fishing/kukkolankoski.webp';
+const LAKE_IMG = '/images/activities/fishing/inarijarvi-shore.webp';
+
 const FISHING_IMG = {
   river: '/images/activities/fishing/fishing-river.webp',
   ice: '/images/activities/fishing/fishing-ice.webp',
   kingCrab: '/images/activities/fishing/fishing-kingcrab.webp',
 };
 
-function SectionImage({ src, alt }: { src: string; alt: string }) {
-  return (
-    <img
-      src={src}
-      {...respImg(src, 'half')}
-      alt={alt}
-      loading="lazy"
-      decoding="async"
-      width="1400"
-      height="788"
-      className="w-full h-auto rounded-2xl border border-white/10 shadow-lg shadow-black/20"
-    />
-  );
-}
 
 // Rule 4: every official/operator link leaves tagged as an editorial referral
 // (utm_source=laplandvibes&utm_medium=referral), applied once here so all 21
 // call sites keep passing the clean URL from OFFICIAL. `rel` is unchanged —
 // these are editorial links, never sponsored.
-function OfficialLink({ href, children }: { href: string; children: ReactNode }) {
+// `onPaper`: vaalealla paperikortilla arctic-cyan on 2,3:1 (#06B6D4 / #F3F6FA), joten
+// sielläkin linkki on tummempi syaani #0E7490 (5,0:1).
+function OfficialLink({ href, children, onPaper = false }: { href: string; children: ReactNode; onPaper?: boolean }) {
   return (
     <a
       href={withReferral(href, 'laplandactivities_fishing')}
       target="_blank"
       rel="noopener noreferrer"
-      className="lv-tap inline-flex items-center gap-1 text-arctic-cyan hover:underline text-sm font-medium"
+      className={`lv-tap inline-flex items-center gap-1 hover:underline text-sm font-medium ${onPaper ? 'text-[#0E7490]' : 'text-arctic-cyan'}`}
     >
       {children}
       <ExternalLink className="w-3 h-3 shrink-0" aria-hidden="true" />
@@ -110,9 +104,52 @@ function OfficialLink({ href, children }: { href: string; children: ReactNode })
   );
 }
 
+// 17.10.2026 (Vesa: "pelkkää tekstiä, ei kukaan kalamies jaksa näitä lukea"): pitkä kappale
+// näkyy kolmena rivinä ja aukeaa napista. Koko teksti on silti DOMissa ja esirenderöidyssä
+// HTML:ssä (haku ja ruudunlukija näkevät kaiken), vain näkyvä osa lyhenee. Lyhyt teksti
+// näkyy kokonaan ilman nappia; raja on merkkeinä, koska kiinan/japanin/korean merkki
+// vie noin kaksi latinalaista leveyttä.
+const CJK = new Set(['ja', 'zh-CN', 'ko']);
+function Clamp({ text, more, lang, className = '', onPaper = false }: { text: string; more: string; lang: string; className?: string; onPaper?: boolean }) {
+  const [open, setOpen] = useState(false);
+  const long = text.length > (CJK.has(lang) ? 90 : 210);
+  return (
+    <div>
+      <p className={`${className} ${long && !open ? 'line-clamp-3' : ''}`}>{text}</p>
+      {long && !open && (
+        <button
+          type="button"
+          onClick={() => setOpen(true)}
+          className={`lv-tap mt-1.5 inline-flex items-center gap-1 text-sm font-semibold hover:underline ${onPaper ? 'text-[#BE185D]' : 'text-vibe-pink'}`}
+        >
+          {more} <span aria-hidden="true">↓</span>
+        </button>
+      )}
+    </div>
+  );
+}
+
 const EYEBROW = 'text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase';
 const CARD = 'rounded-2xl border border-white/10 bg-white/[0.04]';
 const H2 = 'font-heading text-3xl sm:text-4xl text-snow tracking-wide';
+// Kerros tumman sivun päällä: vaalea paperiarkki (sama #F3F6FA kuin valitse-tapasi-laatat ja
+// appin .sheet). Pinkki pieni teksti paperilla on #BE185D (6,1:1), ei #EC4899 (3,3:1).
+const PAPER = 'rounded-3xl bg-[#F3F6FA] text-deep-night shadow-[0_32px_64px_-32px_rgba(0,0,0,0.75)]';
+const EYEBROW_PAPER = 'text-[#BE185D] text-xs font-semibold tracking-[0.25em] uppercase';
+const H2_PAPER = 'font-heading text-3xl sm:text-4xl text-deep-night tracking-wide';
+
+/** Otsikon ja rungon välinen kaksoispiste lukijan kielellä: fr sitova väli, ja/zh täysleveä ilman väliä. */
+function labelColon(lang: string): string {
+  if (lang === 'fr') return ' : ';
+  if (lang === 'ja' || lang === 'zh-CN') return '：';
+  return ': ';
+}
+
+/** "Lohi: yleisesti 60 cm …" -> ['Lohi', 'yleisesti 60 cm …']. Ilman kaksoispistettä koko rivi on runko. */
+function splitLabel(s: string): [string, string] {
+  const m = s.match(/^([^:：]{1,40})[:：]\s*(.+)$/);
+  return m ? [m[1], m[2]] : ['', s];
+}
 
 export default function FishingPage() {
   const lang = useLang();
@@ -195,14 +232,17 @@ export default function FishingPage() {
           className="absolute inset-0"
           style={{ background: 'linear-gradient(to top, rgba(15,23,42,0.92) 0%, rgba(15,23,42,0.55) 38%, rgba(15,23,42,0.20) 72%, rgba(15,23,42,0.08) 100%)' }}
         />
-        {/* CC BY 2.5 -kuva: tekijä + lisenssi näkyviin (PhotoCredit, oikea alakulma). */}
-        <PhotoCredit src={heroImg} />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-16 w-full">
+        {/* CC BY 2.5 -kuva: tekijä + lisenssi näkyviin. Valitse tapasi -laatat nousevat heron
+            alareunan päälle, joten kuitti on niiden yläpuolella omassa kaistassaan. */}
+        <div className="absolute inset-x-0 bottom-24 sm:bottom-28 h-6">
+          <PhotoCredit src={heroImg} />
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-12 pb-32 md:pt-16 md:pb-36 w-full">
           {/* Tekstilohko + sen takana sumennettu tumma paneeli: tummennus kulkee tekstin
               mukana eri kielten eri pituisilla riveillä, reuna häipyy ilman viivaa ja kuva
               näkyy muualla. */}
           <div className="relative w-fit max-w-full">
-            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/45 blur-2xl" />
+            <div aria-hidden="true" className="pointer-events-none absolute -inset-x-12 -inset-y-10 -z-10 rounded-[3rem] bg-deep-night/65 blur-2xl" />
             <p className="text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase mb-3">{c.hero.eyebrow}</p>
             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] drop-shadow-[0_3px_20px_rgba(0,0,0,0.95)]">
               {c.hero.title}
@@ -228,27 +268,26 @@ export default function FishingPage() {
                 {c.hero.ctaRules}
               </a>
             </div>
-            <p className="text-snow/70 text-xs leading-relaxed mt-5 max-w-2xl">{c.hero.trustLine}</p>
+            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl drop-shadow-[0_1px_8px_rgba(0,0,0,0.95)]">{c.hero.trustLine}</p>
           </div>
         </div>
       </section>
 
-      <PageBreadcrumb />
-
-      {/* 2.0 — VALITSE TAPASI: kolme laattaa heti heron alla (Vesa 19.9.2026: sivun alku oli
-          tekstimuuri). Laatat ovat vaaleita paperikortteja (sama kieli kuin etusivun
-          vuodenaikakortit) ja ankkuroivat osioihin #ice / #rivers / #norway. */}
-      <section className="bg-deep-night px-4 sm:px-6 pt-8 pb-4">
+      {/* 2.0 — VALITSE TAPASI: kolme paperilaattaa heti heron alla (Vesa 19.9.2026: sivun alku
+          oli tekstimuuri). 17.10.2026 (Vesa: "kaikki on jotenkin tummaa taustaa vasten, ei mitään
+          kerrostumisia"): laatat nousevat heron alareunan päälle, ja sivu vuorottelee tumman
+          pohjan, valokuvakaistojen ja vaaleiden paperiarkkien välillä. */}
+      <section className="relative z-10 -mt-24 sm:-mt-28 px-4 sm:px-6 pb-4">
         <div className="max-w-7xl mx-auto">
-          <p className={`${EYEBROW} mb-3`}>{c.chooser.kicker}</p>
+          <p className={`${EYEBROW} mb-3 text-[#F9A8D4]`}>{c.chooser.kicker}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {([
               { href: '#ice', Icon: Snowflake, img: FISHING_IMG.ice, title: c.chooser.ice, sub: c.chooser.iceSub },
               { href: '#rivers', Icon: Fish, img: RIVER_IMG[0], title: c.chooser.rivers, sub: c.chooser.riversSub },
               { href: '#norway', Icon: Anchor, img: FISHING_IMG.kingCrab, title: c.chooser.norway, sub: c.chooser.norwaySub },
             ] as const).map((t) => (
-              <a key={t.href} href={t.href} className="group rounded-2xl overflow-hidden bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] hover:border-vibe-pink/50 transition-colors flex flex-col">
-                <div className="relative h-36 sm:h-40 overflow-hidden">
+              <a key={t.href} href={t.href} className="group rounded-2xl overflow-hidden bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-20px_rgba(0,0,0,0.8)] hover:border-vibe-pink/50 transition-colors flex flex-col">
+                <div className="relative h-28 sm:h-40 overflow-hidden">
                   <img src={t.img} {...respImg(t.img, 'card')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(t.img) }} />
                   <PhotoCredit src={t.img} links={false} />
                 </div>
@@ -265,6 +304,8 @@ export default function FishingPage() {
         </div>
       </section>
 
+      <PageBreadcrumb />
+
       {/* VERIFY BANNER */}
       <div className="bg-amber-500/10 border-y border-amber-400/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-start gap-2.5">
@@ -274,49 +315,45 @@ export default function FishingPage() {
       </div>
 
       <main className="bg-deep-night">
-        {/* ECO RED THREAD */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.eco}</p>
-            <h2 className={H2}>{c.eco.title}</h2>
-            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.eco.lead}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
-              {c.eco.stories.map((s, i) => {
-                const Icon = ECO_ICONS[i] ?? Fish;
-                return (
-                  <div key={s.title} className={`${CARD} p-6`}>
-                    <Icon className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
-                    <h3 className="font-heading text-xl text-snow tracking-wide mb-2">{s.title}</h3>
-                    <p className="text-snow/70 text-sm leading-relaxed">{s.body}</p>
-                  </div>
-                );
-              })}
+        {/* KAKSI ASIAA ENSIN — paperiarkki: maksu ja ilmainen pilkkiminen rinnakkain */}
+        <section className="px-4 sm:px-6 pt-12 sm:pt-16 pb-6">
+          <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
+            <h2 className={H2_PAPER}>{c.firstThings.title}</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 mt-6">
+              <div className="flex items-start gap-4">
+                <span className="inline-flex shrink-0 w-12 h-12 rounded-2xl bg-[#BE185D]/10 items-center justify-center"><Ticket className="w-6 h-6 text-[#BE185D]" aria-hidden="true" /></span>
+                <Clamp text={c.firstThings.body1} more={c.readMore} lang={lang} onPaper className="text-deep-night/80 text-base leading-relaxed" />
+              </div>
+              <div className="flex items-start gap-4">
+                <span className="inline-flex shrink-0 w-12 h-12 rounded-2xl bg-[#0E7490]/10 items-center justify-center"><Gift className="w-6 h-6 text-[#0E7490]" aria-hidden="true" /></span>
+                <Clamp text={c.firstThings.body2} more={c.readMore} lang={lang} onPaper className="text-deep-night/80 text-base leading-relaxed" />
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-6 pt-5 border-t border-deep-night/10">
+              <OfficialLink href={OFFICIAL.fee} onPaper>{c.firstThings.feeLink}</OfficialLink>
+              <OfficialLink href={OFFICIAL.restrictionMap} onPaper>{c.firstThings.mapLink}</OfficialLink>
             </div>
           </div>
         </section>
 
-        {/* FIRST THINGS */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <h2 className={H2}>{c.firstThings.title}</h2>
-            <div className="text-snow/75 text-base leading-relaxed mt-4 space-y-4">
-              <p>{c.firstThings.body1}</p>
-              <p>{c.firstThings.body2}</p>
+        {/* JOET — valokuvakaista otsikon takana, kortit sen alla */}
+        <section id="rivers" className="scroll-mt-20 pt-10 sm:pt-14">
+          <div className="relative h-60 sm:h-80 overflow-hidden">
+            <img src={RIVER_BAND} {...respImg(RIVER_BAND, 'hero')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="1066" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(RIVER_BAND) }} />
+            <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, #0F172A 0%, rgba(15,23,42,0.80) 30%, rgba(15,23,42,0.15) 70%, rgba(15,23,42,0) 100%)' }} />
+            <div className="absolute inset-x-0 top-2 h-6">
+              <PhotoCredit src={RIVER_BAND} />
             </div>
-            <div className="flex flex-wrap gap-x-6 gap-y-2 mt-5">
-              <OfficialLink href={OFFICIAL.fee}>{c.firstThings.feeLink}</OfficialLink>
-              <OfficialLink href={OFFICIAL.restrictionMap}>{c.firstThings.mapLink}</OfficialLink>
+            <div className="absolute inset-x-0 bottom-0">
+              <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-6">
+                <p className={`${EYEBROW} mb-2 text-[#F9A8D4]`}>{c.eyebrows.freshwater}</p>
+                <h2 className="font-heading text-5xl sm:text-7xl text-snow tracking-wide leading-none drop-shadow-[0_3px_20px_rgba(0,0,0,0.9)]">{c.rivers.title}</h2>
+              </div>
             </div>
           </div>
-        </section>
-
-        {/* RIVERS */}
-        <section id="rivers" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6">
-            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.freshwater}</p>
-            <h2 className={H2}>{c.rivers.title}</h2>
-            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.rivers.lead}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 items-stretch">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14 sm:pb-18">
+            <p className="text-snow/80 text-base leading-relaxed max-w-3xl">{c.rivers.lead}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
                 const meta = RIVER_META[i] ?? RIVER_META[0];
                 // Merkki on valokuvan päällä: pohja tumma ja lähes peittävä, sävy tulee
@@ -328,35 +365,35 @@ export default function FishingPage() {
                   : 'bg-deep-night/85 text-snow/85 border-white/20';
                 const img = RIVER_IMG[i] ?? RIVER_IMG[0];
                 return (
-                  <div key={card.name} className={`${CARD} overflow-hidden flex flex-col`}>
-                    <div className="relative h-44 overflow-hidden">
-                      <img src={img} alt={card.name} loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(img) }} />
+                  <div key={card.name} className="lv-surface rounded-2xl overflow-hidden flex flex-col">
+                    <div className="relative h-48 overflow-hidden">
+                      <img src={img} {...respImg(img, 'card')} alt={card.name} loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(img) }} />
                       {/* Ei tummennusta: tilamerkillä ja kuitilla on oma pohja (17.10.2026). */}
                       <span className={`absolute left-4 bottom-3 inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-wide uppercase backdrop-blur-sm ${badgeColor}`}>
                         {card.badge}
                       </span>
-                      <PhotoCredit src={img} links={false} />
+                      <PhotoCredit src={img} links={false} at="top" wrap />
                     </div>
                     <div className="p-6 flex flex-col flex-1">
-                    <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{card.name}</h3>
-                    <p className="text-snow/70 text-sm leading-relaxed">{card.body}</p>
-                    <p className="text-snow/60 text-xs leading-relaxed mt-3 flex items-start gap-1.5">
-                      <Fish className="w-3.5 h-3.5 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
-                      <span>{card.crNote}</span>
-                    </p>
-                    <div className="mt-auto pt-4 flex flex-col gap-2.5">
-                      <OfficialLink href={meta.href}>{card.officialLabel}</OfficialLink>
-                      <AffiliateCTA
-                        partner="hotels"
-                        sid={meta.sid}
-                        destination={meta.ss}
-                        aria-label={`${compareHotels}: ${meta.ss}`}
-                        className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
-                      >
-                        <MapPin className="w-3.5 h-3.5" />
-                        {compareHotels} · {meta.ss}
-                      </AffiliateCTA>
-                    </div>
+                      <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{card.name}</h3>
+                      <Clamp text={card.body} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
+                      <p className="mt-4 rounded-xl bg-vibe-pink/10 border border-vibe-pink/20 px-3.5 py-2.5 text-snow/85 text-xs leading-relaxed flex items-start gap-2">
+                        <Fish className="w-3.5 h-3.5 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
+                        <span>{card.crNote}</span>
+                      </p>
+                      <div className="mt-auto pt-5 flex flex-col gap-2.5">
+                        <OfficialLink href={meta.href}>{card.officialLabel}</OfficialLink>
+                        <AffiliateCTA
+                          partner="hotels"
+                          sid={meta.sid}
+                          destination={meta.ss}
+                          aria-label={`${compareHotels}: ${meta.ss}`}
+                          className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
+                        >
+                          <MapPin className="w-3.5 h-3.5" />
+                          {compareHotels} · {meta.ss}
+                        </AffiliateCTA>
+                      </div>
                     </div>
                   </div>
                 );
@@ -365,255 +402,322 @@ export default function FishingPage() {
           </div>
         </section>
 
-        {/* LAKES */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <h2 className={H2}>{c.lakes.title}</h2>
-            <p className="text-snow/75 text-base leading-relaxed mt-4">{c.lakes.body}</p>
-            <div className="mt-5">
-              <OfficialLink href={OFFICIAL.inariLake}>eräluvat.fi: Inarijärvi</OfficialLink>
-            </div>
-          </div>
-        </section>
-
-        {/* TORNIO SALMON BOX */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className={`${CARD} p-6 sm:p-8 border-vibe-pink/25`}>
-              <p className={`${EYEBROW} mb-3`}>{c.eyebrows.liability}</p>
-              <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.tornioBox.title}</h2>
-              <ul className="mt-5 space-y-3">
-                {c.tornioBox.rules.map((r, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-snow/80 text-sm leading-relaxed">
-                    <ShieldCheck className="w-4 h-4 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
-                    <span>{r}</span>
-                  </li>
-                ))}
-              </ul>
-              <p className="text-amber-100/85 text-xs leading-relaxed mt-5 flex items-start gap-2">
-                <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-                <span>{c.tornioBox.verifyLine}</span>
-              </p>
-              <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-5">
-                <OfficialLink href={OFFICIAL.tornioArea}>eräluvat.fi: area 2502</OfficialLink>
-                <OfficialLink href={OFFICIAL.tornioVN}>valtioneuvosto.fi</OfficialLink>
-              </div>
+        {/* TORNION LOHI 2026 — paperiarkki, säännöt numeroituina laattoina */}
+        <section className="px-4 sm:px-6 pb-14 sm:pb-18">
+          <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
+            <p className={`${EYEBROW_PAPER} mb-2`}>{c.eyebrows.liability}</p>
+            <h2 className={H2_PAPER}>{c.tornioBox.title}</h2>
+            <ol className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
+              {c.tornioBox.rules.map((r, i) => (
+                <li key={i} className="rounded-2xl bg-white border border-deep-night/10 p-4 flex items-start gap-3">
+                  <span className="inline-flex shrink-0 w-8 h-8 rounded-full bg-deep-night text-snow font-heading text-lg items-center justify-center" aria-hidden="true">{i + 1}</span>
+                  <span className="text-deep-night/85 text-sm leading-relaxed">{r}</span>
+                </li>
+              ))}
+            </ol>
+            <p className="mt-5 rounded-xl bg-amber-100 border border-amber-300 px-4 py-3 text-amber-950 text-base leading-relaxed flex items-start gap-2">
+              <AlertTriangle className="w-4 h-4 text-amber-700 shrink-0 mt-1" aria-hidden="true" />
+              <span>{c.tornioBox.verifyLine}</span>
+            </p>
+            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-6">
               <AffiliateCTA
                 partner="hotels"
                 sid="fishing_tornio_stay"
                 destination="Pello"
-                className="inline-flex items-center gap-2 mt-6 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
               >
                 <MapPin className="w-4 h-4" />
                 {c.tornioBox.ctaStay}
               </AffiliateCTA>
+              <OfficialLink href={OFFICIAL.tornioArea} onPaper>eräluvat.fi: area 2502</OfficialLink>
+              <OfficialLink href={OFFICIAL.tornioVN} onPaper>valtioneuvosto.fi</OfficialLink>
             </div>
           </div>
         </section>
 
-        {/* ICE FISHING */}
-        <section id="ice" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2.5 mb-3">
-              <Snowflake className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
-              <h2 className={H2}>{c.iceFishing.title}</h2>
+        {/* JÄRVET + TENO — kaksi korttia rinnakkain */}
+        <section className="px-4 sm:px-6 pb-14 sm:pb-18">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="lv-surface rounded-2xl overflow-hidden flex flex-col">
+              <div className="relative h-52 overflow-hidden">
+                <img src={LAKE_IMG} {...respImg(LAKE_IMG, 'half')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1920" height="1440" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(LAKE_IMG) }} />
+                <PhotoCredit src={LAKE_IMG} links={false} />
+              </div>
+              <div className="p-6 sm:p-8">
+                <h2 className={H2}>{c.lakes.title}</h2>
+                <div className="mt-3">
+                  <Clamp text={c.lakes.body} more={c.readMore} lang={lang} className="text-snow/75 text-base leading-relaxed" />
+                </div>
+                <div className="mt-4">
+                  <OfficialLink href={OFFICIAL.inariLake}>eräluvat.fi: Inarijärvi</OfficialLink>
+                </div>
+              </div>
             </div>
-            <p className="text-snow/75 text-base leading-relaxed mt-2">{c.iceFishing.body}</p>
-            <div className="mt-6">
-              <SectionImage src={FISHING_IMG.ice} alt={c.imageAlts.ice} />
-            </div>
-            <div className={`${CARD} p-5 mt-6`}>
-              <h3 className="font-heading text-lg text-snow tracking-wide mb-1.5 flex items-center gap-2">
-                <AlertTriangle className="w-4 h-4 text-amber-400" aria-hidden="true" />
-                {c.iceFishing.safetyTitle}
-              </h3>
-              <p className="text-snow/70 text-sm leading-relaxed">{c.iceFishing.safetyBody}</p>
-            </div>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-6">
-              <AffiliateCTA
-                partner="activities"
-                sid="fishing_ice_rovaniemi"
-                destination="rovaniemi-l2653/rovaniemi-ice-fishing-experience-t195392"
-                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
-              >
-                <Fish className="w-4 h-4" />
-                {c.iceFishing.cta}
-              </AffiliateCTA>
-              <OfficialLink href={OFFICIAL.restrictionMap}>kalastusrajoitus.fi</OfficialLink>
+            <div className="lv-surface rounded-2xl overflow-hidden flex flex-col border-red-400/25">
+              <div className="h-1.5 bg-gradient-to-r from-red-500/70 via-red-400/40 to-transparent" aria-hidden="true" />
+              <div className="p-6 sm:p-8 flex flex-col flex-1">
+                <h2 className={H2}>{c.teno.title}</h2>
+                <div className="mt-3">
+                  <Clamp text={c.teno.body} more={c.readMore} lang={lang} className="text-snow/75 text-base leading-relaxed" />
+                </div>
+                <p className="mt-4 rounded-xl bg-emerald-500/10 border border-emerald-400/25 px-4 py-3 text-snow/85 text-sm leading-relaxed">{c.teno.whatYouCan}</p>
+                <p className="text-snow/80 text-sm leading-relaxed mt-4 flex items-start gap-2">
+                  <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>{c.teno.warnThirdParty}</span>
+                </p>
+                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-auto pt-5">
+                  <OfficialLink href={OFFICIAL.tenoLuvat}>tenonkalaluvat.fi</OfficialLink>
+                  <OfficialLink href={OFFICIAL.tenoSaadokset}>tenonkalatalousalue.fi</OfficialLink>
+                  <OfficialLink href={OFFICIAL.tenoVN}>valtioneuvosto.fi</OfficialLink>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* LICENCES */}
-        <section id="licences" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
+        {/* PILKKIMINEN — valokuva koko leveydeltä, teksti lasipaneelissa sen päällä */}
+        <section id="ice" className="relative scroll-mt-20 overflow-hidden">
+          <img src={FISHING_IMG.ice} {...respImg(FISHING_IMG.ice, 'hero')} alt={c.imageAlts.ice} loading="lazy" decoding="async" width="1400" height="788" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.ice) }} />
+          <div className="absolute inset-0 bg-gradient-to-b from-deep-night via-deep-night/10 via-25% to-deep-night/60" aria-hidden="true" />
+          <div className="absolute inset-x-0 top-14 h-6">
+            <PhotoCredit src={FISHING_IMG.ice} />
+          </div>
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+            <div className="max-w-xl rounded-3xl bg-deep-night/85 backdrop-blur-md border border-white/15 p-6 sm:p-8 shadow-2xl shadow-black/50">
+              <div className="flex items-center gap-2.5 mb-3">
+                <Snowflake className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
+                <h2 className={H2}>{c.iceFishing.title}</h2>
+              </div>
+              <Clamp text={c.iceFishing.body} more={c.readMore} lang={lang} className="text-snow/80 text-base leading-relaxed" />
+              <div className="mt-5 rounded-xl bg-amber-500/10 border border-amber-400/30 p-4">
+                <h3 className="font-heading text-lg text-snow tracking-wide mb-1 flex items-center gap-2">
+                  <AlertTriangle className="w-4 h-4 text-amber-400" aria-hidden="true" />
+                  {c.iceFishing.safetyTitle}
+                </h3>
+                <Clamp text={c.iceFishing.safetyBody} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
+              </div>
+              <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-6">
+                <AffiliateCTA
+                  partner="activities"
+                  sid="fishing_ice_rovaniemi"
+                  destination="rovaniemi-l2653/rovaniemi-ice-fishing-experience-t195392"
+                  className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                >
+                  <Fish className="w-4 h-4" />
+                  {c.iceFishing.cta}
+                </AffiliateCTA>
+                <OfficialLink href={OFFICIAL.restrictionMap}>kalastusrajoitus.fi</OfficialLink>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* LUVAT JA MAKSUT — kolme korttia + alamitat lajilaattoina paperilla */}
+        <section id="licences" className="scroll-mt-20 px-4 sm:px-6 py-14 sm:py-18">
+          <div className="max-w-7xl mx-auto">
             <p className={`${EYEBROW} mb-3`}>{c.eyebrows.legal}</p>
             <h2 className={H2}>{c.licenses.title}</h2>
-            <div className="text-snow/75 text-base leading-relaxed mt-4 space-y-4">
-              <p>{c.licenses.fee}</p>
-              <p>{c.licenses.freeRights}</p>
-              <p>{c.licenses.waterPermits}</p>
-            </div>
-            <h3 className="font-heading text-xl text-snow tracking-wide mt-8 mb-3">{c.licenses.sizesTitle}</h3>
-            <ul className={`${CARD} divide-y divide-white/10 overflow-hidden`}>
-              {c.licenses.sizes.map((s, i) => (
-                <li key={i} className="px-5 py-3 text-snow/75 text-sm leading-relaxed">{s}</li>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+              {([
+                { Icon: Ticket, text: c.licenses.fee },
+                { Icon: Gift, text: c.licenses.freeRights },
+                { Icon: ListChecks, text: c.licenses.waterPermits },
+              ] as const).map(({ Icon, text }, i) => (
+                <div key={i} className="lv-surface rounded-2xl p-6">
+                  <span className="inline-flex w-11 h-11 rounded-xl bg-vibe-pink/12 items-center justify-center mb-4"><Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" /></span>
+                  <Clamp text={text} more={c.readMore} lang={lang} className="text-snow/80 text-sm leading-relaxed" />
+                </div>
               ))}
-            </ul>
-            <p className="text-snow/80 text-sm leading-relaxed mt-6 flex items-start gap-2">
-              <ShieldCheck className="w-4 h-4 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
-              <span>{c.licenses.alwaysCheck}</span>
-            </p>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 mt-5">
-              <OfficialLink href={OFFICIAL.fee}>eräluvat.fi: fee</OfficialLink>
-              <OfficialLink href={OFFICIAL.permits}>eräluvat.fi: permits</OfficialLink>
-              <OfficialLink href={OFFICIAL.sizes}>eräluvat.fi: sizes</OfficialLink>
-              <OfficialLink href={OFFICIAL.mmm}>mmm.fi</OfficialLink>
-              <OfficialLink href={OFFICIAL.restrictionMap}>kalastusrajoitus.fi</OfficialLink>
+            </div>
+
+            <div className={`${PAPER} p-6 sm:p-10 mt-8`}>
+              <h3 className="font-heading text-2xl sm:text-3xl text-deep-night tracking-wide flex items-center gap-2.5">
+                <Ruler className="w-6 h-6 text-[#BE185D]" aria-hidden="true" />
+                {c.licenses.sizesTitle}
+              </h3>
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
+                {c.licenses.sizes.slice(0, -1).map((s, i) => {
+                  const [label, rest] = splitLabel(s);
+                  return (
+                    <li key={i} className="rounded-2xl bg-white border border-deep-night/10 p-4">
+                      {label && <span className="block font-heading text-2xl text-deep-night tracking-wide leading-none mb-1.5">{label}</span>}
+                      <span className="block text-deep-night/80 text-sm leading-relaxed">{rest}</span>
+                    </li>
+                  );
+                })}
+              </ul>
+              <p className="text-deep-night/80 text-base leading-relaxed mt-4">{c.licenses.sizes[c.licenses.sizes.length - 1]}</p>
+              <p className="text-deep-night/85 text-sm leading-relaxed mt-5 flex items-start gap-2">
+                <ShieldCheck className="w-4 h-4 text-[#BE185D] shrink-0 mt-0.5" aria-hidden="true" />
+                <span>{c.licenses.alwaysCheck}</span>
+              </p>
+              <div className="flex flex-wrap gap-x-5 gap-y-2 mt-5 pt-5 border-t border-deep-night/10">
+                <OfficialLink href={OFFICIAL.fee} onPaper>eräluvat.fi: fee</OfficialLink>
+                <OfficialLink href={OFFICIAL.permits} onPaper>eräluvat.fi: permits</OfficialLink>
+                <OfficialLink href={OFFICIAL.sizes} onPaper>eräluvat.fi: sizes</OfficialLink>
+                <OfficialLink href={OFFICIAL.mmm} onPaper>mmm.fi</OfficialLink>
+                <OfficialLink href={OFFICIAL.restrictionMap} onPaper>kalastusrajoitus.fi</OfficialLink>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* TENO */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <h2 className={H2}>{c.teno.title}</h2>
-            <p className="text-snow/75 text-base leading-relaxed mt-4">{c.teno.body}</p>
-            <p className="text-snow/75 text-base leading-relaxed mt-4">{c.teno.whatYouCan}</p>
-            <p className="text-snow/80 text-sm leading-relaxed mt-4 flex items-start gap-2">
-              <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-              <span>{c.teno.warnThirdParty}</span>
-            </p>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 mt-5">
-              <OfficialLink href={OFFICIAL.tenoLuvat}>tenonkalaluvat.fi</OfficialLink>
-              <OfficialLink href={OFFICIAL.tenoSaadokset}>tenonkalatalousalue.fi</OfficialLink>
-              <OfficialLink href={OFFICIAL.tenoVN}>valtioneuvosto.fi</OfficialLink>
+        {/* NORJA — kuva ja meriosa rinnakkain, vienti ja kuningasrapu korteiksi */}
+        <section id="norway" className="scroll-mt-20 px-4 sm:px-6 pb-14 sm:pb-18">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center">
+              <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl shadow-black/40 aspect-[4/3]">
+                <img src={FISHING_IMG.kingCrab} {...respImg(FISHING_IMG.kingCrab, 'half')} alt={c.imageAlts.kingCrab} loading="lazy" decoding="async" width="1400" height="990" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.kingCrab) }} />
+                <PhotoCredit src={FISHING_IMG.kingCrab} />
+              </div>
+              <div>
+                <div className="flex items-center gap-2.5 mb-3">
+                  <Waves className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
+                  <h2 className={H2}>{c.norway.title}</h2>
+                </div>
+                <Clamp text={c.norway.seaBody} more={c.readMore} lang={lang} className="text-snow/80 text-base leading-relaxed" />
+                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
+                  <OfficialLink href={OFFICIAL.fiskeridirReg}>fiskeridir.no: regulations</OfficialLink>
+                  <OfficialLink href={OFFICIAL.lovdata}>lovdata.no: §47</OfficialLink>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mt-8">
+              <div className="lv-surface rounded-2xl p-6 sm:p-8 flex flex-col">
+                <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{c.norway.crabTitle}</h3>
+                <Clamp text={c.norway.crabBody} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
+                <p className="text-snow/70 text-sm leading-relaxed mt-4 flex items-start gap-2">
+                  <Car className="w-4 h-4 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
+                  <span>{c.norway.carNote}</span>
+                </p>
+                <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-auto pt-5">
+                  <AffiliateCTA
+                    partner="activities"
+                    sid="fishing_crab_kirkenes"
+                    destination="kirkenes-l97740/saariselka-king-crab-safari-to-kirkenes-with-lunch-t1158887"
+                    className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                  >
+                    <Anchor className="w-4 h-4" />
+                    {c.norway.cta}
+                  </AffiliateCTA>
+                  <AffiliateCTA
+                    partner="activities"
+                    sid="fishing_crab_rib"
+                    destination="kirkenes-l97740/kirkenes-summer-king-crab-safari-by-rib-with-king-crab-meal-t1200620"
+                    className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
+                  >
+                    <Anchor className="w-3.5 h-3.5" />
+                    {c.norway.ribLabel}
+                  </AffiliateCTA>
+                  <OfficialLink href={OFFICIAL.fiskeridirCrab}>fiskeridir.no: king crab</OfficialLink>
+                </div>
+              </div>
+              <div className="lv-surface rounded-2xl p-6 sm:p-8 flex flex-col">
+                <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{c.norway.exportTitle}</h3>
+                <Clamp text={c.norway.exportBody} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
+                <div className="flex flex-wrap gap-x-5 gap-y-2 mt-auto pt-5">
+                  <OfficialLink href={OFFICIAL.fiskeridirExport}>fiskeridir.no: export quota</OfficialLink>
+                  <OfficialLink href={OFFICIAL.toll}>toll.no</OfficialLink>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* NORWAY */}
-        <section id="norway" className="py-14 sm:py-18 border-b border-white/5 scroll-mt-20">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2.5 mb-3">
-              <Waves className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
-              <h2 className={H2}>{c.norway.title}</h2>
-            </div>
-            <p className="text-snow/75 text-base leading-relaxed mt-2">{c.norway.seaBody}</p>
-            <div className="mt-6">
-              <SectionImage src={FISHING_IMG.kingCrab} alt={c.imageAlts.kingCrab} />
-            </div>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
-              <OfficialLink href={OFFICIAL.fiskeridirReg}>fiskeridir.no: regulations</OfficialLink>
-              <OfficialLink href={OFFICIAL.lovdata}>lovdata.no: §47</OfficialLink>
-            </div>
-
-            <h3 className="font-heading text-xl text-snow tracking-wide mt-8 mb-2">{c.norway.exportTitle}</h3>
-            <p className="text-snow/75 text-base leading-relaxed">{c.norway.exportBody}</p>
-            <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
-              <OfficialLink href={OFFICIAL.fiskeridirExport}>fiskeridir.no: export quota</OfficialLink>
-              <OfficialLink href={OFFICIAL.toll}>toll.no</OfficialLink>
-            </div>
-
-            <h3 className="font-heading text-xl text-snow tracking-wide mt-8 mb-2">{c.norway.crabTitle}</h3>
-            <p className="text-snow/75 text-base leading-relaxed">{c.norway.crabBody}</p>
-            <p className="text-snow/70 text-sm leading-relaxed mt-3 flex items-start gap-2">
-              <Car className="w-4 h-4 text-vibe-pink shrink-0 mt-0.5" aria-hidden="true" />
-              <span>{c.norway.carNote}</span>
-            </p>
-            <div className="flex flex-wrap items-center gap-x-5 gap-y-3 mt-5">
-              <AffiliateCTA
-                partner="activities"
-                sid="fishing_crab_kirkenes"
-                destination="kirkenes-l97740/saariselka-king-crab-safari-to-kirkenes-with-lunch-t1158887"
-                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
-              >
-                <Anchor className="w-4 h-4" />
-                {c.norway.cta}
-              </AffiliateCTA>
-              <AffiliateCTA
-                partner="activities"
-                sid="fishing_crab_rib"
-                destination="kirkenes-l97740/kirkenes-summer-king-crab-safari-by-rib-with-king-crab-meal-t1200620"
-                className="inline-flex items-center gap-1.5 text-vibe-pink hover:text-pink-300 text-sm font-semibold"
-              >
-                <Anchor className="w-3.5 h-3.5" />
-                {c.norway.ribLabel}
-              </AffiliateCTA>
-              <OfficialLink href={OFFICIAL.fiskeridirCrab}>fiskeridir.no: king crab</OfficialLink>
+        {/* KALAT ENSIN — neljä lyhyttä tarinaa: otsikko näkyy, runko aukeaa */}
+        <section className="border-t border-white/5 px-4 sm:px-6 py-14 sm:py-18 bg-gradient-to-b from-white/[0.03] to-transparent">
+          <div className="max-w-7xl mx-auto">
+            <p className={`${EYEBROW} mb-3`}>{c.eyebrows.eco}</p>
+            <h2 className={H2}>{c.eco.title}</h2>
+            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl">{c.eco.lead}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
+              {c.eco.stories.map((s, i) => {
+                const Icon = ECO_ICONS[i] ?? Fish;
+                return (
+                  <div key={s.title} className="lv-surface rounded-2xl p-6">
+                    <Icon className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
+                    <h3 className="font-heading text-xl text-snow tracking-wide mb-2">{s.title}</h3>
+                    <Clamp text={s.body} more={c.readMore} lang={lang} className="text-snow/70 text-sm leading-relaxed" />
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        {/* GETTING THERE */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2.5 mb-3">
-              <Car className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
-              <h2 className={H2}>{c.gettingThere.title}</h2>
-            </div>
-            <p className="text-snow/75 text-base leading-relaxed mt-2">{c.gettingThere.body}</p>
-            <div className="flex flex-wrap gap-3 mt-6">
-              <AffiliateCTA
-                partner="cars"
-                sid="fishing_getting_there"
-                destination="RVN"
-                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
-              >
-                <Car className="w-4 h-4" />
-                {c.gettingThere.cta}
-              </AffiliateCTA>
-              <AffiliateCTA
-                partner="cars"
-                sid="fishing_getting_there_ktt"
-                destination="KTT"
-                className="inline-flex items-center gap-2 border border-snow/40 hover:border-snow text-snow px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
-              >
-                Kittilä (KTT)
-              </AffiliateCTA>
-              <AffiliateCTA
-                partner="cars"
-                sid="fishing_getting_there_ivl"
-                destination="IVL"
-                className="inline-flex items-center gap-2 border border-snow/40 hover:border-snow text-snow px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
-              >
-                Ivalo (IVL)
-              </AffiliateCTA>
-            </div>
-          </div>
-        </section>
-
-        {/* GEAR */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2.5 mb-3">
-              <Backpack className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
-              <h2 className={H2}>{c.gear.title}</h2>
-            </div>
-            <p className="text-snow/75 text-base leading-relaxed mt-2">{c.gear.body}</p>
-          </div>
-        </section>
-
-        {/* SEASON TABLE — mobile-safe definition list (no wide <table>) */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center gap-2.5 mb-6">
-              <CalendarDays className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
-              <h2 className={H2}>{c.season.title}</h2>
-            </div>
-            <dl className={`${CARD} divide-y divide-white/10 overflow-hidden`}>
-              {c.season.rows.map((r, i) => (
-                <div key={i} className="grid grid-cols-1 sm:grid-cols-[150px_1fr] gap-1 sm:gap-4 px-5 py-4">
-                  <dt className="font-heading text-vibe-pink text-lg tracking-wide">{r.period}</dt>
-                  <dd className="text-snow/75 text-sm leading-relaxed">{r.what}</dd>
+        {/* KAUSI YHDELLÄ SILMÄYKSELLÄ — paperiarkki, jaksot laattoina */}
+        <section className="px-4 sm:px-6 pb-14 sm:pb-18">
+          <div className={`max-w-7xl mx-auto ${PAPER} p-6 sm:p-10`}>
+            <h2 className={`${H2_PAPER} flex items-center gap-2.5`}>
+              <CalendarDays className="w-7 h-7 text-[#BE185D]" aria-hidden="true" />
+              {c.season.title}
+            </h2>
+            <dl className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
+              {c.season.rows.slice(0, -1).map((r, i) => (
+                <div key={i} className="rounded-2xl bg-white border border-deep-night/10 p-4">
+                  <dt className="font-heading text-[#BE185D] text-2xl tracking-wide leading-none">{r.period}</dt>
+                  <dd className="text-deep-night/80 text-sm leading-relaxed mt-2">{r.what}</dd>
                 </div>
               ))}
             </dl>
+            {c.season.rows.length > 0 && (
+              <p className="text-deep-night/80 text-base leading-relaxed mt-4">
+                <span className="font-semibold">{c.season.rows[c.season.rows.length - 1].period}{labelColon(lang)}</span>
+                {c.season.rows[c.season.rows.length - 1].what}
+              </p>
+            )}
+          </div>
+        </section>
+
+        {/* SINNE PÄÄSY + VARUSTEET — kaksi korttia rinnakkain */}
+        <section className="px-4 sm:px-6 pb-14 sm:pb-18">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div className="lv-surface rounded-2xl p-6 sm:p-8">
+              <div className="flex items-center gap-2.5 mb-3">
+                <Car className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
+                <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.gettingThere.title}</h2>
+              </div>
+              <Clamp text={c.gettingThere.body} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
+              <div className="flex flex-wrap gap-3 mt-6">
+                <AffiliateCTA
+                  partner="cars"
+                  sid="fishing_getting_there"
+                  destination="RVN"
+                  className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                >
+                  <Car className="w-4 h-4" />
+                  {c.gettingThere.cta}
+                </AffiliateCTA>
+                <AffiliateCTA
+                  partner="cars"
+                  sid="fishing_getting_there_ktt"
+                  destination="KTT"
+                  className="inline-flex items-center gap-2 border border-snow/40 hover:border-snow text-snow px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                >
+                  Kittilä (KTT)
+                </AffiliateCTA>
+                <AffiliateCTA
+                  partner="cars"
+                  sid="fishing_getting_there_ivl"
+                  destination="IVL"
+                  className="inline-flex items-center gap-2 border border-snow/40 hover:border-snow text-snow px-5 py-2.5 rounded-full text-sm font-semibold transition-all"
+                >
+                  Ivalo (IVL)
+                </AffiliateCTA>
+              </div>
+            </div>
+            <div className="lv-surface rounded-2xl p-6 sm:p-8">
+              <div className="flex items-center gap-2.5 mb-3">
+                <Backpack className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
+                <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.gear.title}</h2>
+              </div>
+              <Clamp text={c.gear.body} more={c.readMore} lang={lang} className="text-snow/75 text-sm leading-relaxed" />
+            </div>
           </div>
         </section>
 
         {/* FAQ */}
-        <section className="py-14 sm:py-18 border-b border-white/5">
+        <section className="py-14 sm:py-18 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
             <div className="flex items-center gap-2.5 mb-6">
               <HelpCircle className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
@@ -634,11 +738,11 @@ export default function FishingPage() {
         </section>
 
         {/* KEEP EXPLORING — cross-links */}
-        <section className="py-14 sm:py-18">
+        <section className="py-14 sm:py-18 border-t border-white/5">
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <p className={`${EYEBROW} mb-3`}>{c.eyebrows.explore}</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link to={to('/categories/fishing')} className={`${CARD} p-6 hover:border-vibe-pink/40 transition-colors block`}>
+              <Link to={to('/categories/fishing')} className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block">
                 <Fish className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1">{c.crossLinks[0].title}</h3>
                 <p className="text-snow/65 text-sm">{c.crossLinks[0].blurb}</p>
@@ -647,7 +751,7 @@ export default function FishingPage() {
                 href="https://laplandnature.com/freshwater/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${CARD} p-6 hover:border-vibe-pink/40 transition-colors block`}
+                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block"
               >
                 <Waves className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
@@ -659,7 +763,7 @@ export default function FishingPage() {
                 href="https://laplandvisit.com/arctic-norway/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`${CARD} p-6 hover:border-vibe-pink/40 transition-colors block`}
+                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block"
               >
                 <MapPin className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">

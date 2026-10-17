@@ -6,6 +6,7 @@ const es: SectionCopy = {
     metaTitle: 'Pesca en Laponia y el océano Ártico',
     metaDescription: "Pesca en hielo gratuita, ríos de salmón con licencia como el Tornio y safaris de cangrejo real en Noruega: normas, tasas 2026 y enlaces de permisos.",
     verifyBanner: 'Las normas cambian cada año: consulte las condiciones oficiales del permiso antes de pescar. Cada cifra de abajo cita y enlaza su fuente.',
+    readMore: "Leer más",
     hero: {
       eyebrow: 'Laponia finlandesa · Noruega ártica',
       title: 'Pesca en Laponia y el océano Ártico',

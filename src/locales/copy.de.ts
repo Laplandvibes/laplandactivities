@@ -6,6 +6,7 @@ const de: SectionCopy = {
     metaTitle: 'Angeln in Lappland & im Nordmeer',
     metaDescription: 'Kostenloses Eisangeln, lizenzierte Lachsflüsse wie der Tornio und Königskrabben-Safaris: die Regeln, Gebühren und offiziellen Genehmigungslinks für 2026.',
     verifyBanner: 'Die Vorschriften ändern sich jedes Jahr. Prüfen Sie die offiziellen Genehmigungsbedingungen vor dem Angeln. Jede Zahl unten nennt und verlinkt ihre Quelle.',
+    readMore: "Weiterlesen",
     hero: {
       eyebrow: 'Finnisch-Lappland · Arktisches Norwegen',
       title: 'Angeln in Lappland & im Nordmeer',

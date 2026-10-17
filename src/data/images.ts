@@ -153,12 +153,14 @@ const KEYWORD_IMAGE: Array<{ match: RegExp; img?: string; imgs?: string[] }> = [
   { match: /s[íi]ida/i,                                                 img: local('activities/culture/sami-heritage.webp') },
   { match: /samiland/i,                                                 img: local('activities/culture/sami-duodji.webp') },
   { match: /arktikum/i,                                                 img: local('activities/culture/arctic-city.webp') },
+  // 17.10.2026: oli tekoälykuva, nyt oma kuva Pentikmäeltä Posiolta 10.10.2026.
   { match: /pentik/i,                                                   img: local('activities/culture/ceramics.webp') },
   { match: /museum|m[uu]seo/i,                                          img: local('activities/culture/arctic-city.webp') },
   // Karhunkierros = "Bear's Ring" HIKING trail (summer trek) — NOT wildlife. Must match before /bear/.
   { match: /karhunkierros|bear.?s ring|little bear.?s ring/i,           img: local('activities/summer/oulanka-ruska-trail.webp') },
   { match: /raft|river run|kitkajoki/i,                                 img: local('activities/adventure/kitkajoki-rapids.webp') },
   // Ranua Zoo genuinely has a polar bear — that's the only correct use of polar-bears.webp.
+  // 17.10.2026: oli tekoälykuva (jääkarhu lumimetsässä), nyt oma kuva Ranuan eläinpuistosta 10.10.2026.
   { match: /polar bear|ranua/i,                                         img: local('activities/wildlife/polar-bears.webp') },
   // Wolverine/lynx/fox: no dedicated image yet → generic green-summer wilderness (not a bear).
   { match: /wolverine|lynx|fox|arctic hare/i,                           img: local('categories/summer.webp') },
@@ -354,7 +356,9 @@ const CATEGORY_HERO: Record<string, string> = {
   // Hero lupasi lajin jota sivu ei tarjoa. Nyt kesalla nakyy se yksi kesalaji joka
   // kategoriassa on: Kitkajoen kosket. Pyorakuva jaa kayttoon siella missa
   // pyorailyaktiviteetti oikeasti on (matchEntry: /mountain bike|mtb|cycling/).
-  adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/kitkajoki-rapids.webp')),
+  // 17.10.2026: syksyllä (syys–loka) oma kuva, huurteinen koski tie 4:n varrella Inarin ja Kevon välillä 13.10.2026.
+  // Ennen lokakuussa näkyi kesän Kitkajoki pystykuvana vaakakortissa.
+  adventure:        seasonal(local('activities/adventure/korouoma-frozen.webp'), local('activities/adventure/kitkajoki-rapids.webp'), local('activities/adventure/kevo-river-frost.webp')),
   // 4.10.2026 (Vesa: talvella ei kesäkuvaa): syyskuva syys–lokakuulle, ettei kesän poro näy lokakuussa.
   animals:          seasonal(local('heroes/reindeer-winter.webp'), local('heroes/reindeer-herd-sunset.webp'), local('heroes/reindeer-autumn-saariselka.webp')),
   'northern-lights': local('activities/northern-lights/aurora-lake.webp'),
@@ -401,8 +405,10 @@ const DEST_HERO: Record<string, string> = {
   // Saariselka: sama kuva molemmissa kausissa (kuten rovaniemi/pyha-luosto). Talvipaikka
   // oli savusaunakuva, joka on wellness-kategorian kuva, ja kesapaikka kajakki, joka on
   // seikkailukategorian kuva - eli kumpikin kausi oli duplikaatti etusivulla.
-  saariselka: seasonal(local('heroes/saariselka-winter.webp'), local('activities/summer/kiilopaa-view-east.webp')),
-  inari:      seasonal(local('heroes/inari-winter-lake.webp'), local('heroes/inari-summer-lake.webp')),
+  // 17.10.2026: syksyllä oma kuva Saariselän kylästä Kaunispäälle iltavalossa 11.10.2026.
+  saariselka: seasonal(local('heroes/saariselka-winter.webp'), local('activities/summer/kiilopaa-view-east.webp'), local('heroes/saariselka-autumn.webp')),
+  // 17.10.2026: syksyllä oma kuva Inarijärveltä Ivalon ja Inarin väliltä 12.10.2026.
+  inari:      seasonal(local('heroes/inari-winter-lake.webp'), local('heroes/inari-summer-lake.webp'), local('heroes/inari-autumn-lake.webp')),
   // Ruka: kesapaikka oli porolauma, joka on elainkategorian kuva. Oma tunturikuva.
   ruka:       seasonal(local('heroes/ruka-winter-slopes.webp'), local('heroes/ruka-fell.webp')),
   // Posio = Riisitunturi + Korouoma wilderness. Winter → snowmobile fells; the
@@ -498,6 +504,16 @@ const FOCAL: Record<string, string> = {
   '/images/heroes/saariselka-winter.webp': 'center 47%',
   '/images/heroes/inari-winter-lake.webp': 'center 50%',
   '/images/heroes/inari-summer-lake.webp': 'center 50%',
+  // Omat lokakuun 2026 kuvat (16:9). Inarijärven tunturi ja heijastus keskellä; Saariselän
+  // tunturi ja Kaunispään huippu yläkolmanneksessa; koski alaosassa; jääkarhu keskellä.
+  '/images/heroes/inari-autumn-lake.webp': 'center 55%',
+  '/images/heroes/saariselka-autumn.webp': 'center 40%',
+  '/images/activities/adventure/kevo-river-frost.webp': 'center 60%',
+  '/images/activities/wildlife/polar-bears.webp': 'center 55%',
+  '/images/activities/fishing/inarijarvi-shore.webp': 'center 55%',
+  '/images/activities/fishing/teno-valley.webp': 'center 50%',
+  '/images/activities/fishing/ivalojoki.webp': 'center 55%',
+  '/images/activities/culture/ceramics.webp': 'center 50%',
   '/images/heroes/posio-winter-tykky.webp': 'center 50%',
   '/images/heroes/posio-summer-lake.webp': 'center 50%',
   '/images/heroes/pyha-winter-slopes.webp': 'center 50%',
