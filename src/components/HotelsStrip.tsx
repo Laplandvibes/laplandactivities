@@ -57,8 +57,9 @@ const META: {
 export default function HotelsStrip() {
   const lang = useLang();
   const c = COPY[lang].hotelsStrip;
-  // fi links carry locale=fi_FI -> Worker routes to Sembo; every other locale -> Trip.com.
-  const partnerLabel = lang === 'fi' ? 'Sembo' : 'Trip.com';
+  // The Worker routes fi_FI/sv_SE/de_DE/en_US to Sembo (SEMBO_MARKETS, en since 17.10.2026),
+  // every other locale to Trip.com.
+  const partnerLabel = ['fi', 'sv', 'de', 'en'].includes(lang) ? 'Sembo' : 'Trip.com';
 
   return (
     <section className="py-16 sm:py-24 px-4 sm:px-6 bg-deep-night border-t border-white/5">
