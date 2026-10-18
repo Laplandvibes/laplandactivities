@@ -80,12 +80,16 @@ export default function HeroSlider() {
       {slides.map((s, i) => (
         <div
           key={s.src}
-          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${i === idx ? 'opacity-70' : 'opacity-0'}`}
+          // 18.10.2026: täysi peittävyys (oli opacity-70 = koko kuva 30 % tummempi). Puhelimella kuva on
+          // nyt oma kaistansa ilman tekstiä, ja lg+:n luettavuuden hoitaa Heron vaakaliukuma.
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${i === idx ? 'opacity-100' : 'opacity-0'}`}
           aria-hidden={i !== idx}
         >
+          {/* 'band': puhelimen 42svh-kaista on lähes neliö, joten 16:9-kuva piirtyy ~1,6 × ikkunan
+              levyisenä; '100vw' valitsisi liian pienen kopion (sama syy kuin alasivujen herot 17.10.). */}
           <SmartImage
             src={s.src}
-            {...respImg(s.src, 'hero')}
+            {...respImg(s.src, 'band')}
             fallback={s.fallback}
             alt={s.alt}
             loading={i === 0 ? 'eager' : 'lazy'}
@@ -100,7 +104,8 @@ export default function HeroSlider() {
       <PhotoCredit src={slides[idx].src} />
 
       {/* indicator dots */}
-      <div className="absolute bottom-24 sm:bottom-28 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+      {/* Alle lg:n kaistassa vasempaan alakulmaan (oikealla on kuvateksti), lg+:ssa keskelle heron alaosaan. */}
+      <div className="absolute bottom-3 left-4 lg:bottom-10 lg:left-1/2 lg:-translate-x-1/2 flex gap-2 z-10">
         {slides.map((_, i) => (
           <button
             key={i}
