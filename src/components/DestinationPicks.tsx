@@ -1,7 +1,7 @@
 import { ExternalLink } from 'lucide-react';
 import { pickIcon } from '../lib/pickIcon';
 import { gygHref } from '../shared/gyg/picks';
-import type { GygPick } from '../shared/gyg/picks';
+import type { GygPick, GygLocale } from '../shared/gyg/picks';
 import { picksForDestination, PICKS_CHECKED } from '../data/destinationPicks';
 import { useLang, useHtmlLang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
@@ -56,8 +56,17 @@ export default function DestinationPicks({ slug, place }: { slug: string; place:
   const lang = useLang();
   const locale = useHtmlLang();
   const c = COPY[lang].destPicks;
-  const rows: GygPick[] | null = picksForDestination(slug);
-  if (!rows) return null;
+  // Kortin nimi lukijan kielellä (Vesa 18.10.2026: "hae jokaisen poimintakortin nimi GetYourGuidelta
+  // sillä kielellä, jolla lukija sivua katsoo"): GYG:n OMA nimi sen kieliversiosta, jonka linkki avaa,
+  // joten kortti ja klikin jälkeinen sivu sanovat saman. Nimi puuttuu ⇒ korttia ei näytetä (verkoston
+  // sääntö, picks.ts localizePick: ei koskaan englantia toisen kielen sivulla). Ikoni luetaan yhä
+  // englanninkielisestä nimestä, koska pickIcon tuntee vain sen.
+  const all: GygPick[] | null = picksForDestination(slug);
+  const rows = (all ?? []).flatMap((p) => {
+    const shown = lang === 'en' ? p.title : p.titles?.[lang as GygLocale];
+    return shown ? [{ ...p, shown }] : [];
+  });
+  if (rows.length < 3) return null;
 
   return (
     <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
@@ -84,7 +93,7 @@ export default function DestinationPicks({ slug, place }: { slug: string; place:
                   <Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" />
                 </span>
                 <p className="font-body font-bold text-deep-night text-[15px] leading-snug group-hover:text-vibe-pink transition-colors">
-                  {p.title}
+                  {p.shown}
                 </p>
                 <p className="text-deep-night/60 text-xs mt-1.5">
                   {p.place}
