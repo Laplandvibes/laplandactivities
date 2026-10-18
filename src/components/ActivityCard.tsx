@@ -60,7 +60,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         {/* Ei koko kuvan tummennusta (Vesa 17.10.2026: "ihan kuin olisi jotain päällä"). Kuvan
             päällä on vain paikkalappu ja kuvakuitti, ja kummallakin on oma pohjansa, joten
             liukuväri ei lukenut tekstiä vaan himmensi valokuvan. */}
-        {omaKuva && <PhotoCredit src={img} at="top" wrap />}
+        {omaKuva && <PhotoCredit src={img} />}
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           <Link
             to={to(`/destinations/${activity.destinationSlug}`)}
@@ -87,11 +87,11 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         </p>
 
         {activity.highlights.length > 0 && (
-          <div className="flex flex-wrap justify-center lg:justify-start gap-1.5 mb-4">
-            {activity.highlights.slice(0, 3).map((h) => (
+          <div className="flex flex-nowrap justify-center lg:justify-start gap-1.5 mb-4 min-w-0">
+            {activity.highlights.slice(0, 2).map((h) => (
               <span
                 key={h}
-                className="text-[11px] bg-white/5 border border-white/10 px-2 py-0.5 rounded-md text-snow/65"
+                className="min-w-0 truncate text-[11px] bg-white/5 border border-white/10 px-2 py-0.5 rounded-md text-snow/65"
               >
                 {h}
               </span>

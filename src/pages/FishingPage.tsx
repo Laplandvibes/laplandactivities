@@ -377,10 +377,10 @@ export default function FishingPage() {
                     <div className="relative h-48 overflow-hidden">
                       <img src={img} {...respImg(img, 'card')} alt={card.name} loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(img) }} />
                       {/* Ei tummennusta: tilamerkillä ja kuitilla on oma pohja (17.10.2026). */}
-                      <span className={`absolute left-4 bottom-3 inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-wide uppercase backdrop-blur-sm ${badgeColor}`}>
+                      <span className={`absolute left-4 top-3 inline-flex items-center rounded-full border px-3 py-1 text-[11px] font-semibold tracking-wide uppercase backdrop-blur-sm ${badgeColor}`}>
                         {card.badge}
                       </span>
-                      <PhotoCredit src={img} links={false} at="top" wrap />
+                      <PhotoCredit src={img} links={false} />
                     </div>
                     <div className="p-6 flex flex-col flex-1 text-center lg:text-left">
                       <h3 className="font-heading text-2xl text-snow tracking-wide mb-2">{card.name}</h3>
@@ -502,7 +502,7 @@ export default function FishingPage() {
           <div className="max-w-7xl mx-auto lv-surface rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-[2fr_3fr]">
             <div className="relative h-64 sm:h-80 lg:h-auto lg:min-h-[28rem] overflow-hidden">
               <img src={FISHING_IMG.ice} {...respImg(FISHING_IMG.ice, 'half')} alt={c.imageAlts.ice} loading="lazy" decoding="async" width="1704" height="959" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: focalFor(FISHING_IMG.ice) }} />
-              <PhotoCredit src={FISHING_IMG.ice} at="top" wrap />
+              <PhotoCredit src={FISHING_IMG.ice} />
             </div>
             <div className="p-6 sm:p-8 lg:p-10 text-center lg:text-left">
               <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-3">

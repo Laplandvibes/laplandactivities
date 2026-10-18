@@ -140,10 +140,17 @@ export default function DestinationPage() {
           <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent" />
           <PhotoCredit src={heroImg} />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-10 lg:py-16 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-8 lg:py-16 w-full">
           {/* 17.10.2026 (Vesa: "eikö tablet ja mobiilissa pitäisi olla keskitetty nämä tekstit?"): alle 1024 px
               koko sivu yhdellä keskiakselilla, lg+ sarakkeen vasen reuna. Listat ja kuvake-rivit jäävät vasemmalle. */}
           <div className={`max-w-2xl mx-auto ${textRight ? 'lg:ml-auto lg:mr-0' : 'lg:mx-0'} text-center lg:text-left`}>
+            {/* 18.10.2026 (Vesa: "tekstit ja cta painikkeet ihan levällään"): puhelimella ja tabletilla paluulinkki
+                tekstipalstan alkuun, ei yksinään heron ja osion väliin; lg+:ssa se on heron alla omassa kaistassaan. */}
+            <div className="lg:hidden mb-3">
+              <Link to={to('/destinations')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
+                <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
+              </Link>
+            </div>
             <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/70 border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3">
               <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
             </span>
@@ -153,12 +160,12 @@ export default function DestinationPage() {
             <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3">{destination.tagline}</p>
             <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed max-lg:text-balance">{destination.description}</p>
 
-            <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-6">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start gap-3 mt-6 max-w-sm mx-auto sm:max-w-none lg:mx-0">
               <AffiliateCTA
                 partner="activities"
                 sid={`hero_${slug}_browse`}
                 destination={gygSlug}
-                className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+                className="inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
               >
                 <Sparkles className="w-4 h-4" />
                 {c.bookActivitiesIn.replace('{dest}', destination.name)}
@@ -167,7 +174,7 @@ export default function DestinationPage() {
                 partner="hotels"
                 sid={`hero_${slug}_hotels`}
                 destination={hotelsQ}
-                className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-snow border border-white/25 px-6 py-3 rounded-full text-sm font-semibold transition-all"
+                className="inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-snow border border-white/25 px-6 py-3 rounded-full text-sm font-semibold transition-all"
               >
                 <Hotel className="w-4 h-4" />
                 {c.stayIn} {destIn}
@@ -182,8 +189,8 @@ export default function DestinationPage() {
           päättyi 0,94:ään, joten kuvan alareuna jäi näkyviin kovana saumana, ja tämän kaistan border-b +
           seuraavan osion border-t piirsivät kaksi viivaa päällekkäin. Nyt tummennus = tausta reunassa,
           eikä viivoja: kuva liukuu murupolkuun ja aktiviteettiosioon. */}
-      <div className="bg-deep-night">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 text-center lg:text-left">
+      <div className="hidden lg:block bg-deep-night">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3">
           <Link to={to('/destinations')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
             <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allDestinationsNav}
           </Link>
@@ -200,7 +207,7 @@ export default function DestinationPage() {
           indeksisivuilla (Lappi-taso l2652, jossa Kuusamo-tuotteet eivät listaudu). */}
 
       {/* ALL ACTIVITIES — split by season (in-season first, then the other season) */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night">
+      <section className="pt-8 pb-12 sm:pt-12 sm:pb-16 lg:pt-16 px-4 sm:px-6 bg-deep-night">
         <div className="max-w-7xl mx-auto">
           <div className="mb-8 text-center lg:text-left">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.allActivitiesKicker}</span>
@@ -211,14 +218,14 @@ export default function DestinationPage() {
           </div>
 
           {/* category jump chips */}
-          <div className="flex flex-wrap justify-center lg:justify-start gap-2 mb-10">
+          <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center lg:justify-start mb-10">
             {categoryGroups.map((g) => (
               <Link
                 key={g.slug}
                 to={to(`/categories/${g.slug}`)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border border-white/15 bg-white/5 text-snow/80 hover:bg-vibe-pink/15 hover:border-vibe-pink/40 hover:text-snow transition-colors"
+                className="inline-flex items-center justify-center text-center leading-tight gap-1.5 px-3 py-2 sm:py-1.5 rounded-xl sm:rounded-full text-[13px] sm:text-sm font-medium border border-white/15 bg-white/5 text-snow/80 hover:bg-vibe-pink/15 hover:border-vibe-pink/40 hover:text-snow transition-colors"
               >
-                <g.icon className="w-3.5 h-3.5" /> {g.name} ({g.activities.length})
+                <g.icon className="w-3.5 h-3.5 shrink-0" /> <span className="text-balance">{g.name}{'\u00A0'}({g.activities.length})</span>
               </Link>
             ))}
           </div>

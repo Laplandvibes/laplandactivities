@@ -37,26 +37,31 @@ export default function PhotoCredit({ src, links = true, className = '', at = 'b
   // -lisenssin vaatima nimeäminen, joten sen on oltava luettava. Pohjaa ei kevennetä eikä
   // mustetta tehdä läpikuultavaksi (`bg-black/35` + valkoinen = 2,43:1 valkoisen kuvan päällä;
   // muut luvut yllä).
-  const base = `pointer-events-auto absolute ${at === 'top' ? 'top-1' : 'bottom-1'} right-1 z-10 ${wrap ? 'max-w-[calc(100%-0.5rem)]' : 'max-w-[58%] truncate'} rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white ${className}`;
+  // 18.10.2026 (Vesa: "kuvatekstit päin vittua"): yhden rivin tilassa tekijän nimi lyhenee (…) mutta lisenssi
+  // näkyy aina; ennen koko rivi katkesi lopusta, jolloin lisenssi jäi pois (korttitekstiportti), ja korjaus
+  // siirsi merkinnän kahdelle riville kuvan yläreunaan.
+  const pos = `pointer-events-auto absolute ${at === 'top' ? 'top-1' : 'bottom-1'} right-1 z-10 rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white ${className}`;
+  const base = wrap ? `${pos} max-w-[calc(100%-0.5rem)]` : `${pos} flex max-w-[62%] whitespace-nowrap`;
+  const one = wrap ? '' : 'truncate min-w-0';
   if (c.kind === 'partner') {
     // Kumppanin (esim. Sembo) oma hotellikuva: lähde näkyviin, ei lisenssilinkkiä (kuvalupa 10.9.2026).
-    return <span className={base}>{OWN_LABEL[lang]?.split(':')[0] ?? 'Photo'}: {c.author} · {c.license}</span>;
+    return <span className={base}><span className={one}>{OWN_LABEL[lang]?.split(':')[0] ?? 'Photo'}: {c.author}</span><span className="shrink-0">&nbsp;· {c.license}</span></span>;
   }
   if (c.kind === 'own') {
-    return <span className={base}>{OWN_LABEL[lang] ?? OWN_LABEL.en}{c.date ? ` ${c.date.slice(0, 4)}` : ''}</span>;
+    return <span className={base}><span className={one}>{OWN_LABEL[lang] ?? OWN_LABEL.en}{c.date ? ` ${c.date.slice(0, 4)}` : ''}</span></span>;
   }
   const lic = c.license;
   if (!links) {
-    return <span className={base}>© {c.author} · <span className="whitespace-nowrap">{lic}</span></span>;
+    return <span className={base}><span className={one}>© {c.author}</span><span className="shrink-0 whitespace-nowrap">&nbsp;· {lic}</span></span>;
   }
   return (
     <span className={base}>
-      <a href={c.pageUrl} target="_blank" rel="noopener" className="lv-tap hover:underline">© {c.author}</a>
-      {' · '}
+      <a href={c.pageUrl} target="_blank" rel="noopener" className={`lv-tap hover:underline ${one}`}>© {c.author}</a>
+      <span className="shrink-0 whitespace-nowrap">&nbsp;·&nbsp;</span>
       {c.licenseUrl ? (
-        <a href={c.licenseUrl} target="_blank" rel="license noopener" className="lv-tap whitespace-nowrap hover:underline">{lic}</a>
+        <a href={c.licenseUrl} target="_blank" rel="license noopener" className="lv-tap shrink-0 whitespace-nowrap hover:underline">{lic}</a>
       ) : (
-        <span className="whitespace-nowrap">{lic}</span>
+        <span className="shrink-0 whitespace-nowrap">{lic}</span>
       )}
     </span>
   );

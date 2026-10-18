@@ -152,9 +152,16 @@ export default function CategoryPage() {
             vahemman liiketta pyytaneet nakevat. */}
         <PhotoCredit src={heroImg} />
         </div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-10 lg:py-16 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-8 lg:py-16 w-full">
           {/* 17.10.2026: alle 1024 px tekstit keskelle yhdelle akselille (Vesa: tabletti ja puhelin), lg+ vasemmalle. */}
           <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+            {/* 18.10.2026 (Vesa: "tekstit ja cta painikkeet ihan levällään"): puhelimella ja tabletilla paluulinkki
+                tekstipalstan alkuun, ei yksinään heron ja osion väliin; lg+:ssa se on heron alla omassa kaistassaan. */}
+            <div className="lg:hidden mb-3">
+              <Link to={to('/categories')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
+                <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allCategoriesNav}
+              </Link>
+            </div>
             <div className="inline-flex w-14 h-14 rounded-2xl bg-deep-night/70 border border-vibe-pink/40 items-center justify-center mb-4">
               <category.icon className="w-7 h-7 text-vibe-pink" />
             </div>
@@ -167,7 +174,7 @@ export default function CategoryPage() {
               partner="activities"
               sid={`hero_cat_${slug}_browse`}
               destination={gygPath}
-              className="inline-flex items-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
+              className="flex w-full max-w-sm mx-auto sm:inline-flex sm:w-auto lg:mx-0 items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/30"
             >
               <Sparkles className="w-4 h-4" />
               {COPY[lang].bookingCta.browseTours}
@@ -177,7 +184,7 @@ export default function CategoryPage() {
       </section>
 
       {/* Breadcrumb — below the hero, not on the photo (Vesa 2026-07-07) */}
-      <div className="border-b border-white/5 bg-deep-night">
+      <div className="hidden lg:block border-b border-white/5 bg-deep-night">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 text-center lg:text-left">
           <Link to={to('/categories')} className="lv-tap inline-flex items-center gap-1 text-snow/70 text-sm hover:text-snow transition-colors">
             <ArrowLeft className="w-4 h-4 text-vibe-pink" /> {c.allCategoriesNav}
@@ -185,7 +192,7 @@ export default function CategoryPage() {
         </div>
       </div>
 
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
+      <section className="pt-8 pb-12 sm:pt-12 sm:pb-16 lg:pt-16 px-4 sm:px-6 bg-deep-night lg:border-t lg:border-white/5">
         <div className="max-w-7xl mx-auto">
           {acts.length === 0 ? (
             <p className="text-snow/80">{c.comingSoon}</p>
@@ -378,17 +385,17 @@ export default function CategoryPage() {
             <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.browseOthers}</h2>
             <Link to={to('/categories')} className="text-vibe-pink text-sm font-semibold">{c.allCategoriesLink}</Link>
           </div>
-          <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+          <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center lg:justify-start">
             {categories.filter((cat) => cat.slug !== slug).map((rawCat) => {
               const cat = localizeCategory(rawCat, lang);
               return (
                 <Link
                   key={cat.slug}
                   to={to(`/categories/${cat.slug}`)}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/15 text-sm text-snow/75 font-medium hover:border-vibe-pink/50 hover:text-snow transition-colors"
+                  className="inline-flex items-center justify-center text-center leading-tight gap-2 px-3 sm:px-4 py-2 rounded-xl sm:rounded-full bg-white/5 border border-white/15 text-[13px] sm:text-sm text-snow/75 font-medium hover:border-vibe-pink/50 hover:text-snow transition-colors"
                 >
-                  <cat.icon className="w-4 h-4 text-vibe-pink" />
-                  {cat.name}
+                  <cat.icon className="w-4 h-4 text-vibe-pink shrink-0" />
+                  <span className="text-balance">{cat.name}</span>
                 </Link>
               );
             })}
