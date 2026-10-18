@@ -70,7 +70,7 @@ export default function HotelsStrip() {
             <h2 className="font-heading text-4xl sm:text-5xl text-snow tracking-wide mt-1 leading-tight">
               {c.h2}
             </h2>
-            <p className="text-snow/65 mt-3 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base max-lg:text-balance">
+            <p className="text-snow/65 mt-3 max-w-xl mx-auto lg:mx-0 text-sm sm:text-base max-lg:text-left">
               {c.lead}
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function HotelsStrip() {
             partner="hotels"
             sid="hotels_strip_browse_all"
             destination="Lapland, Finland"
-            className="self-start sm:self-auto inline-flex items-center gap-2 whitespace-nowrap bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/25"
+            className="self-center lg:self-auto inline-flex items-center gap-2 whitespace-nowrap bg-[#DB2777] hover:bg-[#BE185D] text-white px-6 py-3 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/25"
           >
             <Hotel className="w-4 h-4" />
             {c.compareCta}
@@ -154,7 +154,7 @@ export default function HotelsStrip() {
                     joten kapealla kortilla, jossa teksti vie yli puolet kortista, ylärivitkin
                     ovat tummalla. Kortin korkeuteen sidottu kaista ei tee sitä. */}
                 {m.src && <PhotoCredit src={m.src} links={false} />}
-                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 pt-14 sm:pt-14 lv-scrim-text text-center lg:text-left">
+                <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-6 pt-14 sm:pt-14 lv-scrim-text">
                   {/* YLARIVI = KOHTEEN NIMI, ei varauskanavan nimi.
                       🔴 Tassa luki aiemmin "TRIP.COM · Golden Crown Levin Iglut", ja samassa
                       kortissa kuvakuitti sanoi "Sembo". Vesa 20.9.: *"miksi täällä lukee
@@ -171,11 +171,11 @@ export default function HotelsStrip() {
                   <h3 className={`font-heading text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] ${idx === 0 ? 'text-3xl sm:text-4xl' : 'text-2xl'}`}>
                     {l.name}
                   </h3>
-                  <p className="text-snow/85 text-sm leading-relaxed mt-2 mb-3 max-w-md mx-auto lg:mx-0 drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">{l.blurb}</p>
+                  <p className="text-snow/85 text-sm leading-relaxed mt-2 mb-4 max-w-md drop-shadow-[0_2px_10px_rgba(0,0,0,0.95)]">{l.blurb}</p>
                   {/* Varauskanava tassa, ei ylarivilla: nain lukija tietaa ENNEN klikkausta
                       mihin han menee, eika se sekoitu kuvakuittiin. Kumppanin nimi on
                       erisnimi, joten se ei tarvitse kaannosta 12 kielelle. */}
-                  <span className="inline-flex items-center gap-1 text-[#F9A8D4] text-sm font-semibold group-hover:translate-x-1 transition-transform">
+                  <span className="inline-flex items-center gap-1.5 rounded-full bg-[#DB2777] group-hover:bg-[#BE185D] text-white text-sm font-semibold px-4 py-2 shadow-lg shadow-black/30 transition-colors">
                     {c.comparePrices}
                     {m.label ? '' : ` · ${partnerLabel}`} <ArrowRight className="w-4 h-4" />
                   </span>

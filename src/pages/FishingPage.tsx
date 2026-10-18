@@ -265,7 +265,7 @@ export default function FishingPage() {
             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {c.hero.title}
             </h1>
-            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 max-lg:text-balance">
+            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-4 mb-6 text-left text-pretty">
               {c.hero.sub}
             </p>
             <div className="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
@@ -286,7 +286,7 @@ export default function FishingPage() {
                 {c.hero.ctaRules}
               </a>
             </div>
-            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl mx-auto lg:mx-0">{c.hero.trustLine}</p>
+            <p className="text-snow/90 text-base leading-relaxed mt-5 max-w-2xl mx-auto lg:mx-0 text-left">{c.hero.trustLine}</p>
           </div>
         </div>
       </section>
@@ -309,7 +309,7 @@ export default function FishingPage() {
                   <img src={t.img} {...respImg(t.img, 'card')} alt="" aria-hidden="true" loading="lazy" decoding="async" width="1600" height="900" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(t.img) }} />
                   <PhotoCredit src={t.img} links={false} />
                 </div>
-                <div className="p-5 flex flex-col items-center gap-3 text-center lg:text-left lg:flex-row lg:items-start">
+                <div className="p-5 flex flex-row items-start gap-3">
                   <span className="inline-flex shrink-0 w-10 h-10 rounded-xl bg-vibe-pink/12 items-center justify-center"><t.Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" /></span>
                   <span>
                     <span className="block font-heading text-2xl text-deep-night tracking-wide leading-none group-hover:text-vibe-pink transition-colors">{t.title}</span>
@@ -327,7 +327,7 @@ export default function FishingPage() {
       <div className="bg-amber-500/10 border-y border-amber-400/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-start justify-center lg:justify-start gap-2.5">
           <AlertTriangle className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
-          <p className="text-amber-100/90 text-sm leading-relaxed max-lg:text-center">{c.verifyBanner}</p>
+          <p className="text-amber-100/90 text-sm leading-relaxed">{c.verifyBanner}</p>
         </div>
       </div>
 
@@ -360,7 +360,7 @@ export default function FishingPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-14 sm:pb-18">
             <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.freshwater}</p>
             <h2 className={`${H2} mb-3 text-center lg:text-left`}>{c.rivers.title}</h2>
-            <p className="text-snow/80 text-base leading-relaxed max-w-3xl mx-auto lg:mx-0 text-center lg:text-left max-lg:text-balance">{c.rivers.lead}</p>
+            <p className="text-snow/80 text-base leading-relaxed max-w-3xl mx-auto lg:mx-0 text-left">{c.rivers.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 items-stretch">
               {c.rivers.cards.map((card, i) => {
                 const meta = RIVER_META[i] ?? RIVER_META[0];
@@ -650,7 +650,7 @@ export default function FishingPage() {
           <div className="max-w-7xl mx-auto">
             <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.eco}</p>
             <h2 className={`${H2} text-center lg:text-left`}>{c.eco.title}</h2>
-            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl mx-auto lg:mx-0 text-center lg:text-left max-lg:text-balance">{c.eco.lead}</p>
+            <p className="text-snow/75 text-base leading-relaxed mt-4 max-w-3xl mx-auto lg:mx-0 text-left">{c.eco.lead}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
               {c.eco.stories.map((s, i) => {
                 const Icon = ECO_ICONS[i] ?? Fish;
@@ -763,8 +763,8 @@ export default function FishingPage() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <p className={`${EYEBROW} mb-3 text-center lg:text-left`}>{c.eyebrows.explore}</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <Link to={to('/categories/fishing')} className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block text-center lg:text-left">
-                <Fish className="w-6 h-6 text-vibe-pink mb-3 mx-auto lg:mx-0" aria-hidden="true" />
+              <Link to={to('/categories/fishing')} className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block">
+                <Fish className="w-6 h-6 text-vibe-pink mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1">{c.crossLinks[0].title}</h3>
                 <p className="text-snow/65 text-sm">{c.crossLinks[0].blurb}</p>
               </Link>
@@ -772,9 +772,9 @@ export default function FishingPage() {
                 href="https://laplandnature.com/freshwater/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block text-center lg:text-left"
+                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block"
               >
-                <Waves className="w-6 h-6 text-arctic-cyan mb-3 mx-auto lg:mx-0" aria-hidden="true" />
+                <Waves className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
                   {c.crossLinks[1].title} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </h3>
@@ -784,9 +784,9 @@ export default function FishingPage() {
                 href="https://laplandvisit.com/arctic-norway/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block text-center lg:text-left"
+                className="lv-surface rounded-2xl p-6 hover:border-vibe-pink/40 transition-colors block"
               >
-                <MapPin className="w-6 h-6 text-arctic-cyan mb-3 mx-auto lg:mx-0" aria-hidden="true" />
+                <MapPin className="w-6 h-6 text-arctic-cyan mb-3" aria-hidden="true" />
                 <h3 className="font-heading text-xl text-snow tracking-wide mb-1 inline-flex items-center gap-1.5">
                   {c.crossLinks[2].title} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </h3>

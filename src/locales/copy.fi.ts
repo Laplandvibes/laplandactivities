@@ -267,7 +267,7 @@ const fi: SectionCopy = {
     allCategoriesDesc: 'Yhdeksän tapaa kokea Arktis',
     huskyReindeer: "Husky- ja porosafarit",
     huskyReindeerDesc: "Ajelut ja tilavierailut",
-    snowmobileTours: "Moottorikelkkasafarit",
+    snowmobileTours: "Moottori­kelkka­safarit",
     snowmobileToursDesc: "Opastetut safarit",
     summerAdventures: "Kesäretket",
     summerAdventuresDesc: "Vaellukset, joet, keskiyön aurinko",

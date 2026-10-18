@@ -61,7 +61,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
             päällä on vain paikkalappu ja kuvakuitti, ja kummallakin on oma pohjansa, joten
             liukuväri ei lukenut tekstiä vaan himmensi valokuvan. */}
         {omaKuva && <PhotoCredit src={img} />}
-        <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
+        <div className="absolute top-3 left-3 flex flex-wrap gap-2">
           <Link
             to={to(`/destinations/${activity.destinationSlug}`)}
             className="bg-deep-night/70 backdrop-blur-sm text-snow text-[11px] px-3 py-2 min-h-11 items-center rounded-full inline-flex items-center gap-1 hover:bg-deep-night/90 transition-colors border border-white/15"
@@ -72,7 +72,7 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
       </div>
 
       {/* 17.10.2026 (Vesa: tabletilla ja puhelimella tekstit keskelle): pystykortin sisältö keskelle alle 1024 px, lg+ vasen reuna. */}
-      <div className="p-5 flex flex-col flex-1 text-center lg:text-left">
+      <div className="p-5 flex flex-col flex-1 text-left">
         <Link
           to={to(`/categories/${activity.categorySlug}`)}
           className="text-[11px] text-arctic-cyan font-semibold tracking-wide uppercase mb-1 block hover:text-arctic-cyan/80 transition-colors"
@@ -82,12 +82,12 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
         <h3 className="font-body text-[17px] font-bold text-snow mb-2 group-hover:text-vibe-pink transition-colors leading-snug tracking-tight">
           {activity.title}
         </h3>
-        <p className="text-snow/80 text-sm leading-relaxed mb-4 line-clamp-2 flex-1">
+        <p className="text-snow/80 text-sm leading-relaxed mb-4 line-clamp-2 flex-1 break-words">
           {activity.description}
         </p>
 
         {activity.highlights.length > 0 && (
-          <div className="flex flex-nowrap justify-center lg:justify-start gap-1.5 mb-4 min-w-0">
+          <div className="flex flex-nowrap gap-1.5 mb-4 min-w-0">
             {activity.highlights.slice(0, 2).map((h) => (
               <span
                 key={h}

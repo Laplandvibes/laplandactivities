@@ -166,7 +166,7 @@ export default function CategoryPage() {
               <category.icon className="w-7 h-7 text-vibe-pink" />
             </div>
             <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">{category.name}</h1>
-            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-3 mb-6 max-lg:text-balance">{category.description}</p>
+            <p className="text-snow max-w-2xl text-base sm:text-lg leading-relaxed mt-3 mb-6 text-left text-pretty">{category.description}</p>
 
             {/* Selausnappi: avaa kategorian listan GYG:ssä, ei tuotetta ⇒ "Selaa retkiä", ei "Varaa"
                 (8.10.2026). Oma sid, koska nappityyppi vaihtui varauksesta selaukseen. */}
@@ -361,14 +361,14 @@ export default function CategoryPage() {
                     style={{ objectPosition: 'center 50%' }}
                   />
                 </div>
-                <div className="p-6 sm:p-8 flex flex-col justify-center max-md:text-center">
-                  <span className="inline-flex self-center md:self-start items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-snow/70 mb-3">
+                <div className="p-6 sm:p-8 flex flex-col justify-center">
+                  <span className="inline-flex self-start items-center gap-2 text-[11px] font-semibold tracking-[0.2em] uppercase text-snow/70 mb-3">
                     <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: '#007E2E' }} aria-hidden="true" />
                     {bk.card.eyebrow}
                   </span>
                   <h3 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide mb-2">{bk.card.title}</h3>
                   <p className="text-snow/70 text-sm leading-relaxed">{bk.card.blurb}</p>
-                  <span className="inline-flex self-center md:self-start items-center gap-1.5 text-vibe-pink text-sm font-semibold mt-4 group-hover:gap-2.5 transition-all">
+                  <span className="inline-flex self-start items-center gap-1.5 text-vibe-pink text-sm font-semibold mt-4 group-hover:gap-2.5 transition-all">
                     {bk.card.cta}
                     <ArrowLeft className="w-4 h-4 rotate-180" aria-hidden="true" />
                   </span>

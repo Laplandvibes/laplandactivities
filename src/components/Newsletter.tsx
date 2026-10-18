@@ -173,7 +173,7 @@ export default function Newsletter() {
           <h2 className="font-heading text-3xl sm:text-5xl text-white tracking-wide leading-tight mb-3">
             {c.h2}
           </h2>
-          <p className="text-white/85 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+          <p className="text-white/85 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed max-lg:text-left">
             {c.lead}
           </p>
         </div>

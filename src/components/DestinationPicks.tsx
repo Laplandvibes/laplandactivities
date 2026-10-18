@@ -74,7 +74,7 @@ export default function DestinationPicks({ slug, place }: { slug: string; place:
         <div className="mb-7 sm:mb-9 text-center lg:text-left">
           <p className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.kicker}</p>
           <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 text-balance">{c.h2(rows.length, place)}</h2>
-          <p className="text-snow/70 text-sm sm:text-base leading-relaxed mt-2 max-w-2xl mx-auto lg:mx-0 max-lg:text-balance">{c.lede(checkedOn(locale))}</p>
+          <p className="text-snow/70 text-sm sm:text-base leading-relaxed mt-2 max-w-2xl mx-auto lg:mx-0 max-lg:text-left">{c.lede(checkedOn(locale))}</p>
         </div>
 
         <div className="flex gap-4 overflow-x-auto pb-3 -mx-4 px-4 snap-x snap-mandatory sm:mx-0 sm:px-0 sm:overflow-visible sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -87,9 +87,9 @@ export default function DestinationPicks({ slug, place }: { slug: string; place:
                 target="_blank"
                 rel="sponsored nofollow noopener"
                 onClick={() => trackAffiliateClick('activities', `dest_picks:${p.sid}`, gygHref(p, lang))}
-                className="group shrink-0 w-[78%] snap-start sm:w-auto flex flex-col rounded-2xl bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] hover:border-vibe-pink/50 transition-colors p-5 no-underline text-center lg:text-left"
+                className="group shrink-0 w-[78%] snap-start sm:w-auto flex flex-col rounded-2xl bg-[#F3F6FA] border border-white/60 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] hover:border-vibe-pink/50 transition-colors p-5 no-underline"
               >
-                <span className="inline-flex self-center lg:self-start w-11 h-11 rounded-xl bg-vibe-pink/12 items-center justify-center mb-4">
+                <span className="inline-flex self-start w-11 h-11 rounded-xl bg-vibe-pink/12 items-center justify-center mb-4">
                   <Icon className="w-5 h-5 text-vibe-pink" aria-hidden="true" />
                 </span>
                 <p className="font-body font-bold text-deep-night text-[15px] leading-snug group-hover:text-vibe-pink transition-colors">
@@ -99,7 +99,7 @@ export default function DestinationPicks({ slug, place }: { slug: string; place:
                   {p.place}
                   {p.duration ? ` · ${kesto(p.duration, lang)}` : ''}
                 </p>
-                <span className="mt-auto pt-4 inline-flex self-center lg:self-start items-center gap-1.5 text-vibe-pink text-sm font-semibold">
+                <span className="mt-auto pt-4 inline-flex self-start items-center gap-1.5 text-vibe-pink text-sm font-semibold">
                   {c.cta} <ExternalLink className="w-3.5 h-3.5" aria-hidden="true" />
                 </span>
               </a>
@@ -107,7 +107,7 @@ export default function DestinationPicks({ slug, place }: { slug: string; place:
           })}
         </div>
 
-        <p className="text-snow/45 text-xs mt-4 text-center lg:text-left">
+        <p className="text-snow/45 text-xs mt-4">
           {c.disclosure}
         </p>
       </div>

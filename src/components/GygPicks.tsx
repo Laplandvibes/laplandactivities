@@ -241,7 +241,7 @@ export default function GygPicks() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-[#F9FAFB]">
             {t(L.headingProduct)}
           </h2>
-          <p className="max-w-2xl mx-auto lg:mx-0 text-white/70 max-lg:text-balance">{t(L.ledeProduct)}</p>
+          <p className="max-w-2xl mx-auto lg:mx-0 text-white/70 max-lg:text-left">{t(L.ledeProduct)}</p>
         </div>
 
         {/* Jarjestajien omat tuotekuvat, arvosanat ja TAMAN PAIVAN hinnat.
@@ -250,11 +250,11 @@ export default function GygPicks() {
             pinossa ~1 450 px), tabletilla kolme ja yksinäinen neljäs, ~1 100 px:stä
             neljä. Alle xl:n laatikko on siksi neljän kortin levyinen ja rivi
             vierittyy sivuttain, seuraava kortti näkyy reunassa; xl:stä palsta riittää. */}
-        <div className={blocked ? '' : '-mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto overscroll-x-contain xl:mx-0 xl:px-0 xl:overflow-visible'}>
+        <div className={blocked ? '' : '-mx-4 px-4 sm:-mx-6 sm:px-6 overflow-x-auto overscroll-x-contain xl:mx-0 xl:px-0 xl:overflow-visible [scrollbar-width:none] [&::-webkit-scrollbar]:hidden'}>
           <div
             ref={boxRef}
             key={`gyg-${lang}`}
-            className={blocked ? 'h-0 overflow-hidden' : 'min-h-[160px] w-[1120px] xl:w-auto'}
+            className={blocked ? 'h-0 overflow-hidden' : 'min-h-[160px] w-[1120px] xl:w-auto max-sm:[zoom:0.72]'}
             data-gyg-widget="activities"
             data-gyg-partner-id="VRMKD7N"
             data-gyg-locale-code={GYG_LOCALE[lang]}
@@ -281,13 +281,13 @@ export default function GygPicks() {
                 kortin, sama ratkaisu kuin kohdesivujen DestinationPicks-karusellissa.
                 Poistetut AI-kuvat: ks. src/data/gygImages.ts. */}
             {(() => { const Icon = pickIcon(p.source.title); return (
-              <span className="self-start sm:self-center lg:self-auto sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
+              <span className="self-start sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
                 <Icon className="h-5 w-5 text-[#F472B6]" aria-hidden="true" />
               </span>
             ); })()}
 
             {/* Puhelimessa rivikortti (kuvake vieressä) vasemmalle; 640–1023 px pystykortti keskelle; lg+ vasemmalle. */}
-            <div className="flex min-w-0 flex-1 flex-col sm:p-5 sm:max-lg:text-center">
+            <div className="flex min-w-0 flex-1 flex-col sm:p-5">
               <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#22D3EE]">
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                 {p.place}
@@ -320,7 +320,7 @@ export default function GygPicks() {
                   the rows we opened, but the catalogue does not record the unit
                   and some GetYourGuide products are priced per group. */}
               {p.price && (
-                <p className="mt-1 sm:mt-3 flex items-baseline sm:max-lg:justify-center gap-1.5">
+                <p className="mt-1 sm:mt-3 flex items-baseline gap-1.5">
                   <span className="text-[11px] uppercase tracking-wider text-white/60">{t(L.priceFrom)}</span>
                   <span className="text-lg font-bold text-[#F9FAFB]">{p.price}</span>
                 </p>
@@ -334,7 +334,7 @@ export default function GygPicks() {
 
               {/* Per-rivin priceAsOf voittaa katalogin päiväyksen: rivin hinta on
                   voitu lukea eri päivänä kuin katalogiajo (ks. picks.ts). */}
-              <span className="mt-1 sm:mt-2 text-left sm:text-center text-[11px] text-white/60">
+              <span className="mt-1 sm:mt-2 text-left text-[11px] text-white/60">
                 {p.price ? `${t(L.priceSource)} ${fiDate(p.priceAsOf ?? GYG_PRICE_AS_OF, lang)}` : t(L.via)}
               </span>
             </div>

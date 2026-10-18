@@ -38,7 +38,7 @@ export default function DestinationsIndex() {
           <div className="text-center mb-10 sm:mb-14">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.kicker}</span>
             <h1 className="font-heading text-5xl sm:text-7xl text-snow mt-2 tracking-wide">{c.h1}</h1>
-            <p className="text-snow/65 mt-4 max-w-2xl mx-auto text-lg">
+            <p className="text-snow/65 mt-4 max-w-2xl mx-auto text-lg max-lg:text-left">
               {c.lead}
             </p>
           </div>
@@ -65,8 +65,8 @@ export default function DestinationsIndex() {
                   <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="1920" height="1080" fetchPriority="high"/>
                   <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
                   {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kortin: kuva näkyy tekstin yläpuolella. */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 pt-14 sm:pt-14 lv-scrim-text text-center lg:text-left">
-                    <div className="flex items-center justify-center lg:justify-start gap-2 text-snow/80 text-xs mb-2">
+                  <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 pt-14 sm:pt-14 lv-scrim-text">
+                    <div className="flex items-center gap-2 text-snow/80 text-xs mb-2">
                       <MapPin className="w-3.5 h-3.5" /> {dest.access}
                     </div>
                     <h2 className="font-heading text-3xl sm:text-4xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h2>
@@ -95,8 +95,8 @@ export default function DestinationsIndex() {
                 >
                   <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                   <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
-                  <div className="absolute bottom-0 left-0 right-0 p-5 pt-14 lv-scrim-text text-center lg:text-left">
-                    <div className="flex items-center justify-center lg:justify-start gap-1 text-snow/75 text-xs mb-1">
+                  <div className="absolute bottom-0 left-0 right-0 p-5 pt-14 lv-scrim-text">
+                    <div className="flex items-center gap-1 text-snow/75 text-xs mb-1">
                       <MapPin className="w-3 h-3" /> {dest.access.split('(')[0].trim()}
                     </div>
                     <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h2>

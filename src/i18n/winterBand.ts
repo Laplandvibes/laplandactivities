@@ -50,7 +50,7 @@ export const WINTER_BAND: Record<Lang, WinterBandCopy> = {
     imageH3: 'Arktinen taikamaisimmillaan',
     highlights: [
       { title: 'Huskyajelu', body: 'Aja oma valjakko halki hiljaisen, lumisen metsän.' },
-      { title: 'Moottorikelkkasafarit', body: 'Jäätyneet järvet ja tunturireitit, lyhyestä koko päivän retkeen.' },
+      { title: 'Moottori­kelkka­safarit', body: 'Jäätyneet järvet ja tunturireitit, lyhyestä koko päivän retkeen.' },
       { title: 'Revontuliretket', body: 'Pimeän taivaan retket oppaiden kanssa, jotka lukevat ennusteen puolestasi.' },
       { title: 'Pilkki & sauna', body: 'Avaa avanto, sulata sitten aidossa savusaunassa.' },
     ],

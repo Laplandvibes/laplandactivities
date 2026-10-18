@@ -76,7 +76,7 @@ export default function SummerBand() {
             <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lv-head tracking-wide leading-[0.95] mb-4">
               {c.h2}
             </h2>
-            <p className="text-snow/80 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-7 max-lg:text-balance">
+            <p className="text-snow/80 text-base sm:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0 mb-7 max-lg:text-left">
               {c.lead}
             </p>
 
@@ -112,7 +112,7 @@ export default function SummerBand() {
               <PhotoCredit src={bandImg} />
               {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kuvan. pb-5: kuvakuitti
                   ulottuu kortin alareunasta 17 px:iin, joten teksti jää sen yläpuolelle. */}
-              <div className="absolute inset-x-0 bottom-0 p-4 pt-14 pb-5 lv-scrim-text text-center lg:text-left">
+              <div className="absolute inset-x-0 bottom-0 p-4 pt-14 pb-5 lv-scrim-text">
                 <p className="text-[#F9A8D4] text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">{c.imageKicker}</p>
                 <p className="font-heading text-snow text-2xl tracking-wide leading-tight">{c.imageH3}</p>
               </div>
@@ -130,10 +130,10 @@ export default function SummerBand() {
                 partner="activities"
                 sid={sid}
                 destination={gygPaths[i] ?? 'lappi-suomi-l2652'}
-                className="group bg-[#F3F6FA] hover:bg-white border border-white/60 hover:border-vibe-pink/50 rounded-2xl p-4 sm:p-5 transition-all flex flex-col shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] text-center lg:text-left"
+                className="group bg-[#F3F6FA] hover:bg-white border border-white/60 hover:border-vibe-pink/50 rounded-2xl p-4 sm:p-5 transition-all flex flex-col shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]"
               >
-                <Icon className="w-5 h-5 text-vibe-pink mb-3 self-center lg:self-start" />
-                <p className="font-body font-bold text-deep-night text-[15px] leading-snug mb-1 group-hover:text-vibe-pink transition-colors">{h.title}</p>
+                <Icon className="w-5 h-5 text-vibe-pink mb-3" />
+                <p className="font-body font-bold text-deep-night text-[15px] leading-snug mb-1 hyphens-auto [overflow-wrap:anywhere] group-hover:text-vibe-pink transition-colors">{h.title}</p>
                 <p className="text-deep-night/75 text-xs sm:text-sm leading-relaxed">{h.body}</p>
               </AffiliateCTA>
             );

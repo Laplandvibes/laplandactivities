@@ -155,12 +155,12 @@ export default function Home() {
           Ei mainosta eikä talon omaa puhetta ensimmäiseksi (Vesa 18.9.2026
           etusivusääntö, 19.9. tälle sivustolle: "heti action"). */}
       {/* CATEGORIES bento */}
-      <section id="categories" className="py-16 sm:py-24 px-4 bg-deep-night">
+      <section id="categories" className="pt-10 pb-16 sm:py-24 px-4 bg-deep-night">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-14">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.categoriesKicker}</span>
             <h2 className="font-heading text-4xl sm:text-6xl text-snow mt-2 tracking-wide">{c.categoriesH2}</h2>
-            <p className="text-snow/65 mt-3 max-w-xl mx-auto text-sm sm:text-base">
+            <p className="text-snow/65 mt-3 max-w-xl mx-auto text-sm sm:text-base max-lg:text-left">
               {c.categoriesLead}
             </p>
           </div>
@@ -204,7 +204,7 @@ export default function Home() {
                       tekstipohja matalammaksi. Ennen pienessä kortissa tekstipohja peitti 75 %
                       korkeudesta ja sen alaosa oli 92–100 % tumma, joten kuvasta näkyi yläreuna. */}
                   <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
-                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 bg-gradient-to-t from-deep-night/95 via-deep-night/75 via-45% to-transparent text-center lg:text-left">
+                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 bg-gradient-to-t from-deep-night/95 via-deep-night/75 via-45% to-transparent">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
                     }`}>{cat.name}</h3>
@@ -280,7 +280,7 @@ export default function Home() {
           <div className="text-center mb-10">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.seasonsKicker}</span>
             <h2 className="font-heading text-3xl sm:text-5xl md:text-6xl text-snow mt-2 tracking-wide">{c.seasonsH2}</h2>
-            <p className="text-snow/65 mt-3 max-w-xl mx-auto">{c.seasonsLead}</p>
+            <p className="text-snow/65 mt-3 max-w-xl mx-auto max-lg:text-left">{c.seasonsLead}</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -288,8 +288,8 @@ export default function Home() {
               const Icon = SEASON_ICONS[i] ?? Sun;
               const accent = SEASON_ACCENTS[i] ?? 'vibe-pink';
               return (
-                <div key={s.name} className="bg-[#F3F6FA] border border-white/60 rounded-2xl p-6 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)] text-center lg:text-left">
-                  <div className="flex items-center justify-center lg:justify-start gap-2 mb-3">
+                <div key={s.name} className="bg-[#F3F6FA] border border-white/60 rounded-2xl p-6 shadow-[0_24px_48px_-28px_rgba(0,0,0,0.6)]">
+                  <div className="flex items-center gap-2 mb-3">
                     <Icon className={`w-5 h-5 text-${accent}`} />
                     <h3 className="font-heading text-2xl text-deep-night tracking-wide">{s.name}</h3>
                   </div>
@@ -326,10 +326,10 @@ export default function Home() {
                 <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'half')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
                 <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                 <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
-                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 text-center lg:text-left">
+                <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8">
                   <h3 className="font-heading text-3xl text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
                   <p className="text-arctic-cyan-light text-xs font-medium mt-0.5">{dest.tagline}</p>
-                  <div className="flex items-center justify-center gap-2 lg:justify-between mt-3 text-snow/80 text-xs">
+                  <div className="flex items-center justify-between gap-2 mt-3 text-snow/80 text-xs">
                     <span>{getActivitiesByDestination(dest.slug).length} {c.activitiesShort}</span>
                     <Sparkles className="w-3.5 h-3.5 text-vibe-pink" />
                   </div>
@@ -346,15 +346,20 @@ export default function Home() {
               <Link
                 key={dest.slug}
                 to={to(`/destinations/${dest.slug}`)}
-                className="group relative rounded-xl overflow-hidden h-44 sm:h-52 border border-white/10 hover:border-vibe-pink/30 transition-all"
+                // 18.10.2026 (Vesa: "ihan päin vittua tekstit kohdennettu"): alle lg kuva ylhäällä puhtaana ja teksti
+                // sen alla vasemmalla. Ennen nimi, katkeava kuvaus ja kuvateksti oli ahdettu 176 px:n laatan alareunaan,
+                // ja pitkä nimi ("Tornio, Haaparanta ja Kemi") nosti tekstin eri korkeudelle kuin naapurissa.
+                className="group relative flex flex-col rounded-xl overflow-hidden bg-white/[0.04] border border-white/10 hover:border-vibe-pink/30 transition-all lg:block lg:h-52 lg:bg-transparent"
               >
-                <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
-                <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
-                {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten kuvaus jää sen yläpuolelle. */}
-                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 text-center lg:text-left">
-                  <h3 className="font-heading text-base sm:text-lg text-snow tracking-wide group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
-                  <p className="text-snow/75 text-[10px] line-clamp-1">{dest.tagline}</p>
+                <div className="relative h-28 sm:h-32 overflow-hidden lg:absolute lg:inset-0 lg:h-auto">
+                  <img src={imageForDestination(dest.slug)} {...respImg(imageForDestination(dest.slug), 'card')} alt={dest.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(dest.slug)) }} loading="lazy"  decoding="async" width="800" height="600"/>
+                  <div className="hidden lg:block absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
+                  <PhotoCredit src={imageForDestination(dest.slug)} links={false} />
+                </div>
+                {/* lg+: pb-5 (20 px), koska kuvakuitti ulottuu laatan alareunasta 17 px:iin. */}
+                <div className="flex-1 p-3 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:pb-5">
+                  <h3 className="font-heading text-lg text-snow tracking-wide leading-tight group-hover:text-vibe-pink transition-colors">{dest.name}</h3>
+                  <p className="text-snow/80 text-xs leading-snug mt-0.5 line-clamp-2 lg:line-clamp-1 lg:text-snow/75 lg:text-[10px]">{dest.tagline}</p>
                 </div>
               </Link>
               );
@@ -365,6 +370,14 @@ export default function Home() {
 
       {/* Kumppanikortit (Bear Kuusamo) sisällön jälkeen, ei ennen sitä. */}
       <HomeAdSlots config={AD_SLOTS} locale={lang} className="bg-deep-night border-t border-white/5" />
+
+      {/* Sovellusmainos. 18.10.2026 (Vesa: "appi mainos tällä sivulla on oltava hieman ylempänä"): siirretty
+          FAQ:n edestä kohdeosion ja kumppanikorttien perään, majoituksen, varauskorttien ja verkoston
+          yläpuolelle. Sivun pohjalla se mitattiin 81 %:n syvyydellä 33 000 px:n etusivulla, eikä ilmoitusta,
+          jonne kukaan ei vieritä, ole ilmoitettu. Kumppanikortit pysyvät heti sisällön jälkeen. */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <AppPromoHero />
+      </div>
 
       <HotelsStrip />
 
@@ -382,7 +395,7 @@ export default function Home() {
           <div className="text-center mb-10 sm:mb-14">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{rs.kicker}</span>
             <h2 className="font-heading text-3xl sm:text-5xl text-snow mt-2 tracking-wide">{rs.h2}</h2>
-            <p className="text-snow/65 mt-3 max-w-2xl mx-auto text-sm sm:text-base">{rs.lead}</p>
+            <p className="text-snow/65 mt-3 max-w-2xl mx-auto text-sm sm:text-base max-lg:text-left">{rs.lead}</p>
           </div>
 
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
@@ -413,12 +426,6 @@ export default function Home() {
           </ul>
         </div>
       </section>
-      {/* App launch block, directly under the site's own opening. At the foot
-          of the page it measured 81 % down a 33 000 px front page, and an
-          announcement nobody scrolls to is not an announcement. */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <AppPromoHero />
-      </div>
 
       {/* FAQ — visible Q&A that mirrors the FAQPage JSON-LD above */}
       <section id="faq" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5" aria-labelledby="faq-h2">
@@ -426,7 +433,7 @@ export default function Home() {
           <div className="text-center mb-10 sm:mb-14">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{faq.kicker}</span>
             <h2 id="faq-h2" className="font-heading text-3xl sm:text-5xl text-snow mt-2 tracking-wide">{faq.h2}</h2>
-            <p className="text-snow/65 mt-3 max-w-2xl mx-auto text-sm sm:text-base">{faq.lead}</p>
+            <p className="text-snow/65 mt-3 max-w-2xl mx-auto text-sm sm:text-base max-lg:text-left">{faq.lead}</p>
           </div>
 
           <div className="space-y-3">

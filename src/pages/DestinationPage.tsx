@@ -165,7 +165,7 @@ export default function DestinationPage() {
               {destination.name}
             </h1>
             <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3">{destination.tagline}</p>
-            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed max-lg:text-balance">{destination.description}</p>
+            <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed text-left text-pretty">{destination.description}</p>
 
             <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start gap-3 mt-6 max-w-sm mx-auto sm:max-w-none lg:mx-0">
               <AffiliateCTA
@@ -414,9 +414,9 @@ export default function DestinationPage() {
             partner="hotels"
             sid={`crossell_${slug}_hotels`}
             destination={hotelsQ}
-            className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all text-center lg:text-left"
+            className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all"
           >
-            <Hotel className="w-6 h-6 text-arctic-cyan mb-3 mx-auto lg:mx-0" />
+            <Hotel className="w-6 h-6 text-arctic-cyan mb-3" />
             <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.sleepInPrefix} {destIn}</p>
             <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.sleepInBlurb}</p>
             <span className="inline-flex items-center gap-1 text-arctic-cyan text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.compareHotels} <ArrowRight className="w-4 h-4" /></span>
@@ -425,9 +425,9 @@ export default function DestinationPage() {
             partner="cars"
             sid={`crossell_${slug}_cars`}
             destination={carsIata}
-            className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all text-center lg:text-left"
+            className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all"
           >
-            <Car className="w-6 h-6 text-aurora-green mb-3 mx-auto lg:mx-0" />
+            <Car className="w-6 h-6 text-aurora-green mb-3" />
             <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.driveYourself}</p>
             <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.driveYourselfBlurb}</p>
             <span className="inline-flex items-center gap-1 text-aurora-green text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.findBestPrice} <ArrowRight className="w-4 h-4" /></span>
@@ -465,10 +465,10 @@ export default function DestinationPage() {
                   <PhotoCredit src={imageForDestination(d.slug)} links={false} full />
                 </div>
                 {/* lg+: pb-5 (20 px), koska kuvakuitti ulottuu laatan alareunasta 17 px:iin. */}
-                <div className="flex-1 p-3 sm:p-4 text-center lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:pb-5 lg:text-left">
+                <div className="flex-1 p-3 sm:p-4 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:pb-5 lg:text-left">
                   <h3 className="font-heading text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
                   <p className="text-snow/80 text-xs leading-snug line-clamp-2 lg:line-clamp-1 lg:text-snow/90">{d.tagline}</p>
-                  <div className="flex items-center justify-center lg:justify-start gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">
+                  <div className="flex items-center gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">
                     <MapPin className="w-3 h-3" /> {getActivitiesByDestination(d.slug).length} {c.activitiesShort}
                   </div>
                 </div>

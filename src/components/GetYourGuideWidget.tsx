@@ -208,7 +208,7 @@ export default function GetYourGuideWidget({
           <h2 className="font-heading text-3xl sm:text-4xl text-snow tracking-wide mb-2 leading-tight">
             {resolvedTitle}
           </h2>
-          <p className="text-snow/70 text-sm">{resolvedSubtitle}</p>
+          <p className="text-snow/70 text-sm max-lg:text-left">{resolvedSubtitle}</p>
         </div>
 
         <div
@@ -226,7 +226,7 @@ export default function GetYourGuideWidget({
         />
 
         {blocked && (
-          <div className="flex flex-col items-center text-center rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-8">
+          <div className="flex flex-col items-start text-left lg:items-center lg:text-center rounded-2xl border border-white/10 bg-white/[0.03] px-6 py-8">
             <span className="grid place-items-center w-12 h-12 rounded-full bg-vibe-pink/15 border border-vibe-pink/40 text-vibe-pink mb-4">
               <Compass className="w-6 h-6" strokeWidth={2} />
             </span>

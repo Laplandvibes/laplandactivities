@@ -35,7 +35,7 @@ export default function Hero() {
         <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent pointer-events-none" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-10 lg:py-16">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-8 sm:pb-10 lg:py-16">
         <div className="max-w-2xl xl:max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
         <p className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6">
           {c.eyebrow}
@@ -55,14 +55,14 @@ export default function Hero() {
           <span className="text-vibe-pink lg:text-[#F9A8D4]">ACTIVITIES</span>
         </h1>
 
-        <p className="text-snow/90 text-base sm:text-xl xl:text-2xl max-w-2xl mx-auto lg:mx-0 mb-8 lg:mb-10 leading-relaxed max-lg:text-balance lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
+        <p className="text-snow/90 text-base sm:text-xl xl:text-2xl max-w-2xl mx-auto lg:mx-0 mb-8 lg:mb-10 leading-relaxed text-left text-pretty lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
           {c.lead}
         </p>
 
         {/* 🔴 Pääpainike on SELAUSNAPPI ("Selaa retkiä", 8.10.2026): se avaa GYG:n Lapin
             listan, ei tuotetta, joten se ei saa luvata varausta. Varausnapit ("Etsi ja varaa")
             ovat korteissa, joissa kullakin on oma tuotteensa (data/activities.ts GYG_PRODUCT). */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-stretch sm:items-center mb-8 lg:mb-10 max-w-sm sm:max-w-none mx-auto lg:mx-0">
+        <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start items-stretch sm:items-center mb-0 sm:mb-8 lg:mb-10 max-w-sm sm:max-w-none mx-auto lg:mx-0">
           <AffiliateCTA
             partner="activities"
             sid="hero_browse_lapland"
@@ -91,29 +91,29 @@ export default function Hero() {
             partner="activities"
             sid="hero_strip_aurora"
             destination="lapland-finland-l2652/northern-lights-tc310"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-center lg:text-left transition-colors"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors"
           >
-            <Sparkles className="w-4 h-4 text-vibe-pink mb-1 mx-auto lg:mx-0" />
-            <p className="font-heading tracking-wide text-base">{c.auroraTours}</p>
+            <Sparkles className="w-4 h-4 text-vibe-pink mb-1" />
+            <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.auroraTours}</p>
             <p className="text-snow/90 text-xs">{c.auroraToursDesc}</p>
           </AffiliateCTA>
           <AffiliateCTA
             partner="activities"
             sid="hero_strip_husky_reindeer"
             destination="lapland-finland-l2652/dog-sledding-husky-tours-tc118"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-center lg:text-left transition-colors"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors"
           >
-            <Dog className="w-4 h-4 text-vibe-pink mb-1 mx-auto lg:mx-0" />
-            <p className="font-heading tracking-wide text-base">{c.huskyReindeer}</p>
+            <Dog className="w-4 h-4 text-vibe-pink mb-1" />
+            <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.huskyReindeer}</p>
             <p className="text-snow/90 text-xs">{c.huskyReindeerDesc}</p>
           </AffiliateCTA>
           {summer ? (
             <Link
               to={to('/categories/summer')}
-              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-center lg:text-left transition-colors col-span-2 sm:col-span-1"
+              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
             >
-              <Sun className="w-4 h-4 text-vibe-pink mb-1 mx-auto lg:mx-0" />
-              <p className="font-heading tracking-wide text-base">{c.summerAdventures}</p>
+              <Sun className="w-4 h-4 text-vibe-pink mb-1" />
+              <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.summerAdventures}</p>
               <p className="text-snow/90 text-xs">{c.summerAdventuresDesc}</p>
             </Link>
           ) : (
@@ -121,19 +121,19 @@ export default function Hero() {
               partner="activities"
               sid="hero_strip_snowmobile"
               destination="lapland-finland-l2652/snowmobile-tours-tc119"
-              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-center lg:text-left transition-colors col-span-2 sm:col-span-1"
+              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
             >
-              <Snowflake className="w-4 h-4 text-vibe-pink mb-1 mx-auto lg:mx-0" />
-              <p className="font-heading tracking-wide text-base">{c.snowmobileTours}</p>
+              <Snowflake className="w-4 h-4 text-vibe-pink mb-1" />
+              <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.snowmobileTours}</p>
               <p className="text-snow/90 text-xs">{c.snowmobileToursDesc}</p>
             </AffiliateCTA>
           )}
           <Link
             to={to('/categories')}
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow text-center lg:text-left transition-colors col-span-2 sm:col-span-1"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
           >
-            <ChevronDown className="w-4 h-4 text-vibe-pink mb-1 mx-auto lg:mx-0" />
-            <p className="font-heading tracking-wide text-base">{c.allCategories}</p>
+            <ChevronDown className="w-4 h-4 text-vibe-pink mb-1" />
+            <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.allCategories}</p>
             <p className="text-snow/90 text-xs">{c.allCategoriesDesc}</p>
           </Link>
         </div>
