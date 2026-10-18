@@ -8,7 +8,7 @@
 // esimerkiksi kumppanin hero on 1600 px. Väärä leveysluku srcset-rivillä saisi
 // selaimen valitsemaan liian pienen tiedoston ja kuva näyttäisi sumealta.
 //
-// Kuvia joilla kopiot: 137
+// Kuvia joilla kopiot: 136
 export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }> = {
   "/images/activities/adventure/ice-climbing.webp": { full: 1600, small: [768, 1280] },
   "/images/activities/adventure/kevo-river-frost.webp": { full: 1920, small: [768, 1280] },
@@ -120,7 +120,7 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/reindeer-autumn-saariselka.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/reindeer-herd-sunset.webp": { full: 1600, small: [768, 1280] },
   "/images/heroes/reindeer-winter.webp": { full: 1600, small: [768, 1280] },
-  "/images/heroes/rovaniemi-summer-santa.webp": { full: 1920, small: [768, 1280] },
+  "/images/heroes/rovaniemi-santa-village-summer.webp": { full: 2560, small: [768, 1280, 1920] },
   "/images/heroes/ruka-fell.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/ruka-winter-slopes.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/saariselka-autumn.webp": { full: 1920, small: [768, 1280] },
@@ -138,7 +138,6 @@ export const RESPONSIVE_WIDTHS: Record<string, { full: number; small: number[] }
   "/images/heroes/slider-09-hike-saana.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/slider-10-husky-team.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/tornio-river-dusk.webp": { full: 1920, small: [768, 1280] },
-  "/images/heroes/yllas-summer-village.webp": { full: 1920, small: [768, 1280] },
   "/images/heroes/yllas-winter-road.webp": { full: 1920, small: [768, 1280] },
   "/images/hotels/boutique-hotel-rovaniemi.webp": { full: 1920, small: [768, 1280] },
   "/images/hotels/glass-igloo-aurora.webp": { full: 1184, small: [768] },

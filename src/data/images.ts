@@ -386,12 +386,16 @@ export function imageForCategory(slug: string): string {
 // all showed the same summer photo, and Rovaniemi's summer hero was a river
 // cityscape — Rovaniemi is marketed Santa-first, always).
 const DEST_HERO: Record<string, string> = {
-  // Kesä: Commons Frbg, Christmas House 22.7.2019 (BY-SA 4.0, ei rajattu; kohdesivulla ei omaa jakokorttia). 1.10.2026: oma 115907 jäi
-  // weddingsille, ja oma pystykuva 114201 ei kestänyt 2,7:1-heroa. Talvi: AI kunnes Commons-kuva valittu.
-  rovaniemi:  seasonal(local('heroes/rovaniemi-winter-village.webp'), local('heroes/rovaniemi-summer-santa.webp')),
+  // Kesä 18.10.2026 (Vesa valitsi): oma kuva 20260720_114308, Joulupukin pajakylän päärakennus ja punainen aita
+  // 20.7.2026, koko ruutu 2560 px. Oli Commons Frbg (Christmas House); kuva vapautui laplandtransportilta, jossa se oli
+  // enää lentokenttäsivun jakokuvan pohjana (vaihdettu sivun omaan lentokenttäkuvaan). Torni on kuvan vasemmalla,
+  // joten tietokoneella teksti on oikealla (HERO_TEXT_RIGHT). Talvi: AI kunnes Commons-kuva valittu.
+  rovaniemi:  seasonal(local('heroes/rovaniemi-winter-village.webp'), local('heroes/rovaniemi-santa-village-summer.webp')),
   levi:       seasonal(local('heroes/levi-black-run-view.webp'), local('heroes/levi-summer-fell.webp')),
-  // Kesä: oma kuva Äkäslompolon yli Ylläkseltä 21.7.2026 (ennen Levin bike park -kuva = väärä paikka)
-  yllas:      seasonal(local('heroes/yllas-winter-road.webp'), local('heroes/yllas-summer-village.webp')),
+  // Kesä 18.10.2026 (Vesa valitsi): oma kuva 20260721_120231, Ylläksen rinteet ja hissit Äkäslompolon yllä, rajaus
+  // y 300–2000 (alareunan maa-alue ja punainen auto pois). Siirtyi laplandhoteldealsilta, joka sai tilalle 123001:n
+  // tunturirajauksen. Oli 131249 (harmaa kylänäkymä), joka on myös appissa = sama kuva kahdella sivustolla.
+  yllas:      seasonal(local('heroes/yllas-winter-road.webp'), local('heroes/yllas-slopes-summer.webp')),
   // Saariselka: sama kuva molemmissa kausissa (kuten rovaniemi/pyha-luosto). Talvipaikka
   // oli savusaunakuva, joka on wellness-kategorian kuva, ja kesapaikka kajakki, joka on
   // seikkailukategorian kuva - eli kumpikin kausi oli duplikaatti etusivulla.
@@ -545,10 +549,10 @@ const FOCAL: Record<string, string> = {
   // Summer lake: paddler + sun are in the lower-mid → anchor low.
   '/images/categories/summer.webp': 'center 50%',
   '/images/heroes/ruka-fell.webp': 'center 50%',
-  '/images/heroes/yllas-summer-village.webp': 'center 45%',
-  // 17.10.2026 (Vesa: "rovaniemikin niin näkyy vain talon piippu"): puhelimen kuvakaista näyttää kuvasta
-  // noin 60 % leveydestä; 58 % pitää molemmat siivet ja oven ruudussa, 62 % vähentää tyhjää taivasta.
-  '/images/heroes/rovaniemi-summer-santa.webp': '58% 62%',
+  '/images/heroes/yllas-slopes-summer.webp': 'center 60%',
+  // 18.10.2026: puhelimen kuvakaista näyttää 4:3-kuvasta ~83 % leveydestä ⇒ 20 % pitää tornin ruudussa;
+  // tietokoneen leveässä herossa näkyy ~58 % korkeudesta ⇒ 22 % pitää tornin huipun mukana.
+  '/images/heroes/rovaniemi-santa-village-summer.webp': '20% 22%',
   '/images/heroes/tornio-river-dusk.webp': 'center 50%',
   // New destination heroes: pyha fell tops sit mid-high; kemijarvi fells sit on the horizon
   // in the upper third (open water fills the rest) → anchor upper-mid.
@@ -564,6 +568,17 @@ const FOCAL: Record<string, string> = {
 // kehyksen ulkopuolelle kaikilla leveyksilla. Tiedosto on yha koko valokuva: tama on
 // nayton rajaus kuten object-fit, ei muokattu teos. Puhelimessa (alle md) ei tarvita: kapea
 // kehys nayttaa 80 %:n ankkurilla vain sillan tornin ympariston.
+// 18.10.2026: kuvat, joiden pääkohde on vasemmalla. Tietokoneella (lg+) teksti ja tummennus ovat silloin oikealla,
+// ettei liukuväri peitä kohdetta (muisti feedback_hero_kuva_puhtaana_otsikko_alle: tekstin puoli kuvan mukaan).
+const HERO_TEXT_RIGHT = new Set<string>([
+  '/images/heroes/rovaniemi-santa-village-summer.webp',
+]);
+
+/** Onko herokuvan pääkohde vasemmalla, jolloin teksti sijoitetaan tietokoneella oikealle. */
+export function heroTextRight(src: string): boolean {
+  return HERO_TEXT_RIGHT.has(src);
+}
+
 const HERO_FRAME: Record<string, string> = {
   '/images/heroes/rovaniemi-winter-village.webp': 'md:origin-right md:scale-[1.2]',
 };

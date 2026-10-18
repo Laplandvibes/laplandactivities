@@ -9,7 +9,7 @@ import ActivityCard from '../components/ActivityCard';
 import BookingCTA from '../components/BookingCTA';
 import AffiliateCTA from '../components/AffiliateCTA';
 import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
-import { imageForDestination, assignActivityImages, focalFor, heroFrameClass } from '../data/images';
+import { imageForDestination, assignActivityImages, focalFor, heroFrameClass, heroTextRight } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
 import DestinationPicks from '../components/DestinationPicks';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -52,6 +52,8 @@ export default function DestinationPage() {
   const destIn = c.destLocative?.[slug || ''] ?? destination.name;
   const tips = c.tipsByDestination[slug || ''] || [];
   const heroImg = imageForDestination(slug || '');
+  // 18.10.2026: pääkohde kuvan vasemmalla (Rovaniemen pajakylän torni) ⇒ tietokoneella teksti ja tummennus oikealle.
+  const textRight = heroTextRight(heroImg);
   // Trailing-slash, locale-prefixed page URL (matches prerendered static HTML + sitemap).
   const pageUrl = `https://laplandactivities.fi${to(`/destinations/${slug}`)}`.replace(/\/?$/, '/');
   // Same function as scripts/generate-prerender-meta.mjs, so the served HTML says the same.
@@ -134,14 +136,14 @@ export default function DestinationPage() {
             style={{ objectPosition: focalFor(heroImg) }}
             loading="eager" decoding="async" width="1920" height="1080" fetchPriority="high"
           />
-          <div aria-hidden="true" className="hidden lg:block absolute inset-0 bg-gradient-to-r from-[#0F172A]/85 via-[#0F172A]/70 via-55% to-transparent" />
+          <div aria-hidden="true" className={`hidden lg:block absolute inset-0 ${textRight ? 'bg-gradient-to-l' : 'bg-gradient-to-r'} from-[#0F172A]/85 via-[#0F172A]/70 via-55% to-transparent`} />
           <div aria-hidden="true" className="hidden lg:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#0F172A] to-transparent" />
           <PhotoCredit src={heroImg} />
         </div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 pt-7 pb-10 lg:py-16 w-full">
           {/* 17.10.2026 (Vesa: "eikö tablet ja mobiilissa pitäisi olla keskitetty nämä tekstit?"): alle 1024 px
               koko sivu yhdellä keskiakselilla, lg+ sarakkeen vasen reuna. Listat ja kuvake-rivit jäävät vasemmalle. */}
-          <div className="max-w-2xl mx-auto lg:mx-0 text-center lg:text-left">
+          <div className={`max-w-2xl mx-auto ${textRight ? 'lg:ml-auto lg:mr-0' : 'lg:mx-0'} text-center lg:text-left`}>
             <span className="inline-flex items-center gap-2 rounded-full bg-deep-night/70 border border-white/15 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] uppercase text-snow/90 mb-3">
               <MapPin className="w-3.5 h-3.5 text-vibe-pink" /> {destination.access.split('(')[0].trim()}
             </span>
