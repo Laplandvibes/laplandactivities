@@ -278,8 +278,8 @@ const nl: SectionCopy = {
   },
   destPicks: {
     kicker: "Onze keuze",
-    h2: "Dit zouden wij hier zelf boeken",
-    lede: "Met de hand gekozen en stuk voor stuk geopend voordat ze in de lijst kwamen. Prijs en beschikbaarheid staan op de pagina van de partner, dus drukken we ze hier niet af.",
+    h2: (n, place) => `${['', '', '', 'Drie', 'Vier', 'Vijf', 'Zes'][n] || n} gecontroleerde excursies in ${place}`,
+    lede: (date) => `Met de hand gekozen en op ${date} stuk voor stuk geopend om te controleren of ze nog worden aangeboden. Prijs en beschikbaarheid staan op de pagina van de partner, dus drukken we ze hier niet af.`,
     cta: "Bekijk beschikbaarheid",
     disclosure: "Affiliate links: een boeking levert ons commissie op, voor u blijft de prijs gelijk.",
   },

@@ -379,7 +379,7 @@ export default function DestinationPage() {
       )}
 
       {/* MUST-DO + LOCAL TIPS — premium surfaces */}
-      <DestinationPicks slug={slug || ''} />
+      <DestinationPicks slug={slug || ''} place={destIn} />
 
       {featured && (
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night">

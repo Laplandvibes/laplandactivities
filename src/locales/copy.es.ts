@@ -292,8 +292,8 @@ const es: SectionCopy = {
   },
   destPicks: {
     kicker: "Nuestra selección",
-    h2: "Lo que reservaríamos aquí",
-    lede: "Seleccionadas a mano y abiertas una a una antes de publicarlas. El precio y la disponibilidad están en la página del socio, por eso no los imprimimos aquí.",
+    h2: (n, place) => `${['', '', '', 'Tres', 'Cuatro', 'Cinco', 'Seis'][n] || n} excursiones comprobadas en ${place}`,
+    lede: (date) => `Seleccionadas a mano y abiertas una a una el ${date} para confirmar que siguen a la venta. El precio y la disponibilidad están en la página del socio, por eso no los imprimimos aquí.`,
     cta: "Ver disponibilidad",
     disclosure: "Enlaces de afiliado: una reserva nos deja una comisión y a ti te cuesta lo mismo.",
   },

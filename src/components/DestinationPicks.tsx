@@ -2,8 +2,8 @@ import { ExternalLink } from 'lucide-react';
 import { pickIcon } from '../lib/pickIcon';
 import { gygHref } from '../shared/gyg/picks';
 import type { GygPick } from '../shared/gyg/picks';
-import { picksForDestination } from '../data/destinationPicks';
-import { useLang } from '../i18n/useLang';
+import { picksForDestination, PICKS_CHECKED } from '../data/destinationPicks';
+import { useLang, useHtmlLang } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { trackAffiliateClick } from '../lib/analytics';
 
@@ -41,8 +41,20 @@ import { trackAffiliateClick } from '../lib/analytics';
 const PISTEKIELET = new Set(['en', 'ja', 'ko', 'zh-CN']);
 const kesto = (d: string, lang: string) => (PISTEKIELET.has(lang) ? d.replace(/,/g, '.') : d);
 
-export default function DestinationPicks({ slug }: { slug: string }) {
+/**
+ * Otsikko 18.10.2026 (Vesa: "Kyllä: poimintaosion otsikoksi totuudenmukainen"): ennen
+ * "Nämä varaisimme täältä itse", jonka agentti kirjoitti 20.9. eikä kukaan ollut kokeillut
+ * retkiä. Nyt otsikko kertoo sen minkä voimme näyttää toteen (määrä + paikka) ja johdanto
+ * päivän, jona jokainen tuote avattiin. Päivä on UTC-merkkijono, joten lukija lännessä ei
+ * näe edellistä päivää.
+ */
+const checkedOn = (locale: string) =>
+  new Intl.DateTimeFormat(locale, { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' })
+    .format(new Date(`${PICKS_CHECKED}T00:00:00Z`));
+
+export default function DestinationPicks({ slug, place }: { slug: string; place: string }) {
   const lang = useLang();
+  const locale = useHtmlLang();
   const c = COPY[lang].destPicks;
   const rows: GygPick[] | null = picksForDestination(slug);
   if (!rows) return null;
@@ -52,8 +64,8 @@ export default function DestinationPicks({ slug }: { slug: string }) {
       <div className="max-w-7xl mx-auto">
         <div className="mb-7 sm:mb-9 text-center lg:text-left">
           <p className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{c.kicker}</p>
-          <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1">{c.h2}</h2>
-          <p className="text-snow/70 text-sm sm:text-base leading-relaxed mt-2 max-w-2xl mx-auto lg:mx-0 max-lg:text-balance">{c.lede}</p>
+          <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 text-balance">{c.h2(rows.length, place)}</h2>
+          <p className="text-snow/70 text-sm sm:text-base leading-relaxed mt-2 max-w-2xl mx-auto lg:mx-0 max-lg:text-balance">{c.lede(checkedOn(locale))}</p>
         </div>
 
         <div className="flex gap-4 overflow-x-auto pb-3 -mx-4 px-4 snap-x snap-mandatory sm:mx-0 sm:px-0 sm:overflow-visible sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">

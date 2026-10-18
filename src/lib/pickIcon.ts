@@ -16,6 +16,8 @@ const ICONS: Array<[RegExp, LucideIcon]> = [
   [/aurora|northern lights/i, Sparkles],
   [/reindeer/i, Compass],
   [/snowmobile|karting/i, Gauge],
+  // Ennen "floating"-sääntöä: Sampo-risteily on laiva, ei sauna (sai liekin 18.10.2026 asti).
+  [/icebreaker/i, Waves],
   [/sauna|smoke|floating/i, Flame],
   [/fish/i, Fish],
   [/ski|cross-country|snowshoe/i, Snowflake],

@@ -52,8 +52,8 @@ const en: SectionCopy = {
   },
   destPicks: {
     kicker: "Our picks",
-    h2: "The ones we would book here",
-    lede: "Hand-picked and opened one by one before listing. Prices and availability live on the partner's page, so we do not print them here.",
+    h2: (n, place) => `${['', '', '', 'Three', 'Four', 'Five', 'Six'][n] || n} tours we checked in ${place}`,
+    lede: (date) => `Hand-picked, and we opened each one on ${date} to make sure it is still on sale. Prices and availability live on the partner's page, so we do not print them here.`,
     cta: "Check availability",
     disclosure: "Affiliate links: booking through them pays us a commission, at no extra cost to you.",
   },

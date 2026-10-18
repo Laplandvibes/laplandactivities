@@ -59,7 +59,8 @@ export type SectionCopy = {
     gygEyebrow: string;
   };
   /** Kohdesivun poimintakaruselli (4 tarkistettua GYG-tuotetta per paikkakunta, 20.9.2026). */
-  destPicks: { kicker: string; h2: string; lede: string; cta: string; disclosure: string };
+  /** h2 saa korttien määrän ja paikkakunnan (fi paikallissijassa), lede tarkistuspäivän valmiiksi muotoiltuna. */
+  destPicks: { kicker: string; h2: (n: number, place: string) => string; lede: (date: string) => string; cta: string; disclosure: string };
   hotelsStrip: {
     kicker: string;
     h2: string;

@@ -292,8 +292,8 @@ const fi: SectionCopy = {
   },
   destPicks: {
     kicker: "Meidän poimintamme",
-    h2: "Nämä varaisimme täältä itse",
-    lede: "Käsin valitut ja avattu yksitellen ennen listausta. Hinta ja saatavuus elävät kumppanin sivulla, joten emme painata niitä tähän.",
+    h2: (n, place) => `${['', '', '', 'Kolme', 'Neljä', 'Viisi', 'Kuusi'][n] || n} tarkistettua retkeä ${place}`,
+    lede: (date) => `Valitsimme nämä käsin ja avasimme jokaisen ${date}: tuote on yhä myynnissä. Hinta ja saatavuus elävät kumppanin sivulla, joten emme painata niitä tähän.`,
     cta: "Katso saatavuus",
     disclosure: "Kumppanilinkit: varauksesta maksetaan meille provisio, sinulle hinta on sama.",
   },

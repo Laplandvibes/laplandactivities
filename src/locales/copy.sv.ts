@@ -52,8 +52,8 @@ const sv: SectionCopy = {
   },
   destPicks: {
     kicker: "Våra val",
-    h2: "Det här skulle vi boka själva",
-    lede: "Handplockade och öppnade ett i taget före listningen. Pris och tillgänglighet finns på partnerns sida, därför trycker vi dem inte här.",
+    h2: (n, place) => `${['', '', '', 'Tre', 'Fyra', 'Fem', 'Sex'][n] || n} kontrollerade utflykter i ${place}`,
+    lede: (date) => `Handplockade, och vi öppnade var och en den ${date} för att se att den fortfarande säljs. Pris och tillgänglighet finns på partnerns sida, därför trycker vi dem inte här.`,
     cta: "Se tillgänglighet",
     disclosure: "Partnerlänkar: en bokning ger oss provision, priset för dig är detsamma.",
   },

@@ -292,8 +292,8 @@ const ptBR: SectionCopy = {
   },
   destPicks: {
     kicker: "Nossa seleção",
-    h2: "O que reservaríamos aqui",
-    lede: "Escolhidas a dedo e abertas uma a uma antes de entrar na lista. Preço e disponibilidade ficam na página do parceiro, por isso não os imprimimos aqui.",
+    h2: (n, place) => `${['', '', '', 'Três', 'Quatro', 'Cinco', 'Seis'][n] || n} passeios conferidos em ${place}`,
+    lede: (date) => `Escolhidos a dedo e abertos um a um em ${date} para confirmar que continuam à venda. Preço e disponibilidade ficam na página do parceiro, por isso não os imprimimos aqui.`,
     cta: "Ver disponibilidade",
     disclosure: "Links de afiliado: uma reserva nos rende comissão e para você o preço é o mesmo.",
   },

@@ -292,8 +292,8 @@ const de: SectionCopy = {
   },
   destPicks: {
     kicker: "Unsere Auswahl",
-    h2: "Das würden wir hier selbst buchen",
-    lede: "Handverlesen und vor der Aufnahme einzeln geöffnet. Preis und Verfügbarkeit stehen auf der Partnerseite, deshalb drucken wir sie hier nicht ab.",
+    h2: (n, place) => `${['', '', '', 'Drei', 'Vier', 'Fünf', 'Sechs'][n] || n} geprüfte Touren in ${place}`,
+    lede: (date) => `Von Hand ausgewählt, und jede einzelne haben wir am ${date} geöffnet, um sicherzugehen, dass sie noch angeboten wird. Preis und Verfügbarkeit stehen auf der Partnerseite, deshalb drucken wir sie hier nicht ab.`,
     cta: "Verfügbarkeit prüfen",
     disclosure: "Partnerlinks: Für eine Buchung erhalten wir eine Provision, für Sie bleibt der Preis gleich.",
   },
