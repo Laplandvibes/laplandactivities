@@ -208,7 +208,7 @@ export default function CategoryPage() {
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-10 text-center lg:text-left text-balance">{c.activitiesCount(acts.length, category.name)}</h2>
               {inSeason.length > 0 && (
                 <div className="mb-12">
-                  <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-5">
+                  <div className="flex flex-col items-center text-center gap-2 mb-5 lg:flex-row lg:text-left lg:gap-2.5">
                     <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
                       <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
                     </span>
@@ -224,7 +224,7 @@ export default function CategoryPage() {
               )}
               {offSeason.length > 0 && (
                 <div>
-                  <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-5">
+                  <div className="flex flex-col items-center text-center gap-2 mb-5 lg:flex-row lg:text-left lg:gap-2.5">
                     <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
                       <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
                     </span>
@@ -265,14 +265,14 @@ export default function CategoryPage() {
       {guide && (
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-b border-white/5">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.coversTitle}</h2>
               <div className="space-y-4">
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.covers}</p>
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.whenToGo}</p>
               </div>
             </div>
-            <div className="lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.chooseTitle}</h2>
               <div className="space-y-4">
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.choosing}</p>
@@ -385,20 +385,25 @@ export default function CategoryPage() {
             <h2 className="font-heading text-2xl sm:text-3xl text-snow tracking-wide">{c.browseOthers}</h2>
             <Link to={to('/categories')} className="text-vibe-pink text-sm font-semibold">{c.allCategoriesLink}</Link>
           </div>
-          <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center lg:justify-start">
+          {/* 18.10.2026 (Vesa: "tekemistä rovaniemellä ei ole optimoitu, edelleen näyttää tämä osio sekamelskalta"):
+              kahden sarakkeen ruudukossa osa siruista oli yhdellä ja osa kahdella rivillä. Puhelimella nyt yksi
+              samankorkuinen vieritettävä rivi, tabletilla keskitetyt rivit, tietokoneella vasemmalle. */}
+          <div className="relative -mx-4 sm:mx-0 after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:w-10 after:bg-gradient-to-l after:from-deep-night after:to-transparent sm:after:hidden">
+          <div className="flex gap-2 overflow-x-auto snap-x px-4 pb-1 sm:px-0 sm:pb-0 sm:overflow-visible sm:flex-wrap sm:justify-center lg:justify-start [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {categories.filter((cat) => cat.slug !== slug).map((rawCat) => {
               const cat = localizeCategory(rawCat, lang);
               return (
                 <Link
                   key={cat.slug}
                   to={to(`/categories/${cat.slug}`)}
-                  className="inline-flex items-center justify-center text-center leading-tight gap-2 px-3 sm:px-4 py-2 rounded-xl sm:rounded-full bg-white/5 border border-white/15 text-[13px] sm:text-sm text-snow/75 font-medium hover:border-vibe-pink/50 hover:text-snow transition-colors"
+                  className="inline-flex shrink-0 snap-start items-center gap-2 whitespace-nowrap px-3.5 sm:px-4 py-2 rounded-full bg-white/5 border border-white/15 text-[13px] sm:text-sm text-snow/75 font-medium hover:border-vibe-pink/50 hover:text-snow transition-colors"
                 >
                   <cat.icon className="w-4 h-4 text-vibe-pink shrink-0" />
-                  <span className="text-balance">{cat.name}</span>
+                  <span>{cat.name}</span>
                 </Link>
               );
             })}
+          </div>
           </div>
         </div>
       </section>

@@ -27,7 +27,7 @@ const OWN_LABEL: Record<string, string> = {
 // yläkulmaan ja saa rivittyä koko kuvan levyiseksi. Typistetty (truncate) kuitti katkaisi
 // lisenssin nimen, ja kun kortin tummennus poistettiin, katkaistu teksti jäi kirkkaan
 // kuvan päälle (korttiteksti-portti: levi-north-slope, 41 % alle 4,5:1). Lisenssin on näyttävä.
-export default function PhotoCredit({ src, links = true, className = '', at = 'bottom', wrap = false }: { src?: string; links?: boolean; className?: string; at?: 'top' | 'bottom'; wrap?: boolean }) {
+export default function PhotoCredit({ src, links = true, className = '', at = 'bottom', wrap = false, full = false }: { src?: string; links?: boolean; className?: string; at?: 'top' | 'bottom'; wrap?: boolean; full?: boolean }) {
   const lang = useLang();
   const c = creditFor(src);
   if (!c) return null;
@@ -41,7 +41,8 @@ export default function PhotoCredit({ src, links = true, className = '', at = 'b
   // näkyy aina; ennen koko rivi katkesi lopusta, jolloin lisenssi jäi pois (korttitekstiportti), ja korjaus
   // siirsi merkinnän kahdelle riville kuvan yläreunaan.
   const pos = `pointer-events-auto absolute ${at === 'top' ? 'top-1' : 'bottom-1'} right-1 z-10 rounded bg-black/55 px-1 py-px text-[9px] leading-tight text-white ${className}`;
-  const base = wrap ? `${pos} max-w-[calc(100%-0.5rem)]` : `${pos} flex max-w-[62%] whitespace-nowrap`;
+  // full: kuvan päällä ei ole muuta (pienet kohdelaatat), joten merkintä saa koko leveyden.
+  const base = wrap ? `${pos} max-w-[calc(100%-0.5rem)]` : `${pos} flex ${full ? 'max-w-[calc(100%-0.5rem)]' : 'max-w-[62%]'} whitespace-nowrap`;
   const one = wrap ? '' : 'truncate min-w-0';
   if (c.kind === 'partner') {
     // Kumppanin (esim. Sembo) oma hotellikuva: lähde näkyviin, ei lisenssilinkkiä (kuvalupa 10.9.2026).

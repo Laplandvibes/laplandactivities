@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
-import { MapPin, Plane, Mountain, Compass, ArrowLeft, ArrowRight, Sparkles, Hotel, Car } from 'lucide-react';
+import { MapPin, Plane, Mountain, Compass, ArrowLeft, ArrowRight, Sparkles, Hotel, Car, ChevronDown } from 'lucide-react';
 import { getDestinationBySlug, destinations } from '../data/destinations';
 import { getActivitiesByDestination } from '../data/activities';
 import { categories } from '../data/categories';
@@ -79,6 +80,12 @@ export default function DestinationPage() {
   const splittable = nowList.length >= 3 && offList.length >= 3;
   const inSeason = splittable ? nowList : [...nowList, ...restActivities.filter((a) => !isInSeason(a, bucket))];
   const offSeason = splittable ? offList : [];
+  // 18.10.2026 (Vesa: "eikö tämä osio ole aivan liian alhaalla?"): puhelimella ja tabletilla Rovaniemen 16 korttia
+  // veivät ~7 500 px ennen Miksi-osiota. Alle 1024 px näytetään ensin kuusi, loput napista; kortit ovat silti
+  // HTML:ssä (piilotettu vain CSS:llä), joten hakukone ja esirenderöinti näkevät ne. Tietokoneella ennallaan.
+  const [showAll, setShowAll] = useState(false);
+  const FIRST = 6;
+  const hiddenCount = Math.max(0, inSeason.length - FIRST) + offSeason.length;
   const seasonNowWord = words[bucket];
   const seasonOtherWord = words[otherBucket];
   const SeasonNowIcon = SEASON_ICON[bucket];
@@ -218,22 +225,27 @@ export default function DestinationPage() {
           </div>
 
           {/* category jump chips */}
-          <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:justify-center lg:justify-start mb-10">
+          {/* 18.10.2026 (Vesa: "tekemistä rovaniemellä ei ole optimoitu, edelleen näyttää tämä osio sekamelskalta"):
+              kahden sarakkeen ruudukossa osa siruista oli yhdellä ja osa kahdella rivillä. Puhelimella nyt yksi
+              samankorkuinen vieritettävä rivi, tabletilla keskitetyt rivit, tietokoneella vasemmalle. */}
+          <div className="relative -mx-4 sm:mx-0 mb-10 after:pointer-events-none after:absolute after:inset-y-0 after:right-0 after:w-10 after:bg-gradient-to-l after:from-deep-night after:to-transparent sm:after:hidden">
+          <div className="flex gap-2 overflow-x-auto snap-x px-4 pb-1 sm:px-0 sm:pb-0 sm:overflow-visible sm:flex-wrap sm:justify-center lg:justify-start [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {categoryGroups.map((g) => (
               <Link
                 key={g.slug}
                 to={to(`/categories/${g.slug}`)}
-                className="inline-flex items-center justify-center text-center leading-tight gap-1.5 px-3 py-2 sm:py-1.5 rounded-xl sm:rounded-full text-[13px] sm:text-sm font-medium border border-white/15 bg-white/5 text-snow/80 hover:bg-vibe-pink/15 hover:border-vibe-pink/40 hover:text-snow transition-colors"
+                className="inline-flex shrink-0 snap-start items-center gap-1.5 whitespace-nowrap px-3.5 py-2 sm:py-1.5 rounded-full text-[13px] sm:text-sm font-medium border border-white/15 bg-white/5 text-snow/80 hover:bg-vibe-pink/15 hover:border-vibe-pink/40 hover:text-snow transition-colors"
               >
-                <g.icon className="w-3.5 h-3.5 shrink-0" /> <span className="text-balance">{g.name}{'\u00A0'}({g.activities.length})</span>
+                <g.icon className="w-3.5 h-3.5 shrink-0" /> <span>{g.name}{'\u00A0'}({g.activities.length})</span>
               </Link>
             ))}
+          </div>
           </div>
 
           {/* In-season block */}
           {inSeason.length > 0 && (
             <div className="mb-12">
-              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-5">
+              <div className="flex flex-col items-center text-center gap-2 mb-5 lg:flex-row lg:text-left lg:gap-2.5">
                 <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-vibe-pink/15 border border-vibe-pink/30">
                   <SeasonNowIcon className="w-5 h-5 text-vibe-pink" />
                 </span>
@@ -243,15 +255,30 @@ export default function DestinationPage() {
                 </div>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                {inSeason.map((act, i) => (
+                  <div key={act.id} className={`flex [&>*]:w-full ${!showAll && i >= FIRST ? 'max-lg:hidden' : ''}`}>
+                    <ActivityCard activity={act} image={imgFor(act.id)} />
+                  </div>
+                ))}
               </div>
+              {!showAll && hiddenCount > 0 && (
+                <div className="lg:hidden mt-6 flex justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setShowAll(true)}
+                    className="lv-tap inline-flex w-full max-w-sm items-center justify-center gap-2 rounded-full border border-white/25 bg-white/10 px-6 py-3 text-sm font-semibold text-snow hover:bg-white/20 transition-colors"
+                  >
+                    {c.allActivitiesKicker} ({inSeason.length + offSeason.length}) <ChevronDown className="w-4 h-4" aria-hidden="true" />
+                  </button>
+                </div>
+              )}
             </div>
           )}
 
           {/* Off-season block */}
           {offSeason.length > 0 && (
-            <div>
-              <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-5">
+            <div className={showAll ? '' : 'max-lg:hidden'}>
+              <div className="flex flex-col items-center text-center gap-2 mb-5 lg:flex-row lg:text-left lg:gap-2.5">
                 <span className="inline-flex items-center justify-center w-9 h-9 rounded-xl bg-white/8 border border-white/15">
                   <SeasonOtherIcon className="w-5 h-5 text-arctic-cyan" />
                 </span>
@@ -275,24 +302,24 @@ export default function DestinationPage() {
       {/* WHY VISIT + GOOD TO KNOW — premium combined intro panel (no flat void) */}
       <section className="lv-aurora-veil bg-deep-night py-12 sm:py-16 px-4 sm:px-6 border-b border-white/5">
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
-          <div className="lg:col-span-3 lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
+          <div className="lg:col-span-3 lv-surface rounded-3xl p-6 sm:p-8">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{sec.whyKicker}</span>
             <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 mb-4">{sec.whyH2(destination.name)}</h2>
             {/* why ≠ hero lead (Vesa 2026-07-24: the two were verbatim identical on one screen) */}
-            <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{destination.why}</p>
+            <p className="text-snow/80 text-[15px] sm:text-base leading-relaxed">{destination.why}</p>
             <div className="mt-5 pt-5 border-t border-white/10">
               <p className="text-snow/70 text-xs uppercase tracking-[0.18em] font-semibold mb-2">{sec.operatorsShort}</p>
-              <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+              <div className="flex flex-wrap gap-2">
                 {destination.operators.map((op) => (
                   <span key={op} className="text-xs text-snow/75 font-medium bg-white/5 border border-white/10 px-3 py-1 rounded-full">{op}</span>
                 ))}
               </div>
             </div>
           </div>
-          <div className="lg:col-span-2 lv-surface-pink rounded-3xl p-6 sm:p-8 text-center lg:text-left">
+          <div className="lg:col-span-2 lv-surface-pink rounded-3xl p-6 sm:p-8">
             <span className="text-vibe-pink text-xs font-semibold tracking-[0.25em] uppercase">{sec.goodToKnowKicker}</span>
             <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mt-1 mb-5">{sec.goodToKnowH2}</h2>
-            <ul className="space-y-4 text-left max-w-md mx-auto lg:max-w-none">
+            <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Plane className="w-5 h-5 text-vibe-pink shrink-0 mt-0.5" />
                 <div>
@@ -333,14 +360,14 @@ export default function DestinationPage() {
       {guide && (
         <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-b border-white/5">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <div className="lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.seasonsTitle}</h2>
               <div className="space-y-4">
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.seasonWinter}</p>
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.seasonSummer}</p>
               </div>
             </div>
-            <div className="lv-surface rounded-3xl p-6 sm:p-8 text-center lg:text-left">
+            <div className="lv-surface rounded-3xl p-6 sm:p-8">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.planTitle}</h2>
               <div className="space-y-4">
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.planGetting}</p>
@@ -423,18 +450,24 @@ export default function DestinationPage() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {otherDestinations.map((d) => (
+              // 18.10.2026 (Vesa: "muita matkakohteita on outo, teksti liian alhaalla ja kaikki ihan lytyssä"):
+              // alle 1024 px kuva ylhäällä puhtaana ja teksti sen alla (sama malli kuin herot); ennen nimi,
+              // katkeava kuvaus, määrä ja kuvateksti olivat ahdettuina 176 px:n laatan alareunaan.
+              // lg+ ennallaan: teksti kuvan päällä alareunan liukuvärin varassa.
               <Link
                 key={d.slug}
                 to={to(`/destinations/${d.slug}`)}
-                className="group relative rounded-xl overflow-hidden h-44 sm:h-56 border border-white/10 hover:border-vibe-pink/30 transition-all"
+                className="group relative flex flex-col rounded-xl overflow-hidden bg-white/[0.04] border border-white/10 hover:border-vibe-pink/30 transition-all lg:block lg:h-56 lg:bg-transparent"
               >
-                <img src={imageForDestination(d.slug)} {...respImg(imageForDestination(d.slug), 'card')} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
-                <div className="absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
-                <PhotoCredit src={imageForDestination(d.slug)} links={false} />
-                {/* pb-5 (20 px): kuvakuitti ulottuu kortin alareunasta 17 px:iin, joten aktiviteettirivi jää sen yläpuolelle. */}
-                <div className="absolute bottom-0 left-0 right-0 p-3 pb-5 sm:p-4 sm:pb-5 text-center lg:text-left">
-                  <h3 className="font-heading text-lg sm:text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
-                  <p className="text-snow/90 text-xs line-clamp-1">{d.tagline}</p>
+                <div className="relative h-28 sm:h-36 overflow-hidden lg:absolute lg:inset-0 lg:h-auto">
+                  <img src={imageForDestination(d.slug)} {...respImg(imageForDestination(d.slug), 'card')} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
+                  <div className="hidden lg:block absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
+                  <PhotoCredit src={imageForDestination(d.slug)} links={false} full />
+                </div>
+                {/* lg+: pb-5 (20 px), koska kuvakuitti ulottuu laatan alareunasta 17 px:iin. */}
+                <div className="flex-1 p-3 sm:p-4 text-center lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:pb-5 lg:text-left">
+                  <h3 className="font-heading text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
+                  <p className="text-snow/80 text-xs leading-snug line-clamp-2 lg:line-clamp-1 lg:text-snow/90">{d.tagline}</p>
                   <div className="flex items-center justify-center lg:justify-start gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">
                     <MapPin className="w-3 h-3" /> {getActivitiesByDestination(d.slug).length} {c.activitiesShort}
                   </div>

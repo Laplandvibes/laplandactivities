@@ -46,7 +46,7 @@ export default function DestinationsIndex() {
           {/* Editorial lead — src/data/guides.<lang>.ts, same record the prerenderer
               harvests via routes.json, so crawler and reader see one text. */}
           {guide && (
-            <section className="mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto text-center lg:text-left">
+            <section className="mb-10 sm:mb-14 lv-surface rounded-3xl p-6 sm:p-8 max-w-4xl mx-auto">
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-4">{guide.leadTitle}</h2>
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-4">{guide.lead}</p>
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.note}</p>

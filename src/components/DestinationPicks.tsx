@@ -56,7 +56,7 @@ export default function DestinationPicks({ slug }: { slug: string }) {
           <p className="text-snow/70 text-sm sm:text-base leading-relaxed mt-2 max-w-2xl mx-auto lg:mx-0 max-lg:text-balance">{c.lede}</p>
         </div>
 
-        <div className="flex gap-4 overflow-x-auto pb-3 -mx-4 px-4 snap-x snap-mandatory sm:mx-0 sm:px-0 sm:overflow-visible sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5">
+        <div className="flex gap-4 overflow-x-auto pb-3 -mx-4 px-4 snap-x snap-mandatory sm:mx-0 sm:px-0 sm:overflow-visible sm:grid sm:grid-cols-2 lg:grid-cols-4 sm:gap-5 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
           {rows.map((p) => {
             const Icon = pickIcon(p.title);
             return (
