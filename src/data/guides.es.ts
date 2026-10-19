@@ -128,7 +128,7 @@ const guides: Guides = {
       whenToGo: 'Ambas funcionan todo el año, pero por carácter son experiencias de invierno: el baño helado necesita un agujero abierto en un lago congelado, y la flotación funciona mejor cuando hay hielo alrededor. Una sauna de humo tarda horas en calentarse, así que va por turnos fijos y no bajo demanda, y el turno de la tarde es el que conviene reservar.',
       chooseTitle: 'Elegir una experiencia de sauna',
       choosing: 'La sauna de humo es la versión tradicional y aquella en torno a la que merece la pena organizar un día. El baño helado es voluntario en todos los sitios que lo ofrecen, y nadie le empujará. La flotación encaja con quien quiere el agua fría sin nadar, porque el traje le mantiene seco y lo bastante caliente para quedarse un rato.',
-      bring: 'Lleve bañador y toalla; la mayoría de los sitios alquilan ambos si se le olvidan. En Finlandia se suele entrar sin bañador en los turnos separados por sexo y con él en los turnos públicos mixtos, así que pregunte al llegar. Reserve tiempo para enfriarse bien en lugar de encadenar directamente con la siguiente actividad.',
+      bring: 'Lleve traje de baño y toalla; la mayoría de los sitios alquilan ambos si se le olvidan. En Finlandia se suele entrar sin traje de baño en los turnos separados por sexo y con él en los turnos públicos mixtos, así que pregunte al llegar. Reserve tiempo para enfriarse bien en lugar de encadenar directamente con la siguiente actividad.',
     },
     culture: {
       coversTitle: 'Herencia sami, Papá Noel y el relato ártico',
