@@ -257,7 +257,7 @@ const sv: SectionCopy = {
       saariselka: [
         { tip: 'Kiilopääs rökbastu är öppen året runt. Boka eftermiddagspasset.', icon: '🧖' },
         { tip: 'Guldvaskning i Tankavaara: allt du hittar får du behålla.', icon: '🥇' },
-        { tip: 'UKK-nationalparkens vildmarksstugor är gratis, i den ordning man kommer.', icon: '🏕️' },
+        { tip: 'UKK-nationalparkens ödestugor är gratis och först till kvarn.', icon: '🏕️' },
       ],
       inari: [
         { tip: 'Siida-museet kräver minst tre timmar. Läs den samiskspråkiga avdelningen.', icon: '🏛️' },

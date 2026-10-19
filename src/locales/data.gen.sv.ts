@@ -575,10 +575,10 @@ const d: LangData = {
     },
     "saa-uk-national-park": {
       "title": "Vandring i Urho Kekkonens nationalpark",
-      "description": "Utforska ett av Europas största vildmarksområden. Dagsvandringar från Kiilopää eller flerdagsvandringar genom orört fjällandskap med vildmarksstugor längs vägen.",
+      "description": "Utforska ett av Europas största vildmarksområden. Dagsvandringar från Kiilopää eller flerdagsvandringar genom orört fjällandskap med ödestugor längs vägen.",
       "highlights": [
         "Fri entré",
-        "Vildmarksstugor",
+        "Ödestugor",
         "2 550 km² område"
       ],
       "duration": "1 dag - flera dagar",
