@@ -10,6 +10,7 @@ import ActivityCard from '../components/ActivityCard';
 import GetYourGuideWidget from '../components/GetYourGuideWidget';
 import AffiliateCTA from '../components/AffiliateCTA';
 import AdUnit from '../shared/ads/AdUnit';
+import { AppPromoAurora } from '../components/AppPromo';
 import bearKuusamoAd from '../shared/ads/advertisers/bearkuusamo';
 import { trackAffiliateClick, trackPartnerClick } from '../lib/analytics';
 import { gygPathForCategory } from '../data/affiliate';
@@ -279,6 +280,16 @@ export default function CategoryPage() {
                 <p className="text-snow/80 text-sm sm:text-base leading-relaxed">{guide.bring}</p>
               </div>
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Revontuliretken varaaja tarvitsee yön ennusteen: appin revontuliyksikkö, jonka nappi avaa appin
+          revontulinäkymän (tämän yön todennäköisyys tunneittain). Vain revontulikategoriassa (19.10.2026). */}
+      {slug === 'northern-lights' && (
+        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
+          <div className="max-w-5xl mx-auto">
+            <AppPromoAurora placement="category_northern_lights" />
           </div>
         </section>
       )}
