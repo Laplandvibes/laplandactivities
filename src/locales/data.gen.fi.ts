@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Täältä löytyvät legendaarinen Karhunkierros, Oulangan kansallispuisto ja yksi Suomen parhaista hiihtokeskuksista. Tunnettu karhujen tarkkailusta, koskenlaskusta ja pisimmästä hiihtokaudesta. Ruka on Kuusamossa, heti Lapin maakuntarajan eteläpuolella, samaa lunta ja samaa pohjoista talvea.",
       "access": "Lento Kuusamoon (25 min ajomatka)",
       "bestFor": "Vaeltajat, hiihtäjät ja luonnonystävät",
-      "why": "Ruka on tiivis rinnekylä, jossa on 41 rinnettä ja 22 hissiä keskellä Kuusamon retkeilymaastoja: Oulangan kansallispuisto, 82 kilometrin Karhunkierros ja kosket, joilla lasketaan keväästä syksyyn. Säilölumi avaa kauden jo lokakuussa ja hiihto jatkuu toukokuulle, pisimpään koko maassa. Kesällä ohjelma kääntyy karhunkatselukojuihin ja palkittuun bike parkiin, joten vaeltajat saavat täältä yhtä paljon kuin laskijat."
+      "why": "Ruka on tiivis rinnekylä, jossa on 41 rinnettä ja 22 hissiä keskellä Kuusamon retkeilymaastoja: Oulangan kansallispuisto, 81 kilometrin Karhunkierros ja kosket, joilla lasketaan keväästä syksyyn. Säilölumi avaa kauden jo lokakuussa ja hiihto jatkuu toukokuulle, pisimpään koko maassa. Kesällä ohjelma kääntyy karhunkatselukojuihin ja palkittuun bike parkiin, joten vaeltajat saavat täältä yhtä paljon kuin laskijat."
     },
     "posio": {
       "name": "Posio",
@@ -791,9 +791,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Vaellus Karhunkierroksella",
-      "description": "Suomen kuuluisin vaellusreitti, 82 km Oulangan kansallispuiston halki. Riippusiltoja, koskia, vesiputouksia ja koskematonta boreaalista metsää.",
+      "description": "Suomen kuuluisin vaellusreitti, 81 km Oulangan kansallispuiston halki. Riippusiltoja, koskia, vesiputouksia ja koskematonta boreaalista metsää.",
       "highlights": [
-        "82 km:n reitti",
+        "81 km:n reitti",
         "Riippusillat",
         "Oulangan kansallispuisto"
       ],

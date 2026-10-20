@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Abriga a lendária trilha do urso Karhunkierros, do Parque Nacional de Oulanka e de uma das melhores estações de esqui da Finlândia. Famosa pela observação de ursos, pelo rafting e pela temporada de esqui mais longa. Ruka fica em Kuusamo, logo ao sul da Lapônia, com a mesma neve e o mesmo inverno nórdico.",
       "access": "Voo para Kuusamo (25 min de carro)",
       "bestFor": "Caminhantes, esquiadores e amantes da fauna",
-      "why": "Ruka é uma vila-estação compacta, com 41 pistas e 22 teleféricos no coração do território outdoor de Kuusamo: o parque nacional de Oulanka, os 82 km da trilha Karhunkierros e corredeiras com rafting da primavera ao outono. A neve armazenada abre a temporada em outubro e se esquia até maio, a mais longa da Finlândia. No verão entram em cena os abrigos de observação de ursos-pardos e o premiado bike park."
+      "why": "Ruka é uma vila-estação compacta, com 41 pistas e 22 teleféricos no coração do território outdoor de Kuusamo: o parque nacional de Oulanka, os 81 km da trilha Karhunkierros e corredeiras com rafting da primavera ao outono. A neve armazenada abre a temporada em outubro e se esquia até maio, a mais longa da Finlândia. No verão entram em cena os abrigos de observação de ursos-pardos e o premiado bike park."
     },
     "posio": {
       "name": "Posio",
@@ -731,9 +731,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking na trilha do urso Karhunkierros",
-      "description": "A trilha de caminhada mais famosa da Finlândia, 82 km pelo Parque Nacional de Oulanka. Pontes suspensas, corredeiras, cachoeiras e floresta boreal intocada.",
+      "description": "A trilha de caminhada mais famosa da Finlândia, 81 km pelo Parque Nacional de Oulanka. Pontes suspensas, corredeiras, cachoeiras e floresta boreal intocada.",
       "highlights": [
-        "Trilha de 82 km",
+        "Trilha de 81 km",
         "Pontes suspensas",
         "Parque Nacional de Oulanka"
       ],

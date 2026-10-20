@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Le sentier mythique du Karhunkierros, le parc national d'Oulanka et l'une des meilleures stations de ski de Finlande. Connue pour l'observation des ours, le rafting et la plus longue saison de ski. Ruka se trouve à Kuusamo, juste au sud de la Laponie, avec la même neige et le même hiver nordique.",
       "access": "Vol vers Kuusamo (25 min en voiture)",
       "bestFor": "Randonneurs, skieurs et passionnés de faune",
-      "why": "Ruka est un village-station compact, 41 pistes et 22 remontées, au cœur du terrain de jeu de Kuusamo : parc national d’Oulanka, sentier Karhunkierros de 82 km et rapides où l’on pratique le rafting du printemps à l’automne. Grâce à la neige stockée, la station ouvre en octobre et reste skiable jusqu’en mai, la plus longue saison de Finlande. L’été, place aux affûts d’observation des ours bruns et au bike park primé."
+      "why": "Ruka est un village-station compact, 41 pistes et 22 remontées, au cœur du terrain de jeu de Kuusamo : parc national d’Oulanka, sentier Karhunkierros de 81 km et rapides où l’on pratique le rafting du printemps à l’automne. Grâce à la neige stockée, la station ouvre en octobre et reste skiable jusqu’en mai, la plus longue saison de Finlande. L’été, place aux affûts d’observation des ours bruns et au bike park primé."
     },
     "posio": {
       "name": "Posio",
@@ -731,9 +731,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Randonnée sur le sentier de l'ours Karhunkierros",
-      "description": "Le sentier de randonnée le plus célèbre de Finlande, 82 km à travers le parc national d'Oulanka. Ponts suspendus, rapides, cascades et forêt boréale préservée.",
+      "description": "Le sentier de randonnée le plus célèbre de Finlande, 81 km à travers le parc national d'Oulanka. Ponts suspendus, rapides, cascades et forêt boréale préservée.",
       "highlights": [
-        "Sentier de 82 km",
+        "Sentier de 81 km",
         "Ponts suspendus",
         "Parc national d'Oulanka"
       ],

@@ -53,7 +53,7 @@ const guides: Guides = {
     ruka: {
       seasonsTitle: 'Ruka season by season',
       seasonWinter: 'Stored snow lets Ruka open in October and stay open into May, the longest ski season in Finland, on 41 slopes served by 22 lifts. The village sits right on top of the slopes, so the walk from bed to lift is short. Away from the runs there are snowmobile safaris, husky trips and ice climbing on the frozen falls of Korouoma.',
-      seasonSummer: 'Summer flips the destination completely. Brown-bear watching from hides runs through the light months, the Kitka river carries rafting trips from spring into autumn, and the 82 km Karhunkierros trail through Oulanka National Park is one of the best-known hikes in the country. The bike park handles those who want the descent without the snow.',
+      seasonSummer: 'Summer flips the destination completely. Brown-bear watching from hides runs through the light months, the Kitka river carries rafting trips from spring into autumn, and the 81 km Karhunkierros trail through Oulanka National Park is one of the best-known hikes in the country. The bike park handles those who want the descent without the snow.',
       planTitle: 'Planning a Ruka trip',
       planGetting: 'Kuusamo airport is about twenty-five minutes away. Ruka sits in Kuusamo just south of the official Lapland border, with the same snow and the same northern winter. A car is worth having for Oulanka, Korouoma and the bear hides, all of which are outside the village.',
       planStay: 'Skiers can stay slope-side and never start the engine; hikers and wildlife watchers should plan for driving. Bear-watching hides book out months ahead, so treat them as the fixed point of a summer trip. Karhunkierros has a 12 km loop for anyone who wants the scenery without the multi-day version.',
@@ -143,7 +143,7 @@ const guides: Guides = {
     },
     summer: {
       coversTitle: 'Lapland in the light months',
-      covers: 'Summer turns the same landscape into hiking, paddling and cycling country. National-park routes run at Pallas-Yllästunturi, Urho Kekkonen, Oulanka and Pyhä-Luosto, from short marked loops to the 82 km Karhunkierros. On the water there are lake cruises and midnight sun kayaking at Inari; on wheels, the Levi Bike Park. Golf under a sun that does not set is the local curiosity.',
+      covers: 'Summer turns the same landscape into hiking, paddling and cycling country. National-park routes run at Pallas-Yllästunturi, Urho Kekkonen, Oulanka and Pyhä-Luosto, from short marked loops to the 81 km Karhunkierros. On the water there are lake cruises and midnight sun kayaking at Inari; on wheels, the Levi Bike Park. Golf under a sun that does not set is the local curiosity.',
       whenToGo: 'June to August is the core, with the sun above the horizon around the clock at midsummer this far north. Late July brings cloudberries and the first mushrooms. September and October are the ruska weeks, when the fells turn colour and the first auroras return, and the trails are close to empty.',
       chooseTitle: 'Choosing a summer trip',
       choosing: 'Decide whether you want a base or a route. Day walks from a village suit most visitors and need no permits; the long trails need planning, and the wilderness huts along them are free and first come, first served. Paddling and rafting are guided, which is the sensible way to meet a northern river for the first time.',

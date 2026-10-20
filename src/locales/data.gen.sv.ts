@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Här finns den legendariska vandringsleden Björnrundan (Karhunkierros), Oulanka nationalpark och en av Finlands bästa skidorter. Känd för björnskådning, forsränning och den längsta skidsäsongen. Ruka ligger i Kuusamo, strax söder om Lapplands gräns, med samma snö och samma nordliga vinter.",
       "access": "Flyg till Kuusamo (25 minuters bilfärd)",
       "bestFor": "Vandrare, skidåkare och naturintresserade",
-      "why": "Ruka är en kompakt skidby med 41 pister och 22 liftar mitt i Kuusamos friluftsområden: Oulanka nationalpark, den 82 km långa Karhunkierros-leden och forsar med forsränning från vår till höst. Tack vare lagrad snö öppnar orten i oktober och håller öppet ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
+      "why": "Ruka är en kompakt skidby med 41 pister och 22 liftar mitt i Kuusamos friluftsområden: Oulanka nationalpark, den 81 km långa Karhunkierros-leden och forsar med forsränning från vår till höst. Tack vare lagrad snö öppnar orten i oktober och håller öppet ända in i maj, Finlands längsta säsong. På sommaren tar björnskådningsgömslen och den prisade cykelparken över."
     },
     "posio": {
       "name": "Posio",
@@ -731,9 +731,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Vandring på Karhunkierros björnstig",
-      "description": "Finlands mest kända vandringsled – 82 km genom Oulanka nationalpark. Hängbroar, forsar, vattenfall och orörd boreal skog.",
+      "description": "Finlands mest kända vandringsled – 81 km genom Oulanka nationalpark. Hängbroar, forsar, vattenfall och orörd boreal skog.",
       "highlights": [
-        "82 km led",
+        "81 km led",
         "Hängbroar",
         "Oulanka nationalpark"
       ],

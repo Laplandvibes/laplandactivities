@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Hier vindt u het legendarische Karhunkierros-berenpad, het Nationaal Park Oulanka en een van de beste skigebieden van Finland. Beroemd om berenobservatie, raften en het langste skiseizoen. Ruka ligt in Kuusamo, net ten zuiden van Lapland, met dezelfde sneeuw en dezelfde noordelijke winter.",
       "access": "Vlieg naar Kuusamo (25 min met de auto)",
       "bestFor": "Wandelaars, skiërs en natuurliefhebbers",
-      "why": "Ruka is een compact skidorp met 41 pistes en 22 liften midden in de natuur van Kuusamo: nationaal park Oulanka, de 82 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark de plaats in."
+      "why": "Ruka is een compact skidorp met 41 pistes en 22 liften midden in de natuur van Kuusamo: nationaal park Oulanka, de 81 km lange Karhunkierros en stroomversnellingen waar van lente tot herfst wordt geraft. Dankzij opgeslagen sneeuw opent het gebied in oktober en wordt er tot in mei geskied, het langste seizoen van Finland. In de zomer nemen de kijkhutten voor bruine beren en het bekroonde bikepark de plaats in."
     },
     "posio": {
       "name": "Posio",
@@ -731,9 +731,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Karhunkierros-berenpad wandeling",
-      "description": "De beroemdste wandeltrail van Finland, 82 km door het Nationaal Park Oulanka. Hangbruggen, stroomversnellingen, watervallen en ongerept boreaal bos.",
+      "description": "De beroemdste wandeltrail van Finland, 81 km door het Nationaal Park Oulanka. Hangbruggen, stroomversnellingen, watervallen en ongerept boreaal bos.",
       "highlights": [
-        "82 km trail",
+        "81 km trail",
         "Hangbruggen",
         "Nationaal Park Oulanka"
       ],

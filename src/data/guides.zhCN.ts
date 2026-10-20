@@ -50,7 +50,7 @@ const guides: Guides = {
     ruka: {
       seasonsTitle: 'Ruka 的四季',
       seasonWinter: '靠储存的雪，Ruka 十月就能开板，一直滑到五月，是芬兰最长的雪季，41 条雪道由 22 部缆车串起。村子就在雪道正上方，从住处到缆车口的距离很短。雪道之外还有雪地摩托行程、哈士奇之旅，以及在 Korouoma 峡谷冰瀑上的攀冰。',
-      seasonSummer: '夏天把这个目的地彻底翻了个面。棕熊观察屋在光亮的月份里持续运作，Kitka 河从春季到秋季承接漂流，而穿越 Oulanka 国家公园、全长 82 公里的 Karhunkierros 是全国最知名的徒步路线之一。想要不带雪的速降，则有山地车公园。',
+      seasonSummer: '夏天把这个目的地彻底翻了个面。棕熊观察屋在光亮的月份里持续运作，Kitka 河从春季到秋季承接漂流，而穿越 Oulanka 国家公园、全长 81 公里的 Karhunkierros 是全国最知名的徒步路线之一。想要不带雪的速降，则有山地车公园。',
       planTitle: '规划 Ruka 之行',
       planGetting: 'Kuusamo 机场约二十五分钟车程。Ruka 位于 Kuusamo，就在拉普兰官方边界以南一点，雪和北方的冬天并无二致。Oulanka、Korouoma 和熊观察屋都在村外，有车会大不一样。',
       planStay: '滑雪的人可以住在雪道边、全程不用发动汽车；徒步和观察野生动物的人则要把车程算进去。熊观察屋提前数月就会订满，夏季行程不妨以它为固定点来安排。Karhunkierros 有一段 12 公里的环线，适合只想看风景、不打算走多日路线的人。',
@@ -140,7 +140,7 @@ const guides: Guides = {
     },
     summer: {
       coversTitle: '明亮月份里的拉普兰',
-      covers: '夏天把同一片风景变成徒步、划桨和骑行的场地。国家公园路线分布在 Pallas-Yllästunturi、Urho Kekkonen、Oulanka 和皮哈-卢奥斯托，从有标记的短环线一直到 82 公里的 Karhunkierros。水上有 Inari 的湖上游船和午夜阳光下的皮划艇，轮子上则有 Levi Bike Park。在不落的太阳下打高尔夫，是当地特有的趣味。',
+      covers: '夏天把同一片风景变成徒步、划桨和骑行的场地。国家公园路线分布在 Pallas-Yllästunturi、Urho Kekkonen、Oulanka 和皮哈-卢奥斯托，从有标记的短环线一直到 81 公里的 Karhunkierros。水上有 Inari 的湖上游船和午夜阳光下的皮划艇，轮子上则有 Levi Bike Park。在不落的太阳下打高尔夫，是当地特有的趣味。',
       whenToGo: '核心是六月到八月，夏至前后在这个纬度上，太阳整日都在地平线之上。七月下旬云莓和头茬蘑菇上市。九月和十月是 ruska 的几周，山丘变色，当年第一轮极光回归，而步道上几乎空无一人。',
       chooseTitle: '怎么规划一次夏季旅行',
       choosing: '先决定你要一个据点还是一条线路。以村庄为起点的一日徒步适合大多数人，也不需要任何许可；长线路需要计划，沿途的荒野小屋免费且先到先得。皮划艇和漂流都有向导带队，这也是第一次面对北方河流时合理的方式。',

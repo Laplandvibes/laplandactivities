@@ -51,7 +51,7 @@ const guides: Guides = {
     ruka: {
       seasonsTitle: 'Ruka kausi kerrallaan',
       seasonWinter: 'Säilölumi antaa Rukan aueta lokakuussa ja pysyä auki toukokuulle, Suomen pisin hiihtokausi, 41 rinteellä ja 22 hissillä. Kylä on suoraan rinteiden päällä, joten matka sängystä hissille on lyhyt. Rinteiden ulkopuolella on kelkkasafareita, huskyretkiä ja jääkiipeilyä Korouoman jäätyneillä putouksilla.',
-      seasonSummer: 'Kesä kääntää kohteen täysin. Karhunkatselu kojuista pyörii valoisat kuukaudet, Kitkajoki kantaa koskenlaskuretkiä keväästä syksyyn, ja 82 kilometrin Karhunkierros Oulangan kansallispuistossa on maan tunnetuimpia vaelluksia. Bike park palvelee niitä, jotka haluavat laskun ilman lunta.',
+      seasonSummer: 'Kesä kääntää kohteen täysin. Karhunkatselu kojuista pyörii valoisat kuukaudet, Kitkajoki kantaa koskenlaskuretkiä keväästä syksyyn, ja 81 kilometrin Karhunkierros Oulangan kansallispuistossa on maan tunnetuimpia vaelluksia. Bike park palvelee niitä, jotka haluavat laskun ilman lunta.',
       planTitle: 'Rukan matkan suunnittelu',
       planGetting: 'Kuusamon lentoasemalta on noin 25 minuuttia. Ruka sijaitsee Kuusamossa aivan virallisen Lapin rajan eteläpuolella, samassa lumessa ja samassa pohjoisessa talvessa. Auto kannattaa olla Oulankaa, Korouomaa ja karhukojuja varten, sillä ne kaikki ovat kylän ulkopuolella.',
       planStay: 'Laskettelija voi majoittua rinteen viereen eikä käynnistä autoa kertaakaan; vaeltajan ja luontokuvaajan kannattaa varautua ajamaan. Karhukojut varataan kuukausia etukäteen, joten tee niistä kesämatkan kiintopiste. Karhunkierroksesta on 12 kilometrin lenkki niille, jotka haluavat maisemat ilman monen päivän versiota.',
@@ -141,7 +141,7 @@ const guides: Guides = {
     },
     summer: {
       coversTitle: 'Lappi valoisina kuukausina',
-      covers: 'Kesä muuttaa saman maiseman vaellus-, melonta- ja pyöräilymaastoksi. Kansallispuistojen reitit kulkevat Pallas-Yllästunturilla, Urho Kekkosen puistossa, Oulangalla ja Pyhä-Luostolla, lyhyistä merkityistä lenkeistä 82 kilometrin Karhunkierrokseen. Vedellä on järviristeilyjä ja melontaa keskiyön auringossa Inarissa, pyörillä Levi Bike Park. Golf laskemattomassa auringossa on paikallinen kummallisuus.',
+      covers: 'Kesä muuttaa saman maiseman vaellus-, melonta- ja pyöräilymaastoksi. Kansallispuistojen reitit kulkevat Pallas-Yllästunturilla, Urho Kekkosen puistossa, Oulangalla ja Pyhä-Luostolla, lyhyistä merkityistä lenkeistä 81 kilometrin Karhunkierrokseen. Vedellä on järviristeilyjä ja melontaa keskiyön auringossa Inarissa, pyörillä Levi Bike Park. Golf laskemattomassa auringossa on paikallinen kummallisuus.',
       whenToGo: 'Kesäkuusta elokuuhun on ydinkausi, ja juhannuksen aikaan näin pohjoisessa aurinko pysyy horisontin yläpuolella vuorokauden ympäri. Heinäkuun lopussa tulevat hillat ja ensimmäiset sienet. Syys-lokakuu on ruska-aikaa, jolloin tunturit värjäytyvät ja ensimmäiset revontulet palaavat, ja polut ovat lähes tyhjät.',
       chooseTitle: 'Kesämatkan valinta',
       choosing: 'Päätä, haluatko tukikohdan vai reitin. Päiväkävelyt kylästä sopivat useimmille eivätkä vaadi lupia; pitkät vaellukset vaativat suunnittelua, ja niiden varren autiotuvat ovat ilmaisia ja saapumisjärjestyksessä. Melonta ja koskenlasku ovat opastettuja, mikä on järkevä tapa tutustua pohjoiseen jokeen ensimmäistä kertaa.',

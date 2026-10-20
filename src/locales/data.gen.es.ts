@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Sede del legendario sendero del oso Karhunkierros, del Parque nacional de Oulanka y de una de las mejores estaciones de esquí de Finlandia. Famosa por la observación de osos, el rafting y la temporada de esquí más larga. Ruka está en Kuusamo, justo al sur de Laponia, con la misma nieve y el mismo invierno nórdico.",
       "access": "Vuelo a Kuusamo (25 min en coche)",
       "bestFor": "Senderistas, esquiadores y amantes de la fauna",
-      "why": "Ruka es un pueblo de esquí compacto con 41 pistas y 22 remontes en plena zona de actividades al aire libre de Kuusamo: el parque nacional de Oulanka, los 82 km del sendero Karhunkierros y rápidos con rafting de primavera a otoño. La nieve almacenada abre la temporada en octubre y se esquía hasta mayo, la más larga de Finlandia. En verano toman el relevo los observatorios para ver osos pardos y el premiado bike park."
+      "why": "Ruka es un pueblo de esquí compacto con 41 pistas y 22 remontes en plena zona de actividades al aire libre de Kuusamo: el parque nacional de Oulanka, los 81 km del sendero Karhunkierros y rápidos con rafting de primavera a otoño. La nieve almacenada abre la temporada en octubre y se esquía hasta mayo, la más larga de Finlandia. En verano toman el relevo los observatorios para ver osos pardos y el premiado bike park."
     },
     "posio": {
       "name": "Posio",
@@ -731,9 +731,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking por el sendero del oso Karhunkierros",
-      "description": "El sendero de senderismo más famoso de Finlandia: 82 km a través del Parque nacional de Oulanka. Puentes colgantes, rápidos, cascadas y bosque boreal intacto.",
+      "description": "El sendero de senderismo más famoso de Finlandia: 81 km a través del Parque nacional de Oulanka. Puentes colgantes, rápidos, cascadas y bosque boreal intacto.",
       "highlights": [
-        "Sendero de 82 km",
+        "Sendero de 81 km",
         "Puentes colgantes",
         "Parque nacional de Oulanka"
       ],

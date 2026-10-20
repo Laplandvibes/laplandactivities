@@ -850,9 +850,9 @@ export const activities: Activity[] = [
     duration: '2-5 days',
     difficulty: 'Challenging',
     season: ['summer', 'autumn'],
-    description: 'Finland\'s most famous hiking trail - 82 km through Oulanka National Park. Hanging bridges, rapids, waterfalls, and pristine boreal forest.',
+    description: 'Finland\'s most famous hiking trail - 81 km through Oulanka National Park. Hanging bridges, rapids, waterfalls, and pristine boreal forest.',
     groupSize: '1-6',
-    highlights: ['82 km trail', 'Hanging bridges', 'Oulanka National Park'],
+    highlights: ['81 km trail', 'Hanging bridges', 'Oulanka National Park'],
     featured: true,
   },
   {

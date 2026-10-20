@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Sede del leggendario sentiero dell'orso Karhunkierros, del Parco nazionale di Oulanka e di una delle migliori stazioni sciistiche della Finlandia. Famosa per l'osservazione degli orsi, il rafting e la stagione sciistica più lunga. Ruka si trova a Kuusamo, appena a sud della Lapponia, con la stessa neve e lo stesso inverno nordico.",
       "access": "Volo a Kuusamo (25 min in auto)",
       "bestFor": "Escursionisti, sciatori e amanti della fauna",
-      "why": "Ruka è un paese-stazione compatto con 41 piste e 22 impianti nel cuore del territorio outdoor di Kuusamo: il parco nazionale di Oulanka, gli 82 km del sentiero Karhunkierros e rapide dove si fa rafting da primavera ad autunno. La neve conservata apre la stagione a ottobre e si scia fino a maggio, il periodo più lungo della Finlandia. D’estate tocca ai capanni per osservare gli orsi bruni e al premiato bike park."
+      "why": "Ruka è un paese-stazione compatto con 41 piste e 22 impianti nel cuore del territorio outdoor di Kuusamo: il parco nazionale di Oulanka, gli 81 km del sentiero Karhunkierros e rapide dove si fa rafting da primavera ad autunno. La neve conservata apre la stagione a ottobre e si scia fino a maggio, il periodo più lungo della Finlandia. D’estate tocca ai capanni per osservare gli orsi bruni e al premiato bike park."
     },
     "posio": {
       "name": "Posio",
@@ -731,9 +731,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking sul sentiero dell'orso Karhunkierros",
-      "description": "Il sentiero escursionistico più famoso della Finlandia, 82 km attraverso il Parco nazionale di Oulanka. Ponti sospesi, rapide, cascate e foresta boreale incontaminata.",
+      "description": "Il sentiero escursionistico più famoso della Finlandia, 81 km attraverso il Parco nazionale di Oulanka. Ponti sospesi, rapide, cascate e foresta boreale incontaminata.",
       "highlights": [
-        "Sentiero di 82 km",
+        "Sentiero di 81 km",
         "Ponti sospesi",
         "Parco nazionale di Oulanka"
       ],

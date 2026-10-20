@@ -103,7 +103,7 @@ export const destinations: Destination[] = [
     name: 'Ruka & Kuusamo',
     tagline: "Home of Finland's Longest Ski Season",
     description: 'Home to the legendary Karhunkierros Bear Trail, Oulanka National Park, and one of Finland\'s best ski resorts. Famous for bear watching, river rafting, and the longest ski season. Ruka sits in Kuusamo just south of the official Lapland border, with the same snow and the same northern winter.',
-    why: 'Ruka is a compact slope-side village with 41 slopes and 22 lifts on top of Kuusamo\'s outdoor country: Oulanka National Park, the 82 km Karhunkierros trail and rapids that run rafting trips from spring into autumn. Stored snow lets the resort open in October and ski into May, the longest season in Finland. Summer flips the script with brown-bear watching hides and Finland\'s award-winning bike park, so hikers and wildlife watchers get as much here as skiers do.',
+    why: 'Ruka is a compact slope-side village with 41 slopes and 22 lifts on top of Kuusamo\'s outdoor country: Oulanka National Park, the 81 km Karhunkierros trail and rapids that run rafting trips from spring into autumn. Stored snow lets the resort open in October and ski into May, the longest season in Finland. Summer flips the script with brown-bear watching hides and Finland\'s award-winning bike park, so hikers and wildlife watchers get as much here as skiers do.',
     access: 'Fly to Kuusamo (25 min drive)',
     elevation: '492m',
     bestFor: 'Hikers, skiers & wildlife enthusiasts',

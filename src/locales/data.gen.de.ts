@@ -88,7 +88,7 @@ const d: LangData = {
       "description": "Heimat des legendären Bärenpfads Karhunkierros, des Nationalparks Oulanka und eines der besten Skigebiete Finnlands. Berühmt für Bärenbeobachtung, Rafting und die längste Skisaison. Ruka liegt in Kuusamo, knapp südlich der Grenze Lapplands, mit demselben Schnee und demselben nordischen Winter.",
       "access": "Flug nach Kuusamo (25 Min. mit dem Auto)",
       "bestFor": "Wanderer, Skifahrer und Tierliebhaber",
-      "why": "Ruka ist ein kompaktes Skidorf mit 41 Pisten und 22 Liften mitten in Kuusamos Outdoor-Land: Oulanka-Nationalpark, der 82 km lange Karhunkierros und Stromschnellen mit Rafting von Frühjahr bis Herbst. Dank Schneedepot öffnet das Gebiet im Oktober, und der Betrieb läuft bis in den Mai, die längste Saison Finnlands. Im Sommer treten Braunbär-Verstecke und der prämierte Bikepark an ihre Stelle."
+      "why": "Ruka ist ein kompaktes Skidorf mit 41 Pisten und 22 Liften mitten in Kuusamos Outdoor-Land: Oulanka-Nationalpark, der 81 km lange Karhunkierros und Stromschnellen mit Rafting von Frühjahr bis Herbst. Dank Schneedepot öffnet das Gebiet im Oktober, und der Betrieb läuft bis in den Mai, die längste Saison Finnlands. Im Sommer treten Braunbär-Verstecke und der prämierte Bikepark an ihre Stelle."
     },
     "posio": {
       "name": "Posio",
@@ -791,9 +791,9 @@ const d: LangData = {
     },
     "ruk-karhunkierros": {
       "title": "Trekking auf dem Bärenpfad Karhunkierros",
-      "description": "Der berühmteste Wanderweg Finnlands, 82 km durch den Nationalpark Oulanka. Hängebrücken, Stromschnellen, Wasserfälle und unberührter Borealwald.",
+      "description": "Der berühmteste Wanderweg Finnlands, 81 km durch den Nationalpark Oulanka. Hängebrücken, Stromschnellen, Wasserfälle und unberührter Borealwald.",
       "highlights": [
-        "Weg von 82 km",
+        "Weg von 81 km",
         "Hängebrücken",
         "Nationalpark Oulanka"
       ],

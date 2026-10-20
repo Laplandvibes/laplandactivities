@@ -50,7 +50,7 @@ const guides: Guides = {
     ruka: {
       seasonsTitle: 'Ruka estação por estação',
       seasonWinter: 'A neve estocada permite que Ruka abra já em outubro e esquie até maio, a temporada mais longa da Finlândia, em 41 pistas servidas por 22 teleféricos. A vila fica bem em cima das encostas, então o caminho da cama ao teleférico é curto. Fora das pistas há safáris de snowmobile, passeios de husky e escalada no gelo nas cachoeiras congeladas do cânion de Korouoma.',
-      seasonSummer: 'O verão vira o destino do avesso. A observação de ursos-pardos a partir de esconderijos funciona nos meses de luz, o rio Kitka recebe descidas de bote da primavera até o outono, e o Karhunkierros, 82 quilômetros pelo parque nacional de Oulanka, é uma das caminhadas mais conhecidas do país. O bike park atende quem quer a descida sem a neve.',
+      seasonSummer: 'O verão vira o destino do avesso. A observação de ursos-pardos a partir de esconderijos funciona nos meses de luz, o rio Kitka recebe descidas de bote da primavera até o outono, e o Karhunkierros, 81 quilômetros pelo parque nacional de Oulanka, é uma das caminhadas mais conhecidas do país. O bike park atende quem quer a descida sem a neve.',
       planTitle: 'Planejando uma viagem a Ruka',
       planGetting: 'O aeroporto de Kuusamo fica a uns vinte e cinco minutos. Ruka fica em Kuusamo, logo ao sul da fronteira oficial da Lapônia, com a mesma neve e o mesmo inverno nórdico. Vale ter carro para Oulanka, Korouoma e os esconderijos de urso, todos fora da vila.',
       planStay: 'Quem esquia pode ficar ao pé da pista e nunca ligar o motor; quem caminha ou observa fauna precisa contar com estrada. Os esconderijos de urso lotam com meses de antecedência, então faça deles o ponto fixo de uma viagem de verão. O Karhunkierros tem um circuito de 12 quilômetros para quem quer a paisagem sem a versão de vários dias.',
@@ -140,7 +140,7 @@ const guides: Guides = {
     },
     summer: {
       coversTitle: 'A Lapônia nos meses de luz',
-      covers: 'O verão transforma a mesma paisagem em terreno de caminhada, remo e bicicleta. Há rotas de parque nacional em Pallas-Yllästunturi, Urho Kekkonen, Oulanka e Pyhä-Luosto, de circuitos curtos sinalizados aos 82 quilômetros do Karhunkierros. Na água há cruzeiros de lago e caiaque sob o sol da meia-noite em Inari; sobre rodas, o Levi Bike Park. Golfe sob um sol que não se põe é a esquisitice local.',
+      covers: 'O verão transforma a mesma paisagem em terreno de caminhada, remo e bicicleta. Há rotas de parque nacional em Pallas-Yllästunturi, Urho Kekkonen, Oulanka e Pyhä-Luosto, de circuitos curtos sinalizados aos 81 quilômetros do Karhunkierros. Na água há cruzeiros de lago e caiaque sob o sol da meia-noite em Inari; sobre rodas, o Levi Bike Park. Golfe sob um sol que não se põe é a esquisitice local.',
       whenToGo: 'Junho a agosto é o núcleo, e no solstício o sol fica acima do horizonte 24 horas nesta latitude. No fim de julho chegam as amoras-árticas e os primeiros cogumelos. Setembro e outubro são as semanas do ruska, quando os montes mudam de cor e as primeiras auroras voltam, com as trilhas quase vazias.',
       chooseTitle: 'Escolhendo uma viagem de verão',
       choosing: 'Decida se quer uma base ou uma rota. Caminhadas de um dia a partir de uma vila servem à maioria e não exigem permissão; as trilhas longas exigem planejamento, e as cabanas ao longo delas são gratuitas e por ordem de chegada. Caiaque e rafting são guiados, o que é a forma sensata de conhecer um rio do norte pela primeira vez.',

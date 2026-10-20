@@ -50,7 +50,7 @@ const guides: Guides = {
     ruka: {
       seasonsTitle: 'Ruka säsong för säsong',
       seasonWinter: 'Lagrad snö låter Ruka öppna redan i oktober och åka in i maj, Finlands längsta skidsäsong, på 41 nedfarter med 22 liftar. Byn ligger rakt ovanför backarna, så vägen från säng till lift är kort. Vid sidan av pisterna finns skotersafarier, hundspannsturer och isklättring på de frusna fallen i Korouoma.',
-      seasonSummer: 'Sommaren vänder på hela resmålet. Björnskådning från gömslen pågår under de ljusa månaderna, Kitkajoki bär forsränningsturer från våren in på hösten, och 82 kilometer långa Karhunkierros genom Oulanka nationalpark är en av landets mest kända vandringar. Cykelparken tar hand om dem som vill ha utförsåkningen utan snö.',
+      seasonSummer: 'Sommaren vänder på hela resmålet. Björnskådning från gömslen pågår under de ljusa månaderna, Kitkajoki bär forsränningsturer från våren in på hösten, och 81 kilometer långa Karhunkierros genom Oulanka nationalpark är en av landets mest kända vandringar. Cykelparken tar hand om dem som vill ha utförsåkningen utan snö.',
       planTitle: 'Planera en resa till Ruka',
       planGetting: 'Kuusamo flygplats ligger ungefär tjugofem minuter bort. Ruka ligger i Kuusamo, strax söder om Lapplands officiella gräns, med samma snö och samma nordliga vinter. Bil är värd besväret för Oulanka, Korouoma och björngömslena, som alla ligger utanför byn.',
       planStay: 'Skidåkare kan bo vid backen och aldrig starta motorn; vandrare och naturskådare bör räkna med körsträckor. Björngömslena är fullbokade månader i förväg, så gör dem till sommarresans fasta punkt. Karhunkierros har en slinga på 12 kilometer för den som vill ha landskapet utan flerdagsversionen.',
@@ -140,7 +140,7 @@ const guides: Guides = {
     },
     summer: {
       coversTitle: 'Lappland under de ljusa månaderna',
-      covers: 'Sommaren gör samma landskap till vandrings-, paddel- och cykelmark. Nationalparksleder finns i Pallas-Yllästunturi, Urho Kekkonen, Oulanka och Pyhä-Luosto, från korta markerade slingor till 82 kilometer långa Karhunkierros. På vattnet finns sjökryssningar och paddling under midnattssol i Enare; på hjul Levi Bike Park. Golf under en sol som inte går ner är den lokala kuriositeten.',
+      covers: 'Sommaren gör samma landskap till vandrings-, paddel- och cykelmark. Nationalparksleder finns i Pallas-Yllästunturi, Urho Kekkonen, Oulanka och Pyhä-Luosto, från korta markerade slingor till 81 kilometer långa Karhunkierros. På vattnet finns sjökryssningar och paddling under midnattssol i Enare; på hjul Levi Bike Park. Golf under en sol som inte går ner är den lokala kuriositeten.',
       whenToGo: 'Juni till augusti är kärnan, och kring midsommar står solen över horisonten dygnet runt så här långt norrut. I slutet av juli kommer hjortronen och de första svamparna. September och oktober är ruskaveckorna, när fjällen skiftar färg och de första norrskenen kommer tillbaka, med nästan tomma leder.',
       chooseTitle: 'Att välja sommarresa',
       choosing: 'Bestäm om du vill ha en bas eller en led. Dagsvandringar från en by passar de flesta och kräver inga tillstånd; de långa lederna kräver planering, och ödestugorna längs dem är gratis och går i ankomstordning. Paddling och forsränning är guidade, vilket är det förnuftiga sättet att möta en nordlig älv för första gången.',
