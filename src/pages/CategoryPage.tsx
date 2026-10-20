@@ -88,6 +88,24 @@ export default function CategoryPage() {
     const i = ordered.findIndex((a) => a.id === id);
     return i >= 0 ? orderedImgs[i] : undefined;
   };
+  // Revontulikategoriassa appin revontuliyksikkö listan sisään (nappi avaa appin revontulinäkymän, tämän yön
+  // todennäköisyys tunneittain). 🔴 Vesa 20.10.2026: "aivan liian alhaalla" — listan ja oppaan perässä se oli 7,3
+  // näytöllistä alhaalla puhelimella. Kaksi kohtaa, joista kullakin leveydellä näkyy yksi, jotta yksikkö osuu rivin
+  // rajalle: alle 1024 px kahden kortin jälkeen (1 tai 2 saraketta), 1024 px:stä kolmen jälkeen (3 saraketta).
+  const auroraFeed = slug === 'northern-lights';
+  const auroraUnit = (key: string, cls: string) => (
+    <div key={key} className={`col-span-full ${cls}`}>
+      <div className="max-w-5xl mx-auto"><AppPromoAurora placement="category_northern_lights_feed" /></div>
+    </div>
+  );
+  const cards = (list: typeof ordered, first: boolean) => list.flatMap((act, i) => {
+    const out = [<ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />];
+    if (auroraFeed && first) {
+      if (i === Math.min(1, list.length - 1)) out.push(auroraUnit('lvap-s', 'lg:hidden'));
+      if (i === Math.min(2, list.length - 1)) out.push(auroraUnit('lvap-l', 'hidden lg:block'));
+    }
+    return out;
+  });
 
   return (
     <>
@@ -201,7 +219,7 @@ export default function CategoryPage() {
             <>
               <h2 className="font-heading text-3xl sm:text-4xl lv-head tracking-wide mb-8 text-center lg:text-left text-balance">{c.activitiesCount(acts.length, category.name)}</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                {ordered.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                {cards(ordered, true)}
               </div>
             </>
           ) : (
@@ -219,7 +237,7 @@ export default function CategoryPage() {
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                    {inSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                    {cards(inSeason, true)}
                   </div>
                 </div>
               )}
@@ -235,7 +253,7 @@ export default function CategoryPage() {
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
-                    {offSeason.map((act) => <ActivityCard key={act.id} activity={act} image={imgFor(act.id)} />)}
+                    {cards(offSeason, inSeason.length === 0)}
                   </div>
                 </div>
               )}
@@ -284,15 +302,6 @@ export default function CategoryPage() {
         </section>
       )}
 
-      {/* Revontuliretken varaaja tarvitsee yön ennusteen: appin revontuliyksikkö, jonka nappi avaa appin
-          revontulinäkymän (tämän yön todennäköisyys tunneittain). Vain revontulikategoriassa (19.10.2026). */}
-      {slug === 'northern-lights' && (
-        <section className="pt-10 sm:pt-14 px-4 sm:px-6 bg-deep-night">
-          <div className="max-w-5xl mx-auto">
-            <AppPromoAurora placement="category_northern_lights" />
-          </div>
-        </section>
-      )}
 
       {/* PAID PARTNER (Bear Kuusamo) — flat-fee placement, NOT a commission link.
           Wildlife/bear watching, so it runs on the animals category only; the same
