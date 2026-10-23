@@ -87,9 +87,11 @@ export default function DestinationPage() {
   // HTML:ssä (piilotettu vain CSS:llä), joten hakukone ja esirenderöinti näkevät ne. Tietokoneella ennallaan.
   const [showAll, setShowAll] = useState(false);
   const FIRST = 6;
-  // Myyty kumppanikortti ruudukon kolmanneksi "kortiksi" koko leveydeltä (Sámi Village 26.10.2026).
+  // Myyty kumppanikortti koko leveydeltä ensimmäisen aktiviteetin jälkeen (Sámi Village 26.10.2026). DOM-järjestys
+  // ratkaisee vain puhelimen: grid-flow-row-dense täyttää ylärivin muilla korteilla isommilla näytöillä, joten
+  // tietokoneella kortti on yhä ensimmäisen rivin alla. Mitattu 23.10.: kahden kortin jälkeen 390 px = 2,57 näyttöä.
   const soldPartner = DESTINATION_PARTNERS[slug || ''];
-  const PARTNER_AFTER = 2;
+  const PARTNER_AFTER = 1;
   const hiddenCount = Math.max(0, inSeason.length - FIRST) + offSeason.length;
   const seasonNowWord = words[bucket];
   const seasonOtherWord = words[otherBucket];
@@ -259,9 +261,9 @@ export default function DestinationPage() {
                   <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
                 </div>
               </div>
-              {/* grid-flow-row-dense: myyty kortti vie oman rivinsä kahden ensimmäisen aktiviteetin jälkeen, ja kolmas
-                  aktiviteetti täyttää ylärivin tyhjän paikan isolla näytöllä. Puhelimella kortti on noin kahden näytön
-                  syvyydellä eikä ruudukon alla (Vesa 20.10.: oma mainos näkyvään kohtaan, 1–2,5 näyttöä). */}
+              {/* grid-flow-row-dense: myyty kortti vie oman rivinsä, ja seuraavat aktiviteetit täyttävät ylärivin tyhjät
+                  paikat isommilla näytöillä. Puhelimella kortti on ensimmäisen aktiviteetin jälkeen eikä ruudukon alla
+                  (Vesa 20.10.: oma mainos näkyvään kohtaan, 1–2,5 näyttöä). */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch grid-flow-row-dense">
                 {inSeason.map((act, i) => (
                   <Fragment key={act.id}>
