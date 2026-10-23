@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { respImg } from '../lib/respImg';
 import { Helmet } from 'react-helmet-async';
@@ -13,6 +13,8 @@ import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestinatio
 import { imageForDestination, assignActivityImages, focalFor, heroFrameClass, heroTextRight } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
 import DestinationPicks from '../components/DestinationPicks';
+import PartnerSlot from '../shared/PartnerSlot';
+import { DESTINATION_PARTNERS } from '../data/adSlots';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { destinationTitle } from '../lib/pageTitles';
 import { destinationMetaDescription } from '../lib/pageMeta';
@@ -85,6 +87,9 @@ export default function DestinationPage() {
   // HTML:ssä (piilotettu vain CSS:llä), joten hakukone ja esirenderöinti näkevät ne. Tietokoneella ennallaan.
   const [showAll, setShowAll] = useState(false);
   const FIRST = 6;
+  // Myyty kumppanikortti ruudukon kolmanneksi "kortiksi" koko leveydeltä (Sámi Village 26.10.2026).
+  const soldPartner = DESTINATION_PARTNERS[slug || ''];
+  const PARTNER_AFTER = 2;
   const hiddenCount = Math.max(0, inSeason.length - FIRST) + offSeason.length;
   const seasonNowWord = words[bucket];
   const seasonOtherWord = words[otherBucket];
@@ -254,11 +259,23 @@ export default function DestinationPage() {
                   <h3 className="font-body text-xl font-bold text-snow leading-tight">{sec.inSeasonNow(seasonNowWord)}</h3>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+              {/* grid-flow-row-dense: myyty kortti vie oman rivinsä kahden ensimmäisen aktiviteetin jälkeen, ja kolmas
+                  aktiviteetti täyttää ylärivin tyhjän paikan isolla näytöllä. Puhelimella kortti on noin kahden näytön
+                  syvyydellä eikä ruudukon alla (Vesa 20.10.: oma mainos näkyvään kohtaan, 1–2,5 näyttöä). */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch grid-flow-row-dense">
                 {inSeason.map((act, i) => (
-                  <div key={act.id} className={`flex [&>*]:w-full ${!showAll && i >= FIRST ? 'max-lg:hidden' : ''}`}>
-                    <ActivityCard activity={act} image={imgFor(act.id)} />
-                  </div>
+                  <Fragment key={act.id}>
+                    <div className={`flex [&>*]:w-full ${!showAll && i >= FIRST ? 'max-lg:hidden' : ''}`}>
+                      <ActivityCard activity={act} image={imgFor(act.id)} />
+                    </div>
+                    {soldPartner && i === Math.min(PARTNER_AFTER, inSeason.length) - 1 && (
+                      <div className="col-span-full" data-destination-partner>
+                        {/* Vaalea kortti tummalla sivulla: maksettu paikka erottuu, eikä tumma paneeli tee siitä
+                            raskasta (Vesa 23.10. Visit Inarin korteista: "liian tummaa … tunkkasen näköinen"). */}
+                        <PartnerSlot partner={soldPartner} variant="card" layout="wide" surface="light" locale={lang} />
+                      </div>
+                    )}
+                  </Fragment>
                 ))}
               </div>
               {!showAll && hiddenCount > 0 && (

@@ -151,6 +151,206 @@ const bearKuusamo: Partner = {
   },
 };
 
+// @@SAMI-VILLAGE-ALKU@@ (generoitu kielitiedostoista, älä muokkaa käsin)
+/**
+ * Sámi Village, Nellim: Kessijärven Helmin Teijan joiku- ja rumpuesitys kodassa tilauksesta ryhmille ja pareille.
+ * Paikka: Inarin kohdesivun aktiviteettiruudukko (lukija selaa, mitä Inarissa voi tehdä). Teksti on Teijan
+ * hyväksymän artikkelin (v4.1, 23.10.2026) faktoista, natiivilukijan korjaama; 12 kieltä kielitiedostosta
+ * laplandvibes/src/locales/<kieli>/sami-village.json (adInari). Julkaisu ma 26.10.2026 aamulla (Teijan toive).
+ * Kuva: oma valokuva 14.10.2026 (20261014_113559), Teija rummun kanssa terassilla, takana Inarijärvi.
+ * Kengät, tuolit ja kaide rajattu pois kuten pääkuvasta (Teijan pyyntö 22.10.). Ei sama tiedosto kuin artikkelissa.
+ * Logo: Teijan lähettämä valkoinen merkki sinisellä pohjalla (oma pohja ⇒ toimii kummallakin pinnalla).
+ */
+const samiVillageInari: Partner = {
+  name: 'Sámi Village',
+  tagline: 'Kuuntele joikua kodassa Nellimissä',
+  taglineEn: 'Listen to yoik in a kota in Nellim',
+  taglineSv: 'Lyssna på jojk i en kåta i Nellim',
+  description: 'Inarinsaamelainen Kessijärven Helmin Teija kertoo saamelaisuudesta ja joikaa kodassa Nellimissä Inarijärven rannalla. Esityksen voi tilata ryhmälle tai parille.',
+  descriptionEn: 'Kessijärven Helmin Teija, an Inari Sámi, talks about Sámi culture and yoiks in a kota (a traditional Sámi hut) in Nellim on the shore of Lake Inari. The performance can be booked for a group or a couple.',
+  descriptionSv: 'Enaresamen Kessijärven Helmin Teija berättar om det samiska och jojkar i en kåta i Nellim vid Enare träsk. Föreställningen kan beställas för en grupp eller ett par.',
+  url: 'https://go.laplandvibes.com/go/samivillage?sid=activities_destination_inari&dest=https%3A%2F%2Fwww.samivillage.fi%2Fen%2F',
+  urlFi: 'https://go.laplandvibes.com/go/samivillage?sid=activities_destination_inari&dest=https%3A%2F%2Fwww.samivillage.fi%2Ffi%2F',
+  imageSrc: '/images/partners/samivillage-teija-nellim.webp',
+  logoSrc: '/images/partners/samivillage.png',
+  logoAlt: 'Sámi Village',
+  ctaLabel: 'Pyydä tarjous',
+  ctaLabelEn: 'Request a quote',
+  ctaLabelSv: 'Begär offert',
+  articleUrl: 'https://laplandvibes.com/fi/blog/sami-village-nellim/',
+  articleUrlEn: 'https://laplandvibes.com/blog/sami-village-nellim/',
+  articleUrlSv: 'https://laplandvibes.com/sv/blog/sami-village-nellim/',
+  articleLabel: 'Lue juttu',
+  articleLabelEn: 'Read the article',
+  articleLabelSv: 'Läs artikeln',
+  i18n: {
+    de: {
+      tagline: 'Hören Sie Joik in einer Kota in Nellim',
+      description: 'Die Inarisamin Kessijärven Helmin Teija erzählt von der samischen Kultur und joikt in einer Kota, einer traditionellen samischen Hütte, in Nellim am Ufer des Inarisees. Die Vorstellung können Sie für eine Gruppe oder ein Paar buchen.',
+      cta: 'Angebot anfragen',
+      articleLabel: 'Artikel lesen',
+      articleUrl: 'https://laplandvibes.com/de/blog/sami-village-nellim/',
+    },
+    fr: {
+      tagline: 'Écoutez le yoik dans une kota à Nellim',
+      description: 'Kessijärven Helmin Teija, Samie d\'Inari, parle de la culture samie et chante le yoik dans une kota à Nellim, au bord du lac Inari. On peut réserver le spectacle pour un groupe ou un couple.',
+      cta: 'Demander un devis',
+      articleLabel: 'Lire l\'article',
+      articleUrl: 'https://laplandvibes.com/fr/blog/sami-village-nellim/',
+    },
+    it: {
+      tagline: 'Ascolti lo joik in una kota a Nellim',
+      description: 'Kessijärven Helmin Teija, sami di Inari, parla della cultura sami e canta lo joik in una kota a Nellim, sulla riva del lago Inari. Lo spettacolo si può prenotare per un gruppo o una coppia.',
+      cta: 'Richiedi un preventivo',
+      articleLabel: 'Leggi l\'articolo',
+      articleUrl: 'https://laplandvibes.com/it/blog/sami-village-nellim/',
+    },
+    es: {
+      tagline: 'Escuche yoik en una kota de Nellim',
+      description: 'Kessijärven Helmin Teija, sami de Inari, habla de la cultura sami y canta yoik en una kota de Nellim, a orillas del lago Inari. El espectáculo se puede encargar para un grupo o una pareja.',
+      cta: 'Solicitar una cotización',
+      articleLabel: 'Leer el artículo',
+      articleUrl: 'https://laplandvibes.com/es/blog/sami-village-nellim/',
+    },
+    pt: {
+      tagline: 'Ouça yoik numa kota em Nellim',
+      description: 'Kessijärven Helmin Teija, sámi de Inari, fala sobre o que é ser sámi e canta yoik numa tradicional kota sámi em Nellim, à beira do lago Inari. Você pode agendar a apresentação para um grupo ou um casal.',
+      cta: 'Pedir orçamento',
+      articleLabel: 'Ler o artigo',
+      articleUrl: 'https://laplandvibes.com/br/blog/sami-village-nellim/',
+    },
+    nl: {
+      tagline: 'Luister naar joik in een kota in Nellim',
+      description: 'De Inari-Samische Kessijärven Helmin Teija vertelt over de Samische cultuur en joikt in een traditionele kota in Nellim, aan het Inarimeer. U kunt de voorstelling aanvragen voor een groep of een stel.',
+      cta: 'Offerte aanvragen',
+      articleLabel: 'Lees het artikel',
+      articleUrl: 'https://laplandvibes.com/nl/blog/sami-village-nellim/',
+    },
+    ja: {
+      tagline: 'ネッリムのコタで、ヨイクを聴いてみませんか',
+      description: 'イナリ・サーミの Kessijärven Helmin Teija さんが、イナリ湖のほとり、ネッリムのコタでサーミのことを語り、ヨイクを歌います。公演はグループまたはお二人連れで予約できます。',
+      cta: '見積もりを依頼',
+      articleLabel: '記事を読む',
+      articleUrl: 'https://laplandvibes.com/ja/blog/sami-village-nellim/',
+    },
+    ko: {
+      tagline: '넬림의 코타에서 요이크를 들어 보세요',
+      description: '이나리 사미인 Kessijärven Helmin Teija 씨가 이나리 호수 기슭, 넬림의 코타에서 사미에 대해 이야기하고 요이크를 부릅니다. 공연은 단체나 두 사람 일행이 예약할 수 있습니다.',
+      cta: '견적 요청',
+      articleLabel: '기사 읽기',
+      articleUrl: 'https://laplandvibes.com/kr/blog/sami-village-nellim/',
+    },
+    zh: {
+      tagline: '来内利姆的科塔聆听约伊克',
+      description: '伊纳里萨米人 Kessijärven Helmin Teija 在伊纳里湖畔内利姆的科塔里讲述萨米文化，并唱约伊克。表演可为团体或两人预订。',
+      cta: '申请报价',
+      articleLabel: '阅读文章',
+      articleUrl: 'https://laplandvibes.com/cn/blog/sami-village-nellim/',
+    },
+  },
+};
+
+/**
+ * Sámi Village / Ságe, Saariselkä (Lutontie 2 A 8): sama esiintyjä muutamana iltana viikossa marraskuusta 2026.
+ * Paikka: Saariselän kohdesivun aktiviteettiruudukko. Ságesta ei ole omaa kuvaa, joten kuva on esiintyjästä:
+ * Teija rummun kanssa 14.10.2026 (20261014_113553), rajattu kuten pääkuva. Kuvateksti ei väitä kuvaa Ságesta.
+ */
+const samiVillageSaariselka: Partner = {
+  name: 'Sámi Village',
+  tagline: 'Saamelaisesitys Saariselän keskustassa',
+  taglineEn: 'Sámi performance in central Saariselkä',
+  taglineSv: 'Samisk föreställning i centrala Saariselkä',
+  description: 'Marraskuusta 2026 alkaen Kessijärven Helmin Teija joikaa ja kertoo saamelaisuudesta Ságessa osoitteessa Lutontie 2 A 8. Esitys on muutamana iltana viikossa ja kestää vajaan tunnin.',
+  descriptionEn: 'From November 2026, Kessijärven Helmin Teija will yoik and talk about Sámi culture at Ságe, Lutontie 2 A 8. The performance runs on a few evenings a week and lasts just under an hour.',
+  descriptionSv: 'Från november 2026 jojkar Kessijärven Helmin Teija och berättar om det samiska på Ságe, Lutontie 2 A 8. Föreställningen ges några kvällar i veckan och tar knappt en timme.',
+  url: 'https://go.laplandvibes.com/go/samivillage?sid=activities_destination_saariselka&dest=https%3A%2F%2Fwww.samivillage.fi%2Fen%2F',
+  urlFi: 'https://go.laplandvibes.com/go/samivillage?sid=activities_destination_saariselka&dest=https%3A%2F%2Fwww.samivillage.fi%2Ffi%2F',
+  imageSrc: '/images/partners/samivillage-teija-rumpu.webp',
+  logoSrc: '/images/partners/samivillage.png',
+  logoAlt: 'Sámi Village',
+  ctaLabel: 'Varaa paikka esitykseen',
+  ctaLabelEn: 'Book your place',
+  ctaLabelSv: 'Boka din plats',
+  articleUrl: 'https://laplandvibes.com/fi/blog/sami-village-nellim/',
+  articleUrlEn: 'https://laplandvibes.com/blog/sami-village-nellim/',
+  articleUrlSv: 'https://laplandvibes.com/sv/blog/sami-village-nellim/',
+  articleLabel: 'Lue juttu',
+  articleLabelEn: 'Read the article',
+  articleLabelSv: 'Läs artikeln',
+  i18n: {
+    de: {
+      tagline: 'Samische Vorstellung im Zentrum von Saariselkä',
+      description: 'Ab November 2026 joikt Kessijärven Helmin Teija und erzählt von der samischen Kultur im Ságe, Lutontie 2 A 8. Die Vorstellung findet an einigen Abenden pro Woche statt und dauert knapp eine Stunde.',
+      cta: 'Platz reservieren',
+      articleLabel: 'Artikel lesen',
+      articleUrl: 'https://laplandvibes.com/de/blog/sami-village-nellim/',
+    },
+    fr: {
+      tagline: 'Un spectacle sami au centre de Saariselkä',
+      description: 'À partir de novembre 2026, Kessijärven Helmin Teija chante le yoik et parle de la culture samie à Ságe, Lutontie 2 A 8. Le spectacle a lieu quelques soirs par semaine et dure un peu moins d\'une heure.',
+      cta: 'Réserver une place',
+      articleLabel: 'Lire l\'article',
+      articleUrl: 'https://laplandvibes.com/fr/blog/sami-village-nellim/',
+    },
+    it: {
+      tagline: 'Uno spettacolo sami nel centro di Saariselkä',
+      description: 'A partire da novembre 2026 Kessijärven Helmin Teija canta lo joik e parla della cultura sami da Ságe, in Lutontie 2 A 8. Lo spettacolo si tiene alcune sere a settimana e dura poco meno di un\'ora.',
+      cta: 'Prenota un posto',
+      articleLabel: 'Leggi l\'articolo',
+      articleUrl: 'https://laplandvibes.com/it/blog/sami-village-nellim/',
+    },
+    es: {
+      tagline: 'Un espectáculo sami en el centro de Saariselkä',
+      description: 'A partir de noviembre de 2026, Kessijärven Helmin Teija canta yoik y habla de la cultura sami en Ságe, Lutontie 2 A 8. El espectáculo se ofrece algunas noches por semana y dura poco menos de una hora.',
+      cta: 'Reservar un lugar',
+      articleLabel: 'Leer el artículo',
+      articleUrl: 'https://laplandvibes.com/es/blog/sami-village-nellim/',
+    },
+    pt: {
+      tagline: 'Apresentação sámi no centro de Saariselkä',
+      description: 'A partir de novembro de 2026, Kessijärven Helmin Teija canta yoik e fala sobre o que é ser sámi no Ságe, na Lutontie 2 A 8. A apresentação acontece algumas noites por semana e dura pouco menos de uma hora.',
+      cta: 'Reservar um lugar',
+      articleLabel: 'Ler o artigo',
+      articleUrl: 'https://laplandvibes.com/br/blog/sami-village-nellim/',
+    },
+    nl: {
+      tagline: 'Samische voorstelling in het centrum van Saariselkä',
+      description: 'Vanaf november 2026 joikt Kessijärven Helmin Teija en vertelt ze over de Samische cultuur in Ságe, aan de Lutontie 2 A 8. De voorstelling is een paar avonden per week te zien en duurt iets minder dan een uur.',
+      cta: 'Plaats reserveren',
+      articleLabel: 'Lees het artikel',
+      articleUrl: 'https://laplandvibes.com/nl/blog/sami-village-nellim/',
+    },
+    ja: {
+      tagline: 'サーリセルカ中心部でサーミの公演',
+      description: '2026年11月から、Kessijärven Helmin Teija さんが Lutontie 2 A 8 の Ságe でヨイクを歌い、サーミのことを語ります。公演は週に数晩で、所要時間は一時間弱です。',
+      cta: '公演の席を予約',
+      articleLabel: '記事を読む',
+      articleUrl: 'https://laplandvibes.com/ja/blog/sami-village-nellim/',
+    },
+    ko: {
+      tagline: '사리셀카 중심가의 사미 공연',
+      description: '2026년 11월부터 Kessijärven Helmin Teija 씨가 Lutontie 2 A 8의 Ságe에서 요이크를 부르고 사미에 대해 이야기합니다. 공연은 일주일에 며칠 저녁에 열리며 한 시간이 채 걸리지 않습니다.',
+      cta: '공연 좌석 예약',
+      articleLabel: '기사 읽기',
+      articleUrl: 'https://laplandvibes.com/kr/blog/sami-village-nellim/',
+    },
+    zh: {
+      tagline: '萨利色尔卡中心的萨米表演',
+      description: '从2026年11月起，Kessijärven Helmin Teija 将在 Lutontie 2 A 8 的 Ságe 唱约伊克、讲述萨米文化。表演每周有几个晚上，时长不到一小时。',
+      cta: '预订座位',
+      articleLabel: '阅读文章',
+      articleUrl: 'https://laplandvibes.com/cn/blog/sami-village-nellim/',
+    },
+  },
+};
+
+/** Kohdesivun slug → myyty kumppanikortti aktiviteettiruudukkoon. Puuttuva slug = ei korttia. */
+export const DESTINATION_PARTNERS: Record<string, Partner | undefined> = {
+  inari: samiVillageInari,
+  saariselka: samiVillageSaariselka,
+};
+// @@SAMI-VILLAGE-LOPPU@@
+
 export const AD_SLOTS: HomeAdSlotsConfig = {
   siteSlug: 'laplandactivities',
   // [0] = pääkumppani (banneri heti heron alla), [1] = kakkospääkumppani (osion kortti)
