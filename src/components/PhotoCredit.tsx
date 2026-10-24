@@ -17,6 +17,21 @@ import { useLang } from '../i18n/useLang';
  * Mitattu selaimessa 24.9.2026 (25 sivua, 375 + 1440 px): jokainen kuitti yli 4,5:1:n; heikoin,
  * /fishing-sivun kuningasrapukortti, huonoin 10 % 6,6:1 (1280 px) ja 6,9:1 (375 px).
  */
+// "Public domain" on kuvaus, ei lisenssin nimi, joten se sanotaan lukijan kielellä (gate:a11y-nimet 24.10.2026).
+// CC-nimet ("CC BY 2.0", "CC0") ovat nimiä ja pysyvät sellaisinaan. Sama sanasto kuin hubin photoCredits.ts.
+const PUBLIC_DOMAIN: Record<string, string> = {
+  en: 'Public domain', fi: 'Tekijänoikeuksista vapaa', sv: 'Allmän egendom', de: 'Gemeinfrei',
+  es: 'Dominio público', fr: 'Domaine public', it: 'Pubblico dominio', nl: 'Publiek domein',
+  ja: 'パブリックドメイン', ko: '퍼블릭 도메인', 'zh-CN': '公有领域', 'pt-BR': 'Domínio público',
+};
+const licenseLabel = (license: string, lang: string) =>
+  /^public domain$/i.test(license.trim()) ? (PUBLIC_DOMAIN[lang] ?? license) : license;
+// Kuvaluettelon tiedostonimen perään merkitty muutos ("· cropped") lukijan kielellä; tiedostonimi on nimi (translate="no").
+const CROPPED: Record<string, string> = {
+  en: 'cropped', fi: 'rajattu', sv: 'beskuren', de: 'zugeschnitten', es: 'recortada', fr: 'recadrée',
+  it: 'ritagliata', nl: 'bijgesneden', ja: 'トリミング', ko: '일부 자름', 'zh-CN': '已裁剪', 'pt-BR': 'recortada',
+};
+
 const OWN_LABEL: Record<string, string> = {
   en: 'Photo: LaplandVibes', fi: 'Kuva: LaplandVibes', de: 'Foto: LaplandVibes', sv: 'Foto: LaplandVibes',
   ja: '写真：LaplandVibes', es: 'Foto: LaplandVibes', 'pt-BR': 'Foto: LaplandVibes', 'zh-CN': '摄影：LaplandVibes',
@@ -51,7 +66,7 @@ export default function PhotoCredit({ src, links = true, className = '', at = 'b
   if (c.kind === 'own') {
     return <span className={base}><span className={one}>{OWN_LABEL[lang] ?? OWN_LABEL.en}{c.date ? ` ${c.date.slice(0, 4)}` : ''}</span></span>;
   }
-  const lic = c.license;
+  const lic = licenseLabel(c.license, lang);
   if (!links) {
     return <span className={base}><span className={one}>© {c.author}</span><span className="shrink-0 whitespace-nowrap">&nbsp;· {lic}</span></span>;
   }
@@ -88,6 +103,13 @@ const LIST_LEAD: Record<string, string> = {
   nl: "Een deel van de foto's op de site is van onszelf. De foto's hieronder komen van Wikimedia Commons onder de vermelde licentie; elke link opent het originele bestand en de licentie.",
 };
 
+/** Commonsin tiedostonimi on nimi (translate="no"); perään merkitty "· cropped" lukijan kielellä. */
+function FileTitle({ title = '', lang }: { title?: string; lang: string }) {
+  const m = title.match(/^(.*) · cropped$/);
+  if (!m) return <span translate="no">{title}</span>;
+  return <><span translate="no">{m[1]}</span>{` · ${CROPPED[lang] ?? CROPPED.en}`}</>;
+}
+
 /** Tietoja-sivun kuvaluettelo: kaikki Commons-kuvat tekijöineen ja lisenssilinkkeineen. */
 export function PhotoCreditList() {
   const lang = useLang();
@@ -99,9 +121,9 @@ export function PhotoCreditList() {
       <ul className="columns-1 sm:columns-2 gap-6 text-[12px] leading-relaxed text-snow/60">
         {entries.map(([src, c]) => (
           <li key={src} className="break-inside-avoid mb-1">
-            <a href={c.pageUrl} target="_blank" rel="noopener" className="text-arctic-cyan hover:underline">{c.title}</a>
+            <a href={c.pageUrl} target="_blank" rel="noopener" className="text-arctic-cyan hover:underline"><FileTitle title={c.title} lang={lang} /></a>
             {' · '}{c.author}{' · '}
-            <a href={c.licenseUrl} target="_blank" rel="license noopener" className="whitespace-nowrap hover:underline">{c.license}</a>
+            <a href={c.licenseUrl} target="_blank" rel="license noopener" className="whitespace-nowrap hover:underline">{licenseLabel(c.license, lang)}</a>
           </li>
         ))}
       </ul>

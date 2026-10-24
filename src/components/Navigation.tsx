@@ -18,6 +18,14 @@ const WM_STYLE = { '--lv-wm-k': 6.79, '--lv-wm-max-md': '30px' } as CSSPropertie
 /** Sama sivu loppukauttaviivasta riippumatta: sisääntulo on `/x/`, linkki voi olla `/x` (18.9.2026). */
 const samePath = (a: string, b: string) => a.replace(/\/+$/, '') === b.replace(/\/+$/, '');
 
+// Logolinkin ruudunlukijanimi sivun kielellä (gate:a11y-nimet 24.10.2026: "LaplandActivities home" kaikilla 12 kielellä).
+const HOME_LABEL: Record<string, string> = {
+  en: 'LaplandActivities home', fi: 'LaplandActivities, etusivu', sv: 'LaplandActivities, startsida',
+  de: 'LaplandActivities, Startseite', es: 'LaplandActivities, página de inicio', fr: 'LaplandActivities, page d’accueil',
+  it: 'LaplandActivities, pagina iniziale', nl: 'LaplandActivities, startpagina', 'pt-BR': 'LaplandActivities, página inicial',
+  ja: 'LaplandActivities ホーム', ko: 'LaplandActivities 홈', 'zh-CN': 'LaplandActivities 首页',
+};
+
 export default function Navigation() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -82,7 +90,7 @@ export default function Navigation() {
         <div className="lv-navvasen flex items-center gap-3 sm:gap-5 shrink-0">
           <EcosystemMenu lang={lang} currentDomain="laplandactivities.fi" />
           <div className="lv-wm-paikka">
-            <Link to={to('/')} className="flex items-center min-h-11" aria-label="LaplandActivities home">
+            <Link to={to('/')} className="flex items-center min-h-11" aria-label={HOME_LABEL[lang] ?? HOME_LABEL.en}>
               {/* 🔴 lg:text-2xl: 1024 px:ssä koko rivi (sanamerkki + 5 linkkiä + kielivalitsin +
                   CTA) on kortilla. 30 px:n sanamerkki työnsi "Varaa nyt" -painikkeen 9 px yli
                   palstan oikean reunan (mitattu 20.9.2026). Täysi koko palaa xl:stä ylöspäin. */}
