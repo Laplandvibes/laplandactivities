@@ -33,7 +33,7 @@ const S = {
   igloo:     { src: '/images/heroes/slider-04-glass-igloo.webp', alt: 'Aurora cabins with glass roofs in Inari', fallback: HERO.glassIgloo, season: 'winter' as const },
   reindeer:  { src: '/images/heroes/slider-05-reindeer-lavvu.webp', alt: 'Reindeer sled in a snowy forest on Hietaliete island, Kemi', fallback: HERO.campfire, season: 'any' as const },
   kayak:     { src: '/images/heroes/slider-07-kayak-lake.webp', alt: 'Kuuva channel on Lake Inari in summer', fallback: HERO.snowyForest, season: 'summer' as const },
-  aurora:    { src: '/images/activities/northern-lights/aurora-lake.webp', alt: 'Green northern lights over Levi fell, Kittilä', fallback: HERO.huskyAurora, season: 'winter' as const },
+  aurora:    { src: '/images/activities/northern-lights/aurora-lake.webp', alt: 'Green northern lights over a frozen lake and snowy forest on a moonlit night', fallback: HERO.huskyAurora, season: 'winter' as const },
   // 26.9.2026: kesän ja talven ENSIMMÄINEN ruutu on sivuston jakokortin lähde (harvest_heroes.mjs
   // ottaa etusivun ensimmäisen kuvan heinä- ja tammikuun kellolla). Kortti on muunnelma, joten sen
   // lähde ei saa olla CC BY-SA (lv_permanent_rules §34.2): kajakki ja Saijan huskyt ovat BY-SA.
