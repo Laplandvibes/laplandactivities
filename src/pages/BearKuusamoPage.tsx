@@ -6,6 +6,7 @@ import PageBreadcrumb from '../components/PageBreadcrumb';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { trackPartnerClick } from '../lib/analytics';
+import ShareBar, { ShareButton } from '../shared/ShareBar/ShareBar';
 
 // Direct partner deal (NOT affiliate). Every link goes straight to bearkuusamo.com
 // as a NORMAL follow link: target="_blank" rel="noopener" only — no nofollow, no
@@ -167,6 +168,8 @@ export default function BearKuusamoPage() {
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow tracking-wide leading-[1.02]">
             {c.hero.title}
           </h1>
+          {/* Jakonappi otsikon alle omalle rivilleen (Vesa 24.10.2026: jakaminen on osa sitä mitä kumppani ostaa). */}
+          <ShareButton lang={lang} title={c.hero.title} excerpt={c.metaDescription} tone="dark" className="mt-6" />
         </div>
       </section>
 
@@ -273,6 +276,9 @@ export default function BearKuusamoPage() {
               {c.cta}
               <ExternalLink className="w-4 h-4" aria-hidden="true" />
             </a>
+
+            {/* Jutun loppu: jakorivi ennen kumppanin logoa ja kuvakrediittiä. */}
+            <ShareBar lang={lang} title={c.hero.title} tone="dark" headingClassName="font-heading text-2xl tracking-wide" />
           </div>
         </section>
 
