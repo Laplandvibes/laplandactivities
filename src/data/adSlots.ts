@@ -94,7 +94,7 @@ const bearKuusamo: Partner = {
     },
     es: {
       tagline: 'Una noche en un escondite de osos, al borde de Laponia',
-      description: 'Los guías de osos originales de Kuusamo, más de veinte años en los bosques de la frontera oriental. Observa osos pardos salvajes, glotones y pigargos desde un escondite fotográfico.',
+      description: 'Los guías de osos originales de Kuusamo, más de veinte años en los bosques de la frontera oriental. Observe osos pardos salvajes, glotones y pigargos desde un escondite fotográfico.',
       cta: 'Reservar la observación',
       articleLabel: 'Leer el artículo',
       articleUrl: 'https://laplandvibes.com/es/blog/bear-kuusamo/',
@@ -102,7 +102,7 @@ const bearKuusamo: Partner = {
     },
     it: {
       tagline: 'Una notte in un capanno degli orsi, ai margini della Lapponia',
-      description: "Le guide originali di Kuusamo, oltre vent'anni nelle foreste del confine orientale. Osserva orsi bruni selvatici, ghiottoni e aquile di mare da un capanno fotografico.",
+      description: "Le guide originali di Kuusamo, oltre vent'anni nelle foreste del confine orientale. Osservi orsi bruni selvatici, ghiottoni e aquile di mare da un capanno fotografico.",
       cta: 'Prenoti l\'osservazione',
       articleLabel: "Leggi l'articolo",
       articleUrl: 'https://laplandvibes.com/it/blog/bear-kuusamo/',
