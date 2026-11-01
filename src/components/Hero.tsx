@@ -49,7 +49,7 @@ export default function Hero() {
             #EC4899 mitattiin ruska- ja kesävaellusruudun kirkkaissa kohdissa 2,1:1 (raja 3:1,
             korttiteksti + heroteksti 18.10.2026). Sama ratkaisu kuin skiresortsin herossa 23.9.;
             alle lg:n sanamerkki on sivun tummalla pohjalla ja pysyy vibe-pinkkinä. */}
-        <h1 className="font-heading text-[clamp(2.25rem,11.5vw,3.75rem)] sm:text-7xl xl:text-8xl whitespace-nowrap tracking-wider mb-4 leading-[0.95] drop-shadow-[0_0_40px_rgba(236,72,153,0.55)] lg:[text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
+        <h1 translate="no" className="notranslate font-heading text-[clamp(2.25rem,11.5vw,3.75rem)] sm:text-7xl xl:text-8xl whitespace-nowrap tracking-wider mb-4 leading-[0.95] drop-shadow-[0_0_40px_rgba(236,72,153,0.55)] lg:[text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
           <span className="text-vibe-pink lg:text-[#F9A8D4]">#</span>
           <span className="text-snow">LAPLAND</span>
           <span className="text-vibe-pink lg:text-[#F9A8D4]">ACTIVITIES</span>

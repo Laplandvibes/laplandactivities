@@ -94,7 +94,7 @@ export default function Navigation() {
               {/* 🔴 lg:text-2xl: 1024 px:ssä koko rivi (sanamerkki + 5 linkkiä + kielivalitsin +
                   CTA) on kortilla. 30 px:n sanamerkki työnsi "Varaa nyt" -painikkeen 9 px yli
                   palstan oikean reunan (mitattu 20.9.2026). Täysi koko palaa xl:stä ylöspäin. */}
-              <span className="lv-wm font-heading tracking-wide text-2xl sm:text-3xl lg:text-2xl xl:text-3xl" data-lv-sanamerkki="" style={WM_STYLE}>
+              <span translate="no" className="notranslate lv-wm font-heading tracking-wide text-2xl sm:text-3xl lg:text-2xl xl:text-3xl" data-lv-sanamerkki="" style={WM_STYLE}>
                 <span className="text-vibe-pink">#</span>
                 <span className="text-snow">LAPLAND</span>
                 <span className="text-vibe-pink">ACTIVITIES</span>
