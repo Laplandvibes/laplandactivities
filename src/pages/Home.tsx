@@ -398,7 +398,7 @@ export default function Home() {
             <p className="text-snow/65 mt-3 max-w-2xl mx-auto text-sm sm:text-base max-lg:text-left">{rs.lead}</p>
           </div>
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 md:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center md:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.5rem)]">
             {rs.links.map((link, i) => {
               const site = RELATED_SITES[i];
               if (!site) return null;

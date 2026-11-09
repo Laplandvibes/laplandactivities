@@ -85,7 +85,7 @@ export default function HotelsStrip() {
           </AffiliateCTA>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.5rem)]">
           {c.lodging.map((l, idx) => {
             const m = META[idx] ?? META[0];
             const propParams = {

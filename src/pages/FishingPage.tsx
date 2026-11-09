@@ -556,7 +556,7 @@ export default function FishingPage() {
                 <Ruler className="w-6 h-6 text-[#BE185D]" aria-hidden="true" />
                 {c.licenses.sizesTitle}
               </h3>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-6">
+              <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 mt-6 sm:max-lg:[&>*:last-child:nth-child(odd)]:col-span-2 sm:max-lg:[&>*:last-child:nth-child(odd)]:justify-self-center sm:max-lg:[&>*:last-child:nth-child(odd)]:w-[calc(50%_-_0.375rem)]">
                 {c.licenses.sizes.slice(0, -1).map((s, i) => {
                   const [label, rest] = splitLabel(s);
                   return (
@@ -592,9 +592,9 @@ export default function FishingPage() {
                 <PhotoCredit src={FISHING_IMG.kingCrab} />
               </div>
               <div>
-                <div className="flex items-center gap-2.5 mb-3">
+                <div className="flex flex-col items-center gap-2 mb-3 lg:flex-row lg:gap-2.5">
                   <Waves className="w-6 h-6 text-arctic-cyan" aria-hidden="true" />
-                  <h2 className={H2}>{c.norway.title}</h2>
+                  <h2 className={`${H2} text-center lg:text-left`}>{c.norway.title}</h2>
                 </div>
                 <Clamp text={c.norway.seaBody} more={c.readMore} lang={lang} className="text-snow/80 text-base leading-relaxed" />
                 <div className="flex flex-wrap gap-x-5 gap-y-2 mt-4">
@@ -740,9 +740,9 @@ export default function FishingPage() {
         {/* FAQ */}
         <section className="py-14 sm:py-18 border-t border-white/5">
           <div className="max-w-3xl mx-auto px-4 sm:px-6">
-            <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-6">
+            <div className="flex items-center justify-center lg:justify-start gap-2.5 mb-6 max-sm:flex-col max-sm:gap-2">
               <HelpCircle className="w-6 h-6 text-vibe-pink" aria-hidden="true" />
-              <h2 className={H2}>{c.faq.title}</h2>
+              <h2 className={`${H2} text-center lg:text-left`}>{c.faq.title}</h2>
             </div>
             <div className="space-y-3">
               {c.faq.items.map((it, i) => (
