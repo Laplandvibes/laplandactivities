@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Compass, ArrowUpRight } from 'lucide-react';
 import { useLang, type Lang } from '../i18n/useLang';
 import AffiliateCTA from './AffiliateCTA';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 const GYG_PARTNER_ID = 'VRMKD7N';
 
@@ -208,7 +209,7 @@ export default function GetYourGuideWidget({
           <h2 className="font-heading text-3xl sm:text-4xl text-snow tracking-wide mb-2 leading-tight">
             {resolvedTitle}
           </h2>
-          <p className="text-snow/70 text-sm max-lg:text-left">{resolvedSubtitle}</p>
+          <Erotinrivi className="text-snow/70 text-sm max-lg:text-left lg:justify-center" osat={erotinOsat(resolvedSubtitle)} />
         </div>
 
         <div

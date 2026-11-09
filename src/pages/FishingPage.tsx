@@ -14,6 +14,7 @@ import { COPY } from '../locales/copy';
 import { focalFor } from '../data/images';
 import PhotoCredit from '../components/PhotoCredit';
 import { withReferral } from '../lib/referral';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 // Direct official licence/regulation links — plain <a>, never affiliate.
 const OFFICIAL = {
@@ -261,7 +262,7 @@ export default function FishingPage() {
             {/* Murupolku otsikon yläpuolelle: laatat nousevat heron alareunan päälle, joten heron
                 alla se jäisi laattojen perään (puhelimessa keskelle sivua). */}
             <PageBreadcrumb variant="inline" />
-            <p className="text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase mb-3">{c.hero.eyebrow}</p>
+            <Erotinrivi pino className="text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase mb-3" osat={erotinOsat(c.hero.eyebrow)} />
             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {c.hero.title}
             </h1>

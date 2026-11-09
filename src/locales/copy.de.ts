@@ -306,7 +306,7 @@ const de: SectionCopy = {
       { name: 'Glas-Iglus', blurb: 'Schlafen Sie unter Nordlichtern durch ein gewölbtes Glasdach. Die meistgebuchten Nächte Lapplands.' },
       { name: 'Blockhütten am See', blurb: 'Rauchsauna, holzbefeuerter Hot Tub, eigener Steg. Ganzjährig.' },
       { name: 'Fjäll-Resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, knapp südlich der Grenze Lapplands): Ski-in/Ski-out plus Sommeraktivitäten.' },
-      { name: 'Boutique-Stadthotels', blurb: 'Rovaniemi · Kemi · Ivalo: Designhotels mit Küche und Stadtzugang.' },
+      { name: 'Boutique-Stadthotels', blurb: 'Rovaniemi, Kemi, Ivalo: Designhotels mit Küche und Stadtzugang.' },
       { name: 'Rauchsaunahütten', blurb: 'Das echte Savusauna-Erlebnis: klein, dunkel, unfassbar heiß.' },
     ],
     comparePrices: 'Preise vergleichen',

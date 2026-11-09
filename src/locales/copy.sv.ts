@@ -66,7 +66,7 @@ const sv: SectionCopy = {
       { name: 'Glasigloo', blurb: 'Sov under norrskenet genom ett välvt glastak. Lapplands mest bokade nätter.' },
       { name: 'Timmerstugor vid sjön', blurb: 'Rökbastu, vedeldad badtunna, egen brygga. Året runt.' },
       { name: 'Fjällorter', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, strax söder om Lapplands gräns). Ski-in/ski-out samt sommaraktiviteter.' },
-      { name: 'Boutiquehotell i stan', blurb: 'Rovaniemi · Kemi · Ivalo. Designhotell med kök och nära till stadslivet.' },
+      { name: 'Boutiquehotell i stan', blurb: 'Rovaniemi, Kemi, Ivalo. Designhotell med kök och nära till stadslivet.' },
       { name: 'Rökbastustugor', blurb: 'Den äkta savusaunan: liten, mörk och absurt varm.' },
     ],
     comparePrices: 'Jämför priser',

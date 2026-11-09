@@ -306,7 +306,7 @@ const fi: SectionCopy = {
       { name: 'Lasi-iglut', blurb: 'Nuku revontulien alla kaarevan lasikaton kautta. Lapin kysytyimmät yöt.' },
       { name: 'Järvenrantamökit', blurb: 'Savusauna, puulämmitteinen palju, oma laituri. Ympärivuotinen.' },
       { name: 'Tunturikeskukset', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, aivan Lapin rajan eteläpuolella). Rinteet vieressä ja kesäaktiviteetit.' },
-      { name: 'Boutique-kaupunkihotellit', blurb: 'Rovaniemi · Kemi · Ivalo. Design-hotellit keittiöllä ja keskustan vieressä.' },
+      { name: 'Boutique-kaupunkihotellit', blurb: 'Rovaniemi, Kemi, Ivalo. Design-hotellit keittiöllä ja keskustan vieressä.' },
       { name: 'Savusaunamökit', blurb: 'Aito savusaunakokemus: pieni, pimeä, järjettömän kuuma.' },
     ],
     comparePrices: 'Vertaile hintoja',

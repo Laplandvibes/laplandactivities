@@ -5,6 +5,7 @@ import HeroSlider from './HeroSlider';
 import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { currentSeasonBucket } from '../i18n/seasonWords';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 export default function Hero() {
   const lang = useLang();
@@ -37,9 +38,7 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-8 sm:pb-10 lg:py-16">
         <div className="max-w-2xl xl:max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
-        <p className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6">
-          {c.eyebrow}
-        </p>
+        <Erotinrivi pino className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6" osat={erotinOsat(c.eyebrow)} />
 
         {/* Sanamerkki on AINA yksi rivi. Mitattu 18.10.2026: leveys ≈ 7,23 × fonttikoko
             (36 px = 260, 72 px = 521, 96 px = 694). Puhelimella 11,5vw (320 px: 266 / tilaa 288),

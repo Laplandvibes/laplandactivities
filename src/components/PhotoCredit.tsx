@@ -1,5 +1,6 @@
 import { creditFor, PHOTO_CREDITS } from '../data/photoCredits';
 import { useLang } from '../i18n/useLang';
+import { Erotinrivi } from '../shared/Erotin';
 
 /**
  * Kuvamerkintä valokuvan päälle: tekijä + lisenssi (+ linkit, kun kuva ei ole linkin sisällä).
@@ -104,11 +105,12 @@ const LIST_LEAD: Record<string, string> = {
 };
 
 /** Commonsin tiedostonimi on nimi (translate="no"); perään merkitty "· cropped" lukijan kielellä. */
-function FileTitle({ title = '', lang }: { title?: string; lang: string }) {
+function FileTitle({ title = '' }: { title?: string }) {
   const m = title.match(/^(.*) · cropped$/);
-  if (!m) return <span translate="no">{title}</span>;
-  return <><span translate="no">{m[1]}</span>{` · ${CROPPED[lang] ?? CROPPED.en}`}</>;
+  return <span translate="no">{m ? m[1] : title}</span>;
 }
+/** "· cropped" omaksi kohdakseen Erotinriviin (Vesa 9.11.2026: piste ei saa jäädä irralleen rivinvaihdossa). */
+const croppedLabel = (title = '', lang: string) => (/ · cropped$/.test(title) ? (CROPPED[lang] ?? CROPPED.en) : null);
 
 /** Tietoja-sivun kuvaluettelo: kaikki Commons-kuvat tekijöineen ja lisenssilinkkeineen. */
 export function PhotoCreditList() {
@@ -121,9 +123,12 @@ export function PhotoCreditList() {
       <ul className="columns-1 sm:columns-2 gap-6 text-[12px] leading-relaxed text-snow/60">
         {entries.map(([src, c]) => (
           <li key={src} className="break-inside-avoid mb-1">
-            <a href={c.pageUrl} target="_blank" rel="noopener" className="text-arctic-cyan hover:underline"><FileTitle title={c.title} lang={lang} /></a>
-            {' · '}{c.author}{' · '}
-            <a href={c.licenseUrl} target="_blank" rel="license noopener" className="whitespace-nowrap hover:underline">{licenseLabel(c.license, lang)}</a>
+            <Erotinrivi as="span" osat={[
+              <a href={c.pageUrl} target="_blank" rel="noopener" className="text-arctic-cyan hover:underline"><FileTitle title={c.title} /></a>,
+              croppedLabel(c.title, lang),
+              c.author,
+              <a href={c.licenseUrl} target="_blank" rel="license noopener" className="whitespace-nowrap hover:underline">{licenseLabel(c.license, lang)}</a>,
+            ]} />
           </li>
         ))}
       </ul>

@@ -66,7 +66,7 @@ const en: SectionCopy = {
       { name: 'Glass Igloos', blurb: 'Sleep under aurora through a curved glass roof. Most-booked Lapland nights.' },
       { name: 'Lakeside log cabins', blurb: 'Smoke saunas, wood-fired hot tubs, your own dock. Year-round.' },
       { name: 'Fell resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, just south of the Lapland border). Ski-in, ski-out, plus summer activities.' },
-      { name: 'Boutique city', blurb: 'Rovaniemi · Kemi · Ivalo. Design hotels with a kitchen and city access.' },
+      { name: 'Boutique city', blurb: 'Rovaniemi, Kemi, Ivalo. Design hotels with a kitchen and city access.' },
       { name: 'Smoke sauna cabins', blurb: 'The real savusauna: small, dark, ridiculously hot.' },
     ],
     comparePrices: 'Compare prices',

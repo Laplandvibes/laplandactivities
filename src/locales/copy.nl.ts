@@ -291,7 +291,7 @@ const nl: SectionCopy = {
       { name: 'Glazen iglo\'s', blurb: 'Slaap onder het noorderlicht door een gewelfd glazen dak. De meest geboekte Lapland-nachten.' },
       { name: 'Houten hutten aan het meer', blurb: 'Rooksauna, houtgestookte hot tub, eigen steiger. Het hele jaar door.' },
       { name: 'Fjäll-resorts', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, net ten zuiden van Lapland), ski-in/ski-out plus zomeractiviteiten.' },
-      { name: 'Boutique in de stad', blurb: 'Rovaniemi · Kemi · Ivalo, designhotels met keuken en toegang tot het centrum.' },
+      { name: 'Boutique in de stad', blurb: 'Rovaniemi, Kemi, Ivalo, designhotels met keuken en toegang tot het centrum.' },
       { name: 'Rooksauna-hutten', blurb: 'De echte savusauna-ervaring, klein, donker, belachelijk heet.' },
     ],
     comparePrices: 'Prijzen vergelijken',

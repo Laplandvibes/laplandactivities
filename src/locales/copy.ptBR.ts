@@ -306,7 +306,7 @@ const ptBR: SectionCopy = {
       { name: 'Iglus de vidro', blurb: 'Durma sob a aurora com teto curvo de vidro. As noites mais reservadas da Lapônia.' },
       { name: 'Cabanas à beira do lago', blurb: 'Sauna a fumaça, hidromassagem a lenha, seu próprio deque. O ano todo.' },
       { name: 'Resorts em fell', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, logo ao sul da Lapônia), ski-in/ski-out e atividades de verão.' },
-      { name: 'Boutique urbano', blurb: 'Rovaniemi · Kemi · Ivalo, hotéis-design com cozinha e acesso urbano.' },
+      { name: 'Boutique urbano', blurb: 'Rovaniemi, Kemi, Ivalo, hotéis-design com cozinha e acesso urbano.' },
       { name: 'Cabanas com sauna a fumaça', blurb: 'A verdadeira savusauna, pequena, escura, absurdamente quente.' },
     ],
     comparePrices: 'Comparar preços',

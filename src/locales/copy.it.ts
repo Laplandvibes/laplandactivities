@@ -291,7 +291,7 @@ const it: SectionCopy = {
       { name: 'Iglù di vetro', blurb: 'Dorma sotto l\'aurora attraverso un tetto di vetro curvo. Le notti più prenotate della Lapponia.' },
       { name: 'Baite in legno sul lago', blurb: 'Sauna a fumo, vasca riscaldata a legna, pontile privato. Tutto l\'anno.' },
       { name: 'Resort in fjell', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, appena a sud della Lapponia), ski-in/ski-out più attività estive.' },
-      { name: 'Boutique in città', blurb: 'Rovaniemi · Kemi · Ivalo, hotel di design con cucina e accesso al centro.' },
+      { name: 'Boutique in città', blurb: 'Rovaniemi, Kemi, Ivalo, hotel di design con cucina e accesso al centro.' },
       { name: 'Cabine sauna a fumo', blurb: 'La vera esperienza savusauna, piccola, buia, incredibilmente calda.' },
     ],
     comparePrices: 'Confronta i prezzi',

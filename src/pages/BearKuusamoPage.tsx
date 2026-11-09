@@ -7,6 +7,7 @@ import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { trackPartnerClick } from '../lib/analytics';
 import ShareBar, { ShareButton } from '../shared/ShareBar/ShareBar';
+import { Erotinrivi, erotinOsat } from '../shared/Erotin';
 
 // Direct partner deal (NOT affiliate). Every link goes straight to bearkuusamo.com
 // as a NORMAL follow link: target="_blank" rel="noopener" only — no nofollow, no
@@ -164,7 +165,7 @@ export default function BearKuusamoPage() {
             <span className="inline-block w-2 h-2 rounded-full" style={{ backgroundColor: BEAR_GREEN }} aria-hidden="true" />
             {c.partnershipLabel}
           </span>
-          <p className={`${EYEBROW} mb-3`}>{c.hero.eyebrow}</p>
+          <Erotinrivi className={`${EYEBROW} mb-3`} osat={erotinOsat(c.hero.eyebrow)} />
           <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl text-snow tracking-wide leading-[1.02]">
             {c.hero.title}
           </h1>

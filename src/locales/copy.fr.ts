@@ -291,7 +291,7 @@ const fr: SectionCopy = {
       { name: 'Igloos de verre', blurb: 'Dormez sous les aurores à travers un toit de verre bombé. Les nuitées les plus réservées de Laponie.' },
       { name: 'Chalets en rondins au bord du lac', blurb: 'Sauna à fumée, bain chaud au feu de bois, ponton privé. Toute l\'année.' },
       { name: 'Resorts en fjäll', blurb: 'Levi · Ylläs · Saariselkä · Ruka (Kuusamo, juste au sud de la Laponie), ski au pied et activités d\'été.' },
-      { name: 'Boutique en ville', blurb: 'Rovaniemi · Kemi · Ivalo, hôtels design avec cuisine et accès au centre.' },
+      { name: 'Boutique en ville', blurb: 'Rovaniemi, Kemi, Ivalo, hôtels design avec cuisine et accès au centre.' },
       { name: 'Cabanes sauna à fumée', blurb: 'La vraie expérience savusauna, petite, sombre, ridiculement chaude.' },
     ],
     comparePrices: 'Comparer les prix',

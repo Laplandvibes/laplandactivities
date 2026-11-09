@@ -1,4 +1,5 @@
 import { Hotel, ArrowRight } from 'lucide-react';
+import { Erotinrivi } from '../shared/Erotin';
 
 /** Oma valokuvamme: jarven rannan hirsimokki, Kemijarvi 7/2026 (© LaPeso Oy).
  *  Kuvakuitti: src/data/photoCredits.ts. Kayttosaanto: ks. Lomarengas-kortti alla. */
@@ -176,8 +177,7 @@ export default function HotelsStrip() {
                       mihin han menee, eika se sekoitu kuvakuittiin. Kumppanin nimi on
                       erisnimi, joten se ei tarvitse kaannosta 12 kielelle. */}
                   <span className="inline-flex items-center gap-1.5 rounded-full bg-[#DB2777] group-hover:bg-[#BE185D] text-white text-sm font-semibold px-4 py-2 shadow-lg shadow-black/30 transition-colors">
-                    {c.comparePrices}
-                    {m.label ? '' : ` · ${partnerLabel}`} <ArrowRight className="w-4 h-4" />
+                    <Erotinrivi as="span" osat={[c.comparePrices, m.label ? null : partnerLabel]} /> <ArrowRight className="w-4 h-4 shrink-0" />
                   </span>
                 </div>
               </AffiliateCTA>
