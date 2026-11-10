@@ -84,13 +84,17 @@ export default function Hero() {
             kun tullaan aktiviteettisivulle"). Majoitus ja auto elävät HotelsStripissä ja
             BookingCTA:ssa alempana. Kolmas kortti vaihtuu kauden mukaan.
             Kortit ovat aihekortteja: kukin avaa GYG:n Lapin KATEGORIAsivun (mitattu: revontulet 307,
-            husky 134, moottorikelkka 186 tuotetta, hubin gygCategories.ts 10.8.), ei hakua. */}
+            husky 134, moottorikelkka 186 tuotetta, hubin gygCategories.ts 10.8.), ei hakua.
+            lg+:ssa kortit ovat valokuvan päällä, jossa vaakaliuku on oikealla jo ohut: valkoinen lasi
+            (bg-white/8) vaalensi taustaa entisestään ja 12 px:n kuvaus jäi husky-dian kohdalla 3,93:1:een
+            (korttiteksti 9.11.2026, raja 4,5:1). Siksi lg+:ssa tumma pohja deep-night/70 tekstin alla;
+            alle lg:n kortit ovat sivun tummalla pohjalla ja pitävät lasin. Kuvaa ei vaihdettu. */}
         <div className="hidden sm:grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10 lg:mb-12">
           <AffiliateCTA
             partner="activities"
             sid="hero_strip_aurora"
             destination="lapland-finland-l2652/northern-lights-tc310"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 lg:bg-deep-night/70 lg:hover:bg-deep-night/85 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors"
           >
             <Sparkles className="w-4 h-4 text-vibe-pink mb-1" />
             <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.auroraTours}</p>
@@ -100,7 +104,7 @@ export default function Hero() {
             partner="activities"
             sid="hero_strip_husky_reindeer"
             destination="lapland-finland-l2652/dog-sledding-husky-tours-tc118"
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 lg:bg-deep-night/70 lg:hover:bg-deep-night/85 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors"
           >
             <Dog className="w-4 h-4 text-vibe-pink mb-1" />
             <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.huskyReindeer}</p>
@@ -109,7 +113,7 @@ export default function Hero() {
           {summer ? (
             <Link
               to={to('/categories/summer')}
-              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
+              className="rounded-2xl bg-white/8 hover:bg-white/14 lg:bg-deep-night/70 lg:hover:bg-deep-night/85 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
             >
               <Sun className="w-4 h-4 text-vibe-pink mb-1" />
               <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.summerAdventures}</p>
@@ -120,7 +124,7 @@ export default function Hero() {
               partner="activities"
               sid="hero_strip_snowmobile"
               destination="lapland-finland-l2652/snowmobile-tours-tc119"
-              className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
+              className="rounded-2xl bg-white/8 hover:bg-white/14 lg:bg-deep-night/70 lg:hover:bg-deep-night/85 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
             >
               <Snowflake className="w-4 h-4 text-vibe-pink mb-1" />
               <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.snowmobileTours}</p>
@@ -129,7 +133,7 @@ export default function Hero() {
           )}
           <Link
             to={to('/categories')}
-            className="rounded-2xl bg-white/8 hover:bg-white/14 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
+            className="rounded-2xl bg-white/8 hover:bg-white/14 lg:bg-deep-night/70 lg:hover:bg-deep-night/85 backdrop-blur-sm border border-white/15 px-4 py-3 text-snow transition-colors col-span-2 sm:col-span-1"
           >
             <ChevronDown className="w-4 h-4 text-vibe-pink mb-1" />
             <p className="font-heading tracking-wide text-base hyphens-auto [overflow-wrap:anywhere]">{c.allCategories}</p>
