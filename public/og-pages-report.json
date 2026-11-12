@@ -5,19 +5,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/heroes/levi-summer-fell.webp",
-        "bytes": 140686,
-        "sha256": "180faac04f8a353f8ba682d85498cf7799e86dc75ca8ffd5afb9e1e5287751ac",
+        "bytes": 137589,
+        "sha256": "8f886c4b78691f4b31b86f4a8f348d884582a0b2b7cbe64d4ecb9a1ebcadd9d8",
         "heroSha": "11271e7be77b9303",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 18178,
         "inkBox": [
           357,
-          493,
+          26,
           841,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -42,19 +44,21 @@
       },
       "winter": {
         "hero": "/images/heroes/yllas-winter-road.webp",
-        "bytes": 183154,
-        "sha256": "faac34abc08a3c5a2735e5f31312930e67874d8839f9dcda866063666dee3b9e",
+        "bytes": 180777,
+        "sha256": "f04e80d12db03aba473953a931545639da785ae9049bc31961fb276aab9112bb",
         "heroSha": "61cf402b7adbb8c5",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 18178,
         "inkBox": [
           357,
-          493,
+          26,
           841,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -85,19 +89,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/heroes/reindeer-herd-sunset.webp",
-        "bytes": 164415,
-        "sha256": "7a1c8e8c808a34dc005d11c4896a4c6f2747ed973bc9e3ac6a84fcae46db126a",
+        "bytes": 161882,
+        "sha256": "73cad324aa2cdb0e32a5005a606f53452177972e991cf4a9020a280c87a57725",
         "heroSha": "b8318523ce061452",
         "bandH": 168,
         "photoPct": 73.3,
-        "ink": 18294,
+        "ink": 18384,
         "inkBox": [
-          355,
-          493,
-          843,
-          603
+          345,
+          26,
+          854,
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -112,7 +118,7 @@
           "size": 74,
           "lines": 1,
           "ts": 30,
-          "tagW": 489,
+          "tagW": 510,
           "fits": true,
           "bandH": 168
         },
@@ -122,25 +128,27 @@
       },
       "winter": {
         "hero": "/images/activities/adventure/korouoma-frozen.webp",
-        "bytes": 199640,
-        "sha256": "eee897f22bad5dfff0df197cc7062d3c646052785b83a14876e6bee361b9105b",
+        "bytes": 197589,
+        "sha256": "d83afca3b2b642adfcd657713da3f57156d322b382ad444dd35024ad2810d5f8",
         "heroSha": "b8b83a094b63a3ba",
         "bandH": 168,
         "photoPct": 73.3,
-        "ink": 18294,
+        "ink": 18384,
         "inkBox": [
-          355,
-          493,
-          843,
-          603
+          345,
+          26,
+          854,
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
         "whiteMed": 17.08,
         "mean": 93.2,
-        "centerSq": 100,
+        "centerSq": 100.1,
         "photoRegion": 113.3,
         "photoRegionRef": 113.3,
         "overlayPixels": 0,
@@ -149,7 +157,7 @@
           "size": 74,
           "lines": 1,
           "ts": 30,
-          "tagW": 489,
+          "tagW": 510,
           "fits": true,
           "bandH": 168
         },
@@ -165,19 +173,21 @@
     "kaudet": {
       "summer": {
         "hero": "/og/src/about-vesa-pesola.jpg",
-        "bytes": 51997,
-        "sha256": "5756230a48398faec77430fe4051b1e4ac091d6ab3178b1023b782fa302b0ab6",
+        "bytes": 48768,
+        "sha256": "9a2e5d050d72dd971d464fc3a0cddf1d3d9afb51580cd8dad4f56e23b2ebbb68",
         "heroSha": "3661a1136d098afc",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 18679,
         "inkBox": [
           335,
-          493,
+          26,
           863,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -202,19 +212,21 @@
       },
       "winter": {
         "hero": "/og/src/about-vesa-pesola.jpg",
-        "bytes": 51997,
-        "sha256": "5756230a48398faec77430fe4051b1e4ac091d6ab3178b1023b782fa302b0ab6",
+        "bytes": 48768,
+        "sha256": "9a2e5d050d72dd971d464fc3a0cddf1d3d9afb51580cd8dad4f56e23b2ebbb68",
         "heroSha": "3661a1136d098afc",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 18679,
         "inkBox": [
           335,
-          493,
+          26,
           863,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -246,19 +258,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/activities/summer/salmon-fishing.webp",
-        "bytes": 134200,
-        "sha256": "fa604374656e3d63cbc9a843023f3566a7014830af36b25976a31d2b382f632e",
+        "bytes": 131211,
+        "sha256": "a91b7603c681b4687727dcd6c01bd3cbffe59a71f65782cfe9152b00eee135d3",
         "heroSha": "0d94ba542a85bc7a",
         "bandH": 168,
         "photoPct": 73.3,
-        "ink": 18065,
+        "ink": 18158,
         "inkBox": [
           357,
-          493,
+          26,
           841,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -273,7 +287,7 @@
           "size": 74,
           "lines": 1,
           "ts": 30,
-          "tagW": 446,
+          "tagW": 466,
           "fits": true,
           "bandH": 168
         },
@@ -283,19 +297,21 @@
       },
       "winter": {
         "hero": "/images/activities/summer/salmon-fishing.webp",
-        "bytes": 134200,
-        "sha256": "fa604374656e3d63cbc9a843023f3566a7014830af36b25976a31d2b382f632e",
+        "bytes": 131211,
+        "sha256": "a91b7603c681b4687727dcd6c01bd3cbffe59a71f65782cfe9152b00eee135d3",
         "heroSha": "0d94ba542a85bc7a",
         "bandH": 168,
         "photoPct": 73.3,
-        "ink": 18065,
+        "ink": 18158,
         "inkBox": [
           357,
-          493,
+          26,
           841,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -310,7 +326,7 @@
           "size": 74,
           "lines": 1,
           "ts": 30,
-          "tagW": 446,
+          "tagW": 466,
           "fits": true,
           "bandH": 168
         },
