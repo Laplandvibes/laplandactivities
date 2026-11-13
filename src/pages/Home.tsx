@@ -249,6 +249,15 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Varausosio (aktiviteetit, majoitus, auto) varattavien retkien ja varusteiden perään (Vesa 13.11.2026: "nosta ylemmäksi").
+          Oli sivun lopussa ennen verkoston sivuja: klikkiloki 18.10.–12.11. näki sen 3 sivulatauksessa. */}
+      <BookingCTA
+        sidTag="home"
+        destinationSlug="lapland"
+        hotelsQuery={hotelsQueryForDestination('lapland')}
+        pickupIata="RVN"
+      />
+
       <section id="experiences" className="py-16 sm:py-24 px-4 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col items-center text-center gap-4 mb-10 lg:flex-row lg:items-end lg:justify-between lg:text-left">
@@ -380,13 +389,6 @@ export default function Home() {
       </div>
 
       <HotelsStrip />
-
-      <BookingCTA
-        sidTag="home"
-        destinationSlug="lapland"
-        hotelsQuery={hotelsQueryForDestination('lapland')}
-        pickupIata="RVN"
-      />
 
       {/* RELATED ECOSYSTEM SITES — in-content internal links to topically-relevant
           LaplandVibes spokes. Keyword-rich anchors, rel="noopener" (NOT affiliate). */}

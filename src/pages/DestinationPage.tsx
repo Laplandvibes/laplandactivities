@@ -7,7 +7,6 @@ import { getDestinationBySlug, destinations } from '../data/destinations';
 import { getActivitiesByDestination } from '../data/activities';
 import { categories } from '../data/categories';
 import ActivityCard from '../components/ActivityCard';
-import BookingCTA from '../components/BookingCTA';
 import AffiliateCTA from '../components/AffiliateCTA';
 import { gygSlugForDestination, hotelsQueryForDestination, carsIataForDestination } from '../data/affiliate';
 import { imageForDestination, assignActivityImages, focalFor, heroFrameClass, heroTextRight } from '../data/images';
@@ -318,6 +317,37 @@ export default function DestinationPage() {
         </div>
       </section>
 
+      {/* Majoitus ja auto heti aktiviteettien jälkeen (Vesa 13.11.2026: "nosta ylemmäksi"). Klikkiloki 18.10.–12.11.: sivun
+          lopun varausosion (BookingCTA) näki 10 sivulatausta 160:stä ja tämän osion 19, koska molemmat olivat neljän tekstiosion
+          takana. Sivun lopun BookingCTA poistettu kohdesivulta: sen aktiviteettikortti toisti sivun pääsisällön ja majoitus- ja
+          autokortit tätä osiota, mutta yleisellä tekstillä ("Majoitu lähellä") tämän kohteen nimen sijaan. */}
+      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+          <AffiliateCTA
+            partner="hotels"
+            sid={`crossell_${slug}_hotels`}
+            destination={hotelsQ}
+            className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all"
+          >
+            <Hotel className="w-6 h-6 text-arctic-cyan mb-3" />
+            <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.sleepInPrefix} {destIn}</p>
+            <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.sleepInBlurb}</p>
+            <span className="inline-flex items-center gap-1 text-arctic-cyan text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.compareHotels} <ArrowRight className="w-4 h-4" /></span>
+          </AffiliateCTA>
+          <AffiliateCTA
+            partner="cars"
+            sid={`crossell_${slug}_cars`}
+            destination={carsIata}
+            className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all"
+          >
+            <Car className="w-6 h-6 text-aurora-green mb-3" />
+            <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.driveYourself}</p>
+            <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.driveYourselfBlurb}</p>
+            <span className="inline-flex items-center gap-1 text-aurora-green text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.findBestPrice} <ArrowRight className="w-4 h-4" /></span>
+          </AffiliateCTA>
+        </div>
+      </section>
+
       {/* WHY VISIT + GOOD TO KNOW — premium combined intro panel (no flat void) */}
       <section className="lv-aurora-veil bg-deep-night py-12 sm:py-16 px-4 sm:px-6 border-b border-white/5">
         <div className="relative max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-6">
@@ -426,34 +456,6 @@ export default function DestinationPage() {
         </section>
       )}
 
-      {/* Cross-sell: hotels + cars */}
-      <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-          <AffiliateCTA
-            partner="hotels"
-            sid={`crossell_${slug}_hotels`}
-            destination={hotelsQ}
-            className="group rounded-2xl lv-surface hover:border-arctic-cyan/50 p-6 sm:p-8 transition-all"
-          >
-            <Hotel className="w-6 h-6 text-arctic-cyan mb-3" />
-            <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.sleepInPrefix} {destIn}</p>
-            <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.sleepInBlurb}</p>
-            <span className="inline-flex items-center gap-1 text-arctic-cyan text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.compareHotels} <ArrowRight className="w-4 h-4" /></span>
-          </AffiliateCTA>
-          <AffiliateCTA
-            partner="cars"
-            sid={`crossell_${slug}_cars`}
-            destination={carsIata}
-            className="group rounded-2xl lv-surface hover:border-aurora-green/50 p-6 sm:p-8 transition-all"
-          >
-            <Car className="w-6 h-6 text-aurora-green mb-3" />
-            <p className="font-heading text-2xl sm:text-3xl lv-head tracking-wide">{c.driveYourself}</p>
-            <p className="text-snow/70 text-sm leading-relaxed mt-2 mb-4">{c.driveYourselfBlurb}</p>
-            <span className="inline-flex items-center gap-1 text-aurora-green text-sm font-semibold group-hover:translate-x-1 transition-transform">{c.findBestPrice} <ArrowRight className="w-4 h-4" /></span>
-          </AffiliateCTA>
-        </div>
-      </section>
-
       {/* Other destinations */}
       <section className="py-12 sm:py-16 px-4 sm:px-6 bg-deep-night border-t border-white/5">
         <div className="max-w-7xl mx-auto">
@@ -497,7 +499,6 @@ export default function DestinationPage() {
         </div>
       </section>
 
-      <BookingCTA destinationSlug={slug || 'lapland'} hotelsQuery={hotelsQ} gygSlug={gygSlug} pickupIata={carsIata} />
     </>
   );
 }
