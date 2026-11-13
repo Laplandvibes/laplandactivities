@@ -123,41 +123,6 @@ export function gygFreshPrice(pick: { price?: string; priceAsOf?: string }, now?
 const GO = "https://go.laplandvibes.com/go/activities";
 
 /**
- * 🔴🔴 TUOTELINKKI ILMAN SLUGIA: `-t<id>/`.
- *
- * Vesa 20.9.2026: *"rapusafari ei mene syvalinkkina, miksi ei?"*
- *
- * GetYourGuide kaantaa tuotepolun MOLEMMAT osat (sijainnin ja tuotteen). Kun polku
- * rakennetaan englanninkielisesta slugista, kaannetylla kielella sita ei ole olemassa
- * ja GYG ohjaa HAKUSIVULLE: mitattu `…/s?…&et=1158887&lc=97740` kuningasrapusafarista.
- *
- * 🔴 Vika on erityisen paha siksi, etta se ei nay testaajalle: englanniksi linkki
- * toimii. Vesa katsoi suomeksi ja paatyi hakuun. Sama vika mitattiin samana paivana
- * laplandhuskysafarisissa (fi-fi/-t437502 → "Huskysafari paivalla", de-de → "Husky-Safari
- * bei Tag", bare /-t453311 → englanniksi), ja korjattu muoto on tama.
- *
- * Tunnusta ei voi kaantaa vaarin. Sijaintisivut (ei `-t<id>`) jaavat ennalleen:
- * Worker hoitaa niiden kieliprefiksin.
- */
-export const GYG_LOCALE_PREFIX: Record<string, string> = {
-  fi: 'fi-fi', de: 'de-de', ja: 'ja-jp', es: 'es-es', 'pt-BR': 'pt-br',
-  'zh-CN': 'zh-cn', ko: 'ko-kr', fr: 'fr-fr', it: 'it-it', nl: 'nl-nl', sv: 'sv-se',
-};
-
-export function gygProductPath(path: string, lang?: string): string {
-  const m = path.match(/-t(\d+)\/?$/);
-  if (!m) return path;
-  const prefix = lang ? GYG_LOCALE_PREFIX[lang] : undefined;
-  // 🔴 Kieliprefiksi on PAKKO rakentaa itse. Worker EI lisaa sita id-polkuun —
-  // mitattu 20.9.2026: `/go/activities/-t437502/?language=fi` ohjasi osoitteeseen
-  // `getyourguide.com/-t437502/` ilman prefiksia, eli englanniksi. Prefiksillinen
-  // polku menee Workerin lapi sellaisenaan, ja GYG avaa sen kieliversion:
-  // `/fi-fi/-t1200620/` → "Kirkkoniemi: kesainen kuninkaallisen taskuravun safari"
-  // (todennettu selaimessa). Englanti ei tarvitse prefiksia.
-  return prefix ? `${prefix}/-t${m[1]}/` : `-t${m[1]}/`;
-}
-
-/**
  * Affiliate href through the redirect Worker (LV rule: never a raw partner URL
  * in source). The Worker appends `partner_id` and resolves per-site attribution
  * from the Referer header. Verified end-to-end 2026-07-29.
@@ -174,6 +139,16 @@ export function gygProductPath(path: string, lang?: string): string {
  * these picks sent its readers to the English page. Both halves of that bug
  * were invisible: the site looked like it was asking for a language, and the
  * parameter it asked with would not have worked anyway.
+ *
+ * 🔴🔴 Since 2026-09-20 that holds for LOCATION and CATEGORY paths only. A
+ * product path (`…-tNNN`) gets no prefix from the Worker (LV-GYG-PRODUCT-NOPREFIX,
+ * bd457ac): prefix + English slug had started falling to GYG's search page
+ * (`/s?…&et=<id>&lc=<loc>`). Without a prefix the product opens, but in the
+ * visitor's own GYG market language — measured 2026-09-26 in a browser with no
+ * GYG market set: `language=fi` and `language=de` both opened the ENGLISH page.
+ * So a non-English product link carries its own prefix, `<lang>-<cc>/-t<id>/`
+ * (gygProductPath below), and no `language`. See gygProductPath for the
+ * measurement.
  */
 export function gygHref(pick: GygPick, lang?: string, sidOverride?: string): string {
   // sidOverride: a pick's baked-in sid is named after the site the row was
@@ -188,12 +163,53 @@ export function gygHref(pick: GygPick, lang?: string, sidOverride?: string): str
     fi: "fi", de: "de", ja: "ja", es: "es", "pt-BR": "pt-br",
     "zh-CN": "zh", ko: "ko", fr: "fr", it: "it", nl: "nl", sv: "sv",
   };
-  const productPath = gygProductPath(pick.path, lang);
   const code = lang ? L[lang] : undefined;
-  // 🔴 `language` vain kun polku EI kanna kielta. Molemmat yhdessa riskeeraisi
-  // kaksinkertaisen prefiksin (sama syy kuin huskysivuston sijaintilinkeissa).
-  if (code && !productPath.includes('/-t')) p.set("language", code);
-  return `${GO}/${productPath}?${p.toString()}`;
+  // English keeps the full English slug: with a non-English GYG market cookie a
+  // bare `-t<id>/` follows the cookie (measured → /fi-fi/), the slug stays English.
+  const path = lang && GYG_LOCALE_PREFIX[lang] ? gygProductPath(pick.path, lang) : pick.path;
+  // `language` only when the path does not already carry the locale; both
+  // together could double-prefix.
+  if (code && !path.includes("/-t")) p.set("language", code);
+  return `${GO}/${path}?${p.toString()}`;
+}
+
+/**
+ * 🔴🔴 PRODUCT LINK WITHOUT A SLUG: `<lang>-<cc>/-t<id>/` (promoted from
+ * laplandactivities, 2026-09-26).
+ *
+ * Vesa 20.9.2026: *"rapusafari ei mene syvälinkkinä, miksi ei?"* GetYourGuide
+ * translates BOTH parts of a product path, so an English slug under a locale
+ * prefix has no match and fell to the search page (`…/s?…&et=1158887&lc=97740`
+ * for the king crab safari). The Worker stopped prefixing product paths the
+ * same day, which fixed the search page but left every non-English reader on
+ * the English product page unless their GYG market says otherwise.
+ *
+ * An id cannot be mistranslated. Measured 2026-09-26 in a browser, same-origin
+ * fetch on getyourguide.com: all 50 product ids in this file × 11 locales,
+ * `<prefix>/-t<id>/` → 301 to that locale's own product slug for 48 ids, 0 to
+ * search. The other 2 (t449218, t1005215) redirect to their location page in
+ * every locale, bare id included, and so does their full English slug through
+ * the Worker: GetYourGuide itself sends them there right now, not this function.
+ * Not proof of deletion — a parallel re-measurement the same day saw t1130814
+ * come back from that state, and t449218 is a winter tour. Re-measure in late
+ * November before replacing them (gyg_tuotepolut_uudelleenmittaus_20260926).
+ *
+ * Location and category paths (no `-t<id>` at the end; `-tc146` is a
+ * category) are returned unchanged: the Worker prefixes those itself.
+ */
+export const GYG_LOCALE_PREFIX: Record<string, string> = {
+  fi: "fi-fi", de: "de-de", ja: "ja-jp", es: "es-es", "pt-BR": "pt-br",
+  "zh-CN": "zh-cn", ko: "ko-kr", fr: "fr-fr", it: "it-it", nl: "nl-nl", sv: "sv-se",
+};
+
+export function gygProductPath(path: string, lang?: string): string {
+  const m = path.match(/-t(\d+)\/?$/);
+  if (!m) return path;
+  const prefix = lang ? GYG_LOCALE_PREFIX[lang] : undefined;
+  // 🔴 The prefix has to be built here: the Worker adds none to an id path
+  // (measured 20.9.2026: `/go/activities/-t437502/?language=fi` →
+  // `getyourguide.com/-t437502/`). A prefixed path passes the Worker as is.
+  return prefix ? `${prefix}/-t${m[1]}/` : `-t${m[1]}/`;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -315,6 +331,99 @@ export function gygDuration(pick: GygPick, lang?: string): string | undefined {
   return `${value}${f.space ? " " : ""}${f.unit(unit, one)}`;
 }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Availability, measured (2026-10-18).
+//
+// Vesa 18.10.2026 on laplandluxuryvillas: "miksi edelleen nämä ei mene suoraan
+// varaukseen?" Every product id in this file and in luxury.ts was fetched on
+// getyourguide.com in the in-app browser (same-origin fetch, the page's own
+// cookies; it reproduces a full navigation exactly). Two failure modes, and
+// they need opposite handling:
+//
+//   all  The product redirects to its LOCATION page in every locale, and the
+//        redirect drops partner_id and cmp: no booking would be ours. All five
+//        are seasonal (winter snowshoeing and Santa, summer lake cruises, gold
+//        panning), so this is most likely off-season deactivation, not
+//        deletion: 26.9. a parallel measurement saw t1130814 come back.
+//   en   The product page renders EMPTY (header and footer, no h1, generic
+//        title "Book Things To Do…") at the bare English URL that English
+//        pages link (the full English slug, no prefix), and renders normally
+//        under every prefix the other locales use (fi-fi, de-de, ja-jp …).
+//        Deterministic (measured twice), independent of currency. Not dead:
+//        removing the row would also take it off eleven working locales.
+//        t727384 is empty under en-gb too, so en-gb is not a general fix.
+//
+// localizePick() returns null for an unavailable (product, locale) pair, so a
+// GygPicks-style consumer drops the card on its own. Rows stay where they are:
+// a product that comes back needs one line deleted here, not a row restored.
+// Consumers that read the lists directly must call gygAvailable() themselves.
+// Re-measure (both modes) before December: winter products should return.
+//
+// 🔴 19.10.2026: the Worker now handles the `en` mode for every site
+// (affiliate-redirect-worker LV-GYG-AVAILABILITY, measured on all 195 product
+// ids the network links). An English link to an id that is empty at the bare
+// URL but renders under `en-gb/` is sent there, so those cards WORK in English
+// and are no longer listed below (t853272, t790865, t462526, t693623, t786889,
+// t1205230, t885747). Listed `en` now means: empty under en-gb too, the Worker
+// sends the reader to the location page. `all` stays hidden: the Worker keeps
+// partner_id on the location page, but the card still promises a product that
+// cannot be booked right now. Re-measure: node scripts/gyg_saatavuus_mittaus.mjs.
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface GygUnavailable {
+  /** Day of the browser measurement. */
+  measured: string;
+  /** "all" = every locale; otherwise the site locales (`en`, `fi`, …) it fails in. */
+  locales: "all" | readonly string[];
+  /** What was seen. */
+  why: string;
+}
+
+export const GYG_UNAVAILABLE: Readonly<Record<string, GygUnavailable>> = {
+  "449218": { measured: "2026-10-18", locales: "all", why: "Levi snowshoeing: location redirect (also 26.9.), winter tour" },
+  "1005215": { measured: "2026-10-18", locales: "all", why: "Inari cultural day + lake cruise: location redirect (also 26.9.), summer" },
+  "1243827": { measured: "2026-10-18", locales: "all", why: "Ivalo gold panning: location redirect, summer" },
+  "1073872": { measured: "2026-10-18", locales: "all", why: "Lake Inari boat tour (luxury.ts, removed): location redirect, summer" },
+  "889294": { measured: "2026-10-18", locales: "all", why: "Levi Santa visit at the villa (luxury.ts, removed): location redirect, winter" },
+  "727384": { measured: "2026-10-19", locales: ["en"], why: "Kemi icebreaker Arktis: empty in English, en-gb included" },
+  "810536": { measured: "2026-10-19", locales: ["en"], why: "Saariselkä horse riding: empty in English, en-gb included" },
+  "1092773": { measured: "2026-10-19", locales: ["en"], why: "Ylläs aurora snowmobile + transfers: empty in English, en-gb included" },
+  "988932": { measured: "2026-10-19", locales: "all", why: "Levi fell summit + Samiland: location redirect (en, en-gb, fi)" },
+  "1376037": { measured: "2026-10-19", locales: "all", why: "Levi lake ferry cruise + sauna: location redirect (en, en-gb, fi), summer" },
+  "478022": { measured: "2026-10-19", locales: "all", why: "Saariselkä e-MTB rental: location redirect (en, en-gb), summer" },
+  "478940": { measured: "2026-10-19", locales: "all", why: "Saariselkä MTB rental: location redirect (en, en-gb), summer" },
+  // t504004 (Sampo) English slug: empty at the bare URL, product under en-gb/ —
+  // the Worker sends it there since 19.10., so it is no longer listed.
+};
+
+/**
+ * Same failure keyed by the exact path, for an id whose other slug works
+ * (t504004: English slug empty at the bare URL, Finnish slug fine).
+ */
+export const GYG_UNAVAILABLE_PATHS: Readonly<Record<string, GygUnavailable>> = {
+  // 19.10.2026: the Sampo English slug (t504004) left this table — the Worker
+  // sends it to en-gb/, where it renders (LV-GYG-AVAILABILITY).
+};
+
+/** The GetYourGuide product id of a path, or null for a location/category path. */
+export function gygIdOf(path: string): string | null {
+  const m = path.match(/-t(\d+)\/?$/);
+  return m ? m[1] : null;
+}
+
+/** False when the browser measurement above saw this product fail in `lang` (default en). */
+export function gygAvailable(path: string, lang?: string): boolean {
+  const clean = path.replace(/^\/+|\/+$/g, "");
+  const id = gygIdOf(clean);
+  if (!id) return true;
+  const loc = !lang ? "en" : lang;
+  for (const u of [GYG_UNAVAILABLE[id], GYG_UNAVAILABLE_PATHS[clean]]) {
+    if (!u) continue;
+    if (u.locales === "all" || u.locales.includes(loc)) return false;
+  }
+  return true;
+}
+
 /** A row ready to render in one locale. `source` is the row as written above. */
 export interface LocalizedGygPick extends GygPick {
   /** The untouched row: English title for title-keyed lookups such as pickIcon(). */
@@ -327,6 +436,8 @@ export interface LocalizedGygPick extends GygPick {
  * Null means: render nothing for this row. Never fall back to English.
  */
 export function localizePick(pick: GygPick, lang?: string): LocalizedGygPick | null {
+  // Measured unavailable in this locale (GYG_UNAVAILABLE): no card, not a dead link.
+  if (!gygAvailable(pick.path, lang)) return null;
   if (!lang || lang === "en") {
     return { ...pick, price: gygFreshPrice(pick), duration: gygDuration(pick, "en"), source: pick };
   }
@@ -443,13 +554,13 @@ export const SNOWMOBILE_PICKS: GygPick[] = [
       fi: "Aja uusilla vuoden 2025 moottorikelkoilla arktisella safarilla",
       sv: "Kör nya snöskotrar av 2025 års modell på arktisk safari",
       de: "Fahren Sie neue Schneemobile, Modell 2025, auf einer arktischen Safari",
-      es: "Conduzca motonieves nuevas, modelo 2025, en un safari ártico",
+      es: "Conduzca motos de nieve nuevas, modelo 2025, en un safari ártico",
       fr: "Pilotez des motoneiges neuves, modèle 2025, lors d’un safari arctique",
       it: "Guidi motoslitte nuove, modello 2025, in un safari artico",
       nl: "Rijd op nieuwe sneeuwscooters van bouwjaar 2025 tijdens een arctische safari",
       "pt-BR": "Pilote motos de neve novas, modelo 2025, em um safári ártico",
       ja: "2025年モデルの新型スノーモービルを運転する北極圏サファリ",
-      ko: "2025년형 신형 스노모빌을 운전하는 북극 사파리",
+      ko: "2025년형 신형 스노우모빌을 운전하는 북극 사파리",
       "zh-CN": "驾驶 2025 款全新雪地摩托的北极探险之旅",
     },
     place: "Rovaniemi",
@@ -464,13 +575,13 @@ export const SNOWMOBILE_PICKS: GygPick[] = [
       fi: "Helppo moottorikelkkasafari luontoon",
       sv: "Enkel snöskotersafari ut i naturen",
       de: "Einfache Schneemobil-Safari in die Natur",
-      es: "Safari fácil en motonieve por la naturaleza",
+      es: "Safari fácil en moto de nieve por la naturaleza",
       fr: "Safari facile en motoneige en pleine nature",
       it: "Safari facile in motoslitta nella natura",
       nl: "Eenvoudige sneeuwscootersafari de natuur in",
       "pt-BR": "Safári fácil de moto de neve pela natureza",
       ja: "気軽なスノーモービル・サファリで大自然へ",
-      ko: "자연 속으로 떠나는 쉬운 스노모빌 사파리",
+      ko: "자연 속으로 떠나는 쉬운 스노우모빌 사파리",
       "zh-CN": "轻松的雪地摩托自然之旅",
     },
     place: "Levi",
@@ -485,13 +596,13 @@ export const SNOWMOBILE_PICKS: GygPick[] = [
       fi: "Moottorikelkkasafari tundralla",
       sv: "Snöskotersafari på tundran",
       de: "Schneemobil-Safari über die Tundra",
-      es: "Safari en motonieve por la tundra",
+      es: "Safari en moto de nieve por la tundra",
       fr: "Safari en motoneige sur la toundra",
       it: "Safari in motoslitta sulla tundra",
       nl: "Sneeuwscootersafari over de toendra",
       "pt-BR": "Safári de moto de neve pela tundra",
       ja: "ツンドラを走るスノーモービル・サファリ",
-      ko: "툰드라 스노모빌 사파리",
+      ko: "툰드라 스노우모빌 사파리",
       "zh-CN": "苔原雪地摩托之旅",
     },
     place: "Saariselkä",
@@ -506,13 +617,13 @@ export const SNOWMOBILE_PICKS: GygPick[] = [
       fi: "Moottorikelkkasafari kolmen valtakunnan rajalle",
       sv: "Snöskotersafari till treriksgränsen",
       de: "Schneemobil-Safari zum Dreiländereck",
-      es: "Safari en motonieve a la frontera de los tres países",
+      es: "Safari en moto de nieve a la frontera de los tres países",
       fr: "Safari en motoneige jusqu’à la frontière des trois pays",
       it: "Safari in motoslitta al confine dei tre Paesi",
       nl: "Sneeuwscootersafari naar het drielandenpunt",
       "pt-BR": "Safári de moto de neve até a fronteira dos três países",
       ja: "三国国境へのスノーモービル・サファリ",
-      ko: "세 나라 국경으로 가는 스노모빌 사파리",
+      ko: "세 나라 국경으로 가는 스노우모빌 사파리",
       "zh-CN": "三国交界处雪地摩托之旅",
     },
     place: "Kilpisjärvi",
@@ -1366,3 +1477,19 @@ export const CATEGORY_LINKS: Record<string, GygCategoryLink[]> = {
 export function gygCategoryHref(link: GygCategoryLink, lang?: string): string {
   return gygHref({ path: link.path, title: "", place: "", sid: link.sid }, lang);
 }
+
+/** Ylellisyys-sivun suuret päivät (laplandgifts /luxury + /experiences 'icebreaker'). */
+export const LUXURY_PICKS: GygPick[] = [
+  {
+    // Vesa 5.9.2026 (Ylellisyys-sivu): "eihän täällä ole edes sitä Kemin
+    // kelluntaa meressä Sampo-murtajan kanssa?" Hinta luettu GYG:n fi-sivulta
+    // 2026-09-05 (alkaen 402 €), kesto listauksesta (6,5–7 h). Tuotesivu
+    // verifioitu selaimessa (curl 403 partner-parametreilla).
+    path: "kemi-l98127/kemi-iltapaivan-jaanmurtaja-sampo-risteily-ja-jaalla-kellunta-t504004",
+    price: "402 €",
+    title: "Icebreaker Sampo Cruise with Ice Floating",
+    place: "Kemi",
+    duration: "6.5–7 h",
+    sid: "gifts_luxury_pick_icebreaker_kemi",
+  },
+];
