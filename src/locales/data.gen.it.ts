@@ -854,7 +854,7 @@ const d: LangData = {
       "description": "Navighi attraverso il Mar Baltico gelato su una vera nave rompighiaccio, poi galleggi nel mare gelato indossando una muta di sopravvivenza. Un'esperienza artica da bucket list. Per galleggiare nel mare gelato è richiesta un'altezza minima di 140 cm.",
       "highlights": [
         "Vero rompighiaccio",
-        "Galleggiamento da 140 cm",
+        "Galleggiare da 140 cm",
         "Bucket list"
       ],
       "duration": "4 h",

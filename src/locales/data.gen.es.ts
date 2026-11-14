@@ -854,7 +854,7 @@ const d: LangData = {
       "description": "Navegue por el mar Báltico helado en un auténtico buque rompehielos y luego flote en el mar helado vestido con un traje de supervivencia. Una experiencia ártica imprescindible. Para flotar en el mar helado hay que medir al menos 140 cm.",
       "highlights": [
         "Rompehielos auténtico",
-        "Flotación desde 140 cm",
+        "Flotar desde 140 cm",
         "Imprescindible"
       ],
       "duration": "4 h",

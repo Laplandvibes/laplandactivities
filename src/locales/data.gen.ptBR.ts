@@ -854,7 +854,7 @@ const d: LangData = {
       "description": "Navegue pelo mar Báltico congelado em um verdadeiro navio quebra-gelo, depois flutue no mar congelado vestindo uma roupa de sobrevivência. Uma experiência ártica imperdível. Para flutuar no mar congelado, é preciso ter pelo menos 140 cm de altura.",
       "highlights": [
         "Verdadeiro quebra-gelo",
-        "Flutuação: mín. 140 cm",
+        "Flutuação: 140 cm+",
         "Lista de desejos"
       ],
       "duration": "4 h",
