@@ -1018,7 +1018,7 @@ export const activities: Activity[] = [
     season: ['winter'],
     description: 'Cruise through the frozen Baltic Sea on a real icebreaker ship, then float in the frozen sea wearing a survival suit. A bucket-list Arctic experience. You need to be at least 140 cm tall to float.',
     groupSize: '2-150',
-    highlights: ['Real icebreaker', 'Sea floating', 'Bucket list'],
+    highlights: ['Real icebreaker', 'Sea floating, 140 cm+', 'Bucket list'],
     featured: true,
   },
   {

@@ -914,7 +914,7 @@ const d: LangData = {
       "description": "Purjehdi jäätyneen Itämeren halki aidolla jäänmurtajalla ja kellu sitten jäätyneessä meressä pelastuspuvussa. Kerran elämässä koettava arktinen elämys. Kellumaan pääsevät vähintään 140 cm pitkät.",
       "highlights": [
         "Aito jäänmurtaja",
-        "Merikellunta",
+        "Kellunta: väh. 140 cm",
         "Kerran elämässä"
       ],
       "duration": "4 h",

@@ -854,7 +854,7 @@ const d: LangData = {
       "description": "Vaar door de bevroren Oostzee op een echte ijsbreker en drijf daarna in zee in een overlevingspak. Een arctische bucketlist-ervaring. Voor het drijven in zee geldt een minimumlengte van 140 cm.",
       "highlights": [
         "Echte ijsbreker",
-        "Zeedrijven",
+        "Drijven vanaf 140 cm",
         "Bucketlist"
       ],
       "duration": "4 uur",

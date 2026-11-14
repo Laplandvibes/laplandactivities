@@ -854,7 +854,7 @@ const d: LangData = {
       "description": "Kryssa genom det tillfrusna Östersjön ombord på en riktig isbrytare, och flyt sedan i det tillfrusna havet iklädd överlevnadsdräkt. En arktisk bucket list-upplevelse. För att flyta i havet måste du vara minst 140 cm lång.",
       "highlights": [
         "Riktig isbrytare",
-        "Havsflottning",
+        "Isflytning från 140 cm",
         "Bucket list"
       ],
       "duration": "4 timmar",
