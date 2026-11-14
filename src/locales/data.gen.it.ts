@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Crociera sul rompighiaccio Sampo",
-      "description": "Navighi attraverso il Mar Baltico gelato su una vera nave rompighiaccio, poi galleggi nel mare gelato indossando una muta di sopravvivenza. Un'esperienza artica da bucket list.",
+      "description": "Navighi attraverso il Mar Baltico gelato su una vera nave rompighiaccio, poi galleggi nel mare gelato indossando una muta di sopravvivenza. Un'esperienza artica da bucket list. Per galleggiare nel mare gelato è richiesta un'altezza minima di 140 cm.",
       "highlights": [
         "Vero rompighiaccio",
         "Galleggiamento in mare",

@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Sampo-jäänmurtajaristeily",
-      "description": "Purjehdi jäätyneen Itämeren halki aidolla jäänmurtajalla ja kellu sitten jäätyneessä meressä pelastuspuvussa. Kerran elämässä koettava arktinen elämys.",
+      "description": "Purjehdi jäätyneen Itämeren halki aidolla jäänmurtajalla ja kellu sitten jäätyneessä meressä pelastuspuvussa. Kerran elämässä koettava arktinen elämys. Kellumaan pääsevät vähintään 140 cm pitkät.",
       "highlights": [
         "Aito jäänmurtaja",
         "Merikellunta",

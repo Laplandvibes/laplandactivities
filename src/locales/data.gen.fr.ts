@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Croisière brise-glace Sampo",
-      "description": "Croisez à travers la mer Baltique gelée à bord d'un véritable brise-glace, puis flottez dans la mer glacée en combinaison de survie. Une expérience arctique de la bucket list.",
+      "description": "Croisez à travers la mer Baltique gelée à bord d'un véritable brise-glace, puis flottez dans la mer glacée en combinaison de survie. Une expérience arctique de la bucket list. Pour flotter dans la mer glacée, il faut mesurer au moins 140 cm.",
       "highlights": [
         "Véritable brise-glace",
         "Flottaison en mer",

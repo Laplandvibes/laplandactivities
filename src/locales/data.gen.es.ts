@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Crucero en el rompehielos Sampo",
-      "description": "Navegue por el mar Báltico helado en un auténtico buque rompehielos y luego flote en el mar helado vestido con un traje de supervivencia. Una experiencia ártica imprescindible.",
+      "description": "Navegue por el mar Báltico helado en un auténtico buque rompehielos y luego flote en el mar helado vestido con un traje de supervivencia. Una experiencia ártica imprescindible. Para flotar en el mar helado hay que medir al menos 140 cm.",
       "highlights": [
         "Rompehielos auténtico",
         "Flotación en el mar",

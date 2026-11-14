@@ -851,7 +851,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "IJsbreker Sampo cruise",
-      "description": "Vaar door de bevroren Oostzee op een echte ijsbreker en drijf daarna in zee in een overlevingspak. Een arctische bucketlist-ervaring.",
+      "description": "Vaar door de bevroren Oostzee op een echte ijsbreker en drijf daarna in zee in een overlevingspak. Een arctische bucketlist-ervaring. Voor het drijven in zee geldt een minimumlengte van 140 cm.",
       "highlights": [
         "Echte ijsbreker",
         "Zeedrijven",

@@ -911,7 +911,7 @@ const d: LangData = {
     },
     "tor-icebreaker": {
       "title": "Kreuzfahrt auf dem Eisbrecher Sampo",
-      "description": "Fahren Sie auf einem echten Eisbrecherschiff durch die gefrorene Ostsee und treiben Sie anschließend in einem Überlebensanzug im vereisten Meer. Ein arktisches Erlebnis für die Wunschliste.",
+      "description": "Fahren Sie auf einem echten Eisbrecherschiff durch die gefrorene Ostsee und treiben Sie anschließend in einem Überlebensanzug im vereisten Meer. Ein arktisches Erlebnis für die Wunschliste. Um im Meer zu treiben, müssen Sie mindestens 140 cm groß sein.",
       "highlights": [
         "Echter Eisbrecher",
         "Floating im Meer",
