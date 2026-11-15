@@ -204,7 +204,9 @@ export default function Home() {
                       tekstipohja matalammaksi. Ennen pienessä kortissa tekstipohja peitti 75 %
                       korkeudesta ja sen alaosa oli 92–100 % tumma, joten kuvasta näkyi yläreuna. */}
                   <PhotoCredit src={imageForCategory(cat.slug)} links={false} />
-                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 bg-gradient-to-t from-deep-night/95 via-deep-night/75 via-45% to-transparent">
+                  {/* 15.11.2026: .lv-scrim-kortti (index.css) pitää 75 %:n tason kahdelle riville rivittyvän
+                      otsikon yläriville asti; häivytys vain yläpehmusteessa (pt-10 / sm:pt-12). */}
+                  <div className="absolute inset-x-0 bottom-0 p-4 sm:p-6 pt-10 sm:pt-12 lv-scrim-kortti">
                     <h3 className={`font-heading text-snow tracking-wide group-hover:text-vibe-pink transition-colors ${
                       isBig ? 'text-2xl sm:text-4xl' : 'text-lg sm:text-xl'
                     }`}>{cat.name}</h3>

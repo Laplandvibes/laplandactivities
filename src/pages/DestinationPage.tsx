@@ -482,11 +482,13 @@ export default function DestinationPage() {
               >
                 <div className="relative h-28 sm:h-36 overflow-hidden lg:absolute lg:inset-0 lg:h-auto">
                   <img src={imageForDestination(d.slug)} {...respImg(imageForDestination(d.slug), 'card')} alt={d.name} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" style={{ objectPosition: focalFor(imageForDestination(d.slug)) }} loading="lazy" decoding="async" width="800" height="600"/>
-                  <div className="hidden lg:block absolute inset-0 bg-gradient-to-t from-deep-night/95 via-deep-night/55 via-30% to-transparent to-60%" />
                   <PhotoCredit src={imageForDestination(d.slug)} links={false} full />
                 </div>
-                {/* lg+: pb-5 (20 px), koska kuvakuitti ulottuu laatan alareunasta 17 px:iin. */}
-                <div className="flex-1 p-3 sm:p-4 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:pb-5 lg:text-left">
+                {/* lg+: pb-5 (20 px), koska kuvakuitti ulottuu laatan alareunasta 17 px:iin.
+                    15.11.2026: lg+:n tummennus on tekstilohkon oma (.lv-scrim-text-lg + lg:pt-14), ei kuvan
+                    liukuväri, joka hiipui nimen kohdalla: Ylläksen ja Inarin nimi kirkkaan taivaan päällä
+                    3,3:1 (raja 4,5:1). Kuva näkyy yhä tekstin yläpuolella; alle lg ennallaan. */}
+                <div className="flex-1 p-3 sm:p-4 lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:pt-14 lg:pb-5 lg:text-left lv-scrim-text-lg">
                   <h3 className="font-heading text-xl lv-head tracking-wide group-hover:text-vibe-pink transition-colors">{d.name}</h3>
                   <p className="text-snow/80 text-xs leading-snug line-clamp-2 lg:line-clamp-1 lg:text-snow/90">{d.tagline}</p>
                   <div className="flex items-center gap-1 mt-1.5 text-arctic-cyan text-xs font-medium">

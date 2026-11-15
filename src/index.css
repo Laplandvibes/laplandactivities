@@ -199,6 +199,39 @@
       rgb(15 23 42 / 0.8) calc(100% - 3.5rem),
       rgb(15 23 42 / 0) 100%);
   }
+  /* Etusivun kategoriakorttien tekstipohja (pt-10 / sm:pt-12). Sama liukuväri kuin ennen (95 % alareunassa,
+     75 % lohkon 45 %:n kohdalla), mutta 75 % pysyy tasaisena tekstin yläreunaan asti ja häivytys mahtuu
+     yläpehmusteeseen. Ennen liukuväri hiipui lohkon koko korkeudella, joten kahdelle riville rivittyvän
+     otsikon ylärivi jäi heikkoon kohtaan: syksyn porokuvan päällä 375 px:llä 10–12 % pikseleistä alle
+     4,5:1 (es, fr, it, pt-BR, ja; korttiteksti 15.11.2026). Yksirivisellä otsikolla ero on pieni. */
+  .lv-scrim-kortti {
+    background-image: linear-gradient(to top,
+      rgb(15 23 42 / 0.95) 0,
+      rgb(15 23 42 / 0.75) 45%,
+      rgb(15 23 42 / 0.75) calc(100% - 2.5rem),
+      rgb(15 23 42 / 0) 100%);
+  }
+  @media (min-width: 640px) {
+    .lv-scrim-kortti {
+      background-image: linear-gradient(to top,
+        rgb(15 23 42 / 0.95) 0,
+        rgb(15 23 42 / 0.75) 45%,
+        rgb(15 23 42 / 0.75) calc(100% - 3rem),
+        rgb(15 23 42 / 0) 100%);
+    }
+  }
+  /* .lv-scrim-text vain lg+:lle: kortti, jonka teksti on alle 1024 px kuvan alla (ei tummennusta) ja
+     lg+:ssa kuvan päällä. Kohdesivun Muut matkakohteet -laatoissa kuvan oma liukuväri hiipui otsikon
+     kohdalla ~40 %:iin, ja kohteen nimi jäi kirkkaan taivaan päällä alle 4,5:1 (korttiteksti 15.11.2026:
+     114 löydöstä, 1440 px, 12 kieltä). Lohkolla lg:pt-14, kuten .lv-scrim-text vaatii. */
+  @media (min-width: 1024px) {
+    .lv-scrim-text-lg {
+      background-image: linear-gradient(to top,
+        rgb(15 23 42 / 0.8) 0,
+        rgb(15 23 42 / 0.8) calc(100% - 3.5rem),
+        rgb(15 23 42 / 0) 100%);
+    }
+  }
   /* Etusivun tekstisoikion reunat häipyvät nollaan elementin rajalla: ellipsi ulottuu
      laatikon yli, joten muuten laatikon reuna näkyy kovana viivana. Häivytysvyöhyke on
      soikion inset (tekstilohkon ulkopuoli), joten tekstin kohdalla tummuus on ennallaan. */

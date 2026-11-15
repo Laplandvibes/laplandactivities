@@ -144,6 +144,10 @@ const H2 = 'font-heading text-3xl sm:text-4xl text-snow tracking-wide';
 // appin .sheet). Pinkki pieni teksti paperilla on #BE185D (6,1:1), ei #EC4899 (3,3:1).
 const PAPER = 'rounded-3xl bg-[#F3F6FA] text-deep-night shadow-[0_32px_64px_-32px_rgba(0,0,0,0.75)]';
 const EYEBROW_PAPER = 'text-[#BE185D] text-xs font-semibold tracking-[0.25em] uppercase';
+// Valitse tapasi -yläotsake on lg+:ssa heron valokuvan päällä, joten sen pinkki on heropinkki #F9A8D4.
+// Oma vakio eikä EYEBROW + text-[#F9A8D4]: kaksi väriluokkaa samassa elementissä ratkeaa CSS-tiedoston
+// järjestyksellä, ja buildissa .text-vibe-pink tulee myöhemmin ⇒ #EC4899 voitti (1440 px 2,99:1, raja 4,5:1).
+const EYEBROW_ON_PHOTO = 'text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase';
 const H2_PAPER = 'font-heading text-3xl sm:text-4xl text-deep-night tracking-wide';
 
 /** Otsikon ja rungon välinen kaksoispiste lukijan kielellä: fr sitova väli, ja/zh täysleveä ilman väliä. */
@@ -298,7 +302,7 @@ export default function FishingPage() {
           pohjan, valokuvakaistojen ja vaaleiden paperiarkkien välillä. */}
       <section className="relative z-10 -mt-24 sm:-mt-28 px-4 sm:px-6 pb-4">
         <div className="max-w-7xl mx-auto">
-          <p className={`${EYEBROW} mb-3 text-[#F9A8D4] text-center lg:text-left`}>{c.chooser.kicker}</p>
+          <p className={`${EYEBROW_ON_PHOTO} mb-3 text-center lg:text-left`}>{c.chooser.kicker}</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {([
               { href: '#ice', Icon: Snowflake, img: CHOOSER_IMG.ice, title: c.chooser.ice, sub: c.chooser.iceSub },

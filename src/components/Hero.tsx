@@ -38,7 +38,9 @@ export default function Hero() {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-6 pb-8 sm:pb-10 lg:py-16">
         <div className="max-w-2xl xl:max-w-3xl mx-auto lg:mx-0 text-center lg:text-left">
-        <Erotinrivi pino className="font-body text-snow/80 text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6" osat={erotinOsat(c.eyebrow)} />
+        {/* lg+:ssa yläotsake on valokuvan päällä ⇒ täysvalkoinen (snow/80 jäi saksan pitkän rivin loppupäässä
+            liukuvärin heikkoon kohtaan: 1440 px 15 % pikseleistä alle 4,5:1, korttiteksti laaja 13.11.2026). */}
+        <Erotinrivi pino className="font-body text-snow/80 lg:text-snow text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6" osat={erotinOsat(c.eyebrow)} />
 
         {/* Sanamerkki on AINA yksi rivi. Mitattu 18.10.2026: leveys ≈ 7,23 × fonttikoko
             (36 px = 260, 72 px = 521, 96 px = 694). Puhelimella 11,5vw (320 px: 266 / tilaa 288),
