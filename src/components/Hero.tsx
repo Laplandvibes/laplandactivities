@@ -6,6 +6,7 @@ import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { currentSeasonBucket } from '../i18n/seasonWords';
 import { Erotinrivi, erotinOsat } from '../shared/Erotin';
+import { LV_SANAMERKKI } from './lvSanamerkki';
 
 export default function Hero() {
   const lang = useLang();
@@ -42,18 +43,22 @@ export default function Hero() {
             liukuvärin heikkoon kohtaan: 1440 px 15 % pikseleistä alle 4,5:1, korttiteksti laaja 13.11.2026). */}
         <Erotinrivi pino className="font-body text-snow/80 lg:text-snow text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6" osat={erotinOsat(c.eyebrow)} />
 
-        {/* Sanamerkki on AINA yksi rivi. Mitattu 18.10.2026: leveys ≈ 7,23 × fonttikoko
-            (36 px = 260, 72 px = 521, 96 px = 694). Puhelimella 11,5vw (320 px: 266 / tilaa 288),
-            sm–lg 72 px, xl 96 px 768 px:n palstassa. Ennen 96 px lg:n 672 px:n palstassa katkesi
-            "…ACTIVITIE / S".
-            Pinkki on lg+:ssa heropinkki #F9A8D4, koska sanamerkki on silloin valokuvan päällä:
-            #EC4899 mitattiin ruska- ja kesävaellusruudun kirkkaissa kohdissa 2,1:1 (raja 3:1,
-            korttiteksti + heroteksti 18.10.2026). Sama ratkaisu kuin skiresortsin herossa 23.9.;
-            alle lg:n sanamerkki on sivun tummalla pohjalla ja pysyy vibe-pinkkinä. */}
-        <h1 translate="no" className="notranslate font-heading text-[clamp(2.25rem,11.5vw,3.75rem)] sm:text-7xl xl:text-8xl whitespace-nowrap tracking-wider mb-4 leading-[0.95] drop-shadow-[0_0_40px_rgba(236,72,153,0.55)] lg:[text-shadow:0_3px_18px_rgba(0,0,0,0.85)]">
-          <span className="text-vibe-pink lg:text-[#F9A8D4]">#</span>
-          <span className="text-snow">LAPLAND</span>
-          <span className="text-vibe-pink lg:text-[#F9A8D4]">ACTIVITIES</span>
+        {/* Sanamerkki = sama virallinen piirros kuin yläpalkissa (./lvSanamerkki.ts; Vesa 17.11.2026 "Kyllä, kaikki kuusi",
+            ennen ohut Bebas-teksti pinkillä hehkulla). Yksi rivi joka leveydellä: leveys 6,78 × fonttikoko
+            (puhelimella 11,5vw = 320 px:llä 250 / tilaa 288, sm–lg 72 px = 488, xl 96 px = 651 768 px:n palstassa).
+            Pinkki on lg+:ssa heropinkki #F9A8D4, koska merkki on silloin valokuvan päällä (#EC4899 mitattiin
+            kirkkaissa kohdissa 2,1:1, raja 3:1, 18.10.2026), ja valokuvan päällä varjo on musta, ei pinkki hehku
+            (värilinja 16.11.2026). Alle lg:n merkki on sivun tummalla pohjalla ja pysyy vibe-pinkkinä.
+            text-white = h1:n oma väri heroteksti-portille (polut perivät värinsä omista luokistaan).
+            Nimi (sr-only) on piirroksen EDESSÄ: heroteksti-portti mittaa tekstin kohdan, ja piirroksen perässä se osui
+            logon oikealle puolelle (mitattu 17.11.: skiresorts 1440 px mittasi alueen 822–1473 px, logo 128–823 px). */}
+        <h1 translate="no" className="notranslate font-heading text-white text-[clamp(2.25rem,11.5vw,3.75rem)] sm:text-7xl xl:text-8xl whitespace-nowrap mb-4 leading-[0.95]">
+          <span className="sr-only">#LAPLANDACTIVITIES</span>
+          <svg viewBox={LV_SANAMERKKI.viewBox} aria-hidden="true" focusable="false" className="lg:drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]" style={{ width: `${LV_SANAMERKKI.leveysEm}em`, height: 'auto', display: 'inline-block', verticalAlign: 'middle', overflow: 'visible' }}>
+            <path className="text-vibe-pink lg:text-[#F9A8D4]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[0]} />
+            <path className="text-white" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[1]} />
+            <path className="text-vibe-pink lg:text-[#F9A8D4]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[2]} />
+          </svg>
         </h1>
 
         <p className="text-snow/90 text-base sm:text-xl xl:text-2xl max-w-2xl mx-auto lg:mx-0 mb-8 lg:mb-10 leading-relaxed text-left text-pretty lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
