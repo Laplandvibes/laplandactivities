@@ -184,7 +184,7 @@ export default function Newsletter() {
 
   return (
     <section className="relative overflow-hidden py-16 sm:py-20 px-4 sm:px-6" ref={sectionRef}
-      style={{ background: 'linear-gradient(135deg, #4C1D95 0%, #7E22CE 35%, #BE185D 70%, #DB2777 100%)' }}>
+      style={{ background: 'linear-gradient(135deg, #002F6C 0%, #001B40 100%)', borderTop: '1px solid rgba(255,255,255,0.10)', borderBottom: '1px solid rgba(255,255,255,0.16)' }}>
       <div className="absolute inset-0 opacity-15 pointer-events-none">
         <div className="absolute -left-12 top-12 w-72 h-72 rounded-full bg-white/30 blur-3xl" />
         <div className="absolute -right-20 bottom-0 w-80 h-80 rounded-full bg-white/20 blur-3xl" />
@@ -267,7 +267,7 @@ export default function Newsletter() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="h-14 shrink-0 bg-deep-night hover:bg-[#1E293B] text-white font-bold px-7 rounded-full shadow-lg transition-colors text-base whitespace-nowrap inline-flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
+                className="h-14 shrink-0 bg-[#DB2777] hover:bg-[#BE185D] text-white font-bold px-7 rounded-full shadow-lg transition-colors text-base whitespace-nowrap inline-flex items-center justify-center gap-2 disabled:opacity-70 cursor-pointer"
               >
                 {status === 'loading' ? (
                   <><Loader2 className="w-4 h-4 animate-spin" /> {c.subscribingBtn}</>
