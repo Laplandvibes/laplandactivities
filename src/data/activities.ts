@@ -1,4 +1,5 @@
 import { GYG_SLUG, gygSlugForDestination } from './affiliate';
+import { gygAvailable } from '../shared/gyg/picks';
 
 export interface Activity {
   id: string;
@@ -1478,8 +1479,9 @@ export const GYG_PRODUCT: Record<string, string> = {
   'saa-aurora-hunt':       'saariselka-l181615/saariselka-aurora-hunting-tour-with-northern-lights-experts-t826892', // [dest] Aurora Hunting Photography Tour (bus/minivan)
   'saa-ice-fishing':       'saariselka-l181615/saariselka-kakslauttanen-ice-fishing-experience-barbecue-t865688', // [catalog] Ice Fishing Experience + barbecue
   // Inari
-  'ina-lake-cruise':       'inari-l245909/inari-lake-inari-boat-tour-with-campfire-and-bbq-t1073872',            // [catalog] Lake Inari Scenic Boat cruise
-  'ina-sami-experience':   'inari-l245909/inari-sami-reindeer-herding-family-workshop-visitlunch-t1303463',      // [catalog] Sámi Reindeer Herding Workshop & Visit
+  // 🔴 ina-lake-cruise ei ole täällä: kortti kuvaa Visit Inarin risteilyä, ja sen entinen rivi
+  // t1073872 oli toisen järjestäjän yksityinen veneretki (4 h, 595 €). Ks. PARTNER_SITE.
+  'ina-sami-experience':  'inari-l245909/inari-sami-reindeer-herding-family-workshop-visitlunch-t1303463',      // [catalog] Sámi Reindeer Herding Workshop & Visit
   'ina-aurora':            'ivalo-l187030/inariivalo-aurora-hunting-tour-by-car-with-warm-drinks-t863793',       // [catalog] Inari/Ivalo: Aurora Hunting Tour
   // Ruka / Kuusamo
   'ruk-snowmobile':        'ruka-l192178/ruka-4h-snowmobile-safari-with-snack-and-campfire-t1107299',            // [dest] 4 h Snowmobile Safari
@@ -1544,12 +1546,36 @@ export type GygTarget = { kind: 'product' | 'browse'; path: string };
 /**
  * Kortin GYG-kohde. Tuntematon id (uusi kortti ilman riviä) putoaa kohteen omalle
  * sijaintisivulle selausnappina, EI koskaan varausnappina yleislistaan.
+ *
+ * 🔴 18.11.2026: tuote kelpaa vain, kun se aukeaa tuotteena lukijan kielellä
+ * (shared/gyg/picks.ts GYG_UNAVAILABLE, selaimessa mitattu). Sesongin ulkopuolella
+ * GetYourGuide ohjaa kesäretken paikkakuntasivulleen: "Etsi ja varaa" lupasi retken ja
+ * avasi listan (kullanhuuhdonta t1243827, mitattu 18.11.2026; Inarin sivulla oli 24
+ * talviretkeä eikä yhtään kesäretkeä). Sellainen kortti selaa paikkakunnan retkiä
+ * ("Selaa retkiä", sid card_browse_*) ja palaa varausnapiksi itse, kun tuotteen rivi
+ * poistetaan GYG_UNAVAILABLE-taulusta uuden mittauksen jälkeen. Riviä ei poisteta täältä.
  */
-export function gygTargetForActivity(a: Activity): GygTarget {
+export function gygTargetForActivity(a: Activity, lang?: string): GygTarget {
   const product = GYG_PRODUCT[a.id];
-  if (product) return { kind: 'product', path: product };
+  if (product && gygAvailable(product, lang)) return { kind: 'product', path: product };
   return { kind: 'browse', path: GYG_BROWSE[a.id] ?? gygSlugForDestination(a.destinationSlug) };
 }
+
+// === Maksetun kumppanin oma tuote: nappi kumppanin sivulle (18.11.2026) ===
+// Kortti, jonka retken järjestää maksettu kumppani, ei vie GetYourGuideen. `ina-lake-cruise`
+// kuvaa Visit Inarin risteilyä (2,5 h, Ukonsaari), mutta sen nappi osoitti toisen järjestäjän
+// yksityiseen veneretkeen (t1073872), joka lisäksi ohjautuu sesongin ulkopuolella Inarin
+// sijaintisivulle. Sama korjaus kuin laplandluxuryvillasin kesäpaketissa 18.10.2026 (Vesa:
+// "visit inari on ainoa joka järjestää inarissa risteilyjä"). Linkki kulkee Workerin maksetun
+// suorareitin kautta (/go/<route>: klikki D1:een, UTM Workerista). `fi` ja `other` ovat
+// kumppanin omat kieliversiot (molemmat 200, mitattu 18.11.2026). Tarkistetaan ENNEN isBookable.
+export const PARTNER_SITE: Record<string, { route: string; fi: string; other: string }> = {
+  'ina-lake-cruise': {
+    route: 'visitinari',
+    fi: 'https://visitinari.fi/fi/inarijarven-risteily/',
+    other: 'https://visitinari.fi/lake-inari-cruise/',
+  },
+};
 
 // === Paid-partner routing (Vesa 2026-07-25) ===
 // Activities owned by a SIGNED LV partner must never send booking intent to a

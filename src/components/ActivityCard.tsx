@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import PhotoCredit from './PhotoCredit';
 import { withReferral } from '../lib/referral';
 import type { Activity } from '../data/activities';
-import { isBookable, gygTargetForActivity, PARTNER_PAGE, OFFICIAL_SITE, HOTEL_SEARCH } from '../data/activities';
+import { isBookable, gygTargetForActivity, PARTNER_PAGE, PARTNER_SITE, OFFICIAL_SITE, HOTEL_SEARCH } from '../data/activities';
 import { imageForActivity } from '../data/images';
 import AffiliateCTA from './AffiliateCTA';
 import { useLang, useLocalePath } from '../i18n/useLang';
@@ -28,10 +28,14 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
   const bookable = isBookable(rawActivity);
   // GYG: tuote ("Etsi ja varaa") tai selaussivu ("Selaa retkiä"), ei koskaan hakua.
   // Varausnappi yleislistaan oli rikottu lupaus (8.10.2026, ks. GYG_PRODUCT).
-  const gyg = gygTargetForActivity(rawActivity);
+  // Tuote vain, kun se aukeaa tuotteena tällä kielellä; muuten sama kortti selaa (ks. gygTargetForActivity).
+  const gyg = gygTargetForActivity(rawActivity, lang);
   // Paid-partner activity (Bear Kuusamo): CTA routes to our partner feature
   // page, never to GetYourGuide — see PARTNER_PAGE in data/activities.ts.
   const partnerPath = PARTNER_PAGE[rawActivity.id];
+  // Maksetun kumppanin oma retki (Visit Inarin risteily): nappi kumppanin omalle sivulle
+  // Workerin suorareitin kautta, ei GetYourGuideen (ks. PARTNER_SITE).
+  const partnerSite = PARTNER_SITE[rawActivity.id];
   // Ei-varattava kohde: oma virallinen sivu, jos sellainen on mitattu; muuten kategoriasivu.
   // EI koskaan takaisin samalle kohdesivulle — se oli kuollut klikkaus (Vesa 20.9.2026).
   const officialSite = OFFICIAL_SITE[rawActivity.id];
@@ -109,6 +113,15 @@ export default function ActivityCard({ activity: rawActivity, image }: { activit
           >
             {COPY[lang].bearKuusamo.activityCardCta} <ArrowRight className="w-3.5 h-3.5" />
           </Link>
+        ) : partnerSite ? (
+          <a
+            href={`https://go.laplandvibes.com/go/${partnerSite.route}?sid=${sid}&dest=${encodeURIComponent(lang === 'fi' ? partnerSite.fi : partnerSite.other)}`}
+            target="_blank"
+            rel="sponsored nofollow noopener"
+            className="lv-tap inline-flex items-center justify-center gap-2 bg-[#DB2777] hover:bg-[#BE185D] text-white px-4 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-vibe-pink/20"
+          >
+            {c.planVisit} <ExternalLink className="w-3.5 h-3.5" />
+          </a>
         ) : bookable ? (
           <AffiliateCTA
             partner="activities"
