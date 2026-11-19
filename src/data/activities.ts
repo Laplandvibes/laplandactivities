@@ -1397,12 +1397,12 @@ export const OFFICIAL_SITE: Record<string, string> = {
   'rov-santapark': 'https://santapark.fi/',
   'ina-siida-museum': 'https://siida.fi/',
   'pos-pentik': 'https://www.pentik.com/',
-  'saa-uk-national-park': 'https://www.luontoon.fi/en/urho-kekkonen',
-  'ina-pielpajärvi': 'https://www.luontoon.fi/en/pielpajarvi',
-  'pos-riisitunturi': 'https://www.luontoon.fi/en/riisitunturi',
-  'ruk-karhunkierros': 'https://www.luontoon.fi/en/bear-trail',
-  'yll-pallas-hike': 'https://www.luontoon.fi/en/pallas-yllastunturi',
-  'pyh-national-park': 'https://www.luontoon.fi/en/pyha-luosto',
+  'saa-uk-national-park': 'https://www.luontoon.fi/en/destinations/urho-kekkonen-national-park',
+  'ina-pielpajärvi': 'https://www.luontoon.fi/en/trails/the-pielpajarvi-wilderness-church-trail-inari-10637-en',
+  'pos-riisitunturi': 'https://www.luontoon.fi/en/destinations/riisitunturi-national-park',
+  'ruk-karhunkierros': 'https://www.luontoon.fi/en/trails/karhunkierros-trail-kuusamo-10791-en',
+  'yll-pallas-hike': 'https://www.luontoon.fi/en/destinations/pallas-yllastunturi-national-park',
+  'pyh-national-park': 'https://www.luontoon.fi/en/destinations/pyha-luosto-national-park',
   'tor-snowcastle': 'https://www.snowcastle.net/',
   // 🔴 lev-snowvillage ja yll-lainio-snow ovat SAMA kohde: Lapland Hotels SnowVillage
   // Lainiossa, 30 min Leviltä ja Ylläkseltä. Kortteja on kaksi, koska kumpikin kylä
