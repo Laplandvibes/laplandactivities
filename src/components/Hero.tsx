@@ -6,7 +6,7 @@ import { useLang, useLocalePath } from '../i18n/useLang';
 import { COPY } from '../locales/copy';
 import { currentSeasonBucket } from '../i18n/seasonWords';
 import { Erotinrivi, erotinOsat } from '../shared/Erotin';
-import { LV_SANAMERKKI } from './lvSanamerkki';
+import { LV_SANAMERKKI_PIENI } from './lvSanamerkki';
 
 export default function Hero() {
   const lang = useLang();
@@ -43,7 +43,7 @@ export default function Hero() {
             liukuvärin heikkoon kohtaan: 1440 px 15 % pikseleistä alle 4,5:1, korttiteksti laaja 13.11.2026). */}
         <Erotinrivi pino className="font-body text-snow/80 lg:text-snow text-xs sm:text-sm tracking-[0.3em] uppercase mb-4 lg:mb-6" osat={erotinOsat(c.eyebrow)} />
 
-        {/* Sanamerkki = sama virallinen piirros kuin yläpalkissa (./lvSanamerkki.ts; Vesa 17.11.2026 "Kyllä, kaikki kuusi",
+        {/* Sanamerkki = sama piirros kuin yläpalkissa (./lvSanamerkki.ts; Vesa 17.11.2026 "Kyllä, kaikki kuusi",
             ennen ohut Bebas-teksti pinkillä hehkulla). Yksi rivi joka leveydellä: leveys 6,78 × fonttikoko
             (puhelimella 11,5vw = 320 px:llä 250 / tilaa 288, sm–lg 72 px = 488, xl 96 px = 651 768 px:n palstassa).
             Pinkki on lg+:ssa heropinkki #F9A8D4, koska merkki on silloin valokuvan päällä (#EC4899 mitattiin
@@ -54,10 +54,14 @@ export default function Hero() {
             logon oikealle puolelle (mitattu 17.11.: skiresorts 1440 px mittasi alueen 822–1473 px, logo 128–823 px). */}
         <h1 translate="no" className="notranslate font-heading text-white text-[clamp(2.25rem,11.5vw,3.75rem)] sm:text-7xl xl:text-8xl whitespace-nowrap mb-4 leading-[0.95]">
           <span className="sr-only">#LAPLANDACTIVITIES</span>
-          <svg viewBox={LV_SANAMERKKI.viewBox} aria-hidden="true" focusable="false" className="lg:drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]" style={{ width: `${LV_SANAMERKKI.leveysEm}em`, height: 'auto', display: 'inline-block', verticalAlign: 'middle', overflow: 'visible' }}>
-            <path className="text-vibe-pink lg:text-[#F9A8D4]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[0]} />
-            <path className="text-white" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[1]} />
-            <path className="text-vibe-pink lg:text-[#F9A8D4]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI.d[2]} />
+          {/* PIENI koko myös täällä (Vesa 19.11.2026 laplandworkin herosta: sama vika kuin yläpalkissa). Virallisen muodon
+              paksunnus kavensi kirjainten reiät tietokoneella 4–5 näyttöpikseliin (tällä sivulla 4,2–4,7, transportin 27 px:n
+              yläotsakkeessa 1,9) ja kirjaimet näyttivät tukkoisilta; pieni muoto (lv-ops geometria.mjs koko 'pieni') avaa ne
+              7–8 px:iin samalla leveydellä. Virallinen muoto on kuviin, painoon ja sähköpostikuviin, ei sivun piirrokseen. */}
+          <svg viewBox={LV_SANAMERKKI_PIENI.viewBox} aria-hidden="true" focusable="false" className="lg:drop-shadow-[0_2px_10px_rgba(0,0,0,0.8)]" style={{ width: `${LV_SANAMERKKI_PIENI.leveysEm}em`, height: 'auto', display: 'inline-block', verticalAlign: 'middle', overflow: 'visible' }}>
+            <path className="text-vibe-pink lg:text-[#F9A8D4]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI_PIENI.d[0]} />
+            <path className="text-white" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI_PIENI.d[1]} />
+            <path className="text-vibe-pink lg:text-[#F9A8D4]" fill="currentColor" fillRule="evenodd" d={LV_SANAMERKKI_PIENI.d[2]} />
           </svg>
         </h1>
 
