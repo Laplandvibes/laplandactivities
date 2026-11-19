@@ -45,8 +45,10 @@ const META: {
   // Id-parit hoteldealsin propertyBooking.ts:stä (mitattu livenä 11.9.).
   { src: '/images/sembo/levinIglut.webp', fallback: MKT.igluCouple, sid: 'hotels_strip_glass_igloo', query: 'Golden Crown Levin Iglut, Levi, Finland', accent: 'vibe-pink',
     trip: ['38182', '9528161'], sembo: ['2512109', '360006'], hotel: 'Golden Crown Levin Iglut' },
-  { src: '', fallback: '', sid: 'hotels_strip_log_cabin', query: 'https://www.lomarengas.fi/en/cottages/lapland', accent: 'aurora-green',
-    partner: 'lomarengas', destFi: 'https://www.lomarengas.fi/mokit/lappi', label: 'Lomarengas' },
+  // 19.11.2026: /en/cottages/lapland ja /mokit/lappi olivat 404 (Lomarenkaan polut uusittu);
+  // nykyiset Lappi-haut mitattu 200 + canonical.
+  { src: '', fallback: '', sid: 'hotels_strip_log_cabin', query: 'https://www.lomarengas.fi/en/cottage-search/lappi', accent: 'aurora-green',
+    partner: 'lomarengas', destFi: 'https://www.lomarengas.fi/mokkihaku/lappi', label: 'Lomarengas' },
   { src: '/images/sembo/leviHotelSpa.webp', fallback: HERO.snowyForest, sid: 'hotels_strip_fell_resort', query: 'Levi Hotel Spa, Levi, Finland', accent: 'arctic-cyan',
     trip: ['38182', '2164910'], sembo: ['24638', '360006'], hotel: 'Levi Hotel Spa' },
   { src: '/images/sembo/arcticTreeHouse.webp', fallback: HERO.huskyAurora, sid: 'hotels_strip_boutique', query: 'Arctic TreeHouse Hotel, Rovaniemi, Finland', accent: 'vibe-pink',
