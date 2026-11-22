@@ -55,7 +55,7 @@ export default function CategoriesIndex() {
               <p className="text-snow/80 text-sm sm:text-base leading-relaxed mb-3">{hero.description}</p>
               <div className="flex items-center gap-4">
                 <span className="text-xs text-snow/75">{heroCount} {c.activitiesLabel}</span>
-                <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform">
+                <span className="text-[#BAE6FD] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-2 transition-transform">
                   {c.exploreAdventures} <ArrowRight className="w-4 h-4" />
                 </span>
               </div>
@@ -80,7 +80,7 @@ export default function CategoriesIndex() {
                     <p className="text-snow/80 text-sm leading-relaxed mb-3 line-clamp-2 mt-1">{cat.description}</p>
                     <div className="flex items-center justify-center gap-4 lg:justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
-                      <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#BAE6FD] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>

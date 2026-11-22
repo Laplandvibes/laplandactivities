@@ -74,7 +74,7 @@ export default function DestinationsIndex() {
                     <p className="text-snow/80 text-sm leading-relaxed mb-3 line-clamp-2 hidden sm:block">{dest.description}</p>
                     <div className="flex items-center justify-center gap-4 lg:justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
-                      <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#BAE6FD] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>
@@ -103,7 +103,7 @@ export default function DestinationsIndex() {
                     <p className="text-arctic-cyan-light text-xs font-medium mb-2">{dest.tagline}</p>
                     <div className="flex items-center justify-center gap-4 lg:justify-between">
                       <span className="text-xs text-snow/75">{count} {c.activitiesLabel}</span>
-                      <span className="text-[#F9A8D4] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                      <span className="text-[#BAE6FD] text-sm font-semibold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform">
                         {c.explore} <ArrowRight className="w-4 h-4" />
                       </span>
                     </div>

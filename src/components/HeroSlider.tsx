@@ -253,7 +253,7 @@ export default function HeroSlider() {
             type="button"
             onClick={() => setIdx(i)}
             aria-label={`${SLIDE_WORD[lang] ?? SLIDE_WORD.en} ${i + 1}`}
-            className={`h-1.5 rounded-full transition-all ${i === idx ? 'bg-vibe-pink w-8' : 'bg-white/30 w-2 hover:bg-white/60'}`}
+            className={`h-1.5 rounded-full transition-all ${i === idx ? 'bg-white w-8' : 'bg-white/30 w-2 hover:bg-white/60'}`}
           />
         ))}
       </div>

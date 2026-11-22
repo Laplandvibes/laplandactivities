@@ -144,10 +144,11 @@ const H2 = 'font-heading text-3xl sm:text-4xl text-snow tracking-wide';
 // appin .sheet). Pinkki pieni teksti paperilla on #BE185D (6,1:1), ei #EC4899 (3,3:1).
 const PAPER = 'rounded-3xl bg-[#F3F6FA] text-deep-night shadow-[0_32px_64px_-32px_rgba(0,0,0,0.75)]';
 const EYEBROW_PAPER = 'text-[#BE185D] text-xs font-semibold tracking-[0.25em] uppercase';
-// Valitse tapasi -yläotsake on lg+:ssa heron valokuvan päällä, joten sen pinkki on heropinkki #F9A8D4.
-// Oma vakio eikä EYEBROW + text-[#F9A8D4]: kaksi väriluokkaa samassa elementissä ratkeaa CSS-tiedoston
-// järjestyksellä, ja buildissa .text-vibe-pink tulee myöhemmin ⇒ #EC4899 voitti (1440 px 2,99:1, raja 4,5:1).
-const EYEBROW_ON_PHOTO = 'text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase';
+// Valitse tapasi -yläotsake on lg+:ssa heron valokuvan päällä: siellä täysi valkoinen (himmeä yläotsikko
+// kantaa vain tasaisella pohjalla), alle lg:n sivun tummalla pohjalla himmeämpi kuten muut yläotsikot.
+// Oma vakio eikä EYEBROW + toinen väriluokka: kaksi väriluokkaa samassa elementissä ratkeaa CSS-tiedoston
+// järjestyksellä, ei luokkien järjestyksellä.
+const EYEBROW_ON_PHOTO = 'text-snow/80 lg:text-snow text-xs font-semibold tracking-[0.25em] uppercase';
 const H2_PAPER = 'font-heading text-3xl sm:text-4xl text-deep-night tracking-wide';
 
 /** Otsikon ja rungon välinen kaksoispiste lukijan kielellä: fr sitova väli, ja/zh täysleveä ilman väliä. */
@@ -266,7 +267,7 @@ export default function FishingPage() {
             {/* Murupolku otsikon yläpuolelle: laatat nousevat heron alareunan päälle, joten heron
                 alla se jäisi laattojen perään (puhelimessa keskelle sivua). */}
             <PageBreadcrumb variant="inline" />
-            <Erotinrivi pino className="text-[#F9A8D4] text-xs font-semibold tracking-[0.25em] uppercase mb-3" osat={erotinOsat(c.hero.eyebrow)} />
+            <Erotinrivi pino className="text-snow/80 lg:text-snow text-xs font-semibold tracking-[0.25em] uppercase mb-3" osat={erotinOsat(c.hero.eyebrow)} />
             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl text-snow tracking-wide leading-[0.98] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {c.hero.title}
             </h1>
@@ -372,7 +373,7 @@ export default function FishingPage() {
                 // Merkki on valokuvan päällä: pohja tumma ja lähes peittävä, sävy tulee
                 // tekstistä ja reunasta (valkoisen kuvan päällä kaikki kolme ≥ 5,5:1).
                 const badgeColor = meta.status === 'open'
-                  ? 'bg-emerald-950/85 text-emerald-300 border-emerald-400/40'
+                  ? 'bg-emerald-950/85 text-emerald-200 border-emerald-400/40'
                   : meta.status === 'closed'
                   ? 'bg-red-950/85 text-red-300 border-red-400/40'
                   : 'bg-deep-night/85 text-snow/85 border-white/20';

@@ -170,7 +170,7 @@ export default function DestinationPage() {
             <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl lv-head tracking-wide leading-[0.95] lg:drop-shadow-[0_2px_12px_rgba(0,0,0,0.6)]">
               {destination.name}
             </h1>
-            <p className="text-[#F9A8D4] text-lg sm:text-2xl font-semibold mt-1 mb-3">{destination.tagline}</p>
+            <p className="text-snow text-lg sm:text-2xl font-semibold mt-1 mb-3">{destination.tagline}</p>
             <p className="text-snow/90 max-w-2xl text-sm sm:text-base leading-relaxed text-left text-pretty">{destination.description}</p>
 
             <div className="flex flex-col sm:flex-row sm:flex-wrap sm:justify-center lg:justify-start gap-3 mt-6 max-w-sm mx-auto sm:max-w-none lg:mx-0">

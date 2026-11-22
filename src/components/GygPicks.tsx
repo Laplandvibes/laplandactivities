@@ -237,7 +237,7 @@ export default function GygPicks() {
     <section className="py-16 sm:py-20 px-4 sm:px-6 bg-[#0F172A]">
       <div className="max-w-7xl mx-auto">
         <div className="mb-10 sm:mb-12 text-center lg:text-left">
-          <p className="font-bold tracking-[0.18em] uppercase text-sm mb-3 text-[#22D3EE]">{t(L.kicker)}</p>
+          <p className="font-bold tracking-[0.18em] uppercase text-sm mb-3 text-arctic-cyan">{t(L.kicker)}</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 text-[#F9FAFB]">
             {t(L.headingProduct)}
           </h2>
@@ -273,7 +273,7 @@ export default function GygPicks() {
             href={gygHref(p, lang)}
             target="_blank"
             rel="sponsored nofollow noopener"
-            className="group flex flex-row items-center gap-3 p-4 sm:flex-col sm:items-stretch sm:gap-0 sm:p-0 overflow-hidden rounded-2xl border bg-white/5 border-white/10 no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-[#22D3EE]/50"
+            className="group flex flex-row items-center gap-3 p-4 sm:flex-col sm:items-stretch sm:gap-0 sm:p-0 overflow-hidden rounded-2xl border bg-white/5 border-white/10 no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-white/30"
           >
             {/* 🔴 Ei kuvaa: tuotekortti on lupaus yhdestä nimetystä tuotteesta, joten
                 yleiskuva samasta lajista (§24) ja tekoälykuva ovat molemmat poissuljettuja,
@@ -281,14 +281,14 @@ export default function GygPicks() {
                 kortin, sama ratkaisu kuin kohdesivujen DestinationPicks-karusellissa.
                 Poistetut AI-kuvat: ks. src/data/gygImages.ts. */}
             {(() => { const Icon = pickIcon(p.source.title); return (
-              <span className="self-start sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-[#DB2777]/15 items-center justify-center">
-                <Icon className="h-5 w-5 text-[#F472B6]" aria-hidden="true" />
+              <span className="self-start sm:mx-5 sm:mt-5 inline-flex w-11 h-11 shrink-0 rounded-xl bg-vibe-pink/15 items-center justify-center">
+                <Icon className="h-5 w-5 text-vibe-pink" aria-hidden="true" />
               </span>
             ); })()}
 
             {/* Puhelimessa rivikortti (kuvake vieressä) vasemmalle; 640–1023 px pystykortti keskelle; lg+ vasemmalle. */}
             <div className="flex min-w-0 flex-1 flex-col sm:p-5">
-              <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#22D3EE]">
+              <p className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-arctic-cyan">
                 <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
                 {p.place}
               </p>
@@ -340,7 +340,7 @@ export default function GygPicks() {
             </div>
 
             {/* Puhelimessa rivillä ei ole nappia; nuoli kertoo, että linkki avaa GetYourGuiden. */}
-            <ArrowUpRight className="h-5 w-5 shrink-0 self-center text-[#22D3EE] sm:hidden" aria-hidden="true" />
+            <ArrowUpRight className="h-5 w-5 shrink-0 self-center text-arctic-cyan sm:hidden" aria-hidden="true" />
           </a>
         ))}
         </div>

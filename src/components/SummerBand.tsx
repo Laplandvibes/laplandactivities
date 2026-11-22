@@ -113,7 +113,7 @@ export default function SummerBand() {
               {/* Tummennus on tekstilohkon oma (lv-scrim-text), ei koko kuvan. pb-5: kuvakuitti
                   ulottuu kortin alareunasta 17 px:iin, joten teksti jää sen yläpuolelle. */}
               <div className="absolute inset-x-0 bottom-0 p-4 pt-14 pb-5 lv-scrim-text">
-                <p className="text-[#F9A8D4] text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">{c.imageKicker}</p>
+                <p className="text-snow text-[10px] font-semibold tracking-[0.25em] uppercase mb-1">{c.imageKicker}</p>
                 <p className="font-heading text-snow text-2xl tracking-wide leading-tight">{c.imageH3}</p>
               </div>
             </div>
