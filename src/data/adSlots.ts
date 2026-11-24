@@ -351,6 +351,11 @@ export const DESTINATION_PARTNERS: Record<string, Partner | undefined> = {
 };
 // @@SAMI-VILLAGE-LOPPU@@
 
+// Ságe Saariselällä TAUOLLA 24.11.2026 (Vesa: taloyhtiö ei anna Teijan aloittaa toimintaa): Saariselän kortti pois
+// kohdesivulta. Rivi on generoidun lohkon ulkopuolella, jotta lohkon uusinta ei palauta korttia. Palautus: poista rivi,
+// ohje yp-sivut/asiakkaat/samivillage/SAGE-TAUOLLA.md.
+DESTINATION_PARTNERS.saariselka = undefined;
+
 export const AD_SLOTS: HomeAdSlotsConfig = {
   siteSlug: 'laplandactivities',
   // [0] = pääkumppani (banneri heti heron alla), [1] = kakkospääkumppani (osion kortti)
